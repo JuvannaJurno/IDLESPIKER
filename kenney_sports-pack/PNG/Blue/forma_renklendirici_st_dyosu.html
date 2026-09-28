@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma Renklendirici Stüdyosu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Slate 900 */
+            color: #f8fafc;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1e293b; }
+        ::-webkit-scrollbar-thumb { background: #475569; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #64748b; }
+        
+        .checkerboard {
+            background-color: #1e293b;
+            background-image: 
+                linear-gradient(45deg, #0f172a 25%, transparent 25%, transparent 75%, #0f172a 75%, #0f172a),
+                linear-gradient(45deg, #0f172a 25%, transparent 25%, transparent 75%, #0f172a 75%, #0f172a);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-8">
+
+    <div class="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <!-- Sol Taraf: Kontroller -->
+        <div class="lg:col-span-5 flex flex-col gap-6">
+            <div class="bg-slate-800 p-6 rounded-2xl shadow-xl border border-slate-700">
+                <h1 class="text-2xl font-bold mb-2 text-blue-400">Forma Renklendirici</h1>
+                <p class="text-sm text-slate-400 mb-6">Karakter PNG'ni yükle, formasına anında renk ver. Oyun projelerin için varyasyonlar üret.</p>
+
+                <!-- Dosya Yükleme -->
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-slate-300 mb-2">1. Karakter PNG Yükle</label>
+                    <label class="flex flex-col items-center justify-center w-full h-32 border-2 border-slate-600 border-dashed rounded-xl cursor-pointer bg-slate-700/50 hover:bg-slate-700 transition-colors">
+                        <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                            <svg class="w-8 h-8 mb-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                            <p class="mb-2 text-sm text-slate-400"><span class="font-semibold">Yüklemek için tıkla</span> veya sürükle</p>
+                        </div>
+                        <input id="fileUpload" type="file" class="hidden" accept="image/png, image/jpeg" />
+                    </label>
+                </div>
+
+                <!-- Renk Seçici -->
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-slate-300 mb-2">2. Takım Rengini Seç</label>
+                    <div class="flex items-center gap-4">
+                        <input type="color" id="colorPicker" value="#3b82f6" class="w-14 h-14 rounded cursor-pointer border-0 bg-transparent p-0">
+                        <span id="colorHex" class="text-lg font-mono text-slate-300">#3b82f6</span>
+                    </div>
+                </div>
+
+                <!-- Mod Seçimi -->
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-slate-300 mb-2">3. Boyama Modu</label>
+                    <div class="flex flex-col gap-3">
+                        <label class="flex items-start p-3 bg-slate-900 border border-slate-700 rounded-lg cursor-pointer hover:border-blue-500 transition-colors">
+                            <input type="radio" name="blendMode" value="multiply" class="mt-1 mr-3 w-4 h-4 text-blue-600 bg-slate-700 border-slate-500 focus:ring-blue-600 focus:ring-2" checked>
+                            <div>
+                                <span class="block font-medium text-slate-200">Tint (Multiply) - Gri/Beyaz Formalar</span>
+                                <span class="text-xs text-slate-400">Gölgeleri ve detayları koruyarak beyaz bölgeleri renklendirir.</span>
+                            </div>
+                        </label>
+
+                        <label class="flex items-start p-3 bg-slate-900 border border-slate-700 rounded-lg cursor-pointer hover:border-blue-500 transition-colors">
+                            <input type="radio" name="blendMode" value="behind" class="mt-1 mr-3 w-4 h-4 text-blue-600 bg-slate-700 border-slate-500 focus:ring-blue-600 focus:ring-2">
+                            <div>
+                                <span class="block font-medium text-slate-200">Arkasını Boya - İçi Şeffaf Formalar</span>
+                                <span class="text-xs text-slate-400">Forma kısmı transparan bırakılmış PNG'lerin arkasına renk atar.</span>
+                            </div>
+                        </label>
+                        
+                        <label class="flex items-start p-3 bg-slate-900 border border-slate-700 rounded-lg cursor-pointer hover:border-blue-500 transition-colors">
+                            <input type="radio" name="blendMode" value="atop" class="mt-1 mr-3 w-4 h-4 text-blue-600 bg-slate-700 border-slate-500 focus:ring-blue-600 focus:ring-2">
+                            <div>
+                                <span class="block font-medium text-slate-200">Üzerine Katman Çek (Source-Atop)</span>
+                                <span class="text-xs text-slate-400">Karakterin tamamının üzerine yarı saydam bir renk filtresi atar.</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- İndirme Butonu -->
+                <button id="downloadBtn" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-4 rounded-xl transition-colors shadow-lg shadow-blue-500/30 flex justify-center items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    Karakteri İndir (PNG)
+                </button>
+            </div>
+        </div>
+
+        <!-- Sağ Taraf: Önizleme -->
+        <div class="lg:col-span-7 flex flex-col gap-4">
+            <div class="bg-slate-800 p-6 rounded-2xl shadow-xl border border-slate-700 flex-grow flex flex-col">
+                <h2 class="text-lg font-semibold mb-4 text-slate-200">Canlı Önizleme</h2>
+                <div class="relative w-full flex-grow rounded-xl overflow-hidden checkerboard border border-slate-700 flex items-center justify-center min-h-[400px]">
+                    <canvas id="previewCanvas" class="max-w-full max-h-full transition-transform duration-200" style="image-rendering: pixelated;"></canvas>
+                    
+                    <!-- Boş Durum (Resim Yüklenmediyse) -->
+                    <div id="emptyState" class="absolute inset-0 flex flex-col items-center justify-center text-slate-500 pointer-events-none">
+                        <svg class="w-16 h-16 mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        <p>Henüz bir karakter yüklenmedi.</p>
+                    </div>
+                </div>
+                
+                <!-- Zoom Kontrolleri -->
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-sm text-slate-400">Ölçek (Zoom)</span>
+                    <input type="range" id="zoomSlider" min="1" max="10" value="4" class="w-1/2 accent-blue-500">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('previewCanvas');
+        const ctx = canvas.getContext('2d');
+        const fileUpload = document.getElementById('fileUpload');
+        const colorPicker = document.getElementById('colorPicker');
+        const colorHex = document.getElementById('colorHex');
+        const blendModes = document.querySelectorAll('input[name="blendMode"]');
+        const downloadBtn = document.getElementById('downloadBtn');
+        const emptyState = document.getElementById('emptyState');
+        const zoomSlider = document.getElementById('zoomSlider');
+
+        let currentImage = new Image();
+        let imageLoaded = false;
+        let selectedColor = '#3b82f6';
+        let currentMode = 'multiply';
+        let zoomLevel = 4; // Büyütme katsayısı
+
+        // Renk değişimi
+        colorPicker.addEventListener('input', (e) => {
+            selectedColor = e.target.value;
+            colorHex.textContent = selectedColor;
+            renderCanvas();
+        });
+
+        // Mod değişimi
+        blendModes.forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                currentMode = e.target.value;
+                renderCanvas();
+            });
+        });
+
+        // Zoom değişimi
+        zoomSlider.addEventListener('input', (e) => {
+            zoomLevel = e.target.value;
+            renderCanvas();
+        });
+
+        // Resim yükleme
+        fileUpload.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    currentImage.src = event.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        currentImage.onload = () => {
+            imageLoaded = true;
+            emptyState.style.display = 'none';
+            renderCanvas();
+        };
+
+        // Canvas Çizim Motoru
+        function renderCanvas() {
+            if (!imageLoaded) return;
+
+            // Canvas boyutunu orjinal resim boyutu * zoom olacak şekilde ayarla
+            // Böylece yüksek çözünürlüklü dışa aktarma yaparken sorun olmaz
+            canvas.width = currentImage.width * zoomLevel;
+            canvas.height = currentImage.height * zoomLevel;
+
+            // Keskinliği korumak için (pixel art / retro görseller için önemli)
+            ctx.imageSmoothingEnabled = false;
+
+            // Tüm canvas'ı temizle
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            const w = canvas.width;
+            const h = canvas.height;
+
+            if (currentMode === 'multiply') {
+                // TINT MODU (Beyaz/Gri formalar için en iyisi)
+                
+                // 1. Orijinal resmi çiz
+                ctx.drawImage(currentImage, 0, 0, w, h);
+                
+                // 2. Modu Multiply (Çoğalt) yap ve rengi çiz
+                ctx.globalCompositeOperation = "multiply";
+                ctx.fillStyle = selectedColor;
+                ctx.fillRect(0, 0, w, h);
+                
+                // 3. Rengin taşmaması için sadece resmin dolu olduğu pikselleri tut
+                ctx.globalCompositeOperation = "destination-in";
+                ctx.drawImage(currentImage, 0, 0, w, h);
+                
+                // Modu normale döndür
+                ctx.globalCompositeOperation = "source-over";
+
+            } else if (currentMode === 'behind') {
+                // ARKASINI BOYA MODU (İçi şeffaf formalar için)
+                
+                // Formanın transparan bölgesine renk atmak için.
+                // Karakterin arkasına sadece karakterin kapladığı alan kadar renkli bir daire/elips çizeriz.
+                ctx.fillStyle = selectedColor;
+                ctx.beginPath();
+                // Karakterin merkezinde vücut genişliğinde bir dolgu (top-down için ideal)
+                ctx.arc(w/2, h/2, Math.min(w, h)/2.5, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Orijinal transparan resmi üstüne çiz (Forma deliğinden alttaki renk görünür)
+                ctx.drawImage(currentImage, 0, 0, w, h);
+
+            } else if (currentMode === 'atop') {
+                // ÜZERİNE KATMAN ÇEK (Alternatif renklendirme)
+                
+                ctx.drawImage(currentImage, 0, 0, w, h);
+                ctx.globalCompositeOperation = "source-atop";
+                ctx.fillStyle = selectedColor;
+                ctx.globalAlpha = 0.6; // Yarı saydam
+                ctx.fillRect(0, 0, w, h);
+                ctx.globalAlpha = 1.0;
+                ctx.globalCompositeOperation = "source-over";
+            }
+        }
+
+        // Resmi Bilgisayara İndirme
+        downloadBtn.addEventListener('click', () => {
+            if (!imageLoaded) {
+                // Custom mesaj kutusu (alert yasak olduğu için)
+                const msg = document.createElement('div');
+                msg.className = 'fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 animate-bounce';
+                msg.textContent = 'Lütfen önce bir PNG yükleyin.';
+                document.body.appendChild(msg);
+                setTimeout(() => msg.remove(), 3000);
+                return;
+            }
+
+            // Normal boyutunda indirmek için arka planda gizli bir canvas kullanıyoruz
+            const exportCanvas = document.createElement('canvas');
+            exportCanvas.width = currentImage.width;
+            exportCanvas.height = currentImage.height;
+            const exportCtx = exportCanvas.getContext('2d');
+            
+            // Render logic birebir kopyası ama zoom seviyesi 1
+            exportCtx.imageSmoothingEnabled = false;
+
+            if (currentMode === 'multiply') {
+                exportCtx.drawImage(currentImage, 0, 0, exportCanvas.width, exportCanvas.height);
+                exportCtx.globalCompositeOperation = "multiply";
+                exportCtx.fillStyle = selectedColor;
+                exportCtx.fillRect(0, 0, exportCanvas.width, exportCanvas.height);
+                exportCtx.globalCompositeOperation = "destination-in";
+                exportCtx.drawImage(currentImage, 0, 0, exportCanvas.width, exportCanvas.height);
+                exportCtx.globalCompositeOperation = "source-over";
+            } else if (currentMode === 'behind') {
+                exportCtx.fillStyle = selectedColor;
+                exportCtx.beginPath();
+                exportCtx.arc(exportCanvas.width/2, exportCanvas.height/2, Math.min(exportCanvas.width, exportCanvas.height)/2.5, 0, Math.PI * 2);
+                exportCtx.fill();
+                exportCtx.drawImage(currentImage, 0, 0, exportCanvas.width, exportCanvas.height);
+            } else if (currentMode === 'atop') {
+                exportCtx.drawImage(currentImage, 0, 0, exportCanvas.width, exportCanvas.height);
+                exportCtx.globalCompositeOperation = "source-atop";
+                exportCtx.fillStyle = selectedColor;
+                exportCtx.globalAlpha = 0.6;
+                exportCtx.fillRect(0, 0, exportCanvas.width, exportCanvas.height);
+                exportCtx.globalAlpha = 1.0;
+                exportCtx.globalCompositeOperation = "source-over";
+            }
+
+            // İndirmeyi tetikle
+            const link = document.createElement('a');
+            const cleanColor = selectedColor.replace('#', '');
+            link.download = `karakter_${cleanColor}_${currentMode}.png`;
+            link.href = exportCanvas.toDataURL('image/png');
+            link.click();
+        });
+    </script>
+</body>
+</html>
