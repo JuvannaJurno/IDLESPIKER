@@ -1,0 +1,12 @@
+const fs=require('fs');
+const layout=JSON.parse(fs.readFileSync('onaylanan-uc-parca-yerlesimi.json','utf8')).parts;
+const blockLayout=JSON.parse(fs.readFileSync('onaylanan-blok-yerlesimi.json','utf8')).parts;
+const spikeLayout=JSON.parse(fs.readFileSync('onaylanan-spike-yerlesimi.json','utf8')).parts;
+const approachLayout=JSON.parse(fs.readFileSync('onaylanan-spike-yaklasma.json','utf8')).parts;
+const tossLayout=JSON.parse(fs.readFileSync('onaylanan-toss-yerlesimi.json','utf8')).parts;
+const assets={};for(const p of layout)assets[p.path]='data:image/png;base64,'+fs.readFileSync(p.path).toString('base64');
+for(const name of ['ball_volley1.png','ball_volley2.png'])assets[name]='data:image/png;base64,'+fs.readFileSync(name).toString('base64');
+const reference=JSON.parse(fs.readFileSync('onaylanan-yerlesim.json','utf8')).parts;
+const all=JSON.parse(fs.readFileSync('karakter-uretici.html','utf8').match(/const assets=(.*?);const cache=new Map\(\);/s)[1]);
+let html=fs.readFileSync('match-template.html','utf8').replace('__ASSETS__',JSON.stringify(assets)).replace('__LAYOUT__',JSON.stringify(layout)).replace('__BLOCK_LAYOUT__',JSON.stringify(blockLayout)).replace('__SPIKE_LAYOUT__',JSON.stringify(spikeLayout)).replace('__APPROACH_LAYOUT__',JSON.stringify(approachLayout)).replace('__TOSS_LAYOUT__',JSON.stringify(tossLayout)).replace('__REFERENCE__',JSON.stringify(reference)).replace('__REFERENCE_ASSETS__',JSON.stringify(all));
+new Function(html.match(/<script>([\s\S]*?)<\/script>/)[1]);fs.writeFileSync('deneme-modu.html',html);console.log('Match demo built.');

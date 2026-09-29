@@ -1,0 +1,21 @@
+const fs=require('fs');
+// Remove the discontinued model from both application asset pools.
+let generator=fs.readFileSync('karakter-uretici.html','utf8');
+generator=generator.replace(/const assets=(.*?);const cache=new Map\(\);/s,(_,json)=>{const a=JSON.parse(json);for(const p of Object.keys(a))if(/Man8\.png$/i.test(p))delete a[p];return 'const assets='+JSON.stringify(a)+';const cache=new Map();'});
+generator=generator.replace(/const files=(.*?);/s,(_,json)=>'const files='+JSON.stringify(JSON.parse(json).filter(p=>!/Man8\.png$/i.test(p)))+';').replaceAll('428','420');
+fs.writeFileSync('karakter-uretici.html',generator);
+let s=fs.readFileSync('editor-template.html.template','utf8');
+s=s.replace('<label for="shirtColor">','<label for="hairColor">Saç rengi</label><select id="hairColor"></select><label for="shirtColor">');
+s=s.replace('<g id="pieces"></g>','<defs id="hairFilters"></defs><g id="pieces"></g>');
+s=s.replace("const holder=$('pieces'),overlay=$('outlines');", "renderHairFilters();const holder=$('pieces'),overlay=$('outlines');");
+s=s.replace("if(p.flip)im.setAttribute", "if(p.tint)im.setAttribute('filter','url(#tint-'+p.id+')');if(p.flip)im.setAttribute");
+s=s.replace('function syncColors(){for(',"function syncColors(){const hair=byId('hair');$('hairColor').value=hair?.tint||hair?.path.split('/')[2]||'';for(");
+s=s.replace("out.append($('pieces').cloneNode(true));", "out.append($('hairFilters').cloneNode(true));out.append($('pieces').cloneNode(true));");
+s=s.replace("if(p.scale<.1", "if(p.tint!==undefined&&!/^#[0-9a-f]{6}$/i.test(p.tint))throw Error('Geçersiz saç rengi.');if(p.scale<.1");
+s=s.replace("p.rotation=base.rotation+", "if(p.id.startsWith('brow-')&&byId('hair').tint)p.tint=byId('hair').tint;else delete p.tint;\n   p.rotation=base.rotation+");
+s=s.replace("p.path=path;Object.assign(p,dimensions[path]);p.scale=base.scale*head.scale/headBase.scale;", "delete p.tint;p.path=path;Object.assign(p,dimensions[path]);p.scale=base.scale*head.scale/headBase.scale;");
+s=s.replace("record();varyIdentity();varyFace();varyClothes();", "record();varyIdentity();applyHairColor(pick(hairPalette).value);varyFace();varyClothes();");
+s=s.replace("const paths=Object.keys(assets)",fs.readFileSync('hair-colors.js','utf8')+"\nconst paths=Object.keys(assets)");
+s=s.replace("fresh();try{const saved=", "setupHairColors();\nfresh();try{const saved=");
+s=s.replaceAll('kenney-layout-editor-approved-v3-hair','kenney-layout-editor-approved-v4-colors');
+fs.writeFileSync('editor-template.html.template',s);

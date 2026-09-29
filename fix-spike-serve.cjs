@@ -1,0 +1,23 @@
+const fs=require('fs');let m=fs.readFileSync('manual-player.js','utf8');
+m=m.replace('function canAct(p){return controlledPlayer(p)', 'function canAct(p){return !serviceGame&&controlledPlayer(p)');
+m=m.replace('p.actionDirection=inputDirection(p);p.angle=Math.atan2(p.actionDirection.y,p.actionDirection.x);}', 'p.actionDirection=inputDirection(p);p.angle=Math.atan2(p.actionDirection.y,p.actionDirection.x);if(p.manualSpike>0)captureSpikeBall(p);}');
+m=m.replace('function tryManualContact(p,kind){',`function captureSpikeBall(p){if(ball.state!=='flight'||p.manualContact||ball.strikeOwner!==undefined)return;const ground=Math.hypot(ball.x-p.x,ball.y-p.y),screen=Math.hypot(ball.x-p.x,ball.y-(ball.z||0)-p.y);if(Math.min(ground,screen)<72&&(ball.z||0)<=135){ball.strikeOwner=p.index;ball.strikeAge=0;}}
+function tryManualContact(p,kind){`);
+m=m.replace("Math.hypot(ball.x-p.x,ball.y-p.y)>65||(ball.z||0)>115", "(ball.strikeOwner!==p.index&&(Math.hypot(ball.x-p.x,ball.y-p.y)>72||(ball.z||0)>135))");
+m=m.replace("const previousAge=duration-p[field];", "if(kind==='attack')captureSpikeBall(p);const previousAge=duration-p[field];");
+m=m.replace("if(e.code==='Space')requestSpike();", "if(e.code==='Space'){if(serviceGame)advanceServiceGame();else requestSpike();}");
+m=m.replace("if(!manualControl)return;", "if(!manualControl)return;");
+fs.writeFileSync('manual-player.js',m);
+let s=fs.readFileSync('match-template.html','utf8'),a=s.indexOf('let manualControl=false;'),b=s.lastIndexOf('init();');s=s.slice(0,a)+m+'\n'+fs.readFileSync('serve-minigame.js','utf8')+'\n'+s.slice(b);
+s=s.replace('<canvas id="court"', '<section id="servicePanel" hidden style="padding:16px;background:#263f56;border-radius:12px;margin-bottom:12px"><strong>Servis sırası sende</strong><p id="serviceHint"></p><progress id="serviceMeter" max="100" value="0" style="width:220px"></progress> <span id="serviceReadout"></span> <button id="serviceAction">Space</button></section><canvas id="court"');
+s=s.replace('<button id="feedBall">Pas iste</button>','<button id="feedBall">Pas iste</button><button id="practiceServe">Servisi dene</button>');
+s=s.replace('function serve(){rally++;','function serve(){if(controlledPlayer(serverPlayer())){startServiceGame();return}rally++;');
+s=s.replace('function reset(){rotationMotion=null;', 'function reset(){closeServiceGame();rotationMotion=null;');
+s=s.replace('if(paused||!ready)return;if(scenario)', 'if(paused||!ready)return;if(serviceGame){tickServiceGame(dt);return}if(scenario)');
+s=s.replace("if(formationPreview)return;\n if(ball.state", "if(ball.strikeOwner!==undefined){const striker=players.find(p=>p.index===ball.strikeOwner);ball.strikeAge+=dt;if(striker&&controlledPlayer(striker)&&striker.manualSpike>0&&ball.strikeAge<.8){ball.x=striker.x;ball.y=striker.y;ball.z=42;return}delete ball.strikeOwner;ball.state='drop';ball.t=0;}\n if(formationPreview)return;\n if(ball.state");
+s=s.replace('awardPoint(1-ball.target.team)', 'awardPoint(ball.pointWinner??(1-ball.target.team))');
+s=s.replace('drawFormationHints();', 'drawFormationHints();drawServiceTarget();');
+s=s.replace('function beginScenario(kind){if(!ready)', 'function beginScenario(kind){closeServiceGame();if(!ready)');
+s=s.replace('function startManual(){if(!ready)', 'function startManual(){closeServiceGame();if(!ready)');
+s=s.replace("$('feedBall').onclick=()=>{if(!ready)","$('feedBall').onclick=()=>{closeServiceGame();if(!ready)");
+fs.writeFileSync('match-template.html',s);

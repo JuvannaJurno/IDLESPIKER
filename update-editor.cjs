@@ -1,0 +1,13 @@
+const fs=require('fs');
+let s=fs.readFileSync('editor-template.html.template','utf8');
+const begin=s.indexOf('function initial(){'),end=s.indexOf('const clone=',begin);
+s=s.slice(0,begin)+'const approvedLayout=__LAYOUT__;\nfunction initial(){return JSON.parse(JSON.stringify(approvedLayout))}\n'+s.slice(end);
+s=s.replace(/function fresh\(\)\{[^\n]+\}/,'function fresh(){parts=initial()}');
+s=s.replaceAll('kenney-layout-editor-v1','kenney-layout-editor-approved-v2');
+s=s.replace('<h2 id="selectionTitle">',`<h2>Karakter seçenekleri</h2><p class="muted">Başlangıç pozu senin gönderdiğin yerleşimdir.</p><button id="newCharacter" class="primary full">✦ Yeni karakter oluştur</button><button id="randomFace" class="full">Yüz karakteristiğini değiştir</button><label for="faceAmount">Yüz çeşitliliği</label><input id="faceAmount" type="range" min="0" max="100" value="55"><label for="shirtColor">Üst kıyafet rengi</label><select id="shirtColor"></select><label for="pantsColor">Pantolon rengi</label><select id="pantsColor"></select><label for="shoeColor">Ayakkabı rengi</label><select id="shoeColor"></select><button id="randomClothes" class="full">Kıyafet renklerini karıştır</button><hr style="border:0;border-top:1px solid #44556f;margin:22px 0"><h2 id="selectionTitle">`);
+s=s.replace('Örnek karakteri yeniden yükle','Gönderdiğim yerleşime dön');
+s=s.replace("function sync(){const list=", "function sync(){syncColors();const list=");
+const addition=fs.readFileSync('editor-variants.js','utf8');
+s=s.replace("fresh();try{const saved=", addition+"\nfresh();try{const saved=");
+s=s.replace("'Karakter hazır. Bir parçayı tutup sürükle veya sol listeden seç.'", "'Gönderdiğin yerleşim hazır. Yüzü ve kıyafet renklerini değiştirebilirsin.'");
+fs.writeFileSync('editor-template.html.template',s);

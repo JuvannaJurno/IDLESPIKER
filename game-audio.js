@@ -1,0 +1,22 @@
+(function(){
+'use strict';
+const root='VFX/Crowd Cheering Sounds/',crowds=['01 - Strong cheering and strong rhythmic cheering.mp3','02 - Strong cheering and soft rhythmic cheering.mp3','03 - Strong cheering - I.mp3','04 - Strong cheering - II - Short.mp3','05 - Soft cheering - I.mp3','06 - Soft cheering - II.mp3','07 - Soft cheering and chatter.mp3','08 - Rhythmic cheering.mp3','09 - Ambience and cheering.mp3','10 - Ambience.mp3'];
+let enabled=true,unlocked=false,mode='menu',suspended=false,active=null,next=null,fade=null,returnTimer,sequence=0;const shots=new Set();
+try{enabled=localStorage.getItem('idle-spiker-sound')!=='off'}catch{}
+const bgm=new Audio('OST/BGM.mp3');bgm.loop=true;bgm.preload='metadata';bgm.volume=0;
+const levels={music:.18,crowd:.14,effects:.48};try{Object.assign(levels,JSON.parse(localStorage.getItem('idle-spiker-mix')||'{}'))}catch{}for(const k in levels)levels[k]=Math.max(0,Math.min(1,Number(levels[k])||0));
+function play(a){const p=a.play();if(p?.catch)p.catch(()=>{});}
+function allowed(){return enabled&&unlocked&&!suspended&&!document.hidden}
+function crowd(index){if(!allowed()||mode!=='match')return;const token=++sequence;const a=new Audio(root+crowds[index]);a.volume=0;a.preload='auto';if(next){next.pause();next=null}next=a;const begin=()=>{if(token!==sequence){a.pause();return}play(a);if(fade?.old)fade.old.pause();fade={start:performance.now(),duration:2200,old:active,oldVolume:active?.volume||0,incoming:a};next=null;active=a;a.ontimeupdate=()=>{if(!fade&&a===active&&a.duration-a.currentTime<2.5)crowd([4,5,6,8,9][Math.floor(Math.random()*5)])};a.onended=()=>{if(a===active&&!fade)crowd(9)}};a.addEventListener('canplay',begin,{once:true});a.onerror=()=>{if(next===a)next=null};a.load()}
+function stopCrowd(){sequence++;if(fade?.old)fade.old.pause();if(active)active.pause();if(next)next.pause();active=next=fade=null;clearTimeout(returnTimer)}
+function sync(){if(!allowed()){bgm.pause();stopCrowd();for(const a of shots)a.pause();shots.clear();return}if(mode==='menu'){stopCrowd();play(bgm)}else{bgm.pause();bgm.volume=0;if(!active&&!next)crowd(9)}}
+function shot(name,scale=1){if(!allowed()||mode!=='match'||shots.size>=6)return;const a=new Audio('VFX/Ball/'+name+'.mp3');a.volume=Math.min(1,levels.effects*scale);shots.add(a);a.onended=a.onerror=()=>shots.delete(a);const p=a.play();p?.catch(()=>shots.delete(a))}
+let lastVariant=-1;function hit(kind){let n=Math.floor(Math.random()*3);if(n===lastVariant)n=(n+1)%3;lastVariant=n;if(kind==='hard')shot('hardball_'+(n+1),.85);else if(kind==='soft')shot('softball_'+(n+1),.7);else if(kind==='toss')shot('softball_'+(n+1),.28);else shot(kind,kind==='floorslam'?.62:.65)}
+function react(big=false){if(!allowed())return;crowd(big?0:[1,2,3,7][Math.floor(Math.random()*4)]);clearTimeout(returnTimer);returnTimer=setTimeout(()=>crowd(9),big?10000:6500)}
+function unlock(){unlocked=true;sync()}
+document.addEventListener('pointerdown',unlock,{once:true});document.addEventListener('keydown',unlock,{once:true});document.addEventListener('visibilitychange',sync);window.addEventListener('pagehide',()=>{suspended=true;sync()});
+let prev=performance.now();function loop(now){const dt=Math.min(.1,(now-prev)/1000);prev=now;const target=allowed()&&mode==='menu'?levels.music:0;bgm.volume+=(target-bgm.volume)*Math.min(1,dt*4);if(target===0&&bgm.volume<.001)bgm.pause();if(fade){const t=Math.min(1,(now-fade.start)/fade.duration);if(fade.old)fade.old.volume=fade.oldVolume*Math.cos(t*Math.PI/2);fade.incoming.volume=levels.crowd*Math.sin(t*Math.PI/2);if(t===1){fade.old?.pause();fade=null}}else if(active)active.volume=levels.crowd;requestAnimationFrame(loop)}requestAnimationFrame(loop);
+window.GameAudio={setMode(v){mode=v;suspended=false;sync()},setEnabled(v){enabled=v;sync()},setPaused(v){suspended=v;sync()},hit,point:react};
+window.addEventListener('message',e=>{const frame=document.getElementById('gameMatchFrame');if(!frame||e.source!==frame.contentWindow||e.data?.type!=='spiker-audio')return;const d=e.data;if(d.action==='hit'&&['hard','soft','toss','tip','netball_1','netball_hard','floorslam'].includes(d.kind))hit(d.kind);if(d.action==='point')react(!!d.big);if(d.action==='pause')window.GameAudio.setPaused(!!d.value)});
+for(const key of ['music','crowd','effects']){const input=document.getElementById('volume-'+key);if(!input)continue;input.value=Math.round(levels[key]*100);input.oninput=()=>{levels[key]=Number(input.value)/100;try{localStorage.setItem('idle-spiker-mix',JSON.stringify(levels))}catch{}}}
+})();
