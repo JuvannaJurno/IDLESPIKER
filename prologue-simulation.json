@@ -1,0 +1,39 @@
+{
+  "seed": 98765,
+  "method": "Actual match engine, 48 single sets per scenario, fixed representative lineup, fatigue and pressure, no manual control or libero substitution",
+  "results": [
+    {
+      "label": "opening",
+      "round": 1,
+      "sets": 48,
+      "wins": 37,
+      "winPercent": 77.08333333333334,
+      "points": [
+        1135,
+        847
+      ]
+    },
+    {
+      "label": "final-untrained",
+      "round": 14,
+      "sets": 48,
+      "wins": 19,
+      "winPercent": 39.58333333333333,
+      "points": [
+        946,
+        1054
+      ]
+    },
+    {
+      "label": "final-developed",
+      "round": 14,
+      "sets": 48,
+      "wins": 28,
+      "winPercent": 58.333333333333336,
+      "points": [
+        1071,
+        976
+      ]
+    }
+  ]
+}

@@ -19,7 +19,9 @@ function launch(from,target,touch,kind='pass'){
 
  if(kind==='attack'){const blockers=players.filter(p=>p.team!==from.team&&[2,3,4].includes(p.zone)&&Math.abs(p.y-from.y)<85&&Math.abs(p.x-500)<80).sort((a,b)=>Math.abs(a.y-from.y)-Math.abs(b.y-from.y)).slice(0,2);for(const p of blockers){p.jump=.5;p.block=.5;}} 
  const blockSupport=kind==='attack'?Math.min(.12,players.filter(p=>p.team===target.team&&[2,3,4].includes(p.zone)&&p.stats).reduce((sum,p)=>sum+p.stats.block,0)/2000):0;
- const miss=history.filter(e=>e.type==='touch').length>=3&&Math.random()<clamp(Number($('mistakes').value)/100-blockSupport+(from.stats&&target.stats?((kind==='serve'?from.stats.serve:kind==='attack'?from.stats.spike+(from.attackBoost||0):50)-target.stats.receive)/500:from.stats?(kind==='attack'?from.stats.spike-65:kind==='serve'?from.stats.serve-65:0)/500:target.stats?(65-target.stats.receive)/500:0),.02,.5);
+ const baseError=Number($('mistakes').value)/100;
+ const errorChance=from.stats&&target.stats?(from.team===target.team?baseError+(20-(from.stats.set+target.stats.receive)/2)/180:baseError-blockSupport+((kind==='serve'?from.stats.serve:from.stats.spike+(from.attackBoost||0))-target.stats.receive)/120):baseError;
+ const miss=history.filter(e=>e.type==='touch').length>=3&&Math.random()<clamp(errorChance,.02,.5);
  if(touch===3&&from.stats)target.attackBoost=from.stats.set*.12;
  let tx=target.homeX,ty=target.homeY;
  if(touch===2){tx=target.team?560:440;ty=310}
