@@ -6,15 +6,26 @@
       "label": "opening",
       "round": 1,
       "sets": 48,
-      "wins": 37,
-      "winPercent": 77.08333333333334,
+      "wins": 25,
+      "winPercent": 52.083333333333336,
       "points": [
-        1135,
-        847
+        1001,
+        1031
       ]
     },
     {
       "label": "final-untrained",
+      "round": 14,
+      "sets": 48,
+      "wins": 3,
+      "winPercent": 6.25,
+      "points": [
+        679,
+        1185
+      ]
+    },
+    {
+      "label": "final-developed",
       "round": 14,
       "sets": 48,
       "wins": 19,
@@ -22,17 +33,6 @@
       "points": [
         946,
         1054
-      ]
-    },
-    {
-      "label": "final-developed",
-      "round": 14,
-      "sets": 48,
-      "wins": 28,
-      "winPercent": 58.333333333333336,
-      "points": [
-        1071,
-        976
       ]
     }
   ]

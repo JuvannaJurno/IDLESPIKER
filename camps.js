@@ -1,0 +1,22 @@
+(function(){
+'use strict';
+const $=id=>document.getElementById(id),R=TeamRules,C=CampRules;
+let selectedId=null,day=1,lastDay=null;
+try{const saved=JSON.parse(localStorage.getItem('idle-spiker-main-menu-v1'));if(Number.isSafeInteger(saved?.day)&&saved.day>0)day=saved.day}catch{}
+const fmt=n=>Math.floor(n).toLocaleString('tr-TR');
+function state(){return RoomSystem.developmentState()}
+function refreshResources(){const s=state(),p=R.players.find(p=>p.id===selectedId);$('campWallet').textContent=fmt(RoomSystem.balance())+' AP · '+fmt(RoomSystem.cashBalance())+' Nakit';const button=$('campEnroll');if(!p){button.disabled=true;button.textContent='Kampa gönder';$('campQuote').textContent='Kampa göndermek için uygun bir kart seç.';return}const cost=C.price(s,p),free=s.camp.entries.filter(e=>e.status==='running').length<C.config.slots;button.disabled=!C.eligible(s,p)||day<s.camp.opensDay||!free||RoomSystem.balance()<cost.ap||RoomSystem.cashBalance()<cost.cash;button.textContent='Kampa gönder · '+fmt(cost.ap)+' AP + '+fmt(cost.cash)+' Nakit';$('campQuote').textContent=p.name+' '+p.surname+' · Cap '+R.cap(p)+' → '+(R.cap(p)+C.config.capGain)+' · '+C.config.durationDays+' oyun günü';}
+function render(){const s=state(),c=s.camp,visible=s.stage==='bal'&&c.announcedDay!==null;$('campPanel').hidden=!visible;$('campAlert').hidden=!visible;if(!visible)return;day=Math.max(day,c.lastDay);const waiting=day<c.opensDay;
+ $('campStatus').textContent=waiting?'Antrenman Kampı duyuruldu! Kayıtlar '+c.opensDay+'. oyun gününde açılıyor · '+(c.opensDay-day)+' gün kaldı.':'Kamp kayıtları açık. Seçilen oyuncunun kampı 7 oyun günü sürer; tamamlanınca kişisel stat sınırı +5 artar.';
+ $('campAlert').textContent=waiting?'Antrenman Kampı duyuruldu · '+(c.opensDay-day)+' gün sonra':'Antrenman Kampı · Kartlarını seç ve süreci takip et';
+ $('campSelection').hidden=waiting;
+ const running=c.entries.filter(e=>e.status==='running');$('campSlots').replaceChildren(...Array.from({length:C.config.slots},(_,i)=>{const slot=document.createElement('div'),entry=running[i];slot.className='camp-slot';if(!entry){slot.textContent='Kamp yeri '+(i+1)+' · Boş';return slot}const p=R.players.find(p=>p.id===entry.playerId);const image=document.createElement('img'),name=document.createElement('strong'),timer=document.createElement('span'),progress=document.createElement('progress');image.src=p.art;image.alt=p.name;name.textContent=p.name+' '+p.surname;timer.textContent=(entry.endDay-day)+' gün kaldı · Cap '+(C.config.balCap+entry.targetBoost);progress.max=C.config.durationDays;progress.value=Math.max(0,C.config.durationDays-(entry.endDay-day));progress.setAttribute('aria-label',p.name+' kamp ilerlemesi');slot.append(image,name,timer,progress);return slot}));
+ $('campCandidates').replaceChildren(...R.players.map(p=>{const b=document.createElement('button');b.type='button';b.className='camp-candidate';b.disabled=!C.eligible(s,p);b.setAttribute('aria-pressed',String(p.id===selectedId));const image=document.createElement('img'),name=document.createElement('strong'),cap=document.createElement('small');image.src=p.art;image.alt='';name.textContent=p.name+' '+p.surname;cap.textContent='Cap '+R.cap(p)+(c.entries.some(e=>e.playerId===p.id&&e.status==='running')?' · Kampta':R.cap(p)>=C.config.balMaxCap?' · En yüksek sınır':!C.near(s,p)?' · En az bir stat '+(R.cap(p)-C.config.nearCap)+' olmalı':' → '+(R.cap(p)+C.config.capGain));b.append(image,name,cap);b.onclick=()=>{selectedId=p.id;render()};return b}));
+ if(!R.players.some(p=>p.id===selectedId&&C.eligible(s,p)))selectedId=null;refreshResources();
+}
+function refresh(){const result=RoomSystem.campSync(R.players,day);if(result.completed.length){$('campNotice').textContent=result.completed.map(id=>{const p=R.players.find(p=>p.id===id);return p.name+' '+p.surname+': stat sınırı '+R.cap(p)}).join(' · ');window.TeamView?.refresh?.()}render()}
+$('campEnroll').onclick=()=>{const p=R.players.find(p=>p.id===selectedId);if(!p)return;const ok=RoomSystem.campEnroll(p,day);$('campNotice').textContent=ok?p.name+' '+p.surname+' kampa katıldı. Bitiş: '+(day+C.config.durationDays)+'. oyun günü.':'Kayıt tamamlanamadı. Kaynaklarını ve tarayıcının kayıt iznini kontrol et.';if(ok)selectedId=null;refresh()};
+$('campAlert').onclick=()=>{$('teamTab').click();$('campPanel').scrollIntoView({behavior:'smooth',block:'start'})};
+window.CampSystem={refresh,refreshResources,advance(next){if(!Number.isSafeInteger(next)||next<1||next===lastDay)return;day=next;lastDay=next;refresh()}};
+refresh();
+})();

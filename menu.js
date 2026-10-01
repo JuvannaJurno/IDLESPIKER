@@ -6,10 +6,11 @@ const tiers=[...document.querySelectorAll('.tier:not([hidden])')],pulses=[],litU
 let frame=0,toastTimer=0,completionTimer=0;
 const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
 function persist(){try{localStorage.setItem(STORE,JSON.stringify(state));storageAvailable=true}catch{storageAvailable=false}$('saveStatus').textContent=storageAvailable?'İlerlemen bu tarayıcıda kaydedilir.':'Bu tarayıcı kaydetmeye izin vermiyor; ilerleme bu oturumda tutulur.'}
-function render(){window.LeagueCalendar?.refresh(state);const day=state.day,clicks=state.clicksToday,week=MenuState.week(day),start=(week-1)*7+1;
+function render(){window.LeagueSeason?.refresh?.(state);window.CampSystem?.advance(state.day);window.LeagueCalendar?.refresh(state);const day=state.day,clicks=state.clicksToday,week=MenuState.week(day),start=(week-1)*7+1;
  $('mobileCount').textContent=clicks;$('mobileDay').textContent=day+'. gün';$('calendarSummary').textContent=MenuState.dayName(day)+' · '+(MenuState.isMatchDay(day)?'Maç günü':'Hazırlık günü');$('weekLabel').textContent='HAFTA '+String(week).padStart(2,'0');
  $('calendar').replaceChildren(...Array.from({length:7},(_,i)=>{const n=start+i,cell=document.createElement('div');cell.className='calendar-day'+(n<day?' past':'')+(n===day?' today':'')+(MenuState.isMatchDay(n)?' match':'');cell.setAttribute('aria-label',n+'. gün, '+MenuState.dayName(n)+(n===day?', bugün':'')+(MenuState.isMatchDay(n)?', maç günü':''));if(n===day)cell.setAttribute('aria-current','date');const name=document.createElement('small');name.textContent=['PZT','SAL','ÇAR','PER','CUM','CMT','PAZ'][i];const number=document.createElement('strong');number.textContent=String(n).padStart(2,'0');const fill=document.createElement('span');fill.className='calendar-fill';fill.style.height=(n<day?100:n===day?clicks:0)+'%';cell.append(fill,name,number);if(n===day){cell.setAttribute('role','progressbar');cell.setAttribute('aria-valuemin','0');cell.setAttribute('aria-valuemax','100');cell.setAttribute('aria-valuenow',clicks);cell.setAttribute('aria-valuetext',clicks+' / 100 tıklama');const amount=document.createElement('span');amount.className='calendar-cell-count';amount.textContent=clicks+'/100';cell.append(amount)}return cell}));
- $('matchCountdown').textContent=MenuState.isMatchDay(day)?(state.clicksToday<50?'Bugün · '+(50-state.clicksToday)+' talimat sonra':'Bugün · Maç zamanı'):(7-day%7)+' gün sonra';
+ const next=window.LeagueSeason?.progress?.().next;
+ $('matchCountdown').textContent=window.LeagueSeason?(next?(next.day<day||next.day===day&&clicks>=50?'Maç hazır':next.day===day?(50-clicks)+' talimat sonra':(next.day-day)+' gün sonra'):'Prolog tamamlandı'):MenuState.isMatchDay(day)?(state.clicksToday<50?'Bugün · '+(50-state.clicksToday)+' talimat sonra':'Bugün · Maç zamanı'):(7-day%7)+' gün sonra';
 }
 function energize(index,now){const tier=tiers[index];litUntil[index]=Math.max(litUntil[index],now+450);tier.classList.add('energized');window.MenuFeedback?.floor(tier);tier.querySelector('.energy-status').lastChild.textContent=' Enerji alındı';}
 function animate(now){const height=$('workflow').getBoundingClientRect().height-20,top=$('workflow').getBoundingClientRect().top;const crossings=tiers.map(t=>{const r=t.querySelector('.connector').getBoundingClientRect();return r.top-top+r.height/2});
@@ -27,4 +28,4 @@ RoomSystem.setAutoClick?.(()=>giveInstruction('auto'));
 for(const id of ['closeMatch','laterMatch'])$(id).addEventListener('click',()=>$('matchDialog').close());
 $('matchDialog').addEventListener('close',()=>$('energyButton').focus());
 window.addEventListener('storage',event=>{if(event.key===STORE){try{state=MenuState.normalize(JSON.parse(event.newValue));render()}catch{}}});
-render();if(!storageAvailable)$('saveStatus').textContent='İlerleme bu oturumda tutulur.';
+window.MenuUI={refresh:render};render();if(!storageAvailable)$('saveStatus').textContent='İlerleme bu oturumda tutulur.';

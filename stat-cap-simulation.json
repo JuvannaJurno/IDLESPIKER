@@ -1,0 +1,508 @@
+{
+  "assumptions": "98 game days; seven starters at main stat 18, other stats 15; actual income, seeded critical rolls, purchases using daily 20 budget. Compare one role stat versus cheapest training across all seven stats. Weekly-away adds an 8-hour absence subject to the actual 2-hour base offline cap. AP income remains unchanged. Unlimited elapsed idle time can eventually fund any finite cost.",
+  "allStatsCost": 70398685,
+  "legacyAllStatsCost": 26301660,
+  "noBreadthCost": 3590440,
+  "legacyNoBreadthCost": 2714600,
+  "balSameAPBudget": {
+    "startingMain": 45,
+    "endingMain": [
+      64,
+      64,
+      64,
+      64,
+      63,
+      63,
+      63
+    ],
+    "cap": 100
+  },
+  "scenarios": [
+    {
+      "name": "normal",
+      "strategy": "role_focus",
+      "manualShare": 0.3333333333333333,
+      "offlineHoursPerWeek": 0,
+      "offlineAP": 0,
+      "snapshots": [
+        {
+          "day": 7,
+          "mainStats": [
+            29,
+            29,
+            29,
+            28,
+            28,
+            28,
+            28
+          ],
+          "minStat": 15,
+          "maxStat": 29,
+          "cappedStats": 0,
+          "apEarned": 7072,
+          "apSpent": 6846,
+          "apRemaining": 226
+        },
+        {
+          "day": 35,
+          "mainStats": [
+            41,
+            41,
+            41,
+            40,
+            40,
+            40,
+            40
+          ],
+          "minStat": 15,
+          "maxStat": 41,
+          "cappedStats": 0,
+          "apEarned": 62931,
+          "apSpent": 62174,
+          "apRemaining": 757
+        },
+        {
+          "day": 70,
+          "mainStats": [
+            47,
+            46,
+            46,
+            46,
+            46,
+            46,
+            46
+          ],
+          "minStat": 15,
+          "maxStat": 47,
+          "cappedStats": 0,
+          "apEarned": 204334,
+          "apSpent": 201672,
+          "apRemaining": 2662
+        },
+        {
+          "day": 98,
+          "mainStats": [
+            49,
+            49,
+            49,
+            49,
+            49,
+            48,
+            48
+          ],
+          "minStat": 15,
+          "maxStat": 49,
+          "cappedStats": 0,
+          "apEarned": 363002,
+          "apSpent": 358422,
+          "apRemaining": 4580
+        }
+      ]
+    },
+    {
+      "name": "normal",
+      "strategy": "spread_all",
+      "manualShare": 0.3333333333333333,
+      "offlineHoursPerWeek": 0,
+      "offlineAP": 0,
+      "snapshots": [
+        {
+          "day": 7,
+          "mainStats": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23
+          ],
+          "minStat": 19,
+          "maxStat": 23,
+          "cappedStats": 0,
+          "apEarned": 7072,
+          "apSpent": 7028,
+          "apRemaining": 44
+        },
+        {
+          "day": 35,
+          "mainStats": [
+            28,
+            29,
+            28,
+            28,
+            29,
+            29,
+            28
+          ],
+          "minStat": 25,
+          "maxStat": 29,
+          "cappedStats": 0,
+          "apEarned": 62931,
+          "apSpent": 62797,
+          "apRemaining": 134
+        },
+        {
+          "day": 70,
+          "mainStats": [
+            32,
+            32,
+            31,
+            32,
+            32,
+            32,
+            31
+          ],
+          "minStat": 28,
+          "maxStat": 32,
+          "cappedStats": 0,
+          "apEarned": 204334,
+          "apSpent": 203672,
+          "apRemaining": 662
+        },
+        {
+          "day": 98,
+          "mainStats": [
+            34,
+            34,
+            33,
+            34,
+            34,
+            34,
+            33
+          ],
+          "minStat": 30,
+          "maxStat": 34,
+          "cappedStats": 0,
+          "apEarned": 363002,
+          "apSpent": 361592,
+          "apRemaining": 1410
+        }
+      ]
+    },
+    {
+      "name": "active",
+      "strategy": "role_focus",
+      "manualShare": 1,
+      "offlineHoursPerWeek": 0,
+      "offlineAP": 0,
+      "snapshots": [
+        {
+          "day": 7,
+          "mainStats": [
+            29,
+            29,
+            29,
+            29,
+            29,
+            28,
+            28
+          ],
+          "minStat": 15,
+          "maxStat": 29,
+          "cappedStats": 0,
+          "apEarned": 7472,
+          "apSpent": 7350,
+          "apRemaining": 122
+        },
+        {
+          "day": 35,
+          "mainStats": [
+            43,
+            43,
+            43,
+            43,
+            43,
+            43,
+            43
+          ],
+          "minStat": 15,
+          "maxStat": 43,
+          "cappedStats": 0,
+          "apEarned": 104456,
+          "apSpent": 101052,
+          "apRemaining": 3404
+        },
+        {
+          "day": 70,
+          "mainStats": [
+            50,
+            50,
+            50,
+            49,
+            49,
+            49,
+            49
+          ],
+          "minStat": 15,
+          "maxStat": 50,
+          "cappedStats": 3,
+          "apEarned": 419966,
+          "apSpent": 418964,
+          "apRemaining": 1002
+        },
+        {
+          "day": 98,
+          "mainStats": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "minStat": 15,
+          "maxStat": 50,
+          "cappedStats": 7,
+          "apEarned": 815330,
+          "apSpent": 471100,
+          "apRemaining": 344230
+        }
+      ]
+    },
+    {
+      "name": "active",
+      "strategy": "spread_all",
+      "manualShare": 1,
+      "offlineHoursPerWeek": 0,
+      "offlineAP": 0,
+      "snapshots": [
+        {
+          "day": 7,
+          "mainStats": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23
+          ],
+          "minStat": 19,
+          "maxStat": 23,
+          "cappedStats": 0,
+          "apEarned": 7472,
+          "apSpent": 7462,
+          "apRemaining": 10
+        },
+        {
+          "day": 35,
+          "mainStats": [
+            30,
+            30,
+            29,
+            30,
+            30,
+            30,
+            29
+          ],
+          "minStat": 26,
+          "maxStat": 30,
+          "cappedStats": 0,
+          "apEarned": 104456,
+          "apSpent": 104170,
+          "apRemaining": 286
+        },
+        {
+          "day": 70,
+          "mainStats": [
+            34,
+            34,
+            34,
+            34,
+            34,
+            34,
+            34
+          ],
+          "minStat": 30,
+          "maxStat": 34,
+          "cappedStats": 0,
+          "apEarned": 419966,
+          "apSpent": 419832,
+          "apRemaining": 134
+        },
+        {
+          "day": 98,
+          "mainStats": [
+            36,
+            36,
+            36,
+            36,
+            36,
+            36,
+            36
+          ],
+          "minStat": 33,
+          "maxStat": 36,
+          "cappedStats": 0,
+          "apEarned": 815330,
+          "apSpent": 814975,
+          "apRemaining": 355
+        }
+      ]
+    },
+    {
+      "name": "weekly-away",
+      "strategy": "role_focus",
+      "manualShare": 0.3333333333333333,
+      "offlineHoursPerWeek": 8,
+      "offlineAP": 1004040,
+      "snapshots": [
+        {
+          "day": 7,
+          "mainStats": [
+            35,
+            34,
+            34,
+            34,
+            34,
+            34,
+            34
+          ],
+          "minStat": 15,
+          "maxStat": 35,
+          "cappedStats": 0,
+          "apEarned": 22912,
+          "apSpent": 22652,
+          "apRemaining": 260
+        },
+        {
+          "day": 35,
+          "mainStats": [
+            48,
+            47,
+            47,
+            47,
+            47,
+            47,
+            47
+          ],
+          "minStat": 15,
+          "maxStat": 48,
+          "cappedStats": 0,
+          "apEarned": 253731,
+          "apSpent": 252490,
+          "apRemaining": 1241
+        },
+        {
+          "day": 70,
+          "mainStats": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "minStat": 15,
+          "maxStat": 50,
+          "cappedStats": 7,
+          "apEarned": 656134,
+          "apSpent": 471100,
+          "apRemaining": 185034
+        },
+        {
+          "day": 98,
+          "mainStats": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "minStat": 15,
+          "maxStat": 50,
+          "cappedStats": 7,
+          "apEarned": 1367042,
+          "apSpent": 471100,
+          "apRemaining": 895942
+        }
+      ]
+    },
+    {
+      "name": "weekly-away",
+      "strategy": "spread_all",
+      "manualShare": 0.3333333333333333,
+      "offlineHoursPerWeek": 8,
+      "offlineAP": 1004040,
+      "snapshots": [
+        {
+          "day": 7,
+          "mainStats": [
+            26,
+            26,
+            25,
+            26,
+            26,
+            26,
+            25
+          ],
+          "minStat": 22,
+          "maxStat": 26,
+          "cappedStats": 0,
+          "apEarned": 22912,
+          "apSpent": 22738,
+          "apRemaining": 174
+        },
+        {
+          "day": 35,
+          "mainStats": [
+            32,
+            33,
+            32,
+            32,
+            33,
+            32,
+            32
+          ],
+          "minStat": 29,
+          "maxStat": 33,
+          "cappedStats": 0,
+          "apEarned": 253731,
+          "apSpent": 253361,
+          "apRemaining": 370
+        },
+        {
+          "day": 70,
+          "mainStats": [
+            36,
+            36,
+            35,
+            36,
+            36,
+            36,
+            35
+          ],
+          "minStat": 32,
+          "maxStat": 36,
+          "cappedStats": 0,
+          "apEarned": 656134,
+          "apSpent": 655316,
+          "apRemaining": 818
+        },
+        {
+          "day": 98,
+          "mainStats": [
+            38,
+            38,
+            38,
+            38,
+            38,
+            38,
+            38
+          ],
+          "minStat": 35,
+          "maxStat": 38,
+          "cappedStats": 0,
+          "apEarned": 1367042,
+          "apSpent": 1364977,
+          "apRemaining": 2065
+        }
+      ]
+    }
+  ]
+}

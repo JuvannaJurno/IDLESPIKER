@@ -1,0 +1,26 @@
+const fs=require('fs'),path=require('path'),http=require('http'),assert=require('assert');
+const {chromium}=require(path.resolve(path.dirname(process.execPath),'../node_modules/playwright'));
+const server=http.createServer((req,res)=>{const file=path.join(__dirname,decodeURIComponent(new URL(req.url,'http://localhost').pathname));fs.readFile(file,(e,b)=>{if(e)return res.writeHead(404).end();res.setHeader('Content-Type',file.endsWith('.mp3')?'audio/mpeg':file.endsWith('.wav')?'audio/wav':file.endsWith('.js')?'text/javascript':'text/html');res.end(b)})});
+(async()=>{let browser;try{await new Promise(r=>server.listen(0,r));browser=await chromium.launch({channel:'msedge',headless:true,args:['--autoplay-policy=no-user-gesture-required']});const page=await browser.newPage();await page.goto('http://localhost:'+server.address().port+'/index.html');await page.evaluate(()=>{GameAudio.setEnabled(false)});
+await page.goto('http://localhost:'+server.address().port+'/game-audio.js');await page.evaluate(()=>{document.body.innerHTML='';localStorage.clear();window.media=[];const Native=window.Audio;window.Audio=function(src){const a=new Native(src);media.push(a);return a}});await page.addScriptTag({url:'/game-audio.js'});
+await page.waitForFunction(()=>media[0].currentTime>.1);assert(await page.evaluate(()=>!media[0].paused),'menu autoplay');
+await page.evaluate(()=>GameAudio.setMode('match'));await page.waitForFunction(()=>media[1].currentTime>.1);
+await page.evaluate(()=>GameAudio.point(true));await page.waitForTimeout(700);assert(await page.evaluate(()=>!media[1].paused&&media.some(a=>a.src.includes('01%20-')&&!a.paused)),'continuous crowd + point');
+const crowdBefore=await page.evaluate(()=>media[2].volume);
+await page.evaluate(()=>GameAudio.cue('serve'));await page.waitForTimeout(450);
+const fading=await page.evaluate(()=>({volume:media[2].volume,playing:!media[2].paused,cheering:media.some(a=>a.src.includes('01%20-')&&!a.paused)}));
+assert(fading.playing&&fading.cheering&&fading.volume>0&&fading.volume<crowdBefore,'crowd carries into rally and fades');
+await page.evaluate(()=>GameAudio.unlock());await page.waitForTimeout(250);assert(await page.evaluate(()=>!media[2].paused&&media[2].volume>0&&media[2].volume<.14*.9),'sync preserves fade');
+await page.waitForTimeout(1600);assert(await page.evaluate(()=>media.slice(2,6).every(a=>a.paused)&&media[1].paused&&!media.at(-1).paused&&media.at(-1).src.includes('11%20-%20Ambience')&&Math.abs(media.at(-1).volume-.14*.12)<.00001),'rally stays silent across background recovery timer');
+await page.evaluate(()=>{GameAudio.setPaused(true);GameAudio.setPaused(false);GameAudio.setEnabled(false);GameAudio.setEnabled(true)});await page.waitForFunction(()=>!media.at(-1).paused);assert(await page.evaluate(()=>media.slice(2,6).every(a=>a.paused)&&media[1].paused&&!media.at(-1).paused&&media.at(-1).src.includes('11%20-%20Ambience')&&Math.abs(media.at(-1).volume-.14*.12)<.00001),'resume/mute do not restart rally crowd');
+await page.evaluate(()=>GameAudio.hit('hard'));await page.waitForFunction(()=>media.some(a=>a.src.includes('hardball')&&!a.paused));
+await page.evaluate(()=>GameAudio.point(true));await page.waitForFunction(()=>media.some(a=>a.src.includes('01%20-')&&!a.paused));
+await page.evaluate(()=>{GameAudio.finish();GameAudio.setPaused(true)});assert(await page.evaluate(()=>!media[1].paused),'final result keeps crowd');
+await page.evaluate(()=>{GameAudio.setMode('match');GameAudio.setPaused(true)});assert(await page.evaluate(()=>media.every(a=>a.paused)),'pause stops all');await page.evaluate(()=>GameAudio.setPaused(false));await page.waitForFunction(()=>!media[1].paused);
+await page.waitForFunction(()=>media.every(a=>a.readyState>=2||a.error),null,{timeout:30000});assert.deepEqual(await page.evaluate(()=>media.filter(a=>a.error).map(a=>[a.src,a.error.code])),[],'all files decode');
+for(const cue of ['serve','bounce','approach','jump','set']){await page.evaluate(k=>GameAudio.cue(k),cue);await page.waitForTimeout(310)}
+await page.evaluate(()=>GameAudio.setMode('menu'));await page.waitForFunction(()=>!media[0].paused);assert(await page.evaluate(()=>media.slice(1).every(a=>a.paused)),'menu transition cleanup');
+await page.evaluate(()=>GameAudio.setEnabled(false));assert(await page.evaluate(()=>media.every(a=>a.paused)));await page.evaluate(()=>GameAudio.setEnabled(true));await page.waitForFunction(()=>!media[0].paused);
+await page.evaluate(()=>{GameAudio.setEnabled(false);const a=media[0],play=a.play.bind(a);a.play=()=>{a.play=play;return Promise.reject(new DOMException('Blocked','NotAllowedError'))};GameAudio.setEnabled(true)});await page.waitForTimeout(100);assert(await page.evaluate(()=>media[0].paused));await page.evaluate(()=>GameAudio.unlock());await page.waitForFunction(()=>!media[0].paused);
+console.log('PASS: real Edge autoplay, all MP3 decode, between-rally crowd, quiet continuous ambience during rallies, final-result audio, pause/resume, cue playback, menu cleanup, mute recovery.');
+}finally{await browser?.close();server.close()}})().catch(e=>{console.error(e);process.exitCode=1});

@@ -1,0 +1,151 @@
+{
+  "assumptions": "One manual instruction every 2 or 5 seconds, except the first 3 seconds; deterministic non-critical income; buy priority list with daily budget when affordable; 45 seconds per match prompt. AP shown before player training spending. Away AP does not advance calendar.",
+  "scenarios": [
+    {
+      "name": "active",
+      "manualEvery": 2,
+      "assistantAt": 396,
+      "manuals": 580,
+      "autos": 151,
+      "matchPauses": 1,
+      "snapshots": [
+        {
+          "minute": 1,
+          "level": 8,
+          "ap": 215,
+          "budget": 0,
+          "manualAP": 7.5,
+          "autoRate": 0,
+          "blocks": 0,
+          "day": 1
+        },
+        {
+          "minute": 5,
+          "level": 11,
+          "ap": 1245,
+          "budget": 20,
+          "manualAP": 9,
+          "autoRate": 0,
+          "blocks": 0,
+          "day": 2
+        },
+        {
+          "minute": 10,
+          "level": 13,
+          "ap": 3092,
+          "budget": 20,
+          "manualAP": 10,
+          "autoRate": 0.2,
+          "blocks": 1,
+          "day": 4
+        },
+        {
+          "minute": 15,
+          "level": 14,
+          "ap": 5486,
+          "budget": 20,
+          "manualAP": 12.5,
+          "autoRate": 0.2,
+          "blocks": 2,
+          "day": 6
+        },
+        {
+          "minute": 20,
+          "level": 15,
+          "ap": 7687,
+          "budget": 20,
+          "manualAP": 13,
+          "autoRate": 0.2,
+          "blocks": 3,
+          "day": 8
+        }
+      ],
+      "offlineHour": 7920,
+      "purchases": [
+        {
+          "second": 396,
+          "id": "assistant",
+          "level": 1
+        },
+        {
+          "second": 682,
+          "id": "basic",
+          "level": 1
+        },
+        {
+          "second": 968,
+          "id": "collect",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "relaxed",
+      "manualEvery": 5,
+      "assistantAt": 985,
+      "manuals": 243,
+      "autos": 43,
+      "matchPauses": 0,
+      "snapshots": [
+        {
+          "minute": 1,
+          "level": 7,
+          "ap": 90,
+          "budget": 0,
+          "manualAP": 7,
+          "autoRate": 0,
+          "blocks": 0,
+          "day": 1
+        },
+        {
+          "minute": 5,
+          "level": 10,
+          "ap": 463,
+          "budget": 0,
+          "manualAP": 8.5,
+          "autoRate": 0,
+          "blocks": 0,
+          "day": 1
+        },
+        {
+          "minute": 10,
+          "level": 11,
+          "ap": 984,
+          "budget": 20,
+          "manualAP": 9,
+          "autoRate": 0,
+          "blocks": 0,
+          "day": 2
+        },
+        {
+          "minute": 15,
+          "level": 12,
+          "ap": 1536,
+          "budget": 20,
+          "manualAP": 9.5,
+          "autoRate": 0,
+          "blocks": 0,
+          "day": 2
+        },
+        {
+          "minute": 20,
+          "level": 13,
+          "ap": 2532,
+          "budget": 0,
+          "manualAP": 10,
+          "autoRate": 0.2,
+          "blocks": 1,
+          "day": 3
+        }
+      ],
+      "offlineHour": 7200,
+      "purchases": [
+        {
+          "second": 985,
+          "id": "assistant",
+          "level": 1
+        }
+      ]
+    }
+  ]
+}

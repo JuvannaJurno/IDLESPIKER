@@ -1,51 +1,32 @@
-const assert=require('assert'),R=require('./room-rules.js');
-function buy(s,id){const r=R.catalog.find(r=>r.id===id);if(R.count(s,id)){assert(R.upgrade(s,id));return}assert(R.unlock(s,r.floor));assert(R.choose(s,r.floor,s.floors[r.floor].length-1,id))}
-let s=R.defaults();s.budget=1e6;assert.equal(R.effects(s).clickAP,1);
-for(const r of R.catalog){for(let n=0;n<3;n++){buy(s,r.id);assert.equal(R.value(s,r.id),r.values[n])}assert.equal(R.count(s,r.id),3)}
-assert.equal(R.effects(s).clickAP,4*1.35*1.15*1.15*1.1);assert.equal(R.effects(s).autoRate,.3*1.3);assert.equal(R.effects(s).slots,3);assert.equal(R.effects(s).transition,175);assert.equal(R.effects(s).rest,280);assert.equal(R.effects(s).travel,2400/1.15);assert(!R.unlock(s,0));
-const before=s.ap,e=R.effects(s);R.income(s,false,()=>0);assert.equal(s.ap-before,e.clickAP*5);const budget=s.budget;const result=R.income(s,true,()=>.99);assert.equal(result.ap,e.clickAP+e.dayAP);assert.equal(s.budget,budget+20);
-s.lastSeen=0;let gain=R.offline(s,24*3600*1000);assert.equal(gain,0);assert.equal(R.offline(s,24*3600*1000),0);
-s=R.defaults();s.lastSeen=0;assert.equal(R.offline(s,1e9),0);s.budget=40;assert(R.unlock(s,0));assert(!R.choose(s,0,0,'assistant'));assert(R.choose(s,0,0,'basic'));assert(!R.unlock(s,1));assert.equal(s.budget,0);
-s=R.defaults();s.budget=1e6;for(let i=0;i<3;i++)buy(s,'basic');assert(R.unlock(s,0));assert(!R.choose(s,0,3,'basic'));assert(R.choose(s,0,3,'tempo'));assert.equal(R.effects(s).clickAP,4*1.1);
-assert.deepEqual(R.normalize({floors:[{},['basic','assistant','assistant','assistant','assistant']]}).floors[1],['assistant','assistant','assistant']);assert.equal(R.migrate({budget:20,floors:[['old','old'],[],[],[],[]]}).budget,120);
-console.log('PASS: all 14 blocks and 42 levels, multiplier composition, critical AP, day rewards, department restrictions, copy limits, budget, offline cap and single claim, migration refund.');
-const fs=require('fs'),vm=require('vm');
-class Element{constructor(){this.children=[];this.events={};this.dataset={};this.isConnected=true}append(...v){this.children.push(...v)}replaceChildren(...v){this.children=v}addEventListener(k,f){this.events[k]=f}close(){this.open=false;this.events.close?.()}showModal(){this.open=true}focus(){} }
-let now=100000,tick;const nodes={},events={},data={},initial=R.defaults();initial.lastSeen=now;initial.floors[1]=['assistant','offline'];data['idle-spiker-rooms-v2']=JSON.stringify(initial);
+const assert=require('assert'),fs=require('fs'),vm=require('vm'),R=require('./room-rules.js');
+function installed(ids){const s=R.defaults();for(const id of ids){const r=R.catalog.find(r=>r.id===id);s.floors[r.floor].push(id)}return s}
+function mature(ids=[]){const s=installed(ids);s.instructions=3500;return s}
+// Levels do not create budget; each completed game day gives exactly 20.
+let s=R.defaults();for(let i=0;i<3;i++){const gain=R.income(s,false,()=>1);assert(gain.leveledUp);assert.equal(gain.level,i+2)}
+assert.equal(s.ap,13.5);assert.equal(s.budget,0);assert(!R.purchase(s,1,'assistant'));const T=require('./team-rules.js'),p=T.generate()[0];p.set=18;p.baseStats.set=18;assert(T.train(p,'set',n=>{if(s.ap<n)return false;s.ap-=n;return true}));
+for(let i=3;i<200;i++)R.income(s,i%100===99,()=>1);assert.equal(s.budget,40);const beforeBuy=s.ap;assert(R.purchase(s,1,'assistant'));assert.equal(s.ap,beforeBuy);assert.equal(s.budget,0);assert.equal(R.effects(s).autoRate,.2);assert.equal(R.effects(s).offlineHours,2);assert.deepEqual(R.normalize(JSON.parse(JSON.stringify(s))),s);
+console.log('PASS: fast levels, AP player training, fixed daily budget and budget-funded automation.');
+// Each department has a different economic purpose; manual multipliers never leak into auto.
+s=mature(['basic','basic','basic','tempo','tempo','tempo','focus']);let e=R.effects(s);assert.equal(e.clickAP,70.5);assert.equal(e.autoAP,13.5);assert.equal(R.income(s,false,()=>0,'auto').ap,13.5);assert.equal(R.income(s,false,()=>0).ap,352.5);
+s=mature(['meal','drink','diet']);assert.equal(R.income(s,false,()=>1).ap,13.5);let gain=R.income(s,true,()=>1);assert.equal(gain.ap,33.5);assert.equal(s.budget,20);assert.equal(R.effects(s).offlineHours,0);s.floors[1]=['assistant'];assert.equal(R.effects(s).offlineHours,4);
+s=mature(['collect','coordinate','rhythm']);assert.equal(R.cost(s,0),40);assert.equal(R.effects(s).travel,2400/1.05);assert.equal(R.effects(s).transition,225);assert.equal(R.effects(s).rest,360);for(const source of ['manual','auto'])for(const completed of [false,true])R.income(s,completed,()=>1,source);assert.equal(s.budget,40);s=installed(['collect','collect','collect','coordinate','coordinate','coordinate','rhythm','rhythm','rhythm']);assert.equal(R.effects(s).travel,2400/1.15);assert.equal(R.effects(s).transition,175);assert.equal(R.effects(s).rest,280);R.income(s,true,()=>1);assert.equal(s.budget,20);
+for(const r of R.catalog){s=R.defaults();s.budget=100000;s.ap=100000;assert(R.purchase(s,r.floor,r.id));assert(R.upgrade(s,r.id));assert(R.upgrade(s,r.id));assert(!R.upgrade(s,r.id));assert.equal(R.value(s,r.id),r.values[2]);assert(!R.purchase(s,r.floor,r.id))}
+s=installed(['drink']);assert.equal(R.income(s,false,()=>1).ap,19);assert.equal(R.income(s,false,()=>1).levelAP,15);
+console.log('PASS: distinct active, automatic, daily, offline and workflow speed effects; all 14 blocks and 42 levels.');
+// Offline production includes every tenth automatic instruction and preserves fractional time.
+s=installed(['assistant','steady']);s.lastSeen=1000;assert.equal(R.offline(s,3000),0);assert.equal(s.autoCarry,.4);assert.equal(R.offline(s,6000),4);assert.equal(s.autoCarry,0);assert.equal(s.steadyProgress,1);assert.equal(R.offline(s,6000),0);assert.equal(R.offline(s,5000),0);assert.equal(s.lastSeen,6000);
+s=installed(['assistant','steady']);s.lastSeen=0;assert.equal(R.offline(s,24*3600000),7200);assert.equal(s.ap,7200);assert.equal(s.instructions,0);assert.equal(s.budget,0);assert.equal(R.offline(s,24*3600000),0);
+s=R.defaults();s.lastSeen=0;assert.equal(R.offline(s,3600000),0);
+for(let level=1;level<=3;level++){s=installed(['assistant',...Array(level).fill('diet')]);s.lastSeen=0;assert.equal(R.offline(s,24*3600000),[4,8,12][level-1]*3600*.2*4)}
+for(let level=1;level<=3;level++){s=mature(['assistant',...Array(level).fill('steady')]);for(let i=0;i<9;i++)assert.equal(R.income(s,false,()=>1,'auto').bonus,0);assert.equal(R.income(s,false,()=>1).bonus,0);s=R.normalize(JSON.parse(JSON.stringify(s)));assert.equal(s.steadyProgress,9);assert.equal(R.income(s,false,()=>1,'auto').bonus,[10,25,60][level-1]);assert.equal(s.steadyProgress,0)}
+assert.deepEqual(R.normalize({floors:[[],['assistant','offline','reach']]}).floors[1],['assistant','steady','steady']);assert.equal(R.normalize({instructions:-1}).instructions,0);assert.equal(R.migrate({budget:20,floors:[['old','old']]}).budget,120);
+console.log('PASS: offline caps, no assistant no production, duplicate claims, clock rollback, fractional carry, steady bonus, legacy saves.');
+// Real runtime: picker cancellation, auto cadence, hidden-tab settlement, reopening and display.
+class Element{constructor(){this.children=[];this.events={};this.dataset={};this.isConnected=true}append(...v){this.children.push(...v)}replaceChildren(...v){this.children=v}addEventListener(k,f){this.events[k]=f}close(){this.open=false;this.events.close?.()}showModal(){this.open=true}focus(){}}
+let now=100000,tick;const nodes={},events={},data={},initial=installed(['assistant','steady']);initial.lastSeen=now;data['idle-spiker-rooms-v2']=JSON.stringify(initial);
 const doc={hidden:false,getElementById:id=>nodes[id]??=new Element(),querySelectorAll:()=>[],createElement:()=>new Element(),addEventListener:(k,f)=>events[k]=f};
-const ctx={RoomRules:R,document:doc,window:{addEventListener(){}},localStorage:{getItem:k=>data[k]||null,setItem:(k,v)=>data[k]=v},Date:{now:()=>now},setInterval:f=>tick=f,console};vm.createContext(ctx);vm.runInContext(fs.readFileSync('rooms.js','utf8'),ctx);let clicks=0;ctx.window.RoomSystem.setAutoClick(()=>{clicks++;ctx.window.RoomSystem.onClick(false)});for(let i=0;i<20;i++){now+=250;tick()}assert.equal(clicks,1);assert.equal(JSON.parse(data['idle-spiker-rooms-v2']).ap,1);
-doc.hidden=true;events.visibilitychange();now+=3600000;tick();assert.equal(clicks,1);doc.hidden=false;events.visibilitychange();assert.equal(JSON.parse(data['idle-spiker-rooms-v2']).ap,1);events.visibilitychange();assert.equal(JSON.parse(data['idle-spiker-rooms-v2']).ap,1);assert.equal(nodes.boostSlots.children.length,0);
-console.log('PASS: real room runtime auto-click cadence, hidden-tab offline production, no duplicate offline award, saved AP.');
-
-// Opening and cancelling construction must not spend budget or reserve a slot.
-ctx.window.RoomSystem.onClick(true);ctx.window.RoomSystem.onClick(true);
-const savedBeforePicker=data['idle-spiker-rooms-v2'];
-nodes.roomSlots0.children[0].onclick();
-assert.equal(data['idle-spiker-rooms-v2'],savedBeforePicker);
-nodes.roomDialog.close();
-assert.equal(data['idle-spiker-rooms-v2'],savedBeforePicker);
-nodes.roomSlots0.children[0].onclick();nodes.roomChoices.children[0].onclick();
-let purchased=JSON.parse(data['idle-spiker-rooms-v2']);
-assert.equal(purchased.budget,0);assert.deepEqual(purchased.floors[0],['basic']);
-const unchanged=JSON.stringify(purchased);
-assert(!R.purchase(purchased,0,'tempo'));assert.equal(JSON.stringify(purchased),unchanged);
-assert(!R.upgrade(purchased,'basic'));assert.equal(JSON.stringify(purchased),unchanged);
-purchased.budget=100;
-const funded=JSON.stringify(purchased);
-assert(!R.purchase(purchased,0,'basic'));assert(!R.purchase(purchased,0,'assistant'));assert.equal(JSON.stringify(purchased),funded);
-assert(R.upgrade(purchased,'basic'));assert.equal(purchased.budget,40);assert.equal(R.count(purchased,'basic'),2);
-console.log('PASS: picker cancellation preserves budget, construction charges once, failed purchases and upgrades preserve state.');
-
-
-for(let level=1;level<=3;level++){
- let state=R.defaults();state.floors[1]=['assistant',...Array(level).fill('steady')];
- for(let i=0;i<9;i++)assert.equal(R.income(state,false,()=>1,'auto').bonus,0);
- const progress=state.steadyProgress;assert.equal(R.income(state,false,()=>1,'manual').bonus,0);assert.equal(state.steadyProgress,progress);
- state=R.normalize(JSON.parse(JSON.stringify(state)));assert.equal(state.steadyProgress,9);
- const result=R.income(state,true,()=>1,'auto');assert.equal(result.bonus,[5,10,20][level-1]);assert.equal(result.ap,1+result.bonus);assert.equal(state.budget,20);assert.equal(state.steadyProgress,0);
- assert.equal(R.income(state,false,()=>1,'auto').bonus,0);
-}
-assert.deepEqual(R.normalize({floors:[[],['assistant','offline','reach']]}).floors[1],['assistant','steady','steady']);
-let all=R.defaults();all.floors=[['basic','tempo'],['assistant'],['meal'],[],['balls']];assert.equal(R.income(all,false,()=>1,'auto').ap,R.effects(all).clickAP);
-assert.equal(R.income(all,false,()=>1,'auto').bonus,0);
-console.log('PASS: every tenth automatic instruction, three bonus levels, manual isolation, reload persistence, migration and unrestricted automatic AP.');
+const ctx={RoomRules:R,document:doc,window:{addEventListener(){}},localStorage:{getItem:k=>data[k]||null,setItem:(k,v)=>data[k]=v},Date:{now:()=>now},setInterval:f=>tick=f,console};vm.createContext(ctx);vm.runInContext(fs.readFileSync('rooms.js','utf8'),ctx);let clicks=0;ctx.window.RoomSystem.setAutoClick(()=>{clicks++;ctx.window.RoomSystem.onClick(false,'auto')});for(let i=0;i<20;i++){now+=250;tick()}assert.equal(clicks,1);assert.equal(JSON.parse(data['idle-spiker-rooms-v2']).ap,4);
+doc.hidden=true;events.visibilitychange();now+=3600000;tick();assert.equal(clicks,1);doc.hidden=false;events.visibilitychange();assert.equal(JSON.parse(data['idle-spiker-rooms-v2']).ap,3964);events.visibilitychange();assert.equal(JSON.parse(data['idle-spiker-rooms-v2']).ap,3964);assert(nodes.offlineNotice.textContent.includes('3.960'));
+const savedBeforePicker=data['idle-spiker-rooms-v2'];nodes.roomSlots0.children[0].onclick();nodes.roomDialog.close();assert.equal(data['idle-spiker-rooms-v2'],savedBeforePicker);
+ctx.window.RoomSystem.onClick(true);ctx.window.RoomSystem.onClick(true);nodes.roomSlots0.children[0].onclick();nodes.roomChoices.children[0].onclick();const purchased=JSON.parse(data['idle-spiker-rooms-v2']);assert.deepEqual(purchased.floors[0],['basic']);const unchanged=JSON.stringify(purchased);assert(!R.purchase(purchased,0,'basic'));assert(!R.purchase(purchased,0,'assistant'));assert.equal(JSON.stringify(purchased),unchanged);
+console.log('PASS: runtime auto cadence, hidden-tab AP, no duplicate awards, visible offline notice, picker cancellation and one-time charging.');
