@@ -31,7 +31,7 @@ function statCost(p,k){
  const stageCap=developmentState().stage==='bal'?Camps.config.balCap:Camps.config.prologueCap;
  const otherGrowth=trainable.reduce((sum,stat)=>sum+(stat===k?0:Math.max(0,p[stat]-p.baseStats[stat])),0);
  const specialization=1+(Math.max(0,otherGrowth-24)/36)**2;
- return Math.ceil((12+4*n+2*n*n+4*Math.max(0,p[k]-stageCap*.7)**3)*specialization);
+ return Math.ceil((12+4*n+2*n*n+6*Math.max(0,p[k]-stageCap*.7)**3)*specialization*(1-Math.max(0,Math.min(.25,root.RoomSystem?.trainingDiscount?.(k)||0))));
 }
 function skillCost(p,id){const skill=skillCatalog.find(s=>s.id===id);if(!skill)return Infinity;let cost=skill.cost;for(let i=0;i<skill.bonus;i++)cost+=statCost({...p,[skill.stat]:p[skill.stat]+i},skill.stat);return cost}
 function train(p,k,pay){if(trainingBlock(p,k))return false;const cost=statCost(p,k);if(!pay(cost))return false;p[k]++;p.training[k]=(p.training[k]||0)+1;savePlayers();root.CampSystem?.refresh();return true}

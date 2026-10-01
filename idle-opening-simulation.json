@@ -1,79 +1,171 @@
 {
-  "assumptions": "One manual instruction every 2 or 5 seconds, except the first 3 seconds; deterministic non-critical income; buy priority list with daily budget when affordable; 45 seconds per match prompt. AP shown before player training spending. Away AP does not advance calendar.",
+  "assumptions": "Fresh save, daily 20 budget, real purchase prices and income, seeded criticals, no training spending. One click every 1/2/5 seconds. 45-second match pauses assume quick result, not a full watched match. Offline generates AP only.",
   "scenarios": [
     {
       "name": "active",
-      "manualEvery": 2,
-      "assistantAt": 396,
-      "manuals": 580,
-      "autos": 151,
-      "matchPauses": 1,
+      "assistantAt": 100,
+      "completedAt": 1035,
+      "offlineHourAP": 61227,
       "snapshots": [
         {
           "minute": 1,
-          "level": 8,
-          "ap": 215,
+          "day": 1,
+          "level": 11,
+          "ap": 917,
           "budget": 0,
-          "manualAP": 7.5,
+          "clickAP": 17.25,
           "autoRate": 0,
-          "blocks": 0,
-          "day": 1
+          "purchases": 0
         },
         {
           "minute": 5,
-          "level": 11,
-          "ap": 1245,
+          "day": 3,
+          "level": 14,
+          "ap": 5215,
           "budget": 20,
-          "manualAP": 9,
-          "autoRate": 0,
-          "blocks": 0,
-          "day": 2
+          "clickAP": 19.2,
+          "autoRate": 0.25,
+          "purchases": 1
         },
         {
           "minute": 10,
-          "level": 13,
-          "ap": 3092,
-          "budget": 20,
-          "manualAP": 10,
-          "autoRate": 0.2,
-          "blocks": 1,
-          "day": 4
+          "day": 7,
+          "level": 16,
+          "ap": 13478,
+          "budget": 0,
+          "clickAP": 26.5,
+          "autoRate": 0.5,
+          "purchases": 3
         },
         {
           "minute": 15,
-          "level": 14,
-          "ap": 5486,
+          "day": 11,
+          "level": 17,
+          "ap": 24084,
           "budget": 20,
-          "manualAP": 12.5,
-          "autoRate": 0.2,
-          "blocks": 2,
-          "day": 6
+          "clickAP": 27.15,
+          "autoRate": 0.545,
+          "purchases": 5
         },
         {
           "minute": 20,
-          "level": 15,
-          "ap": 7687,
-          "budget": 20,
-          "manualAP": 13,
-          "autoRate": 0.2,
-          "blocks": 3,
-          "day": 8
+          "day": 12,
+          "level": 17,
+          "ap": 28223,
+          "budget": 0,
+          "clickAP": 27.15,
+          "autoRate": 0.545,
+          "purchases": 6
         }
       ],
-      "offlineHour": 7920,
       "purchases": [
         {
-          "second": 396,
+          "second": 100,
           "id": "assistant",
           "level": 1
         },
         {
-          "second": 682,
-          "id": "basic",
+          "second": 304,
+          "id": "warmup",
           "level": 1
         },
         {
-          "second": 968,
+          "second": 588,
+          "id": "assistant",
+          "level": 2
+        },
+        {
+          "second": 655,
+          "id": "collect",
+          "level": 1
+        },
+        {
+          "second": 829,
+          "id": "meal",
+          "level": 1
+        },
+        {
+          "second": 958,
+          "id": "crit_smash",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "moderate",
+      "assistantAt": 200,
+      "completedAt": null,
+      "offlineHourAP": 51967,
+      "snapshots": [
+        {
+          "minute": 1,
+          "day": 1,
+          "level": 9,
+          "ap": 423,
+          "budget": 0,
+          "clickAP": 15.95,
+          "autoRate": 0,
+          "purchases": 0
+        },
+        {
+          "minute": 5,
+          "day": 2,
+          "level": 13,
+          "ap": 2960,
+          "budget": 0,
+          "clickAP": 18.55,
+          "autoRate": 0.25,
+          "purchases": 1
+        },
+        {
+          "minute": 10,
+          "day": 4,
+          "level": 14,
+          "ap": 6993,
+          "budget": 0,
+          "clickAP": 25.2,
+          "autoRate": 0.25,
+          "purchases": 2
+        },
+        {
+          "minute": 15,
+          "day": 6,
+          "level": 15,
+          "ap": 11935,
+          "budget": 40,
+          "clickAP": 25.85,
+          "autoRate": 0.25,
+          "purchases": 2
+        },
+        {
+          "minute": 20,
+          "day": 9,
+          "level": 16,
+          "ap": 19620,
+          "budget": 20,
+          "clickAP": 26.5,
+          "autoRate": 0.545,
+          "purchases": 4
+        }
+      ],
+      "purchases": [
+        {
+          "second": 200,
+          "id": "assistant",
+          "level": 1
+        },
+        {
+          "second": 512,
+          "id": "warmup",
+          "level": 1
+        },
+        {
+          "second": 956,
+          "id": "assistant",
+          "level": 2
+        },
+        {
+          "second": 1056,
           "id": "collect",
           "level": 1
         }
@@ -81,68 +173,70 @@
     },
     {
       "name": "relaxed",
-      "manualEvery": 5,
-      "assistantAt": 985,
-      "manuals": 243,
-      "autos": 43,
-      "matchPauses": 0,
+      "assistantAt": 500,
+      "completedAt": null,
+      "offlineHourAP": 22680,
       "snapshots": [
         {
           "minute": 1,
-          "level": 7,
-          "ap": 90,
+          "day": 1,
+          "level": 8,
+          "ap": 141,
           "budget": 0,
-          "manualAP": 7,
+          "clickAP": 15.3,
           "autoRate": 0,
-          "blocks": 0,
-          "day": 1
+          "purchases": 0
         },
         {
           "minute": 5,
-          "level": 10,
-          "ap": 463,
+          "day": 1,
+          "level": 11,
+          "ap": 917,
           "budget": 0,
-          "manualAP": 8.5,
+          "clickAP": 17.25,
           "autoRate": 0,
-          "blocks": 0,
-          "day": 1
+          "purchases": 0
         },
         {
           "minute": 10,
-          "level": 11,
-          "ap": 984,
-          "budget": 20,
-          "manualAP": 9,
-          "autoRate": 0,
-          "blocks": 0,
-          "day": 2
+          "day": 2,
+          "level": 12,
+          "ap": 2413,
+          "budget": 0,
+          "clickAP": 17.9,
+          "autoRate": 0.25,
+          "purchases": 1
         },
         {
           "minute": 15,
-          "level": 12,
-          "ap": 1536,
+          "day": 3,
+          "level": 14,
+          "ap": 4543,
           "budget": 20,
-          "manualAP": 9.5,
-          "autoRate": 0,
-          "blocks": 0,
-          "day": 2
+          "clickAP": 19.2,
+          "autoRate": 0.25,
+          "purchases": 1
         },
         {
           "minute": 20,
-          "level": 13,
-          "ap": 2532,
+          "day": 4,
+          "level": 14,
+          "ap": 7705,
           "budget": 0,
-          "manualAP": 10,
-          "autoRate": 0.2,
-          "blocks": 1,
-          "day": 3
+          "clickAP": 25.2,
+          "autoRate": 0.25,
+          "purchases": 2
         }
       ],
-      "offlineHour": 7200,
       "purchases": [
         {
-          "second": 985,
+          "second": 500,
           "id": "assistant",
+          "level": 1
+        },
+        {
+          "second": 989,
+          "id": "warmup",
           "level": 1
         }
       ]
