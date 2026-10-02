@@ -19,6 +19,6 @@ popup((gain?.bonus?'DÜZENLİ ÇALIŞMA! ':gain?.repeatBonus?'TEKRAR ANTRENMANI!
 burst(r.left+r.width*.5,r.top,critical?12:5);tone(critical?'critical':'tap');if(critical&&!reduced.matches&&navigator.vibrate)navigator.vibrate([18,25,18]);
 animate($('roomAP'),[{transform:'scale(1.22)',color:'#d58b30'},{transform:'scale(1)',color:'#4a6b77'}],{duration:280});
 if(gain?.leveledUp){tone('build');popup('SEVİYE '+gain.level+'!',innerWidth/2,Math.max(90,r.top-65),'level')}
-if(completed){popup('GÜN TAMAMLANDI! · +20 BÜTÇE',innerWidth/2,Math.max(90,r.top-90),'day');burst(innerWidth/2,Math.max(100,r.top-110),18)}}
+if(completed){popup('GÜN TAMAMLANDI! · +'+(window.RoomSystem?.dailyBudget?.()||20)+' BÜTÇE',innerWidth/2,Math.max(90,r.top-90),'day');burst(innerWidth/2,Math.max(100,r.top-110),18)}}
 window.MenuFeedback={instruction,applyGainFeedback,floor(tier){const now=performance.now();if(now-(tier.feedbackAt||-1000)<350)return;tier.feedbackAt=now;animate(tier.querySelector('.room-player'),[{transform:'translateY(0)'},{transform:'translateY(-7px)',offset:.45},{transform:'translateY(0)'}],{duration:280,easing:'ease-out'})},build(name){tone('build');const r=$('energyButton').getBoundingClientRect();popup(name+' HAZIR!',innerWidth/2,r.top-40,'build');burst(innerWidth/2,r.top-60,12)}};
 })();

@@ -1,38 +1,37 @@
 {
-  "seed": 98765,
-  "method": "Actual match engine, 48 single sets per scenario, fixed representative lineup, fatigue and pressure, no manual control or libero substitution",
+  "method": "Shared contact rules, 500 seeded single sets per scenario; representative role training, without positional reach, fatigue or libero substitution.",
   "results": [
     {
       "label": "opening",
       "round": 1,
-      "sets": 48,
-      "wins": 25,
-      "winPercent": 52.083333333333336,
+      "sets": 500,
+      "wins": 224,
+      "winPercent": 44.8,
       "points": [
-        1001,
-        1031
+        10931,
+        11367
       ]
     },
     {
       "label": "final-untrained",
-      "round": 14,
-      "sets": 48,
-      "wins": 3,
-      "winPercent": 6.25,
+      "round": 4,
+      "sets": 500,
+      "wins": 28,
+      "winPercent": 5.6,
       "points": [
-        679,
-        1185
+        8146,
+        12433
       ]
     },
     {
       "label": "final-developed",
-      "round": 14,
-      "sets": 48,
-      "wins": 19,
-      "winPercent": 39.58333333333333,
+      "round": 4,
+      "sets": 500,
+      "wins": 291,
+      "winPercent": 58.2,
       "points": [
-        946,
-        1054
+        11617,
+        10894
       ]
     }
   ]

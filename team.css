@@ -14,3 +14,5 @@
 .card-cap{display:block;padding:6px 10px 0;color:#8b794b;font-size:10px;font-weight:700}
 
 .camp-candidates{max-height:360px;overflow-y:auto;padding:3px;overscroll-behavior:contain}
+
+.team-blackboard{margin:18px 0;padding:18px;background:#fff1d0;border:2px solid #fff8e4;border-radius:16px}.team-blackboard h2{font-size:20px;color:#426d7e;margin:5px 0 12px}.team-blackboard .blackboard-advice{width:100%;max-width:none;margin:0;box-sizing:border-box}.blackboard-advice dl{margin:0;display:grid;gap:10px}.blackboard-advice dl>div{display:grid;grid-template-columns:110px minmax(0,1fr);gap:12px}.blackboard-advice dt{font-size:11px;color:#c2d4bd}.blackboard-advice dd{margin:0;font-size:13px;overflow-wrap:anywhere}.pre-match-team{position:sticky;top:8px;z-index:5;margin:16px 0;padding:16px;background:#fff1d0;border:2px solid #e9bd63;border-radius:14px;color:#426d7e}.pre-match-team p{font-size:12px;line-height:1.5}.pre-match-team .team-action{margin-top:8px}@media(max-width:430px){.blackboard-advice dl>div{grid-template-columns:90px minmax(0,1fr);gap:8px}}

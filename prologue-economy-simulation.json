@@ -1,0 +1,1196 @@
+{
+  "assumptions": "Fresh save through day 19 instruction 50, actual prices and receipts. Minutes exclude time watching matches, introductions and reading/purchasing. AP credited on arrival is represented as settled receipts. No offline AP.",
+  "totalCostToMaxAllPrologueBlocks": 1115,
+  "scenarios": [
+    {
+      "name": "balanced-two-wins",
+      "wins": 2,
+      "manualEvery": 2,
+      "activeMinutes": 12.8,
+      "budgetEarned": 785,
+      "budgetLeft": 40,
+      "earnedAP": 80945,
+      "unlocked": 12,
+      "maxed": 5,
+      "assistantAt": 0,
+      "finalAuto": 3,
+      "checkpoints": [
+        {
+          "round": 1,
+          "day": 4,
+          "budgetEarned": 60,
+          "unlocked": 4,
+          "maxed": 0,
+          "auto": 1.8
+        },
+        {
+          "round": 2,
+          "day": 9,
+          "budgetEarned": 220,
+          "unlocked": 12,
+          "maxed": 0,
+          "auto": 1.8
+        },
+        {
+          "round": 3,
+          "day": 14,
+          "budgetEarned": 465,
+          "unlocked": 12,
+          "maxed": 1,
+          "auto": 3
+        },
+        {
+          "round": 4,
+          "day": 19,
+          "budgetEarned": 785,
+          "unlocked": 12,
+          "maxed": 5,
+          "auto": 3
+        }
+      ],
+      "purchases": [
+        {
+          "day": 1,
+          "second": 0,
+          "id": "assistant",
+          "level": 1,
+          "price": 10
+        },
+        {
+          "day": 1,
+          "second": 0,
+          "id": "warmup",
+          "level": 1,
+          "price": 10
+        },
+        {
+          "day": 2,
+          "second": 75,
+          "id": "collect",
+          "level": 1,
+          "price": 15
+        },
+        {
+          "day": 3,
+          "second": 149,
+          "id": "offline_time",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 4,
+          "second": 223,
+          "id": "assistant",
+          "level": 2,
+          "price": 20
+        },
+        {
+          "day": 5,
+          "second": 267,
+          "id": "echo",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 6,
+          "second": 310,
+          "id": "crit_smash",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 6,
+          "second": 310,
+          "id": "steady",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 7,
+          "second": 354,
+          "id": "meal",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 8,
+          "second": 397,
+          "id": "energy_drink",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 8,
+          "second": 397,
+          "id": "sugar_boost",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 9,
+          "second": 440,
+          "id": "coordinate",
+          "level": 1,
+          "price": 15
+        },
+        {
+          "day": 9,
+          "second": 440,
+          "id": "rhythm",
+          "level": 1,
+          "price": 15
+        },
+        {
+          "day": 11,
+          "second": 528,
+          "id": "assistant",
+          "level": 3,
+          "price": 60
+        },
+        {
+          "day": 11,
+          "second": 528,
+          "id": "warmup",
+          "level": 2,
+          "price": 25
+        },
+        {
+          "day": 12,
+          "second": 556,
+          "id": "echo",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 12,
+          "second": 556,
+          "id": "crit_smash",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 13,
+          "second": 585,
+          "id": "steady",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 13,
+          "second": 585,
+          "id": "meal",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 14,
+          "second": 613,
+          "id": "energy_drink",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 15,
+          "second": 642,
+          "id": "sugar_boost",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 15,
+          "second": 642,
+          "id": "collect",
+          "level": 2,
+          "price": 25
+        },
+        {
+          "day": 16,
+          "second": 670,
+          "id": "coordinate",
+          "level": 2,
+          "price": 25
+        },
+        {
+          "day": 16,
+          "second": 670,
+          "id": "rhythm",
+          "level": 2,
+          "price": 25
+        },
+        {
+          "day": 17,
+          "second": 699,
+          "id": "warmup",
+          "level": 3,
+          "price": 50
+        },
+        {
+          "day": 17,
+          "second": 699,
+          "id": "echo",
+          "level": 3,
+          "price": 50
+        },
+        {
+          "day": 18,
+          "second": 728,
+          "id": "crit_smash",
+          "level": 3,
+          "price": 50
+        },
+        {
+          "day": 19,
+          "second": 756,
+          "id": "steady",
+          "level": 3,
+          "price": 50
+        }
+      ]
+    },
+    {
+      "name": "balanced-no-wins",
+      "wins": 0,
+      "manualEvery": 2,
+      "activeMinutes": 12.8,
+      "budgetEarned": 765,
+      "budgetLeft": 20,
+      "earnedAP": 79676,
+      "unlocked": 12,
+      "maxed": 5,
+      "assistantAt": 0,
+      "finalAuto": 3,
+      "checkpoints": [
+        {
+          "round": 1,
+          "day": 4,
+          "budgetEarned": 60,
+          "unlocked": 4,
+          "maxed": 0,
+          "auto": 1.8
+        },
+        {
+          "round": 2,
+          "day": 9,
+          "budgetEarned": 220,
+          "unlocked": 12,
+          "maxed": 0,
+          "auto": 1.8
+        },
+        {
+          "round": 3,
+          "day": 14,
+          "budgetEarned": 455,
+          "unlocked": 12,
+          "maxed": 1,
+          "auto": 3
+        },
+        {
+          "round": 4,
+          "day": 19,
+          "budgetEarned": 765,
+          "unlocked": 12,
+          "maxed": 5,
+          "auto": 3
+        }
+      ],
+      "purchases": [
+        {
+          "day": 1,
+          "second": 0,
+          "id": "assistant",
+          "level": 1,
+          "price": 10
+        },
+        {
+          "day": 1,
+          "second": 0,
+          "id": "warmup",
+          "level": 1,
+          "price": 10
+        },
+        {
+          "day": 2,
+          "second": 75,
+          "id": "collect",
+          "level": 1,
+          "price": 15
+        },
+        {
+          "day": 3,
+          "second": 149,
+          "id": "offline_time",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 4,
+          "second": 223,
+          "id": "assistant",
+          "level": 2,
+          "price": 20
+        },
+        {
+          "day": 5,
+          "second": 267,
+          "id": "echo",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 6,
+          "second": 310,
+          "id": "crit_smash",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 6,
+          "second": 310,
+          "id": "steady",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 7,
+          "second": 354,
+          "id": "meal",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 8,
+          "second": 397,
+          "id": "energy_drink",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 8,
+          "second": 397,
+          "id": "sugar_boost",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 9,
+          "second": 440,
+          "id": "coordinate",
+          "level": 1,
+          "price": 15
+        },
+        {
+          "day": 9,
+          "second": 440,
+          "id": "rhythm",
+          "level": 1,
+          "price": 15
+        },
+        {
+          "day": 11,
+          "second": 528,
+          "id": "assistant",
+          "level": 3,
+          "price": 60
+        },
+        {
+          "day": 11,
+          "second": 528,
+          "id": "warmup",
+          "level": 2,
+          "price": 25
+        },
+        {
+          "day": 12,
+          "second": 556,
+          "id": "echo",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 12,
+          "second": 556,
+          "id": "crit_smash",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 13,
+          "second": 585,
+          "id": "steady",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 14,
+          "second": 613,
+          "id": "meal",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 14,
+          "second": 613,
+          "id": "energy_drink",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 15,
+          "second": 642,
+          "id": "sugar_boost",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 15,
+          "second": 642,
+          "id": "collect",
+          "level": 2,
+          "price": 25
+        },
+        {
+          "day": 16,
+          "second": 670,
+          "id": "coordinate",
+          "level": 2,
+          "price": 25
+        },
+        {
+          "day": 16,
+          "second": 670,
+          "id": "rhythm",
+          "level": 2,
+          "price": 25
+        },
+        {
+          "day": 17,
+          "second": 699,
+          "id": "warmup",
+          "level": 3,
+          "price": 50
+        },
+        {
+          "day": 18,
+          "second": 728,
+          "id": "echo",
+          "level": 3,
+          "price": 50
+        },
+        {
+          "day": 18,
+          "second": 728,
+          "id": "crit_smash",
+          "level": 3,
+          "price": 50
+        },
+        {
+          "day": 19,
+          "second": 756,
+          "id": "steady",
+          "level": 3,
+          "price": 50
+        }
+      ]
+    },
+    {
+      "name": "balanced-four-wins",
+      "wins": 4,
+      "manualEvery": 2,
+      "activeMinutes": 12.6,
+      "budgetEarned": 825,
+      "budgetLeft": 30,
+      "earnedAP": 83822,
+      "unlocked": 12,
+      "maxed": 6,
+      "assistantAt": 0,
+      "finalAuto": 3,
+      "checkpoints": [
+        {
+          "round": 1,
+          "day": 4,
+          "budgetEarned": 60,
+          "unlocked": 4,
+          "maxed": 0,
+          "auto": 1.8
+        },
+        {
+          "round": 2,
+          "day": 9,
+          "budgetEarned": 230,
+          "unlocked": 12,
+          "maxed": 0,
+          "auto": 1.8
+        },
+        {
+          "round": 3,
+          "day": 14,
+          "budgetEarned": 485,
+          "unlocked": 12,
+          "maxed": 1,
+          "auto": 3
+        },
+        {
+          "round": 4,
+          "day": 19,
+          "budgetEarned": 825,
+          "unlocked": 12,
+          "maxed": 6,
+          "auto": 3
+        }
+      ],
+      "purchases": [
+        {
+          "day": 1,
+          "second": 0,
+          "id": "assistant",
+          "level": 1,
+          "price": 10
+        },
+        {
+          "day": 1,
+          "second": 0,
+          "id": "warmup",
+          "level": 1,
+          "price": 10
+        },
+        {
+          "day": 2,
+          "second": 75,
+          "id": "collect",
+          "level": 1,
+          "price": 15
+        },
+        {
+          "day": 3,
+          "second": 149,
+          "id": "offline_time",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 4,
+          "second": 223,
+          "id": "assistant",
+          "level": 2,
+          "price": 20
+        },
+        {
+          "day": 5,
+          "second": 267,
+          "id": "echo",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 6,
+          "second": 310,
+          "id": "crit_smash",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 6,
+          "second": 310,
+          "id": "steady",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 7,
+          "second": 354,
+          "id": "meal",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 7,
+          "second": 354,
+          "id": "energy_drink",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 8,
+          "second": 397,
+          "id": "sugar_boost",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 8,
+          "second": 397,
+          "id": "coordinate",
+          "level": 1,
+          "price": 15
+        },
+        {
+          "day": 9,
+          "second": 440,
+          "id": "rhythm",
+          "level": 1,
+          "price": 15
+        },
+        {
+          "day": 10,
+          "second": 484,
+          "id": "assistant",
+          "level": 3,
+          "price": 60
+        },
+        {
+          "day": 11,
+          "second": 513,
+          "id": "warmup",
+          "level": 2,
+          "price": 25
+        },
+        {
+          "day": 11,
+          "second": 513,
+          "id": "echo",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 12,
+          "second": 541,
+          "id": "crit_smash",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 13,
+          "second": 570,
+          "id": "steady",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 13,
+          "second": 570,
+          "id": "meal",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 14,
+          "second": 598,
+          "id": "energy_drink",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 14,
+          "second": 598,
+          "id": "sugar_boost",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 15,
+          "second": 627,
+          "id": "collect",
+          "level": 2,
+          "price": 25
+        },
+        {
+          "day": 15,
+          "second": 627,
+          "id": "coordinate",
+          "level": 2,
+          "price": 25
+        },
+        {
+          "day": 16,
+          "second": 656,
+          "id": "rhythm",
+          "level": 2,
+          "price": 25
+        },
+        {
+          "day": 16,
+          "second": 656,
+          "id": "warmup",
+          "level": 3,
+          "price": 50
+        },
+        {
+          "day": 17,
+          "second": 684,
+          "id": "echo",
+          "level": 3,
+          "price": 50
+        },
+        {
+          "day": 18,
+          "second": 713,
+          "id": "crit_smash",
+          "level": 3,
+          "price": 50
+        },
+        {
+          "day": 18,
+          "second": 713,
+          "id": "steady",
+          "level": 3,
+          "price": 50
+        },
+        {
+          "day": 19,
+          "second": 741,
+          "id": "meal",
+          "level": 3,
+          "price": 50
+        }
+      ]
+    },
+    {
+      "name": "focused-two-wins",
+      "wins": 2,
+      "manualEvery": 2,
+      "activeMinutes": 11.3,
+      "budgetEarned": 785,
+      "budgetLeft": 205,
+      "earnedAP": 95584,
+      "unlocked": 12,
+      "maxed": 5,
+      "assistantAt": 0,
+      "finalAuto": 3,
+      "checkpoints": [
+        {
+          "round": 1,
+          "day": 4,
+          "budgetEarned": 60,
+          "unlocked": 3,
+          "maxed": 0,
+          "auto": 1.8
+        },
+        {
+          "round": 2,
+          "day": 9,
+          "budgetEarned": 220,
+          "unlocked": 4,
+          "maxed": 2,
+          "auto": 3
+        },
+        {
+          "round": 3,
+          "day": 14,
+          "budgetEarned": 465,
+          "unlocked": 6,
+          "maxed": 4,
+          "auto": 3
+        },
+        {
+          "round": 4,
+          "day": 19,
+          "budgetEarned": 785,
+          "unlocked": 12,
+          "maxed": 5,
+          "auto": 3
+        }
+      ],
+      "purchases": [
+        {
+          "day": 1,
+          "second": 0,
+          "id": "assistant",
+          "level": 1,
+          "price": 10
+        },
+        {
+          "day": 1,
+          "second": 0,
+          "id": "warmup",
+          "level": 1,
+          "price": 10
+        },
+        {
+          "day": 2,
+          "second": 75,
+          "id": "offline_time",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 3,
+          "second": 149,
+          "id": "assistant",
+          "level": 2,
+          "price": 20
+        },
+        {
+          "day": 5,
+          "second": 236,
+          "id": "warmup",
+          "level": 2,
+          "price": 25
+        },
+        {
+          "day": 7,
+          "second": 323,
+          "id": "assistant",
+          "level": 3,
+          "price": 60
+        },
+        {
+          "day": 8,
+          "second": 352,
+          "id": "warmup",
+          "level": 3,
+          "price": 50
+        },
+        {
+          "day": 9,
+          "second": 380,
+          "id": "crit_smash",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 10,
+          "second": 409,
+          "id": "crit_smash",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 11,
+          "second": 438,
+          "id": "crit_smash",
+          "level": 3,
+          "price": 50
+        },
+        {
+          "day": 11,
+          "second": 438,
+          "id": "echo",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 12,
+          "second": 466,
+          "id": "echo",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 13,
+          "second": 495,
+          "id": "echo",
+          "level": 3,
+          "price": 50
+        },
+        {
+          "day": 13,
+          "second": 495,
+          "id": "steady",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 14,
+          "second": 523,
+          "id": "steady",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 15,
+          "second": 552,
+          "id": "steady",
+          "level": 3,
+          "price": 50
+        },
+        {
+          "day": 15,
+          "second": 552,
+          "id": "collect",
+          "level": 1,
+          "price": 15
+        },
+        {
+          "day": 15,
+          "second": 552,
+          "id": "coordinate",
+          "level": 1,
+          "price": 15
+        },
+        {
+          "day": 16,
+          "second": 580,
+          "id": "meal",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 16,
+          "second": 580,
+          "id": "energy_drink",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 16,
+          "second": 580,
+          "id": "sugar_boost",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 16,
+          "second": 580,
+          "id": "rhythm",
+          "level": 1,
+          "price": 15
+        }
+      ]
+    },
+    {
+      "name": "relaxed-two-wins",
+      "wins": 2,
+      "manualEvery": 5,
+      "activeMinutes": 15,
+      "budgetEarned": 785,
+      "budgetLeft": 40,
+      "earnedAP": 81779,
+      "unlocked": 12,
+      "maxed": 5,
+      "assistantAt": 0,
+      "finalAuto": 3,
+      "checkpoints": [
+        {
+          "round": 1,
+          "day": 4,
+          "budgetEarned": 60,
+          "unlocked": 4,
+          "maxed": 0,
+          "auto": 1.8
+        },
+        {
+          "round": 2,
+          "day": 9,
+          "budgetEarned": 220,
+          "unlocked": 12,
+          "maxed": 0,
+          "auto": 1.8
+        },
+        {
+          "round": 3,
+          "day": 14,
+          "budgetEarned": 465,
+          "unlocked": 12,
+          "maxed": 1,
+          "auto": 3
+        },
+        {
+          "round": 4,
+          "day": 19,
+          "budgetEarned": 785,
+          "unlocked": 12,
+          "maxed": 5,
+          "auto": 3
+        }
+      ],
+      "purchases": [
+        {
+          "day": 1,
+          "second": 0,
+          "id": "assistant",
+          "level": 1,
+          "price": 10
+        },
+        {
+          "day": 1,
+          "second": 0,
+          "id": "warmup",
+          "level": 1,
+          "price": 10
+        },
+        {
+          "day": 2,
+          "second": 96,
+          "id": "collect",
+          "level": 1,
+          "price": 15
+        },
+        {
+          "day": 3,
+          "second": 191,
+          "id": "offline_time",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 4,
+          "second": 286,
+          "id": "assistant",
+          "level": 2,
+          "price": 20
+        },
+        {
+          "day": 5,
+          "second": 336,
+          "id": "echo",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 6,
+          "second": 386,
+          "id": "crit_smash",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 6,
+          "second": 386,
+          "id": "steady",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 7,
+          "second": 436,
+          "id": "meal",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 8,
+          "second": 486,
+          "id": "energy_drink",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 8,
+          "second": 486,
+          "id": "sugar_boost",
+          "level": 1,
+          "price": 20
+        },
+        {
+          "day": 9,
+          "second": 536,
+          "id": "coordinate",
+          "level": 1,
+          "price": 15
+        },
+        {
+          "day": 9,
+          "second": 536,
+          "id": "rhythm",
+          "level": 1,
+          "price": 15
+        },
+        {
+          "day": 11,
+          "second": 636,
+          "id": "assistant",
+          "level": 3,
+          "price": 60
+        },
+        {
+          "day": 11,
+          "second": 636,
+          "id": "warmup",
+          "level": 2,
+          "price": 25
+        },
+        {
+          "day": 12,
+          "second": 668,
+          "id": "echo",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 12,
+          "second": 668,
+          "id": "crit_smash",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 13,
+          "second": 699,
+          "id": "steady",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 13,
+          "second": 699,
+          "id": "meal",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 14,
+          "second": 730,
+          "id": "energy_drink",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 15,
+          "second": 761,
+          "id": "sugar_boost",
+          "level": 2,
+          "price": 30
+        },
+        {
+          "day": 15,
+          "second": 761,
+          "id": "collect",
+          "level": 2,
+          "price": 25
+        },
+        {
+          "day": 16,
+          "second": 793,
+          "id": "coordinate",
+          "level": 2,
+          "price": 25
+        },
+        {
+          "day": 16,
+          "second": 793,
+          "id": "rhythm",
+          "level": 2,
+          "price": 25
+        },
+        {
+          "day": 17,
+          "second": 824,
+          "id": "warmup",
+          "level": 3,
+          "price": 50
+        },
+        {
+          "day": 17,
+          "second": 824,
+          "id": "echo",
+          "level": 3,
+          "price": 50
+        },
+        {
+          "day": 18,
+          "second": 855,
+          "id": "crit_smash",
+          "level": 3,
+          "price": 50
+        },
+        {
+          "day": 19,
+          "second": 886,
+          "id": "steady",
+          "level": 3,
+          "price": 50
+        }
+      ]
+    }
+  ]
+}

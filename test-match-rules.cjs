@@ -1,0 +1,14 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert'),M=require('./match-rules.js'),R=require('./room-rules.js'),T=require('./team-rules.js'),L=require('./league-rules.js');
+const stat=n=>Object.fromEntries(['spike','serve','block','receive','set','stamina','mental'].map(k=>[k,n]));
+function sample(kind,actor,receiver,quality=.65,blockers=[]){const rng=M.seeded(55),counts={};for(let i=0;i<20000;i++){const r=M.resolve({kind,touch:kind==='set'?3:1,actor,receiver,quality,blockers},rng);counts[r.event]=(counts[r.event]||0)+1;counts.quality=(counts.quality||0)+r.quality}return counts}
+assert(sample('serve',stat(40),stat(20)).ace>sample('serve',stat(20),stat(20)).ace);
+assert(sample('attack',stat(35),stat(15)).kill>sample('attack',stat(35),stat(40)).kill);
+assert(sample('attack',stat(30),stat(25),.9).kill>sample('attack',stat(30),stat(25),.3).kill);
+assert(sample('set',stat(40),stat(20)).quality>sample('set',stat(15),stat(20)).quality);
+assert(sample('attack',stat(30),stat(25),.65,[stat(40)]).block>sample('attack',stat(30),stat(25),.65,[stat(15)]).block);
+const s=R.defaults();for(const m of L.schedule().filter(m=>m.ours)){const before=s.ap;assert.equal(R.matchReward(s,m.id,m.round),250+150*m.round);assert.equal(R.matchReward(s,m.id,m.round),0);assert.equal(s.ap-before,250+150*m.round)}assert.equal(R.dailyBudget(s),28);assert.equal(R.income(s,true,()=>1).dayBudget,28);assert.equal(R.dailyBudget(R.normalize(s)),28);assert.equal(R.dailyBudget(R.normalize({budget:5,ap:6})),20);
+const script=fs.readFileSync('deneme-modu.html','utf8').match(/<script>([\s\S]*?)<\/script>/)[1].replace(/init\(\);\s*$/,'');
+const nodes={},c={console,Math,document:{getElementById:id=>nodes[id]??={value:id==='mistakes'?'12':'1',getContext:()=>({})}}};vm.createContext(c);vm.runInContext(script,c);
+vm.runInContext(`function simulate(seed,strength,cosmetics=false){reset();ready=true;paused=false;matchRandom=MatchRules.seeded(seed);for(const p of players)p.stats={spike:strength[p.team],serve:strength[p.team],receive:strength[p.team],set:strength[p.team],block:strength[p.team]};let frames=0;while(!sets.some(Boolean)&&frames++<300000){tick(1/60);if(cosmetics)movementSounds()}if(!sets.some(Boolean))throw Error('Match did not finish');return {winner:sets[0]?0:1,history:JSON.stringify(history),frames}}`,c);
+const a=vm.runInContext('simulate(42,[25,25])',c),b=vm.runInContext('simulate(42,[25,25],true)',c);assert.equal(a.history,b.history);assert.equal(a.frames,b.frames);
+let weak=0,strong=0;for(let i=0;i<24;i++){weak+=vm.runInContext(`simulate(${i},[16,25]).winner===0`,c);strong+=vm.runInContext(`simulate(${i},[35,25]).winner===0`,c)}assert(strong>weak+8,{weak,strong});console.log('PASS: stat directions, pass quality, blocking, idempotent rewards, migration, deterministic cosmetic-independent full sets.',{weakWins:weak,strongWins:strong,matches:24});
