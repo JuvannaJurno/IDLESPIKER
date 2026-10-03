@@ -54,7 +54,7 @@ main{padding-bottom:calc(166px + env(safe-area-inset-bottom))}
 #learningHint{position:fixed;z-index:1000;display:flex;align-items:center;gap:12px;width:280px;max-width:calc(100vw - 20px);padding:11px 13px;border:1px solid #e4cd96;border-radius:12px;background:#fff7dd;color:#665437;box-shadow:0 4px 14px #516b7926;text-align:left;font-family:inherit;font-weight:600;cursor:pointer}
 #learningHint span:first-child{flex:1;font-size:12px;line-height:1.5}#learningHint span:last-child{font-size:21px;font-weight:400;color:#967c51}
 
-#learningSpotlight{position:fixed;inset:0;width:100vw;height:100vh;z-index:999;pointer-events:none;overflow:visible}#learningSpotlight path{fill:rgb(17 29 38 / 68%)}
+#learningSpotlight{position:fixed;inset:0;z-index:999;pointer-events:none;overflow:hidden}#learningSpotlight path{fill:rgb(17 29 38 / 68%)}
 
 #learningHint[data-step^="blocks-"] span:last-child{font-size:11px;white-space:nowrap}
 
