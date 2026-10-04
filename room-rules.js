@@ -13,10 +13,10 @@ const catalog=[
  ['energy_drink',2,'Güne Hazırlık','▤',[3,6,10],v=>'Günün ilk 20 talimatına +'+v+' AP.'],
  ['sugar_boost',2,'Dinlenme Programı','✚',[.1,.2,.3],v=>'Çevrimdışı AP kazancını %'+Math.round(v*100)+' artırır.'],
  ['collect',3,'Rakip Analizi','▤',[1,2,3],v=>'Maçtan '+v+' gün önce hangi oyuncuyu geliştireceğini önerir.'],
- ['coordinate',3,'İlham Anı','✦',[.05,.1,.15],v=>'Özellik geliştirmeleri %'+Math.round(v*100)+' şansla ücretsiz olur. Önce yeterli AP gerekir.'],
- ['rhythm',3,'Zihinsel Hazırlık','◎',[.1,.18,.25],v=>'Mental ve dayanıklılık geliştirmeleri %'+Math.round(v*100)+' daha ucuz.'],
- ['slots',4,'Savunma Ekipmanı','▣',[.1,.18,.25],v=>'Manşet ve blok geliştirmelerinde %'+Math.round(v*100)+' AP indirimi.'],
- ['balls',4,'Hücum Ekipmanı','●',[.1,.18,.25],v=>'Smaç, servis ve pas geliştirmelerinde %'+Math.round(v*100)+' AP indirimi.']
+ ['coordinate',3,'İlham Anı','✦',[.05,.1,.15],v=>'Kart yükseltmeleri %'+Math.round(v*100)+' şansla ücretsiz olur. Önce yeterli AP gerekir.'],
+ ['rhythm',3,'Zihinsel Hazırlık','◎',[.1,.18,.25],v=>'Karttaki mental ve dayanıklılık artışları %'+Math.round(v*100)+' daha ucuz.'],
+ ['slots',4,'Savunma Ekipmanı','▣',[.1,.18,.25],v=>'Karttaki manşet ve blok artışlarında %'+Math.round(v*100)+' AP indirimi.'],
+ ['balls',4,'Hücum Ekipmanı','●',[.1,.18,.25],v=>'Karttaki smaç, servis ve pas artışlarında %'+Math.round(v*100)+' AP indirimi.']
 ].map(([id,floor,name,icon,values,describe])=>({id,floor,name,icon,values,describe}));
 // Fast opening levels, then progressively longer goals over the first session.
 const thresholds=[0,1,2,3,4,5,8,12,20,35,60,100,160,250,400,600,900,1300,1800,2500,3500];

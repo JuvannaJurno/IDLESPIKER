@@ -33,9 +33,24 @@ const overallWeights={
  libero:[0,0,0,55,15,15,15]
 };
 function overall(p){const weights=overallWeights[p.role]||trainable.map(()=>100/trainable.length);return Math.round(trainable.reduce((sum,k,i)=>sum+(Number.isFinite(p[k])?Math.max(0,p[k]):0)*weights[i],0)/100)}
+
+const cardRoles={setter:['set','serve','mental','stamina'],outside:['spike','receive','stamina','mental'],opposite:['spike','serve','block','stamina'],middle:['block','spike','stamina','mental'],libero:['receive','set','mental','stamina']};
+function cardLimit(p){return developmentState().stage==='bal'?10+Math.ceil((cap(p)-50)/3):10}
+function cardLevel(p){return Number.isSafeInteger(p.cardLevel)&&p.cardLevel>0?p.cardLevel:1}
+function cardQuote(p){const level=cardLevel(p),limit=cardLimit(p),role=cardRoles[p.role],gains={};
+ if(!role)return {level,limit,gains,cost:0,blocked:'Pozisyon bulunamadı',before:overall(p),after:overall(p)};
+ for(const [k,n]of [[role[0],3],[role[1],2],[role[2+(level%2===0?1:0)],1]])gains[k]=Math.max(0,Math.min(n,cap(p)-p[k]));
+ for(const k of Object.keys(gains))if(!gains[k])delete gains[k];
+ const points=Object.values(gains).reduce((a,b)=>a+b,0),discount=Object.entries(gains).reduce((n,[k,v])=>n+v*Math.max(0,Math.min(.25,root.RoomSystem?.trainingDiscount?.(k)||0)),0);
+ const cost=points?Math.ceil(140*1.8**(level-1)*(points-discount)/6):0;
+ const next={...p};for(const [k,n]of Object.entries(gains))next[k]+=n;
+ return {level,limit,gains,cost,before:overall(p),after:overall(next),blocked:level>=limit?(developmentState().stage==='bal'?'Bu aşamada en yüksek seviye':'Prolog seviyesi tamamlandı'):!points?'Stat sınırında · Kamp ile sınırı artır':''};
+}
+function upgradeCard(p,pay){const q=cardQuote(p);if(q.blocked||!pay(q.cost))return false;for(const [k,n]of Object.entries(q.gains)){p[k]+=n;p.training[k]=(p.training[k]||0)+n}p.cardLevel=q.level+1;p.cardVersion=1;savePlayers();root.CampSystem?.refresh();return true}
+
 function growth(p){return trainable.reduce((n,k)=>n+Math.max(0,p[k]-p.baseStats[k]),0)}
 function trainingBlock(p,k,amount=1){if(!trainable.includes(k)||!Number.isInteger(amount)||amount<1)return 'Bu özellik çalıştırılamaz.';if(p[k]+amount>cap(p))return 'Stat sınırı: '+cap(p)+'.';return ''}
-function novice(p){for(const k of trainable)p[k]=integer(12,16);for(const k of strengths[p.role])p[k]=integer(17,19);p.stamina=integer(14,17);p.mental=integer(14,17);p.developmentVersion=3;p.training={};p.baseStats=Object.fromEntries(trainable.map(k=>[k,p[k]]));const choices=skillCatalog.filter(s=>s.roles.includes(p.role));const technical=shuffle(choices.filter(s=>s.basic&&!['stamina','mental'].includes(s.stat)))[0];const support=shuffle(choices.filter(s=>s.basic&&['stamina','mental'].includes(s.stat)))[0];const advanced=shuffle(choices.filter(s=>!s.basic))[0];p.skills=[technical,support,advanced].filter(Boolean).map(s=>({id:s.id,unlocked:false}));return p}
+function novice(p){for(const k of trainable)p[k]=integer(12,16);for(const k of strengths[p.role])p[k]=integer(17,19);p.stamina=integer(14,17);p.mental=integer(14,17);p.developmentVersion=3;p.cardVersion=1;p.cardLevel=1;p.training={};p.baseStats=Object.fromEntries(trainable.map(k=>[k,p[k]]));const choices=skillCatalog.filter(s=>s.roles.includes(p.role));const technical=shuffle(choices.filter(s=>s.basic&&!['stamina','mental'].includes(s.stat)))[0];const support=shuffle(choices.filter(s=>s.basic&&['stamina','mental'].includes(s.stat)))[0];const advanced=shuffle(choices.filter(s=>!s.basic))[0];p.skills=[technical,support,advanced].filter(Boolean).map(s=>({id:s.id,unlocked:false}));return p}
 function statCost(p,k){
  const n=Math.max(0,p[k]-p.baseStats[k]);
  const stageCap=developmentState().stage==='bal'?Camps.config.balCap:Camps.config.prologueCap;
@@ -60,11 +75,11 @@ function valid(list){return Array.isArray(list)&&list.length===12&&list.every((p
 let players;try{const stored=JSON.parse(root.localStorage?.getItem('idle-spiker-women-v1')||'null');if(valid(stored))players=stored}catch{}if(!players){players=generate();try{root.localStorage?.setItem('idle-spiker-women-v1',JSON.stringify(players))}catch{}}
 function savePlayers(){try{root.localStorage?.setItem('idle-spiker-women-v1',JSON.stringify(players.map(p=>({...p,art:p.art.startsWith('team-assets/')?p.art:'team-assets/woman-0.svg'}))))}catch{}}
 if(players.some(p=>p.developmentVersion!==3)){try{if(!root.localStorage?.getItem('idle-spiker-pre-cap50-balance'))root.localStorage?.setItem('idle-spiker-pre-cap50-balance',JSON.stringify(players))}catch{}}
-for(const p of players)migrateDevelopment(p);
+for(const p of players){migrateDevelopment(p);if(p.cardVersion!==1){const skillGains=p.skills.filter(s=>s.unlocked).reduce((n,s)=>n+(skillCatalog.find(k=>k.id===s.id)?.bonus||0),0);p.cardLevel=Math.min(cardLimit(p),1+Math.floor(Math.max(0,growth(p)-skillGains)/6));p.cardVersion=1}else p.cardLevel=Math.max(1,Math.min(cardLimit(p),cardLevel(p)))};
 for(const p of players)if(!p.surname)p.surname=surnames[integer(0,surnames.length-1)];savePlayers();
 function rename(id,name,surname){const p=players.find(p=>p.id===id);name=name.trim();surname=surname.trim();if(!p||!name||!surname||name.length>24||surname.length>24)return false;p.name=name;p.surname=surname;savePlayers();root.CampSystem?.refresh();return true}
 const defaults=()=>Object.fromEntries(slots.map((s,i)=>[s.id,players[i].id]));
 function normalize(raw){if(!raw||typeof raw!=='object')return defaults();const used=new Set();return Object.fromEntries(slots.map(s=>{const p=players.find(p=>p.id===raw[s.id]&&p.role===s.role&&!used.has(p.id));if(p)used.add(p.id);return[s.id,p?.id||null]}))}
 function equip(lineup,slot,id){const s=slots.find(s=>s.id===slot),p=players.find(p=>p.id===id);if(!s||!p||p.role!==s.role)return false;for(const k in lineup)if(lineup[k]===id)lineup[k]=null;lineup[slot]=id;return true}
-const api={namePools:{names:Object.freeze(names),surnames:Object.freeze(surnames)},overall,roles,slots,players,generate,valid,skillCatalog,trainable,limits,growth,cap,stageLabel,skillCost,trainingBlock,skillBlock,opponentStats,statCost,train,unlockSkill,rename,savePlayers,defaults,normalize,equip};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.TeamRules=api;
+const api={cardLevel,cardLimit,cardQuote,upgradeCard,namePools:{names:Object.freeze(names),surnames:Object.freeze(surnames)},overall,roles,slots,players,generate,valid,skillCatalog,trainable,limits,growth,cap,stageLabel,skillCost,trainingBlock,skillBlock,opponentStats,statCost,train,unlockSkill,rename,savePlayers,defaults,normalize,equip};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.TeamRules=api;
 })(globalThis);
