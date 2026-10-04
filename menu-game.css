@@ -99,3 +99,18 @@ main{padding-bottom:calc(166px + env(safe-area-inset-bottom))}
 /* The desktop window is a centered phone layout, using the same component rules. */
 .shell{width:100%;max-width:480px;margin-inline:auto}.mobile-nav{width:480px;max-width:100%}.energy-button{width:calc(100% - 28px);max-width:452px}#bootScreen{width:100%;max-width:480px!important}
 @media(min-width:768px){main{padding-top:9px;padding-bottom:185px}.topbar{padding-left:16px;padding-right:16px}}
+
+/* The instruction pulse takes precedence over the affordable-upgrade treatment. */
+.tier.energized .upgrade-room[data-upgrade="ready"]{border-color:#ffc85d!important;background:#fff0b7!important;box-shadow:0 4px 0 #d3ad5d,0 0 12px #ffd25c80!important}
+.tier.energized .upgrade-room[data-upgrade="ready"] .block-upgrade-action{background:#ffe19a;border-color:#e9c66c;color:#87652e;box-shadow:inset 0 1px #fff2c6}
+
+.match-shellbar{justify-content:flex-end}
+
+/* Match viewer header aligns with the in-frame league caption. */
+.match-shellbar{height:54px;padding:7px 12px;background:none}.match-shellbar .match-exit{background:#f8f5e7;border:1px solid #fffdf4;box-shadow:none;border-radius:10px;color:#7b8c7d;font-size:10px;min-height:40px}
+
+#learningHint[data-step="quick-upgrade"] .learning-dismiss{font-size:11px;white-space:nowrap}
+
+body:has(#learningHint[data-step="instruction-path"]:not([hidden])) #rewardLayer{z-index:1000}
+
+#learningHint .tutorial-button-name{display:inline;padding:1px 5px;border:1px solid #d8c79e;border-radius:5px;background:#efe5c9;color:#66522f;font-weight:900;box-decoration-break:clone;-webkit-box-decoration-break:clone}
