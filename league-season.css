@@ -4,3 +4,7 @@
 .league-quick-icon svg{width:25px;height:25px}.season-trophy{display:inline-block}.season-trophy svg{display:block;width:76px;height:76px;margin:0 auto 12px}
 
 #leaguePanel .league-analysis{margin:18px 0;padding:18px;border:2px solid #fff8e4;border-radius:16px;background:#fff1d0}#leaguePanel .league-analysis h2{margin:5px 0 12px;font-size:18px;color:#426d7e}#leaguePanel .blackboard-advice{width:100%;max-width:none;margin:0;box-sizing:border-box}
+
+.league-journey-button{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;margin:12px 0;border:1px solid #9bb8a2;border-radius:13px;background:#e1ecd7;color:#507664;text-align:left;box-shadow:0 3px 0 #bfceaf;font-family:inherit;cursor:pointer}.league-journey-button[hidden]{display:none}.league-journey-button strong,.league-journey-button small{display:block}.league-journey-button strong{font-size:14px}.league-journey-button small{font-size:10px;line-height:1.5;margin-top:5px;color:#7f9479}.league-journey-button>b{font-size:24px}.league-journey-button:active{transform:translateY(2px);box-shadow:none}.league-journey-button:focus-visible{outline:2px solid #6a9178;outline-offset:3px}
+
+.prologue-complete{flex-wrap:wrap}.prologue-complete>div{flex:1 1 150px;min-width:0}.prologue-complete .league-journey-button{width:auto;flex:0 0 110px;min-height:48px;margin:0;padding:10px;gap:6px;background:#567e6e;color:#fff6de;border-color:#4b7161;box-shadow:0 3px 0 #3d6052;font-size:11px;font-weight:800;line-height:1.4}.prologue-complete .league-journey-button>b{font-size:18px}

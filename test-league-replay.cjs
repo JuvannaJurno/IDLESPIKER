@@ -1,0 +1,8 @@
+const assert=require('assert'),R=require('./league-rules'),RR=require('./room-rules');
+const state=R.normalize({mode:'replay',run:1,startDay:25,results:{}});
+assert.equal(R.config.rounds,7);assert.equal(R.history().length,0);assert.deepEqual(R.config.matchDays,[28,33,38,43,48,53,58]);assert(R.standings(state).every(r=>r.played===0&&r.points===0));assert.equal(R.progress(state).rescued,false);
+const games=R.schedule(),pairs=new Set(games.map(m=>[m.home,m.away].sort().join(':')));assert.equal(games.length,28);assert.equal(pairs.size,28);assert.equal(new Set(games.filter(m=>m.ours).map(m=>m.home||m.away)).size,7);
+assert.equal(R.importOwn(state,{7:[15,1],14:[15,2]}),false);assert.equal(R.importOwn(state,{version:3,'rescue1-0-7':[15,1]}),false);
+let wallet=RR.defaults();for(const m of games.filter(m=>m.ours)){assert(R.record(state,m.id,m.home===0?[15,6]:[6,15]));R.settleRounds(state);assert(RR.matchReward(wallet,m.id,m.round)>0);wallet=RR.normalize(wallet);assert.equal(RR.matchReward(wallet,m.id,m.round),0)}
+assert(R.progress(state).prologueComplete);assert(R.progress(state).standingsFinal);assert(R.standings(state).every(r=>r.played===7));assert.equal(wallet.matchRewards.length,7);assert.equal(RR.dailyBudget(wallet),34);assert.deepEqual(R.normalize(state),state);
+const second=R.normalize({mode:'replay',run:2,startDay:60,results:{}});assert.equal(R.importOwn(second,{version:3,...state.results}),false);assert(R.schedule().every(m=>m.id.startsWith('replay2_')));console.log('PASS: full seven-opponent season, zero history, isolated replay IDs, persistence and idempotent rewards.');

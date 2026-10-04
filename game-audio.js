@@ -53,7 +53,9 @@ function point(big=false){
  for(const v of cheers)stop(v);
  const v=cheers[big?0:1+Math.floor(Math.random()*3)];v.a.currentTime=0;v.busy=true;v.a.onended=v.a.onerror=()=>stop(v);v.a.onplaying=()=>{v.timer=setTimeout(()=>fadeOut(v),big?7500:3500)};play(v);
 }
-window.GameAudio={setMode(v){clearShots();cancelFade(bed);mode=v;paused=false;finished=false;rallyActive=false;sync()},setEnabled(v){enabled=!!v;try{localStorage.setItem('idle-spiker-sound',enabled?'on':'off')}catch{}sync()},setPaused(v){paused=!!v;sync()},hit,cue,point,finish(){finished=true;paused=false;rallyActive=false;cancelFade(bed);sync()},unlock:sync};
+let uiContext=null,lastUIClick=-Infinity;
+function uiClick(){if(!enabled||document.hidden||levels.effects<=0||performance.now()-lastUIClick<55)return;lastUIClick=performance.now();try{const Audio=window.AudioContext||window.webkitAudioContext;if(!Audio)return;uiContext??=new Audio();if(uiContext.state==='suspended')uiContext.resume().catch(()=>{});const osc=uiContext.createOscillator(),gain=uiContext.createGain(),t=uiContext.currentTime;osc.type='triangle';osc.frequency.setValueAtTime(780,t);osc.frequency.exponentialRampToValueAtTime(360,t+.045);gain.gain.setValueAtTime(.0001,t);gain.gain.exponentialRampToValueAtTime(.045*levels.effects,t+.004);gain.gain.exponentialRampToValueAtTime(.0001,t+.055);osc.connect(gain);gain.connect(uiContext.destination);osc.start(t);osc.stop(t+.06);osc.onended=()=>{osc.disconnect();gain.disconnect()}}catch{}}
+window.GameAudio={uiClick,setMode(v){clearShots();cancelFade(bed);mode=v;paused=false;finished=false;rallyActive=false;sync()},setEnabled(v){enabled=!!v;try{localStorage.setItem('idle-spiker-sound',enabled?'on':'off')}catch{}sync()},setPaused(v){paused=!!v;sync()},hit,cue,point,finish(){finished=true;paused=false;rallyActive=false;cancelFade(bed);sync()},unlock:sync};
 // Retry blocked playback on every real interaction, including interactions inside the match.
 document.addEventListener('pointerdown',sync);document.addEventListener('keydown',sync);
 document.addEventListener('visibilitychange',sync);window.addEventListener('pageshow',sync);

@@ -9,7 +9,7 @@ code = code.replace(/const catalog=\[\s+\[[\s\S]*?\]\n\]\.map\(\(\[id,floor,name
  ['echo',0,'Çift Dokunuş (Yankı)','◗',[.05,.1,.15],v=>'Topun %'+Math.round(v*100)+' şansla içeride iki kez sekerek çift AP üretme ihtimalini belirler.'],
  ['assistant',1,'Otomatik Asistan','♟',[.2,.33,1],v=>'Saniyede '+v.toLocaleString('tr-TR',{maximumFractionDigits:2})+' talimat. Sen yokken de en az 2 saat AP biriktirir.'],
  ['offline_time',1,'Çevrimdışı Mesai','◷',[2,6,12],v=>'Asistanın çevrimdışı AP biriktirme süresini '+v+' saate çıkarır.'],
- ['steady',1,'Düzenli Çalışma','✦',[10,25,60],v=>'Asistanın her 10. talimatında +'+v+' AP kazandırır.'],
+ ['steady',1,'Düzenli Çalışma','↻',[10,25,60],v=>'Asistanın her 10. talimatında +'+v+' AP kazandırır.'],
  ['meal',2,'Dengeli Öğün','◒',[50,150,400],v=>'100 talimatla tamamlanan her oyun gününde +'+v+' AP.'],
  ['energy_drink',2,'Enerji İçeceği','▤',[.1,.2,.3],v=>'Top geçerken %'+Math.round(v*100)+' şansla normalin 5 katı AP bırakır.'],
  ['sugar_boost',2,'Şeker Takviyesi','✚',[1.5,2,2.5],v=>'Diğer tüm departmanlardan alınacak AP miktarını '+v+' katına çıkarır.'],
