@@ -35,14 +35,14 @@ const overallWeights={
 function overall(p){const weights=overallWeights[p.role]||trainable.map(()=>100/trainable.length);return Math.round(trainable.reduce((sum,k,i)=>sum+(Number.isFinite(p[k])?Math.max(0,p[k]):0)*weights[i],0)/100)}
 
 const cardRoles={setter:['set','serve','mental','stamina'],outside:['spike','receive','stamina','mental'],opposite:['spike','serve','block','stamina'],middle:['block','spike','stamina','mental'],libero:['receive','set','mental','stamina']};
-function cardLimit(p){return developmentState().stage==='bal'?10+Math.ceil((cap(p)-50)/3):10}
+function cardLimit(p){return developmentState().stage==='bal'?11+Math.ceil((cap(p)-50)/3):10}
 function cardLevel(p){return Number.isSafeInteger(p.cardLevel)&&p.cardLevel>0?p.cardLevel:1}
 function cardQuote(p){const level=cardLevel(p),limit=cardLimit(p),role=cardRoles[p.role],gains={};
  if(!role)return {level,limit,gains,cost:0,blocked:'Pozisyon bulunamadı',before:overall(p),after:overall(p)};
  for(const [k,n]of [[role[0],3],[role[1],2],[role[2+(level%2===0?1:0)],1]])gains[k]=Math.max(0,Math.min(n,cap(p)-p[k]));
  for(const k of Object.keys(gains))if(!gains[k])delete gains[k];
- const points=Object.values(gains).reduce((a,b)=>a+b,0),discount=Object.entries(gains).reduce((n,[k,v])=>n+v*Math.max(0,Math.min(.25,root.RoomSystem?.trainingDiscount?.(k)||0)),0);
- const cost=points?Math.ceil(140*1.8**(level-1)*(points-discount)/6):0;
+ const points=Object.values(gains).reduce((a,b)=>a+b,0),discount=Object.entries(gains).reduce((n,[k,v])=>n+v*Math.max(0,Math.min(developmentState().stage==='bal'?.35:.25,root.RoomSystem?.trainingDiscount?.(k)||0)),0);
+ const cost=points?Math.ceil((developmentState().stage==='bal'&&level>=10?140*1.8**8*1.24**(level-9):140*1.8**(level-1)*(developmentState().stage==='bal'?.6:1))*(points-discount)/6):0;
  const next={...p};for(const [k,n]of Object.entries(gains))next[k]+=n;
  return {level,limit,gains,cost,before:overall(p),after:overall(next),blocked:level>=limit?(developmentState().stage==='bal'?'Bu aşamada en yüksek seviye':'Prolog seviyesi tamamlandı'):!points?'Stat sınırında · Kamp ile sınırı artır':''};
 }
@@ -68,7 +68,7 @@ function migrateDevelopment(p){
  else{for(const k of trainable){p[k]=Math.max(0,Math.min(cap(p),p[k]));base[k]=Math.max(0,Math.min(p[k],Number.isFinite(base[k])?base[k]:p[k]))}p.baseStats=base}
  if(!Array.isArray(p.skills))p.skills=[];let unlocked=false;p.skills=p.skills.filter(o=>skillCatalog.some(s=>s.id===o.id)).map(o=>{const skill=skillCatalog.find(s=>s.id===o.id),keep=!!o.unlocked&&skill.basic&&!unlocked;if(keep)unlocked=true;return {id:o.id,unlocked:keep}});p.training=Object.fromEntries(trainable.map(k=>[k,Math.max(0,p[k]-p.baseStats[k])]));p.developmentVersion=3;
 }
-function opponentStats(round,index){const r=Math.max(1,Math.min(4,round)),level=[18,19,21,23][r-1],role=['middle','outside','setter','middle','outside','opposite'][index%6],stats={role,stamina:level+2,mental:level+2};for(const k of ['spike','block','serve','receive','set'])stats[k]=level-3+(strengths[role].includes(k)?6:0);if(r===1){stats.serve+=5;stats.receive-=4;stats.mental-=4}if(r===2){stats.receive+=5;stats.stamina+=8;stats.spike-=2}if(r===3){stats.block+=7;stats.receive-=3}return stats}
+function opponentStats(round,index,stage=developmentState().stage){if(stage==='bal'){const level=28+Math.min(13,Math.max(0,round-1))*1.8,role=['middle','outside','setter','middle','outside','opposite'][index%6],stats={role,stamina:Math.round(level+4),mental:Math.round(level+2)};for(const k of ['spike','block','serve','receive','set'])stats[k]=Math.round(level-3+(strengths[role].includes(k)?6:0));return stats;}const r=Math.max(1,Math.min(4,round)),level=[18,19,21,23][r-1],role=['middle','outside','setter','middle','outside','opposite'][index%6],stats={role,stamina:level+2,mental:level+2};for(const k of ['spike','block','serve','receive','set'])stats[k]=level-3+(strengths[role].includes(k)?6:0);if(r===1){stats.serve+=5;stats.receive-=4;stats.mental-=4}if(r===2){stats.receive+=5;stats.stamina+=8;stats.spike-=2}if(r===3){stats.block+=7;stats.receive-=3}return stats}
 
 function generate(){const pool=shuffle(names),arts=shuffle(Array.from({length:36},(_,i)=>i));return roleOrder.map((role,i)=>{const p={id:'player-'+i,name:pool[i],surname:surnames[integer(0,surnames.length-1)],role,gender:'female',number:i+1,art:'team-assets/woman-'+arts[i]+'.svg'};for(const k of ['spike','block','serve','receive','set'])p[k]=integer(43,76);const strengths={setter:['set'],outside:['spike','receive'],opposite:['spike','serve'],middle:['block'],libero:['receive']};for(const k of strengths[role])p[k]=integer(78,94);p.height=role==='middle'?integer(184,199):role==='libero'?integer(162,178):integer(174,191);p.stamina=integer(65,95);p.mental=integer(62,94);return novice(p)})}
 function valid(list){return Array.isArray(list)&&list.length===12&&list.every((p,i)=>p.id==='player-'+i&&p.role===roleOrder[i]&&p.gender==='female'&&typeof p.name==='string'&&p.name.trim().length>0&&p.name.length<=24&&/^team-assets\/woman-(?:[0-9]|[12][0-9]|3[0-5])\.svg$/.test(p.art)&&['spike','block','serve','receive','set','stamina','mental'].every(k=>Number.isInteger(p[k])&&p[k]>=0&&p[k]<=Camps.config.balMaxCap)&&Number.isInteger(p.height)&&p.height>=150&&p.height<=210)}
