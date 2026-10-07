@@ -32,7 +32,8 @@ RoomSystem.setAutoClick?.(()=>giveInstruction('auto'));
 for(const id of ['closeMatch','laterMatch'])$(id).addEventListener('click',()=>$('matchDialog').close());
 $('matchDialog').addEventListener('close',()=>$('energyButton').focus());
 window.addEventListener('storage',event=>{if(event.key===STORE){try{state=MenuState.normalize(JSON.parse(event.newValue));render()}catch{}}});
-window.MenuUI={refresh:render};render();for(const gain of RoomSystem.pendingGains?.()||[])addPulse(gain.source,gain,gain.completed);if(!storageAvailable)$('saveStatus').textContent='İlerleme bu oturumda tutulur.';
+function stopMotion(){cancelAnimationFrame(frame);frame=0;for(const pulse of pulses)pulse.node.remove();pulses.length=0;for(const tier of tiers)tier.classList.remove('energized');litUntil.fill(0);clearTimeout(toastTimer);clearTimeout(completionTimer);$('toast').classList.remove('show');document.querySelector('.calendar-card').classList.remove('day-complete');}
+window.MenuUI={refresh:render,stopMotion,loadStage(raw){stopMotion();clearInterval(testClicker);testClicker=null;if(btn)btn.textContent='Başlat';state=MenuState.normalize(raw);tiers.splice(0,tiers.length,...document.querySelectorAll('.tier:not([hidden])'));litUntil.splice(0,litUntil.length,...tiers.map(()=>0));calendarKey=null;activeCalendar=null;window.LeagueCalendar?.reset(state);render();}};render();for(const gain of RoomSystem.pendingGains?.()||[])addPulse(gain.source,gain,gain.completed);if(!storageAvailable)$('saveStatus').textContent='İlerleme bu oturumda tutulur.';
 
 let testClicker = null;
 const btn = document.getElementById('testAutoclicker');
