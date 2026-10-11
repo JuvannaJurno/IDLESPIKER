@@ -15,6 +15,7 @@ function render(){window.LeagueSeason?.refresh?.(state);window.CampSystem?.advan
  }
  if(activeCalendar){activeCalendar.fill.style.height=clicks/limit*100+'%';activeCalendar.cell.setAttribute('aria-valuenow',clicks);activeCalendar.cell.setAttribute('aria-valuetext',clicks+' / '+limit+' talimat');activeCalendar.amount.textContent=clicks+'/'+limit}
  const next=window.LeagueSeason?.progress?.().next;
+ const matchReady=!!window.LeagueSeason?.dueFixture(state),button=$('energyButton');button.dataset.matchReady=String(matchReady);button.querySelector('strong').textContent=matchReady?'Maça geç':'Talimat ver';button.querySelector('.bolt').textContent=matchReady?'▷':'➜';button.setAttribute('aria-label',matchReady?'Maça geç · Bekleyen maç için takımını hazırla':'Talimat ver');
  $('matchCountdown').textContent=window.LeagueSeason?(next?(next.day<day||next.day===day&&clicks>=trigger?'Maç hazır':next.day===day?(trigger-clicks)+' talimat sonra':(next.day-day)+' gün sonra'):'Sezon tamamlandı'):MenuState.isMatchDay(day)?(state.clicksToday<50?'Bugün · '+(50-state.clicksToday)+' talimat sonra':'Bugün · Maç zamanı'):(7-day%7)+' gün sonra';
 }
 function energize(index,now){const tier=tiers[index];litUntil[index]=Math.max(litUntil[index],now+450);tier.classList.add('energized');window.MenuFeedback?.floor(tier);tier.querySelector('.energy-status').lastChild.textContent=' Enerji alındı';}

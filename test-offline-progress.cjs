@@ -9,12 +9,12 @@ async function seed(bal,shift){
  await page.reload();await page.locator('#bootScreen').waitFor({state:'detached'});
 }
 await seed(false,false);assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('idle-spiker-main-menu-v1')).day),1);
-await seed(false,true);
+await seed(false,true);await page.locator('#matchArrival').waitFor({state:'visible'});await page.screenshot({path:'match-arrival-mobile.png'});await page.locator('#arrivalLater').click();assert(await page.locator('#matchArrival').isHidden());assert.equal(await page.locator('#energyButton strong').textContent(),'Maça geç');
 let snap=await page.evaluate(()=>({room:RoomSystem.snapshot(),menu:JSON.parse(localStorage.getItem('idle-spiker-main-menu-v1'))}));
 assert.deepEqual(snap.menu,{day:4,clicksToday:50});assert.equal(snap.room.instructions,350);assert.equal(snap.room.budget,80);assert(snap.room.ap>0);
 const earned=snap.room.ap;await page.reload();await page.locator('#bootScreen').waitFor({state:'detached'});assert.equal(await page.evaluate(()=>RoomSystem.balance()),earned);
-await page.locator('#energyButton').click();assert(await page.locator('#gameMatchDialog').isVisible());assert.equal(await page.evaluate(()=>RoomSystem.snapshot().instructions),350);
-await page.evaluate(()=>{LeagueSeason.recordOwn(4,[15,8]);document.getElementById('gameMatchDialog').close();document.getElementById('energyButton').click()});assert((await page.evaluate(()=>RoomSystem.snapshot().instructions))>350);
+await page.locator('#matchArrival').waitFor({state:'visible'});await page.locator('#arrivalPlay').click();assert(await page.locator('#gameMatchDialog').isVisible());assert.equal(await page.evaluate(()=>RoomSystem.snapshot().instructions),350);
+await page.evaluate(()=>{LeagueSeason.recordOwn(4,[15,8]);document.getElementById('gameMatchDialog').close();document.getElementById('energyButton').click()});assert((await page.evaluate(()=>RoomSystem.snapshot().instructions))>350);assert.equal(await page.locator('#energyButton strong').textContent(),'Talimat ver');
 await seed(true,true);snap=await page.evaluate(()=>({room:RoomSystem.snapshot(),menu:JSON.parse(localStorage.getItem('idle-spiker-main-menu-v1'))}));
 assert.deepEqual(snap.menu,{day:5,clicksToday:300});assert.equal(snap.room.instructions,2300);assert.equal(snap.room.budget,10*(20+35+50+65+65+460));
 await page.evaluate(()=>{const s=RoomRules.defaults();RoomSystem.loadStage(s);window.gameResetting=true;});
