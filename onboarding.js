@@ -9,10 +9,14 @@ if(initial.instructions>0){finish('tap');finish('arrival')}
 const hint=document.createElement('div');hint.id='learningHint';hint.hidden=true;hint.setAttribute('role','note');
 const copy=document.createElement('span'),close=document.createElement('button');close.type='button';close.className='learning-dismiss';close.textContent='×';close.setAttribute('aria-label','İpucunu kapat');hint.append(copy,close);document.body.append(hint);
 const spotlight=document.createElementNS('http://www.w3.org/2000/svg','svg');const shade=document.createElementNS('http://www.w3.org/2000/svg','path');shade.setAttribute('fill-rule','evenodd');spotlight.append(shade);spotlight.id='learningSpotlight';spotlight.setAttribute('hidden','');spotlight.setAttribute('aria-hidden','true');document.body.append(spotlight);
-let active=null,target=null,cooldown=0,arrival=null,following=false;
+let active=null,target=null,cooldown=0,arrival=null,following=false,guided=null;
+function endGuide(){const tour=guided;guided=null;clear();tour?.finish?.();cooldown=Date.now()+500;}
+function nextGuide(){if(!guided)return;guided.index++;clear();if(guided.index>=guided.steps.length){endGuide();return}guided.steps[guided.index].enter?.();update();}
+window.GuidedTutorial={start(steps,finish){if(guided)endGuide();clear();guided={steps,index:0,finish};steps[0].enter?.();update();},stop:endGuide};
+document.addEventListener('click',e=>{const tour=guided,index=tour?.index;if(!tour)return;const step=tour.steps[index];if(step.click&&e.target.closest(step.click))setTimeout(()=>{if(guided===tour&&guided.index===index)nextGuide()},0)});
 window.addEventListener('spiker-stage-changed',()=>{done.clear();try{JSON.parse(localStorage.getItem(key)||'[]').forEach(id=>done.add(id))}catch{}following=false;arrival=null;cooldown=0;clear();update()});
 function clear(){target?.classList.remove('learning-focus');target=null;hint.hidden=true;spotlight.setAttribute('hidden','');active=null}
-close.onclick=()=>{const tour=active?.startsWith('blocks-')||active==='player-stats'||active==='quick-upgrade';if(active)finish(active);clear();cooldown=Date.now()+(tour?250:6000)};
+close.onclick=()=>{if(guided){nextGuide();return}const tour=active?.startsWith('blocks-')||active==='player-stats'||active==='quick-upgrade';if(active)finish(active);clear();cooldown=Date.now()+(tour?250:6000)};
 window.addEventListener('spiker-ap-arrived',e=>{if(!done.has('arrival')&&!arrival){arrival={ap:e.detail.ap,showAt:Date.now()+1200,until:Date.now()+8500};cooldown=0;update()}});
 document.getElementById('energyButton').addEventListener('click',()=>{if(!done.has('arrival')&&!following){following=true;finish('tap');clear();cooldown=0;setTimeout(update,0)}});
 document.addEventListener('click',e=>{if(active==='quick-upgrade'&&e.target.closest('.card-open-upgrade')){finish('quick-upgrade');clear();cooldown=Date.now()+250}},true);
@@ -26,6 +30,7 @@ function chooseTutorial(enabled){const next=enabled?[]:['tap','arrival','blocks-
 choice.querySelector('[data-tutorial=yes]').onclick=()=>chooseTutorial(true);choice.querySelector('[data-tutorial=no]').onclick=()=>chooseTutorial(false);choice.addEventListener('cancel',e=>{e.preventDefault();chooseTutorial(false)});
 function update(){
  if(document.getElementById('bootScreen')||document.hidden||window.BalTransition?.active||window.gameResetting||window.MatchGateway?.active()){clear();return}
+ if(guided){const step=guided.steps[guided.index],el=step.target();show('guided-'+step.id,typeof step.text==='function'?step.text():step.text,el);close.textContent=guided.index===guided.steps.length-1?'Anladım':'Devam →';close.setAttribute('aria-label','Sonraki adım');return}
  if(done.has('ask')){clear();if(!choice.open&&!document.querySelector('dialog[open]'))choice.showModal();return}
  const s=RoomSystem.tutorialState(),has=id=>s.floors.some(row=>row.includes(id));
  if(s.instructions>0)finish('tap');if(has('assistant')){finish('assistant');finish('blocks-basics')}if(has('warmup'))finish('warmup');if(has('offline_time'))finish('offline');
@@ -42,7 +47,7 @@ function update(){
  if(arrival&&!done.has('arrival')){if(Date.now()>arrival.until){finish('arrival');clear();cooldown=Date.now()+2500;return}if(club&&!modal){show('arrival','Talimat sahaya ulaştı: +'+arrival.ap.toLocaleString('tr-TR')+' Antrenman Puanı (AP). Talimatlarla departmanlardan kaynak ve avantaj kazan.',document.getElementById('roomAP'));return}}
  if(s.instructions<3&&!has('assistant')){clear();return}
  if(LeagueRules.config.bal&&club&&!modal&&!done.has('blocks-basics')){show('blocks-basics','Temeller kartındaki sekmelerden blok seç. [[Aç]] ve [[Yükselt]] ile bütçeni kullan.',document.querySelector('#roomSlots1 .foundation-block'));return}
- if(LeagueRules.config.bal&&!done.has('assistant')&&club&&!modal&&s.budget>=10){const tab=document.getElementById('foundation-tab-assistant');if(tab?.getAttribute('aria-selected')!=='true')tab?.click();show('assistant','[[Aç]] ile Otomatik Asistanı kur. Senin yerine talimat göndersin.',document.querySelector('.foundation-floor[data-id=assistant] .foundation-buy'));return}
+ if(LeagueRules.config.bal&&!done.has('assistant')&&club&&!modal&&s.budget>=(LeagueRules.config.bal?100:10)){const tab=document.getElementById('foundation-tab-assistant');if(tab?.getAttribute('aria-selected')!=='true')tab?.click();show('assistant','[[Aç]] ile Otomatik Asistanı kur. Senin yerine talimat göndersin.',document.querySelector('.foundation-floor[data-id=assistant] .foundation-buy'));return}
  if(club&&!modal&&!done.has('blocks-basics')){show('blocks-basics','[[Yeni alan aç]] ile blok seçebilirsin. Blokları bütçeyle alır, üzerlerine dokunarak yükseltirsin.',document.querySelector('#roomSlots1 .unlock-room')||document.querySelector('#roomSlots1 .upgrade-room'));return}
  if(!done.has('assistant')&&club&&s.budget>=10){show('assistant',document.querySelector('#roomDialog[open]')?'[[Otomatik Asistan]] seç. Senin yerine talimat göndersin.':'İlk bloğunu kuralım. [[Yeni alan aç]] düğmesine dokun.',block('assistant',1));return}
  if(!done.has('train')){

@@ -1,0 +1,12 @@
+const assert=require('assert'),R=require('./room-rules'),B=require('./bal-rules'),S=require('./scout-rules'),C=require('./camp-rules'),T=require('./team-rules');
+const fresh=B.enter(R.defaults(),1);assert.equal(fresh.budget,200);assert.equal(fresh.budgetScale,10);assert.equal(R.cost(fresh,1,'assistant'),100);assert.equal(R.cost(fresh,2,'bal_sponsor'),400);assert.equal(R.dailyBudget(fresh),200);
+B.openDepartment(fresh,2);B.openDepartment(fresh,4);assert.equal(B.cash(fresh),20);
+fresh.instructions=3000;assert(S.report(fresh,T.generate,()=>.5));
+const raw=JSON.parse(JSON.stringify(fresh));delete raw.budgetScale;raw.budget=123.5;raw.ap=789;raw.pendingGains=[{receipt:10,ap:7,cash:2,apReceived:false,cashReceived:false},{receipt:11,ap:9,cash:4,apReceived:false,cashReceived:true}];
+for(const c of raw.scouting.catalog)c.price/=10;
+const migrated=R.normalize(raw);assert.equal(migrated.budget,1235);assert.equal(migrated.ap,789);assert.equal(migrated.pendingGains[0].cash,20);assert.equal(migrated.pendingGains[1].cash,40);assert(migrated.pendingGains[1].cashReceived);assert.deepEqual(migrated.scouting.catalog,fresh.scouting.catalog);assert.deepEqual(R.normalize(migrated),migrated);assert.equal(R.normalize(raw).budget,1235);
+assert.deepEqual(C.price(migrated,{id:'player-0'}),{ap:1200,cash:5000});
+migrated.floors[2]=['bal_fans'];assert.equal(B.value(migrated,'bal_fans'),1500);
+const before=R.dailyBudget(migrated);migrated.matchRewards.push('bal1_r1-0-7');assert.equal(R.dailyBudget(migrated)-before,20);
+const prolog=R.normalize({...R.defaults(),budget:123.5});assert.equal(prolog.budget,123.5);assert.equal(R.dailyBudget(prolog),20);
+console.log('PASS: one-time balance/catalog/pending payment migration, repeat reload, AP preserved, foundations, daily/match/camp/scout amounts, prolog unchanged.');

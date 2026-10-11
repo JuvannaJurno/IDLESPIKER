@@ -1,6 +1,6 @@
 (function(){
 'use strict';
-const views=new WeakMap(),selected=new Map(),fmt=n=>n.toLocaleString('tr-TR',{maximumFractionDigits:1});
+const views=new WeakMap(),selected=new Map(),fmt=n=>NumberUI.compact(n);
 function description(room,n){const v=room.values[Math.max(0,n-1)];switch(room.id){case 'warmup':return 'Her talimata +'+fmt(v*2.5)+' AP';case 'assistant':return fmt(v*2)+' otomatik talimat/sn';case 'offline_time':return v+' saat çevrimdışı AP';case 'steady':return 'Her 10 otomatik talimata +'+fmt(v*1.25)+' AP';case 'echo':return 'Her 5 talimata +'+fmt(v*1.25)+' AP';case 'meal':return 'Gün sonunda +'+fmt(v*1.25)+' AP';case 'energy_drink':return 'İlk 20 talimata +'+fmt(v*1.25)+' AP';case 'sugar_boost':return 'Çevrimdışı AP +%'+fmt(v*1.25*100);case 'crit_smash':return '%'+fmt(v.c*100)+' şansla '+fmt(v.m)+' kat AP';case 'coordinate':return '%'+fmt(v*100)+' şansla ücretsiz yükseltme';case 'collect':return 'Maçtan '+v+' gün önce rakip analizi';case 'rhythm':return 'Mental ve dayanıklılık: %'+fmt(v*100)+' AP indirimi';case 'slots':return 'Manşet ve blok: %'+fmt(v*100)+' AP indirimi';case 'balls':return 'Hücum özellikleri: %'+fmt(v*100)+' AP indirimi';default:return room.describe(v)}}
 const completed=new Set(),drawerOpen=new Map();
 window.addEventListener('spiker-stage-changed',()=>{completed.clear();drawerOpen.clear()});
