@@ -114,3 +114,5 @@ main{padding-bottom:calc(166px + env(safe-area-inset-bottom))}
 body:has(#learningHint[data-step="instruction-path"]:not([hidden])) #rewardLayer{z-index:1000}
 
 #learningHint .tutorial-button-name{display:inline;padding:1px 5px;border:1px solid #d8c79e;border-radius:5px;background:#efe5c9;color:#66522f;font-weight:900;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+
+.building-scroll.is-panning,.building-scroll.is-panning *{cursor:grabbing!important;user-select:none!important}

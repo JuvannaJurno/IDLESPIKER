@@ -37,10 +37,13 @@ function overall(p){const weights=overallWeights[p.role]||trainable.map(()=>100/
 const cardRoles={setter:['set','serve','mental','stamina'],outside:['spike','receive','stamina','mental'],opposite:['spike','serve','block','stamina'],middle:['block','spike','stamina','mental'],libero:['receive','set','mental','stamina']};
 function cardLimit(p){return developmentState().stage==='bal'?11+Math.ceil((cap(p)-50)/3):10}
 function cardLevel(p){return Number.isSafeInteger(p.cardLevel)&&p.cardLevel>0?p.cardLevel:1}
-function cardQuote(p){const level=cardLevel(p),limit=cardLimit(p),role=cardRoles[p.role],gains={};
+function cardGains(p,level=cardLevel(p),statCap=cap(p)){
+ const role=cardRoles[p.role],gains={};if(!role)return gains;
+ for(const [k,n]of [[role[0],3],[role[1],2],[role[2+(level%2===0?1:0)],1]]){const amount=Math.max(0,Math.min(n,statCap-p[k]));if(amount)gains[k]=amount;}
+ return gains;
+}
+function cardQuote(p){const level=cardLevel(p),limit=cardLimit(p),role=cardRoles[p.role],gains=cardGains(p);
  if(!role)return {level,limit,gains,cost:0,blocked:'Pozisyon bulunamadı',before:overall(p),after:overall(p)};
- for(const [k,n]of [[role[0],3],[role[1],2],[role[2+(level%2===0?1:0)],1]])gains[k]=Math.max(0,Math.min(n,cap(p)-p[k]));
- for(const k of Object.keys(gains))if(!gains[k])delete gains[k];
  const points=Object.values(gains).reduce((a,b)=>a+b,0),discount=Object.entries(gains).reduce((n,[k,v])=>n+v*Math.max(0,Math.min(developmentState().stage==='bal'?.35:.25,root.RoomSystem?.trainingDiscount?.(k)||0)),0);
  const cost=points?Math.ceil((developmentState().stage==='bal'&&level>=10?140*1.8**8*1.24**(level-9):140*1.8**(level-1)*(developmentState().stage==='bal'?.6:1))*(points-discount)/6):0;
  const next={...p};for(const [k,n]of Object.entries(gains))next[k]+=n;
@@ -82,5 +85,5 @@ const defaults=()=>Object.fromEntries(slots.map((s,i)=>[s.id,players[i].id]));
 function normalize(raw){if(!raw||typeof raw!=='object')return defaults();const used=new Set();return Object.fromEntries(slots.map(s=>{const p=players.find(p=>p.id===raw[s.id]&&p.role===s.role&&!used.has(p.id));if(p)used.add(p.id);return[s.id,p?.id||null]}))}
 function equip(lineup,slot,id){const s=slots.find(s=>s.id===slot),p=players.find(p=>p.id===id);if(!s||!p||p.role!==s.role)return false;for(const k in lineup)if(lineup[k]===id)lineup[k]=null;lineup[slot]=id;return true}
 function importRecruits(list){let changed=false;for(const raw of list){if(players.some(p=>p.id===raw.id))continue;const p=JSON.parse(JSON.stringify(raw));if(valid([...players.map(p=>({...p,art:p.art.startsWith('team-assets/')?p.art:'team-assets/woman-0.svg'})),p])){players.push(p);changed=true}}if(changed)savePlayers();return changed;}
-const api={importRecruits,cardLevel,cardLimit,cardQuote,upgradeCard,namePools:{names:Object.freeze(names),surnames:Object.freeze(surnames)},overall,roles,slots,players,generate,valid,skillCatalog,trainable,limits,growth,cap,stageLabel,skillCost,trainingBlock,skillBlock,opponentStats,statCost,train,unlockSkill,rename,savePlayers,defaults,normalize,equip};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.TeamRules=api;
+const api={cardGains,importRecruits,cardLevel,cardLimit,cardQuote,upgradeCard,namePools:{names:Object.freeze(names),surnames:Object.freeze(surnames)},overall,roles,slots,players,generate,valid,skillCatalog,trainable,limits,growth,cap,stageLabel,skillCost,trainingBlock,skillBlock,opponentStats,statCost,train,unlockSkill,rename,savePlayers,defaults,normalize,equip};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.TeamRules=api;
 })(globalThis);

@@ -75,3 +75,39 @@
 .camp-send-footer{position:sticky;bottom:-12px;z-index:4;background:#f7f0dc;border-top:2px solid #e1dcc2;margin-top:12px;padding:8px 0 10px}.camp-send-footer #campQuote{font-size:11px;line-height:1.5;text-align:center;margin:0 0 8px}.camp-send-footer button{width:100%;min-height:47px;font-size:12px;margin:0}#campSelection>p{font-size:11px;font-weight:800}#campNotice{padding:8px;background:#e2ecd2;border-radius:9px;font-size:11px}#campNotice:empty{display:none}
 
 .match-button-note{display:none;font-size:10px;font-weight:600;margin-top:5px}.energy-button[data-match-ready=true]{background:#dce8c8!important;color:#50705a!important;border-color:#f8f5d6!important;box-shadow:0 3px 0 #92ac7c!important}.energy-button[data-match-ready=true] .match-button-note{display:block}.energy-button[data-match-ready=true] .mobile-progress,.energy-button[data-match-ready=true] .ap-feedback{display:none!important}.energy-button[data-match-ready=true]:before{display:none}
+/* Catalogue discovery: growth information and subtle rare-player treatment. */
+#scoutReport{position:relative;overflow:hidden;min-height:52px;background:linear-gradient(140deg,#ffe29a,#ffc95d);border:2px solid #fff8dc;box-shadow:0 4px #bd9959,0 6px 14px #bc99532b;font-size:14px;transition:transform .15s,box-shadow .15s}#scoutReport:not(:disabled):after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(110deg,transparent 25%,#fff9d975 48%,transparent 70%);transform:translateX(-110%);animation:scout-button-shine 4s ease-in-out infinite}#scoutReport:active:not(:disabled){transform:translateY(3px);box-shadow:0 1px #bd9959}#scoutReport:disabled{background:#e1e5d1;box-shadow:none;color:#8c9988}
+.scout-development{display:grid;gap:5px;min-width:0;padding:10px 11px;margin:8px 0;background:#e8edd8;border:1px solid #d6dfc7;border-radius:10px;text-align:left}.scout-development strong{font-size:12px;color:#53796b}.scout-development small{font-size:10px!important;line-height:1.4;color:#78866d;overflow-wrap:anywhere}.scout-development progress{display:block;width:100%;height:6px;border:0;border-radius:10px;overflow:hidden;appearance:none;background:#d3dcc6}.scout-development progress::-webkit-progress-bar{background:#d3dcc6}.scout-development progress::-webkit-progress-value{background:#8aa981;border-radius:10px}.scout-development progress::-moz-progress-bar{background:#8aa981}.scout-versus .scout-development{padding:7px;margin:4px 0;width:100%;box-sizing:border-box}.scout-versus .scout-development strong{font-size:11px}.scout-player[data-quality=high]{border-color:#d4b56d!important;background:linear-gradient(145deg,#fff5d7,#f3eed6)!important;box-shadow:0 3px 0 #c5ae79,0 5px 15px #c6a75020!important}.scout-player[data-quality=high] .scout-player-head>b{background:linear-gradient(145deg,#fce8a7,#e7c579);color:#80612b;border:1px solid #fff3c8;box-shadow:0 2px #ceb16d}.scout-player[data-quality=high] .scout-development{background:#f3e9c8;border-color:#e1d3a5}
+@keyframes scout-button-shine{0%,65%{transform:translateX(-110%)}100%{transform:translateX(110%)}}@media(prefers-reduced-motion:reduce){#scoutReport{transition:none}#scoutReport:after{animation:none!important;display:none}}
+
+/* Keep comparison focused on the selected pair, without catalogue summaries. */
+#scoutDialog:has(.scout-compare[open]) #scoutReportPanel,
+#scoutDialog:has(.scout-compare[open]) .scout-catalog-note,
+.scout-player:has(.scout-compare[open])>.scout-development{display:none}
+#scoutDialog:has(.scout-compare[open]) .scout-wallet{margin:8px 0;gap:6px}
+#scoutDialog:has(.scout-compare[open]) .scout-wallet>span{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:8px;font-size:8px}
+#scoutDialog:has(.scout-compare[open]) .scout-wallet b{font-size:15px}
+#scoutDialog .scout-player:has(.scout-compare[open]){border:0!important;background:transparent!important;box-shadow:none!important;padding:0}
+.scout-compare[open]>summary{margin-bottom:10px}
+.scout-compare[open] .scout-versus .scout-development{border:0;background:transparent;padding:6px 0 0;margin:5px 0 0;border-top:1px solid #c8d2b4;gap:4px}
+.scout-versus .scout-development strong{min-height:0}
+.scout-compare[open] .scout-verdict{margin:8px 0;font-size:10px;padding:9px}
+/* A restrained catalogue reveal, with a single clear action. */
+#scoutDialog .scout-report{grid-template-columns:minmax(0,1fr);gap:10px;padding:13px;background:#edf0de;border:1px solid #d5ddc2;box-shadow:none}
+#scoutDialog .scout-report #scoutStatus{grid-column:1;grid-row:1;font-size:11px;color:#718672}
+#scoutDialog .scout-report #scoutSummary{grid-column:1;grid-row:2}
+#scoutDialog .scout-report #scoutReport{grid-column:1;grid-row:3;display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:13px 17px;min-height:68px;margin:0;border-radius:20px;border:2px solid #fff6d9;background:linear-gradient(180deg,#ffe3a0 0%,#ffd074 65%,#f5bf60 100%);color:#785329;text-align:left;box-shadow:0 4px 0 #bc955a,0 6px 12px #ba944122,inset 0 2px #fff0c4;isolation:isolate}
+#scoutDialog .scout-report #scoutReport:after{display:none}
+.scout-open-copy{display:grid;gap:4px}.scout-open-copy strong{font-size:15px;font-weight:850;letter-spacing:-.2px}.scout-report .scout-open-copy small{font-size:10px;color:#92703d}
+.scout-open-count{position:relative;display:grid;place-items:center;flex-shrink:0;width:44px;height:44px;background:#fff4d17d;border:1px solid #fff5d6;border-radius:50%;color:#8e6531;font-size:18px;font-weight:900;box-shadow:inset 0 1px 3px #bd904d19;transform:none}.scout-report .scout-open-count small{font-size:7px;letter-spacing:1px;color:#806836;margin-top:-5px}
+#scoutDialog .scout-report #scoutReport:disabled{opacity:1;background:linear-gradient(#efe6cf,#e8dcc1);border-color:#fff4db;color:#9b8967;box-shadow:0 3px #cbbd9d}
+#scoutReport:disabled .scout-open-copy small{color:#9b8d72}#scoutReport:disabled .scout-open-count{background:#f6eedc;color:#a18d67;border-color:#fff5df;box-shadow:none}#scoutReport:disabled .scout-open-count small{color:#a18d67}
+#scoutDialog .scout-report #scoutReport:active:not(:disabled){box-shadow:0 1px #bc955a,inset 0 2px 4px #b9904220;transform:translateY(3px)}
+#scoutDialog .scout-report #scoutReplace{grid-column:1;grid-row:4;line-height:1.5;font-size:9px;margin:0}
+.scout-player.scout-new-reveal{position:relative;overflow:hidden}.scout-new-reveal:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 25%,#fff9e160 48%,transparent 70%);transform:translateX(-130%);animation:scout-reveal-glint 850ms ease-out both;animation-delay:var(--reveal-delay)}.scout-new-reveal[data-quality=high]:after{background:linear-gradient(115deg,transparent 25%,#ffe8a67a 48%,transparent 70%)}
+@keyframes scout-reveal-glint{from{transform:translateX(-130%)}to{transform:translateX(130%)}}
+@media(prefers-reduced-motion:reduce){.scout-new-reveal:after{animation:none;display:none}}
+
+/* Keep catalogue exit reachable throughout the dialog scroll. */
+#scoutDialog #closeScout{position:sticky;top:0;right:auto;display:grid;place-items:center;width:44px;height:44px;margin:-12px 0 -32px auto;z-index:10;border:1px solid #e0d6b9;border-radius:13px;background:#f8efd8;color:#a8854f;box-shadow:0 2px 6px #6c795321;font-size:27px;line-height:1;touch-action:manipulation}
+#scoutDialog #closeScout:active{background:#eee3c5}

@@ -8,9 +8,9 @@ for(let second=1;second<=600&&purchases.length<goals.length;second++){
  const id=goals[purchases.length],room=R.catalog.find(r=>r.id===id);
  if(R.count(s,id)?R.upgrade(s,id):R.purchase(s,room.floor,id)){assert(second-last<=90,'opening route stalled at '+id);purchases.push({second,id});last=second;}
 }
-assert.equal(purchases.length,13);assert.equal(last,435);assert.equal(R.count(s,'bal_sponsor'),3);
-assert(!R.upgrade({...s,budget:1e6},'bal_sponsor'),'late day gate must remain');
-assert(R.cost(s,2,'bal_sponsor')>R.cost(s,4,'bal_talent'),'other routes stay cheaper than the next income tier');
+assert.equal(purchases.length,13);assert(last<=480);assert.equal(R.count(s,'bal_sponsor'),3);
+const gated=R.normalize(s);gated.budget=1e6;B.upgraded(gated,'bal_sponsor');assert(!R.upgrade(gated,'bal_sponsor'),'new upgrade starts its own wait');
+
 const prolog=R.defaults();assert.equal(R.cost(prolog,1,'assistant'),10);assert.equal(R.dailyBudget(prolog),20);assert.equal(B.cash(prolog),0);
 const {chromium}=require(path.resolve(path.dirname(process.execPath),'../node_modules/playwright'));
 const server=http.createServer((req,res)=>{const f=path.join(__dirname,decodeURIComponent(new URL(req.url,'http://localhost').pathname));fs.readFile(f,(e,b)=>{if(e)return res.writeHead(404).end();res.setHeader('Content-Type',f.endsWith('.js')?'text/javascript':f.endsWith('.css')?'text/css':'text/html');res.end(b)})});

@@ -1,0 +1,44 @@
+const assert=require('assert'),fs=require('fs'),path=require('path'),http=require('http'),R=require('./room-rules'),B=require('./bal-rules');
+const s=B.enter(R.defaults(),1);B.openDepartment(s,2);B.openDepartment(s,4);assert(R.purchase(s,1,'assistant'));assert(R.purchase(s,0,'warmup'));
+const goals=['assistant','bal_sponsor','assistant','bal_coach','bal_sponsor','bal_position','bal_video','bal_search','bal_shop','bal_coach','bal_sponsor','bal_contacts','bal_talent'],purchases=[];
+let carry=0,last=0;
+for(let second=1;second<=600&&purchases.length<goals.length;second++){
+ carry+=R.effects(s).autoRate;
+ while(carry>=1){carry--;const g=R.income(s,s.dayProgress===499,()=>1,'auto');R.applyGain(s,g);s.budget+=g.cash;}
+ const id=goals[purchases.length],room=R.catalog.find(r=>r.id===id);
+ if(R.count(s,id)?R.upgrade(s,id):R.purchase(s,room.floor,id)){assert(second-last<=90,'opening route stalled at '+id);purchases.push({second,id});last=second;}
+}
+assert.equal(purchases.length,13);assert(last<=480);assert.equal(R.count(s,'bal_sponsor'),3);
+const gated=R.normalize(s);gated.budget=1e6;B.upgraded(gated,'bal_sponsor');assert(!R.upgrade(gated,'bal_sponsor'),'new upgrade starts its own wait');
+
+const prolog=R.defaults();assert.equal(R.cost(prolog,1,'assistant'),10);assert.equal(R.dailyBudget(prolog),20);assert.equal(B.cash(prolog),0);
+const {chromium}=require(path.resolve(path.dirname(process.execPath),'../node_modules/playwright'));
+const server=http.createServer((req,res)=>{const f=path.join(__dirname,decodeURIComponent(new URL(req.url,'http://localhost').pathname));fs.readFile(f,(e,b)=>{if(e)return res.writeHead(404).end();res.setHeader('Content-Type',f.endsWith('.js')?'text/javascript':f.endsWith('.css')?'text/css':'text/html');res.end(b)})});
+(async()=>{let browser;try{
+await new Promise(r=>server.listen(0,r));browser=await chromium.launch({channel:'msedge',headless:true});const page=await browser.newPage({viewport:{width:390,height:844}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.goto('http://localhost:'+server.address().port+'/index.html');await page.evaluate(()=>{window.gameResetting=true;const s=BalRules.enter(RoomRules.defaults(),1);localStorage.setItem('idle-spiker-rooms-v2',JSON.stringify(s));localStorage.setItem('idle-spiker-league-v1',JSON.stringify({mode:'bal',startDay:1,results:{}}));localStorage.setItem('idle-spiker-main-menu-v1',JSON.stringify({day:1,clicksToday:0}));localStorage.setItem('idle-spiker-onboarding-v1',JSON.stringify(['tap','arrival','blocks-basics','assistant','train','match','quick-upgrade']));});
+await page.reload();await page.locator('#bootScreen').waitFor({state:'detached'});
+assert(await page.locator('#budgetSource').isVisible());await page.locator('#budgetSource').click();await page.waitForTimeout(900);
+assert(await page.locator('.department-buy[data-floor="2"]').evaluate(el=>{const r=el.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight}));
+await page.locator('.department-buy[data-floor="2"]').click();assert(await page.locator('#budgetSource').isHidden());
+await page.evaluate(()=>{window.gameResetting=true;const s=RoomSystem.snapshot();s.floors[1]=['assistant','assistant'];s.floors[2]=['bal_sponsor'];RoomSystem.loadStage(s);});
+assert((await page.locator('#budgetIncome').textContent()).includes('+14,4/sn'));
+await page.evaluate(()=>{const s=RoomSystem.snapshot();s.floors[2].push('bal_sponsor');s.incomeProgress=7;RoomSystem.loadStage(s);});
+assert((await page.locator('#budgetIncome').textContent()).includes('+21,6/sn'));assert((await page.locator('#budgetIncome').textContent()).includes('3 talimata +60'));
+for(const width of [320,390,480]){await page.setViewportSize({width,height:844});await page.evaluate(()=>scrollTo(0,0));assert(await page.locator('.wallet-budget').evaluate(el=>el.scrollWidth<=el.clientWidth));assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));}
+await page.setViewportSize({width:390,height:844});await page.evaluate(()=>{const s=RoomSystem.snapshot();s.incomeProgress=9;RoomSystem.loadStage(s);const gain=RoomSystem.onClick(false,'auto');RoomSystem.applyBudget(gain);RoomSystem.applyBudget(gain)});assert.equal(await page.locator('.budget-gain').textContent(),'+60');assert.equal(await page.evaluate(()=>RoomSystem.cashBalance()),260);await page.screenshot({path:'bal-budget-feedback-mobile.png'});
+await page.evaluate(()=>{document.scrollingElement.scrollTop=0;document.querySelector('.building-scroll').scrollLeft=0;});
+const area=page.locator('.building-scroll');await area.scrollIntoViewIfNeeded();
+const box=await area.boundingBox(),x=box.x+box.width-30,y=Math.max(100,Math.min(550,box.y+100));
+const before=await page.evaluate(()=>document.scrollingElement.scrollTop);
+await page.mouse.move(x,y);await page.mouse.down();await page.mouse.move(x-100,y-80,{steps:10});await page.mouse.up();
+assert(await area.evaluate(el=>el.scrollLeft)>50,'horizontal mouse drag');assert(await page.evaluate(()=>document.scrollingElement.scrollTop)>before+40,'vertical mouse drag');
+await page.evaluate(()=>{document.querySelector('.building-scroll').scrollLeft=0;});
+const client=await page.context().newCDPSession(page);await client.send('Emulation.setTouchEmulationEnabled',{enabled:true});
+const box2=await area.boundingBox(),tx=box2.x+box2.width-30,ty=Math.max(100,Math.min(450,box2.y+130));const top=await page.evaluate(()=>document.scrollingElement.scrollTop);
+await client.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:tx,y:ty}]});
+for(let i=1;i<=8;i++)await client.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:tx-i*12,y:ty-i*8}]});
+await client.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+assert(await area.evaluate(el=>el.scrollLeft)>50,'horizontal touch drag');assert(await page.evaluate(()=>document.scrollingElement.scrollTop)>top+30,'vertical touch drag');
+assert.deepEqual(errors,[]);console.log('PASS: 13 opening decisions within 8 minutes, late day gates, prolog unchanged, visible rising income, free department discovery, 320/390/480px wallet.');
+}finally{await browser?.close();server.close()}})().catch(e=>{console.error(e);process.exitCode=1});

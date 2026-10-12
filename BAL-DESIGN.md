@@ -44,7 +44,7 @@ Yeni departmanlar kapalı görünür; ＋ Keşfet işaretine dokununca bedelsiz 
 ## BAL bütçe temposu
 Sponsor ek geliri her 10 talimatta 20 / 40 / 70 / 120 / 200 bütçedir; Gelir Merkezi tabanı 20 bütçe olarak kalır. Mağaza toplam merkez gelirini çarpar. Gelir aynı departmana ulaştığında ödenir; Prolog ekonomisi değişmez.
 Bütçe kartı otomatik merkez gelirini saniye başına, sıradaki ödemeyi talimat sayısıyla gösterir. Merkez kapalıysa ücretsiz keşif düğmesine kaydıran kısa yol vardır.
-test-bal-economy.cjs: 200 bütçelik sıfır BAL başlangıcında, gelir ve hız öncelikli örnek rotada manuel talimat/maç ödülü olmadan 435 saniyede 13 yatırım, yatırımlar arasında en fazla 56 saniye. Bu örnek rota bir garanti değildir; üst seviyelerin 2/3 günlük koşulları korunur. Mobil 320/390/480 genişlikleri kontrol edilir.
+test-bal-economy.cjs: 200 bütçelik sıfır BAL başlangıcında, gelir ve hız öncelikli örnek rotada manuel talimat/maç ödülü olmadan 8 dakika içinde 13 yatırım. Bu örnek rota bir garanti değildir; teknik/keşif bloklarında 2/3 günlük koşullar korunur. Mobil 320/390/480 genişlikleri kontrol edilir.
 
 BAL bütçe ölçeği 10: mevcut kayıtlar budgetScale=10 işaretiyle bir kez taşınır. Bakiye, bekleyen nakit ödemeler ve mevcut aday fiyatları dönüşür; AP ve takvim korunur. Kampın nakit ücreti, yeni transfer fiyatları, maç bütçeleri ve çevrimdışı gelir aynı oranda büyür. test-budget-scale.cjs dönüşümün tekrarlanmadığını doğrular. Bütçe kartındaki küçük kazanç etiketi ve parlama yalnız kulüp görünümünde çalışır; hareket azaltma ayarına uyar.
 
@@ -54,3 +54,8 @@ Transfer arayüzü son düzenleme: ayrı Keşif raporu sekmesi kaldırıldı; ka
 Çevrimdışı vardiya maça ulaştığında offlineMatchId kaydedilir. Açılış ekranından sonra Maç saati geldi penceresi gösterilir; maça hazırlık veya kulübe bakma seçilir. Ertelemek bekleyen maçı ve ilerleme kilidini kaldırmaz. Popup bir görünür oturumda tekrarlanmaz.
 
 Kamp güncellemesi: kamp başına cap +20, BAL tavanı 140 (100 → 120 → 140). CampRules version=2 eski +5/+10 kayıtları +20/+40 olarak bir kez dönüştürür; bitiş günleri ve oyuncu statları korunur. Üç yuvaya dokunma veya sürükleme ile taslak kadro hazırlanır. Tek gönderme düğmesi toplam AP/bütçeyi gösterir; tüm kayıtlar tek işlemde doğrulanıp kaydedilir, hata halinde hiçbir oyuncu gönderilmez. Kamp süresi 7 oyun günü, duyuru beklemesi 7 gün, ilk ücret 1200 AP + 5000 BAL bütçe olarak kalır. test-camp-board.cjs masaüstü ve mobil sürükleme, kontenjan, yetersiz bütçe, eski kayıt, toplu ödeme ve başarısız kayıt geri alımını doğrular.
+
+
+BAL beş seviye dengesi: bütün BAL blokları beş seviyelidir; üretim blokları özgün beş belirgin etki basamağını kullanır. Yeni açılma koşulu eklenmedi. Genel fiyat çarpanları 0,5 / 0,95 / 1,65 / 2,7 / 4,2. Sponsor fiyatları 400 / 1000 / 2200 / 4400 / 8000; yardımcı antrenör 600 / 1300 / 2600 / 4900 / 8500 bütçe. Üretimde ilk üç seviye bütçeyle, sonraki iki yükseltme 0,5 ve 1 gün beklemeyle açılır; teknik/keşif mevcut 2/3 gün koşullarını korur.
+On seviyeli kayıtlar balBlockVersion=3 ile 1/2/2/3/3/4/4/5/5/5 seviyelerine taşınır; ara seviyeler yukarı yuvarlanarak üretim kaybı önlenir. Eski beş seviyeli kayıtlar değişmez. Bakiye, AP ve bekleyen zamanlayıcı korunur.
+Test-bal-pacing.cjs: otomasyonla en ucuz uygun yatırımı seçen 30 dakikalık ekonomi simülasyonunda on dakikalık dilimlerde 19/17/17 yatırım, en uzun aralık 48 saniye. Maç süresi/ödülü, manuel tıklamalar ve kamp/transfer harcamaları hariçtir. Bu rota gerçek oturum için süre garantisi değildir. Kayıt dönüşümü, tekrar yükleme ve fiyat sıçramaları ayrıca doğrulanır.
