@@ -21,33 +21,48 @@ const definitions=[
 ];
 const extendedIds=new Set(['bal_coach','bal_shift','bal_plan','bal_position','bal_video','bal_recovery','bal_sponsor','bal_shop','bal_fans']);
 for(const d of definitions)if(d[0]==='bal_sponsor'||d[0]==='bal_fans')d[4]=d[4].map(v=>v*10);
-const catalog=definitions.map(([id,floor,name,icon,values,describe,price])=>({id,floor,name,icon,values,describe,price,bal:true}));
+const successors=[
+ ['bal_coach','bal_double','Çift Talimat',[.2,.4,.6,.8,1],v=>'%'+Math.round(v*100)+' ihtimalle mavi talimat: 2 talimat gücü.'],
+ ['bal_shift','bal_longshift','Uzun Vardiya',[1,2,3,4,5],v=>'Vardiya sınırına +'+v+' saat.'],
+ ['bal_plan','bal_hands','Birebir Çalışma',[20,40,60,80,100],v=>'Elle verilen her talimata +'+v+' AP.'],
+ ['bal_position','bal_warmstart','Maç Öncesi Isınma',[50,100,150,200,250],v=>'Günün ilk 20 talimatına +'+v+' AP.'],
+ ['bal_video','bal_precision','Hedefli Tekrar',[.02,.04,.06,.08,.1],v=>'Kritik AP kazanma şansına +'+Math.round(v*100)+' puan.'],
+ ['bal_recovery','bal_evening','Gün Sonu Toparlanma',[200,400,600,800,1000],v=>'Gün sonunda +'+v+' AP.'],
+ ['bal_sponsor','bal_matchsponsor','Maç Günü Sponsorluğu',[500,1000,1500,2000,2500],v=>'Oynanan her maç için ek +'+v+' bütçe.'],
+ ['bal_shop','bal_members','Kulüp Üyeliği',[100,200,300,400,500],v=>'Her gün +'+v+' bütçe.'],
+ ['bal_fans','bal_orders','Taraftar Siparişleri',[10,20,30,40,50],v=>'Her 10 talimatta ek +'+v+' bütçe.'],
+ ['bal_scout','bal_review','Maç Sonu İnceleme',[250,500,750,1000,1250],v=>'Transfer tavsiyeleri '+(v/250)+'/5 · Galibiyete +'+v+' AP.'],
+ ['bal_personal','bal_mentor','Gelişim Mentoru',[.01,.02,.03,.04,.05],v=>'Tüm kart yükseltmelerinde ek %'+Math.round(v*100)+' AP indirimi.'],
+ ['bal_archive','bal_remote','Uzaktan Antrenman',[.03,.06,.09,.12,.15],v=>'Çevrimdışı AP verimine +%'+Math.round(v*100)+'.'],
+ ['bal_search','bal_negotiator','Transfer Görüşmeleri',[.03,.06,.09,.12,.15],v=>'Yeni katalog transfer fiyatları %'+Math.round(v*100)+' daha uygun.'],
+ ['bal_contacts','bal_network','Bölgesel Bağlantılar',[.02,.04,.06,.08,.1],v=>'Yüksek OVR bulma şansına +'+Math.round(v*100)+' puan.'],
+ ['bal_talent','bal_academy','Akademi İşbirliği',[1,2,3,4,5],v=>'Yeni adaylar +'+v+' kart seviyesi gelişmiş gelir.']
+];
+const catalog=definitions.map(([id,floor,name,icon,core,describe,price])=>({id,floor,name,icon,values:[...core,...Array(5).fill(core[4])],describe,price,bal:true,bonus:successors.find(row=>row[0]===id)}));
+function bonusLevel(s,id){const bonus=successors.find(row=>row[1]===id);return bonus?Math.max(0,Math.min(5,level(s,bonus[0])-5)):0;}
+function describeBlock(s,r,n=level(s,r.id)){const primary=r.describe(r.values[Math.max(0,n-1)]);if(!r.bonus)return primary;return primary+(n>5?' '+r.bonus[2]+': '+r.bonus[4](r.bonus[3][n-6]):'');}
 const departmentPrices={2:0,4:0};
 function departmentOpen(s,f){return s.stage==='bal'&&(!Object.hasOwn(departmentPrices,f)||!Array.isArray(s.openDepartments)||s.openDepartments.includes(f));}
 function openDepartment(s,f){if(s.stage!=='bal'||!Object.hasOwn(departmentPrices,f)||departmentOpen(s,f))return false;s.openDepartments.push(f);if(f===2)s.incomeProgress=0;if(f===4)s.scouting.startedDay=(s.balStartDay||1)+Math.floor(s.instructions/500);return true;}
-const gates=[0,0,0,2,3],productionGates=[0,0,0,.5,1];
-const gate=(id,n)=>(extendedIds.has(id)?productionGates:gates)[n]||0;
-function remainingDays(s,id){return Math.max(0,Math.ceil((s.balReadyDay?.[id]||0)-s.instructions/500));}
-function upgraded(s,id){if(s.stage!=='bal'||!catalog.some(r=>r.id===id))return;s.balReadyDay||={};const days=gate(id,level(s,id));if(days)s.balReadyDay[id]=s.instructions/500+days;else delete s.balReadyDay[id];}
+const gates=[];
+function remainingDays(){return 0}
+function upgraded(s,id){if(s.balReadyDay)delete s.balReadyDay[id]}
 function level(s,id){return s.floors.flat().filter(x=>x===id).length}
-function value(s,id){const r=catalog.find(x=>x.id===id);return r&&departmentOpen(s,r.floor)?r.values[level(s,id)-1]||0:0}
-function enter(raw,day){if(raw.stage==='bal')return JSON.parse(JSON.stringify(raw));const R=root.RoomRules||(typeof require==='function'?require('./room-rules.js'):null),s=R.defaults();s.stage='bal';s.budget*=10;s.budgetScale=10;s.balVersion=1;s.balStart=0;s.balStartDay=1;return s}
-function requirement(s,r){if(r.bal&&s.stage!=='bal')return 'BAL aşamasında açılır';if(s.stage!=='bal')return null;if(r.bal&&!departmentOpen(s,r.floor))return 'Önce '+departments[r.floor]+' aç';const next=level(s,r.id);if(r.bal&&next<r.values.length&&gate(r.id,next)&&remainingDays(s,r.id))return display(Math.max(.1,Math.ceil(((s.balReadyDay?.[r.id]||0)-s.instructions/500)*10)/10))+' oyun günü sonra';if(r.id==='bal_shift'&&!level(s,'offline_time'))return 'Önce Vardiya Planını tamamla';return null}
+function value(s,id){const bonus=successors.find(row=>row[1]===id);if(bonus){const r=catalog.find(x=>x.id===bonus[0]);return departmentOpen(s,r.floor)?bonus[3][bonusLevel(s,id)-1]||0:0;}const r=catalog.find(x=>x.id===id);return r&&departmentOpen(s,r.floor)?r.values[level(s,id)-1]||0:0}
+function enter(raw,day){if(raw.stage==='bal')return JSON.parse(JSON.stringify(raw));const R=root.RoomRules||(typeof require==='function'?require('./room-rules.js'):null),s=R.defaults();s.stage='bal';s.floors=s.floors.map((_,f)=>(raw.floors?.[f]||[]).filter(id=>R.catalog.some(r=>r.id===id&&!r.bal&&r.floor===f)));s.budget*=10;s.budgetScale=10;s.balVersion=1;s.balStart=0;s.balStartDay=1;return s}
+function requirement(s,r){if(r.bal&&s.stage!=='bal')return 'BAL aşamasında açılır';if(s.stage!=='bal')return null;if(r.bal&&!departmentOpen(s,r.floor))return 'Önce '+departments[r.floor]+' aç';if(r.id==='bal_shift'&&!level(s,'offline_time'))return 'Önce Vardiya Planı aç';return null}
 // Early investments offer several routes; later levels remain long-term goals.
-const investmentPrices={bal_sponsor:[40,100,220,440,800],bal_coach:[60,130,260,490,850]};
-const priceSteps=[.5,.95,1.65,2.7,4.2];
-function price(s,r){const n=level(s,r.id);return n>=r.values.length?Infinity:10*(r.bal?(investmentPrices[r.id]?.[n]??Math.round(r.price*priceSteps[n])):([10,15,25][n]??Infinity))}
-function effects(s,e){if(s.stage!=='bal')return e;return {...e,clickAP:e.clickAP*2.5+value(s,'bal_position'),autoAP:e.autoAP*2.5+value(s,'bal_position'),baseAP:e.baseAP*2.5+value(s,'bal_position'),autoRate:e.autoRate*2+value(s,'bal_coach')*e.workflowRate,baseAutoRate:e.baseAutoRate*2+value(s,'bal_coach'),repeatAP:e.repeatAP*1.25+value(s,'bal_video'),morningAP:e.morningAP*1.25,dayAP:e.dayAP*1.25,offlineBonus:e.offlineBonus*1.25+value(s,'bal_recovery'),offlineEfficiency:e.offlineEfficiency+value(s,'bal_shift')};}
-function cash(s){if(!departmentOpen(s,2))return 0;return (20+value(s,'bal_sponsor'))*(1+value(s,'bal_shop'))}
-// Round intermediate ten-level saves up so no purchased effect is lost.
+const investmentPrices={bal_sponsor:[40,100,220,440,800,1000,1250,1560,1950,2440],bal_coach:[60,130,260,490,850,1050,1300,1620,2020,2520]};
+const priceSteps=[.5,.95,1.65,2.7,4.2,5.2,6.5,8,10,12.5];
+function price(s,r){const n=level(s,r.id);return n>=r.values.length?Infinity:10*(r.bal?(investmentPrices[r.id]?.[n]??Math.round(r.price*priceSteps[n])):([10,6,9,10,15][n]??Infinity))}
+function effects(s,e){if(s.stage!=='bal')return e;return {...e,doubleChance:value(s,'bal_double'),offlineHours:e.offlineHours?e.offlineHours+value(s,'bal_longshift'):0,critChance:Math.min(1,e.critChance+value(s,'bal_precision')),critMult:Math.max(e.critMult,value(s,'bal_precision')?2:1),clickAP:e.clickAP*2.5+value(s,'bal_position')+value(s,'bal_hands'),autoAP:e.autoAP*2.5+value(s,'bal_position'),baseAP:e.baseAP*2.5+value(s,'bal_position'),autoRate:e.autoRate*2+value(s,'bal_coach')*e.workflowRate,baseAutoRate:e.baseAutoRate*2+value(s,'bal_coach'),repeatAP:e.repeatAP*1.25+value(s,'bal_video'),morningAP:e.morningAP*1.25+value(s,'bal_warmstart'),dayAP:e.dayAP*1.25+value(s,'bal_evening'),offlineBonus:e.offlineBonus*1.25+value(s,'bal_recovery')+value(s,'bal_remote'),offlineEfficiency:e.offlineEfficiency+value(s,'bal_shift')};}
+function cash(s){if(!departmentOpen(s,2))return 0;return (20+value(s,'bal_sponsor'))*(1+value(s,'bal_shop'))+value(s,'bal_orders')}
+// Merge old separate bonuses into levels 6–10, without charging again.
 function migrateLevels(s,raw){
- if(s.stage!=='bal'||raw?.balBlockVersion!==2)return;
+ s.balReadyDay={};if(s.stage!=='bal'||raw?.balBlockVersion===4)return;
  const map=[0,1,2,2,3,3,4,4,5,5,5];
- s.floors=s.floors.map((row,f)=>{const done=new Set();return row.flatMap(id=>{
-  if(!extendedIds.has(id))return [id];if(done.has(id))return [];done.add(id);
-  const n=Math.min(10,(raw.floors?.[f]||[]).filter(x=>x===id).length);
-  return Array(map[n]).fill(id);
- });});s.balBlockVersion=3;
+ for(const r of catalog){const old=(raw?.floors?.[r.floor]||[]),n=old.filter(id=>id===r.id).length,extra=old.filter(id=>id===r.bonus[1]).length;const base=raw?.balBlockVersion===2&&extendedIds.has(r.id)?map[Math.min(10,n)]:Math.min(5,n),target=extra?5+Math.min(5,extra):base;s.floors[r.floor]=s.floors[r.floor].filter(id=>id!==r.id);s.floors[r.floor].push(...Array(target).fill(r.id));}
+ s.balBlockVersion=4;
 }
-const api={migrateLevels,departmentPrices,departmentOpen,openDepartment,departments,catalog,gates,remainingDays,upgraded,enter,requirement,price,effects,value,cash};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.BalRules=api;
+const api={bonusLevel,describeBlock,migrateLevels,departmentPrices,departmentOpen,openDepartment,departments,catalog,gates,remainingDays,upgraded,enter,requirement,price,effects,value,cash};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.BalRules=api;
 })(globalThis);

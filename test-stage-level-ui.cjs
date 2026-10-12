@@ -1,0 +1,17 @@
+const assert=require('assert'),fs=require('fs'),path=require('path'),http=require('http'),R=require('./room-rules'),B=require('./bal-rules');
+const {chromium}=require(path.resolve(path.dirname(process.execPath),'../node_modules/playwright'));
+const server=http.createServer((req,res)=>{const f=path.join(__dirname,decodeURIComponent(new URL(req.url,'http://localhost').pathname));fs.readFile(f,(e,b)=>{if(e)return res.writeHead(404).end();res.setHeader('Content-Type',f.endsWith('.js')?'text/javascript':f.endsWith('.css')?'text/css':'text/html');res.end(b)})});
+(async()=>{let browser;try{
+await new Promise(r=>server.listen(0,r));browser=await chromium.launch({channel:'msedge',headless:true});const page=await browser.newPage({viewport:{width:390,height:844}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.goto('http://localhost:'+server.address().port+'/index.html');await page.evaluate(()=>{window.gameResetting=true;const s=BalRules.enter(RoomRules.defaults(),1);localStorage.setItem('idle-spiker-rooms-v2',JSON.stringify(s));localStorage.setItem('idle-spiker-league-v1',JSON.stringify({mode:'bal',startDay:1,results:{}}));localStorage.setItem('idle-spiker-main-menu-v1',JSON.stringify({day:1,clicksToday:0}));localStorage.setItem('idle-spiker-onboarding-v1',JSON.stringify(['tap','arrival','blocks-basics','assistant','train','match','quick-upgrade']));});
+await page.reload();await page.locator('#bootScreen').waitFor({state:'detached'});
+
+
+await page.evaluate(()=>{const s=RoomSystem.snapshot();s.budget=100000;s.floors[1]=[...Array(5).fill('assistant'),...Array(9).fill('bal_coach')];RoomSystem.loadStage(s);RoomSystem.setAutoClick(()=>{});});
+await page.locator('#roomSlots1 > .upgrade-room[data-id=bal_coach]').click();const card=page.locator('#roomSlots1 > .upgrade-room[data-id=bal_coach]');assert.equal(await card.count(),1);assert.equal(await card.locator('.block-level-track').getAttribute('aria-valuenow'),'10');assert((await card.textContent()).includes('Ek özellik 5 / 5'));assert.equal(await page.locator('.block-pips,.successor-block,.completed-blocks-open,.stored-bal-blocks').count(),0);assert.equal(await page.evaluate(()=>RoomSystem.effects().doubleChance),1);
+for(const width of [320,390,480]){await page.setViewportSize({width,height:844});await card.scrollIntoViewIfNeeded();assert(await card.evaluate(el=>el.scrollHeight<=el.clientHeight+1),'card content fits');assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));}
+await page.setViewportSize({width:390,height:844});await page.screenshot({path:'bal-ten-level-card-mobile.png'});
+await page.locator('.tier[data-floor="1"] .foundation-toggle').click();await page.waitForTimeout(700);assert.equal(await page.locator('.inherited-block-group .upgrade-room[data-id=assistant]').count(),1);assert.equal(await page.locator('.inherited-block-group [data-id=assistant] .block-level-track').getAttribute('aria-valuemax'),'5');
+const before=await page.evaluate(()=>RoomSystem.snapshot().instructions);await page.locator('#energyButton').click();assert.equal(await page.evaluate(()=>RoomSystem.snapshot().instructions),before+2);assert(await page.locator('.double-pulse').count()>0);
+assert.deepEqual(errors,[]);console.log('PASS: level 10 remains in place, bonus on original card, no successor/pip UI, normal inherited cards, mobile fit and blue double instruction.');
+}finally{await browser?.close();server.close()}})().catch(e=>{console.error(e);process.exitCode=1});

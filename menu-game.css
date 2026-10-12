@@ -61,6 +61,7 @@ main{padding-bottom:calc(166px + env(safe-area-inset-bottom))}
 /* Upgrade footer follows the club's cream and muted teal palette. */
 .upgrade-room .room-active{display:flex;flex-direction:column;gap:8px;width:100%;margin-top:auto;letter-spacing:0}
 .block-level{display:flex;align-items:center;justify-content:space-between;gap:5px;color:#8b9985;font-size:8px;font-weight:700}
+
 .block-pips{display:flex;gap:3px}.block-pips i{display:block;width:10px;height:3px;background:#e0e2cd;border-radius:3px}.block-pips i.filled{background:#89aaa0}
 .block-upgrade-action{display:block;padding:10px 0 2px;border:0;border-top:1px solid #e4dfc6;border-radius:0;text-align:center;font-size:10px;line-height:1.4;font-weight:700;background:transparent;color:#8e9987}
 .upgrade-room[data-upgrade="ready"]{border-color:#a0bcb0!important;background:#fff3d7!important;box-shadow:0 3px 0 #9db6a7!important}

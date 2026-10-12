@@ -5,13 +5,13 @@ const row=document.createElement('div');row.className='settings-row';const copy=
 async function start(test=false){if(api.active||LeagueRules.config.bal||(!test&&!LeagueSeason.progress().prologueComplete))return;api.active=true;MenuUI.stopMotion();
 for(const d of document.querySelectorAll('dialog[open]'))d.close();const clubLink=document.querySelector('.mobile-nav a[href="#clubPanel"]');clubLink.addEventListener('click',e=>e.preventDefault(),{once:true});clubLink.click();
 const restoreView=BalVisual.capture($('workflow'));const workflow=$('workflow'),dashboard=document.querySelector('.dashboard');dashboard.hidden=false;document.body.classList.add('bal-transforming');
-const banner=document.createElement('aside');banner.className='bal-live-banner';banner.setAttribute('role','status');const text=document.createElement('strong');text.textContent='Kulübün BAL için yenileniyor';const note=document.createElement('small');note.textContent='Yeni başlangıç · Daha hızlı gelişim';const end=document.createElement('button');end.textContent='Animasyonu geç';banner.append(text,note,end);$('clubPanel').prepend(banner);const animations=[];let done=false,pending=null;
+const banner=document.createElement('aside');banner.className='bal-live-banner';banner.setAttribute('role','status');const text=document.createElement('strong');text.textContent='Kulübün BAL için yenileniyor';const note=document.createElement('small');note.textContent='Blokların departmanlara yerleşiyor · Etkiler korunuyor';const end=document.createElement('button');end.textContent='Animasyonu geç';banner.append(text,note,end);$('clubPanel').prepend(banner);const animations=[];let done=false,pending=null;
 function commit(){if(done&&!pending)return;done=true;
 try{if(!pending){const room=BalRules.enter(RoomSystem.snapshot(),1),players=TeamRules.players.map(p=>{const q=JSON.parse(JSON.stringify(p));for(const k of TeamRules.trainable)q[k]=Math.max(0,Math.min(50,Number(q.baseStats?.[k])||15));q.art=q.art.startsWith('team-assets/')?q.art:'team-assets/woman-0.svg';q.training={};q.cardLevel=1;q.cardVersion=1;q.skills=(q.skills||[]).map(skill=>({...skill,unlocked:false}));return q});room.lastSeen=Date.now();const entries={'idle-spiker-rooms-v2':JSON.stringify(room),'idle-spiker-women-v1':JSON.stringify(players),'idle-spiker-main-menu-v1':JSON.stringify({day:1,clicksToday:0}),'idle-spiker-league-v1':JSON.stringify({version:3,mode:'bal',run:1,startDay:1,results:{},completionSeen:false,completedDay:null}),'idle-spiker-match-results':JSON.stringify({version:3}),'idle-spiker-onboarding-v1':JSON.stringify(['ask']),'idle-spiker-prologue-archive-v1':JSON.stringify({league:JSON.parse(localStorage.getItem('idle-spiker-league-v1')||'null'),rooms:RoomSystem.snapshot(),players:TeamRules.players})};pending=entries;}
 window.gameResetting=true;localStorage.setItem('idle-spiker-bal-transition-v1',JSON.stringify({version:1,entries:pending}));
 for(const [key,value]of Object.entries(pending))localStorage.setItem(key,value);
 const read=key=>JSON.parse(pending[key]);
-const anchor=workflow.querySelector('.tier[data-floor="2"] .base-room'),anchorTop=anchor.getBoundingClientRect().top;
+const anchor=workflow.querySelector('.tier[data-floor="4"] .base-room'),anchorTop=anchor.getBoundingClientRect().top;
 animations.forEach(a=>a.cancel());restoreView();
 const players=read('idle-spiker-women-v1');TeamRules.players.forEach((p,i)=>{const art=p.art;Object.assign(p,players[i],{art});});
 LeagueSeason.loadStage(read('idle-spiker-league-v1'));RoomSystem.loadStage(read('idle-spiker-rooms-v2'));
@@ -20,7 +20,7 @@ applyLabels();skip.disabled=true;skip.textContent='BAL aşamasındasın';
 localStorage.removeItem('idle-spiker-bal-transition-v1');
 document.body.classList.remove('bal-transforming');banner.remove();delete workflow.dataset.mergePhase;
 window.scrollBy({top:anchor.getBoundingClientRect().top-anchorTop,behavior:'instant'});
-pending=null;window.gameResetting=false;api.active=false;
+pending=null;window.gameResetting=false;api.active=false;window.FoundationBlocks?.update(RoomSystem.snapshot());
 window.dispatchEvent(new Event('spiker-stage-changed'));
 }catch(error){console.error('BAL geçişi tamamlanamadı',error);text.textContent='Geçiş tamamlanamadı';note.textContent='Kayıt alanını kontrol edip yeniden dene.';end.textContent='Yeniden dene';end.onclick=()=>{done=false;commit()};}}
 end.onclick=commit;const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;

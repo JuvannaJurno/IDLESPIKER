@@ -65,7 +65,24 @@
 
 /* Compact catalogue header and position-aware attributes. */
 #scoutDialog .scout-report{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center;padding:12px;margin:15px 0;text-align:left;border-radius:13px;box-shadow:0 2px 0 #bfccad}.scout-report-medal{display:none}.scout-report>span{font-size:12px}.scout-report #scoutSummary{grid-column:1/-1;grid-row:2;margin:0;gap:5px}.scout-report #scoutSummary>span{padding:6px 3px;text-align:center}.scout-report #scoutSummary b{font-size:14px}.scout-report #scoutSummary small{margin-top:2px}.scout-report #scoutReport{grid-column:2;grid-row:1;width:auto;font-size:10px;padding:8px 10px;margin:0;min-height:40px}.scout-report #scoutReplace{grid-column:1/-1;font-size:9px}#scoutDialog[data-has-catalog=true] #scoutSummary{display:none}.scout-catalog-note{font-size:10px;margin:13px 0}.scout-player dl{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.scout-player dl>div{padding:7px 2px;background:#ececd9;border:1px solid #dfe4ca}.scout-player dl>.role-important{background:#f3e0aa;border:1px solid #d6b970;box-shadow:inset 0 2px #fff3cf}.scout-player dl>.role-important dt,.scout-player dl>.role-important dd{color:#85652d}.scout-player dt{font-size:8px}.scout-player dd{font-size:17px}.scout-player-head img{display:block;object-fit:cover;object-position:center bottom;border:0;box-shadow:0 2px 0 #a6bf9d}.scout-versus img{object-fit:cover;object-position:center bottom}
-#teamPanel>.scout-alert{gap:12px;padding:13px;background:linear-gradient(110deg,#e1ebd3,#f2efd5);text-align:left}.transfer-entry-icon{flex-shrink:0;display:grid;place-items:center;width:43px;height:43px;border-radius:12px;background:#799c7e;color:#fff4cc;font-size:27px;box-shadow:0 3px 0 #5e8164}.transfer-entry-copy{display:flex;flex-direction:column;gap:4px;flex:1;min-width:0}.transfer-entry-copy strong{font-size:15px;color:#50745f}.transfer-entry-copy small{font-size:10px;line-height:1.4;color:#819074}.transfer-entry-arrow{font-size:26px;color:#789473}#teamPanel>.scout-alert[data-ready=true]{background:linear-gradient(110deg,#fae6ad,#f5efcf)}#teamPanel>.scout-alert[data-ready=true] .transfer-entry-icon{background:#c5a25b;box-shadow:0 3px 0 #a6894b}#teamPanel>.scout-alert:disabled .transfer-entry-icon{background:#a5b49a;box-shadow:none}
+#teamPanel>.scout-alert{position:relative;isolation:isolate;display:flex;align-items:center;gap:12px;min-height:96px;padding:15px 13px;border:2px solid #fff8df;border-radius:18px;background:linear-gradient(115deg,#f7e6b7,#f7efd5 58%,#e4ead1);box-shadow:0 4px 0 #91a88e,inset 0 1px #fff9e7;color:#527568;text-align:left;transition:transform .15s,box-shadow .15s}
+.transfer-entry-icon{position:relative;display:grid;place-items:center;flex:0 0 53px;width:53px;height:58px}
+.transfer-entry-icon:before,.transfer-entry-icon:after{content:'';position:absolute;width:36px;height:47px;border:2px solid #fff3ce;border-radius:8px;background:#bac9a5;transform:translate(-7px,1px) rotate(-13deg);box-shadow:0 2px 0 #849d80}
+.transfer-entry-icon:after{transform:translate(7px,0) rotate(12deg);background:#d4b779}
+.transfer-mini-card{position:relative;z-index:1;display:grid;place-items:center;width:39px;height:51px;border:2px solid #fff5d4;border-radius:9px;background:linear-gradient(150deg,#83a48b,#527a69);box-shadow:0 3px 0 #466957;transform:rotate(-3deg);color:#f8e5ac}
+.transfer-mini-card svg{width:29px;height:33px}
+.transfer-entry-copy{display:flex;flex-direction:column;gap:5px;flex:1;min-width:0}
+.transfer-entry-kicker{font-size:7px;letter-spacing:1.1px;font-weight:800;color:#a0844c}
+.transfer-entry-copy strong{font-size:16px;line-height:1.2;color:#4f7264}
+.transfer-entry-copy small{font-size:10px;line-height:1.4;color:#7b8a6c}
+.transfer-entry-arrow{display:grid;place-items:center;flex:0 0 29px;height:34px;border:1px solid #fff5d7;border-radius:10px;background:#ebd196;color:#8c6938;font-size:25px;box-shadow:0 2px 0 #c2aa75}
+#teamPanel>.scout-alert[data-ready=true]{background:linear-gradient(115deg,#ffe1a0,#f9ebc5 65%,#e8ebcf);box-shadow:0 4px 0 #b69a62,inset 0 1px #fff9e7}
+#teamPanel>.scout-alert[data-ready=true] .transfer-entry-copy small{color:#967131;font-weight:800}
+#teamPanel>.scout-alert:not(:disabled):active{transform:translateY(3px);box-shadow:0 1px 0 #91a88e}
+#teamPanel>.scout-alert:disabled{filter:saturate(.55)}
+@media(max-width:360px){#teamPanel>.scout-alert{gap:9px;padding:13px 10px}.transfer-entry-copy strong{font-size:14px}.transfer-entry-kicker{font-size:6px;letter-spacing:.8px}.transfer-entry-arrow{flex-basis:25px}}
+@media(prefers-reduced-motion:reduce){#teamPanel>.scout-alert{transition:none}}
+
 #matchArrival{box-sizing:border-box;width:min(390px,calc(100% - 28px));max-height:90dvh;overflow:auto;padding:25px 21px;border:3px solid #fff8df;border-radius:23px;background:#f7efd6;color:#577864;text-align:center;box-shadow:0 18px 70px #294c4855}#matchArrival::backdrop{background:#244239b8;backdrop-filter:blur(4px)}.arrival-icon{display:grid;place-items:center;width:62px;height:62px;margin:0 auto 18px;border-radius:20px;background:#eed99e;color:#967138;font-size:35px;box-shadow:0 4px 0 #c6b582}#matchArrival .eyebrow{display:block}#matchArrival h2{font-size:25px;margin:9px 0 16px}#matchArrivalTeams{display:block;padding:12px;border-radius:11px;background:#e0e9ce;font-size:14px;overflow-wrap:anywhere}#matchArrival p{font-size:14px;line-height:1.5}#matchArrival small{display:block;color:#8a957d;font-size:11px;line-height:1.5;margin-bottom:18px}#matchArrival button{width:100%;min-height:44px}
 
 /* Camp planning board: three drop slots, a roster, one send action. */
@@ -111,3 +128,27 @@
 /* Keep catalogue exit reachable throughout the dialog scroll. */
 #scoutDialog #closeScout{position:sticky;top:0;right:auto;display:grid;place-items:center;width:44px;height:44px;margin:-12px 0 -32px auto;z-index:10;border:1px solid #e0d6b9;border-radius:13px;background:#f8efd8;color:#a8854f;box-shadow:0 2px 6px #6c795321;font-size:27px;line-height:1;touch-action:manipulation}
 #scoutDialog #closeScout:active{background:#eee3c5}
+.foundation-drawer:has(.stored-blocks){--drawer-width:510px}.foundation-block.stored-blocks{width:510px;min-width:510px;padding:0;background:transparent;border:0;box-shadow:none}.stored-blocks .foundation-body{display:flex;gap:8px;padding:0;height:100%}.stored-blocks .foundation-floor{flex:0 0 164px;height:218px;padding:12px;background:#f2edd4;border:2px solid #fff8df;border-radius:12px;display:flex;flex-direction:column;justify-content:space-between}.stored-blocks .foundation-tabs[hidden],.stored-blocks>header[hidden]{display:none!important}
+
+/* Anchor discovery labels to their own cards throughout the transition. */
+.bal-transforming .base-room{position:relative;transform:none;overflow-anchor:none}
+.bal-transforming .workflow,.bal-transforming .tier{overflow-anchor:none}
+.bal-new-department-label{display:flex;align-items:center;justify-content:center;min-height:36px;left:9px;right:9px;bottom:9px;margin:0;padding:8px 4px;line-height:1.2;letter-spacing:0;transform:none;white-space:nowrap;box-sizing:border-box}
+.energy-pulse.double-pulse{background:#69c5ff!important;border:2px solid #d5f1ff!important;box-shadow:0 0 10px #4aa7ff,0 0 20px #599eff88!important}.double-pulse:after{content:'2';display:grid;place-items:center;color:#245d9b;font-size:9px;font-weight:900;position:absolute;inset:0}
+#completedBlocks strong,
+
+/* Completed BAL cards use the same drawer and card styling as the workflow. */
+.stored-bal-blocks{--stored-card-width:166px;display:flex;gap:10px;flex:0 0 auto;width:calc(var(--stored-count) * (var(--stored-card-width) + 10px) - 10px);min-width:0;height:226px;margin:0;padding:0;border:0;background:transparent;box-shadow:none;overflow:visible}
+.stored-bal-blocks>.upgrade-room{flex:0 0 var(--stored-card-width);width:var(--stored-card-width);min-width:var(--stored-card-width);margin:0}
+.foundation-drawer:has(>.stored-bal-blocks){--stored-card-width:166px;--drawer-width:calc(var(--stored-count) * (var(--stored-card-width) + 10px) - 10px)}
+.block-store-shell{flex:0 0 auto;height:226px;overflow:visible;position:relative}.block-store-shell>.upgrade-room{position:relative;z-index:1;margin:0}.base-room.receiving-block{position:relative;z-index:20}
+@media(max-width:360px){.stored-bal-blocks,.foundation-drawer:has(>.stored-bal-blocks){--stored-card-width:154px}}
+/* One readable level gauge for both stages; inherited blocks use the normal cards. */
+.block-level-number{display:flex;align-items:baseline;gap:3px;font-size:8px}.block-level-number b{font-size:15px}.block-level-number small{font-size:10px;opacity:.7}.block-level-track{position:relative;display:block;width:100%;height:5px;background:#d6dec6;border-radius:5px;overflow:visible}.block-level-track i{display:block;height:100%;background:#81a38a;border-radius:5px;transition:width .2s}.block-bonus-state{display:block;font-size:8px;color:#907345;margin:3px 0}.block-level{gap:4px}.inherited-block-group{--stored-card-width:166px;display:flex;gap:10px;width:calc(var(--stored-count) * (var(--stored-card-width) + 10px) - 10px);min-width:0;height:226px;margin:0;padding:0;border:0;background:transparent;box-shadow:none;overflow:visible;flex:0 0 auto}.inherited-block-group>.upgrade-room{flex:0 0 var(--stored-card-width);width:var(--stored-card-width);min-width:var(--stored-card-width);margin:0}.foundation-drawer:has(>.inherited-block-group){--stored-card-width:166px;--drawer-width:calc(var(--stored-count) * (var(--stored-card-width) + 10px) - 10px)}
+@media(max-width:360px){.inherited-block-group,.foundation-drawer:has(>.inherited-block-group){--stored-card-width:154px}}
+
+.room-active .block-level{display:flex;flex-direction:column;align-items:stretch;gap:6px}.room-active .block-level-number{white-space:nowrap;flex-wrap:nowrap;justify-content:flex-start}.room-active .block-level-number b{font-size:15px}.room-active .block-level-number small{display:inline;white-space:nowrap;font-size:10px}
+
+/* The sixth level is a visible milestone without revealing its bonus early. */
+.block-level-milestone{position:absolute;top:50%;width:10px;height:10px;box-sizing:border-box;transform:translate(-50%,-50%);border:2px solid #b99b5e;border-radius:50%;background:#fff5d9;box-shadow:0 0 0 2px #f9efd4}
+.block-level-milestone.reached{background:#dfb65e;border-color:#a8833e;box-shadow:0 0 0 2px #f9efd4,inset 0 0 0 1px #ffe8a7}
