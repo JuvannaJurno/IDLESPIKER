@@ -47,7 +47,7 @@ function refresh(){
  let brief;
  if(o.kind==='vacant')brief='Kadrodaki boşluğu hemen doldurur.';
  else if(o.kind==='stronger')brief=o.own.name+'’dan <strong>daha güçlü<strong>. Hemen katkı sağlar.';
- else if(!o.incumbent.reached)brief=o.own.name+' şuanlık stat sınırında ve antrenman kampına gitmeli ama '+o.p.name+' daha çok gelişebilir.';
+ else if(!o.incumbent.reached)brief=o.own.name+' şuanlık stat sınırında ve antrenman kampına gitmeli ama '+o.p.name+' şuanlık daha çok gelişebilir.';
  else brief=o.own.name+'’dan daha zayıf durumda ama <strong>daha az</strong> AP ile '+o.own.name+'’yı geçebilir.';
  transferRows.push([name(o.p)+' · '+TeamRules.roles[o.p.role],brief,{price:o.c.price,missing:Math.max(0,o.c.price-state.budget)}]);
  }
