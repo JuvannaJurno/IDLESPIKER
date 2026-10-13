@@ -47,12 +47,12 @@ function cardQuote(p){const level=cardLevel(p),limit=cardLimit(p),role=cardRoles
  const points=Object.values(gains).reduce((a,b)=>a+b,0),discount=Object.entries(gains).reduce((n,[k,v])=>n+v*Math.max(0,Math.min(developmentState().stage==='bal'?.35:.25,root.RoomSystem?.trainingDiscount?.(k)||0)),0);
  const cost=points?Math.ceil((developmentState().stage==='bal'?120*1.13**Math.max(0,overall(p)-20)*(1-Camps.trainingDiscount(developmentState(),p)):140*1.8**(level-1))*(points-discount)/6):0;
  const next={...p};for(const [k,n]of Object.entries(gains))next[k]+=n;
- return {level,limit,gains,cost,before:overall(p),after:overall(next),blocked:level>=limit?(developmentState().stage==='bal'?'Bu aşamada en yüksek seviye':'Prolog seviyesi tamamlandı'):!points?'Stat sınırında · Kamp ile sınırı artır':''};
+ return {level,limit,gains,cost,before:overall(p),after:overall(next),blocked:Camps.active(developmentState(),p)?'Oyuncu kampta · dönüşünü bekliyor':level>=limit?(developmentState().stage==='bal'?'Bu aşamada en yüksek seviye':'Prolog seviyesi tamamlandı'):!points?'Stat sınırında · Kamp ile sınırı artır':''};
 }
 function upgradeCard(p,pay){const q=cardQuote(p);if(q.blocked||!pay(q.cost))return false;for(const [k,n]of Object.entries(q.gains)){p[k]+=n;p.training[k]=(p.training[k]||0)+n}p.cardLevel=q.level+1;p.cardVersion=1;savePlayers();root.CampSystem?.refresh();return true}
 
 function growth(p){return trainable.reduce((n,k)=>n+Math.max(0,p[k]-p.baseStats[k]),0)}
-function trainingBlock(p,k,amount=1){if(!trainable.includes(k)||!Number.isInteger(amount)||amount<1)return 'Bu özellik çalıştırılamaz.';if(p[k]+amount>cap(p))return 'Stat sınırı: '+cap(p)+'.';return ''}
+function trainingBlock(p,k,amount=1){if(!trainable.includes(k)||!Number.isInteger(amount)||amount<1)return 'Bu özellik çalıştırılamaz.';if(Camps.active(developmentState(),p))return 'Oyuncu kampta · dönüşünü bekliyor.';if(p[k]+amount>cap(p))return 'Stat sınırı: '+cap(p)+'.';return ''}
 function novice(p){for(const k of trainable)p[k]=integer(12,16);for(const k of strengths[p.role])p[k]=integer(17,19);p.stamina=integer(14,17);p.mental=integer(14,17);p.developmentVersion=3;p.cardVersion=1;p.cardLevel=1;p.training={};p.baseStats=Object.fromEntries(trainable.map(k=>[k,p[k]]));const choices=skillCatalog.filter(s=>s.roles.includes(p.role));const technical=shuffle(choices.filter(s=>s.basic&&!['stamina','mental'].includes(s.stat)))[0];const support=shuffle(choices.filter(s=>s.basic&&['stamina','mental'].includes(s.stat)))[0];const advanced=shuffle(choices.filter(s=>!s.basic))[0];p.skills=[technical,support,advanced].filter(Boolean).map(s=>({id:s.id,unlocked:false}));return p}
 function statCost(p,k){
  const n=Math.max(0,p[k]-p.baseStats[k]);

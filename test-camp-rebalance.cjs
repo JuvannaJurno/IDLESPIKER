@@ -1,0 +1,23 @@
+const assert=require('assert'),C=require('./camp-rules'),R=require('./room-rules'),B=require('./bal-rules'),T=require('./team-rules');
+const state=B.enter(R.defaults(),1),players=T.generate();
+state.ap=100000;state.budget=1000000;
+for(const p of players.slice(0,7)){for(const stat of T.trainable)p[stat]=98;p.cardLevel=26;}
+assert.equal(C.config.durationDays,3);assert.equal(C.config.slots,6);assert.equal(C.config.capGain,30);
+assert(C.update(state,players,4).announced);
+assert.equal(state.camp.opensDay,4,'announcement opens enrollment immediately');
+assert(C.enrollMany(state,players.slice(0,6),4));
+assert.equal(state.camp.entries.filter(e=>e.status==='running').length,6);
+assert(!C.enroll(state,players[6],4),'six active slots are the limit');
+assert.equal(C.cap(state,players[0]),100);
+assert(C.active(state,players[0]));
+assert.equal(C.update(state,players,6).completed.length,0);
+assert.equal(C.update(state,players,7).completed.length,6);
+assert.equal(C.cap(state,players[0]),130);
+assert.equal(C.trainingDiscount(state,players[0]),.15);
+const legacy=C.normalize({version:2,announcedDay:1,lastDay:1,boosts:{'player-0':20},entries:[]});
+assert.equal(C.cap({stage:'bal',camp:legacy},players[0]),120,'existing camp progress remains intact');
+global.RoomSystem={developmentState:()=>state,trainingDiscount:()=>0};
+state.camp.entries.push({playerId:players[0].id,startDay:7,endDay:10,targetBoost:60,status:'running'});
+assert.match(T.cardQuote(players[0]).blocked,/kampta/);
+assert.match(T.trainingBlock(players[0],'spike'),/kampta/);
+console.log('PASS: immediate six-player camp, three-day return, +30 cap, legacy progress and locked training.');

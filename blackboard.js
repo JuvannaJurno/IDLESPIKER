@@ -45,12 +45,11 @@ function refresh(){
  else if(!useful.length)transferRows.push(['Öneri','Bu katalogda kadrona belirgin katkı sağlayacak bir fırsat görünmüyor. Bütçeni saklayabilirsin.']);
  for(const o of useful.slice(0,2)){
  let brief;
- if(o.kind==='vacant')brief='Kadrodaki boş '+TeamRules.roles[o.p.role].toLocaleLowerCase('tr-TR')+' yerini doldurabilir.';
- else if(o.kind==='stronger')brief=o.own.name+' şu an daha zayıf; bu oyuncu aynı pozisyonda hemen katkı sağlayabilir.';
- else if(!o.incumbent.reached)brief=o.own.name+' gelişim sınırına yakın; bu oyuncuyu geliştirerek onun gücünü aşabilirsin.';
- else brief=(o.ovr<o.current?o.own.name+' şu an daha güçlü ama ':o.own.name+' ile aynı güçte ama ')+'bu oyuncuyu daha az AP harcayarak ondan güçlü hâle getirebilirsin.';
- brief=brief[0].toLocaleUpperCase('tr-TR')+brief.slice(1);
- transferRows.push([name(o.p),brief,{price:o.c.price,missing:Math.max(0,o.c.price-state.budget)}]);
+ if(o.kind==='vacant')brief='Kadrodaki boşluğu hemen doldurur.';
+ else if(o.kind==='stronger')brief=o.own.name+'’dan daha güçlü. Hemen katkı sağlar.';
+ else if(!o.incumbent.reached)brief=o.own.name+' stat sınırına yakın ama '+o.p.name+' daha çok gelişebilir.';
+ else brief=o.own.name+'’dan daha zayıf ama daha az AP ile '+o.own.name+'’yı geçebilir.';
+ transferRows.push([name(o.p)+' · '+TeamRules.roles[o.p.role],brief,{price:o.c.price,missing:Math.max(0,o.c.price-state.budget)}]);
  }
 
  }
