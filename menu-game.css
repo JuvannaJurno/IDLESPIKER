@@ -117,3 +117,11 @@ body:has(#learningHint[data-step="instruction-path"]:not([hidden])) #rewardLayer
 #learningHint .tutorial-button-name{display:inline;padding:1px 5px;border:1px solid #d8c79e;border-radius:5px;background:#efe5c9;color:#66522f;font-weight:900;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 
 .building-scroll.is-panning,.building-scroll.is-panning *{cursor:grabbing!important;user-select:none!important}
+
+/* Keep continuous instruction feedback inexpensive to paint. */
+.energy-pulse{will-change:transform;pointer-events:none;box-shadow:none!important}.tier.energized .room-tile,.tier.energized .upgrade-room[data-upgrade="ready"]{box-shadow:0 3px 0 #c3aa6b!important}.tier.energized .room{filter:none}.tier.energized .connector{box-shadow:none}.reward-spark{pointer-events:none}
+
+/* A small contour separates the volleyball from its pale calendar tile. */
+.next-match .match-symbol img{filter:drop-shadow(1px 0 0 #42635b) drop-shadow(-1px 0 0 #42635b) drop-shadow(0 1px 0 #42635b) drop-shadow(0 -1px 0 #42635b)}
+
+.vibration-toggle{width:auto;min-width:76px;padding:0 12px;font-size:13px}
