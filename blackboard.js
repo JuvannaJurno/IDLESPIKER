@@ -37,7 +37,7 @@ function refresh(){
  const state=RoomSystem.scoutView(),level=bal?RoomRules.count(state,'bal_scout'):0;
  const transferRows=[];
  if(bal&&document.getElementById('scoutDialog')?.open){
- if(level<6)transferRows.push(['Kilitli','Teknik Ekiptenten departmanından Gözlemci bloğunu 6. seviyeye yükselt. Katalogdaki oyuncuların takımına katkısını öğren.']);
+ if(level<6)transferRows.push(['Kilitli','Teknik Ekip departmanından Gözlemci bloğunu 6. seviyeye yükselt. Katalogdaki oyuncuların takımına katkısını öğren.']);
  else if(!ScoutRules.available(state))transferRows.push(['Katalog kapalı','Oyuncu Keşfi departmanını aç.']);
  else{
  const cacheKey=JSON.stringify([squad.lineup,squad.players.map(p=>[p.id,p.role,p.cardLevel,...TeamRules.trainable.map(k=>p[k])]),state.scouting?.catalog,state.floors,RoomSystem.developmentState().camp.boosts]);if(cacheKey!==transferCacheKey){transferCacheKey=cacheKey;transferCache=transfers(squad,state.scouting?.catalog||[],TeamRules)}const options=transferCache,useful=options.filter(o=>o.kind!=='pass');
