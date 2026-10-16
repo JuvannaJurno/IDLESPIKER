@@ -22,7 +22,7 @@ function refresh(){
  if(document.hidden||(document.getElementById('teamPanel').hidden&&!document.getElementById('scoutDialog')?.open))return;
  const bal=LeagueRules.config.bal;document.getElementById('blackboardTitle').textContent=bal?'Teknik Ekip':'Kara Tahta';
  const lead=RoomSystem.blackboard().leadDays,next=LeagueSeason.progress().next,rows=[],actions=[];
- const squad=TeamView.snapshot(),opponents=Array.from({length:6},(_,i)=>TeamRules.opponentStats(next?.round||1,i,bal?'bal':'prologue',next?(next.home===0?next.away:next.home):1)),report=analyze(squad,opponents,TeamRules),{need,weak,upgrade,swap}=report;
+ const squad=TeamView.snapshot(),opponents=Array.from({length:6},(_,i)=>TeamRules.opponentStats(next?.round||1,i,LeagueRules.config.division===3?'division2':bal?'bal':'prologue',next?(next.home===0?next.away:next.home):1)),report=analyze(squad,opponents,TeamRules),{need,weak,upgrade,swap}=report;
  if(next){let day=1;try{day=JSON.parse(localStorage.getItem('idle-spiker-main-menu-v1')).day}catch{}const remaining=next.day-day,rival=LeagueRules.teams[next.home===0?next.away:next.home];rows.push(['Sıradaki rakip',rival+' · '+(remaining>0?remaining+' gün sonra':'Maç günü')]);
  if(!lead)rows.push(['Analiz kapalı',bal?'Teknik Ekip’ten Gözlemci veya Rakip Analizi aç.':'Kara Tahta’dan Rakip Analizi Bloğunu aç.']);
  else if(remaining>lead)rows.push(['Rapor tarihi',(next.day-lead)+'. gün']);

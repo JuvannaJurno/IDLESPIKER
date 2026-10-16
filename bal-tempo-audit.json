@@ -4,9 +4,9 @@
     "carry": 5,
     "minutes": 84,
     "rank": 4,
-    "maxWaitSeconds": 69,
+    "maxWaitSeconds": 75,
     "camps": 11,
-    "returns": 10,
+    "returns": 11,
     "spentTransfers": 0,
     "snapshots": [
       {
@@ -32,14 +32,14 @@
         "earnedAP": 708878,
         "earnedCash": 24722,
         "budget": 1442,
-        "AP": 20946,
-        "upgrades": 56,
+        "AP": 19911,
+        "upgrades": 58,
         "blockUpgrades": 32,
         "affordableBlocks": 2,
         "camps": 0,
         "returns": 0,
         "blocked": 0,
-        "meanOVR": 45
+        "meanOVR": 44
       },
       {
         "minute": 20,
@@ -48,8 +48,8 @@
         "earnedAP": 2257154,
         "earnedCash": 126116,
         "budget": 4916,
-        "AP": 52088,
-        "upgrades": 90,
+        "AP": 54673,
+        "upgrades": 92,
         "blockUpgrades": 61,
         "affordableBlocks": 2,
         "camps": 0,
@@ -64,13 +64,13 @@
         "earnedAP": 4768966,
         "earnedCash": 327216,
         "budget": 16836,
-        "AP": 29271,
-        "upgrades": 114,
+        "AP": 55501,
+        "upgrades": 116,
         "blockUpgrades": 81,
         "affordableBlocks": 3,
         "camps": 5,
-        "returns": 3,
-        "blocked": 2,
+        "returns": 4,
+        "blocked": 1,
         "meanOVR": 58
       },
       {
@@ -80,8 +80,8 @@
         "earnedAP": 7877002,
         "earnedCash": 586144,
         "budget": 36144,
-        "AP": 197563,
-        "upgrades": 131,
+        "AP": 60771,
+        "upgrades": 134,
         "blockUpgrades": 92,
         "affordableBlocks": 9,
         "camps": 6,
@@ -96,8 +96,8 @@
         "earnedAP": 11763071,
         "earnedCash": 911386,
         "budget": 2036,
-        "AP": 185064,
-        "upgrades": 146,
+        "AP": 312162,
+        "upgrades": 148,
         "blockUpgrades": 104,
         "affordableBlocks": 0,
         "camps": 6,
@@ -111,14 +111,14 @@
         "apPerInstruction": 204.4,
         "earnedAP": 16361010,
         "earnedCash": 1337426,
-        "budget": 5196,
-        "AP": 215318,
-        "upgrades": 158,
+        "budget": 2196,
+        "AP": 119825,
+        "upgrades": 160,
         "blockUpgrades": 115,
         "affordableBlocks": 0,
-        "camps": 7,
+        "camps": 9,
         "returns": 7,
-        "blocked": 0,
+        "blocked": 2,
         "meanOVR": 68
       },
       {
@@ -126,30 +126,30 @@
         "rate": 13.12,
         "apPerInstruction": 204.4,
         "earnedAP": 21451243,
-        "earnedCash": 1831714,
-        "budget": 33344,
-        "AP": 383671,
-        "upgrades": 167,
+        "earnedCash": 1831514,
+        "budget": 33144,
+        "AP": 39703,
+        "upgrades": 170,
         "blockUpgrades": 122,
         "affordableBlocks": 0,
         "camps": 10,
         "returns": 10,
         "blocked": 0,
-        "meanOVR": 70
+        "meanOVR": 71
       },
       {
         "minute": 80,
         "rate": 14.76,
         "apPerInstruction": 204.4,
         "earnedAP": 27972500,
-        "earnedCash": 2552304,
-        "budget": 30994,
-        "AP": 387011,
-        "upgrades": 177,
+        "earnedCash": 2552104,
+        "budget": 28794,
+        "AP": 401332,
+        "upgrades": 179,
         "blockUpgrades": 134,
         "affordableBlocks": 0,
-        "camps": 10,
-        "returns": 10,
+        "camps": 11,
+        "returns": 11,
         "blocked": 0,
         "meanOVR": 73
       }
@@ -157,8 +157,8 @@
     "firstMax": {
       "id": "bal_sponsor",
       "level": 10,
-      "instructions": 36975,
-      "minute": 66.47922377601425
+      "instructions": 37000,
+      "minute": 66.51803926833584
     },
     "maxedAtEnd": {
       "bal_coach": 9,
@@ -181,8 +181,8 @@
       {
         "round": 1,
         "winPercent": {
-          "Bursa Spor": 86,
-          "Ege Yıldızları": 37,
+          "Bursa Spor": 88,
+          "Ege Yıldızları": 30,
           "Başkent Akademi": 17,
           "Karadeniz Gücü": 4
         }
@@ -190,19 +190,19 @@
       {
         "round": 7,
         "winPercent": {
-          "Bursa Spor": 93,
-          "Ege Yıldızları": 77,
-          "Başkent Akademi": 58,
-          "Karadeniz Gücü": 36
+          "Bursa Spor": 90,
+          "Ege Yıldızları": 71,
+          "Başkent Akademi": 51,
+          "Karadeniz Gücü": 32
         }
       },
       {
         "round": 14,
         "winPercent": {
-          "Bursa Spor": 90,
-          "Ege Yıldızları": 76,
-          "Başkent Akademi": 61,
-          "Karadeniz Gücü": 44
+          "Bursa Spor": 89,
+          "Ege Yıldızları": 72,
+          "Başkent Akademi": 59,
+          "Karadeniz Gücü": 43
         }
       }
     ]
@@ -213,8 +213,8 @@
     "minutes": 70,
     "rank": 2,
     "maxWaitSeconds": 61,
-    "camps": 10,
-    "returns": 10,
+    "camps": 11,
+    "returns": 11,
     "spentTransfers": 0,
     "snapshots": [
       {
@@ -240,7 +240,7 @@
         "earnedAP": 783282,
         "earnedCash": 27878,
         "budget": 1058,
-        "AP": 26813,
+        "AP": 19243,
         "upgrades": 59,
         "blockUpgrades": 31,
         "affordableBlocks": 1,
@@ -254,25 +254,25 @@
         "rate": 9.84,
         "apPerInstruction": 204.4,
         "earnedAP": 2657126,
-        "earnedCash": 148140,
-        "budget": 9090,
-        "AP": 44827,
-        "upgrades": 95,
-        "blockUpgrades": 62,
-        "affordableBlocks": 10,
-        "camps": 2,
+        "earnedCash": 148305,
+        "budget": 1505,
+        "AP": 21621,
+        "upgrades": 96,
+        "blockUpgrades": 63,
+        "affordableBlocks": 0,
+        "camps": 1,
         "returns": 0,
-        "blocked": 2,
-        "meanOVR": 53
+        "blocked": 1,
+        "meanOVR": 54
       },
       {
         "minute": 30,
         "rate": 13.12,
         "apPerInstruction": 204.4,
-        "earnedAP": 6053216,
-        "earnedCash": 419642,
-        "budget": 14362,
-        "AP": 134569,
+        "earnedAP": 6051376,
+        "earnedCash": 419807,
+        "budget": 14527,
+        "AP": 150969,
         "upgrades": 122,
         "blockUpgrades": 82,
         "affordableBlocks": 0,
@@ -285,10 +285,10 @@
         "minute": 40,
         "rate": 14.76,
         "apPerInstruction": 204.4,
-        "earnedAP": 10509171,
-        "earnedCash": 788330,
-        "budget": 11170,
-        "AP": 71104,
+        "earnedAP": 10507331,
+        "earnedCash": 788495,
+        "budget": 11335,
+        "AP": 105635,
         "upgrades": 143,
         "blockUpgrades": 96,
         "affordableBlocks": 0,
@@ -301,26 +301,26 @@
         "minute": 50,
         "rate": 16.4,
         "apPerInstruction": 204.4,
-        "earnedAP": 15621810,
-        "earnedCash": 1223042,
-        "budget": 38292,
-        "AP": 220832,
+        "earnedAP": 15619970,
+        "earnedCash": 1223207,
+        "budget": 38457,
+        "AP": 214231,
         "upgrades": 157,
         "blockUpgrades": 107,
         "affordableBlocks": 4,
         "camps": 7,
-        "returns": 7,
-        "blocked": 0,
+        "returns": 6,
+        "blocked": 1,
         "meanOVR": 68
       },
       {
         "minute": 60,
         "rate": 16.4,
         "apPerInstruction": 204.4,
-        "earnedAP": 21780802,
-        "earnedCash": 1802240,
-        "budget": 40530,
-        "AP": 552093,
+        "earnedAP": 21778963,
+        "earnedCash": 1802405,
+        "budget": 40695,
+        "AP": 546818,
         "upgrades": 168,
         "blockUpgrades": 121,
         "affordableBlocks": 0,
@@ -333,15 +333,15 @@
         "minute": 70,
         "rate": 16.4,
         "apPerInstruction": 204.4,
-        "earnedAP": 28733834,
-        "earnedCash": 2537770,
-        "budget": 83160,
-        "AP": 435931,
+        "earnedAP": 28731995,
+        "earnedCash": 2537695,
+        "budget": 81085,
+        "AP": 348581,
         "upgrades": 179,
         "blockUpgrades": 132,
         "affordableBlocks": 0,
-        "camps": 10,
-        "returns": 10,
+        "camps": 11,
+        "returns": 11,
         "blocked": 0,
         "meanOVR": 73
       }
@@ -373,28 +373,28 @@
       {
         "round": 1,
         "winPercent": {
-          "Bursa Spor": 86,
-          "Ege Yıldızları": 28,
-          "Başkent Akademi": 12,
-          "Karadeniz Gücü": 3
+          "Bursa Spor": 88,
+          "Ege Yıldızları": 33,
+          "Başkent Akademi": 14,
+          "Karadeniz Gücü": 5
         }
       },
       {
         "round": 7,
         "winPercent": {
-          "Bursa Spor": 94,
-          "Ege Yıldızları": 69,
-          "Başkent Akademi": 53,
-          "Karadeniz Gücü": 33
+          "Bursa Spor": 93,
+          "Ege Yıldızları": 76,
+          "Başkent Akademi": 58,
+          "Karadeniz Gücü": 35
         }
       },
       {
         "round": 14,
         "winPercent": {
-          "Bursa Spor": 90,
+          "Bursa Spor": 91,
           "Ege Yıldızları": 75,
-          "Başkent Akademi": 60,
-          "Karadeniz Gücü": 40
+          "Başkent Akademi": 65,
+          "Karadeniz Gücü": 42
         }
       }
     ]
@@ -404,10 +404,10 @@
     "carry": 5,
     "minutes": 89,
     "rank": 3,
-    "maxWaitSeconds": 78,
-    "camps": 11,
-    "returns": 11,
-    "spentTransfers": 343200,
+    "maxWaitSeconds": 86,
+    "camps": 10,
+    "returns": 10,
+    "spentTransfers": 552300,
     "snapshots": [
       {
         "minute": 0,
@@ -432,7 +432,7 @@
         "earnedAP": 696983,
         "earnedCash": 24722,
         "budget": 7302,
-        "AP": 24435,
+        "AP": 15458,
         "upgrades": 56,
         "blockUpgrades": 28,
         "affordableBlocks": 15,
@@ -448,7 +448,7 @@
         "earnedAP": 1589600,
         "earnedCash": 64572,
         "budget": 50652,
-        "AP": 23554,
+        "AP": 183,
         "upgrades": 80,
         "blockUpgrades": 28,
         "affordableBlocks": 15,
@@ -464,7 +464,7 @@
         "earnedAP": 3439043,
         "earnedCash": 201672,
         "budget": 5042,
-        "AP": 81018,
+        "AP": 60789,
         "upgrades": 102,
         "blockUpgrades": 71,
         "affordableBlocks": 0,
@@ -477,13 +477,13 @@
         "minute": 40,
         "rate": 9.84,
         "apPerInstruction": 204.4,
-        "earnedAP": 6118511,
-        "earnedCash": 416222,
-        "budget": 36982,
-        "AP": 56817,
-        "upgrades": 122,
+        "earnedAP": 6084104,
+        "earnedCash": 412430,
+        "budget": 33190,
+        "AP": 126457,
+        "upgrades": 121,
         "blockUpgrades": 84,
-        "affordableBlocks": 13,
+        "affordableBlocks": 11,
         "camps": 6,
         "returns": 6,
         "blocked": 0,
@@ -493,11 +493,11 @@
         "minute": 50,
         "rate": 11.48,
         "apPerInstruction": 204.4,
-        "earnedAP": 9511402,
-        "earnedCash": 699610,
-        "budget": 23110,
-        "AP": 40974,
-        "upgrades": 139,
+        "earnedAP": 9476033,
+        "earnedCash": 694510,
+        "budget": 18010,
+        "AP": 109122,
+        "upgrades": 138,
         "blockUpgrades": 97,
         "affordableBlocks": 0,
         "camps": 6,
@@ -509,11 +509,11 @@
         "minute": 60,
         "rate": 13.12,
         "apPerInstruction": 204.4,
-        "earnedAP": 13571493,
-        "earnedCash": 1053590,
-        "budget": 30040,
-        "AP": 154013,
-        "upgrades": 152,
+        "earnedAP": 13536124,
+        "earnedCash": 1048390,
+        "budget": 24840,
+        "AP": 284369,
+        "upgrades": 151,
         "blockUpgrades": 107,
         "affordableBlocks": 0,
         "camps": 6,
@@ -525,15 +525,15 @@
         "minute": 70,
         "rate": 13.12,
         "apPerInstruction": 204.4,
-        "earnedAP": 18553796,
-        "earnedCash": 1512772,
-        "budget": 3362,
-        "AP": 431798,
+        "earnedAP": 18516895,
+        "earnedCash": 1507532,
+        "budget": 37802,
+        "AP": 193948,
         "upgrades": 162,
-        "blockUpgrades": 116,
+        "blockUpgrades": 115,
         "affordableBlocks": 0,
-        "camps": 10,
-        "returns": 10,
+        "camps": 9,
+        "returns": 9,
         "blocked": 0,
         "meanOVR": 70
       },
@@ -541,24 +541,24 @@
         "minute": 80,
         "rate": 13.12,
         "apPerInstruction": 204.4,
-        "earnedAP": 23616326,
-        "earnedCash": 1993610,
-        "budget": 87900,
-        "AP": 554682,
+        "earnedAP": 23579424,
+        "earnedCash": 1987270,
+        "budget": 64960,
+        "AP": 333143,
         "upgrades": 171,
         "blockUpgrades": 121,
-        "affordableBlocks": 9,
-        "camps": 10,
-        "returns": 10,
+        "affordableBlocks": 2,
+        "camps": 9,
+        "returns": 9,
         "blocked": 0,
-        "meanOVR": 72
+        "meanOVR": 73
       }
     ],
     "firstMax": {
       "id": "bal_sponsor",
       "level": 10,
-      "instructions": 40950,
-      "minute": 75.5751414160986
+      "instructions": 41000,
+      "minute": 75.70761818729488
     },
     "maxedAtEnd": {
       "bal_coach": 9,
@@ -570,39 +570,39 @@
       "bal_sponsor": 10,
       "bal_shop": 9,
       "bal_fans": 8,
-      "bal_scout": 9,
+      "bal_scout": 8,
       "bal_personal": 8,
       "bal_archive": 8,
       "bal_search": 8,
       "bal_contacts": 8,
-      "bal_talent": 8
+      "bal_talent": 7
     },
     "winRates": [
       {
         "round": 1,
         "winPercent": {
-          "Bursa Spor": 89,
-          "Ege Yıldızları": 30,
+          "Bursa Spor": 91,
+          "Ege Yıldızları": 32,
           "Başkent Akademi": 16,
-          "Karadeniz Gücü": 5
+          "Karadeniz Gücü": 4
         }
       },
       {
         "round": 7,
         "winPercent": {
-          "Bursa Spor": 91,
-          "Ege Yıldızları": 70,
-          "Başkent Akademi": 54,
-          "Karadeniz Gücü": 34
+          "Bursa Spor": 90,
+          "Ege Yıldızları": 72,
+          "Başkent Akademi": 56,
+          "Karadeniz Gücü": 32
         }
       },
       {
         "round": 14,
         "winPercent": {
-          "Bursa Spor": 99,
-          "Ege Yıldızları": 88,
-          "Başkent Akademi": 84,
-          "Karadeniz Gücü": 67
+          "Bursa Spor": 100,
+          "Ege Yıldızları": 96,
+          "Başkent Akademi": 89,
+          "Karadeniz Gücü": 73
         }
       }
     ]
@@ -612,7 +612,7 @@
     "carry": 3,
     "minutes": 109,
     "rank": 4,
-    "maxWaitSeconds": 98,
+    "maxWaitSeconds": 83,
     "camps": 10,
     "returns": 10,
     "spentTransfers": 0,
@@ -631,7 +631,7 @@
         "camps": 0,
         "returns": 0,
         "blocked": 0,
-        "meanOVR": 32
+        "meanOVR": 31
       },
       {
         "minute": 10,
@@ -640,8 +640,8 @@
         "earnedAP": 279169,
         "earnedCash": 11486,
         "budget": 676,
-        "AP": 6977,
-        "upgrades": 32,
+        "AP": 2246,
+        "upgrades": 33,
         "blockUpgrades": 20,
         "affordableBlocks": 1,
         "camps": 0,
@@ -656,8 +656,8 @@
         "earnedAP": 852711,
         "earnedCash": 45592,
         "budget": 1122,
-        "AP": 14467,
-        "upgrades": 60,
+        "AP": 10489,
+        "upgrades": 61,
         "blockUpgrades": 42,
         "affordableBlocks": 0,
         "camps": 0,
@@ -672,7 +672,7 @@
         "earnedAP": 2016871,
         "earnedCash": 145814,
         "budget": 5644,
-        "AP": 2843,
+        "AP": 48516,
         "upgrades": 86,
         "blockUpgrades": 64,
         "affordableBlocks": 2,
@@ -685,11 +685,11 @@
         "minute": 40,
         "rate": 6.52,
         "apPerInstruction": 184.4,
-        "earnedAP": 3731155,
+        "earnedAP": 3736155,
         "earnedCash": 305914,
         "budget": 10534,
-        "AP": 78259,
-        "upgrades": 104,
+        "AP": 73499,
+        "upgrades": 105,
         "blockUpgrades": 79,
         "affordableBlocks": 0,
         "camps": 3,
@@ -701,11 +701,11 @@
         "minute": 50,
         "rate": 7.82,
         "apPerInstruction": 184.4,
-        "earnedAP": 5794294,
-        "earnedCash": 498926,
-        "budget": 13946,
-        "AP": 82302,
-        "upgrades": 119,
+        "earnedAP": 5788736,
+        "earnedCash": 498114,
+        "budget": 13134,
+        "AP": 39453,
+        "upgrades": 120,
         "blockUpgrades": 88,
         "affordableBlocks": 0,
         "camps": 6,
@@ -717,27 +717,27 @@
         "minute": 60,
         "rate": 9.13,
         "apPerInstruction": 184.4,
-        "earnedAP": 8222100,
+        "earnedAP": 8227100,
         "earnedCash": 737226,
         "budget": 3056,
-        "AP": 737,
+        "AP": 223754,
         "upgrades": 132,
         "blockUpgrades": 99,
         "affordableBlocks": 0,
         "camps": 6,
         "returns": 6,
         "blocked": 0,
-        "meanOVR": 63
+        "meanOVR": 62
       },
       {
         "minute": 70,
         "rate": 9.13,
         "apPerInstruction": 184.4,
-        "earnedAP": 10978555,
+        "earnedAP": 10983555,
         "earnedCash": 1012604,
         "budget": 44454,
-        "AP": 220252,
-        "upgrades": 142,
+        "AP": 243345,
+        "upgrades": 143,
         "blockUpgrades": 105,
         "affordableBlocks": 9,
         "camps": 6,
@@ -749,11 +749,11 @@
         "minute": 80,
         "rate": 10.43,
         "apPerInstruction": 184.4,
-        "earnedAP": 14331472,
+        "earnedAP": 14336472,
         "earnedCash": 1370776,
         "budget": 40546,
-        "AP": 373347,
-        "upgrades": 152,
+        "AP": 347835,
+        "upgrades": 153,
         "blockUpgrades": 115,
         "affordableBlocks": 0,
         "camps": 6,
@@ -765,11 +765,11 @@
         "minute": 90,
         "rate": 10.43,
         "apPerInstruction": 184.4,
-        "earnedAP": 17900174,
+        "earnedAP": 17905174,
         "earnedCash": 1761814,
-        "budget": 65304,
-        "AP": 425521,
-        "upgrades": 159,
+        "budget": 66304,
+        "AP": 55298,
+        "upgrades": 161,
         "blockUpgrades": 121,
         "affordableBlocks": 2,
         "camps": 9,
@@ -781,11 +781,11 @@
         "minute": 100,
         "rate": 11.74,
         "apPerInstruction": 184.4,
-        "earnedAP": 22278111,
+        "earnedAP": 22283111,
         "earnedCash": 2296934,
         "budget": 1724,
-        "AP": 532110,
-        "upgrades": 167,
+        "AP": 396639,
+        "upgrades": 168,
         "blockUpgrades": 131,
         "affordableBlocks": 0,
         "camps": 10,
@@ -797,8 +797,8 @@
     "firstMax": {
       "id": "bal_sponsor",
       "level": 10,
-      "instructions": 36900,
-      "minute": 87.0732331763748
+      "instructions": 36875,
+      "minute": 87.04394295824257
     },
     "maxedAtEnd": {
       "bal_coach": 9,
@@ -821,28 +821,28 @@
       {
         "round": 1,
         "winPercent": {
-          "Bursa Spor": 88,
+          "Bursa Spor": 84,
           "Ege Yıldızları": 24,
           "Başkent Akademi": 10,
-          "Karadeniz Gücü": 2
+          "Karadeniz Gücü": 3
         }
       },
       {
         "round": 7,
         "winPercent": {
-          "Bursa Spor": 90,
-          "Ege Yıldızları": 73,
-          "Başkent Akademi": 56,
+          "Bursa Spor": 93,
+          "Ege Yıldızları": 70,
+          "Başkent Akademi": 52,
           "Karadeniz Gücü": 32
         }
       },
       {
         "round": 14,
         "winPercent": {
-          "Bursa Spor": 90,
-          "Ege Yıldızları": 73,
-          "Başkent Akademi": 61,
-          "Karadeniz Gücü": 42
+          "Bursa Spor": 89,
+          "Ege Yıldızları": 72,
+          "Başkent Akademi": 58,
+          "Karadeniz Gücü": 41
         }
       }
     ]

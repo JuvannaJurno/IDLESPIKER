@@ -1,5 +1,16 @@
 # BAL dengesi
 
+Şampiyonluk ayarı: Başkent taban gücü 54 → 49, Karadeniz 62 → 54. Diğer takımlar ve sezon içi gelişim korunur. Canlı maç, rakip analizi ve rakipler arası sonuçlar aynı profilleri kullanır; kayıtlı maç sonuçları yeniden yazılmaz.
+
+Güncel 200'er sezonluk sabit gelişim karşılaştırması:
+
+| Rota | İlk 3 | İlk 2 | Şampiyon |
+|---|---:|---:|---:|
+| Dengeli | 190/200 (%95) | 74/200 (%37) | 48/200 (%24) |
+| Transfer | 184/200 (%92) | 61/200 (%30,5) | 36/200 (%18) |
+
+Bu sonuçlar her maç sonucu için ekonomiyi yeniden çalıştırmaz; aynı gelişim rotalarını farklı maç tohumlarıyla karşılaştırır. Kesin canlı oyun olasılıkları değildir. `audit-bal-ranking.cjs` şampiyonluğun %10–40 aralığında, ilk ikinin daha erişilebilir ve ilk üçün en erişilebilir kalmasını kontrol eder.
+
 Bu ayarların hedefi, maçları izleyen oyuncu için yaklaşık 90–150 dakikalık aktif sezon. Takvim 14 maç ve günde 500 talimat kullanır. Çevrimdışı ilerleme ve maç atlama toplam süreyi kısaltabilir.
 
 ## Geçiş ve ilerleme

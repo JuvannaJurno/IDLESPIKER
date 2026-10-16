@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded',()=>{
  section('Görünüm ve kontrol',['themeToggle','vibrationToggle']);
  section('Ses',['soundToggle','volume-music','volume-crowd','volume-effects']);
  const fast=document.querySelector('#testAutoclicker')?.closest('.settings-row')?.querySelector('span');if(fast)fast.textContent='Hızlı test · 100× talimat';
- section('Test seçenekleri',['testAutoclicker','skipStage']);
+ section('Test seçenekleri',['testAutoclicker','skipStage','skipThirdStage']);
  const reset=dialog.querySelector('.reset-section');if(reset)dialog.append(reset);
 });
 })();

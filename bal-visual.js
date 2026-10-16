@@ -20,7 +20,7 @@ async function play({animate,stopped,text,note}){
  async function focus(el){const startLeft=scrollBox.scrollLeft;const top=window.scrollY+el.getBoundingClientRect().top-Math.max(110,(innerHeight-180-el.offsetHeight)/2);if(reduced){scrollBox.scrollLeft=0;window.scrollTo({top,behavior:'instant'});return}const start=scrollY,end=Math.max(0,top),begin=performance.now();await new Promise(resolve=>{function frame(now){if(stopped())return resolve();const p=Math.min(1,(now-begin)/420);scrollBox.scrollLeft=startLeft*(1-p)**3;window.scrollTo({top:start+(end-start)*(1-(1-p)**3),behavior:'instant'});p<1?requestAnimationFrame(frame):resolve()}requestAnimationFrame(frame)});}
 
  async function gather(f){if(stopped())return;const el=tier(f),b=base(f),slot=document.getElementById('roomSlots'+f);el.classList.add('bal-active-tier');await focus(b);if(stopped())return;
- const cards=[...slot.querySelectorAll('.upgrade-room')];el.dataset.blockMerge='storing';
+ const state=RoomSystem.snapshot(),cards=[...slot.querySelectorAll('.upgrade-room')].filter(card=>{const room=RoomRules.catalog.find(r=>r.id===card.dataset.id);return room&&RoomRules.count(state,room.id)>=room.values.length;});el.dataset.blockMerge='storing';
  // Keep the cards full-sized: they slide behind the department instead of shrinking away.
  b.style.position='relative';b.style.zIndex='20';
  const target=b.getBoundingClientRect();

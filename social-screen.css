@@ -1,0 +1,138 @@
+/* Social screen palette and layout are kept together to avoid theme drift. */
+body.social-open{--social-page:#e8eee6;--social-card:#fffdf3;--social-line:#d8e0d2;--social-text:#36574e;--social-muted:#718779;--social-accent:#dfbc70;--social-soft:#eff2e7;--social-button:#e6ecd9;--social-progress:#c7d7b1;--social-photo:#c1d4bd;background-color:var(--social-page)}
+html[data-theme=dark] body.social-open{--social-page:#192e33;--social-card:#253d41;--social-line:#3e5858;--social-text:#e7ecdd;--social-muted:#a1b6aa;--social-accent:#d9bc7c;--social-soft:#2c4547;--social-button:#354e48;--social-progress:#4c6953;--social-photo:#4a6962}
+body.social-open .content,body.social-open main{background:var(--social-page)}
+body.social-open .topbar{background:transparent;border-bottom:1px solid var(--social-line)}
+body.social-open .wordmark{color:var(--social-text);text-shadow:none}
+body.social-open .wordmark>span{color:#ad8747}
+body.social-open .wordmark small{color:var(--social-muted)}
+body.social-open .topbar .settings-button,body.social-open .topbar #achievementsButton{background:var(--social-card);border:1px solid var(--social-line);box-shadow:none;color:var(--social-text)}
+body.social-open main{padding-top:0;padding-bottom:calc(88px + env(safe-area-inset-bottom))}
+#socialPanel{padding:0 6px;color:var(--social-text)}
+body.social-open #socialPanel .social-app-header{margin:19px 2px 20px;gap:12px}
+body.social-open #socialPanel .social-app-brand{gap:10px}
+body.social-open #socialPanel .social-app-brand>img{width:38px;height:38px;filter:none}
+body.social-open #socialPanel .social-app-brand small{font-size:8px;font-weight:700;letter-spacing:1.15px;color:var(--social-muted)}
+body.social-open #socialPanel .social-app-brand h1{margin:3px 0 0;font-size:22px;font-weight:800;letter-spacing:-.8px;color:var(--social-text)}
+body.social-open #socialPanel .social-follower-badge{display:flex;flex-direction:column;align-items:flex-end;gap:2px;border:0;border-radius:0;padding:0;background:none;box-shadow:none;color:var(--social-text)}
+body.social-open #socialPanel .social-follower-badge strong{font-size:20px;letter-spacing:-.5px;line-height:1.15}
+body.social-open #socialPanel .social-follower-badge small{font-size:10px;color:var(--social-muted)}
+body.social-open #socialPanel .social-simple{position:relative;margin:0 0 20px;border:1px solid var(--social-line);border-radius:19px;background:var(--social-card);padding:0 12px 11px;box-shadow:0 5px 18px #23433608;overflow:hidden}
+body.social-open #socialPanel .simple-publish-heading{position:absolute;right:14px;bottom:12px;pointer-events:none;margin:0;font-size:9px;color:var(--social-muted)}
+body.social-open #socialPanel .simple-publish-heading>span{display:none}
+body.social-open #socialPanel .simple-publish-heading small:empty{display:none}
+body.social-open #socialPanel .social-draft{margin:0 -12px 0;padding:0 12px 12px;border:0;border-radius:0;background:transparent;box-shadow:none}
+body.social-open #socialPanel .draft-top{min-height:41px;padding:0 1px;gap:6px}
+body.social-open #socialPanel .draft-account{font-size:11px;font-weight:700;color:var(--social-text)}
+body.social-open #socialPanel .draft-top small{font-size:8px;letter-spacing:.35px;font-weight:600;color:var(--social-muted)}
+body.social-open #socialPanel .draft-steps{display:none}
+body.social-open #socialPanel .draft-art{height:158px;border-radius:10px;background:var(--social-photo)}
+body.social-open #socialPanel .draft-background{filter:saturate(.8);object-fit:cover}
+body.social-open #socialPanel .draft-art:after{background:linear-gradient(90deg,#2349438c,transparent 85%)}
+body.social-open #socialPanel .draft-player{height:190px;width:49%;right:0;bottom:-23px;filter:none}
+body.social-open #socialPanel .draft-headline{max-width:51%;left:15px;bottom:18px;font-size:23px;font-weight:800;line-height:1.08;letter-spacing:-.5px;text-shadow:none;color:#fff6dd}
+body.social-open #socialPanel .draft-paper-line{display:none}
+body.social-open #socialPanel .draft-scan{width:1px;background:#f7e8bb88;box-shadow:none}
+body.social-open #socialPanel .draft-caption{height:38px;padding:10px 2px 0;font-size:10px;line-height:1.5;color:var(--social-muted)}
+body.social-open #socialPanel .draft-skeleton{width:62%;height:4px;top:13px;box-shadow:0 8px var(--social-soft);background:var(--social-line)}
+body.social-open #socialPanel .social-draft[data-stage=idle] .draft-background{clip-path:none;opacity:.75}
+body.social-open #socialPanel .social-draft[data-stage=idle] .draft-player{opacity:.85;transform:none}
+body.social-open #socialPanel .social-draft[data-stage=idle] .draft-headline{opacity:1;transform:none}
+body.social-open #socialPanel .social-draft[data-stage=idle] .draft-art:after{opacity:1}
+body.social-open #socialPanel .social-draft[data-stage=idle] .draft-caption:after,body.social-open #socialPanel .social-draft[data-stage=idle] .draft-skeleton{display:none}
+body.social-open #socialPanel #socialPublish{min-height:72px;padding:12px 13px;gap:8px;border:1px solid var(--social-line);border-radius:12px;box-shadow:none;background:var(--social-button);color:var(--social-text);transform:none}
+body.social-open #socialPanel #socialPublish:hover:not(:disabled){border-color:#a9ba97}
+body.social-open #socialPanel #socialPublish:active:not(:disabled){transform:scale(.985);box-shadow:none}
+body.social-open #socialPanel .simple-button-copy{gap:4px}
+body.social-open #socialPanel .simple-button-copy small{font-size:8px;letter-spacing:.75px;font-weight:600;color:var(--social-muted)}
+body.social-open #socialPanel .simple-button-copy strong{font-size:15px;letter-spacing:-.2px;line-height:1.25;font-weight:700}
+body.social-open #socialPanel .simple-button-copy>span{font-size:10px;color:var(--social-muted)}
+body.social-open #socialPanel .simple-button-symbol{flex-basis:35px;height:35px;border:0;border-radius:11px;background:var(--social-accent);color:#4c5138}
+body.social-open #socialPanel .simple-button-symbol svg{display:block;width:19px;height:19px}
+body.social-open #socialPanel .simple-button-fill{background:var(--social-progress);border-right:1px solid #8ca48044}
+body.social-open #socialPanel #socialPublish[data-state=working]{border-color:var(--social-line);background:var(--social-soft);box-shadow:none}
+body.social-open #socialPanel #socialPublish[data-state=working] .simple-button-symbol{background:transparent;color:var(--social-text)}
+body.social-open #socialPanel #socialPublish[data-state=waiting]{background:var(--social-soft);color:var(--social-muted);border-color:var(--social-line);box-shadow:none}
+body.social-open #socialPanel #socialPublish[data-state=waiting] .simple-button-symbol{background:transparent;color:var(--social-muted)}
+body.social-open #socialPanel #simplePublishStatus{font-size:9px;color:var(--social-muted);margin:9px 1px 0;line-height:1.4;min-height:13px;max-width:63%}
+body.social-open #socialPanel .social-feed-heading{margin:0 3px 10px;font-size:9px;color:var(--social-muted)}
+body.social-open #socialPanel .social-feed-heading>span{display:flex;align-items:center;gap:7px;font-size:9px;letter-spacing:1.15px;font-weight:700}
+body.social-open #socialPanel .social-feed-heading>span:before{content:'';width:5px;height:5px;border-radius:50%;background:#93ad82}
+body.social-open #socialPanel .social-feed-window{height:clamp(270px,calc(100dvh - 565px),580px);padding-top:0;mask-image:linear-gradient(to bottom,#000 0,#000 calc(100% - 26px),transparent)}
+body.social-open #socialPanel .social-post{padding:0;margin:0 0 14px;border:1px solid var(--social-line);border-radius:15px;background:var(--social-card);box-shadow:none}
+body.social-open #socialPanel .social-post header{padding:12px;gap:9px}
+body.social-open #socialPanel .social-post header img{width:29px;height:31px;border-radius:9px;background:var(--social-soft);object-fit:contain}
+body.social-open #socialPanel .social-post header strong{font-size:11px;line-height:1.3;color:var(--social-text);font-weight:700}
+body.social-open #socialPanel .social-post header small{font-size:9px;color:var(--social-muted)}
+body.social-open #socialPanel .social-post-type{font-size:7px;letter-spacing:.6px;border:0;background:var(--social-soft);border-radius:5px;padding:5px 6px;color:var(--social-muted)}
+body.social-open #socialPanel .social-post-visual{height:162px;border-radius:0;margin:0;border:0;transform:none;box-shadow:none}
+body.social-open #socialPanel .social-post-visual>.social-scene{opacity:.85;filter:saturate(.7) brightness(.95)}
+body.social-open #socialPanel .social-post-visual:after,body.social-open #socialPanel .social-post[data-kind=player] .social-post-visual:after{background:linear-gradient(90deg,#22454099,#315d4c0d)}
+body.social-open #socialPanel .social-post[data-kind=fan] .social-post-visual:after{background:linear-gradient(90deg,#4d503b88,transparent)}
+body.social-open #socialPanel .social-visual-kicker{font-size:7px;letter-spacing:1.2px;top:13px;left:14px;color:#f5e5bd}
+body.social-open #socialPanel .social-visual-title{left:14px;bottom:16px;max-width:52%;font-size:23px!important;font-weight:800;letter-spacing:-.5px;line-height:1.1;text-shadow:none}
+body.social-open #socialPanel .social-post-visual>.social-feature-player{height:187px;bottom:-24px;width:51%;right:-2px;filter:none}
+body.social-open #socialPanel .social-post-visual>.social-feature-badge{transform:none;width:45px;height:50px;right:17px;top:40px;filter:none}
+body.social-open #socialPanel .social-post-visual.social-duo>.social-player-partner{right:27%;height:167px;width:42%}
+body.social-open #socialPanel .social-post-visual.social-duo .social-visual-title{font-size:17px!important;max-width:35%}
+body.social-open #socialPanel .social-post-visual[data-layout=polaroid]{margin:0 11px 5px;border:5px solid #eadfc8;border-bottom-width:14px;border-radius:2px;transform:rotate(-1deg);height:153px}
+body.social-open #socialPanel .social-post-visual[data-layout=polaroid] .social-visual-title{font-size:18px!important}
+body.social-open #socialPanel .social-post-visual[data-layout=ticket]{border-top:1px dashed #f5e2b4;border-bottom:1px dashed #f5e2b4}
+body.social-open #socialPanel .social-post-visual[data-layout=diagram] .social-visual-title{font-size:17px!important;max-width:75%;bottom:12px}
+body.social-open #socialPanel .social-post-actions{padding:2px 10px 0;min-height:32px;gap:7px}
+body.social-open #socialPanel .social-like{font-size:13px;min-height:34px;padding:6px 2px;color:var(--social-muted)}
+body.social-open #socialPanel .social-like[aria-pressed=true]{color:#c7826c}
+body.social-open #socialPanel .social-comments-toggle{min-height:34px;padding:6px 2px;font-size:9px;font-weight:500;color:var(--social-muted)}
+body.social-open #socialPanel .social-caption{padding:0 12px;margin:1px 0 13px;font-size:11px;line-height:1.6;color:var(--social-text)}
+body.social-open #socialPanel .social-caption strong{font-size:10px;color:var(--social-text)}
+@media(max-width:350px){#socialPanel{padding:0 3px}body.social-open #socialPanel .social-app-header{margin-top:15px;margin-bottom:16px}body.social-open #socialPanel .draft-art{height:140px}body.social-open #socialPanel .draft-headline{font-size:20px}body.social-open #socialPanel .draft-player{height:174px}body.social-open #socialPanel .simple-button-copy strong{font-size:14px}body.social-open #socialPanel .draft-top small{font-size:7px}}
+@media(prefers-reduced-motion:reduce){body.social-open #socialPanel #socialPublish:active:not(:disabled){transform:none}}
+/* Prepared posts and published posts use the same art component and proportions. */
+body.social-open #socialPanel .shared-post-art{container-type:inline-size;aspect-ratio:2.1;height:auto;min-height:0;margin:0;border:0;padding:0;border-radius:9px;transform:none;background:#adc7bc;box-shadow:none;isolation:isolate;overflow:hidden}
+body.social-open #socialPanel .social-post>.shared-post-art{border-radius:0}
+body.social-open #socialPanel .shared-post-art>.social-scene{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.8);opacity:1;z-index:-2}
+body.social-open #socialPanel .shared-post-art:after{position:absolute;inset:0;content:'';background:linear-gradient(90deg,#234943a6,transparent 85%);z-index:0;opacity:1;pointer-events:none}
+body.social-open #socialPanel .shared-post-art>.social-feature-player{position:absolute;width:50%;height:124%;right:-1%;left:auto;bottom:-15%;object-fit:contain;object-position:bottom;filter:none;z-index:1;opacity:1;transform:none}
+body.social-open #socialPanel .shared-post-art>.social-visual-title{position:absolute;left:5%;right:auto;top:auto;bottom:12%;max-width:48%;font-size:6.5cqw!important;line-height:1.08;font-weight:800;letter-spacing:-.4px;color:#fff6dd;text-shadow:none;z-index:2;opacity:1;transform:none}
+body.social-open #socialPanel .shared-post-art>.social-visual-kicker{position:absolute;top:10%;left:5%;right:auto;font-size:2.1cqw;line-height:1.2;letter-spacing:.8px;color:#f3e8c8;z-index:2}
+body.social-open #socialPanel .shared-post-art[data-composition=left]>.social-feature-player{left:-1%;right:auto}
+body.social-open #socialPanel .shared-post-art[data-composition=left]:after{background:linear-gradient(270deg,#234943a6,transparent 85%)}
+body.social-open #socialPanel .shared-post-art[data-composition=left]>:is(.social-visual-title,.social-visual-kicker){left:auto;right:5%;text-align:right}
+body.social-open #socialPanel .shared-post-art[data-composition=center]>.social-feature-player{width:54%;left:23%;right:auto;bottom:-19%;height:132%}
+body.social-open #socialPanel .shared-post-art[data-composition=center]:after{background:linear-gradient(0deg,#1c3c45cc,transparent 72%)}
+body.social-open #socialPanel .shared-post-art[data-composition=center]>.social-visual-title{left:9%;bottom:9%;width:82%;max-width:none;text-align:center;font-size:5.8cqw!important}
+body.social-open #socialPanel .shared-post-art[data-composition=duo]>.social-feature-player{width:42%;right:-1%;bottom:-16%}
+body.social-open #socialPanel .shared-post-art[data-composition=duo]>.social-player-partner{right:26%;height:113%;bottom:-13%;width:40%}
+body.social-open #socialPanel .shared-post-art[data-composition=duo]>.social-visual-title{max-width:34%;font-size:5.2cqw!important}
+body.social-open #socialPanel .social-draft:not([data-stage=idle]) .shared-post-art>.social-scene{clip-path:inset(0 calc(100% - var(--draft-reveal)) 0 0);opacity:var(--draft-photo);transition:clip-path .25s linear,opacity .25s linear}
+body.social-open #socialPanel .social-draft:not([data-stage=idle]) .shared-post-art>.social-feature-player{opacity:var(--draft-person);transition:opacity .25s linear}
+body.social-open #socialPanel .social-draft:not([data-stage=idle]) .shared-post-art>.social-visual-title{opacity:var(--draft-title);transition:opacity .25s linear}
+body.social-open #socialPanel .social-draft[data-stage=idle] .shared-post-art>.social-scene{opacity:.8}
+body.social-open #socialPanel .social-post-visual:not(.shared-post-art)[data-composition=left]>.social-feature-player{left:0;right:auto}
+body.social-open #socialPanel .social-post-visual:not(.shared-post-art)[data-composition=left]>.social-visual-title{left:auto;right:5%;text-align:right}
+body.social-open #socialPanel .social-post-visual:not(.shared-post-art)[data-composition=center]>.social-feature-player{right:23%;width:54%}
+body.social-open #socialPanel .social-post-visual:not(.shared-post-art)[data-composition=center]>.social-visual-title{max-width:90%;width:90%;bottom:10px;text-align:center;font-size:18px!important}
+@media(prefers-reduced-motion:reduce){body.social-open #socialPanel .social-draft .shared-post-art>img,body.social-open #socialPanel .social-draft .shared-post-art>.social-visual-title{transition:none}}
+/* The composer is a compact work area; published posts get most of the screen. */
+body.social-open #socialPanel .social-app-header{margin-top:14px;margin-bottom:14px}
+body.social-open #socialPanel .social-simple{padding:0 11px 8px;margin-bottom:16px;border-radius:16px}
+body.social-open #socialPanel .social-draft{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);column-gap:11px;row-gap:0;align-items:center;padding:0 11px 9px;margin:0 -11px}
+body.social-open #socialPanel .draft-top{grid-column:1/-1;min-height:32px}
+body.social-open #socialPanel .draft-caption{height:76px;padding:0;font-size:10px;line-height:1.5;display:flex;align-items:center;overflow:hidden}
+body.social-open #socialPanel .draft-caption-text{display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+body.social-open #socialPanel .draft-skeleton{top:22px;width:90%}
+body.social-open #socialPanel .social-draft>.shared-post-art{border-radius:7px}
+body.social-open #socialPanel #socialPublish{min-height:58px;padding:9px 11px}
+body.social-open #socialPanel .simple-button-copy{gap:3px}
+body.social-open #socialPanel .simple-button-copy strong{font-size:14px}
+body.social-open #socialPanel .simple-button-copy>span{font-size:9px}
+body.social-open #socialPanel .simple-button-copy small{font-size:7px}
+body.social-open #socialPanel #simplePublishStatus{margin-top:6px;font-size:8px;min-height:11px}
+body.social-open #socialPanel .simple-publish-heading{bottom:9px;right:12px}
+body.social-open #socialPanel .social-feed-window{height:clamp(350px,calc(100dvh - 410px),760px)}
+body.social-open #socialPanel .social-post{margin-bottom:16px}
+body.social-open #socialPanel .social-post-visual:not(.shared-post-art){height:205px}
+body.social-open #socialPanel .social-post>.shared-post-art{border-radius:7px}
+body.social-open #socialPanel .social-post.just-published{border-color:#9eae7b;box-shadow:0 0 0 1px #b6c69b55}
+body.social-open #socialPanel .social-post.just-published .social-post-type{background:var(--social-button);color:var(--social-text)}
+@media(max-width:350px){body.social-open #socialPanel .social-draft{column-gap:8px;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}body.social-open #socialPanel .draft-caption{height:66px;font-size:9px}body.social-open #socialPanel .social-post-visual:not(.shared-post-art){height:185px}body.social-open #socialPanel .simple-button-copy>span{font-size:8px}}

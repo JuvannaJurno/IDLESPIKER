@@ -257,6 +257,9 @@
 .upgrade-room:has(>.block-main-effect):not([data-upgrade="ready"]){cursor:default}
 .tier.energized .upgrade-room:has(>.block-main-effect):not([data-upgrade="ready"]) .block-upgrade-action{background:#ffe3a0;border-color:#efd089;color:#9a7a41;box-shadow:none}
 /* Camp uses one scroll surface; compact slots leave room for the roster. */
+.foundation-pending{display:flex;flex:0 0 auto;gap:10px;margin:0;padding:0;border:0;overflow:visible}
+.foundation-pending>.upgrade-room{flex:0 0 166px;width:166px;min-width:166px;height:226px}
+@media(max-width:360px){.foundation-pending>.upgrade-room{flex-basis:154px;width:154px;min-width:154px}}
 .upgrade-room.block-basic:has(>.block-main-effect)>small.block-main-effect{flex:1;align-content:start;padding-top:10px;gap:5px}
 .upgrade-room.block-basic:has(>.block-main-effect)>strong{flex-basis:34px;height:34px;min-height:34px}
 .upgrade-room.block-basic:has(>.block-main-effect) .room-active{margin-top:0;padding-top:12px}
