@@ -1,0 +1,43 @@
+.theme-switch{display:flex;align-items:center;width:54px;min-height:32px;padding:4px;border:1px solid #b3bfa3;border-radius:20px;background:#dde5ce;cursor:pointer}
+.theme-switch>span{width:22px;height:22px;border-radius:50%;background:#fff9e6;box-shadow:0 1px 3px #253d3340;transition:transform .18s}
+.theme-switch[aria-checked=true]{background:#759987;border-color:#95b29d}
+.theme-switch[aria-checked=true]>span{transform:translateX(21px);background:#f4d692}
+.theme-switch:focus-visible{outline:3px solid #d4ab59;outline-offset:3px}
+html[data-theme=dark]{--bg:#192d31;--panel:#293d3b;--text:#e1e8d7;--muted:#a6bba9;--line:#536c60}
+html[data-theme=dark] body{background:#12252b;color:#e1e8d7}
+html[data-theme=dark] .shell{background:linear-gradient(#244953,#243c40 440px,#1d3335);box-shadow:0 0 70px #08191d66}
+html[data-theme=dark] :is(dialog,#campDialog,#matchArrival,#bootScreen,.camp-tour section){background:#293d3b!important;color:#e1e8d7!important;border-color:#607361!important}
+html[data-theme=dark] dialog::backdrop{background:#081919c9}
+html[data-theme=dark] :is(.club-panel,.calendar-card,.league-panel,.team-panel,.camp-first-help,.scout-player,.scout-versus>div,.development-panel,.transfer-opportunities,.club-setup-panel){background:#2b403c!important;border-color:#506958!important;box-shadow:0 3px 0 #172c29!important}
+html[data-theme=dark] :is(.room-tile,.upgrade-room:has(>.block-main-effect)){background:#3f4434!important;border-color:#77744e!important;box-shadow:0 3px 0 #22382e!important}
+html[data-theme=dark] :is(.base-room .tier-info,.upgrade-room .room-active,.block-main-effect,.block-bonus-panel){background:transparent!important;border-color:#696b49!important}
+html[data-theme=dark] :is(.block-bonus-locked,.camp-slot,.camp-candidate,.transfer-tip,.calendar-day,.club-resources>span,.scout-player dl>div,.scout-report,.camp-overview>div,.scout-compare td,.scout-compare th){background:#344c41!important;border-color:#62765a!important;color:#d2debf!important}
+html[data-theme=dark] :is(.camp-alert,#teamPanel>.scout-alert,.scout-compare>summary,.scout-verdict,#campWallet,.camp-send-footer,#campSlots){background:#314b40!important;border-color:#63765a!important;color:#dfebd2!important}
+html[data-theme=dark] :is(.block-main-copy,.block-bonus-copy,.block-bonus-title,.upgrade-room>strong,.room-tile strong,.tier-info h3,.camp-heading h2,.transfer-tip>strong,dialog h2,dialog h3,.calendar-card h2,.section-top h2,.player-name){color:#d8e1c5!important}
+html[data-theme=dark] :is(.block-main-label,.block-bonus-label,.block-level-number,.room-help,.energy-status,.calendar-legend,.camp-alert-copy small,dialog p,dialog small,dialog label,.scout-player dt,.scout-catalog-note){color:#aebfa3!important}
+html[data-theme=dark] :is(input:not([type=range]),select){background:#20382f!important;color:#e0e8d0!important;border-color:#718364!important}
+html[data-theme=dark] .upgrade-room:not([data-upgrade=ready]) .block-upgrade-action{background:#424a39!important;color:#a4ae93!important;border-color:#5e674b!important}
+html[data-theme=dark] .tier.energized .upgrade-room{background:#66603a!important;border-color:#e9bd60!important}
+html[data-theme=dark] .tier.energized .upgrade-room .block-upgrade-action{background:#8b763c!important;color:#fff0ba!important}
+html[data-theme=dark] :is(.bottom-nav,.mobile-nav,.bottom-bar,.mobile-bottom){background:#243c35!important;border-color:#5b7155!important}
+html[data-theme=dark] .hero-note,html[data-theme=dark] .hero-copy .eyebrow{color:#c1d6c7}
+@media(prefers-reduced-motion:reduce){.theme-switch>span{transition:none}}
+#settingsDialog{box-sizing:border-box;width:min(420px,calc(100% - 24px));max-height:90dvh;padding:22px 18px 18px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+#settingsDialog>h2{font-size:25px;margin:0 40px 20px 0}
+#settingsDialog>.close-dialog{min-width:38px;min-height:38px}
+.settings-group{margin:0 0 14px;padding:0 12px;background:#eff0de;border:1px solid #dce2c9;border-radius:13px}
+#settingsDialog .settings-group h3{margin:0;padding:12px 0 8px;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:#8d987c}
+#settingsDialog .settings-row{box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:53px;margin:0;padding:10px 0;font-size:12px;font-weight:700;color:#5d7969}
+#settingsDialog .settings-row+.settings-row{border-top:1px solid #dce2cd}
+#settingsDialog .settings-row>span{flex:1;min-width:0;line-height:1.4}
+#settingsDialog .settings-row>button{flex-shrink:0;margin:0;min-height:34px}
+#settingsDialog .settings-row .team-action{width:auto;max-width:55%;padding:8px 10px!important;font-size:10px;line-height:1.4;border-width:1px;box-shadow:0 2px 0 #b2bc91}
+#settingsDialog .sound-toggle{width:auto;min-width:54px;height:34px;padding:4px 10px;border-radius:9px;font-size:12px}
+#settingsDialog input[type=range]{width:48%;min-width:0;min-height:32px;margin:0;accent-color:#739582;touch-action:pan-y}
+#settingsDialog .reset-section{margin:18px 0 0;padding:14px 0 0;border-top:1px solid #dedac4}
+#settingsDialog .reset-section p{color:#959982;text-align:center;font-size:9px!important;margin:8px 6px 0}
+#settingsDialog .reset-progress{min-height:40px;background:#efdfca;border:1px solid #e1c9b3;box-shadow:none;font-size:11px}
+html[data-theme=dark] .settings-group{background:#233831;border-color:#4e6351}
+html[data-theme=dark] #settingsDialog .settings-row{color:#d7e2ca;border-color:#415945}
+html[data-theme=dark] #settingsDialog .settings-group h3{color:#a5b893}
+html[data-theme=dark] #settingsDialog .reset-progress{background:#554038;color:#f0ccad;border-color:#795746}
