@@ -41,3 +41,141 @@ html[data-theme=dark] .settings-group{background:#233831;border-color:#4e6351}
 html[data-theme=dark] #settingsDialog .settings-row{color:#d7e2ca;border-color:#415945}
 html[data-theme=dark] #settingsDialog .settings-group h3{color:#a5b893}
 html[data-theme=dark] #settingsDialog .reset-progress{background:#554038;color:#f0ccad;border-color:#795746}
+/* Night palette: blue-green surroundings, layered sage surfaces, warm actions. */
+html[data-theme=dark]{--night-base:#17282d;--night-panel:#243a3b;--night-raised:#304748;--night-line:#4c6460;--night-ink:#e1e8da;--night-muted:#afc0b4;--ink:#e1e8da;--text:#e1e8da;--muted:#afc0b4;scrollbar-color:#68847a #203537}
+html[data-theme=dark] body{background:#101f25}
+html[data-theme=dark] .shell{background:linear-gradient(180deg,#254750,#1d343a 360px,#172c31)}
+html[data-theme=dark] :is(dialog,#campDialog,#matchArrival,#bootScreen){background:#243a3b!important;border-color:#526b63!important;color:var(--night-ink)!important;box-shadow:0 18px 60px #09191d80}
+html[data-theme=dark] :is(.club-panel,.calendar-card){background:transparent!important;border-color:transparent!important;box-shadow:none!important}
+html[data-theme=dark] :is(.wordmark small,.nav-current,.save-note,footer,.team-hint,.league-rule-note,.calendar-day-summary,.building-header,.building-header b,.department-purpose,.floor-type,.eyebrow){color:var(--night-muted)!important}
+html[data-theme=dark] :is(.settings-button,.sound-toggle,.close-dialog,#closeCamp,.name-pencil,.bench-filter button,.team-secondary,.round-controls button){background:#344f4d!important;border-color:#61776a!important;color:#dbe7d7!important;box-shadow:0 2px 0 #142a2a!important}
+html[data-theme=dark] :is(.club-wallet>span,.wallet-budget,.wallet-ap){background:#304845!important;border-color:#5b7160!important;box-shadow:0 3px 0 #142a29!important;color:#dce5cb!important}
+html[data-theme=dark] .club-wallet .wallet-budget{background:#4d4935!important;border-color:#8d7a48!important}
+html[data-theme=dark] :is(.club-wallet small,.club-wallet>span>span,.club-rates>span){color:#b7c7b1!important}
+html[data-theme=dark] :is(.club-wallet b,.club-resources b){color:#eed39a!important}
+html[data-theme=dark] :is(.budget-cycle,.block-level-track){background:#1c3230!important}
+html[data-theme=dark] .budget-cycle i{background:#d7b368}
+html[data-theme=dark] :is(.ap-cycle i,.block-level-track i){background:#8bb59a!important}
+html[data-theme=dark] .base-room .room{filter:brightness(.75) saturate(.8)}
+html[data-theme=dark] .base-room .tier-info{background:#2b4140!important}
+html[data-theme=dark] :is(.room-tile,.upgrade-room:has(>.block-main-effect)){background:#3c4437!important;border-color:#727653!important;box-shadow:0 3px 0 #122929!important}
+html[data-theme=dark] :is(.empty-room,.unlock-room){background:#293f3c!important;border-color:#708568!important;color:#c5d5b9!important}
+html[data-theme=dark] .slot-icon{background:#575439!important;color:#e6c885!important}
+html[data-theme=dark] .upgrade-room>small{color:#c5ceb7!important}
+html[data-theme=dark] :is(.block-main-label,.block-bonus-label){color:#b5b992!important}
+html[data-theme=dark] .upgrade-room[data-upgrade=ready] .block-upgrade-action{background:#d5b574!important;color:#3c3524!important;border-color:#b4975d!important;box-shadow:0 2px 0 #927744!important}
+html[data-theme=dark] .block-bonus-locked{background:#354038!important;color:#abb59c!important}
+html[data-theme=dark] .tier.energized .room-tile{border-color:#e3b95d!important}
+html[data-theme=dark] .tier.energized .upgrade-room{background:#5b5737!important}
+html[data-theme=dark] .tier.energized .upgrade-room .block-upgrade-action{background:#a68b46!important;color:#fff2c8!important}
+html[data-theme=dark] .calendar-day{background:#304547!important;border:1px solid #47615c!important;box-shadow:none!important;color:#c1cdbc!important}
+html[data-theme=dark] .calendar-day :is(small,strong){color:inherit!important;text-shadow:none}
+html[data-theme=dark] .calendar-day.past{background:#2e4c40!important;color:#94b19b!important;opacity:1}
+html[data-theme=dark] .calendar-day.past .calendar-fill{background:#3c6048!important;opacity:.4}
+html[data-theme=dark] .calendar-day.today{background:#514b34!important;border-color:#c4a15c!important;color:#ffe5a7!important}
+html[data-theme=dark] .calendar-day.today .calendar-fill{background:#9c813d!important;opacity:.65}
+html[data-theme=dark] .calendar-cell-count{color:#ffe8b7!important;text-shadow:none}
+html[data-theme=dark] .calendar-day.match:not(.today):not(.past){background:#624d43!important;color:#f0c5a4!important}
+html[data-theme=dark] .next-match{border-color:#50665b}
+html[data-theme=dark] .next-match strong{color:#d6e2d2}
+html[data-theme=dark] .match-symbol{background:#344c44}
+html[data-theme=dark] .mobile-nav a{color:#aabcaf}
+html[data-theme=dark] .mobile-nav a[aria-current=page]{background:#3d5344;color:#f0d595}
+html[data-theme=dark] :is(.player-card,.empty-player,.lineup-option,.lineup-pair,.lineup-preview-player,.card-upgrade-panel,.detail-stat,.stat-row,.season-fixture,.month-panel,.fixture-card,.standings-scroll,.league-analysis,.team-blackboard,.pre-match-team,.camp-first-help){background:#2d4442!important;border-color:#566c5d!important;color:var(--night-ink)!important;box-shadow:0 3px 0 #162c2b!important}
+html[data-theme=dark] :is(.card-top,.card-name,.card-stats,.card-physical,.card-cap,.card-open-upgrade,.card-lineup-action,.card-level-feedback){background:#304947!important;border-color:#556d5e!important;color:#d9e3d2!important}
+html[data-theme=dark] :is(.card-name button,.card-inspect,.card-stats b,.card-stats strong,.team-heading h1,.bench-heading h2,.standings-heading h2,.season-route-title,.round-controls strong,.fixture-teams,.season-fixture-teams,.scout-player-head strong){color:#dce6d6!important}
+html[data-theme=dark] :is(.card-stats small,.card-physical,.card-cap,.team-count,.card-top small){color:#b3c6ae!important}
+html[data-theme=dark] .card-art{background:linear-gradient(140deg,#506b5b,#354f4c)!important}
+html[data-theme=dark] :is(.team-count,.lineup-banner,.season-tabs,.camp-alert-slot,.scout-player dl>.role-important){background:#3d5345!important;border-color:#697a59!important;color:#decc99!important}
+html[data-theme=dark] :is(.team-action,.card-upgrade-button,.scout-hire,.fixture-play,#arrivalPlay,.advice-actions button){background:#d7b879!important;border-color:#ae925e!important;color:#3b3827!important;box-shadow:0 2px 0 #887344!important}
+html[data-theme=dark] :is(.team-action,.card-upgrade-button,.scout-hire,.fixture-play):disabled{background:#3d4b42!important;border-color:#526152!important;color:#a1af9a!important;box-shadow:none!important;opacity:1}
+html[data-theme=dark] :is(.season-tabs button,.round-controls small,.season-fixture-meta,.season-fixture>small,.standings-heading span){color:#b1c2af}
+html[data-theme=dark] .season-tabs button[aria-selected=true]{background:#4c5945;color:#f1d595;box-shadow:0 2px #75815a}
+html[data-theme=dark] .standings-table{color:#d1dfce}
+html[data-theme=dark] .standings-table :is(th,td){border-color:#496052}
+html[data-theme=dark] .standings-table th{background:#344b40;color:#b7c9ab}
+html[data-theme=dark] .standings-table .our-standing{background:#585638}
+html[data-theme=dark] .standings-table td:last-child{color:#e2c58a}
+html[data-theme=dark] :is(.blackboard-advice,.bal-stage .blackboard-advice){background:#233c36!important;border-color:#73816a!important;color:#dce6cf!important;box-shadow:none!important}
+html[data-theme=dark] :is(.blackboard-advice dt,.blackboard-advice dd,.advice-details summary){color:#c6d5bd!important}
+html[data-theme=dark] .blackboard-advice .advice-player-link{color:#e8cc8d}
+html[data-theme=dark] :is(.transfer-entry-copy strong,.camp-alert-copy strong,.scout-versus strong,.scout-versus span,.scout-player dd){color:#dce6cf!important}
+html[data-theme=dark] :is(.transfer-entry-copy small,.scout-compare caption,.scout-special-note,.camp-alert-benefit,.camp-alert-cost b){color:#bfceb2!important}
+html[data-theme=dark] .scout-verdict[data-result=worse]{background:#57463c!important;color:#e7baa4!important}
+html[data-theme=dark] .scout-verdict[data-result=better]{background:#39563d!important;color:#c7e3bc!important}
+html[data-theme=dark] :is(.scout-compare td.compare-better,.camp-candidate[aria-pressed=true]){background:#426044!important;color:#e0ebcb!important}
+html[data-theme=dark] .scout-compare td.compare-worse{background:#5a433a!important;color:#e8c2ab!important}
+html[data-theme=dark] .camp-slot[data-state=selected]{background:#5b5538!important;border-color:#c8ab68!important}
+html[data-theme=dark] :is(.camp-alert-slot,.camp-drag-grip){background:#354e40!important;color:#b8ceab!important}
+html[data-theme=dark] :is(.camp-alert-action,.transfer-entry-arrow){background:#c6a76b;color:#393424;border-color:#ab925c;box-shadow:0 2px #796b48}
+html[data-theme=dark] :is(.settings-group,.settings-row){border-color:#4b6258!important}
+html[data-theme=dark] #settingsDialog .settings-row label{color:#dce6cf}
+html[data-theme=dark] :is(.guided-tutorial-bubble,.tutorial-bubble,.onboarding-bubble,.toast){background:#344b43!important;border-color:#9b9868!important;color:#e5e5c8!important}
+html[data-theme=dark] :is(#activeTeam,.libero-slot,.lineup-help,.lineup-comparison,.lineup-stat-compare){background:#263e3d!important;border-color:#526b5c!important;color:#d2dfcd!important}
+html[data-theme=dark] :is(.team-blackboard h2,.league-analysis h2,.team-heading h1,.league-heading h1,.slot-label,.lineup-slot-label){color:#dce7d7!important}
+html[data-theme=dark] .season-hero{background:linear-gradient(135deg,#2b4c50,#355958);border-color:#718375;box-shadow:0 4px #10292b}
+html[data-theme=dark] .league-quick{background:#2f5055;border-color:#647e6c;box-shadow:0 3px #152f30}
+html[data-theme=dark] .calendar-card .eyebrow{background:#4c523c;color:#d7c992}
+html[data-theme=dark] :is(.scout-player[data-special=specialist],.player-card[data-special=specialist]){border-color:#ba9d61!important;background:#464a36!important}
+html[data-theme=dark] :is(.scout-player[data-special=potential],.player-card[data-special=potential]){border-color:#9586b1!important;background:#3e4051!important}
+html[data-theme=dark] .scout-special-label{color:#ead19a!important;background:#5c5037!important}
+html[data-theme=dark] [data-special=potential] .scout-special-label{color:#d8c5ef!important;background:#504360!important}
+/* Secondary screens and dialog contents must use the same night surfaces. */
+html[data-theme=dark] :is(.budget-source,.offline-notice,.calendar-now,.month-controls button,.prologue-complete,.season-end-stats>div,.development-note,#campEntryCost,#campNotice,#matchArrivalTeams,.scout-empty,#preMatchPicker,.lineup-confirm,.skill-card,.room-choice,.intro-card,.intro-team,.intro-stage){background:#314a43!important;color:#dae6d0!important;border-color:#59715e!important;box-shadow:none!important}
+html[data-theme=dark] :is(.development-note strong,.development-note small,.training-row,.training-row small,.detail-stat strong,.detail-stat span,.detail-stat p,.skill-card strong,.skill-card small,.season-end-stats strong,.season-end-stats small,.room-choice small,.room-choice strong,.month-controls h2,.fixture-meta,.weekday-labels,.league-date,.month-legend){color:#cbdcc3!important}
+html[data-theme=dark] :is(.detail-stat,.training-row,.skill-card,.creator-section){border-color:#526b59!important}
+html[data-theme=dark] :is(.development-heading b,#trainingBalance,.transfer-tip-price){background:#625435!important;color:#ffe1a0!important;border-color:#8d794d!important}
+html[data-theme=dark] :is(.transfer-tip-missing,#trainingNotice,#journeyError){color:#e5b987!important}
+html[data-theme=dark] :is(.train-button,.skill-card button){background:#c9ac71!important;border-color:#a58e5c!important;color:#302e22!important}
+html[data-theme=dark] :is(.train-button,.skill-card button):disabled{background:#435043!important;color:#b8c5ad!important;border-color:#5c6c55!important;opacity:1}
+html[data-theme=dark] .league-date{background:#2b4540!important;border-color:#546e59!important}
+html[data-theme=dark] .league-date.current,html[data-theme=dark] .league-date.selected{background:#5a573a!important;color:#f4dfa7!important;border-color:#ba9e64!important}
+html[data-theme=dark] :is(.journey-header,.custom-color,.journey-choice,.club-options button,.creator-step>b,.journey-text,#clubRandom,#learningHint){background:#2d4540!important;color:#d7e3ce!important;border-color:#60765d!important;box-shadow:none!important}
+html[data-theme=dark] :is(.journey-header>span,.journey-choice strong,.journey-choice small,.creator-step h3,.creator-section label,.creator-section label small,.preview-caption,#clubShortPreview,.hex-color){color:#c6d8bd!important}
+html[data-theme=dark] .journey-header button{background:#3c5548!important;color:#e1ebd4!important;border-color:#6c805f!important}
+html[data-theme=dark] .club-options button[aria-pressed=true]{background:#5b6040!important;color:#ffe5a9!important;border-color:#c1aa6b!important}
+html[data-theme=dark] .journey-choice.primary,html[data-theme=dark] .creator-save{background:#bfa36d!important;border-color:#9d895c!important;color:#272f25!important;box-shadow:0 3px 0 #756842!important}
+/* Badge previews retain their real chosen colours, on a muted neutral backdrop. */
+html[data-theme=dark] .club-preview{background:radial-gradient(ellipse at 30% 20%,#496052,#263d36)!important;border-color:#6d8063!important;box-shadow:0 4px 0 #142d28!important}
+html[data-theme=dark] .club-preview h3{color:#e0e7d5!important}
+html[data-theme=dark] :is(.game-match-dialog,#matchWatchPrompt,.match-watch-prompt,.match-shellbar){background:#20393c!important;color:#e1e8da!important;border-color:#5d7868!important}
+html[data-theme=dark] :is(.match-exit,.pre-match-team button,.intro-card small,.intro-card strong){background:#354d43!important;color:#dce7d0!important;border-color:#63795e!important}
+html[data-theme=dark] :is(.intro-heading,.intro-team-name,.pre-match-title){color:#e2e9d7!important}
+html[data-theme=dark] .energy-track,html[data-theme=dark] .connector{background:#52684e}
+html[data-theme=dark] .arrival-icon{background:#665939;color:#f0d294;box-shadow:0 3px #3e412e}
+html[data-theme=dark] .reset-progress{background:#59423a!important;color:#f0c7aa!important;border-color:#83604d!important}
+html[data-theme=dark] .scout-report #scoutSummary>span{background:#30483f;color:#dce5cf}
+html[data-theme=dark] :is(.scout-report #scoutSummary b,.scout-report #scoutSummary small,.scout-hold,.camp-slot strong,.camp-slot span,.camp-slot small){color:#d6e3c6!important}
+html[data-theme=dark] .scout-hold{background:#344d42;border-color:#63775a}
+/* Light gold controls deliberately keep dark lettering, including nested captions. */
+html[data-theme=dark] :is(.team-action,.scout-hire,.card-upgrade-button,.creator-save,.journey-choice.primary) :is(strong,small,span){color:#343524!important}
+html[data-theme=dark] :is(.team-action,.scout-hire,.card-upgrade-button):disabled :is(strong,small,span){color:#b7c5ab!important}
+html[data-theme=dark] :is(.card-upgrade-heading>span,.scout-wallet>span){background:#3a5143!important;color:#e0e8cf!important;border-color:#617556!important}
+html[data-theme=dark] .scout-wallet>span:first-child{background:#5a5036!important;color:#f2d799!important}
+html[data-theme=dark] .scout-wallet b{color:#f1d99e!important}
+html[data-theme=dark] .card-upgrade-button>small{background:#b79d68!important;color:#302f23!important}
+html[data-theme=dark] .card-upgrade-button:disabled>small{background:#344637!important;color:#c0ceb2!important}
+html[data-theme=dark] :is(.card-upgrade-heading strong,.card-upgrade-gain,.card-upgrade-gain b,.upgrade-eyebrow,#playerAttributes summary){color:#d6e4cb!important}
+html[data-theme=dark] .card-upgrade-gain{border-color:#536950}
+html[data-theme=dark] .card-open-upgrade:disabled{background:#35483e!important;color:#b7c9aa!important;opacity:1}
+html[data-theme=dark] .card-open-upgrade:disabled :is(span,small){color:#b7c9aa!important}
+html[data-theme=dark] :is(.scout-development,.scout-special-note){background:#30463f!important;border-color:#5a715a!important;color:#d9e4cd!important}
+html[data-theme=dark] .scout-development :is(strong,small){color:#c9dabd!important}
+html[data-theme=dark] .scout-development progress{accent-color:#a4bc83}
+html[data-theme=dark] #campDialog .camp-send-footer{background:#243a33!important;border-color:#5b7059!important;box-shadow:0 -5px 12px #182e2b!important}
+html[data-theme=dark] #campDialog #campEnroll:disabled{background:#3b4c3d!important;color:#b9c9ac!important;border-color:#607255!important;box-shadow:none!important;opacity:1}
+/* The main action belongs to the night palette, with restrained warm accents. */
+html[data-theme=dark] .energy-button{background:linear-gradient(135deg,#395b50,#2b4843)!important;border:2px solid #8c956a!important;color:#edf0d8!important;box-shadow:0 5px 0 #112c29,0 9px 22px #081b204d!important}
+html[data-theme=dark] .energy-button strong{color:#edf0d8;text-shadow:0 1px 0 #152f2b;letter-spacing:-.4px}
+html[data-theme=dark] .energy-button .bolt{background:linear-gradient(145deg,#5e7356,#415e4b);border:1px solid #829365;color:#e2ca88;box-shadow:inset 0 1px #ffffff12;font-size:29px}
+html[data-theme=dark] .energy-button .mobile-progress{color:#b8cbb0}
+html[data-theme=dark] .energy-button .button-arrow{color:#ceb77e}
+html[data-theme=dark] .energy-button:before{background:linear-gradient(90deg,#8aab6d30,#b4c07e28)}
+html[data-theme=dark] .energy-button:after{background:linear-gradient(90deg,transparent,#cad19a55,transparent);height:1px;top:2px}
+html[data-theme=dark] .energy-button:active{box-shadow:0 1px 0 #112c29!important;transform:translateY(4px)}
+html[data-theme=dark] .energy-button[data-match-ready=true]{background:linear-gradient(135deg,#485b47,#314d42)!important;border-color:#b0aa75!important;color:#f1e6bd!important}
+html[data-theme=dark] .energy-button[data-match-ready=true] strong{color:#f1e6bd}
+html[data-theme=dark] .energy-button .match-button-note{color:#c2d0b4}
+html[data-theme=dark] .mobile-nav{background:#1d3433!important;border-top:1px solid #4c6457!important;box-shadow:0 -5px 20px #0b20252b}
+html[data-theme=dark] .settings-button{border-width:1px!important;box-shadow:0 2px 0 #122e2b!important}
+@media(prefers-reduced-motion:reduce){html[data-theme=dark] .energy-button:active{transform:none}}
