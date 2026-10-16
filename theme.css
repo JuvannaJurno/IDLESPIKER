@@ -281,5 +281,14 @@ html[data-theme=dark] .foundation-toggle[aria-expanded=true]:before{background:#
 html[data-theme=dark] .foundation-toggle[aria-expanded=true]{color:#eee3b5}
 html[data-theme=dark] .scout-open{background:#2c454b;color:#d0dfd2;border-color:#5b7471;box-shadow:0 2px 0 #142c31}
 html[data-theme=dark] .scout-open[data-ready=true]{background:#435b4d;color:#eee3b5;border-color:#a4aa7b;box-shadow:0 2px 0 #233d36}
+/* Locked bonus and unaffordable upgrade share one idle/energized palette. */
+.upgrade-room{--inactive-block-fill:#f9efc8;--inactive-block-ink:#96967b;--inactive-block-line:#e9dfbb}
+.tier.energized .upgrade-room{--inactive-block-fill:#fff3d1;--inactive-block-ink:#96967b;--inactive-block-line:#efdfb2}
+html[data-theme=dark] .upgrade-room{--inactive-block-fill:#354038;--inactive-block-ink:#bbc5ae;--inactive-block-line:#4c5c49}
+html[data-theme=dark] .tier.energized .upgrade-room{--inactive-block-fill:#454c3c;--inactive-block-ink:#bbc5ae;--inactive-block-line:#64704e}
+html .tier .upgrade-room:has(>.block-main-effect) .block-bonus-locked,
+html .tier .upgrade-room:has(>.block-main-effect):not([data-upgrade="ready"]):not([data-upgrade="max"]) .block-upgrade-action,
+html[data-theme=dark] .tier.energized .upgrade-room:has(>.block-main-effect) .block-bonus-locked,
+html[data-theme=dark] .tier.energized .upgrade-room:has(>.block-main-effect):not([data-upgrade="ready"]):not([data-upgrade="max"]) .block-upgrade-action{background:var(--inactive-block-fill)!important;color:var(--inactive-block-ink)!important;border-color:var(--inactive-block-line)!important;box-shadow:none!important}
 #settingsDialog :is(#soundToggle,#vibrationToggle):focus-visible{outline:3px solid #d4ab59;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){#settingsDialog :is(#soundToggle,#vibrationToggle):before{transition:none}}
