@@ -45,7 +45,7 @@ function cardGains(p,level=cardLevel(p),statCap=cap(p)){
 function cardQuote(p){const level=cardLevel(p),limit=cardLimit(p),role=cardRoles[p.role],gains=cardGains(p);
  if(!role)return {level,limit,gains,cost:0,blocked:'Pozisyon bulunamadı',before:overall(p),after:overall(p)};
  const points=Object.values(gains).reduce((a,b)=>a+b,0),discount=Object.entries(gains).reduce((n,[k,v])=>n+v*Math.max(0,Math.min(developmentState().stage==='bal'?.35:.25,root.RoomSystem?.trainingDiscount?.(k)||0)),0);
- const cost=points?Math.ceil((developmentState().stage==='bal'?2500*1.14**Math.max(0,overall(p)-25)*(1-Camps.trainingDiscount(developmentState(),p)):140*1.8**(level-1))*(points-discount)/6):0;
+ const cost=points?Math.ceil((developmentState().stage==='bal'?2500*1.14**Math.min(25,Math.max(0,overall(p)-25))*1.125**Math.max(0,overall(p)-50):140*1.8**(level-1))*(points-discount)/6):0;
  const next={...p};for(const [k,n]of Object.entries(gains))next[k]+=n;
  return {level,limit,gains,cost,before:overall(p),after:overall(next),blocked:Camps.active(developmentState(),p)?'Oyuncu kampta · dönüşünü bekliyor':level>=limit?(developmentState().stage==='bal'?'Bu aşamada en yüksek seviye':'Prolog seviyesi tamamlandı'):!points?'Stat sınırında · Kamp ile sınırı artır':''};
 }
