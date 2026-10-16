@@ -12,7 +12,7 @@ const scenes=[
 function art(f){return '<svg class="bal-room-art" viewBox="0 0 320 180" aria-hidden="true"><rect width="320" height="180" fill="'+['#bfd9cd','#d6dfcf','#d5dfbd','#b7d0c4','#ded0b3'][f]+'"/><path d="M0 113H320V180H0Z" fill="#d4b68d"/><path d="M0 113H320" stroke="#faf0d0" stroke-width="5"/>'+scenes[f]+'</svg>'}
 function decorate(card,f){const room=card.querySelector('.room');room.classList.add('bal-illustrated');room.innerHTML=art(f)+'<span class="room-label" hidden></span>';card.querySelector('h3').textContent=names[f];const purpose=card.querySelector('.department-purpose');if(purpose)purpose.textContent=descriptions[f];}
 async function play({animate,stopped,text,note}){
- const workflow=document.getElementById('workflow'),tier=f=>workflow.querySelector('.tier[data-floor="'+f+'"]'),base=f=>tier(f).querySelector('.base-room'),ease='cubic-bezier(.22,1,.36,1)',scrollBox=workflow.closest('.building-scroll');
+ const workflow=document.getElementById('workflow'),tier=f=>workflow.querySelector('.tier[data-floor="'+f+'"]'),base=f=>tier(f).querySelector('.base-room'),ease=CardMotion.ease,scrollBox=workflow.closest('.building-scroll');
  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
  const move=(el,frames,duration=700)=>animate(el,frames,{duration:duration*.8,easing:ease});
  const hold=(el,ms=350)=>move(el,[{opacity:1},{opacity:1}],ms);
@@ -31,7 +31,7 @@ async function play({animate,stopped,text,note}){
    {transform:'translate(0,0)',opacity:1},
    {transform:'translate('+(dx*.94)+'px,'+(dy*.94)+'px)',opacity:1,offset:.88},
    {transform:'translate('+dx+'px,'+dy+'px)',opacity:0}
-  ],{duration:900,delay:reduced?0:i*110,easing:'cubic-bezier(.45,0,.2,1)'});
+  ],{duration:900,delay:reduced?0:i*110,easing:CardMotion.storeEase});
  }));if(stopped())return;
  el.dataset.blockMerge='complete';el.classList.remove('bal-active-tier');
  }

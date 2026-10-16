@@ -11,7 +11,10 @@ document.addEventListener('DOMContentLoaded',()=>{
  section('Görünüm ve kontrol',['themeToggle','vibrationToggle']);
  section('Ses',['soundToggle','volume-music','volume-crowd','volume-effects']);
  const fast=document.querySelector('#testAutoclicker')?.closest('.settings-row')?.querySelector('span');if(fast)fast.textContent='Hızlı test · 100× talimat';
- section('Test seçenekleri',['testAutoclicker','skipStage','skipThirdStage']);
+ const cheats=document.createElement('details');cheats.id='cheatDrawer';cheats.className='settings-group cheat-drawer';
+ cheats.innerHTML='<summary><span>Hileler<small>Test araçları</small></span><b aria-hidden="true">›</b></summary><div class="cheat-drawer-content"><p class="cheat-warning" role="note"><strong>Normal ilerlemeyi bozar.</strong> Hileleri kullanmak oyunun gelişim dengesini değiştirir. Aşama değiştirdiğinde sezon ilerlemesi sıfırlanır.</p></div>';
+ for(const id of ['testAutoclicker','stageTestGo']){const row=document.getElementById(id)?.closest('.settings-row');if(row)cheats.querySelector('.cheat-drawer-content').append(row);}
+ dialog.append(cheats);
  const reset=dialog.querySelector('.reset-section');if(reset)dialog.append(reset);
 });
 })();

@@ -28,7 +28,7 @@ async function animate(el,frames,options){if(done)return;const a=el.animate(fram
 const tier=f=>workflow.querySelector('.tier[data-floor="'+f+'"]');
 try{await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));await BalVisual.play({animate,stopped:()=>done,text,note});if(!done)commit();}catch{commit();}}
 
-$('startBAL').onclick=()=>start(false);skip.onclick=()=>start(true);
+api.start=start;$('startBAL').onclick=()=>start(false);skip.onclick=()=>start(true);
 if(window.balRecoveryFailed){api.active=true;copy.textContent='Geçiş kaydı tamamlanamadı. Kayıt alanını kontrol edip yeniden yükle.';skip.disabled=false;skip.textContent='Yeniden yükle';skip.onclick=()=>location.reload();$('settingsDialog').showModal();}
 function applyLabels(){document.body.classList.add('bal-stage');document.querySelector('#clubPanel .section-top .eyebrow').textContent='BİZİM KULÜP · AŞAMA 2';$('apFeedback').textContent='+'+RoomSystem.effects().clickAP.toLocaleString('tr-TR')+' AP';document.querySelector('.season-hero>.eyebrow').textContent='BAL · SEZON 01';document.querySelector('#leaguePanel .team-heading .eyebrow').textContent='BÖLGESEL AMATÖR LİG';$('blackboardTitle').textContent='Teknik Ekip';}
 if(LeagueRules.config.bal)applyLabels();

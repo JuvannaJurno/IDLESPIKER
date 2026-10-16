@@ -13,9 +13,9 @@ function update(state){
    if(!pending){pending=document.createElement('section');pending.className='foundation-pending';pending.dataset.foundation=group.dataset.foundation;pending.setAttribute('aria-label','Geliştirilmeyi bekleyen önceki aşama blokları');shell.before(pending);}
    for(const card of [...group.children]){const room=RoomRules.catalog.find(r=>r.id===card.dataset.id);if(room&&RoomRules.count(state,room.id)<room.values.length)pending.append(card);}
    for(const card of [...pending.children]){const room=RoomRules.catalog.find(r=>r.id===card.dataset.id);if(!room||RoomRules.count(state,room.id)<room.values.length||storing.has(card))continue;storing.add(card);
-    const from=card.getBoundingClientRect(),to=base.getBoundingClientRect(),reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const animation=card.animate([{transform:'translate(0,0) scale(1)',opacity:1},{transform:'translate('+(to.left+to.width/2-from.left-from.width/2)+'px,'+(to.top+to.height/2-from.top-from.height/2)+'px) scale(.55)',opacity:0}],{duration:reduced?1:480,easing:'cubic-bezier(.4,0,.2,1)',fill:'forwards'});
-    animation.finished.catch(()=>{}).then(()=>{storing.delete(card);if(!card.isConnected)return;group.append(card);animation.cancel();pending.hidden=!pending.children.length;update(state);});
+    const depth={position:card.style.position,zIndex:card.style.zIndex};card.style.position='relative';card.style.zIndex='15';base.style.position='relative';base.style.zIndex='20';
+    const animation=card.animate(CardMotion.frames(card,base),CardMotion.options());
+    animation.finished.catch(()=>{}).then(()=>{storing.delete(card);if(!card.isConnected)return;group.append(card);animation.cancel();card.style.position=depth.position;card.style.zIndex=depth.zIndex;pending.hidden=!pending.children.length;update(state);});
    }
    pending.hidden=!pending.children.length;shell.hidden=!group.children.length;const count=group.children.length;group.style.setProperty('--stored-count',count);shell.style.setProperty('--stored-count',count);
   }

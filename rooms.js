@@ -44,7 +44,7 @@ function showBlockBonus(card,room,level){
  if(previous!==undefined&&level>previous){
   label.textContent=previous<6?'YENİ ÖZELLİK AÇILDI':'EK ÖZELLİK GÜÇLENDİ';
   setTimeout(()=>{if(panel.isConnected&&panel.dataset.level===String(level))label.textContent='EK ÖZELLİK · '+(level-5)+'/5';},1800);
-  if(!matchMedia('(prefers-reduced-motion: reduce)').matches)panel.animate([{opacity:0,transform:'translateY(9px) scale(.96)'},{opacity:1,transform:'translateY(-2px) scale(1.02)',offset:.7},{opacity:1,transform:'none'}],{duration:480,easing:'cubic-bezier(.2,.7,.3,1)'});
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches)panel.animate([{opacity:0,transform:'translateY(24px)'},{opacity:1,transform:'translateY(0)'}],{duration:560,easing:CardMotion.ease});
  }
 }
 function upgradeStats(){const layoutKey=state.stage+'|'+state.floors.map(row=>row.join(',')).join('|')+'|'+state.openDepartments?.join(',');document.querySelectorAll('.upgrade-room').forEach(b=>{let info=upgradeInfo.get(b);if(!info||info.key!==layoutKey){const room=RoomRules.catalog.find(r=>r.id===b.dataset.id),n=RoomRules.count(state,room.id),f=room.floor;info={key:layoutKey,room,n,f,price:RoomRules.cost(state,f,room.id),max:n>=room.values.length,lock:RoomRules.requirement(state,room.id)};upgradeInfo.set(b,info)}const {room,n,f,price,max,lock}=info,ready=!max&&!lock&&funds(f)>=price;const signature=[room.id,n,price,ready,lock,max||ready?'':fmt(price-funds(f))].join('|');if(upgradeViews.get(b)===signature)return;upgradeViews.set(b,signature);b.disabled=!ready;b.dataset.dayLock='false';b.dataset.upgrade=max?'max':ready?'ready':'locked';
