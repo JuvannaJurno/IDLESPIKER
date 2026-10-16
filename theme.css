@@ -179,3 +179,53 @@ html[data-theme=dark] .energy-button .match-button-note{color:#c2d0b4}
 html[data-theme=dark] .mobile-nav{background:#1d3433!important;border-top:1px solid #4c6457!important;box-shadow:0 -5px 20px #0b20252b}
 html[data-theme=dark] .settings-button{border-width:1px!important;box-shadow:0 2px 0 #122e2b!important}
 @media(prefers-reduced-motion:reduce){html[data-theme=dark] .energy-button:active{transform:none}}
+/* Refined hierarchy: cool surroundings, neutral surfaces, limited gold accents. */
+html[data-theme=dark]{--night-base:#14232b;--night-panel:#23363d;--night-raised:#2d4349;--night-line:#435b61;--night-ink:#edf0e8;--night-muted:#bac9c4;--ink:#edf0e8;--text:#edf0e8;--muted:#bac9c4}
+html[data-theme=dark] body{background:#101c23}
+html[data-theme=dark] .shell{background:linear-gradient(180deg,#253f4a,#1b303a 350px,#182b33)}
+html[data-theme=dark] :is(dialog,#campDialog,#matchArrival,#bootScreen){background:#23363d!important;border:1px solid #50666a!important;color:#edf0e8!important}
+html[data-theme=dark] :is(.settings-group,.transfer-tip,.camp-candidate,.camp-slot,.season-fixture,.detail-stat,.player-card,.development-panel,.scout-report,.scout-empty,.month-panel,.fixture-card,.team-blackboard,.league-analysis){background:#293f45!important;border-color:#405a5d!important;box-shadow:none!important}
+html[data-theme=dark] :is(.card-top,.card-name,.card-stats,.card-physical,.card-cap,.card-open-upgrade,.card-lineup-action,.card-upgrade-panel,#activeTeam,.libero-slot){background:#2a4046!important;border-color:#405a5d!important}
+html[data-theme=dark] :is(.club-wallet>span,.wallet-ap){background:#2c4249!important;border:1px solid #506a6c!important;box-shadow:0 2px 0 #10262c!important}
+html[data-theme=dark] .club-wallet .wallet-budget{background:#3f443b!important;border-color:#857d59!important}
+html[data-theme=dark] :is(.room-tile,.upgrade-room:has(>.block-main-effect)){background:#303e3e!important;border:1px solid #5b6860!important;box-shadow:0 3px 0 #11272b!important}
+html[data-theme=dark] .base-room .tier-info{background:#2a3d42!important}
+html[data-theme=dark] :is(.block-main-effect,.block-bonus-panel,.upgrade-room .room-active){border-color:#4d5b55!important}
+html[data-theme=dark] :is(.block-main-copy,.block-bonus-copy,.department-purpose,.room-help,.energy-status,.scout-catalog-note,.card-stats small,.card-physical,.card-cap,.calendar-day-summary,.calendar-legend){color:#c1cdc0!important}
+html[data-theme=dark] :is(.block-main-label,.block-bonus-label){color:#aebfb2!important;font-size:8px;letter-spacing:.35px}
+html[data-theme=dark] :is(.block-main-copy,.block-bonus-copy){font-size:10px;line-height:13px}
+html[data-theme=dark] :is(.settings-group,.transfer-opportunities,.standings-scroll){border-width:1px!important;box-shadow:none!important}
+html[data-theme=dark] .settings-group{background:#293f45!important}
+html[data-theme=dark] .settings-group h3{color:#aebfc1!important}
+html[data-theme=dark] #settingsDialog .settings-row{color:#e1e8df!important;border-color:#40585d!important}
+html[data-theme=dark] :is(#testAutoclicker,#skipStage){background:#3b5054!important;color:#dce5da!important;border:1px solid #617372!important;box-shadow:none!important}
+html[data-theme=dark] .league-quick{background:#29454f;border:1px solid #506c70;box-shadow:0 2px #10292e}
+html[data-theme=dark] .calendar-card{border:0!important;background:transparent!important;box-shadow:none!important}
+html[data-theme=dark] :is(.calendar-day,.season-tabs,.mobile-nav){background:#263d43!important}
+html[data-theme=dark] :is(.calendar-day.today,.season-tabs button[aria-selected=true]){background:#4b4c3b!important;color:#f4dca1!important}
+html[data-theme=dark] .scout-player{background:#293e46!important;border:1px solid #53676a!important;box-shadow:0 3px 0 #11262d!important}
+html[data-theme=dark] .scout-player[data-special=specialist]{background:linear-gradient(150deg,#494936,#293e43)!important;border:1px solid #aa955f!important}
+html[data-theme=dark] .scout-player[data-special=potential]{background:linear-gradient(150deg,#464259,#2a3d48)!important;border:1px solid #9a89b5!important}
+html[data-theme=dark] :is(.scout-development,.scout-special-note){background:#1b303b80!important;border:0!important;color:#e1e7d9!important}
+html[data-theme=dark] .scout-development :is(strong,small){color:#d6e1d1!important}
+html[data-theme=dark] .scout-player dl>div{background:#253d43!important;border:1px solid #405b5d!important}
+html[data-theme=dark] .scout-player dl>.role-important{background:#3d4e43!important;border-color:#758463!important;box-shadow:none}
+html[data-theme=dark] .scout-development progress{appearance:none;-webkit-appearance:none;background:#152b32;border-radius:6px;overflow:hidden;border:0;height:6px;accent-color:#90b799}
+html[data-theme=dark] .scout-development progress::-webkit-progress-bar{background:#152b32;border-radius:6px}
+html[data-theme=dark] .scout-development progress::-webkit-progress-value{background:#90b799;border-radius:6px}
+html[data-theme=dark] .scout-development progress::-moz-progress-bar{background:#90b799;border-radius:6px}
+html[data-theme=dark] .scout-hire{background:#476c60!important;color:#eff0dc!important;border:1px solid #73967a!important;box-shadow:0 2px 0 #183b35!important}
+html[data-theme=dark] :is(.scout-hold,.scout-compare>summary){background:#30494d!important;border:1px solid #536b68!important;color:#d8e5da!important;box-shadow:none!important}
+html[data-theme=dark] .energy-button{background:linear-gradient(135deg,#41675a,#2c4e49)!important;border-color:#b1aa76!important;box-shadow:0 5px 0 #102b2b,0 0 20px #b3b57012!important}
+html[data-theme=dark] .energy-button .mobile-progress{color:#d2debe}
+html[data-theme=dark] .mobile-nav{border-top-color:#435c60!important}
+html[data-theme=dark] .mobile-nav a[aria-current=page]{background:#3c514b;color:#f0d595}
+/* Consistent binary controls; retain the existing sound/vibration handlers. */
+#settingsDialog :is(#soundToggle,#vibrationToggle){position:relative;box-sizing:border-box;width:54px;min-width:54px;height:32px;min-height:32px;padding:4px;border:1px solid #b3bfa3;border-radius:20px;font-size:0!important;background:#dde5ce;box-shadow:none;cursor:pointer}
+#settingsDialog :is(#soundToggle,#vibrationToggle):before{content:'';position:absolute;left:4px;top:4px;width:22px;height:22px;border-radius:50%;background:#fff9e6;box-shadow:0 1px 3px #253d3340;transition:transform .18s}
+#settingsDialog :is(#soundToggle,#vibrationToggle)[aria-pressed=true]{background:#759987!important;border-color:#95b29d!important}
+#settingsDialog :is(#soundToggle,#vibrationToggle)[aria-pressed=true]:before{transform:translateX(21px);background:#f4d692}
+html[data-theme=dark] #settingsDialog :is(#soundToggle,#vibrationToggle){background:#20343b!important;border-color:#586d70!important}
+html[data-theme=dark] #settingsDialog :is(#soundToggle,#vibrationToggle)[aria-pressed=true]{background:#759987!important;border-color:#95b29d!important}
+#settingsDialog :is(#soundToggle,#vibrationToggle):focus-visible{outline:3px solid #d4ab59;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){#settingsDialog :is(#soundToggle,#vibrationToggle):before{transition:none}}
