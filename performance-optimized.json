@@ -1,0 +1,34 @@
+[
+  {
+    "mode": "social-idle",
+    "mutations": {
+      "total": 40,
+      "preview": 0,
+      "feed": 5,
+      "workflow": 0
+    },
+    "nodes": 2299,
+    "pulses": 0,
+    "instructions": 0,
+    "scriptMs": 21,
+    "taskMs": 96,
+    "layouts": 4,
+    "styleRecalculations": 37
+  },
+  {
+    "mode": "club-fast",
+    "mutations": {
+      "total": 2116,
+      "preview": 0,
+      "feed": 0,
+      "workflow": 345
+    },
+    "nodes": 2332,
+    "pulses": 21,
+    "instructions": 430,
+    "scriptMs": 465,
+    "taskMs": 4731,
+    "layouts": 277,
+    "styleRecalculations": 400
+  }
+]

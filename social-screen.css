@@ -1,5 +1,5 @@
 /* Social screen palette and layout are kept together to avoid theme drift. */
-.mobile-nav #socialTab .social-nav-logo{display:block;width:23px;height:23px;object-fit:contain;margin:0 auto;filter:none}
+.mobile-nav #socialTab>span{display:grid;place-items:center;width:25px;height:25px;line-height:25px;flex-shrink:0}.mobile-nav #socialTab .social-nav-logo{display:block;width:18px;height:18px;object-fit:contain;margin:0;filter:none}
 #settingsDialog .cheat-drawer{padding:0 12px;text-align:left;overflow:hidden}
 .cheat-drawer>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;min-height:48px;box-sizing:border-box;color:#687d67;font-size:12px;font-weight:700}
 .cheat-drawer>summary::-webkit-details-marker{display:none}
