@@ -35,9 +35,10 @@ let tutorialActive=false;
 function startTutorial(){if(!ScoutRules.available(RoomSystem.scoutView())||RoomSystem.scoutView().scouting.tutorialSeen||tutorialActive)return;tutorialActive=true;
 const team=()=>document.getElementById('teamTab').click(),club=()=>document.querySelector('.mobile-nav a[href="#clubPanel"]').click();
 GuidedTutorial.start([
-{id:'scout-blocks',enter:club,target:()=>document.querySelector('#roomSlots4 .unlock-room'),text:'Buradan keşif bloklarını açabilirsin. Bekleme süresini, aday sayısını ve yüksek overall bulma şansını geliştirirler.'},
+{id:'scout-department',enter:club,target:()=>document.querySelector('.tier[data-floor="4"] .base-room'),text:'Oyuncu Keşfi, takımına katabileceğin yeni oyuncular bulur. Bulunan oyuncular Transfer Merkezi’nde listelenir; bütçeyle kadrona katabilirsin.'},
+{id:'scout-blocks',enter:club,target:()=>document.querySelector('#roomSlots4 .unlock-room')||document.querySelector('#roomSlots4 .upgrade-room'),text:'[[Yeni alan aç]] ile keşif bloklarını seçebilirsin. Bu bloklar yeni oyuncuları daha çabuk bulmanı, daha çok aday görmeni ve daha güçlü oyuncular bulma şansını artırır.'},
 {id:'scout-team',target:()=>document.getElementById('teamTab'),click:'#teamTab',text:'Oyuncu kataloğun [[Takım]] menüsünde. Buraya dokun.'},
-{id:'scout-transfer',enter:team,target:()=>alert,click:'#scoutAlert',text:'[[Transfer]] alanından keşfedilen oyuncuları inceleyebilirsin.'},
+{id:'scout-transfer',enter:team,target:()=>alert,click:'#scoutAlert',text:'[[Transfer Merkezi]] ile bulunan oyuncuları inceleyebilir, kendi oyuncularınla karşılaştırabilirsin.'},
 {id:'scout-report',enter:()=>{if(!dialog.open)open();dialog.querySelector('.scout-report').scrollIntoView({block:'center',behavior:'instant'})},target:()=>dialog.querySelector('.scout-report'),text:()=> 'İlk rapor '+ScoutRules.remaining(RoomSystem.scoutView())+' oyun günü sonra hazır. Süre dolunca [[İlk kataloğu aç]] ile adayları gör.'},
 {id:'scout-wallet',target:()=>dialog.querySelector('.scout-wallet'),text:'Transferler bu bütçeden ödenir. Aldığın oyuncular yedek kadrona katılır.'}
 ],()=>{tutorialActive=false;RoomSystem.scoutTutorialSeen()});}

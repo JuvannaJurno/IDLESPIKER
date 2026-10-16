@@ -2,7 +2,7 @@
 'use strict';
 const teams=['Bizim Kulüp','Mavişehir','Çınar Spor','Yıldız Gençlik','Sahil Spor','Kent Akademi','Güneş Spor','Kuzey Voleybol'],start=Date.UTC(2026,8,28),dayMs=86400000;
 const config={name:'Mahalle Kadınlar Ligi',rounds:5,lastDay:24,matchDays:[4,9,14,19,24],startingRank:8,targetRank:4,winPoints:3,lossPoints:0};
-const prologOpponents=teams.slice(1),balOpponents=['Marmara Atletik','Ege Yıldızları','Toros Voleybol','Trakya Birlik','Başkent Akademi','Fırat Spor','Karadeniz Gücü'];
+const prologOpponents=teams.slice(1),balOpponents=['Marmara Atletik','Ege Yıldızları','Toros Voleybol','Trakya Birlik','Başkent Akademi','Bursa Spor','Karadeniz Gücü'];
 let replay=null,bal=null;
 function configure(raw){bal=raw?.mode==='bal'&&Number.isSafeInteger(raw.startDay)&&raw.startDay>0?{run:1,startDay:raw.startDay,scheduleVersion:raw.scheduleVersion===2||raw.scheduleVersion!==1&&!Object.keys(raw.results||{}).length?2:1}:null;replay=raw?.mode==='replay'&&Number.isSafeInteger(raw.run)&&raw.run>0&&Number.isSafeInteger(raw.startDay)&&raw.startDay>0?{run:raw.run,startDay:raw.startDay}:null;const days=bal?Array.from({length:14},(_,i)=>bal.startDay+(i===0?4:i===1?9:15+(i-2)*8)):replay?Array.from({length:7},(_,i)=>replay.startDay+3+i*5):[4,9,14,19,24];teams.splice(1,7,...(bal?balOpponents:prologOpponents));config.matchDays.splice(0,config.matchDays.length,...days);config.rounds=days.length;config.lastDay=days.at(-1);config.replay=!!replay;config.bal=!!bal;config.name=bal?'Bölgesel Amatör Lig (BAL)':'Mahalle Kadınlar Ligi';config.dayInstructions=bal?500:100;config.matchTrigger=bal?300:50;}
 const dateFor=day=>new Date(start+(day-1)*dayMs),dayFor=date=>Math.round((Date.UTC(date.getUTCFullYear(),date.getUTCMonth(),date.getUTCDate())-start)/dayMs)+1;

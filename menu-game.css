@@ -1,3 +1,9 @@
+/* Match line follows the actual instruction threshold within each day. */
+#calendar .calendar-match-threshold{position:absolute;left:3px;right:3px;height:0;border-top:2px dashed #ae624b;z-index:1;pointer-events:none;opacity:.85}
+#calendar .calendar-day.past .calendar-match-threshold{opacity:.3}
+#calendar .calendar-day>small,#calendar .calendar-day>strong,#calendar .calendar-cell-count{position:relative;z-index:2}
+html[data-theme=dark] #calendar .calendar-match-threshold{border-color:#f0b187;opacity:.9}
+html[data-theme=dark] #calendar .calendar-day.past .calendar-match-threshold{opacity:.3}
 /* Flat, playful club world using the game's original character assets. */
 :root{--bg:#b7e1e9;--panel:#fff6df;--muted:#627e88;--text:#304e61;--lime:#ffca62;--line:#729cac;--orange:#ed785c}
 body{background:#9fd4e2;color:var(--text);font-family:'Trebuchet MS','Segoe UI',sans-serif}

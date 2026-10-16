@@ -6,7 +6,14 @@ function rotateTeam(team){for(const p of players.filter(p=>p.team===team))p.zone
 function serverPlayer(){return players.find(p=>p.team===servingTeam&&p.zone===1)}
 function reset(){players=[];for(let team=0;team<2;team++)for(let i=0;i<6;i++){const h=formation(team,i+1);players.push({team,index:team*6+i,zone:i+1,x:h.x,y:h.y,homeX:h.x,homeY:h.y,phase:i,angle:team?Math.PI:0,moving:false,hit:0,jump:0,block:0})}scores=[0,0];sets=[0,0];rotationCount=[0,0];servingTeam=0;rally=0;history=[];elapsed=0;ball={state:'wait',timer:2};updateScore()}
 function updateScore(){$('score').textContent=scores[0]+' : '+scores[1]+' · Set '+sets[0]+'–'+sets[1]}
-function awardPoint(winner){const sideout=winner!==servingTeam;scores[winner]++;history.push({type:'point',team:winner,previousServer:servingTeam});if(sideout){rotateTeam(winner);servingTeam=winner}announce(teamName(winner)+' sayı! '+(sideout?'Servis el değiştirdi — saat yönünde rotasyon.':'Aynı oyuncu servise devam ediyor.'));if(scores[winner]>=5&&scores[winner]-scores[1-winner]>=2){sets[winner]++;scores=[0,0];announce(teamName(winner)+' seti kazandı! Yeni set hazırlanıyor.')}updateScore();ball={state:'wait',timer:2.5};}
+function commentaryName(p){return p?.displayName||[p?.roster?.name,p?.roster?.surname].filter(Boolean).join(' ')||('#'+(p?.jerseyNumber??((p?.index??0)%6+1)));}
+function rallyCommentary(){
+ const actor=commentaryName(ball.attacker),receiver=commentaryName(ball.target);
+ const event=ball.outcome?.event;
+ if(event==='block'){const contact=[...history].reverse().find(e=>e.type==='block-contact');const names=(contact?.players||[]).map(i=>commentaryName(players.find(p=>p.index===i)));return (names.join(' ve ')||receiver)+' blokla sayı aldı!';}
+ return ({ace:actor+' doğrudan servis sayısı aldı!',kill:actor+' smaçla sayı aldı!','serve-error':actor+' servis hatası yaptı.','attack-error':actor+' hücumda topu dışarı gönderdi.','set-error':actor+' pas hatası yaptı.','receive-error':receiver+' topu kontrol edemedi.'})[event]||(ball.target?receiver+' topa yetişemedi.':'');
+}
+function awardPoint(winner){const sideout=winner!==servingTeam;scores[winner]++;history.push({type:'point',team:winner,previousServer:servingTeam});if(sideout){rotateTeam(winner);servingTeam=winner}announce(rallyCommentary()+' '+teamName(winner)+' sayı! '+commentaryName(serverPlayer())+' servise geçiyor.');if(scores[winner]>=5&&scores[winner]-scores[1-winner]>=2){sets[winner]++;scores=[0,0];announce(teamName(winner)+' seti kazandı! Yeni set hazırlanıyor.')}updateScore();ball={state:'wait',timer:2.5};}
 function launch(from,target,touch,kind='pass'){
  if(kind==='attack'){const blockers=players.filter(p=>p.team!==from.team&&[2,3,4].includes(p.zone)&&Math.abs(p.y-from.y)<85&&Math.abs(p.x-500)<80).sort((a,b)=>Math.abs(a.y-from.y)-Math.abs(b.y-from.y)).slice(0,2);for(const p of blockers){p.jump=.5;p.block=.5;}} 
  const miss=history.filter(e=>e.type==='touch').length>=3&&Math.random()<Number($('mistakes').value)/100;
@@ -19,7 +26,7 @@ function launch(from,target,touch,kind='pass'){
  ball={state:'flight',from:{x:from.x,y:from.y},x:from.x,y:from.y,z:18,target,targetX:tx,targetY:ty,touch,t:0,duration,miss,kind,attacker:from};
  $('touch').textContent=(kind==='serve'?'Servis · ':'')+teamName(target.team)+' · '+touch+'/3';
 }
-function serve(){rally++;const server=serverPlayer(),receivers=players.filter(p=>p.team!==servingTeam&&[1,5,6].includes(p.zone));server.hit=.4;history.push({type:'serve',team:servingTeam,player:server.index,zone:server.zone});launch(server,pick(receivers),1,'serve');announce(teamName(servingTeam)+' · #'+(server.index%6+1)+' servis atıyor.');}
+function serve(){rally++;const server=serverPlayer(),receivers=players.filter(p=>p.team!==servingTeam&&[1,5,6].includes(p.zone));server.hit=.4;history.push({type:'serve',team:servingTeam,player:server.index,zone:server.zone});launch(server,pick(receivers),1,'serve');announce(commentaryName(server)+' servis atıyor.');}
 function playerGoal(p){let x=p.homeX,y=p.homeY;
  if(ball.state==='wait'&&p===serverPlayer()){x=p.team?945:55}
  if(ball.state==='flight'){
@@ -37,8 +44,8 @@ function tick(dt){if(paused||!ready)return;elapsed+=dt;
  ball.t+=dt;const t=Math.min(1,ball.t/ball.duration);ball.x=ball.from.x+(ball.targetX-ball.from.x)*t;ball.y=ball.from.y+(ball.targetY-ball.from.y)*t;ball.z=18+Math.sin(Math.PI*t)*(ball.kind==='attack'?45:ball.touch===3?105:75);
  if(t===1){if(ball.miss||Math.hypot(ball.target.x-ball.targetX,ball.target.y-ball.targetY)>32){ball.state='drop';ball.t=0;announce('Karşılama kaçtı — top yerde!');return}
  const receiver=ball.target,touch=ball.touch;receiver.hit=.4;history.push({type:'touch',team:receiver.team,touch,player:receiver.index});
- if(touch===1){let setter=players.find(p=>p.team===receiver.team&&p.zone===3&&p!==receiver)||players.find(p=>p.team===receiver.team&&p.zone===2&&p!==receiver);announce(teamName(receiver.team)+' · Manşet, pasöre!');launch(receiver,setter,2)}
- else if(touch===2){const hitter=pick(players.filter(p=>p.team===receiver.team&&[2,4].includes(p.zone)&&p!==receiver));announce(teamName(receiver.team)+' · Pasör hücum pasını kaldırdı.');launch(receiver,hitter,3)}
- else{receiver.jump=.5;const defenders=players.filter(p=>p.team!==receiver.team&&[1,5,6].includes(p.zone));announce(teamName(receiver.team)+' · Smaç! Rakip savunmaya geçiyor.');launch(receiver,pick(defenders),1,'attack')}
+ if(touch===1){let setter=players.find(p=>p.team===receiver.team&&p.zone===3&&p!==receiver)||players.find(p=>p.team===receiver.team&&p.zone===2&&p!==receiver);announce(commentaryName(receiver)+' manşetle karşılıyor.');launch(receiver,setter,2)}
+ else if(touch===2){const hitter=pick(players.filter(p=>p.team===receiver.team&&[2,4].includes(p.zone)&&p!==receiver));announce(commentaryName(receiver)+', '+commentaryName(hitter)+' için pası kaldırıyor.');launch(receiver,hitter,3)}
+ else{receiver.jump=.5;const defenders=players.filter(p=>p.team!==receiver.team&&[1,5,6].includes(p.zone));announce(commentaryName(receiver)+' smaç vuruyor!');launch(receiver,pick(defenders),1,'attack')}
  }
 }
