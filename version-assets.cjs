@@ -1,4 +1,5 @@
 const fs=require('fs'),crypto=require('crypto');
+require('./sync-match-rules.cjs');
 // Embed optional crest PNGs so file:// play can safely recolor/export them.
 const crestSymbols={};for(const id of ['ball','bolt','peak','star','sun','moon','wave','wing','crown','leaf','flame','net']){const file='assets/crest-symbols/'+id+'.png';if(fs.existsSync(file))crestSymbols[id]='data:image/png;base64,'+fs.readFileSync(file).toString('base64');}
 fs.writeFileSync('crest-symbols-data.js','window.CrestSymbolData='+JSON.stringify(crestSymbols)+';\n');

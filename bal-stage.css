@@ -152,3 +152,120 @@
 /* The sixth level is a visible milestone without revealing its bonus early. */
 .block-level-milestone{position:absolute;top:50%;width:10px;height:10px;box-sizing:border-box;transform:translate(-50%,-50%);border:2px solid #b99b5e;border-radius:50%;background:#fff5d9;box-shadow:0 0 0 2px #f9efd4}
 .block-level-milestone.reached{background:#dfb65e;border-color:#a8833e;box-shadow:0 0 0 2px #f9efd4,inset 0 0 0 1px #ffe8a7}
+.camp-alert{flex-wrap:wrap;column-gap:10px;row-gap:10px}
+.camp-alert>.camp-alert-copy{flex:1;min-width:0}
+.camp-alert>.camp-alert-arrow{flex:0 0 auto;font-size:20px}
+.camp-alert-roster{display:grid;grid-template-columns:repeat(6,32px);gap:6px;flex-basis:100%}
+.camp-alert-slot{display:grid;place-items:center;box-sizing:border-box;width:32px;height:36px;overflow:hidden;border:1px dashed #a7b99a;border-radius:9px;background:#edf1df;color:#a0b18e;font:18px system-ui}
+.camp-alert-slot.occupied{border:1px solid #b6c49f;background:linear-gradient(145deg,#c5d8b9,#e3eccf);box-shadow:0 2px 0 #afbf9d}
+.camp-alert-slot img{display:block;width:100%;height:100%;object-fit:contain}
+.camp-alert{display:grid!important;grid-template-columns:minmax(0,1fr);gap:9px!important;padding:13px!important;background:linear-gradient(135deg,#f0f2df,#e2ebd2)!important;border-color:#fffae7!important;box-shadow:0 3px 0 #a5b995,inset 0 1px 0 #fffdf2!important;transition:transform .12s,box-shadow .12s}
+.camp-alert>.camp-alert-copy{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.camp-alert-copy strong{font-size:14px;line-height:1.2;letter-spacing:-.2px}
+.camp-alert .camp-alert-copy small{flex-shrink:0;margin:0;padding:5px 8px;border:1px solid #c5d3b6;border-radius:8px;background:#dce7ce;color:#65815d;font-size:10px;font-weight:800}
+.camp-alert>.camp-alert-benefit{display:flex;align-items:center;gap:8px;flex:0 0 auto;font-size:10px;color:#879578}
+.camp-alert .camp-alert-benefit b{display:inline;margin:0;padding-left:8px;border-left:1px solid #c6d2b8;font-size:10px;color:#a48044}
+.camp-alert-roster{grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
+.camp-alert-slot{position:relative;min-width:0;width:100%;height:39px;border-radius:9px;background:#f6f5e8;border-color:#bbcab0;color:#a6b99a;font-size:19px}
+.camp-alert-slot img{position:absolute;inset:3px;box-sizing:border-box;width:calc(100% - 6px);height:calc(100% - 6px);max-width:calc(100% - 6px);max-height:calc(100% - 6px);min-width:0;min-height:0;object-fit:contain;object-position:center; border-radius:5px}
+.camp-alert-slot.occupied{background:linear-gradient(145deg,#c0d4ae,#dfebcb);border-color:#a7bd94;box-shadow:0 2px 0 #afbf9d}
+.camp-alert-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:9px;border-top:1px solid #cbd8be}
+.camp-alert .camp-alert-cost{min-width:0}
+.camp-alert .camp-alert-cost small{margin:0 0 3px;font-size:7px;font-weight:800;letter-spacing:.7px;color:#91a080}
+.camp-alert .camp-alert-cost b{margin:0;font-size:10px;line-height:1.3;color:#718467;overflow-wrap:anywhere}
+.camp-alert-cost b span{color:#b3bea4;padding:0 2px}
+.camp-alert-action{display:flex;align-items:center;gap:10px;flex-shrink:0;padding:8px 11px;border:1px solid #fdf5d5;border-radius:9px;background:#f0d99b;color:#846730;box-shadow:0 2px 0 #cfb879;font-size:11px;font-weight:900}
+.camp-alert-action span{font-size:18px;line-height:1}
+.camp-alert:hover .camp-alert-action{background:#f5df9d}
+.camp-alert:active{transform:translateY(2px);box-shadow:0 1px 0 #a5b995!important}
+.camp-alert:focus-visible{outline:3px solid #7c9a79;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){.camp-alert{transition:none}}
+.upgrade-room[data-bonus-active="true"]{position:relative;gap:5px;padding:9px}
+.upgrade-room[data-bonus-active="true"]>.slot-icon{position:absolute;right:8px;top:8px;width:23px;height:23px;font-size:15px}
+.upgrade-room[data-bonus-active="true"]>strong{padding-right:24px;min-height:25px;font-size:11px;line-height:1.2}
+.upgrade-room[data-bonus-active="true"]>small{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:24px;line-height:12px;font-size:9px}
+.block-bonus-panel{display:grid;gap:3px;box-sizing:border-box;width:100%;min-width:0;padding:6px 7px;border:1px solid #c9c1a3;border-radius:8px;background:linear-gradient(135deg,#eef0db,#fff3cf);box-shadow:inset 0 1px 0 #fffbe9;color:#56756a;text-align:left;pointer-events:none}
+.block-bonus-label{font-size:7px;font-weight:900;letter-spacing:.35px;color:#a2864c;line-height:10px}
+.room-tile .block-bonus-title{font-size:10px;line-height:12px;color:#526f62;letter-spacing:0}
+.block-bonus-copy{font-size:9px;line-height:12px;color:#75816a;overflow-wrap:anywhere}
+.upgrade-room[data-bonus-active="true"] .room-active{gap:6px}
+.upgrade-room[data-bonus-active="true"] .block-upgrade-action{font-size:9px;line-height:12px}
+.upgrade-room>small.block-main-effect{display:grid;gap:3px;box-sizing:border-box;width:100%;min-height:0;padding:6px 7px;border:1px solid #c7d3b9;border-radius:8px;background:#edf1df;box-shadow:inset 0 1px 0 #fbfbea;overflow:visible;-webkit-line-clamp:unset;text-align:left}
+.block-main-label{font-size:7px;line-height:9px;font-weight:900;letter-spacing:.35px;color:#7c9373}
+.block-main-copy{font-size:9px;line-height:12px;color:#637b60;overflow-wrap:anywhere}
+.upgrade-room[data-bonus-active="true"]{gap:4px}
+.upgrade-room[data-bonus-active="true"]>strong{min-height:24px}
+.upgrade-room[data-bonus-active="true"]>small.block-main-effect{padding:5px 7px;gap:2px}
+.upgrade-room[data-bonus-active="true"] .block-bonus-panel{padding:5px 7px;gap:2px;background:#fbf1d3;border-color:#d5c69e}
+.upgrade-room[data-bonus-active="true"] .block-bonus-title{line-height:11px}
+.upgrade-room[data-bonus-active="true"] .block-bonus-label{line-height:9px}
+.upgrade-room[data-bonus-active="true"] .room-active{gap:5px}
+/* Effects are full-width sections of the card, separated by fine rules. */
+.upgrade-room>small.block-main-effect{width:calc(100% + 24px);margin:0 -12px;padding:8px 12px;border:0;border-top:1px solid #e7d7a4;border-bottom:1px solid #e7d7a4;border-radius:0;background:#faebbf;box-shadow:none}
+.block-main-label{color:#9b8653;font-weight:700;letter-spacing:.45px}
+.block-main-copy{color:#796c4b}
+.upgrade-room[data-bonus-active="true"]>small.block-main-effect{width:calc(100% + 18px);margin:0 -9px;padding:7px 10px 6px;border-color:#e7d7a4;background:#faebbf}
+.upgrade-room[data-bonus-active="true"] .block-bonus-panel{width:calc(100% + 18px);margin:-4px -9px 0;padding:7px 10px;border:0;border-bottom:1px solid #e7d7a4;border-radius:0;background:#faebbf;box-shadow:none}
+.upgrade-room[data-bonus-active="true"] .block-bonus-title{color:#77633b;line-height:12px}
+.upgrade-room[data-bonus-active="true"] .block-bonus-copy{color:#796c4b}
+.upgrade-room[data-bonus-active="true"] .block-bonus-label{color:#9b8653;font-weight:700;letter-spacing:.45px}
+.upgrade-room[data-bonus-active="true"]>.slot-icon{width:22px;height:22px;font-size:13px;background:#f5e6bb;color:#af8a47;border:1px solid #ead6a0}
+.upgrade-room[data-bonus-active="true"]>strong{color:#557271;letter-spacing:0}
+.upgrade-room[data-bonus-active="true"] .block-level-number b{font-size:13px;color:#768f77}
+.upgrade-room[data-bonus-active="true"] .block-level-number small{font-size:9px}
+.upgrade-room[data-bonus-active="true"] .block-level-track{height:4px}
+.upgrade-room[data-bonus-active="true"] .block-level-milestone{width:8px;height:8px;border-width:1px;box-shadow:0 0 0 1px #fff6dc}
+.upgrade-room[data-bonus-active="true"][data-upgrade="ready"] .block-upgrade-action{border-color:#d5dfc5;background:#e4ecd6;border-radius:7px;box-shadow:inset 0 1px 0 #f6f8e9}
+/* Keep the heading and first effect aligned before and after bonus unlocks. */
+.upgrade-room:has(> .block-main-effect){position:relative;padding:9px;gap:4px}
+.upgrade-room:has(> .block-main-effect)>.slot-icon{position:absolute;right:8px;top:8px;width:22px;height:22px;font-size:13px;background:#f5e6bb;color:#af8a47;border:1px solid #ead6a0}
+.upgrade-room:has(> .block-main-effect)>strong{display:flex;align-items:center;box-sizing:border-box;flex:0 0 28px;height:28px;min-height:28px;width:100%;padding-right:27px;font-size:11px;line-height:13px;color:#557271;letter-spacing:0}
+.upgrade-room:has(> .block-main-effect)>small.block-main-effect{width:calc(100% + 18px);margin:0 -9px;padding:7px 10px 6px;gap:2px}
+/* A continuous yellow card, with a distinct, anchored upgrade footer. */
+.transfer-tip[role="button"]{cursor:pointer;transition:background .15s}
+.transfer-tip[role="button"]:hover{background:#dfe8ce}
+.transfer-tip[role="button"]:focus-visible{outline:2px solid #b99450;outline-offset:2px}
+.upgrade-room:has(> .block-main-effect)>strong{flex-basis:33px;height:33px;min-height:33px;font-size:11px;line-height:14px}
+.upgrade-room:has(> .block-main-effect)>.slot-icon{top:12px;background:#f8e8b7;border-color:#e8d29a}
+.upgrade-room:has(> .block-main-effect)>small.block-main-effect{padding:9px 10px 8px;background:#fbedc3;border-color:#e9d9aa;gap:4px}
+.upgrade-room[data-bonus-active="true"] .block-bonus-panel{padding:9px 10px 10px;gap:4px;background:#fbedc3;border-color:#e9d9aa}
+.upgrade-room:has(> .block-main-effect) .room-active{box-sizing:border-box;display:flex;flex-direction:column;gap:9px;width:calc(100% + 18px);margin: auto -9px -9px;padding:10px 10px 0;background:#fff4d3;border-top:1px solid #e9d9aa;letter-spacing:0}
+.upgrade-room:has(> .block-main-effect) .block-level-number{gap:4px;font-size:7px;letter-spacing:.3px}
+.upgrade-room:has(> .block-main-effect) .block-level-track{height:4px;background:#dedfc1}
+.upgrade-room:has(> .block-main-effect) .block-upgrade-action{box-sizing:border-box;display:flex;align-items:center;justify-content:center;min-height:33px;width:calc(100% + 20px);margin:0 -10px;padding:7px 8px;border:0;border-top:1px solid #e6d8b0;border-radius:0;background:#f3e8c7;box-shadow:none;font-size:9px;line-height:12px;color:#8d815f}
+.upgrade-room:has(> .block-main-effect)[data-upgrade="ready"] .block-upgrade-action{background:#dce8cb;border-color:#c5d5b4;color:#52755d;font-weight:900}
+.upgrade-room:has(> .block-main-effect)[data-upgrade="ready"]:hover .block-upgrade-action{background:#d1e1bf}
+/* Reference card: continuous pale gold surface and a raised gold action. */
+.upgrade-room:has(>.block-main-effect){background:#fff5cc;border:3px solid #ffe69a;border-radius:13px;box-shadow:0 3px 0 #ddd5aa;gap:0;padding:9px}
+.upgrade-room:has(>.block-main-effect)>strong{flex-basis:32px;height:32px;min-height:32px;color:#7e9d93}
+.upgrade-room:has(>.block-main-effect)>.slot-icon{background:transparent;color:#87a398;border-color:#f0dda3;top:9px}
+.upgrade-room:has(>.block-main-effect)>small.block-main-effect{padding:9px 10px;background:transparent;border-color:#efdfaa}
+.upgrade-room:has(>.block-main-effect) .block-main-label{color:#99a38b}
+.upgrade-room:has(>.block-main-effect) .block-main-copy{color:#696a50}
+.upgrade-room[data-bonus-active="true"] .block-bonus-panel{margin:0 -9px;padding:8px 10px;background:transparent;border-color:#efdfaa}
+.block-bonus-locked{box-sizing:border-box;position:relative;display:flex;flex:1;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:calc(100% + 18px);min-height:53px;margin:0 -9px;padding:7px 10px;color:#9b9e83;font-size:8px;background:#f9efc8;border-bottom:1px solid #efdfaa}
+.block-bonus-locked>.block-main-label{align-self:flex-start;opacity:.45;font-size:7px}
+.bonus-lock-icon{font-size:0;width:10px;height:9px;border-radius:2px;background:#9ba38b;position:relative;margin-top:3px}
+.bonus-lock-icon:before{content:'';position:absolute;box-sizing:border-box;width:7px;height:7px;border:2px solid #9ba38b;border-radius:5px 5px 0 0;left:1.5px;top:-5px}
+.upgrade-room:has(>.block-main-effect) .room-active{background:transparent;border-top:0;padding:9px 10px 8px;gap:8px}
+.upgrade-room:has(>.block-main-effect) .block-level-track{height:6px;background:#dbe0c8}
+.upgrade-room:has(>.block-main-effect) .block-level-milestone{height:9px;width:9px;background:#f5db8b;border:1px solid #8fa58c;box-shadow:none}
+.upgrade-room:has(>.block-main-effect) .block-upgrade-action{width:100%;margin:0;min-height:30px;padding:6px 3px;border:0;border-radius:8px;background:#f3dc97;color:#857755;box-shadow:0 2px 0 #d9c387}
+.upgrade-room:has(>.block-main-effect)[data-upgrade="ready"] .block-upgrade-action{background:#f5db8b;color:#756342;border:0;box-shadow:0 2px 0 #d7bb74}
+.upgrade-room:has(>.block-main-effect)[data-upgrade="ready"]:hover .block-upgrade-action{background:#f8d57c}
+.upgrade-room:has(>.block-main-effect):not([data-upgrade="ready"]) .block-upgrade-action{background:#ece7d0;color:#a09e88;box-shadow:none;border:1px solid #e3dec8;font-weight:600}
+.upgrade-room:has(>.block-main-effect):not([data-upgrade="ready"]){cursor:default}
+.tier.energized .upgrade-room:has(>.block-main-effect):not([data-upgrade="ready"]) .block-upgrade-action{background:#ffe3a0;border-color:#efd089;color:#9a7a41;box-shadow:none}
+/* Camp uses one scroll surface; compact slots leave room for the roster. */
+#campDialog{overscroll-behavior:contain;scroll-padding:16px 0 110px;touch-action:pan-y}
+#campDialog #closeCamp{position:sticky;top:0;float:right;z-index:6;min-width:40px;min-height:40px;margin:-10px -2px 0 8px;box-shadow:0 2px 6px #52695322}
+#campDialog #campSlots{position:relative;top:auto;scroll-margin-top:14px;padding:8px 0;gap:6px}
+#campDialog .camp-slot{min-height:100px;padding:7px 4px;gap:3px}
+#campDialog .camp-slot img{width:38px;height:43px;object-fit:contain}
+#campDialog .camp-slot strong{font-size:9px;line-height:12px}
+#campDialog .camp-slot small,#campDialog .camp-slot span{font-size:8px}
+#campDialog .camp-candidates{max-height:none;overflow:visible;overscroll-behavior:auto;scroll-margin-top:16px;touch-action:pan-y}
+#campDialog .camp-candidate{touch-action:pan-y;-webkit-user-select:none;user-select:none}
+#campDialog .camp-drag-grip{min-height:32px;box-sizing:border-box;display:grid;place-items:center}
+#campDialog .camp-send-footer{bottom:-12px;z-index:5;padding-bottom:max(10px,env(safe-area-inset-bottom));box-shadow:0 -5px 12px #f7f0dc}
+@media(max-height:650px){#campDialog{max-height:96dvh}#campDialog .camp-overview{margin:8px 0}#campDialog .camp-slot{min-height:90px}}

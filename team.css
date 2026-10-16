@@ -48,3 +48,15 @@
 .transfer-opportunities .transfer-tip{padding:13px 14px}.transfer-tip>strong{display:block;font-size:13px;color:#476d61}.transfer-tip>p{margin:7px 0 10px;line-height:1.5}.transfer-tip-price{display:inline-block;padding:5px 8px;border-radius:7px;background:#f5e5ba;color:#826537;font-size:11px;font-weight:800}.transfer-tip-missing{display:block;margin-top:5px;font-size:10px;color:#a17c56}
 
 #scoutAdvice .transfer-opportunities{margin:12px 0 16px;padding:12px;border:1px solid #d8dfc8;border-radius:12px;background:#f8f7e8;text-align:left}#scoutAdvice .transfer-opportunities h3{margin:0 0 8px;font-size:14px}
+/* Special recruits retain the club palette with a distinct, quiet frame. */
+.scout-player[data-special]{border:2px solid #c99e50;background:linear-gradient(145deg,#fff6d9,#f3edd6 60%,#e4eddc);box-shadow:0 3px 0 #b9a373,inset 0 0 0 3px #fffbeb}
+.scout-player[data-special="potential"]{border-color:#8c92b4;background:linear-gradient(145deg,#f5f0fa,#f6f1dc 65%,#e2e9f1);box-shadow:0 3px 0 #9a9eb2,inset 0 0 0 3px #fffbeb}
+.scout-special-label{display:block;margin:0 0 10px;padding:6px 9px;border-radius:7px;background:#ebd498;color:#6d572f;font-size:10px;font-weight:900;letter-spacing:.6px;text-align:center}
+[data-special="potential"] .scout-special-label{background:#ddddef;color:#5d6484}
+#scoutDialog .scout-special-note{margin:8px 0;padding:8px 10px;border-radius:8px;background:#fff9e6;color:#6c735c;font-size:11px;line-height:1.5}
+.scout-hold{display:block;width:100%;margin-top:8px;padding:9px;border:1px solid #b8c7a9;border-radius:9px;background:#edf0df;color:#577564;font:inherit;font-size:11px;cursor:pointer}
+.scout-hold[aria-pressed="true"]{background:#dbe7ce;border-color:#8ba07c;font-weight:800}
+.scout-hold[hidden]{display:none}
+.player-card[data-special]{border-color:#c99e50;box-shadow:0 3px 0 #b9a373,inset 0 0 0 2px #fff6d9}
+.player-card[data-special="potential"]{border-color:#8c92b4}
+.player-card .special-player-tag{display:block;padding:5px 8px;background:#f0dfad;color:#725d35;font-size:9px;font-weight:900;text-align:center}
