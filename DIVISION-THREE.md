@@ -20,3 +20,5 @@ Stüdyo doğrulaması: `node test-social-studio.cjs`. Bu ilk denemenin fiyat ve 
 - Oyuncu ve başka hesapların gönderileri 10–14 saniyede gelir. Otobüs, soyunma odası, tribün ve ev arka planlarına polaroid, ikili karakter, maç bileti ve taktik çizimi kompozisyonları eklendi.
 
 - Son sosyal düzenleme: hazırlık süreleri klip 60, oyuncu hikâyesi 90, sponsor 75 saniye (Çekim Ekibi hızlandırır). Hazırlık diğer menülerde devam eder. Kompakt önizleme son tamamlanan gönderiyi saklar; yeni gönderi akışta görünür alana getirilir ve okunabilmesi için otomatik kayma 12 saniye durur. Görsel ve açıklama iş kaydındaki aynı taslaktan paylaşılır.
+
+- Akış artık otomatik kaydırılmaz: yeni gönderiler üstte görünür, eski bir gönderi okunurken görünür konum korunur. Hazırlık önizlemesinde görselin taşıma/boyutlandırma tutamaçları, başlık ve açıklamanın metin kutusu seçim çerçeveleri görünür; paylaşılan görselde bu düzenleme işaretleri yoktur.
