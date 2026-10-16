@@ -227,5 +227,28 @@ html[data-theme=dark] .mobile-nav a[aria-current=page]{background:#3c514b;color:
 #settingsDialog :is(#soundToggle,#vibrationToggle)[aria-pressed=true]:before{transform:translateX(21px);background:#f4d692}
 html[data-theme=dark] #settingsDialog :is(#soundToggle,#vibrationToggle){background:#20343b!important;border-color:#586d70!important}
 html[data-theme=dark] #settingsDialog :is(#soundToggle,#vibrationToggle)[aria-pressed=true]{background:#759987!important;border-color:#95b29d!important}
+/* Match lineup and both team introductions share the night palette. */
+html[data-theme=dark] #matchIntro{background:radial-gradient(ellipse at 50% 25%,#304d50,#192e38 75%)!important;color:#edf0e8!important}
+html[data-theme=dark] #matchIntro :is(h2,h3){color:#edf0e8!important}
+html[data-theme=dark] #matchIntro :is(.eyebrow,.intro-versus,.intro-team p){color:#bccdc7!important}
+html[data-theme=dark] #matchIntro .intro-team{background:transparent!important;border:0!important;box-shadow:none!important}
+html[data-theme=dark] #matchIntro .intro-tabs button{background:#2b4449!important;border:1px solid #536e6d!important;color:#c6d6cd!important;box-shadow:none!important}
+html[data-theme=dark] #matchIntro .intro-tabs button[aria-pressed=true]{background:#4b594a!important;border-color:#b0a475!important;color:#f3dfab!important}
+html[data-theme=dark] #matchIntro .intro-card{background:linear-gradient(150deg,#405e55,#2b4448)!important;border:1px solid #698277!important;box-shadow:0 3px 0 #112831!important}
+html[data-theme=dark] #matchIntro[data-side="1"] .intro-card{background:linear-gradient(150deg,#3c5866,#2c404e)!important;border-color:#667b87!important}
+html[data-theme=dark] #matchIntro .intro-card>div{background:#20363be8!important;border-top:1px solid #526a61!important}
+html[data-theme=dark] #matchIntro .intro-card strong{background:transparent!important;color:#e5ecdf!important}
+html[data-theme=dark] #matchIntro .intro-card small{background:transparent!important;color:#baccc0!important}
+html[data-theme=dark] #matchIntro .intro-number{color:#c2d4cb!important}
+html[data-theme=dark] #matchIntro .player-overall{background:linear-gradient(145deg,#dcc38b,#b89a5e)!important;border-color:#e0c891!important;color:#302e24!important}
+html[data-theme=dark] #matchIntro .player-overall small{color:#4a402b!important}
+html[data-theme=dark] #matchIntro .intro-progress{background:#425d60}
+html[data-theme=dark] #matchIntro .intro-progress i{background:#d4bc83}
+html[data-theme=dark] #matchIntro #introSkip{background:transparent!important;color:#bccdc7!important;box-shadow:none!important}
+html[data-theme=dark] :is(.formation-court,.formation-option,.formation-libero){background:#304c4d!important;border-color:#617d70!important;color:#dce8d8!important}
+html[data-theme=dark] .formation-option[aria-pressed=true]{background:#4a5d49!important;border-color:#a4b287!important}
+html[data-theme=dark] :is(#preMatchStage h3,.formation-option small,.formation-option strong,.formation-picker-close){color:#d5e4d6!important}
+html[data-theme=dark] .tier.energized .upgrade-room .block-bonus-locked{background:#454c3c!important}
+html[data-theme=dark] .tier.energized .upgrade-room .block-bonus-panel{background:#494e3d!important}
 #settingsDialog :is(#soundToggle,#vibrationToggle):focus-visible{outline:3px solid #d4ab59;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){#settingsDialog :is(#soundToggle,#vibrationToggle):before{transition:none}}
