@@ -67,6 +67,7 @@ body.social-open #socialPanel .simple-button-copy strong{font-size:15px;letter-s
 body.social-open #socialPanel .simple-button-copy>span{font-size:10px;color:var(--social-muted)}
 body.social-open #socialPanel .simple-button-symbol{flex-basis:35px;height:35px;border:0;border-radius:11px;background:var(--social-accent);color:#4c5138}
 body.social-open #socialPanel .simple-button-symbol svg{display:block;width:19px;height:19px}
+body.social-open #socialPanel .simple-button-symbol .publish-hourglass{display:block;width:30px;height:30px;object-fit:contain}
 body.social-open #socialPanel .simple-button-fill{background:var(--social-progress);border-right:1px solid #8ca48044}
 body.social-open #socialPanel #socialPublish[data-state=working]{border-color:var(--social-line);background:var(--social-soft);box-shadow:none}
 body.social-open #socialPanel #socialPublish[data-state=working] .simple-button-symbol{background:transparent;color:var(--social-text)}

@@ -6,6 +6,22 @@ const contents=[
  {id:'sponsor',title:'Sponsor paylaşımı',seconds:120,followers:0,label:'Reklam · Doğrudan bütçe'}
 ];
 const sponsors=[{at:100,name:'Mahalle Esnafı'},{at:1000,name:'File Spor'},{at:5000,name:'Tribün Market'},{at:15000,name:'Rota Spor'},{at:40000,name:'Arena'}];
+const trainingCaptions=[
+ 'Koç “Bugün sıçrama çalışacağız” dediğinde sivil havacılıktan kalkış izni istiyoruz. Çünkü bizim smaçörler havaya kalktığında oralarda oksijen seviyesi biraz düşüyor.',
+ 'Smaç sırasında 10 dakika bekle, sıra tam sana gelsin, pasör hayatının en kötü pasını atsın, sen de mecburen topu fileye gömüp bütün salonun sana acıyarak bakmasını izle.',
+ 'Koç “Bugün yoğun defans ve plonjon çalışacağız” dediğinde, takımın yarısının aniden eski kronik diz ve bel sakatlıklarının nüksetmesi.',
+ 'Antrenman sonu top toplama anı geldiğinde, herkesin bir anda tuvalete gitmesi veya çok acil telefon görüşmelerinin ortaya çıkması... Sahanın ortasında üç kişi 50 tane topla çaresizce bakışıyoruz.',
+ 'Kendi aramızda yaptığımız 6’ya 6 antrenman maçları, ligdeki resmi maçlardan çok daha zor geçiyor. Çünkü bu dünyada bizi yenebilecek tek takım yine biziz.',
+ 'Servis antrenmanında bantlara hedef almak yerine, bilerek salonun tavanındaki o sarkan garip kabloya nişan almak. Bence gerçek isabet yeteneği budur.'
+];
+const sponsorCaptions=[
+ 'Şifa Fizik Tedavi Merkezi: Plonjon atarken beli kilitlenen liberoların ve kronik diz ağrısı çeken orta oyuncuların resmi sponsoru.',
+ 'Net Görüş Optik: Topun içeride mi dışarıda mı olduğunu bir türlü göremeyen hakemlerimizin ve “pas çok kötüydü” diye ağlayan smaçörlerimizin resmi destekçisi.',
+ 'Kulüp Başkanının Kayınçosunun Şirketi: Sadece formalarda adımız yazsın diye mahalle liginde para verdik, voleybolun kurallarını hala tam bilmiyoruz ve 2. Ligi beklemiyorduk. Başarılar kızlar.',
+ 'Titan Ortopedi: Karşı takımın bizim smaçları defans yapmaya çalışırken yaşadığı bilek burkulmalarının 1 numaralı adresi.',
+ 'Zirve Havayolları: Smaçörlerimiz havaya sıçradığında o kadar uzun süre asılı kalıyorlar ki, hosteslerimiz kendilerine çay ve kek servisi yapıyor.',
+ 'Kraliyet Enerji İçecekleri: Rakip takım molalarda çaresizce taktik konuşur, bizimkiler ise birer yudum alıp sıradaki kurbanlarının kim olacağına karar verir.'
+].map(text=>text+' #işbirliği');
 const playerQuotes=[
  ['uncertain','libero','Libero formamın farklı renkte olması çok havalı duruyor olabilir ama asıl sebebi takımın geri kalanının top için yere atlamaya tenezzül bile etmemesi.'],
  ['uncertain','outside','Top kesinlikle içerideydi. Çizgi hakemi miyop, pasör kısa attı, salonun ışığı gözümü aldı, ayakkabımın bağcığı gevşemişti ve zaten Merkür retrosu var. Yoksa ben o smacı kesin sayı yapmıştım.'],
@@ -40,5 +56,5 @@ function capacity(s){return 3+Math.max(0,(s.levels[1]||0)-5);}
 function reward(s,type,special=false){const c=contents.find(c=>c.id===type);return {followers:Math.round(c.followers*(1+(s.levels[1]||0)*.18)*(special?1.6:1)),cash:type==='sponsor'?Math.round(income(s)*.8):0};}
 function duration(s,type,lane=0){const c=contents.find(c=>c.id===type);const speed=1+Math.min(5,s.levels[0]||0)*.12+(lane?Math.max(0,(s.levels[0]||0)-6)*.15:0);return Math.round(c.seconds*1000/speed);}
 function price(level){return [1500,3500,7000,12000,20000,32000,48000,68000,95000,130000][level];}
-const api={contents,sponsors,followers,income,normalize,slots,capacity,reward,duration,price,playerQuotes,quoteDraft,caption};root.SocialStudioRules=api;if(typeof module!=='undefined')module.exports=api;
+const api={contents,sponsors,followers,income,normalize,slots,capacity,reward,duration,price,playerQuotes,quoteDraft,caption,trainingCaptions,sponsorCaptions};root.SocialStudioRules=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);
