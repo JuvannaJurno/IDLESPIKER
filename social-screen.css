@@ -139,7 +139,7 @@ body.social-open #socialPanel .social-draft{display:grid;grid-template-columns:m
 body.social-open #socialPanel .draft-top{grid-column:1/-1;min-height:32px}
 body.social-open #socialPanel .draft-caption{height:auto;min-height:76px;padding:0;font-size:10px;line-height:1.5;display:flex;align-items:center;overflow:visible;min-width:0}
 body.social-open #socialPanel .draft-caption-text{display:block;overflow:visible;overflow-wrap:anywhere;-webkit-line-clamp:unset}
-body.social-open #socialPanel .social-draft.long-caption .draft-caption{grid-column:1/-1;min-height:0;margin-top:12px;align-items:flex-start}
+body.social-open #socialPanel .social-draft.long-caption .draft-caption{grid-column:auto;min-height:0;max-height:150px;margin-top:0;align-items:flex-start;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;padding:3px 4px 3px 0}
 body.social-open #socialPanel .draft-skeleton{top:22px;width:90%}
 body.social-open #socialPanel .social-draft>.shared-post-art{border-radius:7px}
 body.social-open #socialPanel #socialPublish{min-height:58px;padding:9px 11px}
@@ -183,3 +183,27 @@ html[data-theme=dark] body.social-open #socialPanel .social-post[data-kind=club]
 .shared-post-art[data-composition=duo] .draft-image-selection{right:1%;width:66%}
 @media(prefers-reduced-motion:reduce){.draft-image-selection,.draft-text-selection{transition:none}}
 .stage-test-row{flex-wrap:wrap;gap:10px}.stage-test-row>label{flex:1;min-width:0;text-align:left}.stage-test-row select{display:block;width:100%;margin:8px 0;border:1px solid #b5c3a8;border-radius:9px;padding:9px 6px;font:inherit;font-size:11px;background:#fff7df;color:#50786b}.stage-test-row small{display:block;font-size:9px;line-height:1.5;font-weight:400;opacity:.8}.stage-test-row #stageTestError{flex-basis:100%;font-size:10px;color:#bf785b}.stage-test-row #stageTestError:empty{display:none}html[data-theme=dark] .stage-test-row select{background:#2a4248;color:#e3e8d8;border-color:#57716a}
+body.social-open #socialPanel .social-post-visual.social-match-art{height:auto;min-height:205px;padding:15px 16px 11px;box-sizing:border-box;display:flex;flex-direction:column;gap:14px;background:radial-gradient(ellipse at 50% 100%,#698e7240,transparent 75%),#254b49;color:#fff0cb;border:0;border-radius:0;overflow:hidden}
+body.social-open #socialPanel .social-match-art:after{display:none}
+.social-match-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #c6d4af30;padding-bottom:9px}
+.social-match-heading>span{font-size:9px;letter-spacing:1.6px;font-weight:700;flex-shrink:0;color:#efd28b}
+.social-match-heading>small{font-size:8px;color:#bfd0bd;text-align:right}
+.social-match-teams{display:grid;grid-template-columns:minmax(0,1fr) 30px minmax(0,1fr);align-items:center;gap:6px}
+.social-match-side{display:flex;align-items:center;flex-direction:column;text-align:center;min-width:0;gap:5px}
+.social-match-side>img{display:block;width:61px;height:67px;object-fit:contain;filter:drop-shadow(0 3px 4px #102e3640)}
+.social-match-side>strong{font-size:13px;line-height:1.25;overflow-wrap:anywhere;color:#fff0cb;min-height:33px;display:flex;align-items:center;justify-content:center}
+.social-match-side>small{font-size:7px;letter-spacing:.8px;color:#b7cbb7}
+.social-match-vs{font-size:12px;letter-spacing:1px;color:#e3c983;text-align:center}
+.social-match-footer{text-align:center;border-top:1px solid #c6d4af30;padding-top:8px;color:#d1dbc0;font-size:8px;letter-spacing:1.2px}
+html[data-theme=dark] body.social-open #socialPanel .social-post-visual.social-match-art{background:radial-gradient(ellipse at 50% 100%,#73947520,transparent 75%),#1c363b}
+body.social-open #socialPanel .social-post-visual.social-branded-art>.social-feature-badge{left:50%;right:auto;top:43%;bottom:auto;transform:translate(-50%,-50%);width:66px;height:74px;filter:drop-shadow(0 3px 5px #173d3933)}
+body.social-open #socialPanel .social-post-visual.social-branded-art>.social-visual-title{left:8%;right:auto;bottom:17px;top:auto;width:84%;max-width:84%;text-align:center;font-size:18px!important;line-height:1.2}
+body.social-open #socialPanel .social-post-visual.social-branded-art>.social-scene{opacity:.35}
+body.social-open #socialPanel .social-post-visual.social-branded-art>.social-visual-kicker{max-width:calc(100% - 28px);line-height:1.4}
+body.social-open #socialPanel .social-post-visual>.social-visual-title{paint-order:stroke fill;-webkit-text-stroke:1.4px #274841;text-shadow:0 1px 2px #173b4055}
+body.social-open #socialPanel .social-post-visual>.social-visual-kicker{paint-order:stroke fill;-webkit-text-stroke:.5px #274841;text-shadow:0 1px 2px #173b4055}
+.social-match-result .social-match-teams{grid-template-columns:minmax(0,1fr) 64px minmax(0,1fr)}
+.social-match-result .social-match-vs{font-size:20px;font-weight:800;letter-spacing:0;white-space:nowrap;color:#f5d68b}
+/* Keep pale post headlines readable over both portraits and scenery. */
+body.social-open #socialPanel .social-post-visual>.social-visual-title{paint-order:stroke fill;-webkit-text-stroke:1.5px #284b48;text-shadow:0 1px 2px #183a4540}
+body.social-open #socialPanel .social-post-visual>.social-visual-kicker{paint-order:stroke fill;-webkit-text-stroke:.5px #284b48}
