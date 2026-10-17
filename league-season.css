@@ -8,3 +8,30 @@
 .league-journey-button{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;margin:12px 0;border:1px solid #9bb8a2;border-radius:13px;background:#e1ecd7;color:#507664;text-align:left;box-shadow:0 3px 0 #bfceaf;font-family:inherit;cursor:pointer}.league-journey-button[hidden]{display:none}.league-journey-button strong,.league-journey-button small{display:block}.league-journey-button strong{font-size:14px}.league-journey-button small{font-size:10px;line-height:1.5;margin-top:5px;color:#7f9479}.league-journey-button>b{font-size:24px}.league-journey-button:active{transform:translateY(2px);box-shadow:none}.league-journey-button:focus-visible{outline:2px solid #6a9178;outline-offset:3px}
 
 .prologue-complete{flex-wrap:wrap}.prologue-complete>div{flex:1 1 150px;min-width:0}.prologue-complete .league-journey-button{width:auto;flex:0 0 110px;min-height:48px;margin:0;padding:10px;gap:6px;background:#567e6e;color:#fff6de;border-color:#4b7161;box-shadow:0 3px 0 #3d6052;font-size:11px;font-weight:800;line-height:1.4}.prologue-complete .league-journey-button>b{font-size:18px}
+/* Each league keeps the same banner identity in the dashboard and season view. */
+body[data-league-division="1"]{--league-base:#596e5b;--league-end:#7b8c6c;--league-ink:#f8edce;--league-accent:#edca89;--league-pattern:repeating-linear-gradient(135deg,transparent 0 20px,#f7efca0b 20px 22px,transparent 22px 42px)}
+body[data-league-division="2"]{--league-base:#406d70;--league-end:#62928a;--league-ink:#fff4d9;--league-accent:#f0d18b;--league-pattern:radial-gradient(circle at 7px 7px,#e6efce20 1.5px,transparent 2px);--league-pattern-size:22px 22px}
+body[data-league-division="3"]{--league-base:#515878;--league-end:#7a7390;--league-ink:#fff1dc;--league-accent:#f0c895;--league-pattern:repeating-linear-gradient(60deg,transparent 0 34px,#e4dbf110 34px 36px,transparent 36px 70px),repeating-linear-gradient(120deg,transparent 0 34px,#e4dbf10b 34px 36px,transparent 36px 70px)}
+html[data-theme=dark] body[data-league-division="1"]{--league-base:#2c4037;--league-end:#405447;--league-accent:#d9c395}
+html[data-theme=dark] body[data-league-division="2"]{--league-base:#243f48;--league-end:#365851;--league-accent:#dcc992}
+html[data-theme=dark] body[data-league-division="3"]{--league-base:#30364f;--league-end:#48445e;--league-accent:#e0bd9e}
+html body[data-league-division] :is(.season-hero,.league-quick){background-color:var(--league-base);background-image:var(--league-pattern),linear-gradient(125deg,var(--league-base),var(--league-end));background-size:var(--league-pattern-size,auto),auto;color:var(--league-ink)}
+html body[data-league-division="3"] :is(.season-hero,.league-quick){background-image:var(--league-pattern),linear-gradient(125deg,var(--league-base),var(--league-end));background-size:auto}
+html body[data-league-division] .season-hero>.eyebrow,html body[data-league-division] .season-scoreline>strong{color:var(--league-accent)}
+html body[data-league-division] .league-quick-icon{background:var(--league-accent);color:var(--league-base)}
+html body[data-league-division] .league-quick small{color:var(--league-ink);opacity:.85}
+/* Banner details follow each league's palette. */
+body[data-league-division="1"]{--league-accent:#f2dfac;--league-ink:#fff8e5;--league-muted:#e4e9d5;--league-fill:#d6dbaa;--league-border:#e7e6cb;--league-shadow:#8a9c80}
+body[data-league-division="2"]{--league-accent:#caefdf;--league-ink:#f0fff8;--league-muted:#d3eae3;--league-fill:#a9d8c6;--league-border:#d4eee1;--league-shadow:#81a79d}
+body[data-league-division="3"]{--league-accent:#e6dcfa;--league-ink:#faf4ff;--league-muted:#e1daee;--league-fill:#c6b7e4;--league-border:#e7dff3;--league-shadow:#a29ab8}
+html[data-theme=dark] body[data-league-division="1"]{--league-accent:#e7d7ad;--league-shadow:#192c24}
+html[data-theme=dark] body[data-league-division="2"]{--league-accent:#c0e8d8;--league-shadow:#152e32}
+html[data-theme=dark] body[data-league-division="3"]{--league-accent:#ddd1f2;--league-shadow:#222339}
+html body[data-league-division] :is(.season-hero,.league-quick){border-color:var(--league-border);box-shadow:0 3px var(--league-shadow)}
+html body[data-league-division] .season-hero h2,html body[data-league-division] .season-scoreline>span{color:var(--league-ink)}
+html body[data-league-division] .season-scoreline small,html body[data-league-division] .season-hero p{color:var(--league-muted)}
+html body[data-league-division] .season-facts span{color:var(--league-ink);background:#ffffff0f;border-color:#ffffff29}
+html body[data-league-division] .season-hero progress{appearance:none;-webkit-appearance:none;border:0;border-radius:8px;overflow:hidden;background:#ffffff25;accent-color:var(--league-fill)}
+html body[data-league-division] .season-hero progress::-webkit-progress-bar{background:#ffffff25;border-radius:8px}
+html body[data-league-division] .season-hero progress::-webkit-progress-value{background:var(--league-fill);border-radius:8px}
+html body[data-league-division] .season-hero progress::-moz-progress-bar{background:var(--league-fill);border-radius:8px}

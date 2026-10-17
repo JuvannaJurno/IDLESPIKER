@@ -1,0 +1,10 @@
+const assert=require('assert'),A=require('./blackboard');
+const make=(id,role,receive=50)=>({id,role,name:'Deniz',surname:'Yılmaz',receive,serve:50,spike:50,block:50});
+const ps=[make('l','libero',5),make('s','outside',10),make('m','middle'),make('o','opposite'),make('p','setter')];
+const rules={slots:ps.map(p=>({id:p.id,role:p.role})),cardQuote:p=>({blocked:p.camping?'Oyuncu kampta · dönüşünü bekliyor':'',gains:{receive:2,serve:2,spike:2,block:2}})};
+let squad={players:ps,lineup:Object.fromEntries(ps.map(p=>[p.id,p.id]))};const rivals=[make('r','outside'),make('rl','libero')];rivals[1].receive=100;
+let report=A.analyze(squad,rivals,rules);assert.equal(report.need.key,'receive');assert.equal(report.upgrade.id,'l');ps[0].camping=true;report=A.analyze(squad,rivals,rules);assert.equal(report.upgrade.id,'s','camping player is not recommended');
+squad.lineup.p='missing-player';assert(A.analyze(squad,rivals,rules).missing.some(s=>s.id==='p'),'invalid id detected');squad.lineup.p='m';assert(A.analyze(squad,rivals,rules).missing.some(s=>s.id==='p'),'wrong role detected');
+const equal={kind:'potential',own:ps[0],ovr:50,current:50,candidate:{overall:55},incumbent:{reached:true}};assert(A.transferBrief(equal).includes('aynı güçte'));assert(!A.transferBrief(equal).includes('daha zayıf'));equal.incumbent={reached:false,overall:51};assert(A.transferBrief(equal).includes('en fazla 51 OVR'));assert(!A.transferBrief(equal).includes('kampa gitmeli'));
+const own={...make('own','setter'),camping:true,value:50},candidate={...make('candidate','setter'),value:40};const R={overall:p=>p.value,cardQuote:p=>({blocked:p.camping?'Oyuncu kampta':'',gains:{value:5},level:1,cost:10})};assert.equal(A.transfers({players:[own],lineup:{p:'own'}},[{id:'scout-1',player:candidate,price:100}],R)[0].kind,'pass','temporary camp block must not create a false potential recommendation');
+console.log('PASS: correct slot validation, camp-aware recommendations, equal-strength and cap explanations');

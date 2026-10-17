@@ -23,7 +23,7 @@ const extendedIds=new Set(['bal_coach','bal_shift','bal_plan','bal_position','ba
 for(const d of definitions)if(d[0]==='bal_sponsor'||d[0]==='bal_fans')d[4]=d[4].map(v=>v*10);
 const successors=[
  ['bal_coach','bal_double','Çift Talimat',[.2,.4,.6,.8,1],v=>'%'+Math.round(v*100)+' ihtimalle mavi talimat: 2 talimat gücü.'],
- ['bal_shift','bal_longshift','Uzun Vardiya',[1,2,3,4,5],v=>'Vardiya sınırına +'+v+' saat.'],
+ ['bal_shift','bal_longshift','Uzun Vardiya',[.1,.2,.3,.4,.5],v=>'Günlük çevrimdışı çalışma hakkına +'+Math.round(v*60)+' dk.'],
  ['bal_plan','bal_hands','Birebir Çalışma',[20,40,60,80,100],v=>'Elle verilen her talimata +'+v+' AP.'],
  ['bal_position','bal_warmstart','Maç Öncesi Isınma',[250,650,1400,2700,5000],v=>'Günün ilk 20 talimatına +'+v+' AP.'],
  ['bal_video','bal_precision','Hedefli Tekrar',[.02,.04,.06,.08,.1],v=>'Kritik AP kazanma şansına +'+Math.round(v*100)+' puan.'],
@@ -49,7 +49,7 @@ function remainingDays(){return 0}
 function upgraded(s,id){if(s.balReadyDay)delete s.balReadyDay[id]}
 function level(s,id){return s.floors.flat().filter(x=>x===id).length}
 function value(s,id){const bonus=successors.find(row=>row[1]===id);if(bonus){const r=catalog.find(x=>x.id===bonus[0]);return departmentOpen(s,r.floor)?bonus[3][bonusLevel(s,id)-1]||0:0;}const r=catalog.find(x=>x.id===id);return r&&departmentOpen(s,r.floor)?r.values[level(s,id)-1]||0:0}
-function enter(raw,day){if(raw.stage==='bal')return JSON.parse(JSON.stringify(raw));const R=root.RoomRules||(typeof require==='function'?require('./room-rules.js'):null),s=R.defaults();s.stage='bal';s.floors=s.floors.map((_,f)=>(raw.floors?.[f]||[]).filter(id=>R.catalog.some(r=>r.id===id&&!r.bal&&r.floor===f)));s.budget*=10;s.budgetScale=10;s.balVersion=1;s.balStart=0;s.balStartDay=1;return s}
+function enter(raw,day){if(raw.stage==='bal')return JSON.parse(JSON.stringify(raw));const R=root.RoomRules||(typeof require==='function'?require('./room-rules.js'):null),s=R.defaults();s.stage='bal';if(raw.dailyShift)s.dailyShift=JSON.parse(JSON.stringify(raw.dailyShift));s.floors=s.floors.map((_,f)=>(raw.floors?.[f]||[]).filter(id=>R.catalog.some(r=>r.id===id&&!r.bal&&r.floor===f)));s.budget*=10;s.budgetScale=10;s.balVersion=1;s.balStart=0;s.balStartDay=1;return s}
 function requirement(s,r){if(r.bal&&s.stage!=='bal')return 'BAL aşamasında açılır';if(s.stage!=='bal')return null;if(r.bal&&!departmentOpen(s,r.floor))return 'Önce '+departments[r.floor]+' aç';if(r.id==='bal_shift'&&!level(s,'offline_time'))return 'Önce Vardiya Planı aç';return null}
 // Early investments offer several routes; later levels remain long-term goals.
 // Cumulative investment follows season income; no calendar or match gates.

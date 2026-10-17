@@ -207,3 +207,9 @@ body.social-open #socialPanel .social-post-visual>.social-visual-kicker{paint-or
 /* Keep pale post headlines readable over both portraits and scenery. */
 body.social-open #socialPanel .social-post-visual>.social-visual-title{paint-order:stroke fill;-webkit-text-stroke:1.5px #284b48;text-shadow:0 1px 2px #183a4540}
 body.social-open #socialPanel .social-post-visual>.social-visual-kicker{paint-order:stroke fill;-webkit-text-stroke:.5px #284b48}
+
+/* Shared icon and label baselines in the bottom navigation. */
+.mobile-nav>a{position:relative;justify-content:flex-start;box-sizing:border-box;padding-top:2px;padding-bottom:10px;gap:2px;line-height:12px}.mobile-nav>a>span,.mobile-nav #socialTab>span{display:grid;place-items:center;width:28px;height:28px;flex:0 0 28px;line-height:28px}.mobile-nav #socialTab .social-nav-logo{width:27px;height:27px;object-fit:contain}.mobile-nav #leagueNavStatus{position:absolute;bottom:0;left:0;right:0;margin:0;font-size:8px;line-height:10px;text-align:center}
+.mobile-nav a#calendarTab{gap:2px}
+
+.mobile-nav>a+a:before{content:'';position:absolute;left:0;top:50%;width:1px;height:22px;transform:translateY(-50%);background:linear-gradient(transparent,#a9aa8738,transparent);pointer-events:none}html[data-theme=dark] .mobile-nav>a+a:before{background:linear-gradient(transparent,#b3c4b52e,transparent)}

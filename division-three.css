@@ -78,3 +78,5 @@ html[data-theme=dark] .social-draft{background:#2b4248;border-color:#506962;box-
 body.social-open .social-feed-window{height:clamp(230px,calc(100dvh - 610px),470px)}
 @media(max-width:350px){.draft-art{height:112px}.draft-headline{font-size:17px}.draft-top small{font-size:6px}.draft-player{height:145px}.draft-account{max-width:35%}}
 @media(prefers-reduced-motion:reduce){.draft-background,.draft-player,.draft-headline,.draft-scan{transition:none;transform:none}}
+
+.social-block.upgrade-room{align-items:stretch;text-align:left}.social-block.upgrade-room .media-bonus[hidden]{display:none}.social-block.upgrade-room .block-level-number small{font-size:10px;line-height:1}.social-block.upgrade-room .block-upgrade-action{font-size:9px}

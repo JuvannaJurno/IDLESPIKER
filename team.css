@@ -60,3 +60,36 @@
 .player-card[data-special]{border-color:#c99e50;box-shadow:0 3px 0 #b9a373,inset 0 0 0 2px #fff6d9}
 .player-card[data-special="potential"]{border-color:#8c92b4}
 .player-card .special-player-tag{display:block;padding:5px 8px;background:#f0dfad;color:#725d35;font-size:9px;font-weight:900;text-align:center}
+
+.player-card .card-cap{display:block;margin:0;padding:8px 10px 6px;border:0;border-bottom:1px solid #ddd9bc;border-radius:0;background:transparent;color:#81907b;font-size:9px;font-weight:400}
+.player-card .card-cap:after{content:none!important}
+.card-cap-heading{display:flex;justify-content:space-between;align-items:center;gap:5px;flex-wrap:wrap;line-height:1.4}
+.card-cap-heading b{font-size:13px;font-weight:700;color:#5d7a6c;margin-left:3px;font-variant-numeric:tabular-nums}
+.card-cap-heading em{font-size:10px;font-style:normal;font-weight:400;color:#919b83}
+.card-cap>small{display:block;margin-top:3px;font-size:8px;line-height:1.4;color:#91967d}
+.card-cap-status{font-size:7px;font-weight:600;line-height:1.4;padding:3px 5px;border-radius:4px;background:#e4ead4;color:#6c815e}
+.card-cap[data-cap-state=full] .card-cap-status{background:#efdbb4;color:#876036}
+.card-cap[data-cap-state=near] .card-cap-status{background:#eee3be;color:#867342}
+html[data-theme=dark] .player-card .card-cap{background:transparent;color:#a3b4a4;border-bottom-color:#49605a}
+html[data-theme=dark] .card-cap-heading b{color:#d5e0c9}
+html[data-theme=dark] .card-cap-heading em,html[data-theme=dark] .card-cap>small{color:#a3b4a4}
+html[data-theme=dark] .card-cap-status{background:#3c5347;color:#c9d8b6}
+html[data-theme=dark] .card-cap[data-cap-state=full] .card-cap-status{background:#544532;color:#e8c89a}
+html[data-theme=dark] .card-cap[data-cap-state=near] .card-cap-status{background:#4b4b35;color:#dacc9c}
+/* Level progress is part of the card, with no extra panel. */
+.player-card .card-cap{padding-top:9px;padding-bottom:8px}
+.card-cap-meter{display:block;position:relative;height:5px;margin:7px 0 5px;border-radius:4px;background:#e0e2c9;overflow:hidden}
+.card-cap-meter>i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#a8b99a,#7f9e86)}
+.card-cap[data-cap-state=near] .card-cap-meter>i{background:linear-gradient(90deg,#b9b18c,#c0a261)}
+.card-cap[data-cap-state=full] .card-cap-meter>i{background:linear-gradient(90deg,#d4b27b,#bd9158)}
+.card-cap[data-cap-state=full] .card-cap-heading b{color:#967046}
+html[data-theme=dark] .card-cap-meter{background:#40554e}
+html[data-theme=dark] .card-cap-meter>i{background:linear-gradient(90deg,#6f947c,#adc19a)}
+html[data-theme=dark] .card-cap[data-cap-state=near] .card-cap-meter>i{background:linear-gradient(90deg,#91835b,#ccba82)}
+html[data-theme=dark] .card-cap[data-cap-state=full] .card-cap-meter>i{background:linear-gradient(90deg,#aa8358,#d8b57d)}
+html[data-theme=dark] .card-cap[data-cap-state=full] .card-cap-heading b{color:#e6c99e}
+
+/* Camp history stays compact as the player develops. */
+.camp-portrait{position:relative}.camp-badge{position:absolute;left:7px;top:8px;z-index:3;max-width:calc(100% - 58px);box-sizing:border-box;padding:4px 7px;border:1px solid #b9cbb1;border-radius:7px;background:#eef3dfed;color:#567363;font-size:9px;font-weight:700;line-height:1.2;white-space:nowrap;font-variant-numeric:tabular-nums;box-shadow:0 1px 3px #263e3220}.camp-evolved{position:relative;--camp-hue:168}.camp-evolved:after{content:'';position:absolute;inset:4px;z-index:2;pointer-events:none;border:3px double hsl(var(--camp-hue) 23% 64% / .8);border-radius:9px;background:linear-gradient(135deg,hsl(var(--camp-hue) 35% 77% / .13),transparent 45%,hsl(var(--camp-hue) 30% 73% / .1))}.camp-evolved .camp-badge{border-color:hsl(var(--camp-hue) 24% 64%);background:hsl(var(--camp-hue) 30% 92% / .96);color:hsl(var(--camp-hue) 22% 32%)}.scout-player-head.camp-portrait{padding-bottom:22px}.scout-player-head>.camp-badge{top:auto;bottom:0;left:0;max-width:100%}.scout-versus .camp-portrait{padding-bottom:30px}.scout-versus .camp-badge{top:auto;bottom:5px;left:50%;transform:translateX(-50%);max-width:95%}.scout-camp-history{color:#648570!important}html[data-theme=dark] .camp-badge{background:#30483fed;color:#d2dec6;border-color:#678071}html[data-theme=dark] .camp-evolved .camp-badge{background:hsl(var(--camp-hue) 17% 23% / .96);color:hsl(var(--camp-hue) 26% 83%);border-color:hsl(var(--camp-hue) 20% 48%)}html[data-theme=dark] .camp-evolved:after{border-color:hsl(var(--camp-hue) 23% 59% / .8)}html[data-theme=dark] .scout-camp-history{color:#b7ccb7!important}
+
+.card-art>.camp-badge{left:auto;right:7px}.card-art.camp-evolved:after{width:auto;height:auto;transform:none;box-sizing:border-box}
