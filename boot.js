@@ -5,5 +5,5 @@ const ready=Promise.all(images.map(img=>img.decode?img.decode().catch(()=>{}):Pr
 function finish(){clearTimeout(window.bootFallback);screen.remove()}
 // Audio and off-screen cards never hold up the opening screen.
 const minimum=new Promise(resolve=>setTimeout(resolve,Math.max(0,1500-(performance.now()-(window.bootStartedAt??performance.now())))));
-Promise.all([ready,minimum]).then(()=>requestAnimationFrame(()=>requestAnimationFrame(finish)));
+Promise.all([ready,minimum,window.GameLanguage?.ready]).then(()=>requestAnimationFrame(()=>requestAnimationFrame(finish)));
 })();

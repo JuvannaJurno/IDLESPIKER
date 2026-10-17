@@ -5,18 +5,19 @@ const server=http.createServer((req,res)=>{const file=path.join(__dirname,decode
  const page=await browser.newPage({viewport:{width:390,height:844}}),errors=[];page.on('pageerror',e=>errors.push(e.message));const url='http://localhost:'+server.address().port+'/mac.html',seen=new Set();let maxStep=0;
  for(let seed=1;seed<=6;seed++){
   await page.goto(url);await page.waitForFunction(()=>ready&&window.MatchSkills);const result=await page.evaluate(seed=>{
-   paused=true;reset();window.matchInfo={...window.matchInfo,fixtureId:'skill-test-'+seed,stage:'bal'};matchRandom=MatchRules.seeded('match-test-'+seed);
+   paused=true;reset();window.matchInfo={...window.matchInfo,fixtureId:'skill-test-'+seed,stage:'bal',division:seed%2?2:3};matchRandom=MatchRules.seeded('match-test-'+seed);
    for(const p of players){p.stats={role:['middle','outside','setter','middle','outside','opposite'][p.index%6],spike:36+p.team*3,block:38,serve:32,receive:40,set:42,stamina:40,mental:40};p.displayName='Oyuncu '+p.index;}
    paused=false;let maxStep=0,step=0;
    for(step=0;step<100000&&document.getElementById('matchResult').hidden;step++){
     const before=players.map(p=>({x:p.x,y:p.y}));tick(1/60);players.forEach((p,i)=>maxStep=Math.max(maxStep,Math.hypot(p.x-before[i].x,p.y-before[i].y)));
     if(step%180===0){const position=players.map(p=>[p.x,p.y,p.jump,p.spike,p.toss,p.receive]),b=[ball.x,ball.y,ball.z];draw();if(JSON.stringify(position)!==JSON.stringify(players.map(p=>[p.x,p.y,p.jump,p.spike,p.toss,p.receive]))||JSON.stringify(b)!==JSON.stringify([ball.x,ball.y,ball.z]))throw Error('Render changed simulation state');}
    }
-   paused=true;return {events:MatchSkills.events,maxStep,steps:step,score:[...scores],finished:!document.getElementById('matchResult').hidden,count:MatchSkills.catalog.length};
+   paused=true;return {events:MatchSkills.events,maxStep,steps:step,score:[...scores],finished:!document.getElementById('matchResult').hidden,count:MatchSkills.catalog.length,legendary:MatchSkills.state.legendaryUsed,focusEvents:MatchSkills.focusEvents};
   },seed);
-  assert(result.finished,'match must complete');assert(result.events.length>=3,'contextual skills must activate');assert.equal(result.count,26);assert(result.score[0]!==result.score[1]);maxStep=Math.max(maxStep,result.maxStep);for(const e of result.events){seen.add(e.id);if(e.kind==='block')assert(['roof','close','read','absolute-read'].includes(e.id));if(e.id==='one-hand-rescue')assert.equal(e.kind,'set');}
+  assert(result.finished,'match must complete');assert(result.legendary,'at least one Legendary per match');const halves=result.focusEvents.filter(e=>e.reason==='halfway');assert(halves.length>0,'outbound halfway ends');assert(halves.every(e=>e.progress>=.5&&e.progress<.54),'slow motion ends at half-flight');assert(result.events.length>=3,'contextual skills must activate');assert.equal(result.count,27);assert(result.score[0]!==result.score[1]);maxStep=Math.max(maxStep,result.maxStep);for(const e of result.events){seen.add(e.id);if(e.kind==='block')assert(['roof','close','read','absolute-read'].includes(e.id));if(e.id==='one-hand-rescue')assert.equal(e.kind,'set');}
  }
+ await page.goto(url);await page.waitForFunction(()=>ready&&window.MatchSkills);const prolog=await page.evaluate(()=>{paused=true;reset();window.matchInfo={...window.matchInfo,stage:'prologue',division:1};paused=false;for(let i=0;i<2500;i++)tick(1/60);paused=true;return MatchSkills.events.length;});assert.equal(prolog,0,'first stage has no skills');
  assert(maxStep<12,'no player teleports');assert(seen.size>=8,'varied skills');
  await page.goto(url);await page.waitForFunction(()=>ready&&window.MatchSkills);await page.evaluate(()=>window.postMessage({type:'spiker-match',action:'skip'},'*'));await page.waitForFunction(()=>MatchSkills.state.suppressed);assert.equal(await page.evaluate(()=>MatchSkills.state.slow),false);
- assert.deepEqual(errors,[]);console.log('PASS six complete contextual-skill matches, simulation-safe drawing, no teleports, 26 skills and skip suppression.',{variants:[...seen],maxStep});
+ assert.deepEqual(errors,[]);console.log('PASS six complete contextual-skill matches, simulation-safe drawing, no teleports, 27 skills and skip suppression.',{variants:[...seen],maxStep});
 }finally{await browser.close();server.close();}})().catch(e=>{console.error(e);server.close();process.exitCode=1;});

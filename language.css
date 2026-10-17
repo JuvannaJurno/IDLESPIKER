@@ -1,0 +1,19 @@
+#languageChoice{box-sizing:border-box;width:min(400px,calc(100% - 32px));padding:32px 24px 24px;text-align:center;border:1px solid #d9dfc6;border-radius:24px;background:#fff9e9;color:#476b70;box-shadow:0 16px 70px #193b3d33;font-family:inherit}
+#languageChoice::backdrop{background:#203c42b8;backdrop-filter:blur(8px)}
+#languageChoice .language-brand{display:block;font-size:24px;font-weight:800;letter-spacing:1px;margin-bottom:22px}
+#languageChoice .language-brand span{color:#b88645}
+#languageChoice img{display:block;margin:0 auto 18px}
+#languageChoice h1{font-size:20px;margin:0 0 8px}
+#languageChoice p{font-size:13px;line-height:1.6;margin:0 0 22px}
+.language-options{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.language-options button{font:inherit;cursor:pointer;text-align:left;padding:18px 14px;border-radius:14px;border:1px solid #d4ddc5;background:#eaf0dc;color:#476b70;box-shadow:0 3px 0 #bcccb0}
+.language-options strong,.language-options small{display:block}
+.language-options strong{font-size:17px;margin-bottom:10px}
+.language-options small{font-size:11px;opacity:.8}
+.language-options button:hover{background:#ffe4a1;border-color:#e9bf6c}
+.language-options button:focus-visible,.language-settings select:focus-visible{outline:3px solid #c99243;outline-offset:4px}
+#languageChoice .language-note{font-size:11px;opacity:.7;margin:24px 0 0}
+.language-settings select{font:inherit;border:1px solid #bdcdb3;border-radius:10px;padding:8px 12px;background:#f8f7e8;color:#476b70;min-width:112px}
+[data-theme=dark] #languageChoice{background:#22383d;color:#e7ecd7;border-color:#526c63}
+[data-theme=dark] .language-options button,[data-theme=dark] .language-settings select{background:#304b47;color:#e7ecd7;border-color:#57756a;box-shadow:0 3px 0 #172e30}
+[data-theme=dark] .language-options button:hover{background:#456057}

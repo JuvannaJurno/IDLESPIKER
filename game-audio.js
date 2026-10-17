@@ -22,9 +22,9 @@ const rallyBed=media('VFX/Crowd Cheering Sounds/11 - Ambience.mp3','crowd',.12,t
 const criticalClicks=Array.from({length:2},()=>media('zipclick.flac','effects',.41));let lastCriticalClick=-Infinity;
 const upgradeClicks=Array.from({length:3},()=>media('VFX/click.mp3','effects',.75));
 const typingClicks=[2,3,4,5].map(n=>Array.from({length:2},()=>media('VFX/click '+n+'.mp3','effects',.38)));
-const skillStopSound=media('time_stop.mp3','effects',.55);
+const skillStopSound=media('time_stop.mp3','effects',.55);let previousSkillPitch=null;
 function stopSkillSlow(){stop(skillStopSound);}
-function skillSlow(){if(!allowed()||mode!=='match'||levels.effects<=0)return;const v=skillStopSound;stop(v);v.a.currentTime=0;v.busy=true;v.a.onended=v.a.onerror=()=>stop(v);v.a.onplaying=()=>{v.timer=setTimeout(()=>{v.timer=null;fadeOut(v,250)},750);};play(v);}
+function skillSlow(){if(!allowed()||mode!=='match'||levels.effects<=0)return;const v=skillStopSound;stop(v);v.a.currentTime=0;const pitches=[-1.6,-.8,0,.8,1.6].filter(n=>n!==previousSkillPitch);previousSkillPitch=pitches[Math.floor(Math.random()*pitches.length)];v.a.preservesPitch=false;v.a.mozPreservesPitch=false;v.a.playbackRate=2**(previousSkillPitch/12);v.busy=true;v.a.onended=v.a.onerror=()=>stop(v);v.a.onplaying=()=>{v.timer=setTimeout(()=>{v.timer=null;fadeOut(v,250/v.a.playbackRate)},750/v.a.playbackRate);};play(v);}
 const discoverySound=media('VFX/players_found.mp3','effects',.75);
 function playersFound(){if(!allowed()||mode!=='menu'||levels.effects<=0)return;const v=discoverySound;stop(v);v.busy=true;v.a.currentTime=0;v.a.onended=v.a.onerror=()=>stop(v);play(v);}
 const typingEnters=Array.from({length:2},()=>media('VFX/click_enter.mp3','effects',.45));let typingVariant=-1;

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   for(const id of ids){const control=document.getElementById(id),row=control?.closest('.settings-row');if(row)group.append(row);}
   if(group.children.length>1)dialog.append(group);
  }
- section('Görünüm ve kontrol',['themeToggle','vibrationToggle']);
+ section('Görünüm ve kontrol',['languageSelect','themeToggle','vibrationToggle']);
  section('Ses',['soundToggle','volume-music','volume-crowd','volume-effects']);
  const fast=document.querySelector('#testAutoclicker')?.closest('.settings-row')?.querySelector('span');if(fast)fast.textContent='Hızlı test · 100× talimat';
  const cheats=document.createElement('details');cheats.id='cheatDrawer';cheats.className='settings-group cheat-drawer';
