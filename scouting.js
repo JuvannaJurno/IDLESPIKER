@@ -6,7 +6,7 @@ const $=id=>document.getElementById(id),portraits=new Map();let signature='',ref
 const labels={spike:'Smaç',block:'Blok',serve:'Servis',receive:'Manşet',set:'Pas',stamina:'Dayanıklılık',mental:'Mental'};
 $('closeScout').onclick=()=>dialog.close();
 function open(){if(!ScoutRules.available(RoomSystem.scoutView()))return;refresh();dialog.showModal();refresh();dialog.scrollTop=0;revealCatalog();}
-$('scoutReport').onclick=()=>{if(!RoomSystem.scoutReport())$('scoutNotice').textContent='Katalog kaydedilemedi. Yeniden dene.';else{$('scoutNotice').textContent='';GameAudio?.uiClick?.();refresh();revealCatalog(true);$('scoutCatalog').scrollIntoView({block:'start',behavior:'instant'});}};
+$('scoutReport').onclick=()=>{if(!RoomSystem.scoutReport())$('scoutNotice').textContent='Katalog kaydedilemedi. Yeniden dene.';else{$('scoutNotice').textContent='';window.GameAudio?.playersFound?.();refresh();revealCatalog(true);$('scoutCatalog').scrollIntoView({block:'start',behavior:'instant'});}};
 function development(p){
  const box=document.createElement('div');box.className='scout-development';
  const cap=TeamRules.cap(p),average=TeamRules.trainable.reduce((sum,k)=>sum+p[k],0)/TeamRules.trainable.length,peak=Math.max(...TeamRules.trainable.map(k=>p[k])),percent=Math.min(100,Math.round(average/cap*100));

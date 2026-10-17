@@ -136,8 +136,9 @@ body.social-open #socialPanel .social-app-header{margin-top:14px;margin-bottom:1
 body.social-open #socialPanel .social-simple{padding:0 11px 8px;margin-bottom:16px;border-radius:16px}
 body.social-open #socialPanel .social-draft{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);column-gap:11px;row-gap:0;align-items:center;padding:0 11px 9px;margin:0 -11px}
 body.social-open #socialPanel .draft-top{grid-column:1/-1;min-height:32px}
-body.social-open #socialPanel .draft-caption{height:76px;padding:0;font-size:10px;line-height:1.5;display:flex;align-items:center;overflow:hidden}
-body.social-open #socialPanel .draft-caption-text{display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+body.social-open #socialPanel .draft-caption{height:auto;min-height:76px;padding:0;font-size:10px;line-height:1.5;display:flex;align-items:center;overflow:visible;min-width:0}
+body.social-open #socialPanel .draft-caption-text{display:block;overflow:visible;overflow-wrap:anywhere;-webkit-line-clamp:unset}
+body.social-open #socialPanel .social-draft.long-caption .draft-caption{grid-column:1/-1;min-height:0;margin-top:12px;align-items:flex-start}
 body.social-open #socialPanel .draft-skeleton{top:22px;width:90%}
 body.social-open #socialPanel .social-draft>.shared-post-art{border-radius:7px}
 body.social-open #socialPanel #socialPublish{min-height:58px;padding:9px 11px}
@@ -151,9 +152,13 @@ body.social-open #socialPanel .social-feed-window{height:clamp(350px,calc(100dvh
 body.social-open #socialPanel .social-post{margin-bottom:16px}
 body.social-open #socialPanel .social-post-visual:not(.shared-post-art){height:205px}
 body.social-open #socialPanel .social-post>.shared-post-art{border-radius:7px}
-body.social-open #socialPanel .social-post.just-published{border-color:#9eae7b;box-shadow:0 0 0 1px #b6c69b55}
-body.social-open #socialPanel .social-post.just-published .social-post-type{background:var(--social-button);color:var(--social-text)}
-@media(max-width:350px){body.social-open #socialPanel .social-draft{column-gap:8px;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}body.social-open #socialPanel .draft-caption{height:66px;font-size:9px}body.social-open #socialPanel .social-post-visual:not(.shared-post-art){height:185px}body.social-open #socialPanel .simple-button-copy>span{font-size:8px}}
+body.social-open #socialPanel .social-post[data-kind=club]{border-color:#b5bb90;box-shadow:0 0 0 1px #c9ceaa40}
+body.social-open #socialPanel .social-post[data-kind=club] header{background:linear-gradient(105deg,#e7edcf80,transparent);border-radius:14px 14px 0 0}
+body.social-open #socialPanel .social-post[data-kind=club] .social-post-type{background:#e7eccf;color:#62764e}
+html[data-theme=dark] body.social-open #socialPanel .social-post[data-kind=club]{border-color:#738266;box-shadow:0 0 0 1px #a7b67c18}
+html[data-theme=dark] body.social-open #socialPanel .social-post[data-kind=club] header{background:linear-gradient(105deg,#a9be7020,transparent)}
+html[data-theme=dark] body.social-open #socialPanel .social-post[data-kind=club] .social-post-type{background:#3b5145;color:#cbd9ac}
+@media(max-width:350px){body.social-open #socialPanel .social-draft{column-gap:8px;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}body.social-open #socialPanel .draft-caption{height:auto;min-height:66px;font-size:9px}body.social-open #socialPanel .social-post-visual:not(.shared-post-art){height:185px}body.social-open #socialPanel .simple-button-copy>span{font-size:8px}}
 .draft-image-selection,.draft-text-selection{position:absolute;z-index:5;border:1px solid #fff9dc;pointer-events:none;opacity:0;transition:opacity .25s;box-sizing:border-box}
 .draft-image-selection{top:5%;bottom:3%;right:2%;width:46%;border-color:#f0d284;box-shadow:0 0 0 1px #354c5433}
 .draft-image-selection i,.draft-text-selection i{position:absolute;width:4px;height:4px;margin:-2px;background:#fffbea;border:1px solid #677f83;box-sizing:border-box}

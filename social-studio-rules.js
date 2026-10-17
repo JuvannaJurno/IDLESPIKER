@@ -6,6 +6,32 @@ const contents=[
  {id:'sponsor',title:'Sponsor paylaşımı',seconds:120,followers:0,label:'Reklam · Doğrudan bütçe'}
 ];
 const sponsors=[{at:100,name:'Mahalle Esnafı'},{at:1000,name:'File Spor'},{at:5000,name:'Tribün Market'},{at:15000,name:'Rota Spor'},{at:40000,name:'Arena'}];
+const playerQuotes=[
+ ['uncertain','libero','Libero formamın farklı renkte olması çok havalı duruyor olabilir ama asıl sebebi takımın geri kalanının top için yere atlamaya tenezzül bile etmemesi.'],
+ ['uncertain','outside','Top kesinlikle içerideydi. Çizgi hakemi miyop, pasör kısa attı, salonun ışığı gözümü aldı, ayakkabımın bağcığı gevşemişti ve zaten Merkür retrosu var. Yoksa ben o smacı kesin sayı yapmıştım.'],
+ ['uncertain','middle','Maç boyunca rakip bloğu şaşırtmak için 45 kere boşuna sıçradım. 46. sıçrayışımda pas nihayet bana geldi ve topu ıskaladım. Hepinize iyi akşamlar.'],
+ ['uncertain','middle','Orta oyuncu olarak takımdaki en büyük başarım, pasörümüzün bana verecekmiş gibi yaptığı ama aslında köşeye attığı o paslarda harika bir oyunculuk sergilemem. Kesinlikle topun bana geleceğini düşündüğümden değil.'],
+ ['uncertain',null,'Antrenör maçtan önce “Bugün herkes sahada savaşacak” dedi. İlk sette yere düşen bir top yüzünden libero ve pasör çaprazı az daha birbirini yiyordu. Kiminle savaşmamız gerektiğini de söylemeliydi.'],
+ ['uncertain',null,'Isınmalarda omuzlarımı ısıtmak için yaptığım o havalı kol çevirme hareketleri, maç boyunca yapacağım en estetik hareket olarak kalacak.'],
+ ['confident','middle','Rakip smaçör havaya sıçradığında file üstünde göz göze geldik. O an oradan geçemeyeceğini o da anladı ama fizik kuralları gereği inemiyordu. Sırf ayıp olmasın diye blokladım.'],
+ ['confident','outside','Servis kullanmak için topu elime aldığımda, karşı tarafın defansında yaşanan o sessiz panik ve birbirlerine “sen al” bakışları... İşte benim günlük motivasyon kaynağım tam olarak bu.'],
+ ['confident',null,'Bazen sırf karşı takım “biz de voleybol oynuyoruz” diyebilsin diye bilerek blok-out yaptırıyorum ya da zor plonjon atıyormuş gibi yapıyorum. Sosyal sorumluluk projesi gibi bir şey.'],
+ ['confident','outside','O kadar sert smaç vurdum ki, top parkeye değdikten sonra sekip rakip antrenörün elindeki taktik tahtasını sildi. Rica ederim hocam, zaten işe yaramıyordu.'],
+ ['confident',null,'Ben sahada olduğum sürece en güçlü benim takımım!'],
+ ['confident',null,'Yeteneklerinin çiçek açacağı gün bugündür. Ya da belki yarın, öbür gün, ya da seneye... Ama eğer o günün hiç gelmeyeceğini düşünürsen, o gün hiçbir zaman gelmeyecektir.'],
+ ['confident',null,'Voleybolu hala sadece “bir iş” olarak görüyorsun. Ama o “an” geldiğinde... İşte o zaman voleybola aşık olacaksın.'],
+ ['confident',null,'Kaybetmek sizin zayıf olduğunuzu mu kanıtlar? Hayır. Kaybetmek, ayağa kalkıp tekrar savaşmanız için bir fırsattır. Düşüp de tekrar ayağa kalkmazsanız, asıl zayıflık budur.'],
+ ['confident',null,'Bizim tarafımızdaki top yere değmediği sürece hiçbir şey bitmiş değil!'],
+ ['confident',null,'Gereksiz gurur ve kendine acıma... İkisi de sadece ayağına dolanır.'],
+ ['confident',null,'Eğer takım arkadaşın zor durumdaysa, ona bağırıp çağırarak yardım edemezsin. Yapman gereken tek şey, o topu onun için kurtarmaktır!'],
+ ['confident',null,'Kişisel bir kinim yok ama bütün o “dahi”leri ezmek her zaman çok eğlenceli olmuştur.'],
+ ['confident','setter','Benim paslarım yeteneğe değil, takım arkadaşlarıma olan güvenime dayanıyor.'],
+ ['confident','outside','Bloklanmaktan korktuğum için topa vurmaktan kaçarsam, asıl o zaman tamamen yenilmiş olurum.'],
+ ['confident',null,'Kaybetmek sizin zayıf olduğunuzu göstermez. Sadece şu anda yeterince güçlü olmadığınızı gösterir.'],
+ ['confident','middle','Tahmin etmek mi? Hayır, bu tahmin değil. Nereye vuracaklarını sezebiliyorum.']
+].map(([tone,role,text])=>({tone,role,text}));
+function quoteDraft(players,index){const available=playerQuotes.filter(q=>!q.role||players.some(p=>p.role===q.role)),q=available[index%available.length],cast=q.role?players.filter(p=>p.role===q.role):players,p=cast[Math.floor(index/available.length)%cast.length];return {player:p,text:q.text,tone:q.tone,speaker:p.name+' '+p.surname};}
+function caption(node,value,speaker){const prefix=speaker?speaker+': ':'';if(node.textContent===value&&!!node.querySelector('strong')===!!(prefix&&value.startsWith(prefix)))return;node.replaceChildren();if(prefix&&value.startsWith(prefix)){const name=node.ownerDocument.createElement('strong');name.textContent=speaker+':';node.append(name,node.ownerDocument.createTextNode(value.slice(prefix.length-1)));}else node.append(node.ownerDocument.createTextNode(value));}
 function followers(s){return 100+Math.max(0,Math.floor(s.earnedFollowers||0));}
 function income(s){const f=followers(s),tier=sponsors.filter(x=>f>=x.at).length-1;return Math.round(80*(f/100)**.65*(1+tier*.18)*(1+(s.levels[2]||0)*.12));}
 function normalize(s,now,day){const old=s.studio||{};s.studio={completedDraft:old.completedDraft&&typeof old.completedDraft.text==='string'?old.completedDraft:null,simpleVersion:old.simpleVersion===1?1:0,offer:Math.max(0,Math.floor(old.offer||0))%3,readyAt:Number(old.readyAt)||0,jobs:Array.isArray(old.jobs)?old.jobs.filter(j=>contents.some(c=>c.id===j.type)&&Number.isFinite(j.end)&&Number.isFinite(j.start)&&typeof j.id==='string').slice(0,2):[],queue:Array.isArray(old.queue)?old.queue.filter(t=>contents.some(c=>c.id===t)).slice(0,8):[],pattern:Array.isArray(old.pattern)?old.pattern.filter(t=>contents.some(c=>c.id===t)).slice(0,8):[],auto:!!old.auto,serial:Math.max(0,Math.floor(old.serial||0)),lastDay:Math.max(1,Math.floor(old.lastDay||day)),nextAmbient:Number.isFinite(old.nextAmbient)?old.nextAmbient:now+60000,ambient:Math.max(0,Math.floor(old.ambient||0)),opportunities:Array.isArray(old.opportunities)?old.opportunities.filter(x=>typeof x==='string').slice(-5):[]};return s.studio;}
@@ -14,5 +40,5 @@ function capacity(s){return 3+Math.max(0,(s.levels[1]||0)-5);}
 function reward(s,type,special=false){const c=contents.find(c=>c.id===type);return {followers:Math.round(c.followers*(1+(s.levels[1]||0)*.18)*(special?1.6:1)),cash:type==='sponsor'?Math.round(income(s)*.8):0};}
 function duration(s,type,lane=0){const c=contents.find(c=>c.id===type);const speed=1+Math.min(5,s.levels[0]||0)*.12+(lane?Math.max(0,(s.levels[0]||0)-6)*.15:0);return Math.round(c.seconds*1000/speed);}
 function price(level){return [1500,3500,7000,12000,20000,32000,48000,68000,95000,130000][level];}
-const api={contents,sponsors,followers,income,normalize,slots,capacity,reward,duration,price};root.SocialStudioRules=api;if(typeof module!=='undefined')module.exports=api;
+const api={contents,sponsors,followers,income,normalize,slots,capacity,reward,duration,price,playerQuotes,quoteDraft,caption};root.SocialStudioRules=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

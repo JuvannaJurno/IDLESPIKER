@@ -57,5 +57,18 @@ function refresh(){
  show(rows,actions,bal?transferRows:null);
 
 }
-window.BoardAdvice={refresh};refresh();setInterval(refresh,1000);
+function audienceComment(){
+ const next=LeagueSeason.progress().next,lead=RoomSystem.blackboard().leadDays;if(!next||!lead)return null;
+ let day=1;try{day=JSON.parse(localStorage.getItem('idle-spiker-main-menu-v1')).day||1}catch{}
+ if(next.day-day>lead)return null;
+ const bal=LeagueRules.config.bal,rival=LeagueRules.teams[next.home===0?next.away:next.home];
+ const opponents=Array.from({length:6},(_,i)=>TeamRules.opponentStats(next.round||1,i,LeagueRules.config.division===3?'division2':bal?'bal':'prologue',next.home===0?next.away:next.home));
+ const report=analyze(TeamView.snapshot(),opponents,TeamRules),{need,upgrade}=report;
+ if(report.missing.length)return 'Maç yaklaşıyor, '+report.missing[0].name.toLocaleLowerCase('tr-TR')+' pozisyonunu da doldursak iyi olacak.';
+ if(need.own>=need.rival)return rival+' karşısında kadromuz iyi görünüyor. Bence AP’yi şimdilik biriktirelim.';
+ const reasons={receive:rival+' servisleriyle zorlayabilir. ',block:rival+' hücumda güçlü. ',spike:rival+' bloğunu aşmak kolay olmayacak. ',serve:rival+' manşette iyi. '};
+ if(upgrade)return reasons[need.key]+name(upgrade)+' '+{receive:'manşette',block:'blokta',spike:'smaçta',serve:'serviste'}[need.key]+' biraz gelişirse işimiz kolaylaşır.';
+ return reasons[need.key]+'Kartlar şu an sınırda, yedeklerden ya da transferden destek lazım gibi.';
+}
+window.BoardAdvice={refresh,audienceComment};refresh();setInterval(refresh,1000);
 })(globalThis);
