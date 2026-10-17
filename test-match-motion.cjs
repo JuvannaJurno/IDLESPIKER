@@ -5,17 +5,18 @@ const server=http.createServer((req,res)=>{const file=path.join(__dirname,decode
  const page=await browser.newPage({viewport:{width:390,height:844},isMobile:true,deviceScaleFactor:3}),errors=[];page.on('pageerror',e=>errors.push(e.message));
  // Drive display frames deterministically, separately from fixed physics steps.
  await page.addInitScript(()=>window.requestAnimationFrame=()=>1);
+ await page.route('**/match-skills.js*',async route=>{const response=await route.fetch();await route.fulfill({response,body:(await response.text()).replace('random()>.60','random()>1')});});
  const url='http://localhost:'+server.address().port+'/mac.html',results=[];
  for(const hz of [60,120])for(const smoothing of [false,true]){
   await page.goto(url);await page.waitForFunction(()=>ready&&window.MatchMotion&&window.MatchFrames);
   results.push(await page.evaluate(({hz,smoothing})=>{
-   paused=true;reset();window.matchInfo={division:2,fixtureId:'motion-performance'};matchRandom=MatchRules.seeded('motion-performance');
-   for(const p of players)p.stats={role:['middle','outside','setter','middle','outside','opposite'][p.index%6],spike:40,block:40,serve:40,receive:40,set:40,stamina:40,mental:40};
+   paused=true;reset();window.matchInfo={division:3,fixtureId:'motion-performance'};matchRandom=MatchRules.seeded('motion-performance');
+   for(const p of players){p.roster={id:'motion-'+p.index,name:'Motion',surname:String(p.index),role:'outside',skillCamps:3,matchSkillsVersion:1,matchSkills:['cross','power-hit','jump-float-legendary']};p.stats={role:['middle','outside','setter','middle','outside','opposite'][p.index%6],spike:40,block:40,serve:40,receive:40,set:40,stamina:40,mental:40};}
    if(!smoothing)window.MatchMotion=null;paused=false;last=0;frameCarry=0;
    let flight=null,previous=null,frames=0,stale=0,slowFrames=0,slowStale=0,cost=[];
    for(let i=0;i<hz*7;i++){
     const start=performance.now();loop(1000+i*1000/hz);cost.push(performance.now()-start);
-    if(ball.state==='flight'){
+    if(ball.state==='flight'&&!MatchSkills.state.notice?.lead&&!MatchSkills.state.impact&&!MatchSkills.state.blackout){
      const position=smoothing?MatchMotion.state.ballX+','+MatchMotion.state.ballY:ball.x+','+ball.y;
      if(ball===flight){frames++;const slow=MatchSkills.state.slow;if(slow)slowFrames++;if(position===previous){stale++;if(slow)slowStale++;}}
      previous=position;flight=ball;

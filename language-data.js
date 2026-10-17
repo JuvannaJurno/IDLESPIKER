@@ -536,7 +536,7 @@ Ralli Dayanıklılığı|Rally Endurance
 Sakin Karşılama|Calm Receive
 Kusursuz Hücum Okuma|Perfect Attack Reading
 Yıldırım Smaç Servis|Lightning Jump Serve
-Kusursuz İkinci Dokunuş|Perfect Second Touch
+Zor Topa Pas|Emergency Set
 Tek El Mucizesi|One-handed Miracle
 Hayalet Plase|Ghost Tip
 Senkronize Atak|Synchronized Attack
@@ -928,3 +928,18 @@ window.SpikerEnglishTemplates.push(["{s}, {s} için pası kaldırıyor.","{s} se
 
 window.SpikerEnglish.push(...[["Bugün servis ve karşılama çalıştık. Hazırlıklar sürüyor.","We practiced serving and receiving today. Preparations continue."],["Rakibin maçlarını inceliyoruz. Antrenmanda tempoyu artırdık.","We're studying our opponents' matches and raising the pace in practice."],["Önümüzde çalışacak zaman var. Her antrenmanda biraz daha hazırız.","There's still time to work. We're a little more ready after every practice."],["Servis karşılamayı bol bol çalıştık. Sahada görüşürüz!","We've worked hard on serve receive. See you on court!"],["Kolay maç yok. Son top yere düşene kadar mücadele edeceğiz.","There are no easy matches. We'll fight until the last ball drops."],["Sezonun ardından çalışmaya devam. Yeni hedefler için salondayız.","Still working after the season. Back in the gym for new goals."],["Otobüste cam kenarı benim. Manzara fotoğrafları için takipte kalın; önce biraz uyuyacağım.","The window seat is mine. Stay tuned for scenery photos. First, a little nap."],["SESİ AÇ","TURN IT UP"],["sn","sec"],["Yarın","Tomorrow"],["File Arkası","Behind the Net"],["Set Arası","Between Sets"],["Kantin Muhabbeti","Canteen Chat"],["Tribün Günlüğü","Stands Diary"],["Salonun Sesi","Voice of the Gym"]]);
 window.SpikerEnglishTemplates.push(...[["{s} maçına {n} gün var.","Match against {s} in {n} days."],["Bugün {s} karşısındayız.","We're facing {s} today."],["Yarın {s} karşısındayız.","We're facing {s} tomorrow."],["{n} gün sonra {s} karşısındayız.","In {n} days we face {s}."],["Bugün {s} ile oynuyoruz.","We're playing {s} today."],["{s} karşısında {n}–{n}","Against {s}, {n}–{n}"],["{s} aramıza katıldı. Forma hazır, çay demleniyor.","{s} has joined us. Jersey ready, tea brewing."]]);
+
+// Standard volleyball skill names, shared with match and player catalogs.
+window.SpikerEnglish.push(...[["Çapraz Smaç","Cross-court Spike"],["Manşet","Forearm Pass"],["Parmak Pas","Overhead Set"],["Hazır Pozisyon","Ready Position"],["Top Karşılama","Reception"],["Okuma Bloğu","Read Block"],["Yüzen Servis","Float Serve"],["Paralel Smaç","Line Spike"],["Geri Pas","Back Set"],["Dublaj","Attack Coverage"],["Blok Aut","Tooling the Block"],["Aktif Blok","Penetration Block"],["İkili Blok","Double Block"],["Smaç Servis","Jump Serve"],["Plonjon","Dive"],["Pas Aldatması","Set Feint"],["Kombine Hücum","Combination Attack"],["Üçüncü Tempo Hücum","Third-tempo Attack"],["İkinci Tempo Hücum","Second-tempo Attack"],["Birinci Tempo Hücum","First-tempo Attack"]]);
+
+window.SpikerEnglish.push(["bloğun arkasına plase bırakıyor.","tips the ball behind the block."]);
+
+window.SpikerEnglish.push(...[["Kısa Servis","Short Serve"],["Derin Servis","Deep Serve"],["İki Oyuncunun Arasına Servis","Seam Serve"],["Belirli Bölgeye Servis","Zone Serve"],["Vücuda Servis","Body Serve"],["Bölge","Zone"],["Tek El Mucizesi","One-Handed Set"]]);
+
+window.SpikerEnglish.push(["Güçlü Vuruş","Power Hit"],["bloktan sektiriyor, top bizde kalıyor!","uses the block; the ball stays on our side!"]);
+
+window.SpikerEnglish.push(["Üçlü Blok","Triple Block"]);
+
+window.SpikerEnglish.push(...[["Gizli yetenek","Hidden skill"],["◇ Gizli yetenek","◇ Hidden skill"],["Saha Okuma","Court Reading"],["BAL’da açılır","Unlocks in BAL"],["2. Lig · 3. kamp","Second League · Camp 3"],["3. kampta açılır","Unlocks after Camp 3"],["2. Lig’de, 3. kamp tamamlanınca açılır.","Unlocks in the Second League after the third camp."],["Oyuncu yeteneklerini incele","Inspect player skills"],["3. kamp · Gizli yetenek","Camp 3 · Hidden skill"],["Kamplar tamamlandı","Camps completed"],["Stat sınırı · Yetenek","Attribute cap · Skill"],["Gelişim · Gizli yetenek","Development · Hidden skill"]]);
+
+window.SpikerEnglishTemplates.push(["{n} kamp sonra açılır.","Unlocks after {n} more camps."]);

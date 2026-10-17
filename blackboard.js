@@ -4,12 +4,12 @@ const labels={receive:'Manşet',serve:'Servis',spike:'Smaç',block:'Blok',set:'O
 const matchups=[{key:'receive',against:'serve',roles:['libero','outside'],opRoles:null},{key:'block',against:'spike',roles:['middle','opposite'],opRoles:['outside','opposite']},{key:'spike',against:'block',roles:['outside','opposite'],opRoles:['middle']},{key:'serve',against:'receive',roles:['outside','opposite','setter'],opRoles:['outside','libero']}];
 const mean=(ps,k)=>ps.length?ps.reduce((a,p)=>a+p[k],0)/ps.length:0;
 function analyze(squad,opponents,R){
- const validSlots=R.slots.filter(slot=>squad.players.some(p=>p.id===squad.lineup[slot.id]&&p.role===slot.role)),used=new Set(validSlots.map(slot=>squad.lineup[slot.id])),active=squad.players.filter(p=>used.has(p.id));
+ const activeSlots=R.activeSlots?.()||R.slots,validSlots=activeSlots.filter(slot=>squad.players.some(p=>p.id===squad.lineup[slot.id]&&p.role===slot.role)),used=new Set(validSlots.map(slot=>squad.lineup[slot.id])),active=squad.players.filter(p=>used.has(p.id));
  const needs=matchups.map(m=>{const players=active.filter(p=>m.roles.includes(p.role)),rivals=opponents.filter(p=>!m.opRoles||m.opRoles.includes(p.role));return {...m,players,own:mean(players,m.key),rival:mean(rivals,m.against)}}).sort((a,b)=>(b.rival-b.own)-(a.rival-a.own));
  const need=needs[0],weak=[...need.players].sort((a,b)=>a[need.key]-b[need.key])[0];
  const upgrade=need.rival>need.own?need.players.filter(p=>{const q=R.cardQuote(p);return !q.blocked&&q.gains[need.key]>0}).sort((a,b)=>a[need.key]-b[need.key])[0]:null;
  const swaps=need.players.flatMap(out=>squad.players.filter(p=>!used.has(p.id)&&p.role===out.role&&p[need.key]>out[need.key]).map(incoming=>({out,incoming,delta:incoming[need.key]-out[need.key],slot:Object.keys(squad.lineup).find(k=>squad.lineup[k]===out.id)}))).sort((a,b)=>b.delta-a.delta);
- return {need,weak,upgrade,swap:need.rival>need.own?swaps[0]:null,missing:R.slots.filter(slot=>!validSlots.includes(slot))};
+ return {need,weak,upgrade,swap:need.rival>need.own?swaps[0]:null,missing:activeSlots.filter(slot=>!validSlots.includes(slot))};
 }
 // Project real card upgrades on copies: no AP is spent and no player is changed.
 function project(player,target,R){const p={...player};let cost=0,steps=0;while(R.overall(p)<target&&steps<100){const q=R.cardQuote(p);if(q.blocked||!Object.values(q.gains).some(v=>v>0))break;for(const [k,v]of Object.entries(q.gains))p[k]+=v;p.cardLevel=q.level+1;cost+=q.cost;steps++;}return {cost,steps,overall:R.overall(p),reached:R.overall(p)>=target};}

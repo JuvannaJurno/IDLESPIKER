@@ -292,3 +292,6 @@ html[data-theme=dark] .tier.energized .upgrade-room:has(>.block-main-effect) .bl
 html[data-theme=dark] .tier.energized .upgrade-room:has(>.block-main-effect):not([data-upgrade="ready"]):not([data-upgrade="max"]) .block-upgrade-action{background:var(--inactive-block-fill)!important;color:var(--inactive-block-ink)!important;border-color:var(--inactive-block-line)!important;box-shadow:none!important}
 #settingsDialog :is(#soundToggle,#vibrationToggle):focus-visible{outline:3px solid #d4ab59;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){#settingsDialog :is(#soundToggle,#vibrationToggle):before{transition:none}}
+
+/* Keep the camp occupancy readable on the dark card. */
+html[data-theme=dark] .camp-alert-copy small{background:#263e36!important;color:#dce6cf!important;border:1px solid #66806d}
