@@ -114,3 +114,11 @@ html[data-theme=dark] .player-card .player-overall{background:#35545e!important}
 /* Desktop previews the same phone-width, two-column roster. */
 #teamPanel{max-width:390px;margin-inline:auto}
 #teamPanel #activeTeam,#teamPanel #benchCards{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important}
+/* Three role-relevant stats, each with its own full-width row. */
+#teamPanel .player-card .card-stats,#scoutDialog .scout-player.player-card .card-stats,#scoutDialog.is-opening #packCard .card-stats{grid-template-columns:minmax(0,1fr)!important;gap:8px}
+/* Selected stat treatment: Sakin satırlar. */
+#teamPanel .player-card .card-stats,#scoutDialog .scout-player.player-card .card-stats,#scoutDialog.is-opening #packCard .card-stats{display:grid;grid-template-columns:minmax(0,1fr)!important;gap:10px;padding:12px!important}
+#teamPanel .player-card .card-stats>span,#scoutDialog .scout-player.player-card .card-stats>span,#scoutDialog.is-opening #packCard .card-stats>span{font-size:10px;gap:5px}
+#teamPanel .player-card .card-stats b,#scoutDialog .scout-player.player-card .card-stats b,#scoutDialog.is-opening #packCard .card-stats b{font-size:13px;font-weight:550}
+.player-card .card-stats .stat-gain{display:none}
+#teamPanel .player-card .card-stats i,#scoutDialog .scout-player.player-card .card-stats i,#scoutDialog.is-opening #packCard .card-stats i{height:2px;opacity:.65}
