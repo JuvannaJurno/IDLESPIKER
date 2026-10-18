@@ -118,7 +118,7 @@ const catalog=[
  {
   "id": "sync-attack",
   "name": "Kombine Hücum",
-  "rarity": "Rare",
+  "rarity": "Legendary",
   "description": "Uygun oyun durumunda devreye girer."
  },
  {
@@ -185,7 +185,7 @@ const catalog=[
 ];
 const byId=new Map(catalog.map(s=>[s.id,s]));
 const pools={
- setter:{Common:['tempo-third'],Uncommon:['back','float','tempo-second'],Legendary:['perfect-second-touch','one-hand-rescue','jump-float-legendary']},
+ setter:{Common:['tempo-third'],Uncommon:['back','float','tempo-second'],Legendary:['sync-attack','perfect-second-touch','one-hand-rescue','jump-float-legendary']},
  outside:{Common:['cross','commit-block'],Uncommon:['line','power-hit','wipe','rebound','float'],Legendary:['ghost-tip','jump-legendary','jump-float-legendary','tempo-minus']},
  opposite:{Common:['cross','commit-block'],Uncommon:['power-hit','line','wipe','close','rebound'],Legendary:['jump-legendary','ghost-tip','tempo-minus']},
  middle:{Common:['commit-block'],Uncommon:['read','close','triple-block','slide-attack'],Legendary:['absolute-read','tempo-minus']},
