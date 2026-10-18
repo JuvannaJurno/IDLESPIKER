@@ -61,3 +61,10 @@ html[data-theme=dark] #scoutDialog{--transfer-ink:#e2e8e7;--transfer-muted:#b4c2
 #scoutDialog.is-opening #packCard .pack-skill{display:flex;justify-content:space-between;align-items:center;gap:7px;padding:4px 6px;border-left:2px solid #88a194;border-radius:4px;background:#afc6b015;color:var(--club-ink);min-width:0}
 #scoutDialog.is-opening #packCard .pack-skill strong{font-size:9px;font-weight:550;line-height:1.25;overflow-wrap:anywhere}#scoutDialog.is-opening #packCard .pack-skill small{font-size:7px;flex:none;opacity:.85}#scoutDialog.is-opening #packCard .pack-skill[data-rarity=uncommon]{border-color:#6e9d9c}#scoutDialog.is-opening #packCard .pack-skill[data-rarity=rare]{border-color:#a08bb4}#scoutDialog.is-opening #packCard .pack-skill[data-rarity=epic]{border-color:#ad81b5}#scoutDialog.is-opening #packCard .pack-skill[data-rarity=legendary]{border-color:#c3a15c;background:#c9ac6510}#scoutDialog.is-opening #packCard .card-physical{margin-top:0}
 @media(max-height:680px){#scoutDialog.is-opening #packCard .pack-skill-highlights{gap:2px;margin-bottom:5px;padding-top:4px}#scoutDialog.is-opening #packCard .pack-skill{padding:3px 5px}#scoutDialog.is-opening #packCard .card-art{min-height:30px;max-height:115px}}
+/* Keep the report focused on availability and its one action. */
+#scoutDialog .scout-report #scoutSummary,#scoutDialog .scout-report #scoutReplace{display:none!important}
+#scoutDialog .scout-report{gap:8px;padding:11px;margin-bottom:18px}
+#scoutDialog .scout-report #scoutStatus{font-size:10px;font-weight:400}
+#scoutDialog .scout-report #scoutReport{margin:0;min-height:46px}
+#scoutDialog .scout-report #scoutReport .scout-open-count{display:none}
+#scoutDialog .scout-report #scoutReport .scout-open-copy small{display:none}
