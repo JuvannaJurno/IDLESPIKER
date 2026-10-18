@@ -24,3 +24,36 @@ html[data-theme=dark] #scoutDialog{--transfer-ink:#e2e8e7;--transfer-muted:#b4c2
 #scoutDialog{--transfer-ink:#426777;--transfer-muted:#687e76;--transfer-bg:#dce9df;--transfer-paper:#fff6df;--transfer-line:#bdcfbf}
 #scoutDialog .scout-report #scoutReport:not(:disabled),#scoutDialog #packNext{background:#608898;border-color:#608898;color:#fff6df}
 .pack-back{background:repeating-linear-gradient(135deg,transparent 0 23px,#f5efcf0d 23px 24px),#608898;border-color:#9fbabb;box-shadow:0 4px #527b8a33,inset 0 0 0 7px #608898,inset 0 0 0 8px #eee5c566}
+/* A fitted pack stage: card, progress and controls stay in one viewport. */
+#scoutDialog.is-opening{height:min(820px,calc(100dvh - 20px));max-height:calc(100dvh - 20px);overflow:hidden;box-sizing:border-box;padding:16px 16px 12px;display:flex;flex-direction:column;gap:0}
+#scoutDialog.is-opening>.transfer-heading{flex:none;margin:0 38px 8px 0;padding:0}#scoutDialog.is-opening>.transfer-heading h2{font-size:20px;margin:5px 0}#scoutDialog.is-opening>.transfer-heading>p{display:none}#scoutDialog.is-opening #scoutOpening{flex:1;min-height:0;display:flex;flex-direction:column;align-items:center;width:100%;padding:0;overflow:hidden}
+#scoutDialog.is-opening .pack-heading{flex:none;width:100%}#scoutDialog.is-opening .pack-heading>.eyebrow{display:none}#scoutDialog.is-opening .pack-heading h3{font-size:17px;margin:3px 0 4px;font-weight:550}#scoutDialog.is-opening #packProgress{margin:0 0 9px;font-size:10px;min-height:15px}
+#scoutDialog.is-opening .pack-stage{flex:1;min-height:0;width:min(250px,100%);display:flex;align-items:center;justify-content:center;margin:0 auto 10px;border-radius:16px;background:radial-gradient(ellipse,#a6c4be33,transparent 73%)}
+#scoutDialog.is-opening .pack-back{height:100%;min-height:0;width:100%;max-height:440px;gap:18px;box-sizing:border-box}
+#scoutDialog.is-opening #packCard{height:100%;max-height:540px;width:100%;min-height:0}
+#scoutDialog.is-opening #packCard:empty{display:none}
+#scoutDialog.is-opening #packCard>.player-card{height:100%;max-height:100%;min-height:0;box-sizing:border-box;overflow:hidden;display:flex!important;flex-direction:column;margin:0}
+#scoutDialog.is-opening #packCard .card-top{flex:none;min-height:29px;padding:7px 11px!important;font-size:9px}
+#scoutDialog.is-opening #packCard .card-art{height:auto;min-height:65px;flex:1 1 150px;max-height:185px}
+#scoutDialog.is-opening #packCard .card-art>img{height:100%;width:100%;object-fit:contain;object-position:center bottom}
+#scoutDialog.is-opening #packCard .card-name{flex:none;min-height:0;padding:8px 11px}
+#scoutDialog.is-opening #packCard .card-inspect{font-size:19px!important;line-height:1.1}
+#scoutDialog.is-opening #packCard .card-inspect small{font-size:12px!important;margin-top:3px}
+#scoutDialog.is-opening #packCard .card-cap{flex:none;padding:6px 11px;font-size:8px}
+#scoutDialog.is-opening #packCard .card-cap-heading b{font-size:10px}
+#scoutDialog.is-opening #packCard .card-cap>small{font-size:8px;margin-top:2px}
+#scoutDialog.is-opening #packCard .card-cap-meter{margin:5px 0 3px;height:4px}
+#scoutDialog.is-opening #packCard .card-stats{flex:none;gap:7px 12px;padding:8px 11px}
+#scoutDialog.is-opening #packCard .card-stats>span{font-size:9px;gap:3px}
+#scoutDialog.is-opening #packCard .card-stats b{font-size:11px}
+#scoutDialog.is-opening #packCard .card-physical{flex:none;min-height:24px;padding:6px 11px;font-size:9px;margin-top:auto}
+#scoutDialog.is-opening #packCard .scout-compare{flex:none;margin:5px 9px 8px}
+#scoutDialog.is-opening #packCard .scout-compare>summary{min-height:30px;padding:7px 4px;font-size:9px}
+#scoutDialog.is-opening #packNext{flex:none;width:min(250px,100%);min-height:43px;border-radius:10px;box-shadow:0 2px #426b7733;font-weight:600}
+#scoutDialog.is-opening #packSkip{flex:none;min-height:30px;margin:3px 0 0;padding:5px 10px;font-size:10px}
+/* Expanded comparison gets the stage's height and scrolls only its data, never the pack. */
+#scoutDialog.is-opening .pack-stage:has(.scout-compare[open]){width:100%;background:transparent}
+#scoutDialog.is-opening #packCard:has(.scout-compare[open]){max-height:none}
+#scoutDialog.is-opening #packCard .scout-compare[open]{height:100%;overflow:auto;overscroll-behavior:contain;padding:0 3px;box-sizing:border-box}
+#scoutDialog.is-opening #packCard .scout-compare[open]>summary{position:sticky;top:0;z-index:2;background:var(--transfer-paper);margin-bottom:10px}
+@media(max-height:680px){#scoutDialog.is-opening{padding:12px 13px 9px}#scoutDialog.is-opening>.transfer-heading .eyebrow{display:none}#scoutDialog.is-opening>.transfer-heading h2{font-size:18px;margin:0 0 4px}#scoutDialog.is-opening .pack-heading h3{display:none}#scoutDialog.is-opening #packProgress{margin-bottom:6px}#scoutDialog.is-opening #packCard .card-art{max-height:130px;min-height:45px}#scoutDialog.is-opening #packCard .card-stats{gap:5px 12px;padding-top:6px;padding-bottom:6px}#scoutDialog.is-opening #packCard .card-name{padding-top:6px;padding-bottom:6px}#scoutDialog.is-opening .pack-stage{margin-bottom:7px}}
