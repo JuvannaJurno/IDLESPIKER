@@ -1,0 +1,5 @@
+(function(){
+'use strict';
+function pin(dialog){if(!(dialog instanceof HTMLDialogElement)||!dialog.open)return;for(const button of dialog.querySelectorAll(':scope>.close-dialog,:scope>#closeCamp,:scope>#transferBack,:scope>button[aria-label*="kapat" i],:scope>button[aria-label*="Kapat"]')){const position=getComputedStyle(button);if(position.display==='none'){button.style.removeProperty('translate');continue;}if(position.position==='absolute'){button.style.translate='0 '+dialog.scrollTop+'px';button.style.willChange='translate';}else{button.style.removeProperty('translate');button.style.removeProperty('will-change');}button.style.zIndex='50';}}
+document.addEventListener('scroll',event=>pin(event.target),true);document.addEventListener('toggle',event=>pin(event.target),true);new MutationObserver(records=>{for(const record of records)if(record.target instanceof HTMLDialogElement)pin(record.target);}).observe(document.documentElement,{subtree:true,attributes:true,attributeFilter:['open']});
+})();

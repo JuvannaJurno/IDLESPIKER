@@ -13,13 +13,12 @@ function analyze(squad,opponents,R){
 }
 // Project real card upgrades on copies: no AP is spent and no player is changed.
 function project(player,target,R){const p={...player};let cost=0,steps=0;while(R.overall(p)<target&&steps<100){const q=R.cardQuote(p);if(q.blocked||!Object.values(q.gains).some(v=>v>0))break;for(const [k,v]of Object.entries(q.gains))p[k]+=v;p.cardLevel=q.level+1;cost+=q.cost;steps++;}return {cost,steps,overall:R.overall(p),reached:R.overall(p)>=target};}
-function transfers(squad,catalog,R){const active=squad.players.filter(p=>Object.values(squad.lineup).includes(p.id));return catalog.filter(c=>!c.hired).map(c=>{const p={...c.player,id:c.id},own=active.filter(a=>a.role===p.role).sort((a,b)=>R.overall(a)-R.overall(b))[0],ovr=R.overall(p);if(!own)return {c,p,ovr,kind:'vacant',score:100};const current=R.overall(own),target=current+3,candidate=project(p,target,R),incumbent=project(own,target,R);const temporarilyAway=/kampta/i.test(R.cardQuote(own).blocked||'');const kind=ovr>current?'stronger':!temporarilyAway&&candidate.reached&&(!incumbent.reached||candidate.cost<incumbent.cost)?'potential':'pass';return {c,p,own,ovr,current,target,candidate,incumbent,kind,score:kind==='stronger'?80+ovr-current:kind==='potential'?60:0};}).sort((a,b)=>b.score-a.score||a.c.price-b.c.price);}
+function transfers(squad,catalog,R){const active=squad.players.filter(p=>Object.values(squad.lineup).includes(p.id));return catalog.filter(c=>!c.hired).map(c=>{const p={...c.player,id:c.id},own=active.filter(a=>a.role===p.role).sort((a,b)=>R.overall(a)-R.overall(b))[0],ovr=R.overall(p);if(!own)return {c,p,ovr,kind:'vacant',score:100};const current=R.overall(own),target=current+3,candidate=project(p,target,R),incumbent=project(own,target,R);const temporarilyAway=/kampta/i.test(R.cardQuote(own).blocked||'');const kind=ovr>current?'stronger':'pass';return {c,p,own,ovr,current,target,candidate,incumbent,kind,score:kind==='stronger'?80+ovr-current:kind==='potential'?60:0};}).sort((a,b)=>b.score-a.score||a.c.price-b.c.price);}
 function transferBrief(o){
  if(o.kind==='vacant')return 'Bu pozisyonda seçili oyuncun yok. Kadrodaki boşluğu doldurabilir.';
  const own=o.own.name+' '+o.own.surname;
  if(o.kind==='stronger')return own+' ile aynı pozisyonda oynuyor ve şu an daha güçlü.';
- if(!o.incumbent.reached)return own+' kart yükseltmeleriyle en fazla '+o.incumbent.overall+' OVR’ye ulaşabiliyor ama bu oyuncu '+o.candidate.overall+' OVR’ye çıkabiliyor.';
- return (o.ovr===o.current?'Şu an '+own+' ile aynı güçte':'Şu an '+own+' kadar güçlü değil')+' ama onu geçmek için daha az AP gerekiyor.';
+ return own+' ile karşılaştırıldığında şu an ek OVR sağlamıyor.';
 }
 if(typeof module!=='undefined'&&module.exports){module.exports={analyze,project,transfers,transferBrief};return}
 let previous='',detailsOpen=false,transferCacheKey='',transferCache=[];const fmt=n=>Math.round(n).toLocaleString('tr-TR'),name=p=>p.name+' '+p.surname;
@@ -41,7 +40,7 @@ function refresh(){
  }
  }
  }else rows.push(['Sezon','Sezon tamamlandı.']);
- const development=RoomSystem.developmentState();if(development.stage==='bal'){const ready=squad.players.filter(p=>CampRules.eligible(development,p)).sort((a,b)=>Number(!!TeamRules.cardQuote(b).blocked)-Number(!!TeamRules.cardQuote(a).blocked));for(const p of ready.slice(0,3)){const full=!!TeamRules.cardQuote(p).blocked;rows.push(['Kampa hazır',name(p)+(full?' artık yükseltilemiyor.':' gelişim sınırına yaklaştı.')+' Antrenman kampına göndererek sınırını artırabilirsin.',{id:p.id,name:name(p)}]);}if(ready.length>3)rows.push(['Kamp',ready.length+' oyuncu kampa hazır. Antrenman Kampı menüsünden hepsini görebilirsin.']);}
+
  const state=RoomSystem.scoutView(),level=bal?RoomRules.count(state,'bal_scout'):0;
  const transferRows=[];
  if(bal&&document.getElementById('scoutDialog')?.open){

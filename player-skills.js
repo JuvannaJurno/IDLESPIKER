@@ -184,6 +184,8 @@ const catalog=[
  }
 ];
 const byId=new Map(catalog.map(s=>[s.id,s]));
+catalog.push({id:'sky-serve',name:'Gökyüzü Servisi',rarity:'Rare',description:'Top yüksek bir yay çizerek rakip sahaya iner.'});byId.set('sky-serve',catalog.at(-1));
+catalog.push({id:'fake-set',name:'Pasör Aldatmacası',rarity:'Rare',description:'Hücum için yükselip havada takım arkadaşına parmak pas çıkarır.'});byId.set('fake-set',catalog.at(-1));
 const pools={
  setter:{Common:['tempo-third'],Uncommon:['back','float','tempo-second'],Legendary:['sync-attack','perfect-second-touch','one-hand-rescue','jump-float-legendary']},
  outside:{Common:['cross','commit-block'],Uncommon:['line','power-hit','wipe','rebound','float'],Legendary:['ghost-tip','jump-legendary','jump-float-legendary','tempo-minus']},
@@ -195,6 +197,6 @@ function hash(text){let n=2166136261;for(const c of String(text)){n^=c.charCodeA
 function ensure(p){if(!p)return [];if(p.epicTeam){p.matchSkills=catalog.map(s=>s.id);p.matchSkillsVersion=1;return p.matchSkills;}const pool=pools[p.role]||pools.outside,tiers=['Common','Uncommon','Legendary'];if(p.matchSkillsVersion!==1||!Array.isArray(p.matchSkills)||p.matchSkills.length!==3||p.matchSkills.some((id,i)=>!pool[tiers[i]].includes(id))){const key=[p.id,p.name,p.surname,p.role].join('|');p.matchSkills=tiers.map(t=>pool[t][hash(key+'|'+t)%pool[t].length]);p.matchSkillsVersion=1;}return p.matchSkills;}
 function campCount(p,state){if(p?.epicTeam)return 3;if(Number.isFinite(p?.skillCamps))return Math.max(0,Math.floor(p.skillCamps));const C=root.CampRules||(typeof require==='function'?require('./camp-rules.js'):null);return C?.progress(state||{},p).count||0;}
 function view(p,{division=1,state}={}){return ensure(p).map(id=>{const s=byId.get(id),legendary=s.rarity==='Legendary',count=campCount(p,state),unlocked=!!p.epicTeam||(Number(division)>=2&&(!legendary||(Number(division)>=3&&count>=3)));return {...s,unlocked,hidden:legendary&&!unlocked,camps:count,reason:p.epicTeam?'':Number(division)<2?'BAL’da açılır':legendary&&Number(division)<3?'2. Lig · 3. kamp':legendary&&count<3?'3. kampta açılır':''};});}
-function allows(p,id,{division=1,state}={}){if(p?.epicTeam)return byId.has(id);if(Number(division)<2||!ensure(p).includes(id))return false;return byId.get(id)?.rarity!=='Legendary'||(Number(division)>=3&&campCount(p,state)>=3);}
+function allows(p,id,{division=1,state}={}){if(p?.epicTeam)return byId.has(id);if(Number(division)<2)return false;if(id==='fake-set')return ensure(p).includes('back')||ensure(p).includes('tempo-third');if(id==='sky-serve')return ensure(p).includes('float');if(!ensure(p).includes(id))return false;return byId.get(id)?.rarity!=='Legendary'||(Number(division)>=3&&campCount(p,state)>=3);}
 const api={catalog,ensure,view,allows,campCount};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.PlayerSkills=api;
 })(globalThis);

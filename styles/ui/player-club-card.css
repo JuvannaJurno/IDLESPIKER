@@ -125,3 +125,11 @@ html[data-theme=dark] .player-card .player-overall{background:#35545e!important}
 /* Slightly stronger card boundaries without adding visual weight inside. */
 #teamPanel .player-card,#scoutDialog .scout-player.player-card:not(:has(.scout-compare[open])),#scoutDialog.is-opening #packCard>.player-card{border:1.5px solid #91aaa8!important;box-shadow:0 3px 0 #7b999747,0 3px 9px #35595214!important}
 html[data-theme=dark] #teamPanel .player-card,html[data-theme=dark] #scoutDialog .scout-player.player-card:not(:has(.scout-compare[open])),html[data-theme=dark] #scoutDialog.is-opening #packCard>.player-card{border-color:#738f91!important;box-shadow:0 3px 0 #0e242766,0 3px 9px #0e242733!important}
+/* Keep recruitment profile labels off the card face. */
+.player-card>.special-player-tag,.scout-player>.scout-special-label,.scout-player>.scout-special-note{display:none!important}
+/* Level grade sits behind the character, not among the card's statistics. */
+.player-card .card-art>.card-grade{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:0;color:#426777;opacity:.15;font:800 130px/1 'Segoe UI',system-ui,sans-serif;letter-spacing:-8px;pointer-events:none;transform:translateY(-2px)}
+.player-card .card-art>.card-halo{z-index:0}.player-card .card-art>img{position:relative;z-index:1}.player-card .card-art>.player-overall,.player-card .card-art>.camp-stars{z-index:3}
+html[data-theme=dark] .player-card .card-art>.card-grade{color:#d8e5d9;opacity:.13}
+#scoutDialog.is-opening #packCard .card-art>.card-grade{font-size:125px}
+@media(max-width:540px){#teamPanel .player-card .card-art>.card-grade,#scoutDialog .scout-player .card-art>.card-grade{font-size:110px}}

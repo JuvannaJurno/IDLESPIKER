@@ -1,0 +1,8811 @@
+[
+  {
+    "runSeed": "fresh-bal-0",
+    "upgradeEvents": [
+      {
+        "second": 4,
+        "ovr": 32
+      },
+      {
+        "second": 9,
+        "ovr": 31
+      },
+      {
+        "second": 9,
+        "ovr": 31
+      },
+      {
+        "second": 13,
+        "ovr": 33
+      },
+      {
+        "second": 13,
+        "ovr": 33
+      },
+      {
+        "second": 17,
+        "ovr": 33
+      },
+      {
+        "second": 21,
+        "ovr": 33
+      },
+      {
+        "second": 21,
+        "ovr": 32
+      },
+      {
+        "second": 26,
+        "ovr": 33
+      },
+      {
+        "second": 26,
+        "ovr": 34
+      },
+      {
+        "second": 30,
+        "ovr": 35
+      },
+      {
+        "second": 34,
+        "ovr": 34
+      },
+      {
+        "second": 34,
+        "ovr": 34
+      },
+      {
+        "second": 38,
+        "ovr": 35
+      },
+      {
+        "second": 43,
+        "ovr": 35
+      },
+      {
+        "second": 43,
+        "ovr": 36
+      },
+      {
+        "second": 47,
+        "ovr": 36
+      },
+      {
+        "second": 51,
+        "ovr": 36
+      },
+      {
+        "second": 55,
+        "ovr": 36
+      },
+      {
+        "second": 55,
+        "ovr": 36
+      },
+      {
+        "second": 60,
+        "ovr": 36
+      },
+      {
+        "second": 64,
+        "ovr": 37
+      },
+      {
+        "second": 68,
+        "ovr": 38
+      },
+      {
+        "second": 68,
+        "ovr": 37
+      },
+      {
+        "second": 72,
+        "ovr": 37
+      },
+      {
+        "second": 77,
+        "ovr": 38
+      },
+      {
+        "second": 81,
+        "ovr": 37
+      },
+      {
+        "second": 85,
+        "ovr": 38
+      },
+      {
+        "second": 89,
+        "ovr": 39
+      },
+      {
+        "second": 92,
+        "ovr": 39
+      },
+      {
+        "second": 92,
+        "ovr": 39
+      },
+      {
+        "second": 96,
+        "ovr": 39
+      },
+      {
+        "second": 100,
+        "ovr": 39
+      },
+      {
+        "second": 104,
+        "ovr": 40
+      },
+      {
+        "second": 107,
+        "ovr": 40
+      },
+      {
+        "second": 115,
+        "ovr": 41
+      },
+      {
+        "second": 119,
+        "ovr": 40
+      },
+      {
+        "second": 122,
+        "ovr": 40
+      },
+      {
+        "second": 126,
+        "ovr": 41
+      },
+      {
+        "second": 130,
+        "ovr": 41
+      },
+      {
+        "second": 133,
+        "ovr": 42
+      },
+      {
+        "second": 137,
+        "ovr": 42
+      },
+      {
+        "second": 141,
+        "ovr": 41
+      },
+      {
+        "second": 145,
+        "ovr": 41
+      },
+      {
+        "second": 152,
+        "ovr": 42
+      },
+      {
+        "second": 156,
+        "ovr": 43
+      },
+      {
+        "second": 159,
+        "ovr": 43
+      },
+      {
+        "second": 167,
+        "ovr": 43
+      },
+      {
+        "second": 171,
+        "ovr": 43
+      },
+      {
+        "second": 174,
+        "ovr": 44
+      },
+      {
+        "second": 182,
+        "ovr": 43
+      },
+      {
+        "second": 185,
+        "ovr": 43
+      },
+      {
+        "second": 193,
+        "ovr": 45
+      },
+      {
+        "second": 197,
+        "ovr": 45
+      },
+      {
+        "second": 200,
+        "ovr": 45
+      },
+      {
+        "second": 207,
+        "ovr": 44
+      },
+      {
+        "second": 211,
+        "ovr": 45
+      },
+      {
+        "second": 217,
+        "ovr": 44
+      },
+      {
+        "second": 221,
+        "ovr": 45
+      },
+      {
+        "second": 227,
+        "ovr": 46
+      },
+      {
+        "second": 231,
+        "ovr": 46
+      },
+      {
+        "second": 237,
+        "ovr": 47
+      },
+      {
+        "second": 244,
+        "ovr": 46
+      },
+      {
+        "second": 247,
+        "ovr": 46
+      },
+      {
+        "second": 254,
+        "ovr": 46
+      },
+      {
+        "second": 260,
+        "ovr": 47
+      },
+      {
+        "second": 267,
+        "ovr": 48
+      },
+      {
+        "second": 274,
+        "ovr": 48
+      },
+      {
+        "second": 280,
+        "ovr": 48
+      },
+      {
+        "second": 287,
+        "ovr": 48
+      },
+      {
+        "second": 290,
+        "ovr": 48
+      },
+      {
+        "second": 297,
+        "ovr": 48
+      },
+      {
+        "second": 307,
+        "ovr": 49
+      },
+      {
+        "second": 313,
+        "ovr": 50
+      },
+      {
+        "second": 320,
+        "ovr": 49
+      },
+      {
+        "second": 326,
+        "ovr": 49
+      },
+      {
+        "second": 336,
+        "ovr": 49
+      },
+      {
+        "second": 340,
+        "ovr": 50
+      },
+      {
+        "second": 340,
+        "ovr": 49
+      },
+      {
+        "second": 343,
+        "ovr": 51
+      },
+      {
+        "second": 350,
+        "ovr": 51
+      },
+      {
+        "second": 356,
+        "ovr": 51
+      },
+      {
+        "second": 366,
+        "ovr": 51
+      },
+      {
+        "second": 373,
+        "ovr": 51
+      },
+      {
+        "second": 383,
+        "ovr": 51
+      },
+      {
+        "second": 389,
+        "ovr": 52
+      },
+      {
+        "second": 398,
+        "ovr": 53
+      },
+      {
+        "second": 404,
+        "ovr": 52
+      },
+      {
+        "second": 413,
+        "ovr": 52
+      },
+      {
+        "second": 421,
+        "ovr": 53
+      },
+      {
+        "second": 430,
+        "ovr": 53
+      },
+      {
+        "second": 436,
+        "ovr": 53
+      },
+      {
+        "second": 444,
+        "ovr": 54
+      },
+      {
+        "second": 453,
+        "ovr": 54
+      },
+      {
+        "second": 462,
+        "ovr": 53
+      },
+      {
+        "second": 470,
+        "ovr": 54
+      },
+      {
+        "second": 479,
+        "ovr": 55
+      },
+      {
+        "second": 488,
+        "ovr": 54
+      },
+      {
+        "second": 496,
+        "ovr": 56
+      },
+      {
+        "second": 505,
+        "ovr": 54
+      },
+      {
+        "second": 514,
+        "ovr": 56
+      },
+      {
+        "second": 522,
+        "ovr": 55
+      },
+      {
+        "second": 531,
+        "ovr": 55
+      },
+      {
+        "second": 539,
+        "ovr": 56
+      },
+      {
+        "second": 548,
+        "ovr": 56
+      },
+      {
+        "second": 557,
+        "ovr": 57
+      },
+      {
+        "second": 565,
+        "ovr": 57
+      },
+      {
+        "second": 574,
+        "ovr": 57
+      },
+      {
+        "second": 583,
+        "ovr": 58
+      },
+      {
+        "second": 594,
+        "ovr": 58
+      },
+      {
+        "second": 603,
+        "ovr": 58
+      },
+      {
+        "second": 614,
+        "ovr": 58
+      },
+      {
+        "second": 621,
+        "ovr": 58
+      },
+      {
+        "second": 638,
+        "ovr": 59
+      },
+      {
+        "second": 648,
+        "ovr": 60
+      },
+      {
+        "second": 658,
+        "ovr": 60
+      },
+      {
+        "second": 666,
+        "ovr": 60
+      },
+      {
+        "second": 678,
+        "ovr": 61
+      },
+      {
+        "second": 688,
+        "ovr": 62
+      },
+      {
+        "second": 698,
+        "ovr": 61
+      },
+      {
+        "second": 708,
+        "ovr": 62
+      },
+      {
+        "second": 718,
+        "ovr": 64
+      },
+      {
+        "second": 750,
+        "ovr": 59
+      },
+      {
+        "second": 760,
+        "ovr": 61
+      },
+      {
+        "second": 770,
+        "ovr": 62
+      },
+      {
+        "second": 794,
+        "ovr": 64
+      },
+      {
+        "second": 829,
+        "ovr": 65
+      },
+      {
+        "second": 840,
+        "ovr": 58
+      },
+      {
+        "second": 840,
+        "ovr": 58
+      },
+      {
+        "second": 847,
+        "ovr": 60
+      },
+      {
+        "second": 855,
+        "ovr": 60
+      },
+      {
+        "second": 862,
+        "ovr": 61
+      },
+      {
+        "second": 871,
+        "ovr": 61
+      },
+      {
+        "second": 879,
+        "ovr": 63
+      },
+      {
+        "second": 888,
+        "ovr": 63
+      },
+      {
+        "second": 897,
+        "ovr": 62
+      },
+      {
+        "second": 908,
+        "ovr": 64
+      },
+      {
+        "second": 912,
+        "ovr": 64
+      },
+      {
+        "second": 923,
+        "ovr": 64
+      },
+      {
+        "second": 929,
+        "ovr": 63
+      },
+      {
+        "second": 938,
+        "ovr": 63
+      },
+      {
+        "second": 949,
+        "ovr": 65
+      },
+      {
+        "second": 960,
+        "ovr": 65
+      },
+      {
+        "second": 971,
+        "ovr": 66
+      },
+      {
+        "second": 982,
+        "ovr": 66
+      },
+      {
+        "second": 992,
+        "ovr": 66
+      },
+      {
+        "second": 1006,
+        "ovr": 66
+      },
+      {
+        "second": 1016,
+        "ovr": 67
+      },
+      {
+        "second": 1029,
+        "ovr": 67
+      },
+      {
+        "second": 1040,
+        "ovr": 66
+      },
+      {
+        "second": 1056,
+        "ovr": 67
+      },
+      {
+        "second": 1067,
+        "ovr": 67
+      },
+      {
+        "second": 1082,
+        "ovr": 68
+      },
+      {
+        "second": 1095,
+        "ovr": 68
+      },
+      {
+        "second": 1119,
+        "ovr": 67
+      },
+      {
+        "second": 1134,
+        "ovr": 68
+      },
+      {
+        "second": 1149,
+        "ovr": 69
+      },
+      {
+        "second": 1165,
+        "ovr": 69
+      },
+      {
+        "second": 1180,
+        "ovr": 69
+      },
+      {
+        "second": 1191,
+        "ovr": 69
+      },
+      {
+        "second": 1208,
+        "ovr": 70
+      },
+      {
+        "second": 1225,
+        "ovr": 70
+      },
+      {
+        "second": 1237,
+        "ovr": 70
+      },
+      {
+        "second": 1253,
+        "ovr": 70
+      },
+      {
+        "second": 1261,
+        "ovr": 70
+      },
+      {
+        "second": 1273,
+        "ovr": 70
+      },
+      {
+        "second": 1290,
+        "ovr": 71
+      },
+      {
+        "second": 1306,
+        "ovr": 71
+      },
+      {
+        "second": 1321,
+        "ovr": 72
+      },
+      {
+        "second": 1337,
+        "ovr": 72
+      },
+      {
+        "second": 1353,
+        "ovr": 72
+      },
+      {
+        "second": 1370,
+        "ovr": 71
+      },
+      {
+        "second": 1384,
+        "ovr": 72
+      },
+      {
+        "second": 1402,
+        "ovr": 73
+      },
+      {
+        "second": 1419,
+        "ovr": 72
+      },
+      {
+        "second": 1437,
+        "ovr": 73
+      },
+      {
+        "second": 1455,
+        "ovr": 74
+      },
+      {
+        "second": 1477,
+        "ovr": 74
+      },
+      {
+        "second": 1495,
+        "ovr": 74
+      },
+      {
+        "second": 1517,
+        "ovr": 75
+      },
+      {
+        "second": 1540,
+        "ovr": 76
+      },
+      {
+        "second": 1555,
+        "ovr": 75
+      },
+      {
+        "second": 1573,
+        "ovr": 77
+      },
+      {
+        "second": 1592,
+        "ovr": 77
+      },
+      {
+        "second": 1615,
+        "ovr": 77
+      },
+      {
+        "second": 1637,
+        "ovr": 77
+      },
+      {
+        "second": 1713,
+        "ovr": 79
+      },
+      {
+        "second": 1763,
+        "ovr": 79
+      },
+      {
+        "second": 1785,
+        "ovr": 78
+      },
+      {
+        "second": 1819,
+        "ovr": 74
+      },
+      {
+        "second": 1839,
+        "ovr": 76
+      },
+      {
+        "second": 1861,
+        "ovr": 77
+      },
+      {
+        "second": 1875,
+        "ovr": 73
+      },
+      {
+        "second": 1894,
+        "ovr": 75
+      },
+      {
+        "second": 1912,
+        "ovr": 76
+      },
+      {
+        "second": 1934,
+        "ovr": 78
+      },
+      {
+        "second": 1961,
+        "ovr": 79
+      },
+      {
+        "second": 2035,
+        "ovr": 79
+      },
+      {
+        "second": 2052,
+        "ovr": 73
+      },
+      {
+        "second": 2054,
+        "ovr": 75
+      },
+      {
+        "second": 2073,
+        "ovr": 76
+      },
+      {
+        "second": 2088,
+        "ovr": 78
+      },
+      {
+        "second": 2107,
+        "ovr": 79
+      },
+      {
+        "second": 2133,
+        "ovr": 79
+      },
+      {
+        "second": 2154,
+        "ovr": 80
+      },
+      {
+        "second": 2176,
+        "ovr": 80
+      },
+      {
+        "second": 2199,
+        "ovr": 81
+      },
+      {
+        "second": 2220,
+        "ovr": 81
+      },
+      {
+        "second": 2244,
+        "ovr": 80
+      },
+      {
+        "second": 2261,
+        "ovr": 81
+      },
+      {
+        "second": 2284,
+        "ovr": 81
+      },
+      {
+        "second": 2309,
+        "ovr": 82
+      },
+      {
+        "second": 2333,
+        "ovr": 82
+      },
+      {
+        "second": 2359,
+        "ovr": 82
+      },
+      {
+        "second": 2386,
+        "ovr": 82
+      },
+      {
+        "second": 2415,
+        "ovr": 82
+      },
+      {
+        "second": 2442,
+        "ovr": 82
+      },
+      {
+        "second": 2471,
+        "ovr": 83
+      },
+      {
+        "second": 2490,
+        "ovr": 83
+      },
+      {
+        "second": 2521,
+        "ovr": 84
+      },
+      {
+        "second": 2553,
+        "ovr": 84
+      },
+      {
+        "second": 2584,
+        "ovr": 84
+      },
+      {
+        "second": 2615,
+        "ovr": 83
+      },
+      {
+        "second": 2648,
+        "ovr": 84
+      },
+      {
+        "second": 2676,
+        "ovr": 85
+      },
+      {
+        "second": 2699,
+        "ovr": 85
+      },
+      {
+        "second": 2724,
+        "ovr": 85
+      },
+      {
+        "second": 2749,
+        "ovr": 85
+      },
+      {
+        "second": 2778,
+        "ovr": 85
+      },
+      {
+        "second": 2809,
+        "ovr": 85
+      },
+      {
+        "second": 2839,
+        "ovr": 86
+      },
+      {
+        "second": 2902,
+        "ovr": 87
+      },
+      {
+        "second": 2936,
+        "ovr": 87
+      },
+      {
+        "second": 2966,
+        "ovr": 86
+      },
+      {
+        "second": 2993,
+        "ovr": 87
+      },
+      {
+        "second": 3027,
+        "ovr": 87
+      },
+      {
+        "second": 3062,
+        "ovr": 87
+      },
+      {
+        "second": 3085,
+        "ovr": 88
+      },
+      {
+        "second": 3110,
+        "ovr": 87
+      },
+      {
+        "second": 3148,
+        "ovr": 89
+      },
+      {
+        "second": 3178,
+        "ovr": 89
+      },
+      {
+        "second": 3216,
+        "ovr": 88
+      },
+      {
+        "second": 3244,
+        "ovr": 89
+      },
+      {
+        "second": 3352,
+        "ovr": 90
+      },
+      {
+        "second": 3392,
+        "ovr": 91
+      }
+    ],
+    "maxUpgradeGap": 108,
+    "transferEvents": [],
+    "finalState": {
+      "version": 5,
+      "economyVersion": 3,
+      "budgetScale": 10,
+      "stage": "bal",
+      "balVersion": 1,
+      "balBlockVersion": 4,
+      "prologBlockVersion": 2,
+      "balStart": 0,
+      "balStartDay": 1,
+      "balReadyDay": {},
+      "openDepartments": [
+        2,
+        4
+      ],
+      "scouting": {
+        "tutorialSeen": false,
+        "round": 94,
+        "startedDay": 104,
+        "catalog": [
+          {
+            "id": "scout-94-0",
+            "player": {
+              "id": "player-10",
+              "name": "Derya",
+              "surname": "Doğru",
+              "role": "middle",
+              "gender": "female",
+              "number": 11,
+              "art": "team-assets/woman-26.svg",
+              "spike": 100,
+              "block": 100,
+              "serve": 47,
+              "receive": 50,
+              "set": 48,
+              "height": 194,
+              "stamina": 100,
+              "mental": 100,
+              "matchSkills": [
+                "commit-block",
+                "close",
+                "absolute-read"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 28,
+              "training": {
+                "block": 50,
+                "spike": 50,
+                "stamina": 50,
+                "mental": 50
+              },
+              "baseStats": {
+                "spike": 50,
+                "block": 50,
+                "serve": 47,
+                "receive": 50,
+                "set": 48,
+                "stamina": 50,
+                "mental": 50
+              },
+              "skills": [
+                {
+                  "id": "read",
+                  "unlocked": false
+                },
+                {
+                  "id": "breath",
+                  "unlocked": false
+                },
+                {
+                  "id": "close",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 35400,
+            "hired": false
+          },
+          {
+            "id": "scout-94-1",
+            "player": {
+              "id": "player-6",
+              "name": "Çağla",
+              "surname": "Şafak",
+              "role": "libero",
+              "gender": "female",
+              "number": 7,
+              "art": "team-assets/woman-14.svg",
+              "spike": 46,
+              "block": 44,
+              "serve": 48,
+              "receive": 100,
+              "set": 100,
+              "height": 172,
+              "stamina": 71,
+              "mental": 73,
+              "matchSkills": [
+                "court-read",
+                "cover",
+                "pancake"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 48,
+              "training": {
+                "receive": 50,
+                "set": 55,
+                "mental": 26,
+                "stamina": 25
+              },
+              "baseStats": {
+                "spike": 46,
+                "block": 44,
+                "serve": 48,
+                "receive": 50,
+                "set": 45,
+                "stamina": 46,
+                "mental": 47
+              },
+              "skills": [
+                {
+                  "id": "platform",
+                  "unlocked": false
+                },
+                {
+                  "id": "calm",
+                  "unlocked": false
+                },
+                {
+                  "id": "dive",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 37500,
+            "hired": false
+          },
+          {
+            "id": "scout-94-2",
+            "player": {
+              "id": "player-5",
+              "name": "Dilara",
+              "surname": "Karadağ",
+              "role": "middle",
+              "gender": "female",
+              "number": 6,
+              "art": "team-assets/woman-24.svg",
+              "spike": 100,
+              "block": 100,
+              "serve": 45,
+              "receive": 45,
+              "set": 45,
+              "height": 189,
+              "stamina": 100,
+              "mental": 100,
+              "matchSkills": [
+                "commit-block",
+                "close",
+                "absolute-read"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 48,
+              "training": {
+                "block": 50,
+                "spike": 51,
+                "stamina": 53,
+                "mental": 52
+              },
+              "baseStats": {
+                "spike": 49,
+                "block": 50,
+                "serve": 45,
+                "receive": 45,
+                "set": 45,
+                "stamina": 47,
+                "mental": 48
+              },
+              "skills": [
+                {
+                  "id": "read",
+                  "unlocked": false
+                },
+                {
+                  "id": "breath",
+                  "unlocked": false
+                },
+                {
+                  "id": "close",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 34400,
+            "hired": false
+          },
+          {
+            "id": "scout-94-3",
+            "player": {
+              "id": "player-7",
+              "name": "Ajda",
+              "surname": "Koçyiğit",
+              "role": "setter",
+              "gender": "female",
+              "number": 8,
+              "art": "team-assets/woman-11.svg",
+              "spike": 33,
+              "block": 33,
+              "serve": 100,
+              "receive": 30,
+              "set": 100,
+              "height": 176,
+              "stamina": 85,
+              "mental": 86,
+              "matchSkills": [
+                "tempo-third",
+                "tempo-second",
+                "jump-float-legendary"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 28,
+              "training": {
+                "set": 65,
+                "serve": 68,
+                "mental": 53,
+                "stamina": 52
+              },
+              "baseStats": {
+                "spike": 33,
+                "block": 33,
+                "serve": 32,
+                "receive": 30,
+                "set": 35,
+                "stamina": 33,
+                "mental": 33
+              },
+              "skills": [
+                {
+                  "id": "float",
+                  "unlocked": false
+                },
+                {
+                  "id": "breath",
+                  "unlocked": false
+                },
+                {
+                  "id": "cover",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 25000,
+            "hired": false
+          },
+          {
+            "id": "scout-94-4",
+            "player": {
+              "id": "player-0",
+              "name": "İrem",
+              "surname": "Gültekin",
+              "role": "setter",
+              "gender": "female",
+              "number": 1,
+              "art": "team-assets/woman-9.svg",
+              "spike": 49,
+              "block": 50,
+              "serve": 100,
+              "receive": 49,
+              "set": 100,
+              "height": 182,
+              "stamina": 100,
+              "mental": 100,
+              "matchSkills": [
+                "tempo-third",
+                "back",
+                "perfect-second-touch"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 48,
+              "training": {
+                "set": 50,
+                "serve": 50,
+                "mental": 50,
+                "stamina": 50
+              },
+              "baseStats": {
+                "spike": 49,
+                "block": 50,
+                "serve": 50,
+                "receive": 49,
+                "set": 50,
+                "stamina": 50,
+                "mental": 50
+              },
+              "skills": [
+                {
+                  "id": "float",
+                  "unlocked": false
+                },
+                {
+                  "id": "calm",
+                  "unlocked": false
+                },
+                {
+                  "id": "deceive",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 32400,
+            "hired": false
+          },
+          {
+            "id": "scout-94-5",
+            "player": {
+              "id": "player-8",
+              "name": "Nisa",
+              "surname": "Karataş",
+              "role": "outside",
+              "gender": "female",
+              "number": 9,
+              "art": "team-assets/woman-30.svg",
+              "spike": 100,
+              "block": 32,
+              "serve": 31,
+              "receive": 100,
+              "set": 34,
+              "height": 175,
+              "stamina": 86,
+              "mental": 86,
+              "matchSkills": [
+                "commit-block",
+                "float",
+                "tempo-minus"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 28,
+              "training": {
+                "spike": 63,
+                "receive": 65,
+                "stamina": 53,
+                "mental": 52
+              },
+              "baseStats": {
+                "spike": 37,
+                "block": 32,
+                "serve": 31,
+                "receive": 35,
+                "set": 34,
+                "stamina": 33,
+                "mental": 34
+              },
+              "skills": [
+                {
+                  "id": "read",
+                  "unlocked": false
+                },
+                {
+                  "id": "breath",
+                  "unlocked": false
+                },
+                {
+                  "id": "jump",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 25900,
+            "hired": false
+          },
+          {
+            "id": "scout-94-6",
+            "player": {
+              "id": "player-1",
+              "name": "Sümeyra",
+              "surname": "Sezer",
+              "role": "outside",
+              "gender": "female",
+              "number": 2,
+              "art": "team-assets/woman-18.svg",
+              "spike": 100,
+              "block": 50,
+              "serve": 50,
+              "receive": 100,
+              "set": 50,
+              "height": 174,
+              "stamina": 100,
+              "mental": 100,
+              "matchSkills": [
+                "cross",
+                "wipe",
+                "ghost-tip"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 48,
+              "training": {
+                "spike": 50,
+                "receive": 50,
+                "stamina": 50,
+                "mental": 50
+              },
+              "baseStats": {
+                "spike": 50,
+                "block": 50,
+                "serve": 50,
+                "receive": 50,
+                "set": 50,
+                "stamina": 50,
+                "mental": 50
+              },
+              "skills": [
+                {
+                  "id": "float",
+                  "unlocked": false
+                },
+                {
+                  "id": "breath",
+                  "unlocked": false
+                },
+                {
+                  "id": "line",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 33400,
+            "hired": false
+          },
+          {
+            "id": "scout-94-7",
+            "player": {
+              "id": "player-11",
+              "name": "Ada",
+              "surname": "Akın",
+              "role": "libero",
+              "gender": "female",
+              "number": 12,
+              "art": "team-assets/woman-21.svg",
+              "spike": 30,
+              "block": 27,
+              "serve": 26,
+              "receive": 100,
+              "set": 100,
+              "height": 164,
+              "stamina": 61,
+              "mental": 63,
+              "matchSkills": [
+                "court-read",
+                "cover",
+                "pancake"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 28,
+              "training": {
+                "receive": 67,
+                "set": 74,
+                "mental": 33,
+                "stamina": 33
+              },
+              "baseStats": {
+                "spike": 30,
+                "block": 27,
+                "serve": 26,
+                "receive": 33,
+                "set": 26,
+                "stamina": 28,
+                "mental": 30
+              },
+              "skills": [
+                {
+                  "id": "platform",
+                  "unlocked": false
+                },
+                {
+                  "id": "calm",
+                  "unlocked": false
+                },
+                {
+                  "id": "cover",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 34400,
+            "hired": false
+          }
+        ],
+        "recruits": [],
+        "specialMisses": 5
+      },
+      "incomeProgress": 0,
+      "attendanceRewards": [],
+      "camp": {
+        "version": 3,
+        "announcedDay": 7,
+        "opensDay": 7,
+        "lastDay": 104,
+        "boosts": {
+          "player-0": 60,
+          "player-1": 60,
+          "player-2": 60,
+          "player-3": 60,
+          "player-4": 60,
+          "player-5": 60,
+          "player-6": 60
+        },
+        "entries": [
+          {
+            "playerId": "player-0",
+            "startDay": 10,
+            "endDay": 13,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-1",
+            "startDay": 12,
+            "endDay": 15,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-2",
+            "startDay": 12,
+            "endDay": 15,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-3",
+            "startDay": 13,
+            "endDay": 16,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-4",
+            "startDay": 14,
+            "endDay": 17,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-5",
+            "startDay": 14,
+            "endDay": 17,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-6",
+            "startDay": 21,
+            "endDay": 24,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-4",
+            "startDay": 36,
+            "endDay": 39,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-5",
+            "startDay": 37,
+            "endDay": 40,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-0",
+            "startDay": 38,
+            "endDay": 41,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-1",
+            "startDay": 40,
+            "endDay": 43,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-2",
+            "startDay": 46,
+            "endDay": 49,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-3",
+            "startDay": 47,
+            "endDay": 50,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-0",
+            "startDay": 80,
+            "endDay": 83,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-6",
+            "startDay": 96,
+            "endDay": 99,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-1",
+            "startDay": 98,
+            "endDay": 101,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-2",
+            "startDay": 99,
+            "endDay": 102,
+            "targetBoost": 60,
+            "status": "complete"
+          }
+        ]
+      },
+      "budget": 197765,
+      "ap": 580793.25,
+      "matchRewards": [
+        "bal1_r1-0-6",
+        "bal1_r2-4-0",
+        "bal1_r3-0-3",
+        "bal1_r4-1-0",
+        "bal1_r5-0-2",
+        "bal1_r6-5-0",
+        "bal1_r7-0-7",
+        "bal1_r8-6-0",
+        "bal1_r9-0-4",
+        "bal1_r10-3-0",
+        "bal1_r12-2-0",
+        "bal1_r13-0-5"
+      ],
+      "instructions": 51800,
+      "floors": [
+        [
+          "warmup",
+          "warmup",
+          "warmup",
+          "warmup",
+          "warmup",
+          "crit_smash",
+          "crit_smash",
+          "crit_smash",
+          "crit_smash",
+          "crit_smash",
+          "echo",
+          "echo",
+          "echo",
+          "echo",
+          "echo",
+          "bal_position",
+          "bal_video",
+          "bal_position",
+          "bal_recovery",
+          "bal_video",
+          "bal_position",
+          "bal_recovery",
+          "bal_video",
+          "bal_position",
+          "bal_recovery",
+          "bal_video",
+          "bal_position",
+          "bal_recovery",
+          "bal_video",
+          "bal_position",
+          "bal_recovery",
+          "bal_video",
+          "bal_position",
+          "bal_video",
+          "bal_recovery",
+          "bal_position",
+          "bal_video",
+          "bal_recovery",
+          "bal_position",
+          "bal_video",
+          "bal_recovery",
+          "bal_position",
+          "bal_recovery",
+          "bal_video",
+          "bal_recovery"
+        ],
+        [
+          "assistant",
+          "assistant",
+          "assistant",
+          "assistant",
+          "assistant",
+          "offline_time",
+          "offline_time",
+          "offline_time",
+          "offline_time",
+          "offline_time",
+          "steady",
+          "steady",
+          "steady",
+          "steady",
+          "steady",
+          "bal_plan",
+          "bal_coach",
+          "bal_shift",
+          "bal_coach",
+          "bal_plan",
+          "bal_shift",
+          "bal_plan",
+          "bal_coach",
+          "bal_shift",
+          "bal_plan",
+          "bal_coach",
+          "bal_shift",
+          "bal_plan",
+          "bal_coach",
+          "bal_shift",
+          "bal_plan",
+          "bal_coach",
+          "bal_plan",
+          "bal_shift",
+          "bal_coach",
+          "bal_plan",
+          "bal_coach",
+          "bal_shift",
+          "bal_plan",
+          "bal_shift",
+          "bal_coach",
+          "bal_shift",
+          "bal_plan",
+          "bal_coach"
+        ],
+        [
+          "meal",
+          "meal",
+          "meal",
+          "meal",
+          "meal",
+          "energy_drink",
+          "energy_drink",
+          "energy_drink",
+          "energy_drink",
+          "energy_drink",
+          "sugar_boost",
+          "sugar_boost",
+          "sugar_boost",
+          "sugar_boost",
+          "sugar_boost",
+          "bal_sponsor",
+          "bal_shop",
+          "bal_sponsor",
+          "bal_fans",
+          "bal_shop",
+          "bal_sponsor",
+          "bal_fans",
+          "bal_shop",
+          "bal_sponsor",
+          "bal_fans",
+          "bal_shop",
+          "bal_sponsor",
+          "bal_fans",
+          "bal_shop",
+          "bal_sponsor",
+          "bal_fans",
+          "bal_sponsor",
+          "bal_shop",
+          "bal_fans",
+          "bal_sponsor",
+          "bal_shop",
+          "bal_fans",
+          "bal_sponsor",
+          "bal_shop",
+          "bal_fans",
+          "bal_sponsor",
+          "bal_shop",
+          "bal_fans",
+          "bal_shop",
+          "bal_fans"
+        ],
+        [
+          "collect",
+          "collect",
+          "collect",
+          "collect",
+          "collect",
+          "coordinate",
+          "coordinate",
+          "coordinate",
+          "coordinate",
+          "coordinate",
+          "rhythm",
+          "rhythm",
+          "rhythm",
+          "rhythm",
+          "rhythm",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout"
+        ],
+        [
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent"
+        ]
+      ],
+      "lastSeen": 1792339595552,
+      "autoCarry": 0,
+      "steadyProgress": 0,
+      "trainingProgress": 0,
+      "dayProgress": 300,
+      "pendingGains": []
+    },
+    "finalRoster": [
+      {
+        "id": "player-0",
+        "name": "Feyza",
+        "surname": "Toy",
+        "role": "setter",
+        "gender": "female",
+        "number": 1,
+        "art": "team-assets/woman-31.svg",
+        "spike": 14,
+        "block": 13,
+        "serve": 109,
+        "receive": 15,
+        "set": 160,
+        "height": 185,
+        "stamina": 39,
+        "mental": 38,
+        "matchSkills": [
+          "tempo-third",
+          "float",
+          "one-hand-rescue"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 48,
+        "training": {},
+        "baseStats": {
+          "spike": 14,
+          "block": 13,
+          "serve": 15,
+          "receive": 15,
+          "set": 19,
+          "stamina": 16,
+          "mental": 14
+        },
+        "skills": [
+          {
+            "id": "float",
+            "unlocked": false
+          },
+          {
+            "id": "breath",
+            "unlocked": false
+          },
+          {
+            "id": "back",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-1",
+        "name": "Gül",
+        "surname": "Eren",
+        "role": "outside",
+        "gender": "female",
+        "number": 2,
+        "art": "team-assets/woman-12.svg",
+        "spike": 159,
+        "block": 13,
+        "serve": 14,
+        "receive": 112,
+        "set": 13,
+        "height": 183,
+        "stamina": 39,
+        "mental": 39,
+        "matchSkills": [
+          "commit-block",
+          "line",
+          "tempo-minus"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 48,
+        "training": {},
+        "baseStats": {
+          "spike": 18,
+          "block": 13,
+          "serve": 14,
+          "receive": 18,
+          "set": 13,
+          "stamina": 15,
+          "mental": 16
+        },
+        "skills": [
+          {
+            "id": "platform",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "line",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-2",
+        "name": "Derin",
+        "surname": "Erkılıç",
+        "role": "outside",
+        "gender": "female",
+        "number": 3,
+        "art": "team-assets/woman-25.svg",
+        "spike": 159,
+        "block": 13,
+        "serve": 12,
+        "receive": 112,
+        "set": 16,
+        "height": 191,
+        "stamina": 40,
+        "mental": 38,
+        "matchSkills": [
+          "cross",
+          "float",
+          "ghost-tip"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 48,
+        "training": {},
+        "baseStats": {
+          "spike": 18,
+          "block": 13,
+          "serve": 12,
+          "receive": 18,
+          "set": 16,
+          "stamina": 16,
+          "mental": 15
+        },
+        "skills": [
+          {
+            "id": "float",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "wipe",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-3",
+        "name": "Nursu",
+        "surname": "Üstün",
+        "role": "opposite",
+        "gender": "female",
+        "number": 4,
+        "art": "team-assets/woman-23.svg",
+        "spike": 151,
+        "block": 36,
+        "serve": 106,
+        "receive": 12,
+        "set": 12,
+        "height": 174,
+        "stamina": 36,
+        "mental": 16,
+        "matchSkills": [
+          "cross",
+          "power-hit",
+          "jump-legendary"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 45,
+        "training": {},
+        "baseStats": {
+          "spike": 19,
+          "block": 14,
+          "serve": 18,
+          "receive": 12,
+          "set": 12,
+          "stamina": 14,
+          "mental": 16
+        },
+        "skills": [
+          {
+            "id": "cross",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "wipe",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-4",
+        "name": "Simge",
+        "surname": "Çiftçi",
+        "role": "middle",
+        "gender": "female",
+        "number": 5,
+        "art": "team-assets/woman-16.svg",
+        "spike": 104,
+        "block": 149,
+        "serve": 12,
+        "receive": 15,
+        "set": 15,
+        "height": 189,
+        "stamina": 38,
+        "mental": 37,
+        "matchSkills": [
+          "commit-block",
+          "close",
+          "absolute-read"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 45,
+        "training": {},
+        "baseStats": {
+          "spike": 16,
+          "block": 17,
+          "serve": 12,
+          "receive": 15,
+          "set": 15,
+          "stamina": 16,
+          "mental": 15
+        },
+        "skills": [
+          {
+            "id": "float",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "close",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-5",
+        "name": "Dilber",
+        "surname": "Usta",
+        "role": "middle",
+        "gender": "female",
+        "number": 6,
+        "art": "team-assets/woman-32.svg",
+        "spike": 101,
+        "block": 149,
+        "serve": 15,
+        "receive": 12,
+        "set": 12,
+        "height": 189,
+        "stamina": 37,
+        "mental": 39,
+        "matchSkills": [
+          "commit-block",
+          "triple-block",
+          "tempo-minus"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 45,
+        "training": {},
+        "baseStats": {
+          "spike": 13,
+          "block": 17,
+          "serve": 15,
+          "receive": 12,
+          "set": 12,
+          "stamina": 15,
+          "mental": 17
+        },
+        "skills": [
+          {
+            "id": "float",
+            "unlocked": false
+          },
+          {
+            "id": "breath",
+            "unlocked": false
+          },
+          {
+            "id": "close",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-6",
+        "name": "Gamze",
+        "surname": "Soydan",
+        "role": "libero",
+        "gender": "female",
+        "number": 7,
+        "art": "team-assets/woman-6.svg",
+        "spike": 14,
+        "block": 12,
+        "serve": 13,
+        "receive": 122,
+        "set": 82,
+        "height": 176,
+        "stamina": 31,
+        "mental": 34,
+        "matchSkills": [
+          "court-read",
+          "cover",
+          "pancake"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 36,
+        "training": {},
+        "baseStats": {
+          "spike": 14,
+          "block": 12,
+          "serve": 13,
+          "receive": 17,
+          "set": 12,
+          "stamina": 14,
+          "mental": 16
+        },
+        "skills": [
+          {
+            "id": "platform",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "cover",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-7",
+        "name": "Bergüzar",
+        "surname": "Özkan",
+        "role": "setter",
+        "gender": "female",
+        "number": 8,
+        "art": "team-assets/woman-3.svg",
+        "spike": 14,
+        "block": 12,
+        "serve": 13,
+        "receive": 12,
+        "set": 17,
+        "height": 191,
+        "stamina": 14,
+        "mental": 15,
+        "matchSkills": [
+          "tempo-third",
+          "tempo-second",
+          "perfect-second-touch"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 1,
+        "training": {},
+        "baseStats": {
+          "spike": 14,
+          "block": 12,
+          "serve": 13,
+          "receive": 12,
+          "set": 17,
+          "stamina": 14,
+          "mental": 15
+        },
+        "skills": [
+          {
+            "id": "quick",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "cover",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-8",
+        "name": "Nisa",
+        "surname": "Kocabaş",
+        "role": "outside",
+        "gender": "female",
+        "number": 9,
+        "art": "team-assets/woman-24.svg",
+        "spike": 19,
+        "block": 13,
+        "serve": 15,
+        "receive": 19,
+        "set": 15,
+        "height": 188,
+        "stamina": 17,
+        "mental": 17,
+        "matchSkills": [
+          "cross",
+          "power-hit",
+          "ghost-tip"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 1,
+        "training": {},
+        "baseStats": {
+          "spike": 19,
+          "block": 13,
+          "serve": 15,
+          "receive": 19,
+          "set": 15,
+          "stamina": 17,
+          "mental": 17
+        },
+        "skills": [
+          {
+            "id": "read",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "line",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-9",
+        "name": "Ümran",
+        "surname": "Gürbüz",
+        "role": "opposite",
+        "gender": "female",
+        "number": 10,
+        "art": "team-assets/woman-30.svg",
+        "spike": 19,
+        "block": 12,
+        "serve": 17,
+        "receive": 13,
+        "set": 16,
+        "height": 187,
+        "stamina": 14,
+        "mental": 17,
+        "matchSkills": [
+          "commit-block",
+          "line",
+          "jump-legendary"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 1,
+        "training": {},
+        "baseStats": {
+          "spike": 19,
+          "block": 12,
+          "serve": 17,
+          "receive": 13,
+          "set": 16,
+          "stamina": 14,
+          "mental": 17
+        },
+        "skills": [
+          {
+            "id": "float",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "line",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-10",
+        "name": "Zekiye",
+        "surname": "Tezcan",
+        "role": "middle",
+        "gender": "female",
+        "number": 11,
+        "art": "team-assets/woman-10.svg",
+        "spike": 13,
+        "block": 19,
+        "serve": 16,
+        "receive": 14,
+        "set": 15,
+        "height": 194,
+        "stamina": 17,
+        "mental": 14,
+        "matchSkills": [
+          "commit-block",
+          "close",
+          "absolute-read"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 1,
+        "training": {},
+        "baseStats": {
+          "spike": 13,
+          "block": 19,
+          "serve": 16,
+          "receive": 14,
+          "set": 15,
+          "stamina": 17,
+          "mental": 14
+        },
+        "skills": [
+          {
+            "id": "float",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "close",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-11",
+        "name": "Selen",
+        "surname": "Gündoğan",
+        "role": "libero",
+        "gender": "female",
+        "number": 12,
+        "art": "team-assets/woman-15.svg",
+        "spike": 13,
+        "block": 16,
+        "serve": 13,
+        "receive": 18,
+        "set": 12,
+        "height": 171,
+        "stamina": 15,
+        "mental": 17,
+        "matchSkills": [
+          "court-read",
+          "cover",
+          "pancake"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 1,
+        "training": {},
+        "baseStats": {
+          "spike": 13,
+          "block": 16,
+          "serve": 13,
+          "receive": 18,
+          "set": 12,
+          "stamina": 15,
+          "mental": 17
+        },
+        "skills": [
+          {
+            "id": "platform",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "dive",
+            "unlocked": false
+          }
+        ]
+      }
+    ],
+    "finalLineup": {
+      "p": "player-0",
+      "s1": "player-1",
+      "s2": "player-2",
+      "pc": "player-3",
+      "o1": "player-4",
+      "o2": "player-5",
+      "l": "player-6"
+    },
+    "league": {
+      "version": 3,
+      "mode": "bal",
+      "run": 1,
+      "startDay": 1,
+      "scheduleVersion": 2,
+      "results": {
+        "bal1_r1-0-6": [
+          5,
+          2
+        ],
+        "bal1_r1-7-4": [
+          5,
+          0
+        ],
+        "bal1_r1-5-3": [
+          5,
+          3
+        ],
+        "bal1_r1-2-1": [
+          5,
+          2
+        ],
+        "bal1_r2-4-0": [
+          1,
+          5
+        ],
+        "bal1_r2-3-6": [
+          5,
+          1
+        ],
+        "bal1_r2-1-7": [
+          2,
+          5
+        ],
+        "bal1_r2-2-5": [
+          2,
+          5
+        ],
+        "bal1_r3-0-3": [
+          5,
+          1
+        ],
+        "bal1_r3-4-1": [
+          2,
+          5
+        ],
+        "bal1_r3-6-2": [
+          1,
+          5
+        ],
+        "bal1_r3-7-5": [
+          7,
+          9
+        ],
+        "bal1_r4-1-0": [
+          3,
+          5
+        ],
+        "bal1_r4-2-3": [
+          5,
+          0
+        ],
+        "bal1_r4-5-4": [
+          5,
+          0
+        ],
+        "bal1_r4-7-6": [
+          5,
+          1
+        ],
+        "bal1_r5-0-2": [
+          5,
+          1
+        ],
+        "bal1_r5-1-5": [
+          4,
+          6
+        ],
+        "bal1_r5-3-7": [
+          1,
+          5
+        ],
+        "bal1_r5-4-6": [
+          5,
+          3
+        ],
+        "bal1_r6-5-0": [
+          6,
+          8
+        ],
+        "bal1_r6-7-2": [
+          5,
+          1
+        ],
+        "bal1_r6-6-1": [
+          5,
+          3
+        ],
+        "bal1_r6-4-3": [
+          5,
+          0
+        ],
+        "bal1_r7-0-7": [
+          5,
+          0
+        ],
+        "bal1_r7-5-6": [
+          5,
+          0
+        ],
+        "bal1_r7-2-4": [
+          5,
+          1
+        ],
+        "bal1_r7-1-3": [
+          5,
+          2
+        ],
+        "bal1_r8-6-0": [
+          2,
+          5
+        ],
+        "bal1_r8-4-7": [
+          3,
+          5
+        ],
+        "bal1_r8-3-5": [
+          3,
+          5
+        ],
+        "bal1_r8-1-2": [
+          5,
+          2
+        ],
+        "bal1_r9-0-4": [
+          5,
+          1
+        ],
+        "bal1_r9-6-3": [
+          3,
+          5
+        ],
+        "bal1_r9-7-1": [
+          5,
+          1
+        ],
+        "bal1_r9-5-2": [
+          5,
+          2
+        ],
+        "bal1_r10-3-0": [
+          4,
+          6
+        ],
+        "bal1_r10-1-4": [
+          5,
+          3
+        ],
+        "bal1_r10-2-6": [
+          5,
+          0
+        ],
+        "bal1_r10-5-7": [
+          3,
+          5
+        ],
+        "bal1_r11-0-1": [
+          3,
+          5
+        ],
+        "bal1_r11-3-2": [
+          0,
+          5
+        ],
+        "bal1_r11-4-5": [
+          1,
+          5
+        ],
+        "bal1_r11-6-7": [
+          0,
+          5
+        ],
+        "bal1_r12-2-0": [
+          1,
+          5
+        ],
+        "bal1_r12-5-1": [
+          5,
+          1
+        ],
+        "bal1_r12-7-3": [
+          5,
+          1
+        ],
+        "bal1_r12-6-4": [
+          1,
+          5
+        ],
+        "bal1_r13-0-5": [
+          5,
+          2
+        ],
+        "bal1_r13-2-7": [
+          3,
+          5
+        ],
+        "bal1_r13-1-6": [
+          5,
+          3
+        ],
+        "bal1_r13-3-4": [
+          2,
+          5
+        ],
+        "bal1_r14-7-0": [
+          5,
+          0
+        ],
+        "bal1_r14-6-5": [
+          0,
+          5
+        ],
+        "bal1_r14-4-2": [
+          1,
+          5
+        ],
+        "bal1_r14-3-1": [
+          2,
+          5
+        ]
+      },
+      "legacyResults": {},
+      "completionSeen": false,
+      "completedDay": null
+    },
+    "strategy": "balanced",
+    "minutes": 57,
+    "initial": [
+      30,
+      30,
+      30,
+      31,
+      31,
+      31,
+      35
+    ],
+    "final": [
+      88,
+      87,
+      87,
+      89,
+      91,
+      90,
+      89
+    ],
+    "rank": 2,
+    "earnedAP": 31435428,
+    "spentAP": 31893635,
+    "earnedCash": 3226225,
+    "spentTransfers": 0,
+    "budget": 197765,
+    "purchases": 144,
+    "rounds": [
+      {
+        "round": 1,
+        "minute": 6,
+        "rank": 2
+      },
+      {
+        "round": 2,
+        "minute": 10,
+        "rank": 2
+      },
+      {
+        "round": 3,
+        "minute": 15,
+        "rank": 1
+      },
+      {
+        "round": 4,
+        "minute": 21,
+        "rank": 1
+      },
+      {
+        "round": 5,
+        "minute": 26,
+        "rank": 1
+      },
+      {
+        "round": 6,
+        "minute": 30,
+        "rank": 1
+      },
+      {
+        "round": 7,
+        "minute": 34,
+        "rank": 1
+      },
+      {
+        "round": 8,
+        "minute": 38,
+        "rank": 1
+      },
+      {
+        "round": 9,
+        "minute": 41,
+        "rank": 1
+      },
+      {
+        "round": 10,
+        "minute": 45,
+        "rank": 1
+      },
+      {
+        "round": 11,
+        "minute": 48,
+        "rank": 1
+      },
+      {
+        "round": 12,
+        "minute": 51,
+        "rank": 1
+      },
+      {
+        "round": 13,
+        "minute": 54,
+        "rank": 1
+      },
+      {
+        "round": 14,
+        "minute": 57,
+        "rank": 2
+      }
+    ],
+    "totalMinutes": 64,
+    "maxDecisionGap": 62
+  },
+  {
+    "runSeed": "fresh-bal-1",
+    "upgradeEvents": [
+      {
+        "second": 4,
+        "ovr": 31
+      },
+      {
+        "second": 9,
+        "ovr": 31
+      },
+      {
+        "second": 9,
+        "ovr": 31
+      },
+      {
+        "second": 13,
+        "ovr": 33
+      },
+      {
+        "second": 13,
+        "ovr": 33
+      },
+      {
+        "second": 17,
+        "ovr": 33
+      },
+      {
+        "second": 21,
+        "ovr": 33
+      },
+      {
+        "second": 21,
+        "ovr": 33
+      },
+      {
+        "second": 26,
+        "ovr": 34
+      },
+      {
+        "second": 29,
+        "ovr": 34
+      },
+      {
+        "second": 29,
+        "ovr": 34
+      },
+      {
+        "second": 33,
+        "ovr": 34
+      },
+      {
+        "second": 37,
+        "ovr": 35
+      },
+      {
+        "second": 40,
+        "ovr": 35
+      },
+      {
+        "second": 40,
+        "ovr": 36
+      },
+      {
+        "second": 44,
+        "ovr": 36
+      },
+      {
+        "second": 48,
+        "ovr": 36
+      },
+      {
+        "second": 52,
+        "ovr": 35
+      },
+      {
+        "second": 55,
+        "ovr": 36
+      },
+      {
+        "second": 59,
+        "ovr": 37
+      },
+      {
+        "second": 59,
+        "ovr": 37
+      },
+      {
+        "second": 63,
+        "ovr": 37
+      },
+      {
+        "second": 66,
+        "ovr": 37
+      },
+      {
+        "second": 70,
+        "ovr": 37
+      },
+      {
+        "second": 74,
+        "ovr": 38
+      },
+      {
+        "second": 78,
+        "ovr": 38
+      },
+      {
+        "second": 81,
+        "ovr": 39
+      },
+      {
+        "second": 85,
+        "ovr": 39
+      },
+      {
+        "second": 88,
+        "ovr": 39
+      },
+      {
+        "second": 91,
+        "ovr": 38
+      },
+      {
+        "second": 95,
+        "ovr": 39
+      },
+      {
+        "second": 98,
+        "ovr": 39
+      },
+      {
+        "second": 101,
+        "ovr": 40
+      },
+      {
+        "second": 104,
+        "ovr": 40
+      },
+      {
+        "second": 108,
+        "ovr": 40
+      },
+      {
+        "second": 111,
+        "ovr": 40
+      },
+      {
+        "second": 118,
+        "ovr": 40
+      },
+      {
+        "second": 121,
+        "ovr": 40
+      },
+      {
+        "second": 124,
+        "ovr": 41
+      },
+      {
+        "second": 128,
+        "ovr": 42
+      },
+      {
+        "second": 131,
+        "ovr": 42
+      },
+      {
+        "second": 138,
+        "ovr": 42
+      },
+      {
+        "second": 141,
+        "ovr": 42
+      },
+      {
+        "second": 144,
+        "ovr": 42
+      },
+      {
+        "second": 147,
+        "ovr": 42
+      },
+      {
+        "second": 151,
+        "ovr": 43
+      },
+      {
+        "second": 157,
+        "ovr": 44
+      },
+      {
+        "second": 161,
+        "ovr": 43
+      },
+      {
+        "second": 167,
+        "ovr": 43
+      },
+      {
+        "second": 171,
+        "ovr": 43
+      },
+      {
+        "second": 177,
+        "ovr": 44
+      },
+      {
+        "second": 181,
+        "ovr": 44
+      },
+      {
+        "second": 187,
+        "ovr": 45
+      },
+      {
+        "second": 190,
+        "ovr": 45
+      },
+      {
+        "second": 197,
+        "ovr": 45
+      },
+      {
+        "second": 204,
+        "ovr": 44
+      },
+      {
+        "second": 207,
+        "ovr": 45
+      },
+      {
+        "second": 213,
+        "ovr": 46
+      },
+      {
+        "second": 218,
+        "ovr": 46
+      },
+      {
+        "second": 224,
+        "ovr": 46
+      },
+      {
+        "second": 227,
+        "ovr": 47
+      },
+      {
+        "second": 233,
+        "ovr": 46
+      },
+      {
+        "second": 239,
+        "ovr": 46
+      },
+      {
+        "second": 244,
+        "ovr": 47
+      },
+      {
+        "second": 250,
+        "ovr": 48
+      },
+      {
+        "second": 256,
+        "ovr": 48
+      },
+      {
+        "second": 262,
+        "ovr": 47
+      },
+      {
+        "second": 267,
+        "ovr": 48
+      },
+      {
+        "second": 273,
+        "ovr": 48
+      },
+      {
+        "second": 279,
+        "ovr": 48
+      },
+      {
+        "second": 285,
+        "ovr": 49
+      },
+      {
+        "second": 291,
+        "ovr": 49
+      },
+      {
+        "second": 299,
+        "ovr": 50
+      },
+      {
+        "second": 305,
+        "ovr": 49
+      },
+      {
+        "second": 305,
+        "ovr": 49
+      },
+      {
+        "second": 308,
+        "ovr": 49
+      },
+      {
+        "second": 314,
+        "ovr": 50
+      },
+      {
+        "second": 322,
+        "ovr": 51
+      },
+      {
+        "second": 328,
+        "ovr": 51
+      },
+      {
+        "second": 337,
+        "ovr": 50
+      },
+      {
+        "second": 342,
+        "ovr": 51
+      },
+      {
+        "second": 351,
+        "ovr": 51
+      },
+      {
+        "second": 360,
+        "ovr": 51
+      },
+      {
+        "second": 367,
+        "ovr": 52
+      },
+      {
+        "second": 375,
+        "ovr": 52
+      },
+      {
+        "second": 382,
+        "ovr": 53
+      },
+      {
+        "second": 390,
+        "ovr": 52
+      },
+      {
+        "second": 395,
+        "ovr": 52
+      },
+      {
+        "second": 402,
+        "ovr": 53
+      },
+      {
+        "second": 410,
+        "ovr": 52
+      },
+      {
+        "second": 417,
+        "ovr": 54
+      },
+      {
+        "second": 425,
+        "ovr": 54
+      },
+      {
+        "second": 432,
+        "ovr": 54
+      },
+      {
+        "second": 439,
+        "ovr": 54
+      },
+      {
+        "second": 447,
+        "ovr": 55
+      },
+      {
+        "second": 454,
+        "ovr": 54
+      },
+      {
+        "second": 464,
+        "ovr": 54
+      },
+      {
+        "second": 474,
+        "ovr": 56
+      },
+      {
+        "second": 482,
+        "ovr": 55
+      },
+      {
+        "second": 489,
+        "ovr": 55
+      },
+      {
+        "second": 496,
+        "ovr": 56
+      },
+      {
+        "second": 506,
+        "ovr": 55
+      },
+      {
+        "second": 514,
+        "ovr": 56
+      },
+      {
+        "second": 524,
+        "ovr": 57
+      },
+      {
+        "second": 531,
+        "ovr": 57
+      },
+      {
+        "second": 538,
+        "ovr": 57
+      },
+      {
+        "second": 546,
+        "ovr": 57
+      },
+      {
+        "second": 555,
+        "ovr": 57
+      },
+      {
+        "second": 557,
+        "ovr": 57
+      },
+      {
+        "second": 562,
+        "ovr": 58
+      },
+      {
+        "second": 570,
+        "ovr": 59
+      },
+      {
+        "second": 579,
+        "ovr": 59
+      },
+      {
+        "second": 588,
+        "ovr": 59
+      },
+      {
+        "second": 596,
+        "ovr": 59
+      },
+      {
+        "second": 605,
+        "ovr": 60
+      },
+      {
+        "second": 627,
+        "ovr": 61
+      },
+      {
+        "second": 638,
+        "ovr": 61
+      },
+      {
+        "second": 649,
+        "ovr": 62
+      },
+      {
+        "second": 660,
+        "ovr": 63
+      },
+      {
+        "second": 736,
+        "ovr": 65
+      },
+      {
+        "second": 746,
+        "ovr": 61
+      },
+      {
+        "second": 753,
+        "ovr": 63
+      },
+      {
+        "second": 762,
+        "ovr": 64
+      },
+      {
+        "second": 771,
+        "ovr": 66
+      },
+      {
+        "second": 782,
+        "ovr": 59
+      },
+      {
+        "second": 782,
+        "ovr": 58
+      },
+      {
+        "second": 787,
+        "ovr": 58
+      },
+      {
+        "second": 793,
+        "ovr": 60
+      },
+      {
+        "second": 798,
+        "ovr": 60
+      },
+      {
+        "second": 806,
+        "ovr": 60
+      },
+      {
+        "second": 806,
+        "ovr": 62
+      },
+      {
+        "second": 813,
+        "ovr": 61
+      },
+      {
+        "second": 820,
+        "ovr": 61
+      },
+      {
+        "second": 827,
+        "ovr": 63
+      },
+      {
+        "second": 835,
+        "ovr": 63
+      },
+      {
+        "second": 842,
+        "ovr": 62
+      },
+      {
+        "second": 849,
+        "ovr": 63
+      },
+      {
+        "second": 856,
+        "ovr": 64
+      },
+      {
+        "second": 865,
+        "ovr": 64
+      },
+      {
+        "second": 875,
+        "ovr": 65
+      },
+      {
+        "second": 884,
+        "ovr": 64
+      },
+      {
+        "second": 893,
+        "ovr": 64
+      },
+      {
+        "second": 901,
+        "ovr": 66
+      },
+      {
+        "second": 910,
+        "ovr": 66
+      },
+      {
+        "second": 918,
+        "ovr": 66
+      },
+      {
+        "second": 926,
+        "ovr": 66
+      },
+      {
+        "second": 935,
+        "ovr": 66
+      },
+      {
+        "second": 944,
+        "ovr": 67
+      },
+      {
+        "second": 954,
+        "ovr": 68
+      },
+      {
+        "second": 964,
+        "ovr": 67
+      },
+      {
+        "second": 974,
+        "ovr": 67
+      },
+      {
+        "second": 983,
+        "ovr": 67
+      },
+      {
+        "second": 992,
+        "ovr": 68
+      },
+      {
+        "second": 1003,
+        "ovr": 67
+      },
+      {
+        "second": 1014,
+        "ovr": 69
+      },
+      {
+        "second": 1024,
+        "ovr": 69
+      },
+      {
+        "second": 1034,
+        "ovr": 69
+      },
+      {
+        "second": 1045,
+        "ovr": 69
+      },
+      {
+        "second": 1056,
+        "ovr": 69
+      },
+      {
+        "second": 1068,
+        "ovr": 69
+      },
+      {
+        "second": 1078,
+        "ovr": 69
+      },
+      {
+        "second": 1089,
+        "ovr": 71
+      },
+      {
+        "second": 1101,
+        "ovr": 70
+      },
+      {
+        "second": 1112,
+        "ovr": 70
+      },
+      {
+        "second": 1123,
+        "ovr": 71
+      },
+      {
+        "second": 1134,
+        "ovr": 71
+      },
+      {
+        "second": 1146,
+        "ovr": 71
+      },
+      {
+        "second": 1157,
+        "ovr": 71
+      },
+      {
+        "second": 1169,
+        "ovr": 72
+      },
+      {
+        "second": 1183,
+        "ovr": 72
+      },
+      {
+        "second": 1195,
+        "ovr": 73
+      },
+      {
+        "second": 1208,
+        "ovr": 72
+      },
+      {
+        "second": 1221,
+        "ovr": 72
+      },
+      {
+        "second": 1234,
+        "ovr": 73
+      },
+      {
+        "second": 1247,
+        "ovr": 73
+      },
+      {
+        "second": 1263,
+        "ovr": 74
+      },
+      {
+        "second": 1277,
+        "ovr": 74
+      },
+      {
+        "second": 1286,
+        "ovr": 74
+      },
+      {
+        "second": 1301,
+        "ovr": 76
+      },
+      {
+        "second": 1320,
+        "ovr": 76
+      },
+      {
+        "second": 1336,
+        "ovr": 76
+      },
+      {
+        "second": 1353,
+        "ovr": 76
+      },
+      {
+        "second": 1398,
+        "ovr": 78
+      },
+      {
+        "second": 1416,
+        "ovr": 78
+      },
+      {
+        "second": 1436,
+        "ovr": 77
+      },
+      {
+        "second": 1454,
+        "ovr": 77
+      },
+      {
+        "second": 1508,
+        "ovr": 79
+      },
+      {
+        "second": 1548,
+        "ovr": 74
+      },
+      {
+        "second": 1556,
+        "ovr": 76
+      },
+      {
+        "second": 1574,
+        "ovr": 77
+      },
+      {
+        "second": 1594,
+        "ovr": 79
+      },
+      {
+        "second": 1605,
+        "ovr": 73
+      },
+      {
+        "second": 1621,
+        "ovr": 75
+      },
+      {
+        "second": 1635,
+        "ovr": 76
+      },
+      {
+        "second": 1652,
+        "ovr": 78
+      },
+      {
+        "second": 1707,
+        "ovr": 79
+      },
+      {
+        "second": 1727,
+        "ovr": 80
+      },
+      {
+        "second": 1742,
+        "ovr": 73
+      },
+      {
+        "second": 1752,
+        "ovr": 75
+      },
+      {
+        "second": 1767,
+        "ovr": 76
+      },
+      {
+        "second": 1787,
+        "ovr": 78
+      },
+      {
+        "second": 1804,
+        "ovr": 79
+      },
+      {
+        "second": 1824,
+        "ovr": 79
+      },
+      {
+        "second": 1846,
+        "ovr": 80
+      },
+      {
+        "second": 1869,
+        "ovr": 80
+      },
+      {
+        "second": 1885,
+        "ovr": 81
+      },
+      {
+        "second": 1906,
+        "ovr": 81
+      },
+      {
+        "second": 1925,
+        "ovr": 81
+      },
+      {
+        "second": 1947,
+        "ovr": 81
+      },
+      {
+        "second": 1970,
+        "ovr": 82
+      },
+      {
+        "second": 1992,
+        "ovr": 81
+      },
+      {
+        "second": 2012,
+        "ovr": 82
+      },
+      {
+        "second": 2035,
+        "ovr": 82
+      },
+      {
+        "second": 2053,
+        "ovr": 82
+      },
+      {
+        "second": 2072,
+        "ovr": 82
+      },
+      {
+        "second": 2095,
+        "ovr": 83
+      },
+      {
+        "second": 2118,
+        "ovr": 83
+      },
+      {
+        "second": 2143,
+        "ovr": 83
+      },
+      {
+        "second": 2168,
+        "ovr": 84
+      },
+      {
+        "second": 2192,
+        "ovr": 84
+      },
+      {
+        "second": 2214,
+        "ovr": 84
+      },
+      {
+        "second": 2235,
+        "ovr": 84
+      },
+      {
+        "second": 2258,
+        "ovr": 85
+      },
+      {
+        "second": 2287,
+        "ovr": 84
+      },
+      {
+        "second": 2314,
+        "ovr": 85
+      },
+      {
+        "second": 2344,
+        "ovr": 85
+      },
+      {
+        "second": 2373,
+        "ovr": 85
+      },
+      {
+        "second": 2403,
+        "ovr": 85
+      },
+      {
+        "second": 2431,
+        "ovr": 86
+      },
+      {
+        "second": 2453,
+        "ovr": 86
+      },
+      {
+        "second": 2481,
+        "ovr": 86
+      },
+      {
+        "second": 2512,
+        "ovr": 87
+      },
+      {
+        "second": 2572,
+        "ovr": 87
+      },
+      {
+        "second": 2589,
+        "ovr": 86
+      },
+      {
+        "second": 2621,
+        "ovr": 87
+      },
+      {
+        "second": 2649,
+        "ovr": 88
+      },
+      {
+        "second": 2681,
+        "ovr": 88
+      },
+      {
+        "second": 2714,
+        "ovr": 88
+      },
+      {
+        "second": 2740,
+        "ovr": 88
+      },
+      {
+        "second": 2764,
+        "ovr": 89
+      },
+      {
+        "second": 2867,
+        "ovr": 89
+      },
+      {
+        "second": 2910,
+        "ovr": 90
+      }
+    ],
+    "maxUpgradeGap": 103,
+    "transferEvents": [],
+    "finalState": {
+      "version": 5,
+      "economyVersion": 3,
+      "budgetScale": 10,
+      "stage": "bal",
+      "balVersion": 1,
+      "balBlockVersion": 4,
+      "prologBlockVersion": 2,
+      "balStart": 0,
+      "balStartDay": 1,
+      "balReadyDay": {},
+      "openDepartments": [
+        2,
+        4
+      ],
+      "scouting": {
+        "tutorialSeen": false,
+        "round": 90,
+        "startedDay": 104,
+        "catalog": [
+          {
+            "id": "scout-90-0",
+            "player": {
+              "id": "player-6",
+              "name": "Türkan",
+              "surname": "Bozkurt",
+              "role": "libero",
+              "gender": "female",
+              "number": 7,
+              "art": "team-assets/woman-11.svg",
+              "spike": 50,
+              "block": 49,
+              "serve": 50,
+              "receive": 100,
+              "set": 100,
+              "height": 162,
+              "stamina": 72,
+              "mental": 72,
+              "matchSkills": [
+                "court-read",
+                "cover",
+                "pancake"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 38,
+              "training": {
+                "receive": 50,
+                "set": 50,
+                "mental": 22,
+                "stamina": 22
+              },
+              "baseStats": {
+                "spike": 50,
+                "block": 49,
+                "serve": 50,
+                "receive": 50,
+                "set": 50,
+                "stamina": 50,
+                "mental": 50
+              },
+              "skills": [
+                {
+                  "id": "platform",
+                  "unlocked": false
+                },
+                {
+                  "id": "calm",
+                  "unlocked": false
+                },
+                {
+                  "id": "cover",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 37500,
+            "hired": false
+          },
+          {
+            "id": "scout-90-1",
+            "player": {
+              "id": "player-2",
+              "name": "Mina",
+              "surname": "Güler",
+              "role": "outside",
+              "gender": "female",
+              "number": 3,
+              "art": "team-assets/woman-2.svg",
+              "spike": 100,
+              "block": 32,
+              "serve": 32,
+              "receive": 100,
+              "set": 30,
+              "height": 177,
+              "stamina": 85,
+              "mental": 83,
+              "matchSkills": [
+                "cross",
+                "power-hit",
+                "jump-float-legendary"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 48,
+              "training": {
+                "spike": 64,
+                "receive": 66,
+                "stamina": 52,
+                "mental": 52
+              },
+              "baseStats": {
+                "spike": 36,
+                "block": 32,
+                "serve": 32,
+                "receive": 34,
+                "set": 30,
+                "stamina": 33,
+                "mental": 31
+              },
+              "skills": [
+                {
+                  "id": "cross",
+                  "unlocked": false
+                },
+                {
+                  "id": "breath",
+                  "unlocked": false
+                },
+                {
+                  "id": "wipe",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 25900,
+            "hired": false
+          },
+          {
+            "id": "scout-90-2",
+            "player": {
+              "id": "player-5",
+              "name": "Nurcan",
+              "surname": "Zeybek",
+              "role": "middle",
+              "gender": "female",
+              "number": 6,
+              "art": "team-assets/woman-13.svg",
+              "spike": 100,
+              "block": 100,
+              "serve": 50,
+              "receive": 50,
+              "set": 50,
+              "height": 186,
+              "stamina": 100,
+              "mental": 100,
+              "matchSkills": [
+                "commit-block",
+                "triple-block",
+                "tempo-minus"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 48,
+              "training": {
+                "block": 50,
+                "spike": 50,
+                "stamina": 50,
+                "mental": 50
+              },
+              "baseStats": {
+                "spike": 50,
+                "block": 50,
+                "serve": 50,
+                "receive": 50,
+                "set": 50,
+                "stamina": 50,
+                "mental": 50
+              },
+              "skills": [
+                {
+                  "id": "read",
+                  "unlocked": false
+                },
+                {
+                  "id": "breath",
+                  "unlocked": false
+                },
+                {
+                  "id": "roof",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 35400,
+            "hired": false
+          },
+          {
+            "id": "scout-90-3",
+            "player": {
+              "id": "player-4",
+              "name": "Suna",
+              "surname": "Sarı",
+              "role": "middle",
+              "gender": "female",
+              "number": 5,
+              "art": "team-assets/woman-33.svg",
+              "spike": 100,
+              "block": 100,
+              "serve": 28,
+              "receive": 27,
+              "set": 30,
+              "height": 191,
+              "stamina": 81,
+              "mental": 81,
+              "matchSkills": [
+                "commit-block",
+                "triple-block",
+                "tempo-minus"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 48,
+              "training": {
+                "block": 67,
+                "spike": 71,
+                "stamina": 53,
+                "mental": 52
+              },
+              "baseStats": {
+                "spike": 29,
+                "block": 33,
+                "serve": 28,
+                "receive": 27,
+                "set": 30,
+                "stamina": 28,
+                "mental": 29
+              },
+              "skills": [
+                {
+                  "id": "read",
+                  "unlocked": false
+                },
+                {
+                  "id": "calm",
+                  "unlocked": false
+                },
+                {
+                  "id": "roof",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 27700,
+            "hired": false
+          },
+          {
+            "id": "scout-90-4",
+            "player": {
+              "id": "player-0",
+              "name": "Songül",
+              "surname": "Sezer",
+              "role": "setter",
+              "gender": "female",
+              "number": 1,
+              "art": "team-assets/woman-18.svg",
+              "spike": 46,
+              "block": 44,
+              "serve": 100,
+              "receive": 46,
+              "set": 100,
+              "height": 187,
+              "stamina": 99,
+              "mental": 100,
+              "matchSkills": [
+                "tempo-third",
+                "float",
+                "jump-float-legendary"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 48,
+              "training": {
+                "set": 50,
+                "serve": 53,
+                "mental": 51,
+                "stamina": 51
+              },
+              "baseStats": {
+                "spike": 46,
+                "block": 44,
+                "serve": 47,
+                "receive": 46,
+                "set": 50,
+                "stamina": 48,
+                "mental": 49
+              },
+              "skills": [
+                {
+                  "id": "float",
+                  "unlocked": false
+                },
+                {
+                  "id": "breath",
+                  "unlocked": false
+                },
+                {
+                  "id": "deceive",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 31400,
+            "hired": false
+          },
+          {
+            "id": "scout-90-5",
+            "player": {
+              "id": "player-11",
+              "name": "Miray",
+              "surname": "Güngör",
+              "role": "libero",
+              "gender": "female",
+              "number": 12,
+              "art": "team-assets/woman-1.svg",
+              "spike": 50,
+              "block": 50,
+              "serve": 50,
+              "receive": 100,
+              "set": 100,
+              "height": 164,
+              "stamina": 72,
+              "mental": 72,
+              "matchSkills": [
+                "court-read",
+                "cover",
+                "pancake"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 28,
+              "training": {
+                "receive": 50,
+                "set": 50,
+                "mental": 22,
+                "stamina": 22
+              },
+              "baseStats": {
+                "spike": 50,
+                "block": 50,
+                "serve": 50,
+                "receive": 50,
+                "set": 50,
+                "stamina": 50,
+                "mental": 50
+              },
+              "skills": [
+                {
+                  "id": "platform",
+                  "unlocked": false
+                },
+                {
+                  "id": "calm",
+                  "unlocked": false
+                },
+                {
+                  "id": "dive",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 37500,
+            "hired": false
+          },
+          {
+            "id": "scout-90-6",
+            "player": {
+              "id": "player-8",
+              "name": "Alev",
+              "surname": "Parlak",
+              "role": "outside",
+              "gender": "female",
+              "number": 9,
+              "art": "team-assets/woman-24.svg",
+              "spike": 100,
+              "block": 50,
+              "serve": 50,
+              "receive": 100,
+              "set": 50,
+              "height": 174,
+              "stamina": 100,
+              "mental": 100,
+              "matchSkills": [
+                "cross",
+                "wipe",
+                "ghost-tip"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 28,
+              "training": {
+                "spike": 50,
+                "receive": 50,
+                "stamina": 50,
+                "mental": 50
+              },
+              "baseStats": {
+                "spike": 50,
+                "block": 50,
+                "serve": 50,
+                "receive": 50,
+                "set": 50,
+                "stamina": 50,
+                "mental": 50
+              },
+              "skills": [
+                {
+                  "id": "read",
+                  "unlocked": false
+                },
+                {
+                  "id": "breath",
+                  "unlocked": false
+                },
+                {
+                  "id": "wipe",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 33400,
+            "hired": false
+          },
+          {
+            "id": "scout-90-7",
+            "player": {
+              "id": "player-7",
+              "name": "Sıla",
+              "surname": "Doğan",
+              "role": "setter",
+              "gender": "female",
+              "number": 8,
+              "art": "team-assets/woman-15.svg",
+              "spike": 31,
+              "block": 30,
+              "serve": 100,
+              "receive": 32,
+              "set": 100,
+              "height": 182,
+              "stamina": 86,
+              "mental": 87,
+              "matchSkills": [
+                "tempo-third",
+                "back",
+                "sync-attack"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 28,
+              "training": {
+                "set": 65,
+                "serve": 67,
+                "mental": 54,
+                "stamina": 53
+              },
+              "baseStats": {
+                "spike": 31,
+                "block": 30,
+                "serve": 33,
+                "receive": 32,
+                "set": 35,
+                "stamina": 33,
+                "mental": 33
+              },
+              "skills": [
+                {
+                  "id": "quick",
+                  "unlocked": false
+                },
+                {
+                  "id": "breath",
+                  "unlocked": false
+                },
+                {
+                  "id": "back",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 25000,
+            "hired": false
+          }
+        ],
+        "recruits": [],
+        "specialMisses": 4
+      },
+      "incomeProgress": 0,
+      "attendanceRewards": [],
+      "camp": {
+        "version": 3,
+        "announcedDay": 7,
+        "opensDay": 7,
+        "lastDay": 104,
+        "boosts": {
+          "player-5": 60,
+          "player-0": 60,
+          "player-1": 60,
+          "player-2": 60,
+          "player-3": 60,
+          "player-4": 60,
+          "player-6": 30
+        },
+        "entries": [
+          {
+            "playerId": "player-5",
+            "startDay": 12,
+            "endDay": 15,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-0",
+            "startDay": 13,
+            "endDay": 16,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-1",
+            "startDay": 13,
+            "endDay": 16,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-2",
+            "startDay": 13,
+            "endDay": 16,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-3",
+            "startDay": 14,
+            "endDay": 17,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-4",
+            "startDay": 14,
+            "endDay": 17,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-6",
+            "startDay": 24,
+            "endDay": 27,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-4",
+            "startDay": 36,
+            "endDay": 39,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-5",
+            "startDay": 39,
+            "endDay": 42,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-0",
+            "startDay": 40,
+            "endDay": 43,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-1",
+            "startDay": 42,
+            "endDay": 45,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-2",
+            "startDay": 48,
+            "endDay": 51,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-3",
+            "startDay": 48,
+            "endDay": 51,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-0",
+            "startDay": 87,
+            "endDay": 90,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-1",
+            "startDay": 99,
+            "endDay": 102,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-2",
+            "startDay": 100,
+            "endDay": 103,
+            "targetBoost": 60,
+            "status": "complete"
+          }
+        ]
+      },
+      "budget": 180758,
+      "ap": 267832.125,
+      "matchRewards": [
+        "bal1_r1-0-6",
+        "bal1_r2-4-0",
+        "bal1_r3-0-3",
+        "bal1_r4-1-0",
+        "bal1_r5-0-2",
+        "bal1_r6-5-0",
+        "bal1_r7-0-7",
+        "bal1_r8-6-0",
+        "bal1_r9-0-4",
+        "bal1_r10-3-0",
+        "bal1_r12-2-0",
+        "bal1_r13-0-5"
+      ],
+      "instructions": 51800,
+      "floors": [
+        [
+          "warmup",
+          "warmup",
+          "warmup",
+          "warmup",
+          "warmup",
+          "crit_smash",
+          "crit_smash",
+          "crit_smash",
+          "crit_smash",
+          "crit_smash",
+          "echo",
+          "echo",
+          "echo",
+          "echo",
+          "echo",
+          "bal_position",
+          "bal_video",
+          "bal_position",
+          "bal_recovery",
+          "bal_video",
+          "bal_position",
+          "bal_recovery",
+          "bal_video",
+          "bal_position",
+          "bal_recovery",
+          "bal_video",
+          "bal_position",
+          "bal_recovery",
+          "bal_video",
+          "bal_position",
+          "bal_recovery",
+          "bal_video",
+          "bal_position",
+          "bal_video",
+          "bal_recovery",
+          "bal_position",
+          "bal_video",
+          "bal_recovery",
+          "bal_position",
+          "bal_video",
+          "bal_recovery",
+          "bal_position",
+          "bal_recovery",
+          "bal_video"
+        ],
+        [
+          "assistant",
+          "assistant",
+          "assistant",
+          "assistant",
+          "assistant",
+          "offline_time",
+          "offline_time",
+          "offline_time",
+          "offline_time",
+          "offline_time",
+          "steady",
+          "steady",
+          "steady",
+          "steady",
+          "steady",
+          "bal_coach",
+          "bal_coach",
+          "bal_plan",
+          "bal_coach",
+          "bal_shift",
+          "bal_plan",
+          "bal_coach",
+          "bal_shift",
+          "bal_plan",
+          "bal_coach",
+          "bal_shift",
+          "bal_plan",
+          "bal_coach",
+          "bal_shift",
+          "bal_plan",
+          "bal_coach",
+          "bal_shift",
+          "bal_coach",
+          "bal_plan",
+          "bal_coach",
+          "bal_plan",
+          "bal_shift",
+          "bal_plan",
+          "bal_coach",
+          "bal_shift",
+          "bal_plan",
+          "bal_shift",
+          "bal_shift",
+          "bal_plan"
+        ],
+        [
+          "meal",
+          "meal",
+          "meal",
+          "meal",
+          "meal",
+          "energy_drink",
+          "energy_drink",
+          "energy_drink",
+          "energy_drink",
+          "energy_drink",
+          "sugar_boost",
+          "sugar_boost",
+          "sugar_boost",
+          "sugar_boost",
+          "sugar_boost",
+          "bal_sponsor",
+          "bal_shop",
+          "bal_sponsor",
+          "bal_fans",
+          "bal_shop",
+          "bal_sponsor",
+          "bal_fans",
+          "bal_shop",
+          "bal_sponsor",
+          "bal_fans",
+          "bal_shop",
+          "bal_sponsor",
+          "bal_fans",
+          "bal_shop",
+          "bal_sponsor",
+          "bal_fans",
+          "bal_sponsor",
+          "bal_shop",
+          "bal_fans",
+          "bal_sponsor",
+          "bal_shop",
+          "bal_fans",
+          "bal_sponsor",
+          "bal_shop",
+          "bal_fans",
+          "bal_sponsor",
+          "bal_shop",
+          "bal_fans",
+          "bal_shop"
+        ],
+        [
+          "collect",
+          "collect",
+          "collect",
+          "collect",
+          "collect",
+          "coordinate",
+          "coordinate",
+          "coordinate",
+          "coordinate",
+          "coordinate",
+          "rhythm",
+          "rhythm",
+          "rhythm",
+          "rhythm",
+          "rhythm",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal"
+        ],
+        [
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts"
+        ]
+      ],
+      "lastSeen": 1792339601548,
+      "autoCarry": 0,
+      "steadyProgress": 0,
+      "trainingProgress": 0,
+      "dayProgress": 300,
+      "pendingGains": []
+    },
+    "finalRoster": [
+      {
+        "id": "player-0",
+        "name": "Neşe",
+        "surname": "Altay",
+        "role": "setter",
+        "gender": "female",
+        "number": 1,
+        "art": "team-assets/woman-35.svg",
+        "spike": 13,
+        "block": 14,
+        "serve": 109,
+        "receive": 15,
+        "set": 159,
+        "height": 187,
+        "stamina": 37,
+        "mental": 40,
+        "matchSkills": [
+          "tempo-third",
+          "float",
+          "jump-float-legendary"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 48,
+        "training": {},
+        "baseStats": {
+          "spike": 13,
+          "block": 14,
+          "serve": 15,
+          "receive": 15,
+          "set": 18,
+          "stamina": 14,
+          "mental": 16
+        },
+        "skills": [
+          {
+            "id": "quick",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "back",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-1",
+        "name": "Dilara",
+        "surname": "Coşar",
+        "role": "outside",
+        "gender": "female",
+        "number": 2,
+        "art": "team-assets/woman-29.svg",
+        "spike": 159,
+        "block": 12,
+        "serve": 12,
+        "receive": 112,
+        "set": 12,
+        "height": 185,
+        "stamina": 41,
+        "mental": 40,
+        "matchSkills": [
+          "commit-block",
+          "line",
+          "jump-legendary"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 48,
+        "training": {},
+        "baseStats": {
+          "spike": 18,
+          "block": 12,
+          "serve": 12,
+          "receive": 18,
+          "set": 12,
+          "stamina": 17,
+          "mental": 17
+        },
+        "skills": [
+          {
+            "id": "read",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "line",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-2",
+        "name": "Hüsna",
+        "surname": "Esen",
+        "role": "outside",
+        "gender": "female",
+        "number": 3,
+        "art": "team-assets/woman-14.svg",
+        "spike": 158,
+        "block": 12,
+        "serve": 12,
+        "receive": 113,
+        "set": 15,
+        "height": 176,
+        "stamina": 41,
+        "mental": 40,
+        "matchSkills": [
+          "cross",
+          "wipe",
+          "ghost-tip"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 48,
+        "training": {},
+        "baseStats": {
+          "spike": 17,
+          "block": 12,
+          "serve": 12,
+          "receive": 19,
+          "set": 15,
+          "stamina": 17,
+          "mental": 17
+        },
+        "skills": [
+          {
+            "id": "float",
+            "unlocked": false
+          },
+          {
+            "id": "breath",
+            "unlocked": false
+          },
+          {
+            "id": "wipe",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-3",
+        "name": "Tuğba",
+        "surname": "Tuncer",
+        "role": "opposite",
+        "gender": "female",
+        "number": 4,
+        "art": "team-assets/woman-20.svg",
+        "spike": 150,
+        "block": 37,
+        "serve": 106,
+        "receive": 14,
+        "set": 13,
+        "height": 190,
+        "stamina": 36,
+        "mental": 16,
+        "matchSkills": [
+          "cross",
+          "close",
+          "tempo-minus"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 45,
+        "training": {},
+        "baseStats": {
+          "spike": 18,
+          "block": 15,
+          "serve": 18,
+          "receive": 14,
+          "set": 13,
+          "stamina": 14,
+          "mental": 16
+        },
+        "skills": [
+          {
+            "id": "float",
+            "unlocked": false
+          },
+          {
+            "id": "breath",
+            "unlocked": false
+          },
+          {
+            "id": "close",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-4",
+        "name": "Kübra",
+        "surname": "Ünal",
+        "role": "middle",
+        "gender": "female",
+        "number": 5,
+        "art": "team-assets/woman-7.svg",
+        "spike": 99,
+        "block": 148,
+        "serve": 14,
+        "receive": 16,
+        "set": 15,
+        "height": 186,
+        "stamina": 36,
+        "mental": 38,
+        "matchSkills": [
+          "commit-block",
+          "slide-attack",
+          "absolute-read"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 44,
+        "training": {},
+        "baseStats": {
+          "spike": 13,
+          "block": 19,
+          "serve": 14,
+          "receive": 16,
+          "set": 15,
+          "stamina": 14,
+          "mental": 17
+        },
+        "skills": [
+          {
+            "id": "float",
+            "unlocked": false
+          },
+          {
+            "id": "breath",
+            "unlocked": false
+          },
+          {
+            "id": "close",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-5",
+        "name": "Piraye",
+        "surname": "Canpolat",
+        "role": "middle",
+        "gender": "female",
+        "number": 6,
+        "art": "team-assets/woman-17.svg",
+        "spike": 102,
+        "block": 148,
+        "serve": 15,
+        "receive": 15,
+        "set": 14,
+        "height": 194,
+        "stamina": 37,
+        "mental": 35,
+        "matchSkills": [
+          "commit-block",
+          "slide-attack",
+          "absolute-read"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 44,
+        "training": {},
+        "baseStats": {
+          "spike": 16,
+          "block": 19,
+          "serve": 15,
+          "receive": 15,
+          "set": 14,
+          "stamina": 15,
+          "mental": 14
+        },
+        "skills": [
+          {
+            "id": "read",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "roof",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-6",
+        "name": "Buse",
+        "surname": "Batmaz",
+        "role": "libero",
+        "gender": "female",
+        "number": 7,
+        "art": "team-assets/woman-6.svg",
+        "spike": 14,
+        "block": 16,
+        "serve": 14,
+        "receive": 121,
+        "set": 81,
+        "height": 169,
+        "stamina": 32,
+        "mental": 31,
+        "matchSkills": [
+          "court-read",
+          "cover",
+          "pancake"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 35,
+        "training": {},
+        "baseStats": {
+          "spike": 14,
+          "block": 16,
+          "serve": 14,
+          "receive": 19,
+          "set": 13,
+          "stamina": 15,
+          "mental": 14
+        },
+        "skills": [
+          {
+            "id": "platform",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "dive",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-7",
+        "name": "Beren",
+        "surname": "Gündoğan",
+        "role": "setter",
+        "gender": "female",
+        "number": 8,
+        "art": "team-assets/woman-25.svg",
+        "spike": 14,
+        "block": 12,
+        "serve": 16,
+        "receive": 15,
+        "set": 18,
+        "height": 184,
+        "stamina": 16,
+        "mental": 17,
+        "matchSkills": [
+          "tempo-third",
+          "back",
+          "sync-attack"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 1,
+        "training": {},
+        "baseStats": {
+          "spike": 14,
+          "block": 12,
+          "serve": 16,
+          "receive": 15,
+          "set": 18,
+          "stamina": 16,
+          "mental": 17
+        },
+        "skills": [
+          {
+            "id": "quick",
+            "unlocked": false
+          },
+          {
+            "id": "breath",
+            "unlocked": false
+          },
+          {
+            "id": "cover",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-8",
+        "name": "Güler",
+        "surname": "Aybar",
+        "role": "outside",
+        "gender": "female",
+        "number": 9,
+        "art": "team-assets/woman-32.svg",
+        "spike": 19,
+        "block": 13,
+        "serve": 13,
+        "receive": 18,
+        "set": 16,
+        "height": 181,
+        "stamina": 17,
+        "mental": 14,
+        "matchSkills": [
+          "cross",
+          "power-hit",
+          "jump-float-legendary"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 1,
+        "training": {},
+        "baseStats": {
+          "spike": 19,
+          "block": 13,
+          "serve": 13,
+          "receive": 18,
+          "set": 16,
+          "stamina": 17,
+          "mental": 14
+        },
+        "skills": [
+          {
+            "id": "platform",
+            "unlocked": false
+          },
+          {
+            "id": "breath",
+            "unlocked": false
+          },
+          {
+            "id": "jump",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-9",
+        "name": "Aynur",
+        "surname": "Torun",
+        "role": "opposite",
+        "gender": "female",
+        "number": 10,
+        "art": "team-assets/woman-0.svg",
+        "spike": 17,
+        "block": 12,
+        "serve": 18,
+        "receive": 14,
+        "set": 12,
+        "height": 185,
+        "stamina": 17,
+        "mental": 16,
+        "matchSkills": [
+          "commit-block",
+          "wipe",
+          "jump-legendary"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 1,
+        "training": {},
+        "baseStats": {
+          "spike": 17,
+          "block": 12,
+          "serve": 18,
+          "receive": 14,
+          "set": 12,
+          "stamina": 17,
+          "mental": 16
+        },
+        "skills": [
+          {
+            "id": "cross",
+            "unlocked": false
+          },
+          {
+            "id": "breath",
+            "unlocked": false
+          },
+          {
+            "id": "wipe",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-10",
+        "name": "Feyza",
+        "surname": "Alkan",
+        "role": "middle",
+        "gender": "female",
+        "number": 11,
+        "art": "team-assets/woman-27.svg",
+        "spike": 16,
+        "block": 17,
+        "serve": 12,
+        "receive": 15,
+        "set": 13,
+        "height": 189,
+        "stamina": 16,
+        "mental": 16,
+        "matchSkills": [
+          "commit-block",
+          "slide-attack",
+          "absolute-read"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 1,
+        "training": {},
+        "baseStats": {
+          "spike": 16,
+          "block": 17,
+          "serve": 12,
+          "receive": 15,
+          "set": 13,
+          "stamina": 16,
+          "mental": 16
+        },
+        "skills": [
+          {
+            "id": "float",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "close",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-11",
+        "name": "Başak",
+        "surname": "Kaleli",
+        "role": "libero",
+        "gender": "female",
+        "number": 12,
+        "art": "team-assets/woman-26.svg",
+        "spike": 13,
+        "block": 16,
+        "serve": 15,
+        "receive": 18,
+        "set": 15,
+        "height": 176,
+        "stamina": 16,
+        "mental": 15,
+        "matchSkills": [
+          "court-read",
+          "cover",
+          "pancake"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 1,
+        "training": {},
+        "baseStats": {
+          "spike": 13,
+          "block": 16,
+          "serve": 15,
+          "receive": 18,
+          "set": 15,
+          "stamina": 16,
+          "mental": 15
+        },
+        "skills": [
+          {
+            "id": "platform",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "cover",
+            "unlocked": false
+          }
+        ]
+      }
+    ],
+    "finalLineup": {
+      "p": "player-0",
+      "s1": "player-1",
+      "s2": "player-2",
+      "pc": "player-3",
+      "o1": "player-4",
+      "o2": "player-5",
+      "l": "player-6"
+    },
+    "league": {
+      "version": 3,
+      "mode": "bal",
+      "run": 1,
+      "startDay": 1,
+      "scheduleVersion": 2,
+      "results": {
+        "bal1_r1-0-6": [
+          5,
+          2
+        ],
+        "bal1_r1-7-4": [
+          5,
+          0
+        ],
+        "bal1_r1-5-3": [
+          5,
+          3
+        ],
+        "bal1_r1-2-1": [
+          5,
+          2
+        ],
+        "bal1_r2-4-0": [
+          4,
+          6
+        ],
+        "bal1_r2-3-6": [
+          5,
+          1
+        ],
+        "bal1_r2-1-7": [
+          2,
+          5
+        ],
+        "bal1_r2-2-5": [
+          2,
+          5
+        ],
+        "bal1_r3-0-3": [
+          5,
+          3
+        ],
+        "bal1_r3-4-1": [
+          2,
+          5
+        ],
+        "bal1_r3-6-2": [
+          1,
+          5
+        ],
+        "bal1_r3-7-5": [
+          7,
+          9
+        ],
+        "bal1_r4-1-0": [
+          1,
+          5
+        ],
+        "bal1_r4-2-3": [
+          5,
+          0
+        ],
+        "bal1_r4-5-4": [
+          5,
+          0
+        ],
+        "bal1_r4-7-6": [
+          5,
+          1
+        ],
+        "bal1_r5-0-2": [
+          5,
+          3
+        ],
+        "bal1_r5-1-5": [
+          4,
+          6
+        ],
+        "bal1_r5-3-7": [
+          1,
+          5
+        ],
+        "bal1_r5-4-6": [
+          5,
+          3
+        ],
+        "bal1_r6-5-0": [
+          2,
+          5
+        ],
+        "bal1_r6-7-2": [
+          5,
+          1
+        ],
+        "bal1_r6-6-1": [
+          5,
+          3
+        ],
+        "bal1_r6-4-3": [
+          5,
+          0
+        ],
+        "bal1_r7-0-7": [
+          8,
+          6
+        ],
+        "bal1_r7-5-6": [
+          5,
+          0
+        ],
+        "bal1_r7-2-4": [
+          5,
+          1
+        ],
+        "bal1_r7-1-3": [
+          5,
+          2
+        ],
+        "bal1_r8-6-0": [
+          2,
+          5
+        ],
+        "bal1_r8-4-7": [
+          3,
+          5
+        ],
+        "bal1_r8-3-5": [
+          3,
+          5
+        ],
+        "bal1_r8-1-2": [
+          5,
+          2
+        ],
+        "bal1_r9-0-4": [
+          5,
+          3
+        ],
+        "bal1_r9-6-3": [
+          3,
+          5
+        ],
+        "bal1_r9-7-1": [
+          5,
+          1
+        ],
+        "bal1_r9-5-2": [
+          5,
+          2
+        ],
+        "bal1_r10-3-0": [
+          3,
+          5
+        ],
+        "bal1_r10-1-4": [
+          5,
+          3
+        ],
+        "bal1_r10-2-6": [
+          5,
+          0
+        ],
+        "bal1_r10-5-7": [
+          3,
+          5
+        ],
+        "bal1_r11-0-1": [
+          2,
+          5
+        ],
+        "bal1_r11-3-2": [
+          0,
+          5
+        ],
+        "bal1_r11-4-5": [
+          1,
+          5
+        ],
+        "bal1_r11-6-7": [
+          0,
+          5
+        ],
+        "bal1_r12-2-0": [
+          2,
+          5
+        ],
+        "bal1_r12-5-1": [
+          5,
+          1
+        ],
+        "bal1_r12-7-3": [
+          5,
+          1
+        ],
+        "bal1_r12-6-4": [
+          1,
+          5
+        ],
+        "bal1_r13-0-5": [
+          5,
+          1
+        ],
+        "bal1_r13-2-7": [
+          3,
+          5
+        ],
+        "bal1_r13-1-6": [
+          5,
+          3
+        ],
+        "bal1_r13-3-4": [
+          2,
+          5
+        ],
+        "bal1_r14-7-0": [
+          5,
+          2
+        ],
+        "bal1_r14-6-5": [
+          0,
+          5
+        ],
+        "bal1_r14-4-2": [
+          1,
+          5
+        ],
+        "bal1_r14-3-1": [
+          2,
+          5
+        ]
+      },
+      "legacyResults": {},
+      "completionSeen": false,
+      "completedDay": null
+    },
+    "strategy": "automation",
+    "minutes": 49,
+    "initial": [
+      30,
+      30,
+      30,
+      31,
+      32,
+      32,
+      36
+    ],
+    "final": [
+      88,
+      87,
+      87,
+      89,
+      89,
+      90,
+      88
+    ],
+    "rank": 2,
+    "earnedAP": 30039293,
+    "spentAP": 30772461,
+    "earnedCash": 2861378,
+    "spentTransfers": 0,
+    "budget": 180758,
+    "purchases": 140,
+    "rounds": [
+      {
+        "round": 1,
+        "minute": 5,
+        "rank": 2
+      },
+      {
+        "round": 2,
+        "minute": 9,
+        "rank": 2
+      },
+      {
+        "round": 3,
+        "minute": 13,
+        "rank": 2
+      },
+      {
+        "round": 4,
+        "minute": 18,
+        "rank": 2
+      },
+      {
+        "round": 5,
+        "minute": 21,
+        "rank": 2
+      },
+      {
+        "round": 6,
+        "minute": 25,
+        "rank": 1
+      },
+      {
+        "round": 7,
+        "minute": 28,
+        "rank": 1
+      },
+      {
+        "round": 8,
+        "minute": 31,
+        "rank": 1
+      },
+      {
+        "round": 9,
+        "minute": 34,
+        "rank": 1
+      },
+      {
+        "round": 10,
+        "minute": 37,
+        "rank": 1
+      },
+      {
+        "round": 11,
+        "minute": 40,
+        "rank": 1
+      },
+      {
+        "round": 12,
+        "minute": 43,
+        "rank": 1
+      },
+      {
+        "round": 13,
+        "minute": 46,
+        "rank": 1
+      },
+      {
+        "round": 14,
+        "minute": 49,
+        "rank": 2
+      }
+    ],
+    "totalMinutes": 56,
+    "maxDecisionGap": 54
+  },
+  {
+    "runSeed": "fresh-bal-2",
+    "upgradeEvents": [
+      {
+        "second": 4,
+        "ovr": 31
+      },
+      {
+        "second": 9,
+        "ovr": 32
+      },
+      {
+        "second": 9,
+        "ovr": 33
+      },
+      {
+        "second": 13,
+        "ovr": 32
+      },
+      {
+        "second": 13,
+        "ovr": 32
+      },
+      {
+        "second": 17,
+        "ovr": 33
+      },
+      {
+        "second": 17,
+        "ovr": 33
+      },
+      {
+        "second": 21,
+        "ovr": 33
+      },
+      {
+        "second": 26,
+        "ovr": 34
+      },
+      {
+        "second": 26,
+        "ovr": 34
+      },
+      {
+        "second": 30,
+        "ovr": 34
+      },
+      {
+        "second": 34,
+        "ovr": 35
+      },
+      {
+        "second": 34,
+        "ovr": 35
+      },
+      {
+        "second": 38,
+        "ovr": 34
+      },
+      {
+        "second": 43,
+        "ovr": 36
+      },
+      {
+        "second": 43,
+        "ovr": 35
+      },
+      {
+        "second": 47,
+        "ovr": 36
+      },
+      {
+        "second": 51,
+        "ovr": 36
+      },
+      {
+        "second": 55,
+        "ovr": 36
+      },
+      {
+        "second": 55,
+        "ovr": 37
+      },
+      {
+        "second": 60,
+        "ovr": 36
+      },
+      {
+        "second": 64,
+        "ovr": 38
+      },
+      {
+        "second": 68,
+        "ovr": 37
+      },
+      {
+        "second": 72,
+        "ovr": 38
+      },
+      {
+        "second": 72,
+        "ovr": 38
+      },
+      {
+        "second": 77,
+        "ovr": 38
+      },
+      {
+        "second": 81,
+        "ovr": 37
+      },
+      {
+        "second": 85,
+        "ovr": 39
+      },
+      {
+        "second": 89,
+        "ovr": 38
+      },
+      {
+        "second": 92,
+        "ovr": 39
+      },
+      {
+        "second": 92,
+        "ovr": 39
+      },
+      {
+        "second": 100,
+        "ovr": 40
+      },
+      {
+        "second": 104,
+        "ovr": 40
+      },
+      {
+        "second": 107,
+        "ovr": 39
+      },
+      {
+        "second": 107,
+        "ovr": 40
+      },
+      {
+        "second": 115,
+        "ovr": 40
+      },
+      {
+        "second": 119,
+        "ovr": 41
+      },
+      {
+        "second": 122,
+        "ovr": 41
+      },
+      {
+        "second": 126,
+        "ovr": 41
+      },
+      {
+        "second": 130,
+        "ovr": 42
+      },
+      {
+        "second": 133,
+        "ovr": 41
+      },
+      {
+        "second": 137,
+        "ovr": 41
+      },
+      {
+        "second": 141,
+        "ovr": 42
+      },
+      {
+        "second": 148,
+        "ovr": 42
+      },
+      {
+        "second": 152,
+        "ovr": 43
+      },
+      {
+        "second": 156,
+        "ovr": 42
+      },
+      {
+        "second": 163,
+        "ovr": 43
+      },
+      {
+        "second": 167,
+        "ovr": 43
+      },
+      {
+        "second": 171,
+        "ovr": 43
+      },
+      {
+        "second": 174,
+        "ovr": 44
+      },
+      {
+        "second": 182,
+        "ovr": 44
+      },
+      {
+        "second": 185,
+        "ovr": 44
+      },
+      {
+        "second": 189,
+        "ovr": 45
+      },
+      {
+        "second": 197,
+        "ovr": 44
+      },
+      {
+        "second": 200,
+        "ovr": 45
+      },
+      {
+        "second": 207,
+        "ovr": 44
+      },
+      {
+        "second": 211,
+        "ovr": 45
+      },
+      {
+        "second": 217,
+        "ovr": 46
+      },
+      {
+        "second": 224,
+        "ovr": 45
+      },
+      {
+        "second": 231,
+        "ovr": 46
+      },
+      {
+        "second": 234,
+        "ovr": 46
+      },
+      {
+        "second": 240,
+        "ovr": 46
+      },
+      {
+        "second": 244,
+        "ovr": 47
+      },
+      {
+        "second": 250,
+        "ovr": 46
+      },
+      {
+        "second": 257,
+        "ovr": 47
+      },
+      {
+        "second": 264,
+        "ovr": 48
+      },
+      {
+        "second": 270,
+        "ovr": 47
+      },
+      {
+        "second": 277,
+        "ovr": 48
+      },
+      {
+        "second": 283,
+        "ovr": 48
+      },
+      {
+        "second": 290,
+        "ovr": 48
+      },
+      {
+        "second": 297,
+        "ovr": 48
+      },
+      {
+        "second": 303,
+        "ovr": 49
+      },
+      {
+        "second": 310,
+        "ovr": 49
+      },
+      {
+        "second": 317,
+        "ovr": 49
+      },
+      {
+        "second": 323,
+        "ovr": 50
+      },
+      {
+        "second": 330,
+        "ovr": 50
+      },
+      {
+        "second": 340,
+        "ovr": 50
+      },
+      {
+        "second": 340,
+        "ovr": 50
+      },
+      {
+        "second": 340,
+        "ovr": 51
+      },
+      {
+        "second": 346,
+        "ovr": 50
+      },
+      {
+        "second": 356,
+        "ovr": 50
+      },
+      {
+        "second": 363,
+        "ovr": 51
+      },
+      {
+        "second": 373,
+        "ovr": 52
+      },
+      {
+        "second": 379,
+        "ovr": 52
+      },
+      {
+        "second": 389,
+        "ovr": 52
+      },
+      {
+        "second": 395,
+        "ovr": 51
+      },
+      {
+        "second": 404,
+        "ovr": 52
+      },
+      {
+        "second": 410,
+        "ovr": 52
+      },
+      {
+        "second": 418,
+        "ovr": 53
+      },
+      {
+        "second": 427,
+        "ovr": 53
+      },
+      {
+        "second": 433,
+        "ovr": 54
+      },
+      {
+        "second": 442,
+        "ovr": 53
+      },
+      {
+        "second": 450,
+        "ovr": 53
+      },
+      {
+        "second": 459,
+        "ovr": 54
+      },
+      {
+        "second": 467,
+        "ovr": 54
+      },
+      {
+        "second": 476,
+        "ovr": 54
+      },
+      {
+        "second": 485,
+        "ovr": 55
+      },
+      {
+        "second": 493,
+        "ovr": 55
+      },
+      {
+        "second": 502,
+        "ovr": 55
+      },
+      {
+        "second": 511,
+        "ovr": 55
+      },
+      {
+        "second": 519,
+        "ovr": 56
+      },
+      {
+        "second": 528,
+        "ovr": 55
+      },
+      {
+        "second": 537,
+        "ovr": 56
+      },
+      {
+        "second": 545,
+        "ovr": 57
+      },
+      {
+        "second": 554,
+        "ovr": 56
+      },
+      {
+        "second": 563,
+        "ovr": 57
+      },
+      {
+        "second": 574,
+        "ovr": 56
+      },
+      {
+        "second": 583,
+        "ovr": 57
+      },
+      {
+        "second": 591,
+        "ovr": 57
+      },
+      {
+        "second": 603,
+        "ovr": 58
+      },
+      {
+        "second": 611,
+        "ovr": 59
+      },
+      {
+        "second": 622,
+        "ovr": 58
+      },
+      {
+        "second": 629,
+        "ovr": 59
+      },
+      {
+        "second": 632,
+        "ovr": 58
+      },
+      {
+        "second": 642,
+        "ovr": 60
+      },
+      {
+        "second": 652,
+        "ovr": 60
+      },
+      {
+        "second": 661,
+        "ovr": 61
+      },
+      {
+        "second": 674,
+        "ovr": 60
+      },
+      {
+        "second": 686,
+        "ovr": 62
+      },
+      {
+        "second": 696,
+        "ovr": 61
+      },
+      {
+        "second": 709,
+        "ovr": 63
+      },
+      {
+        "second": 790,
+        "ovr": 65
+      },
+      {
+        "second": 805,
+        "ovr": 66
+      },
+      {
+        "second": 820,
+        "ovr": 67
+      },
+      {
+        "second": 847,
+        "ovr": 60
+      },
+      {
+        "second": 852,
+        "ovr": 62
+      },
+      {
+        "second": 865,
+        "ovr": 63
+      },
+      {
+        "second": 877,
+        "ovr": 65
+      },
+      {
+        "second": 892,
+        "ovr": 66
+      },
+      {
+        "second": 900,
+        "ovr": 62
+      },
+      {
+        "second": 909,
+        "ovr": 63
+      },
+      {
+        "second": 922,
+        "ovr": 63
+      },
+      {
+        "second": 947,
+        "ovr": 64
+      },
+      {
+        "second": 959,
+        "ovr": 65
+      },
+      {
+        "second": 971,
+        "ovr": 65
+      },
+      {
+        "second": 986,
+        "ovr": 65
+      },
+      {
+        "second": 1011,
+        "ovr": 67
+      },
+      {
+        "second": 1025,
+        "ovr": 67
+      },
+      {
+        "second": 1040,
+        "ovr": 67
+      },
+      {
+        "second": 1053,
+        "ovr": 68
+      },
+      {
+        "second": 1068,
+        "ovr": 68
+      },
+      {
+        "second": 1084,
+        "ovr": 69
+      },
+      {
+        "second": 1099,
+        "ovr": 68
+      },
+      {
+        "second": 1116,
+        "ovr": 69
+      },
+      {
+        "second": 1140,
+        "ovr": 69
+      },
+      {
+        "second": 1158,
+        "ovr": 70
+      },
+      {
+        "second": 1175,
+        "ovr": 70
+      },
+      {
+        "second": 1195,
+        "ovr": 71
+      },
+      {
+        "second": 1212,
+        "ovr": 70
+      },
+      {
+        "second": 1230,
+        "ovr": 71
+      },
+      {
+        "second": 1251,
+        "ovr": 72
+      },
+      {
+        "second": 1269,
+        "ovr": 72
+      },
+      {
+        "second": 1291,
+        "ovr": 72
+      },
+      {
+        "second": 1310,
+        "ovr": 72
+      },
+      {
+        "second": 1332,
+        "ovr": 73
+      },
+      {
+        "second": 1356,
+        "ovr": 74
+      },
+      {
+        "second": 1380,
+        "ovr": 74
+      },
+      {
+        "second": 1404,
+        "ovr": 73
+      },
+      {
+        "second": 1428,
+        "ovr": 73
+      },
+      {
+        "second": 1449,
+        "ovr": 75
+      },
+      {
+        "second": 1472,
+        "ovr": 75
+      },
+      {
+        "second": 1492,
+        "ovr": 75
+      },
+      {
+        "second": 1516,
+        "ovr": 75
+      },
+      {
+        "second": 1543,
+        "ovr": 77
+      },
+      {
+        "second": 1567,
+        "ovr": 77
+      },
+      {
+        "second": 1592,
+        "ovr": 77
+      },
+      {
+        "second": 1618,
+        "ovr": 77
+      },
+      {
+        "second": 1712,
+        "ovr": 78
+      },
+      {
+        "second": 1741,
+        "ovr": 79
+      },
+      {
+        "second": 1772,
+        "ovr": 78
+      },
+      {
+        "second": 1799,
+        "ovr": 80
+      },
+      {
+        "second": 1882,
+        "ovr": 80
+      },
+      {
+        "second": 1904,
+        "ovr": 79
+      },
+      {
+        "second": 1924,
+        "ovr": 75
+      },
+      {
+        "second": 1943,
+        "ovr": 77
+      },
+      {
+        "second": 1966,
+        "ovr": 78
+      },
+      {
+        "second": 1991,
+        "ovr": 78
+      },
+      {
+        "second": 2019,
+        "ovr": 80
+      },
+      {
+        "second": 2047,
+        "ovr": 80
+      },
+      {
+        "second": 2075,
+        "ovr": 80
+      },
+      {
+        "second": 2105,
+        "ovr": 81
+      },
+      {
+        "second": 2131,
+        "ovr": 80
+      },
+      {
+        "second": 2156,
+        "ovr": 81
+      },
+      {
+        "second": 2189,
+        "ovr": 81
+      },
+      {
+        "second": 2220,
+        "ovr": 82
+      },
+      {
+        "second": 2248,
+        "ovr": 82
+      },
+      {
+        "second": 2277,
+        "ovr": 82
+      },
+      {
+        "second": 2306,
+        "ovr": 82
+      },
+      {
+        "second": 2334,
+        "ovr": 83
+      },
+      {
+        "second": 2359,
+        "ovr": 83
+      },
+      {
+        "second": 2382,
+        "ovr": 82
+      },
+      {
+        "second": 2413,
+        "ovr": 84
+      },
+      {
+        "second": 2444,
+        "ovr": 84
+      },
+      {
+        "second": 2477,
+        "ovr": 84
+      },
+      {
+        "second": 2506,
+        "ovr": 84
+      },
+      {
+        "second": 2536,
+        "ovr": 83
+      },
+      {
+        "second": 2570,
+        "ovr": 84
+      },
+      {
+        "second": 2594,
+        "ovr": 84
+      },
+      {
+        "second": 2628,
+        "ovr": 85
+      },
+      {
+        "second": 2666,
+        "ovr": 86
+      },
+      {
+        "second": 2700,
+        "ovr": 86
+      },
+      {
+        "second": 2740,
+        "ovr": 85
+      },
+      {
+        "second": 2778,
+        "ovr": 86
+      },
+      {
+        "second": 2805,
+        "ovr": 85
+      },
+      {
+        "second": 2835,
+        "ovr": 86
+      },
+      {
+        "second": 2875,
+        "ovr": 87
+      },
+      {
+        "second": 2903,
+        "ovr": 87
+      },
+      {
+        "second": 2935,
+        "ovr": 87
+      },
+      {
+        "second": 2974,
+        "ovr": 87
+      },
+      {
+        "second": 3035,
+        "ovr": 87
+      },
+      {
+        "second": 3071,
+        "ovr": 87
+      },
+      {
+        "second": 3100,
+        "ovr": 88
+      },
+      {
+        "second": 3142,
+        "ovr": 89
+      },
+      {
+        "second": 3175,
+        "ovr": 89
+      },
+      {
+        "second": 3227,
+        "ovr": 88
+      },
+      {
+        "second": 3266,
+        "ovr": 88
+      },
+      {
+        "second": 3302,
+        "ovr": 89
+      },
+      {
+        "second": 3336,
+        "ovr": 89
+      },
+      {
+        "second": 3370,
+        "ovr": 90
+      },
+      {
+        "second": 3413,
+        "ovr": 90
+      },
+      {
+        "second": 3465,
+        "ovr": 90
+      },
+      {
+        "second": 3532,
+        "ovr": 90
+      }
+    ],
+    "maxUpgradeGap": 94,
+    "transferEvents": [
+      {
+        "second": 681,
+        "price": 16600,
+        "ovr": 65,
+        "previous": 56
+      },
+      {
+        "second": 828,
+        "price": 19600,
+        "ovr": 69,
+        "previous": 57
+      },
+      {
+        "second": 907,
+        "price": 27500,
+        "ovr": 78,
+        "previous": 66
+      },
+      {
+        "second": 996,
+        "price": 26500,
+        "ovr": 77,
+        "previous": 69
+      }
+    ],
+    "finalState": {
+      "version": 5,
+      "economyVersion": 3,
+      "budgetScale": 10,
+      "stage": "bal",
+      "balVersion": 1,
+      "balBlockVersion": 4,
+      "prologBlockVersion": 2,
+      "balStart": 0,
+      "balStartDay": 1,
+      "balReadyDay": {},
+      "openDepartments": [
+        2,
+        4
+      ],
+      "scouting": {
+        "tutorialSeen": false,
+        "round": 91,
+        "startedDay": 104,
+        "catalog": [
+          {
+            "id": "scout-91-0",
+            "player": {
+              "id": "player-4",
+              "name": "Beste",
+              "surname": "Çağlar",
+              "role": "middle",
+              "gender": "female",
+              "number": 5,
+              "art": "team-assets/woman-12.svg",
+              "spike": 100,
+              "block": 100,
+              "serve": 50,
+              "receive": 50,
+              "set": 49,
+              "height": 199,
+              "stamina": 100,
+              "mental": 100,
+              "matchSkills": [
+                "commit-block",
+                "close",
+                "absolute-read"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 48,
+              "training": {
+                "block": 50,
+                "spike": 50,
+                "stamina": 50,
+                "mental": 50
+              },
+              "baseStats": {
+                "spike": 50,
+                "block": 50,
+                "serve": 50,
+                "receive": 50,
+                "set": 49,
+                "stamina": 50,
+                "mental": 50
+              },
+              "skills": [
+                {
+                  "id": "read",
+                  "unlocked": false
+                },
+                {
+                  "id": "breath",
+                  "unlocked": false
+                },
+                {
+                  "id": "close",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 35400,
+            "hired": false
+          },
+          {
+            "id": "scout-91-1",
+            "player": {
+              "id": "player-0",
+              "name": "Cansel",
+              "surname": "Özbey",
+              "role": "setter",
+              "gender": "female",
+              "number": 1,
+              "art": "team-assets/woman-31.svg",
+              "spike": 50,
+              "block": 50,
+              "serve": 100,
+              "receive": 50,
+              "set": 100,
+              "height": 191,
+              "stamina": 100,
+              "mental": 100,
+              "matchSkills": [
+                "tempo-third",
+                "tempo-second",
+                "sync-attack"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 48,
+              "training": {
+                "set": 50,
+                "serve": 50,
+                "mental": 50,
+                "stamina": 50
+              },
+              "baseStats": {
+                "spike": 50,
+                "block": 50,
+                "serve": 50,
+                "receive": 50,
+                "set": 50,
+                "stamina": 50,
+                "mental": 50
+              },
+              "skills": [
+                {
+                  "id": "quick",
+                  "unlocked": false
+                },
+                {
+                  "id": "calm",
+                  "unlocked": false
+                },
+                {
+                  "id": "deceive",
+                  "unlocked": false
+                }
+              ],
+              "specialCharacter": "cansel-ozbey"
+            },
+            "price": 33400,
+            "hired": false
+          },
+          {
+            "id": "scout-91-2",
+            "player": {
+              "id": "player-8",
+              "name": "Ezgi",
+              "surname": "Ekici",
+              "role": "outside",
+              "gender": "female",
+              "number": 9,
+              "art": "team-assets/woman-9.svg",
+              "spike": 100,
+              "block": 29,
+              "serve": 27,
+              "receive": 100,
+              "set": 26,
+              "height": 185,
+              "stamina": 85,
+              "mental": 82,
+              "matchSkills": [
+                "commit-block",
+                "rebound",
+                "jump-legendary"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 28,
+              "training": {
+                "spike": 69,
+                "receive": 69,
+                "stamina": 54,
+                "mental": 53
+              },
+              "baseStats": {
+                "spike": 31,
+                "block": 29,
+                "serve": 27,
+                "receive": 31,
+                "set": 26,
+                "stamina": 31,
+                "mental": 29
+              },
+              "skills": [
+                {
+                  "id": "platform",
+                  "unlocked": false
+                },
+                {
+                  "id": "breath",
+                  "unlocked": false
+                },
+                {
+                  "id": "jump",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 25000,
+            "hired": false
+          },
+          {
+            "id": "scout-91-3",
+            "player": {
+              "id": "player-1",
+              "name": "Ece",
+              "surname": "Taşdemir",
+              "role": "outside",
+              "gender": "female",
+              "number": 2,
+              "art": "team-assets/woman-19.svg",
+              "spike": 100,
+              "block": 32,
+              "serve": 34,
+              "receive": 100,
+              "set": 35,
+              "height": 187,
+              "stamina": 88,
+              "mental": 88,
+              "matchSkills": [
+                "cross",
+                "power-hit",
+                "ghost-tip"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 38,
+              "training": {
+                "spike": 61,
+                "receive": 62,
+                "stamina": 53,
+                "mental": 53
+              },
+              "baseStats": {
+                "spike": 39,
+                "block": 32,
+                "serve": 34,
+                "receive": 38,
+                "set": 35,
+                "stamina": 35,
+                "mental": 35
+              },
+              "skills": [
+                {
+                  "id": "float",
+                  "unlocked": false
+                },
+                {
+                  "id": "calm",
+                  "unlocked": false
+                },
+                {
+                  "id": "jump",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 26800,
+            "hired": false
+          },
+          {
+            "id": "scout-91-4",
+            "player": {
+              "id": "player-10",
+              "name": "Ayça",
+              "surname": "Saygın",
+              "role": "middle",
+              "gender": "female",
+              "number": 11,
+              "art": "team-assets/woman-14.svg",
+              "spike": 100,
+              "block": 100,
+              "serve": 33,
+              "receive": 34,
+              "set": 33,
+              "height": 185,
+              "stamina": 88,
+              "mental": 86,
+              "matchSkills": [
+                "commit-block",
+                "triple-block",
+                "tempo-minus"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 28,
+              "training": {
+                "block": 63,
+                "spike": 67,
+                "stamina": 54,
+                "mental": 53
+              },
+              "baseStats": {
+                "spike": 33,
+                "block": 37,
+                "serve": 33,
+                "receive": 34,
+                "set": 33,
+                "stamina": 34,
+                "mental": 33
+              },
+              "skills": [
+                {
+                  "id": "read",
+                  "unlocked": false
+                },
+                {
+                  "id": "breath",
+                  "unlocked": false
+                },
+                {
+                  "id": "roof",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 29500,
+            "hired": false
+          },
+          {
+            "id": "scout-91-5",
+            "player": {
+              "id": "player-11",
+              "name": "Ayşe",
+              "surname": "Aydoğan",
+              "role": "libero",
+              "gender": "female",
+              "number": 12,
+              "art": "team-assets/woman-4.svg",
+              "spike": 50,
+              "block": 50,
+              "serve": 50,
+              "receive": 100,
+              "set": 100,
+              "height": 166,
+              "stamina": 72,
+              "mental": 72,
+              "matchSkills": [
+                "court-read",
+                "cover",
+                "pancake"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 28,
+              "training": {
+                "receive": 50,
+                "set": 50,
+                "mental": 22,
+                "stamina": 22
+              },
+              "baseStats": {
+                "spike": 50,
+                "block": 50,
+                "serve": 50,
+                "receive": 50,
+                "set": 50,
+                "stamina": 50,
+                "mental": 50
+              },
+              "skills": [
+                {
+                  "id": "platform",
+                  "unlocked": false
+                },
+                {
+                  "id": "calm",
+                  "unlocked": false
+                },
+                {
+                  "id": "cover",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 37500,
+            "hired": false
+          },
+          {
+            "id": "scout-91-6",
+            "player": {
+              "id": "player-7",
+              "name": "Sabiha",
+              "surname": "Ünsal",
+              "role": "setter",
+              "gender": "female",
+              "number": 8,
+              "art": "team-assets/woman-18.svg",
+              "spike": 49,
+              "block": 50,
+              "serve": 100,
+              "receive": 50,
+              "set": 100,
+              "height": 174,
+              "stamina": 100,
+              "mental": 100,
+              "matchSkills": [
+                "tempo-third",
+                "float",
+                "one-hand-rescue"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 28,
+              "training": {
+                "set": 50,
+                "serve": 50,
+                "mental": 50,
+                "stamina": 50
+              },
+              "baseStats": {
+                "spike": 49,
+                "block": 50,
+                "serve": 50,
+                "receive": 50,
+                "set": 50,
+                "stamina": 50,
+                "mental": 50
+              },
+              "skills": [
+                {
+                  "id": "quick",
+                  "unlocked": false
+                },
+                {
+                  "id": "calm",
+                  "unlocked": false
+                },
+                {
+                  "id": "deceive",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 32400,
+            "hired": false
+          },
+          {
+            "id": "scout-91-7",
+            "player": {
+              "id": "player-6",
+              "name": "Bilge",
+              "surname": "Bal",
+              "role": "libero",
+              "gender": "female",
+              "number": 7,
+              "art": "team-assets/woman-22.svg",
+              "spike": 49,
+              "block": 50,
+              "serve": 50,
+              "receive": 100,
+              "set": 100,
+              "height": 174,
+              "stamina": 72,
+              "mental": 72,
+              "matchSkills": [
+                "court-read",
+                "cover",
+                "pancake"
+              ],
+              "matchSkillsVersion": 1,
+              "developmentVersion": 3,
+              "cardVersion": 1,
+              "cardLevel": 45,
+              "training": {
+                "receive": 50,
+                "set": 50,
+                "mental": 22,
+                "stamina": 22
+              },
+              "baseStats": {
+                "spike": 49,
+                "block": 50,
+                "serve": 50,
+                "receive": 50,
+                "set": 50,
+                "stamina": 50,
+                "mental": 50
+              },
+              "skills": [
+                {
+                  "id": "platform",
+                  "unlocked": false
+                },
+                {
+                  "id": "breath",
+                  "unlocked": false
+                },
+                {
+                  "id": "cover",
+                  "unlocked": false
+                }
+              ]
+            },
+            "price": 37500,
+            "hired": false
+          }
+        ],
+        "recruits": [
+          {
+            "id": "player-12",
+            "name": "Yağmur",
+            "surname": "Başer",
+            "role": "outside",
+            "gender": "female",
+            "number": 13,
+            "art": "team-assets/woman-21.svg",
+            "spike": 94,
+            "block": 38,
+            "serve": 38,
+            "receive": 76,
+            "set": 39,
+            "height": 185,
+            "stamina": 50,
+            "mental": 47,
+            "matchSkills": [
+              "cross",
+              "float",
+              "ghost-tip"
+            ],
+            "matchSkillsVersion": 1,
+            "developmentVersion": 3,
+            "cardVersion": 1,
+            "cardLevel": 18,
+            "training": {
+              "spike": 48,
+              "receive": 32,
+              "stamina": 8,
+              "mental": 8
+            },
+            "baseStats": {
+              "spike": 43,
+              "block": 38,
+              "serve": 38,
+              "receive": 42,
+              "set": 39,
+              "stamina": 41,
+              "mental": 39
+            },
+            "skills": [
+              {
+                "id": "cross",
+                "unlocked": false
+              },
+              {
+                "id": "calm",
+                "unlocked": false
+              },
+              {
+                "id": "jump",
+                "unlocked": false
+              }
+            ]
+          },
+          {
+            "id": "player-13",
+            "name": "Sevcan",
+            "surname": "Aktaş",
+            "role": "outside",
+            "gender": "female",
+            "number": 14,
+            "art": "team-assets/woman-16.svg",
+            "spike": 100,
+            "block": 22,
+            "serve": 19,
+            "receive": 100,
+            "set": 19,
+            "height": 190,
+            "stamina": 43,
+            "mental": 43,
+            "matchSkills": [
+              "cross",
+              "power-hit",
+              "ghost-tip"
+            ],
+            "matchSkillsVersion": 1,
+            "developmentVersion": 3,
+            "cardVersion": 1,
+            "cardLevel": 28,
+            "training": {
+              "spike": 76,
+              "receive": 76,
+              "stamina": 19,
+              "mental": 19
+            },
+            "baseStats": {
+              "spike": 24,
+              "block": 22,
+              "serve": 19,
+              "receive": 24,
+              "set": 19,
+              "stamina": 24,
+              "mental": 24
+            },
+            "skills": [
+              {
+                "id": "platform",
+                "unlocked": false
+              },
+              {
+                "id": "calm",
+                "unlocked": false
+              },
+              {
+                "id": "line",
+                "unlocked": false
+              }
+            ]
+          },
+          {
+            "id": "player-14",
+            "name": "Hatice",
+            "surname": "Aybar",
+            "role": "outside",
+            "gender": "female",
+            "number": 15,
+            "art": "team-assets/woman-20.svg",
+            "spike": 124,
+            "block": 35,
+            "serve": 39,
+            "receive": 116,
+            "set": 36,
+            "height": 182,
+            "stamina": 72,
+            "mental": 69,
+            "matchSkills": [
+              "cross",
+              "power-hit",
+              "ghost-tip"
+            ],
+            "matchSkillsVersion": 1,
+            "developmentVersion": 3,
+            "cardVersion": 1,
+            "cardLevel": 36,
+            "training": {
+              "spike": 60,
+              "receive": 58,
+              "stamina": 29,
+              "mental": 28
+            },
+            "baseStats": {
+              "spike": 40,
+              "block": 35,
+              "serve": 39,
+              "receive": 42,
+              "set": 36,
+              "stamina": 39,
+              "mental": 37
+            },
+            "skills": [
+              {
+                "id": "platform",
+                "unlocked": false
+              },
+              {
+                "id": "breath",
+                "unlocked": false
+              },
+              {
+                "id": "line",
+                "unlocked": false
+              }
+            ]
+          },
+          {
+            "id": "player-15",
+            "name": "Şirin",
+            "surname": "Arı",
+            "role": "outside",
+            "gender": "female",
+            "number": 16,
+            "art": "team-assets/woman-35.svg",
+            "spike": 127,
+            "block": 24,
+            "serve": 25,
+            "receive": 118,
+            "set": 24,
+            "height": 183,
+            "stamina": 83,
+            "mental": 83,
+            "matchSkills": [
+              "commit-block",
+              "rebound",
+              "tempo-minus"
+            ],
+            "matchSkillsVersion": 1,
+            "developmentVersion": 3,
+            "cardVersion": 1,
+            "cardLevel": 37,
+            "training": {
+              "spike": 71,
+              "receive": 71,
+              "stamina": 52,
+              "mental": 51
+            },
+            "baseStats": {
+              "spike": 29,
+              "block": 24,
+              "serve": 25,
+              "receive": 29,
+              "set": 24,
+              "stamina": 27,
+              "mental": 27
+            },
+            "skills": [
+              {
+                "id": "float",
+                "unlocked": false
+              },
+              {
+                "id": "breath",
+                "unlocked": false
+              },
+              {
+                "id": "jump",
+                "unlocked": false
+              }
+            ]
+          }
+        ],
+        "specialMisses": 4,
+        "heldId": "scout-6-4"
+      },
+      "incomeProgress": 0,
+      "attendanceRewards": [],
+      "camp": {
+        "version": 3,
+        "announcedDay": 7,
+        "opensDay": 7,
+        "lastDay": 104,
+        "boosts": {
+          "player-0": 60,
+          "player-1": 30,
+          "player-3": 60,
+          "player-4": 60,
+          "player-5": 60,
+          "player-13": 30,
+          "player-14": 60,
+          "player-15": 60,
+          "player-6": 60
+        },
+        "entries": [
+          {
+            "playerId": "player-0",
+            "startDay": 12,
+            "endDay": 15,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-1",
+            "startDay": 12,
+            "endDay": 15,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-3",
+            "startDay": 13,
+            "endDay": 16,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-4",
+            "startDay": 13,
+            "endDay": 16,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-5",
+            "startDay": 13,
+            "endDay": 16,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-13",
+            "startDay": 14,
+            "endDay": 17,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-14",
+            "startDay": 16,
+            "endDay": 19,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-15",
+            "startDay": 18,
+            "endDay": 21,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-6",
+            "startDay": 20,
+            "endDay": 23,
+            "targetBoost": 30,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-4",
+            "startDay": 33,
+            "endDay": 36,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-5",
+            "startDay": 34,
+            "endDay": 37,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-0",
+            "startDay": 39,
+            "endDay": 42,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-3",
+            "startDay": 39,
+            "endDay": 42,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-0",
+            "startDay": 81,
+            "endDay": 84,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-15",
+            "startDay": 89,
+            "endDay": 92,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-14",
+            "startDay": 97,
+            "endDay": 100,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-6",
+            "startDay": 99,
+            "endDay": 102,
+            "targetBoost": 60,
+            "status": "complete"
+          },
+          {
+            "playerId": "player-3",
+            "startDay": 102,
+            "endDay": 105,
+            "targetBoost": 60,
+            "status": "running"
+          }
+        ]
+      },
+      "budget": 141825,
+      "ap": 364300.625,
+      "matchRewards": [
+        "bal1_r1-0-6",
+        "bal1_r2-4-0",
+        "bal1_r6-5-0",
+        "bal1_r7-0-7",
+        "bal1_r8-6-0",
+        "bal1_r9-0-4",
+        "bal1_r10-3-0",
+        "bal1_r11-0-1",
+        "bal1_r13-0-5",
+        "bal1_r14-7-0"
+      ],
+      "instructions": 51800,
+      "floors": [
+        [
+          "warmup",
+          "warmup",
+          "warmup",
+          "warmup",
+          "warmup",
+          "crit_smash",
+          "crit_smash",
+          "crit_smash",
+          "crit_smash",
+          "crit_smash",
+          "echo",
+          "echo",
+          "echo",
+          "echo",
+          "echo",
+          "bal_position",
+          "bal_video",
+          "bal_position",
+          "bal_recovery",
+          "bal_video",
+          "bal_position",
+          "bal_recovery",
+          "bal_video",
+          "bal_position",
+          "bal_recovery",
+          "bal_video",
+          "bal_position",
+          "bal_recovery",
+          "bal_video",
+          "bal_position",
+          "bal_recovery",
+          "bal_video",
+          "bal_position",
+          "bal_video",
+          "bal_recovery",
+          "bal_position",
+          "bal_video",
+          "bal_recovery",
+          "bal_position",
+          "bal_video",
+          "bal_recovery",
+          "bal_position",
+          "bal_recovery",
+          "bal_video"
+        ],
+        [
+          "assistant",
+          "assistant",
+          "assistant",
+          "assistant",
+          "assistant",
+          "offline_time",
+          "offline_time",
+          "offline_time",
+          "offline_time",
+          "offline_time",
+          "steady",
+          "steady",
+          "steady",
+          "steady",
+          "steady",
+          "bal_plan",
+          "bal_coach",
+          "bal_shift",
+          "bal_coach",
+          "bal_plan",
+          "bal_shift",
+          "bal_plan",
+          "bal_coach",
+          "bal_shift",
+          "bal_plan",
+          "bal_coach",
+          "bal_shift",
+          "bal_plan",
+          "bal_coach",
+          "bal_shift",
+          "bal_plan",
+          "bal_coach",
+          "bal_plan",
+          "bal_shift",
+          "bal_coach",
+          "bal_plan",
+          "bal_coach",
+          "bal_shift",
+          "bal_plan",
+          "bal_shift",
+          "bal_coach",
+          "bal_shift",
+          "bal_plan",
+          "bal_coach"
+        ],
+        [
+          "meal",
+          "meal",
+          "meal",
+          "meal",
+          "meal",
+          "energy_drink",
+          "energy_drink",
+          "energy_drink",
+          "energy_drink",
+          "energy_drink",
+          "sugar_boost",
+          "sugar_boost",
+          "sugar_boost",
+          "sugar_boost",
+          "sugar_boost",
+          "bal_sponsor",
+          "bal_shop",
+          "bal_sponsor",
+          "bal_fans",
+          "bal_shop",
+          "bal_sponsor",
+          "bal_fans",
+          "bal_shop",
+          "bal_sponsor",
+          "bal_fans",
+          "bal_shop",
+          "bal_sponsor",
+          "bal_fans",
+          "bal_shop",
+          "bal_sponsor",
+          "bal_fans",
+          "bal_sponsor",
+          "bal_shop",
+          "bal_fans",
+          "bal_sponsor",
+          "bal_shop",
+          "bal_fans",
+          "bal_sponsor",
+          "bal_shop",
+          "bal_fans",
+          "bal_sponsor",
+          "bal_shop",
+          "bal_fans",
+          "bal_shop"
+        ],
+        [
+          "collect",
+          "collect",
+          "collect",
+          "collect",
+          "collect",
+          "coordinate",
+          "coordinate",
+          "coordinate",
+          "coordinate",
+          "coordinate",
+          "rhythm",
+          "rhythm",
+          "rhythm",
+          "rhythm",
+          "rhythm",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout",
+          "bal_archive",
+          "bal_personal",
+          "bal_scout"
+        ],
+        [
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent",
+          "bal_search",
+          "bal_contacts",
+          "bal_talent"
+        ]
+      ],
+      "lastSeen": 1792339607085,
+      "autoCarry": 0,
+      "steadyProgress": 0,
+      "trainingProgress": 0,
+      "dayProgress": 300,
+      "pendingGains": []
+    },
+    "finalRoster": [
+      {
+        "id": "player-0",
+        "name": "Eylül",
+        "surname": "Yüce",
+        "role": "setter",
+        "gender": "female",
+        "number": 1,
+        "art": "team-assets/woman-19.svg",
+        "spike": 16,
+        "block": 16,
+        "serve": 110,
+        "receive": 16,
+        "set": 160,
+        "height": 189,
+        "stamina": 38,
+        "mental": 41,
+        "matchSkills": [
+          "tempo-third",
+          "back",
+          "one-hand-rescue"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 48,
+        "training": {},
+        "baseStats": {
+          "spike": 16,
+          "block": 16,
+          "serve": 16,
+          "receive": 16,
+          "set": 19,
+          "stamina": 15,
+          "mental": 17
+        },
+        "skills": [
+          {
+            "id": "float",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "back",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-1",
+        "name": "Fulya",
+        "surname": "Gök",
+        "role": "outside",
+        "gender": "female",
+        "number": 2,
+        "art": "team-assets/woman-34.svg",
+        "spike": 99,
+        "block": 14,
+        "serve": 12,
+        "receive": 73,
+        "set": 13,
+        "height": 179,
+        "stamina": 28,
+        "mental": 30,
+        "matchSkills": [
+          "commit-block",
+          "float",
+          "tempo-minus"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 28,
+        "training": {},
+        "baseStats": {
+          "spike": 18,
+          "block": 14,
+          "serve": 12,
+          "receive": 19,
+          "set": 13,
+          "stamina": 14,
+          "mental": 17
+        },
+        "skills": [
+          {
+            "id": "read",
+            "unlocked": false
+          },
+          {
+            "id": "breath",
+            "unlocked": false
+          },
+          {
+            "id": "line",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-2",
+        "name": "Özlem",
+        "surname": "Baş",
+        "role": "outside",
+        "gender": "female",
+        "number": 3,
+        "art": "team-assets/woman-12.svg",
+        "spike": 100,
+        "block": 12,
+        "serve": 12,
+        "receive": 71,
+        "set": 13,
+        "height": 188,
+        "stamina": 28,
+        "mental": 28,
+        "matchSkills": [
+          "commit-block",
+          "rebound",
+          "jump-legendary"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 28,
+        "training": {},
+        "baseStats": {
+          "spike": 19,
+          "block": 12,
+          "serve": 12,
+          "receive": 17,
+          "set": 13,
+          "stamina": 14,
+          "mental": 15
+        },
+        "skills": [
+          {
+            "id": "float",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "wipe",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-3",
+        "name": "Nihal",
+        "surname": "Alkan",
+        "role": "opposite",
+        "gender": "female",
+        "number": 4,
+        "art": "team-assets/woman-26.svg",
+        "spike": 153,
+        "block": 35,
+        "serve": 108,
+        "receive": 12,
+        "set": 12,
+        "height": 190,
+        "stamina": 38,
+        "mental": 17,
+        "matchSkills": [
+          "commit-block",
+          "close",
+          "jump-legendary"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 46,
+        "training": {},
+        "baseStats": {
+          "spike": 18,
+          "block": 12,
+          "serve": 18,
+          "receive": 12,
+          "set": 12,
+          "stamina": 16,
+          "mental": 17
+        },
+        "skills": [
+          {
+            "id": "float",
+            "unlocked": false
+          },
+          {
+            "id": "breath",
+            "unlocked": false
+          },
+          {
+            "id": "line",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-4",
+        "name": "Tuana",
+        "surname": "Çelebi",
+        "role": "middle",
+        "gender": "female",
+        "number": 5,
+        "art": "team-assets/woman-27.svg",
+        "spike": 102,
+        "block": 147,
+        "serve": 13,
+        "receive": 13,
+        "set": 12,
+        "height": 186,
+        "stamina": 37,
+        "mental": 35,
+        "matchSkills": [
+          "commit-block",
+          "close",
+          "absolute-read"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 44,
+        "training": {},
+        "baseStats": {
+          "spike": 16,
+          "block": 18,
+          "serve": 13,
+          "receive": 13,
+          "set": 12,
+          "stamina": 15,
+          "mental": 14
+        },
+        "skills": [
+          {
+            "id": "float",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "roof",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-5",
+        "name": "Nevin",
+        "surname": "Savaş",
+        "role": "middle",
+        "gender": "female",
+        "number": 6,
+        "art": "team-assets/woman-4.svg",
+        "spike": 102,
+        "block": 146,
+        "serve": 13,
+        "receive": 13,
+        "set": 12,
+        "height": 194,
+        "stamina": 37,
+        "mental": 36,
+        "matchSkills": [
+          "commit-block",
+          "slide-attack",
+          "absolute-read"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 44,
+        "training": {},
+        "baseStats": {
+          "spike": 16,
+          "block": 17,
+          "serve": 13,
+          "receive": 13,
+          "set": 12,
+          "stamina": 15,
+          "mental": 15
+        },
+        "skills": [
+          {
+            "id": "read",
+            "unlocked": false
+          },
+          {
+            "id": "breath",
+            "unlocked": false
+          },
+          {
+            "id": "close",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-6",
+        "name": "Dilay",
+        "surname": "Yeni",
+        "role": "libero",
+        "gender": "female",
+        "number": 7,
+        "art": "team-assets/woman-15.svg",
+        "spike": 14,
+        "block": 16,
+        "serve": 14,
+        "receive": 123,
+        "set": 83,
+        "height": 169,
+        "stamina": 31,
+        "mental": 35,
+        "matchSkills": [
+          "court-read",
+          "cover",
+          "pancake"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 36,
+        "training": {},
+        "baseStats": {
+          "spike": 14,
+          "block": 16,
+          "serve": 14,
+          "receive": 18,
+          "set": 13,
+          "stamina": 14,
+          "mental": 17
+        },
+        "skills": [
+          {
+            "id": "platform",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "cover",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-7",
+        "name": "Gülhan",
+        "surname": "Altun",
+        "role": "setter",
+        "gender": "female",
+        "number": 8,
+        "art": "team-assets/woman-28.svg",
+        "spike": 12,
+        "block": 15,
+        "serve": 12,
+        "receive": 12,
+        "set": 18,
+        "height": 187,
+        "stamina": 14,
+        "mental": 16,
+        "matchSkills": [
+          "tempo-third",
+          "float",
+          "one-hand-rescue"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 1,
+        "training": {},
+        "baseStats": {
+          "spike": 12,
+          "block": 15,
+          "serve": 12,
+          "receive": 12,
+          "set": 18,
+          "stamina": 14,
+          "mental": 16
+        },
+        "skills": [
+          {
+            "id": "quick",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "back",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-8",
+        "name": "Tuğçe",
+        "surname": "Balaban",
+        "role": "outside",
+        "gender": "female",
+        "number": 9,
+        "art": "team-assets/woman-21.svg",
+        "spike": 17,
+        "block": 14,
+        "serve": 12,
+        "receive": 18,
+        "set": 15,
+        "height": 176,
+        "stamina": 14,
+        "mental": 16,
+        "matchSkills": [
+          "cross",
+          "float",
+          "ghost-tip"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 1,
+        "training": {},
+        "baseStats": {
+          "spike": 17,
+          "block": 14,
+          "serve": 12,
+          "receive": 18,
+          "set": 15,
+          "stamina": 14,
+          "mental": 16
+        },
+        "skills": [
+          {
+            "id": "read",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "jump",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-9",
+        "name": "Asuman",
+        "surname": "Gülcan",
+        "role": "opposite",
+        "gender": "female",
+        "number": 10,
+        "art": "team-assets/woman-10.svg",
+        "spike": 17,
+        "block": 16,
+        "serve": 19,
+        "receive": 14,
+        "set": 14,
+        "height": 189,
+        "stamina": 15,
+        "mental": 15,
+        "matchSkills": [
+          "cross",
+          "close",
+          "tempo-minus"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 1,
+        "training": {},
+        "baseStats": {
+          "spike": 17,
+          "block": 16,
+          "serve": 19,
+          "receive": 14,
+          "set": 14,
+          "stamina": 15,
+          "mental": 15
+        },
+        "skills": [
+          {
+            "id": "cross",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "line",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-10",
+        "name": "Şükran",
+        "surname": "Oktay",
+        "role": "middle",
+        "gender": "female",
+        "number": 11,
+        "art": "team-assets/woman-1.svg",
+        "spike": 14,
+        "block": 18,
+        "serve": 14,
+        "receive": 13,
+        "set": 14,
+        "height": 190,
+        "stamina": 16,
+        "mental": 15,
+        "matchSkills": [
+          "commit-block",
+          "slide-attack",
+          "absolute-read"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 1,
+        "training": {},
+        "baseStats": {
+          "spike": 14,
+          "block": 18,
+          "serve": 14,
+          "receive": 13,
+          "set": 14,
+          "stamina": 16,
+          "mental": 15
+        },
+        "skills": [
+          {
+            "id": "read",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "roof",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-11",
+        "name": "Gizem",
+        "surname": "Akdemir",
+        "role": "libero",
+        "gender": "female",
+        "number": 12,
+        "art": "team-assets/woman-13.svg",
+        "spike": 16,
+        "block": 15,
+        "serve": 12,
+        "receive": 17,
+        "set": 13,
+        "height": 175,
+        "stamina": 17,
+        "mental": 16,
+        "matchSkills": [
+          "court-read",
+          "cover",
+          "pancake"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 1,
+        "training": {},
+        "baseStats": {
+          "spike": 16,
+          "block": 15,
+          "serve": 12,
+          "receive": 17,
+          "set": 13,
+          "stamina": 17,
+          "mental": 16
+        },
+        "skills": [
+          {
+            "id": "platform",
+            "unlocked": false
+          },
+          {
+            "id": "breath",
+            "unlocked": false
+          },
+          {
+            "id": "dive",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-12",
+        "name": "Yağmur",
+        "surname": "Başer",
+        "role": "outside",
+        "gender": "female",
+        "number": 13,
+        "art": "team-assets/woman-21.svg",
+        "spike": 94,
+        "block": 38,
+        "serve": 38,
+        "receive": 76,
+        "set": 39,
+        "height": 185,
+        "stamina": 50,
+        "mental": 47,
+        "matchSkills": [
+          "cross",
+          "float",
+          "ghost-tip"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 18,
+        "training": {
+          "spike": 48,
+          "receive": 32,
+          "stamina": 8,
+          "mental": 8
+        },
+        "baseStats": {
+          "spike": 43,
+          "block": 38,
+          "serve": 38,
+          "receive": 42,
+          "set": 39,
+          "stamina": 41,
+          "mental": 39
+        },
+        "skills": [
+          {
+            "id": "cross",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "jump",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-13",
+        "name": "Sevcan",
+        "surname": "Aktaş",
+        "role": "outside",
+        "gender": "female",
+        "number": 14,
+        "art": "team-assets/woman-16.svg",
+        "spike": 100,
+        "block": 22,
+        "serve": 19,
+        "receive": 100,
+        "set": 19,
+        "height": 190,
+        "stamina": 43,
+        "mental": 43,
+        "matchSkills": [
+          "cross",
+          "power-hit",
+          "ghost-tip"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 28,
+        "training": {
+          "spike": 76,
+          "receive": 76,
+          "stamina": 19,
+          "mental": 19
+        },
+        "baseStats": {
+          "spike": 24,
+          "block": 22,
+          "serve": 19,
+          "receive": 24,
+          "set": 19,
+          "stamina": 24,
+          "mental": 24
+        },
+        "skills": [
+          {
+            "id": "platform",
+            "unlocked": false
+          },
+          {
+            "id": "calm",
+            "unlocked": false
+          },
+          {
+            "id": "line",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-14",
+        "name": "Hatice",
+        "surname": "Aybar",
+        "role": "outside",
+        "gender": "female",
+        "number": 15,
+        "art": "team-assets/woman-20.svg",
+        "spike": 124,
+        "block": 35,
+        "serve": 39,
+        "receive": 116,
+        "set": 36,
+        "height": 182,
+        "stamina": 72,
+        "mental": 69,
+        "matchSkills": [
+          "cross",
+          "power-hit",
+          "ghost-tip"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 36,
+        "training": {
+          "spike": 60,
+          "receive": 58,
+          "stamina": 29,
+          "mental": 28
+        },
+        "baseStats": {
+          "spike": 40,
+          "block": 35,
+          "serve": 39,
+          "receive": 42,
+          "set": 36,
+          "stamina": 39,
+          "mental": 37
+        },
+        "skills": [
+          {
+            "id": "platform",
+            "unlocked": false
+          },
+          {
+            "id": "breath",
+            "unlocked": false
+          },
+          {
+            "id": "line",
+            "unlocked": false
+          }
+        ]
+      },
+      {
+        "id": "player-15",
+        "name": "Şirin",
+        "surname": "Arı",
+        "role": "outside",
+        "gender": "female",
+        "number": 16,
+        "art": "team-assets/woman-35.svg",
+        "spike": 127,
+        "block": 24,
+        "serve": 25,
+        "receive": 118,
+        "set": 24,
+        "height": 183,
+        "stamina": 83,
+        "mental": 83,
+        "matchSkills": [
+          "commit-block",
+          "rebound",
+          "tempo-minus"
+        ],
+        "matchSkillsVersion": 1,
+        "developmentVersion": 3,
+        "cardVersion": 1,
+        "cardLevel": 37,
+        "training": {
+          "spike": 71,
+          "receive": 71,
+          "stamina": 52,
+          "mental": 51
+        },
+        "baseStats": {
+          "spike": 29,
+          "block": 24,
+          "serve": 25,
+          "receive": 29,
+          "set": 24,
+          "stamina": 27,
+          "mental": 27
+        },
+        "skills": [
+          {
+            "id": "float",
+            "unlocked": false
+          },
+          {
+            "id": "breath",
+            "unlocked": false
+          },
+          {
+            "id": "jump",
+            "unlocked": false
+          }
+        ]
+      }
+    ],
+    "finalLineup": {
+      "p": "player-0",
+      "s1": "player-15",
+      "s2": "player-14",
+      "pc": "player-3",
+      "o1": "player-4",
+      "o2": "player-5",
+      "l": "player-6"
+    },
+    "league": {
+      "version": 3,
+      "mode": "bal",
+      "run": 1,
+      "startDay": 1,
+      "scheduleVersion": 2,
+      "results": {
+        "bal1_r1-0-6": [
+          5,
+          0
+        ],
+        "bal1_r1-7-4": [
+          5,
+          0
+        ],
+        "bal1_r1-5-3": [
+          5,
+          3
+        ],
+        "bal1_r1-2-1": [
+          5,
+          2
+        ],
+        "bal1_r2-4-0": [
+          3,
+          5
+        ],
+        "bal1_r2-3-6": [
+          5,
+          1
+        ],
+        "bal1_r2-1-7": [
+          2,
+          5
+        ],
+        "bal1_r2-2-5": [
+          2,
+          5
+        ],
+        "bal1_r3-0-3": [
+          4,
+          6
+        ],
+        "bal1_r3-4-1": [
+          2,
+          5
+        ],
+        "bal1_r3-6-2": [
+          1,
+          5
+        ],
+        "bal1_r3-7-5": [
+          7,
+          9
+        ],
+        "bal1_r4-1-0": [
+          5,
+          0
+        ],
+        "bal1_r4-2-3": [
+          5,
+          0
+        ],
+        "bal1_r4-5-4": [
+          5,
+          0
+        ],
+        "bal1_r4-7-6": [
+          5,
+          1
+        ],
+        "bal1_r5-0-2": [
+          2,
+          5
+        ],
+        "bal1_r5-1-5": [
+          4,
+          6
+        ],
+        "bal1_r5-3-7": [
+          1,
+          5
+        ],
+        "bal1_r5-4-6": [
+          5,
+          3
+        ],
+        "bal1_r6-5-0": [
+          1,
+          5
+        ],
+        "bal1_r6-7-2": [
+          5,
+          1
+        ],
+        "bal1_r6-6-1": [
+          5,
+          3
+        ],
+        "bal1_r6-4-3": [
+          5,
+          0
+        ],
+        "bal1_r7-0-7": [
+          5,
+          3
+        ],
+        "bal1_r7-5-6": [
+          5,
+          0
+        ],
+        "bal1_r7-2-4": [
+          5,
+          1
+        ],
+        "bal1_r7-1-3": [
+          5,
+          2
+        ],
+        "bal1_r8-6-0": [
+          2,
+          5
+        ],
+        "bal1_r8-4-7": [
+          3,
+          5
+        ],
+        "bal1_r8-3-5": [
+          3,
+          5
+        ],
+        "bal1_r8-1-2": [
+          5,
+          2
+        ],
+        "bal1_r9-0-4": [
+          5,
+          3
+        ],
+        "bal1_r9-6-3": [
+          3,
+          5
+        ],
+        "bal1_r9-7-1": [
+          5,
+          1
+        ],
+        "bal1_r9-5-2": [
+          5,
+          2
+        ],
+        "bal1_r10-3-0": [
+          4,
+          6
+        ],
+        "bal1_r10-1-4": [
+          5,
+          3
+        ],
+        "bal1_r10-2-6": [
+          5,
+          0
+        ],
+        "bal1_r10-5-7": [
+          3,
+          5
+        ],
+        "bal1_r11-0-1": [
+          5,
+          2
+        ],
+        "bal1_r11-3-2": [
+          0,
+          5
+        ],
+        "bal1_r11-4-5": [
+          1,
+          5
+        ],
+        "bal1_r11-6-7": [
+          0,
+          5
+        ],
+        "bal1_r12-2-0": [
+          7,
+          5
+        ],
+        "bal1_r12-5-1": [
+          5,
+          1
+        ],
+        "bal1_r12-7-3": [
+          5,
+          1
+        ],
+        "bal1_r12-6-4": [
+          1,
+          5
+        ],
+        "bal1_r13-0-5": [
+          5,
+          3
+        ],
+        "bal1_r13-2-7": [
+          3,
+          5
+        ],
+        "bal1_r13-1-6": [
+          5,
+          3
+        ],
+        "bal1_r13-3-4": [
+          2,
+          5
+        ],
+        "bal1_r14-7-0": [
+          2,
+          5
+        ],
+        "bal1_r14-6-5": [
+          0,
+          5
+        ],
+        "bal1_r14-4-2": [
+          1,
+          5
+        ],
+        "bal1_r14-3-1": [
+          2,
+          5
+        ]
+      },
+      "legacyResults": {},
+      "completionSeen": false,
+      "completedDay": null
+    },
+    "strategy": "transfers",
+    "minutes": 59,
+    "initial": [
+      31,
+      30,
+      29,
+      31,
+      31,
+      31,
+      35
+    ],
+    "final": [
+      89,
+      90,
+      90,
+      90,
+      89,
+      89,
+      90
+    ],
+    "rank": 3,
+    "earnedAP": 30861829,
+    "spentAP": 31529028,
+    "earnedCash": 3052725,
+    "spentTransfers": 90200,
+    "budget": 141825,
+    "purchases": 142,
+    "rounds": [
+      {
+        "round": 1,
+        "minute": 6,
+        "rank": 1
+      },
+      {
+        "round": 2,
+        "minute": 10,
+        "rank": 2
+      },
+      {
+        "round": 3,
+        "minute": 15,
+        "rank": 3
+      },
+      {
+        "round": 4,
+        "minute": 21,
+        "rank": 5
+      },
+      {
+        "round": 5,
+        "minute": 27,
+        "rank": 5
+      },
+      {
+        "round": 6,
+        "minute": 31,
+        "rank": 4
+      },
+      {
+        "round": 7,
+        "minute": 35,
+        "rank": 4
+      },
+      {
+        "round": 8,
+        "minute": 39,
+        "rank": 4
+      },
+      {
+        "round": 9,
+        "minute": 43,
+        "rank": 3
+      },
+      {
+        "round": 10,
+        "minute": 47,
+        "rank": 3
+      },
+      {
+        "round": 11,
+        "minute": 50,
+        "rank": 3
+      },
+      {
+        "round": 12,
+        "minute": 53,
+        "rank": 4
+      },
+      {
+        "round": 13,
+        "minute": 56,
+        "rank": 3
+      },
+      {
+        "round": 14,
+        "minute": 59,
+        "rank": 3
+      }
+    ],
+    "totalMinutes": 66,
+    "maxDecisionGap": 51
+  }
+]
