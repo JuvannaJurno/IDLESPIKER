@@ -122,3 +122,6 @@ html[data-theme=dark] .player-card .player-overall{background:#35545e!important}
 #teamPanel .player-card .card-stats b,#scoutDialog .scout-player.player-card .card-stats b,#scoutDialog.is-opening #packCard .card-stats b{font-size:13px;font-weight:550}
 .player-card .card-stats .stat-gain{display:none}
 #teamPanel .player-card .card-stats i,#scoutDialog .scout-player.player-card .card-stats i,#scoutDialog.is-opening #packCard .card-stats i{height:2px;opacity:.65}
+/* Slightly stronger card boundaries without adding visual weight inside. */
+#teamPanel .player-card,#scoutDialog .scout-player.player-card:not(:has(.scout-compare[open])),#scoutDialog.is-opening #packCard>.player-card{border:1.5px solid #91aaa8!important;box-shadow:0 3px 0 #7b999747,0 3px 9px #35595214!important}
+html[data-theme=dark] #teamPanel .player-card,html[data-theme=dark] #scoutDialog .scout-player.player-card:not(:has(.scout-compare[open])),html[data-theme=dark] #scoutDialog.is-opening #packCard>.player-card{border-color:#738f91!important;box-shadow:0 3px 0 #0e242766,0 3px 9px #0e242733!important}
