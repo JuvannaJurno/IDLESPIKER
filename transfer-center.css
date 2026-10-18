@@ -68,3 +68,33 @@ html[data-theme=dark] #scoutDialog{--transfer-ink:#e2e8e7;--transfer-muted:#b4c2
 #scoutDialog .scout-report #scoutReport{margin:0;min-height:46px}
 #scoutDialog .scout-report #scoutReport .scout-open-count{display:none}
 #scoutDialog .scout-report #scoutReport .scout-open-copy small{display:none}
+/* A brief reveal glint when the candidate improves on someone in the roster. */
+#scoutDialog.is-opening #packCard>.pack-ovr-upgrade{position:relative;animation:pack-ovr-glow 1.6s ease-out both}
+#scoutDialog.is-opening #packCard>.pack-ovr-upgrade:after{content:'';position:absolute;inset:0;z-index:8;pointer-events:none;border-radius:inherit;background:linear-gradient(112deg,transparent 30%,#fff2bd10 39%,#fff4ca95 49%,#fff2bd15 58%,transparent 68%);transform:translateX(-140%);animation:pack-ovr-glint 1s .16s ease-out both}
+#scoutDialog.is-opening #packCard>.pack-ovr-upgrade .player-overall{animation:pack-rating-glow 1.7s ease-out both}
+@keyframes pack-ovr-glow{0%{box-shadow:0 0 0 1px #edce86,0 0 26px #f1cf7880;filter:brightness(1.16)}50%{box-shadow:0 0 0 2px #dfbc72,0 0 20px #e9c36b60}100%{box-shadow:0 4px 0 var(--club-shadow);filter:brightness(1)}}
+@keyframes pack-ovr-glint{to{transform:translateX(140%)}}
+@keyframes pack-rating-glow{0%,35%{box-shadow:0 0 12px #ffe29b99;border-color:#f5d68a}100%{box-shadow:none}}
+@media(prefers-reduced-motion:reduce){#scoutDialog.is-opening #packCard>.pack-ovr-upgrade,#scoutDialog.is-opening #packCard>.pack-ovr-upgrade .player-overall{animation:none}#scoutDialog.is-opening #packCard>.pack-ovr-upgrade{outline:2px solid #d4b46b;outline-offset:-2px}#scoutDialog.is-opening #packCard>.pack-ovr-upgrade:after{display:none}}
+/* The catalog uses the same two-card row on phones and desktop. */
+#scoutDialog:not(.is-opening){width:min(410px,calc(100vw - 16px));padding-inline:12px}
+#scoutDialog #scoutCatalog{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));justify-content:stretch;gap:12px;max-width:366px;margin-inline:auto}
+#scoutDialog .scout-player.player-card{max-width:none;min-width:0}
+#scoutDialog .scout-player.player-card .card-art{height:143px;min-height:143px}
+#scoutDialog .scout-player.player-card .card-name{padding:10px 8px;min-height:64px}
+#scoutDialog .scout-player.player-card .card-inspect{font-size:17px!important}
+#scoutDialog .scout-player.player-card .card-inspect small{font-size:12px!important}
+#scoutDialog .scout-player.player-card .card-cap{padding:8px}
+#scoutDialog .scout-player.player-card .card-stats{padding:9px 8px;gap:8px 7px}
+#scoutDialog .scout-player.player-card .card-stats>span{font-size:9px}
+#scoutDialog .scout-player.player-card .card-physical{padding:7px 6px;font-size:8px;gap:3px}
+#scoutDialog .scout-player.player-card .card-hand{gap:2px}
+#scoutDialog .scout-player.player-card .card-hand svg{width:11px;height:11px}
+#scoutDialog .scout-player.player-card .player-overall{left:6px;min-width:27px;min-height:37px;padding:4px}
+#scoutDialog .scout-player.player-card .player-overall b{font-size:22px}
+#scoutDialog .scout-player.player-card .card-art>.camp-stars{right:5px;padding:4px;gap:2px}
+#scoutDialog .scout-player.player-card .card-art>.camp-stars .camp-star{width:12px!important;height:12px!important;min-width:12px}
+#scoutDialog .scout-player.player-card .scout-compare{margin:6px}
+#scoutDialog .scout-player.player-card .scout-compare>summary{font-size:9px;overflow-wrap:anywhere}
+#scoutDialog .scout-player.player-card .scout-hire,#scoutDialog .scout-player.player-card .scout-hold{width:calc(100% - 12px);margin-inline:6px;font-size:9px;padding-inline:4px}
+#scoutDialog #scoutCatalog:has(.scout-compare[open]){grid-template-columns:minmax(0,1fr)}
