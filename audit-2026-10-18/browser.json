@@ -1,0 +1,1191 @@
+[
+  {
+    "strategy": "automation",
+    "checkpoint": "stage-2-start",
+    "errors": [],
+    "loaded": {
+      "candidates": 0,
+      "players": 12,
+      "active": {
+        "p": "player-0",
+        "s1": "player-1",
+        "s2": "player-2",
+        "pc": "player-3",
+        "o1": "player-4",
+        "o2": "player-5",
+        "l": "player-6"
+      },
+      "division": 2,
+      "pending": 5
+    },
+    "before": {
+      "candidates": 0,
+      "players": 12
+    },
+    "layouts": [
+      {
+        "width": 390,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 167,
+            "x": 22,
+            "y": 503.703125
+          },
+          {
+            "width": 167,
+            "x": 201,
+            "y": 503.703125
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 137,
+            "x": 19,
+            "y": 500.703125
+          },
+          {
+            "width": 137,
+            "x": 164,
+            "y": 500.703125
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "strategy": "automation",
+    "checkpoint": "stage-2-middle",
+    "errors": [],
+    "loaded": {
+      "candidates": 8,
+      "players": 12,
+      "active": {
+        "p": "player-0",
+        "s1": "player-1",
+        "s2": "player-2",
+        "pc": "player-3",
+        "o1": "player-4",
+        "o2": "player-5",
+        "l": "player-6"
+      },
+      "division": 2,
+      "pending": 0
+    },
+    "before": {
+      "candidates": 8,
+      "players": 12
+    },
+    "layouts": [
+      {
+        "width": 390,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 167,
+            "x": 22,
+            "y": 503.703125
+          },
+          {
+            "width": 167,
+            "x": 201,
+            "y": 503.703125
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 137,
+            "x": 19,
+            "y": 500.703125
+          },
+          {
+            "width": 137,
+            "x": 164,
+            "y": 500.703125
+          }
+        ]
+      }
+    ],
+    "comparison": {
+      "overflow": false,
+      "hireButton": true,
+      "disabled": false
+    }
+  },
+  {
+    "strategy": "automation",
+    "checkpoint": "stage-2-end",
+    "errors": [],
+    "loaded": {
+      "candidates": 8,
+      "players": 12,
+      "active": {
+        "p": "player-0",
+        "s1": "player-1",
+        "s2": "player-2",
+        "pc": "player-3",
+        "o1": "player-4",
+        "o2": "player-5",
+        "l": "player-6"
+      },
+      "division": 2,
+      "pending": 29
+    },
+    "before": {
+      "candidates": 8,
+      "players": 12
+    },
+    "layouts": [
+      {
+        "width": 390,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 167,
+            "x": 22,
+            "y": 503.703125
+          },
+          {
+            "width": 167,
+            "x": 201,
+            "y": 503.703125
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 137,
+            "x": 19,
+            "y": 500.703125
+          },
+          {
+            "width": 137,
+            "x": 164,
+            "y": 500.703125
+          }
+        ]
+      }
+    ],
+    "comparison": {
+      "overflow": false,
+      "hireButton": true,
+      "disabled": false
+    }
+  },
+  {
+    "strategy": "automation",
+    "checkpoint": "stage-3-start",
+    "errors": [],
+    "loaded": {
+      "candidates": 8,
+      "players": 12,
+      "active": {
+        "p": "player-0",
+        "s1": "player-1",
+        "s2": "player-2",
+        "pc": "player-3",
+        "o1": "player-4",
+        "o2": "player-5",
+        "l": "player-6"
+      },
+      "division": 3,
+      "pending": 0
+    },
+    "before": {
+      "candidates": 8,
+      "players": 12
+    },
+    "layouts": [
+      {
+        "width": 390,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 167,
+            "x": 22,
+            "y": 503.703125
+          },
+          {
+            "width": 167,
+            "x": 201,
+            "y": 503.703125
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 137,
+            "x": 19,
+            "y": 500.703125
+          },
+          {
+            "width": 137,
+            "x": 164,
+            "y": 500.703125
+          }
+        ]
+      }
+    ],
+    "comparison": {
+      "overflow": false,
+      "hireButton": true,
+      "disabled": false
+    }
+  },
+  {
+    "strategy": "automation",
+    "checkpoint": "stage-3-middle",
+    "errors": [],
+    "loaded": {
+      "candidates": 8,
+      "players": 12,
+      "active": {
+        "p": "player-0",
+        "s1": "player-1",
+        "s2": "player-2",
+        "pc": "player-3",
+        "o1": "player-4",
+        "o2": "player-5",
+        "l": "player-6"
+      },
+      "division": 3,
+      "pending": 0
+    },
+    "before": {
+      "candidates": 8,
+      "players": 12
+    },
+    "layouts": [
+      {
+        "width": 390,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 167,
+            "x": 22,
+            "y": 503.703125
+          },
+          {
+            "width": 167,
+            "x": 201,
+            "y": 503.703125
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 137,
+            "x": 19,
+            "y": 500.703125
+          },
+          {
+            "width": 137,
+            "x": 164,
+            "y": 500.703125
+          }
+        ]
+      }
+    ],
+    "comparison": {
+      "overflow": false,
+      "hireButton": true,
+      "disabled": false
+    }
+  },
+  {
+    "strategy": "automation",
+    "checkpoint": "stage-3-end",
+    "errors": [],
+    "loaded": {
+      "candidates": 8,
+      "players": 12,
+      "active": {
+        "p": "player-0",
+        "s1": "player-1",
+        "s2": "player-2",
+        "pc": "player-3",
+        "o1": "player-4",
+        "o2": "player-5",
+        "l": "player-6"
+      },
+      "division": 3,
+      "pending": 72
+    },
+    "before": {
+      "candidates": 8,
+      "players": 12
+    },
+    "layouts": [
+      {
+        "width": 390,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 167,
+            "x": 22,
+            "y": 503.703125
+          },
+          {
+            "width": 167,
+            "x": 201,
+            "y": 503.703125
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 137,
+            "x": 19,
+            "y": 521.5
+          },
+          {
+            "width": 137,
+            "x": 164,
+            "y": 521.5
+          }
+        ]
+      }
+    ],
+    "comparison": {
+      "overflow": false,
+      "hireButton": true,
+      "disabled": false
+    }
+  },
+  {
+    "strategy": "balanced",
+    "checkpoint": "stage-2-start",
+    "errors": [],
+    "loaded": {
+      "candidates": 0,
+      "players": 12,
+      "active": {
+        "p": "player-0",
+        "s1": "player-1",
+        "s2": "player-2",
+        "pc": "player-3",
+        "o1": "player-4",
+        "o2": "player-5",
+        "l": "player-6"
+      },
+      "division": 2,
+      "pending": 6
+    },
+    "before": {
+      "candidates": 0,
+      "players": 12
+    },
+    "layouts": [
+      {
+        "width": 390,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 167,
+            "x": 22,
+            "y": 503.703125
+          },
+          {
+            "width": 167,
+            "x": 201,
+            "y": 503.703125
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 137,
+            "x": 19,
+            "y": 500.703125
+          },
+          {
+            "width": 137,
+            "x": 164,
+            "y": 500.703125
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "strategy": "balanced",
+    "checkpoint": "stage-2-end",
+    "errors": [],
+    "loaded": {
+      "candidates": 8,
+      "players": 22,
+      "active": {
+        "p": "player-14",
+        "s1": "player-13",
+        "s2": "player-15",
+        "pc": "player-20",
+        "o1": "player-21",
+        "o2": "player-19",
+        "l": "player-18"
+      },
+      "division": 2,
+      "pending": 22
+    },
+    "before": {
+      "candidates": 8,
+      "players": 22
+    },
+    "layouts": [
+      {
+        "width": 390,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 167,
+            "x": 22,
+            "y": 524.5
+          },
+          {
+            "width": 167,
+            "x": 201,
+            "y": 524.5
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 137,
+            "x": 19,
+            "y": 521.5
+          },
+          {
+            "width": 137,
+            "x": 164,
+            "y": 521.5
+          }
+        ]
+      }
+    ],
+    "comparison": {
+      "overflow": false,
+      "hireButton": true,
+      "disabled": false
+    }
+  },
+  {
+    "strategy": "balanced",
+    "checkpoint": "stage-3-start",
+    "errors": [],
+    "loaded": {
+      "candidates": 8,
+      "players": 22,
+      "active": {
+        "p": "player-14",
+        "s1": "player-13",
+        "s2": "player-15",
+        "pc": "player-20",
+        "o1": "player-21",
+        "o2": "player-19",
+        "l": "player-18"
+      },
+      "division": 3,
+      "pending": 0
+    },
+    "before": {
+      "candidates": 8,
+      "players": 22
+    },
+    "layouts": [
+      {
+        "width": 390,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 167,
+            "x": 22,
+            "y": 661.484375
+          },
+          {
+            "width": 167,
+            "x": 201,
+            "y": 661.484375
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 137,
+            "x": 19,
+            "y": 720.875
+          },
+          {
+            "width": 137,
+            "x": 164,
+            "y": 720.875
+          }
+        ]
+      }
+    ],
+    "comparison": {
+      "overflow": false,
+      "hireButton": true,
+      "disabled": false
+    }
+  },
+  {
+    "strategy": "balanced",
+    "checkpoint": "stage-3-end",
+    "errors": [],
+    "loaded": {
+      "candidates": 8,
+      "players": 22,
+      "active": {
+        "p": "player-14",
+        "s1": "player-13",
+        "s2": "player-15",
+        "pc": "player-20",
+        "o1": "player-21",
+        "o2": "player-19",
+        "l": "player-18"
+      },
+      "division": 3,
+      "pending": 56
+    },
+    "before": {
+      "candidates": 8,
+      "players": 22
+    },
+    "layouts": [
+      {
+        "width": 390,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 167,
+            "x": 22,
+            "y": 503.703125
+          },
+          {
+            "width": 167,
+            "x": 201,
+            "y": 503.703125
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 137,
+            "x": 19,
+            "y": 500.703125
+          },
+          {
+            "width": 137,
+            "x": 164,
+            "y": 500.703125
+          }
+        ]
+      }
+    ],
+    "comparison": {
+      "overflow": false,
+      "hireButton": true,
+      "disabled": false
+    }
+  },
+  {
+    "strategy": "transfers",
+    "checkpoint": "stage-2-start",
+    "errors": [],
+    "loaded": {
+      "candidates": 0,
+      "players": 12,
+      "active": {
+        "p": "player-0",
+        "s1": "player-1",
+        "s2": "player-2",
+        "pc": "player-3",
+        "o1": "player-4",
+        "o2": "player-5",
+        "l": "player-6"
+      },
+      "division": 2,
+      "pending": 6
+    },
+    "before": {
+      "candidates": 0,
+      "players": 12
+    },
+    "layouts": [
+      {
+        "width": 390,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 167,
+            "x": 22,
+            "y": 749.078125
+          },
+          {
+            "width": 167,
+            "x": 201,
+            "y": 749.078125
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 137,
+            "x": 19,
+            "y": 808.46875
+          },
+          {
+            "width": 137,
+            "x": 164,
+            "y": 808.46875
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "strategy": "transfers",
+    "checkpoint": "stage-2-middle",
+    "errors": [],
+    "loaded": {
+      "candidates": 8,
+      "players": 26,
+      "active": {
+        "p": "player-24",
+        "s1": "player-13",
+        "s2": "player-17",
+        "pc": "player-25",
+        "o1": "player-19",
+        "o2": "player-20",
+        "l": "player-22"
+      },
+      "division": 2,
+      "pending": 0
+    },
+    "before": {
+      "candidates": 8,
+      "players": 26
+    },
+    "layouts": [
+      {
+        "width": 390,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 167,
+            "x": 22,
+            "y": 503.703125
+          },
+          {
+            "width": 167,
+            "x": 201,
+            "y": 503.703125
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 137,
+            "x": 19,
+            "y": 500.703125
+          },
+          {
+            "width": 137,
+            "x": 164,
+            "y": 500.703125
+          }
+        ]
+      }
+    ],
+    "comparison": {
+      "overflow": false,
+      "hireButton": true,
+      "disabled": false
+    }
+  },
+  {
+    "strategy": "transfers",
+    "checkpoint": "stage-2-end",
+    "errors": [],
+    "loaded": {
+      "candidates": 8,
+      "players": 29,
+      "active": {
+        "p": "player-24",
+        "s1": "player-26",
+        "s2": "player-27",
+        "pc": "player-25",
+        "o1": "player-28",
+        "o2": "player-20",
+        "l": "player-22"
+      },
+      "division": 2,
+      "pending": 28
+    },
+    "before": {
+      "candidates": 8,
+      "players": 29
+    },
+    "layouts": [
+      {
+        "width": 390,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 167,
+            "x": 22,
+            "y": 503.703125
+          },
+          {
+            "width": 167,
+            "x": 201,
+            "y": 503.703125
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 137,
+            "x": 19,
+            "y": 500.703125
+          },
+          {
+            "width": 137,
+            "x": 164,
+            "y": 500.703125
+          }
+        ]
+      }
+    ],
+    "comparison": {
+      "overflow": false,
+      "hireButton": true,
+      "disabled": false
+    }
+  },
+  {
+    "strategy": "transfers",
+    "checkpoint": "stage-3-start",
+    "errors": [],
+    "loaded": {
+      "candidates": 8,
+      "players": 29,
+      "active": {
+        "p": "player-24",
+        "s1": "player-26",
+        "s2": "player-27",
+        "pc": "player-25",
+        "o1": "player-28",
+        "o2": "player-20",
+        "l": "player-22"
+      },
+      "division": 3,
+      "pending": 0
+    },
+    "before": {
+      "candidates": 8,
+      "players": 29
+    },
+    "layouts": [
+      {
+        "width": 390,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 167,
+            "x": 22,
+            "y": 503.703125
+          },
+          {
+            "width": 167,
+            "x": 201,
+            "y": 503.703125
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 137,
+            "x": 19,
+            "y": 500.703125
+          },
+          {
+            "width": 137,
+            "x": 164,
+            "y": 500.703125
+          }
+        ]
+      }
+    ],
+    "comparison": {
+      "overflow": false,
+      "hireButton": true,
+      "disabled": false
+    }
+  },
+  {
+    "strategy": "transfers",
+    "checkpoint": "stage-3-middle",
+    "errors": [],
+    "loaded": {
+      "candidates": 8,
+      "players": 29,
+      "active": {
+        "p": "player-24",
+        "s1": "player-26",
+        "s2": "player-27",
+        "pc": "player-25",
+        "o1": "player-28",
+        "o2": "player-20",
+        "l": "player-22"
+      },
+      "division": 3,
+      "pending": 0
+    },
+    "before": {
+      "candidates": 8,
+      "players": 29
+    },
+    "layouts": [
+      {
+        "width": 390,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 167,
+            "x": 22,
+            "y": 503.703125
+          },
+          {
+            "width": 167,
+            "x": 201,
+            "y": 503.703125
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 137,
+            "x": 19,
+            "y": 500.703125
+          },
+          {
+            "width": 137,
+            "x": 164,
+            "y": 500.703125
+          }
+        ]
+      }
+    ],
+    "comparison": {
+      "overflow": false,
+      "hireButton": true,
+      "disabled": false
+    }
+  },
+  {
+    "strategy": "transfers",
+    "checkpoint": "stage-3-end",
+    "errors": [],
+    "loaded": {
+      "candidates": 8,
+      "players": 30,
+      "active": {
+        "p": "player-24",
+        "s1": "player-26",
+        "s2": "player-29",
+        "pc": "player-25",
+        "o1": "player-28",
+        "o2": "player-20",
+        "l": "player-22"
+      },
+      "division": 3,
+      "pending": 56
+    },
+    "before": {
+      "candidates": 8,
+      "players": 30
+    },
+    "layouts": [
+      {
+        "width": 390,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 167,
+            "x": 22,
+            "y": 503.703125
+          },
+          {
+            "width": 167,
+            "x": 201,
+            "y": 503.703125
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 137,
+            "x": 19,
+            "y": 521.5
+          },
+          {
+            "width": 137,
+            "x": 164,
+            "y": 521.5
+          }
+        ]
+      }
+    ],
+    "comparison": {
+      "overflow": false,
+      "hireButton": true,
+      "disabled": true
+    }
+  },
+  {
+    "strategy": "balanced",
+    "checkpoint": "stage-2-middle",
+    "errors": [],
+    "loaded": {
+      "candidates": 8,
+      "players": 21,
+      "active": {
+        "p": "player-14",
+        "s1": "player-13",
+        "s2": "player-15",
+        "pc": "player-20",
+        "o1": "player-16",
+        "o2": "player-19",
+        "l": "player-18"
+      },
+      "division": 2,
+      "pending": 0
+    },
+    "before": {
+      "candidates": 8,
+      "players": 21
+    },
+    "layouts": [
+      {
+        "width": 390,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 167,
+            "x": 22,
+            "y": 503.703125
+          },
+          {
+            "width": 167,
+            "x": 201,
+            "y": 503.703125
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 137,
+            "x": 19,
+            "y": 720.875
+          },
+          {
+            "width": 137,
+            "x": 164,
+            "y": 720.875
+          }
+        ]
+      }
+    ],
+    "comparison": {
+      "overflow": false,
+      "hireButton": true,
+      "disabled": false
+    },
+    "performanceMode": "stress: match calendar pause bypassed",
+    "performance": [
+      {
+        "throttle": 1,
+        "count": 84,
+        "slow": 15,
+        "max": 316.6999999999998,
+        "elapsed": 3004.2000000059606,
+        "instructionsBefore": 27800,
+        "instructionsAfter": 27862,
+        "visible": true,
+        "matchActive": false,
+        "pulses": 11,
+        "task": 2.369473,
+        "script": 0.298997,
+        "layout": 0.048496,
+        "styles": 1.567338
+      },
+      {
+        "throttle": 4,
+        "count": 18,
+        "slow": 15,
+        "max": 283.2000000000007,
+        "elapsed": 3176.400000002981,
+        "instructionsBefore": 27862,
+        "instructionsAfter": 27923,
+        "visible": true,
+        "matchActive": false,
+        "pulses": 9,
+        "task": 3.3119260000000006,
+        "script": 0.24877300000000002,
+        "layout": 0.05407100000000001,
+        "styles": 2.6361510000000004
+      }
+    ]
+  },
+  {
+    "strategy": "balanced",
+    "checkpoint": "stage-3-middle",
+    "errors": [],
+    "loaded": {
+      "candidates": 8,
+      "players": 22,
+      "active": {
+        "p": "player-14",
+        "s1": "player-13",
+        "s2": "player-15",
+        "pc": "player-20",
+        "o1": "player-21",
+        "o2": "player-19",
+        "l": "player-18"
+      },
+      "division": 3,
+      "pending": 0
+    },
+    "before": {
+      "candidates": 8,
+      "players": 22
+    },
+    "layouts": [
+      {
+        "width": 390,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 167,
+            "x": 22,
+            "y": 503.703125
+          },
+          {
+            "width": 167,
+            "x": 201,
+            "y": 503.703125
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "cards": [
+          {
+            "width": 137,
+            "x": 19,
+            "y": 500.703125
+          },
+          {
+            "width": 137,
+            "x": 164,
+            "y": 500.703125
+          }
+        ]
+      }
+    ],
+    "comparison": {
+      "overflow": false,
+      "hireButton": true,
+      "disabled": false
+    },
+    "performanceMode": "stress: match calendar pause bypassed",
+    "performance": [
+      {
+        "throttle": 1,
+        "count": 65,
+        "slow": 15,
+        "max": 249.80000000000018,
+        "elapsed": 3011.000000005961,
+        "instructionsBefore": 74808,
+        "instructionsAfter": 74978,
+        "visible": true,
+        "matchActive": false,
+        "pulses": 13,
+        "task": 2.828599,
+        "script": 0.372744,
+        "layout": 0.041026,
+        "styles": 2.048698
+      },
+      {
+        "throttle": 4,
+        "count": 13,
+        "slow": 9,
+        "max": 549.8999999999996,
+        "elapsed": 3085.400000002981,
+        "instructionsBefore": 74978,
+        "instructionsAfter": 75138,
+        "visible": true,
+        "matchActive": false,
+        "pulses": 10,
+        "task": 3.221034,
+        "script": 0.506807,
+        "layout": 0.054133999999999995,
+        "styles": 2.366423
+      }
+    ]
+  }
+]

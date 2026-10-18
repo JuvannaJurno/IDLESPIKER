@@ -11,8 +11,8 @@ function update(state){
    if(!group.parentElement.classList.contains('foundation-drawer')){const shell=document.createElement('div');shell.className='foundation-drawer';shell.id='foundation-drawer-'+group.dataset.foundation;group.before(shell);shell.append(group);}
    const shell=group.parentElement;let pending=shell.parentElement.querySelector('.foundation-pending[data-foundation="'+group.dataset.foundation+'"]');
    if(!pending){pending=document.createElement('section');pending.className='foundation-pending';pending.dataset.foundation=group.dataset.foundation;pending.setAttribute('aria-label','Geliştirilmeyi bekleyen önceki aşama blokları');shell.before(pending);}
-   for(const card of [...group.children]){const room=RoomRules.catalog.find(r=>r.id===card.dataset.id);if(room&&RoomRules.count(state,room.id)<room.values.length)pending.append(card);}
-   for(const card of [...pending.children]){const room=RoomRules.catalog.find(r=>r.id===card.dataset.id);if(!room||RoomRules.count(state,room.id)<room.values.length||storing.has(card))continue;storing.add(card);
+   for(const card of [...group.children]){const room=RoomRules.catalog.find(r=>r.id===card.dataset.id);if(room&&RoomRules.count(state,room.id)<RoomRules.maxLevel(state,room)&&!(state.division===3&&room.bal))pending.append(card);}
+   for(const card of [...pending.children]){const room=RoomRules.catalog.find(r=>r.id===card.dataset.id);if(!room||RoomRules.count(state,room.id)<RoomRules.maxLevel(state,room)&&!(state.division===3&&room.bal)||storing.has(card))continue;storing.add(card);
     const depth={position:card.style.position,zIndex:card.style.zIndex};card.style.position='relative';card.style.zIndex='15';base.style.position='relative';base.style.zIndex='20';
     const animation=card.animate(CardMotion.frames(card,base),CardMotion.options());
     animation.finished.catch(()=>{}).then(()=>{storing.delete(card);if(!card.isConnected)return;group.append(card);animation.cancel();card.style.position=depth.position;card.style.zIndex=depth.zIndex;pending.hidden=!pending.children.length;update(state);});
@@ -26,8 +26,8 @@ function update(state){
   toggle.onclick=()=>{const open=!drawerOpen.get(floor);drawerOpen.set(floor,open);show(open);window.GameAudio?.uiClick?.();};show(!!drawerOpen.get(floor));
  }
 }
-function create(floor,perform){
- const rooms=RoomRules.catalog.filter(r=>r.floor===floor&&!r.bal);if(!rooms.length)return null;
+function create(floor,perform,state){
+ const rooms=RoomRules.catalog.filter(r=>r.floor===floor&&(!r.bal||state?.division===3&&!r.division));if(!rooms.length)return null;
  const group=document.createElement('section');group.className='foundation-block inherited-block-group';group.dataset.foundation=floor;group.style.setProperty('--stored-count',rooms.length);group.setAttribute('aria-label','Önceki aşamadan gelen bloklar');
  for(const r of rooms){const card=document.createElement('button');card.type='button';card.className='room-tile purchased-room upgrade-room room-'+r.id;card.dataset.id=r.id;const icon=document.createElement('span'),title=document.createElement('strong'),description=document.createElement('small'),badge=document.createElement('span');icon.className='slot-icon';icon.textContent=r.icon;title.textContent=r.name;badge.className='room-active';card.append(icon,title,description,badge);card.onclick=()=>{if(perform(r)){window.GameAudio?.uiClick?.();update(RoomSystem.snapshot());}};group.append(card);}
  return group;

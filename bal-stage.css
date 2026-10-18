@@ -286,3 +286,14 @@
 #campDialog .camp-drag-ghost{transform-origin:50% 24%;animation:camp-held-wobble .7s ease-in-out infinite;will-change:rotate;box-shadow:0 9px 20px #294e4540}
 @keyframes camp-held-wobble{0%,100%{rotate:-3deg}50%{rotate:3deg}}
 @media(prefers-reduced-motion:reduce){#campDialog .camp-drag-ghost{animation:none;rotate:0deg;will-change:auto}}
+
+/* The committed stage replaces the animated layout without a visible flash. */
+::view-transition-old(root),::view-transition-new(root){animation-duration:320ms;animation-timing-function:ease-in-out}
+.division-transition #workflow,.division-transition .tier{overflow-anchor:none}
+@media(prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root){animation-duration:1ms}}
+
+.division-transition .mobile-nav,.division-transition .room-lane{pointer-events:none}
+
+#stageTestPosition{box-sizing:border-box;width:min(390px,calc(100vw - 28px));padding:28px 20px 20px;border-radius:20px}#stageTestPosition h2{padding-right:24px;font-size:20px}#stageTestPosition p{font-size:12px;line-height:1.5}#stageTestPosition [data-position]{display:block;width:100%;margin-top:10px;min-height:46px}#stageTestPosition>small{display:block;margin-top:14px;font-size:10px;line-height:1.5;opacity:.75}
+
+#transferCompareScreen .transfer-compare-footer{display:block;margin:18px 0 0;padding:14px 0 max(12px,env(safe-area-inset-bottom));border-top:1px solid #c4d3bb}#transferCompareScreen .transfer-compare-footer button{width:100%;margin:0;min-height:46px}#transferCompareScreen .transfer-compare-footer p:empty{display:none}#transferLineupPrompt{width:min(420px,calc(100vw - 24px));text-align:left;padding:24px}#transferLineupPrompt h2{font-size:22px;line-height:1.25;margin:0 0 12px}#transferLineupPrompt button{width:100%}#transferLineupPrompt .equip-label{display:block;margin:16px 0}#transferLineupPrompt select{width:100%}

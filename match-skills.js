@@ -10,7 +10,7 @@ const definitions=[
  ['tempo-first','Birinci Tempo Hücum','Epic'],['tempo-minus','Minus Tempo','Legendary'],['absolute-read','Kusursuz Hücum Okuma','Legendary'],['jump-legendary','Yıldırım Smaç Servis','Legendary'],['jump-float-legendary','Jump Float','Legendary'],['perfect-second-touch','Zor Topa Pas','Legendary'],['one-hand-rescue','One-Handed Set','Legendary'],['pancake','Pancake','Legendary'],['ghost-tip','Hayalet Plase','Legendary']
 ].map(([id,name,rarity])=>({id,name,rarity}));
 const catalog=new Map(definitions.map(s=>[s.id,s])),weights={Common:5,Uncommon:4,Rare:3,Epic:1.8,Legendary:1.1};
-let enabled=true,suppressed=false,clock=0,carry=0,cooldown=0,legendaryUntil=0,lastSkill='',focus=null,servePlan=null,seed='',random=MatchRules.seeded('skill-effects'),lastBall=null,approachPlan=null,rallyStart=0,legendaryUsed=false,pendingSet=null,pendingAttack=null,pendingBlock=null,pendingSync=null,pendingDive=null,visualRate=1,serveLabelUntil=0,currentServe=null;const counterUntil=[0,0],overheadUntil=new Map();let impactHold=null,pancakeHold=null,noticeHold=null,currentNotice=null,noticeTimer=null;const attempts=[];
+let enabled=true,suppressed=false,clock=0,carry=0,cooldown=0,legendaryUntil=0,lastSkill='',focus=null,servePlan=null,seed='',random=MatchRules.seeded('skill-effects'),lastBall=null,approachPlan=null,rallyStart=0,legendaryUsed=false,pendingSet=null,pendingAttack=null,pendingBlock=null,pendingSync=null,pendingDive=null,visualRate=1,serveLabelUntil=0,currentServe=null;const counterUntil=[0,0],overheadUntil=new Map();let impactHold=null,pancakeHold=null,currentNotice=null,noticeTimer=null;const attempts=[];
 const reactionIcons=new Map();
 const knockbacks=new Map();
 const active=[],events=[],focusEvents=[],incoming=new WeakMap(),planned=new WeakSet(),motion=new Map(),trace=[],reactions=new Map(),reacted=new WeakSet(),counterAttempts=new WeakSet();
@@ -22,11 +22,11 @@ const sound=action=>{if(parent!==window)parent.postMessage({type:'spiker-audio',
 function leagueEnabled(){return !!window.matchInfo?.epicTeam||[2,3].includes(Number(window.matchInfo?.division));}
 function canShow(){return enabled&&leagueEnabled()&&!suppressed&&!document.hidden&&!scenario&&!formationPreview&&!serviceGame;}
 function finishFocus(reason='cancelled'){if(focus){const f=focus.flight,progress=f?limit(f.t/Math.max(.001,f.duration)):null;focusEvents.push({id:focus.skill.id,reason,progress,age:focus.age});if(focusEvents.length>40)focusEvents.shift();}focus=null;sound('skill-slow-stop');if(!pendingDive?.heartbeatStarted)sound('heartbeat-stop');}
-function resetEffects(){knockbacks.clear();reactionIcons.clear();noticeHold=null;currentNotice=null;attempts.length=0;clearTimeout(noticeTimer);noticeTimer=null;pancakeHold=null;document.body.classList.remove('skill-blackout');if(impactHold)impactHold.flight.impactFlash=0;impactHold=null;overheadUntil.clear();sound('heartbeat-stop');window.MatchMotion?.reset();window.MatchFrames?.invalidate();active.length=0;trace.length=0;motion.clear();servePlan=null;approachPlan=null;pendingSet=null;pendingAttack=null;pendingBlock=null;pendingSync=null;pendingDive=null;serveLabelUntil=0;currentServe=null;reactions.clear();finishFocus('reset');carry=0;lastBall=null;label.hidden=true;}
+function resetEffects(){knockbacks.clear();reactionIcons.clear();currentNotice=null;attempts.length=0;clearTimeout(noticeTimer);noticeTimer=null;pancakeHold=null;document.body.classList.remove('skill-blackout');if(impactHold)impactHold.flight.impactFlash=0;impactHold=null;overheadUntil.clear();sound('heartbeat-stop');window.MatchMotion?.reset();window.MatchFrames?.invalidate();active.length=0;trace.length=0;motion.clear();servePlan=null;approachPlan=null;pendingSet=null;pendingAttack=null;pendingBlock=null;pendingSync=null;pendingDive=null;serveLabelUntil=0;currentServe=null;reactions.clear();finishFocus('reset');carry=0;lastBall=null;label.hidden=true;}
 function owns(actor,id){if(!actor||!window.PlayerSkills)return false;const p=actor.roster||{...actor.stats,id:'match-'+actor.team+'-'+actor.index,skillCamps:0};return PlayerSkills.allows(p,id,{division:window.matchInfo?.division});}
 function eligible(ids,actor){return ids.map(id=>catalog.get(id)).filter(s=>s&&owns(typeof actor==='function'?actor(s.id):actor,s.id)&&s.id!==lastSkill&&(s.rarity!=='Legendary'||clock>=legendaryUntil));}
 function pickSkill(ids,actor){const nextSeed=window.matchInfo?.fixtureId||String(window.matchInfo?.round||1);if(seed!==nextSeed){seed=nextSeed;random=MatchRules.seeded('skills-'+seed);}if(!canShow()||!ids.length)return null;const choices=eligible(ids,actor);if(clock<cooldown||random()>.60||!choices.length)return null;let n=random()*choices.reduce((sum,s)=>sum+weights[s.rarity],0);for(const s of choices){n-=weights[s.rarity];if(n<=0)return s;}return choices.at(-1);}
-function startFocus(effect){if(!effect||noticeHold?.effect===effect||focus||effect.skill.rarity!=='Legendary'||!canShow()||paused)return;focus={actor:effect.actor,skill:effect.skill,effect,age:0,flight:null,route:null};if(effect.flight)bindFlight(effect,effect.flight);if(effect.skill.id!=='pancake')sound('skill-slow');else if(!effect.heartbeatStarted){effect.heartbeatStarted=true;sound('heartbeat');}}
+function startFocus(effect){if(!effect||focus||effect.skill.rarity!=='Legendary'||!canShow()||paused)return;focus={actor:effect.actor,skill:effect.skill,effect,age:0,flight:null,route:null};if(effect.flight)bindFlight(effect,effect.flight);if(effect.skill.id!=='pancake')sound('skill-slow');else if(!effect.heartbeatStarted){effect.heartbeatStarted=true;sound('heartbeat');}}
 function routeKey(f){return [f.kind,f.from?.x,f.from?.y,f.targetX,f.targetY].join('|');}
 function bindFlight(effect,flight){if(effect.skill.id==='pancake'){sound('heartbeat-stop');pancakeHold={flight,actor:effect.actor,age:0};}creditFlight(effect,flight);effect.flight=flight;effect.contact=clock;effect.prepared=false;if(focus?.effect===effect){focus.flight=flight;focus.route=routeKey(flight);}}
 function updateFocus(){if(!focus)return;const f=focus.flight;if(f){if(f!==ball){finishFocus('flight-replaced');return;}const route=routeKey(f);if(route!==focus.route)focus.route=route;if(f.state==='flight'&&f.t/Math.max(.001,f.duration)>=.5){finishFocus('halfway');return;}}else if(focus.effect.incoming&&(ball!==focus.effect.incoming||ball.state==='drop'))finishFocus('action-cancelled');}
@@ -39,7 +39,7 @@ function planAim(effect,actor){
  }else{const target=options[Math.floor(random()*options.length)],goal=tacticalGoal(target);effect.aimTarget=target.index;effect.aim={x:limit(goal.x,90,910),y:limit(goal.y,90,530)};}
 }
 function renderNotice(effect){clearTimeout(noticeTimer);noticeTimer=null;currentNotice=effect;delete label.dataset.state;label.dataset.rarity=effect.skill.rarity.toLowerCase();label.dataset.kind=effect.kind;label.dataset.team=String(effect.team);label.children[0].textContent=effect.skill.rarity;label.children[1].textContent=effect.skill.name;label.children[2].textContent=effect.actorName||commentaryName(players.find(p=>p.index===effect.actor));label.hidden=false;}
-function anticipate(effect){renderNotice(effect);const frame=document.createElement('canvas');frame.width=1000;frame.height=620;frame.getContext('2d').drawImage(canvas,0,0);noticeHold={effect,frame,age:0};window.MatchMotion?.reset();}
+function anticipate(effect){renderNotice(effect);}
 function failNotice(effect){if(!effect||effect.failed)return;effect.failed=true;if(currentNotice!==effect)return;renderNotice(effect);label.dataset.state='failed';noticeTimer=setTimeout(()=>{if(currentNotice===effect&&label.dataset.state==='failed')label.hidden=true;},560);}
 function resolveAttempt(flight){for(const e of attempts)if(!e.failed&&e.flight===flight&&['attack','serve','block'].includes(e.kind))failNotice(e);}
 function creditFlight(effect,flight){if(flight&&effect.skill.rarity==='Legendary')flight.skillCredit={id:effect.skill.id,actor:effect.actor,team:effect.team};}
@@ -97,6 +97,7 @@ function syncSkillHeight(f){if(!f.skillArc)return;f.z=skillHeight(f);f.visualSca
 function refreshNet(f){if(f.kind!=='attack'||!f.attackPending)return;f.netTime=f.duration*limit((500-f.from.x)/(f.targetX-f.from.x),.02,.95);f.netY=f.from.y+(f.targetY-f.from.y)*(f.netTime/f.duration);f.blockPlan=blockPlan(f.target.team,f.netY);for(const p of players)if(p.team===f.target.team&&p.block>0){p.block=0;p.jump=0;}for(const goal of f.blockPlan){const p=players.find(p=>p.index===goal.index);if(p&&Math.hypot(p.x-goal.x,p.y-goal.y)<=180*f.netTime+42){p.jump=.5;p.block=Math.max(.5,f.netTime+.25);}}}
 
 launch=function(from,target,touch,kind='pass'){
+ if(!enabled||!leagueEnabled()||suppressed)return originalLaunch(from,target,touch,kind);
  const release=canShow()&&ball.state==='flight'?{x:ball.x,y:ball.y,z:pendingDive?.incoming===ball&&pendingDive.skill.id==='pancake'?2:skillHeight(ball)}:null;
  const previous=ball,info=incoming.get(previous),sync=kind==='attack'&&pendingSync?.setFlight===previous&&pendingSync.hitter===from.index?pendingSync:null;
  const prepared=canShow()?(kind==='serve'?servePlan?.effect:kind==='attack'?pendingAttack?.incoming===previous&&pendingAttack.actor===from.index?pendingAttack:null:null):null;
@@ -112,7 +113,7 @@ launch=function(from,target,touch,kind='pass'){
   ball.netTime=ball.duration*limit((500-from.x)/(ball.targetX-from.x),.02,.95);ball.netY=from.y+(ball.targetY-from.y)*(ball.netTime/ball.duration);
   ball.blockPlan=blockPlan(target.team,ball.netY);prepared.tipFrom={...ball.from};
  }
- incoming.set(ball,{distance:Math.hypot(target.x-ball.targetX,target.y-ball.targetY),previousKind:kind,quality:from.contactQuality});
+ incoming.set(ball,{origin:{x:target.x,y:target.y},distance:Math.hypot(target.x-ball.targetX,target.y-ball.targetY),previousKind:kind,quality:from.contactQuality});
  if(!canShow()){delayedSounds.forEach(play=>play());return;}resolveAttempt(previous);
  if(sync){pendingSync=null;sync.outgoing=ball;bindFlight(sync,ball);sync.attackAt=clock;sync.until=clock+ball.duration+1;}
  if(touch===2&&!ball.miss&&role(target)==='setter'){const choices=players.filter(p=>p.team===target.team&&p!==target&&frontRow(p)&&!['setter','libero'].includes(role(p)));approachPlan=choices.length&&random()<.6?{flight:ball,actor:choices[Math.floor(random()*choices.length)].index}:null;}else approachPlan=null;
@@ -152,10 +153,11 @@ launch=function(from,target,touch,kind='pass'){
   const power=effect.skill.id==='power-hit'||effect.powerBounce;
   ball.dropDuration=power?1.42:.85;ball.skillArc={style:power?'power':effect.skill.id==='ghost-tip'?'tip':'normal',start:release?.z??18,end:power?0:18,bounce:!!power,camera:!!effect.cameraBounce};syncSkillHeight(ball);
  }
- if(noticeHold?.effect===effect&&!prepared)noticeHold.sounds=delayedSounds;else delayedSounds.forEach(play=>play());
+ delayedSounds.forEach(play=>play());
  refreshNet(ball);
 };
 resolveNetContact=function(){
+ if(!enabled||!leagueEnabled()||suppressed)return originalNet();
  const before=ball,attacker=ball.attacker,prepared=pendingBlock?.incoming===ball?pendingBlock:null;
  const netT=ball.netTime,netU=limit(netT/ball.duration),contact={x:ball.from.x+(ball.targetX-ball.from.x)*netU,y:ball.netY,z:ball.skillArc?skillHeight(ball,netT):18+((ball.startZ||18)-18)*(1-netU)+Math.sin(Math.PI*netU)*45},oldDuration=ball.duration,arc=ball.skillArc;
  originalNet();
@@ -175,21 +177,22 @@ resolveNetContact=function(){
  const skill=pickSkill(pool,main);if(skill)trigger(skill,main,'block',ball,{members:blockers.map(number)});
  if(ball.outcome.event==='block-touch'&&attacker&&random()<.3){const wipe=pickSkill(['wipe'],attacker);if(wipe)trigger(wipe,attacker,'attack',before);}
 };
+function distantRescue(p,flight,info,minGap=24){return (info?.distance||0)>=105&&Math.hypot(p.x-flight.targetX,p.y-flight.targetY)>=minGap;}
 function pancakeChoice(p){if(clock<counterUntil[p.team]||!owns(p,'pancake'))return null;return random()<limit(.24+(p.stats?.receive||30)*.0025,.25,.65)?catalog.get('pancake'):null;}
 function planMovement(){
  if(!canShow()||ball.state!=='flight')return;const target=ball.target,remaining=Math.max(0,ball.duration-ball.t),info=incoming.get(ball);
  const legendary=active.find(e=>e.flight===ball&&e.team!==target.team&&e.skill.rarity==='Legendary'&&['serve','attack','set'].includes(e.kind));
- if(legendary&&ball.touch===1&&['serve','attack'].includes(ball.kind)&&!ball.attackPending&&!counterAttempts.has(ball)&&remaining<=.75&&remaining>0&&Math.hypot(target.x-ball.targetX,target.y-ball.targetY)>=48&&ball.outcome?.winner==='actor'&&['kill','ace','receive-error'].includes(ball.outcome.event)&&Math.hypot(target.x-ball.targetX,target.y-ball.targetY)<=movementSpeed(target)*remaining+18){
+ if(legendary&&ball.touch===1&&['serve','attack'].includes(ball.kind)&&!ball.attackPending&&!counterAttempts.has(ball)&&remaining<=.75&&remaining>0&&distantRescue(target,ball,info,55)&&ball.outcome?.winner==='actor'&&['kill','ace','receive-error'].includes(ball.outcome.event)&&Math.hypot(target.x-ball.targetX,target.y-ball.targetY)<=movementSpeed(target)*remaining+18){
   const skill=pancakeChoice(target);counterAttempts.add(ball);if(!skill)return;const dx=ball.targetX-target.x,dy=ball.targetY-target.y,d=Math.max(1,Math.hypot(dx,dy)),rescueGoal={x:ball.targetX-dx/d*26,y:ball.targetY-dy/d*26};if(Math.hypot(target.x-rescueGoal.x,target.y-rescueGoal.y)>movementSpeed(target)*remaining+2)return;const old=ball.outcome;ball.outcome={...old,winner:null,event:'pancake-save',quality:.42};ball.miss=false;delete ball.pointWinner;target.contactQuality=.42;counterUntil[target.team]=clock+12;
   const resolution=[...history].reverse().find(e=>e.type==='resolution'&&e.player===ball.attacker.index&&e.winner==='actor');if(resolution){resolution.counteredBy='pancake';resolution.counteredEvent=resolution.event;resolution.winner=null;}
   for(const [index,reaction]of reactions)if(players.find(p=>p.index===index)?.team===target.team&&['float','sync-attack'].includes(reaction.reason))reactions.delete(index);
-  history.push({type:'skill-counter',skill:'pancake',player:target.index,team:target.team,against:old.event,againstSkill:legendary.skill.id});pendingDive=trigger(skill,target,'receive',null,{prepared:true,incoming:ball,contact:clock+remaining,until:clock+remaining+.85,diveStart:clock+Math.max(0,remaining-.09),diveX:dx/d,diveY:dy/d,rescueGoal,impact:{x:ball.targetX,y:ball.targetY}});if(pendingDive){pendingDive.heartbeatStarted=true;sound('heartbeat');}startFocus(pendingDive);return;
+  history.push({type:'skill-counter',skill:'pancake',player:target.index,team:target.team,against:old.event,againstSkill:legendary.skill.id});pendingDive=trigger(skill,target,'receive',null,{prepared:true,incoming:ball,contact:clock+remaining,until:clock+remaining+.85,diveStart:clock+Math.max(0,remaining-(.10+random()*.05)),slideReach:30+random()*8,diveX:dx/d,diveY:dy/d,rescueGoal,impact:{x:ball.targetX,y:ball.targetY}});if(pendingDive){pendingDive.heartbeatStarted=true;sound('heartbeat');}startFocus(pendingDive);return;
  }
  if(ball.miss||planned.has(ball))return;
  if(ball.touch===1&&!active.some(e=>e.flight===ball&&['float','jump-float-legendary'].includes(e.skill.id))&&role(target)==='libero'&&remaining<=.34&&(info?.distance||0)>32){
   planned.add(ball);const skill=pickSkill(['dive'],target);if(!skill)return;const dx=ball.targetX-target.x,dy=ball.targetY-target.y,length=Math.hypot(dx,dy),fallback=Math.max(1,Math.hypot(ball.from.x-target.x,ball.from.y-target.y));pendingDive=trigger(skill,target,'receive',null,{prepared:true,incoming:ball,contact:clock+remaining,until:clock+remaining+.85,diveStart:clock,diveX:length>4?dx/length:(ball.from.x-target.x)/fallback,diveY:length>4?dy/length:(ball.from.y-target.y)/fallback});
- }else if(ball.touch===2&&role(target)==='setter'&&remaining<=.3){
-  planned.add(ball);if(Math.hypot(target.x-ball.targetX,target.y-ball.targetY)>movementSpeed(target)*remaining+18)return;const broken=(info?.distance||0)>75||(Number.isFinite(info?.quality)&&info.quality<.55);const skill=pickSkill(broken?['perfect-second-touch','one-hand-rescue']:['fake-set'],target);if(!skill)return;pendingSet=trigger(skill,target,'set',null,{prepared:true,incoming:ball,contact:clock+remaining,until:clock+remaining+2.5});startFocus(pendingSet);
+ }else if(ball.touch===2&&role(target)==='setter'&&remaining<=.85){
+  const gap=Math.hypot(target.x-ball.targetX,target.y-ball.targetY),broken=distantRescue(target,ball,info);if(!broken&&remaining>.3)return;if(gap>movementSpeed(target)*remaining+12)return;planned.add(ball);const skill=pickSkill(broken?['perfect-second-touch','one-hand-rescue']:['fake-set'],target);if(!skill)return;pendingSet=trigger(skill,target,'set',null,{prepared:true,incoming:ball,contact:clock+remaining,until:clock+remaining+2.5});startFocus(pendingSet);
  }else if(ball.touch===3&&target?.spike>0&&!pendingAttack){
   planned.add(ball);const skill=pickSkill(['ghost-tip','power-hit'],target);if(!skill)return;pendingAttack=trigger(skill,target,'attack',null,{prepared:true,incoming:ball,contact:clock+remaining,until:clock+remaining+2.5});planAim(pendingAttack,target);startFocus(pendingAttack);
  }else if(ball.kind==='attack'&&ball.attackPending&&!pendingBlock){
@@ -238,21 +241,29 @@ function advance(dt){
  window.MatchMotion?.beforeStep();originalTick(dt);syncSkillHeight(ball);clock+=dt;
  planMovement();for(const e of active)if(e.skill.id==='perfect-second-touch'&&e.prepared){const p=players.find(p=>p.index===e.actor);if(p&&(!e.afterTrail?.length||clock-e.afterTrail.at(-1).at>.055)){(e.afterTrail??=[]).push({x:p.x,y:p.y,at:clock});if(e.afterTrail.length>3)e.afterTrail.shift();}}updateReactions();updateFocus();if(!focus&&pendingDive?.skill.id==='pancake'&&pendingDive.incoming===ball)startFocus(pendingDive);
  for(let i=active.length-1;i>=0;i--)if(active[i].until<clock)active.splice(i,1);
- if(!active.length&&!focus&&!noticeHold&&label.dataset.state!=='failed'&&clock>serveLabelUntil)label.hidden=true;
+ if(!active.length&&!focus&&label.dataset.state!=='failed'&&clock>serveLabelUntil)label.hidden=true;
  for(const p of players){const entry=motion.get(p.index);if(!entry||clock-entry.at>.8)motion.set(p.index,{x:p.x,y:p.y,at:clock});}
 }
 tick=function(dt){
  if(!enabled||!leagueEnabled()||suppressed){window.MatchMotion?.beforeStep();originalTick(dt);visualRate=1;return;}
  if(paused||!ready||document.hidden){if(focus){sound('skill-slow-stop');sound('heartbeat-stop');}originalTick(dt);return;}
- if(noticeHold){noticeHold.age+=dt/(Number($('speed').value)||1);if(noticeHold.age<.5){carry=0;visualRate=0;window.MatchMotion?.reset();return;}const effect=noticeHold.effect,sounds=noticeHold.sounds||[];noticeHold=null;sounds.forEach(play=>play());startFocus(effect);}
  if(pancakeHold){if(pancakeHold.flight!==ball){pancakeHold=null;document.body.classList.remove('skill-blackout');}else{pancakeHold.age+=dt/(Number($('speed').value)||1);if(pancakeHold.age<.5){document.body.classList.add('skill-blackout');carry=0;visualRate=0;window.MatchMotion?.reset();return;}pancakeHold=null;document.body.classList.remove('skill-blackout');}}
  if(impactHold){if(impactHold.flight!==ball)impactHold=null;else{impactHold.age+=dt/(Number($('speed').value)||1);if(impactHold.age<.5){carry=0;visualRate=0;window.MatchMotion?.reset();return;}ball.impactFlash=0;impactHold=null;}}
  let factor=1;if(focus){const speed=Number($('speed').value)||1;focus.age+=dt/speed;const progress=focus.flight?limit(focus.flight.t/Math.max(.001,focus.flight.duration)):0,enter=limit(focus.age/.12),leave=limit((progress-.4)/.1);factor=1-.62*enter*(1-leave);}
- visualRate=factor;carry+=dt*factor;let safety=0;while(carry+1e-10>=1/60&&safety++<20){advance(1/60);carry-=1/60;if(impactHold||pancakeHold||noticeHold){carry=0;break;}}
+ visualRate=factor;carry+=dt*factor;let safety=0;while(carry+1e-10>=1/60&&safety++<20){advance(1/60);carry-=1/60;if(impactHold||pancakeHold){carry=0;break;}}
 };
 function overheadReception(p){return (overheadUntil.get(p.index)||0)>clock||(ball.state==='flight'&&ball.target===p&&ball.touch===1&&!ball.miss&&ball.duration-ball.t<=.24&&pendingDive?.skill.id!=='pancake'&&active.some(e=>e.flight===ball&&['float','jump-float-legendary'].includes(e.skill.id)));}
+
+const rarityGlowSprites=new Map();
+function drawRarityGlow(context,player,rarity,progress){
+ if(progress<=0||progress>=1)return;
+ const colors={Common:'#bed7cf',Uncommon:'#a5d4a7',Rare:'#9bcbea',Epic:'#c4a7df',Legendary:'#efd397'},color=colors[rarity]||colors.Common;
+ let sprite=rarityGlowSprites.get(color);if(!sprite){sprite=document.createElement('canvas');sprite.width=sprite.height=96;const c=sprite.getContext('2d'),g=c.createRadialGradient(48,48,5,48,48,47);g.addColorStop(0,color);g.addColorStop(.4,color+'b0');g.addColorStop(1,color+'00');c.fillStyle=g;c.fillRect(0,0,96,96);rarityGlowSprites.set(color,sprite);}
+ context.save();context.globalAlpha*=Math.sin(progress*Math.PI)*({Common:.09,Uncommon:.12,Rare:.16,Epic:.18,Legendary:.22}[rarity]||.09);context.drawImage(sprite,player.x-43,player.y-43,86,86);context.restore();
+}
+
 function effectFor(p){for(let i=active.length-1;i>=0;i--)if(active[i].actor===p.index)return active[i];return null;}
-playerLayout=function(p){const e=canShow()?effectFor(p):null,age=e?clock-e.contact:99;if(e?.skill.id==='sky-serve'&&age<.4){const body=LAYOUT.filter(q=>!/^(arm|sleeve|hand)-/.test(q.id));const side=e.prepared?'left':'right',pose=e.prepared?TOSS_LAYOUT:BLOCK_LAYOUT;return body.concat(pose.filter(q=>q.id==='arm-'+side));}if(e?.skill.id==='commit-block'&&e.prepared&&age<-.07)return APPROACH_LAYOUT;if(overheadReception(p))return TOSS_LAYOUT.filter(part=>!part.id.startsWith('sleeve-'));if(e?.runStart&&e.prepared&&p.approach)return e.skill.id==='jump-float-legendary'&&window.MatchPoseData?MatchPoseData.jumpFloatApproach:APPROACH_LAYOUT;if(e?.skill.id==='pancake'&&age>=-.25&&age<.7)return LAYOUT.filter(part=>! /^(arm|sleeve)-/.test(part.id)).concat(RECEIVE_LAYOUT.filter(part=>part.id==='arm-right'||part.id==='sleeve-right'));if(e?.runStart&&clock-e.start>=0&&clock-e.start<.23&&e.prepared)return LAYOUT.filter(part=>! /^(arm|sleeve)-/.test(part.id)).concat(TOSS_LAYOUT.filter(part=>part.id==='arm-right'));if(e&&age>=(e.skill.id==='ghost-tip'?-.06:-.3)&&age<.48&&['one-hand-rescue','ghost-tip'].includes(e.skill.id)){const side=e.side||'right';return LAYOUT.filter(part=>! /^(arm|sleeve)-/.test(part.id)).concat(TOSS_LAYOUT.filter(part=>part.id==='arm-'+side));}return originalLayout(p);};
+playerLayout=function(p){if(!enabled||!leagueEnabled()||suppressed)return originalLayout(p);const e=canShow()?effectFor(p):null,age=e?clock-e.contact:99;if(e?.skill.id==='sky-serve'&&age<.4){const body=LAYOUT.filter(q=>!/^(arm|sleeve|hand)-/.test(q.id));const side=e.prepared?'left':'right',pose=e.prepared?TOSS_LAYOUT:BLOCK_LAYOUT;return body.concat(pose.filter(q=>q.id==='arm-'+side));}if(e?.skill.id==='commit-block'&&e.prepared&&age<-.07)return APPROACH_LAYOUT;if(overheadReception(p))return TOSS_LAYOUT.filter(part=>!part.id.startsWith('sleeve-'));if(e?.runStart&&e.prepared&&p.approach)return e.skill.id==='jump-float-legendary'&&window.MatchPoseData?MatchPoseData.jumpFloatApproach:APPROACH_LAYOUT;if(e?.skill.id==='pancake'&&age>=-.25&&age<.7)return LAYOUT.filter(part=>! /^(arm|sleeve)-/.test(part.id)).concat(RECEIVE_LAYOUT.filter(part=>part.id==='arm-right'||part.id==='sleeve-right'));if(e?.runStart&&clock-e.start>=0&&clock-e.start<.23&&e.prepared)return LAYOUT.filter(part=>! /^(arm|sleeve)-/.test(part.id)).concat(TOSS_LAYOUT.filter(part=>part.id==='arm-right'));if(e&&age>=(e.skill.id==='ghost-tip'?-.06:-.3)&&age<.48&&['one-hand-rescue','ghost-tip'].includes(e.skill.id)){const side=e.side||'right';return LAYOUT.filter(part=>! /^(arm|sleeve)-/.test(part.id)).concat(TOSS_LAYOUT.filter(part=>part.id==='arm-'+side));}return originalLayout(p);};
 drawPlayer=function(p){
  if(!enabled||!leagueEnabled()||suppressed||p.index>=12){originalPlayer(p);return;}const saved={jump:p.jump,spike:p.spike,approach:p.approach,toss:p.toss,receive:p.receive,x:p.x,y:p.y,angle:p.angle,moving:p.moving,phase:p.phase,block:p.block,shadowScale:p.shadowScale,hidePoseSleeves:p.hidePoseSleeves},e=effectFor(p);
  let diving=false,diveBlend=0,pancaking=false;try{
@@ -270,7 +281,7 @@ drawPlayer=function(p){
    if(e.runningBlock&&age>=-.22&&age<.36){const u=limit((age+.22)/.58),drift=12*(1-limit((age+.22)/.22));p.x-=e.runningBlock.dx*drift;p.y-=e.runningBlock.dy*drift;p.jump=.5*(1-u);p.block=age>-.10?1:0;p.approach=false;p.moving=false;p.angle=Math.atan2(e.runningBlock.dy,e.runningBlock.dx)*(1-limit((age+.12)/.12));}
 
    if(['one-hand-rescue','ghost-tip'].includes(e.skill.id)&&age>=(e.skill.id==='ghost-tip'?-.06:-.3)&&age<.48){p.toss=Math.max(p.toss,.1);p.spike=0;}
-   if(['dive','pancake'].includes(e.skill.id)&&clock>=(e.diveStart??e.contact)&&age>=-.34&&age<.7){const u=limit((clock-(e.diveStart??e.contact))/.45),settle=limit((age-.4)/.3),slide=Math.sin((e.skill.id==='pancake'?limit((clock-e.diveStart)/.45):u)*Math.PI/2)*(e.skill.id==='pancake'?36:30)*(1-settle);p.x+=(e.diveX??Math.cos(p.angle))*slide;p.y+=(e.diveY??Math.sin(p.angle))*slide;p.receive=.3;p.jump=.5-Math.asin(Math.sin(u*Math.PI)*.28)*.5/Math.PI;p.spike=0;p.block=0;p.toss=0;p.approach=false;p.moving=false;diving=clock>=(e.diveStart??e.contact);pancaking=e.skill.id==='pancake';if(pancaking)p.angle=Math.atan2(e.diveY,e.diveX);diveBlend=Math.min(limit((clock-(e.diveStart??e.contact))/(pancaking?.06:.12)),limit((.7-age)/.18));}
+   if(['dive','pancake'].includes(e.skill.id)&&clock>=(e.diveStart??e.contact)&&age>=-.34&&age<.7){const u=limit((clock-(e.diveStart??e.contact))/.45),settle=limit((age-.4)/.3),slide=Math.sin((e.skill.id==='pancake'?limit((clock-e.diveStart)/.45):u)*Math.PI/2)*(e.skill.id==='pancake'?(e.slideReach??36):30)*(1-settle);p.x+=(e.diveX??Math.cos(p.angle))*slide;p.y+=(e.diveY??Math.sin(p.angle))*slide;p.receive=.3;p.jump=.5-Math.asin(Math.sin(u*Math.PI)*.28)*.5/Math.PI;p.spike=0;p.block=0;p.toss=0;p.approach=false;p.moving=false;diving=clock>=(e.diveStart??e.contact);pancaking=e.skill.id==='pancake';if(pancaking)p.angle=Math.atan2(e.diveY,e.diveX);diveBlend=Math.min(limit((clock-(e.diveStart??e.contact))/(pancaking?.06:.12)),limit((.7-age)/.18));}
    if(['jump','jump-legendary','jump-float-legendary'].includes(e.skill.id)){
     const start=e.contact-.30,u=limit((clock-start)/.64);
     if(u>0&&u<1){p.jump=.5*(1-u);const age=clock-e.contact;p.spike=age<-.09?.35:age<0?.35-.18*limit((age+.09)/.09):Math.max(.01,.17-age*.55);p.toss=0;p.approach=false;}
@@ -284,6 +295,7 @@ drawPlayer=function(p){
   if(overheadReception(p)){p.toss=.3;p.receive=0;p.spike=0;p.block=0;p.approach=false;}
   if(diving)p.shadowScale=1-.3*diveBlend;if(pancaking)alignPancake(p,e.impact,clock-e.contact,Math.sin(p.jump/.5*Math.PI)*12);
   const knock=knockbacks.get(p.index);if(knock){const age=clock-knock.start;if(age>=.38)knockbacks.delete(p.index);else if(age>=0){const u=limit(age/.38),push=u<.24?Math.sin(u/.24*Math.PI/2):Math.pow(1-(u-.24)/.76,2);p.x+=knock.x*11*push;p.y+=knock.y*11*push;p.receive=Math.max(p.receive,.16*(1-u));p.moving=false;p.approach=false;}}
+  if(e&&canShow())drawRarityGlow(ctx,p,e.skill.rarity,(clock-e.contact+.15)/.85);
   originalPlayer(p);const icon=reactionIcons.get(p.index);if(icon)window.MatchReactionArt?.draw(ctx,icon.kind,clock-icon.start,p.x+34,p.y,32,Math.PI/2);
  }finally{Object.assign(p,saved);}
 };
@@ -327,7 +339,6 @@ function paintEffects(){if(pancakeHold){document.body.classList.add('skill-black
 
 }
 function drawEffects(){
- if(noticeHold&&canShow()){ctx.drawImage(noticeHold.frame,0,0);return;}
  if(!enabled||!leagueEnabled()||suppressed){originalDraw();return;}const flight=ball,saved={x:flight.x,y:flight.y,z:flight.z,visualScale:flight.visualScale,impactFlash:flight.impactFlash};const e=active.find(e=>e.flight===flight),u=flight.state==='flight'?limit(flight.t/flight.duration):0;
  try{
   syncSkillHeight(flight);flight.impactFlash=impactHold?.flight===flight?Math.max(0,1-impactHold.age/.32):0;
@@ -340,7 +351,7 @@ function drawEffects(){
  }finally{Object.assign(flight,saved);}
 };
 draw=function(){
- const time=clock,alpha=paused||impactHold||pancakeHold||noticeHold?1:limit((carry+Math.max(0,frameCarry)*visualRate)/(1/60));
+ const time=clock,alpha=paused||impactHold||pancakeHold?1:limit((carry+Math.max(0,frameCarry)*visualRate)/(1/60));
  try{if(window.MatchMotion&&!paused)clock-=((1-alpha)/60);return window.MatchMotion?MatchMotion.render(alpha,drawEffects):drawEffects();}
  finally{clock=time;}
 };
@@ -348,5 +359,5 @@ awardPoint=function(winner){const credit=canShow()&&ball.skillCredit?.team===win
 reset=function(){resetEffects();clock=0;cooldown=0;legendaryUntil=0;counterUntil.fill(0);legendaryUsed=false;focusEvents.length=0;lastSkill='';events.length=0;return originalReset();};
 window.addEventListener('message',e=>{if(e.source===parent&&e.data?.type==='spiker-match'&&e.data.action==='skip'){suppressed=true;resetEffects();}});
 window.addEventListener('blur',()=>{sound('skill-slow-stop');sound('heartbeat-stop');});document.addEventListener('visibilitychange',()=>{if(document.hidden)sound('skill-slow-stop');sound('heartbeat-stop');});
-window.MatchSkills={catalog:definitions,setEnabled(value){enabled=!!value;resetEffects();},get focusEvents(){return focusEvents.map(e=>({...e}));},get events(){return events.map(e=>({...e}));},get state(){return {enabled:enabled&&leagueEnabled(),suppressed,legendaryUsed,active:active.map(e=>({id:e.skill.id,actor:e.actor,kind:e.kind})),servePlacement:currentServe?{id:currentServe.id,name:currentServe.name,zone:currentServe.zone,goal:{...currentServe.goal},actor:currentServe.actor}:null,servePreparation:servePlan?.effect?.runStart?{actor:servePlan.effect.actor,phase:clock<servePlan.effect.start+.18?'toss':clock<servePlan.effect.contact-.30?'approach':'jump',remaining:Math.max(0,servePlan.effect.contact-clock)}:null,reactions:[...reactions.values()].map(r=>({actor:r.actor,reason:r.reason})),synchronized:active.filter(e=>e.skill.id==='sync-attack').map(e=>({hitter:e.hitter,members:[...e.members],timings:structuredClone(e.timings||{}),leaping:Number.isFinite(e.leapStart)&&clock-e.leapStart<.5})),aims:active.filter(e=>e.aim).map(e=>({id:e.skill.id,...e.aim})),slow:!!focus,focusSkill:focus?.skill.id,focusActor:focus?.actor,focusPhase:focus?.flight?'outbound':focus?'preparation':null,focusProgress:focus?.flight?focus.flight.t/Math.max(.001,focus.flight.duration):null,reactionIcons:[...reactionIcons].map(([actor,icon])=>({actor,...icon})),notice:currentNotice?{id:currentNotice.skill.id,rarity:currentNotice.skill.rarity,failed:!!currentNotice.failed,lead:noticeHold?{age:noticeHold.age,duration:.5}:null}:null,blackout:pancakeHold?{actor:pancakeHold.actor,age:pancakeHold.age,duration:.5}:null,impact:impactHold?{age:impactHold.age,duration:.5}:null,clock};}};
+window.MatchSkills={catalog:definitions,setEnabled(value){enabled=!!value;resetEffects();},get focusEvents(){return focusEvents.map(e=>({...e}));},get events(){return events.map(e=>({...e}));},get state(){return {enabled:enabled&&leagueEnabled(),suppressed,legendaryUsed,active:active.map(e=>({id:e.skill.id,actor:e.actor,kind:e.kind})),servePlacement:currentServe?{id:currentServe.id,name:currentServe.name,zone:currentServe.zone,goal:{...currentServe.goal},actor:currentServe.actor}:null,servePreparation:servePlan?.effect?.runStart?{actor:servePlan.effect.actor,phase:clock<servePlan.effect.start+.18?'toss':clock<servePlan.effect.contact-.30?'approach':'jump',remaining:Math.max(0,servePlan.effect.contact-clock)}:null,reactions:[...reactions.values()].map(r=>({actor:r.actor,reason:r.reason})),synchronized:active.filter(e=>e.skill.id==='sync-attack').map(e=>({hitter:e.hitter,members:[...e.members],timings:structuredClone(e.timings||{}),leaping:Number.isFinite(e.leapStart)&&clock-e.leapStart<.5})),aims:active.filter(e=>e.aim).map(e=>({id:e.skill.id,...e.aim})),slow:!!focus,focusSkill:focus?.skill.id,focusActor:focus?.actor,focusPhase:focus?.flight?'outbound':focus?'preparation':null,focusProgress:focus?.flight?focus.flight.t/Math.max(.001,focus.flight.duration):null,reactionIcons:[...reactionIcons].map(([actor,icon])=>({actor,...icon})),notice:currentNotice?{id:currentNotice.skill.id,rarity:currentNotice.skill.rarity,failed:!!currentNotice.failed,lead:null}:null,blackout:pancakeHold?{actor:pancakeHold.actor,age:pancakeHold.age,duration:.5}:null,impact:impactHold?{age:impactHold.age,duration:.5}:null,clock};}};
 })();

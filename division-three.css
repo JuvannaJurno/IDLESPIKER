@@ -80,3 +80,9 @@ body.social-open .social-feed-window{height:clamp(230px,calc(100dvh - 610px),470
 @media(prefers-reduced-motion:reduce){.draft-background,.draft-player,.draft-headline,.draft-scan{transition:none;transform:none}}
 
 .social-block.upgrade-room{align-items:stretch;text-align:left}.social-block.upgrade-room .media-bonus[hidden]{display:none}.social-block.upgrade-room .block-level-number small{font-size:10px;line-height:1}.social-block.upgrade-room .block-upgrade-action{font-size:9px}
+
+.division-transition .room-lane{overflow:visible}.division-transition .tier{position:relative;overflow-anchor:none}.division-stage-preview{position:absolute;left:0;top:0;display:flex;gap:10px;z-index:1;pointer-events:none}.division-stage-area{box-sizing:border-box;flex:0 0 166px;width:166px;min-height:222px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:18px 12px;border:2px dashed #adc1a4;border-radius:13px;background:#f6f0d9;color:#567f79;text-align:center;box-shadow:0 3px 0 #b7baa033}.division-stage-area>span{font-size:27px;color:#a3b699}.division-stage-area strong{font-size:12px;line-height:1.4}.division-stage-area small{font-size:10px;color:#8a9982}html[data-theme=dark] .division-stage-area{background:#2d4146;border-color:#647c76;color:#d9e1d2}
+
+.division-transition .division-banner{position:fixed;top:12px;left:50%;transform:translateX(-50%);box-sizing:border-box;width:min(440px,calc(100% - 24px));margin:0;z-index:1000;background:#fff6dfee;backdrop-filter:blur(10px);box-shadow:0 6px 24px #294b4020}.division-transition .energy-dock{opacity:.28;pointer-events:none}.division-transition .achievement-notice{visibility:hidden}
+
+.division-transition .reward-pop,.division-transition .energy-pulse{visibility:hidden}

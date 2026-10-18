@@ -31,6 +31,7 @@ choice.querySelector('[data-tutorial=yes]').onclick=()=>chooseTutorial(true);cho
 function update(){
  if(document.getElementById('bootScreen')||document.hidden||window.BalTransition?.active||window.gameResetting||window.MatchGateway?.active()){clear();return}
  if(guided){const step=guided.steps[guided.index],el=step.target();show('guided-'+step.id,typeof step.text==='function'?step.text():step.text,el);close.textContent=guided.index===guided.steps.length-1?'Anladım':'Devam →';close.setAttribute('aria-label','Sonraki adım');return}
+ if(done.has('ask')&&RoomSystem.tutorialState().stage==='bal'){chooseTutorial(false);return;}
  if(done.has('ask')){clear();if(!choice.open&&!document.querySelector('dialog[open]'))choice.showModal();return}
  const s=RoomSystem.tutorialState(),has=id=>s.floors.some(row=>row.includes(id));
  if(s.instructions>0)finish('tap');if(has('assistant')){finish('assistant');finish('blocks-basics')}if(has('warmup'))finish('warmup');if(has('offline_time'))finish('offline');

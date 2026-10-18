@@ -19,7 +19,7 @@ async function play({animate,stopped,text,note}){
  function step(n,title,detail){workflow.dataset.transitionStep=n;text.textContent=n+'/5 · '+title;note.textContent=detail;}
  async function focus(el){const startLeft=scrollBox.scrollLeft;const top=window.scrollY+el.getBoundingClientRect().top-Math.max(110,(innerHeight-180-el.offsetHeight)/2);if(reduced){scrollBox.scrollLeft=0;window.scrollTo({top,behavior:'instant'});return}const start=scrollY,end=Math.max(0,top),begin=performance.now();await new Promise(resolve=>{function frame(now){if(stopped())return resolve();const p=Math.min(1,(now-begin)/420);scrollBox.scrollLeft=startLeft*(1-p)**3;window.scrollTo({top:start+(end-start)*(1-(1-p)**3),behavior:'instant'});p<1?requestAnimationFrame(frame):resolve()}requestAnimationFrame(frame)});}
 
- async function gather(f){if(stopped())return;const el=tier(f),b=base(f),slot=document.getElementById('roomSlots'+f);el.classList.add('bal-active-tier');await focus(b);if(stopped())return;
+ async function gather(f,keepCamera=false){if(stopped())return;const el=tier(f),b=base(f),slot=document.getElementById('roomSlots'+f);el.classList.add('bal-active-tier');if(!keepCamera)await focus(b);if(stopped())return;
  const state=RoomSystem.snapshot(),cards=[...slot.querySelectorAll('.upgrade-room')].filter(card=>{const room=RoomRules.catalog.find(r=>r.id===card.dataset.id);return room&&RoomRules.count(state,room.id)>=room.values.length;});el.dataset.blockMerge='storing';
  // Keep the cards full-sized: they slide behind the department instead of shrinking away.
  b.style.position='relative';b.style.zIndex='20';
@@ -38,7 +38,7 @@ async function play({animate,stopped,text,note}){
 
  async function reveal(card,f){if(stopped())return;const old=document.createElement('div'),next=document.createElement('div');old.className='bal-card-face bal-face-old';next.className='bal-card-face bal-face-new';while(card.firstChild)old.append(card.firstChild);next.append(...[...old.children].map(n=>n.cloneNode(true)));decorate(next,f);card.classList.add('bal-card-changing');card.append(old,next);await Promise.all([move(old,[{transform:'translateY(0)',opacity:1},{transform:'translateY(-102%)',opacity:.3}],950),move(next,[{transform:'translateY(102%)'},{transform:'translateY(0)'}],950),move(card,[{boxShadow:'0 4px 0 #8daa9c'},{boxShadow:'0 4px 0 #a6ac77,0 0 0 5px #e3ca8b66',offset:.5},{boxShadow:'0 4px 0 #8daa9c'}],1100)]);if(stopped())return;card.replaceChildren(...next.childNodes);card.classList.remove('bal-card-changing');card.classList.add('bal-card-renewed');}
  step(1,'Kulüp yönetimi yenileniyor','Gönüllü Kulüp Asistanı → Kulüp Yönetimi');await gather(1);if(stopped())return;await reveal(base(1),1);await hold(base(1));if(stopped())return;
- step(2,'İki departman birleşiyor','Antrenman Sahası + Kantin → Performans Merkezi');await gather(0);await gather(2);if(stopped())return;
+ step(2,'İki departman birleşiyor','Antrenman Sahası + Kantin → Performans Merkezi');await gather(0);await gather(2,true);if(stopped())return;
  // Keep the real departments in their vertical lanes throughout the merge.
  const a=base(0),b=base(2);const top=tier(0),bottom=tier(2);await focus(top);if(stopped())return;workflow.dataset.mergePhase='joining';
  const ar=a.getBoundingClientRect(),br=b.getBoundingClientRect(),distance=br.top-ar.top;
@@ -50,14 +50,14 @@ async function play({animate,stopped,text,note}){
  const height=bottom.getBoundingClientRect().height;await move(bottom,[{height:height+'px',marginBottom:'16px',opacity:1},{height:'0px',marginBottom:'0px',opacity:0}],650);bottom.hidden=true;bottom.style.display='none';workflow.dataset.mergePhase='complete';
  step(3,'Maç hazırlığı yenileniyor','Kara Tahta → Teknik Ekip');await gather(3);if(stopped())return;await reveal(base(3),3);await hold(base(3));if(stopped())return;
  // New departments join the end only after all inherited departments have settled.
- async function appendDepartment(f,n){if(stopped())return;const el=tier(f),card=base(f);el.getAnimations().forEach(a=>a.cancel());el.querySelectorAll('*').forEach(node=>node.getAnimations().forEach(a=>a.cancel()));el.removeAttribute('style');card.removeAttribute('style');el.hidden=true;workflow.append(el);document.getElementById('roomSlots'+f).replaceChildren();decorate(card,f);
+ async function appendDepartment(f,n){if(stopped())return;const el=tier(f),card=base(f);el.getAnimations().forEach(a=>a.cancel());el.querySelectorAll('*').forEach(node=>node.getAnimations().forEach(a=>a.cancel()));el.removeAttribute('style');card.removeAttribute('style');el.hidden=true;if(f===2)workflow.insertBefore(el,tier(3));else workflow.append(el);document.getElementById('roomSlots'+f).replaceChildren();decorate(card,f);
  step(n,'Yeni departman: '+names[f],'İlk dokunuşta ücretsiz açılır');
  const label=document.createElement('span');label.className='bal-new-department-label';label.textContent='Keşfet · Ücretsiz';card.append(label);
  el.hidden=false;el.style.opacity='0';await focus(card);if(stopped())return;
  await move(el,[{transform:'translateY(52px)',opacity:0},{transform:'translateY(0)',opacity:1}],1100);await hold(el,500);
  }
  await appendDepartment(2,4);if(stopped())return;await appendDepartment(4,5);if(stopped())return;
- text.textContent='Kulübün BAL’a hazır';note.textContent='Yeni departmanlar en altta · Dokun ve keşfet';await hold(tier(4),450);
+ text.textContent='Kulübün BAL’a hazır';note.textContent='Departmanların hazır · Dokun ve keşfet';await hold(tier(4),450);
 }
 function capture(workflow){const children=[...workflow.childNodes];const records=[...workflow.querySelectorAll('.tier')].map(t=>{const card=t.querySelector('.base-room');return {t,card,parent:card.parentElement,html:card.innerHTML,slot:t.querySelector('[id^="roomSlots"]'),children:[...t.querySelector('[id^="roomSlots"]').childNodes],childStyles:[...t.querySelector('[id^="roomSlots"]').childNodes].map(n=>n.getAttribute?.('style')),hidden:t.hidden,style:t.getAttribute('style')}});return ()=>{workflow.replaceChildren(...children);delete workflow.dataset.transitionStep;workflow.querySelectorAll('.bal-new-department-label').forEach(el=>el.remove());workflow.querySelectorAll('.bal-merge-dock').forEach(d=>d.remove());for(const r of records){r.slot.replaceChildren(...r.children);r.children.forEach((n,i)=>{n.getAnimations?.().forEach(a=>a.cancel());if(n.setAttribute){r.childStyles[i]===null?n.removeAttribute('style'):n.setAttribute('style',r.childStyles[i])}});delete r.t.dataset.blockMerge;r.parent.prepend(r.card);r.card.innerHTML=r.html;r.card.classList.remove('bal-join-card','bal-card-changing','bal-card-renewed');r.card.removeAttribute('style');r.t.hidden=r.hidden;r.style===null?r.t.removeAttribute('style'):r.t.setAttribute('style',r.style);r.t.classList.remove('bal-active-tier')}}}
 window.BalVisual={decorate,play,capture};

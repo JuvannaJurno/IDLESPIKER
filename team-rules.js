@@ -1,7 +1,7 @@
 (function(root){
 const Skills=root.PlayerSkills||(typeof require==='function'?require('./player-skills.js'):null);
 const Camps=root.CampRules||(typeof require==='function'?require('./camp-rules.js'):null);
-function developmentState(){if(root.RoomSystem?.developmentState)return root.RoomSystem.developmentState();try{const raw=JSON.parse(root.localStorage?.getItem('idle-spiker-rooms-v2')||'null');return {stage:raw?.stage==='bal'?'bal':'prologue',camp:Camps.normalize(raw?.camp)}}catch{return {stage:'prologue',camp:Camps.defaults()}}}
+function developmentState(){if(root.RoomSystem?.developmentState)return root.RoomSystem.developmentState();try{const raw=JSON.parse(root.localStorage?.getItem('idle-spiker-rooms-v2')||'null');return {stage:raw?.stage==='bal'?'bal':'prologue',division:raw?.division,floors:raw?.floors||[[],[],[],[],[]],camp:Camps.normalize(raw?.camp)}}catch{return {stage:'prologue',camp:Camps.defaults()}}}
 function cap(p){return Camps.cap(developmentState(),p)}
 function stageLabel(){if(root.LeagueRules?.config?.name)return root.LeagueRules.config.name.toLocaleUpperCase('tr-TR');return developmentState().stage==='bal'?'BÖLGESEL AMATÖR LİG':'PROLOG'}
 const roles={setter:'Pasör',outside:'Smaçör',opposite:'Pasör çaprazı',middle:'Orta oyuncu',libero:'Libero'};
@@ -46,7 +46,7 @@ function cardGains(p,level=cardLevel(p),statCap=cap(p)){
 function cardQuote(p){const level=cardLevel(p),limit=cardLimit(p),role=cardRoles[p.role],gains=cardGains(p);
  if(!role)return {level,limit,gains,cost:0,blocked:'Pozisyon bulunamadı',before:overall(p),after:overall(p)};
  const points=Object.values(gains).reduce((a,b)=>a+b,0),discount=Object.entries(gains).reduce((n,[k,v])=>n+v*Math.max(0,Math.min(developmentState().stage==='bal'?.35:.25,root.RoomSystem?.trainingDiscount?.(k)||0)),0);
- const cost=points?Math.ceil((developmentState().stage==='bal'?(developmentState().division===3?2500*1.14**Math.min(25,Math.max(0,overall(p)-25))*1.125**Math.max(0,overall(p)-50):1200*1.12**Math.min(25,Math.max(0,overall(p)-25))*1.10**Math.max(0,overall(p)-50)):140*1.8**(level-1))*(points-discount)/6):0;
+ const state=developmentState(),B=root.BalRules||(typeof require==='function'?require('./bal-rules.js'):null),adapt=p.transferStartLevel!=null&&level-p.transferStartLevel<3?(B?.value(state,'pro_analysis')||0)+(B?.value(state,'pro_adapt')||0):0;const cost=points?Math.ceil((developmentState().stage==='bal'?(developmentState().division===3?2500*1.14**Math.min(25,Math.max(0,overall(p)-25))*1.125**Math.max(0,overall(p)-50):1200*1.12**Math.min(25,Math.max(0,overall(p)-25))*1.10**Math.max(0,overall(p)-50)):140*1.8**(level-1))*(points-discount)/6*(1-adapt)):0;
  const next={...p};for(const [k,n]of Object.entries(gains))next[k]+=n;
  return {level,limit,gains,cost,before:overall(p),after:overall(next),blocked:Camps.active(developmentState(),p)?'Oyuncu kampta · dönüşünü bekliyor':level>=limit?(developmentState().stage==='bal'?'Bu aşamada en yüksek seviye':'Prolog seviyesi tamamlandı'):!points?'Stat sınırında · Kamp ile sınırı artır':''};
 }
