@@ -83,3 +83,25 @@ html[data-theme=dark] #teamPanel .player-card,html[data-theme=dark] #scoutDialog
 .player-card .card-top{background:var(--club-kit)!important}.player-card .player-overall{background:#527b8a!important}.player-card .card-stats i{background:linear-gradient(to right,#8dbbb7 var(--stat),var(--club-line) var(--stat))}.player-card .card-art>.camp-stars{background:#527b8ab8!important}.player-card[data-can-upgrade=true] .card-open-upgrade{background:#edcf91!important;border-color:#cfb578!important;color:#725b33!important}.player-card[data-can-upgrade=true] .card-open-upgrade small{color:#725b33!important}
 html[data-theme=dark] :is(.player-card,.scout-player){--club-paper:var(--night-panel,#23363d);--club-soft:#3b5558;--club-ink:var(--night-ink,#edf0e8);--club-muted:var(--night-muted,#bac9c4);--club-line:var(--night-line,#435b61);--club-edge:#526b6b;--club-port:#304b50;--club-name:var(--night-raised,#2d4349);--club-action:#293f42;--club-kit:#456a75;--club-shadow:#13282088}
 html[data-theme=dark] .player-card .player-overall{background:#35545e!important}html[data-theme=dark] .player-card .card-stats i{background:linear-gradient(to right,#86aaa1 var(--stat),var(--club-line) var(--stat))}
+/* One card anatomy on every device; narrow screens change the list, not the card. */
+@media all{
+#teamPanel .team-grid{grid-template-columns:minmax(0,264px);justify-content:center;gap:18px}
+#teamPanel .player-card{display:flex!important;flex-direction:column;grid-template-columns:none;width:100%;max-width:264px}
+#teamPanel .player-card .card-art{height:182px;min-height:182px;flex:none}
+#teamPanel .player-card .card-art>img{object-fit:contain;object-position:center bottom}
+#teamPanel .player-card .card-halo{width:112px;height:112px;top:19px}
+#teamPanel .player-card .card-top{min-height:36px;padding:11px 12px!important;font-size:9px}
+#teamPanel .player-card .player-overall{top:12px;left:12px;min-width:39px;min-height:49px;padding:6px}
+#teamPanel .player-card .player-overall b{font-size:27px}
+#teamPanel .player-card .card-art>.camp-stars{top:12px;right:10px;bottom:auto;transform:none;padding:5px 6px}
+#teamPanel .player-card .card-name{padding:13px 13px 11px;min-height:64px}
+#teamPanel .player-card .card-inspect{font-size:21px!important}
+#teamPanel .player-card .card-inspect small{font-size:13px!important;margin-top:4px}
+#teamPanel .player-card .card-cap{padding:9px 13px 8px}
+#teamPanel .player-card .card-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));padding:12px 13px 10px;gap:10px 12px}
+#teamPanel .player-card .card-stats>span{font-size:10px;gap:4px}
+#teamPanel .player-card .card-stats b{font-size:11px}
+#teamPanel .player-card .card-physical{padding:9px 13px;min-height:30px;font-size:9px}
+}
+/* Opening previews must not inherit mobile grid coordinates. */
+#scoutDialog.is-opening #packCard .player-card>*{grid-column:auto;grid-row:auto}
