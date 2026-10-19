@@ -49,5 +49,11 @@ drawOrder=function(p){
  }
  return result;
 };
+const whiteFlag=new Image();whiteFlag.src=MatchHairData.whiteFlag.source;
+const nativeCourt=court,nativePoint=awardPoint;let flagRaisedUntil=-1;const judgeSprites=new Map();
+function judgeSprite(type){if(judgeSprites.has(type))return judgeSprites.get(type);const source=sprites[0]?.[type];if(!source||(source.complete===false)||!(source.naturalWidth||source.width))return null;const canvas=document.createElement('canvas');canvas.width=source.naturalWidth||source.width;canvas.height=source.naturalHeight||source.height;const c=canvas.getContext('2d');c.drawImage(source,0,0);if(type==='shirt'){c.globalCompositeOperation='source-in';c.fillStyle='#e9eee6';c.fillRect(0,0,canvas.width,canvas.height);}judgeSprites.set(type,canvas);return canvas;}
+function drawLineJudge(x,y,angle){if(!whiteFlag.complete||!whiteFlag.naturalWidth)return;ctx.save();ctx.translate(x,y);ctx.rotate(angle);ctx.imageSmoothingEnabled=false;ctx.fillStyle='#0002';ctx.beginPath();ctx.ellipse(0,3,12,8,0,0,Math.PI*2);ctx.fill();const shirt=judgeSprite('shirt'),head=judgeSprite('head'),hair=judgeSprite('hair');if(shirt)ctx.drawImage(shirt,-7.5,-14.5);if(head)ctx.drawImage(head,3,-7.5);if(hair)ctx.drawImage(hair,-10,-8.5);const raised=elapsed<flagRaisedUntil;ctx.translate(1,raised?-13:11);ctx.rotate(raised?-1.35:.35);const scale=.65;ctx.drawImage(whiteFlag,0,-5,MatchHairData.whiteFlag.width*scale,MatchHairData.whiteFlag.height*scale);ctx.restore();}
+court=function(){nativeCourt();if(ready){drawLineJudge(65,67,Math.PI/2);drawLineJudge(935,553,-Math.PI/2);}};
+awardPoint=function(winner){const out=ball?.outcome?.event==='attack-error'||ball?.outcome?.event==='serve-error';if(out)flagRaisedUntil=elapsed+1.25;return nativePoint(winner);};
 window.MatchHair={styleFor,parts:MatchHairData,cache,rigParts};
 })();
