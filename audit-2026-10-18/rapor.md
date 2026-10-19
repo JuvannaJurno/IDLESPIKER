@@ -1,111 +1,75 @@
 # BAL → 2. Lig test raporu
-18 Ekim 2026 — mevcut yerel oyun sürümü
+19 Ekim 2026 — yeni BAL fiyatları, kadro değişimi ve maç sponsorluğu sonrası
 
 ## Sonuç
-En büyük sorun AP üretiminin yetersizliği değil: BAL'da mevcut son oyuncu gelişim sınırına ulaşılıyor. 2. Lig'de AP hızla artarken yükseltilecek alan ve işe yarayan transfer azalıyor. Kulüp ekranının üretim sırasında mobil performansı da hâlâ sorunlu. Bu incelemede oyun kodunu değiştirmedim; test araçları, kayıtlar ve rapor oluşturdum.
+Üç yeni koşu da BAL'dan yükselip 2. Lig'in 14. maçını tamamladı. 30 kişilik kadro artık transferi durdurmuyor: transfer sırasında ilk kadroda veya kampta olmayan bir yedekle değişim yapılabiliyor. Sponsor sayacı galibiyetten ayrıldı ve tamamlanan maçlarda ilerliyor. Boş tavsiye çerçeveleri gizleniyor; maç tavsiyeleri ilk kadronun altına taşındı. Düzelmiş eski sorun maddeleri aşağıdaki açık sorun listesinden kaldırıldı.
 
-## Nasıl test edildi?
-- Üç ayrı yeni BAL kaydı: otomasyon, dengeli gelişim ve transfer öncelikli kararlar; farklı deterministik tohumlar.
-- Her biri BAL başlangıcından 2. Lig son maçına kadar ilerledi: toplam 84 lig maçı kural simülasyonu. Üçünde de BAL yükselme şartı sağlandı.
-- Başlangıç: önceki aşamanın blokları tamamlanmış, 12 başlangıç oyuncusu Mahalle Ligi kart seviyesi 10'a yükseltilmiş, BAL blokları boş. BAL'ın standart başlangıç bütçesi/AP'si kullanıldı. Eski bir güçlü kayıt veya Epic Team kullanılmadı.
-- Üretim, blok fiyatları ve etkileri, kart yükseltme fiyatı, ücretsiz yükseltme/AP iadesi, transfer, kamp ve lig kuralları doğrudan oyunun JavaScript modüllerinden çalıştırıldı. Kaynak ekleme, bedava transfer veya zorla galibiyet yapılmadı.
-- Otomasyon tercihi her 5 sn, dengeli tercih 15 sn, transfer tercihi 30 sn arayla harcama değerlendirdi. Gerekli AP/bütçe olmadan işlem yapılmadı. Serbest elle tıklama, çevrimdışı kazanç ve saat atlatma yok.
-- Üretim saati, otomatik hız ve çift talimatın beklenen değeri üzerinden hızlandırıldı. AP kazancında gerçek kritik/ücretsiz yükseltme rastgeleliği kullanıldı. Talimatın sahaya görsel ulaşma gecikmesi ve Ortak Tempo'nun çarpışmayla verdiği ek AP bu modelde yok. Bu yüzden özellikle AP miktarları birebir canlı kayıt vaadi değildir; takvim ve gelişim tavanı bulguları bundan bağımsızdır.
-- 18 başlangıç/orta/son kayıt tarayıcıda açıldı. Her biri 320 ve 390 px genişlikte kontrol edildi: 36 yerleşim kontrolü. Kaydedilen oyuncu/katalog adetleri geri yüklendi. Simülasyonda portre üretilmediği için görsel incelemede eksik aday görünümleri mevcut TeamAppearance aracıyla tamamlandı; güçleri değiştirilmedi.
-- Normal ve azaltılmış hareket ayarlarında aşama geçişleri de test edildi; iki geçiş testi geçti.
-- Ayrıca gerçek maç motorunda 6 tam maç, skill kapıları, animasyon/simülasyon ayrımı ve ışınlanma kontrolü çalıştırıldı. Bunlar sezon koşularındaki 84 maçın birebir görsel oynatımı değildir.
+## Nasıl ölçüldü?
+- Üç farklı deterministik tohum ve karar tarzı: otomasyon 5 sn, dengeli 15 sn, transfer odaklı 30 sn aralıklarla karar verir.
+- Her koşu önceki aşama blokları tamamlanmış, başlangıç kartları seviye 10 ve standart BAL kaynaklarıyla başlar. Epic Team, eklenmiş AP/bütçe, bedava transfer ve zorla galibiyet yok.
+- Oyun içindeki gerçek ekonomi, kart, kamp, transfer, sponsor ve lig kural modülleri kullanıldı. Yeni iki 10 seviyelik BAL bloğu ve son fiyatları dahil.
+- Dolu kadroda yalnız yedek ve kampta olmayan oyuncular değiştirildi; en düşük OVR'li uygun yedek seçildi. Yeni transfer aktif pozisyona yerleştirilirken önceki aktif oyuncu yedeğe döner.
+- Her iki ligde 14'er, toplam 84 maç temel kural çözümleyicisiyle hesaplandı. Tamamlanan her maç katılım/sponsor sayacına, yalnız kazanılan maç galibiyet AP ödülüne işlendi. Son maçtan sonra da son harcama kararı değerlendirildi.
+- Üretim hızı ve çift talimatın beklenen değeriyle hızlandırılmış simülasyondur; saatlerce elle oynanmış kullanıcı oturumu değildir. Görsel Legendary müdahaleleri ve Ortak Tempo'nun görsel çarpışmayla verdiği ek AP, ekonomi modeline dahil değildir.
 
-**Sınır:** Bu, üç kez saatler boyunca elle oynanmış bir kullanıcı çalışması değildir. Üç yeni kayıtla hızlandırılmış kural koşusu ve gerçek tarayıcı kontrolleridir. Sezon sıralamaları temel maç çözümleyicisinin sonuçlarıdır; görsel motordaki tüm Legendary müdahalelerini birebir modellemez. Farklı tohum ve strateji birlikte değiştiği için üç koşu, tek bir tercihin nedensel karşılaştırması veya istatistiksel dağılım sayılmaz.
+## Süre ve sezon sonucu
 
-## Süreler
-| Koşu | BAL: yalnız üretim | 2. Lig: yalnız üretim | BAL: maç izleme + menü tahmini | 2. Lig: maç izleme + menü tahmini |
-|---|---:|---:|---:|---:|
-| Otomasyon öncelikli | 46.21 dk (0.77 sa) | 41.49 dk (0.692 sa) | 1.35–1.52 sa | 1.25–1.42 sa |
-| Dengeli | 50.74 dk (0.846 sa) | 42.03 dk (0.701 sa) | 1.43–1.59 sa | 1.26–1.43 sa |
-| Transfer öncelikli | 53.98 dk (0.9 sa) | 42.8 dk (0.713 sa) | 1.48–1.65 sa | 1.27–1.44 sa |
-
-Üretim süreleri model çıktısıdır. Son iki sütun **tahmindir**: altı gerçek maç motoru testinin aşama başına üç maçlık ortalaması, 14 maça uygulanıp üzerine 5–15 dakika menü süresi eklendi. Örnek maçlar BAL'da 86–186 sn, 2. Lig'de 79–180 sn sürdü; bunlar ideal 60 Hz simülasyon süreleridir. Gerçek cihaz takılması, uzun maç, kararsız kalma ve oyundan çıkma bu süreyi artırır. Menüde geçirilen gerçek kullanıcı zamanı ölçülmedi.
-
-İki aşama birlikte yaklaşık **2,6–3,1 saat** tahmini izlemeli oturum eder. Maçları atlayan ve kararları hızlı veren oyuncu için yalnız üretim toplamı **87,7–96,8 dakika**. Bir saat hedefi değerlendirilirken üretim mi yoksa maçları izleyen toplam oturum mu kastedildiği net olmalı.
-
-## İlerleme ve tıkanmalar
-| Koşu | BAL kart yükseltmesi | 2. Lig kart yükseltmesi | 2. Lig transferi | 2. Lig sonu eldeki AP | 2. Lig en uzun yükseltmesiz aralık |
+| Tarz | BAL üretim dk | 2. Lig üretim dk | Toplam üretim dk | BAL sırası | 2. Lig sırası |
 |---|---:|---:|---:|---:|---:|
-| Otomasyon öncelikli | 249 | 17 | 0 | 54.0 milyon | 7.2 dk |
-| Dengeli | 204 | 19 | 0 | 58.6 milyon | 5.5 dk |
-| Transfer öncelikli | 196 | 23 | 1 | 12.5 milyon | 3.5 dk |
+| Otomasyon | 47.43 | 42.28 | 89.71 | 1 | 5 |
+| Dengeli | 52.45 | 44.45 | 96.90 | 1 | 3 |
+| Transfer öncelikli | 56.12 | 46.21 | 102.33 | 1 | 1 |
 
-### P0 — BAL oyuncu gelişimini çok erken tüketiyor
-İki aşamada da mevcut nihai stat sınırı 160, kart tavanı 48. Otomasyon koşusunda üç başlangıç oyuncusu BAL sonunda 48/48; 2. Lig sonunda yedi oyuncunun tamamı 48/48. Örnek smaçör 158 smaç/160 sınırında. Buradaki problem OVR'nin 160 olmaması değil: oyuncunun önemli gelişimi önceki ligde tamamlanıyor ve yeni lig bunu yeniden açmıyor.
+Bu dakikalara maç izleme, menüde düşünme ve çevrimdışı bekleme dahil değil. Güncel toplam izlemeli oturum süresi ölçülmedi; önceki sürümün saat tahmini yeni sonuç gibi kullanılmadı. Üç tohum farklı stratejilerle birlikte değiştiği için tek bir tercihin nedensel etkisi veya geniş kullanıcı dağılımı olarak yorumlanmamalı.
 
-Dengeli koşuda da 2. Lig sonunda dört aktif oyuncu 48/48. AP üretimini artırmak tek başına çözüm değil; zaten 58,6 milyon AP elde kalıyor. **Öneri:** BAL ve 2. Lig için ayrı gelişim alanı tanımlamak; 2. Lig'de kadronun tekrar düzenli yükseltilebilmesini sağlamak. Stat/kart sınırlarını ve kamp kazançlarını birlikte dengelemek gerekir.
+## 2. Lig gelişimi ve transfer
 
-### P0 — İleri lig transferleri kadroya yetişmiyor
-Aday gücü hedefi scout-rules.js içinde 92 OVR ile sınırlanıyor. Sezon sonu kataloglarında en yüksek adaylar 92 OVR iken ortalama aktif kadro yaklaşık 95–100 OVR. Yüksek OVR şansı ve İhtiyaç Analizi bir aday çıkarıyor ama gerekli gücü üretmeye yetmiyor.
+| Tarz | Kart yükseltme | En uzun yükseltmesiz süre | Transfer | Dolu kadroda değişim | Son kadro | Elde AP |
+|---|---:|---:|---:|---:|---:|---:|
+| Otomasyon | 117 | 1.2 dk | 0 | 0 | 12/30 | 11.52 milyon |
+| Dengeli | 169 | 1.5 dk | 12 | 0 | 30/30 | 0.96 milyon |
+| Transfer öncelikli | 129 | 2.2 dk | 20 | 13 | 30/30 | 11.93 milyon |
 
-Dengeli koşuda 168 katalog yenilenmesine rağmen 2. Lig'de transfer yapılmadı. Transfer odaklı koşuda 92 katalogda yalnız bir iyileştirme satın alındı. Bu, bütün adayların değersiz olduğu anlamına gelmez; farklı rollerde hâlâ işe yarayan aday olabilir. Ancak güçlenmiş ilk kadro için ana hedef çok düşük kalıyor.
+Değişim sayısı, transfer adedinden kadro büyümesinin çıkarılmasıyla hesaplandı; bu koşuda başka oyuncu ekleme/çıkarma kaynağı yok. Transfer odaklı koşu 30 kişilik sınıra ulaştıktan sonra da devam etti. Maç kadrosu ve kamptaki oyuncular değişimden korunuyor. Ayrılan oyuncunun kamp artışları ve portresi yeni oyuncuya aktarılmıyor. Yeni oyuncunun kendi kamp geçmişi korunuyor.
 
-**Öneri:** İleri lig aday hedefini aynı pozisyondaki güncel kadro gücüne bağlamak; çoğunluğu benzer/zayıf, küçük bir bölümü açıkça daha iyi üretmek. Yıldız ve Legendary niteliği, düşük mevcut gücü saklayan fiyat primi olmamalı.
+## Gerçek tarayıcı doğrulaması
+- Ayrı değişim ekranında iki kart yan yana; iptal bütçeyi ve kadroyu korur. Onay satın alır; ardından ilk kadroya alma sorulur.
+- 320/390 px ekranlarda yatay taşma yok. İlk kadro ve kamp oyuncuları seçeneklerde yok; kural katmanı da aynı korumayı uygular.
+- Zorlanmış kayıt yazma hatasında satın alma geri alınır. Başarılı değişim, doğru fiyat, aktif kadronun korunması, sonraki kart yükseltmesi, yıldızlar, yeni portre ve sayfa yenileme test edildi. Başlangıç kadrosundan bir yedeğin farklı rolde adayla değiştirilmesi de yeniden yüklemede korundu.
+- Canlı lig akışında yenilgi / galibiyet / yenilgi kaydedildi: üçüncü maçta sponsor ödemesi geldi; AP yalnız galibiyetten geldi. Ödül eşitlemesi tekrarlandığında ikinci ödeme yapılmadı.
+- Boş tavsiye alanı baştan gizli. Veri geldiğinde içerikle gösterilir; takım ekranında ilk kadronun ardından gelir. Kilitli transfer tavsiyesi mevcut tasarımda kalır.
+- 18/18 kontrol kaydı, 36 adet 320/390 px yerleşim ölçümü: 0 sayfa taşması, 0 karşılaştırma taşması, 0 JavaScript hatası. 320 px ilk kartın ekran başlangıcına göre konumu 353–353 px; önceki incelemede 720–808 px'e inebiliyordu.
 
-### P1 — Transfer ağırlıklı oyun kadro kapasitesine çarpıyor
-Transfer koşusunda BAL sonu 29, 2. Lig sonu 30 oyuncu var. Son kayıtta transfer tuşu kapasite yüzünden devre dışı. 30 kişilik sınıra karşı kullanılabilir bir oyuncuyla yolları ayırma/değişim akışı bu kontrolde bulunamadı; yedeğe almak kapasiteyi azaltmıyor.
+Bu kontroller fiziksel telefon ölçümü değildir. Önceki performans düzeltmesinin 4× işlemci stresinde yaklaşık 54–57 FPS sonucu ayrı [performans raporunda](../performance-2026-10-19/sonuc.md) duruyor; gerçek cihaz kontrolü hâlâ gerekli.
 
-**Öneri:** Takas/ayrılma ya da satın alırken bir yedekle değiştirme akışı. Oyuncuyu daha ilk etapta kapasiteye yaklaşırken bilgilendirmek.
+## Açık kalanlar
 
-### P1 — Sezon bitiyor, blok hedefleri çok uzakta kalıyor
-BAL'ın 15 bloğu üç koşuda da tamamlandı. 2. Lig'in 12 ana bloğundan yalnız 3–4'ü tamamlandı. Kalan ana bloklar için gereken toplam ek bütçe **44,4–48,3 milyon**; eldeki bütçe yaklaşık **0,35–1 milyon**. Bu tek başına her bloğun sezon sonunda bitmesi gerektiğini göstermez; mevcut hedeflerin önemli kısmının sezon dışına taştığını gösterir.
+### P1 — 2. Lig bloklarının son seviyeleri sezon gelirinin çok ötesinde
+- Otomasyon: 12 ana bloktan 3 tamamlandı. Kalan yatırım 49.0 milyon; elde 1.24 milyon bütçe.
+- Dengeli: 12 ana bloktan 2 tamamlandı. Kalan yatırım 54.4 milyon; elde 0.72 milyon bütçe.
+- Transfer öncelikli: 12 ana bloktan 2 tamamlandı. Kalan yatırım 58.4 milyon; elde 0.46 milyon bütçe.
 
-**Öneri:** Özellikle 6–10. seviyelerin maliyetlerini sezondaki gerçek gelirle eşleştirmek; birkaç seçili bloğun tamamlanması ile tümünü bitirme hedefini açıkça ayırmak.
+Sonraki denge işi, 2. Lig'de hangi blokların sezon sonunda tamamlanmasının hedeflendiğini belirleyip özellikle 6–10. seviye maliyetlerini bu gelire yaklaştırmak. Bu çalışmada profesyonel blok fiyatları değiştirilmedi.
 
-### P1 — Sponsor açıklaması ile ödül koşulu farklı
-Lig Sponsorluğu “Her 3 tamamlanan maçta” diyor. Sayacı artıran RoomRules.matchReward yalnız galibiyetlerde LeagueSeason.syncRewards tarafından çağrılıyor. Sonuç: ödeme üç oynanan maç yerine üç galibiyette bir geliyor.
+### P2 — Katalog ve paylaşım tekrarı
+- Otomasyon: 241 katalog, 46 paylaşım, 0 transfer.
+- Dengeli: 177 katalog, 47 paylaşım, 12 transfer.
+- Transfer öncelikli: 98 katalog, 45 paylaşım, 20 transfer.
 
-Bu kural simülasyonunda da canlı çağrı sırası izlenerek ödül sadece galibiyete verildi. **Öneri:** Sponsor sayacını maç katılımı/sonucu kaydına taşımak; AP galibiyet ödülünden ayırmak. Açıklamayı sadece “galibiyet” yapmak, önceki tasarım niyetini değiştirir.
+Transferler artık kadroya katkı sağlıyor; buna rağmen her raporu takip eden oyuncu için kontrol sayısı fazla olabilir. Anlamlı aday bildirimi ve katalog sıklığı ayrıca ele alınmalı.
 
-## Sıkıcı veya zayıf kalan bölümler
-- **BAL başı ile sonu arasında büyük tempo farkı var.** İlk 10 dakikada 108–118 kart yükseltmesi, 30–40. dakika aralığında 8–28 yükseltme yapıldı. Son bölümde büyüme hissi belirgin biçimde azalıyor.
-- **2. Lig'de yükseltme ödülü veren blokların tetiklenmesi çok azalıyor.** Gelişim Takibi beş yükseltme isterken tüm sezonda 17–23 yükseltme var. Uyum Antrenmanı, işe yarayan transfer çıkmadığında neredeyse kullanılmıyor. Bu blokları güçlendirmeden önce gelişim/transfer tavanı çözülmeli.
-- **Katalog yenileme çok sık, anlamlı seçim çok az.** 2. Lig'de koşuya göre 92–234 katalog açıldı. Bu, hızlı stratejide 10–11 saniyede bir rapora karşılık geliyor. Oyuncunun bunu kaçırması oyunu bozmaz; ama her rapora bakmaya çalışan oyuncu için gacha zamanla düşük değerli tekrara dönüşüyor.
-- **Sosyal medya 43–46 paylaşım eylemi ekledi.** Aynı sezonun 17–23 oyuncu yükseltmesine karşı paylaşım ve katalog kontrolü daha baskın hâle gelebiliyor. Anlamlı kadro kararları geri plana düşüyor.
-- **Maç bekleyişi üretimi durdurduğu için ekranda kalma baskısı var.** Buradaki saatler kesintisiz online üretim varsayıyor. Maçı açmadan beklemek gerçek oturumu uzatır; bu kullanıcı davranışı simülasyon sürelerine dahil değil.
+### P2 — Maçı açmadan bekleme ve gerçek oturum süresi
+Maç bekleyişi üretimi durduruyor. Kullanıcının bu ekranda beklemesi ve menüde karar süresi modele dahil değil. Hedef süreyi gerçek izleme/atlama alışkanlıklarıyla ayrıca test etmek gerekiyor.
 
-## Mobil performans
-İlk ölçümlerde maç bekleyen kayıtlarda yaklaşık 60 FPS görüldü; talimat sayısının değişmediği fark edilince bu ölçümler aktif üretim kanıtı olarak kullanılmadı.
+### P2 — Son maçlar ve gerçek cihaz
+Üç ekonomik sezonun tüm 84 maçı görsel motorla oynanmadı. Son zorluk ayarı, artık açılma koşulu değişen Legendary etkileri ve farklı kadro tercihleriyle daha geniş görsel örneklem; ayrıca gerçek telefon testi gerekli.
 
-Aşağıdaki testte **takvimdeki maç durması test içinde geçici olarak kaldırıldı**, normal otomasyon tekrar bağlandı ve talimat sayısının arttığı doğrulandı. Oyun dosyaları değiştirilmedi. 390×844, headless Edge, her koşulda yaklaşık 3 sn ölçüm. Bu gerçek telefon ölçümü değildir; kısa, tekrarlanması gereken masaüstü stres örneğidir.
+## Kanıtlar ve yeniden çalıştırma
+- [Güncel ekonomik koşular](../validation-2026-10-19/runs.json): olaylar, harcamalar, 84 skor, 18 tam kayıt.
+- [Tarayıcı kontrolleri](../validation-2026-10-19/browser.json): yerleşim, yükleme, konsol ve stres örnekleri.
+- test-roster-replacement.cjs: kural korumaları, kamp bağımsızlığı, rol değişimi ve sponsor sayacı.
+- test-transfer-replace-browser.cjs: gerçek UI, iptal/yazma hatası, değişim/yükseltme/yeniden açma ve kayıplı-kazanımlı maçlarda sponsor.
+- test-transfer-lineup.cjs, test-transfer-reload.cjs, test-scout-consistency.cjs, test-professional-blocks.cjs: normal transfer ve blok kontrolleri.
+- Önceki audit-2026-10-18, progression-2026-10-19 ve bal-finale-2026-10-19 ham sonuçları tarihsel karşılaştırma içindir.
 
-| Aşama | CPU yavaşlatma | Yaklaşık FPS | >50 ms kareler | En uzun kare | Stil hesaplama süresi |
-|---|---:|---:|---:|---:|---:|
-| BAL | 1× | 28.0 | 15 / 84 | 317 ms | 1.57 sn |
-| BAL | 4× | 5.7 | 15 / 18 | 283 ms | 2.64 sn |
-| 2. Lig | 1× | 21.6 | 15 / 65 | 250 ms | 2.05 sn |
-| 2. Lig | 4× | 4.2 | 9 / 13 | 550 ms | 2.37 sn |
-
-**P0:** Aktif üretim sırasında mobil akıcılık yeterli değil. 4× yavaşlatmada 4–6 FPS görüldü. Zamanın önemli kısmı JavaScript hesaplamasından ziyade stil yeniden hesaplamasında geçiyor. Normal CPU'da da 22–28 FPS aralığı iyi değil.
-
-Öncelikli inceleme alanları: rooms.js içindeki sık kaynak/blok güncellemeleri, menu.js ile menu-feedback.js talimat/ödül DOM değişimleri, geniş alt ağaçlara uygulanan energized ve :has seçicileri. Bunlar kaynak incelemesine dayanan adaylar; her seçicinin katkısı ayrı A/B testiyle kanıtlanmış değil. **Öneri:** Üretim görüntüsünü daha küçük ve izole bir katmana almak, DOM metin/özellik yazmalarını azaltmak ve görünmeyen blokların stil işini sınırlandırmak. Yeni neon/parlama efektlerini artırmadan bunu çözmek gerekiyor.
-
-## Tasarım ve kullanım kolaylığı
-- **Geçen kontrol:** 18 kayıt, 320/390 px genişlikte iki sütunu korudu; sayfa ve karşılaştırma ekranında yatay taşma saptanmadı. Konsola düşen JavaScript hatası yok.
-- **Geçen kontrol:** Karşılaştırmanın altındaki transfer tuşu mevcut. Ayrı transfer/kadroya alma testinde satın alma, yedekte bırakma ve seçili pozisyona alma çalıştı. Dolu kadroda tuş kapandı.
-- **Sorun:** Teknik Ekip / Sportif Direktörlük alanı bazı kayıtlarda başlık ve boş çerçeve olarak kalıyor. Mobilde yaklaşık 120 px dikey alan tüketip kadroyu aşağı itiyor. İçerik yoksa bu alan kapanmalı.
-- **Sorun:** Bazı 320 px kayıtlarda ilk oyuncu kartları ekranın 720–808 px aşağısında başlıyor. Transfer çağrısı ve tavsiye panelleri birlikte kadroyu ilk görünümün dışına taşıyor. Yatay taşma olmaması ekranın rahat kullanıldığı anlamına gelmiyor.
-- **Sorun:** Kamp yıldızı, kart seviyesi ve stat sınırının rolleri arayüzde hâlâ kolay karışabiliyor. Özellikle 48/48, üç kamp ve birikmiş AP birlikte görünürken “neden ilerleyemiyorum?” sorusu oluşuyor. Uzun açıklama yerine tek net sınır durumu ve sonraki gerçek eylem gösterilmeli.
-- **Sorun:** Transferde “kadroya katıldı” ile ilk yediye girmek aynı anlama gelebiliyor. Yeni sorulu akış bunu azaltıyor; başarı mesajları da “yedekte” ve “ilk kadroda” diye tutarlı kalmalı.
-
-## Yapılmasını önerdiğim sıra
-1. Aktif kulüp üretiminde stil/DOM yükünü düşür; 30–60 sn kesintisiz yükte tekrar ölç.
-2. BAL ile 2. Lig'in oyuncu gelişim alanlarını ayır; ardından yükseltme sıklığını yeniden ölç.
-3. 2. Lig transfer hedeflerini güncel kadroya göre düzelt; 30 kişilik sınır için çıkış yolu ekle.
-4. Sponsorun maç/galibiyet sayacı tutarsızlığını düzelt.
-5. Blok maliyetleri ve katalog sıklığını yeni ilerleme eğrisine göre ayarla.
-6. Boş tavsiye alanını kaldır, ilk kadroyu mobilde daha yukarı getir; üç koşuyu tekrar çalıştır.
-
-## Kanıtlar
-- runs.json: tohumlar, her aşamanın olayları, maç sonuçları, harcamalar ve 18 tam kontrol kaydı.
-- browser.json: kayıt yükleme, yerleşim, konsol hatası ve aktif üretim stres ölçümleri.
-- matches.json: altı gerçek maç motoru testi; süre, skor ve skill olayları.
-- run-audit.cjs, browser-audit.cjs, match-audit.cjs: yeniden çalıştırma araçları.
-- stage-2-middle-team.png / stage-3-middle-team.png: boş tavsiye alanının ekran görüntüleri.
-
-Yeniden çalıştırma: proje kökünde node audit-2026-10-18/run-audit.cjs; ardından browser.json dosyasını ayrı bir kopyaya alarak browser-audit.cjs çalıştırılmalı (tarayıcı aracı tamamlanan kayıtları atlayarak devam eder). Son olarak match-audit.cjs ve write-report.cjs çalıştırılabilir. Bu dosyalar test içindir; normal oyuna bağlanmadı.
+Çalıştırma: node validation-2026-10-19/run-audit.cjs; ardından node validation-2026-10-19/browser-audit.cjs (tamamlanan kayıtları atlar); son olarak node validation-2026-10-19/write-report.cjs. Üç koşu test aracıdır; normal oyuna bağlanmadı.

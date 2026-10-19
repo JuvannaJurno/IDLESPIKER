@@ -1,0 +1,27 @@
+{
+  "duration": 6000,
+  "cpu": 4,
+  "viewport": [
+    390,
+    844
+  ],
+  "results": [
+    {
+      "name": "root-selector",
+      "frames": 57,
+      "slow": 42,
+      "max": 383.3000000000002,
+      "p95": 250,
+      "elapsed": 6014.9,
+      "mutations": 1024,
+      "maxPulses": 16,
+      "instructions": 350,
+      "fps": 9.47646677417746,
+      "task": 6.113239999999999,
+      "script": 1.068435,
+      "layout": 0.096819,
+      "style": 4.512506999999999
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,27 @@
+{
+  "duration": 6000,
+  "cpu": 4,
+  "viewport": [
+    390,
+    844
+  ],
+  "results": [
+    {
+      "name": "explicit-states",
+      "frames": 325,
+      "slow": 1,
+      "max": 100,
+      "p95": 33.399999999999636,
+      "elapsed": 6005.899999991059,
+      "mutations": 1333,
+      "maxPulses": 17,
+      "instructions": 342,
+      "fps": 54.113455102563115,
+      "task": 4.8087860000000004,
+      "script": 1.552672,
+      "layout": 0.374631,
+      "style": 0.543979
+    }
+  ],
+  "errors": []
+}

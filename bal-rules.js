@@ -41,7 +41,7 @@ const successors=[
 const catalog=definitions.map(([id,floor,name,icon,core,describe,price])=>({id,floor,name,icon,values:[...core,...Array(5).fill(core[4])],describe,price,bal:true,bonus:successors.find(row=>row[0]===id)}));
 
 // Storage keeps ten legacy levels; purchasing uses the stage-specific limit.
-const longBal=new Set(['bal_coach','bal_position','bal_video','bal_sponsor','bal_shop']);
+const longBal=new Set(['bal_coach','bal_position','bal_video','bal_sponsor','bal_shop','bal_scout','bal_contacts']);
 const professional=[
  ['pro_coach',0,'Profesyonel Antrenör','♟',150,v=>'Her talimata +'+display(v)+' AP.'],
  ['pro_repeat',0,'Gelişim Takibi','↻',.02,v=>'Her 5 ücretli kart yükseltmesinde harcanan AP’nin %'+display(v*100)+' kadarı geri gelir.'],
@@ -87,8 +87,9 @@ function requirement(s,r){if(r.division&&s.division!==r.division)return '2. Lig 
 // Early investments offer several routes; later levels remain long-term goals.
 // Cumulative investment follows season income; no calendar or match gates.
 const investmentPrices={bal_sponsor:[400,900,2000,4000,7500,13000,22000,36000,65000,120000],bal_coach:[500,1000,2400,5000,9500,16500,28000,44000,80000,140000]};
+const balLatePriceScale={bal_shop:.95,bal_coach:1.45,bal_sponsor:1.45};
 const priceSteps=[400,900,2000,4000,7500,13000,22000,36000,65000,120000];
-function price(s,r){const n=level(s,r.id);if(n>=maxLevel(s,r))return Infinity;if(r.compressed)return [30000,67000,140000,270000,490000,650000,850000,1100000,1400000,1800000][n];if(r.division)return [12000,18000,27000,40000,58000,82000,114000,156000,210000,280000][n];if(!r.bal)return 10*([10,6,9,10,15][n]??Infinity);const base=investmentPrices[r.id]?.[n]??r.price/300*priceSteps[n],lateDiscount=n===9?.9:n===8?.95:1;return Math.round(base*(n>=5?1.4:1)*lateDiscount*(s.division===3?1:n>=5?.85:.9)/10)*10;}
+function price(s,r){const n=level(s,r.id);if(n>=maxLevel(s,r))return Infinity;if(r.compressed)return [30000,67000,140000,270000,490000,650000,850000,1100000,1400000,1800000][n];if(r.division)return [12000,18000,27000,40000,58000,82000,114000,156000,210000,280000][n];if(!r.bal)return 10*([10,6,9,10,15][n]??Infinity);const base=investmentPrices[r.id]?.[n]??r.price/300*priceSteps[n],lateDiscount=n===9?.9:n===8?.95:1;return Math.round(base*(n>=5?1.4:1)*lateDiscount*(s.division!==3&&n>=5?(balLatePriceScale[r.id]??1.7):1)*(s.division!==3&&r.id==='bal_video'&&n===9?1.7:1)*(s.division===3?1:n>=5?.85:.9)/10)*10;}
 function effects(s,e){if(s.stage!=='bal')return e;return {...e,doubleChance:value(s,'bal_double'),manualBonusAP:value(s,'bal_hands'),offlineHours:e.offlineHours?e.offlineHours+value(s,'bal_longshift'):0,critChance:Math.min(1,e.critChance+value(s,'pro_focus')+value(s,'bal_precision')),critMult:Math.max(e.critMult,value(s,'bal_precision')?2:1),clickAP:e.clickAP*2.5+value(s,'pro_coach')+value(s,'bal_position')+value(s,'bal_hands'),autoAP:e.autoAP*2.5+value(s,'pro_coach')+value(s,'bal_position'),baseAP:e.baseAP*2.5+value(s,'pro_coach')+value(s,'bal_position'),autoRate:(e.autoRate*1.4+(value(s,'bal_coach')+value(s,'pro_coordinator'))*e.workflowRate)*1.4,baseAutoRate:(e.baseAutoRate*1.4+value(s,'bal_coach')+value(s,'pro_coordinator'))*1.4,repeatAP:e.repeatAP*1.25+value(s,'bal_video'),morningAP:e.morningAP*1.25+value(s,'bal_warmstart'),dayAP:e.dayAP*1.25+value(s,'bal_evening'),offlineBonus:e.offlineBonus*1.25+value(s,'bal_recovery')+value(s,'bal_remote'),offlineEfficiency:e.offlineEfficiency+value(s,'bal_shift')};}
 function cash(s){if(!departmentOpen(s,2))return 0;return ((20+value(s,'bal_sponsor'))*(1+value(s,'bal_shop'))+value(s,'bal_orders'))}
 // Merge old separate bonuses into levels 6–10, without charging again.

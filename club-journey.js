@@ -45,7 +45,7 @@ function ready(){view('clubReady');$('readyBadge').replaceChildren(emblem(saved)
 function menuBadge(){
  const heading=document.querySelector('#clubPanel>.section-top');if(!heading)return;
  let badge=heading.querySelector('.club-menu-badge');
- if(!saved||!LeagueRules.config.bal){badge?.remove();return;}
+ if(!saved||!LeagueRules.config.bal){badge?.remove();heading.classList.remove('has-club-badge');return;}heading.classList.add('has-club-badge');
  if(!badge){badge=document.createElement('span');badge.className='club-menu-badge';heading.prepend(badge);}
  badge.setAttribute('role','img');badge.setAttribute('aria-label',saved.name+' arması');badge.replaceChildren(emblem(saved));
 }

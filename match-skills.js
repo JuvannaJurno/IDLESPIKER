@@ -10,7 +10,7 @@ const definitions=[
  ['tempo-first','Birinci Tempo Hücum','Epic'],['tempo-minus','Minus Tempo','Legendary'],['absolute-read','Kusursuz Hücum Okuma','Legendary'],['jump-legendary','Yıldırım Smaç Servis','Legendary'],['jump-float-legendary','Jump Float','Legendary'],['perfect-second-touch','Zor Topa Pas','Legendary'],['one-hand-rescue','One-Handed Set','Legendary'],['pancake','Pancake','Legendary'],['ghost-tip','Hayalet Plase','Legendary']
 ].map(([id,name,rarity])=>({id,name,rarity}));
 const catalog=new Map(definitions.map(s=>[s.id,s])),weights={Common:5,Uncommon:4,Rare:3,Epic:1.8,Legendary:1.1};
-let enabled=true,suppressed=false,clock=0,carry=0,cooldown=0,legendaryUntil=0,lastSkill='',focus=null,servePlan=null,seed='',random=MatchRules.seeded('skill-effects'),lastBall=null,approachPlan=null,rallyStart=0,legendaryUsed=false,pendingSet=null,pendingAttack=null,pendingBlock=null,pendingSync=null,pendingDive=null,visualRate=1,serveLabelUntil=0,currentServe=null;const counterUntil=[0,0],overheadUntil=new Map();let impactHold=null,pancakeHold=null,currentNotice=null,noticeTimer=null;const attempts=[];
+let enabled=true,suppressed=false,clock=0,carry=0,cooldown=0,legendaryUntil=0,lastSkill='',focus=null,servePlan=null,seed='',random=MatchRules.seeded('skill-effects'),lastBall=null,approachPlan=null,rallyStart=0,legendaryUsed=false,pendingSet=null,pendingAttack=null,pendingBlock=null,pendingSync=null,pendingDive=null,visualRate=1,serveLabelUntil=0,currentServe=null;const counterUntil=[0,0],overheadUntil=new Map();let impactHold=null,pancakeHold=null,currentNotice=null,noticeTimer=null;const completedNotices=[];const attempts=[];
 const reactionIcons=new Map();
 const knockbacks=new Map();
 const active=[],events=[],focusEvents=[],incoming=new WeakMap(),planned=new WeakSet(),motion=new Map(),trace=[],reactions=new Map(),reacted=new WeakSet(),counterAttempts=new WeakSet();
@@ -22,8 +22,8 @@ const sound=action=>{if(parent!==window)parent.postMessage({type:'spiker-audio',
 function leagueEnabled(){return !!window.matchInfo?.epicTeam||[2,3].includes(Number(window.matchInfo?.division));}
 function canShow(){return enabled&&leagueEnabled()&&!suppressed&&!document.hidden&&!scenario&&!formationPreview&&!serviceGame;}
 function finishFocus(reason='cancelled'){if(focus){const f=focus.flight,progress=f?limit(f.t/Math.max(.001,f.duration)):null;focusEvents.push({id:focus.skill.id,reason,progress,age:focus.age});if(focusEvents.length>40)focusEvents.shift();}focus=null;sound('skill-slow-stop');if(!pendingDive?.heartbeatStarted)sound('heartbeat-stop');}
-function resetEffects(){knockbacks.clear();reactionIcons.clear();currentNotice=null;attempts.length=0;clearTimeout(noticeTimer);noticeTimer=null;pancakeHold=null;document.body.classList.remove('skill-blackout');if(impactHold)impactHold.flight.impactFlash=0;impactHold=null;overheadUntil.clear();sound('heartbeat-stop');window.MatchMotion?.reset();window.MatchFrames?.invalidate();active.length=0;trace.length=0;motion.clear();servePlan=null;approachPlan=null;pendingSet=null;pendingAttack=null;pendingBlock=null;pendingSync=null;pendingDive=null;serveLabelUntil=0;currentServe=null;reactions.clear();finishFocus('reset');carry=0;lastBall=null;label.hidden=true;}
-function owns(actor,id){if(!actor||!window.PlayerSkills)return false;const p=actor.roster||{...actor.stats,id:'match-'+actor.team+'-'+actor.index,skillCamps:0};return PlayerSkills.allows(p,id,{division:window.matchInfo?.division});}
+function resetEffects(preserveNotices=false){knockbacks.clear();reactionIcons.clear();if(!preserveNotices){currentNotice=null;completedNotices.length=0;clearTimeout(noticeTimer);noticeTimer=null;}attempts.length=0;pancakeHold=null;document.body.classList.remove('skill-blackout');if(impactHold)impactHold.flight.impactFlash=0;impactHold=null;overheadUntil.clear();sound('heartbeat-stop');window.MatchMotion?.reset();window.MatchFrames?.invalidate();active.length=0;trace.length=0;motion.clear();servePlan=null;approachPlan=null;pendingSet=null;pendingAttack=null;pendingBlock=null;pendingSync=null;pendingDive=null;serveLabelUntil=0;currentServe=null;reactions.clear();finishFocus('reset');carry=0;lastBall=null;if(!preserveNotices)label.hidden=true;}
+function owns(actor,id){if(!actor||!window.PlayerSkills)return false;if(actor.team===1&&catalog.get(id)?.rarity==='Legendary'){const unlocked=window.matchInfo?.opponentLegendaryUnlocked??PlayerSkills.teamHasLegendary(players.filter(p=>p.team===0).map(p=>p.roster||{...p.stats,skillCamps:0}),{division:window.matchInfo?.division});if(!unlocked)return false;}const p=actor.roster||{...actor.stats,id:'match-'+actor.team+'-'+actor.index,skillCamps:0};return PlayerSkills.allows(p,id,{division:window.matchInfo?.division});}
 function eligible(ids,actor){return ids.map(id=>catalog.get(id)).filter(s=>s&&owns(typeof actor==='function'?actor(s.id):actor,s.id)&&s.id!==lastSkill&&(s.rarity!=='Legendary'||clock>=legendaryUntil));}
 function pickSkill(ids,actor){const nextSeed=window.matchInfo?.fixtureId||String(window.matchInfo?.round||1);if(seed!==nextSeed){seed=nextSeed;random=MatchRules.seeded('skills-'+seed);}if(!canShow()||!ids.length)return null;const choices=eligible(ids,actor);if(clock<cooldown||random()>.60||!choices.length)return null;let n=random()*choices.reduce((sum,s)=>sum+weights[s.rarity],0);for(const s of choices){n-=weights[s.rarity];if(n<=0)return s;}return choices.at(-1);}
 function startFocus(effect){if(!effect||focus||effect.skill.rarity!=='Legendary'||!canShow()||paused)return;focus={actor:effect.actor,skill:effect.skill,effect,age:0,flight:null,route:null};if(effect.flight)bindFlight(effect,effect.flight);if(effect.skill.id!=='pancake')sound('skill-slow');else if(!effect.heartbeatStarted){effect.heartbeatStarted=true;sound('heartbeat');}}
@@ -38,9 +38,11 @@ function planAim(effect,actor){
   const target=[...options].sort((a,b)=>Math.hypot(a.x-x,a.y-y)-Math.hypot(b.x-x,b.y-y))[0];effect.aimTarget=target.index;effect.aim={x,y};
  }else{const target=options[Math.floor(random()*options.length)],goal=tacticalGoal(target);effect.aimTarget=target.index;effect.aim={x:limit(goal.x,90,910),y:limit(goal.y,90,530)};}
 }
-function renderNotice(effect){clearTimeout(noticeTimer);noticeTimer=null;currentNotice=effect;delete label.dataset.state;label.dataset.rarity=effect.skill.rarity.toLowerCase();label.dataset.kind=effect.kind;label.dataset.team=String(effect.team);label.children[0].textContent=effect.skill.rarity;label.children[1].textContent=effect.skill.name;label.children[2].textContent=effect.actorName||commentaryName(players.find(p=>p.index===effect.actor));label.hidden=false;}
-function anticipate(effect){renderNotice(effect);}
-function failNotice(effect){if(!effect||effect.failed)return;effect.failed=true;if(currentNotice!==effect)return;renderNotice(effect);label.dataset.state='failed';noticeTimer=setTimeout(()=>{if(currentNotice===effect&&label.dataset.state==='failed')label.hidden=true;},560);}
+function renderNotice(effects){clearTimeout(noticeTimer);currentNotice=effects[0];label.replaceChildren();for(const team of [0,1]){const stack=document.createElement('div');stack.className='match-skill-stack';stack.dataset.team=String(team);for(const effect of effects.filter(e=>e.team===team)){const item=document.createElement('div');item.className='match-skill-item';item.dataset.rarity=effect.skill.rarity.toLowerCase();const title=document.createElement('strong'),actor=document.createElement('small');title.textContent=effect.skill.name;actor.textContent=effect.actorName;item.append(title,actor);stack.append(item);}if(stack.children.length)label.append(stack);}label.hidden=false;noticeTimer=setTimeout(()=>{label.hidden=true;currentNotice=null;noticeTimer=null;},2500);}
+function completeNotice(effect){if(!effect||effect.noticeQueued||effect.prepared||clock<effect.contact)return;effect.noticeQueued=true;completedNotices.push(effect);}
+function pumpNotices(afterPoint=false){if(!afterPoint||!canShow()||!completedNotices.length)return;const batch=completedNotices.splice(0);renderNotice(batch);}
+function anticipate(effect){}
+function failNotice(effect){if(effect)effect.failed=true;}
 function resolveAttempt(flight){for(const e of attempts)if(!e.failed&&e.flight===flight&&['attack','serve','block'].includes(e.kind))failNotice(e);}
 function creditFlight(effect,flight){if(flight&&effect.skill.rarity==='Legendary')flight.skillCredit={id:effect.skill.id,actor:effect.actor,team:effect.team};}
 function trigger(skill,actor,kind,flight=ball,extra={}){
@@ -63,7 +65,7 @@ function planServe(actor){
  if(id==='body'){const p=back[Math.floor(random()*back.length)]||opponents[0];goal={x:p.x,y:p.y};}
  goal={x:limit(goal.x,actor.team?110:550,actor.team?450:890),y:limit(goal.y,120,500)};const target=[...opponents].sort((a,b)=>Math.hypot(a.x-goal.x,a.y-goal.y)-Math.hypot(b.x-goal.x,b.y-goal.y))[0];return {id,name,zone,goal,target:target.index};
 }
-function showServe(effect,actor,placement){if(!placement||!effect)return;renderNotice(effect);label.dataset.rarity=effect?.skill.rarity.toLowerCase()||'common';label.children[0].textContent=effect?.skill.rarity||'SERVİS';label.children[1].textContent=(effect?.skill.name||'Servis');label.children[2].textContent=commentaryName(actor);label.hidden=false;serveLabelUntil=clock+3.5;}
+function showServe(effect,actor,placement){}
 function prepareServe(){
  if(!canShow()||ball.state!=='wait'||!ball.serviceAuthorized||ball.timer>.9||ball.timer<=0||servePlan?.waiting===ball)return;
  const p=serverPlayer(),skill=pickSkill(servePool(p),p),placement=planServe(p),effect=skill?trigger(skill,p,'serve',null,{prepared:true,contact:clock+ball.timer,until:clock+ball.timer+2.5}):null;
@@ -240,8 +242,8 @@ function advance(dt){
  if(ball.state==='drop'&&ball.skillArc?.bounce&&ball.outcome?.event==='kill'&&ball.t<.98&&ball.t+dt>=.98)matchSound('hit',{kind:'soft'});
  window.MatchMotion?.beforeStep();originalTick(dt);syncSkillHeight(ball);clock+=dt;
  planMovement();for(const e of active)if(e.skill.id==='perfect-second-touch'&&e.prepared){const p=players.find(p=>p.index===e.actor);if(p&&(!e.afterTrail?.length||clock-e.afterTrail.at(-1).at>.055)){(e.afterTrail??=[]).push({x:p.x,y:p.y,at:clock});if(e.afterTrail.length>3)e.afterTrail.shift();}}updateReactions();updateFocus();if(!focus&&pendingDive?.skill.id==='pancake'&&pendingDive.incoming===ball)startFocus(pendingDive);
- for(let i=active.length-1;i>=0;i--)if(active[i].until<clock)active.splice(i,1);
- if(!active.length&&!focus&&label.dataset.state!=='failed'&&clock>serveLabelUntil)label.hidden=true;
+ for(let i=active.length-1;i>=0;i--)if(active[i].until<clock){completeNotice(active[i]);active.splice(i,1);}
+ pumpNotices();
  for(const p of players){const entry=motion.get(p.index);if(!entry||clock-entry.at>.8)motion.set(p.index,{x:p.x,y:p.y,at:clock});}
 }
 tick=function(dt){
@@ -259,7 +261,7 @@ function drawRarityGlow(context,player,rarity,progress){
  if(progress<=0||progress>=1)return;
  const colors={Common:'#bed7cf',Uncommon:'#a5d4a7',Rare:'#9bcbea',Epic:'#c4a7df',Legendary:'#efd397'},color=colors[rarity]||colors.Common;
  let sprite=rarityGlowSprites.get(color);if(!sprite){sprite=document.createElement('canvas');sprite.width=sprite.height=96;const c=sprite.getContext('2d'),g=c.createRadialGradient(48,48,5,48,48,47);g.addColorStop(0,color);g.addColorStop(.4,color+'b0');g.addColorStop(1,color+'00');c.fillStyle=g;c.fillRect(0,0,96,96);rarityGlowSprites.set(color,sprite);}
- context.save();context.globalAlpha*=Math.sin(progress*Math.PI)*({Common:.09,Uncommon:.12,Rare:.16,Epic:.18,Legendary:.22}[rarity]||.09);context.drawImage(sprite,player.x-43,player.y-43,86,86);context.restore();
+ context.save();context.globalAlpha*=Math.sin(progress*Math.PI)*({Common:.14,Uncommon:.2,Rare:.27,Epic:.33,Legendary:.4}[rarity]||.14);context.drawImage(sprite,player.x-43,player.y-43,86,86);context.restore();
 }
 
 function effectFor(p){for(let i=active.length-1;i>=0;i--)if(active[i].actor===p.index)return active[i];return null;}
@@ -295,7 +297,7 @@ drawPlayer=function(p){
   if(overheadReception(p)){p.toss=.3;p.receive=0;p.spike=0;p.block=0;p.approach=false;}
   if(diving)p.shadowScale=1-.3*diveBlend;if(pancaking)alignPancake(p,e.impact,clock-e.contact,Math.sin(p.jump/.5*Math.PI)*12);
   const knock=knockbacks.get(p.index);if(knock){const age=clock-knock.start;if(age>=.38)knockbacks.delete(p.index);else if(age>=0){const u=limit(age/.38),push=u<.24?Math.sin(u/.24*Math.PI/2):Math.pow(1-(u-.24)/.76,2);p.x+=knock.x*11*push;p.y+=knock.y*11*push;p.receive=Math.max(p.receive,.16*(1-u));p.moving=false;p.approach=false;}}
-  if(e&&canShow())drawRarityGlow(ctx,p,e.skill.rarity,(clock-e.contact+.15)/.85);
+  if(e&&canShow())drawRarityGlow(ctx,p,e.skill.rarity,limit((clock-e.start)/Math.max(.25,e.until-e.start),.02,.98));
   originalPlayer(p);const icon=reactionIcons.get(p.index);if(icon)window.MatchReactionArt?.draw(ctx,icon.kind,clock-icon.start,p.x+34,p.y,32,Math.PI/2);
  }finally{Object.assign(p,saved);}
 };
@@ -355,7 +357,7 @@ draw=function(){
  try{if(window.MatchMotion&&!paused)clock-=((1-alpha)/60);return window.MatchMotion?MatchMotion.render(alpha,drawEffects):drawEffects();}
  finally{clock=time;}
 };
-awardPoint=function(winner){const credit=canShow()&&ball.skillCredit?.team===winner?ball.skillCredit:null;const savedIcons=[...reactionIcons];const failed=currentNotice&&currentNotice.team!==winner&&!currentNotice.failed?currentNotice:null;const surprise=[...reactions].filter(([,r])=>r.reason==='lightning-score'&&r.until>clock);resetEffects();for(const [index,r]of surprise)reactions.set(index,r);for(const [index,icon]of savedIcons)if(icon.until>clock)reactionIcons.set(index,icon);const result=originalAward(winner);if(failed){renderNotice(failed);failNotice(failed);}if(credit){if(parent!==window)parent.postMessage({type:'spiker-audio',action:'legendary-point'},'*');else window.GameAudio?.legendaryPoint?.();}return result;};
+awardPoint=function(winner){const credit=canShow()&&ball.skillCredit?.team===winner?ball.skillCredit:null;const savedIcons=[...reactionIcons];const surprise=[...reactions].filter(([,r])=>r.reason==='lightning-score'&&r.until>clock);for(const e of active)completeNotice(e);resetEffects(true);for(const [index,r]of surprise)reactions.set(index,r);for(const [index,icon]of savedIcons)if(icon.until>clock)reactionIcons.set(index,icon);const result=originalAward(winner);pumpNotices(true);if(credit){if(parent!==window)parent.postMessage({type:'spiker-audio',action:'legendary-point'},'*');else window.GameAudio?.legendaryPoint?.();}return result;};
 reset=function(){resetEffects();clock=0;cooldown=0;legendaryUntil=0;counterUntil.fill(0);legendaryUsed=false;focusEvents.length=0;lastSkill='';events.length=0;return originalReset();};
 window.addEventListener('message',e=>{if(e.source===parent&&e.data?.type==='spiker-match'&&e.data.action==='skip'){suppressed=true;resetEffects();}});
 window.addEventListener('blur',()=>{sound('skill-slow-stop');sound('heartbeat-stop');});document.addEventListener('visibilitychange',()=>{if(document.hidden)sound('skill-slow-stop');sound('heartbeat-stop');});

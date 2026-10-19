@@ -1,0 +1,27 @@
+{
+  "duration": 30000,
+  "cpu": 4,
+  "viewport": [
+    390,
+    844
+  ],
+  "results": [
+    {
+      "name": "optimized",
+      "frames": 1628,
+      "slow": 18,
+      "max": 132.20000000000073,
+      "p95": 33.29999999999927,
+      "elapsed": 30016.000000008942,
+      "mutations": 6412,
+      "maxPulses": 17,
+      "instructions": 1712,
+      "fps": 54.237739872052074,
+      "task": 23.828399,
+      "script": 6.188286,
+      "layout": 1.820301,
+      "style": 2.891961
+    }
+  ],
+  "errors": []
+}

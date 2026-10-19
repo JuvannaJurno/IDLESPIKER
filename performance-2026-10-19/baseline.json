@@ -1,0 +1,43 @@
+{
+  "duration": 30000,
+  "cpu": 4,
+  "viewport": [
+    390,
+    844
+  ],
+  "results": [
+    {
+      "name": "baseline",
+      "frames": 211,
+      "slow": 181,
+      "max": 450.0000000000009,
+      "p95": 249.89999999999782,
+      "elapsed": 30118.800000005962,
+      "mutations": 5157,
+      "maxPulses": 15,
+      "instructions": 1710,
+      "fps": 7.005591192210787,
+      "task": 30.096323,
+      "script": 4.377916,
+      "layout": 0.491838,
+      "style": 22.633474
+    },
+    {
+      "name": "without-has-selectors",
+      "frames": 273,
+      "slow": 2,
+      "max": 66.5,
+      "p95": 33.30000000000291,
+      "elapsed": 5028.399999997018,
+      "mutations": 1288,
+      "maxPulses": 17,
+      "instructions": 292,
+      "fps": 54.29162357810872,
+      "task": 4.693000000000001,
+      "script": 1.0531480000000002,
+      "layout": 0.490005,
+      "style": 0.7060320000000004
+    }
+  ],
+  "errors": []
+}

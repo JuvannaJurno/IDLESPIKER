@@ -9,7 +9,7 @@ function update(state){
   const floor=tier.dataset.floor,base=tier.querySelector('.base-room'),groups=[...tier.querySelectorAll('.inherited-block-group')];
   for(const group of groups){
    if(!group.parentElement.classList.contains('foundation-drawer')){const shell=document.createElement('div');shell.className='foundation-drawer';shell.id='foundation-drawer-'+group.dataset.foundation;group.before(shell);shell.append(group);}
-   const shell=group.parentElement;let pending=shell.parentElement.querySelector('.foundation-pending[data-foundation="'+group.dataset.foundation+'"]');
+   const shell=group.parentElement;shell.classList.add('has-inherited-blocks');shell.classList.toggle('has-stored-blocks',group.classList.contains('stored-blocks'));shell.classList.toggle('has-stored-bal-blocks',group.classList.contains('stored-bal-blocks'));let pending=shell.parentElement.querySelector('.foundation-pending[data-foundation="'+group.dataset.foundation+'"]');
    if(!pending){pending=document.createElement('section');pending.className='foundation-pending';pending.dataset.foundation=group.dataset.foundation;pending.setAttribute('aria-label','Geliştirilmeyi bekleyen önceki aşama blokları');shell.before(pending);}
    for(const card of [...group.children]){const room=RoomRules.catalog.find(r=>r.id===card.dataset.id);if(room&&RoomRules.count(state,room.id)<RoomRules.maxLevel(state,room)&&!(state.division===3&&room.bal))pending.append(card);}
    for(const card of [...pending.children]){const room=RoomRules.catalog.find(r=>r.id===card.dataset.id);if(!room||RoomRules.count(state,room.id)<RoomRules.maxLevel(state,room)&&!(state.division===3&&room.bal)||storing.has(card))continue;storing.add(card);
@@ -19,9 +19,9 @@ function update(state){
    }
    pending.hidden=!pending.children.length;shell.hidden=!group.children.length;const count=group.children.length;group.style.setProperty('--stored-count',count);shell.style.setProperty('--stored-count',count);
   }
-  const drawers=[...tier.querySelectorAll('.foundation-drawer')].filter(d=>!d.hidden);let toggle=base.querySelector('.foundation-toggle');if(!drawers.length){toggle?.remove();continue;}
+  const drawers=[...tier.querySelectorAll('.foundation-drawer')].filter(d=>!d.hidden);let toggle=base.querySelector('.foundation-toggle');if(!drawers.length){toggle?.remove();base.classList.remove('has-foundation-toggle');continue;}
   if(!toggle){toggle=document.createElement('button');toggle.type='button';toggle.className='foundation-toggle';toggle.innerHTML='<span>Önceki aşama</span><b aria-hidden="true">›</b>';base.append(toggle);}
-  toggle.setAttribute('aria-controls',drawers.map(d=>d.id).join(' '));
+  base.classList.add('has-foundation-toggle');toggle.setAttribute('aria-controls',drawers.map(d=>d.id).join(' '));
   function show(open){toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label','Önceki aşama bloklarını '+(open?'gizle':'göster'));for(const shell of drawers){if(!open&&shell.contains(document.activeElement))toggle.focus({preventScroll:true});shell.inert=!open;shell.setAttribute('aria-hidden',String(!open));shell.dataset.open=String(open);}}
   toggle.onclick=()=>{const open=!drawerOpen.get(floor);drawerOpen.set(floor,open);show(open);window.GameAudio?.uiClick?.();};show(!!drawerOpen.get(floor));
  }

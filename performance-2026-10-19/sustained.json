@@ -1,0 +1,27 @@
+{
+  "duration": 60000,
+  "cpu": 4,
+  "viewport": [
+    390,
+    844
+  ],
+  "results": [
+    {
+      "name": "sustained",
+      "frames": 3406,
+      "slow": 20,
+      "max": 116.60000000000036,
+      "p95": 16.900000000001455,
+      "elapsed": 60001.29999999106,
+      "mutations": 12992,
+      "maxPulses": 17,
+      "instructions": 3394,
+      "fps": 56.7654367488789,
+      "task": 49.370038,
+      "script": 12.486293,
+      "layout": 3.707087,
+      "style": 6.19666
+    }
+  ],
+  "errors": []
+}

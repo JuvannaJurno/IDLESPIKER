@@ -34,3 +34,6 @@ html[data-theme=dark] .achievement-notice strong{color:#ecedd7}
 @media(prefers-reduced-motion:reduce){.achievement-notice{transition:none;transform:translate(-50%,0)}}
 
 .achievement-notice.visible{pointer-events:auto}.achievement-notice-open{display:flex;align-items:center;gap:12px;width:100%;padding:0;border:0;background:none;color:inherit;font:inherit;text-align:left;cursor:pointer}.achievement-notice:focus-within{outline:2px solid #c4994a;outline-offset:3px}.achievement-notice-open:focus{outline:none}.achievement-card.achievement-target{outline:2px solid #b9984c;outline-offset:1px;box-shadow:0 0 0 4px #d9be7122;animation:achievement-target-in .7s ease-out}.achievement-card:focus-visible{outline:2px solid #b9984c;outline-offset:1px}@keyframes achievement-target-in{from{box-shadow:0 0 0 7px #d9be7177}to{box-shadow:0 0 0 4px #d9be7122}}@media(prefers-reduced-motion:reduce){.achievement-card.achievement-target{animation:none}}
+.achievement-notice{touch-action:pan-y;user-select:none;transition:transform .32s cubic-bezier(.2,.8,.25,1),opacity .25s,translate .22s ease-out}
+.achievement-notice.is-dragging{transition:none;cursor:grabbing}
+@media(prefers-reduced-motion:reduce){.achievement-notice{transition:none}}

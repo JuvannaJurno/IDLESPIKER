@@ -6,7 +6,7 @@ try{enabled=localStorage.getItem('idle-spiker-sound')!=='off';Object.assign(leve
 for(const k in levels)levels[k]=Math.max(0,Math.min(1,Number(levels[k])||0));
 const voices=[],pending=new WeakSet(),timers=new Set();
 function media(src,group,scale=1,loop=false){const a=new Audio(src);a.preload='auto';a.loop=loop;const v={a,group,scale,busy:false,timer:null};voices.push(v);a.load();return v}
-const musicTracks=['OST/BGM_0.mp3','OST/BGM_1.mp3','OST/BGM_2.mp3'].map(src=>media(src,'music',1,false));
+const musicTracks=['OST/BGM_0.mp3','OST/BGM_1.mp3','OST/BGM_2.mp3','OST/BGM_3.mp3'].map(src=>media(src,'music',1,false));
 let musicIndex=Math.floor(Math.random()*musicTracks.length),musicTransition=null,musicPausedAt=null;
 function haltMusic(){musicPausedAt??=performance.now();for(const v of musicTracks)stop(v)}
 function startMusic(){if(musicPausedAt!==null){if(musicTransition?.start!=null)musicTransition.start+=performance.now()-musicPausedAt;musicPausedAt=null}play(musicTracks[musicIndex]);if(musicTransition)play(musicTracks[musicTransition.next])}

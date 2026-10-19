@@ -1,0 +1,18 @@
+{
+  "before": {
+    "candidate": "scout-88-2",
+    "bought": true,
+    "id": "player-12",
+    "level": 48,
+    "limit": 38,
+    "ovr": 80,
+    "startLevel": 48
+  },
+  "after": {
+    "id": "player-12",
+    "level": 38,
+    "limit": 38,
+    "ovr": 80,
+    "startLevel": 48
+  }
+}

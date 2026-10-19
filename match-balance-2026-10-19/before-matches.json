@@ -1,0 +1,3995 @@
+[
+  {
+    "seed": 1,
+    "strategy": "automation",
+    "phase": "start",
+    "team": 1,
+    "events": [
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 5.833333333333318,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 8.016666666666644,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 16.033333333333704,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 18.166666666666917,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 20.36666666666679,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 22.51666666666667,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 30.783333333332866,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 32.91666666666608,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 46.04999999999867,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 48.166666666665215,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 57.63333333333134,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 59.766666666664555,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 61.96666666666443,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 64.13333333333098,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 66.09999999999754,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 68.24999999999741,
+        "team": 0
+      }
+    ],
+    "maxStep": 3.406666666666727,
+    "steps": 4201,
+    "score": [
+      5,
+      0
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": false,
+    "focusEvents": [],
+    "simulatedSeconds": 70.01666666666667
+  },
+  {
+    "seed": 2,
+    "strategy": "automation",
+    "phase": "start",
+    "team": 3,
+    "events": [
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 5.833333333333318,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 7.966666666666644,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 9.950000000000074,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 12.083333333333513,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 20.36666666666679,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 22.500000000000004,
+        "team": 0
+      },
+      {
+        "id": "tempo-second",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 24.983333333333196,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 26.699999999999765,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 28.54999999999966,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 30.68333333333287,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 39.016666666665735,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 41.13333333333228,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 51.03333333333172,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 53.23333333333159,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 63.06666666666437,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 65.19999999999759,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 75.09999999999702,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 77.26666666666357,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 79.19999999999679,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 81.36666666666333,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 83.29999999999656,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 85.43333333332977,
+        "team": 1
+      },
+      {
+        "id": "tempo-third",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 104.84999999999533,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 106.96666666666188,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 122.9499999999943,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 125.09999999999418,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 139.33333333333636,
+        "team": 0
+      },
+      {
+        "id": "absolute-read",
+        "actor": 6,
+        "role": "middle",
+        "kind": "block",
+        "at": 141.50000000000475,
+        "team": 1
+      }
+    ],
+    "maxStep": 5.922749274048082,
+    "steps": 9036,
+    "score": [
+      5,
+      7
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": true,
+    "focusEvents": [
+      {
+        "id": "absolute-read",
+        "reason": "halfway",
+        "progress": 0.5104112045323637,
+        "age": 1.5499999999999994
+      }
+    ],
+    "simulatedSeconds": 150.6
+  },
+  {
+    "seed": 3,
+    "strategy": "automation",
+    "phase": "start",
+    "team": 5,
+    "events": [
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 5.833333333333318,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 7.966666666666644,
+        "team": 0
+      },
+      {
+        "id": "read",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 18.766666666666882,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 28.74999999999965,
+        "team": 0
+      },
+      {
+        "id": "sky-serve",
+        "actor": 7,
+        "role": "outside",
+        "kind": "serve",
+        "at": 34.83333333333264,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 39.34999999999905,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 41.48333333333226,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 66.31666666666419,
+        "team": 1
+      },
+      {
+        "id": "line",
+        "actor": 10,
+        "role": "outside",
+        "kind": "attack",
+        "at": 68.43333333333074,
+        "team": 1
+      },
+      {
+        "id": "power-hit",
+        "actor": 4,
+        "role": "outside",
+        "kind": "attack",
+        "at": 87.48333333332965,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 92.74999999999602,
+        "team": 0
+      }
+    ],
+    "maxStep": 5.922749274048087,
+    "steps": 5689,
+    "score": [
+      3,
+      5
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": false,
+    "focusEvents": [],
+    "simulatedSeconds": 94.81666666666666
+  },
+  {
+    "seed": 4,
+    "strategy": "automation",
+    "phase": "middle",
+    "team": 1,
+    "events": [
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 14.050000000000278,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 22.116666666666692,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 24.249999999999904,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 32.316666666666116,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 46.49999999999864,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 54.783333333331505,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 1,
+        "role": "outside",
+        "kind": "attack",
+        "at": 56.89999999999805,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 66.81666666666416,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 68.94999999999737,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 71.14999999999725,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 73.29999999999713,
+        "team": 1
+      }
+    ],
+    "maxStep": 5.922749274048087,
+    "steps": 4520,
+    "score": [
+      5,
+      2
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": false,
+    "focusEvents": [],
+    "simulatedSeconds": 75.33333333333333
+  },
+  {
+    "seed": 5,
+    "strategy": "automation",
+    "phase": "middle",
+    "team": 3,
+    "events": [
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 5.833333333333318,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 7.999999999999977,
+        "team": 0
+      },
+      {
+        "id": "ghost-tip",
+        "actor": 1,
+        "role": "outside",
+        "kind": "attack",
+        "at": 11.816666666666833,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 20.83333333333343,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 22.98333333333331,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 32.866666666666084,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 34.9999999999993,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 44.899999999998734,
+        "team": 1
+      },
+      {
+        "id": "line",
+        "actor": 10,
+        "role": "outside",
+        "kind": "attack",
+        "at": 47.01666666666528,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 56.93333333333138,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 59.08333333333126,
+        "team": 1
+      },
+      {
+        "id": "back",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 61.3499999999978,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 63.199999999997694,
+        "team": 0
+      }
+    ],
+    "maxStep": 5.9195926152262786,
+    "steps": 4829,
+    "score": [
+      5,
+      2
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": true,
+    "focusEvents": [
+      {
+        "id": "ghost-tip",
+        "reason": "halfway",
+        "progress": 0.5061728395061732,
+        "age": 2.8499999999999948
+      }
+    ],
+    "simulatedSeconds": 80.48333333333333
+  },
+  {
+    "seed": 6,
+    "strategy": "automation",
+    "phase": "middle",
+    "team": 5,
+    "events": [
+      {
+        "id": "tempo-second",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 6.11666666666665,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 9.916666666666739,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 12.066666666666846,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 24.666666666666547,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 26.79999999999976,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 35.083333333332625,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 7,
+        "role": "outside",
+        "kind": "attack",
+        "at": 37.19999999999917,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 41.549999999998924,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 49.83333333333179,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 51.99999999999833,
+        "team": 0
+      },
+      {
+        "id": "sky-serve",
+        "actor": 7,
+        "role": "outside",
+        "kind": "serve",
+        "at": 58.049999999997986,
+        "team": 1
+      },
+      {
+        "id": "tempo-second",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 62.84999999999771,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 64.58333333333096,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 66.41666666666418,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 68.5499999999974,
+        "team": 0
+      },
+      {
+        "id": "tempo-second",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 78.49999999999683,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 80.23333333333007,
+        "team": 0
+      }
+    ],
+    "maxStep": 5.922749274048082,
+    "steps": 4915,
+    "score": [
+      5,
+      1
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": false,
+    "focusEvents": [],
+    "simulatedSeconds": 81.91666666666667
+  },
+  {
+    "seed": 7,
+    "strategy": "automation",
+    "phase": "end",
+    "team": 1,
+    "events": [
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 5.833333333333318,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 7.966666666666644,
+        "team": 0
+      },
+      {
+        "id": "ghost-tip",
+        "actor": 1,
+        "role": "outside",
+        "kind": "attack",
+        "at": 21.783333333333378,
+        "team": 0
+      },
+      {
+        "id": "sky-serve",
+        "actor": 7,
+        "role": "outside",
+        "kind": "serve",
+        "at": 34.68333333333265,
+        "team": 1
+      },
+      {
+        "id": "tempo-third",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 39.483333333332375,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 1,
+        "role": "outside",
+        "kind": "attack",
+        "at": 41.583333333332256,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 51.783333333331676,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 53.91666666666489,
+        "team": 0
+      }
+    ],
+    "maxStep": 5.922749274048087,
+    "steps": 3809,
+    "score": [
+      5,
+      1
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": true,
+    "focusEvents": [
+      {
+        "id": "ghost-tip",
+        "reason": "halfway",
+        "progress": 0.5061728395061732,
+        "age": 2.8499999999999948
+      }
+    ],
+    "simulatedSeconds": 63.483333333333334
+  },
+  {
+    "seed": 8,
+    "strategy": "automation",
+    "phase": "end",
+    "team": 3,
+    "events": [
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 5.833333333333318,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 7.966666666666644,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 23.94999999999992,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 26.116666666666465,
+        "team": 1
+      },
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 28.566666666666325,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 30.699999999999537,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 48.083333333331886,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 50.24999999999843,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 60.116666666664536,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 10,
+        "role": "outside",
+        "kind": "attack",
+        "at": 62.23333333333108,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 64.44999999999763,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 66.63333333333084,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 80.94999999999669,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 11,
+        "role": "opposite",
+        "kind": "attack",
+        "at": 83.06666666666324,
+        "team": 1
+      },
+      {
+        "id": "power-hit",
+        "actor": 4,
+        "role": "outside",
+        "kind": "attack",
+        "at": 86.93333333332968,
+        "team": 0
+      }
+    ],
+    "maxStep": 5.922749274048087,
+    "steps": 5406,
+    "score": [
+      5,
+      3
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": false,
+    "focusEvents": [],
+    "simulatedSeconds": 90.1
+  },
+  {
+    "seed": 9,
+    "strategy": "automation",
+    "phase": "end",
+    "team": 5,
+    "events": [
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 5.833333333333318,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 7.98333333333331,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 17.866666666666934,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 20.000000000000146,
+        "team": 1
+      },
+      {
+        "id": "back",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 30.1833333333329,
+        "team": 1
+      },
+      {
+        "id": "line",
+        "actor": 10,
+        "role": "outside",
+        "kind": "attack",
+        "at": 32.01666666666613,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 44.06666666666545,
+        "team": 1
+      },
+      {
+        "id": "read",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 48.64999999999852,
+        "team": 0
+      }
+    ],
+    "maxStep": 5.922749274048087,
+    "steps": 4208,
+    "score": [
+      5,
+      2
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": false,
+    "focusEvents": [],
+    "simulatedSeconds": 70.13333333333334
+  },
+  {
+    "seed": 10,
+    "strategy": "balanced",
+    "phase": "start",
+    "team": 1,
+    "events": [
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 8.433333333333332,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 16.716666666667,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 18.866666666666877,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 39.166666666665726,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 41.29999999999894,
+        "team": 1
+      },
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 43.78333333333213,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 45.96666666666534,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 54.18333333333154,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 56.31666666666475,
+        "team": 1
+      },
+      {
+        "id": "float",
+        "actor": 1,
+        "role": "outside",
+        "kind": "serve",
+        "at": 62.39999999999774,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 66.2166666666642,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 68.34999999999741,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 80.96666666666336,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 83.1333333333299,
+        "team": 0
+      },
+      {
+        "id": "jump-float-legendary",
+        "actor": 8,
+        "role": "setter",
+        "kind": "serve",
+        "at": 89.18333333332956,
+        "team": 1
+      }
+    ],
+    "maxStep": 5.922749274048087,
+    "steps": 5737,
+    "score": [
+      3,
+      5
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": true,
+    "focusEvents": [
+      {
+        "id": "jump-float-legendary",
+        "reason": "halfway",
+        "progress": 0.5045045045045051,
+        "age": 4.516666666666656
+      }
+    ],
+    "simulatedSeconds": 95.61666666666666
+  },
+  {
+    "seed": 11,
+    "strategy": "balanced",
+    "phase": "start",
+    "team": 3,
+    "events": [
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 5.833333333333318,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 7,
+        "role": "outside",
+        "kind": "attack",
+        "at": 7.949999999999977,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 16.033333333333704,
+        "team": 1
+      },
+      {
+        "id": "absolute-read",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 18.166666666666917,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 28.34999999999967,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 30.466666666666217,
+        "team": 1
+      },
+      {
+        "id": "float",
+        "actor": 1,
+        "role": "outside",
+        "kind": "serve",
+        "at": 37.43333333333249,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 40.649999999998975,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 42.78333333333219,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 44.9666666666654,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 4,
+        "role": "outside",
+        "kind": "attack",
+        "at": 47.08333333333194,
+        "team": 0
+      },
+      {
+        "id": "float",
+        "actor": 1,
+        "role": "outside",
+        "kind": "serve",
+        "at": 51.56666666666502,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 55.38333333333147,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 57.53333333333135,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 67.69999999999744,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 69.83333333333066,
+        "team": 1
+      },
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 79.99999999999675,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 11,
+        "role": "opposite",
+        "kind": "attack",
+        "at": 82.09999999999663,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 84.08333333332985,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 5,
+        "role": "opposite",
+        "kind": "attack",
+        "at": 86.1999999999964,
+        "team": 0
+      }
+    ],
+    "maxStep": 5.922749274048087,
+    "steps": 5339,
+    "score": [
+      5,
+      2
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": true,
+    "focusEvents": [
+      {
+        "id": "absolute-read",
+        "reason": "halfway",
+        "progress": 0.5,
+        "age": 1.266666666666667
+      }
+    ],
+    "simulatedSeconds": 88.98333333333333
+  },
+  {
+    "seed": 12,
+    "strategy": "balanced",
+    "phase": "start",
+    "team": 5,
+    "events": [
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 6.11666666666665,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 8.233333333333322,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 16.31666666666702,
+        "team": 1
+      },
+      {
+        "id": "tempo-second",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 20.933333333333426,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 22.649999999999995,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 30.816666666666197,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 32.96666666666608,
+        "team": 0
+      },
+      {
+        "id": "float",
+        "actor": 1,
+        "role": "outside",
+        "kind": "serve",
+        "at": 51.94999999999833,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 54.8833333333315,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 57.01666666666471,
+        "team": 0
+      },
+      {
+        "id": "float",
+        "actor": 1,
+        "role": "outside",
+        "kind": "serve",
+        "at": 62.11666666666442,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 65.0499999999976,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 67.18333333333081,
+        "team": 0
+      },
+      {
+        "id": "sky-serve",
+        "actor": 8,
+        "role": "setter",
+        "kind": "serve",
+        "at": 73.2666666666638,
+        "team": 1
+      },
+      {
+        "id": "tempo-second",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 78.06666666666352,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 79.79999999999676,
+        "team": 1
+      }
+    ],
+    "maxStep": 5.922749274048087,
+    "steps": 4903,
+    "score": [
+      5,
+      2
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": false,
+    "focusEvents": [],
+    "simulatedSeconds": 81.71666666666667
+  },
+  {
+    "seed": 13,
+    "strategy": "balanced",
+    "phase": "middle",
+    "team": 1,
+    "events": [
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 5.833333333333318,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 7,
+        "role": "outside",
+        "kind": "attack",
+        "at": 7.949999999999977,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 17.866666666666934,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 20.033333333333477,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 21.950000000000035,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 10,
+        "role": "outside",
+        "kind": "attack",
+        "at": 24.06666666666658,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 33.76666666666603,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 10,
+        "role": "outside",
+        "kind": "attack",
+        "at": 35.88333333333258,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 38.09999999999912,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 40.249999999999,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 48.516666666665195,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 50.64999999999841,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 58.683333333331284,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 60.816666666664496,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 73.18333333333047,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 75.31666666666368,
+        "team": 1
+      }
+    ],
+    "maxStep": 5.922749274048087,
+    "steps": 4641,
+    "score": [
+      5,
+      1
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": false,
+    "focusEvents": [],
+    "simulatedSeconds": 77.35
+  },
+  {
+    "seed": 14,
+    "strategy": "balanced",
+    "phase": "middle",
+    "team": 3,
+    "events": [
+      {
+        "id": "back",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 6.11666666666665,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 7.966666666666644,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 1,
+        "role": "outside",
+        "kind": "attack",
+        "at": 26.066666666666467,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 28.283333333333008,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 30.433333333332886,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 32.6166666666661,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 34.74999999999931,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 44.64999999999875,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 46.83333333333196,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 55.14999999999815,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 57.2666666666647,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 67.44999999999746,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 69.566666666664,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 4,
+        "role": "outside",
+        "kind": "attack",
+        "at": 79.98333333333008,
+        "team": 0
+      },
+      {
+        "id": "float",
+        "actor": 2,
+        "role": "setter",
+        "kind": "serve",
+        "at": 86.08333333332973,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 92.11666666666272,
+        "team": 0
+      }
+    ],
+    "maxStep": 5.916627293497222,
+    "steps": 5646,
+    "score": [
+      3,
+      5
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": false,
+    "focusEvents": [],
+    "simulatedSeconds": 94.1
+  },
+  {
+    "seed": 15,
+    "strategy": "balanced",
+    "phase": "middle",
+    "team": 5,
+    "events": [
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 11.916666666666838,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 14.050000000000278,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 16.05000000000037,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 18.250000000000245,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 30.79999999999953,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 1,
+        "role": "outside",
+        "kind": "attack",
+        "at": 32.91666666666608,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 41.21666666666561,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 43.34999999999882,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 51.68333333333168,
+        "team": 1
+      }
+    ],
+    "maxStep": 3.4566666666667247,
+    "steps": 3272,
+    "score": [
+      5,
+      0
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": false,
+    "focusEvents": [],
+    "simulatedSeconds": 54.53333333333333
+  },
+  {
+    "seed": 16,
+    "strategy": "balanced",
+    "phase": "end",
+    "team": 1,
+    "events": [
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 7.966666666666644,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 10.166666666666751,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 1,
+        "role": "outside",
+        "kind": "attack",
+        "at": 12.283333333333523,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 14.283333333333623,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 16.466666666667013,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 32.46666666666611,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 34.59999999999932,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 48.59999999999852,
+        "team": 1
+      },
+      {
+        "id": "float",
+        "actor": 8,
+        "role": "setter",
+        "kind": "serve",
+        "at": 57.699999999998006,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 4,
+        "role": "outside",
+        "kind": "attack",
+        "at": 62.74999999999772,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 67.54999999999745,
+        "team": 0
+      },
+      {
+        "id": "float",
+        "actor": 2,
+        "role": "setter",
+        "kind": "serve",
+        "at": 73.38333333333046,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 77.1999999999969,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 79.33333333333012,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 81.53333333332999,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 83.68333333332987,
+        "team": 1
+      },
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 85.91666666666308,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 88.04999999999629,
+        "team": 0
+      },
+      {
+        "id": "slide-attack",
+        "actor": 3,
+        "role": "middle",
+        "kind": "set",
+        "at": 98.21666666666238,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 0,
+        "role": "middle",
+        "kind": "block",
+        "at": 111.71666666666161,
+        "team": 0
+      }
+    ],
+    "maxStep": 5.922749274048087,
+    "steps": 6814,
+    "score": [
+      5,
+      3
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": false,
+    "focusEvents": [],
+    "simulatedSeconds": 113.56666666666666
+  },
+  {
+    "seed": 17,
+    "strategy": "balanced",
+    "phase": "end",
+    "team": 3,
+    "events": [
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 6.11666666666665,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 7,
+        "role": "outside",
+        "kind": "attack",
+        "at": 8.216666666666654,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 10.216666666666754,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 12.350000000000193,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 20.633333333333443,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 7,
+        "role": "outside",
+        "kind": "attack",
+        "at": 22.74999999999999,
+        "team": 1
+      },
+      {
+        "id": "slide-attack",
+        "actor": 3,
+        "role": "middle",
+        "kind": "set",
+        "at": 39.46666666666571,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 68.18333333333075,
+        "team": 1
+      },
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 70.43333333333062,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 10,
+        "role": "outside",
+        "kind": "attack",
+        "at": 72.5333333333305,
+        "team": 1
+      }
+    ],
+    "maxStep": 5.922749274048087,
+    "steps": 4476,
+    "score": [
+      2,
+      5
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": false,
+    "focusEvents": [],
+    "simulatedSeconds": 74.6
+  },
+  {
+    "seed": 18,
+    "strategy": "balanced",
+    "phase": "end",
+    "team": 5,
+    "events": [
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 5.833333333333318,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 7.98333333333331,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 18.15000000000025,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 1,
+        "role": "outside",
+        "kind": "attack",
+        "at": 20.25000000000013,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 30.166666666666234,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 32.33333333333278,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 40.66666666666564,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 42.78333333333219,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 44.98333333333206,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 47.116666666665274,
+        "team": 1
+      },
+      {
+        "id": "tempo-second",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 55.683333333331454,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 59.48333333333124,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 61.633333333331116,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 69.89999999999732,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 72.0499999999972,
+        "team": 0
+      },
+      {
+        "id": "jump-float-legendary",
+        "actor": 8,
+        "role": "setter",
+        "kind": "serve",
+        "at": 78.11666666666352,
+        "team": 1
+      },
+      {
+        "id": "tempo-third",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 82.26666666666328,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 4,
+        "role": "outside",
+        "kind": "attack",
+        "at": 84.36666666666316,
+        "team": 0
+      }
+    ],
+    "maxStep": 5.922749274048082,
+    "steps": 5348,
+    "score": [
+      5,
+      2
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": true,
+    "focusEvents": [
+      {
+        "id": "jump-float-legendary",
+        "reason": "halfway",
+        "progress": 0.5045045045045051,
+        "age": 4.516666666666656
+      }
+    ],
+    "simulatedSeconds": 89.13333333333334
+  },
+  {
+    "seed": 19,
+    "strategy": "transfers",
+    "phase": "start",
+    "team": 1,
+    "events": [
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 6.11666666666665,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 7,
+        "role": "outside",
+        "kind": "attack",
+        "at": 8.216666666666654,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 10.216666666666754,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 1,
+        "role": "outside",
+        "kind": "attack",
+        "at": 12.333333333333526,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 20.633333333333443,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 7,
+        "role": "outside",
+        "kind": "attack",
+        "at": 22.74999999999999,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 34.816666666665974,
+        "team": 1
+      },
+      {
+        "id": "float",
+        "actor": 8,
+        "role": "setter",
+        "kind": "serve",
+        "at": 49.46666666666514,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 52.39999999999831,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 54.549999999998185,
+        "team": 1
+      },
+      {
+        "id": "float",
+        "actor": 2,
+        "role": "setter",
+        "kind": "serve",
+        "at": 61.49999999999779,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 64.43333333333096,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 11,
+        "role": "opposite",
+        "kind": "attack",
+        "at": 66.54999999999751,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 68.5499999999974,
+        "team": 0
+      },
+      {
+        "id": "line",
+        "actor": 5,
+        "role": "opposite",
+        "kind": "attack",
+        "at": 70.66666666666394,
+        "team": 0
+      },
+      {
+        "id": "float",
+        "actor": 2,
+        "role": "setter",
+        "kind": "serve",
+        "at": 76.0333333333303,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 78.96666666666347,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 11,
+        "role": "opposite",
+        "kind": "attack",
+        "at": 81.08333333333002,
+        "team": 1
+      },
+      {
+        "id": "line",
+        "actor": 5,
+        "role": "opposite",
+        "kind": "attack",
+        "at": 93.54999999999598,
+        "team": 0
+      }
+    ],
+    "maxStep": 5.922749274048087,
+    "steps": 5738,
+    "score": [
+      5,
+      3
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": false,
+    "focusEvents": [],
+    "simulatedSeconds": 95.63333333333334
+  },
+  {
+    "seed": 20,
+    "strategy": "transfers",
+    "phase": "start",
+    "team": 3,
+    "events": [
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 5.833333333333318,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 7.999999999999977,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 18.15000000000025,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 20.266666666666797,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 30.166666666666234,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 32.29999999999945,
+        "team": 0
+      },
+      {
+        "id": "ghost-tip",
+        "actor": 4,
+        "role": "outside",
+        "kind": "attack",
+        "at": 49.93333333333178,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 55.43333333333147,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 57.666666666664675,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 4,
+        "role": "outside",
+        "kind": "attack",
+        "at": 59.766666666664555,
+        "team": 0
+      },
+      {
+        "id": "sky-serve",
+        "actor": 2,
+        "role": "setter",
+        "kind": "serve",
+        "at": 65.86666666666422,
+        "team": 0
+      },
+      {
+        "id": "float",
+        "actor": 2,
+        "role": "setter",
+        "kind": "serve",
+        "at": 72.64999999999716,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 76.46666666666361,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 78.66666666666349,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 80.7999999999967,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 4,
+        "role": "outside",
+        "kind": "attack",
+        "at": 82.91666666666325,
+        "team": 0
+      },
+      {
+        "id": "sky-serve",
+        "actor": 2,
+        "role": "setter",
+        "kind": "serve",
+        "at": 87.39999999999633,
+        "team": 0
+      }
+    ],
+    "maxStep": 5.922749274048087,
+    "steps": 5608,
+    "score": [
+      5,
+      3
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": true,
+    "focusEvents": [
+      {
+        "id": "ghost-tip",
+        "reason": "halfway",
+        "progress": 0.5061728395061732,
+        "age": 2.8499999999999948
+      }
+    ],
+    "simulatedSeconds": 93.46666666666667
+  },
+  {
+    "seed": 21,
+    "strategy": "transfers",
+    "phase": "start",
+    "team": 5,
+    "events": [
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 5.833333333333318,
+        "team": 1
+      },
+      {
+        "id": "tempo-third",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 10.216666666666754,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 12.36666666666686,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 25.149999999999853,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 1,
+        "role": "outside",
+        "kind": "attack",
+        "at": 27.2666666666664,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 29.766666666666257,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 31.883333333332804,
+        "team": 0
+      },
+      {
+        "id": "sync-attack",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 34.13333333333268,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 1,
+        "role": "outside",
+        "kind": "attack",
+        "at": 35.96666666666591,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 38.466666666665766,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 40.59999999999898,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 56.56666666666474,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 58.716666666664615,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 68.5999999999974,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 70.7333333333306,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 80.63333333333004,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 82.76666666666326,
+        "team": 1
+      },
+      {
+        "id": "float",
+        "actor": 8,
+        "role": "setter",
+        "kind": "serve",
+        "at": 92.66666666666269,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 95.59999999999586,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 97.73333333332907,
+        "team": 1
+      },
+      {
+        "id": "float",
+        "actor": 2,
+        "role": "setter",
+        "kind": "serve",
+        "at": 104.69999999999534,
+        "team": 0
+      },
+      {
+        "id": "sky-serve",
+        "actor": 2,
+        "role": "setter",
+        "kind": "serve",
+        "at": 109.89999999999505,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 114.41666666666146,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 116.56666666666133,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 126.4499999999941,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 6,
+        "role": "middle",
+        "kind": "block",
+        "at": 128.5833333333278,
+        "team": 1
+      }
+    ],
+    "maxStep": 5.922749274048087,
+    "steps": 8065,
+    "score": [
+      4,
+      6
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": true,
+    "focusEvents": [
+      {
+        "id": "sync-attack",
+        "reason": "halfway",
+        "progress": 0.5,
+        "age": 6.099999999999984
+      }
+    ],
+    "simulatedSeconds": 134.41666666666666
+  },
+  {
+    "seed": 22,
+    "strategy": "transfers",
+    "phase": "middle",
+    "team": 1,
+    "events": [
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 5.833333333333318,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 7.999999999999977,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 10.166666666666751,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 12.30000000000019,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 20.583333333333446,
+        "team": 1
+      },
+      {
+        "id": "tempo-third",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 32.899999999999416,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 35.049999999999294,
+        "team": 1
+      },
+      {
+        "id": "back",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 37.24999999999917,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 10,
+        "role": "outside",
+        "kind": "attack",
+        "at": 39.0833333333324,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 41.083333333332284,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 43.216666666665496,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 53.11666666666493,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 55.26666666666481,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 57.44999999999802,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 59.58333333333123,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 61.78333333333111,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 63.94999999999765,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 66.1166666666642,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 68.24999999999741,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 76.53333333333028,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 78.69999999999682,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 87.01666666666301,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 89.13333333332956,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 91.33333333332943,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 104.2333333333287,
+        "team": 1
+      }
+    ],
+    "maxStep": 5.922749274048087,
+    "steps": 6377,
+    "score": [
+      5,
+      2
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": false,
+    "focusEvents": [],
+    "simulatedSeconds": 106.28333333333333
+  },
+  {
+    "seed": 23,
+    "strategy": "transfers",
+    "phase": "middle",
+    "team": 3,
+    "events": [
+      {
+        "id": "tempo-second",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 6.11666666666665,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 9.916666666666739,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 12.050000000000178,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 44.39999999999876,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 46.533333333331974,
+        "team": 0
+      },
+      {
+        "id": "float",
+        "actor": 2,
+        "role": "setter",
+        "kind": "serve",
+        "at": 61.19999999999781,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 70.49999999999729,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 72.61666666666383,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 75.09999999999702,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 5,
+        "role": "opposite",
+        "kind": "attack",
+        "at": 77.1999999999969,
+        "team": 0
+      }
+    ],
+    "maxStep": 5.922749274048087,
+    "steps": 4756,
+    "score": [
+      5,
+      2
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": false,
+    "focusEvents": [],
+    "simulatedSeconds": 79.26666666666667
+  },
+  {
+    "seed": 24,
+    "strategy": "transfers",
+    "phase": "middle",
+    "team": 5,
+    "events": [
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 5.833333333333318,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 7.966666666666644,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 46.89999999999862,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 61.06666666666448,
+        "team": 1
+      },
+      {
+        "id": "float",
+        "actor": 2,
+        "role": "setter",
+        "kind": "serve",
+        "at": 68.0166666666641,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 70.94999999999726,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 10,
+        "role": "outside",
+        "kind": "attack",
+        "at": 73.0666666666638,
+        "team": 1
+      },
+      {
+        "id": "tempo-third",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 83.26666666666323,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 6,
+        "role": "middle",
+        "kind": "block",
+        "at": 85.4166666666631,
+        "team": 1
+      },
+      {
+        "id": "tempo-third",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 92.19999999999605,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 6,
+        "role": "middle",
+        "kind": "block",
+        "at": 94.3166666666626,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 96.51666666666247,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 98.66666666666235,
+        "team": 0
+      },
+      {
+        "id": "tempo-second",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 118.8166666666612,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 0,
+        "role": "middle",
+        "kind": "block",
+        "at": 120.5666666666611,
+        "team": 0
+      }
+    ],
+    "maxStep": 5.922749274048087,
+    "steps": 7336,
+    "score": [
+      6,
+      4
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": false,
+    "focusEvents": [],
+    "simulatedSeconds": 122.26666666666667
+  },
+  {
+    "seed": 25,
+    "strategy": "transfers",
+    "phase": "end",
+    "team": 1,
+    "events": [
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 5.833333333333318,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 7.966666666666644,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 16.01666666666704,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 18.15000000000025,
+        "team": 0
+      },
+      {
+        "id": "tempo-second",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 26.516666666666442,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 28.23333333333301,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 30.316666666666226,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 32.46666666666611,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 49.5833333333318,
+        "team": 1
+      },
+      {
+        "id": "tempo-third",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 54.199999999998205,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 1,
+        "role": "outside",
+        "kind": "attack",
+        "at": 56.299999999998086,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 64.59999999999762,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 66.7499999999975,
+        "team": 0
+      }
+    ],
+    "maxStep": 3.4633333333333667,
+    "steps": 4112,
+    "score": [
+      5,
+      0
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": false,
+    "focusEvents": [],
+    "simulatedSeconds": 68.53333333333333
+  },
+  {
+    "seed": 26,
+    "strategy": "transfers",
+    "phase": "end",
+    "team": 3,
+    "events": [
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 7.966666666666644,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 16.01666666666704,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 18.15000000000025,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 20.150000000000137,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 22.300000000000015,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 24.483333333333224,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 7,
+        "role": "outside",
+        "kind": "attack",
+        "at": 26.59999999999977,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 28.81666666666631,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 1,
+        "role": "outside",
+        "kind": "attack",
+        "at": 30.933333333332858,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 39.23333333333239,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 41.3666666666656,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 49.43333333333181,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 51.58333333333169,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 67.83333333333077,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 69.94999999999732,
+        "team": 1
+      },
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 80.13333333333007,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 84.44999999999649,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 86.5833333333297,
+        "team": 1
+      }
+    ],
+    "maxStep": 5.92249241097855,
+    "steps": 5318,
+    "score": [
+      5,
+      2
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": false,
+    "focusEvents": [],
+    "simulatedSeconds": 88.63333333333334
+  },
+  {
+    "seed": 27,
+    "strategy": "transfers",
+    "phase": "end",
+    "team": 5,
+    "events": [
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 8.433333333333332,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 20.56666666666678,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 22.699999999999992,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 29.233333333332954,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 31.366666666666166,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 39.64999999999903,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 41.783333333332244,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 43.799999999998796,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 45.983333333332006,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 55.84999999999811,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 57.99999999999799,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 66.28333333333086,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 1,
+        "role": "outside",
+        "kind": "attack",
+        "at": 68.3999999999974,
+        "team": 0
+      },
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 78.59999999999683,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 80.71666666666337,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 94.9499999999959,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 97.09999999999577,
+        "team": 0
+      },
+      {
+        "id": "float",
+        "actor": 2,
+        "role": "setter",
+        "kind": "serve",
+        "at": 103.81666666666206,
+        "team": 0
+      }
+    ],
+    "maxStep": 5.921468613795783,
+    "steps": 6397,
+    "score": [
+      5,
+      3
+    ],
+    "finished": true,
+    "count": 31,
+    "legendary": false,
+    "focusEvents": [],
+    "simulatedSeconds": 106.61666666666666
+  }
+]

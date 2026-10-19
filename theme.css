@@ -9,7 +9,7 @@ html[data-theme=dark] .shell{background:linear-gradient(#244953,#243c40 440px,#1
 html[data-theme=dark] :is(dialog,#campDialog,#matchArrival,#bootScreen,.camp-tour section){background:#293d3b!important;color:#e1e8d7!important;border-color:#607361!important}
 html[data-theme=dark] dialog::backdrop{background:#081919c9}
 html[data-theme=dark] :is(.club-panel,.calendar-card,.league-panel,.team-panel,.camp-first-help,.scout-player,.scout-versus>div,.development-panel,.transfer-opportunities,.club-setup-panel){background:#2b403c!important;border-color:#506958!important;box-shadow:0 3px 0 #172c29!important}
-html[data-theme=dark] :is(.room-tile,.upgrade-room:has(>.block-main-effect)){background:#3f4434!important;border-color:#77744e!important;box-shadow:0 3px 0 #22382e!important}
+html[data-theme=dark] :is(.room-tile,.upgrade-room.has-main-effect){background:#3f4434!important;border-color:#77744e!important;box-shadow:0 3px 0 #22382e!important}
 html[data-theme=dark] :is(.base-room .tier-info,.upgrade-room .room-active,.block-main-effect,.block-bonus-panel){background:transparent!important;border-color:#696b49!important}
 html[data-theme=dark] :is(.block-bonus-locked,.camp-slot,.camp-candidate,.transfer-tip,.calendar-day,.club-resources>span,.scout-player dl>div,.scout-report,.camp-overview>div,.scout-compare td,.scout-compare th){background:#344c41!important;border-color:#62765a!important;color:#d2debf!important}
 html[data-theme=dark] :is(.camp-alert,#teamPanel>.scout-alert,.scout-compare>summary,.scout-verdict,#campWallet,.camp-send-footer,#campSlots){background:#314b40!important;border-color:#63765a!important;color:#dfebd2!important}
@@ -58,7 +58,7 @@ html[data-theme=dark] .budget-cycle i{background:#d7b368}
 html[data-theme=dark] :is(.ap-cycle i,.block-level-track i){background:#8bb59a!important}
 html[data-theme=dark] .base-room .room{filter:brightness(.75) saturate(.8)}
 html[data-theme=dark] .base-room .tier-info{background:#2b4140!important}
-html[data-theme=dark] :is(.room-tile,.upgrade-room:has(>.block-main-effect)){background:#3c4437!important;border-color:#727653!important;box-shadow:0 3px 0 #122929!important}
+html[data-theme=dark] :is(.room-tile,.upgrade-room.has-main-effect){background:#3c4437!important;border-color:#727653!important;box-shadow:0 3px 0 #122929!important}
 html[data-theme=dark] :is(.empty-room,.unlock-room){background:#293f3c!important;border-color:#708568!important;color:#c5d5b9!important}
 html[data-theme=dark] .slot-icon{background:#575439!important;color:#e6c885!important}
 html[data-theme=dark] .upgrade-room>small{color:#c5ceb7!important}
@@ -188,7 +188,7 @@ html[data-theme=dark] :is(.settings-group,.transfer-tip,.camp-candidate,.camp-sl
 html[data-theme=dark] :is(.card-top,.card-name,.card-stats,.card-physical,.card-cap,.card-open-upgrade,.card-lineup-action,.card-upgrade-panel,#activeTeam,.libero-slot){background:#2a4046!important;border-color:#405a5d!important}
 html[data-theme=dark] :is(.club-wallet>span,.wallet-ap){background:#2c4249!important;border:1px solid #506a6c!important;box-shadow:0 2px 0 #10262c!important}
 html[data-theme=dark] .club-wallet .wallet-budget{background:#3f443b!important;border-color:#857d59!important}
-html[data-theme=dark] :is(.room-tile,.upgrade-room:has(>.block-main-effect)){background:#303e3e!important;border:1px solid #5b6860!important;box-shadow:0 3px 0 #11272b!important}
+html[data-theme=dark] :is(.room-tile,.upgrade-room.has-main-effect){background:#303e3e!important;border:1px solid #5b6860!important;box-shadow:0 3px 0 #11272b!important}
 html[data-theme=dark] .base-room .tier-info{background:#2a3d42!important}
 html[data-theme=dark] :is(.block-main-effect,.block-bonus-panel,.upgrade-room .room-active){border-color:#4d5b55!important}
 html[data-theme=dark] :is(.block-main-copy,.block-bonus-copy,.department-purpose,.room-help,.energy-status,.scout-catalog-note,.card-stats small,.card-physical,.card-cap,.calendar-day-summary,.calendar-legend){color:#c1cdc0!important}
@@ -286,10 +286,10 @@ html[data-theme=dark] .scout-open[data-ready=true]{background:#435b4d;color:#eee
 .tier.energized .upgrade-room{--inactive-block-fill:#fff3d1;--inactive-block-ink:#96967b;--inactive-block-line:#efdfb2}
 html[data-theme=dark] .upgrade-room{--inactive-block-fill:#354038;--inactive-block-ink:#bbc5ae;--inactive-block-line:#4c5c49}
 html[data-theme=dark] .tier.energized .upgrade-room{--inactive-block-fill:#454c3c;--inactive-block-ink:#bbc5ae;--inactive-block-line:#64704e}
-html .tier .upgrade-room:has(>.block-main-effect) .block-bonus-locked,
-html .tier .upgrade-room:has(>.block-main-effect):not([data-upgrade="ready"]):not([data-upgrade="max"]) .block-upgrade-action,
-html[data-theme=dark] .tier.energized .upgrade-room:has(>.block-main-effect) .block-bonus-locked,
-html[data-theme=dark] .tier.energized .upgrade-room:has(>.block-main-effect):not([data-upgrade="ready"]):not([data-upgrade="max"]) .block-upgrade-action{background:var(--inactive-block-fill)!important;color:var(--inactive-block-ink)!important;border-color:var(--inactive-block-line)!important;box-shadow:none!important}
+html .tier .upgrade-room.has-main-effect .block-bonus-locked,
+html .tier .upgrade-room.has-main-effect:not([data-upgrade="ready"]):not([data-upgrade="max"]) .block-upgrade-action,
+html[data-theme=dark] .tier.energized .upgrade-room.has-main-effect .block-bonus-locked,
+html[data-theme=dark] .tier.energized .upgrade-room.has-main-effect:not([data-upgrade="ready"]):not([data-upgrade="max"]) .block-upgrade-action{background:var(--inactive-block-fill)!important;color:var(--inactive-block-ink)!important;border-color:var(--inactive-block-line)!important;box-shadow:none!important}
 #settingsDialog :is(#soundToggle,#vibrationToggle):focus-visible{outline:3px solid #d4ab59;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){#settingsDialog :is(#soundToggle,#vibrationToggle):before{transition:none}}
 

@@ -1,0 +1,416 @@
+[
+  {
+    "strategy": "automation",
+    "phase": "start",
+    "round": 1,
+    "ourOVR": 89,
+    "winRate": 0.61,
+    "pointShare": 0.5316822129302027,
+    "sweepRate": 0.025714285714285714,
+    "opponents": [
+      {
+        "team": 1,
+        "winRate": 0.69,
+        "ovr": 70
+      },
+      {
+        "team": 2,
+        "winRate": 0.52,
+        "ovr": 80
+      },
+      {
+        "team": 3,
+        "winRate": 0.67,
+        "ovr": 76
+      },
+      {
+        "team": 4,
+        "winRate": 0.76,
+        "ovr": 53
+      },
+      {
+        "team": 5,
+        "winRate": 0.57,
+        "ovr": 83
+      },
+      {
+        "team": 6,
+        "winRate": 0.64,
+        "ovr": 64
+      },
+      {
+        "team": 7,
+        "winRate": 0.42,
+        "ovr": 86
+      }
+    ]
+  },
+  {
+    "strategy": "automation",
+    "phase": "middle",
+    "round": 8,
+    "ourOVR": 112,
+    "winRate": 0.6342857142857142,
+    "pointShare": 0.5455452127659575,
+    "sweepRate": 0.03428571428571429,
+    "opponents": [
+      {
+        "team": 1,
+        "winRate": 0.64,
+        "ovr": 72
+      },
+      {
+        "team": 2,
+        "winRate": 0.67,
+        "ovr": 82
+      },
+      {
+        "team": 3,
+        "winRate": 0.63,
+        "ovr": 78
+      },
+      {
+        "team": 4,
+        "winRate": 0.71,
+        "ovr": 55
+      },
+      {
+        "team": 5,
+        "winRate": 0.54,
+        "ovr": 85
+      },
+      {
+        "team": 6,
+        "winRate": 0.64,
+        "ovr": 66
+      },
+      {
+        "team": 7,
+        "winRate": 0.61,
+        "ovr": 88
+      }
+    ]
+  },
+  {
+    "strategy": "automation",
+    "phase": "end",
+    "round": 14,
+    "ourOVR": 119,
+    "winRate": 0.6014285714285714,
+    "pointShare": 0.535183349851338,
+    "sweepRate": 0.03,
+    "opponents": [
+      {
+        "team": 1,
+        "winRate": 0.58,
+        "ovr": 75
+      },
+      {
+        "team": 2,
+        "winRate": 0.67,
+        "ovr": 85
+      },
+      {
+        "team": 3,
+        "winRate": 0.52,
+        "ovr": 81
+      },
+      {
+        "team": 4,
+        "winRate": 0.64,
+        "ovr": 58
+      },
+      {
+        "team": 5,
+        "winRate": 0.6,
+        "ovr": 88
+      },
+      {
+        "team": 6,
+        "winRate": 0.64,
+        "ovr": 69
+      },
+      {
+        "team": 7,
+        "winRate": 0.56,
+        "ovr": 91
+      }
+    ]
+  },
+  {
+    "strategy": "balanced",
+    "phase": "start",
+    "round": 1,
+    "ourOVR": 92,
+    "winRate": 0.6957142857142857,
+    "pointShare": 0.5701168614357263,
+    "sweepRate": 0.045714285714285714,
+    "opponents": [
+      {
+        "team": 1,
+        "winRate": 0.82,
+        "ovr": 70
+      },
+      {
+        "team": 2,
+        "winRate": 0.55,
+        "ovr": 80
+      },
+      {
+        "team": 3,
+        "winRate": 0.74,
+        "ovr": 76
+      },
+      {
+        "team": 4,
+        "winRate": 0.94,
+        "ovr": 53
+      },
+      {
+        "team": 5,
+        "winRate": 0.55,
+        "ovr": 83
+      },
+      {
+        "team": 6,
+        "winRate": 0.86,
+        "ovr": 64
+      },
+      {
+        "team": 7,
+        "winRate": 0.41,
+        "ovr": 86
+      }
+    ]
+  },
+  {
+    "strategy": "balanced",
+    "phase": "middle",
+    "round": 8,
+    "ourOVR": 142,
+    "winRate": 0.8085714285714286,
+    "pointShare": 0.6130696474634566,
+    "sweepRate": 0.06,
+    "opponents": [
+      {
+        "team": 1,
+        "winRate": 0.87,
+        "ovr": 72
+      },
+      {
+        "team": 2,
+        "winRate": 0.75,
+        "ovr": 82
+      },
+      {
+        "team": 3,
+        "winRate": 0.78,
+        "ovr": 78
+      },
+      {
+        "team": 4,
+        "winRate": 0.97,
+        "ovr": 55
+      },
+      {
+        "team": 5,
+        "winRate": 0.73,
+        "ovr": 85
+      },
+      {
+        "team": 6,
+        "winRate": 0.91,
+        "ovr": 66
+      },
+      {
+        "team": 7,
+        "winRate": 0.65,
+        "ovr": 88
+      }
+    ]
+  },
+  {
+    "strategy": "balanced",
+    "phase": "end",
+    "round": 14,
+    "ourOVR": 147,
+    "winRate": 0.7971428571428572,
+    "pointShare": 0.6000673287325367,
+    "sweepRate": 0.047142857142857146,
+    "opponents": [
+      {
+        "team": 1,
+        "winRate": 0.84,
+        "ovr": 75
+      },
+      {
+        "team": 2,
+        "winRate": 0.71,
+        "ovr": 85
+      },
+      {
+        "team": 3,
+        "winRate": 0.82,
+        "ovr": 81
+      },
+      {
+        "team": 4,
+        "winRate": 0.94,
+        "ovr": 58
+      },
+      {
+        "team": 5,
+        "winRate": 0.68,
+        "ovr": 88
+      },
+      {
+        "team": 6,
+        "winRate": 0.84,
+        "ovr": 69
+      },
+      {
+        "team": 7,
+        "winRate": 0.75,
+        "ovr": 91
+      }
+    ]
+  },
+  {
+    "strategy": "transfers",
+    "phase": "start",
+    "round": 1,
+    "ourOVR": 92,
+    "winRate": 0.7885714285714286,
+    "pointShare": 0.6042487579235909,
+    "sweepRate": 0.06428571428571428,
+    "opponents": [
+      {
+        "team": 1,
+        "winRate": 0.93,
+        "ovr": 70
+      },
+      {
+        "team": 2,
+        "winRate": 0.73,
+        "ovr": 80
+      },
+      {
+        "team": 3,
+        "winRate": 0.8,
+        "ovr": 76
+      },
+      {
+        "team": 4,
+        "winRate": 0.98,
+        "ovr": 53
+      },
+      {
+        "team": 5,
+        "winRate": 0.66,
+        "ovr": 83
+      },
+      {
+        "team": 6,
+        "winRate": 0.86,
+        "ovr": 64
+      },
+      {
+        "team": 7,
+        "winRate": 0.56,
+        "ovr": 86
+      }
+    ]
+  },
+  {
+    "strategy": "transfers",
+    "phase": "middle",
+    "round": 8,
+    "ourOVR": 126,
+    "winRate": 0.8014285714285714,
+    "pointShare": 0.6133771171793986,
+    "sweepRate": 0.06857142857142857,
+    "opponents": [
+      {
+        "team": 1,
+        "winRate": 0.79,
+        "ovr": 72
+      },
+      {
+        "team": 2,
+        "winRate": 0.78,
+        "ovr": 82
+      },
+      {
+        "team": 3,
+        "winRate": 0.74,
+        "ovr": 78
+      },
+      {
+        "team": 4,
+        "winRate": 0.96,
+        "ovr": 55
+      },
+      {
+        "team": 5,
+        "winRate": 0.81,
+        "ovr": 85
+      },
+      {
+        "team": 6,
+        "winRate": 0.78,
+        "ovr": 66
+      },
+      {
+        "team": 7,
+        "winRate": 0.75,
+        "ovr": 88
+      }
+    ]
+  },
+  {
+    "strategy": "transfers",
+    "phase": "end",
+    "round": 14,
+    "ourOVR": 135,
+    "winRate": 0.7828571428571428,
+    "pointShare": 0.6112189098606456,
+    "sweepRate": 0.08714285714285715,
+    "opponents": [
+      {
+        "team": 1,
+        "winRate": 0.79,
+        "ovr": 75
+      },
+      {
+        "team": 2,
+        "winRate": 0.67,
+        "ovr": 85
+      },
+      {
+        "team": 3,
+        "winRate": 0.72,
+        "ovr": 81
+      },
+      {
+        "team": 4,
+        "winRate": 0.97,
+        "ovr": 58
+      },
+      {
+        "team": 5,
+        "winRate": 0.8,
+        "ovr": 88
+      },
+      {
+        "team": 6,
+        "winRate": 0.85,
+        "ovr": 69
+      },
+      {
+        "team": 7,
+        "winRate": 0.68,
+        "ovr": 91
+      }
+    ]
+  }
+]

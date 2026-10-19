@@ -40,17 +40,17 @@ html[data-theme=dark] :is(.player-card,.scout-player){--club-paper:#2c3b47;--clu
 .player-card .card-physical,.scout-physical{display:flex;align-items:center;justify-content:flex-start;gap:14px}.card-hand{display:inline-flex;align-items:center;gap:4px;white-space:nowrap}.card-hand svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}.card-hand.left svg{transform:scaleX(-1)}.scout-physical{margin:0 0 12px;font-size:10px;color:var(--club-muted)}
 .player-card .card-physical>.card-hand,.scout-physical>.card-hand{margin-left:auto}
 /* Transfer candidates use the roster's actual card face. */
-#scoutDialog .scout-player.player-card{padding:0;display:flex;flex-direction:column;text-align:left}#scoutCatalog{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}#scoutDialog .scout-player.player-card .card-name{min-height:69px}#scoutDialog .scout-player.player-card .scout-compare{order:15;margin:8px 10px}#scoutDialog .scout-player.player-card .scout-hire{order:20;margin:6px 10px 0;width:calc(100% - 20px);min-height:45px;font-size:11px;border-radius:9px}#scoutDialog .scout-player.player-card .scout-hold{order:21;margin:8px 10px 12px;width:calc(100% - 20px);min-height:40px;font-size:10px}#scoutDialog .scout-player.player-card:has(.scout-compare[open])>:is(.card-top,.card-art,.card-name,.card-cap,.card-stats,.card-physical,.special-player-tag){display:none}
+#scoutDialog .scout-player.player-card{padding:0;display:flex;flex-direction:column;text-align:left}#scoutCatalog{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}#scoutDialog .scout-player.player-card .card-name{min-height:69px}#scoutDialog .scout-player.player-card .scout-compare{order:15;margin:8px 10px}#scoutDialog .scout-player.player-card .scout-hire{order:20;margin:6px 10px 0;width:calc(100% - 20px);min-height:45px;font-size:11px;border-radius:9px}#scoutDialog .scout-player.player-card .scout-hold{order:21;margin:8px 10px 12px;width:calc(100% - 20px);min-height:40px;font-size:10px}#scoutDialog .scout-player.player-card.has-inline-comparison>:is(.card-top,.card-art,.card-name,.card-cap,.card-stats,.card-physical,.special-player-tag){display:none}
 @media(max-width:540px){#scoutCatalog{grid-template-columns:minmax(0,1fr)}#scoutDialog .scout-player.player-card{display:grid;grid-template-columns:106px minmax(0,1fr)}#scoutDialog .scout-player.player-card :is(.scout-compare,.scout-hire,.scout-hold){grid-column:1/-1}}
 @media(max-width:360px){#scoutDialog .scout-player.player-card{grid-template-columns:90px minmax(0,1fr)}}
 /* Position is already shown on the card itself. */
 .team-slot>.slot-label{display:none}
 /* Keep catalog quality accents from replacing the selected roster palette. */
 #scoutDialog #scoutCatalog{grid-template-columns:minmax(0,1fr);gap:18px}
-html #scoutDialog .scout-player.player-card:not(:has(.scout-compare[open])){background:var(--club-paper)!important;border:2px solid var(--club-edge)!important;box-shadow:0 4px 0 var(--club-shadow)!important;color:var(--club-ink)!important;border-radius:17px!important}
+html #scoutDialog .scout-player.player-card:not(.has-inline-comparison){background:var(--club-paper)!important;border:2px solid var(--club-edge)!important;box-shadow:0 4px 0 var(--club-shadow)!important;color:var(--club-ink)!important;border-radius:17px!important}
 html #scoutDialog .scout-player.player-card[data-special=specialist]{border-color:#c7aa77!important}html #scoutDialog .scout-player.player-card[data-special=potential]{border-color:#a6a8c0!important}
 #scoutDialog .scout-player.player-card .card-inspect{display:block;min-width:0;text-align:left}#scoutDialog .scout-player.player-card .card-inspect small{display:block;margin-top:3px}#scoutDialog .scout-player.player-card .card-stats{margin:0}#scoutDialog .scout-player.player-card .card-cap{margin:0}#scoutDialog .scout-player.player-card .card-physical{margin-top:auto}
-html[data-theme=dark] #teamPanel .player-card,html[data-theme=dark] #scoutDialog .scout-player.player-card:not(:has(.scout-compare[open])){background:var(--club-paper)!important;color:var(--club-ink)!important;border-color:var(--club-edge)!important}
+html[data-theme=dark] #teamPanel .player-card,html[data-theme=dark] #scoutDialog .scout-player.player-card:not(.has-inline-comparison){background:var(--club-paper)!important;color:var(--club-ink)!important;border-color:var(--club-edge)!important}
 /* Catalog uses the compact vertical card shown in the design reference. */
 #scoutDialog #scoutCatalog{display:grid;grid-template-columns:minmax(0,264px);justify-content:center;gap:20px}
 #scoutDialog .scout-player.player-card{display:flex!important;flex-direction:column;grid-template-columns:none;width:100%;max-width:264px;padding:0!important;border-radius:15px!important}
@@ -76,8 +76,8 @@ html[data-theme=dark] #teamPanel .player-card,html[data-theme=dark] #scoutDialog
 #scoutDialog .scout-player.player-card .scout-compare>summary{font-size:10px;min-height:36px;padding:9px 4px;background:var(--club-action);color:var(--club-ink);border:1px solid var(--club-line);border-radius:8px}
 #scoutDialog .scout-player.player-card .scout-hire{min-height:38px;font-size:10px;margin:8px 10px 0}
 #scoutDialog .scout-player.player-card .scout-hold{min-height:34px;font-size:10px;margin:7px 10px 10px}
-#scoutDialog #scoutCatalog:has(.scout-compare[open]){grid-template-columns:minmax(0,1fr)}
-#scoutDialog .scout-player.player-card:has(.scout-compare[open]){max-width:none}
+#scoutDialog #scoutCatalog.has-inline-comparison{grid-template-columns:minmax(0,1fr)}
+#scoutDialog .scout-player.player-card.has-inline-comparison{max-width:none}
 /* Club-wide palette: same blue, cream and sage surfaces as the team screen. */
 .player-card,.scout-player{--club-paper:#fff6df;--club-soft:#dcebdc;--club-ink:#426777;--club-muted:#687e76;--club-line:#d1d9c4;--club-edge:#f4f6e5;--club-kit:#608898;--club-port:#b9d8d6;--club-name:#f1edda;--club-action:#e4ead6;--club-gold:#608898;--club-shadow:#92afb155}
 .player-card .card-top{background:var(--club-kit)!important}.player-card .player-overall{background:#527b8a!important}.player-card .card-stats i{background:linear-gradient(to right,#8dbbb7 var(--stat),var(--club-line) var(--stat))}.player-card .card-art>.camp-stars{background:#527b8ab8!important}.player-card[data-can-upgrade=true] .card-open-upgrade{background:#edcf91!important;border-color:#cfb578!important;color:#725b33!important}.player-card[data-can-upgrade=true] .card-open-upgrade small{color:#725b33!important}
@@ -123,8 +123,8 @@ html[data-theme=dark] .player-card .player-overall{background:#35545e!important}
 .player-card .card-stats .stat-gain{display:none}
 #teamPanel .player-card .card-stats i,#scoutDialog .scout-player.player-card .card-stats i,#scoutDialog.is-opening #packCard .card-stats i{height:2px;opacity:.65}
 /* Slightly stronger card boundaries without adding visual weight inside. */
-#teamPanel .player-card,#scoutDialog .scout-player.player-card:not(:has(.scout-compare[open])),#scoutDialog.is-opening #packCard>.player-card{border:1.5px solid #91aaa8!important;box-shadow:0 3px 0 #7b999747,0 3px 9px #35595214!important}
-html[data-theme=dark] #teamPanel .player-card,html[data-theme=dark] #scoutDialog .scout-player.player-card:not(:has(.scout-compare[open])),html[data-theme=dark] #scoutDialog.is-opening #packCard>.player-card{border-color:#738f91!important;box-shadow:0 3px 0 #0e242766,0 3px 9px #0e242733!important}
+#teamPanel .player-card,#scoutDialog .scout-player.player-card:not(.has-inline-comparison),#scoutDialog.is-opening #packCard>.player-card{border:1.5px solid #91aaa8!important;box-shadow:0 3px 0 #7b999747,0 3px 9px #35595214!important}
+html[data-theme=dark] #teamPanel .player-card,html[data-theme=dark] #scoutDialog .scout-player.player-card:not(.has-inline-comparison),html[data-theme=dark] #scoutDialog.is-opening #packCard>.player-card{border-color:#738f91!important;box-shadow:0 3px 0 #0e242766,0 3px 9px #0e242733!important}
 /* Keep recruitment profile labels off the card face. */
 .player-card>.special-player-tag,.scout-player>.scout-special-label,.scout-player>.scout-special-note{display:none!important}
 /* Level grade sits behind the character, not among the card's statistics. */
@@ -133,3 +133,7 @@ html[data-theme=dark] #teamPanel .player-card,html[data-theme=dark] #scoutDialog
 html[data-theme=dark] .player-card .card-art>.card-grade{color:#d8e5d9;opacity:.13}
 #scoutDialog.is-opening #packCard .card-art>.card-grade{font-size:125px}
 @media(max-width:540px){#teamPanel .player-card .card-art>.card-grade,#scoutDialog .scout-player .card-art>.card-grade{font-size:110px}}
+/* Keep two- and three-digit ratings in the same compact badge. */
+#teamPanel .player-card .player-overall,#scoutDialog .player-card .player-overall{box-sizing:border-box;width:48px;min-width:48px;height:46px;min-height:46px;padding:5px 4px;border-radius:8px}
+#teamPanel .player-card .player-overall b,#scoutDialog .player-card .player-overall b{font-size:22px;line-height:1.05;letter-spacing:-.6px;font-weight:600;font-variant-numeric:tabular-nums}
+#teamPanel .player-card .player-overall small,#scoutDialog .player-card .player-overall small{font-size:6px;letter-spacing:1px;margin-top:3px}

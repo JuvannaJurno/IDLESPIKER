@@ -52,7 +52,7 @@ async function play({animate,stopped,text,note}){
  // New departments join the end only after all inherited departments have settled.
  async function appendDepartment(f,n){if(stopped())return;const el=tier(f),card=base(f);el.getAnimations().forEach(a=>a.cancel());el.querySelectorAll('*').forEach(node=>node.getAnimations().forEach(a=>a.cancel()));el.removeAttribute('style');card.removeAttribute('style');el.hidden=true;if(f===2)workflow.insertBefore(el,tier(3));else workflow.append(el);document.getElementById('roomSlots'+f).replaceChildren();decorate(card,f);
  step(n,'Yeni departman: '+names[f],'İlk dokunuşta ücretsiz açılır');
- const label=document.createElement('span');label.className='bal-new-department-label';label.textContent='Keşfet · Ücretsiz';card.append(label);
+ const label=document.createElement('span');label.className='bal-new-department-label';label.textContent='Keşfet · Ücretsiz';card.append(label);card.classList.add('has-new-department-label');
  el.hidden=false;el.style.opacity='0';await focus(card);if(stopped())return;
  await move(el,[{transform:'translateY(52px)',opacity:0},{transform:'translateY(0)',opacity:1}],1100);await hold(el,500);
  }

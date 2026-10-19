@@ -1,0 +1,27 @@
+{
+  "duration": 6000,
+  "cpu": 4,
+  "viewport": [
+    390,
+    844
+  ],
+  "results": [
+    {
+      "name": "static-blocks",
+      "frames": 45,
+      "slow": 32,
+      "max": 366.60000000000036,
+      "p95": 316.6999999999998,
+      "elapsed": 6004.19999999404,
+      "mutations": 969,
+      "maxPulses": 15,
+      "instructions": 350,
+      "fps": 7.4947536724367385,
+      "task": 5.970533,
+      "script": 1.092281,
+      "layout": 0.099043,
+      "style": 4.248705
+    }
+  ],
+  "errors": []
+}

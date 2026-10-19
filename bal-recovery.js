@@ -1,5 +1,8 @@
 (function(){
 'use strict';
+// Clear any late pagehide saves before loading game state after an explicit reset.
+try{if(sessionStorage.getItem('idle-spiker-reset-pending-v1')){for(const key of Object.keys(localStorage))if(key.startsWith('idle-spiker-'))localStorage.removeItem(key);sessionStorage.removeItem('idle-spiker-reset-pending-v1');localStorage.setItem('idle-spiker-onboarding-v1',JSON.stringify(['ask']));}}catch{window.gameResetting=true;}
+
 try{const raw=localStorage.getItem('idle-spiker-division-transition-v1');if(raw){const tx=JSON.parse(raw),allowed=['idle-spiker-rooms-v2','idle-spiker-main-menu-v1','idle-spiker-league-v1','idle-spiker-match-results','idle-spiker-bal-archive-v1','idle-spiker-social-v1'];if(tx.version===1&&tx.entries&&typeof tx.entries==='object'){for(const [key,value]of Object.entries(tx.entries))if(allowed.includes(key)&&typeof value==='string')localStorage.setItem(key,value);localStorage.removeItem('idle-spiker-division-transition-v1');}}}catch{window.balRecoveryFailed=true;window.gameResetting=true;}
 // A durable transition journal lets an interrupted multi-key save finish on the next load.
 try{const raw=localStorage.getItem('idle-spiker-bal-transition-v1');if(raw){const tx=JSON.parse(raw);if(tx.version===1&&tx.entries&&typeof tx.entries==='object'){for(const [key,value]of Object.entries(tx.entries))if(['idle-spiker-rooms-v2','idle-spiker-league-v1','idle-spiker-main-menu-v1','idle-spiker-prologue-archive-v1','idle-spiker-women-v1','idle-spiker-onboarding-v1','idle-spiker-match-results','idle-spiker-social-v1'].includes(key)&&typeof value==='string')localStorage.setItem(key,value);localStorage.removeItem('idle-spiker-bal-transition-v1')}}}catch{window.balRecoveryFailed=true;window.gameResetting=true;}
