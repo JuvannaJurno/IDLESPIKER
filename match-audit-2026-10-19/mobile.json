@@ -1,0 +1,22 @@
+[
+  {
+    "cpu": 1,
+    "frames": 293,
+    "milliseconds": 5009.10000000596,
+    "fps": 58.4935417539381,
+    "stallsOver50ms": 1,
+    "maxGapMs": 116.60000000000002,
+    "simulationSeconds": 5.016666666666654,
+    "normal": true
+  },
+  {
+    "cpu": 4,
+    "frames": 302,
+    "milliseconds": 5015.60000001192,
+    "fps": 60.2121381288943,
+    "stallsOver50ms": 0,
+    "maxGapMs": 17,
+    "simulationSeconds": 5.033333333333425,
+    "normal": true
+  }
+]

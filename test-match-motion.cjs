@@ -5,7 +5,7 @@ const server=http.createServer((req,res)=>{const file=path.join(__dirname,decode
  const page=await browser.newPage({viewport:{width:390,height:844},isMobile:true,deviceScaleFactor:3}),errors=[];page.on('pageerror',e=>errors.push(e.message));
  // Drive display frames deterministically, separately from fixed physics steps.
  await page.addInitScript(()=>window.requestAnimationFrame=()=>1);
- await page.route('**/match-skills.js*',async route=>{const response=await route.fetch();await route.fulfill({response,body:(await response.text()).replace('random()>.60','random()>1')});});
+ await page.route('**/match-skills.js*',async route=>{const response=await route.fetch();await route.fulfill({response,body:(await response.text()).replace('random()>(labShowcase()?.96:.60)','random()>1')});});
  const url='http://localhost:'+server.address().port+'/mac.html',results=[];
  for(const hz of [60,120])for(const smoothing of [false,true]){
   await page.goto(url);await page.waitForFunction(()=>ready&&window.MatchMotion&&window.MatchFrames);

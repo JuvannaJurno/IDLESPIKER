@@ -1,5 +1,5 @@
 const assert=require('assert/strict'),R=require('./room-rules'),B=require('./bal-rules'),C=require('./camp-rules'),T=require('./team-rules'),S=require('./scout-rules'),M=require('./match-rules');
-const initial=()=>{const s=B.enter(R.defaults(),1);s.division=3;s.openDepartments=[2,4];s.instructions=4000;s.ap=s.budget=1e9;return s};
+const initial=()=>{const s=B.enter(R.defaults(),1);s.division=3;s.openDepartments=[2,4];s.instructions=5000;s.ap=s.budget=1e9;return s};
 let state=initial();global.RoomSystem={developmentState:()=>state,trainingDiscount:k=>R.trainingDiscount(state,k)};const roster=T.generate(),factory=()=>structuredClone(roster);
 const seeded=(seed,camped)=>{state=initial();if(camped)for(const p of roster)state.camp.boosts[p.id]=60;assert(S.report(state,factory,M.seeded(seed),roster));return structuredClone(state.scouting.catalog);};
 for(let i=0;i<30;i++){const a=seeded('consistent-'+i,false),b=seeded('consistent-'+i,true);assert.deepEqual(a,b,'owned camps must not affect new candidates');for(const c of a){assert.equal(c.player.id,c.id);assert(c.player.cardLevel<=T.cardLimit(c.player,state));}}

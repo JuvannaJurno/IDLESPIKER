@@ -52,7 +52,7 @@ const catalog=[
  {
   "id": "line",
   "name": "Paralel Smaç",
-  "rarity": "Uncommon",
+  "rarity": "Common",
   "description": "Çizgi boyunca smaç vurur."
  },
  {
@@ -188,13 +188,13 @@ catalog.push({id:'sky-serve',name:'Gökyüzü Servisi',rarity:'Rare',description
 catalog.push({id:'fake-set',name:'Pasör Aldatmacası',rarity:'Rare',description:'Hücum için yükselip havada takım arkadaşına parmak pas çıkarır.'});byId.set('fake-set',catalog.at(-1));
 const pools={
  setter:{Common:['tempo-third'],Uncommon:['back','float','tempo-second'],Legendary:['sync-attack','perfect-second-touch','one-hand-rescue','jump-float-legendary']},
- outside:{Common:['cross','commit-block'],Uncommon:['line','power-hit','wipe','rebound','float'],Legendary:['ghost-tip','jump-legendary','jump-float-legendary','tempo-minus']},
- opposite:{Common:['cross','commit-block'],Uncommon:['power-hit','line','wipe','close','rebound'],Legendary:['jump-legendary','ghost-tip','tempo-minus']},
+ outside:{Common:['cross','commit-block','line'],Uncommon:['power-hit','wipe','rebound','float'],Legendary:['ghost-tip','jump-legendary','jump-float-legendary','tempo-minus']},
+ opposite:{Common:['cross','commit-block','line'],Uncommon:['power-hit','wipe','close','rebound'],Legendary:['jump-legendary','ghost-tip','tempo-minus']},
  middle:{Common:['commit-block'],Uncommon:['read','close','triple-block','slide-attack'],Legendary:['absolute-read','tempo-minus']},
  libero:{Common:['court-read'],Uncommon:['cover'],Legendary:['pancake']}
 };
 function hash(text){let n=2166136261;for(const c of String(text)){n^=c.charCodeAt(0);n=Math.imul(n,16777619)}return n>>>0}
-function ensure(p){if(!p)return [];if(p.epicTeam){p.matchSkills=catalog.map(s=>s.id);p.matchSkillsVersion=1;return p.matchSkills;}const pool=pools[p.role]||pools.outside,tiers=p.legendaryTalent===false&&!p.specialCharacter?['Common','Uncommon']:['Common','Uncommon','Legendary'];if(p.matchSkillsVersion!==1||!Array.isArray(p.matchSkills)||p.matchSkills.length!==tiers.length||p.matchSkills.some((id,i)=>!pool[tiers[i]].includes(id))){const key=[p.id,p.name,p.surname,p.role].join('|');p.matchSkills=tiers.map(t=>pool[t][hash(key+'|'+t)%pool[t].length]);p.matchSkillsVersion=1;}return p.matchSkills;}
+function ensure(p){if(!p)return [];if(p.epicTeam){p.matchSkills=catalog.map(s=>s.id);p.matchSkillsVersion=1;return p.matchSkills;}const pool=pools[p.role]||pools.outside,tiers=p.legendaryTalent===false&&!p.specialCharacter?['Common','Uncommon']:['Common','Uncommon','Legendary'];if(p.matchSkillsVersion===1&&p.matchSkills?.[1]==='line'&&pool.Common.includes('line')){const key=[p.id,p.name,p.surname,p.role].join('|');p.matchSkills=[...p.matchSkills];p.matchSkills[0]='line';p.matchSkills[1]=pool.Uncommon[hash(key+'|Uncommon')%pool.Uncommon.length];}if(p.matchSkillsVersion!==1||!Array.isArray(p.matchSkills)||p.matchSkills.length!==tiers.length||p.matchSkills.some((id,i)=>!pool[tiers[i]].includes(id))){const key=[p.id,p.name,p.surname,p.role].join('|');p.matchSkills=tiers.map(t=>pool[t][hash(key+'|'+t)%pool[t].length]);p.matchSkillsVersion=1;}return p.matchSkills;}
 function campCount(p,state){if(p?.epicTeam)return 3;const C=root.CampRules||(typeof require==='function'?require('./camp-rules.js'):null);if(state?.camp&&C)return C.progress(state,p).count;return Number.isFinite(p?.skillCamps)?Math.max(0,Math.floor(p.skillCamps)):(C?.progress({},p).count||0);}
 function view(p,{division=1,state}={}){return ensure(p).map(id=>{const s=byId.get(id),legendary=s.rarity==='Legendary',count=campCount(p,state),unlocked=!!p.epicTeam||(Number(division)>=2&&(!legendary||(Number(division)>=3&&count>=3)));return {...s,unlocked,hidden:legendary&&!unlocked,camps:count,reason:p.epicTeam?'':Number(division)<2?'BAL’da açılır':legendary&&Number(division)<3?'2. Lig · 3. kamp':legendary&&count<3?'3. kampta açılır':''};});}
 function allows(p,id,{division=1,state}={}){if(p?.epicTeam)return byId.has(id);if(Number(division)<2)return false;if(id==='fake-set')return ensure(p).includes('back')||ensure(p).includes('tempo-third');if(id==='sky-serve')return ensure(p).includes('float');if(!ensure(p).includes(id))return false;return byId.get(id)?.rarity!=='Legendary'||(Number(division)>=3&&campCount(p,state)>=3);}

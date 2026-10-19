@@ -213,3 +213,9 @@ body.social-open #socialPanel .social-post-visual>.social-visual-kicker{paint-or
 .mobile-nav a#calendarTab{gap:2px}
 
 .mobile-nav>a+a:before{content:'';position:absolute;left:0;top:50%;width:1px;height:22px;transform:translateY(-50%);background:linear-gradient(transparent,#a9aa8738,transparent);pointer-events:none}html[data-theme=dark] .mobile-nav>a+a:before{background:linear-gradient(transparent,#b3c4b52e,transparent)}
+.media-ready-badge[hidden]{display:none}.media-ready-badge{display:inline-flex;align-items:center;justify-content:center;padding:4px 8px;margin-top:6px;border:1px solid #a3bc91;border-radius:8px;background:#e5edce;color:#446644;font-size:10px;line-height:1.2;font-weight:600;white-space:nowrap}body.social-open #socialPanel #simplePublishStatus{max-width:100%;font-variant-numeric:tabular-nums}
+
+/* Follow the PNG's alpha edge instead of adding a navigation item. */
+.mobile-nav #socialTab[data-post-ready="true"] .social-nav-logo{animation:social-png-ready 1.6s ease-in-out infinite}
+@keyframes social-png-ready{0%,100%{filter:drop-shadow(1px 0 0 #6eaa78) drop-shadow(-1px 0 0 #6eaa78) drop-shadow(0 1px 0 #6eaa78) drop-shadow(0 -1px 0 #6eaa78)}50%{filter:drop-shadow(1px 0 0 #e8c75d) drop-shadow(-1px 0 0 #e8c75d) drop-shadow(0 1px 0 #e8c75d) drop-shadow(0 -1px 0 #e8c75d) drop-shadow(0 0 3px #e8c75d80)}}
+@media(prefers-reduced-motion:reduce){.mobile-nav #socialTab[data-post-ready="true"] .social-nav-logo{animation:none;filter:drop-shadow(1px 0 0 #6eaa78) drop-shadow(-1px 0 0 #6eaa78) drop-shadow(0 1px 0 #6eaa78) drop-shadow(0 -1px 0 #6eaa78)}}

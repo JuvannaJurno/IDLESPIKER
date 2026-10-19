@@ -1,5 +1,5 @@
 # BAL → 2. Lig test raporu
-19 Ekim 2026 — yeni BAL fiyatları, kadro değişimi ve maç sponsorluğu sonrası
+19 Ekim 2026 — transfer keşfi, aday bildirimleri ve blok fiyatları sonrası
 
 ## Sonuç
 Üç yeni koşu da BAL'dan yükselip 2. Lig'in 14. maçını tamamladı. 30 kişilik kadro artık transferi durdurmuyor: transfer sırasında ilk kadroda veya kampta olmayan bir yedekle değişim yapılabiliyor. Sponsor sayacı galibiyetten ayrıldı ve tamamlanan maçlarda ilerliyor. Boş tavsiye çerçeveleri gizleniyor; maç tavsiyeleri ilk kadronun altına taşındı. Düzelmiş eski sorun maddeleri aşağıdaki açık sorun listesinden kaldırıldı.
@@ -16,9 +16,9 @@
 
 | Tarz | BAL üretim dk | 2. Lig üretim dk | Toplam üretim dk | BAL sırası | 2. Lig sırası |
 |---|---:|---:|---:|---:|---:|
-| Otomasyon | 47.43 | 42.28 | 89.71 | 1 | 5 |
-| Dengeli | 52.45 | 44.45 | 96.90 | 1 | 3 |
-| Transfer öncelikli | 56.12 | 46.21 | 102.33 | 1 | 1 |
+| Otomasyon | 47.44 | 41.49 | 88.93 | 1 | 5 |
+| Dengeli | 51.46 | 41.88 | 93.34 | 1 | 3 |
+| Transfer öncelikli | 56.35 | 42.69 | 99.04 | 1 | 1 |
 
 Bu dakikalara maç izleme, menüde düşünme ve çevrimdışı bekleme dahil değil. Güncel toplam izlemeli oturum süresi ölçülmedi; önceki sürümün saat tahmini yeni sonuç gibi kullanılmadı. Üç tohum farklı stratejilerle birlikte değiştiği için tek bir tercihin nedensel etkisi veya geniş kullanıcı dağılımı olarak yorumlanmamalı.
 
@@ -26,13 +26,14 @@ Bu dakikalara maç izleme, menüde düşünme ve çevrimdışı bekleme dahil de
 
 | Tarz | Kart yükseltme | En uzun yükseltmesiz süre | Transfer | Dolu kadroda değişim | Son kadro | Elde AP |
 |---|---:|---:|---:|---:|---:|---:|
-| Otomasyon | 117 | 1.2 dk | 0 | 0 | 12/30 | 11.52 milyon |
-| Dengeli | 169 | 1.5 dk | 12 | 0 | 30/30 | 0.96 milyon |
-| Transfer öncelikli | 129 | 2.2 dk | 20 | 13 | 30/30 | 11.93 milyon |
+| Otomasyon | 121 | 1.5 dk | 0 | 0 | 12/30 | 12.83 milyon |
+| Dengeli | 162 | 1.0 dk | 6 | 0 | 23/30 | 3.82 milyon |
+| Transfer öncelikli | 160 | 1.5 dk | 15 | 11 | 30/30 | 4.21 milyon |
 
 Değişim sayısı, transfer adedinden kadro büyümesinin çıkarılmasıyla hesaplandı; bu koşuda başka oyuncu ekleme/çıkarma kaynağı yok. Transfer odaklı koşu 30 kişilik sınıra ulaştıktan sonra da devam etti. Maç kadrosu ve kamptaki oyuncular değişimden korunuyor. Ayrılan oyuncunun kamp artışları ve portresi yeni oyuncuya aktarılmıyor. Yeni oyuncunun kendi kamp geçmişi korunuyor.
 
 ## Gerçek tarayıcı doğrulaması
+Bu bölüm önceki arayüz kontrol kayıtlarını içerir. Fiyat değişikliğinden sonra test-stage-block-browser.cjs ile 320/390 px blok görünümü, satın alma ve seviye sınırları yeniden doğrulandı.
 - Ayrı değişim ekranında iki kart yan yana; iptal bütçeyi ve kadroyu korur. Onay satın alır; ardından ilk kadroya alma sorulur.
 - 320/390 px ekranlarda yatay taşma yok. İlk kadro ve kamp oyuncuları seçeneklerde yok; kural katmanı da aynı korumayı uygular.
 - Zorlanmış kayıt yazma hatasında satın alma geri alınır. Başarılı değişim, doğru fiyat, aktif kadronun korunması, sonraki kart yükseltmesi, yıldızlar, yeni portre ve sayfa yenileme test edildi. Başlangıç kadrosundan bir yedeğin farklı rolde adayla değiştirilmesi de yeniden yüklemede korundu.
@@ -42,34 +43,52 @@ Değişim sayısı, transfer adedinden kadro büyümesinin çıkarılmasıyla he
 
 Bu kontroller fiziksel telefon ölçümü değildir. Önceki performans düzeltmesinin 4× işlemci stresinde yaklaşık 54–57 FPS sonucu ayrı [performans raporunda](../performance-2026-10-19/sonuc.md) duruyor; gerçek cihaz kontrolü hâlâ gerekli.
 
+## 2. Lig blok dengesi
+
+10 seviyelik profesyonel blokların toplam fiyatı 6,797 milyondan 1,87 milyon bütçeye indirildi. İlk satın alma 30 bin olarak korundu; 6–10. seviyelerin toplamı 5,8 milyondan 1,45 milyona düştü. Ek özelliklerin seviyeye göre gelişimi korunuyor. Mevcut blok seviyeleri ve kayıtlar değişmiyor.
+
+Güncel üç koşuda bütçeyi bloklara ayıran otomasyon ve dengeli stratejiler bütün profesyonel blokları tamamladı. Transfer öncelikli koşuda kadroya daha fazla kaynak ayrıldı; son durum aşağıda. İlk ucuz deneme ve pahalı ara deneme ayrı ham kayıtlarda korunuyor.
+
+- Otomasyon: 12 bloktan 12 tamamlandı; kalan yatırım 0.00 milyon, elde 4.77 milyon bütçe.
+- Dengeli: 12 bloktan 12 tamamlandı; kalan yatırım 0.00 milyon, elde 1.01 milyon bütçe.
+- Transfer öncelikli: 12 bloktan 4 tamamlandı; kalan yatırım 3.12 milyon, elde 0.17 milyon bütçe.
+
+## Transfer keşfi düzeltmesi
+
+Katalog aralığı Keşif Ağı seviyesine göre 10 → 5 oyun günü. Önceki en kısa aralık 1 gündü. Temel güçlü aday ihtimali tarama seviyesine göre %14 → %72; ek bloklarla üst sınır %92. İsimli elitlerin %2,5 taban ihtimali ve en fazla %3 sınırı korunuyor. Hazır adayları otomatik yenileme yok; mevcut adaylar kullanıcı yenileyene kadar kalıyor.
+
+Transfer Merkezi girişinde aynı pozisyondaki ilk kadroyu güçlendirebilecek aday sayısı küçük bir rozetle gösteriliyor. Güçlü adayların portresinde ↑ +OVR işareti var. İlk kadroda o pozisyon yoksa kadrodaki aynı pozisyon kullanılıyor. Alınmış oyuncular sayılmıyor; ilk kadro ve OVR değişince işaretler yenileniyor.
+
+| Tarz | Önceki katalog | Yeni katalog | Önceki transfer | Yeni transfer |
+|---|---:|---:|---:|---:|
+| Otomasyon | 234 | 52 | 0 | 0 |
+| Dengeli | 169 | 54 | 6 | 6 |
+| Transfer öncelikli | 92 | 41 | 10 | 15 |
+
+Her strateji önceki koşuyla aynı başlangıç tohumunu kullanır; değişen karar akışı sonraki rastgele seçimleri de değiştirir. Bunlar gerçek kullanıcı oturumu veya tek başına olasılık değişiminin nedensel ölçümü değildir. Üç koşu da BAL ve 2. Lig'i tamamladı. Katalog/bildirim sorunu açık listeden çıkarıldı. test-transfer-upgrade-markers.cjs, 320/390 px yerleşimi, zayıf adayın işaretlenmemesini, kadro gelişimi ve satın alma sonrası bildirimin temizlenmesini doğruladı. test-scout-cadence.cjs yeni bekleme süresini, kayıt sonrası sayacı ve elit ihtimalini doğruladı.
+
+## Medya ve maç bekleyişi kararları
+
+Paylaşım süreleri, sayısı ve ödül katsayıları korunuyor. Paylaşım hazır olduğunda Medya bölümünde küçük bir rozet ve Sosyal sekmesinde bir nokta gösteriliyor; paylaşım tamamlanınca temizleniyor. Sonuç tek satırda hem takipçi hem bütçe kazancını gösteriyor. test-social-ready-summary.cjs, diğer ekrandayken hazır bildirimi, birleşik ödül, tek ödeme, bildirimin temizlenmesi, mevcut sonraki içerik/süre ve 320/390 px yerleşimini doğruladı. Paylaşım adedi tek başına sıkıcılık kanıtı kabul edilmedi; sayı azaltılmayacak.
+
+Maç beklerken üretimin durması bilinçli ilerleme sınırı: kullanıcı maç açmadan sınırsız AP biriktirmesin diye korunuyor. Hata listesinden çıkarıldı. Simülasyon sürelerine menüde düşünme ve maç izleme dahil olmadığı için gerçek oturum süresi hâlâ ayrıca ölçülmeli.
+
 ## Açık kalanlar
 
-### P1 — 2. Lig bloklarının son seviyeleri sezon gelirinin çok ötesinde
-- Otomasyon: 12 ana bloktan 3 tamamlandı. Kalan yatırım 49.0 milyon; elde 1.24 milyon bütçe.
-- Dengeli: 12 ana bloktan 2 tamamlandı. Kalan yatırım 54.4 milyon; elde 0.72 milyon bütçe.
-- Transfer öncelikli: 12 ana bloktan 2 tamamlandı. Kalan yatırım 58.4 milyon; elde 0.46 milyon bütçe.
-
-Sonraki denge işi, 2. Lig'de hangi blokların sezon sonunda tamamlanmasının hedeflendiğini belirleyip özellikle 6–10. seviye maliyetlerini bu gelire yaklaştırmak. Bu çalışmada profesyonel blok fiyatları değiştirilmedi.
-
-### P2 — Katalog ve paylaşım tekrarı
-- Otomasyon: 241 katalog, 46 paylaşım, 0 transfer.
-- Dengeli: 177 katalog, 47 paylaşım, 12 transfer.
-- Transfer öncelikli: 98 katalog, 45 paylaşım, 20 transfer.
-
-Transferler artık kadroya katkı sağlıyor; buna rağmen her raporu takip eden oyuncu için kontrol sayısı fazla olabilir. Anlamlı aday bildirimi ve katalog sıklığı ayrıca ele alınmalı.
-
-### P2 — Maçı açmadan bekleme ve gerçek oturum süresi
-Maç bekleyişi üretimi durduruyor. Kullanıcının bu ekranda beklemesi ve menüde karar süresi modele dahil değil. Hedef süreyi gerçek izleme/atlama alışkanlıklarıyla ayrıca test etmek gerekiyor.
+### P2 — Oyuncuların kısa süreli fazla yakınlaşması
+Normal sıklıkla 21 tam maçlık motor kontrolünde ralli içi ışınlanma yok; sağ/sol Kombine Hücum teması doğrulandı. Buna rağmen bazı aynı takım oyuncuları 28 saha biriminden kısa merkez mesafesinde yaklaşık 0,6 saniye kalabiliyor. Sonraki hareket düzeltmesi bu yakınlaşmaları azaltmak. Ayrıntılar [normal maç raporunda](../match-audit-2026-10-19/sonuc.md).
 
 ### P2 — Son maçlar ve gerçek cihaz
-Üç ekonomik sezonun tüm 84 maçı görsel motorla oynanmadı. Son zorluk ayarı, artık açılma koşulu değişen Legendary etkileri ve farklı kadro tercihleriyle daha geniş görsel örneklem; ayrıca gerçek telefon testi gerekli.
+Normal olasılıkla 21 tam maç gerçek motorla ayrıca kontrol edildi; bunun 12 maçı ilerleme kayıtlarından, 8 maçı eşit kadrolarla açık/kapalı karşılaştırma, 1 maçı sol el kontrolü. Üç ekonomik sezonun 84 maçının tamamı görsel motorla oynanmadı. Dört karşılaştırma çifti kesin Legendary dengesi için yeterli değil. Kısa mobil tarayıcı ölçümü yaklaşık 58–60 FPS; fiziksel telefon ve uzun maç testi hâlâ gerekli.
 
 ## Kanıtlar ve yeniden çalıştırma
-- [Güncel ekonomik koşular](../validation-2026-10-19/runs.json): olaylar, harcamalar, 84 skor, 18 tam kayıt.
+- block-balance-2026-10-19/trial-too-cheap.json ve trial-still-expensive.json: elenen iki fiyat denemesi.
+- validation-2026-10-19/runs-before-block-prices.json: önceki fiyatlarla karşılaştırma.
+- [Güncel ekonomik koşular](../transfer-quality-2026-10-19/runs.json): olaylar, harcamalar, 84 skor, 18 tam kayıt.
 - [Tarayıcı kontrolleri](../validation-2026-10-19/browser.json): yerleşim, yükleme, konsol ve stres örnekleri.
 - test-roster-replacement.cjs: kural korumaları, kamp bağımsızlığı, rol değişimi ve sponsor sayacı.
 - test-transfer-replace-browser.cjs: gerçek UI, iptal/yazma hatası, değişim/yükseltme/yeniden açma ve kayıplı-kazanımlı maçlarda sponsor.
 - test-transfer-lineup.cjs, test-transfer-reload.cjs, test-scout-consistency.cjs, test-professional-blocks.cjs: normal transfer ve blok kontrolleri.
 - Önceki audit-2026-10-18, progression-2026-10-19 ve bal-finale-2026-10-19 ham sonuçları tarihsel karşılaştırma içindir.
 
-Çalıştırma: node validation-2026-10-19/run-audit.cjs; ardından node validation-2026-10-19/browser-audit.cjs (tamamlanan kayıtları atlar); son olarak node validation-2026-10-19/write-report.cjs. Üç koşu test aracıdır; normal oyuna bağlanmadı.
+Çalıştırma: node transfer-quality-2026-10-19/run-audit.cjs; ardından node validation-2026-10-19/browser-audit.cjs (tamamlanan kayıtları atlar); son olarak node validation-2026-10-19/write-report.cjs. Üç koşu test aracıdır; normal oyuna bağlanmadı.

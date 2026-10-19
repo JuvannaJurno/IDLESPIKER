@@ -1,0 +1,13 @@
+{"id":"automation-stage-2-middle","score":[5,1],"skills":12,"legendary":0,"gap":22.700374823228483,"overlap":1.4,"contacts":[],"visual":[]}
+{"id":"automation-stage-2-end","score":[5,1],"skills":6,"legendary":0,"gap":22.606490167637595,"overlap":1.1666666666666667,"contacts":[],"visual":[]}
+{"id":"automation-stage-3-middle","score":[5,2],"skills":12,"legendary":0,"gap":28.431054245175055,"overlap":0,"contacts":[],"visual":[]}
+{"id":"automation-stage-3-end","score":[5,2],"skills":14,"legendary":0,"gap":21.43788202784336,"overlap":0.9,"contacts":[],"visual":[]}
+{"id":"balanced-stage-2-middle","score":[5,2],"skills":11,"legendary":0,"gap":22.703346521031513,"overlap":1.4166666666666667,"contacts":[],"visual":[]}
+{"id":"balanced-stage-2-end","score":[5,0],"skills":8,"legendary":0,"gap":22.90579678034451,"overlap":1.75,"contacts":[],"visual":[]}
+{"id":"balanced-stage-3-middle","score":[5,2],"skills":15,"legendary":0,"gap":21.6785096205682,"overlap":0.5833333333333334,"contacts":[],"visual":[]}
+{"id":"balanced-stage-3-end","score":[5,2],"skills":20,"legendary":1,"gap":28.48494488183349,"overlap":0,"contacts":[],"visual":[]}
+{"id":"transfers-stage-2-middle","score":[5,1],"skills":24,"legendary":0,"gap":22.703346521031513,"overlap":1.85,"contacts":[],"visual":[]}
+{"id":"transfers-stage-2-end","score":[5,0],"skills":18,"legendary":0,"gap":22.61037724353567,"overlap":2.4,"contacts":[],"visual":[]}
+{"id":"transfers-stage-3-middle","score":[5,1],"skills":22,"legendary":0,"gap":23.505785619862063,"overlap":0.26666666666666666,"contacts":[],"visual":[]}
+{"id":"transfers-stage-3-end","score":[5,1],"skills":17,"legendary":0,"gap":23.433108840898274,"overlap":1,"contacts":[],"visual":[]}
+COMPLETE 12 full normal-frequency matches
