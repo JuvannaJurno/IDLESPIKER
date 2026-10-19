@@ -1,11 +1,6 @@
-const hairPalette=[
-{label:'Siyah',value:'Black'},{label:'Sarı',value:'Blonde'},{label:'Kahverengi 1',value:'Brown 1'},{label:'Kahverengi 2',value:'Brown 2'},{label:'Gri',value:'Grey'},{label:'Kızıl',value:'Red'},{label:'Kumral',value:'Tan'},{label:'Beyaz',value:'White'},
-{label:'Gece mavisi',value:'#243b65'},{label:'Okyanus mavisi',value:'#397dcc'},{label:'Turkuaz',value:'#299d9d'},{label:'Zümrüt',value:'#317657'},{label:'Adaçayı',value:'#91ab83'},{label:'Mor',value:'#7540ad'},{label:'Lavanta',value:'#b29add'},{label:'Pembe',value:'#df83ad'},{label:'Fuşya',value:'#bc347b'},{label:'Bordo',value:'#792f49'},{label:'Bakır',value:'#b86738'},{label:'Bal sarısı',value:'#d6ad5e'},{label:'Küllü kumral',value:'#938478'},{label:'Platin',value:'#e1dbcb'},{label:'Gece siyahı',value:'#252431'},{label:'Gümüş mavi',value:'#a3b8cc'}];
-function renderHairFilters(){const defs=$('hairFilters');defs.replaceChildren();for(const p of parts.filter(p=>p.tint)){const filter=el('filter',{id:'tint-'+p.id,'color-interpolation-filters':'sRGB',x:'-10%',y:'-10%',width:'120%',height:'120%'});const transfer=el('feComponentTransfer');for(const[channel,index]of [['R',1],['G',3],['B',5]])transfer.append(el('feFunc'+channel,{type:'linear',slope:parseInt(p.tint.slice(index,index+2),16)/160,intercept:0}));transfer.append(el('feFuncA',{type:'identity'}));filter.append(transfer);defs.append(filter)}}
-function applyHairColor(value){const hair=byId('hair'),style=hair.path.match(/(Man|Woman)\d+\.png$/)[0],tinted=value.startsWith('#'),group=tinted?'Grey':value;
- const target=paths.find(p=>p.startsWith('PNG/Hair/'+group+'/')&&p.endsWith(style));const x=hair.x+hair.width*hair.scale/2,y=hair.y;replaceAsset(hair,target);hair.x=x-hair.width*hair.scale/2;hair.y=y;
- if(tinted)hair.tint=value;else delete hair.tint;
- const prefix=target.split('/').pop().replace(/(?:Man|Woman)\d+\.png$/,'');
- for(const p of parts.filter(p=>p.id.startsWith('brow-'))){const number=p.path.match(/Brow(\d)/)[1];replaceAsset(p,paths.find(path=>path.startsWith('PNG/Face/Eyebrows/'+prefix+'Brow'+number+'.png')));if(tinted)p.tint=value;else delete p.tint}
-}
-function setupHairColors(){$('hairColor').replaceChildren(...hairPalette.map(p=>{const option=document.createElement('option');option.value=p.value;option.textContent=p.label;return option}));$('hairColor').onchange=()=>{record();applyHairColor($('hairColor').value);render();$('status').textContent='Saç ve kaş rengi güncellendi.'}}
+(function(root){
+'use strict';
+const palettes=[['#513b2d','#b8815c'],['#292634','#8b6d9c'],['#273d3c','#6faaa1'],['#513b43','#b88091'],['#424653','#a3afbf']];
+function style(a){if(!a)return null;if(Object.prototype.hasOwnProperty.call(a,'hairGradient')){const g=a.hairGradient;return g&&/^#[0-9a-f]{6}$/i.test(g.root)&&/^#[0-9a-f]{6}$/i.test(g.end)?g:null;}if(!a.parts?.some(p=>p.id==='hair'&&/Woman[2456]\.png$/.test(p.path)))return null;let hash=2166136261;for(const c of JSON.stringify(a.parts||[]))hash=Math.imul(hash^c.charCodeAt(0),16777619);hash>>>=0;if(hash%6)return null;const p=palettes[Math.floor(hash/6)%palettes.length];return {root:p[0],end:p[1]};}
+root.HairColors={palettes,style};
+})(globalThis);

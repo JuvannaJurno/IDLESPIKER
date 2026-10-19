@@ -7,7 +7,7 @@ const auditMatches=[];
  for(let seed=1;seed<=6;seed++){
   await page.goto(url);await page.waitForFunction(()=>ready&&window.MatchSkills);const result=await page.evaluate(seed=>{
    paused=true;reset();window.matchInfo={...window.matchInfo,fixtureId:'skill-test-'+seed,stage:'bal',division:3,opponentLegendaryUnlocked:seed%2===0};matchRandom=MatchRules.seeded('match-test-'+seed);
-   for(const p of players){p.stats={role:['middle','outside','setter','middle','outside','opposite'][p.index%6],spike:36+p.team*3,block:38,serve:32,receive:40,set:42,stamina:40,mental:40};p.roster={...p.stats,id:'test-'+seed+'-'+p.index,name:'Oyuncu',surname:String(p.index),skillCamps:3};PlayerSkills.ensure(p.roster);p.displayName='Oyuncu '+p.index;}
+   for(const p of players){p.stats={role:['middle','outside','setter','middle','outside','opposite'][p.index%6],spike:36+p.team*3,block:38,serve:32,receive:40,set:42,stamina:40,mental:40};p.roster={...p.stats,id:'test-'+seed+'-'+p.index,name:'Oyuncu',surname:String(p.index),skillCamps:4};PlayerSkills.ensure(p.roster);p.displayName='Oyuncu '+p.index;}
    paused=false;let maxStep=0,step=0;
    for(step=0;step<100000&&document.getElementById('matchResult').hidden;step++){
     const before=players.map(p=>({x:p.x,y:p.y}));tick(1/60);players.forEach((p,i)=>maxStep=Math.max(maxStep,Math.hypot(p.x-before[i].x,p.y-before[i].y)));
