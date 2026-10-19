@@ -161,12 +161,12 @@ function drawFormationHints(){if(!formationPreview&&!rotationMotion)return;ctx.s
 function celebrationState(p){
  if(ball.state!=='wait'||ball.celebration===undefined||ball.timer<=2.4||p.index>=12)return null;
  const a=(p.index%6)*TAU/6,g={x:(p.team?700:300)+Math.cos(a)*44,y:310+Math.sin(a)*44};
- if(Math.hypot(p.x-g.x,p.y-g.y)>18)return null;
- const won=ball.celebration===p.team,variant=ball.celebrationVariants?.[p.team]??0,age=5.2-ball.timer,phase=Math.max(0,age-.65-Math.floor(p.index%6/2)*.055);
- const pulse=Math.abs(Math.sin(phase*Math.PI*(variant===2?2.5:1.5)));
- return {won,variant,lift:won?(variant===1?Math.min(1,phase*3):pulse):pulse*.45,hop:won&&variant!==0?pulse*(variant===1?4:2.5):0,pair:variant===0};
+ if(Math.hypot(p.x-g.x,p.y-g.y)>18||p.moving)return null;
+ const won=ball.celebration===p.team,variant=ball.celebrationVariants?.[p.team]??0,age=5.2-ball.timer,phase=Math.max(0,age-.85-(p.index%6)*.075);
+ const smooth=t=>{const u=Math.max(0,Math.min(1,t));return u*u*(3-2*u);},lift=smooth(phase/.24)*(1-smooth((phase-.56)/.34));
+ return {won,variant,lift:lift*(won?1:.4),hop:won&&variant===2?Math.sin(Math.min(1,phase/.9)*Math.PI)*.7:0,pair:variant===0};
 }
-function celebrationLayout(p){const state=celebrationState(p);if(!state)return null;const single=state.pair,side=p.index%2?'left':'right',pose=single?RECEIVE_LAYOUT:state.won&&state.variant===1?BLOCK_LAYOUT:!state.won&&state.variant===1?RECEIVE_LAYOUT:TOSS_LAYOUT;return LAYOUT.map(part=>{if(!/^(arm|sleeve)-/.test(part.id)||(single&&!part.id.endsWith(side)))return part;const target=pose.find(q=>q.id===part.id);if(!target)return part;const u=single?Math.min(1,state.lift*.8):state.lift;return {...part,x:part.x+(target.x-part.x)*u,y:part.y+(target.y-part.y)*u,rotation:part.rotation+(target.rotation-part.rotation)*u};});}
+function celebrationLayout(p){const state=celebrationState(p);if(!state)return null;const side=p.index%2?'left':'right';return LAYOUT.map(part=>{if(!/^(arm|sleeve)-/.test(part.id)||(state.variant!==1&&!part.id.endsWith(side)))return part;const limb=part.id.endsWith('left')?'left':'right',shoulder=LAYOUT.find(q=>q.id==='sleeve-'+limb);if(!shoulder)return part;const cx=shoulder.x+shoulder.width*shoulder.scale*shoulder.pivotX,cy=shoulder.y+shoulder.height*shoulder.scale*shoulder.pivotY,angle=(limb==='left'?1:-1)*(state.variant===1?22:32)*state.lift,r=angle*Math.PI/180,x=part.x+part.width*part.scale*part.pivotX-cx,y=part.y+part.height*part.scale*part.pivotY-cy;return {...part,x:cx+Math.cos(r)*x-Math.sin(r)*y-part.width*part.scale*part.pivotX,y:cy+Math.sin(r)*x+Math.cos(r)*y-part.height*part.scale*part.pivotY,rotation:part.rotation+angle};});}
 function playerGoal(p){if(ball.state==='wait'&&ball.celebration!==undefined&&ball.timer>2.4){const a=(p.index%6)*TAU/6;return {x:(p.team?700:300)+Math.cos(a)*44,y:310+Math.sin(a)*44};}const base=tacticalGoal(p);let x=base.x,y=base.y;if(formationPreview)return base;if(p.block>.05&&ball.kind!=='serve'){const goal=ball.blockPlan?.find(g=>g.index===p.index);if(goal)return goal;}
  if(ball.state==='wait'&&p===serverPlayer()){x=p.team?945:55}
  if(ball.state==='flight'){
