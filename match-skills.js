@@ -2,12 +2,12 @@
 'use strict';
 // Contextual player-owned skills. Uses a separate RNG from match resolution.
 const definitions=[
- ['commit-block','Commit Block','Common'],
+ ['commit-block','Erken Blok','Common'],
  ['cross','Çapraz Smaç','Common'],['tempo-third','Üçüncü Tempo Hücum','Common'],
- ['pipe-attack','Pipe Attack','Uncommon'],['setter-dump','Pasör Plasesi','Rare'],['kick-save','Ayakla Kurtarış','Rare'],['slide-attack','Slide Attack','Uncommon'],['power-hit','Güçlü Vuruş','Uncommon'],['rebound','Rebound','Uncommon'],
+ ['pipe-attack','Arka Orta Hücumu','Uncommon'],['setter-dump','Pasör Plasesi','Rare'],['kick-save','Ayakla Kurtarış','Rare'],['slide-attack','Tek Ayak Hücumu','Uncommon'],['power-hit','Güçlü Vuruş','Uncommon'],['rebound','Bloktan Sektirme','Uncommon'],
  ['read','Okuma Bloğu','Uncommon'],['float','Yüzen Servis','Uncommon'],['line','Paralel Smaç','Common'],['back','Geri Pas','Uncommon'],['cover','Dublaj','Uncommon'],['tempo-second','İkinci Tempo Hücum','Uncommon'],
  ['wipe','Blok Aut','Uncommon'],['roof','Aktif Blok','Rare'],['close','İkili Blok','Uncommon'],['triple-block','Üçlü Blok','Uncommon'],['fake-set','Pasör Aldatmacası','Rare'],['sky-serve','Gökyüzü Servisi','Rare'],['jump','Smaç Servis','Rare'],['dive','Plonjon','Rare'],['deceive','Pas Aldatması','Rare'],['sync-attack','Kombine Hücum','Legendary'],
- ['tempo-first','Birinci Tempo Hücum','Epic'],['tempo-minus','Minus Tempo','Legendary'],['absolute-read','Kusursuz Hücum Okuma','Legendary'],['jump-legendary','Yıldırım Smaç Servis','Legendary'],['jump-float-legendary','Jump Float','Legendary'],['perfect-second-touch','Zor Topa Pas','Legendary'],['one-hand-rescue','One-Handed Set','Legendary'],['pancake','Pancake','Legendary'],['ghost-tip','Hayalet Plase','Legendary']
+ ['tempo-first','Birinci Tempo Hücum','Epic'],['tempo-minus','Eksi Tempo Hücum','Legendary'],['absolute-read','Kusursuz Hücum Okuma','Legendary'],['jump-legendary','Yıldırım Smaç Servis','Legendary'],['jump-float-legendary','Sıçrayarak Yüzen Servis','Legendary'],['perfect-second-touch','Zor Topa Pas','Legendary'],['one-hand-rescue','Tek Elle Pas','Legendary'],['pancake','Yerden Tek Elle Kurtarış','Legendary'],['ghost-tip','Hayalet Plase','Legendary']
 ].map(([id,name,rarity])=>({id,name,rarity}));
 const catalog=new Map(definitions.map(s=>[s.id,s])),weights={Common:5,Uncommon:4,Rare:3,Epic:1.8,Legendary:1.1};
 let enabled=true,suppressed=false,clock=0,carry=0,cooldown=0,legendaryUntil=0,lastSkill='',focus=null,servePlan=null,seed='',random=MatchRules.seeded('skill-effects'),lastBall=null,approachPlan=null,rallyStart=0,legendaryUsed=false,pendingSet=null,pendingAttack=null,pendingBlock=null,pendingSync=null,pendingDive=null,visualRate=1,serveLabelUntil=0,currentServe=null;const counterUntil=[0,0],overheadUntil=new Map();let impactHold=null,pancakeHold=null,currentNotice=null,noticeTimer=null;const completedNotices=[];const attempts=[];let rallyLegendaryCount=0,secondLegendaryAllowed=false;

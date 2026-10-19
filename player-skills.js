@@ -3,7 +3,7 @@
 const catalog=[
  {
   "id": "commit-block",
-  "name": "Commit Block",
+  "name": "Erken Blok",
   "rarity": "Common",
   "description": "Adımlayarak bloğa hazırlanır."
  },
@@ -21,7 +21,7 @@ const catalog=[
  },
  {
   "id": "slide-attack",
-  "name": "Slide Attack",
+  "name": "Tek Ayak Hücumu",
   "rarity": "Uncommon",
   "description": "Yana ilerleyip tek ayakla hücuma çıkar."
  },
@@ -33,7 +33,7 @@ const catalog=[
  },
  {
   "id": "rebound",
-  "name": "Rebound",
+  "name": "Bloktan Sektirme",
   "rarity": "Uncommon",
   "description": "Bloktan seken topu yeniden oyuna kazandırır."
  },
@@ -129,7 +129,7 @@ const catalog=[
  },
  {
   "id": "tempo-minus",
-  "name": "Minus Tempo",
+  "name": "Eksi Tempo Hücum",
   "rarity": "Legendary",
   "description": "Pasla birlikte yükselip çok hızlı hücum eder."
  },
@@ -147,7 +147,7 @@ const catalog=[
  },
  {
   "id": "jump-float-legendary",
-  "name": "Jump Float",
+  "name": "Sıçrayarak Yüzen Servis",
   "rarity": "Legendary",
   "description": "Sıçrayarak attığı servis aniden düşer."
  },
@@ -159,13 +159,13 @@ const catalog=[
  },
  {
   "id": "one-hand-rescue",
-  "name": "One-Handed Set",
+  "name": "Tek Elle Pas",
   "rarity": "Legendary",
   "description": "Zor topu tek elle hücum pasına çevirir."
  },
  {
   "id": "pancake",
-  "name": "Pancake",
+  "name": "Yerden Tek Elle Kurtarış",
   "rarity": "Legendary",
   "description": "Legendary hücumu yere değmeden son anda kurtarır."
  },
@@ -186,7 +186,7 @@ const catalog=[
 const byId=new Map(catalog.map(s=>[s.id,s]));
 catalog.push({id:'sky-serve',name:'Gökyüzü Servisi',rarity:'Rare',description:'Top yüksek bir yay çizerek rakip sahaya iner.'});byId.set('sky-serve',catalog.at(-1));
 catalog.push({id:'fake-set',name:'Pasör Aldatmacası',rarity:'Rare',description:'Hücum için yükselip havada takım arkadaşına parmak pas çıkarır.'});byId.set('fake-set',catalog.at(-1));
-for(const skill of [{id:'pipe-attack',name:'Pipe Attack',rarity:'Uncommon',description:'Üç metre çizgisinin gerisinden arka orta hücumu.'},{id:'setter-dump',name:'Pasör Plasesi',rarity:'Rare',description:'Ön hattaki pasör ikinci dokunuşu boş ön alana bırakır.'},{id:'kick-save',name:'Ayakla Kurtarış',rarity:'Rare',description:'Elleri yetişmeyen alçak topa ayağıyla dokunup ralliyi sürdürür.'}]){catalog.push(skill);byId.set(skill.id,skill);}
+for(const skill of [{id:'pipe-attack',name:'Arka Orta Hücumu',rarity:'Uncommon',description:'Üç metre çizgisinin gerisinden arka orta hücumu.'},{id:'setter-dump',name:'Pasör Plasesi',rarity:'Rare',description:'Ön hattaki pasör ikinci dokunuşu boş ön alana bırakır.'},{id:'kick-save',name:'Ayakla Kurtarış',rarity:'Rare',description:'Elleri yetişmeyen alçak topa ayağıyla dokunup ralliyi sürdürür.'}]){catalog.push(skill);byId.set(skill.id,skill);}
 const pools={
  setter:{Common:['tempo-third'],Uncommon:['back','float','tempo-second'],Legendary:['sync-attack','perfect-second-touch','one-hand-rescue','jump-float-legendary']},
  outside:{Common:['cross','commit-block','line'],Uncommon:['power-hit','wipe','rebound','float','pipe-attack'],Legendary:['ghost-tip','jump-legendary','jump-float-legendary','tempo-minus']},

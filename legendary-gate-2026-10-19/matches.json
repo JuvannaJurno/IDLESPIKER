@@ -916,16 +916,24 @@
         "team": 1
       },
       {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 144.06666666667346,
+        "team": 1
+      },
+      {
         "id": "commit-block",
         "actor": 3,
         "role": "middle",
         "kind": "block",
-        "at": 145.91666666667493,
+        "at": 146.1833333333418,
         "team": 0
       }
     ],
     "maxStep": 5.922749274048087,
-    "steps": 9138,
+    "steps": 9154,
     "score": [
       5,
       2
@@ -934,7 +942,7 @@
     "count": 34,
     "legendary": false,
     "focusEvents": [],
-    "simulatedSeconds": 152.3
+    "simulatedSeconds": 152.56666666666666
   },
   {
     "seed": 6,

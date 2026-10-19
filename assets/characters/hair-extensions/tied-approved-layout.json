@@ -14,64 +14,30 @@
   "variantAlignment": "Preserve each role world pivot when replacing assets; use new natural dimensions and same normalized pivot. Array order is back to front.",
   "parts": [
     {
-      "id": "ponytail-tip",
-      "label": "At kuyruğu ucu",
-      "path": "hair-ponytail-tip.svg",
-      "x": 0.15937349536013823,
-      "y": 41.186328985505256,
+      "id": "hair-extension-ponytail",
+      "label": "Saç eki · At kuyruğu",
+      "path": "hair-extension-ponytail.svg",
+      "x": 38,
+      "y": 12,
       "rotation": 0,
-      "scale": 0.8817120356507198,
+      "scale": 1,
       "flip": false,
-      "pivotX": 0.9,
+      "pivotX": 0.95,
       "pivotY": 0.5,
-      "width": 6,
+      "width": 14,
       "height": 5,
       "colorSource": "hair",
-      "hairTip": true,
-      "tint": "#cab48b"
-    },
-    {
-      "id": "tie-hair-extension-ponytail",
-      "label": "Lastik · At kuyruğu",
-      "path": "hair-tie.svg",
-      "x": 54.34678008082387,
-      "y": 50.594924607830364,
-      "rotation": 0,
-      "scale": 1,
-      "flip": false,
-      "pivotX": 0.5,
-      "pivotY": 0.5,
-      "width": 1.3,
-      "height": 4,
-      "colorSource": "shirt",
-      "hairTie": true,
-      "tint": "#4d8c38"
-    },
-    {
-      "id": "tie-hair-extension-long",
-      "label": "Lastik · Uzun saç",
-      "path": "hair-tie.svg",
-      "x": 60.246480250293295,
-      "y": 70.85132316516751,
-      "rotation": 0,
-      "scale": 1,
-      "flip": false,
-      "pivotX": 0.5,
-      "pivotY": 0.5,
-      "width": 1.3,
-      "height": 4,
-      "colorSource": "shirt",
-      "hairTie": true,
-      "tint": "#4d8c38"
+      "hairAttachment": true,
+      "tint": "#22375f"
     },
     {
       "id": "hair-extension-long",
       "label": "Saç eki · Uzun saç",
       "path": "hair-extension-long.svg",
-      "x": 49.92398025029329,
-      "y": 65.50132316516752,
+      "x": 38,
+      "y": 53,
       "rotation": 0,
-      "scale": 1.05,
+      "scale": 1,
       "flip": false,
       "pivotX": 0.95,
       "pivotY": 0.5,
@@ -79,41 +45,41 @@
       "height": 14,
       "colorSource": "hair",
       "hairAttachment": true,
-      "tint": "#cab48b"
+      "tint": "#22375f"
     },
     {
       "id": "shoe-1-left",
-      "label": "1. çift · Sol ayakkabı",
+      "label": "Sol ayakkabı",
       "path": "shoe-black-v2.svg",
-      "x": 16.939740581410533,
-      "y": 34.331036805283965,
+      "x": 6.3,
+      "y": 32,
       "rotation": 90,
-      "scale": 0.6,
+      "scale": 0.8,
       "flip": true,
       "pivotX": 0.5,
       "pivotY": 0.5,
-      "width": 10,
-      "height": 22,
+      "width": 7,
+      "height": 9,
       "colorSource": "shirt",
       "accentOnly": true,
-      "tint": "#63b448"
+      "tint": "#34495e"
     },
     {
       "id": "shoe-1-right",
-      "label": "1. çift · Sağ ayakkabı",
+      "label": "Sağ ayakkabı",
       "path": "shoe-black-v2.svg",
-      "x": 16.5784991091991,
-      "y": 43.10420197279799,
+      "x": 6.3,
+      "y": 49,
       "rotation": 90,
-      "scale": 0.65,
+      "scale": 0.8,
       "flip": false,
       "pivotX": 0.5,
       "pivotY": 0.5,
-      "width": 10,
-      "height": 22,
+      "width": 7,
+      "height": 9,
       "colorSource": "shirt",
       "accentOnly": true,
-      "tint": "#63b448"
+      "tint": "#34495e"
     },
     {
       "id": "arm-right",
@@ -130,7 +96,7 @@
       "pivotY": 0.5,
       "width": 19,
       "height": 13,
-      "tint": "#aa8956"
+      "tint": "#ffe0b1"
     },
     {
       "id": "arm-left",
@@ -147,7 +113,7 @@
       "pivotY": 0.5,
       "width": 19,
       "height": 13,
-      "tint": "#aa8956"
+      "tint": "#ffe0b1"
     },
     {
       "id": "sleeve-left",
@@ -164,7 +130,7 @@
       "pivotY": 0.5,
       "width": 8,
       "height": 13,
-      "tint": "#4d8c38"
+      "tint": "#293949"
     },
     {
       "id": "sleeve-right",
@@ -181,7 +147,7 @@
       "pivotY": 0.5,
       "width": 8,
       "height": 13,
-      "tint": "#4d8c38"
+      "tint": "#293949"
     },
     {
       "id": "shirt",
@@ -197,7 +163,7 @@
       "pivotY": 0.5,
       "width": 15,
       "height": 29,
-      "tint": "#63b448"
+      "tint": "#34495e"
     },
     {
       "id": "head",
@@ -213,7 +179,7 @@
       "pivotY": 0.5,
       "width": 7,
       "height": 15,
-      "tint": "#aa8956"
+      "tint": "#ffe0b1"
     },
     {
       "id": "hair",
@@ -229,41 +195,7 @@
       "pivotY": 0.5,
       "width": 17,
       "height": 17,
-      "tint": "#d7bf94"
-    },
-    {
-      "id": "hair-extension-ponytail",
-      "label": "Saç eki · At kuyruğu",
-      "path": "hair-extension-ponytail.svg",
-      "x": 41.69678008082387,
-      "y": 50.094924607830364,
-      "rotation": 0,
-      "scale": 1,
-      "flip": false,
-      "pivotX": 0.95,
-      "pivotY": 0.5,
-      "width": 14,
-      "height": 5,
-      "colorSource": "hair",
-      "hairAttachment": true,
-      "tint": "#cab48b"
-    },
-    {
-      "id": "hair-front-bangs",
-      "label": "Ön saç · Kahküllü ön saç",
-      "path": "hair-front-bangs.svg",
-      "x": 59.25083213835657,
-      "y": 38.043792638943216,
-      "rotation": 0,
-      "scale": 1.2,
-      "flip": false,
-      "pivotX": 0.2,
-      "pivotY": 0.5,
-      "width": 5,
-      "height": 14,
-      "colorSource": "hair",
-      "hairFront": true,
-      "tint": "#d7bf94"
+      "tint": "#243b65"
     },
     {
       "id": "hair-front-straight",
@@ -280,33 +212,33 @@
       "height": 14,
       "colorSource": "hair",
       "hairFront": true,
-      "tint": "#d7bf94"
+      "tint": "#243b65"
     },
     {
-      "id": "hair-extension-bun",
-      "label": "Saç eki · Topuz",
-      "path": "hair-extension-bun.svg",
-      "x": 1.899250132674143,
-      "y": 39.160353216549964,
+      "id": "hair-front-bangs",
+      "label": "Ön saç · Kahküllü ön saç",
+      "path": "hair-front-bangs.svg",
+      "x": 54,
+      "y": 40,
       "rotation": 0,
-      "scale": 1.1830000000000003,
+      "scale": 1,
       "flip": false,
-      "pivotX": 0.95,
+      "pivotX": 0.2,
       "pivotY": 0.5,
-      "width": 7,
-      "height": 7,
+      "width": 5,
+      "height": 14,
       "colorSource": "hair",
-      "hairAttachment": true,
-      "tint": "#cab48b"
+      "hairFront": true,
+      "tint": "#243b65"
     },
     {
-      "id": "tie-hair-extension-bun",
-      "label": "Lastik · Topuz",
+      "id": "tie-hair-extension-ponytail",
+      "label": "Lastik · At kuyruğu",
       "path": "hair-tie.svg",
-      "x": 8.630267528276487,
-      "y": 41.90580509705652,
+      "x": 50.65,
+      "y": 12.5,
       "rotation": 0,
-      "scale": 0.745435630837438,
+      "scale": 1,
       "flip": false,
       "pivotX": 0.5,
       "pivotY": 0.5,
@@ -314,7 +246,75 @@
       "height": 4,
       "colorSource": "shirt",
       "hairTie": true,
-      "tint": "#4d8c38"
+      "tint": "#293949"
+    },
+    {
+      "id": "tie-hair-extension-long",
+      "label": "Lastik · Uzun saç",
+      "path": "hair-tie.svg",
+      "x": 47.800000000000004,
+      "y": 58,
+      "rotation": 0,
+      "scale": 1,
+      "flip": false,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 1.3,
+      "height": 4,
+      "colorSource": "shirt",
+      "hairTie": true,
+      "tint": "#293949"
+    },
+    {
+      "id": "ponytail-tip",
+      "label": "At kuyruğu ucu",
+      "path": "hair-ponytail-tip.svg",
+      "x": -1.0968296646111586,
+      "y": 40.87627729338011,
+      "rotation": 0,
+      "scale": 1.0053922824445056,
+      "flip": false,
+      "pivotX": 0.9,
+      "pivotY": 0.5,
+      "width": 6,
+      "height": 5,
+      "colorSource": "hair",
+      "hairTip": true,
+      "tint": "#22375f"
+    },
+    {
+      "id": "hair-extension-bun",
+      "label": "Saç eki · Topuz",
+      "path": "hair-extension-bun.svg",
+      "x": 0.8871044009707099,
+      "y": 38.566112159903234,
+      "rotation": 0,
+      "scale": 1.3489427636700762,
+      "flip": false,
+      "pivotX": 0.95,
+      "pivotY": 0.5,
+      "width": 7,
+      "height": 7,
+      "colorSource": "hair",
+      "hairAttachment": true,
+      "tint": "#22375f"
+    },
+    {
+      "id": "tie-hair-extension-bun",
+      "label": "Lastik · Topuz",
+      "path": "hair-tie.svg",
+      "x": 8.562300688320821,
+      "y": 41.696676358731395,
+      "rotation": 0,
+      "scale": 0.8500000000000001,
+      "flip": false,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 1.3,
+      "height": 4,
+      "colorSource": "shirt",
+      "hairTie": true,
+      "tint": "#293949"
     }
   ]
 }

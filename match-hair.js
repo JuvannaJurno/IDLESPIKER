@@ -29,7 +29,7 @@ drawOrder=function(p){
  const palette=paletteFor(p);if(!palette?.hair||!palette.shirt)return order;
  const result=[...order],style=styleFor(p.roster,p.index);
  const rig=style==='tied'?rigParts(p):null;
- for(const type of [...(rig?['bun','tip','tie']:[style]),'front'].filter(Boolean)){
+ for(const type of [...(rig?MatchHairData.tiedLayerOrder:[style]),'front'].filter(Boolean)){
   const image=imageFor(type,palette);if(!image.complete||!image.naturalWidth)continue;
   const part=rig?.[type]||{...MatchHairData[type].part};
   const airborne=Math.sin(Math.max(0,p.jump||0)/.5*Math.PI),activity=p.moving?1:airborne*.5;
@@ -37,7 +37,7 @@ drawOrder=function(p){
   if(!['bun','tip','tie'].includes(type))part.rotation+=(type==='front'?.65:type==='ponytail'?3.5:1.8)*Math.sin(phase)*activity;
   sprites[p.index][part.id]=image;
   const hairIndex=result.findIndex(p=>p.id==='hair');
-  const index=['long','bun','tip'].includes(type)?0:['front','tie'].includes(type)?(hairIndex<0?result.length:hairIndex+1):Math.max(0,hairIndex);
+  const index=['bun','tip','tie'].includes(type)?result.length:type==='long'?0:type==='front'?(hairIndex<0?result.length:hairIndex+1):Math.max(0,hairIndex);
   result.splice(index,0,part);
  }
  return result;
