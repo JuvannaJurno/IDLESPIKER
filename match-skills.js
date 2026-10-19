@@ -24,7 +24,8 @@ function canShow(){return enabled&&leagueEnabled()&&!suppressed&&!document.hidde
 function finishFocus(reason='cancelled'){if(focus){const f=focus.flight,progress=f?limit(f.t/Math.max(.001,f.duration)):null;focusEvents.push({id:focus.skill.id,reason,progress,age:focus.age});if(focusEvents.length>40)focusEvents.shift();}focus=null;sound('skill-slow-stop');if(!pendingDive?.heartbeatStarted)sound('heartbeat-stop');}
 function resetEffects(preserveNotices=false){rallyLegendaryCount=0;secondLegendaryAllowed=false;knockbacks.clear();reactionIcons.clear();if(!preserveNotices){currentNotice=null;completedNotices.length=0;clearTimeout(noticeTimer);noticeTimer=null;}attempts.length=0;pancakeHold=null;document.body.classList.remove('skill-blackout');if(impactHold)impactHold.flight.impactFlash=0;impactHold=null;overheadUntil.clear();sound('heartbeat-stop');window.MatchMotion?.reset();window.MatchFrames?.invalidate();active.length=0;trace.length=0;motion.clear();servePlan=null;approachPlan=null;pendingSet=null;pendingAttack=null;pendingBlock=null;pendingSync=null;pendingDive=null;serveLabelUntil=0;currentServe=null;reactions.clear();finishFocus('reset');carry=0;lastBall=null;if(!preserveNotices)label.hidden=true;}
 function owns(actor,id){if(!actor||!window.PlayerSkills)return false;if(actor.team===1&&catalog.get(id)?.rarity==='Legendary'){const unlocked=window.matchInfo?.opponentLegendaryUnlocked??PlayerSkills.teamHasLegendary(players.filter(p=>p.team===0).map(p=>p.roster||{...p.stats,skillCamps:0}),{division:window.matchInfo?.division});if(!unlocked)return false;}const p=actor.roster||{...actor.stats,id:'match-'+actor.team+'-'+actor.index,skillCamps:0};return PlayerSkills.allows(p,id,{division:window.matchInfo?.division});}
-function eligible(ids,actor){return ids.map(id=>catalog.get(id)).filter(s=>s&&owns(typeof actor==='function'?actor(s.id):actor,s.id)&&s.id!==lastSkill&&(s.rarity!=='Legendary'||(clock>=legendaryUntil&&(labShowcase()||rallyLegendaryCount===0||(rallyLegendaryCount===1&&secondLegendaryAllowed)))));}
+function canRallyLegendary(){return labShowcase()||rallyLegendaryCount===0||(rallyLegendaryCount===1&&secondLegendaryAllowed);}
+function eligible(ids,actor){return ids.map(id=>catalog.get(id)).filter(s=>s&&owns(typeof actor==='function'?actor(s.id):actor,s.id)&&s.id!==lastSkill&&(s.rarity!=='Legendary'||(clock>=legendaryUntil&&canRallyLegendary())));}
 function labShowcase(){return window.matchInfo?.animationLab===true&&new URLSearchParams(location.search).get('animationLab')==='legendary';}
 function skillWeight(skill){return weights[skill.rarity]*(labShowcase()?(skill.rarity==='Legendary'?16:.5):1);}
 function pickSkill(ids,actor){const nextSeed=window.matchInfo?.fixtureId||String(window.matchInfo?.round||1);if(seed!==nextSeed){seed=nextSeed;random=MatchRules.seeded('skills-'+seed);}if(!canShow()||!ids.length)return null;const choices=eligible(ids,actor);if(clock<cooldown||random()>(labShowcase()?.96:.60)||!choices.length)return null;let n=random()*choices.reduce((sum,s)=>sum+skillWeight(s),0);for(const s of choices){n-=skillWeight(s);if(n<=0)return s;}return choices.at(-1);}
@@ -48,7 +49,7 @@ function failNotice(effect){if(effect)effect.failed=true;}
 function resolveAttempt(flight){for(const e of attempts)if(!e.failed&&e.flight===flight&&['attack','serve','block'].includes(e.kind))failNotice(e);}
 function creditFlight(effect,flight){if(flight&&effect.skill.rarity==='Legendary')flight.skillCredit={id:effect.skill.id,actor:effect.actor,team:effect.team};}
 function trigger(skill,actor,kind,flight=ball,extra={}){
- if(!skill||!actor||!canShow()||!owns(actor,skill.id))return null;
+ if(!skill||!actor||!canShow()||!owns(actor,skill.id)||(skill.rarity==='Legendary'&&!canRallyLegendary()))return null;
  const effect={skill,actorName:commentaryName(actor),actor:number(actor),team:actor.team,kind,start:clock,contact:clock,until:clock+1.5,flight,...extra};active.push(effect);if(active.length>5)active.shift();lastSkill=skill.id;cooldown=clock+(labShowcase()?.65:1.7);
  if(skill.rarity==='Legendary'){rallyLegendaryCount++;if(rallyLegendaryCount===1&&!labShowcase())secondLegendaryAllowed=random()<.08;legendaryUntil=clock+(labShowcase()?2.2:14);legendaryUsed=true;}
  events.push({id:skill.id,actor:actor.index,role:role(actor),kind,at:clock,team:actor.team});if(events.length>80)events.shift();
@@ -183,7 +184,7 @@ resolveNetContact=function(){
  if(ball.outcome.event==='block-touch'&&attacker&&random()<.3){const wipe=pickSkill(['wipe'],attacker);if(wipe)trigger(wipe,attacker,'attack',before);}
 };
 function distantRescue(p,flight,info,minGap=24){return (info?.distance||0)>=105&&Math.hypot(p.x-flight.targetX,p.y-flight.targetY)>=minGap;}
-function pancakeChoice(p){if(clock<counterUntil[p.team]||!owns(p,'pancake'))return null;return random()<limit(.24+(p.stats?.receive||30)*.0025,.25,.65)?catalog.get('pancake'):null;}
+function pancakeChoice(p){if(!canRallyLegendary()||clock<counterUntil[p.team]||!owns(p,'pancake'))return null;return random()<limit(.24+(p.stats?.receive||30)*.0025,.25,.65)?catalog.get('pancake'):null;}
 function planMovement(){
  if(!canShow()||ball.state!=='flight')return;const target=ball.target,remaining=Math.max(0,ball.duration-ball.t),info=incoming.get(ball);
  const legendary=active.find(e=>e.flight===ball&&e.team!==target.team&&e.skill.rarity==='Legendary'&&['serve','attack','set'].includes(e.kind));
