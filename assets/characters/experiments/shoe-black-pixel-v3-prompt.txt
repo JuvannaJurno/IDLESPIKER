@@ -1,0 +1,1 @@
+Built-in image_gen edit of shoe-black-v2.png: convert the exact top-down black shoe with coral laces and heel accents to chunky low-resolution pixel art, approximately 12x28 logical pixels, stepped silhouette, limited flat palette, transparent background. Preserve orientation and recolorable details.

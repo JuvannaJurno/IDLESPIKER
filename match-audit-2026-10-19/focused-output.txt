@@ -1,9 +1,9 @@
-{"id":"focused-1-on-stage-3-end","score":[6,4],"skills":28,"legendary":3,"gap":21.22185327521057,"overlap":2.7666666666666666,"contacts":[],"visual":[]}
-{"id":"focused-1-off-stage-3-end","score":[6,4],"skills":27,"legendary":0,"gap":21.22185327521057,"overlap":2.7666666666666666,"contacts":[],"visual":[]}
-{"id":"focused-2-on-stage-3-end","score":[3,5],"skills":20,"legendary":3,"gap":21.800211131531476,"overlap":3.45,"contacts":[{"actor":4,"side":"right","gap":0}],"visual":[{"sync":true,"side":"right","remaining":-0.1666666666666652,"gap":0.000007869295120212802},{"sync":true,"side":"right","remaining":-0.1666666666666652,"gap":0.000006681570595250063},{"sync":true,"side":"right","remaining":-0.1666666666666652,"gap":0.000008344733763334466}]}
-{"id":"focused-2-off-stage-3-end","score":[2,5],"skills":22,"legendary":0,"gap":21.800495713583043,"overlap":2.8333333333333335,"contacts":[],"visual":[]}
-{"id":"focused-3-on-stage-3-end","score":[8,6],"skills":51,"legendary":3,"gap":21.22113651216627,"overlap":3.65,"contacts":[],"visual":[]}
-{"id":"focused-3-off-stage-3-end","score":[6,4],"skills":42,"legendary":0,"gap":21.22113651216627,"overlap":2.533333333333333,"contacts":[],"visual":[]}
-{"id":"focused-4-on-stage-3-end","score":[6,4],"skills":31,"legendary":4,"gap":21.221432235532188,"overlap":2.433333333333333,"contacts":[],"visual":[]}
-{"id":"focused-4-off-stage-3-end","score":[6,4],"skills":26,"legendary":0,"gap":21.221432235532188,"overlap":2.8333333333333335,"contacts":[],"visual":[]}
+{"id":"focused-1-on-stage-3-end","score":[6,4],"skills":27,"legendary":5,"gap":40.000014078931,"overlap":0,"contacts":[],"visual":[]}
+{"id":"focused-1-off-stage-3-end","score":[6,4],"skills":27,"legendary":0,"gap":40.01317623736569,"overlap":0,"contacts":[],"visual":[]}
+{"id":"focused-2-on-stage-3-end","score":[3,5],"skills":21,"legendary":2,"gap":40.00307962899557,"overlap":0,"contacts":[{"actor":4,"side":"right","gap":0}],"visual":[{"sync":true,"side":"right","remaining":-0.1666666666666652,"gap":0.000007869295120212802},{"sync":true,"side":"right","remaining":-0.1666666666666652,"gap":0.000006681570595250063},{"sync":true,"side":"right","remaining":-0.1666666666666652,"gap":0.000008344733763334466}]}
+{"id":"focused-2-off-stage-3-end","score":[2,5],"skills":22,"legendary":0,"gap":40.00921573089513,"overlap":0,"contacts":[],"visual":[]}
+{"id":"focused-3-on-stage-3-end","score":[11,9],"skills":80,"legendary":7,"gap":39.99999997334256,"overlap":0,"contacts":[{"actor":3,"side":"right","gap":0}],"visual":[{"sync":true,"side":"right","remaining":-0.1666666666666652,"gap":2.5063264223801762},{"sync":true,"side":"right","remaining":-0.1666666666666652,"gap":2.662757625108763},{"sync":true,"side":"right","remaining":-0.1666666666666652,"gap":2.819151141434336}]}
+{"id":"focused-3-off-stage-3-end","score":[6,4],"skills":42,"legendary":0,"gap":39.99999996684269,"overlap":0,"contacts":[],"visual":[]}
+{"id":"focused-4-on-stage-3-end","score":[7,5],"skills":32,"legendary":3,"gap":39.99999997251529,"overlap":0,"contacts":[],"visual":[]}
+{"id":"focused-4-off-stage-3-end","score":[6,4],"skills":26,"legendary":0,"gap":39.99999997251529,"overlap":0,"contacts":[],"visual":[]}
 COMPLETE 8 full normal-frequency matches

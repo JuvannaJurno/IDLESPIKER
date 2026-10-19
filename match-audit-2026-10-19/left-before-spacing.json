@@ -1,0 +1,1538 @@
+[
+  {
+    "id": "focused-2-on-stage-3-end",
+    "strategy": "focused-2-on",
+    "checkpoint": "stage-3-end",
+    "division": 3,
+    "finished": true,
+    "score": [
+      3,
+      5
+    ],
+    "steps": 7820,
+    "seconds": 130.33333333333334,
+    "maxStep": 3.416666666666726,
+    "minGap": 21.800211131531476,
+    "overlapSeconds": 3.45,
+    "longestOverlap": 0.6166666666666667,
+    "overlapShare": 0.04252259654889071,
+    "collisionPairs": [
+      {
+        "pair": "1-3",
+        "seconds": 0.2833333333333333
+      },
+      {
+        "pair": "8-9",
+        "seconds": 1.2
+      },
+      {
+        "pair": "2-3",
+        "seconds": 0.05
+      },
+      {
+        "pair": "9-10",
+        "seconds": 0.6166666666666667
+      },
+      {
+        "pair": "6-10",
+        "seconds": 1.3
+      }
+    ],
+    "draws": 622,
+    "renderMutation": 0,
+    "contactGaps": [
+      {
+        "actor": 4,
+        "side": "left",
+        "gap": 0
+      }
+    ],
+    "visualGaps": [
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.05000000000000071,
+        "gap": 36.44090573318308
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.0333333333333341,
+        "gap": 27.036635376970295
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.016666666666667496,
+        "gap": 18.928513692679697
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 8.881784197001252e-16,
+        "gap": 13.791565665207226
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.01666666666666572,
+        "gap": 12.937708018135758
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.03333333333333233,
+        "gap": 12.904018175683984
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.049999999999998934,
+        "gap": 12.57799802969141
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.06666666666666554,
+        "gap": 12.21055700449534
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.08333333333333215,
+        "gap": 11.82111550359864
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.09999999999999876,
+        "gap": 11.433020823039294
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.11666666666666536,
+        "gap": 11.073169364640183
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.13333333333333197,
+        "gap": 10.77093430304481
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.14999999999999858,
+        "gap": 10.556062198619806
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.1666666666666652,
+        "gap": 10.455445959506772
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.05000000000000071,
+        "gap": 10.127568220608875
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.0333333333333341,
+        "gap": 11.760912492956779
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.016666666666667496,
+        "gap": 13.164093908916414
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 8.881784197001252e-16,
+        "gap": 13.565643570056407
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.01666666666666572,
+        "gap": 14.253933906862807
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.03333333333333233,
+        "gap": 14.038510115724456
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.049999999999998934,
+        "gap": 13.78188917946569
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.06666666666666554,
+        "gap": 13.499399041443029
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.08333333333333215,
+        "gap": 13.209633313007803
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.09999999999999876,
+        "gap": 12.934038712297836
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.11666666666666536,
+        "gap": 12.696081003665762
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.13333333333333197,
+        "gap": 12.519854354175093
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.14999999999999858,
+        "gap": 12.428081034227166
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.1666666666666652,
+        "gap": 12.43968190921076
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.05000000000000071,
+        "gap": 37.72042968397661
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.0333333333333341,
+        "gap": 28.547572793050737
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.016666666666667496,
+        "gap": 20.61754296512523
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 8.881784197001252e-16,
+        "gap": 15.584088698854066
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.01666666666666572,
+        "gap": 14.635437110253019
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.03333333333333233,
+        "gap": 13.231526199595463
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.049999999999998934,
+        "gap": 12.900917011965811
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.06666666666666554,
+        "gap": 12.52705342455485
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.08333333333333215,
+        "gap": 12.128806780018706
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.09999999999999876,
+        "gap": 11.728856907602585
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.11666666666666536,
+        "gap": 11.35336603063986
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.13333333333333197,
+        "gap": 11.031028904694985
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.14999999999999858,
+        "gap": 10.791176235391177
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.1666666666666652,
+        "gap": 10.660802801315256
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.05000000000000071,
+        "gap": 10.267818614335718
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.0333333333333341,
+        "gap": 11.454969461544923
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.016666666666667496,
+        "gap": 12.662236526770053
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 8.881784197001252e-16,
+        "gap": 13.006581631994857
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.01666666666666572,
+        "gap": 13.71445894363952
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.03333333333333233,
+        "gap": 13.489440115998596
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.049999999999998934,
+        "gap": 13.221696180385923
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.06666666666666554,
+        "gap": 12.926392448267254
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.08333333333333215,
+        "gap": 12.622797009743458
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.09999999999999876,
+        "gap": 12.333311053675732
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.11666666666666536,
+        "gap": 12.082647418223736
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.13333333333333197,
+        "gap": 11.896371445346421
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.14999999999999858,
+        "gap": 11.79871469522205
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.1666666666666652,
+        "gap": 11.809850070773187
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.05000000000000071,
+        "gap": 29.03106414011887
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.0333333333333341,
+        "gap": 27.63190881567125
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.016666666666667496,
+        "gap": 24.451135027760696
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 8.881784197001252e-16,
+        "gap": 20.9996902014228
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.01666666666666572,
+        "gap": 15.844553163186266
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.03333333333333233,
+        "gap": 13.324515897342037
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.049999999999998934,
+        "gap": 13.037578888130762
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.06666666666666554,
+        "gap": 12.735262218876597
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.08333333333333215,
+        "gap": 12.438916597944928
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.09999999999999876,
+        "gap": 12.17255121386043
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.11666666666666536,
+        "gap": 11.961615091515972
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.13333333333333197,
+        "gap": 11.831063706145196
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.14999999999999858,
+        "gap": 11.802784582106975
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.1666666666666652,
+        "gap": 11.892797359896148
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.05000000000000071,
+        "gap": 44.93821124397774
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.0333333333333341,
+        "gap": 37.44140427955211
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.016666666666667496,
+        "gap": 29.91093593607195
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 8.881784197001252e-16,
+        "gap": 24.48834073908153
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.01666666666666572,
+        "gap": 23.60665702591016
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.03333333333333233,
+        "gap": 24.065684716707242
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.049999999999998934,
+        "gap": 24.629455328125637
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.06666666666666554,
+        "gap": 25.293602598274795
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.08333333333333215,
+        "gap": 26.05256073055049
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.09999999999999876,
+        "gap": 26.89950644586797
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.11666666666666536,
+        "gap": 27.82635425569568
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.13333333333333197,
+        "gap": 28.82380624468197
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.14999999999999858,
+        "gap": 29.881448432068602
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.1666666666666652,
+        "gap": 30.987889915987775
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.0500000000000016,
+        "gap": 24.746513515972683
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.03333333333333499,
+        "gap": 27.565175296034926
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.016666666666668384,
+        "gap": 27.388041536208082
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 1.7763568394002505e-15,
+        "gap": 24.7615385580773
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.01666666666666483,
+        "gap": 20.931367658895287
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.03333333333333144,
+        "gap": 13.211615446683298
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.049999999999998046,
+        "gap": 12.933197564243404
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.06666666666666465,
+        "gap": 12.594759760099512
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.08333333333333126,
+        "gap": 12.211526569870141
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.09999999999999787,
+        "gap": 11.8026381615307
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.11666666666666448,
+        "gap": 11.391242163346803
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.13333333333333108,
+        "gap": 11.004237088080213
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.1499999999999977,
+        "gap": 10.671359442976762
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.1666666666666643,
+        "gap": 10.423233577362847
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.1833333333333309,
+        "gap": 10.288198580583689
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.05000000000000071,
+        "gap": 36.59945520521466
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.0333333333333341,
+        "gap": 26.538597338771524
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.016666666666667496,
+        "gap": 17.967347418495184
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 8.881784197001252e-16,
+        "gap": 12.822760232238714
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.01666666666666572,
+        "gap": 12.551505539870574
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.03333333333333233,
+        "gap": 13.492955651956922
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.049999999999998934,
+        "gap": 13.225753487475764
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.06666666666666554,
+        "gap": 12.931119844642879
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.08333333333333215,
+        "gap": 12.62832127483813
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.09999999999999876,
+        "gap": 12.33975053911638
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.11666666666666536,
+        "gap": 12.090101687250051
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.13333333333333197,
+        "gap": 11.904908189740944
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.14999999999999858,
+        "gap": 11.808356538897396
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.1666666666666652,
+        "gap": 11.820565636159268
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.05000000000000071,
+        "gap": 30.174681956325696
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.05000000000000071,
+        "gap": 14.818237099904392
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.05000000000000071,
+        "gap": 14.13676581502466
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.0333333333333341,
+        "gap": 13.480608002350221
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.0333333333333341,
+        "gap": 12.85069253399353
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.016666666666667496,
+        "gap": 12.247978800295833
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.016666666666667496,
+        "gap": 11.673544732050686
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.016666666666667496,
+        "gap": 11.128399231928846
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 8.881784197001252e-16,
+        "gap": 10.613631881274495
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 8.881784197001252e-16,
+        "gap": 10.130323629664932
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.01666666666666572,
+        "gap": 9.730812656434543
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.01666666666666572,
+        "gap": 9.977739052257125
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.01666666666666572,
+        "gap": 10.240331034152122
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.03333333333333233,
+        "gap": 11.5238383998727
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.03333333333333233,
+        "gap": 13.35540411231001
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.03333333333333233,
+        "gap": 14.056925124347318
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.049999999999998934,
+        "gap": 14.252231957891441
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.049999999999998934,
+        "gap": 14.511409067659052
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.06666666666666554,
+        "gap": 14.78629376499291
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.06666666666666554,
+        "gap": 15.07645613449096
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.06666666666666554,
+        "gap": 15.381438301095814
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.08333333333333215,
+        "gap": 15.700761060217628
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.08333333333333215,
+        "gap": 16.03392101030531
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.08333333333333215,
+        "gap": 16.38039340013857
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.09999999999999876,
+        "gap": 16.739631655561627
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.09999999999999876,
+        "gap": 17.11106786360189
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.11666666666666536,
+        "gap": 17.49411516502131
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.11666666666666536,
+        "gap": 17.888167772755274
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.11666666666666536,
+        "gap": 18.29260289649
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.13333333333333197,
+        "gap": 18.706779814307385
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.13333333333333197,
+        "gap": 19.130043228356023
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.14999999999999858,
+        "gap": 19.561722814218957
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.14999999999999858,
+        "gap": 20.001134197672037
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.14999999999999858,
+        "gap": 20.44758159724126
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.1666666666666652,
+        "gap": 20.900357133829935
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.1666666666666652,
+        "gap": 21.3587434715144
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.1666666666666652,
+        "gap": 21.822013600658632
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.05000000000000071,
+        "gap": 10.251738378251332
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.0333333333333341,
+        "gap": 12.019001802966978
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.016666666666667496,
+        "gap": 13.265787879535056
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 8.881784197001252e-16,
+        "gap": 13.599659565217655
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.01666666666666572,
+        "gap": 14.226931455671002
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.03333333333333233,
+        "gap": 14.004989577848953
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.049999999999998934,
+        "gap": 13.743778634714358
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.06666666666666554,
+        "gap": 13.459093438202796
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.08333333333333215,
+        "gap": 13.169957281217092
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.09999999999999876,
+        "gap": 12.898158585023923
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.11666666666666536,
+        "gap": 12.667347970479861
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.13333333333333197,
+        "gap": 12.50156112541027
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.14999999999999858,
+        "gap": 12.423142927903267
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.1666666666666652,
+        "gap": 12.450287478468587
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": 0.06666666666666732,
+        "gap": 17.554957616231903
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": 0.05000000000000071,
+        "gap": 16.73298131319919
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": 0.05000000000000071,
+        "gap": 15.51704634143714
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": 0.05000000000000071,
+        "gap": 13.966179853310242
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": 0.0333333333333341,
+        "gap": 12.15377465653324
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": 0.0333333333333341,
+        "gap": 10.178149049914811
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": 0.016666666666667496,
+        "gap": 8.140265301036138
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": 0.016666666666667496,
+        "gap": 6.139210964888023
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": 0.016666666666667496,
+        "gap": 4.279579534677982
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": 8.881784197001252e-16,
+        "gap": 2.6320706616121363
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": 8.881784197001252e-16,
+        "gap": 1.2471829734916346
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": 8.881784197001252e-16,
+        "gap": 0.08913689220320271
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.01666666666666572,
+        "gap": 0.000007523039873463329
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.01666666666666572,
+        "gap": 0.000008207143523343032
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.03333333333333233,
+        "gap": 0.000008557402131157366
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.03333333333333233,
+        "gap": 0.000009392650616421133
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.03333333333333233,
+        "gap": 0.000009694151238252794
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.049999999999998934,
+        "gap": 0.00000855739232364978
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.049999999999998934,
+        "gap": 0.00000855739232364978
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.06666666666666554,
+        "gap": 0.00000855739232364978
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.06666666666666554,
+        "gap": 0.000009694150531427737
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.06666666666666554,
+        "gap": 0.000008761715514626763
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.08333333333333215,
+        "gap": 0.000008942302843581664
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.08333333333333215,
+        "gap": 0.000009694150531427737
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.08333333333333215,
+        "gap": 0.000010910786977153406
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.09999999999999876,
+        "gap": 0.000008662621301832948
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.09999999999999876,
+        "gap": 0.000010452761955341157
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.11666666666666536,
+        "gap": 0.000011214907233715881
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.11666666666666536,
+        "gap": 0.000008588894237885053
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.11666666666666536,
+        "gap": 0.000010736120645736804
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.13333333333333197,
+        "gap": 0.000008761715514626763
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.13333333333333197,
+        "gap": 0.000008942302843581664
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.13333333333333197,
+        "gap": 0.000009098659391081305
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.14999999999999858,
+        "gap": 0.000009832459446626523
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.14999999999999858,
+        "gap": 0.000009098659391081305
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.1666666666666652,
+        "gap": 0.000008519323031568657
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.1666666666666652,
+        "gap": 0.00000861572960032391
+      },
+      {
+        "sync": true,
+        "side": "left",
+        "remaining": -0.1666666666666652,
+        "gap": 0.000008527244580073616
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.05000000000000071,
+        "gap": 31.808952709315854
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.0333333333333341,
+        "gap": 23.21491703784238
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.016666666666667496,
+        "gap": 16.966030007283454
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 8.881784197001252e-16,
+        "gap": 14.41258306944362
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.01666666666666572,
+        "gap": 11.555602610559838
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.03333333333333233,
+        "gap": 13.02606037388739
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.049999999999998934,
+        "gap": 12.66582754830547
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.06666666666666554,
+        "gap": 12.273960207527969
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.08333333333333215,
+        "gap": 11.871777344003302
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.09999999999999876,
+        "gap": 11.484255428949593
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.11666666666666536,
+        "gap": 11.139338045181136
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.13333333333333197,
+        "gap": 10.86641414736002
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.14999999999999858,
+        "gap": 10.693725457831947
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.1666666666666652,
+        "gap": 10.644840035040824
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.0500000000000016,
+        "gap": 36.044111315045846
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.03333333333333499,
+        "gap": 27.8015109424008
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 0.016666666666668384,
+        "gap": 20.320640420863565
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": 1.7763568394002505e-15,
+        "gap": 15.397988104434088
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.01666666666666483,
+        "gap": 12.519586625106866
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.03333333333333144,
+        "gap": 13.794613941450297
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.049999999999998046,
+        "gap": 13.545392948486024
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.06666666666666465,
+        "gap": 13.263352773033406
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.08333333333333126,
+        "gap": 12.96629044126024
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.09999999999999787,
+        "gap": 12.675194765553341
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.11666666666666448,
+        "gap": 12.413600209421626
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.13333333333333108,
+        "gap": 12.20638494075813
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.1499999999999977,
+        "gap": 12.077902183983767
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.1666666666666643,
+        "gap": 12.04951639837456
+      },
+      {
+        "sync": false,
+        "side": "left",
+        "remaining": -0.1833333333333309,
+        "gap": 12.13693790856747
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.05000000000000071,
+        "gap": 10.332437926451064
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.0333333333333341,
+        "gap": 11.501653261132546
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.016666666666667496,
+        "gap": 11.956338244050816
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 8.881784197001252e-16,
+        "gap": 12.463711249784245
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.01666666666666572,
+        "gap": 12.838978926701115
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.03333333333333233,
+        "gap": 12.514371493058691
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.049999999999998934,
+        "gap": 12.138039082932313
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.06666666666666554,
+        "gap": 11.727431876734407
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.08333333333333215,
+        "gap": 11.304507582577562
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.09999999999999876,
+        "gap": 10.895318242651486
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.11666666666666536,
+        "gap": 10.529430174299096
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.13333333333333197,
+        "gap": 10.238397116760021
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.14999999999999858,
+        "gap": 10.052926639309565
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.1666666666666652,
+        "gap": 9.998817945575112
+      }
+    ],
+    "skills": 20,
+    "legendary": 3,
+    "legendaryByTeam": [
+      1,
+      2
+    ],
+    "legendaryTypes": [
+      "jump-float-legendary",
+      "ghost-tip",
+      "sync-attack"
+    ],
+    "unlocked": true,
+    "body": true,
+    "normal": true,
+    "errors": []
+  }
+]

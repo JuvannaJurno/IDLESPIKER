@@ -10,7 +10,7 @@
 - 21/21 maç tamamlandı, JavaScript hatası yok, çizim fizik koordinatlarını değiştirmedi.
 - Ralli sırasında tek adımda en yüksek yer değiştirme 3.48 saha birimi; ralli içinde ışınlanma görülmedi. Bekleme sırasındaki libero oyuncu kimliği değişimi bu ölçümden ayrı tutuldu.
 - BAL'daki 6 maçta Legendary yok. Kilitli karşılaştırmalarda iki tarafın da Legendary kullanımı sıfır.
-- Kombine Hücum'un gerçek çıkış noktası sağ ve sol elde hesaplanan el noktasıyla aynı (0 birim fark). Canvas üzerinden ölçülen son temas çevresi farkı yaklaşık 0–3 birim; temas yaklaşırken top ele oturuyor. Bu ölçüm iki Kombine Hücum örneğidir; bütün pozlar için kapsamlı piksel taraması değildir.
+- Kombine Hücum'un gerçek çıkış noktası sağ ve sol elde hesaplanan el noktasıyla aynı (0 birim fark). Canvas üzerinden ölçülen son temas çevresi farkı yaklaşık 0–3 birim; temas yaklaşırken top ele oturuyor. Bu ölçüm az sayıdaki Kombine Hücum örneğidir; bütün pozlar için kapsamlı piksel taraması değildir.
 - İnişin yönlü devamı, diz kırma, denge adımı ve rahat/zor pas pozları test-body-motion.cjs ile ayrıca kontrol edildi. 31 önizleme ve 60/120 Hz fizik/çizim ayrımı testleri önceki değişiklik doğrulamasında geçti.
 
 ## Legendary ve sonuçlar
@@ -18,25 +18,27 @@
 
 | Tohum | Açık skor | Kapalı skor | Açık Legendary (biz/rakip) |
 |---|---|---|---|
-| 1 | 6–4 | 6–4 | 2/1 |
-| 2 | 3–5 | 2–5 | 1/2 |
-| 3 | 8–6 | 6–4 | 1/2 |
-| 4 | 6–4 | 6–4 | 2/2 |
+| 1 | 6–4 | 6–4 | 3/2 |
+| 2 | 3–5 | 2–5 | 1/1 |
+| 3 | 11–9 | 6–4 | 5/2 |
+| 4 | 7–5 | 6–4 | 1/2 |
 
-Bu örneklerde açık takım başına toplam 3–4 Legendary/maç görüldü; iki taraf da kullanabildi. Açık ve kapalı koşullarda galibiyet sayısı aynı (3/4). Dört çift, dengeyi kesin doğrulamaya yetmez. Skill tetiklenince RNG akışı ve top yolları değiştiği için skor farkı doğrudan tek bir skillin net kazancı değildir.
+Bu örneklerde açık eşleşmelerde iki takım toplam 2–7 Legendary/maç kullandı (uzayan skorlar dahil); iki taraf da kullanabildi. Açık ve kapalı koşullarda galibiyet sayısı aynı (3/4). Dört çift, dengeyi kesin doğrulamaya yetmez. Skill tetiklenince RNG akışı ve top yolları değiştiği için skor farkı doğrudan tek bir skillin net kazancı değildir.
 
-## Kalan hareket sorunu
-**P2 — Aynı takım oyuncuları zaman zaman fazla yakın kalıyor.** 28 saha biriminden küçük merkez mesafesini izledik. İlerleme kadrolarında en uzun kesintisiz yakınlaşma 0.65 saniyelik adım karşılığı; eşit kadrolarda da yaklaşık 0.62. Bu bir merkez mesafesi ölçümüdür; her örnek sprite'ın fiziksel olarak çarpıştığını kanıtlamaz. Hareket düzenini tamamen temiz kabul etmiyoruz. Sonraki düzeltme, bekleme/rotasyon sonrası ralliye çıkışta oyuncu hedeflerini daha erken ayırmak ve kalan yakınlaşmaların görüntüsünü incelemek olmalı. Bu kontrolde oyun davranışı değiştirilmedi.
+## Yakınlaşma düzeltmesi — kapandı
+File/saha sınırı, yana kaçış hareketini kesip oyuncuyu takım arkadaşına yaklaştırıyordu. Kaçış yönü açık sahaya çevrildi; sınır uygulandıktan sonraki gerçek adım da kontrol ediliyor. Uygun yan adım seçiliyor, oyuncu ışınlanmıyor veya sonradan itilerek ayrılmıyor. Değişiklik mac.html, deneme-modu.html ve lab'in gömülü motorunda aynı.
+
+Önceki 12 kayıt maçında toplam 12,73 saniyelik adım karşılığı yakınlaşma ve en uzun 0,65 saniyelik kesintisiz olay vardı (spacing-before.json). Aynı 12 kayıtla tekrar koşuda ve 9 ek normal sıklıklı örnekte 28 saha birimi altına iniş 0. En düşük ölçülen mesafe yaklaşık 40 birim. Ölçüm ralli sırasında; rotasyonun görsel geçişi ve libero kimlik değişimi ayrı. test-match-movement.cjs, iki tarafta file kenarında açık sahadan dolaşmayı, en az 40 birim aralığı, hız sınırını ve takılmadan geçişi ayrıca doğruluyor. Fiziksel telefon ve daha geniş örneklem gereği sürüyor.
 
 ## Mobil tarayıcı örneği
 390×844 CSS piksel, DPR 2; her koşul 5 saniye, normal maçın erken rallileri. Fiziksel telefon testi değildir; uzun maç ve bütün Legendary efektleri için sürekli performans ölçümü de değildir.
 
 | CPU yavaşlatma | FPS | 50 ms üzeri boşluk | En uzun boşluk |
 |---|---:|---:|---:|
-| 1× | 58.5 | 1 | 116.6 ms |
-| 4× | 60.2 | 0 | 17.0 ms |
+| 1× | 57.5 | 2 | 133.4 ms |
+| 4× | 60.3 | 0 | 16.9 ms |
 
-1× örnekte başlangıçta bir kısa takılma var; 4× örnekte yok. Kısa masaüstü ölçümünü gerçek telefon garantisi olarak yorumlamıyoruz.
+1× örnekte başlangıçta kısa takılmalar var; 4× örnekte yok. Kısa masaüstü ölçümünü gerçek telefon garantisi olarak yorumlamıyoruz.
 
 ## Kanıtlar
 - matches.json: 12 ilerleme kaydı maçı ve yakınlaşma ölçümleri.

@@ -1,0 +1,1 @@
+Built-in image_gen edit of shoe-black-pixel-v3.png. Prompt: simplify to chunky 8x18 logical pixel grid, black body, one dark gray side panel, three coral lace bars and two heel accents; flat colors, transparent background, no fine details. Editor uses a hard alpha edge and recolors accents to shirt color.

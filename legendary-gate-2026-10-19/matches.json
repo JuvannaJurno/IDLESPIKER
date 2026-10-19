@@ -23,7 +23,7 @@
         "actor": 2,
         "role": "setter",
         "kind": "set",
-        "at": 23.966666666666587,
+        "at": 29.36666666666628,
         "team": 0
       },
       {
@@ -31,7 +31,7 @@
         "actor": 9,
         "role": "middle",
         "kind": "block",
-        "at": 26.0999999999998,
+        "at": 31.499999999999492,
         "team": 1
       },
       {
@@ -39,7 +39,7 @@
         "actor": 8,
         "role": "setter",
         "kind": "set",
-        "at": 28.299999999999674,
+        "at": 33.69999999999937,
         "team": 1
       },
       {
@@ -47,7 +47,7 @@
         "actor": 3,
         "role": "middle",
         "kind": "block",
-        "at": 30.44999999999955,
+        "at": 35.84999999999925,
         "team": 0
       },
       {
@@ -55,7 +55,7 @@
         "actor": 2,
         "role": "setter",
         "kind": "set",
-        "at": 38.71666666666575,
+        "at": 46.81666666666529,
         "team": 0
       },
       {
@@ -63,7 +63,7 @@
         "actor": 9,
         "role": "middle",
         "kind": "block",
-        "at": 40.849999999998964,
+        "at": 48.949999999998504,
         "team": 1
       },
       {
@@ -71,7 +71,7 @@
         "actor": 8,
         "role": "setter",
         "kind": "set",
-        "at": 43.04999999999884,
+        "at": 51.14999999999838,
         "team": 1
       },
       {
@@ -79,7 +79,7 @@
         "actor": 3,
         "role": "middle",
         "kind": "block",
-        "at": 45.19999999999872,
+        "at": 53.299999999998256,
         "team": 0
       },
       {
@@ -87,7 +87,7 @@
         "actor": 2,
         "role": "setter",
         "kind": "set",
-        "at": 47.383333333331926,
+        "at": 55.483333333331466,
         "team": 0
       },
       {
@@ -95,7 +95,7 @@
         "actor": 9,
         "role": "middle",
         "kind": "block",
-        "at": 49.51666666666514,
+        "at": 57.61666666666468,
         "team": 1
       },
       {
@@ -103,7 +103,7 @@
         "actor": 1,
         "role": "outside",
         "kind": "serve",
-        "at": 56.78333333333139,
+        "at": 67.58333333333078,
         "team": 0
       },
       {
@@ -111,7 +111,7 @@
         "actor": 8,
         "role": "setter",
         "kind": "set",
-        "at": 59.36666666666458,
+        "at": 70.16666666666397,
         "team": 1
       },
       {
@@ -119,55 +119,7 @@
         "actor": 3,
         "role": "middle",
         "kind": "block",
-        "at": 61.49999999999779,
-        "team": 0
-      },
-      {
-        "id": "sky-serve",
-        "actor": 8,
-        "role": "setter",
-        "kind": "serve",
-        "at": 71.71666666666388,
-        "team": 1
-      },
-      {
-        "id": "fake-set",
-        "actor": 2,
-        "role": "setter",
-        "kind": "set",
-        "at": 76.2333333333303,
-        "team": 0
-      },
-      {
-        "id": "cross",
-        "actor": 4,
-        "role": "outside",
-        "kind": "attack",
-        "at": 78.34999999999684,
-        "team": 0
-      },
-      {
-        "id": "commit-block",
-        "actor": 3,
-        "role": "middle",
-        "kind": "block",
-        "at": 90.39999999999615,
-        "team": 0
-      },
-      {
-        "id": "fake-set",
-        "actor": 2,
-        "role": "setter",
-        "kind": "set",
-        "at": 92.59999999999603,
-        "team": 0
-      },
-      {
-        "id": "cross",
-        "actor": 4,
-        "role": "outside",
-        "kind": "attack",
-        "at": 94.71666666666258,
+        "at": 72.29999999999718,
         "team": 0
       },
       {
@@ -175,7 +127,71 @@
         "actor": 2,
         "role": "setter",
         "kind": "set",
-        "at": 104.93333333332866,
+        "at": 74.78333333333038,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 76.89999999999692,
+        "team": 1
+      },
+      {
+        "id": "float",
+        "actor": 8,
+        "role": "setter",
+        "kind": "serve",
+        "at": 85.48333333332977,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 91.48333333332943,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 104.03333333332871,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 106.16666666666192,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 108.3666666666618,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 4,
+        "role": "outside",
+        "kind": "attack",
+        "at": 110.48333333332835,
+        "team": 0
+      },
+      {
+        "id": "pipe-attack",
+        "actor": 1,
+        "role": "outside",
+        "kind": "attack",
+        "at": 123.39999999999428,
         "team": 0
       },
       {
@@ -183,18 +199,18 @@
         "actor": 6,
         "role": "middle",
         "kind": "block",
-        "at": 107.04999999999521,
+        "at": 125.11666666666085,
         "team": 1
       }
     ],
     "maxStep": 5.922749274048087,
-    "steps": 6671,
+    "steps": 7760,
     "score": [
       3,
       5
     ],
     "finished": true,
-    "count": 31,
+    "count": 34,
     "legendary": true,
     "focusEvents": [
       {
@@ -204,7 +220,7 @@
         "age": 2.9833333333333276
       }
     ],
-    "simulatedSeconds": 111.18333333333334
+    "simulatedSeconds": 129.33333333333334
   },
   {
     "seed": 2,
@@ -222,7 +238,7 @@
         "actor": 9,
         "role": "middle",
         "kind": "block",
-        "at": 30.899999999999526,
+        "at": 38.99999999999907,
         "team": 1
       },
       {
@@ -230,7 +246,7 @@
         "actor": 8,
         "role": "setter",
         "kind": "set",
-        "at": 33.099999999999405,
+        "at": 41.199999999998944,
         "team": 1
       },
       {
@@ -238,15 +254,15 @@
         "actor": 9,
         "role": "middle",
         "kind": "block",
-        "at": 39.566666666665704,
+        "at": 47.66666666666524,
         "team": 1
       },
       {
-        "id": "sky-serve",
+        "id": "jump-float-legendary",
         "actor": 7,
         "role": "outside",
         "kind": "serve",
-        "at": 43.78333333333213,
+        "at": 54.58333333333152,
         "team": 1
       },
       {
@@ -254,7 +270,7 @@
         "actor": 2,
         "role": "setter",
         "kind": "set",
-        "at": 48.29999999999854,
+        "at": 58.449999999997964,
         "team": 0
       },
       {
@@ -262,7 +278,7 @@
         "actor": 9,
         "role": "middle",
         "kind": "block",
-        "at": 50.54999999999841,
+        "at": 60.666666666664504,
         "team": 1
       },
       {
@@ -270,7 +286,7 @@
         "actor": 8,
         "role": "setter",
         "kind": "set",
-        "at": 52.63333333333163,
+        "at": 62.78333333333105,
         "team": 1
       },
       {
@@ -278,7 +294,7 @@
         "actor": 10,
         "role": "outside",
         "kind": "attack",
-        "at": 54.749999999998174,
+        "at": 64.8999999999976,
         "team": 1
       },
       {
@@ -286,7 +302,7 @@
         "actor": 1,
         "role": "outside",
         "kind": "serve",
-        "at": 60.61666666666451,
+        "at": 73.46666666666378,
         "team": 0
       },
       {
@@ -294,7 +310,7 @@
         "actor": 8,
         "role": "setter",
         "kind": "set",
-        "at": 64.71666666666428,
+        "at": 77.56666666666355,
         "team": 1
       },
       {
@@ -302,7 +318,7 @@
         "actor": 2,
         "role": "setter",
         "kind": "set",
-        "at": 68.58333333333073,
+        "at": 81.43333333333,
         "team": 0
       },
       {
@@ -310,7 +326,7 @@
         "actor": 9,
         "role": "middle",
         "kind": "block",
-        "at": 70.7333333333306,
+        "at": 83.58333333332988,
         "team": 1
       },
       {
@@ -318,7 +334,7 @@
         "actor": 8,
         "role": "setter",
         "kind": "set",
-        "at": 73.18333333333047,
+        "at": 86.03333333332974,
         "team": 1
       },
       {
@@ -326,7 +342,7 @@
         "actor": 10,
         "role": "outside",
         "kind": "attack",
-        "at": 75.28333333333035,
+        "at": 88.13333333332962,
         "team": 1
       },
       {
@@ -334,7 +350,7 @@
         "actor": 2,
         "role": "setter",
         "kind": "set",
-        "at": 85.48333333332977,
+        "at": 101.03333333332888,
         "team": 0
       },
       {
@@ -342,200 +358,42 @@
         "actor": 9,
         "role": "middle",
         "kind": "block",
-        "at": 87.61666666666298,
+        "at": 103.1666666666621,
         "team": 1
       },
       {
-        "id": "tempo-third",
-        "actor": 8,
-        "role": "setter",
-        "kind": "set",
-        "at": 90.0833333333295,
-        "team": 1
-      },
-      {
-        "id": "commit-block",
-        "actor": 3,
-        "role": "middle",
-        "kind": "block",
-        "at": 92.23333333332938,
-        "team": 0
-      },
-      {
-        "id": "sky-serve",
+        "id": "float",
         "actor": 2,
         "role": "setter",
         "kind": "serve",
-        "at": 98.09999999999572,
+        "at": 113.33333333332818,
         "team": 0
-      },
-      {
-        "id": "fake-set",
-        "actor": 8,
-        "role": "setter",
-        "kind": "set",
-        "at": 102.61666666666213,
-        "team": 1
-      },
-      {
-        "id": "line",
-        "actor": 10,
-        "role": "outside",
-        "kind": "attack",
-        "at": 104.73333333332867,
-        "team": 1
-      },
-      {
-        "id": "tempo-third",
-        "actor": 2,
-        "role": "setter",
-        "kind": "set",
-        "at": 107.23333333332853,
-        "team": 0
-      },
-      {
-        "id": "commit-block",
-        "actor": 9,
-        "role": "middle",
-        "kind": "block",
-        "at": 109.34999999999508,
-        "team": 1
-      },
-      {
-        "id": "fake-set",
-        "actor": 8,
-        "role": "setter",
-        "kind": "set",
-        "at": 111.54999999999495,
-        "team": 1
-      },
-      {
-        "id": "absolute-read",
-        "actor": 9,
-        "role": "middle",
-        "kind": "block",
-        "at": 118.01666666666125,
-        "team": 1
-      },
-      {
-        "id": "commit-block",
-        "actor": 3,
-        "role": "middle",
-        "kind": "block",
-        "at": 122.09999999999435,
-        "team": 0
-      },
-      {
-        "id": "tempo-third",
-        "actor": 2,
-        "role": "setter",
-        "kind": "set",
-        "at": 124.38333333332756,
-        "team": 0
-      },
-      {
-        "id": "commit-block",
-        "actor": 9,
-        "role": "middle",
-        "kind": "block",
-        "at": 126.4999999999941,
-        "team": 1
-      },
-      {
-        "id": "fake-set",
-        "actor": 8,
-        "role": "setter",
-        "kind": "set",
-        "at": 128.69999999999456,
-        "team": 1
-      },
-      {
-        "id": "commit-block",
-        "actor": 3,
-        "role": "middle",
-        "kind": "block",
-        "at": 130.8333333333296,
-        "team": 0
-      },
-      {
-        "id": "ghost-tip",
-        "actor": 11,
-        "role": "opposite",
-        "kind": "attack",
-        "at": 140.7833333333375,
-        "team": 1
-      },
-      {
-        "id": "tempo-third",
-        "actor": 2,
-        "role": "setter",
-        "kind": "set",
-        "at": 144.00000000000674,
-        "team": 0
-      },
-      {
-        "id": "commit-block",
-        "actor": 9,
-        "role": "middle",
-        "kind": "block",
-        "at": 146.1166666666751,
-        "team": 1
-      },
-      {
-        "id": "line",
-        "actor": 5,
-        "role": "opposite",
-        "kind": "attack",
-        "at": 166.81666666669156,
-        "team": 0
-      },
-      {
-        "id": "fake-set",
-        "actor": 8,
-        "role": "setter",
-        "kind": "set",
-        "at": 169.03333333336,
-        "team": 1
-      },
-      {
-        "id": "line",
-        "actor": 10,
-        "role": "outside",
-        "kind": "attack",
-        "at": 171.15000000002834,
-        "team": 1
       }
     ],
     "maxStep": 5.922749274048087,
-    "steps": 10581,
+    "steps": 7223,
     "score": [
-      4,
-      6
+      3,
+      5
     ],
     "finished": true,
-    "count": 31,
+    "count": 34,
     "legendary": true,
     "focusEvents": [
+      {
+        "id": "jump-float-legendary",
+        "reason": "halfway",
+        "progress": 0.5045045045045051,
+        "age": 4.516666666666656
+      },
       {
         "id": "absolute-read",
         "reason": "halfway",
         "progress": 0.5,
         "age": 1.183333333333334
-      },
-      {
-        "id": "absolute-read",
-        "reason": "halfway",
-        "progress": 0.5128205128205128,
-        "age": 1.266666666666667
-      },
-      {
-        "id": "ghost-tip",
-        "reason": "halfway",
-        "progress": 0.5061728395061732,
-        "age": 2.8499999999999948
       }
     ],
-    "simulatedSeconds": 176.35
+    "simulatedSeconds": 120.38333333333334
   },
   {
     "seed": 3,
@@ -561,7 +419,7 @@
         "actor": 3,
         "role": "middle",
         "kind": "block",
-        "at": 18.35000000000024,
+        "at": 21.050000000000086,
         "team": 0
       },
       {
@@ -569,7 +427,7 @@
         "actor": 7,
         "role": "outside",
         "kind": "attack",
-        "at": 27.8499999999997,
+        "at": 33.249999999999396,
         "team": 1
       },
       {
@@ -577,7 +435,7 @@
         "actor": 2,
         "role": "setter",
         "kind": "set",
-        "at": 38.06666666666579,
+        "at": 46.16666666666533,
         "team": 0
       },
       {
@@ -585,15 +443,7 @@
         "actor": 9,
         "role": "middle",
         "kind": "block",
-        "at": 40.199999999999,
-        "team": 1
-      },
-      {
-        "id": "power-hit",
-        "actor": 10,
-        "role": "outside",
-        "kind": "attack",
-        "at": 43.81666666666546,
+        "at": 48.29999999999854,
         "team": 1
       },
       {
@@ -601,15 +451,31 @@
         "actor": 2,
         "role": "setter",
         "kind": "set",
-        "at": 52.41666666666497,
-        "team": 0
-      },
-      {
-        "id": "commit-block",
-        "actor": 9,
-        "role": "middle",
-        "kind": "block",
         "at": 54.59999999999818,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 56.733333333331394,
+        "team": 1
+      },
+      {
+        "id": "read",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 61.283333333331136,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 65.18333333333092,
         "team": 1
       },
       {
@@ -617,7 +483,7 @@
         "actor": 8,
         "role": "setter",
         "kind": "set",
-        "at": 56.74999999999806,
+        "at": 77.7833333333302,
         "team": 1
       },
       {
@@ -625,47 +491,15 @@
         "actor": 3,
         "role": "middle",
         "kind": "block",
-        "at": 58.93333333333127,
+        "at": 79.94999999999675,
         "team": 0
       },
       {
-        "id": "tempo-third",
-        "actor": 2,
-        "role": "setter",
-        "kind": "set",
-        "at": 61.366666666664464,
-        "team": 0
-      },
-      {
-        "id": "commit-block",
-        "actor": 9,
-        "role": "middle",
-        "kind": "block",
-        "at": 63.48333333333101,
-        "team": 1
-      },
-      {
-        "id": "tempo-third",
+        "id": "fake-set",
         "actor": 8,
         "role": "setter",
         "kind": "set",
-        "at": 65.73333333333089,
-        "team": 1
-      },
-      {
-        "id": "commit-block",
-        "actor": 3,
-        "role": "middle",
-        "kind": "block",
-        "at": 67.8666666666641,
-        "team": 0
-      },
-      {
-        "id": "back",
-        "actor": 8,
-        "role": "setter",
-        "kind": "set",
-        "at": 82.36666666666328,
+        "at": 90.68333333332947,
         "team": 1
       },
       {
@@ -673,47 +507,47 @@
         "actor": 9,
         "role": "middle",
         "kind": "block",
-        "at": 96.29999999999582,
+        "at": 97.1833333333291,
         "team": 1
       }
     ],
-    "maxStep": 5.922749274048087,
-    "steps": 6334,
+    "maxStep": 5.922749274048082,
+    "steps": 5951,
     "score": [
-      3,
-      5
+      5,
+      1
     ],
     "finished": true,
-    "count": 31,
+    "count": 34,
     "legendary": false,
     "focusEvents": [],
-    "simulatedSeconds": 105.56666666666666
+    "simulatedSeconds": 99.18333333333334
   },
   {
     "seed": 4,
     "events": [
       {
-        "id": "tempo-third",
-        "actor": 8,
-        "role": "setter",
-        "kind": "set",
-        "at": 18.283333333333577,
+        "id": "pipe-attack",
+        "actor": 10,
+        "role": "outside",
+        "kind": "attack",
+        "at": 23.68333333333327,
         "team": 1
       },
       {
-        "id": "line",
-        "actor": 7,
-        "role": "outside",
-        "kind": "attack",
-        "at": 20.383333333333457,
-        "team": 1
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 25.39999999999984,
+        "team": 0
       },
       {
         "id": "slide-attack",
         "actor": 3,
         "role": "middle",
         "kind": "set",
-        "at": 22.883333333333315,
+        "at": 27.816666666666368,
         "team": 0
       },
       {
@@ -721,7 +555,7 @@
         "actor": 8,
         "role": "setter",
         "kind": "set",
-        "at": 32.633333333332764,
+        "at": 40.266666666665664,
         "team": 1
       },
       {
@@ -729,15 +563,15 @@
         "actor": 7,
         "role": "outside",
         "kind": "attack",
-        "at": 34.74999999999931,
+        "at": 42.38333333333221,
         "team": 1
       },
       {
-        "id": "ghost-tip",
+        "id": "power-hit",
         "actor": 1,
         "role": "outside",
         "kind": "attack",
-        "at": 46.31666666666532,
+        "at": 56.649999999998066,
         "team": 0
       },
       {
@@ -745,15 +579,15 @@
         "actor": 8,
         "role": "setter",
         "kind": "set",
-        "at": 56.94999999999805,
+        "at": 69.566666666664,
         "team": 1
       },
       {
-        "id": "commit-block",
+        "id": "absolute-read",
         "actor": 3,
         "role": "middle",
         "kind": "block",
-        "at": 59.09999999999793,
+        "at": 71.71666666666388,
         "team": 0
       },
       {
@@ -761,7 +595,7 @@
         "actor": 2,
         "role": "setter",
         "kind": "set",
-        "at": 70.38333333333063,
+        "at": 85.69999999999642,
         "team": 0
       },
       {
@@ -769,7 +603,7 @@
         "actor": 9,
         "role": "middle",
         "kind": "block",
-        "at": 72.54999999999717,
+        "at": 87.83333333332963,
         "team": 1
       },
       {
@@ -777,7 +611,7 @@
         "actor": 8,
         "role": "setter",
         "kind": "set",
-        "at": 74.71666666666371,
+        "at": 90.03333333332951,
         "team": 1
       },
       {
@@ -785,34 +619,34 @@
         "actor": 3,
         "role": "middle",
         "kind": "block",
-        "at": 76.86666666666359,
+        "at": 92.18333333332939,
         "team": 0
       }
     ],
     "maxStep": 5.922749274048087,
-    "steps": 4861,
+    "steps": 5724,
     "score": [
       5,
       2
     ],
     "finished": true,
-    "count": 31,
+    "count": 34,
     "legendary": true,
     "focusEvents": [
       {
-        "id": "ghost-tip",
+        "id": "absolute-read",
         "reason": "halfway",
-        "progress": 0.5061728395061732,
-        "age": 2.8499999999999948
+        "progress": 0.5,
+        "age": 1.2333333333333338
       },
       {
         "id": "absolute-read",
         "reason": "halfway",
         "progress": 0.5,
-        "age": 1.183333333333334
+        "age": 1.266666666666667
       }
     ],
-    "simulatedSeconds": 81.01666666666667
+    "simulatedSeconds": 95.4
   },
   {
     "seed": 5,
@@ -846,7 +680,7 @@
         "actor": 3,
         "role": "middle",
         "kind": "block",
-        "at": 22.766666666666655,
+        "at": 25.4666666666665,
         "team": 0
       },
       {
@@ -854,7 +688,7 @@
         "actor": 2,
         "role": "setter",
         "kind": "set",
-        "at": 25.19999999999985,
+        "at": 27.899999999999697,
         "team": 0
       },
       {
@@ -862,7 +696,7 @@
         "actor": 9,
         "role": "middle",
         "kind": "block",
-        "at": 27.316666666666396,
+        "at": 30.016666666666243,
         "team": 1
       },
       {
@@ -870,7 +704,7 @@
         "actor": 2,
         "role": "setter",
         "kind": "set",
-        "at": 47.63333333333191,
+        "at": 55.73333333333145,
         "team": 0
       },
       {
@@ -878,7 +712,7 @@
         "actor": 1,
         "role": "outside",
         "kind": "attack",
-        "at": 49.74999999999846,
+        "at": 57.849999999998,
         "team": 0
       },
       {
@@ -886,7 +720,7 @@
         "actor": 8,
         "role": "setter",
         "kind": "set",
-        "at": 51.749999999998344,
+        "at": 59.849999999997884,
         "team": 1
       },
       {
@@ -894,15 +728,15 @@
         "actor": 3,
         "role": "middle",
         "kind": "block",
-        "at": 53.91666666666489,
+        "at": 62.01666666666443,
         "team": 0
       },
       {
-        "id": "jump-legendary",
+        "id": "sky-serve",
         "actor": 1,
         "role": "outside",
         "kind": "serve",
-        "at": 59.71666666666456,
+        "at": 70.51666666666395,
         "team": 0
       },
       {
@@ -910,7 +744,7 @@
         "actor": 3,
         "role": "middle",
         "kind": "block",
-        "at": 64.43333333333096,
+        "at": 77.18333333333024,
         "team": 0
       },
       {
@@ -918,7 +752,7 @@
         "actor": 2,
         "role": "setter",
         "kind": "set",
-        "at": 66.63333333333084,
+        "at": 79.36666666666345,
         "team": 0
       },
       {
@@ -926,7 +760,7 @@
         "actor": 9,
         "role": "middle",
         "kind": "block",
-        "at": 68.79999999999738,
+        "at": 81.53333333332999,
         "team": 1
       },
       {
@@ -934,7 +768,7 @@
         "actor": 8,
         "role": "setter",
         "kind": "set",
-        "at": 70.96666666666393,
+        "at": 83.69999999999654,
         "team": 1
       },
       {
@@ -942,7 +776,7 @@
         "actor": 3,
         "role": "middle",
         "kind": "block",
-        "at": 73.1166666666638,
+        "at": 85.84999999999641,
         "team": 0
       },
       {
@@ -950,7 +784,7 @@
         "actor": 8,
         "role": "setter",
         "kind": "serve",
-        "at": 80.06666666666341,
+        "at": 95.49999999999586,
         "team": 1
       },
       {
@@ -958,7 +792,7 @@
         "actor": 2,
         "role": "setter",
         "kind": "set",
-        "at": 82.99999999999658,
+        "at": 98.43333333332903,
         "team": 0
       },
       {
@@ -966,7 +800,7 @@
         "actor": 9,
         "role": "middle",
         "kind": "block",
-        "at": 85.13333333332979,
+        "at": 100.56666666666224,
         "team": 1
       },
       {
@@ -974,7 +808,7 @@
         "actor": 8,
         "role": "setter",
         "kind": "set",
-        "at": 87.33333333332966,
+        "at": 102.76666666666212,
         "team": 1
       },
       {
@@ -982,7 +816,7 @@
         "actor": 3,
         "role": "middle",
         "kind": "block",
-        "at": 89.46666666666287,
+        "at": 104.89999999999533,
         "team": 0
       },
       {
@@ -990,7 +824,7 @@
         "actor": 2,
         "role": "setter",
         "kind": "set",
-        "at": 91.66666666666275,
+        "at": 107.0999999999952,
         "team": 0
       },
       {
@@ -998,7 +832,7 @@
         "actor": 9,
         "role": "middle",
         "kind": "block",
-        "at": 93.81666666666263,
+        "at": 109.24999999999508,
         "team": 1
       },
       {
@@ -1006,7 +840,7 @@
         "actor": 8,
         "role": "setter",
         "kind": "set",
-        "at": 95.99999999999584,
+        "at": 111.43333333332829,
         "team": 1
       },
       {
@@ -1014,7 +848,7 @@
         "actor": 11,
         "role": "opposite",
         "kind": "attack",
-        "at": 98.11666666666238,
+        "at": 113.54999999999484,
         "team": 1
       },
       {
@@ -1022,7 +856,7 @@
         "actor": 2,
         "role": "setter",
         "kind": "set",
-        "at": 100.61666666666224,
+        "at": 116.0499999999947,
         "team": 0
       },
       {
@@ -1030,7 +864,7 @@
         "actor": 9,
         "role": "middle",
         "kind": "block",
-        "at": 102.74999999999545,
+        "at": 118.18333333332791,
         "team": 1
       },
       {
@@ -1038,7 +872,7 @@
         "actor": 8,
         "role": "setter",
         "kind": "set",
-        "at": 104.93333333332866,
+        "at": 120.36666666666112,
         "team": 1
       },
       {
@@ -1046,7 +880,7 @@
         "actor": 3,
         "role": "middle",
         "kind": "block",
-        "at": 107.06666666666187,
+        "at": 122.49999999999433,
         "team": 0
       },
       {
@@ -1054,7 +888,7 @@
         "actor": 2,
         "role": "setter",
         "kind": "set",
-        "at": 109.26666666666175,
+        "at": 124.6999999999942,
         "team": 0
       },
       {
@@ -1062,7 +896,7 @@
         "actor": 9,
         "role": "middle",
         "kind": "block",
-        "at": 111.39999999999496,
+        "at": 126.83333333332742,
         "team": 1
       },
       {
@@ -1070,7 +904,7 @@
         "actor": 8,
         "role": "setter",
         "kind": "set",
-        "at": 113.59999999999484,
+        "at": 129.03333333332816,
         "team": 1
       },
       {
@@ -1078,7 +912,7 @@
         "actor": 11,
         "role": "opposite",
         "kind": "attack",
-        "at": 115.71666666666138,
+        "at": 131.1499999999965,
         "team": 1
       },
       {
@@ -1086,28 +920,21 @@
         "actor": 3,
         "role": "middle",
         "kind": "block",
-        "at": 127.78333333332736,
+        "at": 145.91666666667493,
         "team": 0
       }
     ],
     "maxStep": 5.922749274048087,
-    "steps": 8188,
+    "steps": 9138,
     "score": [
       5,
       2
     ],
     "finished": true,
-    "count": 31,
-    "legendary": true,
-    "focusEvents": [
-      {
-        "id": "jump-legendary",
-        "reason": "halfway",
-        "progress": 0.5172413793103449,
-        "age": 2.9833333333333276
-      }
-    ],
-    "simulatedSeconds": 136.46666666666667
+    "count": 34,
+    "legendary": false,
+    "focusEvents": [],
+    "simulatedSeconds": 152.3
   },
   {
     "seed": 6,
@@ -1141,7 +968,7 @@
         "actor": 8,
         "role": "setter",
         "kind": "set",
-        "at": 20.850000000000097,
+        "at": 23.549999999999944,
         "team": 1
       },
       {
@@ -1149,55 +976,15 @@
         "actor": 3,
         "role": "middle",
         "kind": "block",
-        "at": 22.98333333333331,
+        "at": 25.683333333333156,
         "team": 0
-      },
-      {
-        "id": "sky-serve",
-        "actor": 7,
-        "role": "outside",
-        "kind": "serve",
-        "at": 29.066666666666297,
-        "team": 1
-      },
-      {
-        "id": "tempo-third",
-        "actor": 2,
-        "role": "setter",
-        "kind": "set",
-        "at": 33.86666666666603,
-        "team": 0
-      },
-      {
-        "id": "commit-block",
-        "actor": 9,
-        "role": "middle",
-        "kind": "block",
-        "at": 35.99999999999924,
-        "team": 1
       },
       {
         "id": "jump-float-legendary",
-        "actor": 1,
+        "actor": 7,
         "role": "outside",
         "kind": "serve",
-        "at": 42.06666666666556,
-        "team": 0
-      },
-      {
-        "id": "fake-set",
-        "actor": 2,
-        "role": "setter",
-        "kind": "set",
-        "at": 50.266666666665095,
-        "team": 0
-      },
-      {
-        "id": "commit-block",
-        "actor": 9,
-        "role": "middle",
-        "kind": "block",
-        "at": 52.39999999999831,
+        "at": 34.46666666666599,
         "team": 1
       },
       {
@@ -1205,7 +992,31 @@
         "actor": 2,
         "role": "setter",
         "kind": "set",
-        "at": 62.04999999999776,
+        "at": 38.33333333333244,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 40.46666666666565,
+        "team": 1
+      },
+      {
+        "id": "power-hit",
+        "actor": 10,
+        "role": "outside",
+        "kind": "attack",
+        "at": 54.71666666666484,
+        "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 67.63333333333078,
         "team": 0
       },
       {
@@ -1213,23 +1024,7 @@
         "actor": 4,
         "role": "outside",
         "kind": "attack",
-        "at": 64.16666666666431,
-        "team": 0
-      },
-      {
-        "id": "float",
-        "actor": 8,
-        "role": "setter",
-        "kind": "serve",
-        "at": 68.43333333333074,
-        "team": 1
-      },
-      {
-        "id": "fake-set",
-        "actor": 2,
-        "role": "setter",
-        "kind": "set",
-        "at": 72.24999999999719,
+        "at": 69.74999999999733,
         "team": 0
       },
       {
@@ -1237,7 +1032,63 @@
         "actor": 9,
         "role": "middle",
         "kind": "block",
-        "at": 74.39999999999706,
+        "at": 82.89999999999658,
+        "team": 1
+      },
+      {
+        "id": "tempo-third",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 85.38333333332977,
+        "team": 1
+      },
+      {
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 87.49999999999632,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 89.46666666666287,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 91.59999999999609,
+        "team": 1
+      },
+      {
+        "id": "sky-serve",
+        "actor": 8,
+        "role": "setter",
+        "kind": "serve",
+        "at": 98.54999999999569,
+        "team": 1
+      },
+      {
+        "id": "tempo-third",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 103.34999999999542,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 105.46666666666196,
         "team": 1
       },
       {
@@ -1245,34 +1096,82 @@
         "actor": 11,
         "role": "opposite",
         "kind": "attack",
-        "at": 78.69999999999682,
+        "at": 109.78333333332839,
         "team": 1
+      },
+      {
+        "id": "fake-set",
+        "actor": 2,
+        "role": "setter",
+        "kind": "set",
+        "at": 111.99999999999493,
+        "team": 0
+      },
+      {
+        "id": "commit-block",
+        "actor": 9,
+        "role": "middle",
+        "kind": "block",
+        "at": 114.16666666666147,
+        "team": 1
+      },
+      {
+        "id": "sky-serve",
+        "actor": 2,
+        "role": "setter",
+        "kind": "serve",
+        "at": 122.91666666666097,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 4,
+        "role": "outside",
+        "kind": "attack",
+        "at": 133.88333333333202,
+        "team": 0
+      },
+      {
+        "id": "fake-set",
+        "actor": 8,
+        "role": "setter",
+        "kind": "set",
+        "at": 136.10000000000045,
+        "team": 1
+      },
+      {
+        "id": "sky-serve",
+        "actor": 2,
+        "role": "setter",
+        "kind": "serve",
+        "at": 144.13333333334018,
+        "team": 0
       },
       {
         "id": "float",
         "actor": 2,
         "role": "setter",
         "kind": "serve",
-        "at": 84.81666666666314,
+        "at": 155.01666666668217,
         "team": 0
       },
       {
-        "id": "line",
-        "actor": 10,
-        "role": "outside",
-        "kind": "attack",
-        "at": 102.78333333332878,
-        "team": 1
+        "id": "commit-block",
+        "actor": 3,
+        "role": "middle",
+        "kind": "block",
+        "at": 160.9666666666869,
+        "team": 0
       }
     ],
-    "maxStep": 5.922749274048087,
-    "steps": 6489,
+    "maxStep": 5.922749274048082,
+    "steps": 9982,
     "score": [
-      3,
-      5
+      6,
+      4
     ],
     "finished": true,
-    "count": 31,
+    "count": 34,
     "legendary": true,
     "focusEvents": [
       {
@@ -1288,6 +1187,6 @@
         "age": 4.516666666666656
       }
     ],
-    "simulatedSeconds": 108.15
+    "simulatedSeconds": 166.36666666666667
   }
 ]

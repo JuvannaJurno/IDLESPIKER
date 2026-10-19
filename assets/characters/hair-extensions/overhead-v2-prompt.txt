@@ -1,0 +1,6 @@
+Tool: built-in image_gen. Reference: current-match-hair.png.
+Strict orthographic bird's-eye camera directly above skull. Character faces east/right, attachment root on right and rear hair extends left. Separate attachment only, no head or face. Hard pixel silhouette, uniform brown #ad7e40, transparent background, no lighting or shadows.
+Ponytail: slender tapered horizontal teardrop, 12x4 logical pixels; no downward hook.
+Bun: compact circular 6-pixel disk with tiny right connection.
+Long hair: compact wide rounded fan, approximately 9x12 logical pixels, narrow overlapping root on right, symmetric fan spreading left.
+Editor applies matching main-hair tint and hard alpha edge.

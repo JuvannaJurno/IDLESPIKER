@@ -1,0 +1,4 @@
+Generated with the built-in image_gen tool; experimental asset, not installed on match characters.
+
+Prompt:
+Create ONE small modular volleyball shoe sprite PNG for a flat top-down 2D volleyball game using Kenney modular-character style. Single shoe only, no foot, no leg, no character, no text, no logo, no background, no floor shadow. Orthographic directly overhead view, heel at bottom and round toe at top, straight vertical orientation. Rounded compact silhouette, warm off-white main upper, muted dark teal small heel panel and outsole edge, three tiny understated lace strokes. Very simple clean flat color regions with only one subtle darker side plane, no realistic texture, no gradients, no glossy 3D, no dramatic outlines. Readable at 12 by 20 pixels in game. Transparent background with generous clear margin. It should look like a tiny clean vector-like sports game modular body-part asset, not a detailed product illustration. Center the single shoe in the canvas.

@@ -1,22 +1,22 @@
 [
   {
     "cpu": 1,
-    "frames": 293,
-    "milliseconds": 5009.10000000596,
-    "fps": 58.4935417539381,
-    "stallsOver50ms": 1,
-    "maxGapMs": 116.60000000000002,
-    "simulationSeconds": 5.016666666666654,
+    "frames": 288,
+    "milliseconds": 5008.099999988079,
+    "fps": 57.506838921084956,
+    "stallsOver50ms": 2,
+    "maxGapMs": 133.4000000000001,
+    "simulationSeconds": 4.949999999999988,
     "normal": true
   },
   {
     "cpu": 4,
     "frames": 302,
-    "milliseconds": 5015.60000001192,
-    "fps": 60.2121381288943,
+    "milliseconds": 5010.299999988079,
+    "fps": 60.275831786663176,
     "stallsOver50ms": 0,
-    "maxGapMs": 17,
-    "simulationSeconds": 5.033333333333425,
+    "maxGapMs": 16.899999999999636,
+    "simulationSeconds": 5.0500000000000895,
     "normal": true
   }
 ]

@@ -1,0 +1,1 @@
+Imagegen ile üretilen arka saç ekleri: at kuyruğu, topuz, uzun saç. Prompt: mevcut küçük üstten görünüş saçın arkasına bağlanan ayrı şeffaf piksel ek, sağda dar bağlantı kökü, sola uzanan siluet; tek düz kahverengi, gölgesiz. Editör renkleri ana saçtan alır ve alfa eşiğiyle sert kenar uygular. Konumlar deneme yerleşimidir; parçalar tek tek taşınıp JSON ile dışa aktarılabilir.

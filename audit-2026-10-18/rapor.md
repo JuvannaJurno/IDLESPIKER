@@ -2,7 +2,7 @@
 19 Ekim 2026 — transfer keşfi, aday bildirimleri ve blok fiyatları sonrası
 
 ## Sonuç
-Üç yeni koşu da BAL'dan yükselip 2. Lig'in 14. maçını tamamladı. 30 kişilik kadro artık transferi durdurmuyor: transfer sırasında ilk kadroda veya kampta olmayan bir yedekle değişim yapılabiliyor. Sponsor sayacı galibiyetten ayrıldı ve tamamlanan maçlarda ilerliyor. Boş tavsiye çerçeveleri gizleniyor; maç tavsiyeleri ilk kadronun altına taşındı. Düzelmiş eski sorun maddeleri aşağıdaki açık sorun listesinden kaldırıldı.
+Üç yeni koşu da BAL'dan yükselip 2. Lig'in 14. maçını tamamladı. 30 kişilik kadro artık transferi durdurmuyor: transfer sırasında ilk kadroda veya kampta olmayan bir yedekle değişim yapılabiliyor. Sponsor sayacı galibiyetten ayrıldı ve tamamlanan maçlarda ilerliyor. Boş tavsiye çerçeveleri gizleniyor; Sportif Direktörlük ilk kadronun üstünde tutuluyor. Düzelmiş eski sorun maddeleri aşağıdaki açık sorun listesinden kaldırıldı.
 
 ## Nasıl ölçüldü?
 - Üç farklı deterministik tohum ve karar tarzı: otomasyon 5 sn, dengeli 15 sn, transfer odaklı 30 sn aralıklarla karar verir.
@@ -38,7 +38,7 @@ Bu bölüm önceki arayüz kontrol kayıtlarını içerir. Fiyat değişikliğin
 - 320/390 px ekranlarda yatay taşma yok. İlk kadro ve kamp oyuncuları seçeneklerde yok; kural katmanı da aynı korumayı uygular.
 - Zorlanmış kayıt yazma hatasında satın alma geri alınır. Başarılı değişim, doğru fiyat, aktif kadronun korunması, sonraki kart yükseltmesi, yıldızlar, yeni portre ve sayfa yenileme test edildi. Başlangıç kadrosundan bir yedeğin farklı rolde adayla değiştirilmesi de yeniden yüklemede korundu.
 - Canlı lig akışında yenilgi / galibiyet / yenilgi kaydedildi: üçüncü maçta sponsor ödemesi geldi; AP yalnız galibiyetten geldi. Ödül eşitlemesi tekrarlandığında ikinci ödeme yapılmadı.
-- Boş tavsiye alanı baştan gizli. Veri geldiğinde içerikle gösterilir; takım ekranında ilk kadronun ardından gelir. Kilitli transfer tavsiyesi mevcut tasarımda kalır.
+- Boş tavsiye alanı baştan gizli. Veri geldiğinde içerikle gösterilir; takım ekranında ilk kadronun önünde gelir. Kilitli transfer tavsiyesi mevcut tasarımda kalır.
 - 18/18 kontrol kaydı, 36 adet 320/390 px yerleşim ölçümü: 0 sayfa taşması, 0 karşılaştırma taşması, 0 JavaScript hatası. 320 px ilk kartın ekran başlangıcına göre konumu 353–353 px; önceki incelemede 720–808 px'e inebiliyordu.
 
 Bu kontroller fiziksel telefon ölçümü değildir. Önceki performans düzeltmesinin 4× işlemci stresinde yaklaşık 54–57 FPS sonucu ayrı [performans raporunda](../performance-2026-10-19/sonuc.md) duruyor; gerçek cihaz kontrolü hâlâ gerekli.
@@ -54,6 +54,8 @@ Güncel üç koşuda bütçeyi bloklara ayıran otomasyon ve dengeli stratejiler
 - Transfer öncelikli: 12 bloktan 4 tamamlandı; kalan yatırım 3.12 milyon, elde 0.17 milyon bütçe.
 
 ## Transfer keşfi düzeltmesi
+
+Sportif Direktörlük kullanıcı tercihine göre kadronun üstüne geri alındı. Transfer Merkezi ikonunda sonraki kataloğa kalan oyun gününü gösteren sayaç ve hazırlık ilerleme halkası var; katalog hazırken onay işaretine döner.
 
 Katalog aralığı Keşif Ağı seviyesine göre 10 → 5 oyun günü. Önceki en kısa aralık 1 gündü. Temel güçlü aday ihtimali tarama seviyesine göre %14 → %72; ek bloklarla üst sınır %92. İsimli elitlerin %2,5 taban ihtimali ve en fazla %3 sınırı korunuyor. Hazır adayları otomatik yenileme yok; mevcut adaylar kullanıcı yenileyene kadar kalıyor.
 
@@ -73,10 +75,10 @@ Paylaşım süreleri, sayısı ve ödül katsayıları korunuyor. Paylaşım haz
 
 Maç beklerken üretimin durması bilinçli ilerleme sınırı: kullanıcı maç açmadan sınırsız AP biriktirmesin diye korunuyor. Hata listesinden çıkarıldı. Simülasyon sürelerine menüde düşünme ve maç izleme dahil olmadığı için gerçek oturum süresi hâlâ ayrıca ölçülmeli.
 
-## Açık kalanlar
+## Doğrulanan hareket düzeltmesi
+File sınırının kaçış hareketini kesmesi düzeltildi. Aynı 12 ilerleme kaydı maçı ve 9 ek maçta 28 birim altı yakınlaşma sıfır; önceki en uzun olay 0,65 saniyeydi. Sağ/sol temas ve lab kontrolleri geçti. Sorun açık listeden çıkarıldı; [ayrıntılı rapor](../match-audit-2026-10-19/sonuc.md).
 
-### P2 — Oyuncuların kısa süreli fazla yakınlaşması
-Normal sıklıkla 21 tam maçlık motor kontrolünde ralli içi ışınlanma yok; sağ/sol Kombine Hücum teması doğrulandı. Buna rağmen bazı aynı takım oyuncuları 28 saha biriminden kısa merkez mesafesinde yaklaşık 0,6 saniye kalabiliyor. Sonraki hareket düzeltmesi bu yakınlaşmaları azaltmak. Ayrıntılar [normal maç raporunda](../match-audit-2026-10-19/sonuc.md).
+## Açık kalanlar
 
 ### P2 — Son maçlar ve gerçek cihaz
 Normal olasılıkla 21 tam maç gerçek motorla ayrıca kontrol edildi; bunun 12 maçı ilerleme kayıtlarından, 8 maçı eşit kadrolarla açık/kapalı karşılaştırma, 1 maçı sol el kontrolü. Üç ekonomik sezonun 84 maçının tamamı görsel motorla oynanmadı. Dört karşılaştırma çifti kesin Legendary dengesi için yeterli değil. Kısa mobil tarayıcı ölçümü yaklaşık 58–60 FPS; fiziksel telefon ve uzun maç testi hâlâ gerekli.

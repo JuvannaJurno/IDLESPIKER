@@ -12,20 +12,12 @@
     "steps": 4642,
     "seconds": 77.36666666666666,
     "maxStep": 3.3200000000000602,
-    "minGap": 22.700374823228483,
-    "overlapSeconds": 1.4,
-    "longestOverlap": 0.65,
-    "overlapShare": 0.030927835051546393,
-    "collisionPairs": [
-      {
-        "pair": "1-3",
-        "seconds": 0.75
-      },
-      {
-        "pair": "8-9",
-        "seconds": 0.65
-      }
-    ],
+    "minGap": 40.085719184474875,
+    "overlapSeconds": 0,
+    "longestOverlap": 0,
+    "overlapShare": 0,
+    "closeExamples": [],
+    "collisionPairs": [],
     "draws": 341,
     "renderMutation": 0,
     "contactGaps": [],
@@ -370,91 +362,91 @@
         "sync": false,
         "side": "right",
         "remaining": 0.0500000000000016,
-        "gap": 46.330997821167074
+        "gap": 46.33138157710892
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.03333333333333499,
-        "gap": 43.52297391072158
+        "gap": 43.52306791189316
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.016666666666668384,
-        "gap": 38.01567506840776
+        "gap": 38.015494871504565
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 1.7763568394002505e-15,
-        "gap": 31.181565327915447
+        "gap": 31.181187049012625
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.01666666666666483,
-        "gap": 25.02849934634245
+        "gap": 25.028029469087613
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.03333333333333144,
-        "gap": 23.814433587074944
+        "gap": 23.813838324933478
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.049999999999998046,
-        "gap": 24.22134885540829
+        "gap": 24.22073461769492
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.06666666666666465,
-        "gap": 24.738990961685392
+        "gap": 24.738353636928654
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.08333333333333126,
-        "gap": 25.36296686299672
+        "gap": 25.36230316291962
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.09999999999999787,
-        "gap": 26.08771513988455
+        "gap": 26.08702263470487
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.11666666666666448,
-        "gap": 26.906460053513264
+        "gap": 26.90573715315211
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.13333333333333108,
-        "gap": 27.81121824173262
+        "gap": 27.81046413350336
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.1499999999999977,
-        "gap": 28.792835346904695
+        "gap": 28.792049903707614
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.1666666666666643,
-        "gap": 29.841074021470465
+        "gap": 29.84025769362795
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.1833333333333309,
-        "gap": 30.94472911800948
+        "gap": 30.943882820758954
       },
       {
         "sync": false,
@@ -628,85 +620,85 @@
         "sync": false,
         "side": "left",
         "remaining": 0.04999999999999982,
-        "gap": 51.045538439530375
+        "gap": 51.04553852178955
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.033333333333333215,
-        "gap": 44.27711535507258
+        "gap": 44.27711453570279
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666666607,
-        "gap": 35.98803129449342
+        "gap": 35.98802957330898
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0,
-        "gap": 28.48757488703047
+        "gap": 28.487572246187547
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.016666666666666607,
-        "gap": 23.73464184087557
+        "gap": 23.73463783261279
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.033333333333333215,
-        "gap": 24.110464022779457
+        "gap": 24.11034054898854
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.04999999999999982,
-        "gap": 24.599279963757255
+        "gap": 24.599149143563363
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666643,
-        "gap": 25.190214301295853
+        "gap": 25.190075069082255
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333304,
-        "gap": 25.878745980361934
+        "gap": 25.878597539519536
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999964,
-        "gap": 26.65912985688659
+        "gap": 26.658971676883755
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666625,
-        "gap": 27.524349912330553
+        "gap": 27.524181711762473
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333286,
-        "gap": 28.466117552128537
+        "gap": 28.465939271720814
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.14999999999999947,
-        "gap": 29.474936184237695
+        "gap": 29.47474795375348
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.16666666666666607,
-        "gap": 30.540207414477457
+        "gap": 30.540009517360016
       }
     ],
     "skills": 12,
@@ -733,21 +725,13 @@
     ],
     "steps": 3824,
     "seconds": 63.733333333333334,
-    "maxStep": 3.3300000000000582,
-    "minGap": 22.606490167637595,
-    "overlapSeconds": 1.1666666666666667,
-    "longestOverlap": 0.6333333333333333,
-    "overlapShare": 0.03621314019658562,
-    "collisionPairs": [
-      {
-        "pair": "1-3",
-        "seconds": 0.5333333333333333
-      },
-      {
-        "pair": "8-9",
-        "seconds": 0.6333333333333333
-      }
-    ],
+    "maxStep": 3.330000000000062,
+    "minGap": 40.00001638688548,
+    "overlapSeconds": 0,
+    "longestOverlap": 0,
+    "overlapShare": 0,
+    "closeExamples": [],
+    "collisionPairs": [],
     "draws": 262,
     "renderMutation": 0,
     "contactGaps": [],
@@ -924,85 +908,85 @@
         "sync": false,
         "side": "left",
         "remaining": 0.05000000000000071,
-        "gap": 48.69087052773469
+        "gap": 48.69087026570638
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.0333333333333341,
-        "gap": 42.513591713524534
+        "gap": 42.51361388174771
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666667496,
-        "gap": 34.83955304521881
+        "gap": 34.83959534071087
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 8.881784197001252e-16,
-        "gap": 27.919913836554016
+        "gap": 27.919972571913828
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.01666666666666572,
-        "gap": 23.686557718806405
+        "gap": 23.686630311331474
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.03333333333333233,
-        "gap": 24.070728884414333
+        "gap": 24.070923307579953
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.049999999999998934,
-        "gap": 24.560940352021877
+        "gap": 24.561148574534894
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666554,
-        "gap": 25.153483775977588
+        "gap": 25.153707803664965
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333215,
-        "gap": 25.843790679832622
+        "gap": 25.844032014772278
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999876,
-        "gap": 26.626067880209604
+        "gap": 26.62632752587526
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666536,
-        "gap": 27.49325316112991
+        "gap": 27.493531653758843
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333197,
-        "gap": 28.43701549524763
+        "gap": 28.437312954036223
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.14999999999999858,
-        "gap": 29.447820962843448
+        "gap": 29.448137151616287
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.1666666666666652,
-        "gap": 30.515039658367186
+        "gap": 30.515374051570394
       },
       {
         "sync": false,
@@ -1203,11 +1187,12 @@
     ],
     "steps": 4915,
     "seconds": 81.91666666666667,
-    "maxStep": 3.4300000000000597,
-    "minGap": 28.431054245175055,
+    "maxStep": 3.430000000000059,
+    "minGap": 40.000001141304736,
     "overlapSeconds": 0,
     "longestOverlap": 0,
     "overlapShare": 0,
+    "closeExamples": [],
     "collisionPairs": [],
     "draws": 342,
     "renderMutation": 0,
@@ -1830,28 +1815,16 @@
       5,
       2
     ],
-    "steps": 5417,
-    "seconds": 90.28333333333333,
-    "maxStep": 3.4566666666667243,
-    "minGap": 21.43788202784336,
-    "overlapSeconds": 0.9,
-    "longestOverlap": 0.5833333333333334,
-    "overlapShare": 0.0175609756097561,
-    "collisionPairs": [
-      {
-        "pair": "1-3",
-        "seconds": 0.21666666666666667
-      },
-      {
-        "pair": "2-3",
-        "seconds": 0.1
-      },
-      {
-        "pair": "9-10",
-        "seconds": 0.5833333333333334
-      }
-    ],
-    "draws": 391,
+    "steps": 5438,
+    "seconds": 90.63333333333334,
+    "maxStep": 3.4566666666667274,
+    "minGap": 39.999999983584814,
+    "overlapSeconds": 0,
+    "longestOverlap": 0,
+    "overlapShare": 0,
+    "closeExamples": [],
+    "collisionPairs": [],
+    "draws": 394,
     "renderMutation": 0,
     "contactGaps": [],
     "visualGaps": [
@@ -1859,85 +1832,85 @@
         "sync": false,
         "side": "right",
         "remaining": 0.05000000000000071,
-        "gap": 34.191390564323385
+        "gap": 45.030739297723045
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.0333333333333341,
-        "gap": 24.352632771268713
+        "gap": 36.55240008119411
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.016666666666667496,
-        "gap": 16.304032675906022
+        "gap": 27.669603950167613
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 8.881784197001252e-16,
-        "gap": 11.936426182187715
+        "gap": 20.6685436387697
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.01666666666666572,
-        "gap": 11.960636643451178
+        "gap": 17.313273059884825
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.03333333333333233,
-        "gap": 11.196288216703424
+        "gap": 16.28367432691873
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.049999999999998934,
-        "gap": 10.676504301643385
+        "gap": 16.273625463261112
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.06666666666666554,
-        "gap": 10.06015192309792
+        "gap": 16.28792474433827
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.08333333333333215,
-        "gap": 9.359696503152875
+        "gap": 16.340137344075096
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.09999999999999876,
-        "gap": 8.591318735018366
+        "gap": 16.444000997715968
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.11666666666666536,
-        "gap": 7.776323387141251
+        "gap": 16.612265611660135
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.13333333333333197,
-        "gap": 6.9436012568763825
+        "gap": 16.855500666961657
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.14999999999999858,
-        "gap": 6.133721763084355
+        "gap": 17.181033227983093
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.1666666666666652,
-        "gap": 5.404892964722044
+        "gap": 17.59217918432645
       },
       {
         "sync": false,
@@ -2027,169 +2000,169 @@
         "sync": false,
         "side": "right",
         "remaining": 0.05000000000000071,
-        "gap": 48.12529541812804
+        "gap": 48.12532804301356
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.0333333333333341,
-        "gap": 42.2127256317331
+        "gap": 42.2126321080713
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.016666666666667496,
-        "gap": 34.87928165059351
+        "gap": 34.87907482398847
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 8.881784197001252e-16,
-        "gap": 28.20636678148235
+        "gap": 28.206071943935733
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.01666666666666572,
-        "gap": 23.978679319253555
+        "gap": 23.978322157862973
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.03333333333333233,
-        "gap": 24.384398848442725
+        "gap": 24.38392155930476
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.049999999999998934,
-        "gap": 24.898838603790686
+        "gap": 24.898353690024464
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.06666666666666554,
-        "gap": 25.519125432648213
+        "gap": 25.51863183806009
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.08333333333333215,
-        "gap": 26.239807159203984
+        "gap": 26.23930412099853
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.09999999999999876,
-        "gap": 27.054218013815532
+        "gap": 27.053705053293715
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.11666666666666536,
-        "gap": 27.954479772618907
+        "gap": 27.953956670965685
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.13333333333333197,
-        "gap": 28.931534172714304
+        "gap": 28.931000937075815
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.14999999999999858,
-        "gap": 29.975228085998115
+        "gap": 29.974684910621875
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.1666666666666652,
-        "gap": 31.074427304818734
+        "gap": 31.073874531481977
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.05000000000000071,
-        "gap": 48.691038782285126
+        "gap": 48.691038871900474
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.0333333333333341,
-        "gap": 42.51320721598455
+        "gap": 42.513206196408355
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666667496,
-        "gap": 34.8386655068457
+        "gap": 34.83866348535462
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 8.881784197001252e-16,
-        "gap": 27.918617294240462
+        "gap": 27.918614462942656
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.01666666666666572,
-        "gap": 23.68494024917381
+        "gap": 23.684936781779115
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.03333333333333233,
-        "gap": 24.067153346123277
+        "gap": 24.067145854156397
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.049999999999998934,
-        "gap": 24.557153471304666
+        "gap": 24.55714554251567
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666554,
-        "gap": 25.149454938093726
+        "gap": 25.14944650922228
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333215,
-        "gap": 25.839497020075388
+        "gap": 25.839488043885737
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999876,
-        "gap": 26.62149419406377
+        "gap": 26.621484639157472
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666536,
-        "gap": 27.48839141086019
+        "gap": 27.48838126065428
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333197,
-        "gap": 28.43186402823103
+        "gap": 28.431853279340263
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.14999999999999858,
-        "gap": 29.44238355587179
+        "gap": 29.442372216131385
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.1666666666666652,
-        "gap": 30.509324498355152
+        "gap": 30.50931258471242
       },
       {
         "sync": false,
@@ -2277,342 +2250,354 @@
       },
       {
         "sync": false,
-        "side": "right",
-        "remaining": 0.05000000000000071,
-        "gap": 37.72042968397661
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": 0.0333333333333341,
-        "gap": 28.547572793050737
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": 0.016666666666667496,
-        "gap": 20.61754296512523
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": 8.881784197001252e-16,
-        "gap": 15.584088698854066
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.01666666666666572,
-        "gap": 14.635437110253019
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.03333333333333233,
-        "gap": 13.231526199595463
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.049999999999998934,
-        "gap": 12.900917011965811
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.06666666666666554,
-        "gap": 12.52705342455485
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.08333333333333215,
-        "gap": 12.128806780018706
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.09999999999999876,
-        "gap": 11.728856907602585
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.11666666666666536,
-        "gap": 11.35336603063986
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.13333333333333197,
-        "gap": 11.031028904694985
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.14999999999999858,
-        "gap": 10.791176235391177
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.1666666666666652,
-        "gap": 10.660802801315256
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": 0.05000000000000071,
-        "gap": 34.48812843653593
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": 0.0333333333333341,
-        "gap": 33.88751744193226
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": 0.016666666666667496,
-        "gap": 30.821029144327653
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": 8.881784197001252e-16,
-        "gap": 27.106468544137496
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.01666666666666572,
-        "gap": 24.7989990541637
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.03333333333333233,
-        "gap": 24.11704511426493
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.049999999999998934,
-        "gap": 24.636842741885705
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.06666666666666554,
-        "gap": 25.263299494533722
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.08333333333333215,
-        "gap": 25.9907797029306
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.09999999999999876,
-        "gap": 26.812433149141366
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.11666666666666536,
-        "gap": 27.72020553573768
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.13333333333333197,
-        "gap": 28.704877935296196
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.14999999999999858,
-        "gap": 29.756156654460383
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.1666666666666652,
-        "gap": 30.862789304395776
-      },
-      {
-        "sync": false,
         "side": "left",
         "remaining": 0.05000000000000071,
-        "gap": 48.691006451727446
+        "gap": 48.71981272674147
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.0333333333333341,
-        "gap": 42.51319790628781
+        "gap": 42.43093344175009
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666667496,
-        "gap": 34.838677902750874
+        "gap": 34.654869851563056
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 8.881784197001252e-16,
-        "gap": 27.91864789950504
+        "gap": 27.65466744861496
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.01666666666666572,
-        "gap": 23.6849853604961
+        "gap": 23.367605809019192
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.03333333333333233,
-        "gap": 24.067280817465026
+        "gap": 23.757221180125466
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.049999999999998934,
-        "gap": 24.55728971109227
+        "gap": 24.253809897491347
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666554,
-        "gap": 25.1496012202348
+        "gap": 24.853723468881366
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333215,
-        "gap": 25.839654298151487
+        "gap": 25.552182340318165
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999876,
-        "gap": 26.621663104658776
+        "gap": 26.343177661343198
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666536,
-        "gap": 27.488572293567547
+        "gap": 27.219437893423326
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333197,
-        "gap": 28.432056957629218
+        "gap": 28.172437835430546
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.14999999999999858,
-        "gap": 29.442588380784752
+        "gap": 29.192470934004106
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.1666666666666652,
-        "gap": 30.509540883847688
+        "gap": 30.268759852123743
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.0500000000000016,
+        "gap": 46.32800991454738
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.03333333333333499,
+        "gap": 43.52216752382511
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.016666666666668384,
+        "gap": 38.01692133894979
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 1.7763568394002505e-15,
+        "gap": 31.18427773671005
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.01666666666666483,
+        "gap": 25.03186200324936
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.03333333333333144,
+        "gap": 23.81877413164122
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.049999999999998046,
+        "gap": 24.225843659311874
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.06666666666666465,
+        "gap": 24.74367349200666
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.08333333333333126,
+        "gap": 25.367863916464938
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.09999999999999787,
+        "gap": 26.09284655176615
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.11666666666666448,
+        "gap": 26.911838844101823
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.13333333333333108,
+        "gap": 27.816851115729744
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.1499999999999977,
+        "gap": 28.798723432793885
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.1666666666666643,
+        "gap": 29.84721374493707
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.1833333333333309,
+        "gap": 30.95111311217007
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.0500000000000016,
+        "gap": 40.10069471040395
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.03333333333333499,
+        "gap": 32.86954092838133
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.016666666666668384,
+        "gap": 25.204893497968477
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 1.7763568394002505e-15,
+        "gap": 18.771193483344117
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.01666666666666483,
+        "gap": 15.06978086887567
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.03333333333333144,
+        "gap": 13.21161544668097
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.049999999999998046,
+        "gap": 12.933197564243404
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.06666666666666465,
+        "gap": 12.594759760099512
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.08333333333333126,
+        "gap": 12.211526569870141
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.09999999999999787,
+        "gap": 11.8026381615307
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.11666666666666448,
+        "gap": 11.391242163346803
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.13333333333333108,
+        "gap": 11.004237088080213
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.1499999999999977,
+        "gap": 10.671359442976762
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.1666666666666643,
+        "gap": 10.423233577362847
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.1833333333333309,
+        "gap": 10.288198580583689
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.05000000000000071,
-        "gap": 41.45610361615199
+        "gap": 32.83701299233517
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.0333333333333341,
-        "gap": 32.54124232336955
+        "gap": 32.39102256583954
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.016666666666667496,
-        "gap": 24.620072044541832
+        "gap": 29.490008962640267
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 8.881784197001252e-16,
-        "gap": 19.442777577059836
+        "gap": 25.86873791350677
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.01666666666666572,
-        "gap": 18.398179414763735
+        "gap": 23.49899259919093
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.03333333333333233,
-        "gap": 24.117045114263885
+        "gap": 24.38132574131652
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.049999999999998934,
-        "gap": 24.636842741885705
+        "gap": 24.89560604100614
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.06666666666666554,
-        "gap": 25.263299494533722
+        "gap": 25.515710478273636
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.08333333333333215,
-        "gap": 25.9907797029306
+        "gap": 26.236192738788233
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.09999999999999876,
-        "gap": 26.812433149141366
+        "gap": 27.05039281115433
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.11666666666666536,
-        "gap": 27.72020553573768
+        "gap": 27.950437828486994
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.13333333333333197,
-        "gap": 28.704877935296196
+        "gap": 28.927274277761285
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.14999999999999858,
-        "gap": 29.756156654460383
+        "gap": 29.970753055359854
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.1666666666666652,
-        "gap": 30.862789304395776
+        "gap": 31.06974321599877
       }
     ],
-    "skills": 14,
+    "skills": 17,
     "legendary": 0,
     "legendaryByTeam": [
       0,
@@ -2636,21 +2621,13 @@
     ],
     "steps": 5256,
     "seconds": 87.6,
-    "maxStep": 3.403333333333369,
-    "minGap": 22.703346521031513,
-    "overlapSeconds": 1.4166666666666667,
-    "longestOverlap": 0.65,
-    "overlapShare": 0.02916952642415923,
-    "collisionPairs": [
-      {
-        "pair": "1-3",
-        "seconds": 0.7666666666666667
-      },
-      {
-        "pair": "8-9",
-        "seconds": 0.65
-      }
-    ],
+    "maxStep": 3.4033333333333653,
+    "minGap": 40.00008539245611,
+    "overlapSeconds": 0,
+    "longestOverlap": 0,
+    "overlapShare": 0,
+    "closeExamples": [],
+    "collisionPairs": [],
     "draws": 373,
     "renderMutation": 0,
     "contactGaps": [],
@@ -2743,259 +2720,259 @@
         "sync": false,
         "side": "right",
         "remaining": 0.0500000000000016,
-        "gap": 35.85718967617512
+        "gap": 46.73700545811678
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.03333333333333499,
-        "gap": 34.3407264030904
+        "gap": 43.45214984106926
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.016666666666668384,
-        "gap": 30.575598573680388
+        "gap": 37.37436823405426
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 1.7763568394002505e-15,
-        "gap": 25.494306740298942
+        "gap": 29.880873928999183
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.01666666666666483,
-        "gap": 20.756267740046503
+        "gap": 22.79733904153435
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.03333333333333144,
-        "gap": 18.844516517730547
+        "gap": 17.241017089466993
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.049999999999998046,
-        "gap": 18.976874114632956
+        "gap": 17.257081019190583
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.06666666666666465,
-        "gap": 19.158426162734916
+        "gap": 17.29424034968084
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.08333333333333126,
-        "gap": 19.39611670615094
+        "gap": 17.363441577428947
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.09999999999999787,
-        "gap": 19.69679784934709
+        "gap": 17.476440046683805
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.11666666666666448,
-        "gap": 20.066443467592
+        "gap": 17.644838665793287
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.13333333333333108,
-        "gap": 20.50941714053419
+        "gap": 17.87904849750119
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.1499999999999977,
-        "gap": 21.02786645004578
+        "gap": 18.18727803073371
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.1666666666666643,
-        "gap": 21.62131978351772
+        "gap": 18.574686504783465
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.1833333333333309,
-        "gap": 22.28651133842748
+        "gap": 19.04281550709407
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.05000000000000071,
-        "gap": 31.88721056691205
+        "gap": 43.867736552277
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.0333333333333341,
-        "gap": 30.34415672292381
+        "gap": 40.09209674902966
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666667496,
-        "gap": 26.765657438633628
+        "gap": 34.230484494174696
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 8.881784197001252e-16,
-        "gap": 22.547609580549828
+        "gap": 28.180566864766273
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.01666666666666572,
-        "gap": 19.48419318517727
+        "gap": 23.812617016772897
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.03333333333333233,
-        "gap": 19.106207105017155
+        "gap": 23.863625559334015
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.049999999999998934,
-        "gap": 19.314306102174285
+        "gap": 24.36583274123205
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666554,
-        "gap": 19.58295660224609
+        "gap": 24.97217026847032
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333215,
-        "gap": 19.918140429742433
+        "gap": 25.677650284202524
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999876,
-        "gap": 20.32485868404396
+        "gap": 26.476059154315976
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666536,
-        "gap": 20.806453686964613
+        "gap": 27.35993484452696
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333197,
-        "gap": 21.36406624272474
+        "gap": 28.32058345284257
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.14999999999999858,
-        "gap": 21.996295419103248
+        "gap": 29.34815587089235
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.1666666666666652,
-        "gap": 22.69907527502444
+        "gap": 30.43175972980768
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.05000000000000071,
-        "gap": 47.09197419943049
+        "gap": 48.115594887138194
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.0333333333333341,
-        "gap": 38.84926701790042
+        "gap": 41.59354879778517
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.016666666666667496,
-        "gap": 28.578177868286307
+        "gap": 33.63711945282803
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 8.881784197001252e-16,
-        "gap": 18.660514290616913
+        "gap": 26.286011461071414
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.01666666666666572,
-        "gap": 13.650410568674982
+        "gap": 21.031763758355574
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.03333333333333233,
-        "gap": 11.544913687440557
+        "gap": 16.150570306667554
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.049999999999998934,
-        "gap": 11.02391362200015
+        "gap": 16.098095162101238
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.06666666666666554,
-        "gap": 10.405701871864135
+        "gap": 16.061650589994745
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.08333333333333215,
-        "gap": 9.702388226360322
+        "gap": 16.055775679672024
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.09999999999999876,
-        "gap": 8.929553712575931
+        "gap": 16.095553374996324
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.11666666666666536,
-        "gap": 8.107470686717265
+        "gap": 16.195439577069095
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.13333333333333197,
-        "gap": 7.263224426888826
+        "gap": 16.367987874326715
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.14999999999999858,
-        "gap": 6.4342410258837806
+        "gap": 16.622631857680886
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.1666666666666652,
-        "gap": 5.673567287428274
+        "gap": 16.964716443583775
       },
       {
         "sync": false,
@@ -3259,85 +3236,85 @@
         "sync": false,
         "side": "right",
         "remaining": 0.05000000000000071,
-        "gap": 48.1578592739767
+        "gap": 48.16128704498366
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.0333333333333341,
-        "gap": 42.14881510004597
+        "gap": 42.144374239165245
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.016666666666667496,
-        "gap": 34.7281692470828
+        "gap": 34.71825147454729
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 8.881784197001252e-16,
-        "gap": 27.987733654726096
+        "gap": 27.97540453240908
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.01666666666666572,
-        "gap": 23.71422830203885
+        "gap": 23.702386309407107
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.03333333333333233,
-        "gap": 24.123800768630957
+        "gap": 24.109580907191518
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.049999999999998934,
-        "gap": 24.643837305149372
+        "gap": 24.628929157869965
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.06666666666666554,
-        "gap": 25.270566870915882
+        "gap": 25.254872165040403
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.08333333333333215,
-        "gap": 25.998344878343215
+        "gap": 25.981790844963022
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.09999999999999876,
-        "gap": 26.820312401536608
+        "gap": 26.802851235361587
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.11666666666666536,
-        "gap": 27.72840709652573
+        "gap": 27.710014124925735
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.13333333333333197,
-        "gap": 28.713402953989014
+        "gap": 28.694073929462846
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.14999999999999858,
-        "gap": 29.76500032896433
+        "gap": 29.74474823291848
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.1666666666666652,
-        "gap": 30.871942052031972
+        "gap": 30.850793765307994
       }
     ],
     "skills": 11,
@@ -3364,21 +3341,13 @@
     ],
     "steps": 3414,
     "seconds": 56.9,
-    "maxStep": 3.4466666666667,
-    "minGap": 22.90579678034451,
-    "overlapSeconds": 1.75,
-    "longestOverlap": 0.4166666666666667,
-    "overlapShare": 0.05077369439071567,
-    "collisionPairs": [
-      {
-        "pair": "1-3",
-        "seconds": 1.3333333333333333
-      },
-      {
-        "pair": "2-3",
-        "seconds": 0.4166666666666667
-      }
-    ],
+    "maxStep": 3.4466666666666996,
+    "minGap": 40.000001236603396,
+    "overlapSeconds": 0,
+    "longestOverlap": 0,
+    "overlapShare": 0,
+    "closeExamples": [],
+    "collisionPairs": [],
     "draws": 252,
     "renderMutation": 0,
     "contactGaps": [],
@@ -3471,85 +3440,85 @@
         "sync": false,
         "side": "left",
         "remaining": 0.05000000000000071,
-        "gap": 48.719901730851426
+        "gap": 48.71981940600947
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.0333333333333341,
-        "gap": 42.43081371524049
+        "gap": 42.43092543388745
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666667496,
-        "gap": 34.654603492692026
+        "gap": 34.65484673523026
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 8.881784197001252e-16,
-        "gap": 27.65433594160128
+        "gap": 27.654630511617917
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.01666666666666572,
-        "gap": 23.36729177237702
+        "gap": 23.367557385044538
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.03333333333333233,
-        "gap": 23.7568388974282
+        "gap": 23.75717629157138
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.049999999999998934,
-        "gap": 24.253406755758405
+        "gap": 24.253767053079592
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666554,
-        "gap": 24.853296474895895
+        "gap": 24.853682975763075
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333215,
-        "gap": 25.551729273935532
+        "gap": 25.55214443437757
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999876,
-        "gap": 26.342697063009187
+        "gap": 26.34314250693013
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666536,
-        "gap": 27.21892901160733
+        "gap": 27.219405586780244
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333197,
-        "gap": 28.171900545998408
+        "gap": 28.17240841090923
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.14999999999999858,
-        "gap": 29.19190564322595
+        "gap": 29.1924443721313
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.1666666666666652,
-        "gap": 30.268167394386584
+        "gap": 30.268736088546504
       },
       {
         "sync": false,
@@ -3813,85 +3782,85 @@
         "sync": false,
         "side": "right",
         "remaining": 0.05000000000000071,
-        "gap": 32.57209102960015
+        "gap": 34.88195382621781
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.0333333333333341,
-        "gap": 32.14444845201093
+        "gap": 34.300523986591685
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.016666666666667496,
-        "gap": 29.25984692406826
+        "gap": 31.243808629929283
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 8.881784197001252e-16,
-        "gap": 25.632607183917127
+        "gap": 27.538259274074505
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.01666666666666572,
-        "gap": 23.168889117634237
+        "gap": 25.19874021538401
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.03333333333333233,
-        "gap": 23.19400002291921
+        "gap": 22.97200755407231
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.049999999999998934,
-        "gap": 24.936671831016547
+        "gap": 23.42779253915163
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.06666666666666554,
-        "gap": 25.55577983685717
+        "gap": 23.981045573276308
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.08333333333333215,
-        "gap": 26.275163392178495
+        "gap": 24.628508079325186
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.09999999999999876,
-        "gap": 27.088192134149203
+        "gap": 25.365672198582388
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.11666666666666536,
-        "gap": 27.987021575418655
+        "gap": 26.18666678078905
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.13333333333333197,
-        "gap": 28.962624173228196
+        "gap": 27.084208807423614
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.14999999999999858,
-        "gap": 30.00487361353477
+        "gap": 28.049641221196534
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.1666666666666652,
-        "gap": 31.102658172042695
+        "gap": 29.073031432681226
       }
     ],
     "skills": 8,
@@ -3918,17 +3887,13 @@
     ],
     "steps": 4931,
     "seconds": 82.18333333333334,
-    "maxStep": 3.4700000000000313,
-    "minGap": 21.6785096205682,
-    "overlapSeconds": 0.5833333333333334,
-    "longestOverlap": 0.5833333333333334,
-    "overlapShare": 0.01370399373531715,
-    "collisionPairs": [
-      {
-        "pair": "8-9",
-        "seconds": 0.5833333333333334
-      }
-    ],
+    "maxStep": 3.470000000000036,
+    "minGap": 40.0000002057132,
+    "overlapSeconds": 0,
+    "longestOverlap": 0,
+    "overlapShare": 0,
+    "closeExamples": [],
+    "collisionPairs": [],
     "draws": 343,
     "renderMutation": 0,
     "contactGaps": [],
@@ -4021,175 +3986,175 @@
         "sync": false,
         "side": "right",
         "remaining": 0.0500000000000016,
-        "gap": 46.36665178782709
+        "gap": 46.067895802307085
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.03333333333333499,
-        "gap": 43.52409092670666
+        "gap": 40.7090269300179
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.016666666666668384,
-        "gap": 37.961611114883695
+        "gap": 33.06641218570743
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 1.7763568394002505e-15,
-        "gap": 31.02467423243972
+        "gap": 25.103038750520827
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.01666666666666483,
-        "gap": 24.52662096630009
+        "gap": 19.11950915691779
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.03333333333333144,
-        "gap": 11.822935007505897
+        "gap": 16.329607815842902
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.049999999999998046,
-        "gap": 11.379345378626047
+        "gap": 16.300971213468483
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.06666666666666465,
-        "gap": 10.81816906565544
+        "gap": 16.282498550769578
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.08333333333333126,
-        "gap": 10.146277285294769
+        "gap": 16.286674595719685
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.09999999999999787,
-        "gap": 9.372117462903468
+        "gap": 16.327232532209702
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.11666666666666448,
-        "gap": 8.50584855877816
+        "gap": 16.41815111561752
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.13333333333333108,
-        "gap": 7.5596397284446635
+        "gap": 16.57249479562776
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.1499999999999977,
-        "gap": 6.548389282311655
+        "gap": 16.80120779064176
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.1666666666666643,
-        "gap": 5.491431988499595
+        "gap": 17.112024335183456
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.1833333333333309,
-        "gap": 4.41697157611326
+        "gap": 17.508662763909715
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.04999999999999982,
-        "gap": 51.045533429950275
+        "gap": 51.04553446490406
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.033333333333333215,
-        "gap": 44.27716524157217
+        "gap": 44.277154937802564
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666666607,
-        "gap": 35.988136094645625
+        "gap": 35.988114449011604
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0,
-        "gap": 28.48773570279345
+        "gap": 28.487702488947278
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.016666666666666607,
-        "gap": 23.73488600814281
+        "gap": 23.73483558603155
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.033333333333333215,
-        "gap": 24.118134920955374
+        "gap": 24.11656313866576
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.04999999999999982,
-        "gap": 24.607407211191916
+        "gap": 24.605741930257672
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666643,
-        "gap": 25.1988640902238
+        "gap": 25.197091749322816
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333304,
-        "gap": 25.88796779286339
+        "gap": 25.886078254274416
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999964,
-        "gap": 26.668956647690752
+        "gap": 26.666943159714528
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666625,
-        "gap": 27.534799162334135
+        "gap": 27.53265814335301
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333286,
-        "gap": 28.477192945630208
+        "gap": 28.474923640430077
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.14999999999999947,
-        "gap": 29.48662966453599
+        "gap": 29.48423372316115
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.16666666666666607,
-        "gap": 30.552501379873622
+        "gap": 30.54998240775803
       },
       {
         "sync": false,
@@ -4553,12 +4518,13 @@
     "steps": 5945,
     "seconds": 99.08333333333333,
     "maxStep": 3.476666666666703,
-    "minGap": 28.48494488183349,
+    "minGap": 40.00000070410508,
     "overlapSeconds": 0,
     "longestOverlap": 0,
     "overlapShare": 0,
+    "closeExamples": [],
     "collisionPairs": [],
-    "draws": 436,
+    "draws": 437,
     "renderMutation": 0,
     "contactGaps": [],
     "visualGaps": [
@@ -4566,85 +4532,85 @@
         "sync": false,
         "side": "left",
         "remaining": 0.04999999999999982,
-        "gap": 28.65342057791016
+        "gap": 50.95069651053884
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.033333333333333215,
-        "gap": 27.367067597616295
+        "gap": 44.434313942685904
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666666607,
-        "gap": 24.322072994232155
+        "gap": 36.39078687021124
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0,
-        "gap": 20.5823061954752
+        "gap": 29.116658775637273
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.016666666666666607,
-        "gap": 17.929202097914207
+        "gap": 24.580404797554905
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.033333333333333215,
-        "gap": 17.51971531605858
+        "gap": 24.327982484302318
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.04999999999999982,
-        "gap": 17.618890615759845
+        "gap": 24.831255272351033
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666643,
-        "gap": 17.761309199384222
+        "gap": 25.438744870192973
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333304,
-        "gap": 17.95694702681063
+        "gap": 26.145402374443528
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999964,
-        "gap": 18.2152249833735
+        "gap": 26.94496090950361
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666625,
-        "gap": 18.544058965484112
+        "gap": 27.829916156343376
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333286,
-        "gap": 18.94900422068085
+        "gap": 28.79154411360725
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.14999999999999947,
-        "gap": 19.432609624020465
+        "gap": 29.819977413454577
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.16666666666666607,
-        "gap": 19.99405464995862
+        "gap": 30.904315810769347
       },
       {
         "sync": false,
@@ -4734,175 +4700,175 @@
         "sync": false,
         "side": "left",
         "remaining": 0.0500000000000016,
-        "gap": 46.74458564295178
+        "gap": 39.31052241191541
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.03333333333333499,
-        "gap": 44.036163533918696
+        "gap": 38.89712433879136
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666668384,
-        "gap": 38.475117679025104
+        "gap": 35.54602607932125
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 1.7763568394002505e-15,
-        "gap": 31.55171559935985
+        "gap": 30.1919170948416
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.01666666666666483,
-        "gap": 25.505043362015606
+        "gap": 24.68520826142603
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.03333333333333144,
-        "gap": 17.230320609229615
+        "gap": 23.414877078876636
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.049999999999998046,
-        "gap": 17.235742165250688
+        "gap": 23.80425719856539
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666465,
-        "gap": 17.2594723571979
+        "gap": 24.300549180183065
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333126,
-        "gap": 17.312697748814642
+        "gap": 24.900114607911465
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999787,
-        "gap": 17.40750766976361
+        "gap": 25.598182054657716
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666448,
-        "gap": 17.55593736458635
+        "gap": 26.38875157058908
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333108,
-        "gap": 17.768917534877495
+        "gap": 27.264560870993787
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.1499999999999977,
-        "gap": 18.05523544886049
+        "gap": 28.217093937609498
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.1666666666666643,
-        "gap": 18.420645232889882
+        "gap": 29.236652939977358
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.1833333333333309,
-        "gap": 18.867250054168117
+        "gap": 30.31246849850557
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.05000000000000071,
-        "gap": 48.69099849899167
+        "gap": 48.690866914786724
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.0333333333333341,
-        "gap": 42.51328829928206
+        "gap": 42.513651704482854
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666667496,
-        "gap": 34.83885713000565
+        "gap": 34.83967035210496
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 8.881784197001252e-16,
-        "gap": 27.918898927350895
+        "gap": 27.920077633376124
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.01666666666666572,
-        "gap": 23.685292784363885
+        "gap": 23.686758952731072
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.03333333333333233,
-        "gap": 24.067945044574962
+        "gap": 24.071201058825377
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.049999999999998934,
-        "gap": 24.557992665710763
+        "gap": 24.56144251802364
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666554,
-        "gap": 25.150348510831726
+        "gap": 25.154020284260696
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333215,
-        "gap": 25.840450112501703
+        "gap": 25.844364783345238
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999876,
-        "gap": 26.6225102264537
+        "gap": 26.62668174627202
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666536,
-        "gap": 27.489472193014024
+        "gap": 27.493907940699852
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333197,
-        "gap": 28.433009934876562
+        "gap": 28.437711433091046
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.14999999999999858,
-        "gap": 29.443593741224603
+        "gap": 29.448557532494625
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.1666666666666652,
-        "gap": 30.510597125033893
+        "gap": 30.51581570626313
       },
       {
         "sync": false,
@@ -4991,92 +4957,92 @@
       {
         "sync": false,
         "side": "right",
-        "remaining": 0.0500000000000016,
-        "gap": 32.29824778512585
+        "remaining": 0.06666666666666732,
+        "gap": 31.968339734811437
       },
       {
         "sync": false,
         "side": "right",
-        "remaining": 0.03333333333333499,
-        "gap": 32.59352921560088
+        "remaining": 0.05000000000000071,
+        "gap": 32.64074461704793
       },
       {
         "sync": false,
         "side": "right",
-        "remaining": 0.016666666666668384,
-        "gap": 30.19051272061159
+        "remaining": 0.0333333333333341,
+        "gap": 30.46934832170284
       },
       {
         "sync": false,
         "side": "right",
-        "remaining": 1.7763568394002505e-15,
-        "gap": 26.68128718695049
+        "remaining": 0.016666666666667496,
+        "gap": 26.87816843284978
       },
       {
         "sync": false,
         "side": "right",
-        "remaining": -0.01666666666666483,
-        "gap": 24.81695173748785
+        "remaining": 8.881784197001252e-16,
+        "gap": 23.806436060718973
       },
       {
         "sync": false,
         "side": "right",
-        "remaining": -0.03333333333333144,
-        "gap": 24.06361456173146
+        "remaining": -0.01666666666666572,
+        "gap": 23.18038987899632
       },
       {
         "sync": false,
         "side": "right",
-        "remaining": -0.049999999999998046,
-        "gap": 24.542421781434438
+        "remaining": -0.03333333333333233,
+        "gap": 25.745309925274707
       },
       {
         "sync": false,
         "side": "right",
-        "remaining": -0.06666666666666465,
-        "gap": 25.129248657944927
+        "remaining": -0.049999999999998934,
+        "gap": 25.324505907419
       },
       {
         "sync": false,
         "side": "right",
-        "remaining": -0.08333333333333126,
-        "gap": 25.818954063474227
+        "remaining": -0.06666666666666554,
+        "gap": 26.00903401270153
       },
       {
         "sync": false,
         "side": "right",
-        "remaining": -0.09999999999999787,
-        "gap": 26.605195815216387
+        "remaining": -0.08333333333333215,
+        "gap": 26.789697753205065
       },
       {
         "sync": false,
         "side": "right",
-        "remaining": -0.11666666666666448,
-        "gap": 27.480416337950093
+        "remaining": -0.09999999999999876,
+        "gap": 27.659080668907773
       },
       {
         "sync": false,
         "side": "right",
-        "remaining": -0.13333333333333108,
-        "gap": 28.435870100647488
+        "remaining": -0.11666666666666536,
+        "gap": 28.608568117313574
       },
       {
         "sync": false,
         "side": "right",
-        "remaining": -0.1499999999999977,
-        "gap": 29.461693175471137
+        "remaining": -0.13333333333333197,
+        "gap": 29.628412480382327
       },
       {
         "sync": false,
         "side": "right",
-        "remaining": -0.1666666666666643,
-        "gap": 30.547007846436852
+        "remaining": -0.14999999999999858,
+        "gap": 30.7078353146611
       },
       {
         "sync": false,
         "side": "right",
-        "remaining": -0.1833333333333309,
-        "gap": 31.680060780207683
+        "remaining": -0.1666666666666652,
+        "gap": 31.835164714191855
       },
       {
         "sync": false,
@@ -5165,263 +5131,275 @@
       {
         "sync": false,
         "side": "right",
-        "remaining": 0.05000000000000071,
-        "gap": 44.56963665469167
+        "remaining": 0.0666666666666682,
+        "gap": 47.16220713034119
       },
       {
         "sync": false,
         "side": "right",
-        "remaining": 0.0333333333333341,
-        "gap": 37.51211542296047
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": 0.016666666666667496,
-        "gap": 30.36958701620199
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": 8.881784197001252e-16,
-        "gap": 25.113834161175497
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.01666666666666572,
-        "gap": 24.225247269301523
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.03333333333333233,
-        "gap": 24.70092156946918
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.049999999999998934,
-        "gap": 25.284070036211876
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.06666666666666554,
-        "gap": 25.96966400273659
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.08333333333333215,
-        "gap": 26.751476666704733
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.09999999999999876,
-        "gap": 27.622062587546115
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.11666666666666536,
-        "gap": 28.572780191366363
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.13333333333333197,
-        "gap": 29.59385788045963
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.14999999999999858,
-        "gap": 30.674496700899837
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.1666666666666652,
-        "gap": 31.80300788480381
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": 0.05000000000000071,
-        "gap": 31.751939997088392
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": 0.0333333333333341,
-        "gap": 23.1676148580221
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": 0.016666666666667496,
-        "gap": 16.93849805798333
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": 8.881784197001252e-16,
-        "gap": 14.412159716254743
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.01666666666666572,
-        "gap": 11.56470734753122
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.03333333333333233,
-        "gap": 13.039313058022053
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.049999999999998934,
-        "gap": 12.68061522485803
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.06666666666666554,
-        "gap": 12.29079471379454
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.08333333333333215,
-        "gap": 11.891192913985222
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.09999999999999876,
-        "gap": 11.5067785958276
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.11666666666666536,
-        "gap": 11.165440906188602
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.13333333333333197,
-        "gap": 10.896446959333748
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.14999999999999858,
-        "gap": 10.727843338770548
-      },
-      {
-        "sync": false,
-        "side": "right",
-        "remaining": -0.1666666666666652,
-        "gap": 10.682945222228126
-      },
-      {
-        "sync": false,
-        "side": "left",
         "remaining": 0.0500000000000016,
-        "gap": 46.74854936973183
+        "gap": 42.74210504034691
       },
       {
         "sync": false,
-        "side": "left",
+        "side": "right",
         "remaining": 0.03333333333333499,
-        "gap": 44.0373042359323
+        "gap": 35.648109171734255
       },
       {
         "sync": false,
-        "side": "left",
+        "side": "right",
         "remaining": 0.016666666666668384,
-        "gap": 38.47282320259547
+        "gap": 27.487903876469318
       },
       {
         "sync": false,
-        "side": "left",
+        "side": "right",
         "remaining": 1.7763568394002505e-15,
-        "gap": 31.545411731017307
+        "gap": 20.590396772878268
       },
       {
         "sync": false,
-        "side": "left",
+        "side": "right",
         "remaining": -0.01666666666666483,
-        "gap": 25.492952645748865
+        "gap": 16.695101479540224
       },
       {
         "sync": false,
-        "side": "left",
+        "side": "right",
         "remaining": -0.03333333333333144,
-        "gap": 17.102423628066717
+        "gap": 16.014279166017143
       },
       {
         "sync": false,
-        "side": "left",
+        "side": "right",
         "remaining": -0.049999999999998046,
-        "gap": 17.099115943308846
+        "gap": 15.967369068161428
       },
       {
         "sync": false,
-        "side": "left",
+        "side": "right",
         "remaining": -0.06666666666666465,
-        "gap": 17.111934751964917
+        "gap": 15.933690536361706
       },
       {
         "sync": false,
-        "side": "left",
+        "side": "right",
         "remaining": -0.08333333333333126,
-        "gap": 17.15233262385706
+        "gap": 15.927334102711477
       },
       {
         "sync": false,
-        "side": "left",
+        "side": "right",
         "remaining": -0.09999999999999787,
-        "gap": 17.232745967264698
+        "gap": 15.963231443925302
       },
       {
         "sync": false,
-        "side": "left",
+        "side": "right",
         "remaining": -0.11666666666666448,
-        "gap": 17.365633652139742
+        "gap": 16.05602338062926
       },
       {
         "sync": false,
-        "side": "left",
+        "side": "right",
         "remaining": -0.13333333333333108,
-        "gap": 17.562408172439394
+        "gap": 16.218792858830167
       },
       {
         "sync": false,
-        "side": "left",
+        "side": "right",
         "remaining": -0.1499999999999977,
-        "gap": 17.832364710027807
+        "gap": 16.461810993166633
       },
       {
         "sync": false,
-        "side": "left",
+        "side": "right",
         "remaining": -0.1666666666666643,
-        "gap": 18.181749593584197
+        "gap": 16.791485797819306
       },
       {
         "sync": false,
-        "side": "left",
+        "side": "right",
         "remaining": -0.1833333333333309,
-        "gap": 18.61309960992192
+        "gap": 17.209693866480492
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.05000000000000071,
+        "gap": 30.355859460848176
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.0333333333333341,
+        "gap": 28.833126176405795
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.016666666666667496,
+        "gap": 25.760824223710376
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 8.881784197001252e-16,
+        "gap": 23.049891741194138
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.01666666666666572,
+        "gap": 22.93902263626878
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.03333333333333233,
+        "gap": 25.745309925274704
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.049999999999998934,
+        "gap": 25.324505907419
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.06666666666666554,
+        "gap": 26.00903401270153
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.08333333333333215,
+        "gap": 26.789697753205065
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.09999999999999876,
+        "gap": 27.659080668907773
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.11666666666666536,
+        "gap": 28.608568117313574
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.13333333333333197,
+        "gap": 29.628412480382327
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.14999999999999858,
+        "gap": 30.7078353146611
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.1666666666666652,
+        "gap": 31.835164714191855
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.0500000000000016,
+        "gap": 41.024711193770415
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.03333333333333499,
+        "gap": 34.037464857653845
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 0.016666666666668384,
+        "gap": 26.58075791764906
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": 1.7763568394002505e-15,
+        "gap": 20.300430423786683
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.01666666666666483,
+        "gap": 16.717654609034973
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.03333333333333144,
+        "gap": 15.465727225820508
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.049999999999998046,
+        "gap": 24.42325626862393
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.06666666666666465,
+        "gap": 24.936671831016547
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.08333333333333126,
+        "gap": 25.55577983685717
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.09999999999999787,
+        "gap": 26.275163392178495
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.11666666666666448,
+        "gap": 27.088192134149203
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.13333333333333108,
+        "gap": 27.987021575418655
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.1499999999999977,
+        "gap": 28.962624173228196
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.1666666666666643,
+        "gap": 30.00487361353477
+      },
+      {
+        "sync": false,
+        "side": "right",
+        "remaining": -0.1833333333333309,
+        "gap": 31.102658172042695
       }
     ],
-    "skills": 20,
+    "skills": 21,
     "legendary": 1,
     "legendaryByTeam": [
       0,
@@ -5448,20 +5426,12 @@
     "steps": 5548,
     "seconds": 92.46666666666667,
     "maxStep": 3.4066666666666965,
-    "minGap": 22.703346521031513,
-    "overlapSeconds": 1.85,
-    "longestOverlap": 0.65,
-    "overlapShare": 0.030352748154224774,
-    "collisionPairs": [
-      {
-        "pair": "1-3",
-        "seconds": 1.2
-      },
-      {
-        "pair": "8-9",
-        "seconds": 0.65
-      }
-    ],
+    "minGap": 39.99999999326688,
+    "overlapSeconds": 0,
+    "longestOverlap": 0,
+    "overlapShare": 0,
+    "closeExamples": [],
+    "collisionPairs": [],
     "draws": 435,
     "renderMutation": 0,
     "contactGaps": [],
@@ -5560,181 +5530,181 @@
         "sync": false,
         "side": "right",
         "remaining": 0.06666666666666732,
-        "gap": 51.21666749141103
+        "gap": 51.21571325045067
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.05000000000000071,
-        "gap": 48.12572403201306
+        "gap": 48.125479476051964
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.0333333333333341,
-        "gap": 42.21184646974559
+        "gap": 42.212363864350834
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.016666666666667496,
-        "gap": 34.87723608351518
+        "gap": 34.87843216910869
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 8.881784197001252e-16,
-        "gap": 28.203401740905225
+        "gap": 28.205134455440245
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.01666666666666572,
-        "gap": 23.974993448666318
+        "gap": 23.977154861436556
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.03333333333333233,
-        "gap": 24.376183084805607
+        "gap": 24.381325741313688
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.049999999999998934,
-        "gap": 24.890142084065253
+        "gap": 24.89560604100614
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.06666666666666554,
-        "gap": 25.509878874768745
+        "gap": 25.515710478273636
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.08333333333333215,
-        "gap": 26.229958911829694
+        "gap": 26.236192738788233
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.09999999999999876,
-        "gap": 27.043733759484986
+        "gap": 27.05039281115433
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.11666666666666536,
-        "gap": 27.94334133429325
+        "gap": 27.950437828486994
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.13333333333333197,
-        "gap": 28.919737699088174
+        "gap": 28.927274277761285
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.14999999999999858,
-        "gap": 29.962781877675493
+        "gap": 29.970753055359854
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.1666666666666652,
-        "gap": 31.06134952625091
+        "gap": 31.06974321599877
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.06666666666666732,
-        "gap": 51.83821660524217
+        "gap": 51.83701607785234
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.05000000000000071,
-        "gap": 48.691827342900865
+        "gap": 48.69156813371684
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.0333333333333341,
-        "gap": 42.5108671800935
+        "gap": 42.51162488090924
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666667496,
-        "gap": 34.83348228549077
+        "gap": 34.835164556376874
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 8.881784197001252e-16,
-        "gap": 27.91111994311636
+        "gap": 27.91355566870257
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.01666666666666572,
-        "gap": 23.675608075599868
+        "gap": 23.678643604556
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.03333333333333233,
-        "gap": 24.04618636543986
+        "gap": 24.053042353397803
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.049999999999998934,
-        "gap": 24.534927129263945
+        "gap": 24.54219607916605
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666554,
-        "gap": 25.125786724217598
+        "gap": 25.133528491261302
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333215,
-        "gap": 25.81425058812973
+        "gap": 25.822509890276436
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999876,
-        "gap": 26.594578839829364
+        "gap": 26.603385427404504
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666536,
-        "gap": 27.459759144279897
+        "gap": 27.469128758704006
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333197,
-        "gap": 28.401504924949172
+        "gap": 28.411440822219976
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.14999999999999858,
-        "gap": 29.410320067835848
+        "gap": 29.42081488395681
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.1666666666666652,
-        "gap": 30.475605381608005
+        "gap": 30.48664312407425
       },
       {
         "sync": false,
@@ -5836,85 +5806,85 @@
         "sync": false,
         "side": "left",
         "remaining": 0.05000000000000071,
-        "gap": 48.69084362979715
+        "gap": 48.69084358682311
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.0333333333333341,
-        "gap": 42.513703386065096
+        "gap": 42.513703870634096
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666667496,
-        "gap": 34.83979119038449
+        "gap": 34.83979215179281
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 8.881784197001252e-16,
-        "gap": 27.920252403369723
+        "gap": 27.920253750752707
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.01666666666666572,
-        "gap": 23.686965488818508
+        "gap": 23.686967140619817
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.03333333333333233,
-        "gap": 24.071232210754452
+        "gap": 24.07123579113151
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.049999999999998934,
-        "gap": 24.56144837436433
+        "gap": 24.561452163501073
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666554,
-        "gap": 25.153997099546697
+        "gap": 25.15400112767485
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333215,
-        "gap": 25.844309712944224
+        "gap": 25.844314002637514
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999876,
-        "gap": 26.626592844224664
+        "gap": 26.626597410488586
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666536,
-        "gap": 27.49378411072595
+        "gap": 27.493788961486352
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333197,
-        "gap": 28.43755234497142
+        "gap": 28.437557481847662
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.14999999999999858,
-        "gap": 29.448363516277464
+        "gap": 29.4483689355273
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.1666666666666652,
-        "gap": 30.515587636798216
+        "gap": 30.515593330325224
       },
       {
         "sync": false,
@@ -6178,169 +6148,169 @@
         "sync": false,
         "side": "right",
         "remaining": 0.05000000000000071,
-        "gap": 48.061886170616
+        "gap": 47.98426188277135
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.0333333333333341,
-        "gap": 42.257757824744864
+        "gap": 41.143818485309
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.016666666666667496,
-        "gap": 34.99663097348139
+        "gap": 32.90312292936784
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 8.881784197001252e-16,
-        "gap": 28.347548520898105
+        "gap": 25.350258192089854
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.01666666666666572,
-        "gap": 24.092882547270413
+        "gap": 20.17878287803724
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.03333333333333233,
-        "gap": 24.58208113688626
+        "gap": 16.66872290331387
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.049999999999998934,
-        "gap": 25.118360207249367
+        "gap": 16.66206437283859
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.06666666666666554,
-        "gap": 25.763641967659
+        "gap": 16.679815250994334
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.08333333333333215,
-        "gap": 26.511678361022696
+        "gap": 16.735163637923517
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.09999999999999876,
-        "gap": 27.3550213889785
+        "gap": 16.841457225369847
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.11666666666666536,
-        "gap": 28.285064290313375
+        "gap": 17.01108506099563
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.13333333333333197,
-        "gap": 29.292101537686314
+        "gap": 17.254331138770237
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.14999999999999858,
-        "gap": 30.365429875430845
+        "gap": 17.578352257056736
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.1666666666666652,
-        "gap": 31.49346709895557
+        "gap": 17.986431744086335
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.04999999999999982,
-        "gap": 51.0455350907726
+        "gap": 51.04553524515006
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.033333333333333215,
-        "gap": 44.2771487061828
+        "gap": 44.2771471690138
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666666607,
-        "gap": 35.988101357977435
+        "gap": 35.98809812878351
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0,
-        "gap": 28.487682401532542
+        "gap": 28.48767744651809
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.016666666666666607,
-        "gap": 23.734805090832495
+        "gap": 23.7347975684525
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.033333333333333215,
-        "gap": 24.115611767412908
+        "gap": 24.115376990440545
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.04999999999999982,
-        "gap": 24.604733963915184
+        "gap": 24.604485220311943
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666643,
-        "gap": 25.196018979068793
+        "gap": 25.195754243036106
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333304,
-        "gap": 25.88493454361619
+        "gap": 25.884652300769588
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999964,
-        "gap": 26.66572442177345
+        "gap": 26.66542366354048
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666625,
-        "gap": 27.531362210177765
+        "gap": 27.53104240154958
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333286,
-        "gap": 28.473550054976904
+        "gap": 28.473211083173954
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.14999999999999947,
-        "gap": 29.482783484369612
+        "gap": 29.4824255959306
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.16666666666666607,
-        "gap": 30.54845769822946
+        "gap": 30.548081431805706
       },
       {
         "sync": false,
@@ -6452,24 +6422,12 @@
     "steps": 4902,
     "seconds": 81.7,
     "maxStep": 3.416666666666686,
-    "minGap": 22.61037724353567,
-    "overlapSeconds": 2.4,
-    "longestOverlap": 0.65,
-    "overlapShare": 0.04049493813273341,
-    "collisionPairs": [
-      {
-        "pair": "1-3",
-        "seconds": 1.4833333333333334
-      },
-      {
-        "pair": "2-3",
-        "seconds": 0.05
-      },
-      {
-        "pair": "8-9",
-        "seconds": 0.8666666666666667
-      }
-    ],
+    "minGap": 40.00000134892196,
+    "overlapSeconds": 0,
+    "longestOverlap": 0,
+    "overlapShare": 0,
+    "closeExamples": [],
+    "collisionPairs": [],
     "draws": 400,
     "renderMutation": 0,
     "contactGaps": [],
@@ -6646,31 +6604,31 @@
         "sync": false,
         "side": "right",
         "remaining": 0.06666666666666732,
-        "gap": 179.72752452342735
+        "gap": 179.46296544060104
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.05000000000000071,
-        "gap": 184.74863233689538
+        "gap": 184.523962789756
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.0333333333333341,
-        "gap": 188.62641958064626
+        "gap": 189.17749961015093
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.016666666666667496,
-        "gap": 192.84968940068416
+        "gap": 192.7584086720347
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 8.881784197001252e-16,
-        "gap": 196.68756095175766
+        "gap": 196.6610806987309
       },
       {
         "sync": false,
@@ -6766,85 +6724,85 @@
         "sync": false,
         "side": "left",
         "remaining": 0.05000000000000071,
-        "gap": 46.71120120410703
+        "gap": 48.637476098359336
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.0333333333333341,
-        "gap": 41.706113124124684
+        "gap": 42.63319920165385
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666667496,
-        "gap": 34.80621240124337
+        "gap": 35.130941288817766
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 8.881784197001252e-16,
-        "gap": 27.46560590231781
+        "gap": 28.380319233132276
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.01666666666666572,
-        "gap": 21.514777878028166
+        "gap": 24.360738981089057
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.03333333333333233,
-        "gap": 19.54088467228824
+        "gap": 24.366560137741534
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.049999999999998934,
-        "gap": 19.748453221240197
+        "gap": 24.87134494907991
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666554,
-        "gap": 20.01607037834367
+        "gap": 25.48056341465532
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333215,
-        "gap": 20.349568525275597
+        "gap": 26.18911068672205
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999876,
-        "gap": 20.753834482233714
+        "gap": 26.99066492172869
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666536,
-        "gap": 21.2321478544945
+        "gap": 27.877670682415342
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333197,
-        "gap": 21.78564696788593
+        "gap": 28.841358693282643
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.14999999999999858,
-        "gap": 22.412988191409156
+        "gap": 29.871823307116568
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.1666666666666652,
-        "gap": 23.11021390259201
+        "gap": 30.958133353968883
       },
       {
         "sync": false,
@@ -7030,169 +6988,169 @@
         "sync": false,
         "side": "left",
         "remaining": 0.05000000000000071,
-        "gap": 48.71811876411311
+        "gap": 48.71981953944892
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.0333333333333341,
-        "gap": 42.43415209811617
+        "gap": 42.43093023690749
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666667496,
-        "gap": 34.66161496759428
+        "gap": 34.65485469837824
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 8.881784197001252e-16,
-        "gap": 27.66309482776205
+        "gap": 27.65463972482675
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.01666666666666572,
-        "gap": 23.375833044972946
+        "gap": 23.367565962790124
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.03333333333333233,
-        "gap": 23.76691262161523
+        "gap": 23.757186507596803
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.049999999999998934,
-        "gap": 24.263932556003976
+        "gap": 24.253777790166428
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666554,
-        "gap": 24.864338923272093
+        "gap": 24.8536943085702
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333215,
-        "gap": 25.563336091458254
+        "gap": 25.55215641821606
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999876,
-        "gap": 26.354899422954787
+        "gap": 26.34315517808718
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666536,
-        "gap": 27.23174271639584
+        "gap": 27.219418963846287
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333197,
-        "gap": 28.185327811052712
+        "gap": 28.172422496805673
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.14999999999999858,
-        "gap": 29.205937229915957
+        "gap": 29.192459156545034
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.1666666666666652,
-        "gap": 30.282784849731794
+        "gap": 30.268751550493796
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.05000000000000071,
-        "gap": 32.83648166006801
+        "gap": 32.83701299233517
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.0333333333333341,
-        "gap": 32.39055310474398
+        "gap": 32.39102256583954
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.016666666666667496,
-        "gap": 29.489594751099155
+        "gap": 29.490008962640267
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 8.881784197001252e-16,
-        "gap": 25.868328171611736
+        "gap": 25.86873791350677
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.01666666666666572,
-        "gap": 23.498417743399326
+        "gap": 23.49899259919093
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.03333333333333233,
-        "gap": 24.377321954568
+        "gap": 24.38132574131652
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.049999999999998934,
-        "gap": 24.891360070345584
+        "gap": 24.89560604100614
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.06666666666666554,
-        "gap": 25.511187405750498
+        "gap": 25.515710478273636
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.08333333333333215,
-        "gap": 26.23136652273712
+        "gap": 26.236192738788233
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.09999999999999876,
-        "gap": 27.045246138496434
+        "gap": 27.05039281115433
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.11666666666666536,
-        "gap": 27.944961515606646
+        "gap": 27.950437828486994
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.13333333333333197,
-        "gap": 28.921466358351132
+        "gap": 28.927274277761285
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.14999999999999858,
-        "gap": 29.964617687029342
+        "gap": 29.970753055359854
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.1666666666666652,
-        "gap": 31.063289528888248
+        "gap": 31.06974321599877
       },
       {
         "sync": false,
@@ -7372,85 +7330,85 @@
         "sync": false,
         "side": "right",
         "remaining": 0.04999999999999982,
-        "gap": 50.479218350025874
+        "gap": 50.47921498905179
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.033333333333333215,
-        "gap": 43.98087275195112
+        "gap": 43.9808916576139
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.016666666666666607,
-        "gap": 36.04053948585628
+        "gap": 36.04058024800265
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0,
-        "gap": 28.785214933653936
+        "gap": 28.785277362771915
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.016666666666666607,
-        "gap": 24.017841089555276
+        "gap": 24.017935592159976
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.033333333333333215,
-        "gap": 24.418475095359213
+        "gap": 24.42143156663588
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.04999999999999982,
-        "gap": 24.93175466420161
+        "gap": 24.934884700130766
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.06666666666666643,
-        "gap": 25.550707365220237
+        "gap": 25.554036003553666
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.08333333333333304,
-        "gap": 26.269921385801123
+        "gap": 26.273467306137547
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.09999999999999964,
-        "gap": 27.082771330166054
+        "gap": 27.086546957808856
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.11666666666666625,
-        "gap": 27.981417305144436
+        "gap": 27.98542923851537
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.13333333333333286,
-        "gap": 28.95683581414627
+        "gap": 28.961085476906142
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.14999999999999947,
-        "gap": 29.998903944466555
+        "gap": 30.003388368069302
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.16666666666666607,
-        "gap": 31.09651270316582
+        "gap": 31.101225351550628
       }
     ],
     "skills": 18,
@@ -7478,16 +7436,12 @@
     "steps": 5628,
     "seconds": 93.8,
     "maxStep": 3.4300000000000606,
-    "minGap": 23.505785619862063,
-    "overlapSeconds": 0.26666666666666666,
-    "longestOverlap": 0.26666666666666666,
-    "overlapShare": 0.004281509232004281,
-    "collisionPairs": [
-      {
-        "pair": "1-3",
-        "seconds": 0.26666666666666666
-      }
-    ],
+    "minGap": 39.99999995208122,
+    "overlapSeconds": 0,
+    "longestOverlap": 0,
+    "overlapShare": 0,
+    "closeExamples": [],
+    "collisionPairs": [],
     "draws": 442,
     "renderMutation": 0,
     "contactGaps": [],
@@ -7754,85 +7708,85 @@
         "sync": false,
         "side": "right",
         "remaining": 0.05000000000000071,
-        "gap": 48.12536008860425
+        "gap": 48.125288748539944
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.0333333333333341,
-        "gap": 42.212597983027514
+        "gap": 42.21276604101938
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 0.016666666666667496,
-        "gap": 34.878982011285856
+        "gap": 34.87936384509999
       },
       {
         "sync": false,
         "side": "right",
         "remaining": 8.881784197001252e-16,
-        "gap": 28.205932168712813
+        "gap": 28.20648177508617
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.01666666666666572,
-        "gap": 23.97814220157051
+        "gap": 23.978819975440718
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.03333333333333233,
-        "gap": 24.383346480543427
+        "gap": 24.384703070353698
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.049999999999998934,
-        "gap": 24.897733896296945
+        "gap": 24.89916023686234
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.06666666666666554,
-        "gap": 25.517960862473327
+        "gap": 25.519466985110526
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.08333333333333215,
-        "gap": 26.23857712894637
+        "gap": 26.240170500519383
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.09999999999999876,
-        "gap": 27.05291881727992
+        "gap": 27.054604385546487
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.11666666666666536,
-        "gap": 27.953109462430778
+        "gap": 27.95488983177174
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.13333333333333197,
-        "gap": 28.93009236039621
+        "gap": 28.93196805756643
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.14999999999999858,
-        "gap": 29.973715703322963
+        "gap": 29.97568549490466
       },
       {
         "sync": false,
         "side": "right",
         "remaining": -0.1666666666666652,
-        "gap": 31.072846353250405
+        "gap": 31.074907579125636
       },
       {
         "sync": false,
@@ -8006,85 +7960,85 @@
         "sync": false,
         "side": "left",
         "remaining": 0.05000000000000071,
-        "gap": 48.719064413851655
+        "gap": 48.71734491582753
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.0333333333333341,
-        "gap": 42.43231755831189
+        "gap": 42.43547025384682
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666667496,
-        "gap": 34.65773179754001
+        "gap": 34.66426421402704
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 8.881784197001252e-16,
-        "gap": 27.65815779906368
+        "gap": 27.66613154039264
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.01666666666666572,
-        "gap": 23.37086951836008
+        "gap": 23.37833236088001
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.03333333333333233,
-        "gap": 23.761209602652894
+        "gap": 23.77032100244569
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.049999999999998934,
-        "gap": 24.258023649231816
+        "gap": 24.267647425529727
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666554,
-        "gap": 24.85819490723081
+        "gap": 24.868404627459917
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333215,
-        "gap": 25.55693547942924
+        "gap": 25.56778573802099
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999876,
-        "gap": 26.34822830458734
+        "gap": 26.359755026194975
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666536,
-        "gap": 27.22479419840611
+        "gap": 27.2370159243901
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333197,
-        "gap": 28.1781011821097
+        "gap": 28.191021045636088
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.14999999999999858,
-        "gap": 29.198436969925208
+        "gap": 29.212045073109355
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.1666666666666652,
-        "gap": 30.275019595413077
+        "gap": 30.289295517178232
       },
       {
         "sync": false,
@@ -8174,85 +8128,85 @@
         "sync": false,
         "side": "left",
         "remaining": 0.05000000000000071,
-        "gap": 47.38197553968481
+        "gap": 47.6416317277249
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.0333333333333341,
-        "gap": 42.104572579669465
+        "gap": 42.518222670766114
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666667496,
-        "gap": 34.70989035604948
+        "gap": 35.721619307710725
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 8.881784197001252e-16,
-        "gap": 25.549958035564497
+        "gap": 29.25833515906385
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.01666666666666572,
-        "gap": 19.013542081797954
+        "gap": 24.70541055664049
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.03333333333333233,
-        "gap": 17.254662573035166
+        "gap": 24.117890221390283
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.049999999999998934,
-        "gap": 17.293402710945657
+        "gap": 24.61511818602275
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666554,
-        "gap": 17.364489765416064
+        "gap": 25.215705497867372
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333215,
-        "gap": 17.47964232817225
+        "gap": 25.9148302451017
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999876,
-        "gap": 17.65041487517941
+        "gap": 26.706447742987223
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666536,
-        "gap": 17.887159370666293
+        "gap": 27.583259352246685
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333197,
-        "gap": 18.19801757271101
+        "gap": 28.536722217601973
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.14999999999999858,
-        "gap": 18.588079199228382
+        "gap": 29.5571210820194
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.1666666666666652,
-        "gap": 19.05881922751883
+        "gap": 30.63367753709113
       },
       {
         "sync": false,
@@ -8348,85 +8302,85 @@
         "sync": false,
         "side": "left",
         "remaining": 0.05000000000000071,
-        "gap": 47.95731858612574
+        "gap": 43.942089350941046
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.0333333333333341,
-        "gap": 39.950790881449734
+        "gap": 40.14369525202428
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666667496,
-        "gap": 30.39231012445975
+        "gap": 34.26487604824113
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 8.881784197001252e-16,
-        "gap": 21.666572264113714
+        "gap": 28.204787254444643
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.01666666666666572,
-        "gap": 16.338501283298992
+        "gap": 23.83149036573025
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.03333333333333233,
-        "gap": 13.140046960146279
+        "gap": 23.881279744984752
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.049999999999998934,
-        "gap": 12.797852676625746
+        "gap": 24.384185591819485
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666554,
-        "gap": 12.40947657947314
+        "gap": 24.991321249686084
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333215,
-        "gap": 11.993690428309444
+        "gap": 25.69767275611528
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999876,
-        "gap": 11.573197029194572
+        "gap": 26.497000895159925
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666536,
-        "gap": 11.17440996639555
+        "gap": 27.38181991946513
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333197,
-        "gap": 10.82662566289776
+        "gap": 28.343415007206932
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.14999999999999858,
-        "gap": 10.56021730603132
+        "gap": 29.371919445902865
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.1666666666666652,
-        "gap": 10.403641380918613
+        "gap": 30.456426727235623
       },
       {
         "sync": false,
@@ -8537,17 +8491,13 @@
     ],
     "steps": 4998,
     "seconds": 83.3,
-    "maxStep": 3.4666666666667036,
-    "minGap": 23.433108840898274,
-    "overlapSeconds": 1,
-    "longestOverlap": 0.25,
-    "overlapShare": 0.018933417481855473,
-    "collisionPairs": [
-      {
-        "pair": "1-3",
-        "seconds": 1
-      }
-    ],
+    "maxStep": 3.466666666666703,
+    "minGap": 39.99999999413498,
+    "overlapSeconds": 0,
+    "longestOverlap": 0,
+    "overlapShare": 0,
+    "closeExamples": [],
+    "collisionPairs": [],
     "draws": 385,
     "renderMutation": 0,
     "contactGaps": [],
@@ -8556,85 +8506,85 @@
         "sync": false,
         "side": "left",
         "remaining": 0.05000000000000071,
-        "gap": 48.68710082326657
+        "gap": 46.34693246111899
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.0333333333333341,
-        "gap": 42.52721170133189
+        "gap": 41.738109063662094
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666667496,
-        "gap": 34.86909260730544
+        "gap": 35.28036780254036
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 8.881784197001252e-16,
-        "gap": 27.962049513917044
+        "gap": 28.902266016897126
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.01666666666666572,
-        "gap": 23.73708851141876
+        "gap": 24.322374626396982
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.03333333333333233,
-        "gap": 14.123246234463332
+        "gap": 24.076511364162183
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.049999999999998934,
-        "gap": 13.8681933677411
+        "gap": 24.577689450932283
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666554,
-        "gap": 13.587497650785364
+        "gap": 25.182814261110448
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333215,
-        "gap": 13.299651506491076
+        "gap": 25.88692433707804
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999876,
-        "gap": 13.02596158988671
+        "gap": 26.683835672776706
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666536,
-        "gap": 12.789714257231374
+        "gap": 27.566117731453435
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333197,
-        "gap": 12.614795716924705
+        "gap": 28.525108506254814
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.14999999999999858,
-        "gap": 12.523718142919929
+        "gap": 29.55098975415559
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.1666666666666652,
-        "gap": 12.535230509740547
+        "gap": 30.632897757477053
       },
       {
         "sync": false,
@@ -9240,175 +9190,175 @@
         "sync": false,
         "side": "left",
         "remaining": 0.06666666666666732,
-        "gap": 51.833785992588446
+        "gap": 51.834541704194756
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.05000000000000071,
-        "gap": 48.69086663790399
+        "gap": 48.69103960224333
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.0333333333333341,
-        "gap": 42.513654828790855
+        "gap": 42.51319788615208
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666667496,
-        "gap": 34.839676548363315
+        "gap": 34.83864700764407
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 8.881784197001252e-16,
-        "gap": 27.92008631179143
+        "gap": 27.918591381488316
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.01666666666666572,
-        "gap": 23.686769578584236
+        "gap": 23.684908507719484
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.03333333333333233,
-        "gap": 24.07122399879856
+        "gap": 24.067084715642522
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.049999999999998934,
-        "gap": 24.561466795335463
+        "gap": 24.557080839291586
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666554,
-        "gap": 25.15404609257626
+        "gap": 25.14937772504849
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333215,
-        "gap": 25.844392267270983
+        "gap": 25.839414793292217
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999876,
-        "gap": 26.626711001931447
+        "gap": 26.62140666591548
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666536,
-        "gap": 27.49393901886361
+        "gap": 27.488298429437645
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333197,
-        "gap": 28.437744344130362
+        "gap": 28.43176556252378
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.14999999999999858,
-        "gap": 29.448592252434516
+        "gap": 29.44227967765507
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.1666666666666652,
-        "gap": 30.51585218323612
+        "gap": 30.509215362875906
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.05000000000000071,
-        "gap": 30.232476638280353
+        "gap": 30.23312211456314
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.0333333333333341,
-        "gap": 30.652966427026808
+        "gap": 30.653607044446773
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 0.016666666666667496,
-        "gap": 28.391759279210184
+        "gap": 28.392387191862134
       },
       {
         "sync": false,
         "side": "left",
         "remaining": 8.881784197001252e-16,
-        "gap": 25.133161709247172
+        "gap": 25.133813661467748
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.01666666666666572,
-        "gap": 22.762695193745916
+        "gap": 22.763565821841667
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.03333333333333233,
-        "gap": 14.03851011572997
+        "gap": 14.030139146123702
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.049999999999998934,
-        "gap": 13.78188917946569
+        "gap": 13.772655961187366
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.06666666666666554,
-        "gap": 13.499399041443029
+        "gap": 13.489107361688637
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.08333333333333215,
-        "gap": 13.209633313007803
+        "gap": 13.198094040187984
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.09999999999999876,
-        "gap": 12.934038712297836
+        "gap": 12.921080802320082
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.11666666666666536,
-        "gap": 12.696081003665762
+        "gap": 12.681566965842269
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.13333333333333197,
-        "gap": 12.519854354175093
+        "gap": 12.503698673684614
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.14999999999999858,
-        "gap": 12.428081034227166
+        "gap": 12.41026762306626
       },
       {
         "sync": false,
         "side": "left",
         "remaining": -0.1666666666666652,
-        "gap": 12.43968190921076
+        "gap": 12.420274659983372
       }
     ],
     "skills": 17,

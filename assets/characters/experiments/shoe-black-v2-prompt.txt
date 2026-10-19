@@ -1,0 +1,1 @@
+Built-in image_gen edit of shoe-v1.png. Preserve the top-down silhouette; black charcoal upper and sole, coral lace strokes and heel accents, transparent background, no logos. In the pose editor, coral accents follow the player shirt color; black stays black.
