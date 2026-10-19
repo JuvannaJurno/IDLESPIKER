@@ -9,14 +9,14 @@ function styleFor(identity,index){
 }
 function paletteFor(p){
  const appearance=p.roster?.appearance,own=appearance?.palette;
- if(own)return {hair:window.HairColors?.style(appearance)?.root||own.hair,hairEnd:window.HairColors?.style(appearance)?.end||null,shirt:p.roster.role==='libero'&&!appearance.clubKit?'#edc457':own.shirt};
+ if(own)return {hair:window.HairColors?.base(appearance)||own.hair,hairEnd:window.HairColors?.style(appearance)?.end||null,shirt:p.roster.role==='libero'&&!appearance.clubKit?'#edc457':own.shirt};
  const set=sprites[p.index];if(!set?.hair||!set.shirt)return null;
  if(!palettes.has(set))palettes.set(set,{hair:dominant(set.hair),shirt:dominant(set.shirt)});
  return palettes.get(set);
 }
 function imageFor(style,palette){
  const key=[style,palette.hair,palette.hairEnd,palette.shirt].join('|');if(cache.has(key))return cache.get(key);
- const {part:p,source}=MatchHairData[style],color=style==='tie'?shade(palette.shirt,.78):(['bun','tip'].includes(style)&&palette.hairEnd?palette.hairEnd:shade(palette.hair,style==='front'?1:.94)),tie=shade(palette.shirt,.78);
+ const {part:p,source}=MatchHairData[style],color=style==='tie'?shade(palette.shirt,.78):(['bun','tip'].includes(style)&&palette.hairEnd?palette.hairEnd:palette.hair),tie=shade(palette.shirt,.78);
  const svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+p.width+'" height="'+p.height+'" viewBox="0 0 '+p.width+' '+p.height+'"><defs><filter id="hair" color-interpolation-filters="sRGB"><feFlood flood-color="'+color+'"/><feComposite in2="SourceAlpha" operator="in"/><feComponentTransfer><feFuncA type="discrete" tableValues="0 0 0 0 1"/></feComponentTransfer></filter></defs><image width="'+p.width+'" height="'+p.height+'" href="'+source+'" filter="url(#hair)"/><rect x="'+(p.width*p.pivotX-.65)+'" y="'+((p.height-Math.min(4,p.height*.6))/2)+'" width="1.3" height="'+Math.min(4,p.height*.6)+'" fill="'+tie+'"/></svg>';
  const finalSvg=['front','bun','tip','tie'].includes(style)?svg.replace(new RegExp('<rect[^>]*>'),''):svg;let output=finalSvg;if(style.startsWith('foot-')){const rgb=[1,3,5].map(i=>parseInt(palette.shirt.slice(i,i+2),16)/255);output='<svg xmlns="http://www.w3.org/2000/svg" width="7" height="9"><defs><filter id="accent" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 '+rgb[0]+' 0 0 0 0 '+rgb[1]+' 0 0 0 0 '+rgb[2]+' 3 -3 0 0 0" result="color"/><feComposite in="color" in2="SourceAlpha" operator="in" result="clipped"/><feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="clipped"/></feMerge></filter></defs><image width="7" height="9" href="'+source+'" filter="url(#accent)"/></svg>';}const im=new Image();im.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(output);cache.set(key,im);return im;
 }
