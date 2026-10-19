@@ -12,8 +12,8 @@ function refreshAP(){document.querySelectorAll('#teamPanel .player-card').forEac
 function renderDevelopment(){const p=selected,labels=Object.fromEntries(stats.map(s=>[s[0],s[1]]));
  document.querySelector('.development-note').innerHTML='<strong>'+R.stageLabel()+' · Stat sınırı '+R.cap(p)+'</strong><span>Kartını yükselt; özellikleri pozisyonuna göre birlikte gelişsin.</span>';
  $('trainingStats').replaceChildren(CardUpgrade.panel(p,result=>{render();detail(p,trigger);$('trainingNotice').textContent=(result.free?'İlham Anı! Ücretsiz yükseldi · ':'')+'Kart seviyesi '+result.level}));
- $('playerSkills').replaceChildren(PlayerSkillUI.create(p));refreshAP();const ap=window.RoomSystem?.balance()||0;$('trainingBalance').textContent=NumberUI.compact(ap)+' AP';document.querySelectorAll('[data-ap-cost]').forEach(b=>b.disabled=ap<Number(b.dataset.apCost))}
-const skillSection=$('playerSkills').closest('section');skillSection.classList.add('player-skill-section');document.querySelector('#playerDialog .development-panel').after(skillSection);
+ $('playerSkills').replaceChildren(PlayerSkillUI.createDetail(p));refreshAP();const ap=window.RoomSystem?.balance()||0;$('trainingBalance').textContent=NumberUI.compact(ap)+' AP';document.querySelectorAll('[data-ap-cost]').forEach(b=>b.disabled=ap<Number(b.dataset.apCost))}
+const skillSection=$('playerSkills').closest('section');skillSection.classList.add('player-skill-section');$('playerAttributes').before(skillSection);skillSection.querySelector('h3').textContent='Yetenekler';
 const lineupDialog=document.createElement('dialog');lineupDialog.id='lineupDialog';lineupDialog.setAttribute('aria-labelledby','lineupTitle');document.body.append(lineupDialog);
 let lineupChoice=null,lineupOrigin=null;
 const playerById=id=>R.players.find(p=>p.id===id);

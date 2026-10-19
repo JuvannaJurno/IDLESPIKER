@@ -16,8 +16,8 @@ const definitions=[
  ['bal_personal',3,'Bireysel Gelişim Planı','+',[.01,.02,.03,.04,.05],v=>'Ücretsiz kart yükseltme ihtimali +'+display(v*100)+' puan.',400],
  ['bal_archive',3,'Analiz Arşivi','▥',[.02,.04,.06,.08,.1],v=>'Kart yükseltmelerinde %'+display(v*100)+' AP indirimi.',360],
  ['bal_search',4,'Keşif Ağı','◎',[9,8,7,6,5],v=>'Her '+display(v)+' oyun gününde yeni katalog.',300],
- ['bal_contacts',4,'Yerel Bağlantılar','♧',[4,5,6,7,8],v=>'Katalogda '+display(v)+' oyuncu adayı.',350],
- ['bal_talent',4,'Yetenek Tarama','↗',[.23,.34,.46,.60,.72],v=>'Yüksek overall oyuncu bulma şansı %'+display(v*100)+'.',400]
+ ['bal_contacts',4,'Yerel Bağlantılar','♧',[4,5,6,7,8],v=>'Katalogda '+display(v)+' aday. Katkılı katalog şansı +'+display(v-3)+' puan.',350],
+ ['bal_talent',4,'Yetenek Tarama','↗',[.03,.06,.09,.12,.15],v=>'Katkılı katalog şansı +'+display(v*100)+' puan. Büyük fırsat şansı +'+display(v*100*.004/.03)+' puan.',400]
 ];
 const extendedIds=new Set(['bal_coach','bal_shift','bal_plan','bal_position','bal_video','bal_recovery','bal_sponsor','bal_shop','bal_fans']);
 for(const d of definitions)if(d[0]==='bal_sponsor'||d[0]==='bal_fans')d[4]=d[4].map(v=>v*10);
@@ -35,7 +35,7 @@ const successors=[
  ['bal_personal','bal_mentor','Gelişim Mentoru',[.01,.02,.03,.04,.05],v=>'Tüm kart yükseltmelerinde ek %'+Math.round(v*100)+' AP indirimi.'],
  ['bal_archive','bal_remote','Uzaktan Antrenman',[.03,.06,.09,.12,.15],v=>'Çevrimdışı AP verimine +%'+Math.round(v*100)+'.'],
  ['bal_search','bal_negotiator','Transfer Görüşmeleri',[.03,.06,.09,.12,.15],v=>'Yeni katalog transfer fiyatları %'+Math.round(v*100)+' daha uygun.'],
- ['bal_contacts','bal_network','Bölgesel Bağlantılar',[.02,.04,.06,.08,.1],v=>'Yüksek OVR bulma şansına +'+Math.round(v*100)+' puan.'],
+ ['bal_contacts','bal_network','Bölgesel Bağlantılar',[.01,.02,.03,.04,.05],v=>'Katkılı katalog şansı +'+display(v*100)+' puan. Büyük fırsat şansı +'+display(v*40)+' puan.'],
  ['bal_talent','bal_academy','Akademi İşbirliği',[1,2,3,4,5],v=>'Yeni adaylar +'+v+' kart seviyesi gelişmiş gelir.']
 ];
 const catalog=definitions.map(([id,floor,name,icon,core,describe,price])=>({id,floor,name,icon,values:[...core,...Array(5).fill(core[4])],describe,price,bal:true,bonus:successors.find(row=>row[0]===id)}));
@@ -52,9 +52,9 @@ const professional=[
  ['pro_sponsor',2,'Lig Sponsorluğu','▣',30000,v=>'Her 3 tamamlanan maçta +'+display(v)+' bütçe.'],
  ['pro_shop',2,'Lisanslı Ürünler','▤',2,v=>'Her gün takipçi başına +'+display(v)+' bütçe.'],
  ['pro_tickets',2,'Antrenman Sponsorluğu','◎',1000,v=>'Her ücretli kart yükseltmesinde +'+display(v)+' bütçe.'],
- ['pro_search',3,'İhtiyaç Analizi','↗',.08,v=>'Bir aday kadronun en düşük OVR’li pozisyonundan gelir. Bu adayın güçlü çıkma şansına +'+display(v*100)+' puan.'],
+ ['pro_search',3,'İhtiyaç Analizi','↗',.08,v=>'Bir aday kadronun en düşük OVR’li pozisyonundan gelir. Katkılı adayın bu pozisyondan gelme şansına +'+display(v*100)+' puan.'],
  ['pro_negotiator',3,'Transfer Görüşmeleri','♧',.04,v=>'Yeni katalog transferleri %'+display(v*100)+' daha uygun.'],
- ['pro_scout',3,'Ulusal Gözlem Ağı','◎',.03,v=>'Yüksek OVR bulma şansına +'+display(v*100)+' puan.']
+ ['pro_scout',3,'Ulusal Gözlem Ağı','◎',.01,v=>'Katkılı katalog şansı +'+display(v*100)+' puan. Büyük fırsat şansı +'+display(v*60)+' puan.']
 ];
 const professionalBonuses=[
  ['pro_coach','pro_focus','Hedefli Antrenman',[.01,.02,.03,.04,.05],v=>'Kritik AP şansı +'+display(v*100)+' puan.'],

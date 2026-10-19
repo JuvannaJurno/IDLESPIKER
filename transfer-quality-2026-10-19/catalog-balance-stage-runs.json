@@ -1,0 +1,104 @@
+{
+  "type": "rule simulation; not real-time manual play",
+  "runs": [
+    {
+      "strategy": "balanced",
+      "BAL": {
+        "matches": 14,
+        "minutes": 56,
+        "rank": 3
+      },
+      "division2": {
+        "matches": 14,
+        "catalogs": 56,
+        "hires": 3,
+        "upgrades": 147,
+        "initial": [
+          88,
+          87,
+          87,
+          88,
+          89,
+          89,
+          91
+        ],
+        "final": [
+          128,
+          127,
+          131,
+          111,
+          115,
+          113,
+          135
+        ],
+        "budget": 147815
+      }
+    },
+    {
+      "strategy": "automation",
+      "BAL": {
+        "matches": 14,
+        "minutes": 50,
+        "rank": 2
+      },
+      "division2": {
+        "matches": 14,
+        "catalogs": 56,
+        "hires": 3,
+        "upgrades": 150,
+        "initial": [
+          88,
+          88,
+          87,
+          88,
+          89,
+          89,
+          88
+        ],
+        "final": [
+          132,
+          130,
+          131,
+          111,
+          113,
+          113,
+          134
+        ],
+        "budget": 298698
+      }
+    },
+    {
+      "strategy": "transfers",
+      "BAL": {
+        "matches": 14,
+        "minutes": 56,
+        "rank": 3
+      },
+      "division2": {
+        "matches": 14,
+        "catalogs": 56,
+        "hires": 2,
+        "upgrades": 134,
+        "initial": [
+          88,
+          88,
+          87,
+          89,
+          90,
+          88,
+          88
+        ],
+        "final": [
+          106,
+          126,
+          133,
+          114,
+          115,
+          114,
+          137
+        ],
+        "budget": 303515
+      }
+    }
+  ]
+}
