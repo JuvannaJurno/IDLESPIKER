@@ -1,0 +1,607 @@
+[
+  {
+    "name": "mahalle",
+    "steps": 13763,
+    "finished": true,
+    "score": [
+      6,
+      8
+    ],
+    "events": [
+      "jump-float-legendary",
+      "cover",
+      "power-hit",
+      "team-heart",
+      "team-heart",
+      "jump",
+      "cover",
+      "commit-block",
+      "jump",
+      "fake-set",
+      "commit-block",
+      "fake-set",
+      "line",
+      "fake-set",
+      "line",
+      "pipe-attack",
+      "commit-block",
+      "slide-attack",
+      "kick-save",
+      "ghost-tip",
+      "float",
+      "cover",
+      "power-hit",
+      "jump-legendary",
+      "cover",
+      "team-heart",
+      "team-heart",
+      "float",
+      "cover",
+      "power-hit",
+      "jump",
+      "pipe-attack",
+      "commit-block",
+      "sky-serve",
+      "power-hit",
+      "team-heart",
+      "sky-serve",
+      "jump-legendary",
+      "cover",
+      "power-hit",
+      "team-heart",
+      "cover",
+      "ghost-tip",
+      "cover",
+      "power-hit",
+      "team-heart",
+      "sky-serve",
+      "cover",
+      "absolute-read",
+      "sky-serve",
+      "cover",
+      "power-hit",
+      "team-heart",
+      "float"
+    ],
+    "contacts": [
+      {
+        "kind": "serve",
+        "skill": "jump-float-legendary",
+        "side": "left",
+        "gap": 0.2327614346195973
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "right",
+        "gap": 0.44211591950919216
+      },
+      {
+        "kind": "serve",
+        "skill": "normal",
+        "side": "right",
+        "gap": 0.000017430396416961662
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "left",
+        "gap": 1.2405979353939147
+      },
+      {
+        "kind": "serve",
+        "skill": "normal",
+        "side": "right",
+        "gap": 0.000012656972044677403
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "left",
+        "gap": 1.2405898816337204
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "right",
+        "gap": 1.2405971986191278
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "right",
+        "gap": 1.2406002447865623
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "right",
+        "gap": 1.430770621450355
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "left",
+        "gap": 0.000011609196715497485
+      },
+      {
+        "kind": "attack",
+        "skill": "ghost-tip",
+        "side": "left",
+        "gap": 1.9274223649554687
+      },
+      {
+        "kind": "serve",
+        "skill": "normal",
+        "side": "right",
+        "gap": 0.000012656972044677403
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "right",
+        "gap": 1.2405971986190993
+      },
+      {
+        "kind": "serve",
+        "skill": "jump-legendary",
+        "side": "right",
+        "gap": 2.4027724672408604
+      },
+      {
+        "kind": "serve",
+        "skill": "normal",
+        "side": "right",
+        "gap": 0.000008208507631889145
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "left",
+        "gap": 1.240589678955728
+      },
+      {
+        "kind": "serve",
+        "skill": "normal",
+        "side": "right",
+        "gap": 0.000006603525244913777
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "right",
+        "gap": 0.9152058411940931
+      },
+      {
+        "kind": "serve",
+        "skill": "normal",
+        "side": "left",
+        "gap": 0.9010585384210628
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "right",
+        "gap": 1.240597198666225
+      },
+      {
+        "kind": "serve",
+        "skill": "normal",
+        "side": "left",
+        "gap": 0.9010632410199746
+      },
+      {
+        "kind": "serve",
+        "skill": "jump-legendary",
+        "side": "left",
+        "gap": 2.7006169110416463
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "right",
+        "gap": 1.240586301530784
+      },
+      {
+        "kind": "serve",
+        "skill": "normal",
+        "side": "right",
+        "gap": 0.00003059603109643504
+      },
+      {
+        "kind": "attack",
+        "skill": "ghost-tip",
+        "side": "right",
+        "gap": 0.88441397848793
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "right",
+        "gap": 2.119025270170517
+      },
+      {
+        "kind": "serve",
+        "skill": "normal",
+        "side": "right",
+        "gap": 0.6188080779327184
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "left",
+        "gap": 1.2405867001376922
+      },
+      {
+        "kind": "serve",
+        "skill": "normal",
+        "side": "right",
+        "gap": 0.6188001251479885
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "left",
+        "gap": 1.2405870924617117
+      },
+      {
+        "kind": "serve",
+        "skill": "normal",
+        "side": "right",
+        "gap": 0.000017500015414314775
+      }
+    ],
+    "invalid": [],
+    "collisions": 19,
+    "errors": []
+  },
+  {
+    "name": "bal",
+    "steps": 6165,
+    "finished": true,
+    "score": [
+      1,
+      5
+    ],
+    "events": [
+      "jump-float-legendary",
+      "cover",
+      "cross",
+      "team-heart",
+      "fake-set",
+      "absolute-read",
+      "sky-serve",
+      "slide-attack",
+      "cover",
+      "team-heart",
+      "jump-legendary",
+      "cover",
+      "cross",
+      "pipe-attack",
+      "commit-block",
+      "team-heart",
+      "fake-set",
+      "commit-block",
+      "tempo-third",
+      "line",
+      "jump-legendary",
+      "cover",
+      "power-hit"
+    ],
+    "contacts": [
+      {
+        "kind": "serve",
+        "skill": "jump-float-legendary",
+        "side": "left",
+        "gap": 0.5922538700071038
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "left",
+        "gap": 0.000021154534519860957
+      },
+      {
+        "kind": "serve",
+        "skill": "normal",
+        "side": "right",
+        "gap": 0.0000011536815719722018
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "right",
+        "gap": 0.014994571880810681
+      },
+      {
+        "kind": "serve",
+        "skill": "normal",
+        "side": "right",
+        "gap": 0.6187959278103661
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "right",
+        "gap": 1.239341848937824
+      },
+      {
+        "kind": "serve",
+        "skill": "jump-legendary",
+        "side": "right",
+        "gap": 2.402772467240852
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "left",
+        "gap": 0.014995312635959759
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "right",
+        "gap": 1.35559239497841
+      },
+      {
+        "kind": "serve",
+        "skill": "normal",
+        "side": "right",
+        "gap": 0.000025129651626921638
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "left",
+        "gap": 0.014995308584622478
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "left",
+        "gap": 1.0247126557963888
+      },
+      {
+        "kind": "serve",
+        "skill": "jump-legendary",
+        "side": "right",
+        "gap": 2.4027724672408604
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "right",
+        "gap": 0.014998045965092287
+      }
+    ],
+    "invalid": [],
+    "collisions": 14,
+    "errors": []
+  },
+  {
+    "name": "ikinci-lig",
+    "steps": 11935,
+    "finished": true,
+    "score": [
+      3,
+      5
+    ],
+    "events": [
+      "jump-legendary",
+      "cover",
+      "fake-set",
+      "ghost-tip",
+      "commit-block",
+      "cover",
+      "fake-set",
+      "ghost-tip",
+      "commit-block",
+      "cover",
+      "fake-set",
+      "ghost-tip",
+      "commit-block",
+      "team-heart",
+      "team-heart",
+      "jump-legendary",
+      "cover",
+      "fake-set",
+      "ghost-tip",
+      "commit-block",
+      "cover",
+      "fake-set",
+      "ghost-tip",
+      "commit-block",
+      "jump-legendary",
+      "cover",
+      "jump-legendary",
+      "cover",
+      "fake-set",
+      "cross",
+      "team-heart",
+      "team-heart",
+      "jump-float-legendary",
+      "cover",
+      "fake-set",
+      "ghost-tip",
+      "commit-block",
+      "jump-legendary",
+      "cover",
+      "fake-set",
+      "ghost-tip",
+      "commit-block",
+      "jump-float-legendary",
+      "cover",
+      "fake-set",
+      "ghost-tip",
+      "commit-block",
+      "pancake",
+      "tempo-third",
+      "ghost-tip",
+      "commit-block",
+      "pancake",
+      "fake-set",
+      "ghost-tip",
+      "commit-block",
+      "cover",
+      "sync-attack",
+      "wipe",
+      "team-heart",
+      "team-heart",
+      "jump-legendary",
+      "cover",
+      "fake-set",
+      "cross",
+      "cover",
+      "fake-set",
+      "ghost-tip",
+      "commit-block",
+      "pancake",
+      "fake-set",
+      "ghost-tip",
+      "commit-block"
+    ],
+    "contacts": [
+      {
+        "kind": "serve",
+        "skill": "jump-legendary",
+        "side": "left",
+        "gap": 2.700622950322286
+      },
+      {
+        "kind": "attack",
+        "skill": "ghost-tip",
+        "side": "left",
+        "gap": 0.8825494056692783
+      },
+      {
+        "kind": "attack",
+        "skill": "ghost-tip",
+        "side": "right",
+        "gap": 1.1798162668490968
+      },
+      {
+        "kind": "attack",
+        "skill": "ghost-tip",
+        "side": "right",
+        "gap": 0.951808994854463
+      },
+      {
+        "kind": "serve",
+        "skill": "jump-legendary",
+        "side": "right",
+        "gap": 2.402767627101845
+      },
+      {
+        "kind": "attack",
+        "skill": "ghost-tip",
+        "side": "right",
+        "gap": 0.8825416338861612
+      },
+      {
+        "kind": "attack",
+        "skill": "ghost-tip",
+        "side": "right",
+        "gap": 1.1798201261410477
+      },
+      {
+        "kind": "serve",
+        "skill": "jump-legendary",
+        "side": "right",
+        "gap": 2.311713870746274
+      },
+      {
+        "kind": "serve",
+        "skill": "jump-legendary",
+        "side": "right",
+        "gap": 2.311713870746274
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "right",
+        "gap": 1.235680292262288
+      },
+      {
+        "kind": "serve",
+        "skill": "jump-float-legendary",
+        "side": "right",
+        "gap": 0.2034195282916753
+      },
+      {
+        "kind": "attack",
+        "skill": "ghost-tip",
+        "side": "left",
+        "gap": 1.0239943840145682
+      },
+      {
+        "kind": "serve",
+        "skill": "jump-legendary",
+        "side": "right",
+        "gap": 2.4027724672408604
+      },
+      {
+        "kind": "attack",
+        "skill": "ghost-tip",
+        "side": "right",
+        "gap": 0.8825342863350261
+      },
+      {
+        "kind": "serve",
+        "skill": "jump-float-legendary",
+        "side": "right",
+        "gap": 0.20826192360585905
+      },
+      {
+        "kind": "attack",
+        "skill": "ghost-tip",
+        "side": "left",
+        "gap": 1.0239967715424358
+      },
+      {
+        "kind": "attack",
+        "skill": "ghost-tip",
+        "side": "left",
+        "gap": 1.0292073426804977
+      },
+      {
+        "kind": "attack",
+        "skill": "ghost-tip",
+        "side": "left",
+        "gap": 2.1979479396660975
+      },
+      {
+        "kind": "attack",
+        "skill": "sync-attack",
+        "side": "left",
+        "gap": 1.2236816535721902
+      },
+      {
+        "kind": "serve",
+        "skill": "jump-legendary",
+        "side": "right",
+        "gap": 2.4027724672408235
+      },
+      {
+        "kind": "attack",
+        "skill": "normal",
+        "side": "right",
+        "gap": 1.2356802922623165
+      },
+      {
+        "kind": "attack",
+        "skill": "ghost-tip",
+        "side": "right",
+        "gap": 0.8825381456266294
+      },
+      {
+        "kind": "attack",
+        "skill": "ghost-tip",
+        "side": "right",
+        "gap": 2.1979353340153827
+      }
+    ],
+    "invalid": [],
+    "collisions": 16,
+    "errors": []
+  }
+]

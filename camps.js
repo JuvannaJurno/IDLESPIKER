@@ -20,7 +20,7 @@ $('campWallet').textContent=fmt(RoomSystem.balance())+' AP · '+fmt(RoomSystem.c
 const shortAP=Math.max(0,cost.ap-RoomSystem.balance()),shortCash=Math.max(0,cost.cash-RoomSystem.cashBalance());
 $('campEnroll').disabled=!players.length||players.some(p=>!C.eligible(s,p))||shortAP>0||shortCash>0;
 $('campEnroll').textContent=players.length?players.length+' oyuncuyu kampa gönder':'Önce oyuncu yerleştir';
-$('campQuote').textContent=players.length?'Toplam: '+fmt(cost.ap)+' AP + '+fmt(cost.cash)+' bütçe'+(shortAP||shortCash?' · Eksik: '+[shortAP?fmt(shortAP)+' AP':'',shortCash?fmt(shortCash)+' bütçe':''].filter(Boolean).join(' + '):' · Dönüş: '+(day+C.duration(s))+'. gün'):'Kartları boş yuvalara sürükle veya dokunarak yerleştir.';
+$('campQuote').textContent=players.length?'Toplam: '+fmt(cost.ap)+' AP + '+fmt(cost.cash)+' bütçe'+(shortAP||shortCash?' · Eksik: '+[shortAP?fmt(shortAP)+' AP':'',shortCash?fmt(shortCash)+' bütçe':''].filter(Boolean).join(' + '):(window.SocialJourneyRules?.available(s,'camp')?' · %25 bütçe indirimi':'')+' · Dönüş: '+(day+C.duration(s))+'. gün'):'Kartları boş yuvalara sürükle veya dokunarak yerleştir.';
 }
 function choose(id,index){const s=state(),p=R.players.find(p=>p.id===id),running=s.camp.entries.filter(e=>e.status==='running');if(!p||!C.eligible(s,p))return false;if(draft.includes(id)&&index===undefined){draft[draft.indexOf(id)]=null;render();return true;}const slot=index===undefined?draft.findIndex((v,i)=>!v&&i>=running.length):index;if(slot<running.length||slot<0||slot>=C.config.slots||draft[slot]){$('campNotice').textContent='Boş bir kamp yuvası seç.';return false;}const old=draft.indexOf(id);if(old>=0)draft[old]=null;draft[slot]=id;$('campNotice').textContent='';render();return true;}
 let dragScrollFrame=0;

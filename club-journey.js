@@ -42,15 +42,9 @@ dialog.addEventListener('click',e=>{if(e.target.closest('[data-choice],#clubRand
 function view(which){for(const id of ['journeyChoices','clubCreator','clubReady'])$(id).hidden=id!==which;$('journeyError').textContent='';dialog.scrollTop=0;dialog.setAttribute('aria-labelledby',which==='journeyChoices'?'journeyTitle':which==='clubReady'?'readyClubName':'creatorTitle');dialog.querySelector('.creator-heading h2').id='creatorTitle';}
 function edit(){draft={...(saved||defaults)};$('clubNameInput').value=draft.name;$('clubShortInput').value=draft.short;view('clubCreator');preview();}
 function ready(){view('clubReady');$('readyBadge').replaceChildren(emblem(saved));$('readyClubName').textContent=saved.name;}
-function menuBadge(){
- const heading=document.querySelector('#clubPanel>.section-top');if(!heading)return;
- let badge=heading.querySelector('.club-menu-badge');
- if(!saved||!LeagueRules.config.bal){badge?.remove();heading.classList.remove('has-club-badge');return;}heading.classList.add('has-club-badge');
- if(!badge){badge=document.createElement('span');badge.className='club-menu-badge';heading.prepend(badge);}
- badge.setAttribute('role','img');badge.setAttribute('aria-label',saved.name+' arması');badge.replaceChildren(emblem(saved));
-}
+function menuBadge(){const heading=document.querySelector('#clubPanel>.section-top');if(!heading)return;heading.querySelector('.club-menu-badge')?.remove();heading.classList.remove('has-club-badge');}
 window.addEventListener('spiker-stage-changed',menuBadge);
-function brand(){menuBadge();if(!saved)return;LeagueRules.teams[0]=saved.name;document.querySelectorAll('.current-club-stage').forEach(el=>el.textContent=saved.name);const icon=document.querySelector('.league-quick-icon');if(icon)icon.replaceChildren(emblem(saved));window.LeagueSeason?.refreshView?.();}
+function brand(){menuBadge();if(!saved)return;LeagueRules.teams[0]=saved.name;document.querySelectorAll('.current-club-stage').forEach(el=>el.textContent='Kulübün');const icon=document.querySelector('.league-quick-icon');if(icon)icon.replaceChildren(emblem(saved));window.LeagueSeason?.refreshView?.();}
 $('journeyClose').onclick=()=>dialog.close();$('journeyNext').onclick=()=>saved?ready():edit();$('journeyReplay').onclick=()=>{if(LeagueSeason.replay()){dialog.close();LeagueSeason.open()}else $('journeyError').textContent='Sezon başlatılamadı. Yeniden dene.'};$('creatorBack').onclick=$('readyBack').onclick=()=>view('journeyChoices');$('editClubIdentity').onclick=edit;
 $('clubNameInput').oninput=e=>{draft.name=e.target.value;preview()};$('clubShortInput').oninput=e=>{draft.short=e.target.value;preview()};$('clubRandom').onclick=()=>{for(const [prop,values]of Object.entries({primary:colors,accent:accents,shape:Object.keys(shapes),symbol:Object.keys(symbols),pattern:Object.keys(patterns),border:Object.keys(borders)}))draft[prop]=values[Math.floor(Math.random()*values.length)];preview()};
 $('clubCreator').onsubmit=e=>{e.preventDefault();const profile=valid(draft);if(profile.name.length<2||!profile.short){$('journeyError').textContent='En az 2 harfli bir kulüp adı ve kısa ad yaz.';return}try{localStorage.setItem(key,JSON.stringify(profile));saved=profile;brand();ready()}catch{$('journeyError').textContent='Kulüp kaydedilemedi. Yeniden dene.'}};

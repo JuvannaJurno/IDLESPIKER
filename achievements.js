@@ -2,6 +2,7 @@
 'use strict';
 const KEY='idle-spiker-achievements-v1';let saved={};try{const raw=JSON.parse(localStorage.getItem(KEY));if(raw&&typeof raw==='object'&&!Array.isArray(raw))saved=raw;}catch{}
 const definitions=[
+ ['followers-250','İlk topluluğumuz','Kulüp hesabında 250 takipçiye ulaş.',250,()=>{try{return 100+(Number(JSON.parse(localStorage.getItem('idle-spiker-social-v1'))?.earnedFollowers)||0)}catch{return 0}}],
  ['instructions-1','İlk talimat','Bir aşamada 1 talimat ver.',1,m=>m.instructions],
  ['instructions-25','Kulüp canlanıyor','Bir aşamada 25 talimata ulaş.',25,m=>m.instructions],
  ['instructions-100','Hareket başladı','Bir aşamada 100 talimata ulaş.',100,m=>m.instructions],
