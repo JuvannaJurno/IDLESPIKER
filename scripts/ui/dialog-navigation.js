@@ -7,6 +7,7 @@ function pin(dialog){
  if(!(dialog instanceof HTMLDialogElement))return;
  transferRail(dialog);
  for(const button of dialog.querySelectorAll(selector)){
+  if(button.closest('#learningHint'))continue;
   if(button.textContent.trim().length>2&&!button.matches('.close-dialog,#transferBack,.screen-back,.back-button,.dialog-back'))continue;
   button.classList.add('dialog-nav-control');
   if(button.parentElement.classList.contains('transfer-nav-rail')){button.style.removeProperty('translate');offsets.delete(button);continue;}

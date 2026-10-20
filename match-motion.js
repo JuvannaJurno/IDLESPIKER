@@ -16,6 +16,8 @@ function render(alpha,paint){
  try{
   for(let i=0;i<players.length;i++){
    const p=players[i],old=previous[i];copy(saved[i]||(saved[i]={}),p);if(old?.p!==p)continue;
+   // A new ball flight starts at this exact contact pose; blending the striker back detaches the hand from the ball.
+   if(currentBall!==previousBall&&currentBall.state==='flight'&&currentBall.attacker===p)continue;
    for(const field of fields){const a=old[field],b=p[field];if(!Number.isFinite(a)||!Number.isFinite(b))continue;
     if(field==='angle')p[field]=a+Math.atan2(Math.sin(b-a),Math.cos(b-a))*alpha;
     else if(!timers.has(field)||b<=a)p[field]=a+(b-a)*alpha;

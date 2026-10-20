@@ -83,7 +83,7 @@ main{padding-bottom:calc(166px + env(safe-area-inset-bottom))}
 
 .formation-player strong{white-space:normal;overflow-wrap:anywhere;line-height:1.25;min-height:25px}.prematch-ap-wallet{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 13px;margin:-1px 0 13px;border:1px solid #d1dfc7;border-radius:10px;background:#e5edd9;color:#557761}.prematch-ap-wallet span{font-size:10px;font-weight:700}.prematch-ap-wallet b{font-size:20px;letter-spacing:-.4px;font-variant-numeric:tabular-nums}#matchWatchPrompt>p:empty{display:none}
 
-#learningHint{pointer-events:none;cursor:default}#learningHint .learning-dismiss{pointer-events:auto;flex:none;min-width:36px;min-height:36px;padding:4px;border:0;background:transparent;color:#967c51;font-family:inherit;cursor:pointer;border-radius:8px}#learningHint .learning-dismiss:hover{background:#eddfba}#learningHint .learning-dismiss:focus-visible{outline:2px solid #967c51}
+#learningHint{pointer-events:auto;cursor:default}#learningHint .learning-dismiss{pointer-events:auto;flex:none;min-width:36px;min-height:36px;padding:4px;border:0;background:transparent;color:#967c51;font-family:inherit;cursor:pointer;border-radius:8px}#learningHint .learning-dismiss:hover{background:#eddfba}#learningHint .learning-dismiss:focus-visible{outline:2px solid #967c51}
 
 /* Give horizontal departments room without shrinking their content. */
 @media all{main{padding-left:8px;padding-right:8px}.club-panel{padding-left:7px;padding-right:7px}.room-lane{gap:8px}.base-room{flex-basis:124px;min-width:124px}.room-tile{height:auto;min-height:210px}.base-room .room{flex-basis:90px;min-height:90px}.base-room .tier-info{padding:7px}.base-room .tier-info h3{font-size:11px}.stage-heading{margin-left:36px}.tier{margin-left:36px}.connector{width:16px}.building-scroll{margin-right:-3px;padding-right:3px}}
@@ -140,3 +140,13 @@ html[data-theme=dark] #rewardLayer .reward-pop.critical{color:#e1cca4;background
 .shift-summary .offline-notice strong,.shift-allowance strong{font-weight:750}.shift-summary .offline-notice strong{color:#42614f}html[data-theme=dark] .shift-summary .offline-notice strong{color:#e0e6c9}
 
 .energy-track:before{left:50%;transform:translateX(-50%)}
+/* Tutorial controls have their own compact typography in every league. */
+#learningHint{box-sizing:border-box;width:280px;max-width:calc(100vw - 20px);font-size:12px;gap:10px;isolation:isolate}
+#learningHint>span{min-width:0}
+#learningHint .learning-dismiss{box-sizing:border-box;flex:0 0 auto;width:auto;height:auto;min-width:32px;min-height:32px;padding:4px;border:0;background:transparent;box-shadow:none;letter-spacing:normal;text-transform:none;line-height:1.25;white-space:nowrap}
+#learningHint[data-action=next] .learning-dismiss,#learningHint[data-action=pause] .learning-dismiss{font-size:11px!important;font-weight:400}
+#learningHint[data-action=close] .learning-dismiss{font-size:20px!important}
+.tutorial-review-row .team-action{width:auto;min-height:38px;margin:0;padding:7px 12px;font-size:11px}
+.tutorial-review-note{font-size:11px;line-height:1.5;margin:0 0 14px;color:inherit;opacity:.75}
+#learningHint .learning-review-stop{flex:none;border:0;background:transparent;color:#967c51;font-family:inherit;font-size:20px;line-height:1;padding:3px;min-width:26px;min-height:32px;pointer-events:auto;cursor:pointer}
+#learningHint .learning-review-stop[hidden]{display:none}

@@ -345,3 +345,7 @@ html[data-theme=dark] #campReturnDialog .return-player-card{background:#283f43;b
 html[data-theme=dark] #campReturnDialog .return-player-card{border-color:#8ba59c!important;box-shadow:0 4px 0 #102e3466,0 7px 18px #0b202944!important}
 html[data-theme=dark] #campReturnDialog .return-star-track{background:#304e58;border-color:#68847e}html[data-theme=dark] #campReturnDialog .return-cap-change b{color:#d5e0bf}
 @media(prefers-reduced-motion:reduce){#campReturnDialog .return-cap-change.is-counting b{animation:none}}
+
+.department-open-mark{position:relative;box-sizing:border-box;flex:0 0 27px;font-size:0;line-height:1}.department-open-mark::before,.department-open-mark::after{content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:currentColor;border-radius:1px}.department-open-mark::before{width:11px;height:2px}.department-open-mark::after{width:2px;height:11px}
+
+.department-buy:disabled{opacity:.5;filter:grayscale(.8);background:#e1e5d8;border-color:#c6ccbf;color:#929b8c;box-shadow:none;cursor:not-allowed}.department-buy:disabled .department-open-mark{background:#e8e9df;border-color:#c9cdbf;color:#a1a795}.department-buy:disabled small{color:#929b8c}

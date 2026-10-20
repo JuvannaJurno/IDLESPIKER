@@ -1,0 +1,182 @@
+[
+  {
+    "label": "mahalle-tap-320",
+    "step": "tap",
+    "target": "energyButton",
+    "intersection": 0,
+    "rect": {
+      "left": 14,
+      "top": 342,
+      "right": 294,
+      "bottom": 402
+    },
+    "width": 320,
+    "height": 568,
+    "font": 20,
+    "copy": "×",
+    "holes": 1,
+    "overflow": false
+  },
+  {
+    "label": "mahalle-tap-360",
+    "step": "tap",
+    "target": "energyButton",
+    "intersection": 0,
+    "rect": {
+      "left": 14,
+      "top": 414,
+      "right": 294,
+      "bottom": 474
+    },
+    "width": 360,
+    "height": 640,
+    "font": 20,
+    "copy": "×",
+    "holes": 1,
+    "overflow": false
+  },
+  {
+    "label": "mahalle-tap-390",
+    "step": "tap",
+    "target": "energyButton",
+    "intersection": 0,
+    "rect": {
+      "left": 14,
+      "top": 618,
+      "right": 294,
+      "bottom": 678
+    },
+    "width": 390,
+    "height": 844,
+    "font": 20,
+    "copy": "×",
+    "holes": 1,
+    "overflow": false
+  },
+  {
+    "label": "mahalle-tap-430",
+    "step": "tap",
+    "target": "energyButton",
+    "intersection": 0,
+    "rect": {
+      "left": 14,
+      "top": 706,
+      "right": 294,
+      "bottom": 766
+    },
+    "width": 430,
+    "height": 932,
+    "font": 20,
+    "copy": "×",
+    "holes": 1,
+    "overflow": false
+  },
+  {
+    "label": "mahalle-path",
+    "step": "instruction-path",
+    "target": "room-tile base-room learning-focus",
+    "intersection": 0,
+    "rect": {
+      "left": 37,
+      "top": 237.1875,
+      "right": 317,
+      "bottom": 297.1875
+    },
+    "width": 390,
+    "height": 844,
+    "font": 20,
+    "copy": "×",
+    "holes": 3,
+    "overflow": false
+  },
+  {
+    "label": "mahalle-arrival",
+    "step": "arrival",
+    "target": "roomAP",
+    "intersection": 0,
+    "rect": {
+      "left": 100,
+      "top": 298.390625,
+      "right": 380,
+      "bottom": 394.390625
+    },
+    "width": 390,
+    "height": 844,
+    "font": 20,
+    "copy": "×",
+    "holes": 2,
+    "overflow": false
+  },
+  {
+    "label": "mahalle-blocks",
+    "step": "blocks-basics",
+    "target": "room-tile unlock-room learning-focus",
+    "intersection": 0,
+    "rect": {
+      "left": 100,
+      "top": 201.1875,
+      "right": 380,
+      "bottom": 297.1875
+    },
+    "width": 390,
+    "height": 844,
+    "font": 11,
+    "copy": "Devam →",
+    "holes": 1,
+    "overflow": false
+  },
+  {
+    "label": "income-connection",
+    "step": "guided-income-conversion",
+    "target": "incomeTutorialFlow",
+    "intersection": 0,
+    "rect": {
+      "left": 12,
+      "top": 217.1875,
+      "right": 292,
+      "bottom": 295.1875
+    },
+    "width": 390,
+    "height": 844,
+    "font": 11,
+    "copy": "Anladım",
+    "holes": 2,
+    "overflow": false
+  },
+  {
+    "label": "social-draft",
+    "step": "guided-social-draft",
+    "target": "socialDraft",
+    "intersection": 0,
+    "rect": {
+      "left": 15,
+      "top": 169.5,
+      "right": 295,
+      "bottom": 229.5
+    },
+    "width": 390,
+    "height": 844,
+    "font": 11,
+    "copy": "Devam →",
+    "holes": 1,
+    "overflow": false
+  },
+  {
+    "label": "social-publish-working",
+    "step": "guided-social-publish",
+    "target": "socialPublish",
+    "intersection": 0,
+    "rect": {
+      "left": 26,
+      "top": 277.421875,
+      "right": 306,
+      "bottom": 355.421875
+    },
+    "width": 390,
+    "height": 844,
+    "font": 11,
+    "copy": "Devam →",
+    "holes": 1,
+    "overflow": false
+  }
+]

@@ -10,14 +10,14 @@ const choice=document.createElement('dialog');choice.id='stageTestPosition';choi
 async function go(end){
  button.disabled=true;let exitAnimations=[],restoreExit=null;
  try{
-  const target=Number(select.value);if(![1,2,3].includes(target))throw Error('Geçersiz aşama');
+  const target=Number(select.value);let prologueMarkup=null;if(target===1){const response=await fetch('index.html');if(!response.ok)throw Error('Başlangıç görselleri yüklenemedi');prologueMarkup=new DOMParser().parseFromString(await response.text(),'text/html');}if(![1,2,3].includes(target))throw Error('Geçersiz aşama');
   const profile=target>1?ClubJourney.ensureRandom():ClubJourney.profile();
   let current=RoomSystem.snapshot();const currentStage=LeagueRules.config.division===3?3:LeagueRules.config.bal?2:1;
   if(target>currentStage){if(currentStage===1){await BalTransition.start(true);while(BalTransition.active)await new Promise(requestAnimationFrame);if(!LeagueRules.config.bal)throw Error('BAL geçişi tamamlanamadı');}if(target===3){await DivisionThree.start(true);if(!DivisionThree.active())throw Error('2. Lig geçişi tamamlanamadı');}current=RoomSystem.snapshot();}
   if(target<=currentStage){restoreExit=BalVisual.capture(document.getElementById('workflow'));exitAnimations=await CardMotion.testExit();}let room;
   room=target===1?RoomRules.defaults():BalRules.enter(RoomRules.defaults(),1);
   if(current.dailyShift)room.dailyShift=JSON.parse(JSON.stringify(current.dailyShift));
-  if(target===3){room.division=3;room.openDepartments=[2,4];}
+  if(target===3){room.division=3;room.openDepartments=[2,4];room.mediaDepartmentOpen=end;}
   for(const card of RoomRules.catalog){const stage=card.division===3?3:card.bal?2:1;if(stage<target||end&&stage===target)room.floors[card.floor].push(...Array(RoomRules.maxLevel(room,card)).fill(card.id));}
   room.lastSeen=Date.now();
   const players=TeamRules.players.length?TeamRules.players:TeamRules.generate().map(p=>({...p,appearance:TeamAppearance.generate()}));
@@ -29,7 +29,7 @@ async function go(end){
   MenuUI.stopMotion();window.gameResetting=true;
   localStorage.setItem('idle-spiker-bal-transition-v1',JSON.stringify({version:1,entries}));
   for(const [key,value]of Object.entries(entries))localStorage.setItem(key,value);
-  localStorage.removeItem('idle-spiker-bal-transition-v1');location.reload();
+  await CardMotion.handoff(()=>{exitAnimations.forEach(a=>a.cancel());restoreExit?.();for(const d of document.querySelectorAll('dialog[open]'))d.close();window.GuidedTutorial?.stop();LeagueSeason.loadStage(league);window.DivisionThree?.loadSocial(JSON.parse(entries['idle-spiker-social-v1']));document.body.classList.toggle('bal-stage',target>1);if(prologueMarkup){for(const tier of document.querySelectorAll('#workflow>.tier')){const original=prologueMarkup.querySelector('.tier[data-floor="'+tier.dataset.floor+'"] .base-room');tier.querySelector('.base-room').innerHTML=original.innerHTML;}}RoomSystem.loadStage(room);MenuUI.loadStage({day:1,clicksToday:0});TeamView.refresh();window.CampSystem?.refresh();if(target===3)DivisionThree.decorate();else{document.querySelector('#clubPanel .section-top .eyebrow').textContent='BİZİM KULÜP · AŞAMA '+target;document.querySelector('.stage-heading strong').textContent=target===2?'BÖLGESEL AMATÖR LİG':'Altyapı ve Temeller';}localStorage.removeItem('idle-spiker-bal-transition-v1');});window.gameResetting=false;button.disabled=false;select.value=String(target);window.dispatchEvent(new Event('spiker-stage-changed'));
  }catch(error){exitAnimations.forEach(a=>a.cancel());restoreExit?.();document.getElementById('stageTestError').textContent='Aşama değiştirilemedi. Kayıt alanını kontrol edip tekrar dene.';window.gameResetting=false;button.disabled=false;console.error(error);}
 }
 })();
