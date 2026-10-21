@@ -16,13 +16,14 @@ function saveGuide(){try{localStorage.setItem(guideKey,JSON.stringify(guideProgr
 function endGuide(complete=false){const tour=guided;guided=null;clear();if(complete&&!tour.review){guideProgress[tour.id]='done';saveGuide();tour?.finish?.();}if(tour?.review)tour.finish?.();if(tour&&!complete&&!tour.review)pausedGuides.add(tour.id);if(tour&&!complete&&!tour.review)window.dispatchEvent(new CustomEvent('spiker-guide-paused',{detail:{id:tour.id}}));cooldown=Date.now()+500;}
 function nextGuide(){if(!guided)return;const tour=guided;tour.index++;if(!tour.review){guideProgress[tour.id]=tour.steps[tour.index]?.id||'done';saveGuide();}clear();if(tour.index>=tour.steps.length){endGuide(true);return}tour.steps[tour.index].enter?.();update();}
 window.GuidedTutorial={start(steps,finish,id=steps[0].id,{review=false,restart=false}={}){if(guided||(!review&&pausedGuides.has(id)))return false;if(!review&&!restart&&guideProgress[id]==='done'){finish?.();return false;}clear();const saved=review||restart?-1:steps.findIndex(s=>s.id===guideProgress[id]);guided={steps,index:Math.max(0,saved),finish,id,review};steps[guided.index].enter?.();update();return true;},stop:()=>endGuide(false),get active(){return !!guided},paused:id=>pausedGuides.has(id),resume:id=>pausedGuides.delete(id),completed:id=>guideProgress[id]==='done'};
-document.addEventListener('click',e=>{const tour=guided,index=tour?.index;if(!tour)return;const step=tour.steps[index];if(step.click&&e.target.closest(step.click))setTimeout(()=>{if(guided===tour&&guided.index===index&&(!step.done||step.done()))nextGuide()},0)});
+document.addEventListener('click',e=>{const tour=guided,index=tour?.index;if(!tour)return;const step=tour.steps[index],matches=!!step.click&&!!e.target.closest?.(step.click);setTimeout(()=>{if(guided!==tour||guided.index!==index)return;if(matches&&(!step.done||step.done()))nextGuide();else update();},0)},true);
+document.addEventListener('pointerup',()=>{if(guided)setTimeout(update,0)},true);
 window.addEventListener('spiker-stage-changed',()=>{done.clear();try{JSON.parse(localStorage.getItem(key)||'[]').forEach(id=>done.add(id))}catch{}following=false;arrival=null;cooldown=0;clear();update()});
 function clear(){reviewStop.hidden=true;close.hidden=false;document.body.classList.remove('instruction-path-guide');target?.classList.remove('learning-focus');target=null;hint.hidden=true;spotlight.setAttribute('hidden','');active=null}
 close.onclick=()=>{if(guided){const step=guided.steps[guided.index];if(step.allowNext||(!step.click&&!step.done))nextGuide();else endGuide(false);return}const tour=active?.startsWith('blocks-')||active==='player-stats'||active==='quick-upgrade';if(active)finish(active);clear();cooldown=Date.now()+(tour?250:6000)};
 window.addEventListener('spiker-ap-arrived',e=>{if(!done.has('arrival')&&!arrival){arrival={ap:e.detail.ap,showAt:Date.now()+1200,until:Date.now()+8500};cooldown=0;update()}});
 document.getElementById('energyButton').addEventListener('click',()=>{if(!done.has('arrival')&&!following){following=true;finish('tap');clear();cooldown=0;setTimeout(update,0)}});
-document.addEventListener('click',e=>{if(active==='quick-upgrade'&&e.target.closest('.card-open-upgrade')){finish('quick-upgrade');clear();cooldown=Date.now()+250}},true);
+document.addEventListener('click',e=>{if(active==='quick-upgrade'&&e.target.closest('.card-open-upgrade')){const levels=TeamRules.players.map(p=>TeamRules.cardLevel(p));setTimeout(()=>{if(TeamRules.players.some((p,i)=>TeamRules.cardLevel(p)>levels[i])){finish('quick-upgrade');clear();cooldown=Date.now()+250;update();}},0)}},true);
 const visible=el=>el&&el.getClientRects().length>0;
 function setCopy(text){copy.replaceChildren();for(const part of text.split(/(\[\[.*?\]\])/g)){if(part.startsWith('[[')&&part.endsWith(']]')){const name=document.createElement('strong');name.className='tutorial-button-name';name.textContent=part.slice(2,-2);copy.append(name)}else copy.append(document.createTextNode(part))}}
 function intersect(a,b){return Math.max(0,Math.min(a.right,b.right)-Math.max(a.left,b.left))*Math.max(0,Math.min(a.bottom,b.bottom)-Math.max(a.top,b.top));}
@@ -57,16 +58,17 @@ const choice=document.createElement('dialog');choice.id='tutorialChoice';choice.
 choice.innerHTML='<span class="eyebrow">YENİ BAŞLANGIÇ</span><h2 id="tutorialChoiceTitle">Kısa bir hatırlatma ister misin?</h2><p>Talimatları, blokları ve oyuncu geliştirmeyi birlikte gözden geçirelim.</p><button type="button" class="team-action" data-tutorial="yes">Evet, göster</button><button type="button" class="team-secondary" data-tutorial="no">Doğrudan oyna</button>';document.body.append(choice);
 function chooseTutorial(enabled){const next=enabled?[]:['tap','arrival','blocks-basics','assistant','train','player-stats','match','quick-upgrade'];try{localStorage.setItem(key,JSON.stringify(next))}catch{}done.clear();next.forEach(id=>done.add(id));following=false;arrival=null;cooldown=0;choice.close();update();}
 choice.querySelector('[data-tutorial=yes]').onclick=()=>chooseTutorial(true);choice.querySelector('[data-tutorial=no]').onclick=()=>chooseTutorial(false);choice.addEventListener('cancel',e=>{e.preventDefault();chooseTutorial(false)});
-let incomeArrival=guideProgress.incomeAmount??null;
-window.addEventListener('spiker-income-arrived',e=>{incomeArrival=e.detail.cash;guideProgress.incomeAmount=incomeArrival;saveGuide();});
+let incomeArrival=guideProgress.incomeAmount??null,incomeReceipts=0;
+window.addEventListener('spiker-income-arrived',e=>{incomeArrival=e.detail.cash;incomeReceipts++;guideProgress.incomeAmount=incomeArrival;saveGuide();setTimeout(update,0);});
 function incomeFlowTarget(){const workflow=document.getElementById('workflow'),tier=workflow?.querySelector('.tier[data-floor="2"]'),track=workflow?.querySelector('.energy-track');if(!tier||!track)return null;let region=document.getElementById('incomeTutorialFlow');if(!region){region=document.createElement('span');region.id='incomeTutorialFlow';region.setAttribute('aria-hidden','true');workflow.append(region);}const w=workflow.getBoundingClientRect(),t=tier.getBoundingClientRect(),f=track.getBoundingClientRect();Object.assign(region.style,{position:'absolute',pointerEvents:'none',left:(f.left-w.left-8)+'px',top:(t.top-w.top)+'px',width:(f.width+16)+'px',height:t.height+'px'});return region;}
 window.addEventListener('spiker-media-opened',()=>{if(guided)endGuide(false);delete guideProgress.social;pausedGuides.delete('social');saveGuide();cooldown=0;GuidedTutorial.start([{id:'social-open',target:()=>document.getElementById('socialTab'),click:'#socialTab',done:()=>!document.getElementById('socialPanel').hidden,text:'Kulübünün paylaşımları için [[Sosyal]] düğmesine dokun.'}],()=>{cooldown=0;update();},'social-entry',{restart:true});update();});
+function socialFollowerCount(){try{return Number(JSON.parse(localStorage.getItem('idle-spiker-social-v1')||'{}').earnedFollowers)||0;}catch{return 0;}}
 function contextualGuide(){
-const q=s=>document.querySelector(s),state=RoomSystem.tutorialState();
+const q=s=>document.querySelector(s),state=RoomSystem.tutorialState(),campSent=()=>RoomSystem.developmentState().camp.entries.some(e=>e.status==='running');
 if(q('#campDialog[open]')&&visible(q('#campPanel'))&&!GuidedTutorial.completed('camp')&&!GuidedTutorial.paused('camp')){q('.camp-first-help')?.remove();q('#campDialog').classList.remove('camp-guiding');GuidedTutorial.start([
-{id:'camp-players',target:()=>visible(q('#campCandidates'))?q('#campCandidates'):q('.camp-overview'),text:'Gelişim sınırına yaklaşan oyuncularını kampa seç.'},
-{id:'camp-cost',target:()=>q('#campEntryCost'),text:'Kampın süresi ve gereken kaynaklar burada görünür.'},
-{id:'camp-send',target:()=>visible(q('#campEnroll'))?q('#campEnroll'):q('.camp-overview'),text:'Seçtiğin oyuncuları buradan gönder. Kamptayken yükseltilemezler.'},
+{id:'camp-players',allowNext:true,done:()=>!!q('#campSlots [data-state="selected"]')||campSent(),target:()=>visible(q('#campCandidates'))?q('#campCandidates'):q('.camp-overview'),text:'Gelişim sınırına yaklaşan oyuncularını kampa seç.'},
+{id:'camp-cost',allowNext:true,done:campSent,target:()=>q('#campEntryCost'),text:'Kampın süresi ve gereken kaynaklar burada görünür.'},
+{id:'camp-send',allowNext:true,done:campSent,target:()=>visible(q('#campEnroll'))?q('#campEnroll'):q('.camp-overview'),text:'Seçtiğin oyuncuları buradan gönder. Kamptayken yükseltilemezler.'},
 {id:'camp-stars',target:()=>visible(q('#campSlots'))?q('#campSlots'):q('.camp-overview'),text:'Tamamlanan kamplar yıldızları doldurur ve gelişim sınırını artırır.'}
 ],null,'camp');return true;}
 if(q('#playerDialog[open]')&&!GuidedTutorial.completed('skills')&&!GuidedTutorial.paused('skills')&&state.stage==='bal'){GuidedTutorial.start([
@@ -74,17 +76,18 @@ if(q('#playerDialog[open]')&&!GuidedTutorial.completed('skills')&&!GuidedTutoria
 ],null,'skills');return true;}
 const club=()=>!q('.dashboard').hidden&&!q('dialog[open]');if(state.stage==='bal'&&state.division!==3&&!state.openDepartments.includes(2)&&guideProgress.income==='done'){delete guideProgress.income;delete guideProgress.incomeAmount;incomeArrival=null;saveGuide();}
 if(state.stage==='bal'&&state.division!==3&&club()&&!GuidedTutorial.completed('income')&&!GuidedTutorial.paused('income')){
-const incomeInstructions=state.instructions;
+const incomeInstructions=state.instructions;let incomeReceiptsBefore=incomeReceipts;
 GuidedTutorial.start([
 {id:'income-center',skip:()=>RoomSystem.tutorialState().openDepartments.includes(2),target:()=>q('.tier[data-floor="2"] .base-room'),click:'.department-buy[data-floor="2"]',done:()=>RoomSystem.tutorialState().openDepartments.includes(2),text:'[[Ücretsiz aç]] ile Gelir Merkezi’ni aç. Talimatlarla bütçe kazandırır.'},
 {id:'income-open',skip:()=>RoomSystem.tutorialState().openDepartments.includes(2),target:()=>q('.department-buy[data-floor="2"]'),click:'.department-buy[data-floor="2"]',done:()=>RoomSystem.tutorialState().openDepartments.includes(2),text:'[[Ücretsiz aç]] ile Gelir Merkezi’ni etkinleştir.'},
 {id:'income-send',target:()=>q('#energyButton'),click:'#energyButton',done:()=>RoomSystem.tutorialState().instructions>incomeInstructions,text:'[[Talimat ver]] düğmesine dokun. Talimatın Gelir Merkezi’ne gidişini izleyelim.'},
-{id:'income-conversion',target:incomeFlowTarget,text:'Talimatlar buraya geldiğinde üretim ilerler. Şimdilik her 10 talimatta bütçe kazanıyorsun.'},
+{id:'income-conversion',allowNext:true,enter:()=>{incomeReceiptsBefore=incomeReceipts;},done:()=>incomeReceipts>incomeReceiptsBefore,target:incomeFlowTarget,text:'Talimatlar buraya geldiğinde üretim ilerler. Şimdilik her 10 talimatta bütçe kazanıyorsun.'},
 ],null,'income');return true;}
 if(!q('#socialPanel')?.hidden&&state.division===3&&!GuidedTutorial.completed('social')&&!GuidedTutorial.paused('social')){
+const followersBefore=socialFollowerCount(),published=()=>socialFollowerCount()>followersBefore;
 GuidedTutorial.start([
-{id:'social-draft',target:()=>q('#socialDraft'),text:'Kulübünün gönderileri burada hazırlanır.'},
-{id:'social-publish',allowNext:true,target:()=>q('#socialPublish'),done:()=>!!q('#simplePublishStatus')?.textContent.includes('Paylaşıldı'),text:()=>q('#socialPublish')?.disabled?'Gönderiler arka planda hazırlanır. Hazır olduğunda buradan paylaşabilirsin.':'Gönderin hazır. [[Paylaş]] ile yayınlayabilirsin.'},
+{id:'social-draft',allowNext:true,done:published,target:()=>q('#socialDraft'),text:'Kulübünün gönderileri burada hazırlanır.'},
+{id:'social-publish',allowNext:true,target:()=>q('#socialPublish'),done:published,text:()=>q('#socialPublish')?.disabled?'Gönderiler arka planda hazırlanır. Hazır olduğunda buradan paylaşabilirsin.':'Gönderin hazır. [[Paylaş]] ile yayınlayabilirsin.'},
 ],null,'social');return true;}
 let socialGrowth=false;try{const social=JSON.parse(localStorage.getItem('idle-spiker-social-v1')||'{}');socialGrowth=!!social.studio?.completedDraft&&social.earnedFollowers>0;}catch{}
 if(!q('#socialPanel')?.hidden&&state.division===3&&socialGrowth&&!GuidedTutorial.completed('social-growth')&&!GuidedTutorial.paused('social-growth')){GuidedTutorial.start([

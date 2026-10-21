@@ -1,0 +1,95 @@
+{
+  "runsPerStyle": 300,
+  "results": [
+    {
+      "style": "casual",
+      "runs": 300,
+      "startOVR": 75,
+      "endOVR": 105.5,
+      "ranks": [
+        0,
+        4,
+        130,
+        116,
+        49,
+        1,
+        0,
+        0
+      ],
+      "topTeams": [
+        134,
+        0,
+        300,
+        18,
+        0,
+        148,
+        0,
+        300
+      ],
+      "meanWins": 16.243333333333332,
+      "perfect": 0,
+      "openingWinRate": 0.5214285714285715,
+      "closingWinRate": 0.6004761904761905
+    },
+    {
+      "style": "regular",
+      "runs": 300,
+      "startOVR": 75.33333333333333,
+      "endOVR": 123.33333333333333,
+      "ranks": [
+        0,
+        27,
+        165,
+        87,
+        21,
+        0,
+        0,
+        0
+      ],
+      "topTeams": [
+        192,
+        0,
+        299,
+        10,
+        0,
+        99,
+        0,
+        300
+      ],
+      "meanWins": 17.563333333333333,
+      "perfect": 0,
+      "openingWinRate": 0.5771428571428572,
+      "closingWinRate": 0.6376190476190476
+    },
+    {
+      "style": "focused",
+      "runs": 300,
+      "startOVR": 84.83333333333333,
+      "endOVR": 123.5,
+      "ranks": [
+        1,
+        29,
+        165,
+        85,
+        20,
+        0,
+        0,
+        0
+      ],
+      "topTeams": [
+        195,
+        0,
+        298,
+        11,
+        0,
+        96,
+        0,
+        300
+      ],
+      "meanWins": 17.723333333333333,
+      "perfect": 0,
+      "openingWinRate": 0.5995238095238096,
+      "closingWinRate": 0.638095238095238
+    }
+  ]
+}

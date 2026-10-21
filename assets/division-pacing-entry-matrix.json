@@ -1,0 +1,209 @@
+[
+  {
+    "startLevel": 32,
+    "seed": 7,
+    "ovr": 123.16666666666667,
+    "twoStarDay": 221,
+    "finalCamps": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      2
+    ],
+    "upgradeWindows": [
+      173,
+      41,
+      32,
+      15
+    ],
+    "last": 529,
+    "maxGap": 11
+  },
+  {
+    "startLevel": 32,
+    "seed": 41,
+    "ovr": 123.5,
+    "twoStarDay": 219,
+    "finalCamps": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      2
+    ],
+    "upgradeWindows": [
+      173,
+      41,
+      32,
+      15
+    ],
+    "last": 526,
+    "maxGap": 11
+  },
+  {
+    "startLevel": 32,
+    "seed": 113,
+    "ovr": 123.16666666666667,
+    "twoStarDay": 219,
+    "finalCamps": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      2
+    ],
+    "upgradeWindows": [
+      172,
+      43,
+      31,
+      15
+    ],
+    "last": 525,
+    "maxGap": 11
+  },
+  {
+    "startLevel": 38,
+    "seed": 7,
+    "ovr": 123.5,
+    "twoStarDay": 214,
+    "finalCamps": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      2
+    ],
+    "upgradeWindows": [
+      134,
+      40,
+      32,
+      15
+    ],
+    "last": 531,
+    "maxGap": 13
+  },
+  {
+    "startLevel": 38,
+    "seed": 41,
+    "ovr": 123.16666666666667,
+    "twoStarDay": 230,
+    "finalCamps": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      2
+    ],
+    "upgradeWindows": [
+      133,
+      39,
+      32,
+      16
+    ],
+    "last": 531,
+    "maxGap": 11
+  },
+  {
+    "startLevel": 38,
+    "seed": 113,
+    "ovr": 123.16666666666667,
+    "twoStarDay": 232,
+    "finalCamps": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      2
+    ],
+    "upgradeWindows": [
+      132,
+      40,
+      33,
+      15
+    ],
+    "last": 532,
+    "maxGap": 13
+  },
+  {
+    "startLevel": 44,
+    "seed": 7,
+    "ovr": 123.66666666666667,
+    "twoStarDay": 209,
+    "finalCamps": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      2
+    ],
+    "upgradeWindows": [
+      95,
+      37,
+      31,
+      15
+    ],
+    "last": 528,
+    "maxGap": 12
+  },
+  {
+    "startLevel": 44,
+    "seed": 41,
+    "ovr": 123.5,
+    "twoStarDay": 201,
+    "finalCamps": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      2
+    ],
+    "upgradeWindows": [
+      97,
+      39,
+      29,
+      15
+    ],
+    "last": 528,
+    "maxGap": 12
+  },
+  {
+    "startLevel": 44,
+    "seed": 113,
+    "ovr": 123.66666666666667,
+    "twoStarDay": 223,
+    "finalCamps": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      2
+    ],
+    "upgradeWindows": [
+      95,
+      37,
+      31,
+      15
+    ],
+    "last": 526,
+    "maxGap": 12
+  }
+]

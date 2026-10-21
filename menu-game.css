@@ -152,3 +152,53 @@ html[data-theme=dark] #rewardLayer .reward-pop.critical{color:#e1cca4;background
 #learningHint .learning-review-stop[hidden]{display:none}
 
 .intro-legendary{display:flex;flex-direction:column;align-items:center;gap:3px;margin:7px 2px 0;padding:6px 4px;border:1px solid #d8b86d;border-radius:8px;background:#fff0bf;color:#795623;font-size:9px;line-height:1.3;overflow-wrap:anywhere}.intro-legendary-tier{font-size:6px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;color:#9b752d}.libero-card .intro-legendary{align-items:flex-start}html[data-theme=dark] #matchIntro .intro-legendary{background:#51462d;color:#f5dfa1;border-color:#9a804a}html[data-theme=dark] #matchIntro .intro-legendary-tier{color:#d5b56d}
+
+/* Volleyball formation preview: turquoise free zone and orange playing surface. */
+#editMatchTeam{display:none}#preMatchNotice:empty{display:none}
+#preMatchStage .formation-court{padding:12px 14px;background:#80b8b4!important;border-color:#fff9e7!important;border-radius:15px;box-shadow:0 3px 0 #83a89f}
+#preMatchStage .formation-half{position:relative;background:#d39761;border-left:2px solid #fff9e9;border-right:2px solid #fff9e9;gap:10px 8px;padding:12px 7px}
+#preMatchStage .away-half{border-top:2px solid #fff9e9}#preMatchStage .own-half{border-bottom:2px solid #fff9e9}
+#preMatchStage .formation-half:before{content:'';position:absolute;left:0;right:0;height:2px;background:#fff9e9;pointer-events:none}#preMatchStage .away-half:before{top:66.667%}#preMatchStage .own-half:before{top:33.333%}
+#preMatchStage .formation-player{position:relative;z-index:1;color:#354f52}#preMatchStage .formation-player strong{color:#354f52;font-weight:800}#preMatchStage .formation-player small{color:#68513d;opacity:1}
+#preMatchStage .formation-net{height:6px;padding:0;border-top:1px solid #fff5da;border-bottom:1px solid #fff5da;background:repeating-linear-gradient(90deg,#294d58 0 4px,#c8d9cd 4px 5px);font-size:0;line-height:0}
+
+/* Legible lineup tokens above the orange floor and court markings. */
+#preMatchStage .formation-player{padding:6px 3px;gap:3px;border:1px solid #fff5dc80;background:#fff4dcdf;border-radius:11px;box-shadow:0 2px 0 #97633825}
+#preMatchStage .formation-player.rival{background:#edf7f2e8;border-color:#e1f3ed}
+#preMatchStage .formation-player strong{font-size:10px;line-height:1.25;font-weight:800;color:#31535b;text-shadow:0 1px 0 #fff9}
+#preMatchStage .formation-player small{font-size:7px;color:#786c51;opacity:1}
+#preMatchStage .formation-shirt{width:39px;height:39px;color:#f3c46c}
+#preMatchStage .rival .formation-shirt{color:#acdce8}
+#preMatchStage .formation-shirt svg{filter:drop-shadow(0 1px 0 #ffffff) drop-shadow(0 2px 1px #36515a38);stroke:#92744766;stroke-width:.7}
+#preMatchStage .rival .formation-shirt svg{stroke:#4b839966}
+#preMatchStage .formation-shirt b{color:#66512c;font-weight:900;top:13px}
+#preMatchStage .rival .formation-shirt b{color:#365f76}
+#preMatchStage button.formation-player:is(:hover,:focus-visible){background:#fff8e6;border-color:#d8ae58;outline:2px solid #ffe7a1;box-shadow:0 2px 0 #97633825}
+
+/* Club kit colors, with a small name highlight instead of player cards. */
+#preMatchStage .formation-player,#preMatchStage .formation-player.rival{background:transparent;border:0;border-radius:0;box-shadow:none;padding:5px 2px;gap:3px}
+#preMatchStage .formation-player strong{max-width:100%;padding:3px 6px;border-radius:5px;background:#fff9e8ec;color:#34535b;text-shadow:none;box-shadow:0 1px 2px #875a2f18}
+#preMatchStage .formation-player small{color:#55452f;font-weight:700}
+#preMatchStage .formation-shirt,#preMatchStage .rival .formation-shirt{color:var(--formation-kit);width:42px;height:42px}
+#preMatchStage .formation-shirt svg,#preMatchStage .rival .formation-shirt svg{stroke:var(--formation-accent);stroke-width:1.4;filter:drop-shadow(0 2px 1px #47391e50)}
+#preMatchStage .formation-shirt b,#preMatchStage .rival .formation-shirt b{color:var(--formation-number);top:14px;font-size:13px;text-shadow:0 1px 1px #0002}
+#preMatchStage button.formation-player:is(:hover,:focus-visible){background:#fff8e625;border:0;border-radius:9px;box-shadow:none;outline:2px solid #fff4c5}
+
+/* Clear lineup typography, without individual name stickers. */
+#preMatchStage .formation-player{gap:3px;padding:6px 2px}
+#preMatchStage .formation-player strong{display:flex;align-items:center;justify-content:center;width:100%;min-height:27px;padding:0 1px;background:none;border-radius:0;box-shadow:none;white-space:normal;overflow:visible;text-overflow:clip;text-align:center;font-family:inherit;font-size:11px;line-height:1.2;font-weight:800;letter-spacing:0;color:#293f43;text-shadow:0 0 3px #d39761,0 0 3px #d39761,0 1px 0 #e2b181}
+#preMatchStage .formation-player small{font-size:9px;font-weight:500;line-height:1.2;letter-spacing:0;color:#624c37;text-shadow:0 0 3px #d39761,0 0 3px #d39761}
+#preMatchStage .formation-half{gap:12px 8px;padding-top:12px;padding-bottom:12px}
+#preMatchStage .formation-shirt{margin-bottom:1px}
+#preMatchStage>h3{font-family:inherit;font-size:14px;line-height:1.3;font-weight:800;letter-spacing:0;margin:10px 0;color:#416a75}
+@media(max-width:350px){#preMatchStage .formation-player strong{font-size:10px}#preMatchStage .formation-player small{font-size:8px}#preMatchStage .formation-half{column-gap:5px}}
+
+#preMatchStage .formation-player strong{background:#d39761;text-shadow:none}
+
+#preMatchStage .formation-player strong,#preMatchStage .formation-player small{background:transparent;text-shadow:none;box-shadow:none}
+
+/* A faint, compact translucent backing for lineup names. */
+#preMatchStage .formation-player strong{display:block;width:fit-content;max-width:100%;min-height:0;padding:2px 4px;border-radius:3px;background:#fff9eb24;box-shadow:none;text-shadow:none}
+
+#preMatchStage .formation-player strong{background:#ffffff}
+.building-scroll .workflow>.energy-track{bottom:-12px;border-radius:5px 5px 0 0}

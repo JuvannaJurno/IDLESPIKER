@@ -33,3 +33,226 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 
 
 .match-board .team-mark{display:grid!important;place-items:center;width:34px;height:36px;margin:0 auto 4px;border:0;background:none;box-shadow:none;color:#658471;font-size:22px}.team-mark img{display:block;width:100%;height:100%;object-fit:contain}.match-board .score-team{min-width:0}.match-board .score-team strong{overflow-wrap:anywhere}
+
+/* Server portrait lives inside the scoreboard so the court never shifts mid-rally. */
+.serve-strip.has-server{display:flex;align-items:center;gap:10px;min-height:66px;padding:7px 3px;text-align:left;letter-spacing:0;color:#426b72}.server-portrait{display:block;flex:0 0 48px;width:48px;height:48px;overflow:hidden;border:1px solid #ddd9b9;border-radius:14px;background:linear-gradient(145deg,#f5e8c8,#dce7db)}.server-portrait img{display:block;width:100%;height:100%;object-fit:cover}.server-copy{display:flex;flex:1;min-width:0;flex-direction:column;gap:2px}.server-label{font-size:7px;line-height:1.2;letter-spacing:1.2px;font-weight:800;color:#7f927c}.server-name{font-size:12px;line-height:1.2;font-weight:800;color:#41666d;overflow-wrap:anywhere}.server-club{font-size:9px;line-height:1.2;color:#839082}.server-number{display:grid;place-items:center;flex:0 0 30px;height:30px;border-radius:10px;background:#e8efdf;color:#638779;font-size:10px;font-weight:800}.serve-strip.has-server[data-team="1"] .server-number{background:#f4e5d1;color:#ab7856}.serve-strip.has-server[data-serving="true"] .server-label:before{content:'';display:inline-block;width:5px;height:5px;margin-right:5px;border-radius:50%;background:#d3a44e;box-shadow:0 0 0 3px #d3a44e18;vertical-align:1px}.serve-strip.has-server[data-serving="false"] .server-label{color:#98a492}@media(max-height:700px){.serve-strip.has-server{min-height:50px;padding:5px 2px;gap:8px}.server-portrait{width:38px;height:38px;flex-basis:38px;border-radius:11px}.server-name{font-size:11px}.server-club{font-size:8px}.server-number{height:26px;flex-basis:26px}}@media(min-aspect-ratio:6/5) and (max-height:500px){.serve-strip.has-server{gap:5px}.server-name{font-size:10px}.server-club{font-size:8px}.server-number{display:none}}
+
+.server-portrait{display:grid;place-items:center}.server-fallback{font-size:16px;font-weight:800;color:#718a7e}.server-portrait [hidden]{display:none}
+
+/* Commentary is replaced by the persistent player portrait above the court. */
+#event{display:none!important}
+
+#matchSkillNotice{display:none!important}
+
+
+.server-skill{--skill-ink:#66716d;--skill-tint:#e8ece5;--skill-edge:#b8c2b7;flex:0 1 52%;min-width:0;min-height:46px;display:flex;align-items:center;justify-content:center;gap:8px;margin-left:auto;padding:8px 12px;border:1px solid var(--skill-edge);border-radius:10px;background:linear-gradient(105deg,var(--skill-tint),#fff8e700);color:var(--skill-ink);text-align:left}
+.server-skill[hidden]{display:none}.server-skill strong{font-size:11px;font-weight:900;line-height:1.25;color:var(--skill-ink);overflow-wrap:anywhere}.server-skill small{font-size:8px;color:var(--skill-ink);opacity:.8;line-height:1.2}.serve-strip.has-server:has(.server-skill:not([hidden])) .server-number{display:grid}
+.serve-strip[data-skill="uncommon"] .server-skill{--skill-ink:#397746;--skill-tint:#e0efd9;--skill-edge:#a5c695}
+.serve-strip[data-skill="rare"] .server-skill{--skill-ink:#286ca5;--skill-tint:#deedf9;--skill-edge:#96bddd}
+.serve-strip[data-skill="epic"] .server-skill{--skill-ink:#8150a4;--skill-tint:#eee0f6;--skill-edge:#c2a3d6}
+.serve-strip[data-skill="legendary"] .server-skill{--skill-ink:#986515;--skill-tint:#ffebba;--skill-edge:#dfb957}
+@media(max-width:350px){.serve-strip.has-server{gap:7px}.server-skill{padding:7px 8px;flex-basis:43%}.server-skill strong{font-size:10px}}
+
+.server-skill-emblem{display:grid;place-items:center;flex:0 0 24px;width:24px;height:26px;color:var(--skill-ink)}.server-skill-emblem svg{display:block;width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linejoin:round}.server-skill-words{display:flex;flex-direction:column;justify-content:center;gap:3px;min-width:0;max-width:calc(100% - 32px)}.server-skill.skill-enter{animation:server-skill-enter .4s cubic-bezier(.16,1,.3,1) both}.server-skill.skill-enter .server-skill-emblem{animation:server-seal-enter .5s ease both}@keyframes server-skill-enter{from{opacity:0;transform:translateX(9px)}to{opacity:1;transform:translateX(0)}}@keyframes server-seal-enter{0%{scale:.7;opacity:.3}60%{scale:1.1;opacity:1}100%{scale:1}}@media(prefers-reduced-motion:reduce){.server-skill.skill-enter,.server-skill.skill-enter .server-skill-emblem{animation:none}}@media(max-width:350px){.server-skill{flex-basis:52%;gap:5px;padding:7px}.server-skill-emblem{flex-basis:20px;width:20px}.server-skill-emblem svg{width:20px;height:20px}}
+
+/* Small inset keeps the skill panel closer to the player information. */
+.serve-strip.has-server .server-skill{margin-right:12px}
+
+.serve-strip.has-server .server-number{display:grid;order:4;margin-left:auto;flex-shrink:0}.serve-strip.has-server .server-skill{margin-right:0;flex-basis:48%}
+
+/* Balance the free space on both sides of the skill card. */
+.serve-strip.has-server:has(.server-skill:not([hidden])){display:grid;grid-template-columns:48px minmax(0,1fr) minmax(0,1.7fr) 30px;column-gap:10px}.serve-strip.has-server .server-skill{width:calc(100% - 12px);justify-self:center;margin:0;min-width:0}.serve-strip.has-server .server-number{margin-left:0;order:initial}@media(max-height:700px){.serve-strip.has-server:has(.server-skill:not([hidden])){grid-template-columns:38px minmax(0,1fr) minmax(0,1.7fr) 26px;column-gap:8px}}@media(max-width:350px){.serve-strip.has-server:has(.server-skill:not([hidden])){column-gap:6px}.serve-strip.has-server .server-skill{width:100%}}
+
+/* One continuous match surface, with a highlighted court inset. */
+.match-arena{display:flex;flex-direction:column;flex:1;min-height:0;min-width:0;gap:10px;padding:0 10px 10px;background:#fff7e5;border:1px solid #fffcf3;border-radius:19px;box-shadow:0 4px 16px #43675d18;overflow:hidden}
+.match-arena .match-board{padding-left:0;padding-right:0;background:transparent;border:0;border-radius:0;box-shadow:none}
+.match-arena .court-space{border-radius:13px;background:linear-gradient(135deg,#c5ded5,#dce9d9);box-shadow:inset 0 0 0 1px #abcbbd,inset 0 2px 8px #4d83751c;padding:5px}
+.match-arena .court-viewport{box-shadow:0 0 0 2px #fff9df,0 0 0 3px #a3c6b5,0 3px 9px #466f6333}
+.match-arena .match-console{padding:0;background:transparent;border:0;border-radius:0;box-shadow:none}
+.match-arena .match-controls{padding-top:0;border-top:0}
+@media(max-height:700px){.match-arena{gap:7px;padding:0 8px 8px}}
+@media(min-aspect-ratio:6/5) and (max-height:500px){main{display:flex;max-width:760px}.match-heading{min-height:30px}.match-arena{display:grid;grid-template-columns:190px minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto;gap:10px;padding:10px}.match-arena .match-board{grid-column:1;grid-row:1;align-self:start}.match-arena .court-space{grid-column:2;grid-row:1/3;height:100%}.match-arena .match-console{grid-column:1;grid-row:2}}
+
+/* Shared inner edges and a single highlight around the actual court. */
+.match-arena{padding-left:10px;padding-right:10px;gap:10px}
+.match-arena .match-board{width:100%;margin:0;padding-top:10px}
+.match-arena .serve-strip.has-server{padding-left:0;padding-right:0;min-height:66px;align-items:center}
+.match-arena .court-space{padding:5px;background:transparent;box-shadow:none;border-radius:0}
+.match-arena .court-viewport{border-radius:12px;box-shadow:0 0 0 2px #fffaf0,0 0 0 3px #9fc5b6,0 3px 8px #466f6324}
+.match-arena .match-console,.match-arena .match-controls{width:100%;margin:0}
+.match-arena .match-controls{gap:8px;align-items:stretch}
+.match-arena .match-controls button{margin:0;min-width:0;flex:1 1 0}
+.match-arena .server-number{justify-self:end;width:30px}
+.match-arena .server-copy{align-self:center}
+.match-arena .server-skill{align-self:center;min-height:46px}
+@media(max-height:700px){.match-arena{gap:8px;padding-left:10px;padding-right:10px}.match-arena .serve-strip.has-server{min-height:50px}.match-arena .server-number{width:26px}}
+@media(min-aspect-ratio:6/5) and (max-height:500px){.match-arena{gap:10px}.match-arena .match-board{padding-top:0}}
+
+/* Separate the scoreboard from the court and its controls. */
+.match-arena{padding:0;gap:12px;background:transparent;border:0;border-radius:0;box-shadow:none;overflow:visible}
+.match-arena .match-board{padding:10px 10px 0;background:#fff7e5;border:1px solid #fffcf3;border-radius:18px;box-shadow:0 3px 10px #43675d12}
+.match-play-area{display:flex;flex:1;flex-direction:column;min-height:0;min-width:0;gap:10px;padding:10px;background:#fff7e5;border:1px solid #fffcf3;border-radius:18px;box-shadow:0 3px 10px #43675d12}
+@media(max-height:700px){.match-arena{padding:0;gap:10px}.match-arena .match-board{padding-top:7px}.match-play-area{padding:8px 10px;gap:8px}}
+@media(min-aspect-ratio:6/5) and (max-height:500px){.match-arena{display:grid;grid-template-columns:190px minmax(0,1fr);grid-template-rows:minmax(0,1fr);padding:0;gap:10px}.match-arena .match-board{grid-column:1;grid-row:1}.match-play-area{grid-column:2;grid-row:1;height:100%}.match-play-area .court-space{height:auto}.match-play-area .match-console{flex:none}}
+
+.match-play-area{align-self:center;max-width:100%;padding-top:6px;padding-bottom:8px;gap:8px}
+.match-arena .serve-strip.has-server{min-height:58px}
+.match-point-notice{position:absolute;z-index:4;left:50%;top:12px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:2px;max-width:80%;padding:7px 16px;border:1px solid #c6d8bb;border-radius:12px;background:#fff8e8f2;color:#527665;box-shadow:0 3px 10px #345a4826;pointer-events:none;text-align:center}.match-point-notice[hidden]{display:none}.match-point-notice strong{font-size:19px;line-height:1}.match-point-notice small{font-size:9px;line-height:1.2;overflow-wrap:anywhere}.match-point-notice[data-team="1"]{border-color:#dfc5a6;color:#966b45}.match-point-notice.point-enter{animation:point-notice-enter .25s ease-out both}.point-score-flash{animation:point-score-flash .65s ease-out both}
+@keyframes point-notice-enter{from{opacity:0;transform:translate(-50%,5px) scale(.94)}to{opacity:1;transform:translate(-50%,0) scale(1)}}@keyframes point-score-flash{0%{transform:scale(1);color:#426b72}35%{transform:scale(1.22);color:#b28a33;text-shadow:0 0 12px #e5c87888}100%{transform:scale(1);color:#426b72}}
+@media(prefers-reduced-motion:reduce){.match-point-notice.point-enter,.point-score-flash{animation:none}}
+@media(min-aspect-ratio:6/5) and (max-height:500px){.match-play-area{width:auto;align-self:stretch}.match-arena .serve-strip.has-server{min-height:50px}}
+
+.serve-strip.has-server[data-point="true"] .server-label{color:#a0792e;font-weight:900;letter-spacing:.5px}.serve-strip.has-server .server-number[hidden]{display:none}.serve-strip.point-strip-enter{animation:point-strip-enter .3s ease-out both}@keyframes point-strip-enter{from{background:#f4dfab66}to{background:transparent}}@media(prefers-reduced-motion:reduce){.serve-strip.point-strip-enter{animation:none}}
+
+.match-arena .match-board{perspective:750px;isolation:isolate}
+.score-turn-leaf{position:absolute;z-index:5;left:0;right:0;top:0;display:grid;grid-template-columns:minmax(0,1fr) 106px minmax(0,1fr);column-gap:6px;align-items:center;background:#fff7e5;border-radius:17px 17px 0 0;transform-origin:50% 0;backface-visibility:hidden;pointer-events:none;overflow:hidden;will-change:transform;box-shadow:0 4px 9px #796b3520}
+.score-turn-out{animation:score-page-out .72s cubic-bezier(.4,0,.2,1) both}.score-turn-in{animation:score-page-in .72s cubic-bezier(.4,0,.2,1) both}.serve-strip.point-page-reveal{animation:point-page-reveal .72s ease both}.match-paused .score-turn-leaf,.match-paused .serve-strip.point-page-reveal{animation-play-state:paused}
+@keyframes score-page-out{0%{transform:rotateX(0);opacity:1;filter:brightness(1)}48%{transform:rotateX(-90deg);opacity:1;filter:brightness(.88)}49%,100%{transform:rotateX(-90deg);opacity:0}}
+@keyframes score-page-in{0%,48%{transform:rotateX(90deg);opacity:0}49%{transform:rotateX(90deg);opacity:1;filter:brightness(.9)}100%{transform:rotateX(0);opacity:1;filter:brightness(1)}}
+@keyframes point-page-reveal{0%,40%{opacity:0;transform:translateY(-5px)}100%{opacity:1;transform:translateY(0)}}
+@media(min-aspect-ratio:6/5) and (max-height:500px){.score-turn-leaf{grid-template-columns:1fr 74px 1fr}}@media(prefers-reduced-motion:reduce){.score-turn-leaf{display:none}.serve-strip.point-page-reveal{animation:none}}
+
+/* Fold the upper page down across its lower binding. */
+.score-turn-leaf{transform-origin:50% 100%;overflow:visible}
+.score-turn-out{animation-name:score-page-fall;z-index:6;backface-visibility:visible}
+.score-turn-in{animation-name:score-page-under;z-index:5}
+@keyframes score-page-fall{0%{transform:rotateX(0);opacity:1;filter:brightness(1)}45%{transform:rotateX(85deg);opacity:1;filter:brightness(.96)}85%{transform:rotateX(170deg);opacity:1;filter:brightness(.9)}100%{transform:rotateX(180deg);opacity:0;filter:brightness(1)}}
+@keyframes score-page-under{0%,25%{opacity:0;transform:none}55%,100%{opacity:1;transform:none}}
+@keyframes point-page-reveal{0%,75%{opacity:0;transform:translateY(-3px)}100%{opacity:1;transform:translateY(0)}}
+
+/* A physical page: old score on the front, point notice on its reverse. */
+.score-turn-leaf.score-turn-toward{display:block;padding:0;transform-style:preserve-3d;transform-origin:50% 100%;backface-visibility:visible;background:none;box-shadow:none;border-radius:0;overflow:visible;animation:score-page-toward .85s cubic-bezier(.42,0,.22,1) both}
+.score-page-front{position:absolute;inset:0;display:grid;grid-template-columns:minmax(0,1fr) 106px minmax(0,1fr);column-gap:6px;align-items:center;background:#fff7e5;border-radius:17px 17px 0 0;backface-visibility:hidden;box-shadow:0 3px 8px #796b3520}
+.score-page-back{position:absolute;bottom:0;transform:rotateX(180deg);backface-visibility:hidden;background:#fff7e5;border-radius:0 0 12px 12px;overflow:hidden}
+.score-page-back .serve-strip.has-server{margin:0!important;width:100%!important;animation:none!important}
+.score-page-back .server-skill,.score-page-back .server-skill-emblem{animation:none!important}
+.serve-strip.point-page-reveal{animation:point-reverse-reveal .85s linear both}
+.match-paused .score-turn-leaf.score-turn-toward{animation-play-state:paused}
+@keyframes score-page-toward{0%{transform:rotateX(0)}45%{transform:rotateX(-82deg)}100%{transform:rotateX(-180deg)}}
+@keyframes point-reverse-reveal{0%,99%{opacity:0}100%{opacity:1}}
+@media(min-aspect-ratio:6/5) and (max-height:500px){.score-page-front{grid-template-columns:1fr 74px 1fr}}
+@media(prefers-reduced-motion:reduce){.score-turn-leaf.score-turn-toward{display:none}.serve-strip.point-page-reveal{animation:none}}
+
+/* Restore the full-width court card and its original spacing. */
+.match-play-area{align-self:stretch;width:auto;max-width:100%;padding:10px;gap:10px}
+.match-arena .serve-strip.has-server{min-height:66px}
+@media(max-height:700px){.match-play-area{padding:8px 10px;gap:8px}.match-arena .serve-strip.has-server{min-height:50px}}
+
+/* Continuous acceleration into the fall, followed by a gentle landing. */
+.score-turn-leaf.score-turn-toward{animation:score-page-soft-drop 1.05s cubic-bezier(.37,0,.2,1) both}
+.score-page-front{box-shadow:0 2px 5px #796b3514}
+.score-page-back{box-shadow:0 2px 5px #796b3512}
+.serve-strip.point-page-reveal{animation:point-soft-handoff 1.05s linear both}
+@keyframes score-page-soft-drop{from{transform:rotateX(0deg)}to{transform:rotateX(-180deg)}}
+@keyframes point-soft-handoff{0%,88%{opacity:0}100%{opacity:1}}
+.match-paused .score-turn-leaf.score-turn-toward,.match-paused .serve-strip.point-page-reveal{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.score-turn-leaf.score-turn-toward{display:none}.serve-strip.point-page-reveal{animation:none}}
+
+.serve-strip[data-point-phase="celebrate"] .server-skill strong{font-size:15px;font-weight:900;letter-spacing:1.5px}.server-skill.point-chip-pop{animation:point-chip-pop .42s cubic-bezier(.2,.8,.3,1) both}.match-paused .server-skill.point-chip-pop{animation-play-state:paused}@keyframes point-chip-pop{0%{opacity:.45;transform:scale(.94)}55%{opacity:1;transform:scale(1.025)}100%{opacity:1;transform:scale(1)}}@media(prefers-reduced-motion:reduce){.server-skill.point-chip-pop{animation:none}}
+
+/* Point celebration occupies the complete announcement paper, not its skill chip. */
+.serve-strip.has-server{position:relative}.point-paper-banner{display:none;pointer-events:none}
+.serve-strip[data-point-phase="celebrate"]>.server-portrait,.serve-strip[data-point-phase="celebrate"]>.server-copy,.serve-strip[data-point-phase="celebrate"]>.server-skill,.serve-strip[data-point-phase="celebrate"]>.server-number{visibility:hidden}
+.serve-strip[data-point-phase="celebrate"]>.point-paper-banner{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#a67925;font-size:29px;line-height:1;font-weight:900;letter-spacing:4px;text-shadow:0 2px 0 #fffdf1;animation:point-paper-pop .45s cubic-bezier(.2,.8,.3,1) both}
+.match-paused .point-paper-banner{animation-play-state:paused!important}
+@keyframes point-paper-pop{0%{opacity:0;transform:scale(.88)}65%{opacity:1;transform:scale(1.025)}100%{opacity:1;transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){.serve-strip[data-point-phase="celebrate"]>.point-paper-banner{animation:none}}
+
+/* Turn the announcement paper when returning from the point explanation. */
+.notice-turn-leaf{position:absolute;z-index:7;pointer-events:none;transform-style:preserve-3d;transform-origin:50% 50%;animation:notice-paper-turn .8s cubic-bezier(.37,0,.2,1) both}
+.notice-page-front,.notice-page-back{position:absolute;inset:0;backface-visibility:hidden;background:#fff7e5;border-radius:0 0 14px 14px;overflow:hidden}.notice-page-back{transform:rotateX(180deg)}
+.notice-turn-leaf .serve-strip.has-server{margin:0!important;width:100%!important;height:100%;animation:none!important}.notice-turn-leaf .server-skill,.notice-turn-leaf .server-skill-emblem{animation:none!important}
+.serve-strip.notice-page-reveal{animation:notice-paper-reveal .8s linear both}
+.match-paused .notice-turn-leaf,.match-paused .serve-strip.notice-page-reveal{animation-play-state:paused}
+@keyframes notice-paper-turn{from{transform:rotateX(0)}to{transform:rotateX(-180deg)}}@keyframes notice-paper-reveal{0%,99%{opacity:0}100%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.notice-turn-leaf{display:none}.serve-strip.notice-page-reveal{animation:none}}
+
+#mobileSpeed{display:flex;align-items:center;justify-content:center;gap:3px}.speed-label{font-size:9px;margin-right:3px}.speed-step{font-size:10px;line-height:1;padding:6px 5px;border:1px solid transparent;border-radius:6px;color:#9b967d;font-weight:600}.speed-step[data-active="true"]{background:#fff7df;border-color:#d8cca4;color:#847044;font-weight:900;box-shadow:0 1px 2px #84704412}@media(max-width:350px){.speed-step{font-size:9px;padding:5px 4px}.speed-label{margin-right:1px}#mobileSpeed{gap:1px}}
+
+#mobileSpeed{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:7px 10px;min-height:44px}.speed-current{font-size:13px;font-weight:800;line-height:1.1;color:#857044;font-variant-numeric:tabular-nums}.speed-indicators{display:flex;align-items:center;justify-content:center;gap:4px;height:4px}.speed-indicators i{display:block;width:10px;height:3px;border-radius:3px;background:#d9d1b9;transition:background .15s ease}.speed-indicators i[data-active="true"]{background:#a68b4e}@media(max-height:700px){#mobileSpeed{min-height:40px;gap:4px}.speed-current{font-size:12px}}
+
+.serve-strip.announcement-opening{transform-origin:50% 0;backface-visibility:hidden;animation:announcement-open .85s cubic-bezier(.2,.75,.25,1) both}@keyframes announcement-open{0%{opacity:0;transform:rotateX(-90deg)}20%{opacity:1}100%{opacity:1;transform:rotateX(0)}}.match-paused .serve-strip.announcement-opening{animation-play-state:paused}@media(prefers-reduced-motion:reduce){.serve-strip.announcement-opening{animation:none}}
+
+#mobileSpeed{transition:background-color .2s ease,color .2s ease;--speed-ink:#567767;--speed-dot:#7c9d85;--speed-track:#c3d5bf}
+#mobileSpeed[data-speed="1"]{background:#dfeadb;--speed-ink:#527360;--speed-dot:#709378;--speed-track:#b9cdb6}
+#mobileSpeed[data-speed="1.5"]{background:#f3e5b7;--speed-ink:#947333;--speed-dot:#ac8738;--speed-track:#ddcc97}
+#mobileSpeed[data-speed="2"]{background:#efc5a1;--speed-ink:#98582f;--speed-dot:#b16a3b;--speed-track:#d6a77e}
+#mobileSpeed .speed-current{color:var(--speed-ink)}#mobileSpeed .speed-indicators i{background:var(--speed-track)}#mobileSpeed .speed-indicators i[data-active="true"]{background:var(--speed-dot)}
+
+/* Reserve the final announcement height before player portraits finish loading. */
+.match-arena .match-board .serve-strip{min-height:66px;box-sizing:border-box}
+@media(max-height:700px){.match-arena .match-board .serve-strip{min-height:50px}}
+
+/* Red paper for point celebrations and opponent-error explanations. */
+.serve-strip[data-point-phase="celebrate"],.serve-strip[data-point-error="true"],.score-page-back[data-point-phase="celebrate"],.score-page-back[data-point-error="true"],.notice-page-front[data-point-phase="celebrate"],.notice-page-front[data-point-error="true"]{background:#ba514b!important;border-color:#d77c70;border-radius:0 0 12px 12px;color:#fff6e6}
+.serve-strip[data-point-phase="celebrate"]>.point-paper-banner{color:#fff5dd;text-shadow:0 2px 0 #7d302b33}
+.serve-strip[data-point-error="true"] .server-label,.serve-strip[data-point-error="true"] .server-name{color:#fff3df!important}
+.serve-strip[data-point-error="true"] .server-club{color:#f4d5c6}
+.serve-strip[data-point-error="true"] .server-skill{--skill-ink:#fff2db;--skill-tint:#ffffff15;--skill-edge:#f0b8a1;background:#ffffff10}
+
+/* One change of paper color: primary at the point, accent at its explanation. */
+.serve-strip[data-point="true"]{background:var(--point-primary)!important;color:var(--point-ink);border-radius:0 0 12px 12px;border-color:transparent;transition:background-color .35s ease}
+.serve-strip[data-point="true"][data-point-phase="skill"]{background:var(--point-accent)!important}
+.serve-strip[data-point="true"] .server-label,.serve-strip[data-point="true"] .server-name,.serve-strip[data-point="true"] .server-club,.serve-strip[data-point="true"]>.point-paper-banner{color:var(--point-ink)!important;text-shadow:none}
+.serve-strip[data-point-error="true"] .server-skill{--skill-ink:var(--point-ink);--skill-edge:color-mix(in srgb,var(--point-ink) 35%,transparent);background:color-mix(in srgb,var(--point-ink) 7%,transparent)}
+.server-portrait img.is-team-badge{object-fit:contain;padding:4px}
+.notice-page-front[data-point-error="true"],.notice-page-front[data-point-phase="celebrate"]{background:transparent!important}
+@media(prefers-reduced-motion:reduce){.serve-strip[data-point="true"]{transition:none}}
+
+.score-page-back[data-point-phase],.notice-page-front[data-point-error="true"]{background:transparent!important}
+
+/* The compact scoreboard does not display a set caption. */
+#matchSet,.match-board .score-center>small{display:none}
+
+/* Only the full-paper point celebration flashes the club colors. */
+.serve-strip[data-point="true"][data-point-phase="celebrate"]{background:var(--point-primary)!important;transition:none}
+.serve-strip[data-point-phase="celebrate"]>.point-paper-banner{background:var(--point-primary);color:var(--point-primary-ink)!important;border-radius:inherit;animation:point-color-flip 1.7s steps(1,end) both}
+.score-page-back .serve-strip[data-point-phase="celebrate"]>.point-paper-banner{animation:point-color-flip 1.7s steps(1,end) both!important}
+@keyframes point-color-flip{0%{background:var(--point-primary);color:var(--point-primary-ink)}65%,100%{background:var(--point-accent);color:var(--point-accent-ink)}}
+.serve-strip[data-point="true"][data-point-phase="skill"]{background:#fffdf5!important;color:#426b72;transition:none}
+.serve-strip[data-point-phase="skill"] .server-label{color:#a0792e!important}.serve-strip[data-point-phase="skill"] .server-name{color:#41666d!important}.serve-strip[data-point-phase="skill"] .server-club{color:#839082!important}
+.serve-strip[data-point-error="true"][data-point-phase="skill"] .server-skill{--skill-ink:#66716d;--skill-tint:#e8ece5;--skill-edge:#b8c2b7;background:linear-gradient(105deg,var(--skill-tint),#fff8e700)}
+.match-paused .point-paper-banner{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.serve-strip[data-point-phase="celebrate"]>.point-paper-banner,.score-page-back .serve-strip[data-point-phase="celebrate"]>.point-paper-banner{animation:none!important}}
+
+.serve-strip[data-point-phase="celebrate"]>.point-paper-banner,.score-page-back .serve-strip[data-point-phase="celebrate"]>.point-paper-banner{animation:none!important;background:var(--point-primary)!important;color:var(--point-primary-ink)!important}.serve-strip[data-point-phase="celebrate"][data-point-tone="accent"]>.point-paper-banner{background:var(--point-accent)!important;color:var(--point-accent-ink)!important}
+
+/* A darker spine joins the two cards behind their intact borders. */
+.match-arena{position:relative;isolation:isolate}
+.match-arena:before{content:'';position:absolute;z-index:-1;pointer-events:none;left:10px;right:10px;top:18px;bottom:18px;background:#83aaa0;border-radius:12px}
+@media(min-aspect-ratio:6/5) and (max-height:500px){.match-arena:before{left:18px;right:18px;top:10px;bottom:10px}}
+
+/* Keep one live announcement surface on the reverse of the turning page. */
+.notice-page-slot{grid-column:1/-1;min-width:0;pointer-events:none}.notice-page-back>.serve-strip.has-server{box-sizing:border-box;min-height:100%;transform:none!important;opacity:1!important}.notice-page-back{background:#fff7e5}
+
+/* Two straight edge bindings instead of a filled spine. */
+.match-arena:before{left:0;right:0;top:18px;bottom:18px;background:linear-gradient(#83aaa0,#83aaa0) left top/2px 100% no-repeat,linear-gradient(#83aaa0,#83aaa0) right top/2px 100% no-repeat;border-radius:0}
+@media(min-aspect-ratio:6/5) and (max-height:500px){.match-arena:before{left:18px;right:18px;top:0;bottom:0;background:linear-gradient(#83aaa0,#83aaa0) left top/100% 2px no-repeat,linear-gradient(#83aaa0,#83aaa0) left bottom/100% 2px no-repeat}}
+
+/* Full-width, straight-sided connector between the two cards. */
+.match-arena:before{left:0;right:0;top:18px;bottom:18px;background:#83aaa0;border-radius:0}
+@media(min-aspect-ratio:6/5) and (max-height:500px){.match-arena:before{left:18px;right:18px;top:0;bottom:0;background:#83aaa0}}
+
+.match-board .score-team:before{display:none}
+
+/* The scoreboard and court remain separate cards. */
+.match-arena:before{display:none}
+
+/* The entire lower sheet, including its rounded outside edges, turns together. */
+.match-arena .match-board>.serve-strip.has-server{width:calc(100% + 20px);margin-left:-10px;margin-right:-10px;padding-left:10px;padding-right:10px;background:#fff7e5;border-radius:0 0 17px 17px}
+.match-board.paper-turning{background:transparent;border-color:transparent;box-shadow:none}
+.match-board.paper-turning:after{content:'';position:absolute;z-index:-1;left:-1px;right:-1px;top:-1px;height:calc(var(--paper-fold-top) + 1px);background:#fff7e5;border:1px solid #fffcf3;border-bottom:0;border-radius:18px 18px 0 0;pointer-events:none}
+.notice-page-front,.notice-page-back,.score-page-back{border-radius:0 0 17px 17px}
+.notice-turn-leaf .serve-strip.has-server,.score-page-back .serve-strip.has-server{padding-left:10px;padding-right:10px;border-radius:0 0 17px 17px}
+
+/* Move the skill panel left while keeping the jersey number at the edge. */
+.serve-strip.has-server .server-skill{position:relative;left:-14px}
+@media(max-width:350px){.serve-strip.has-server .server-skill{left:-9px}}
+
+/* Preserve the previous lower sheet until the falling page covers it. */
+.score-page-underlay{position:absolute;z-index:4;left:0;right:0;background:#fff7e5;border-radius:0 0 17px 17px;overflow:hidden;pointer-events:none}.score-page-underlay .serve-strip.has-server{width:100%!important;height:100%;margin:0!important;padding-left:10px;padding-right:10px;animation:none!important;opacity:1!important;transform:none!important}.score-page-underlay .server-skill,.score-page-underlay .server-skill-emblem{animation:none!important}
+
+/* Page movement owns the transition; returning live content must not replay color flashes. */
+.serve-strip.point-strip-enter{animation:none}.serve-strip.has-server{transition:none}
+
+.notice-page-back>.serve-strip[data-point="false"]{background:#fff7e5!important}

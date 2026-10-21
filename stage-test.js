@@ -21,7 +21,7 @@ async function go(end){
   for(const card of RoomRules.catalog){const stage=card.division===3?3:card.bal?2:1;if(stage<target||end&&stage===target)room.floors[card.floor].push(...Array(RoomRules.maxLevel(room,card)).fill(card.id));}
   room.lastSeen=Date.now();
   const players=TeamRules.players.length?TeamRules.players:TeamRules.generate().map(p=>({...p,appearance:TeamAppearance.generate()}));
-  const entrants=(target===3?['','Ankara File','Uludağ Akademi','Bursa Akademi','İstanbul Voleybol','Antalya Yıldızları','İzmir Gençlik','Karadeniz Gücü']:LeagueRules.teams).map((name,id)=>({id,name:id===0?profile?.name||name:name}));
+  const entrants=target===3?LeagueRules.divisionEntrants().map(t=>({...t,name:t.id===0?profile?.name||LeagueRules.teams[0]:t.name})):LeagueRules.teams.map((name,id)=>({id,name:id===0?profile?.name||name:name}));
   const league={version:3,results:{},...(target>1?{mode:'bal',division:target===3?3:2,startDay:1,run:Date.now(),...(target===3?{entrants,scheduleVersion:2}:{})}:{})};
   const entries={'idle-spiker-rooms-v2':JSON.stringify(room),'idle-spiker-women-v1':JSON.stringify(players),'idle-spiker-main-menu-v1':JSON.stringify({day:1,clicksToday:0}),'idle-spiker-league-v1':JSON.stringify(league),'idle-spiker-match-results':JSON.stringify({version:3})};
   entries['idle-spiker-social-v1']=JSON.stringify({mediaBlockVersion:2,levels:target===3&&end?[5,10,5]:[0,0,0],posts:[],seen:[],likes:[],sequence:0,hype:0,earnedFollowers:0,cooldowns:{},viralUntil:0});
