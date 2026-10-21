@@ -36,3 +36,6 @@ html body[data-league-division] .league-match-group .match-preview-open{padding-
 html body[data-league-division] .league-match-group .match-preview-open:before{left:14px;right:14px}
 html body[data-league-division] .league-match-group .match-preview-teams{grid-template-columns:minmax(0,1fr) 32px minmax(0,1fr);column-gap:10px;width:100%;box-sizing:border-box}
 html body[data-league-division] .league-match-group .match-preview-team{width:100%;min-width:0;justify-items:center}
+/* Keep the league summary close to the calendar above it. */
+html body[data-league-division] #clubPanel:has(.league-match-group){padding-top:6px}
+html body[data-league-division] #clubPanel>.league-match-group{margin-top:0}
