@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "usage": "Front-facing Kenney portrait earrings. Source PNG files are unchanged generated pairs. sourceRect values allow independent left/right drawing.",
+  "portraitCanvas": {
+    "width": 600,
+    "height": 700,
+    "leftMount": {
+      "x": 229,
+      "y": 239
+    },
+    "rightMount": {
+      "x": 373,
+      "y": 239
+    }
+  },
+  "models": [
+    {
+      "id": "gold-studs",
+      "label": "Altın top",
+      "file": "gold-studs.png",
+      "width": 1254,
+      "height": 1254,
+      "left": {
+        "x": 397,
+        "y": 573,
+        "width": 149,
+        "height": 145
+      },
+      "right": {
+        "x": 708,
+        "y": 573,
+        "width": 148,
+        "height": 145
+      },
+      "portraitSize": {
+        "width": 7,
+        "height": 7
+      }
+    },
+    {
+      "id": "gold-short-drops",
+      "label": "Kısa altın damla",
+      "file": "gold-short-drops.png",
+      "width": 1254,
+      "height": 1254,
+      "left": {
+        "x": 359,
+        "y": 487,
+        "width": 145,
+        "height": 305
+      },
+      "right": {
+        "x": 749,
+        "y": 487,
+        "width": 146,
+        "height": 305
+      },
+      "portraitSize": {
+        "width": 7,
+        "height": 14
+      }
+    }
+  ]
+}

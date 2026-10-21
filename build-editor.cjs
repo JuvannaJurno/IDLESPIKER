@@ -1,8 +1,13 @@
 const fs = require('fs');
 const source = fs.readFileSync('karakter-uretici.html', 'utf8');
-const assets = JSON.parse(source.match(/const assets=(.*?);const cache=new Map\(\);/s)[1]);
+const assets = Object.fromEntries(Object.entries(JSON.parse(source.match(/const assets=(.*?);const cache=new Map\(\);/s)[1])).filter(([path])=>!/Man\d+\.png$/.test(path)));
+const earrings=require('./portrait-earring-editor-assets.cjs')();Object.assign(assets,earrings.assets);
+const details=require('./portrait-detail-editor-assets.cjs')();Object.assign(assets,details.assets);
 const template = fs.readFileSync('editor-template.html.template', 'utf8');
 const layout = JSON.parse(fs.readFileSync('onaylanan-yerlesim.json', 'utf8'));
+
+layout.parts.splice(layout.parts.findIndex(p=>p.id==='hair'),0,...details.parts.filter(p=>!p.id.startsWith('detail-clip')));layout.parts.push(...details.parts.filter(p=>p.id.startsWith('detail-clip')));
+layout.parts.splice(layout.parts.findIndex(p=>p.id==='hair'),0,...earrings.parts);
 let html = template.replace('__ASSETS__', JSON.stringify(assets)).replace('__LAYOUT__', JSON.stringify(layout.parts));
 // Render the starting character into the file itself, before JavaScript runs.
 const vm = require('vm');
@@ -24,7 +29,7 @@ vm.runInContext('validate(parts)', context);
 const escape = x => String(x).replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;');
 function serialize(n) { return `<${n.tag} ${Object.entries(n.attrs).map(([k,v]) => `${k}="${escape(v)}"`).join(' ')}>${n.children.map(serialize).join('')}</${n.tag}>`; }
 const character = nodes.pieces.children.map(serialize).join('');
-if (nodes.pieces.children.length !== 23) throw Error('Initial character is incomplete');
+if (nodes.pieces.children.length !== layout.parts.filter(p=>!p.hidden).length-2) throw Error('Initial character is incomplete');
 html = html.replace('<g id="pieces"></g>', `<g id="pieces">${character}</g>`);
 fs.writeFileSync('yerlesim-editoru.html', html);
 fs.writeFileSync('editor-template.html', '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=yerlesim-editoru.html"><title>Karakter editörü</title><a href="yerlesim-editoru.html">Hazır karakteri düzenlemek için editörü aç</a>');

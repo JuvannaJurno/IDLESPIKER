@@ -1,0 +1,4189 @@
+{
+  "method": "Actual court for all own matches, official settleRounds for remaining fixtures; three independent seeds per development scenario; constructed 7-player roster with 3 camp completions each.",
+  "league": "Ulusal Voleybol 2. Ligi",
+  "teams": [
+    "Bizim Kulüp",
+    "Ankara File",
+    "Uludağ Akademi",
+    "Bursa Akademi",
+    "İstanbul Voleybol",
+    "Antalya Yıldızları",
+    "İzmir Gençlik",
+    "Karadeniz Gücü"
+  ],
+  "results": [
+    {
+      "scenario": "Yavaş gelişim",
+      "run": 1,
+      "startOVR": 80,
+      "endOVR": 88,
+      "top3": [
+        {
+          "team": "Karadeniz Gücü",
+          "wins": 12,
+          "losses": 2,
+          "points": 36
+        },
+        {
+          "team": "Test Takımı",
+          "wins": 11,
+          "losses": 3,
+          "points": 33
+        },
+        {
+          "team": "Uludağ Akademi",
+          "wins": 11,
+          "losses": 3,
+          "points": 33
+        }
+      ],
+      "own": {
+        "rank": 2,
+        "wins": 11,
+        "losses": 3
+      },
+      "matches": [
+        {
+          "round": 1,
+          "rival": "İzmir Gençlik",
+          "ovr": 80,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "slide-attack",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "team-heart",
+            "cover",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 2,
+          "rival": "İstanbul Voleybol",
+          "ovr": 81,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "cover",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "tempo-second",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-second",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-second",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 3,
+          "rival": "Bursa Akademi",
+          "ovr": 81,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "team-heart",
+            "power-hit",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "cover",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 4,
+          "rival": "Ankara File",
+          "ovr": 82,
+          "score": [
+            7,
+            5
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "float",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "team-heart",
+            "float",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "line",
+            "fake-set",
+            "cross",
+            "commit-block",
+            "power-hit",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "absolute-read",
+            "team-heart"
+          ]
+        },
+        {
+          "round": 5,
+          "rival": "Uludağ Akademi",
+          "ovr": 82,
+          "score": [
+            4,
+            6
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cross",
+            "pipe-attack",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "team-heart",
+            "line",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 6,
+          "rival": "Antalya Yıldızları",
+          "ovr": 83,
+          "score": [
+            2,
+            5
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "tempo-second",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cross",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 7,
+          "rival": "Karadeniz Gücü",
+          "ovr": 84,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "line",
+            "tempo-third",
+            "line",
+            "team-heart",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 8,
+          "rival": "İzmir Gençlik",
+          "ovr": 84,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "slide-attack",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "court-vision",
+            "pipe-attack",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "court-vision",
+            "team-heart",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 9,
+          "rival": "İstanbul Voleybol",
+          "ovr": 85,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "cover",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 10,
+          "rival": "Bursa Akademi",
+          "ovr": 85,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "tempo-second",
+            "cover",
+            "power-hit",
+            "team-heart",
+            "cover",
+            "ghost-tip",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "slide-attack",
+            "sky-serve",
+            "pipe-attack",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "slide-attack",
+            "cross",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "cross"
+          ]
+        },
+        {
+          "round": 11,
+          "rival": "Ankara File",
+          "ovr": 86,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "court-vision",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "tempo-third",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "team-heart",
+            "float",
+            "commit-block",
+            "power-hit",
+            "float",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 12,
+          "rival": "Uludağ Akademi",
+          "ovr": 87,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "team-heart"
+          ]
+        },
+        {
+          "round": 13,
+          "rival": "Antalya Yıldızları",
+          "ovr": 87,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "pipe-attack",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "cover",
+            "line",
+            "team-heart",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 14,
+          "rival": "Karadeniz Gücü",
+          "ovr": 88,
+          "score": [
+            6,
+            8
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "ghost-tip",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "pipe-attack",
+            "commit-block",
+            "sky-serve",
+            "team-heart",
+            "float",
+            "fake-set",
+            "commit-block",
+            "court-vision",
+            "float",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "cover",
+            "line",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "line",
+            "fake-set",
+            "commit-block"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": "Yavaş gelişim",
+      "run": 2,
+      "startOVR": 80,
+      "endOVR": 88,
+      "top3": [
+        {
+          "team": "Karadeniz Gücü",
+          "wins": 11,
+          "losses": 3,
+          "points": 33
+        },
+        {
+          "team": "Uludağ Akademi",
+          "wins": 11,
+          "losses": 3,
+          "points": 33
+        },
+        {
+          "team": "Test Takımı",
+          "wins": 10,
+          "losses": 4,
+          "points": 30
+        }
+      ],
+      "own": {
+        "rank": 3,
+        "wins": 10,
+        "losses": 4
+      },
+      "matches": [
+        {
+          "round": 1,
+          "rival": "İzmir Gençlik",
+          "ovr": 80,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "cover",
+            "commit-block",
+            "slide-attack",
+            "tempo-second",
+            "team-heart",
+            "court-vision",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "slide-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 2,
+          "rival": "İstanbul Voleybol",
+          "ovr": 81,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 3,
+          "rival": "Bursa Akademi",
+          "ovr": 81,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "pipe-attack",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "fake-set",
+            "line"
+          ]
+        },
+        {
+          "round": 4,
+          "rival": "Ankara File",
+          "ovr": 82,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "cross",
+            "team-heart",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 5,
+          "rival": "Uludağ Akademi",
+          "ovr": 82,
+          "score": [
+            9,
+            7
+          ],
+          "skills": [
+            "fake-set",
+            "line",
+            "team-heart",
+            "tempo-second",
+            "back",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "back",
+            "commit-block",
+            "tempo-second",
+            "commit-block",
+            "cover",
+            "line",
+            "team-heart",
+            "dive",
+            "back",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "pipe-attack",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "fake-set",
+            "absolute-read",
+            "team-heart",
+            "fake-set",
+            "cross",
+            "jump-float-legendary",
+            "fake-set",
+            "commit-block",
+            "jump-float-legendary",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 6,
+          "rival": "Antalya Yıldızları",
+          "ovr": 83,
+          "score": [
+            1,
+            5
+          ],
+          "skills": [
+            "cover",
+            "line",
+            "tempo-second",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-second",
+            "cover",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "close",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "cover",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 7,
+          "rival": "Karadeniz Gücü",
+          "ovr": 84,
+          "score": [
+            6,
+            4
+          ],
+          "skills": [
+            "line",
+            "team-heart",
+            "tempo-third",
+            "commit-block",
+            "cover",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "fake-set",
+            "commit-block",
+            "float",
+            "team-heart",
+            "sky-serve",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cover",
+            "commit-block",
+            "line",
+            "absolute-read"
+          ]
+        },
+        {
+          "round": 8,
+          "rival": "İzmir Gençlik",
+          "ovr": 84,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "back",
+            "commit-block",
+            "team-heart",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "slide-attack",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "pipe-attack",
+            "commit-block",
+            "team-heart",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 9,
+          "rival": "İstanbul Voleybol",
+          "ovr": 85,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 10,
+          "rival": "Bursa Akademi",
+          "ovr": 85,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "pipe-attack",
+            "commit-block",
+            "team-heart",
+            "kick-save",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "float",
+            "fake-set",
+            "line"
+          ]
+        },
+        {
+          "round": 11,
+          "rival": "Ankara File",
+          "ovr": 86,
+          "score": [
+            3,
+            5
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "float",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "sky-serve",
+            "fake-set",
+            "line",
+            "slide-attack",
+            "team-heart",
+            "float",
+            "tempo-second",
+            "cover",
+            "line",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 12,
+          "rival": "Uludağ Akademi",
+          "ovr": 87,
+          "score": [
+            1,
+            5
+          ],
+          "skills": [
+            "cover",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "read",
+            "fake-set",
+            "commit-block",
+            "tempo-second",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "tempo-second",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "back",
+            "fake-set",
+            "line",
+            "tempo-third",
+            "commit-block",
+            "pipe-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 13,
+          "rival": "Antalya Yıldızları",
+          "ovr": 87,
+          "score": [
+            3,
+            5
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "court-vision",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-second",
+            "fake-set",
+            "cross",
+            "court-vision",
+            "fake-set"
+          ]
+        },
+        {
+          "round": 14,
+          "rival": "Karadeniz Gücü",
+          "ovr": 88,
+          "score": [
+            8,
+            6
+          ],
+          "skills": [
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "power-hit",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "sky-serve",
+            "cover",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "tempo-second",
+            "cross",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "float",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "tempo-second",
+            "fake-set",
+            "commit-block",
+            "cross",
+            "power-hit",
+            "fake-set",
+            "tempo-third",
+            "absolute-read",
+            "commit-block",
+            "team-heart",
+            "absolute-read",
+            "fake-set",
+            "commit-block"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": "Yavaş gelişim",
+      "run": 3,
+      "startOVR": 80,
+      "endOVR": 88,
+      "top3": [
+        {
+          "team": "Karadeniz Gücü",
+          "wins": 13,
+          "losses": 1,
+          "points": 39
+        },
+        {
+          "team": "Uludağ Akademi",
+          "wins": 12,
+          "losses": 2,
+          "points": 36
+        },
+        {
+          "team": "Antalya Yıldızları",
+          "wins": 10,
+          "losses": 4,
+          "points": 30
+        }
+      ],
+      "own": {
+        "rank": 4,
+        "wins": 8,
+        "losses": 6
+      },
+      "matches": [
+        {
+          "round": 1,
+          "rival": "İzmir Gençlik",
+          "ovr": 80,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "team-heart",
+            "back",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "pipe-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 2,
+          "rival": "İstanbul Voleybol",
+          "ovr": 81,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "team-heart",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "tempo-third",
+            "sky-serve",
+            "team-heart",
+            "fake-set",
+            "cross",
+            "slide-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 3,
+          "rival": "Bursa Akademi",
+          "ovr": 81,
+          "score": [
+            10,
+            8
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "cover",
+            "float",
+            "commit-block",
+            "float",
+            "pipe-attack",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "absolute-read",
+            "team-heart",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "slide-attack",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 4,
+          "rival": "Ankara File",
+          "ovr": 82,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "tempo-third",
+            "cross",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "float",
+            "commit-block",
+            "cover",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 5,
+          "rival": "Uludağ Akademi",
+          "ovr": 82,
+          "score": [
+            2,
+            5
+          ],
+          "skills": [
+            "dive",
+            "line",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "court-vision",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "dive",
+            "tempo-third",
+            "pipe-attack",
+            "commit-block",
+            "line",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 6,
+          "rival": "Antalya Yıldızları",
+          "ovr": 83,
+          "score": [
+            1,
+            5
+          ],
+          "skills": [
+            "cover",
+            "power-hit",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "cross",
+            "team-heart",
+            "pipe-attack",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "court-vision",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross"
+          ]
+        },
+        {
+          "round": 7,
+          "rival": "Karadeniz Gücü",
+          "ovr": 84,
+          "score": [
+            2,
+            5
+          ],
+          "skills": [
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "cover",
+            "court-vision",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "line",
+            "float",
+            "pipe-attack",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "cross",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 8,
+          "rival": "İzmir Gençlik",
+          "ovr": 84,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "slide-attack",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-second",
+            "team-heart",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "tempo-second",
+            "cover",
+            "court-vision",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "pipe-attack"
+          ]
+        },
+        {
+          "round": 9,
+          "rival": "İstanbul Voleybol",
+          "ovr": 85,
+          "score": [
+            6,
+            4
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "read",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "power-hit",
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "line",
+            "sky-serve"
+          ]
+        },
+        {
+          "round": 10,
+          "rival": "Bursa Akademi",
+          "ovr": 85,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "sky-serve",
+            "fake-set",
+            "line",
+            "team-heart",
+            "cover",
+            "court-vision",
+            "fake-set",
+            "cross",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "pipe-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 11,
+          "rival": "Ankara File",
+          "ovr": 86,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "commit-block",
+            "team-heart",
+            "float",
+            "team-heart"
+          ]
+        },
+        {
+          "round": 12,
+          "rival": "Uludağ Akademi",
+          "ovr": 87,
+          "score": [
+            1,
+            5
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "team-heart",
+            "court-vision",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "cross",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 13,
+          "rival": "Antalya Yıldızları",
+          "ovr": 87,
+          "score": [
+            4,
+            6
+          ],
+          "skills": [
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "back",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cover",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "cover",
+            "line",
+            "commit-block",
+            "team-heart"
+          ]
+        },
+        {
+          "round": 14,
+          "rival": "Karadeniz Gücü",
+          "ovr": 88,
+          "score": [
+            1,
+            5
+          ],
+          "skills": [
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "court-vision",
+            "tempo-third",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "team-heart",
+            "float",
+            "pipe-attack",
+            "commit-block",
+            "float"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": "Düzenli gelişim",
+      "run": 1,
+      "startOVR": 80,
+      "endOVR": 106,
+      "top3": [
+        {
+          "team": "Test Takımı",
+          "wins": 12,
+          "losses": 2,
+          "points": 36
+        },
+        {
+          "team": "Uludağ Akademi",
+          "wins": 11,
+          "losses": 3,
+          "points": 33
+        },
+        {
+          "team": "Karadeniz Gücü",
+          "wins": 11,
+          "losses": 3,
+          "points": 33
+        }
+      ],
+      "own": {
+        "rank": 1,
+        "wins": 12,
+        "losses": 2
+      },
+      "matches": [
+        {
+          "round": 1,
+          "rival": "İzmir Gençlik",
+          "ovr": 80,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "slide-attack",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "team-heart",
+            "cover",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 2,
+          "rival": "İstanbul Voleybol",
+          "ovr": 82,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "cover",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "tempo-second",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-second",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-second",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 3,
+          "rival": "Bursa Akademi",
+          "ovr": 84,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "team-heart",
+            "power-hit",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "cover",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 4,
+          "rival": "Ankara File",
+          "ovr": 86,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "tempo-third",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "slide-attack",
+            "float",
+            "cover",
+            "ghost-tip",
+            "tempo-third",
+            "cross",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "pipe-attack"
+          ]
+        },
+        {
+          "round": 5,
+          "rival": "Uludağ Akademi",
+          "ovr": 88,
+          "score": [
+            5,
+            7
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cross",
+            "pipe-attack",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "team-heart",
+            "line",
+            "fake-set",
+            "commit-block",
+            "cross",
+            "tempo-third",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "absolute-read",
+            "line",
+            "back",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "pipe-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 6,
+          "rival": "Antalya Yıldızları",
+          "ovr": 90,
+          "score": [
+            2,
+            5
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "tempo-second",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cross",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 7,
+          "rival": "Karadeniz Gücü",
+          "ovr": 92,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "line",
+            "tempo-third",
+            "line",
+            "team-heart",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 8,
+          "rival": "İzmir Gençlik",
+          "ovr": 94,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "slide-attack",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 9,
+          "rival": "İstanbul Voleybol",
+          "ovr": 96,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "cover",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 10,
+          "rival": "Bursa Akademi",
+          "ovr": 98,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "tempo-second",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 11,
+          "rival": "Ankara File",
+          "ovr": 100,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "team-heart",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "court-vision",
+            "team-heart",
+            "fake-set",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 12,
+          "rival": "Uludağ Akademi",
+          "ovr": 102,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "dive",
+            "pipe-attack",
+            "commit-block",
+            "team-heart",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "line",
+            "commit-block",
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "line",
+            "commit-block",
+            "tempo-second"
+          ]
+        },
+        {
+          "round": 13,
+          "rival": "Antalya Yıldızları",
+          "ovr": 104,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "back",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "court-vision",
+            "fake-set",
+            "line",
+            "team-heart",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 14,
+          "rival": "Karadeniz Gücü",
+          "ovr": 106,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "ghost-tip",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": "Düzenli gelişim",
+      "run": 2,
+      "startOVR": 80,
+      "endOVR": 106,
+      "top3": [
+        {
+          "team": "Test Takımı",
+          "wins": 13,
+          "losses": 1,
+          "points": 39
+        },
+        {
+          "team": "Karadeniz Gücü",
+          "wins": 11,
+          "losses": 3,
+          "points": 33
+        },
+        {
+          "team": "Uludağ Akademi",
+          "wins": 10,
+          "losses": 4,
+          "points": 30
+        }
+      ],
+      "own": {
+        "rank": 1,
+        "wins": 13,
+        "losses": 1
+      },
+      "matches": [
+        {
+          "round": 1,
+          "rival": "İzmir Gençlik",
+          "ovr": 80,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "cover",
+            "commit-block",
+            "slide-attack",
+            "tempo-second",
+            "team-heart",
+            "court-vision",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "slide-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 2,
+          "rival": "İstanbul Voleybol",
+          "ovr": 82,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 3,
+          "rival": "Bursa Akademi",
+          "ovr": 84,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "pipe-attack",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "float",
+            "cover",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 4,
+          "rival": "Ankara File",
+          "ovr": 86,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "cross",
+            "team-heart",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 5,
+          "rival": "Uludağ Akademi",
+          "ovr": 88,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "line",
+            "team-heart",
+            "tempo-second",
+            "back",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "tempo-third",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 6,
+          "rival": "Antalya Yıldızları",
+          "ovr": 90,
+          "score": [
+            5,
+            7
+          ],
+          "skills": [
+            "cover",
+            "line",
+            "tempo-second",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "cover",
+            "power-hit",
+            "team-heart",
+            "line",
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "absolute-read",
+            "commit-block",
+            "cross",
+            "fake-set",
+            "cross",
+            "line",
+            "pipe-attack",
+            "absolute-read",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "sky-serve",
+            "fake-set",
+            "commit-block",
+            "cross",
+            "absolute-read"
+          ]
+        },
+        {
+          "round": 7,
+          "rival": "Karadeniz Gücü",
+          "ovr": 92,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "line",
+            "team-heart",
+            "tempo-third",
+            "commit-block",
+            "cover",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "team-heart",
+            "fake-set",
+            "cross",
+            "sky-serve",
+            "fake-set",
+            "line",
+            "fake-set",
+            "line",
+            "team-heart"
+          ]
+        },
+        {
+          "round": 8,
+          "rival": "İzmir Gençlik",
+          "ovr": 94,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "back",
+            "commit-block",
+            "team-heart",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "slide-attack",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 9,
+          "rival": "İstanbul Voleybol",
+          "ovr": 96,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "tempo-third",
+            "commit-block",
+            "ghost-tip",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 10,
+          "rival": "Bursa Akademi",
+          "ovr": 98,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "pipe-attack",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "power-hit",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "sky-serve",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 11,
+          "rival": "Ankara File",
+          "ovr": 100,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "float",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "line",
+            "cross",
+            "team-heart",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 12,
+          "rival": "Uludağ Akademi",
+          "ovr": 102,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "cover",
+            "commit-block",
+            "team-heart",
+            "dive",
+            "tempo-third",
+            "commit-block",
+            "read",
+            "fake-set",
+            "commit-block",
+            "tempo-second",
+            "team-heart",
+            "commit-block",
+            "pipe-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 13,
+          "rival": "Antalya Yıldızları",
+          "ovr": 104,
+          "score": [
+            6,
+            4
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "team-heart",
+            "tempo-second",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "close",
+            "team-heart",
+            "cover",
+            "line",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 14,
+          "rival": "Karadeniz Gücü",
+          "ovr": 106,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "power-hit",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "cross",
+            "cover",
+            "commit-block",
+            "cross",
+            "pipe-attack",
+            "commit-block",
+            "cover",
+            "commit-block"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": "Düzenli gelişim",
+      "run": 3,
+      "startOVR": 80,
+      "endOVR": 106,
+      "top3": [
+        {
+          "team": "Test Takımı",
+          "wins": 13,
+          "losses": 1,
+          "points": 39
+        },
+        {
+          "team": "Karadeniz Gücü",
+          "wins": 12,
+          "losses": 2,
+          "points": 36
+        },
+        {
+          "team": "Uludağ Akademi",
+          "wins": 10,
+          "losses": 4,
+          "points": 30
+        }
+      ],
+      "own": {
+        "rank": 1,
+        "wins": 13,
+        "losses": 1
+      },
+      "matches": [
+        {
+          "round": 1,
+          "rival": "İzmir Gençlik",
+          "ovr": 80,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "team-heart",
+            "back",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "pipe-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 2,
+          "rival": "İstanbul Voleybol",
+          "ovr": 82,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "team-heart",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "tempo-third",
+            "pipe-attack",
+            "commit-block",
+            "team-heart"
+          ]
+        },
+        {
+          "round": 3,
+          "rival": "Bursa Akademi",
+          "ovr": 84,
+          "score": [
+            10,
+            8
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "cover",
+            "float",
+            "commit-block",
+            "float",
+            "pipe-attack",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "absolute-read",
+            "team-heart",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "slide-attack",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 4,
+          "rival": "Ankara File",
+          "ovr": 86,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "team-heart",
+            "tempo-third",
+            "tempo-second",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "float",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 5,
+          "rival": "Uludağ Akademi",
+          "ovr": 88,
+          "score": [
+            7,
+            5
+          ],
+          "skills": [
+            "dive",
+            "line",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "cover",
+            "commit-block",
+            "tempo-third",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "dive",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "dive",
+            "back",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "cross",
+            "line",
+            "power-hit",
+            "fake-set",
+            "cross"
+          ]
+        },
+        {
+          "round": 6,
+          "rival": "Antalya Yıldızları",
+          "ovr": 90,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "cover",
+            "power-hit",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "cover",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "commit-block",
+            "cross",
+            "line",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 7,
+          "rival": "Karadeniz Gücü",
+          "ovr": 92,
+          "score": [
+            7,
+            9
+          ],
+          "skills": [
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "commit-block",
+            "power-hit",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "tempo-second",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "float",
+            "team-heart",
+            "sky-serve",
+            "fake-set",
+            "commit-block",
+            "court-vision",
+            "cover",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "line",
+            "fake-set",
+            "commit-block",
+            "court-vision"
+          ]
+        },
+        {
+          "round": 8,
+          "rival": "İzmir Gençlik",
+          "ovr": 94,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "slide-attack",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-second",
+            "team-heart",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "back",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 9,
+          "rival": "İstanbul Voleybol",
+          "ovr": 96,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "read",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "power-hit"
+          ]
+        },
+        {
+          "round": 10,
+          "rival": "Bursa Akademi",
+          "ovr": 98,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 11,
+          "rival": "Ankara File",
+          "ovr": 100,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "commit-block",
+            "team-heart",
+            "float",
+            "team-heart"
+          ]
+        },
+        {
+          "round": 12,
+          "rival": "Uludağ Akademi",
+          "ovr": 102,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "back",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 13,
+          "rival": "Antalya Yıldızları",
+          "ovr": 104,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "back",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 14,
+          "rival": "Karadeniz Gücü",
+          "ovr": 106,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "court-vision",
+            "commit-block",
+            "fake-set",
+            "cover",
+            "commit-block",
+            "team-heart",
+            "float",
+            "pipe-attack",
+            "commit-block"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": "Yoğun gelişim",
+      "run": 1,
+      "startOVR": 80,
+      "endOVR": 126,
+      "top3": [
+        {
+          "team": "Test Takımı",
+          "wins": 13,
+          "losses": 1,
+          "points": 39
+        },
+        {
+          "team": "Karadeniz Gücü",
+          "wins": 11,
+          "losses": 3,
+          "points": 33
+        },
+        {
+          "team": "Uludağ Akademi",
+          "wins": 10,
+          "losses": 4,
+          "points": 30
+        }
+      ],
+      "own": {
+        "rank": 1,
+        "wins": 13,
+        "losses": 1
+      },
+      "matches": [
+        {
+          "round": 1,
+          "rival": "İzmir Gençlik",
+          "ovr": 80,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "slide-attack",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "team-heart",
+            "cover",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 2,
+          "rival": "İstanbul Voleybol",
+          "ovr": 84,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "cover",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "tempo-second",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-second",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-second",
+            "kick-save",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 3,
+          "rival": "Bursa Akademi",
+          "ovr": 87,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "team-heart",
+            "power-hit",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "cover",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 4,
+          "rival": "Ankara File",
+          "ovr": 91,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "sky-serve",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "tempo-third",
+            "cross",
+            "tempo-second",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "slide-attack",
+            "pipe-attack",
+            "commit-block",
+            "tempo-third",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 5,
+          "rival": "Uludağ Akademi",
+          "ovr": 94,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cross",
+            "tempo-third",
+            "team-heart"
+          ]
+        },
+        {
+          "round": 6,
+          "rival": "Antalya Yıldızları",
+          "ovr": 98,
+          "score": [
+            2,
+            5
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "tempo-second",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "tempo-second",
+            "commit-block",
+            "fake-set",
+            "line",
+            "power-hit"
+          ]
+        },
+        {
+          "round": 7,
+          "rival": "Karadeniz Gücü",
+          "ovr": 101,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "line",
+            "tempo-third",
+            "line",
+            "team-heart",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 8,
+          "rival": "İzmir Gençlik",
+          "ovr": 105,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "slide-attack",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "pipe-attack"
+          ]
+        },
+        {
+          "round": 9,
+          "rival": "İstanbul Voleybol",
+          "ovr": 108,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "cover",
+            "commit-block",
+            "team-heart",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "tempo-second"
+          ]
+        },
+        {
+          "round": 10,
+          "rival": "Bursa Akademi",
+          "ovr": 112,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "tempo-second",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "slide-attack",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 11,
+          "rival": "Ankara File",
+          "ovr": 115,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "team-heart",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "court-vision",
+            "team-heart",
+            "fake-set",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 12,
+          "rival": "Uludağ Akademi",
+          "ovr": 119,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "line",
+            "power-hit",
+            "team-heart",
+            "tempo-third",
+            "commit-block",
+            "pipe-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 13,
+          "rival": "Antalya Yıldızları",
+          "ovr": 122,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "tempo-third",
+            "commit-block",
+            "power-hit",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "court-vision",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "team-heart",
+            "tempo-second",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 14,
+          "rival": "Karadeniz Gücü",
+          "ovr": 126,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "ghost-tip",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "sky-serve",
+            "fake-set",
+            "commit-block"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": "Yoğun gelişim",
+      "run": 2,
+      "startOVR": 80,
+      "endOVR": 126,
+      "top3": [
+        {
+          "team": "Test Takımı",
+          "wins": 14,
+          "losses": 0,
+          "points": 42
+        },
+        {
+          "team": "Karadeniz Gücü",
+          "wins": 11,
+          "losses": 3,
+          "points": 33
+        },
+        {
+          "team": "Uludağ Akademi",
+          "wins": 10,
+          "losses": 4,
+          "points": 30
+        }
+      ],
+      "own": {
+        "rank": 1,
+        "wins": 14,
+        "losses": 0
+      },
+      "matches": [
+        {
+          "round": 1,
+          "rival": "İzmir Gençlik",
+          "ovr": 80,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "cover",
+            "commit-block",
+            "slide-attack",
+            "tempo-second",
+            "team-heart",
+            "court-vision",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "slide-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 2,
+          "rival": "İstanbul Voleybol",
+          "ovr": 84,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 3,
+          "rival": "Bursa Akademi",
+          "ovr": 87,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "pipe-attack",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "float",
+            "cover",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 4,
+          "rival": "Ankara File",
+          "ovr": 91,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "cross",
+            "team-heart",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 5,
+          "rival": "Uludağ Akademi",
+          "ovr": 94,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "line",
+            "team-heart",
+            "tempo-second",
+            "back",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "tempo-third",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 6,
+          "rival": "Antalya Yıldızları",
+          "ovr": 98,
+          "score": [
+            7,
+            5
+          ],
+          "skills": [
+            "cover",
+            "line",
+            "tempo-second",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "cover",
+            "power-hit",
+            "team-heart",
+            "line",
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "absolute-read",
+            "commit-block",
+            "cross",
+            "fake-set",
+            "cross",
+            "line",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "team-heart",
+            "absolute-read",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "float",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 7,
+          "rival": "Karadeniz Gücü",
+          "ovr": 101,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "line",
+            "team-heart",
+            "tempo-third",
+            "commit-block",
+            "cover",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "team-heart",
+            "fake-set",
+            "cross",
+            "sky-serve",
+            "fake-set",
+            "line",
+            "fake-set",
+            "line",
+            "team-heart"
+          ]
+        },
+        {
+          "round": 8,
+          "rival": "İzmir Gençlik",
+          "ovr": 105,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "back",
+            "commit-block",
+            "team-heart",
+            "tempo-third",
+            "commit-block",
+            "court-vision",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "back",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 9,
+          "rival": "İstanbul Voleybol",
+          "ovr": 108,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 10,
+          "rival": "Bursa Akademi",
+          "ovr": 112,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "pipe-attack",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "power-hit",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "pipe-attack"
+          ]
+        },
+        {
+          "round": 11,
+          "rival": "Ankara File",
+          "ovr": 115,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "tempo-third",
+            "commit-block",
+            "slide-attack",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "cover",
+            "commit-block",
+            "sky-serve",
+            "pipe-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 12,
+          "rival": "Uludağ Akademi",
+          "ovr": 119,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "cover",
+            "commit-block",
+            "team-heart",
+            "dive",
+            "tempo-third",
+            "commit-block",
+            "read",
+            "fake-set",
+            "commit-block",
+            "tempo-second",
+            "team-heart",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 13,
+          "rival": "Antalya Yıldızları",
+          "ovr": 122,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "cover",
+            "court-vision",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 14,
+          "rival": "Karadeniz Gücü",
+          "ovr": 126,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "power-hit",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "cross",
+            "team-heart"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": "Yoğun gelişim",
+      "run": 3,
+      "startOVR": 80,
+      "endOVR": 126,
+      "top3": [
+        {
+          "team": "Test Takımı",
+          "wins": 14,
+          "losses": 0,
+          "points": 42
+        },
+        {
+          "team": "Karadeniz Gücü",
+          "wins": 11,
+          "losses": 3,
+          "points": 33
+        },
+        {
+          "team": "Uludağ Akademi",
+          "wins": 10,
+          "losses": 4,
+          "points": 30
+        }
+      ],
+      "own": {
+        "rank": 1,
+        "wins": 14,
+        "losses": 0
+      },
+      "matches": [
+        {
+          "round": 1,
+          "rival": "İzmir Gençlik",
+          "ovr": 80,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "team-heart",
+            "back",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "pipe-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 2,
+          "rival": "İstanbul Voleybol",
+          "ovr": 84,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "team-heart",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "tempo-third",
+            "pipe-attack",
+            "commit-block",
+            "team-heart"
+          ]
+        },
+        {
+          "round": 3,
+          "rival": "Bursa Akademi",
+          "ovr": 87,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "slide-attack",
+            "cover",
+            "line"
+          ]
+        },
+        {
+          "round": 4,
+          "rival": "Ankara File",
+          "ovr": 91,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "team-heart",
+            "tempo-third",
+            "commit-block",
+            "ghost-tip",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "sky-serve",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 5,
+          "rival": "Uludağ Akademi",
+          "ovr": 94,
+          "score": [
+            7,
+            5
+          ],
+          "skills": [
+            "dive",
+            "line",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "cover",
+            "commit-block",
+            "pipe-attack",
+            "tempo-third",
+            "commit-block",
+            "pipe-attack",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cross",
+            "cover",
+            "line",
+            "team-heart",
+            "float",
+            "cross",
+            "float",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 6,
+          "rival": "Antalya Yıldızları",
+          "ovr": 98,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "cover",
+            "power-hit",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "team-heart",
+            "tempo-third",
+            "cross",
+            "tempo-third",
+            "line",
+            "fake-set",
+            "line",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 7,
+          "rival": "Karadeniz Gücü",
+          "ovr": 101,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "commit-block",
+            "power-hit",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "team-heart",
+            "tempo-third",
+            "commit-block",
+            "pipe-attack",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "cover",
+            "line",
+            "fake-set",
+            "line",
+            "pipe-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 8,
+          "rival": "İzmir Gençlik",
+          "ovr": 105,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "slide-attack",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-second",
+            "team-heart",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "back",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 9,
+          "rival": "İstanbul Voleybol",
+          "ovr": 108,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "read",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "team-heart"
+          ]
+        },
+        {
+          "round": 10,
+          "rival": "Bursa Akademi",
+          "ovr": 112,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "team-heart"
+          ]
+        },
+        {
+          "round": 11,
+          "rival": "Ankara File",
+          "ovr": 115,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "commit-block",
+            "team-heart",
+            "float",
+            "team-heart"
+          ]
+        },
+        {
+          "round": 12,
+          "rival": "Uludağ Akademi",
+          "ovr": 119,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "back",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cross",
+            "fake-set",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 13,
+          "rival": "Antalya Yıldızları",
+          "ovr": 122,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "back",
+            "commit-block",
+            "tempo-second",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "team-heart"
+          ]
+        },
+        {
+          "round": 14,
+          "rival": "Karadeniz Gücü",
+          "ovr": 126,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "line",
+            "commit-block"
+          ]
+        }
+      ]
+    }
+  ]
+}
