@@ -1,0 +1,4 @@
+let source=require('fs').readFileSync('test-hands-free-opening.cjs','utf8');
+source=source.replace("await page.goto('http://localhost:'+server.address().port+'/index.html');", "await page.goto('http://localhost:'+server.address().port+'/index.html');await page.locator('#languageChoice [data-language=tr]').click();await page.locator('#bootScreen').waitFor({state:'detached'});await page.evaluate(()=>GuidedTutorial.stop());");
+source=source.replace("path:'hands-free-opening-mobile.png'","path:'C:/Users/MELİH BEY/AppData/Local/Temp/idle-audit-opening.png'");
+source=source.replace("assert.equal(await page.locator('#roomAuto').textContent(),'0,85');","assert.equal(await page.locator('#roomAuto').textContent(),'0,9');assert.equal(await page.evaluate(()=>RoomSystem.effects().autoRate),.85);");eval(source);

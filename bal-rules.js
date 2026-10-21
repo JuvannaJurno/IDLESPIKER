@@ -1,5 +1,6 @@
 (function(root){
 'use strict';
+const Clock=root.SeasonClock||(typeof require==='function'?require('./season-clock.js'):null);
 const display=v=>Number(v.toFixed(1)).toLocaleString('tr-TR');
 const departments=['Performans Merkezi','Kulüp Yönetimi','Gelir Merkezi','Teknik Ekip','Oyuncu Keşfi'];
 const definitions=[
@@ -48,7 +49,7 @@ const professional=[
  ['pro_analysis',0,'Uyum Antrenmanı','▤',.03,v=>'Yeni transferin ilk 3 kart yükseltmesinde %'+display(v*100)+' AP indirimi.'],
  ['pro_coordinator',1,'Antrenman Koordinatörü','◷',1.2,v=>'Saniyede +'+display(v)+' otomatik talimat.'],
  ['pro_camp',1,'Kamp Organizasyonu','✚',.2,v=>'Yeni kamplar '+display(v)+' gün daha kısa sürer.'],
- ['pro_travel',1,'Kamp Desteği','↗',.04,v=>'Kamp AP maliyeti %'+display(v*100)+' azalır.'],
+ ['pro_travel',1,'Fazladan Mesai','◷',.2,v=>'Maç beklerken ve maç sırasında vardiya, maç başına en fazla '+(5+Math.round(v*5)*5)+' dakika devam eder. Süre vardiyandan düşer. Normal kazancın %'+display(v*100)+' kadarı üretilir.'],
  ['pro_sponsor',2,'Lig Sponsorluğu','▣',30000,v=>'Her 3 tamamlanan maçta +'+display(v)+' bütçe.'],
  ['pro_shop',2,'Lisanslı Ürünler','▤',2,v=>'Her gün takipçi başına +'+display(v)+' bütçe.'],
  ['pro_tickets',2,'Antrenman Sponsorluğu','◎',1000,v=>'Her ücretli kart yükseltmesinde +'+display(v)+' bütçe.'],
@@ -62,7 +63,7 @@ const professionalBonuses=[
  ['pro_analysis','pro_adapt','Hızlı Uyum',[.01,.02,.03,.04,.05],v=>'Yeni transfer yükseltme indirimine +'+display(v*100)+' puan.'],
  ['pro_coordinator','pro_tempo','Ortak Tempo',[.15,.2,.25,.3,.35],v=>'Her 12 saniyede ışık dalgası. Dokunduğu talimatlar +%'+display(v*100)+' AP taşır.'],
  ['pro_camp','pro_campcash','Kamp Anlaşmaları',[.04,.08,.12,.16,.2],v=>'Kamp bütçe maliyeti %'+display(v*100)+' azalır.'],
- ['pro_travel','pro_campap','Toplu Kamp Anlaşması',[.01,.02,.03,.04,.05],v=>'Kamp AP maliyetinde ek %'+display(v*100)+' indirim.'],
+ ['pro_travel','pro_campap','Mesai Verimi',[.04,.08,.12,.16,.2],v=>'Fazladan mesaide kazanılan AP +%'+display(v*100)+'.'],
  ['pro_sponsor','pro_contract','Büyüyen Sözleşme',[.1,.2,.3,.4,.5],v=>'Üç maçlık sponsor ödemesi +%'+display(v*100)+'.'],
  ['pro_shop','pro_merch','Ürün Anlaşmaları',[.1,.2,.3,.4,.5],v=>'Takipçiden gelen günlük bütçe +%'+display(v*100)+'.'],
  ['pro_tickets','pro_trainingcash','Gelişim Desteği',[200,400,600,800,1000],v=>'Ücretli kart yükseltmesine ek +'+display(v)+' bütçe.'],
@@ -73,10 +74,12 @@ for(const [id,floor,name,icon,step,describe] of professional){const bonus=profes
 function maxLevel(s,r){return r.division?r.values.length:!r.bal?r.values.length:Math.max(longBal.has(r.id)?10:5,level(s,r.id));}
 
 function bonusLevel(s,id){const bonus=successors.find(row=>row[1]===id);return bonus?Math.max(0,Math.min(5,level(s,bonus[0])-5)):0;}
-function describeBlock(s,r,n=level(s,r.id)){const primary=r.describe(r.values[Math.max(0,n-1)]);if(!r.bonus)return primary;return primary+(n>5?' '+r.bonus[2]+': '+r.bonus[4](r.bonus[3][n-6]):'');}
+function describePrimary(s,r,n=level(s,r.id)){let v=r.values[Math.max(0,n-1)];if(Clock.isWeekly(s)){if(r.id==='pro_shop')v*=Clock.economyScale(s);if(r.id==='bal_fans')v*=2;if(r.id==='pro_sponsor')return '3 maçta toplam +'+display(v*2)+' bütçe.';}return r.describe(v);}
+function describeBonus(s,r,n){let v=r.bonus[3][n-6],text;if(Clock.isWeekly(s)){if(['bal_evening','bal_members'].includes(r.bonus[1]))v*=Clock.economyScale(s);if(['bal_matchsponsor','bal_review'].includes(r.bonus[1]))v*=2;}text=r.bonus[4](v);if(Clock.isWeekly(s)&&r.bonus[1]==='bal_warmstart')text=text.replace('ilk 20','ilk '+Clock.morningInstructions(s));return text;}
+function describeBlock(s,r,n=level(s,r.id)){const primary=describePrimary(s,r,n);if(!r.bonus)return primary;return primary+(n>5?' '+r.bonus[2]+': '+describeBonus(s,r,n):'');}
 const departmentPrices={2:0,4:0};
 function departmentOpen(s,f){return s.stage==='bal'&&(!Object.hasOwn(departmentPrices,f)||!Array.isArray(s.openDepartments)||s.openDepartments.includes(f));}
-function openDepartment(s,f){if(s.stage!=='bal'||!Object.hasOwn(departmentPrices,f)||departmentOpen(s,f))return false;s.openDepartments.push(f);if(f===2)s.incomeProgress=0;if(f===4)s.scouting.startedDay=(s.balStartDay||1)+Math.floor(s.instructions/500);return true;}
+function openDepartment(s,f){if(s.stage!=='bal'||!Object.hasOwn(departmentPrices,f)||departmentOpen(s,f))return false;s.openDepartments.push(f);if(f===2)s.incomeProgress=0;if(f===4)s.scouting.startedDay=(s.balStartDay||1)+Math.floor(s.instructions/Clock.dayInstructions(s));return true;}
 const gates=[];
 function remainingDays(){return 0}
 function upgraded(s,id){if(s.balReadyDay)delete s.balReadyDay[id]}
@@ -91,7 +94,8 @@ const balLatePriceScale={bal_shop:.95,bal_coach:1.45,bal_sponsor:1.45};
 const priceSteps=[400,900,2000,4000,7500,13000,22000,36000,65000,120000];
 // Professional bonus levels share a season-sized curve: 1.87m total, 1.45m for levels 6–10.
 // Keep the 30k entry cost; higher levels remain choices alongside transfers and camps.
-function price(s,r){const n=level(s,r.id);if(n>=maxLevel(s,r))return Infinity;if(r.compressed)return [30000,50000,80000,110000,150000,190000,240000,290000,340000,390000][n];if(r.division)return [12000,18000,27000,40000,58000,82000,114000,156000,210000,280000][n];if(!r.bal)return 10*([10,6,9,10,15][n]??Infinity);const base=investmentPrices[r.id]?.[n]??r.price/300*priceSteps[n],lateDiscount=n===9?.9:n===8?.95:1;return Math.round(base*(n>=5?1.4:1)*lateDiscount*(s.division!==3&&n>=5?(balLatePriceScale[r.id]??1.7):1)*(s.division!==3&&r.id==='bal_video'&&n===9?1.7:1)*(s.division===3?1:n>=5?.85:.9)/10)*10;}
+const weeklyProfessionalPrices=Object.freeze([30000,50000,80000,110000,150000,209000,300000,420500,595000,819000]);
+function price(s,r){const n=level(s,r.id);if(n>=maxLevel(s,r))return Infinity;if(r.compressed)return (Clock.isWeekly(s)&&r.division===3?weeklyProfessionalPrices:[30000,50000,80000,110000,150000,190000,240000,290000,340000,390000])[n];if(r.division)return [12000,18000,27000,40000,58000,82000,114000,156000,210000,280000][n];if(!r.bal)return 10*([10,6,9,10,15][n]??Infinity);const base=investmentPrices[r.id]?.[n]??r.price/300*priceSteps[n],lateDiscount=n===9?.9:n===8?.95:1;return Math.round(base*(n>=5?1.4:1)*lateDiscount*(s.division!==3&&n>=5?(balLatePriceScale[r.id]??1.7):1)*(s.division!==3&&r.id==='bal_video'&&n===9?1.7:1)*(s.division===3?1:n>=5?.85:.9)/10)*10;}
 function effects(s,e){if(s.stage!=='bal')return e;return {...e,doubleChance:value(s,'bal_double'),manualBonusAP:value(s,'bal_hands'),offlineHours:e.offlineHours?e.offlineHours+value(s,'bal_longshift'):0,critChance:Math.min(1,e.critChance+value(s,'pro_focus')+value(s,'bal_precision')),critMult:Math.max(e.critMult,value(s,'bal_precision')?2:1),clickAP:e.clickAP*2.5+value(s,'pro_coach')+value(s,'bal_position')+value(s,'bal_hands'),autoAP:e.autoAP*2.5+value(s,'pro_coach')+value(s,'bal_position'),baseAP:e.baseAP*2.5+value(s,'pro_coach')+value(s,'bal_position'),autoRate:(e.autoRate*1.4+(value(s,'bal_coach')+value(s,'pro_coordinator'))*e.workflowRate)*1.4,baseAutoRate:(e.baseAutoRate*1.4+value(s,'bal_coach')+value(s,'pro_coordinator'))*1.4,repeatAP:e.repeatAP*1.25+value(s,'bal_video'),morningAP:e.morningAP*1.25+value(s,'bal_warmstart'),dayAP:e.dayAP*1.25+value(s,'bal_evening'),offlineBonus:e.offlineBonus*1.25+value(s,'bal_recovery')+value(s,'bal_remote'),offlineEfficiency:e.offlineEfficiency+value(s,'bal_shift')};}
 function cash(s){if(!departmentOpen(s,2))return 0;return ((20+value(s,'bal_sponsor'))*(1+value(s,'bal_shop'))+value(s,'bal_orders'))}
 // Merge old separate bonuses into levels 6–10, without charging again.
@@ -101,5 +105,5 @@ function migrateLevels(s,raw){
  for(const r of catalog.filter(r=>r.bonus)){const old=(raw?.floors?.[r.floor]||[]),n=old.filter(id=>id===r.id).length,extra=old.filter(id=>id===r.bonus[1]).length;const base=raw?.balBlockVersion===2&&extendedIds.has(r.id)?map[Math.min(10,n)]:Math.min(5,n),target=extra?5+Math.min(5,extra):base;s.floors[r.floor]=s.floors[r.floor].filter(id=>id!==r.id);s.floors[r.floor].push(...Array(target).fill(r.id));}
  s.balBlockVersion=4;
 }
-const api={maxLevel,bonusLevel,describeBlock,migrateLevels,departmentPrices,departmentOpen,openDepartment,departments,catalog,gates,remainingDays,upgraded,enter,requirement,price,effects,value,cash};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.BalRules=api;
+const api={describePrimary,describeBonus,maxLevel,bonusLevel,describeBlock,migrateLevels,departmentPrices,departmentOpen,openDepartment,departments,catalog,gates,remainingDays,upgraded,enter,requirement,price,effects,value,cash};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.BalRules=api;
 })(globalThis);

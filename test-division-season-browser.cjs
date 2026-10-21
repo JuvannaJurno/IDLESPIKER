@@ -8,7 +8,7 @@ const server=http.createServer((q,r)=>{const file=path.join(__dirname,decodeURIC
  await page.goto('http://localhost:'+server.address().port+'/index.html');await page.locator('#bootScreen').waitFor({state:'detached'});
  const result=await page.evaluate(()=>{
   const room=BalRules.enter(RoomRules.defaults(),1);room.division=3;RoomSystem.loadStage(room);
-  const league=LeagueRules.normalize({mode:'bal',division:3,startDay:1,results:{},scheduleVersion:2});
+  const league=LeagueRules.normalize({mode:'bal',division:3,startDay:1,seasonRounds:28,results:{},scheduleVersion:2});
   for(const m of LeagueRules.schedule().filter(m=>m.ours&&m.round<28))LeagueRules.record(league,m.id,m.home===0?[5,3]:[3,5]);
   LeagueRules.settleRounds(league);LeagueSeason.loadStage(league);MenuUI.loadStage({day:534,clicksToday:300});
   const last=LeagueRules.schedule().find(m=>m.ours&&m.round===28);if(!LeagueSeason.recordOwn(last.day,[5,3]))throw Error('Final round was not recorded');

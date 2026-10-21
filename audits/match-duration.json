@@ -1,0 +1,95 @@
+{
+  "method": "9 real court matches, representative regular economy snapshots; simulation seconds at 1x, excluding intro and human interactions.",
+  "results": [
+    {
+      "round": 1,
+      "rival": "Ankara File",
+      "seconds": 107.53333333332851,
+      "score": [
+        5,
+        3
+      ],
+      "finished": true
+    },
+    {
+      "round": 1,
+      "rival": "Uludağ Akademi",
+      "seconds": 100.79999999999556,
+      "score": [
+        2,
+        5
+      ],
+      "finished": true
+    },
+    {
+      "round": 1,
+      "rival": "Karadeniz Gücü",
+      "seconds": 107.39999999999519,
+      "score": [
+        2,
+        5
+      ],
+      "finished": true
+    },
+    {
+      "round": 14,
+      "rival": "Ankara File",
+      "seconds": 113.99999999999481,
+      "score": [
+        5,
+        3
+      ],
+      "finished": true
+    },
+    {
+      "round": 14,
+      "rival": "Uludağ Akademi",
+      "seconds": 105.66666666666195,
+      "score": [
+        5,
+        2
+      ],
+      "finished": true
+    },
+    {
+      "round": 14,
+      "rival": "Karadeniz Gücü",
+      "seconds": 102.41666666666214,
+      "score": [
+        2,
+        5
+      ],
+      "finished": true
+    },
+    {
+      "round": 28,
+      "rival": "Ankara File",
+      "seconds": 97.19999999999577,
+      "score": [
+        5,
+        1
+      ],
+      "finished": true
+    },
+    {
+      "round": 28,
+      "rival": "Uludağ Akademi",
+      "seconds": 101.3666666666622,
+      "score": [
+        5,
+        2
+      ],
+      "finished": true
+    },
+    {
+      "round": 28,
+      "rival": "Karadeniz Gücü",
+      "seconds": 103.24999999999542,
+      "score": [
+        5,
+        2
+      ],
+      "finished": true
+    }
+  ]
+}

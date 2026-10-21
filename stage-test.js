@@ -17,7 +17,7 @@ async function go(end){
   if(target<=currentStage){restoreExit=BalVisual.capture(document.getElementById('workflow'));exitAnimations=await CardMotion.testExit();}let room;
   room=target===1?RoomRules.defaults():BalRules.enter(RoomRules.defaults(),1);
   if(current.dailyShift)room.dailyShift=JSON.parse(JSON.stringify(current.dailyShift));
-  if(target===3){room.division=3;room.openDepartments=[2,4];room.mediaDepartmentOpen=end;}
+  if(target===3){room.division=3;room.divisionCalendar=2;room.openDepartments=[2,4];room.mediaDepartmentOpen=end;}
   for(const card of RoomRules.catalog){const stage=card.division===3?3:card.bal?2:1;if(stage<target||end&&stage===target)room.floors[card.floor].push(...Array(RoomRules.maxLevel(room,card)).fill(card.id));}
   room.lastSeen=Date.now();
   const players=TeamRules.players.length?TeamRules.players:TeamRules.generate().map(p=>({...p,appearance:TeamAppearance.generate()}));
