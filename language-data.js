@@ -505,10 +505,11 @@ Son dokunuşlar|Final touches
 Maç bekliyor|Match waiting
 Maç zamanı|Match time
 Maç bitince paylaşabilirsin|You can share after the match
-Kalan günlük vardiya|Daily shift remaining
+Kalan vardiya|Shift remaining
 Sen yokken|While you were away
 kazanıldı.|earned.
-00.00’da yenilenir|Resets at midnight
+Tükendiğinde 4 saat dinlenir|Rests for 4 hours after running out
+Vardiya hazır|Shift ready
 Pazartesi|Monday
 Salı|Tuesday
 Çarşamba|Wednesday
@@ -574,7 +575,7 @@ Sahaya ulaşan her talimata +{n} AP.|+{n} AP for every instruction reaching the 
 Sahaya ulaşan her 5. talimatta +{n} AP.|+{n} AP for every fifth instruction reaching the court.
 Her talimatta %{n} şansla {n} kat AP.|Each instruction has a {n}% chance of earning {n}× AP.
 Otomatik: {n} talimat/sn. Çevrimdışı çalışmak için Vardiya Planı aç.|Automatic: {n} instructions/sec. Unlock Shift Schedule to work offline.
-Her gerçek gün {n} dk çevrimdışı çalışma. Maç beklerken süre harcanmaz.|{n} minutes of offline work per real day. Time is not spent while a match is waiting.
+{n} dk çevrimdışı çalışma. Vardiya bitince 4 saat dinlenir, sonra yeniden dolar.|{n} minutes of offline work. After running out, the shift rests for 4 hours, then refills.
 Asistanın her 10. talimatında +{n} AP.|+{n} AP for every tenth assistant instruction.
 Gün sonunda +{n} AP.|+{n} AP at the end of each day.
 Günün ilk 20 talimatına +{n} AP.|+{n} AP for the first 20 instructions of the day.
@@ -955,3 +956,9 @@ window.SpikerEnglishTemplates.push(['{s} ile yollar ayrılacak. {s} yedek kadron
 window.SpikerEnglishTemplates.push(['{n} aday kadronu güçlendirebilir','{n} candidates can strengthen your lineup'],['{n} güçlü aday','{n} stronger candidates'],['{n} güçlü aday · {n} aday','{n} stronger candidates · {n} candidates'],['Aynı pozisyondaki oyuncundan +{n} OVR daha güçlü','+{n} OVR stronger than your player in the same position']);
 window.SpikerEnglish.push(['Paylaşım hazır','Post ready'],['Sosyal · Paylaşım hazır','Social · Post ready']);
 window.SpikerEnglishTemplates.push(['Paylaşıldı · +{n} takipçi · +{n} bütçe','Published · +{n} followers · +{n} budget'],['+{n} takipçi · +{n} bütçe','+{n} followers · +{n} budget']);
+
+window.SpikerEnglishTemplates.push(['Dinlenme · {s}','Rest · {s}'],['{n} dk çevrimdışı çalışma. Tükendiğinde 4 saat dinlenir. Bu aşamada üst sınır 30 dk.','{n} minutes of offline work. Rests for 4 hours after running out. This stage is capped at 30 minutes.']);
+
+window.SpikerEnglish.push(...[["Servis baskısı","Serve pressure"],["Rakibin güçlü yanı: Servis baskısı","Opponent strength: Serve pressure"],["Servisçileri rövanşa daha güçlü hazırlandı.","Their server improved her serve for the rematch."],["Savunmadan kontrollü hücum","Controlled attack from defense"],["Rakibin güçlü yanı: Savunmadan kontrollü hücum","Opponent strength: Controlled attack from defense"],["Melis rövanş için paslarını geliştirdi.","Melis improved her setting for the rematch."],["Uzun ralli savunması","Long-rally defense"],["Rakibin güçlü yanı: Uzun ralli savunması","Opponent strength: Long-rally defense"],["Liberoları rövanş için manşetini geliştirdi.","Their libero improved her reception for the rematch."],["Filede ikili blok","Double blocking at the net"],["Rakibin güçlü yanı: Filede ikili blok","Opponent strength: Double blocking at the net"],["Orta oyuncuları rövanş için bloğunu geliştirdi.","Their middle blocker improved her block for the rematch."],["Nadia ile blok duvarı","Nadia’s blocking wall"],["Rakibin güçlü yanı: Nadia ile blok duvarı","Opponent strength: Nadia’s blocking wall"],["Nadia rövanş için bloğunu geliştirdi.","Nadia improved her block for the rematch."],["Yerleşimli servis","Placed serves"],["Rakibin güçlü yanı: Yerleşimli servis","Opponent strength: Placed serves"],["Servisçileri rövanş için servis kontrolünü geliştirdi.","Their server improved her serve control for the rematch."],["Sert servis ve hücum","Power serving and attack"],["Rakibin güçlü yanı: Sert servis ve hücum","Opponent strength: Power serving and attack"],["Derin rövanş için servisini geliştirdi.","Derin improved her serve for the rematch."],["İkili blok!","Double block!"],["Boşluklara servis","Serving into space"],["Savunma topu oyunda tuttu","Defense kept the ball alive"],["topu yine çıkardı!","kept it alive again!"],["Oyun tarzı","Playing style"],["Rövanş","Rematch"]]);
+
+window.SpikerEnglishTemplates.push(['{s} rövanş için servisini geliştirdi.','{s} improved her serve for the rematch.'],['{s} rövanş için paslarını geliştirdi.','{s} improved her setting for the rematch.'],['{s} rövanş için bloğunu geliştirdi.','{s} improved her block for the rematch.'],['{s} rövanş için manşetini geliştirdi.','{s} improved her reception for the rematch.']);

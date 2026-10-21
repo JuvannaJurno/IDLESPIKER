@@ -31,6 +31,7 @@ function refresh(){
  const department=LeagueRules.config.division===3?'Sportif Direktörlük':bal?'Teknik Ekip':'Kara Tahta',lead=RoomSystem.blackboard().leadDays,next=LeagueSeason.progress().next,rows=[],actions=[];
  const squad=TeamView.snapshot(),opponents=next?MatchIntro.opponents(next):[],report=analyze(squad,opponents,TeamRules),{need,weak,upgrade,swap}=report;
  if(next){let day=1;try{day=JSON.parse(localStorage.getItem('idle-spiker-main-menu-v1')).day}catch{}const remaining=next.day-day,rival=LeagueRules.teams[next.home===0?next.away:next.home];rows.push(['Sıradaki rakip',rival+' · '+(remaining>0?remaining+' gün sonra':'Maç günü')]);
+ if(LeagueRules.config.division===3){const style=RivalStyles.profile(next.home===0?next.away:next.home);if(style){rows.push(['Oyun tarzı',style.label]);if(next.round>=8)rows.push(['Rövanş',RivalStyles.rematchText(opponents)||style.rematch]);}}
  if(!lead)rows.push(['Rakip raporu',department+' bölümündeki '+(bal?'Gözlemci':'Rakip Analizi')+' bloğunu geliştirerek açabilirsin.']);
  else if(remaining>lead)rows.push(['Rakip raporu',(next.day-lead-day)+' gün sonra hazır. O zamana kadar oyuncularını geliştirebilirsin.']);
  else if(report.missing.length){rows.push(['Eksik kadro',report.missing.map(s=>s.name).join(', ')]);actions.push({label:'Kadroyu tamamla',id:'missing',run:()=>TeamView.compare(report.missing[0].id)});}

@@ -202,3 +202,5 @@ html[data-theme=dark] #rewardLayer .reward-pop.critical{color:#e1cca4;background
 
 #preMatchStage .formation-player strong{background:#ffffff}
 .building-scroll .workflow>.energy-track{bottom:-12px;border-radius:5px 5px 0 0}
+
+.rival-style-preview{margin:-5px auto 12px;max-width:430px;padding:9px 12px;border:1px solid #cad8c1;border-radius:10px;background:#f7f3df;color:#526f68;font-size:11px;line-height:1.5;text-align:center}

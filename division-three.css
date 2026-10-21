@@ -90,3 +90,5 @@ body.social-open .social-feed-window{height:auto}
 #socialTab[aria-disabled="true"]{opacity:.38;cursor:default;filter:grayscale(1)}
 
 #mediaBlockPicker .media-block-choices{display:grid;gap:10px}#mediaBlockPicker .room-choice{text-align:left;padding:16px;width:100%}
+
+.room-pro_travel.overtime-running{border-color:#d4aa53;animation:overtime-glow 2.4s ease-in-out infinite}#matchOvertimeCountdown{margin-left:auto;margin-right:8px;padding:4px 8px;border-radius:8px;background:#fff5d8;color:#80602d;font-size:10px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:0;white-space:nowrap;line-height:1.4}#matchOvertimeCountdown[hidden]{display:none}@keyframes overtime-glow{0%,100%{box-shadow:0 3px 0 #bba46c,0 0 0 2px #e8c77633}50%{box-shadow:0 3px 0 #bba46c,0 0 15px 4px #e8c77688}}@media(prefers-reduced-motion:reduce){.room-pro_travel.overtime-running{animation:none;box-shadow:0 0 0 3px #e8c77666}}

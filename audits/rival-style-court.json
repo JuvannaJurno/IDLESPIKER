@@ -1,0 +1,640 @@
+{
+  "rows": [
+    {
+      "team": "Ankara File",
+      "round": 1,
+      "physics": {
+        "duration": 1.5,
+        "kind": "serve",
+        "plan": [
+          {
+            "index": 8,
+            "x": 535,
+            "y": 285
+          },
+          {
+            "index": 9,
+            "x": 535,
+            "y": 335
+          }
+        ],
+        "speed": 206.2,
+        "baseSpeed": 206.2
+      },
+      "finished": true,
+      "score": [
+        5,
+        3
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Servis baskısı",
+          "at": 0
+        },
+        {
+          "key": "serve-1",
+          "text": "Ankara File · Servis baskısı",
+          "at": 18.11666666666692
+        }
+      ],
+      "blockPairs": 0,
+      "digs": 0,
+      "aces": 1,
+      "dive": 0,
+      "style": "serve"
+    },
+    {
+      "team": "Ankara File",
+      "round": 8,
+      "physics": {
+        "duration": 1.5,
+        "kind": "serve",
+        "plan": [
+          {
+            "index": 8,
+            "x": 535,
+            "y": 285
+          },
+          {
+            "index": 9,
+            "x": 535,
+            "y": 335
+          }
+        ],
+        "speed": 207,
+        "baseSpeed": 207
+      },
+      "finished": true,
+      "score": [
+        5,
+        0
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Servis baskısı",
+          "at": 0
+        },
+        {
+          "key": "rematch",
+          "text": "Şermin Tekin rövanş için servisini geliştirdi.",
+          "at": 4.016666666666658
+        }
+      ],
+      "blockPairs": 0,
+      "digs": 0,
+      "aces": 0,
+      "dive": 0,
+      "style": "serve"
+    },
+    {
+      "team": "Uludağ Akademi",
+      "round": 1,
+      "physics": {
+        "duration": 1.8,
+        "kind": "defense",
+        "plan": [
+          {
+            "index": 8,
+            "x": 535,
+            "y": 285
+          },
+          {
+            "index": 9,
+            "x": 535,
+            "y": 335
+          }
+        ],
+        "speed": 227,
+        "baseSpeed": 215
+      },
+      "finished": true,
+      "score": [
+        0,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Savunmadan kontrollü hücum",
+          "at": 0
+        },
+        {
+          "key": "defense-1",
+          "text": "Uludağ Akademi · Savunma topu oyunda tuttu",
+          "at": 23.1333333333333
+        },
+        {
+          "key": "defense-2",
+          "text": "Uludağ Akademi topu yine çıkardı!",
+          "at": 31.483333333332826
+        }
+      ],
+      "blockPairs": 2,
+      "digs": 4,
+      "aces": 0,
+      "dive": 0,
+      "style": "defense"
+    },
+    {
+      "team": "Uludağ Akademi",
+      "round": 8,
+      "physics": {
+        "duration": 1.8,
+        "kind": "defense",
+        "plan": [
+          {
+            "index": 8,
+            "x": 535,
+            "y": 285
+          },
+          {
+            "index": 9,
+            "x": 535,
+            "y": 335
+          }
+        ],
+        "speed": 227,
+        "baseSpeed": 215
+      },
+      "finished": true,
+      "score": [
+        1,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Savunmadan kontrollü hücum",
+          "at": 0
+        },
+        {
+          "key": "rematch",
+          "text": "Melis Arıgöl rövanş için paslarını geliştirdi.",
+          "at": 4.016666666666658
+        },
+        {
+          "key": "defense-1",
+          "text": "Uludağ Akademi · Savunma topu oyunda tuttu",
+          "at": 41.13333333333228
+        },
+        {
+          "key": "defense-2",
+          "text": "Uludağ Akademi topu yine çıkardı!",
+          "at": 49.23333333333182
+        }
+      ],
+      "blockPairs": 1,
+      "digs": 3,
+      "aces": 1,
+      "dive": 0,
+      "style": "defense"
+    },
+    {
+      "team": "Eskişehir Voleybol",
+      "round": 1,
+      "physics": {
+        "duration": 1.8,
+        "kind": "defense",
+        "plan": [
+          {
+            "index": 8,
+            "x": 535,
+            "y": 285
+          },
+          {
+            "index": 9,
+            "x": 535,
+            "y": 335
+          }
+        ],
+        "speed": 222.2,
+        "baseSpeed": 210.2
+      },
+      "finished": true,
+      "score": [
+        5,
+        1
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Uzun ralli savunması",
+          "at": 0
+        },
+        {
+          "key": "defense-1",
+          "text": "Eskişehir Voleybol · Savunma topu oyunda tuttu",
+          "at": 21.26666666666674
+        }
+      ],
+      "blockPairs": 0,
+      "digs": 2,
+      "aces": 0,
+      "dive": 0,
+      "style": "defense"
+    },
+    {
+      "team": "Eskişehir Voleybol",
+      "round": 8,
+      "physics": {
+        "duration": 1.8,
+        "kind": "defense",
+        "plan": [
+          {
+            "index": 8,
+            "x": 535,
+            "y": 285
+          },
+          {
+            "index": 9,
+            "x": 535,
+            "y": 335
+          }
+        ],
+        "speed": 223,
+        "baseSpeed": 211
+      },
+      "finished": true,
+      "score": [
+        5,
+        3
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Uzun ralli savunması",
+          "at": 0
+        },
+        {
+          "key": "rematch",
+          "text": "Elçin Gündüz rövanş için manşetini geliştirdi.",
+          "at": 4.016666666666658
+        },
+        {
+          "key": "defense-1",
+          "text": "Eskişehir Voleybol · Savunma topu oyunda tuttu",
+          "at": 98.03333333332905
+        }
+      ],
+      "blockPairs": 0,
+      "digs": 1,
+      "aces": 0,
+      "dive": 0,
+      "style": "defense"
+    },
+    {
+      "team": "İstanbul Voleybol",
+      "round": 1,
+      "physics": {
+        "duration": 1.8,
+        "kind": "block",
+        "plan": [
+          {
+            "index": 8,
+            "x": 525,
+            "y": 285
+          },
+          {
+            "index": 9,
+            "x": 525,
+            "y": 335
+          }
+        ],
+        "speed": 204,
+        "baseSpeed": 204
+      },
+      "finished": true,
+      "score": [
+        5,
+        1
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Filede ikili blok",
+          "at": 0
+        }
+      ],
+      "blockPairs": 0,
+      "digs": 0,
+      "aces": 0,
+      "dive": 0,
+      "style": "block"
+    },
+    {
+      "team": "İstanbul Voleybol",
+      "round": 8,
+      "physics": {
+        "duration": 1.8,
+        "kind": "block",
+        "plan": [
+          {
+            "index": 8,
+            "x": 525,
+            "y": 285
+          },
+          {
+            "index": 9,
+            "x": 525,
+            "y": 335
+          }
+        ],
+        "speed": 204.8,
+        "baseSpeed": 204.8
+      },
+      "finished": true,
+      "score": [
+        5,
+        0
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Filede ikili blok",
+          "at": 0
+        },
+        {
+          "key": "rematch",
+          "text": "Gonca Cankurt rövanş için bloğunu geliştirdi.",
+          "at": 4.016666666666658
+        }
+      ],
+      "blockPairs": 0,
+      "digs": 0,
+      "aces": 0,
+      "dive": 0,
+      "style": "block"
+    },
+    {
+      "team": "Başkent Akademi",
+      "round": 1,
+      "physics": {
+        "duration": 1.8,
+        "kind": "block",
+        "plan": [
+          {
+            "index": 8,
+            "x": 525,
+            "y": 285
+          },
+          {
+            "index": 9,
+            "x": 525,
+            "y": 335
+          }
+        ],
+        "speed": 211.6,
+        "baseSpeed": 211.6
+      },
+      "finished": true,
+      "score": [
+        5,
+        1
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Nadia ile blok duvarı",
+          "at": 0
+        }
+      ],
+      "blockPairs": 0,
+      "digs": 0,
+      "aces": 0,
+      "dive": 0,
+      "style": "block"
+    },
+    {
+      "team": "Başkent Akademi",
+      "round": 8,
+      "physics": {
+        "duration": 1.8,
+        "kind": "block",
+        "plan": [
+          {
+            "index": 8,
+            "x": 525,
+            "y": 285
+          },
+          {
+            "index": 9,
+            "x": 525,
+            "y": 335
+          }
+        ],
+        "speed": 212,
+        "baseSpeed": 212
+      },
+      "finished": true,
+      "score": [
+        4,
+        6
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Nadia ile blok duvarı",
+          "at": 0
+        },
+        {
+          "key": "rematch",
+          "text": "Nadia rövanş için bloğunu geliştirdi.",
+          "at": 4.016666666666658
+        },
+        {
+          "key": "block-1",
+          "text": "Başkent Akademi · İkili blok!",
+          "at": 170.66666666669462
+        }
+      ],
+      "blockPairs": 1,
+      "digs": 4,
+      "aces": 0,
+      "dive": 0,
+      "style": "block"
+    },
+    {
+      "team": "Antalya Yıldızları",
+      "round": 1,
+      "physics": {
+        "duration": 1.5,
+        "kind": "serve",
+        "plan": [
+          {
+            "index": 8,
+            "x": 535,
+            "y": 285
+          },
+          {
+            "index": 9,
+            "x": 535,
+            "y": 335
+          }
+        ],
+        "speed": 207,
+        "baseSpeed": 207
+      },
+      "finished": true,
+      "score": [
+        5,
+        0
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Yerleşimli servis",
+          "at": 0
+        }
+      ],
+      "blockPairs": 0,
+      "digs": 0,
+      "aces": 0,
+      "dive": 0,
+      "style": "serve"
+    },
+    {
+      "team": "Antalya Yıldızları",
+      "round": 8,
+      "physics": {
+        "duration": 1.5,
+        "kind": "serve",
+        "plan": [
+          {
+            "index": 8,
+            "x": 535,
+            "y": 285
+          },
+          {
+            "index": 9,
+            "x": 535,
+            "y": 335
+          }
+        ],
+        "speed": 207.8,
+        "baseSpeed": 207.8
+      },
+      "finished": true,
+      "score": [
+        5,
+        2
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Yerleşimli servis",
+          "at": 0
+        },
+        {
+          "key": "rematch",
+          "text": "Alev Özen rövanş için servisini geliştirdi.",
+          "at": 4.016666666666658
+        },
+        {
+          "key": "serve-1",
+          "text": "Antalya Yıldızları · Boşluklara servis",
+          "at": 35.84999999999925
+        }
+      ],
+      "blockPairs": 0,
+      "digs": 0,
+      "aces": 0,
+      "dive": 0,
+      "style": "serve"
+    },
+    {
+      "team": "Karadeniz Gücü",
+      "round": 1,
+      "physics": {
+        "duration": 1.5,
+        "kind": "serve",
+        "plan": [
+          {
+            "index": 8,
+            "x": 535,
+            "y": 285
+          },
+          {
+            "index": 9,
+            "x": 535,
+            "y": 335
+          }
+        ],
+        "speed": 215,
+        "baseSpeed": 215
+      },
+      "finished": true,
+      "score": [
+        0,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Sert servis ve hücum",
+          "at": 0
+        },
+        {
+          "key": "serve-1",
+          "text": "Karadeniz Gücü · Servis baskısı",
+          "at": 34.83333333333264
+        }
+      ],
+      "blockPairs": 3,
+      "digs": 4,
+      "aces": 1,
+      "dive": 0,
+      "style": "serve"
+    },
+    {
+      "team": "Karadeniz Gücü",
+      "round": 8,
+      "physics": {
+        "duration": 1.5,
+        "kind": "serve",
+        "plan": [
+          {
+            "index": 8,
+            "x": 535,
+            "y": 285
+          },
+          {
+            "index": 9,
+            "x": 535,
+            "y": 335
+          }
+        ],
+        "speed": 215,
+        "baseSpeed": 215
+      },
+      "finished": true,
+      "score": [
+        0,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Sert servis ve hücum",
+          "at": 0
+        },
+        {
+          "key": "rematch",
+          "text": "Derin Ateş rövanş için servisini geliştirdi.",
+          "at": 4.016666666666658
+        },
+        {
+          "key": "serve-1",
+          "text": "Karadeniz Gücü · Servis baskısı",
+          "at": 18.11666666666692
+        }
+      ],
+      "blockPairs": 0,
+      "digs": 1,
+      "aces": 3,
+      "dive": 0,
+      "style": "serve"
+    }
+  ]
+}
