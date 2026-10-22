@@ -425,6 +425,3528 @@
           ]
         }
       ]
+    },
+    {
+      "scenario": "casual",
+      "run": 2,
+      "startOVR": 75.33333333333333,
+      "endOVR": 106,
+      "top3": [
+        {
+          "team": "Karadeniz Gücü",
+          "wins": 14,
+          "losses": 0,
+          "points": 42
+        },
+        {
+          "team": "Uludağ Akademi",
+          "wins": 12,
+          "losses": 2,
+          "points": 36
+        },
+        {
+          "team": "Başkent Akademi",
+          "wins": 9,
+          "losses": 5,
+          "points": 27
+        }
+      ],
+      "own": {
+        "rank": 4,
+        "wins": 8,
+        "losses": 6
+      },
+      "matches": [
+        {
+          "round": 1,
+          "rival": "Antalya Yıldızları",
+          "ovr": 91.66666666666667,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "cover",
+            "commit-block",
+            "tempo-third",
+            "float",
+            "cover",
+            "court-vision",
+            "slide-attack"
+          ]
+        },
+        {
+          "round": 2,
+          "rival": "İstanbul Voleybol",
+          "ovr": 93.83333333333333,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "cover",
+            "fake-set",
+            "commit-block",
+            "court-vision",
+            "fake-set",
+            "commit-block",
+            "float",
+            "cover",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 3,
+          "rival": "Eskişehir Voleybol",
+          "ovr": 95,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "slide-attack",
+            "cover",
+            "commit-block",
+            "sky-serve",
+            "fake-set",
+            "slide-attack",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "sky-serve",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 4,
+          "rival": "Ankara File",
+          "ovr": 95.66666666666667,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "cross",
+            "fake-set",
+            "commit-block",
+            "slide-attack",
+            "cover",
+            "commit-block",
+            "slide-attack",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 5,
+          "rival": "Uludağ Akademi",
+          "ovr": 97.83333333333333,
+          "score": [
+            4,
+            6
+          ],
+          "skills": [
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "dive",
+            "perfect-second-touch",
+            "power-hit",
+            "commit-block",
+            "sky-serve",
+            "fake-set",
+            "cross",
+            "cover",
+            "court-vision",
+            "power-hit",
+            "line",
+            "cross"
+          ]
+        },
+        {
+          "round": 6,
+          "rival": "Başkent Akademi",
+          "ovr": 99,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "commit-block",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "absolute-read",
+            "tempo-third",
+            "commit-block",
+            "absolute-read",
+            "cover",
+            "commit-block",
+            "absolute-read",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 7,
+          "rival": "Karadeniz Gücü",
+          "ovr": 100.16666666666667,
+          "score": [
+            2,
+            5
+          ],
+          "skills": [
+            "jump-legendary",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "float",
+            "commit-block",
+            "tempo-third",
+            "cross",
+            "float"
+          ]
+        },
+        {
+          "round": 8,
+          "rival": "Antalya Yıldızları",
+          "ovr": 100.83333333333333,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "cover",
+            "commit-block",
+            "float",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 9,
+          "rival": "İstanbul Voleybol",
+          "ovr": 101.83333333333333,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "sky-serve",
+            "fake-set",
+            "commit-block",
+            "sky-serve",
+            "fake-set",
+            "commit-block",
+            "float",
+            "commit-block",
+            "sky-serve",
+            "pipe-attack",
+            "commit-block",
+            "court-vision",
+            "pipe-attack",
+            "commit-block",
+            "fake-set"
+          ]
+        },
+        {
+          "round": 10,
+          "rival": "Eskişehir Voleybol",
+          "ovr": 103.16666666666667,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "cover",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "float",
+            "tempo-third",
+            "court-vision",
+            "fake-set",
+            "cross",
+            "float",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "tempo-third",
+            "float",
+            "fake-set",
+            "cross"
+          ]
+        },
+        {
+          "round": 11,
+          "rival": "Ankara File",
+          "ovr": 103.66666666666667,
+          "score": [
+            3,
+            5
+          ],
+          "skills": [
+            "sky-serve",
+            "float",
+            "sky-serve",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "cross",
+            "float",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 12,
+          "rival": "Uludağ Akademi",
+          "ovr": 104.5,
+          "score": [
+            0,
+            5
+          ],
+          "skills": [
+            "perfect-second-touch",
+            "power-hit",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 13,
+          "rival": "Başkent Akademi",
+          "ovr": 105,
+          "score": [
+            5,
+            7
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "absolute-read",
+            "fake-set",
+            "cover",
+            "commit-block",
+            "float",
+            "line",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "line",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "power-hit",
+            "cover",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 14,
+          "rival": "Karadeniz Gücü",
+          "ovr": 106,
+          "score": [
+            1,
+            5
+          ],
+          "skills": [
+            "jump-legendary",
+            "fake-set",
+            "commit-block",
+            "float",
+            "cover",
+            "power-hit",
+            "cover",
+            "court-vision",
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "power-hit",
+            "cover",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "court-vision",
+            "tempo-third",
+            "commit-block"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": "casual",
+      "run": 3,
+      "startOVR": 75.33333333333333,
+      "endOVR": 106,
+      "top3": [
+        {
+          "team": "Karadeniz Gücü",
+          "wins": 14,
+          "losses": 0,
+          "points": 42
+        },
+        {
+          "team": "Uludağ Akademi",
+          "wins": 12,
+          "losses": 2,
+          "points": 36
+        },
+        {
+          "team": "Test Takımı",
+          "wins": 10,
+          "losses": 4,
+          "points": 30
+        }
+      ],
+      "own": {
+        "rank": 3,
+        "wins": 10,
+        "losses": 4
+      },
+      "matches": [
+        {
+          "round": 1,
+          "rival": "Antalya Yıldızları",
+          "ovr": 91.66666666666667,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "cover",
+            "court-vision",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "cross",
+            "float",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 2,
+          "rival": "İstanbul Voleybol",
+          "ovr": 93.83333333333333,
+          "score": [
+            6,
+            4
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "tempo-third",
+            "commit-block",
+            "sky-serve",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 3,
+          "rival": "Eskişehir Voleybol",
+          "ovr": 95,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "sky-serve",
+            "cross"
+          ]
+        },
+        {
+          "round": 4,
+          "rival": "Ankara File",
+          "ovr": 95.66666666666667,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "fake-set",
+            "cross",
+            "sky-serve",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "sky-serve",
+            "tempo-third",
+            "fake-set",
+            "commit-block",
+            "sky-serve",
+            "float",
+            "sky-serve",
+            "fake-set",
+            "commit-block",
+            "court-vision",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 5,
+          "rival": "Uludağ Akademi",
+          "ovr": 97.83333333333333,
+          "score": [
+            1,
+            5
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "perfect-second-touch",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 6,
+          "rival": "Başkent Akademi",
+          "ovr": 99,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "cover",
+            "absolute-read",
+            "float",
+            "fake-set",
+            "commit-block",
+            "float",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "line",
+            "float",
+            "fake-set",
+            "line",
+            "sky-serve",
+            "cover",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 7,
+          "rival": "Karadeniz Gücü",
+          "ovr": 100.16666666666667,
+          "score": [
+            2,
+            5
+          ],
+          "skills": [
+            "jump-legendary",
+            "commit-block",
+            "fake-set",
+            "tempo-second",
+            "float",
+            "cover",
+            "commit-block",
+            "cross",
+            "tempo-third",
+            "line",
+            "fake-set",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 8,
+          "rival": "Antalya Yıldızları",
+          "ovr": 100.83333333333333,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "cover",
+            "fake-set",
+            "commit-block",
+            "close",
+            "back",
+            "commit-block",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "slide-attack",
+            "cross"
+          ]
+        },
+        {
+          "round": 9,
+          "rival": "İstanbul Voleybol",
+          "ovr": 101.83333333333333,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "tempo-second",
+            "sky-serve",
+            "cover",
+            "court-vision",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "cross",
+            "pipe-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 10,
+          "rival": "Eskişehir Voleybol",
+          "ovr": 103.16666666666667,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "cover",
+            "power-hit",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 11,
+          "rival": "Ankara File",
+          "ovr": 103.66666666666667,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "slide-attack",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 12,
+          "rival": "Uludağ Akademi",
+          "ovr": 104.5,
+          "score": [
+            5,
+            7
+          ],
+          "skills": [
+            "perfect-second-touch",
+            "power-hit",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "float",
+            "cover",
+            "commit-block",
+            "dive",
+            "back",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "dive",
+            "power-hit"
+          ]
+        },
+        {
+          "round": 13,
+          "rival": "Başkent Akademi",
+          "ovr": 105,
+          "score": [
+            7,
+            5
+          ],
+          "skills": [
+            "fake-set",
+            "absolute-read",
+            "sky-serve",
+            "cover",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "close",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "cross",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "line",
+            "fake-set",
+            "line",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 14,
+          "rival": "Karadeniz Gücü",
+          "ovr": 106,
+          "score": [
+            2,
+            5
+          ],
+          "skills": [
+            "jump-legendary",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "close",
+            "tempo-third",
+            "commit-block",
+            "float",
+            "cover",
+            "commit-block",
+            "court-vision",
+            "power-hit",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": "regular",
+      "run": 1,
+      "startOVR": 75.16666666666667,
+      "endOVR": 123.33333333333333,
+      "top3": [
+        {
+          "team": "Karadeniz Gücü",
+          "wins": 13,
+          "losses": 1,
+          "points": 39
+        },
+        {
+          "team": "Test Takımı",
+          "wins": 12,
+          "losses": 2,
+          "points": 36
+        },
+        {
+          "team": "Uludağ Akademi",
+          "wins": 11,
+          "losses": 3,
+          "points": 33
+        }
+      ],
+      "own": {
+        "rank": 2,
+        "wins": 12,
+        "losses": 2
+      },
+      "matches": [
+        {
+          "round": 1,
+          "rival": "Antalya Yıldızları",
+          "ovr": 99.5,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "fake-set",
+            "line",
+            "float",
+            "fake-set",
+            "commit-block",
+            "back",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 2,
+          "rival": "İstanbul Voleybol",
+          "ovr": 105,
+          "score": [
+            7,
+            5
+          ],
+          "skills": [
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "float",
+            "pipe-attack",
+            "commit-block",
+            "float",
+            "court-vision",
+            "float",
+            "tempo-third",
+            "float",
+            "sky-serve",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 3,
+          "rival": "Eskişehir Voleybol",
+          "ovr": 108.33333333333333,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "pipe-attack",
+            "commit-block",
+            "line",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "read"
+          ]
+        },
+        {
+          "round": 4,
+          "rival": "Ankara File",
+          "ovr": 111.83333333333333,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "slide-attack",
+            "tempo-third",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "slide-attack",
+            "float",
+            "cover",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 5,
+          "rival": "Uludağ Akademi",
+          "ovr": 113.33333333333333,
+          "score": [
+            6,
+            8
+          ],
+          "skills": [
+            "dive",
+            "perfect-second-touch",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "cross",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "read",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "cross",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "back",
+            "commit-block",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 6,
+          "rival": "Başkent Akademi",
+          "ovr": 115.16666666666667,
+          "score": [
+            6,
+            4
+          ],
+          "skills": [
+            "fake-set",
+            "line",
+            "tempo-third",
+            "commit-block",
+            "line",
+            "fake-set",
+            "absolute-read",
+            "float",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "back",
+            "commit-block",
+            "fake-set",
+            "line"
+          ]
+        },
+        {
+          "round": 7,
+          "rival": "Karadeniz Gücü",
+          "ovr": 116.66666666666667,
+          "score": [
+            2,
+            5
+          ],
+          "skills": [
+            "jump-legendary",
+            "commit-block",
+            "float",
+            "cover",
+            "line",
+            "cover",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 8,
+          "rival": "Antalya Yıldızları",
+          "ovr": 118.33333333333333,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "read",
+            "fake-set",
+            "cross",
+            "court-vision",
+            "cover",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 9,
+          "rival": "İstanbul Voleybol",
+          "ovr": 119.16666666666667,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "tempo-third",
+            "commit-block",
+            "sky-serve",
+            "fake-set",
+            "commit-block",
+            "sky-serve",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 10,
+          "rival": "Eskişehir Voleybol",
+          "ovr": 119.83333333333333,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "slide-attack",
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "fake-set",
+            "line",
+            "float",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 11,
+          "rival": "Ankara File",
+          "ovr": 120.83333333333333,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "line",
+            "cross",
+            "tempo-third",
+            "commit-block",
+            "read",
+            "tempo-third",
+            "commit-block",
+            "float",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 12,
+          "rival": "Uludağ Akademi",
+          "ovr": 122,
+          "score": [
+            6,
+            4
+          ],
+          "skills": [
+            "dive",
+            "perfect-second-touch",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "back",
+            "kick-save",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "float",
+            "fake-set",
+            "cross",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "dive",
+            "back",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 13,
+          "rival": "Başkent Akademi",
+          "ovr": 122.5,
+          "score": [
+            7,
+            5
+          ],
+          "skills": [
+            "commit-block",
+            "fake-set",
+            "line",
+            "absolute-read",
+            "line",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cover",
+            "line",
+            "float",
+            "back",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "power-hit",
+            "commit-block",
+            "court-vision"
+          ]
+        },
+        {
+          "round": 14,
+          "rival": "Karadeniz Gücü",
+          "ovr": 123.33333333333333,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "jump-legendary",
+            "cover",
+            "commit-block",
+            "float",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": "regular",
+      "run": 2,
+      "startOVR": 75.16666666666667,
+      "endOVR": 123.33333333333333,
+      "top3": [
+        {
+          "team": "Karadeniz Gücü",
+          "wins": 14,
+          "losses": 0,
+          "points": 42
+        },
+        {
+          "team": "Test Takımı",
+          "wins": 12,
+          "losses": 2,
+          "points": 36
+        },
+        {
+          "team": "Uludağ Akademi",
+          "wins": 10,
+          "losses": 4,
+          "points": 30
+        }
+      ],
+      "own": {
+        "rank": 2,
+        "wins": 12,
+        "losses": 2
+      },
+      "matches": [
+        {
+          "round": 1,
+          "rival": "Antalya Yıldızları",
+          "ovr": 99.5,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "tempo-third",
+            "commit-block",
+            "sky-serve",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "float",
+            "cover",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 2,
+          "rival": "İstanbul Voleybol",
+          "ovr": 105,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "pipe-attack",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "sky-serve",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "back",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 3,
+          "rival": "Eskişehir Voleybol",
+          "ovr": 108.33333333333333,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "sky-serve",
+            "tempo-third",
+            "back",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 4,
+          "rival": "Ankara File",
+          "ovr": 111.83333333333333,
+          "score": [
+            7,
+            5
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "sky-serve",
+            "cover",
+            "line",
+            "sky-serve",
+            "float",
+            "cover",
+            "commit-block",
+            "sky-serve",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "tempo-third",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "line",
+            "cross",
+            "commit-block",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 5,
+          "rival": "Uludağ Akademi",
+          "ovr": 113.33333333333333,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "perfect-second-touch",
+            "power-hit",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "line",
+            "sky-serve",
+            "dive",
+            "cross",
+            "float",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "float",
+            "cover",
+            "cross"
+          ]
+        },
+        {
+          "round": 6,
+          "rival": "Başkent Akademi",
+          "ovr": 115.16666666666667,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "cover",
+            "absolute-read",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "sky-serve",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "tempo-third",
+            "commit-block",
+            "float",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 7,
+          "rival": "Karadeniz Gücü",
+          "ovr": 116.66666666666667,
+          "score": [
+            4,
+            6
+          ],
+          "skills": [
+            "jump-legendary",
+            "tempo-third",
+            "commit-block",
+            "sky-serve",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "back",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float"
+          ]
+        },
+        {
+          "round": 8,
+          "rival": "Antalya Yıldızları",
+          "ovr": 118.33333333333333,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "cover",
+            "commit-block",
+            "tempo-third",
+            "line",
+            "fake-set",
+            "cross",
+            "back",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "sky-serve",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 9,
+          "rival": "İstanbul Voleybol",
+          "ovr": 119.16666666666667,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "float",
+            "pipe-attack",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "sky-serve",
+            "cover",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 10,
+          "rival": "Eskişehir Voleybol",
+          "ovr": 119.83333333333333,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "float",
+            "court-vision",
+            "float",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "float",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 11,
+          "rival": "Ankara File",
+          "ovr": 120.83333333333333,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "line",
+            "jump-float-legendary",
+            "fake-set",
+            "commit-block",
+            "sky-serve",
+            "fake-set",
+            "cross",
+            "float",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 12,
+          "rival": "Uludağ Akademi",
+          "ovr": 122,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "dive",
+            "perfect-second-touch",
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "commit-block",
+            "power-hit",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "fake-set",
+            "line",
+            "cover",
+            "commit-block",
+            "dive",
+            "cross"
+          ]
+        },
+        {
+          "round": 13,
+          "rival": "Başkent Akademi",
+          "ovr": 122.5,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "line",
+            "absolute-read",
+            "sky-serve",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "line",
+            "sky-serve",
+            "float",
+            "back",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "absolute-read",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 14,
+          "rival": "Karadeniz Gücü",
+          "ovr": 123.33333333333333,
+          "score": [
+            3,
+            5
+          ],
+          "skills": [
+            "jump-legendary",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "cross",
+            "float",
+            "sky-serve"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": "regular",
+      "run": 3,
+      "startOVR": 75.16666666666667,
+      "endOVR": 123.33333333333333,
+      "top3": [
+        {
+          "team": "Test Takımı",
+          "wins": 14,
+          "losses": 0,
+          "points": 42
+        },
+        {
+          "team": "Karadeniz Gücü",
+          "wins": 12,
+          "losses": 2,
+          "points": 36
+        },
+        {
+          "team": "Uludağ Akademi",
+          "wins": 10,
+          "losses": 4,
+          "points": 30
+        }
+      ],
+      "own": {
+        "rank": 1,
+        "wins": 14,
+        "losses": 0
+      },
+      "matches": [
+        {
+          "round": 1,
+          "rival": "Antalya Yıldızları",
+          "ovr": 99.5,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "cover",
+            "court-vision",
+            "fake-set",
+            "commit-block",
+            "float",
+            "tempo-third",
+            "commit-block",
+            "float",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 2,
+          "rival": "İstanbul Voleybol",
+          "ovr": 105,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "read",
+            "tempo-third",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 3,
+          "rival": "Eskişehir Voleybol",
+          "ovr": 108.33333333333333,
+          "score": [
+            6,
+            4
+          ],
+          "skills": [
+            "slide-attack",
+            "fake-set",
+            "power-hit",
+            "cover",
+            "tempo-third",
+            "cover",
+            "commit-block",
+            "sky-serve",
+            "tempo-third",
+            "commit-block",
+            "float",
+            "tempo-third",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "back",
+            "commit-block",
+            "sky-serve",
+            "dive",
+            "tempo-third",
+            "fake-set",
+            "slide-attack",
+            "fake-set",
+            "commit-block",
+            "float",
+            "tempo-third",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 4,
+          "rival": "Ankara File",
+          "ovr": 111.83333333333333,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "float",
+            "fake-set",
+            "line"
+          ]
+        },
+        {
+          "round": 5,
+          "rival": "Uludağ Akademi",
+          "ovr": 113.33333333333333,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "commit-block",
+            "perfect-second-touch",
+            "commit-block",
+            "back",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "power-hit",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 6,
+          "rival": "Başkent Akademi",
+          "ovr": 115.16666666666667,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "cover",
+            "absolute-read",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "sky-serve",
+            "fake-set",
+            "line",
+            "fake-set",
+            "absolute-read",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 7,
+          "rival": "Karadeniz Gücü",
+          "ovr": 116.66666666666667,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "jump-legendary",
+            "commit-block",
+            "fake-set",
+            "line",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "cross",
+            "fake-set",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross"
+          ]
+        },
+        {
+          "round": 8,
+          "rival": "Antalya Yıldızları",
+          "ovr": 118.33333333333333,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "back",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "jump-float-legendary",
+            "cover",
+            "commit-block",
+            "sky-serve",
+            "court-vision",
+            "sky-serve",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third"
+          ]
+        },
+        {
+          "round": 9,
+          "rival": "İstanbul Voleybol",
+          "ovr": 119.16666666666667,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "court-vision",
+            "cover",
+            "commit-block",
+            "float",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "rebound",
+            "pipe-attack",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 10,
+          "rival": "Eskişehir Voleybol",
+          "ovr": 119.83333333333333,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "tempo-third",
+            "commit-block",
+            "slide-attack",
+            "pipe-attack",
+            "commit-block",
+            "slide-attack",
+            "power-hit"
+          ]
+        },
+        {
+          "round": 11,
+          "rival": "Ankara File",
+          "ovr": 120.83333333333333,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "line",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "slide-attack"
+          ]
+        },
+        {
+          "round": 12,
+          "rival": "Uludağ Akademi",
+          "ovr": 122,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "commit-block",
+            "cover",
+            "commit-block",
+            "cover",
+            "line",
+            "jump-float-legendary",
+            "fake-set",
+            "commit-block",
+            "float",
+            "perfect-second-touch",
+            "cross",
+            "back",
+            "commit-block",
+            "tempo-third",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "cross",
+            "float",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 13,
+          "rival": "Başkent Akademi",
+          "ovr": 122.5,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "back",
+            "commit-block",
+            "fake-set",
+            "absolute-read",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "absolute-read",
+            "float",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 14,
+          "rival": "Karadeniz Gücü",
+          "ovr": 123.33333333333333,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "jump-legendary",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "float",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": "focused",
+      "run": 1,
+      "startOVR": 84.83333333333333,
+      "endOVR": 123.66666666666667,
+      "top3": [
+        {
+          "team": "Karadeniz Gücü",
+          "wins": 13,
+          "losses": 1,
+          "points": 39
+        },
+        {
+          "team": "Test Takımı",
+          "wins": 12,
+          "losses": 2,
+          "points": 36
+        },
+        {
+          "team": "Uludağ Akademi",
+          "wins": 11,
+          "losses": 3,
+          "points": 33
+        }
+      ],
+      "own": {
+        "rank": 2,
+        "wins": 12,
+        "losses": 2
+      },
+      "matches": [
+        {
+          "round": 1,
+          "rival": "Antalya Yıldızları",
+          "ovr": 102.33333333333333,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "commit-block",
+            "tempo-third",
+            "cross",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "cross",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "tempo-third",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set"
+          ]
+        },
+        {
+          "round": 2,
+          "rival": "İstanbul Voleybol",
+          "ovr": 106.66666666666667,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "tempo-third",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "sky-serve",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 3,
+          "rival": "Eskişehir Voleybol",
+          "ovr": 109.66666666666667,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "dive",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "line",
+            "dive",
+            "tempo-third",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 4,
+          "rival": "Ankara File",
+          "ovr": 112.16666666666667,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "sky-serve",
+            "tempo-third",
+            "commit-block",
+            "sky-serve",
+            "power-hit",
+            "slide-attack",
+            "fake-set",
+            "line",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 5,
+          "rival": "Uludağ Akademi",
+          "ovr": 114.16666666666667,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "perfect-second-touch",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "tempo-second",
+            "fake-set",
+            "cross",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "power-hit",
+            "fake-set",
+            "cover",
+            "cross",
+            "cover",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 6,
+          "rival": "Başkent Akademi",
+          "ovr": 115.83333333333333,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "cover",
+            "power-hit",
+            "team-heart",
+            "tempo-second",
+            "absolute-read",
+            "commit-block",
+            "fake-set",
+            "cover",
+            "power-hit",
+            "cover",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "close"
+          ]
+        },
+        {
+          "round": 7,
+          "rival": "Karadeniz Gücü",
+          "ovr": 117.16666666666667,
+          "score": [
+            2,
+            5
+          ],
+          "skills": [
+            "jump-legendary",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "tempo-second",
+            "team-heart",
+            "fake-set"
+          ]
+        },
+        {
+          "round": 8,
+          "rival": "Antalya Yıldızları",
+          "ovr": 118.83333333333333,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "close",
+            "team-heart",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "cover",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 9,
+          "rival": "İstanbul Voleybol",
+          "ovr": 119.66666666666667,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "tempo-third",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "float",
+            "fake-set",
+            "line",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "cross"
+          ]
+        },
+        {
+          "round": 10,
+          "rival": "Eskişehir Voleybol",
+          "ovr": 120.5,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "team-heart",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "commit-block",
+            "tempo-third",
+            "fake-set",
+            "line",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "dive",
+            "court-vision",
+            "fake-set"
+          ]
+        },
+        {
+          "round": 11,
+          "rival": "Ankara File",
+          "ovr": 121.66666666666667,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "cross",
+            "float",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "sky-serve",
+            "tempo-second",
+            "team-heart",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 12,
+          "rival": "Uludağ Akademi",
+          "ovr": 122.33333333333333,
+          "score": [
+            3,
+            5
+          ],
+          "skills": [
+            "perfect-second-touch",
+            "commit-block",
+            "back",
+            "commit-block",
+            "team-heart",
+            "tempo-second",
+            "dive",
+            "back",
+            "fake-set",
+            "line",
+            "fake-set",
+            "line",
+            "cover",
+            "cross",
+            "commit-block",
+            "team-heart"
+          ]
+        },
+        {
+          "round": 13,
+          "rival": "Başkent Akademi",
+          "ovr": 123.16666666666667,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "power-hit",
+            "team-heart",
+            "fake-set",
+            "cross",
+            "absolute-read",
+            "fake-set",
+            "line",
+            "tempo-second",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 14,
+          "rival": "Karadeniz Gücü",
+          "ovr": 123.66666666666667,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "jump-legendary",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "line",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": "focused",
+      "run": 2,
+      "startOVR": 84.83333333333333,
+      "endOVR": 123.66666666666667,
+      "top3": [
+        {
+          "team": "Karadeniz Gücü",
+          "wins": 13,
+          "losses": 1,
+          "points": 39
+        },
+        {
+          "team": "Test Takımı",
+          "wins": 11,
+          "losses": 3,
+          "points": 33
+        },
+        {
+          "team": "Uludağ Akademi",
+          "wins": 10,
+          "losses": 4,
+          "points": 30
+        }
+      ],
+      "own": {
+        "rank": 2,
+        "wins": 11,
+        "losses": 3
+      },
+      "matches": [
+        {
+          "round": 1,
+          "rival": "Antalya Yıldızları",
+          "ovr": 102.33333333333333,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "cover",
+            "power-hit",
+            "court-vision",
+            "back",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 2,
+          "rival": "İstanbul Voleybol",
+          "ovr": 106.66666666666667,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "float",
+            "tempo-second",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 3,
+          "rival": "Eskişehir Voleybol",
+          "ovr": 109.66666666666667,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "dive",
+            "pipe-attack",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "tempo-third",
+            "cross",
+            "court-vision",
+            "sky-serve",
+            "tempo-third",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "cross"
+          ]
+        },
+        {
+          "round": 4,
+          "rival": "Ankara File",
+          "ovr": 112.16666666666667,
+          "score": [
+            2,
+            5
+          ],
+          "skills": [
+            "commit-block",
+            "tempo-second",
+            "commit-block",
+            "sky-serve",
+            "float",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "sky-serve",
+            "float",
+            "tempo-third",
+            "commit-block",
+            "cover",
+            "power-hit"
+          ]
+        },
+        {
+          "round": 5,
+          "rival": "Uludağ Akademi",
+          "ovr": 114.16666666666667,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "perfect-second-touch",
+            "line",
+            "fake-set",
+            "commit-block",
+            "back",
+            "fake-set",
+            "line",
+            "fake-set",
+            "cross",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "line"
+          ]
+        },
+        {
+          "round": 6,
+          "rival": "Başkent Akademi",
+          "ovr": 115.83333333333333,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "back",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "absolute-read",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "fake-set",
+            "line"
+          ]
+        },
+        {
+          "round": 7,
+          "rival": "Karadeniz Gücü",
+          "ovr": 117.16666666666667,
+          "score": [
+            3,
+            5
+          ],
+          "skills": [
+            "jump-legendary",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "jump-legendary",
+            "fake-set",
+            "cross",
+            "team-heart",
+            "tempo-third",
+            "commit-block",
+            "tempo-second",
+            "fake-set",
+            "line",
+            "tempo-second",
+            "cover",
+            "commit-block",
+            "team-heart",
+            "cover",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 8,
+          "rival": "Antalya Yıldızları",
+          "ovr": 118.83333333333333,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "commit-block",
+            "tempo-second",
+            "commit-block",
+            "team-heart",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-second",
+            "cover",
+            "court-vision",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "tempo-second",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 9,
+          "rival": "İstanbul Voleybol",
+          "ovr": 119.66666666666667,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "float",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line"
+          ]
+        },
+        {
+          "round": 10,
+          "rival": "Eskişehir Voleybol",
+          "ovr": 120.5,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "pipe-attack",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "tempo-third",
+            "cross",
+            "court-vision",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 11,
+          "rival": "Ankara File",
+          "ovr": 121.66666666666667,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "cover",
+            "commit-block",
+            "team-heart",
+            "float",
+            "commit-block",
+            "tempo-third",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "tempo-second",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 12,
+          "rival": "Uludağ Akademi",
+          "ovr": 122.33333333333333,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "dive",
+            "perfect-second-touch",
+            "commit-block",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "dive",
+            "back",
+            "dive",
+            "power-hit"
+          ]
+        },
+        {
+          "round": 13,
+          "rival": "Başkent Akademi",
+          "ovr": 123.16666666666667,
+          "score": [
+            0,
+            5
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "tempo-second",
+            "absolute-read",
+            "power-hit"
+          ]
+        },
+        {
+          "round": 14,
+          "rival": "Karadeniz Gücü",
+          "ovr": 123.66666666666667,
+          "score": [
+            6,
+            4
+          ],
+          "skills": [
+            "jump-legendary",
+            "cover",
+            "commit-block",
+            "power-hit",
+            "team-heart",
+            "fake-set",
+            "line",
+            "fake-set",
+            "line",
+            "team-heart",
+            "tempo-third",
+            "commit-block",
+            "cross",
+            "float",
+            "tempo-second",
+            "cover",
+            "commit-block",
+            "cross",
+            "team-heart",
+            "line",
+            "commit-block"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": "focused",
+      "run": 3,
+      "startOVR": 84.83333333333333,
+      "endOVR": 123.66666666666667,
+      "top3": [
+        {
+          "team": "Karadeniz Gücü",
+          "wins": 13,
+          "losses": 1,
+          "points": 39
+        },
+        {
+          "team": "Uludağ Akademi",
+          "wins": 11,
+          "losses": 3,
+          "points": 33
+        },
+        {
+          "team": "Test Takımı",
+          "wins": 11,
+          "losses": 3,
+          "points": 33
+        }
+      ],
+      "own": {
+        "rank": 3,
+        "wins": 11,
+        "losses": 3
+      },
+      "matches": [
+        {
+          "round": 1,
+          "rival": "Antalya Yıldızları",
+          "ovr": 102.33333333333333,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "court-vision",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "power-hit",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 2,
+          "rival": "İstanbul Voleybol",
+          "ovr": 106.66666666666667,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "commit-block",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "tempo-third",
+            "float",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "court-vision",
+            "tempo-second",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 3,
+          "rival": "Eskişehir Voleybol",
+          "ovr": 109.66666666666667,
+          "score": [
+            5,
+            0
+          ],
+          "skills": [
+            "dive",
+            "pipe-attack",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "close",
+            "cover",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 4,
+          "rival": "Ankara File",
+          "ovr": 112.16666666666667,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "float",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "tempo-second",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "cross",
+            "commit-block",
+            "close"
+          ]
+        },
+        {
+          "round": 5,
+          "rival": "Uludağ Akademi",
+          "ovr": 114.16666666666667,
+          "score": [
+            7,
+            5
+          ],
+          "skills": [
+            "commit-block",
+            "read",
+            "perfect-second-touch",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "line",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "cross",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "dive",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "back",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "line",
+            "tempo-third",
+            "commit-block",
+            "cross",
+            "fake-set",
+            "cross",
+            "dive",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 6,
+          "rival": "Başkent Akademi",
+          "ovr": 115.83333333333333,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "cover",
+            "absolute-read",
+            "team-heart",
+            "fake-set",
+            "line",
+            "fake-set",
+            "absolute-read",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "line"
+          ]
+        },
+        {
+          "round": 7,
+          "rival": "Karadeniz Gücü",
+          "ovr": 117.16666666666667,
+          "score": [
+            2,
+            5
+          ],
+          "skills": [
+            "jump-legendary",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "tempo-second",
+            "line",
+            "cover",
+            "commit-block",
+            "team-heart",
+            "line",
+            "cover",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 8,
+          "rival": "Antalya Yıldızları",
+          "ovr": 118.83333333333333,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "tempo-third",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "team-heart",
+            "ghost-tip"
+          ]
+        },
+        {
+          "round": 9,
+          "rival": "İstanbul Voleybol",
+          "ovr": 119.66666666666667,
+          "score": [
+            5,
+            1
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "cover",
+            "cross",
+            "team-heart",
+            "pipe-attack",
+            "commit-block",
+            "tempo-second",
+            "kick-save",
+            "court-vision",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "pipe-attack",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "power-hit",
+            "commit-block",
+            "tempo-third",
+            "line"
+          ]
+        },
+        {
+          "round": 10,
+          "rival": "Eskişehir Voleybol",
+          "ovr": 120.5,
+          "score": [
+            5,
+            2
+          ],
+          "skills": [
+            "slide-attack",
+            "team-heart",
+            "pipe-attack",
+            "commit-block",
+            "pipe-attack",
+            "commit-block",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "commit-block",
+            "tempo-second"
+          ]
+        },
+        {
+          "round": 11,
+          "rival": "Ankara File",
+          "ovr": 121.66666666666667,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "float",
+            "commit-block",
+            "fake-set",
+            "cross",
+            "tempo-third",
+            "line",
+            "commit-block",
+            "cover",
+            "commit-block",
+            "fake-set",
+            "cover",
+            "commit-block",
+            "team-heart",
+            "float",
+            "fake-set",
+            "commit-block",
+            "tempo-third",
+            "commit-block"
+          ]
+        },
+        {
+          "round": 12,
+          "rival": "Uludağ Akademi",
+          "ovr": 122.33333333333333,
+          "score": [
+            3,
+            5
+          ],
+          "skills": [
+            "perfect-second-touch",
+            "line",
+            "team-heart",
+            "commit-block",
+            "tempo-third",
+            "commit-block",
+            "fake-set",
+            "back",
+            "team-heart",
+            "power-hit",
+            "commit-block",
+            "dive",
+            "power-hit"
+          ]
+        },
+        {
+          "round": 13,
+          "rival": "Başkent Akademi",
+          "ovr": 123.16666666666667,
+          "score": [
+            0,
+            5
+          ],
+          "skills": [
+            "tempo-third",
+            "cross",
+            "absolute-read",
+            "fake-set",
+            "commit-block",
+            "team-heart",
+            "tempo-third",
+            "absolute-read"
+          ]
+        },
+        {
+          "round": 14,
+          "rival": "Karadeniz Gücü",
+          "ovr": 123.66666666666667,
+          "score": [
+            5,
+            3
+          ],
+          "skills": [
+            "jump-legendary",
+            "cross",
+            "team-heart",
+            "power-hit",
+            "ghost-tip",
+            "cover",
+            "power-hit",
+            "commit-block",
+            "team-heart",
+            "fake-set",
+            "absolute-read",
+            "fake-set",
+            "commit-block",
+            "fake-set",
+            "tempo-second",
+            "tempo-third",
+            "absolute-read",
+            "cross"
+          ]
+        }
+      ]
     }
   ]
 }

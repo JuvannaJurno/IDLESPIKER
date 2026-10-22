@@ -350,6 +350,11 @@ html[data-theme=dark] #campReturnDialog .return-star-track{background:#304e58;bo
 
 .department-buy:disabled{opacity:.5;filter:grayscale(.8);background:#e1e5d8;border-color:#c6ccbf;color:#929b8c;box-shadow:none;cursor:not-allowed}.department-buy:disabled .department-open-mark{background:#e8e9df;border-color:#c9cdbf;color:#a1a795}.department-buy:disabled small{color:#929b8c}
 
-.camp-funding{display:grid;grid-template-columns:1fr 1fr;gap:7px 14px;padding:10px;border-radius:10px;background:#f5efdb;color:#65725b;text-align:left}
-.camp-funding[hidden]{display:none}.camp-funding>strong,.camp-funding-note{grid-column:1/-1}.camp-funding>strong{font-size:12px}.camp-funding small{display:block;font-size:10px;line-height:1.5}.camp-funding progress{display:block;width:100%;height:5px;border:0;border-radius:5px;overflow:hidden;accent-color:#c69c50}.camp-funding progress::-webkit-progress-bar{background:#dedfcf}.camp-funding progress::-webkit-progress-value{background:#c69c50;transition:width .3s}.camp-alert-slot[data-state=waiting]{border-color:#cba45d;background:#f2e8c9}.camp-alert-slot[data-state=ready]{border-color:#759a77;background:#dae8cf}.camp-alert-slot[data-state=waiting] .camp-slot-progress i{background:#c69c50}.camp-alert[data-funding=ready] .camp-funding{background:#e1ecd6;color:#486b50}.camp-alert[data-funding=ready] .camp-funding progress::-webkit-progress-value{background:#759a77}
-html[data-theme=dark] .camp-funding{background:#343b30;color:#e5ddc6}html[data-theme=dark] .camp-alert-slot[data-state=waiting]{background:#4b4531}html[data-theme=dark] .camp-alert-slot[data-state=ready],html[data-theme=dark] .camp-alert[data-funding=ready] .camp-funding{background:#304638;color:#daead7}
+
+.camp-alert-slot[data-draft]{background:#f0f2e5;border-color:transparent;box-shadow:none}
+.camp-alert-slot[data-draft] img{inset:4px;width:calc(100% - 8px);height:calc(100% - 8px);max-width:calc(100% - 8px);max-height:calc(100% - 8px)}
+.camp-portrait-frame{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;fill:none;stroke-width:3px}
+.camp-frame-track{stroke:#becbb3}.camp-frame-fill{stroke:#c39b53;stroke-dasharray:0 100;stroke-linecap:round;transition:stroke-dasharray .4s ease,stroke .3s}
+.camp-alert-slot[data-state=ready] .camp-frame-fill{stroke:#62866c}
+html[data-theme=dark] .camp-alert-slot[data-draft]{background:#34453d}html[data-theme=dark] .camp-frame-track{stroke:#546958}html[data-theme=dark] .camp-frame-fill{stroke:#d3b26d}html[data-theme=dark] .camp-alert-slot[data-state=ready] .camp-frame-fill{stroke:#a4c59c}
+@media(prefers-reduced-motion:reduce){.camp-frame-fill{transition:none}}
