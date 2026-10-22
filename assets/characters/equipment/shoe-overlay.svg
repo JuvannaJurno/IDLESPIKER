@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="399.1 316 11 11"><path data-part="shoe" data-piece="shoe" data-tone="shadow" fill="var(--equipment-shoe-shadow, #2C2A2A)" stroke="none" d="
+M 406.8 325
+Q 409.25 321.8 406.8 318
+L 403.8 318
+Q 406.25 321.8 403.8 325
+L 406.8 325 Z"/><path data-part="shoe" data-piece="shoe" data-tone="base" fill="var(--equipment-shoe, #3F3B3B)" stroke="none" d="
+M 403.8 316
+L 403.8 318 406.8 318
+Q 409.25 321.8 406.8 325
+L 403.8 325 403.8 327 406.8 327
+Q 407.25 327 407.7 326.8 408.1 326.6 408.4 326.25 411.75 321.95 408.5 316.95 408.2 316.5 407.75 316.25 407.3 316 406.8 316
+L 403.8 316 Z"/></svg>

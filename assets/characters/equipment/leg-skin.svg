@@ -1,11 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 20.2 15"><g transform="translate(-392 -315)"><path data-part="skin" data-piece="leg-skin" data-tone="shadow" fill="var(--equipment-skin-shadow, #C4A26F)" stroke="none" d="
+<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="399.1 316 11 11"><path data-part="skin" data-piece="leg-skin" data-tone="shadow" fill="var(--equipment-skin-shadow, #C4A26F)" stroke="none" d="
 M 400.4 327
 L 403.8 327 403.8 325 399.2 325 400.4 327
 M 403.8 318
-L 403.8 316 400.4 316 399.15 318 403.8 318 Z"/>
-<path data-part="skin" data-piece="leg-skin" data-tone="base" fill="var(--equipment-skin, #FFE0B1)" stroke="none" d="
+L 403.8 316 400.4 316 399.15 318 403.8 318 Z"/><path data-part="skin" data-piece="leg-skin" data-tone="base" fill="var(--equipment-skin, #FFE0B1)" stroke="none" d="
 M 403.8 318
 L 399.15 318
 Q 400.8 321.7 399.2 325
 L 403.8 325
-Q 406.25 321.8 403.8 318 Z"/></g></svg>
+Q 406.25 321.8 403.8 318 Z"/></svg>
