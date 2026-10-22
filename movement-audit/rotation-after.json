@@ -1,0 +1,36 @@
+[
+  {
+    "seed": 20,
+    "finished": true,
+    "steps": 7080,
+    "points": 7,
+    "skills": 0,
+    "minGap": 40.100650948103876,
+    "overlapFrames": 0,
+    "maxMove": 3.066666666666729,
+    "turns": 0,
+    "positionErrors": 0,
+    "renderSamples": 746,
+    "renderOverlaps": 0,
+    "rotationOverlapFrames": 0,
+    "minRotationGap": 41.70315620996599,
+    "pins": []
+  },
+  {
+    "seed": 21,
+    "finished": true,
+    "steps": 21993,
+    "points": 18,
+    "skills": 54,
+    "minGap": 40.01274845974048,
+    "overlapFrames": 0,
+    "maxMove": 3.4000000000000634,
+    "turns": 0,
+    "positionErrors": 2,
+    "renderSamples": 2367,
+    "renderOverlaps": 0,
+    "rotationOverlapFrames": 0,
+    "minRotationGap": 40.50100214342429,
+    "pins": []
+  }
+]

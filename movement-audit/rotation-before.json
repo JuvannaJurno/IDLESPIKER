@@ -1,0 +1,62 @@
+[
+  {
+    "seed": 20,
+    "finished": true,
+    "steps": 6926,
+    "points": 7,
+    "skills": 0,
+    "minGap": 40.03843414035175,
+    "overlapFrames": 0,
+    "maxMove": 3.066666666666729,
+    "turns": 0,
+    "positionErrors": 0,
+    "renderSamples": 744,
+    "renderOverlaps": 0,
+    "rotationOverlapFrames": 18,
+    "minRotationGap": 17.334916549826573,
+    "pins": [
+      {
+        "type": "rotation-collision",
+        "step": 2796,
+        "pair": "6:11",
+        "gap": 25.44380539645728
+      },
+      {
+        "type": "rotation-collision",
+        "step": 2797,
+        "pair": "6:11",
+        "gap": 22.419385490485038
+      }
+    ]
+  },
+  {
+    "seed": 21,
+    "finished": true,
+    "steps": 21437,
+    "points": 18,
+    "skills": 54,
+    "minGap": 40.002586058157675,
+    "overlapFrames": 0,
+    "maxMove": 3.4000000000000634,
+    "turns": 0,
+    "positionErrors": 2,
+    "renderSamples": 2360,
+    "renderOverlaps": 0,
+    "rotationOverlapFrames": 106,
+    "minRotationGap": 0.8163091413854819,
+    "pins": [
+      {
+        "type": "rotation-collision",
+        "step": 1725,
+        "pair": "6:11",
+        "gap": 24.883467442512593
+      },
+      {
+        "type": "rotation-collision",
+        "step": 1726,
+        "pair": "6:11",
+        "gap": 21.840570713235284
+      }
+    ]
+  }
+]

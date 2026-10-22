@@ -1,0 +1,62 @@
+[
+  {
+    "seed": 16,
+    "finished": true,
+    "steps": 4487,
+    "points": 5,
+    "skills": 0,
+    "minGap": 40.356944507187364,
+    "overlapFrames": 0,
+    "maxMove": 3.066666666666729,
+    "turns": 0,
+    "positionErrors": 0,
+    "renderSamples": 460,
+    "renderOverlaps": 0,
+    "pins": []
+  },
+  {
+    "seed": 17,
+    "finished": true,
+    "steps": 7371,
+    "points": 7,
+    "skills": 21,
+    "minGap": 40.00181812527375,
+    "overlapFrames": 0,
+    "maxMove": 3.400000000000062,
+    "turns": 0,
+    "positionErrors": 1,
+    "renderSamples": 757,
+    "renderOverlaps": 0,
+    "pins": []
+  },
+  {
+    "seed": 18,
+    "finished": true,
+    "steps": 6807,
+    "points": 6,
+    "skills": 0,
+    "minGap": 40.00000371861618,
+    "overlapFrames": 0,
+    "maxMove": 3.4000000000000608,
+    "turns": 0,
+    "positionErrors": 0,
+    "renderSamples": 794,
+    "renderOverlaps": 0,
+    "pins": []
+  },
+  {
+    "seed": 19,
+    "finished": true,
+    "steps": 10493,
+    "points": 10,
+    "skills": 25,
+    "minGap": 40.04743351018422,
+    "overlapFrames": 0,
+    "maxMove": 3.4000000000000603,
+    "turns": 0,
+    "positionErrors": 0,
+    "renderSamples": 1129,
+    "renderOverlaps": 0,
+    "pins": []
+  }
+]

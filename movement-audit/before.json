@@ -1,0 +1,482 @@
+[
+  {
+    "seed": 0,
+    "finished": true,
+    "steps": 8343,
+    "points": 10,
+    "skills": 0,
+    "minGap": 40.005402821815935,
+    "overlapFrames": 0,
+    "maxMove": 3.066666666666728,
+    "turns": 70,
+    "positionErrors": 0,
+    "pins": [
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 0,
+        "turn": 1.3338659303483156,
+        "kind": "serve",
+        "touch": 1
+      },
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 1,
+        "turn": 3.012914207231681,
+        "kind": "serve",
+        "touch": 1
+      }
+    ]
+  },
+  {
+    "seed": 1,
+    "finished": true,
+    "steps": 17868,
+    "points": 16,
+    "skills": 41,
+    "minGap": 39.99999999940599,
+    "overlapFrames": 0,
+    "maxMove": 3.4000000000000603,
+    "turns": 139,
+    "positionErrors": 2,
+    "pins": [
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 0,
+        "turn": 1.3420533748325956,
+        "kind": "serve",
+        "touch": 1
+      },
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 1,
+        "turn": 3.0143063045362215,
+        "kind": "serve",
+        "touch": 1
+      }
+    ]
+  },
+  {
+    "seed": 2,
+    "finished": true,
+    "steps": 7486,
+    "points": 8,
+    "skills": 0,
+    "minGap": 40.224416079818724,
+    "overlapFrames": 0,
+    "maxMove": 3.400000000000058,
+    "turns": 59,
+    "positionErrors": 0,
+    "pins": [
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 0,
+        "turn": 1.3420533748325956,
+        "kind": "serve",
+        "touch": 1
+      },
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 1,
+        "turn": 3.0143063045362215,
+        "kind": "serve",
+        "touch": 1
+      }
+    ]
+  },
+  {
+    "seed": 3,
+    "finished": true,
+    "steps": 7812,
+    "points": 7,
+    "skills": 17,
+    "minGap": 39.99999999032046,
+    "overlapFrames": 0,
+    "maxMove": 3.4000000000000616,
+    "turns": 61,
+    "positionErrors": 0,
+    "pins": [
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 0,
+        "turn": 1.3420533748325956,
+        "kind": "serve",
+        "touch": 1
+      },
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 1,
+        "turn": 3.0143063045362215,
+        "kind": "serve",
+        "touch": 1
+      }
+    ]
+  },
+  {
+    "seed": 4,
+    "finished": true,
+    "steps": 7573,
+    "points": 8,
+    "skills": 0,
+    "minGap": 40.28966945069026,
+    "overlapFrames": 0,
+    "maxMove": 3.0666666666667246,
+    "turns": 65,
+    "positionErrors": 0,
+    "pins": [
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 0,
+        "turn": 1.3338659303483156,
+        "kind": "serve",
+        "touch": 1
+      },
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 1,
+        "turn": 3.012914207231681,
+        "kind": "serve",
+        "touch": 1
+      }
+    ]
+  },
+  {
+    "seed": 5,
+    "finished": true,
+    "steps": 10304,
+    "points": 12,
+    "skills": 15,
+    "minGap": 40.03437408777708,
+    "overlapFrames": 0,
+    "maxMove": 3.4000000000000608,
+    "turns": 75,
+    "positionErrors": 0,
+    "pins": [
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 0,
+        "turn": 1.3420533748325956,
+        "kind": "serve",
+        "touch": 1
+      },
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 1,
+        "turn": 3.0143063045362215,
+        "kind": "serve",
+        "touch": 1
+      }
+    ]
+  },
+  {
+    "seed": 6,
+    "finished": true,
+    "steps": 11502,
+    "points": 10,
+    "skills": 0,
+    "minGap": 40.00065460275342,
+    "overlapFrames": 0,
+    "maxMove": 3.40000000000006,
+    "turns": 93,
+    "positionErrors": 0,
+    "pins": [
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 0,
+        "turn": 1.3420533748325956,
+        "kind": "serve",
+        "touch": 1
+      },
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 1,
+        "turn": 3.0143063045362215,
+        "kind": "serve",
+        "touch": 1
+      }
+    ]
+  },
+  {
+    "seed": 7,
+    "finished": true,
+    "steps": 7336,
+    "points": 8,
+    "skills": 14,
+    "minGap": 39.999999999686466,
+    "overlapFrames": 0,
+    "maxMove": 3.4000000000000594,
+    "turns": 54,
+    "positionErrors": 0,
+    "pins": [
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 0,
+        "turn": 1.3420533748325956,
+        "kind": "serve",
+        "touch": 1
+      },
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 1,
+        "turn": 3.0143063045362215,
+        "kind": "serve",
+        "touch": 1
+      }
+    ]
+  },
+  {
+    "seed": 8,
+    "finished": true,
+    "steps": 6578,
+    "points": 7,
+    "skills": 0,
+    "minGap": 40.17476433333263,
+    "overlapFrames": 0,
+    "maxMove": 3.0666666666667277,
+    "turns": 60,
+    "positionErrors": 0,
+    "pins": [
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 0,
+        "turn": 1.3338659303483156,
+        "kind": "serve",
+        "touch": 1
+      },
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 1,
+        "turn": 3.012914207231681,
+        "kind": "serve",
+        "touch": 1
+      }
+    ]
+  },
+  {
+    "seed": 9,
+    "finished": true,
+    "steps": 5865,
+    "points": 7,
+    "skills": 11,
+    "minGap": 40.055552111438125,
+    "overlapFrames": 0,
+    "maxMove": 3.4000000000000608,
+    "turns": 50,
+    "positionErrors": 0,
+    "pins": [
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 0,
+        "turn": 1.3420533748325956,
+        "kind": "serve",
+        "touch": 1
+      },
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 1,
+        "turn": 3.0143063045362215,
+        "kind": "serve",
+        "touch": 1
+      }
+    ]
+  },
+  {
+    "seed": 10,
+    "finished": true,
+    "steps": 8985,
+    "points": 7,
+    "skills": 0,
+    "minGap": 40.04657120632521,
+    "overlapFrames": 0,
+    "maxMove": 3.4000000000000608,
+    "turns": 72,
+    "positionErrors": 0,
+    "pins": [
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 0,
+        "turn": 1.3420533748325956,
+        "kind": "serve",
+        "touch": 1
+      },
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 1,
+        "turn": 3.0143063045362215,
+        "kind": "serve",
+        "touch": 1
+      }
+    ]
+  },
+  {
+    "seed": 11,
+    "finished": true,
+    "steps": 9220,
+    "points": 8,
+    "skills": 23,
+    "minGap": 40.0000004128253,
+    "overlapFrames": 0,
+    "maxMove": 3.400000000000061,
+    "turns": 64,
+    "positionErrors": 0,
+    "pins": [
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 0,
+        "turn": 1.3420533748325956,
+        "kind": "serve",
+        "touch": 1
+      },
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 1,
+        "turn": 3.0143063045362215,
+        "kind": "serve",
+        "touch": 1
+      }
+    ]
+  },
+  {
+    "seed": 12,
+    "finished": true,
+    "steps": 5397,
+    "points": 7,
+    "skills": 0,
+    "minGap": 40.28966945069026,
+    "overlapFrames": 0,
+    "maxMove": 3.0666666666667237,
+    "turns": 44,
+    "positionErrors": 0,
+    "pins": [
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 0,
+        "turn": 1.3338659303483156,
+        "kind": "serve",
+        "touch": 1
+      },
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 1,
+        "turn": 3.012914207231681,
+        "kind": "serve",
+        "touch": 1
+      }
+    ]
+  },
+  {
+    "seed": 13,
+    "finished": true,
+    "steps": 8028,
+    "points": 8,
+    "skills": 17,
+    "minGap": 40.000000654679475,
+    "overlapFrames": 0,
+    "maxMove": 3.4000000000000616,
+    "turns": 68,
+    "positionErrors": 1,
+    "pins": [
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 0,
+        "turn": 1.3420533748325956,
+        "kind": "serve",
+        "touch": 1
+      },
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 1,
+        "turn": 3.0143063045362215,
+        "kind": "serve",
+        "touch": 1
+      }
+    ]
+  },
+  {
+    "seed": 14,
+    "finished": true,
+    "steps": 7586,
+    "points": 7,
+    "skills": 0,
+    "minGap": 40.04388817472849,
+    "overlapFrames": 0,
+    "maxMove": 3.400000000000059,
+    "turns": 61,
+    "positionErrors": 0,
+    "pins": [
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 0,
+        "turn": 1.3420533748325956,
+        "kind": "serve",
+        "touch": 1
+      },
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 1,
+        "turn": 3.0143063045362215,
+        "kind": "serve",
+        "touch": 1
+      }
+    ]
+  },
+  {
+    "seed": 15,
+    "finished": true,
+    "steps": 7728,
+    "points": 8,
+    "skills": 14,
+    "minGap": 40.000000727555324,
+    "overlapFrames": 0,
+    "maxMove": 3.40000000000006,
+    "turns": 61,
+    "positionErrors": 2,
+    "pins": [
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 0,
+        "turn": 1.3420533748325956,
+        "kind": "serve",
+        "touch": 1
+      },
+      {
+        "type": "turn",
+        "step": 175,
+        "player": 1,
+        "turn": 3.0143063045362215,
+        "kind": "serve",
+        "touch": 1
+      }
+    ]
+  }
+]
