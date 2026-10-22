@@ -1,5 +1,13 @@
 /* Presentation translations. Player and club names are intentionally preserved. */
 window.SpikerEnglish = `
+Her kamp gelişim sınırını artırır. İlk üç kamp: Uncommon → Rare → Gizli yetenek.|Each camp raises the growth limit. First three camps: Uncommon → Rare → Hidden talent.
+Common yeteneklerin başlangıçtan açık. İlk kamp Uncommon, ikinci kamp Rare, üçüncü kamp gizli yeteneği açar.|Common abilities start unlocked. The first camp unlocks Uncommon, the second Rare, and the third hidden talent.
+Yeni yeteneğin hazır|Your new ability is ready
+Yeni yetenek sahaya hazır|New ability ready for the court
+Kampın karşılığı: sahada yeni bir hamle.|Your camp reward: a new move on the court.
+Yeteneği keşfet ✦|Discover ability ✦
+1. kamp tamamlanınca açılır|Unlocks after completing the first camp
+2. kamp tamamlanınca açılır|Unlocks after completing the second camp
 Bu oyuncunun [[Gizli yetenek]] potansiyeli var. Yeteneklerini incelemek için buraya dokun.|This player has [[Hidden talent]] potential. Tap here to inspect their abilities.
 Ek yeteneklerin etkileri burada. Gizli yetenek, üçüncü kamp tamamlanınca (1,5 yıldız) açılır.|Ability effects are shown here. Hidden talent unlocks after the third camp (1.5 stars).
 Kulüp hazırlanıyor…|Getting your club ready…

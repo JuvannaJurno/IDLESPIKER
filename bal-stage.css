@@ -358,3 +358,11 @@ html[data-theme=dark] #campReturnDialog .return-star-track{background:#304e58;bo
 .camp-alert-slot[data-state=ready] .camp-frame-fill{stroke:#62866c}
 html[data-theme=dark] .camp-alert-slot[data-draft]{background:#34453d}html[data-theme=dark] .camp-frame-track{stroke:#546958}html[data-theme=dark] .camp-frame-fill{stroke:#d3b26d}html[data-theme=dark] .camp-alert-slot[data-state=ready] .camp-frame-fill{stroke:#a4c59c}
 @media(prefers-reduced-motion:reduce){.camp-frame-fill{transition:none}}
+
+.return-skill-reveal[data-rarity=uncommon]{background:#e3eddc;border-color:#98b18d}.return-skill-reveal[data-rarity=rare]{background:#e0ebec;border-color:#8aa8af}
+html[data-theme=dark] .return-skill-reveal[data-rarity=uncommon]{background:#33483b;border-color:#6d9275}html[data-theme=dark] .return-skill-reveal[data-rarity=rare]{background:#304852;border-color:#7699a6}
+
+#campReturnDialog .return-skill-reveal[data-rarity=uncommon] strong{color:#3e6650}#campReturnDialog .return-skill-reveal[data-rarity=uncommon] p,#campReturnDialog .return-skill-reveal[data-rarity=uncommon] small{color:#536f59!important}
+#campReturnDialog .return-skill-reveal[data-rarity=rare] strong{color:#365e70}#campReturnDialog .return-skill-reveal[data-rarity=rare] p,#campReturnDialog .return-skill-reveal[data-rarity=rare] small{color:#4c6976!important}
+html[data-theme=dark] #campReturnDialog .return-skill-reveal[data-rarity=uncommon] strong{color:#d5e8cc}html[data-theme=dark] #campReturnDialog .return-skill-reveal[data-rarity=uncommon] p,html[data-theme=dark] #campReturnDialog .return-skill-reveal[data-rarity=uncommon] small{color:#b9d0b4!important}
+html[data-theme=dark] #campReturnDialog .return-skill-reveal[data-rarity=rare] strong{color:#d5e7ed}html[data-theme=dark] #campReturnDialog .return-skill-reveal[data-rarity=rare] p,html[data-theme=dark] #campReturnDialog .return-skill-reveal[data-rarity=rare] small{color:#b7d1dc!important}

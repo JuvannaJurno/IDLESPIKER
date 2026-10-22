@@ -74,7 +74,7 @@ if(q('#campDialog[open]')&&visible(q('#campPanel'))&&!GuidedTutorial.completed('
 {id:'camp-stars',target:()=>visible(q('#campSlots'))?q('#campSlots'):q('.camp-overview'),text:'Tamamlanan kamplar yıldızları doldurur ve gelişim sınırını artırır.'}
 ],null,'camp');return true;}
 if(q('#playerDialog[open]')&&!GuidedTutorial.completed('skills')&&!GuidedTutorial.paused('skills')&&state.stage==='bal'){GuidedTutorial.start([
-{id:'skill-unlocks',target:()=>q('#playerSkills'),text:'Yeteneklerin açılma koşulları burada yazar. Gizli yeteneğin kaç kamp sonra açılacağını kartından takip et.'}
+{id:'skill-unlocks',target:()=>q('#playerSkills'),text:'Common yeteneklerin başlangıçtan açık. İlk kamp Uncommon, ikinci kamp Rare, üçüncü kamp gizli yeteneği açar.'}
 ],null,'skills');return true;}
 const club=()=>!q('.dashboard').hidden&&!q('dialog[open]');if(state.stage==='bal'&&state.division!==3&&!state.openDepartments.includes(2)&&guideProgress.income==='done'){delete guideProgress.income;delete guideProgress.incomeAmount;incomeArrival=null;saveGuide();}
 if(state.stage==='bal'&&state.division!==3&&club()&&!GuidedTutorial.completed('income')&&!GuidedTutorial.paused('income')){
