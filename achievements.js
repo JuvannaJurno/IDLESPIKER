@@ -26,7 +26,7 @@ const definitions=[
  ['camp-return','Daha ileri','Bir oyuncunun kampını tamamla.',1,m=>m.returns]
 ];
 const trophy='<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 3h10v6a5 5 0 0 1-10 0V3Z" stroke="currentColor" stroke-width="1.8"/><path d="M7 5H3v3c0 3 2 5 5 5m9-8h4v3c0 3-2 5-5 5M12 14v5m-4 2h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
-const settings=document.getElementById('settingsButton'),actions=document.createElement('div');actions.className='topbar-actions';settings.before(actions);actions.append(settings);
+const settings=document.getElementById('settingsButton'),actions=document.createElement('div');actions.className='topbar-actions';settings.before(actions);actions.append(settings);const profile=document.getElementById('profileButton');if(profile)actions.append(profile);
 const button=document.createElement('button');button.type='button';button.id='achievementsButton';button.className='achievements-button';button.setAttribute('aria-label','Başarımları aç');button.title='Başarımlar';button.innerHTML=trophy;actions.prepend(button);
 const dialog=document.createElement('dialog');dialog.id='achievementsDialog';dialog.setAttribute('aria-labelledby','achievementsTitle');dialog.innerHTML='<button class="close-dialog" type="button" aria-label="Başarımları kapat">×</button><span class="eyebrow">KULÜBÜN HİKÂYESİ</span><h2 id="achievementsTitle">Başarımlar</h2><p class="achievements-summary"></p><div class="achievements-list"></div>';document.body.append(dialog);
 dialog.querySelector('button').onclick=()=>dialog.close();dialog.addEventListener('close',()=>button.focus({preventScroll:true}));

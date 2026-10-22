@@ -99,7 +99,7 @@ if(!q('#socialPanel')?.hidden&&state.division===3&&socialGrowth&&!GuidedTutorial
 return false;
 }
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&guided?.review){e.preventDefault();e.stopImmediatePropagation();endGuide(false);}},true);
-function update(){
+function update(){if(window.PlayerProfile?.needsCreation){clear();return;}
  if(document.getElementById('settingsDialog')?.open&&!guided?.review){clear();return;}
  for(const id of [...pausedGuides]){const away=id==='income'?document.querySelector('.dashboard').hidden:(id==='social'||id==='social-growth')?document.getElementById('socialPanel')?.hidden&&document.getElementById('socialJourneyScreen')?.hidden:id==='camp'?!document.getElementById('campDialog')?.open:id==='skills'?!document.getElementById('playerDialog')?.open:false;if(away)pausedGuides.delete(id);}
 

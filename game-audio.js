@@ -7,14 +7,23 @@ for(const k in levels)levels[k]=Math.max(0,Math.min(1,Number(levels[k])||0));
 const voices=[],pending=new WeakSet(),timers=new Set();
 function media(src,group,scale=1,loop=false){const a=new Audio(src);a.preload='auto';a.loop=loop;const v={a,group,scale,busy:false,timer:null};voices.push(v);a.load();return v}
 const notifySound=media('assets/audio/notify-placeholder.wav','effects',.65);
+const pointMusicVoices=new Map();let pointMusicVoice=null;
+function stopPointMusic(){if(pointMusicVoice)stop(pointMusicVoice);pointMusicVoice=null;}
+function playPointMusic(track,preview=false){
+if(!track||!allowed()||levels.music<=0||(!preview&&(mode!=='match'||rallyActive))||preview&&mode!=='menu')return;
+stopPointMusic();if(preview)haltMusic();let v=pointMusicVoices.get(track.id);if(!v){v=media(track.src,'music',.8);v.pointMusic=true;pointMusicVoices.set(track.id,v)}
+pointMusicVoice=v;v.busy=true;v.a.currentTime=track.start||0;v.a.onended=v.a.onerror=()=>{stop(v);if(pointMusicVoice===v)pointMusicVoice=null;};
+v.a.onplaying=()=>{v.timer=setTimeout(()=>{v.timer=null;fadeOut(v,350)},preview?3000:3400)};play(v);
+}
+function previewPointMusic(track){if(window.PlayerProfile?.unlocked(track))playPointMusic(track,true);}
 function socialReady(){if(!allowed()||mode!=='menu'||levels.effects<=0)return;stop(notifySound);notifySound.a.currentTime=0;notifySound.busy=true;notifySound.a.onended=notifySound.a.onerror=()=>stop(notifySound);play(notifySound);}
-const musicTracks=['OST/BGM_0.mp3','OST/BGM_1.mp3','OST/BGM_2.mp3','OST/BGM_3.mp3'].map(src=>media(src,'music',1,false));
+const musicTracks=['OST/BGM_0.mp3','OST/BGM_1.mp3','OST/BGM_2.mp3','OST/BGM_3.mp3','OST/zephiramusic-cute-lofi-613381.mp3','OST/zephiramusic-lofi-christmas-613825.mp3','OST/zephiramusic-positive-lofi-587548.mp3','OST/zephiramusic-tokyo-lofi-604786.mp3'].map(src=>media(src,'music',1,false));
 let musicIndex=Math.floor(Math.random()*musicTracks.length),musicTransition=null,musicPausedAt=null;
 function haltMusic(){musicPausedAt??=performance.now();for(const v of musicTracks)stop(v)}
 function startMusic(){if(musicPausedAt!==null){if(musicTransition?.start!=null)musicTransition.start+=performance.now()-musicPausedAt;musicPausedAt=null}play(musicTracks[musicIndex]);if(musicTransition)play(musicTracks[musicTransition.next])}
 function nextMusic(){if(musicTransition||!allowed()||mode!=='menu')return;const choices=musicTracks.map((_,i)=>i).filter(i=>i!==musicIndex),next=choices[Math.floor(Math.random()*choices.length)],v=musicTracks[next],out=musicTracks[musicIndex];v.a.currentTime=0;v.scale=0;musicTransition={next,start:null,duration:Math.max(.2,Math.min(3,(out.a.duration-out.a.currentTime)||3))};play(v)}
 for(const v of musicTracks)v.a.onended=()=>{if(v===musicTracks[musicIndex])nextMusic()};
-setInterval(()=>{if(!allowed()||mode!=='menu')return;const out=musicTracks[musicIndex];if(!musicTransition){if(!out.a.paused&&Number.isFinite(out.a.duration)&&out.a.duration-out.a.currentTime<=3)nextMusic();return}const t=musicTransition,incoming=musicTracks[t.next];if(incoming.a.paused){play(incoming);return}t.start??=performance.now();const progress=Math.min(1,(performance.now()-t.start)/(t.duration*1000));out.scale=Math.cos(progress*Math.PI/2);incoming.scale=Math.sin(progress*Math.PI/2);out.a.volume=levels.music*out.scale;incoming.a.volume=levels.music*incoming.scale;if(progress===1){stop(out);out.a.currentTime=0;out.scale=1;musicIndex=t.next;musicTransition=null}},50);
+setInterval(()=>{if(!allowed()||mode!=='menu'||pointMusicVoice?.busy)return;const out=musicTracks[musicIndex];if(!musicTransition){if(!out.a.paused&&Number.isFinite(out.a.duration)&&out.a.duration-out.a.currentTime<=3)nextMusic();return}const t=musicTransition,incoming=musicTracks[t.next];if(incoming.a.paused){play(incoming);return}t.start??=performance.now();const progress=Math.min(1,(performance.now()-t.start)/(t.duration*1000));out.scale=Math.cos(progress*Math.PI/2);incoming.scale=Math.sin(progress*Math.PI/2);out.a.volume=levels.music*out.scale;incoming.a.volume=levels.music*incoming.scale;if(progress===1){stop(out);out.a.currentTime=0;out.scale=1;musicIndex=t.next;musicTransition=null}},50);
 const bed=media('VFX/Crowd Cheering Sounds/10 - Ambience.mp3','crowd',.12,true);
 const cheers=['01 - Strong cheering and strong rhythmic cheering.mp3','03 - Strong cheering - I.mp3','04 - Strong cheering - II - Short.mp3','08 - Rhythmic cheering.mp3'].map(n=>media('VFX/Crowd Cheering Sounds/'+n,'crowd',.9));
 const legendaryCheers=[['04 - Strong cheering - II - Short.mp3',5],['03 - Strong cheering - I.mp3',6],['02 - Strong cheering and soft rhythmic cheering.mp3',9],['01 - Strong cheering and strong rhythmic cheering.mp3',4]].map(([file,start])=>Object.assign(media('VFX/Crowd Cheering Sounds/'+file,'crowd',1),{start}));
@@ -52,12 +61,12 @@ function fadeOut(v,duration=1500){
  fade.frame=requestAnimationFrame(step);
 }
 function stop(v){cancelFade(v);clearTimeout(v.timer);v.timer=null;v.busy=false;v.a.pause();v.a.onplaying=null}
-function play(v){if(pending.has(v.a)||!v.a.paused)return;pending.add(v.a);v.a.volume=levels[v.group]*v.scale;Promise.resolve(v.a.play()).then(()=>{if(!allowed()||(v.group==='music'&&mode!=='menu')||(v.group==='crowd'&&(mode!=='match'||(v!==bed&&v!==rallyBed&&rallyActive&&!v.fade)))||(v.group!=='music'&&v!==bed&&v!==rallyBed&&!v.busy))stop(v)}).catch(()=>{v.busy=false}).finally(()=>pending.delete(v.a))}
-function clearShots(){for(const t of timers)clearTimeout(t);timers.clear();for(const v of voices)if(v.group!=='music'&&v!==bed&&v!==rallyBed)stop(v)}
-function sync(){
+function play(v){if(pending.has(v.a)||!v.a.paused)return;pending.add(v.a);v.a.volume=levels[v.group]*v.scale;Promise.resolve(v.a.play()).then(()=>{if(!allowed()||(v.group==='music'&&(v.pointMusic?(!v.busy||(mode==='match'&&rallyActive)):mode!=='menu'))||(v.group==='crowd'&&(mode!=='match'||(v!==bed&&v!==rallyBed&&rallyActive&&!v.fade)))||(v.group!=='music'&&v!==bed&&v!==rallyBed&&!v.busy))stop(v)}).catch(()=>{v.busy=false}).finally(()=>pending.delete(v.a))}
+function clearShots(){stopPointMusic();for(const t of timers)clearTimeout(t);timers.clear();for(const v of voices)if(v.group!=='music'&&v!==bed&&v!==rallyBed)stop(v)}
+function sync(){if(!allowed()||finished||mode==='match'&&rallyActive)stopPointMusic();
  if(!allowed()||mode!=='menu'||levels.effects<=0)stopDrawNotes();
  if(!allowed()){haltMusic();for(const v of voices)if(v.group!=='music')stop(v);clearShots();return}
- if(mode==='menu'){stop(bed);stop(rallyBed);startMusic();return}
+ if(mode==='menu'){stop(bed);stop(rallyBed);if(pointMusicVoice?.busy)haltMusic();else startMusic();return}
  haltMusic();const target=rallyActive?rallyBed:bed,other=rallyActive?bed:rallyBed;cancelFade(target);play(target);fadeOut(other);if(rallyActive)for(const v of [...cheers,...legendaryCheers])fadeOut(v);
 }
 function shot(key,scale=1,duration=0){if(!allowed()||mode!=='match')return;const v=pools[key]?.find(v=>!v.busy);if(!v)return;v.busy=true;v.scale=scale;v.a.currentTime=0;v.a.onended=v.a.onerror=()=>stop(v);v.a.onplaying=()=>{if(duration)v.timer=setTimeout(()=>stop(v),duration*1000)};play(v)}
@@ -70,9 +79,10 @@ function cue(kind){
  if(!allowed()||mode!=='match'||performance.now()-lastSqueak<280)return;
  lastSqueak=performance.now();shot(kind==='jump'?'jump'+(1+Math.floor(Math.random()*3)):kind,.4,kind==='approach'?1.1:.6);
 }
-function point(big=false){
+function point(big=false,team=null){
  if(mode!=='match')return;rallyActive=false;cancelFade(bed);sync();
  if(!allowed()||mode!=='match')return;
+ if(team===0)playPointMusic(window.PlayerProfile?.track());else stopPointMusic();
  shot('whistleShort',.6);
  if(big){const t=setTimeout(()=>{timers.delete(t);shot('whistleLong',.65)},520);timers.add(t)}
  for(const v of [...cheers,...legendaryCheers])stop(v);
@@ -82,14 +92,14 @@ let uiContext=null,lastUIClick=-Infinity;
 function uiClick(){if(!enabled||document.hidden||levels.effects<=0||performance.now()-lastUIClick<55)return;lastUIClick=performance.now();try{const Audio=window.AudioContext||window.webkitAudioContext;if(!Audio)return;uiContext??=new Audio();if(uiContext.state==='suspended')uiContext.resume().catch(()=>{});const osc=uiContext.createOscillator(),gain=uiContext.createGain(),t=uiContext.currentTime;osc.type='triangle';osc.frequency.setValueAtTime(780,t);osc.frequency.exponentialRampToValueAtTime(360,t+.045);gain.gain.setValueAtTime(.0001,t);gain.gain.exponentialRampToValueAtTime(.045*levels.effects,t+.004);gain.gain.exponentialRampToValueAtTime(.0001,t+.055);osc.connect(gain);gain.connect(uiContext.destination);osc.start(t);osc.stop(t+.06);osc.onended=()=>{osc.disconnect();gain.disconnect()}}catch{}}
 function critical(){if(!allowed()||mode!=='menu'||levels.effects<=0||performance.now()-lastCriticalClick<180)return;lastCriticalClick=performance.now();const v=criticalClicks.find(v=>!v.busy)||criticalClicks[0];stop(v);v.busy=true;v.a.currentTime=0;v.a.preservesPitch=false;v.a.playbackRate=.9;v.a.onended=v.a.onerror=()=>stop(v);play(v);}
 function achievement(){if(!enabled||document.hidden||levels.effects<=0)return;try{const Audio=window.AudioContext||window.webkitAudioContext;if(!Audio)return;uiContext??=new Audio();if(uiContext.state==='suspended')uiContext.resume().catch(()=>{});const t=uiContext.currentTime;[659.25,830.61,987.77].forEach((frequency,i)=>{const osc=uiContext.createOscillator(),gain=uiContext.createGain(),start=t+i*.085;osc.type='sine';osc.frequency.value=frequency;gain.gain.setValueAtTime(.0001,start);gain.gain.exponentialRampToValueAtTime(.065*levels.effects,start+.012);gain.gain.exponentialRampToValueAtTime(.0001,start+.35);osc.connect(gain);gain.connect(uiContext.destination);osc.start(start);osc.stop(start+.36);osc.onended=()=>{osc.disconnect();gain.disconnect()}})}catch{}}
-window.GameAudio={socialReady,cardDraw,legendaryPoint,heartbeat,stopHeartbeat,skillSlow,stopSkillSlow,critical,achievement,uiClick,upgradeClick,typeKey,playersFound,setMode(v){clearShots();cancelFade(bed);mode=v;paused=false;finished=false;rallyActive=false;sync()},setEnabled(v){enabled=!!v;try{localStorage.setItem('idle-spiker-sound',enabled?'on':'off')}catch{}sync()},setPaused(v){paused=!!v;sync()},hit,cue,point,finish(){finished=true;paused=false;rallyActive=false;cancelFade(bed);sync()},unlock:sync};
+window.GameAudio={previewPointMusic,stopPointMusic,socialReady,cardDraw,legendaryPoint,heartbeat,stopHeartbeat,skillSlow,stopSkillSlow,critical,achievement,uiClick,upgradeClick,typeKey,playersFound,setMode(v){clearShots();cancelFade(bed);mode=v;paused=false;finished=false;rallyActive=false;sync()},setEnabled(v){enabled=!!v;try{localStorage.setItem('idle-spiker-sound',enabled?'on':'off')}catch{}sync()},setPaused(v){paused=!!v;sync()},hit,cue,point,finish(){finished=true;paused=false;rallyActive=false;cancelFade(bed);sync()},unlock:sync};
 // Retry blocked playback on every real interaction, including interactions inside the match.
 document.addEventListener('pointerdown',sync);document.addEventListener('keydown',sync);
 const clubPanel=document.getElementById('clubPanel');if(clubPanel)new MutationObserver(()=>{if(clubPanel.hidden)criticalClicks.forEach(stop)}).observe(clubPanel,{attributes:true,attributeFilter:['hidden']});
 window.addEventListener('blur',()=>{stopDrawNotes();criticalClicks.forEach(stop);stopSkillSlow();stop(heartbeatSound);});
 document.addEventListener('visibilitychange',sync);window.addEventListener('pageshow',sync);
 window.addEventListener('pagehide',()=>{stopDrawNotes();for(const v of voices)stop(v);clearShots()});
-window.addEventListener('message',e=>{const frame=document.getElementById('gameMatchFrame');if(mode!=='match'||!frame||e.source!==frame.contentWindow||e.data?.type!=='spiker-audio')return;const d=e.data;if(d.action==='hit'&& (d.kind?.startsWith('slot-')||['hard','soft','toss','tip','netball_1','netball_hard','floorslam','veryhardball','hardfloorslam','floorslam_2','floorslam_hard','whoosh','whoosh-stop'].includes(d.kind)))hit(d.kind);if(d.action==='cue'&&['serve','bounce','approach','jump','set','heart-pling'].includes(d.kind))cue(d.kind);if(d.action==='point')point(!!d.big);if(d.action==='legendary-point')legendaryPoint();if(d.action==='pause')GameAudio.setPaused(d.value);if(d.action==='finish')GameAudio.finish();if(d.action==='heartbeat')heartbeat();if(d.action==='heartbeat-stop')stopHeartbeat();if(d.action==='skill-slow')skillSlow();if(d.action==='skill-slow-stop')stopSkillSlow();if(d.action==='unlock')sync()});
+window.addEventListener('message',e=>{const frame=document.getElementById('gameMatchFrame');if(mode!=='match'||!frame||e.source!==frame.contentWindow||e.data?.type!=='spiker-audio')return;const d=e.data;if(d.action==='hit'&& (d.kind?.startsWith('slot-')||['hard','soft','toss','tip','netball_1','netball_hard','floorslam','veryhardball','hardfloorslam','floorslam_2','floorslam_hard','whoosh','whoosh-stop'].includes(d.kind)))hit(d.kind);if(d.action==='cue'&&['serve','bounce','approach','jump','set','heart-pling'].includes(d.kind))cue(d.kind);if(d.action==='point')point(!!d.big,d.team);if(d.action==='legendary-point')legendaryPoint();if(d.action==='pause')GameAudio.setPaused(d.value);if(d.action==='finish')GameAudio.finish();if(d.action==='heartbeat')heartbeat();if(d.action==='heartbeat-stop')stopHeartbeat();if(d.action==='skill-slow')skillSlow();if(d.action==='skill-slow-stop')stopSkillSlow();if(d.action==='unlock')sync()});
 for(const key of ['music','crowd','effects']){const input=document.getElementById('volume-'+key);if(!input)continue;input.value=Math.round(levels[key]*100);input.oninput=()=>{levels[key]=Number(input.value)/100;for(const v of voices){const f=v.fade,t=f?Math.min(1,(performance.now()-f.start)/1500):0;v.a.volume=levels[v.group]*v.scale*(f?f.gain*(1-t)*(1-t):1)}try{localStorage.setItem('idle-spiker-mix',JSON.stringify(levels))}catch{}}}
 // Recover a stalled background track without waiting for another score or click.
 setInterval(sync,2000);sync();
