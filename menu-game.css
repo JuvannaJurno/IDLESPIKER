@@ -233,3 +233,8 @@ html[data-theme=dark] #rewardLayer .reward-pop.critical{color:#e1cca4;background
 html[data-theme=dark] #preMatchStage .formation-position{color:#e0e8d7;background:#365852;border-color:#82947b}html[data-theme=dark] #preMatchStage .formation-home-name{color:#d3e2d5}
 
 #preMatchStage .formation-player.formation-libero,#preMatchStage .formation-player.formation-libero.rival{background:#f4f2df;border:1px solid #fff8e4;border-radius:9px;box-shadow:none}
+
+#matchIntro .intro-card{touch-action:pan-y;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}#matchIntro.intro-held .intro-progress i{background:#c6a564}
+#benchCards .recent-transfer{position:relative;animation:recent-transfer-glow 6s ease-in-out infinite;animation-delay:.8s}
+@keyframes recent-transfer-glow{0%,65%,100%{filter:brightness(1);outline:2px solid transparent;outline-offset:0}78%{filter:brightness(1.09);outline-color:#d9b45f;outline-offset:2px}88%{filter:brightness(1);outline-color:#d9b45f55;outline-offset:1px}}
+@media(prefers-reduced-motion:reduce){#benchCards .recent-transfer{animation:none;outline:2px solid #d9b45f;outline-offset:1px}}

@@ -366,3 +366,5 @@ html[data-theme=dark] .return-skill-reveal[data-rarity=uncommon]{background:#334
 #campReturnDialog .return-skill-reveal[data-rarity=rare] strong{color:#365e70}#campReturnDialog .return-skill-reveal[data-rarity=rare] p,#campReturnDialog .return-skill-reveal[data-rarity=rare] small{color:#4c6976!important}
 html[data-theme=dark] #campReturnDialog .return-skill-reveal[data-rarity=uncommon] strong{color:#d5e8cc}html[data-theme=dark] #campReturnDialog .return-skill-reveal[data-rarity=uncommon] p,html[data-theme=dark] #campReturnDialog .return-skill-reveal[data-rarity=uncommon] small{color:#b9d0b4!important}
 html[data-theme=dark] #campReturnDialog .return-skill-reveal[data-rarity=rare] strong{color:#d5e7ed}html[data-theme=dark] #campReturnDialog .return-skill-reveal[data-rarity=rare] p,html[data-theme=dark] #campReturnDialog .return-skill-reveal[data-rarity=rare] small{color:#b7d1dc!important}
+
+#campDialog .camp-heading{display:block;text-align:center;padding-inline:0}#campDialog #campTitle{box-sizing:border-box;padding-inline:28px;width:100%;text-align:center;margin:0 0 12px}#campDialog .camp-panel{margin-top:10px}#campStatus[hidden]{display:none}

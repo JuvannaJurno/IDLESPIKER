@@ -17,3 +17,5 @@ html[data-theme=dark] #leagueStatsDialog,html[data-theme=dark] .league-stats-top
 
 /* Podium and complete player list share the dialog’s vertical scroll. */
 #leagueStatsContent .league-player-table-scroll{max-height:none;height:auto;overflow-x:auto;overflow-y:visible;overscroll-behavior:auto;flex-shrink:0}
+
+#leaguePanel .team-heading{flex-wrap:wrap;gap:10px}#leaguePanel .team-heading>div{flex:1}#leaguePanel .league-stats-button{flex:none;border:1px solid #afc1b1;border-radius:12px;padding:10px 13px;background:#f8f4e7;color:#476b70;font:inherit;font-size:12px;font-weight:700;cursor:pointer}#leaguePanel .league-stats-button:hover{background:#e4ebda}#leaguePanel .league-stats-button:focus-visible{outline:2px solid #bd9250;outline-offset:3px}.league-quick-icon svg{width:100%;height:100%}[data-theme="dark"] #leaguePanel .league-stats-button{background:#2d4145;color:#eee5ce;border-color:#607575}
