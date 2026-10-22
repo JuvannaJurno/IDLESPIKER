@@ -1,7 +1,7 @@
 (function(){
 'use strict';
 if(new URLSearchParams(location.search).get('animationLab')!=='legendary')return;
-let run=0;
+let run=0;const desktopStyle=document.createElement('style');desktopStyle.textContent='body.lab-desktop-court .court-space{position:fixed!important;inset:0!important;width:100vw!important;height:100dvh!important;z-index:9999;background:#80b8b4}body.lab-desktop-court .court-viewport{position:absolute!important;inset:0!important;width:100%!important;height:100%!important}body.lab-desktop-court #court{position:absolute!important;left:50%!important;top:50%!important;width:min(100vw,calc(100dvh * 1000 / 620))!important;height:auto!important;max-width:none!important;transform:translate(-50%,-50%)!important;border:0!important;border-radius:0!important}body.lab-desktop-court .court-team{display:none!important}';document.head.append(desktopStyle);window.addEventListener('message',e=>{if(e.source===parent&&e.data?.type==='lab-desktop-court')document.body.classList.toggle('lab-desktop-court',!!e.data.active)});
 function start(){
  if(run>0){location.reload();return;}
  if(!ready){setTimeout(start,40);return;}

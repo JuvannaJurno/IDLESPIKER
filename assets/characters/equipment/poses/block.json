@@ -1,0 +1,683 @@
+{
+  "format": "kenney-three-piece-svg-layout",
+  "version": 1,
+  "canvas": {
+    "width": 64,
+    "height": 80
+  },
+  "coordinates": "unrotated top-left; normalized pivot; scale then rotate around world pivot",
+  "rigging": {
+    "version": 1,
+    "coordinates": "canvas",
+    "points": {
+      "legStart": {
+        "x": 15,
+        "y": 37.33
+      },
+      "legEnd": {
+        "x": 33,
+        "y": 37.33
+      },
+      "armStart": {
+        "x": 13.58,
+        "y": 32.91
+      },
+      "armEnd": {
+        "x": 25,
+        "y": 32.91
+      }
+    }
+  },
+  "assetSources": {
+    "svg-native-shirt.svg": {
+      "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNS43IiBoZWlnaHQ9IjMwLjciIHZpZXdCb3g9IjMzLjEgMjc1IDE1LjcgMzAuNyI+PHBhdGggZGF0YS1wYXJ0PSJ1bmlmb3JtIiBkYXRhLXRvbmU9ImJhc2UiIGZpbGw9InZhcigtLWVxdWlwbWVudC11bmlmb3JtLCAjRkZGRkZGKSIgc3Ryb2tlPSJub25lIiBkPSIKTSA0Ni43NSAyOTUuODUKUSA0Ni41IDI5Ni4xIDQ2LjMgMjk2LjM1IDQ0Ljg1IDI5Ny44IDQzIDI5OC4zIDQyLjggMjk4LjM1IDQyLjYgMjk4LjQgNDIuMTUgMjk4LjkgNDEgMjk5IDQwLjc1IDI5OSA0MC40NSAyOTkgMzcuNCAyOTkgMzUuMTUgMjk3LjE1CkwgMzUuMTUgMjk3Ljk1ClEgMzUuMTUgMjk5Ljk1IDM2LjM1IDMwMS41IDM2LjYgMzAxLjggMzYuODUgMzAyLjA1IDM4LjU1IDMwMy43IDQwLjk1IDMwMy43IDQyLjA1IDMwMy43IDQzIDMwMy4zNSA0NC4xNSAzMDIuOTUgNDUuMDUgMzAyLjA1IDQ2Ljc1IDMwMC4zNSA0Ni43NSAyOTcuOTUKTCA0Ni43NSAyOTUuODUKTSAzNS4xNSAyODMuNgpRIDM3LjQgMjgxLjc1IDQwLjQ1IDI4MS43NSA0MC43NSAyODEuNzUgNDEgMjgxLjggNDIuMSAyODEuODUgNDIuNTUgMjgyLjMgNDIuOCAyODIuMzUgNDMgMjgyLjQgNDQuODUgMjgyLjkgNDYuMyAyODQuMzUgNDYuNSAyODQuNiA0Ni43NSAyODQuODUKTCA0Ni43NSAyODIuNzUKUSA0Ni43NSAyODAuMzUgNDUuMDUgMjc4LjY1IDQ0LjE1IDI3Ny43NSA0MyAyNzcuMzUgNDIuMDUgMjc3IDQxIDI3NwpMIDQwLjk1IDI3NwpRIDM4LjU1IDI3NyAzNi44NSAyNzguNjUgMzUuMTUgMjgwLjM1IDM1LjE1IDI4Mi43NQpMIDM1LjE1IDI4My42IFoiLz48cGF0aCBkYXRhLXBhcnQ9InVuaWZvcm0iIGRhdGEtdG9uZT0iZWRnZSIgZmlsbD0idmFyKC0tZXF1aXBtZW50LXVuaWZvcm0tZWRnZSwgI0NCQ0VFOSkiIHN0cm9rZT0ibm9uZSIgZD0iCk0gNDguNzUgMjk2LjEKUSA0OC43NSAyOTUuOTUgNDguOCAyOTUuODUKTCA0Ni43NSAyOTUuODUgNDYuNzUgMjk3Ljk1ClEgNDYuNzUgMzAwLjM1IDQ1LjA1IDMwMi4wNSA0NC4xNSAzMDIuOTUgNDMgMzAzLjM1IDQyLjA1IDMwMy43IDQwLjk1IDMwMy43IDM4LjU1IDMwMy43IDM2Ljg1IDMwMi4wNSAzNi42IDMwMS44IDM2LjM1IDMwMS41IDM1LjE1IDI5OS45NSAzNS4xNSAyOTcuOTUKTCAzNS4xNSAyOTcuMTUgMzMuMTUgMjk4LjA1ClEgMzMuMiAyOTkuOTUgMzQgMzAxLjUgMzQuNTUgMzAyLjU1IDM1LjQ1IDMwMy41IDM3Ljc1IDMwNS43IDQwLjk1IDMwNS43IDQyLjA1IDMwNS43IDQzIDMwNS40NSA0NC45IDMwNC45NSA0Ni40NSAzMDMuNQpMIDQ2LjUgMzAzLjUKUSA0OC43NSAzMDEuMiA0OC43NSAyOTcuOTUKTCA0OC43NSAyOTYuMQpNIDMzLjE1IDI4Mi43CkwgMzMuMSAyODIuNzUgMzUuMTUgMjgzLjYgMzUuMTUgMjgyLjc1ClEgMzUuMTUgMjgwLjM1IDM2Ljg1IDI3OC42NSAzOC41NSAyNzcgNDAuOTUgMjc3CkwgNDEgMjc3ClEgNDIuMDUgMjc3IDQzIDI3Ny4zNSA0NC4xNSAyNzcuNzUgNDUuMDUgMjc4LjY1IDQ2Ljc1IDI4MC4zNSA0Ni43NSAyODIuNzUKTCA0Ni43NSAyODQuODUgNDguOCAyODQuODUKUSA0OC43NSAyODQuNzUgNDguNzUgMjg0LjY1CkwgNDguNzUgMjgyLjc1ClEgNDguNzUgMjc5LjUgNDYuNSAyNzcuMjUKTCA0Ni40NSAyNzcuMjUKUSA0NC45IDI3NS43NSA0MyAyNzUuMjUgNDIuMDUgMjc1IDQxIDI3NQpMIDQwLjk1IDI3NQpRIDM3Ljc1IDI3NSAzNS40NSAyNzcuMjUgMzMuMTUgMjc5LjUgMzMuMTUgMjgyLjcgWiIvPjwvc3ZnPg==",
+      "width": 15.7,
+      "height": 30.7
+    },
+    "svg-native-head.svg": {
+      "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4LjUiIGhlaWdodD0iMTYuMSIgdmlld0JveD0iNDIgMjgyLjMgOC41IDE2LjEiPjxwYXRoIGRhdGEtcGFydD0ic2tpbiIgZGF0YS10b25lPSJzaGFkb3ciIGZpbGw9InZhcigtLWVxdWlwbWVudC1za2luLXNoYWRvdywgI0M0QTI2RikiIHN0cm9rZT0ibm9uZSIgZD0iCk0gNTAuNSAyOTAuNApRIDUwLjUgMjkwLjM1IDUwLjUgMjkwLjMgNTAuNDUgMjg3Ljc1IDQ5LjM1IDI4Ni4zCkwgNDkuMzUgMjg2LjI1ClEgNDguOSAyODUuNiA0OC44IDI4NC44NQpMIDQ2Ljc1IDI4NC44NQpRIDQ2LjkgMjg2LjI1IDQ3LjcgMjg3LjQgNDguNDUgMjg4LjUgNDguNSAyOTAuMzUgNDguNDUgMjkyLjIgNDcuNyAyOTMuMyA0Ni45IDI5NC40NSA0Ni43NSAyOTUuODUKTCA0OC44IDI5NS44NQpRIDQ4LjkgMjk1LjEgNDkuMzUgMjk0LjQ1IDUwLjQ1IDI5Mi45NSA1MC41IDI5MC40IFoiLz48cGF0aCBkYXRhLXBhcnQ9InNraW4iIGRhdGEtdG9uZT0iYmFzZSIgZmlsbD0idmFyKC0tZXF1aXBtZW50LXNraW4sICNGRkUwQjEpIiBzdHJva2U9Im5vbmUiIGQ9IgpNIDQzIDI4Mi40ClEgNDIuOCAyODIuMzUgNDIuNTUgMjgyLjMgNDMuMjUgMjgzIDQyLjI1IDI4NC43IDQyLjEgMjg0LjkgNDIgMjg1LjEgNDIuNSAyODUuMTUgNDMgMjg1LjMgNDQuMTUgMjg1LjY1IDQ1LjEgMjg2LjYgNDYuNyAyODguMiA0Ni43IDI5MC4zNSA0Ni43IDI5Mi41NSA0NS4xIDI5NC4xNSA0NC4xNSAyOTUuMSA0MyAyOTUuNSA0Mi41NSAyOTUuNjUgNDIuMDUgMjk1LjcgNDIuMSAyOTUuODUgNDIuMjUgMjk2LjA1IDQzLjIgMjk3LjY1IDQyLjYgMjk4LjQgNDIuOCAyOTguMzUgNDMgMjk4LjMgNDQuODUgMjk3LjggNDYuMyAyOTYuMzUgNDYuNSAyOTYuMSA0Ni43NSAyOTUuODUgNDYuOSAyOTQuNDUgNDcuNyAyOTMuMyA0OC40NSAyOTIuMiA0OC41IDI5MC4zNSA0OC40NSAyODguNSA0Ny43IDI4Ny40IDQ2LjkgMjg2LjI1IDQ2Ljc1IDI4NC44NSA0Ni41IDI4NC42IDQ2LjMgMjg0LjM1IDQ0Ljg1IDI4Mi45IDQzIDI4Mi40IFoiLz48L3N2Zz4=",
+      "width": 8.5,
+      "height": 16.1
+    },
+    "svg-native-hair.svg": {
+      "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNi43IiBoZWlnaHQ9IjE3LjI1IiB2aWV3Qm94PSIzMCAyODEuNzUgMTYuNyAxNy4yNSI+PHBhdGggZGF0YS1wYXJ0PSJoYWlyIiBkYXRhLXRvbmU9InNoYWRvdyIgZmlsbD0idmFyKC0tZXF1aXBtZW50LWhhaXItc2hhZG93LCAjN0U1MTI1KSIgc3Ryb2tlPSJub25lIiBkPSIKTSAzNC41IDI4NC4yClEgMzQuOCAyODMuOSAzNS4xNSAyODMuNgpMIDMzLjEgMjgyLjc1IDMzLjEgMjgyLjgKUSAzMS4yIDI4NC42NSAzMC41IDI4Ny4wNSAzMCAyODguNSAzMCAyOTAuMiAzMCAyOTAuMyAzMCAyOTAuMzUgMzAgMjkwLjQ1IDMwIDI5MC41NSAzMCAyOTIuMyAzMC41IDI5My44IDMxLjIgMjk2LjEgMzMuMSAyOTgKTCAzMy4xNSAyOTguMDUgMzUuMTUgMjk3LjE1ClEgMzQuOCAyOTYuODUgMzQuNSAyOTYuNTUgMzMgMjk1LjA1IDMyLjQgMjkzLjIgMzIgMjkxLjk1IDMyIDI5MC41NSAzMiAyOTAuNDUgMzIgMjkwLjM1IDMyIDI5MC4zIDMyIDI5MC4yIDMyIDI4OC44NSAzMi40IDI4Ny42NSAzMyAyODUuNzUgMzQuNSAyODQuMiBaIi8+PHBhdGggZGF0YS1wYXJ0PSJoYWlyIiBkYXRhLXRvbmU9ImJhc2UiIGZpbGw9InZhcigtLWVxdWlwbWVudC1oYWlyLCAjQkI4MDQ0KSIgc3Ryb2tlPSJub25lIiBkPSIKTSA0MC40NSAyODEuNzUKUSAzNy40IDI4MS43NSAzNS4xNSAyODMuNiAzNC44IDI4My45IDM0LjUgMjg0LjIgMzMgMjg1Ljc1IDMyLjQgMjg3LjY1IDMyIDI4OC44NSAzMiAyOTAuMiAzMiAyOTAuMyAzMiAyOTAuMzUgMzIgMjkwLjQ1IDMyIDI5MC41NSAzMiAyOTEuOTUgMzIuNCAyOTMuMiAzMyAyOTUuMDUgMzQuNSAyOTYuNTUgMzQuOCAyOTYuODUgMzUuMTUgMjk3LjE1IDM3LjQgMjk5IDQwLjQ1IDI5OSA0MC43NSAyOTkgNDEgMjk5IDQyLjE1IDI5OC45IDQyLjYgMjk4LjQgNDMuMiAyOTcuNjUgNDIuMjUgMjk2LjA1IDQyLjEgMjk1Ljg1IDQyLjA1IDI5NS43IDQyLjU1IDI5NS42NSA0MyAyOTUuNSA0NC4xNSAyOTUuMSA0NS4xIDI5NC4xNSA0Ni43IDI5Mi41NSA0Ni43IDI5MC4zNSA0Ni43IDI4OC4yIDQ1LjEgMjg2LjYgNDQuMTUgMjg1LjY1IDQzIDI4NS4zIDQyLjUgMjg1LjE1IDQyIDI4NS4xIDQyLjEgMjg0LjkgNDIuMjUgMjg0LjcgNDMuMjUgMjgzIDQyLjU1IDI4Mi4zIDQyLjEgMjgxLjg1IDQxIDI4MS44IDQwLjc1IDI4MS43NSA0MC40NSAyODEuNzUgWiIvPjwvc3ZnPg==",
+      "width": 16.7,
+      "height": 17.25
+    },
+    "svg-native-arm.svg": {
+      "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMC45NSIgaGVpZ2h0PSIxMSIgdmlld0JveD0iMzk5LjE1IDI5NiAxMC45NSAxMSI+PHBhdGggZGF0YS1wYXJ0PSJza2luIiBkYXRhLXBpZWNlPSJhcm0tc2tpbiIgZGF0YS10b25lPSJiYXNlIiBmaWxsPSJ2YXIoLS1lcXVpcG1lbnQtc2tpbiwgI0ZGRTBCMSkiIHN0cm9rZT0ibm9uZSIgZD0iCk0gMzk5LjE1IDI5OApRIDQwMC44IDMwMS43IDM5OS4yIDMwNQpMIDQwNi44IDMwNQpRIDQwOS4yNSAzMDEuOCA0MDYuOCAyOTgKTCAzOTkuMTUgMjk4IFoiLz48cGF0aCBkYXRhLXBhcnQ9InNraW4iIGRhdGEtcGllY2U9ImFybS1za2luIiBkYXRhLXRvbmU9InNoYWRvdyIgZmlsbD0idmFyKC0tZXF1aXBtZW50LXNraW4tc2hhZG93LCAjQzRBMjZGKSIgc3Ryb2tlPSJub25lIiBkPSIKTSA0MDcuNzUgMjk2LjI1ClEgNDA3LjMgMjk2IDQwNi44IDI5NgpMIDQwMC40IDI5NiAzOTkuMTUgMjk4IDQwNi44IDI5OApRIDQwOS4yNSAzMDEuOCA0MDYuOCAzMDUKTCAzOTkuMiAzMDUgNDAwLjQgMzA3IDQwNi44IDMwNwpRIDQwNy4yNSAzMDcgNDA3LjcgMzA2LjggNDA4LjEgMzA2LjYgNDA4LjQgMzA2LjI1IDQxMS43NSAzMDEuOTUgNDA4LjUgMjk2Ljk1IDQwOC4yIDI5Ni41IDQwNy43NSAyOTYuMjUgWiIvPjwvc3ZnPg==",
+      "width": 10.95,
+      "height": 11
+    },
+    "svg-native-sleeve.svg": {
+      "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4LjQiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjM5MiAyOTUgOC40IDEzIj48cGF0aCBkYXRhLXBhcnQ9InVuaWZvcm0iIGRhdGEtcGllY2U9InNsZWV2ZSIgZGF0YS10b25lPSJiYXNlIiBmaWxsPSJ2YXIoLS1lcXVpcG1lbnQtdW5pZm9ybSwgI0ZGRkZGRikiIHN0cm9rZT0ibm9uZSIgZD0iCk0gMzk4Ljk1IDI5Ny41NQpRIDM5OC44IDI5Ny4yNSAzOTguNjUgMjk3CkwgMzk0IDI5NyAzOTQgMzA2IDM5OC42NSAzMDYKUSAzOTguODUgMzA1LjcgMzk5IDMwNS40IDM5OS4xIDMwNS4yIDM5OS4yIDMwNSA0MDAuOCAzMDEuNyAzOTkuMTUgMjk4IDM5OS4wNSAyOTcuOCAzOTguOTUgMjk3LjU1IFoiLz48cGF0aCBkYXRhLXBhcnQ9InVuaWZvcm0iIGRhdGEtcGllY2U9InNsZWV2ZSIgZGF0YS10b25lPSJlZGdlIiBmaWxsPSJ2YXIoLS1lcXVpcG1lbnQtdW5pZm9ybS1lZGdlLCAjQ0JDRUU5KSIgc3Ryb2tlPSJub25lIiBkPSIKTSAzOTQgMjk1ClEgMzkzLjE1IDI5NSAzOTIuNiAyOTUuNiAzOTIgMjk2LjE1IDM5MiAyOTcKTCAzOTIgMzA2ClEgMzkyIDMwNi44NSAzOTIuNiAzMDcuNDUgMzkzLjE1IDMwOCAzOTQgMzA4CkwgMzk4LjY1IDMwOApRIDM5OS4xNSAzMDggMzk5LjYgMzA3LjggNDAwLjA1IDMwNy41NSA0MDAuMzUgMzA3LjEgNDAwLjM1IDMwNy4wNSA0MDAuNCAzMDcKTCAzOTkuMiAzMDUKUSAzOTkuMSAzMDUuMiAzOTkgMzA1LjQgMzk4Ljg1IDMwNS43IDM5OC42NSAzMDYKTCAzOTQgMzA2IDM5NCAyOTcgMzk4LjY1IDI5NwpRIDM5OC44IDI5Ny4yNSAzOTguOTUgMjk3LjU1IDM5OS4wNSAyOTcuOCAzOTkuMTUgMjk4CkwgNDAwLjQgMjk2ClEgNDAwLjEgMjk1LjUgMzk5LjY1IDI5NS4yNSAzOTkuMTUgMjk1IDM5OC42NSAyOTUKTCAzOTQgMjk1IFoiLz48L3N2Zz4=",
+      "width": 8.4,
+      "height": 13
+    },
+    "svg-native-shorts.svg": {
+      "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4LjQiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjM5MiAzMTUgOC40IDEzIj48cGF0aCBkYXRhLXBhcnQ9InVuaWZvcm0iIGRhdGEtcGllY2U9InNob3J0cyIgZGF0YS10b25lPSJiYXNlIiBmaWxsPSJ2YXIoLS1lcXVpcG1lbnQtdW5pZm9ybSwgI0ZGRkZGRikiIHN0cm9rZT0ibm9uZSIgZD0iCk0gMzk4Ljk1IDMxNy41NQpRIDM5OC44IDMxNy4yNSAzOTguNjUgMzE3CkwgMzk0IDMxNyAzOTQgMzI2IDM5OC42NSAzMjYKUSAzOTguODUgMzI1LjcgMzk5IDMyNS40IDM5OS4xIDMyNS4yIDM5OS4yIDMyNSA0MDAuOCAzMjEuNyAzOTkuMTUgMzE4IDM5OS4wNSAzMTcuOCAzOTguOTUgMzE3LjU1IFoiLz48cGF0aCBkYXRhLXBhcnQ9InVuaWZvcm0iIGRhdGEtcGllY2U9InNob3J0cyIgZGF0YS10b25lPSJlZGdlIiBmaWxsPSJ2YXIoLS1lcXVpcG1lbnQtdW5pZm9ybS1lZGdlLCAjQ0JDRUU5KSIgc3Ryb2tlPSJub25lIiBkPSIKTSAzOTIuNiAzMTUuNgpRIDM5MiAzMTYuMTUgMzkyIDMxNwpMIDM5MiAzMjYKUSAzOTIgMzI2Ljg1IDM5Mi42IDMyNy40NSAzOTMuMTUgMzI4IDM5NCAzMjgKTCAzOTguNjUgMzI4ClEgMzk5LjE1IDMyOCAzOTkuNiAzMjcuOCA0MDAuMDUgMzI3LjU1IDQwMC4zNSAzMjcuMSA0MDAuMzUgMzI3LjA1IDQwMC40IDMyNwpMIDM5OS4yIDMyNQpRIDM5OS4xIDMyNS4yIDM5OSAzMjUuNCAzOTguODUgMzI1LjcgMzk4LjY1IDMyNgpMIDM5NCAzMjYgMzk0IDMxNyAzOTguNjUgMzE3ClEgMzk4LjggMzE3LjI1IDM5OC45NSAzMTcuNTUgMzk5LjA1IDMxNy44IDM5OS4xNSAzMTgKTCA0MDAuNCAzMTYKUSA0MDAuMSAzMTUuNSAzOTkuNjUgMzE1LjI1IDM5OS4xNSAzMTUgMzk4LjY1IDMxNQpMIDM5NCAzMTUKUSAzOTMuMTUgMzE1IDM5Mi42IDMxNS42IFoiLz48L3N2Zz4=",
+      "width": 8.4,
+      "height": 13
+    },
+    "svg-native-foot.svg": {
+      "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMSIgdmlld0JveD0iMzk5LjEgMzE2IDExIDExIj48cGF0aCBkYXRhLXBhcnQ9InNob2UiIGRhdGEtcGllY2U9InNob2UiIGRhdGEtdG9uZT0ic2hhZG93IiBmaWxsPSJ2YXIoLS1lcXVpcG1lbnQtc2hvZS1zaGFkb3csICMyQzJBMkEpIiBzdHJva2U9Im5vbmUiIGQ9IgpNIDQwNi44IDMyNQpRIDQwOS4yNSAzMjEuOCA0MDYuOCAzMTgKTCA0MDMuOCAzMTgKUSA0MDYuMjUgMzIxLjggNDAzLjggMzI1CkwgNDA2LjggMzI1IFoiLz48cGF0aCBkYXRhLXBhcnQ9InNraW4iIGRhdGEtcGllY2U9ImxlZy1za2luIiBkYXRhLXRvbmU9InNoYWRvdyIgZmlsbD0idmFyKC0tZXF1aXBtZW50LXNraW4tc2hhZG93LCAjQzRBMjZGKSIgc3Ryb2tlPSJub25lIiBkPSIKTSA0MDAuNCAzMjcKTCA0MDMuOCAzMjcgNDAzLjggMzI1IDM5OS4yIDMyNSA0MDAuNCAzMjcKTSA0MDMuOCAzMTgKTCA0MDMuOCAzMTYgNDAwLjQgMzE2IDM5OS4xNSAzMTggNDAzLjggMzE4IFoiLz48cGF0aCBkYXRhLXBhcnQ9InNraW4iIGRhdGEtcGllY2U9ImxlZy1za2luIiBkYXRhLXRvbmU9ImJhc2UiIGZpbGw9InZhcigtLWVxdWlwbWVudC1za2luLCAjRkZFMEIxKSIgc3Ryb2tlPSJub25lIiBkPSIKTSA0MDMuOCAzMTgKTCAzOTkuMTUgMzE4ClEgNDAwLjggMzIxLjcgMzk5LjIgMzI1CkwgNDAzLjggMzI1ClEgNDA2LjI1IDMyMS44IDQwMy44IDMxOCBaIi8+PHBhdGggZGF0YS1wYXJ0PSJzaG9lIiBkYXRhLXBpZWNlPSJzaG9lIiBkYXRhLXRvbmU9ImJhc2UiIGZpbGw9InZhcigtLWVxdWlwbWVudC1zaG9lLCAjM0YzQjNCKSIgc3Ryb2tlPSJub25lIiBkPSIKTSA0MDMuOCAzMTYKTCA0MDMuOCAzMTggNDA2LjggMzE4ClEgNDA5LjI1IDMyMS44IDQwNi44IDMyNQpMIDQwMy44IDMyNSA0MDMuOCAzMjcgNDA2LjggMzI3ClEgNDA3LjI1IDMyNyA0MDcuNyAzMjYuOCA0MDguMSAzMjYuNiA0MDguNCAzMjYuMjUgNDExLjc1IDMyMS45NSA0MDguNSAzMTYuOTUgNDA4LjIgMzE2LjUgNDA3Ljc1IDMxNi4yNSA0MDcuMyAzMTYgNDA2LjggMzE2CkwgNDAzLjggMzE2IFoiLz48L3N2Zz4=",
+      "width": 11,
+      "height": 11
+    },
+    "svg-hair-ponytail.svg": {
+      "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiB2aWV3Qm94PSIwIDAgMTQgNSI+PHBhdGggZGF0YS1wYXJ0PSJoYWlyIiBkYXRhLXRvbmU9ImJhc2UiIGZpbGw9InZhcigtLWVxdWlwbWVudC1oYWlyLCAjQkI4MDQ0KSIgZD0iTTEzLjggMS41NVExMS40IDEuOCAxMCAuOFE2LjYtMS4xIDMuNiAxUTEuOSAyLjIuMiAyLjU1UTEuNyAzLjIgMy41IDMuOTVRNi44IDYgMTAgNC4xUTExLjUgMy4yIDEzLjggMy40NVoiLz48cGF0aCBkYXRhLXBhcnQ9ImhhaXIiIGRhdGEtdG9uZT0ic2hhZG93IiBmaWxsPSJ2YXIoLS1lcXVpcG1lbnQtaGFpci1zaGFkb3csICM3RTUxMjUpIiBkPSJNLjIgMi41NVE0LjQgMy44IDcuMiAzLjVRMTAgMy4yIDExLjcgMi43TDEzLjggMi43VjMuNDVRMTEuNSAzLjIgMTAgNC4xUTYuOCA2IDMuNSAzLjk1UTEuNyAzLjIuMiAyLjU1WiIvPjwvc3ZnPg==",
+      "width": 14,
+      "height": 5
+    },
+    "svg-hair-long.svg": {
+      "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDExIDE0Ij48cGF0aCBkYXRhLXBhcnQ9ImhhaXIiIGRhdGEtdG9uZT0iYmFzZSIgZmlsbD0idmFyKC0tZXF1aXBtZW50LWhhaXIsICNCQjgwNDQpIiBkPSJNMTAuNyAyLjJROC43IDAgNi4xLjJRMi4xLjMuMyAzLjlRLS4zIDYgLjYgNy4zUS0uMiA4LjguNyAxMC44UTIuMyAxMy43IDYuMiAxMy44UTkuMSAxNCAxMC43IDExLjhROC45IDcgMTAuNyAyLjJaIi8+PHBhdGggZGF0YS1wYXJ0PSJoYWlyIiBkYXRhLXRvbmU9InNoYWRvdyIgZmlsbD0idmFyKC0tZXF1aXBtZW50LWhhaXItc2hhZG93LCAjN0U1MTI1KSIgZD0iTTYuMS4yUTIuMS4zLjMgMy45US0uMyA2IC42IDcuM1EtLjIgOC44LjcgMTAuOFEyLjMgMTMuNyA2LjIgMTMuOFEzLjUgMTEgMy42IDdRMy4zIDMgNi4xLjJaIi8+PC9zdmc+",
+      "width": 11,
+      "height": 14
+    },
+    "svg-hair-bun.svg": {
+      "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3IiBoZWlnaHQ9IjciIHZpZXdCb3g9IjAgMCA3IDciPjxwYXRoIGRhdGEtcGFydD0iaGFpciIgZGF0YS10b25lPSJiYXNlIiBmaWxsPSJ2YXIoLS1lcXVpcG1lbnQtaGFpciwgI0JCODA0NCkiIGQ9Ik02LjggMi42UTYuMSAyLjIgNS43IDEuNVE0LjkuMSAzLjMuMlExLjMuMS40IDEuOVEtLjMgMy4yLjQgNC44UTEuMSA2LjggMy4zIDYuOFE0LjkgNi45IDUuNyA1LjVRNiA0LjkgNi44IDQuNFoiLz48cGF0aCBkYXRhLXBhcnQ9ImhhaXIiIGRhdGEtdG9uZT0ic2hhZG93IiBmaWxsPSJ2YXIoLS1lcXVpcG1lbnQtaGFpci1zaGFkb3csICM3RTUxMjUpIiBkPSJNMy4zLjJRMS4zLjEuNCAxLjlRLS4zIDMuMi40IDQuOFExLjEgNi44IDMuMyA2LjhRMS45IDUuMiAxLjkgMy41UTEuOCAxLjggMy4zLjJaIi8+PC9zdmc+",
+      "width": 7,
+      "height": 7
+    },
+    "svg-hair-tip.svg": {
+      "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjUiIHZpZXdCb3g9IjAgMCA2IDUiPjxwYXRoIGRhdGEtcGFydD0iaGFpciIgZGF0YS10b25lPSJiYXNlIiBmaWxsPSJ2YXIoLS1lcXVpcG1lbnQtaGFpciwgI0JCODA0NCkiIGQ9Ik01LjggMS4yUTQgLjkgMy4xIDEuNlEyLjEgMi40LjIgMi43UTEuNyA0LjMgMy41IDQuNVE1IDQuOCA1LjggMy44WiIvPjxwYXRoIGRhdGEtcGFydD0iaGFpciIgZGF0YS10b25lPSJzaGFkb3ciIGZpbGw9InZhcigtLWVxdWlwbWVudC1oYWlyLXNoYWRvdywgIzdFNTEyNSkiIGQ9Ik0uMiAyLjdRMi40IDMuMSAzLjYgMi44UTQuOCAyLjQgNS44IDIuNVYzLjhRNSA0LjggMy41IDQuNVExLjcgNC4zLjIgMi43WiIvPjwvc3ZnPg==",
+      "width": 6,
+      "height": 5
+    },
+    "svg-hair-front-straight.svg": {
+      "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjE0IiB2aWV3Qm94PSIwIDAgNCAxNCI+PHBhdGggZGF0YS1wYXJ0PSJoYWlyIiBkYXRhLXRvbmU9ImJhc2UiIGZpbGw9InZhcigtLWVxdWlwbWVudC1oYWlyLCAjQkI4MDQ0KSIgZD0iTTAgMEgxLjJRMy41LjggMy45IDMuNVEzLjMgNyAzLjkgMTAuNVEzLjUgMTMuMiAxLjIgMTRIMFoiLz48cGF0aCBkYXRhLXBhcnQ9ImhhaXIiIGRhdGEtdG9uZT0ic2hhZG93IiBmaWxsPSJ2YXIoLS1lcXVpcG1lbnQtaGFpci1zaGFkb3csICM3RTUxMjUpIiBkPSJNMCAxMi44UTIuMiAxMy4yIDMuNSAxMS40UTIuOSAxMy41IDEuMiAxNEgwWiIvPjwvc3ZnPg==",
+      "width": 4,
+      "height": 14
+    },
+    "svg-hair-front-bangs.svg": {
+      "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjE0IiB2aWV3Qm94PSIwIDAgNCAxNCI+PHBhdGggZGF0YS1wYXJ0PSJoYWlyIiBkYXRhLXRvbmU9ImJhc2UiIGZpbGw9InZhcigtLWVxdWlwbWVudC1oYWlyLCAjQkI4MDQ0KSIgZD0iTTAgMFEyLjYuMzUgMy44IDIuNEwyLjggNFE0LjggNyAyLjggMTBMMy44IDExLjZRMi42IDEzLjY1IDAgMTRaIi8+PC9zdmc+",
+      "width": 4,
+      "height": 14
+    },
+    "svg-hair-tie.svg": {
+      "source": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxLjMiIGhlaWdodD0iNCIgdmlld0JveD0iMCAwIDEuMyA0Ij48cGF0aCBkYXRhLXBhcnQ9InVuaWZvcm0iIGZpbGw9InZhcigtLWVxdWlwbWVudC11bmlmb3JtLCAjODFBN0ExKSIgZD0iTS4zNS4xSC45NVExLjIuMSAxLjIuNDVWMy41NVExLjIgMy45Ljk1IDMuOUguMzVRLjEgMy45LjEgMy41NVYuNDVRLjEuMS4zNS4xWiIvPjxwYXRoIGZpbGw9IiM1NTdCNzciIGQ9Ik0uMzUuMUguNTVWMy45SC4zNVEuMSAzLjkuMSAzLjU1Vi40NVEuMS4xLjM1LjFaIi8+PC9zdmc+",
+      "width": 1.3,
+      "height": 4
+    }
+  },
+  "parts": [
+    {
+      "id": "pack-uniform-0",
+      "label": "Şort · Üst",
+      "path": "svg-native-shorts.svg",
+      "width": 8.4,
+      "height": 13,
+      "x": 26.044013125188442,
+      "y": 30.81779607520845,
+      "scale": 0.9,
+      "rotation": 180,
+      "flip": true,
+      "pivotX": 0.85,
+      "pivotY": 0.5,
+      "svgPart": "shorts"
+    },
+    {
+      "id": "pack-uniform-1",
+      "label": "Şort · Alt",
+      "path": "svg-native-shorts.svg",
+      "width": 8.4,
+      "height": 13,
+      "x": 26.044013125188442,
+      "y": 40.90977535621911,
+      "scale": 0.9,
+      "rotation": -8.881784197001252e-16,
+      "flip": true,
+      "pivotX": 0.85,
+      "pivotY": 0.5,
+      "svgPart": "shorts"
+    },
+    {
+      "id": "pack-foot-blue-13-pair",
+      "label": "Bacak / ayakkabı · Üst",
+      "path": "svg-native-foot.svg",
+      "width": 11,
+      "height": 11,
+      "x": 36.14432995248483,
+      "y": 1.5815255197021898,
+      "scale": 0.9,
+      "rotation": 180,
+      "flip": true,
+      "pivotX": 0.85,
+      "pivotY": 0.5,
+      "svgPart": "foot"
+    },
+    {
+      "id": "pack-foot-blue-13",
+      "label": "Bacak / ayakkabı · Alt",
+      "path": "svg-native-foot.svg",
+      "width": 11,
+      "height": 11,
+      "x": 18.195218741728134,
+      "y": 1.1964695853011804,
+      "scale": 0.9,
+      "rotation": -8.881784197001252e-16,
+      "flip": true,
+      "pivotX": 0.85,
+      "pivotY": 0.5,
+      "svgPart": "foot"
+    },
+    {
+      "id": "shirt",
+      "label": "Forma",
+      "path": "svg-native-shirt.svg",
+      "width": 15.7,
+      "height": 30.7,
+      "x": 25.1,
+      "y": 27,
+      "scale": 1,
+      "rotation": 0,
+      "flip": false,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "svgPart": "shirt"
+    },
+    {
+      "id": "head",
+      "label": "Baş / ten",
+      "path": "svg-native-head.svg",
+      "width": 8.5,
+      "height": 16.1,
+      "x": 34,
+      "y": 34.3,
+      "scale": 1,
+      "rotation": 0,
+      "flip": false,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "svgPart": "head"
+    },
+    {
+      "id": "sleeve-left",
+      "label": "Forma kolu · Üst",
+      "path": "svg-native-sleeve.svg",
+      "width": 8.4,
+      "height": 13,
+      "x": 31.2349569357107,
+      "y": 23.97801366706601,
+      "scale": 0.9738,
+      "rotation": -1.6616871299384002,
+      "flip": false,
+      "pivotX": 0.15,
+      "pivotY": 0.5,
+      "svgPart": "sleeve"
+    },
+    {
+      "id": "sleeve-right",
+      "label": "Forma kolu · Alt",
+      "path": "svg-native-sleeve.svg",
+      "width": 8.4,
+      "height": 13,
+      "x": 31.736323865479356,
+      "y": 44.87198633315676,
+      "scale": 0.9738,
+      "rotation": -3.5331073249345195,
+      "flip": false,
+      "pivotX": 0.15,
+      "pivotY": 0.5,
+      "svgPart": "sleeve"
+    },
+    {
+      "id": "hair",
+      "label": "Saç",
+      "path": "svg-native-hair.svg",
+      "width": 16.7,
+      "height": 17.25,
+      "x": 22,
+      "y": 33.75,
+      "scale": 1,
+      "rotation": 0,
+      "flip": false,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "svgPart": "hair",
+      "svgHairStyle": "short"
+    },
+    {
+      "id": "arm-left",
+      "label": "Kol / ten · Üst",
+      "path": "svg-native-arm.svg",
+      "width": 10.95,
+      "height": 11,
+      "x": 35.82730875799494,
+      "y": 25.47659214584315,
+      "scale": 0.9738,
+      "rotation": -1.6616871299384002,
+      "flip": false,
+      "pivotX": 0.15,
+      "pivotY": 0.5,
+      "svgPart": "arm"
+    },
+    {
+      "id": "arm-right",
+      "label": "Kol / ten · Alt",
+      "path": "svg-native-arm.svg",
+      "width": 10.95,
+      "height": 11,
+      "x": 36.40945647756327,
+      "y": 46.08824574538801,
+      "scale": 0.9738,
+      "rotation": -3.5331073249345195,
+      "flip": false,
+      "pivotX": 0.15,
+      "pivotY": 0.5,
+      "svgPart": "arm"
+    }
+  ],
+  "walkCycle": {
+    "version": 3,
+    "frames": [
+      {
+        "id": "upper-front",
+        "parts": [
+          {
+            "id": "pack-uniform-0",
+            "label": "Şort · Üst",
+            "path": "svg-native-shorts.svg",
+            "width": 8.4,
+            "height": 13,
+            "x": 26.044013125188442,
+            "y": 30.81779607520845,
+            "scale": 0.9,
+            "rotation": 180,
+            "flip": true,
+            "pivotX": 0.85,
+            "pivotY": 0.5,
+            "svgPart": "shorts"
+          },
+          {
+            "id": "pack-uniform-1",
+            "label": "Şort · Alt",
+            "path": "svg-native-shorts.svg",
+            "width": 8.4,
+            "height": 13,
+            "x": 26.044013125188442,
+            "y": 40.90977535621911,
+            "scale": 0.9,
+            "rotation": -8.881784197001252e-16,
+            "flip": true,
+            "pivotX": 0.85,
+            "pivotY": 0.5,
+            "svgPart": "shorts"
+          },
+          {
+            "id": "pack-foot-blue-13-pair",
+            "label": "Bacak / ayakkabı · Üst",
+            "path": "svg-native-foot.svg",
+            "width": 11,
+            "height": 11,
+            "x": 36.14432995248483,
+            "y": 1.5815255197021898,
+            "scale": 0.9,
+            "rotation": 180,
+            "flip": true,
+            "pivotX": 0.85,
+            "pivotY": 0.5,
+            "svgPart": "foot"
+          },
+          {
+            "id": "pack-foot-blue-13",
+            "label": "Bacak / ayakkabı · Alt",
+            "path": "svg-native-foot.svg",
+            "width": 11,
+            "height": 11,
+            "x": 18.195218741728134,
+            "y": 1.1964695853011804,
+            "scale": 0.9,
+            "rotation": -8.881784197001252e-16,
+            "flip": true,
+            "pivotX": 0.85,
+            "pivotY": 0.5,
+            "svgPart": "foot"
+          },
+          {
+            "id": "shirt",
+            "label": "Forma",
+            "path": "svg-native-shirt.svg",
+            "width": 15.7,
+            "height": 30.7,
+            "x": 25.1,
+            "y": 27,
+            "scale": 1,
+            "rotation": 0,
+            "flip": false,
+            "pivotX": 0.5,
+            "pivotY": 0.5,
+            "svgPart": "shirt"
+          },
+          {
+            "id": "head",
+            "label": "Baş / ten",
+            "path": "svg-native-head.svg",
+            "width": 8.5,
+            "height": 16.1,
+            "x": 34,
+            "y": 34.3,
+            "scale": 1,
+            "rotation": 0,
+            "flip": false,
+            "pivotX": 0.5,
+            "pivotY": 0.5,
+            "svgPart": "head"
+          },
+          {
+            "id": "sleeve-left",
+            "label": "Forma kolu · Üst",
+            "path": "svg-native-sleeve.svg",
+            "width": 8.4,
+            "height": 13,
+            "x": 31.2349569357107,
+            "y": 23.97801366706601,
+            "scale": 0.9738,
+            "rotation": -1.6616871299384002,
+            "flip": false,
+            "pivotX": 0.15,
+            "pivotY": 0.5,
+            "svgPart": "sleeve"
+          },
+          {
+            "id": "sleeve-right",
+            "label": "Forma kolu · Alt",
+            "path": "svg-native-sleeve.svg",
+            "width": 8.4,
+            "height": 13,
+            "x": 31.736323865479356,
+            "y": 44.87198633315676,
+            "scale": 0.9738,
+            "rotation": -3.5331073249345195,
+            "flip": false,
+            "pivotX": 0.15,
+            "pivotY": 0.5,
+            "svgPart": "sleeve"
+          },
+          {
+            "id": "hair",
+            "label": "Saç",
+            "path": "svg-native-hair.svg",
+            "width": 16.7,
+            "height": 17.25,
+            "x": 22,
+            "y": 33.75,
+            "scale": 1,
+            "rotation": 0,
+            "flip": false,
+            "pivotX": 0.5,
+            "pivotY": 0.5,
+            "svgPart": "hair",
+            "svgHairStyle": "short"
+          },
+          {
+            "id": "arm-left",
+            "label": "Kol / ten · Üst",
+            "path": "svg-native-arm.svg",
+            "width": 10.95,
+            "height": 11,
+            "x": 35.82730875799494,
+            "y": 25.47659214584315,
+            "scale": 0.9738,
+            "rotation": -1.6616871299384002,
+            "flip": false,
+            "pivotX": 0.15,
+            "pivotY": 0.5,
+            "svgPart": "arm"
+          },
+          {
+            "id": "arm-right",
+            "label": "Kol / ten · Alt",
+            "path": "svg-native-arm.svg",
+            "width": 10.95,
+            "height": 11,
+            "x": 36.40945647756327,
+            "y": 46.08824574538801,
+            "scale": 0.9738,
+            "rotation": -3.5331073249345195,
+            "flip": false,
+            "pivotX": 0.15,
+            "pivotY": 0.5,
+            "svgPart": "arm"
+          }
+        ]
+      },
+      {
+        "id": "lower-front",
+        "parts": [
+          {
+            "id": "pack-uniform-0",
+            "label": "Şort · Üst",
+            "path": "svg-native-shorts.svg",
+            "width": 8.4,
+            "height": 13,
+            "x": 31.336013125188444,
+            "y": 30.81779607520845,
+            "scale": 0.9,
+            "rotation": -180,
+            "flip": false,
+            "pivotX": 0.15000000000000002,
+            "pivotY": 0.5,
+            "svgPart": "shorts"
+          },
+          {
+            "id": "pack-uniform-1",
+            "label": "Şort · Alt",
+            "path": "svg-native-shorts.svg",
+            "width": 8.4,
+            "height": 13,
+            "x": 31.336013125188444,
+            "y": 40.90977535621911,
+            "scale": 0.9,
+            "rotation": 8.881784197001252e-16,
+            "flip": false,
+            "pivotX": 0.15000000000000002,
+            "pivotY": 0.5,
+            "svgPart": "shorts"
+          },
+          {
+            "id": "pack-foot-blue-13-pair",
+            "label": "Bacak / ayakkabı · Üst",
+            "path": "svg-native-foot.svg",
+            "width": 11,
+            "height": 11,
+            "x": 24.346528436248633,
+            "y": 31.61672301676906,
+            "scale": 0.9,
+            "rotation": -180,
+            "flip": false,
+            "pivotX": 0.15000000000000002,
+            "pivotY": 0.5,
+            "svgPart": "foot"
+          },
+          {
+            "id": "pack-foot-blue-13",
+            "label": "Bacak / ayakkabı · Alt",
+            "path": "svg-native-foot.svg",
+            "width": 11,
+            "height": 11,
+            "x": 37.62349781412826,
+            "y": 41.910848414658496,
+            "scale": 0.9,
+            "rotation": 8.881784197001252e-16,
+            "flip": false,
+            "pivotX": 0.15000000000000002,
+            "pivotY": 0.5,
+            "svgPart": "foot"
+          },
+          {
+            "id": "arm-right",
+            "label": "Kol / ten · Alt",
+            "path": "svg-native-arm.svg",
+            "width": 10.95,
+            "height": 11,
+            "x": 16.761017389040944,
+            "y": 44.355485257082,
+            "scale": 0.9738,
+            "rotation": 0,
+            "flip": true,
+            "pivotX": 0.85,
+            "pivotY": 0.5,
+            "svgPart": "arm"
+          },
+          {
+            "id": "arm-left",
+            "label": "Kol / ten · Üst",
+            "path": "svg-native-arm.svg",
+            "width": 10.95,
+            "height": 11,
+            "x": 31.098793888649894,
+            "y": 29.632714742918004,
+            "scale": 0.9738,
+            "rotation": -180,
+            "flip": true,
+            "pivotX": 0.85,
+            "pivotY": 0.5,
+            "svgPart": "arm"
+          },
+          {
+            "id": "sleeve-left",
+            "label": "Forma kolu · Üst",
+            "path": "svg-native-sleeve.svg",
+            "width": 8.4,
+            "height": 13,
+            "x": 26.040617138845416,
+            "y": 28.560579019631167,
+            "scale": 0.9738,
+            "rotation": -180,
+            "flip": true,
+            "pivotX": 0.85,
+            "pivotY": 0.5,
+            "svgPart": "sleeve"
+          },
+          {
+            "id": "sleeve-right",
+            "label": "Forma kolu · Alt",
+            "path": "svg-native-sleeve.svg",
+            "width": 8.4,
+            "height": 13,
+            "x": 26.040617138845416,
+            "y": 43.480020980368835,
+            "scale": 0.9738,
+            "rotation": 0,
+            "flip": true,
+            "pivotX": 0.85,
+            "pivotY": 0.5,
+            "svgPart": "sleeve"
+          },
+          {
+            "id": "shirt",
+            "label": "Forma",
+            "path": "svg-native-shirt.svg",
+            "width": 15.7,
+            "height": 30.7,
+            "x": 25.1,
+            "y": 27,
+            "scale": 1,
+            "rotation": 0,
+            "flip": false,
+            "pivotX": 0.5,
+            "pivotY": 0.5,
+            "svgPart": "shirt"
+          },
+          {
+            "id": "head",
+            "label": "Baş / ten",
+            "path": "svg-native-head.svg",
+            "width": 8.5,
+            "height": 16.1,
+            "x": 34,
+            "y": 34.3,
+            "scale": 1,
+            "rotation": 0,
+            "flip": false,
+            "pivotX": 0.5,
+            "pivotY": 0.5,
+            "svgPart": "head"
+          },
+          {
+            "id": "hair",
+            "label": "Saç",
+            "path": "svg-native-hair.svg",
+            "width": 16.7,
+            "height": 17.25,
+            "x": 22,
+            "y": 33.75,
+            "scale": 1,
+            "rotation": 0,
+            "flip": false,
+            "pivotX": 0.5,
+            "pivotY": 0.5,
+            "svgPart": "hair"
+          }
+        ]
+      }
+    ],
+    "type": "pixel-style-authored-pair",
+    "settings": {
+      "armAngle": 36.0846809450677,
+      "legAngle": 15.729228735324568,
+      "openness": 0.22,
+      "speed": 3,
+      "mode": "paired"
+    },
+    "groups": [
+      {
+        "id": "arm-left",
+        "ids": [
+          "sleeve-left",
+          "arm-left"
+        ],
+        "root": "sleeve-left",
+        "sign": -1,
+        "key": "armAngle",
+        "anchor": {
+          "x": 32.4619449357107,
+          "y": 30.307713667066007
+        }
+      },
+      {
+        "id": "arm-right",
+        "ids": [
+          "sleeve-right",
+          "arm-right"
+        ],
+        "root": "sleeve-right",
+        "sign": 1,
+        "key": "armAngle",
+        "anchor": {
+          "x": 32.963311865479355,
+          "y": 51.201686333156765
+        }
+      },
+      {
+        "id": "leg-left",
+        "ids": [
+          "pack-uniform-0",
+          "pack-foot-blue-13-pair"
+        ],
+        "root": "pack-uniform-0",
+        "sign": 1,
+        "key": "legAngle",
+        "anchor": {
+          "x": 32.470013125188444,
+          "y": 36.66779607520845
+        }
+      },
+      {
+        "id": "leg-right",
+        "ids": [
+          "pack-uniform-1",
+          "pack-foot-blue-13"
+        ],
+        "root": "pack-uniform-1",
+        "sign": -1,
+        "key": "legAngle",
+        "anchor": {
+          "x": 32.470013125188444,
+          "y": 46.75977535621911
+        }
+      }
+    ]
+  }
+}

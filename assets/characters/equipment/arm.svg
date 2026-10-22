@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 20.2 15"><g transform="translate(-392 -295)"><path data-part="skin" data-piece="arm-skin" data-tone="base" fill="var(--equipment-skin, #FFE0B1)" stroke="none" d="
+M 399.15 298
+Q 400.8 301.7 399.2 305
+L 406.8 305
+Q 409.25 301.8 406.8 298
+L 399.15 298 Z"/>
+<path data-part="uniform" data-piece="sleeve" data-tone="base" fill="var(--equipment-uniform, #FFFFFF)" stroke="none" d="
+M 398.95 297.55
+Q 398.8 297.25 398.65 297
+L 394 297 394 306 398.65 306
+Q 398.85 305.7 399 305.4 399.1 305.2 399.2 305 400.8 301.7 399.15 298 399.05 297.8 398.95 297.55 Z"/>
+<path data-part="uniform" data-piece="sleeve" data-tone="edge" fill="var(--equipment-uniform-edge, #CBCEE9)" stroke="none" d="
+M 394 295
+Q 393.15 295 392.6 295.6 392 296.15 392 297
+L 392 306
+Q 392 306.85 392.6 307.45 393.15 308 394 308
+L 398.65 308
+Q 399.15 308 399.6 307.8 400.05 307.55 400.35 307.1 400.35 307.05 400.4 307
+L 399.2 305
+Q 399.1 305.2 399 305.4 398.85 305.7 398.65 306
+L 394 306 394 297 398.65 297
+Q 398.8 297.25 398.95 297.55 399.05 297.8 399.15 298
+L 400.4 296
+Q 400.1 295.5 399.65 295.25 399.15 295 398.65 295
+L 394 295 Z"/>
+<path data-part="skin" data-piece="arm-skin" data-tone="shadow" fill="var(--equipment-skin-shadow, #C4A26F)" stroke="none" d="
+M 407.75 296.25
+Q 407.3 296 406.8 296
+L 400.4 296 399.15 298 406.8 298
+Q 409.25 301.8 406.8 305
+L 399.2 305 400.4 307 406.8 307
+Q 407.25 307 407.7 306.8 408.1 306.6 408.4 306.25 411.75 301.95 408.5 296.95 408.2 296.5 407.75 296.25 Z"/></g></svg>

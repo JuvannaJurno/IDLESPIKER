@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 20.2 15"><g transform="translate(-392 -315)"><path data-part="shoe" data-piece="shoe" data-tone="shadow" fill="var(--equipment-shoe-shadow, #2C2A2A)" stroke="none" d="
+M 406.8 325
+Q 409.25 321.8 406.8 318
+L 403.8 318
+Q 406.25 321.8 403.8 325
+L 406.8 325 Z"/>
+<path data-part="skin" data-piece="leg-skin" data-tone="shadow" fill="var(--equipment-skin-shadow, #C4A26F)" stroke="none" d="
+M 400.4 327
+L 403.8 327 403.8 325 399.2 325 400.4 327
+M 403.8 318
+L 403.8 316 400.4 316 399.15 318 403.8 318 Z"/>
+<path data-part="uniform" data-piece="shorts" data-tone="base" fill="var(--equipment-uniform, #FFFFFF)" stroke="none" d="
+M 398.95 317.55
+Q 398.8 317.25 398.65 317
+L 394 317 394 326 398.65 326
+Q 398.85 325.7 399 325.4 399.1 325.2 399.2 325 400.8 321.7 399.15 318 399.05 317.8 398.95 317.55 Z"/>
+<path data-part="skin" data-piece="leg-skin" data-tone="base" fill="var(--equipment-skin, #FFE0B1)" stroke="none" d="
+M 403.8 318
+L 399.15 318
+Q 400.8 321.7 399.2 325
+L 403.8 325
+Q 406.25 321.8 403.8 318 Z"/>
+<path data-part="shoe" data-piece="shoe" data-tone="base" fill="var(--equipment-shoe, #3F3B3B)" stroke="none" d="
+M 403.8 316
+L 403.8 318 406.8 318
+Q 409.25 321.8 406.8 325
+L 403.8 325 403.8 327 406.8 327
+Q 407.25 327 407.7 326.8 408.1 326.6 408.4 326.25 411.75 321.95 408.5 316.95 408.2 316.5 407.75 316.25 407.3 316 406.8 316
+L 403.8 316 Z"/>
+<path data-part="uniform" data-piece="shorts" data-tone="edge" fill="var(--equipment-uniform-edge, #CBCEE9)" stroke="none" d="
+M 392.6 315.6
+Q 392 316.15 392 317
+L 392 326
+Q 392 326.85 392.6 327.45 393.15 328 394 328
+L 398.65 328
+Q 399.15 328 399.6 327.8 400.05 327.55 400.35 327.1 400.35 327.05 400.4 327
+L 399.2 325
+Q 399.1 325.2 399 325.4 398.85 325.7 398.65 326
+L 394 326 394 317 398.65 317
+Q 398.8 317.25 398.95 317.55 399.05 317.8 399.15 318
+L 400.4 316
+Q 400.1 315.5 399.65 315.25 399.15 315 398.65 315
+L 394 315
+Q 393.15 315 392.6 315.6 Z"/></g></svg>

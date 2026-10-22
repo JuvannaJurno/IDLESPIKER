@@ -1,0 +1,51 @@
+{
+  "style": "tied",
+  "parts": [
+    {
+      "id": "svg-hair-tip",
+      "label": "Kuyruk ucu",
+      "path": "svg-hair-tip.svg",
+      "width": 6,
+      "height": 5,
+      "x": 14.72365619432496,
+      "y": 39.74999999999999,
+      "rotation": 0,
+      "scale": 1,
+      "flip": false,
+      "pivotX": 0.9,
+      "pivotY": 0.5,
+      "svgHairLayer": "back"
+    },
+    {
+      "id": "svg-hair-bun",
+      "label": "Topuz",
+      "path": "svg-hair-bun.svg",
+      "width": 7,
+      "height": 7,
+      "x": 18.701173249902237,
+      "y": 38.64110502759309,
+      "rotation": 0,
+      "scale": 1.15,
+      "flip": false,
+      "pivotX": 0.95,
+      "pivotY": 0.5,
+      "svgHairLayer": "back"
+    },
+    {
+      "id": "svg-hair-tie",
+      "label": "Saç lastiği",
+      "path": "svg-hair-tie.svg",
+      "width": 1.3,
+      "height": 4,
+      "x": 25.83489766653632,
+      "y": 40.683724416634085,
+      "rotation": 0,
+      "scale": 1,
+      "flip": false,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "svgHairLayer": "front"
+    }
+  ],
+  "front": "front-bangs"
+}
