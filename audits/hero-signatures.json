@@ -1,0 +1,838 @@
+{
+  "rows": [
+    {
+      "team": "Uludağ Akademi",
+      "round": 1,
+      "contacts": [
+        "1|d2-melis-arigol"
+      ],
+      "heroes": [
+        {
+          "id": "d2-melis-arigol",
+          "index": 8,
+          "zone": 6
+        }
+      ],
+      "finished": true,
+      "score": [
+        2,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Savunmadan kontrollü hücum",
+          "at": 0
+        },
+        {
+          "key": "defense-1",
+          "text": "Uludağ Akademi · Savunma topu oyunda tuttu",
+          "at": 53.09999999999827
+        }
+      ],
+      "blockPairs": 1,
+      "digs": 1,
+      "aces": 0,
+      "dive": 0,
+      "style": "defense"
+    },
+    {
+      "team": "Uludağ Akademi",
+      "round": 2,
+      "contacts": [
+        "1|d2-melis-arigol"
+      ],
+      "heroes": [
+        {
+          "id": "d2-melis-arigol",
+          "index": 8,
+          "zone": 6
+        }
+      ],
+      "finished": true,
+      "score": [
+        2,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Savunmadan kontrollü hücum",
+          "at": 0
+        },
+        {
+          "key": "defense-1",
+          "text": "Uludağ Akademi · Savunma topu oyunda tuttu",
+          "at": 92.23333333332938
+        }
+      ],
+      "blockPairs": 1,
+      "digs": 1,
+      "aces": 0,
+      "dive": 0,
+      "style": "defense"
+    },
+    {
+      "team": "Uludağ Akademi",
+      "round": 3,
+      "contacts": [
+        "1|d2-melis-arigol"
+      ],
+      "heroes": [
+        {
+          "id": "d2-melis-arigol",
+          "index": 8,
+          "zone": 2
+        }
+      ],
+      "finished": true,
+      "score": [
+        0,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Savunmadan kontrollü hücum",
+          "at": 0
+        }
+      ],
+      "blockPairs": 2,
+      "digs": 0,
+      "aces": 1,
+      "dive": 0,
+      "style": "defense"
+    },
+    {
+      "team": "Uludağ Akademi",
+      "round": 4,
+      "contacts": [
+        "1|d2-melis-arigol"
+      ],
+      "heroes": [
+        {
+          "id": "d2-melis-arigol",
+          "index": 8,
+          "zone": 2
+        }
+      ],
+      "finished": true,
+      "score": [
+        0,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Savunmadan kontrollü hücum",
+          "at": 0
+        },
+        {
+          "key": "defense-1",
+          "text": "Uludağ Akademi · Savunma topu oyunda tuttu",
+          "at": 22.966666666666644
+        }
+      ],
+      "blockPairs": 0,
+      "digs": 2,
+      "aces": 2,
+      "dive": 1,
+      "style": "defense"
+    },
+    {
+      "team": "Uludağ Akademi",
+      "round": 5,
+      "contacts": [
+        "1|d2-melis-arigol"
+      ],
+      "heroes": [
+        {
+          "id": "d2-melis-arigol",
+          "index": 8,
+          "zone": 2
+        }
+      ],
+      "finished": true,
+      "score": [
+        0,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Savunmadan kontrollü hücum",
+          "at": 0
+        },
+        {
+          "key": "defense-1",
+          "text": "Uludağ Akademi · Savunma topu oyunda tuttu",
+          "at": 23.199999999999964
+        },
+        {
+          "key": "defense-2",
+          "text": "Uludağ Akademi topu yine çıkardı!",
+          "at": 31.283333333332838
+        }
+      ],
+      "blockPairs": 0,
+      "digs": 4,
+      "aces": 1,
+      "dive": 0,
+      "style": "defense"
+    },
+    {
+      "team": "Uludağ Akademi",
+      "round": 6,
+      "contacts": [
+        "1|d2-melis-arigol"
+      ],
+      "heroes": [
+        {
+          "id": "d2-melis-arigol",
+          "index": 8,
+          "zone": 1
+        }
+      ],
+      "finished": true,
+      "score": [
+        1,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Savunmadan kontrollü hücum",
+          "at": 0
+        },
+        {
+          "key": "defense-1",
+          "text": "Uludağ Akademi · Savunma topu oyunda tuttu",
+          "at": 48.79999999999851
+        }
+      ],
+      "blockPairs": 2,
+      "digs": 1,
+      "aces": 0,
+      "dive": 1,
+      "style": "defense"
+    },
+    {
+      "team": "Uludağ Akademi",
+      "round": 7,
+      "contacts": [
+        "1|d2-melis-arigol"
+      ],
+      "heroes": [
+        {
+          "id": "d2-melis-arigol",
+          "index": 8,
+          "zone": 1
+        }
+      ],
+      "finished": true,
+      "score": [
+        1,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Savunmadan kontrollü hücum",
+          "at": 0
+        },
+        {
+          "key": "defense-1",
+          "text": "Uludağ Akademi · Savunma topu oyunda tuttu",
+          "at": 26.0499999999998
+        }
+      ],
+      "blockPairs": 1,
+      "digs": 2,
+      "aces": 0,
+      "dive": 1,
+      "style": "defense"
+    },
+    {
+      "team": "Uludağ Akademi",
+      "round": 8,
+      "contacts": [
+        "1|d2-melis-arigol"
+      ],
+      "heroes": [
+        {
+          "id": "d2-melis-arigol",
+          "index": 8,
+          "zone": 1
+        }
+      ],
+      "finished": true,
+      "score": [
+        1,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Savunmadan kontrollü hücum",
+          "at": 0
+        },
+        {
+          "key": "rematch",
+          "text": "Melis Arıgöl rövanş için paslarını geliştirdi.",
+          "at": 4.016666666666658
+        },
+        {
+          "key": "defense-1",
+          "text": "Uludağ Akademi · Savunma topu oyunda tuttu",
+          "at": 23.083333333333304
+        }
+      ],
+      "blockPairs": 1,
+      "digs": 3,
+      "aces": 0,
+      "dive": 0,
+      "style": "defense"
+    },
+    {
+      "team": "Başkent Akademi",
+      "round": 1,
+      "contacts": [
+        "1|d2-idil-taner"
+      ],
+      "heroes": [],
+      "finished": true,
+      "score": [
+        5,
+        2
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Nadia ile blok duvarı",
+          "at": 0
+        }
+      ],
+      "blockPairs": 0,
+      "digs": 0,
+      "aces": 0,
+      "dive": 0,
+      "style": "block"
+    },
+    {
+      "team": "Başkent Akademi",
+      "round": 2,
+      "contacts": [
+        "1|d2-idil-taner"
+      ],
+      "heroes": [
+        {
+          "id": "d2-idil-taner",
+          "index": 6,
+          "zone": 3
+        }
+      ],
+      "finished": true,
+      "score": [
+        5,
+        0
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Nadia ile blok duvarı",
+          "at": 0
+        }
+      ],
+      "blockPairs": 0,
+      "digs": 1,
+      "aces": 0,
+      "dive": 0,
+      "style": "block"
+    },
+    {
+      "team": "Başkent Akademi",
+      "round": 3,
+      "contacts": [
+        "1|d2-idil-taner"
+      ],
+      "heroes": [
+        {
+          "id": "d2-idil-taner",
+          "index": 6,
+          "zone": 2
+        }
+      ],
+      "finished": true,
+      "score": [
+        0,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Nadia ile blok duvarı",
+          "at": 0
+        },
+        {
+          "key": "block-1",
+          "text": "Başkent Akademi · İkili blok!",
+          "at": 40.71666666666564
+        }
+      ],
+      "blockPairs": 2,
+      "digs": 2,
+      "aces": 0,
+      "dive": 0,
+      "style": "block"
+    },
+    {
+      "team": "Başkent Akademi",
+      "round": 4,
+      "contacts": [
+        "1|d2-idil-taner"
+      ],
+      "heroes": [],
+      "finished": true,
+      "score": [
+        3,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Nadia ile blok duvarı",
+          "at": 0
+        },
+        {
+          "key": "block-1",
+          "text": "Başkent Akademi · İkili blok!",
+          "at": 23.183333333333298
+        }
+      ],
+      "blockPairs": 1,
+      "digs": 1,
+      "aces": 0,
+      "dive": 0,
+      "style": "block"
+    },
+    {
+      "team": "Başkent Akademi",
+      "round": 5,
+      "contacts": [
+        "1|d2-idil-taner"
+      ],
+      "heroes": [],
+      "finished": true,
+      "score": [
+        6,
+        4
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Nadia ile blok duvarı",
+          "at": 0
+        },
+        {
+          "key": "block-1",
+          "text": "Başkent Akademi · İkili blok!",
+          "at": 73.86666666666376
+        }
+      ],
+      "blockPairs": 2,
+      "digs": 2,
+      "aces": 0,
+      "dive": 0,
+      "style": "block"
+    },
+    {
+      "team": "Başkent Akademi",
+      "round": 6,
+      "contacts": [
+        "1|d2-idil-taner"
+      ],
+      "heroes": [],
+      "finished": true,
+      "score": [
+        5,
+        2
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Nadia ile blok duvarı",
+          "at": 0
+        }
+      ],
+      "blockPairs": 0,
+      "digs": 2,
+      "aces": 0,
+      "dive": 0,
+      "style": "block"
+    },
+    {
+      "team": "Başkent Akademi",
+      "round": 7,
+      "contacts": [
+        "1|d2-idil-taner"
+      ],
+      "heroes": [
+        {
+          "id": "d2-idil-taner",
+          "index": 6,
+          "zone": 2
+        }
+      ],
+      "finished": true,
+      "score": [
+        5,
+        1
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Nadia ile blok duvarı",
+          "at": 0
+        },
+        {
+          "key": "block-1",
+          "text": "Başkent Akademi · İkili blok!",
+          "at": 12.416666666666863
+        }
+      ],
+      "blockPairs": 1,
+      "digs": 0,
+      "aces": 0,
+      "dive": 0,
+      "style": "block"
+    },
+    {
+      "team": "Başkent Akademi",
+      "round": 8,
+      "contacts": [
+        "1|d2-idil-taner"
+      ],
+      "heroes": [],
+      "finished": true,
+      "score": [
+        5,
+        7
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Nadia ile blok duvarı",
+          "at": 0
+        },
+        {
+          "key": "rematch",
+          "text": "Nadia Volkova rövanş için bloğunu geliştirdi.",
+          "at": 4.016666666666658
+        },
+        {
+          "key": "block-1",
+          "text": "Başkent Akademi · İkili blok!",
+          "at": 12.183333333333518
+        }
+      ],
+      "blockPairs": 3,
+      "digs": 1,
+      "aces": 0,
+      "dive": 0,
+      "style": "block"
+    },
+    {
+      "team": "Karadeniz Gücü",
+      "round": 1,
+      "contacts": [
+        "1|d2-derin-ates"
+      ],
+      "heroes": [
+        {
+          "id": "d2-derin-ates",
+          "index": 11,
+          "zone": 1
+        }
+      ],
+      "finished": true,
+      "score": [
+        0,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Sert servis ve hücum",
+          "at": 0
+        },
+        {
+          "key": "serve-1",
+          "text": "Karadeniz Gücü · Servis baskısı",
+          "at": 15.400000000000345
+        }
+      ],
+      "blockPairs": 1,
+      "digs": 2,
+      "aces": 2,
+      "dive": 0,
+      "style": "serve"
+    },
+    {
+      "team": "Karadeniz Gücü",
+      "round": 2,
+      "contacts": [
+        "1|d2-derin-ates"
+      ],
+      "heroes": [
+        {
+          "id": "d2-derin-ates",
+          "index": 11,
+          "zone": 6
+        }
+      ],
+      "finished": true,
+      "score": [
+        1,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Sert servis ve hücum",
+          "at": 0
+        },
+        {
+          "key": "serve-1",
+          "text": "Karadeniz Gücü · Servis baskısı",
+          "at": 28.599999999999657
+        }
+      ],
+      "blockPairs": 0,
+      "digs": 4,
+      "aces": 1,
+      "dive": 0,
+      "style": "serve"
+    },
+    {
+      "team": "Karadeniz Gücü",
+      "round": 3,
+      "contacts": [
+        "1|d2-derin-ates"
+      ],
+      "heroes": [
+        {
+          "id": "d2-derin-ates",
+          "index": 11,
+          "zone": 1
+        }
+      ],
+      "finished": true,
+      "score": [
+        0,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Sert servis ve hücum",
+          "at": 0
+        },
+        {
+          "key": "serve-1",
+          "text": "Karadeniz Gücü · Servis baskısı",
+          "at": 29.549999999999603
+        }
+      ],
+      "blockPairs": 1,
+      "digs": 3,
+      "aces": 2,
+      "dive": 0,
+      "style": "serve"
+    },
+    {
+      "team": "Karadeniz Gücü",
+      "round": 4,
+      "contacts": [
+        "1|d2-derin-ates"
+      ],
+      "heroes": [
+        {
+          "id": "d2-derin-ates",
+          "index": 11,
+          "zone": 6
+        }
+      ],
+      "finished": true,
+      "score": [
+        1,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Sert servis ve hücum",
+          "at": 0
+        },
+        {
+          "key": "serve-1",
+          "text": "Karadeniz Gücü · Servis baskısı",
+          "at": 11.583333333333488
+        }
+      ],
+      "blockPairs": 1,
+      "digs": 1,
+      "aces": 2,
+      "dive": 0,
+      "style": "serve"
+    },
+    {
+      "team": "Karadeniz Gücü",
+      "round": 5,
+      "contacts": [
+        "1|d2-derin-ates"
+      ],
+      "heroes": [
+        {
+          "id": "d2-derin-ates",
+          "index": 11,
+          "zone": 1
+        }
+      ],
+      "finished": true,
+      "score": [
+        0,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Sert servis ve hücum",
+          "at": 0
+        },
+        {
+          "key": "serve-1",
+          "text": "Karadeniz Gücü · Servis baskısı",
+          "at": 21.03333333333342
+        }
+      ],
+      "blockPairs": 0,
+      "digs": 2,
+      "aces": 2,
+      "dive": 0,
+      "style": "serve"
+    },
+    {
+      "team": "Karadeniz Gücü",
+      "round": 6,
+      "contacts": [
+        "1|d2-derin-ates"
+      ],
+      "heroes": [
+        {
+          "id": "d2-derin-ates",
+          "index": 11,
+          "zone": 1
+        }
+      ],
+      "finished": true,
+      "score": [
+        0,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Sert servis ve hücum",
+          "at": 0
+        },
+        {
+          "key": "serve-1",
+          "text": "Karadeniz Gücü · Servis baskısı",
+          "at": 21.283333333333406
+        }
+      ],
+      "blockPairs": 2,
+      "digs": 3,
+      "aces": 0,
+      "dive": 0,
+      "style": "serve"
+    },
+    {
+      "team": "Karadeniz Gücü",
+      "round": 7,
+      "contacts": [
+        "1|d2-derin-ates"
+      ],
+      "heroes": [
+        {
+          "id": "d2-derin-ates",
+          "index": 11,
+          "zone": 1
+        }
+      ],
+      "finished": true,
+      "score": [
+        0,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Sert servis ve hücum",
+          "at": 0
+        },
+        {
+          "key": "serve-1",
+          "text": "Karadeniz Gücü · Servis baskısı",
+          "at": 15.333333333333675
+        }
+      ],
+      "blockPairs": 2,
+      "digs": 1,
+      "aces": 3,
+      "dive": 0,
+      "style": "serve"
+    },
+    {
+      "team": "Karadeniz Gücü",
+      "round": 8,
+      "contacts": [
+        "1|d2-derin-ates"
+      ],
+      "heroes": [
+        {
+          "id": "d2-derin-ates",
+          "index": 11,
+          "zone": 1
+        }
+      ],
+      "finished": true,
+      "score": [
+        0,
+        5
+      ],
+      "cues": [
+        {
+          "key": "intro",
+          "text": "Rakibin güçlü yanı: Sert servis ve hücum",
+          "at": 0
+        },
+        {
+          "key": "rematch",
+          "text": "Derin Ateş rövanş için servisini geliştirdi.",
+          "at": 4.016666666666658
+        },
+        {
+          "key": "serve-1",
+          "text": "Karadeniz Gücü · Servis baskısı",
+          "at": 21.3833333333334
+        }
+      ],
+      "blockPairs": 1,
+      "digs": 2,
+      "aces": 2,
+      "dive": 0,
+      "style": "serve"
+    }
+  ]
+}

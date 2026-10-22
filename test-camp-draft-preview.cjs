@@ -1,0 +1,33 @@
+const assert=require('assert'),fs=require('fs'),path=require('path'),http=require('http');
+const {chromium}=require(path.resolve(path.dirname(process.execPath),'../node_modules/playwright'));
+const server=http.createServer((q,r)=>fs.readFile(path.join(__dirname,decodeURIComponent(new URL(q.url,'http://localhost').pathname)),(e,b)=>{if(e)return r.writeHead(404).end();r.setHeader('Content-Type',q.url.split('?')[0].endsWith('.js')?'text/javascript':q.url.split('?')[0].endsWith('.css')?'text/css':'text/html');r.end(b)}));
+(async()=>{let browser;try{await new Promise(r=>server.listen(0,r));browser=await chromium.launch({channel:'msedge',headless:true});const page=await browser.newPage({viewport:{width:390,height:844},hasTouch:true}),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.addInitScript(()=>localStorage.setItem('idle-spiker-language-v1','tr'));await page.goto('http://localhost:'+server.address().port+'/index.html');
+await page.evaluate(()=>{window.gameResetting=true;const s=BalRules.enter(RoomRules.defaults(),1);s.ap=100000;s.budget=50000;s.instructions=3500;const players=TeamRules.players;for(const p of players.slice(0,4))p.spike=98;CampRules.update(s,players,1);CampRules.update(s,players,8);localStorage.setItem('idle-spiker-rooms-v2',JSON.stringify(s));localStorage.setItem('idle-spiker-women-v1',JSON.stringify(players));localStorage.setItem('idle-spiker-main-menu-v1',JSON.stringify({day:8,clicksToday:0}));const league=LeagueRules.normalize({mode:'bal',startDay:1,results:{}});for(const f of LeagueRules.schedule().filter(f=>f.ours&&f.day<=8))LeagueRules.record(league,f.id,f.home===0?[5,0]:[0,5]);localStorage.setItem('idle-spiker-league-v1',JSON.stringify(league));localStorage.setItem('idle-spiker-camp-tour-v1','done');localStorage.setItem('idle-spiker-onboarding-v1',JSON.stringify(['tap','arrival','blocks-basics','assistant','train','match','quick-upgrade']));});
+await page.reload();await page.locator('#bootScreen').waitFor({state:'detached'});await page.evaluate(()=>{for(const p of TeamRules.players.slice(0,4))p.spike=98;CampSystem.refresh();});await page.locator('#campAlert').click();
+
+await page.locator('[data-camp-player="player-0"] strong').tap();
+await page.locator('[data-camp-player="player-1"] strong').tap();
+await page.locator('#closeCamp').click();
+assert.equal(await page.locator('.camp-alert-slot[data-draft] img').count(),2);
+const balances=await page.evaluate(()=>({ap:RoomSystem.balance(),cash:RoomSystem.cashBalance()}));
+await page.evaluate(()=>{window.campOriginalAP=RoomSystem.balance;window.campOriginalCash=RoomSystem.cashBalance;RoomSystem.balance=()=>0;RoomSystem.cashBalance=()=>0;CampSystem.refreshResources();});
+assert.equal(await page.locator('#campAlert').getAttribute('data-funding'),'waiting');
+assert.equal(await page.locator('.camp-alert-slot[data-state=waiting]').count(),2);
+assert(await page.locator('#campEnroll').isDisabled());
+await page.evaluate(()=>{RoomSystem.balance=()=>10000000;RoomSystem.cashBalance=()=>0;CampSystem.refreshResources();});
+assert.equal(await page.locator('#campAlert').getAttribute('data-funding'),'waiting');
+await page.evaluate(()=>{RoomSystem.cashBalance=()=>10000000;CampSystem.refreshResources();});
+assert.equal(await page.locator('#campAlert').getAttribute('data-funding'),'ready');
+assert.equal(await page.locator('.camp-alert-slot[data-state=ready]').count(),2);
+assert.equal(await page.evaluate(()=>RoomSystem.developmentState().camp.entries.filter(e=>e.status==='running').length),0);
+await page.evaluate(()=>{RoomSystem.balance=window.campOriginalAP;RoomSystem.cashBalance=window.campOriginalCash;CampSystem.refreshResources();});
+assert.equal(await page.evaluate(()=>RoomSystem.balance()),balances.ap);
+assert.equal(await page.evaluate(()=>RoomSystem.cashBalance()),balances.cash);
+for(const width of [320,390]){await page.setViewportSize({width,height:844});await page.locator('#campAlert').scrollIntoViewIfNeeded();assert(await page.locator('#campAlert').evaluate(e=>e.scrollWidth<=e.clientWidth+1));}
+await page.locator('#campAlert').screenshot({path:path.join(process.env.TEMP,'camp-draft-ready.png')});
+await page.locator('#campAlert').click();await page.locator('#campEnroll').click();
+assert.equal(await page.locator('.camp-alert-slot[data-draft]').count(),0);
+assert.equal(await page.locator('.camp-alert-slot.occupied img').count(),2);
+assert.equal(await page.evaluate(()=>RoomSystem.developmentState().camp.entries.filter(e=>e.status==='running').length),2);
+assert.deepEqual(errors,[]);console.log('PASS: selected portraits, both resource shortages, ready state, closed dialog updates, no auto-spending, mobile widths and enrollment.');
+}finally{await browser?.close();server.close()}})().catch(e=>{console.error(e);process.exitCode=1});

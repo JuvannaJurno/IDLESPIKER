@@ -1,0 +1,48 @@
+{
+  "method": "300 seeded national seasons; own scores kept constant; 1,000 Nadia vs Eskisehir fixtures; no forced standings",
+  "rows": [
+    {
+      "team": "Bizim Kulüp",
+      "meanRank": 8,
+      "top3": 0
+    },
+    {
+      "team": "Ankara File",
+      "meanRank": 5.966666666666667,
+      "top3": 0
+    },
+    {
+      "team": "Uludağ Akademi",
+      "meanRank": 1.87,
+      "top3": 300
+    },
+    {
+      "team": "Eskişehir Voleybol",
+      "meanRank": 4.18,
+      "top3": 0
+    },
+    {
+      "team": "İstanbul Voleybol",
+      "meanRank": 6.74,
+      "top3": 0
+    },
+    {
+      "team": "Başkent Akademi",
+      "meanRank": 3.0033333333333334,
+      "top3": 299
+    },
+    {
+      "team": "Antalya Yıldızları",
+      "meanRank": 5.1033333333333335,
+      "top3": 1
+    },
+    {
+      "team": "Karadeniz Gücü",
+      "meanRank": 1.11,
+      "top3": 300
+    }
+  ],
+  "nadiaWins": 946,
+  "libero": 5938,
+  "passes": 11261
+}

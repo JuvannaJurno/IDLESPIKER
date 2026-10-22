@@ -197,3 +197,9 @@ html[data-theme=dark] #transferReplaceScreen,html[data-theme=dark] #transferRepl
 .transfer-catalog-clock{inset:0;z-index:2;clip-path:inset(100% 0 0);transition:clip-path .5s linear}.transfer-catalog-clock>.transfer-mini-card{opacity:1;position:absolute;inset:0}.transfer-catalog-clock>svg,.transfer-catalog-clock>small{display:none}
 
 .transfer-catalog-clock{display:grid;place-items:center}.transfer-catalog-clock>.transfer-mini-card{position:relative;inset:auto}.transfer-entry-icon:before,.transfer-entry-icon:after{opacity:.24}
+
+/* The same ability control stays available during discovery and in the catalog. */
+#scoutDialog .scout-player>.player-skill-strip,#scoutDialog #packCard .player-skill-strip{display:block!important;flex:none;margin:8px 11px;font-size:10px}
+#scoutDialog #packCard .player-skill-strip>summary{padding:6px;background:var(--club-action);border:1px solid var(--club-line)}
+#scoutDialog #packCard .player-card:has(.player-skill-strip[open]) .card-stats{display:none}
+#scoutDialog #packCard .player-skill-info{max-height:195px;overflow:auto;overscroll-behavior:contain}

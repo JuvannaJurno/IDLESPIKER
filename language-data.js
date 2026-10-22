@@ -1,5 +1,7 @@
 /* Presentation translations. Player and club names are intentionally preserved. */
 window.SpikerEnglish = `
+Bu oyuncunun [[Gizli yetenek]] potansiyeli var. Yeteneklerini incelemek için buraya dokun.|This player has [[Hidden talent]] potential. Tap here to inspect their abilities.
+Ek yeteneklerin etkileri burada. Gizli yetenek, üçüncü kamp tamamlanınca (1,5 yıldız) açılır.|Ability effects are shown here. Hidden talent unlocks after the third camp (1.5 stars).
 Kulüp hazırlanıyor…|Getting your club ready…
 Mahalle Spor Kulübü – Yerel Altyapı|Neighborhood Women's League
 MAHALLE SPOR KULÜBÜ – YEREL ALTYAPI|NEIGHBORHOOD WOMEN'S LEAGUE
