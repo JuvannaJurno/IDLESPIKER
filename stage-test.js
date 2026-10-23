@@ -8,7 +8,7 @@ const select=document.getElementById('stageTestSelect'),button=document.getEleme
 select.value=String(LeagueRules.config.division===3?3:LeagueRules.config.bal?2:1);
 const choice=document.createElement('dialog');choice.id='stageTestPosition';choice.innerHTML='<button type="button" class="close-dialog" aria-label="Kapat">×</button><h2>Aşamanın neresine geçelim?</h2><p>Önceki aşamaların blokları tamamlanmış gelir.</p><button type="button" class="team-action" data-position="start">Başından başla · Bloklar boş</button><button type="button" class="team-secondary" data-position="end">Sonuna geç · Bloklar tam</button><small>Sezon ilk günden açılır; bu seçim blok seviyelerini belirler.</small>';document.body.append(choice);choice.querySelector('.close-dialog').onclick=()=>choice.close();button.onclick=()=>choice.showModal();for(const option of choice.querySelectorAll('[data-position]'))option.onclick=()=>{const end=option.dataset.position==='end';choice.close();go(end);};
 async function go(end){
- button.disabled=true;let exitAnimations=[],restoreExit=null;
+ document.getElementById('stageTestError').textContent='';button.disabled=true;let exitAnimations=[],restoreExit=null;
  try{
   const target=Number(select.value);let prologueMarkup=null;if(target===1){const response=await fetch('index.html');if(!response.ok)throw Error('Başlangıç görselleri yüklenemedi');prologueMarkup=new DOMParser().parseFromString(await response.text(),'text/html');}if(![1,2,3].includes(target))throw Error('Geçersiz aşama');
   const profile=target>1?ClubJourney.ensureRandom():ClubJourney.profile();
@@ -20,7 +20,7 @@ async function go(end){
   if(target===3){room.division=3;room.divisionCalendar=2;room.openDepartments=[2,4];room.mediaDepartmentOpen=end;}
   for(const card of RoomRules.catalog){const stage=card.division===3?3:card.bal?2:1;if(stage<target||end&&stage===target)room.floors[card.floor].push(...Array(RoomRules.maxLevel(room,card)).fill(card.id));}
   room.lastSeen=Date.now();
-  const players=TeamRules.players.length?TeamRules.players:TeamRules.generate().map(p=>({...p,appearance:TeamAppearance.generate()}));
+  const players=(TeamRules.players.length?TeamRules.players:TeamRules.generate().map(p=>({...p,appearance:TeamAppearance.generate()}))).map(p=>({...p,art:typeof p.art==='string'&&p.art.startsWith('team-assets/')?p.art:'team-assets/woman-0.svg'}));
   const entrants=target===3?LeagueRules.divisionEntrants().map(t=>({...t,name:t.id===0?profile?.name||LeagueRules.teams[0]:t.name})):LeagueRules.teams.map((name,id)=>({id,name:id===0?profile?.name||name:name}));
   const league={version:3,results:{},...(target>1?{mode:'bal',division:target===3?3:2,startDay:1,run:Date.now(),...(target===3?{entrants,scheduleVersion:2}:{})}:{})};
   const entries={'idle-spiker-rooms-v2':JSON.stringify(room),'idle-spiker-women-v1':JSON.stringify(players),'idle-spiker-main-menu-v1':JSON.stringify({day:1,clicksToday:0}),'idle-spiker-league-v1':JSON.stringify(league),'idle-spiker-match-results':JSON.stringify({version:3})};

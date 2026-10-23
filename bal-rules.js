@@ -5,7 +5,7 @@ const display=v=>Number(v.toFixed(1)).toLocaleString('tr-TR');
 const departments=['Performans Merkezi','Kulüp Yönetimi','Gelir Merkezi','Teknik Ekip','Oyuncu Keşfi'];
 const definitions=[
  ['bal_coach',1,'Yardımcı Antrenör','♟',[.6,1.2,2,3,4],v=>'Saniyede +'+display(v)+' otomatik talimat.',220],
- ['bal_shift',1,'Vardiya Koordinasyonu','◷',[.03,.06,.09,.12,.15],v=>'Çevrimdışı verim +'+display(v*100)+' puan. Vardiya gerekir.',300],
+ ['bal_shift',1,'Vardiya Koordinasyonu','◷',[10,15,20,25,30].map(v=>v/60),v=>'Vardiyayı açar: '+Math.round(v*60)+' dk çevrimdışı çalışma. Bitince 4 saat dinlenir.',300],
  ['bal_plan',1,'Çalışma Planı','↻',[40,90,160,250,360],v=>'Her 10. otomatik talimata +'+display(v)+' AP.',260],
  ['bal_position',0,'Pozisyon Antrenmanı','↗',[12,25,42,65,95],v=>'Ulaşan her talimata +'+display(v)+' AP.',220],
  ['bal_video',0,'Video Destekli Çalışma','▤',[70,160,300,500,800],v=>'Her 5. talimata +'+display(v)+' AP.',300],
@@ -24,7 +24,7 @@ const extendedIds=new Set(['bal_coach','bal_shift','bal_plan','bal_position','ba
 for(const d of definitions)if(d[0]==='bal_sponsor'||d[0]==='bal_fans')d[4]=d[4].map(v=>v*10);
 const successors=[
  ['bal_coach','bal_double','Çift Talimat',[.2,.4,.6,.8,1],v=>'%'+Math.round(v*100)+' ihtimalle mavi talimat: 2 talimat gücü.'],
- ['bal_shift','bal_longshift','Uzun Vardiya',[.1,.2,.3,.4,.5],v=>'Günlük çevrimdışı çalışma hakkına +'+Math.round(v*60)+' dk.'],
+ ['bal_shift','bal_efficiency','Vardiya Verimi',[.03,.06,.09,.12,.15],v=>'Çevrimdışı verim +'+display(v*100)+' puan.'],
  ['bal_plan','bal_hands','Birebir Çalışma',[20,40,60,80,100],v=>'Elle verilen her talimata +'+v+' AP.'],
  ['bal_position','bal_warmstart','Maç Öncesi Isınma',[250,650,1400,2700,5000],v=>'Günün ilk 20 talimatına +'+v+' AP.'],
  ['bal_video','bal_precision','Hedefli Tekrar',[.02,.04,.06,.08,.1],v=>'Kritik AP kazanma şansına +'+Math.round(v*100)+' puan.'],
@@ -42,7 +42,7 @@ const successors=[
 const catalog=definitions.map(([id,floor,name,icon,core,describe,price])=>({id,floor,name,icon,values:[...core,...Array(5).fill(core[4])],describe,price,bal:true,bonus:successors.find(row=>row[0]===id)}));
 
 // Storage keeps ten legacy levels; purchasing uses the stage-specific limit.
-const longBal=new Set(['bal_coach','bal_position','bal_video','bal_sponsor','bal_shop','bal_scout','bal_contacts']);
+const longBal=new Set(['bal_shift','bal_coach','bal_position','bal_video','bal_sponsor','bal_shop','bal_scout','bal_contacts']);
 const professional=[
  ['pro_coach',0,'Profesyonel Antrenör','♟',150,v=>'Her talimata +'+display(v)+' AP.'],
  ['pro_repeat',0,'Gelişim Takibi','↻',.02,v=>'Her 5 ücretli kart yükseltmesinde harcanan AP’nin %'+display(v*100)+' kadarı geri gelir.'],
@@ -74,7 +74,7 @@ for(const [id,floor,name,icon,step,describe] of professional){const bonus=profes
 function maxLevel(s,r){return r.division?r.values.length:!r.bal?r.values.length:Math.max(longBal.has(r.id)?10:5,level(s,r.id));}
 
 function bonusLevel(s,id){const bonus=successors.find(row=>row[1]===id);return bonus?Math.max(0,Math.min(5,level(s,bonus[0])-5)):0;}
-function describePrimary(s,r,n=level(s,r.id)){let v=r.values[Math.max(0,n-1)];if(Clock.isWeekly(s)){if(r.id==='pro_shop')v*=Clock.economyScale(s);if(r.id==='bal_fans')v*=2;if(r.id==='pro_sponsor')return '3 maçta toplam +'+display(v*2)+' bütçe.';}return r.describe(v);}
+function describePrimary(s,r,n=level(s,r.id)){let v=r.values[Math.max(0,n-1)];if(r.id==='bal_shift'&&s.division===3)v*=3;if(Clock.isWeekly(s)){if(r.id==='pro_shop')v*=Clock.economyScale(s);if(r.id==='bal_fans')v*=2;if(r.id==='pro_sponsor')return '3 maçta toplam +'+display(v*2)+' bütçe.';}return r.describe(v);}
 function describeBonus(s,r,n){let v=r.bonus[3][n-6],text;if(Clock.isWeekly(s)){if(['bal_evening','bal_members'].includes(r.bonus[1]))v*=Clock.economyScale(s);if(['bal_matchsponsor','bal_review'].includes(r.bonus[1]))v*=2;}text=r.bonus[4](v);if(Clock.isWeekly(s)&&r.bonus[1]==='bal_warmstart')text=text.replace('ilk 20','ilk '+Clock.morningInstructions(s));return text;}
 function describeBlock(s,r,n=level(s,r.id)){const primary=describePrimary(s,r,n);if(!r.bonus)return primary;return primary+(n>5?' '+r.bonus[2]+': '+describeBonus(s,r,n):'');}
 const departmentPrices={2:0,4:0};
@@ -86,7 +86,7 @@ function upgraded(s,id){if(s.balReadyDay)delete s.balReadyDay[id]}
 function level(s,id){return (s.floors||[]).flat().filter(x=>x===id).length}
 function value(s,id){const bonus=successors.find(row=>row[1]===id);if(bonus){const r=catalog.find(x=>x.id===bonus[0]);return (!r.division||s.division===r.division)&&departmentOpen(s,r.floor)?bonus[3][bonusLevel(s,id)-1]||0:0;}const r=catalog.find(x=>x.id===id);return r&&(!r.division||s.division===r.division)&&departmentOpen(s,r.floor)?r.values[level(s,id)-1]||0:0}
 function enter(raw,day){if(raw.stage==='bal')return JSON.parse(JSON.stringify(raw));const R=root.RoomRules||(typeof require==='function'?require('./room-rules.js'):null),s=R.defaults();s.stage='bal';if(raw.dailyShift)s.dailyShift=JSON.parse(JSON.stringify(raw.dailyShift));s.floors=s.floors.map((_,f)=>(raw.floors?.[f]||[]).filter(id=>R.catalog.some(r=>r.id===id&&!r.bal&&r.floor===f)));s.budget*=10;s.budgetScale=10;s.balVersion=1;s.balStart=0;s.balStartDay=1;return s}
-function requirement(s,r){if(r.division&&s.division!==r.division)return '2. Lig aşamasında açılır';if(r.bal&&s.stage!=='bal')return 'BAL aşamasında açılır';if(s.stage!=='bal')return null;if(r.bal&&!departmentOpen(s,r.floor))return 'Önce '+departments[r.floor]+' aç';if(r.id==='bal_shift'&&!level(s,'offline_time'))return 'Önce Vardiya Planı aç';return null}
+function requirement(s,r){if(r.division&&s.division!==r.division)return '2. Lig aşamasında açılır';if(r.bal&&s.stage!=='bal')return 'BAL aşamasında açılır';if(s.stage!=='bal')return null;if(r.bal&&!departmentOpen(s,r.floor))return 'Önce '+departments[r.floor]+' aç';return null}
 // Early investments offer several routes; later levels remain long-term goals.
 // Cumulative investment follows season income; no calendar or match gates.
 const investmentPrices={bal_sponsor:[400,900,2000,4000,7500,13000,22000,36000,65000,120000],bal_coach:[500,1000,2400,5000,9500,16500,28000,44000,80000,140000]};
@@ -109,7 +109,7 @@ const weeklyProfessionalBonusPrices=Object.freeze({
 });
 const professionalSinglePrices={pro_search:[12000,40000,160000,400000,1120000],pro_negotiator:[12000,50000,200000,520000,1280000]};
 function price(s,r){const n=level(s,r.id);if(n>=maxLevel(s,r))return Infinity;if(r.compressed)return [...weeklyProfessionalEntryPrices,...weeklyProfessionalBonusPrices[r.id]][n];if(r.division&&professionalSinglePrices[r.id])return professionalSinglePrices[r.id][n];if(r.division)return [12000,18000,27000,40000,58000,82000,114000,156000,210000,280000][n];if(!r.bal)return 10*([10,6,9,10,15][n]??Infinity);const base=investmentPrices[r.id]?.[n]??r.price/300*priceSteps[n],lateDiscount=n===9?.9:n===8?.95:1;return Math.round(base*(n>=5?1.4:1)*lateDiscount*(s.division!==3&&n>=5?(balLatePriceScale[r.id]??1.7):1)*(s.division!==3&&r.id==='bal_video'&&n===9?1.7:1)*(s.division===3?1:n>=5?.85:.9)/10)*10;}
-function effects(s,e){if(s.stage!=='bal')return e;return {...e,doubleChance:value(s,'bal_double'),manualBonusAP:value(s,'bal_hands'),offlineHours:e.offlineHours?e.offlineHours+value(s,'bal_longshift'):0,critChance:Math.min(1,e.critChance+value(s,'pro_focus')+value(s,'bal_precision')),critMult:Math.max(e.critMult,value(s,'bal_precision')?2:1),clickAP:e.clickAP*2.5+value(s,'pro_coach')+value(s,'bal_position')+value(s,'bal_hands'),autoAP:e.autoAP*2.5+value(s,'pro_coach')+value(s,'bal_position'),baseAP:e.baseAP*2.5+value(s,'pro_coach')+value(s,'bal_position'),autoRate:(e.autoRate*1.4+(value(s,'bal_coach')+value(s,'pro_coordinator'))*e.workflowRate)*1.4,baseAutoRate:(e.baseAutoRate*1.4+value(s,'bal_coach')+value(s,'pro_coordinator'))*1.4,repeatAP:e.repeatAP*1.25+value(s,'bal_video'),morningAP:e.morningAP*1.25+value(s,'bal_warmstart'),dayAP:e.dayAP*1.25+value(s,'bal_evening'),offlineBonus:e.offlineBonus*1.25+value(s,'bal_recovery')+value(s,'bal_remote'),offlineEfficiency:e.offlineEfficiency+value(s,'bal_shift')};}
+function effects(s,e){if(s.stage!=='bal')return e;return {...e,doubleChance:value(s,'bal_double'),manualBonusAP:value(s,'bal_hands'),offlineHours:value(s,'bal_shift')*(s.division===3?3:1),critChance:Math.min(1,e.critChance+value(s,'pro_focus')+value(s,'bal_precision')),critMult:Math.max(e.critMult,value(s,'bal_precision')?2:1),clickAP:e.clickAP*2.5+value(s,'pro_coach')+value(s,'bal_position')+value(s,'bal_hands'),autoAP:e.autoAP*2.5+value(s,'pro_coach')+value(s,'bal_position'),baseAP:e.baseAP*2.5+value(s,'pro_coach')+value(s,'bal_position'),autoRate:(e.autoRate*1.4+(value(s,'bal_coach')+value(s,'pro_coordinator'))*e.workflowRate)*1.4,baseAutoRate:(e.baseAutoRate*1.4+value(s,'bal_coach')+value(s,'pro_coordinator'))*1.4,repeatAP:e.repeatAP*1.25+value(s,'bal_video'),morningAP:e.morningAP*1.25+value(s,'bal_warmstart'),dayAP:e.dayAP*1.25+value(s,'bal_evening'),offlineBonus:e.offlineBonus*1.25+value(s,'bal_recovery')+value(s,'bal_remote'),offlineEfficiency:e.offlineEfficiency+value(s,'bal_efficiency')};}
 function cash(s){if(!departmentOpen(s,2))return 0;return ((20+value(s,'bal_sponsor'))*(1+value(s,'bal_shop'))+value(s,'bal_orders'))}
 // Merge old separate bonuses into levels 6–10, without charging again.
 function migrateLevels(s,raw){

@@ -59,7 +59,7 @@ for(const c of s.scouting.catalog){const b=dialog.querySelector('[data-candidate
 const shown=pack?.candidates[pack.index-1],live=shown&&s.scouting.catalog.find(c=>c.id===shown.id);if(live&&$('packCard').firstElementChild)markUpgrade($('packCard').firstElementChild,live.player,live.hired);filterCatalog();refreshHome();
 }
 let tutorialPackOpened=false;let tutorialActive=false,tutorialRequested=false;window.addEventListener('spiker-guide-paused',e=>{if(e.detail.id==='transfer'){tutorialActive=false;tutorialRequested=false;}});
-function startTutorial(){tutorialRequested=true;if(!ScoutRules.available(RoomSystem.scoutView())||RoomSystem.scoutView().scouting.tutorialSeen||tutorialActive||GuidedTutorial.active)return;
+function startTutorial(){if(GuidedTutorial.completed('transfer')){tutorialRequested=false;RoomSystem.scoutTutorialSeen();return;}tutorialRequested=true;if(!ScoutRules.available(RoomSystem.scoutView())||RoomSystem.scoutView().scouting.tutorialSeen||tutorialActive||GuidedTutorial.active)return;
 GuidedTutorial.resume('transfer');if(ScoutRules.firstTransfer(RoomSystem.scoutView())){if(!RoomSystem.scoutReport(true))return;}else if(!RoomSystem.scoutView().scouting.catalog.length&&!RoomSystem.scoutReport())return;
 tutorialRequested=false;tutorialActive=true;tutorialPackOpened=false;let cardReadyAt=0;
 const current=()=>{if(!dialog.open)open();dialog.classList.remove('is-home');if(pack)finishPack();};
@@ -72,7 +72,7 @@ GuidedTutorial.start([
 {id:'scout-upgrade',enter:()=>{ensureFirst();cardReadyAt=performance.now()+1800;$('packCard').scrollIntoView({behavior:'instant',block:'center'});},ready:()=>performance.now()>=cardReadyAt,skip:()=>!$('packCard').querySelector('.transfer-upgrade-marker'),target:()=>pack?$('packCard').querySelector('.transfer-upgrade-marker'):dialog.querySelector('.valuable-candidate .transfer-upgrade-marker'),text:'Bu işaret, aynı pozisyondaki oyuncundan daha yüksek OVR anlamına gelir.'},
 {id:'scout-hidden-skill',enter:ensureFirst,skip:()=>!$('packCard').querySelector('.player-skill-strip'),target:()=>$('packCard').querySelector('.player-skill-strip summary'),click:'#packCard .player-skill-strip summary',done:()=>!!$('packCard').querySelector('.player-skill-strip[open]'),text:'Bu oyuncunun [[Gizli yetenek]] potansiyeli var. Yeteneklerini incelemek için buraya dokun.'},
 {id:'scout-skill-details',enter:()=>{const skills=$('packCard').querySelector('.player-skill-strip');if(skills)skills.open=true;},skip:()=>!$('packCard').querySelector('.player-skill-info'),target:()=>$('packCard').querySelector('.player-skill-info'),text:'Ek yeteneklerin etkileri burada. Gizli yetenek, üçüncü kamp tamamlanınca (1,5 yıldız) açılır.'},
-],()=>{tutorialActive=false;RoomSystem.scoutTutorialSeen()},'transfer',{restart:true});}
+],()=>{tutorialActive=false;RoomSystem.scoutTutorialSeen()},'transfer');}
 
 setInterval(()=>{if(tutorialRequested&&!tutorialActive&&!GuidedTutorial.active&&!document.querySelector('dialog[open]')&&!document.querySelector('.dashboard').hidden&&!RoomSystem.scoutView().scouting.tutorialSeen)startTutorial();},300);
 function reveal(id){

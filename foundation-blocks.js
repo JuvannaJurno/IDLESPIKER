@@ -27,7 +27,7 @@ function update(state){
  }
 }
 function create(floor,perform,state){
- const rooms=RoomRules.catalog.filter(r=>r.floor===floor&&(!r.bal||state?.division===3&&!r.division));if(!rooms.length)return null;
+ const rooms=RoomRules.catalog.filter(r=>r.floor===floor&&r.id!=='offline_time'&&(!r.bal||state?.division===3&&!r.division));if(!rooms.length)return null;
  const group=document.createElement('section');group.className='foundation-block inherited-block-group';group.dataset.foundation=floor;group.style.setProperty('--stored-count',rooms.length);group.setAttribute('aria-label','Önceki aşamadan gelen bloklar');
  for(const r of rooms){const card=document.createElement('button');card.type='button';card.className='room-tile purchased-room upgrade-room room-'+r.id;card.dataset.id=r.id;const icon=document.createElement('span'),title=document.createElement('strong'),description=document.createElement('small'),badge=document.createElement('span');icon.className='slot-icon';icon.textContent=r.icon;title.textContent=r.name;badge.className='room-active';card.append(icon,title,description,badge);card.onclick=()=>{if(perform(r)){window.GameAudio?.uiClick?.();update(RoomSystem.snapshot());}};group.append(card);}
  return group;

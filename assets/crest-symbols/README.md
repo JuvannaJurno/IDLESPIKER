@@ -19,6 +19,11 @@ Dosya adları küçük harfli ve aşağıdaki gibi olmalı:
 | Yaprak | leaf.png |
 | Alev / Ateş | flame.png |
 | File | net.png |
+| Kedi | cat.png |
+| Geyik | deer.png |
+| Kartal | eagle.png |
+| Baykuş | owl.png |
+| Kurt | wolf.png |
 
 Yalnızca değiştirmek istediklerini ekle. Eksik veya okunamayan PNG yerine mevcut sembol gösterilir.
 Ekledikten sonra oyunu yenile. İnternette kullanmak için PNG dosyalarını da siteye yükle.

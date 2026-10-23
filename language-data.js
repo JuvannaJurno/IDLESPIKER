@@ -974,3 +974,5 @@ window.SpikerEnglish.push(...[["Servis baskısı","Serve pressure"],["Rakibin g�
 window.SpikerEnglishTemplates.push(['{s} rövanş için servisini geliştirdi.','{s} improved her serve for the rematch.'],['{s} rövanş için paslarını geliştirdi.','{s} improved her setting for the rematch.'],['{s} rövanş için bloğunu geliştirdi.','{s} improved her block for the rematch.'],['{s} rövanş için manşetini geliştirdi.','{s} improved her reception for the rematch.']);
 
 window.SpikerEnglish.push(['Alttan Servis','Underhand Serve'],['Sky Ball Servisi','Sky Ball Serve']);
+window.SpikerEnglish.push(['Vardiya Verimi','Shift Efficiency'],['Vardiya Bölgesel Lig’de açılır.','Shifts unlock in the Regional League.'],['Vardiya Koordinasyonu ile açılır','Unlocked through Shift Coordination'],['Önce Vardiya Koordinasyonu kur','Build Shift Coordination first']);
+window.SpikerEnglishTemplates.push(['Vardiyayı açar: {n} dk çevrimdışı çalışma. Bitince 4 saat dinlenir.','Unlocks shifts: {n} minutes of offline work. Rests for 4 hours after running out.'],['Çevrimdışı verim +{n} puan.','Offline efficiency +{n} points.']);
