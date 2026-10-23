@@ -1,13 +1,13 @@
 (function(root){'use strict';
 const milestones=[
 {at:250,title:'İlk topluluğumuz',reward:'Başarım + bütçe desteği',kind:'cash',factor:1,icon:'✦'},
-{at:500,title:'İlk izimiz',reward:'Bronz profil çerçevesi + Tribün ritmi müziği',kind:'bronze',icon:'◈'},
-{at:1000,title:'Birlikte büyüyoruz',reward:'Sponsor anlaşması + bütçe desteği',kind:'cash',factor:3,icon:'▣'},
+{at:500,title:'İlk izimiz',reward:'Bronz profil çerçevesi',kind:'bronze',icon:'◈'},
+{at:1000,title:'Birlikte büyüyoruz',reward:'Thunder and Blazes Entry March of the Gladiators + bütçe desteği',kind:'cash',factor:3,icon:'▣'},
 {at:2500,title:'Yeni bir forma',reward:'Bir transferde %10 indirim',kind:'transfer',icon:'↗'},
-{at:5000,title:'Tribündeki sesimiz',reward:'Gümüş çerçeve + Işıklar arka planı + Işıklar altında müziği',kind:'silver',icon:'◈'},
+{at:5000,title:'Tribündeki sesimiz',reward:"Beethoven's Symphony No. 5 in C minor, Op. 67 + Gümüş çerçeve + Işıklar arka planı",kind:'silver',icon:'◈'},
 {at:10000,title:'Daha güçlü dön',reward:'Bir kampın başlangıç bütçesinde %25 indirim',kind:'camp',icon:'⚑'},
 {at:15000,title:'Büyük destek',reward:'Sponsor anlaşması + büyük bütçe desteği',kind:'cash',factor:8,icon:'▣'},
-{at:25000,title:'Aynı renklerin peşinde',reward:'Altın çerçeve + özel taraftar paylaşımı + Zafer sesi müziği',kind:'gold',icon:'★'},
+{at:25000,title:'Aynı renklerin peşinde',reward:'Altın çerçeve + özel taraftar paylaşımı',kind:'gold',icon:'★'},
 {at:40000,title:'Sesimiz arenada',reward:'Arena sponsoru kutlaması + Arena teması',kind:'arena',icon:'✧'}];
 function normalize(raw){const ids=milestones.map(m=>m.at),valid=xs=>Array.isArray(xs)?[...new Set(xs.filter(x=>ids.includes(x)))]:[];return {claimed:valid(raw?.claimed),reached:Object.fromEntries(Object.entries(raw?.reached||{}).filter(([id,v])=>ids.includes(Number(id))&&Number.isSafeInteger(v)&&v>=0)),transferUsed:!!raw?.transferUsed,campUsed:!!raw?.campUsed};}
 function state(s){if(!s.socialJourney||!Array.isArray(s.socialJourney.claimed)||!s.socialJourney.reached)s.socialJourney=normalize(s.socialJourney);return s.socialJourney;}

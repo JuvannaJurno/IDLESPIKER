@@ -1,0 +1,1593 @@
+{
+  "method": "Economy simulation from defaults through promotion; active 30-second decisions, idle 5-minute returns, offline 15-minute returns. Includes finite explicit video queues and 120-second match viewing with actual overtime rules. No paid gains, transfers, or artificial calendar locks. Purchases reserve 30% of cash, which can defer upgrades an actual player could buy earlier. Promotion assumed; match results seeded at 50%. This is a pacing estimate, not a promise for every save.",
+  "before": [
+    {
+      "profile": "active",
+      "seed": 41,
+      "completed": true,
+      "rounds": 14,
+      "cards": 184,
+      "longestActionGap": 211,
+      "remainingBlocks": 0,
+      "finalBudget": 28285413.5,
+      "byMatch": [
+        {
+          "round": 1,
+          "maxed": 0,
+          "bonusUnlocked": 4,
+          "blockUpgrades": 65
+        },
+        {
+          "round": 2,
+          "maxed": 0,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 71
+        },
+        {
+          "round": 3,
+          "maxed": 0,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 77
+        },
+        {
+          "round": 4,
+          "maxed": 0,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 83
+        },
+        {
+          "round": 5,
+          "maxed": 0,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 87
+        },
+        {
+          "round": 6,
+          "maxed": 0,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 92
+        },
+        {
+          "round": 7,
+          "maxed": 0,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 97
+        },
+        {
+          "round": 8,
+          "maxed": 1,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 101
+        },
+        {
+          "round": 9,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 105
+        },
+        {
+          "round": 10,
+          "maxed": 9,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 110
+        },
+        {
+          "round": 11,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 111
+        },
+        {
+          "round": 12,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 111
+        },
+        {
+          "round": 13,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 111
+        },
+        {
+          "round": 14,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 111
+        }
+      ],
+      "lateUpgradeFloors": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "profile": "idle",
+      "seed": 41,
+      "completed": true,
+      "rounds": 14,
+      "cards": 197,
+      "longestActionGap": 300,
+      "remainingBlocks": 0,
+      "finalBudget": 24904672.2,
+      "byMatch": [
+        {
+          "round": 1,
+          "maxed": 0,
+          "bonusUnlocked": 0,
+          "blockUpgrades": 58
+        },
+        {
+          "round": 2,
+          "maxed": 0,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 71
+        },
+        {
+          "round": 3,
+          "maxed": 0,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 78
+        },
+        {
+          "round": 4,
+          "maxed": 0,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 83
+        },
+        {
+          "round": 5,
+          "maxed": 0,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 88
+        },
+        {
+          "round": 6,
+          "maxed": 0,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 93
+        },
+        {
+          "round": 7,
+          "maxed": 0,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 97
+        },
+        {
+          "round": 8,
+          "maxed": 1,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 101
+        },
+        {
+          "round": 9,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 106
+        },
+        {
+          "round": 10,
+          "maxed": 8,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 110
+        },
+        {
+          "round": 11,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 112
+        },
+        {
+          "round": 12,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 112
+        },
+        {
+          "round": 13,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 112
+        },
+        {
+          "round": 14,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 112
+        }
+      ],
+      "lateUpgradeFloors": [
+        1,
+        2,
+        0,
+        3
+      ]
+    },
+    {
+      "profile": "offline",
+      "seed": 41,
+      "completed": true,
+      "rounds": 14,
+      "cards": 232,
+      "longestActionGap": 14400,
+      "remainingBlocks": 0,
+      "finalBudget": 107114104.4,
+      "byMatch": [
+        {
+          "round": 1,
+          "maxed": 0,
+          "bonusUnlocked": 0,
+          "blockUpgrades": 48
+        },
+        {
+          "round": 2,
+          "maxed": 0,
+          "bonusUnlocked": 0,
+          "blockUpgrades": 58
+        },
+        {
+          "round": 3,
+          "maxed": 0,
+          "bonusUnlocked": 5,
+          "blockUpgrades": 68
+        },
+        {
+          "round": 4,
+          "maxed": 0,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 90
+        },
+        {
+          "round": 5,
+          "maxed": 0,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 98
+        },
+        {
+          "round": 6,
+          "maxed": 3,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 106
+        },
+        {
+          "round": 7,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        },
+        {
+          "round": 8,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        },
+        {
+          "round": 9,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        },
+        {
+          "round": 10,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        },
+        {
+          "round": 11,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        },
+        {
+          "round": 12,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        },
+        {
+          "round": 13,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        },
+        {
+          "round": 14,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        }
+      ],
+      "lateUpgradeFloors": []
+    }
+  ],
+  "after": [
+    {
+      "profile": "active",
+      "seed": 41,
+      "completed": true,
+      "rounds": 14,
+      "mesai": {
+        "seconds": 2002,
+        "ap": 215099509.60574955,
+        "cash": 4479552
+      },
+      "cards": 183,
+      "longestActionGap": 240,
+      "remainingBlocks": 2,
+      "finalBudget": 3763849.5,
+      "byMatch": [
+        {
+          "round": 1,
+          "maxed": 0,
+          "bonusUnlocked": 3,
+          "blockUpgrades": 60
+        },
+        {
+          "round": 2,
+          "maxed": 0,
+          "bonusUnlocked": 4,
+          "blockUpgrades": 66
+        },
+        {
+          "round": 3,
+          "maxed": 0,
+          "bonusUnlocked": 6,
+          "blockUpgrades": 71
+        },
+        {
+          "round": 4,
+          "maxed": 0,
+          "bonusUnlocked": 7,
+          "blockUpgrades": 76
+        },
+        {
+          "round": 5,
+          "maxed": 0,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 79
+        },
+        {
+          "round": 6,
+          "maxed": 1,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 83
+        },
+        {
+          "round": 7,
+          "maxed": 2,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 87
+        },
+        {
+          "round": 8,
+          "maxed": 3,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 91
+        },
+        {
+          "round": 9,
+          "maxed": 3,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 94
+        },
+        {
+          "round": 10,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 98
+        },
+        {
+          "round": 11,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 100
+        },
+        {
+          "round": 12,
+          "maxed": 5,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 103
+        },
+        {
+          "round": 13,
+          "maxed": 7,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 106
+        },
+        {
+          "round": 14,
+          "maxed": 8,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 108
+        }
+      ],
+      "lateUpgradeFloors": [
+        0,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "profile": "active",
+      "seed": 73,
+      "completed": true,
+      "rounds": 14,
+      "mesai": {
+        "seconds": 2002,
+        "ap": 215099509.60574955,
+        "cash": 4479552
+      },
+      "cards": 184,
+      "longestActionGap": 211,
+      "remainingBlocks": 2,
+      "finalBudget": 3707566.5,
+      "byMatch": [
+        {
+          "round": 1,
+          "maxed": 0,
+          "bonusUnlocked": 3,
+          "blockUpgrades": 60
+        },
+        {
+          "round": 2,
+          "maxed": 0,
+          "bonusUnlocked": 4,
+          "blockUpgrades": 66
+        },
+        {
+          "round": 3,
+          "maxed": 0,
+          "bonusUnlocked": 6,
+          "blockUpgrades": 71
+        },
+        {
+          "round": 4,
+          "maxed": 0,
+          "bonusUnlocked": 7,
+          "blockUpgrades": 76
+        },
+        {
+          "round": 5,
+          "maxed": 0,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 79
+        },
+        {
+          "round": 6,
+          "maxed": 1,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 83
+        },
+        {
+          "round": 7,
+          "maxed": 2,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 87
+        },
+        {
+          "round": 8,
+          "maxed": 3,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 91
+        },
+        {
+          "round": 9,
+          "maxed": 3,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 94
+        },
+        {
+          "round": 10,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 98
+        },
+        {
+          "round": 11,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 100
+        },
+        {
+          "round": 12,
+          "maxed": 5,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 103
+        },
+        {
+          "round": 13,
+          "maxed": 7,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 106
+        },
+        {
+          "round": 14,
+          "maxed": 8,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 108
+        }
+      ],
+      "lateUpgradeFloors": [
+        2,
+        0,
+        3,
+        1
+      ]
+    },
+    {
+      "profile": "active",
+      "seed": 109,
+      "completed": true,
+      "rounds": 14,
+      "mesai": {
+        "seconds": 2002,
+        "ap": 215099509.60574955,
+        "cash": 4479552
+      },
+      "cards": 184,
+      "longestActionGap": 181,
+      "remainingBlocks": 2,
+      "finalBudget": 3530957.5,
+      "byMatch": [
+        {
+          "round": 1,
+          "maxed": 0,
+          "bonusUnlocked": 3,
+          "blockUpgrades": 60
+        },
+        {
+          "round": 2,
+          "maxed": 0,
+          "bonusUnlocked": 4,
+          "blockUpgrades": 66
+        },
+        {
+          "round": 3,
+          "maxed": 0,
+          "bonusUnlocked": 6,
+          "blockUpgrades": 71
+        },
+        {
+          "round": 4,
+          "maxed": 0,
+          "bonusUnlocked": 7,
+          "blockUpgrades": 76
+        },
+        {
+          "round": 5,
+          "maxed": 0,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 79
+        },
+        {
+          "round": 6,
+          "maxed": 1,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 83
+        },
+        {
+          "round": 7,
+          "maxed": 2,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 87
+        },
+        {
+          "round": 8,
+          "maxed": 3,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 91
+        },
+        {
+          "round": 9,
+          "maxed": 3,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 94
+        },
+        {
+          "round": 10,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 98
+        },
+        {
+          "round": 11,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 100
+        },
+        {
+          "round": 12,
+          "maxed": 5,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 103
+        },
+        {
+          "round": 13,
+          "maxed": 7,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 106
+        },
+        {
+          "round": 14,
+          "maxed": 8,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 108
+        }
+      ],
+      "lateUpgradeFloors": [
+        2,
+        0,
+        3,
+        1
+      ]
+    },
+    {
+      "profile": "idle",
+      "seed": 41,
+      "completed": true,
+      "rounds": 14,
+      "mesai": {
+        "seconds": 4033,
+        "ap": 428274454.65476596,
+        "cash": 8937165.6
+      },
+      "cards": 199,
+      "longestActionGap": 301,
+      "remainingBlocks": 2,
+      "finalBudget": 2498939.5999999996,
+      "byMatch": [
+        {
+          "round": 1,
+          "maxed": 0,
+          "bonusUnlocked": 0,
+          "blockUpgrades": 57
+        },
+        {
+          "round": 2,
+          "maxed": 0,
+          "bonusUnlocked": 3,
+          "blockUpgrades": 66
+        },
+        {
+          "round": 3,
+          "maxed": 0,
+          "bonusUnlocked": 6,
+          "blockUpgrades": 72
+        },
+        {
+          "round": 4,
+          "maxed": 0,
+          "bonusUnlocked": 7,
+          "blockUpgrades": 77
+        },
+        {
+          "round": 5,
+          "maxed": 0,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 81
+        },
+        {
+          "round": 6,
+          "maxed": 1,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 85
+        },
+        {
+          "round": 7,
+          "maxed": 2,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 89
+        },
+        {
+          "round": 8,
+          "maxed": 3,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 92
+        },
+        {
+          "round": 9,
+          "maxed": 3,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 96
+        },
+        {
+          "round": 10,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 99
+        },
+        {
+          "round": 11,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 102
+        },
+        {
+          "round": 12,
+          "maxed": 6,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 105
+        },
+        {
+          "round": 13,
+          "maxed": 7,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 108
+        },
+        {
+          "round": 14,
+          "maxed": 8,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 110
+        }
+      ],
+      "lateUpgradeFloors": [
+        2,
+        0,
+        3,
+        1
+      ]
+    },
+    {
+      "profile": "idle",
+      "seed": 73,
+      "completed": true,
+      "rounds": 14,
+      "mesai": {
+        "seconds": 4033,
+        "ap": 428274454.65476596,
+        "cash": 8937165.6
+      },
+      "cards": 198,
+      "longestActionGap": 300,
+      "remainingBlocks": 2,
+      "finalBudget": 2519739.5999999996,
+      "byMatch": [
+        {
+          "round": 1,
+          "maxed": 0,
+          "bonusUnlocked": 0,
+          "blockUpgrades": 57
+        },
+        {
+          "round": 2,
+          "maxed": 0,
+          "bonusUnlocked": 3,
+          "blockUpgrades": 66
+        },
+        {
+          "round": 3,
+          "maxed": 0,
+          "bonusUnlocked": 6,
+          "blockUpgrades": 72
+        },
+        {
+          "round": 4,
+          "maxed": 0,
+          "bonusUnlocked": 7,
+          "blockUpgrades": 77
+        },
+        {
+          "round": 5,
+          "maxed": 0,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 81
+        },
+        {
+          "round": 6,
+          "maxed": 1,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 85
+        },
+        {
+          "round": 7,
+          "maxed": 2,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 89
+        },
+        {
+          "round": 8,
+          "maxed": 3,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 92
+        },
+        {
+          "round": 9,
+          "maxed": 3,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 96
+        },
+        {
+          "round": 10,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 99
+        },
+        {
+          "round": 11,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 102
+        },
+        {
+          "round": 12,
+          "maxed": 6,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 105
+        },
+        {
+          "round": 13,
+          "maxed": 7,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 108
+        },
+        {
+          "round": 14,
+          "maxed": 8,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 110
+        }
+      ],
+      "lateUpgradeFloors": [
+        2,
+        0,
+        3,
+        1
+      ]
+    },
+    {
+      "profile": "idle",
+      "seed": 109,
+      "completed": true,
+      "rounds": 14,
+      "mesai": {
+        "seconds": 4033,
+        "ap": 428387672.47247696,
+        "cash": 8937165.6
+      },
+      "cards": 196,
+      "longestActionGap": 300,
+      "remainingBlocks": 2,
+      "finalBudget": 2572739.5999999996,
+      "byMatch": [
+        {
+          "round": 1,
+          "maxed": 0,
+          "bonusUnlocked": 0,
+          "blockUpgrades": 57
+        },
+        {
+          "round": 2,
+          "maxed": 0,
+          "bonusUnlocked": 3,
+          "blockUpgrades": 66
+        },
+        {
+          "round": 3,
+          "maxed": 0,
+          "bonusUnlocked": 6,
+          "blockUpgrades": 72
+        },
+        {
+          "round": 4,
+          "maxed": 0,
+          "bonusUnlocked": 7,
+          "blockUpgrades": 77
+        },
+        {
+          "round": 5,
+          "maxed": 0,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 82
+        },
+        {
+          "round": 6,
+          "maxed": 2,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 86
+        },
+        {
+          "round": 7,
+          "maxed": 2,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 89
+        },
+        {
+          "round": 8,
+          "maxed": 3,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 93
+        },
+        {
+          "round": 9,
+          "maxed": 3,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 96
+        },
+        {
+          "round": 10,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 99
+        },
+        {
+          "round": 11,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 102
+        },
+        {
+          "round": 12,
+          "maxed": 6,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 105
+        },
+        {
+          "round": 13,
+          "maxed": 7,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 108
+        },
+        {
+          "round": 14,
+          "maxed": 8,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 110
+        }
+      ],
+      "lateUpgradeFloors": [
+        2,
+        0,
+        3,
+        1
+      ]
+    },
+    {
+      "profile": "offline",
+      "seed": 41,
+      "completed": true,
+      "rounds": 14,
+      "mesai": {
+        "seconds": 1440,
+        "ap": 148572308.18053126,
+        "cash": 3100838.4
+      },
+      "cards": 234,
+      "longestActionGap": 8100,
+      "remainingBlocks": 0,
+      "finalBudget": 74657532.6,
+      "byMatch": [
+        {
+          "round": 1,
+          "maxed": 0,
+          "bonusUnlocked": 0,
+          "blockUpgrades": 44
+        },
+        {
+          "round": 2,
+          "maxed": 0,
+          "bonusUnlocked": 0,
+          "blockUpgrades": 54
+        },
+        {
+          "round": 3,
+          "maxed": 0,
+          "bonusUnlocked": 3,
+          "blockUpgrades": 64
+        },
+        {
+          "round": 4,
+          "maxed": 0,
+          "bonusUnlocked": 7,
+          "blockUpgrades": 79
+        },
+        {
+          "round": 5,
+          "maxed": 2,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 87
+        },
+        {
+          "round": 6,
+          "maxed": 3,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 95
+        },
+        {
+          "round": 7,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 101
+        },
+        {
+          "round": 8,
+          "maxed": 6,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 106
+        },
+        {
+          "round": 9,
+          "maxed": 9,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 112
+        },
+        {
+          "round": 10,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        },
+        {
+          "round": 11,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        },
+        {
+          "round": 12,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        },
+        {
+          "round": 13,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        },
+        {
+          "round": 14,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        }
+      ],
+      "lateUpgradeFloors": [
+        2
+      ]
+    },
+    {
+      "profile": "offline",
+      "seed": 73,
+      "completed": true,
+      "rounds": 14,
+      "mesai": {
+        "seconds": 1440,
+        "ap": 148572308.18053126,
+        "cash": 3100838.4
+      },
+      "cards": 229,
+      "longestActionGap": 9000,
+      "remainingBlocks": 0,
+      "finalBudget": 74682292.6,
+      "byMatch": [
+        {
+          "round": 1,
+          "maxed": 0,
+          "bonusUnlocked": 0,
+          "blockUpgrades": 44
+        },
+        {
+          "round": 2,
+          "maxed": 0,
+          "bonusUnlocked": 0,
+          "blockUpgrades": 54
+        },
+        {
+          "round": 3,
+          "maxed": 0,
+          "bonusUnlocked": 3,
+          "blockUpgrades": 64
+        },
+        {
+          "round": 4,
+          "maxed": 0,
+          "bonusUnlocked": 7,
+          "blockUpgrades": 79
+        },
+        {
+          "round": 5,
+          "maxed": 2,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 87
+        },
+        {
+          "round": 6,
+          "maxed": 3,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 95
+        },
+        {
+          "round": 7,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 101
+        },
+        {
+          "round": 8,
+          "maxed": 6,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 106
+        },
+        {
+          "round": 9,
+          "maxed": 9,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 112
+        },
+        {
+          "round": 10,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        },
+        {
+          "round": 11,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        },
+        {
+          "round": 12,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        },
+        {
+          "round": 13,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        },
+        {
+          "round": 14,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        }
+      ],
+      "lateUpgradeFloors": [
+        2
+      ]
+    },
+    {
+      "profile": "offline",
+      "seed": 109,
+      "completed": true,
+      "rounds": 14,
+      "mesai": {
+        "seconds": 1440,
+        "ap": 148572308.18053126,
+        "cash": 3100838.4
+      },
+      "cards": 233,
+      "longestActionGap": 14400,
+      "remainingBlocks": 0,
+      "finalBudget": 68819890.6,
+      "byMatch": [
+        {
+          "round": 1,
+          "maxed": 0,
+          "bonusUnlocked": 0,
+          "blockUpgrades": 44
+        },
+        {
+          "round": 2,
+          "maxed": 0,
+          "bonusUnlocked": 0,
+          "blockUpgrades": 54
+        },
+        {
+          "round": 3,
+          "maxed": 0,
+          "bonusUnlocked": 3,
+          "blockUpgrades": 64
+        },
+        {
+          "round": 4,
+          "maxed": 0,
+          "bonusUnlocked": 7,
+          "blockUpgrades": 80
+        },
+        {
+          "round": 5,
+          "maxed": 2,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 88
+        },
+        {
+          "round": 6,
+          "maxed": 3,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 95
+        },
+        {
+          "round": 7,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 101
+        },
+        {
+          "round": 8,
+          "maxed": 6,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 106
+        },
+        {
+          "round": 9,
+          "maxed": 8,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 111
+        },
+        {
+          "round": 10,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        },
+        {
+          "round": 11,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        },
+        {
+          "round": 12,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        },
+        {
+          "round": 13,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        },
+        {
+          "round": 14,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 113
+        }
+      ],
+      "lateUpgradeFloors": [
+        3,
+        2
+      ]
+    }
+  ],
+  "legacy28Before": [
+    {
+      "round": 1,
+      "max": 0,
+      "bonuses": 0
+    },
+    {
+      "round": 2,
+      "max": 0,
+      "bonuses": 0
+    },
+    {
+      "round": 3,
+      "max": 0,
+      "bonuses": 0
+    },
+    {
+      "round": 4,
+      "max": 0,
+      "bonuses": 1
+    },
+    {
+      "round": 5,
+      "max": 0,
+      "bonuses": 10
+    },
+    {
+      "round": 6,
+      "max": 0,
+      "bonuses": 10
+    },
+    {
+      "round": 7,
+      "max": 0,
+      "bonuses": 10
+    },
+    {
+      "round": 8,
+      "max": 0,
+      "bonuses": 10
+    },
+    {
+      "round": 9,
+      "max": 7,
+      "bonuses": 10
+    },
+    {
+      "round": 10,
+      "max": 10,
+      "bonuses": 10
+    },
+    {
+      "round": 11,
+      "max": 10,
+      "bonuses": 10
+    },
+    {
+      "round": 12,
+      "max": 10,
+      "bonuses": 10
+    },
+    {
+      "round": 13,
+      "max": 10,
+      "bonuses": 10
+    },
+    {
+      "round": 14,
+      "max": 10,
+      "bonuses": 10
+    },
+    {
+      "round": 15,
+      "max": 10,
+      "bonuses": 10
+    },
+    {
+      "round": 16,
+      "max": 10,
+      "bonuses": 10
+    },
+    {
+      "round": 17,
+      "max": 10,
+      "bonuses": 10
+    },
+    {
+      "round": 18,
+      "max": 10,
+      "bonuses": 10
+    },
+    {
+      "round": 19,
+      "max": 10,
+      "bonuses": 10
+    },
+    {
+      "round": 20,
+      "max": 10,
+      "bonuses": 10
+    },
+    {
+      "round": 21,
+      "max": 10,
+      "bonuses": 10
+    },
+    {
+      "round": 22,
+      "max": 10,
+      "bonuses": 10
+    },
+    {
+      "round": 23,
+      "max": 10,
+      "bonuses": 10
+    },
+    {
+      "round": 24,
+      "max": 10,
+      "bonuses": 10
+    },
+    {
+      "round": 25,
+      "max": 10,
+      "bonuses": 10
+    },
+    {
+      "round": 26,
+      "max": 10,
+      "bonuses": 10
+    },
+    {
+      "round": 27,
+      "max": 10,
+      "bonuses": 10
+    },
+    {
+      "round": 28,
+      "max": 10,
+      "bonuses": 10
+    }
+  ],
+  "legacy28After": [
+    {
+      "profile": "idle",
+      "seed": 41,
+      "completed": true,
+      "rounds": 28,
+      "cards": 201,
+      "longestActionGap": 300,
+      "remainingBlocks": 0,
+      "finalBudget": 2904433.799999997,
+      "byMatch": [
+        {
+          "round": 1,
+          "maxed": 0,
+          "bonusUnlocked": 0,
+          "blockUpgrades": 13
+        },
+        {
+          "round": 2,
+          "maxed": 0,
+          "bonusUnlocked": 0,
+          "blockUpgrades": 29
+        },
+        {
+          "round": 3,
+          "maxed": 0,
+          "bonusUnlocked": 0,
+          "blockUpgrades": 44
+        },
+        {
+          "round": 4,
+          "maxed": 0,
+          "bonusUnlocked": 0,
+          "blockUpgrades": 58
+        },
+        {
+          "round": 5,
+          "maxed": 0,
+          "bonusUnlocked": 3,
+          "blockUpgrades": 64
+        },
+        {
+          "round": 6,
+          "maxed": 0,
+          "bonusUnlocked": 4,
+          "blockUpgrades": 68
+        },
+        {
+          "round": 7,
+          "maxed": 0,
+          "bonusUnlocked": 6,
+          "blockUpgrades": 73
+        },
+        {
+          "round": 8,
+          "maxed": 0,
+          "bonusUnlocked": 7,
+          "blockUpgrades": 77
+        },
+        {
+          "round": 9,
+          "maxed": 0,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 80
+        },
+        {
+          "round": 10,
+          "maxed": 1,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 83
+        },
+        {
+          "round": 11,
+          "maxed": 2,
+          "bonusUnlocked": 8,
+          "blockUpgrades": 86
+        },
+        {
+          "round": 12,
+          "maxed": 2,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 89
+        },
+        {
+          "round": 13,
+          "maxed": 3,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 92
+        },
+        {
+          "round": 14,
+          "maxed": 3,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 94
+        },
+        {
+          "round": 15,
+          "maxed": 3,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 96
+        },
+        {
+          "round": 16,
+          "maxed": 4,
+          "bonusUnlocked": 9,
+          "blockUpgrades": 98
+        },
+        {
+          "round": 17,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 99
+        },
+        {
+          "round": 18,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 101
+        },
+        {
+          "round": 19,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 102
+        },
+        {
+          "round": 20,
+          "maxed": 4,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 103
+        },
+        {
+          "round": 21,
+          "maxed": 5,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 104
+        },
+        {
+          "round": 22,
+          "maxed": 7,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 106
+        },
+        {
+          "round": 23,
+          "maxed": 7,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 107
+        },
+        {
+          "round": 24,
+          "maxed": 7,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 108
+        },
+        {
+          "round": 25,
+          "maxed": 8,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 110
+        },
+        {
+          "round": 26,
+          "maxed": 9,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 111
+        },
+        {
+          "round": 27,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 112
+        },
+        {
+          "round": 28,
+          "maxed": 10,
+          "bonusUnlocked": 10,
+          "blockUpgrades": 112
+        }
+      ],
+      "lateUpgradeFloors": [
+        1,
+        0,
+        3,
+        2
+      ]
+    }
+  ]
+}

@@ -222,9 +222,9 @@ html[data-theme=dark] .mobile-nav{border-top-color:#435c60!important}
 html[data-theme=dark] .mobile-nav a[aria-current=page]{background:#3c514b;color:#f0d595}
 /* Consistent binary controls; retain the existing sound/vibration handlers. */
 #settingsDialog :is(#soundToggle,#vibrationToggle){position:relative;box-sizing:border-box;width:54px;min-width:54px;height:32px;min-height:32px;padding:4px;border:1px solid #b3bfa3;border-radius:20px;font-size:0!important;background:#dde5ce;box-shadow:none;cursor:pointer}
-#settingsDialog :is(#soundToggle,#vibrationToggle):before{content:'';position:absolute;left:4px;top:4px;width:22px;height:22px;border-radius:50%;background:#fff9e6;box-shadow:0 1px 3px #253d3340;transition:transform .18s}
+#settingsDialog :is(#soundToggle,#vibrationToggle):before{content:'';position:absolute;left:4px;top:4px;width:22px;height:22px;border-radius:50%;background:#fff9e6;box-shadow:0 1px 3px #253d3340;transition:left .18s}
 #settingsDialog :is(#soundToggle,#vibrationToggle)[aria-pressed=true]{background:#759987!important;border-color:#95b29d!important}
-#settingsDialog :is(#soundToggle,#vibrationToggle)[aria-pressed=true]:before{transform:translateX(21px);background:#f4d692}
+#settingsDialog :is(#soundToggle,#vibrationToggle)[aria-pressed=true]:before{left:25px;transform:none;background:#f4d692}
 html[data-theme=dark] #settingsDialog :is(#soundToggle,#vibrationToggle){background:#20343b!important;border-color:#586d70!important}
 html[data-theme=dark] #settingsDialog :is(#soundToggle,#vibrationToggle)[aria-pressed=true]{background:#759987!important;border-color:#95b29d!important}
 /* Match lineup and both team introductions share the night palette. */
@@ -295,3 +295,7 @@ html[data-theme=dark] .tier.energized .upgrade-room.has-main-effect:not([data-up
 
 /* Keep the camp occupancy readable on the dark card. */
 html[data-theme=dark] .camp-alert-copy small{background:#263e36!important;color:#dce6cf!important;border:1px solid #66806d}
+
+#settingsDialog :is(#soundToggle,#vibrationToggle){flex:0 0 54px;max-width:54px;overflow:hidden;opacity:1;transform:none;isolation:isolate;align-self:center}#settingsDialog :is(#soundToggle,#vibrationToggle):active{transform:none;box-shadow:none}
+
+#settingsDialog #soundToggle,#settingsDialog #vibrationToggle{height:32px!important;min-height:32px!important;max-height:32px!important;border-radius:20px!important;padding:4px!important;box-shadow:none!important}#settingsDialog #soundToggle::before,#settingsDialog #vibrationToggle::before{top:4px!important;transform:none!important}

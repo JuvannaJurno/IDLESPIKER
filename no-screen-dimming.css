@@ -1,0 +1,4 @@
+/* Keep the scene visible behind menus and tutorial guidance. */
+html dialog::backdrop{background:transparent!important;backdrop-filter:none!important}
+#learningSpotlight path{fill:none!important}
+.camp-tour-shade{background:transparent!important}

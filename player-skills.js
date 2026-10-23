@@ -184,14 +184,15 @@ const catalog=[
  }
 ];
 const byId=new Map(catalog.map(s=>[s.id,s]));
-catalog.push({id:'sky-serve',name:'Gökyüzü Servisi',rarity:'Rare',description:'Top yüksek bir yay çizerek rakip sahaya iner.'});byId.set('sky-serve',catalog.at(-1));
+catalog.push({id:'sky-serve',name:'Alttan Servis',rarity:'Rare',description:'Sıçramadan, topa alttan vurarak servis atar.'});byId.set('sky-serve',catalog.at(-1));
 catalog.push({id:'fake-set',name:'Pasör Aldatmacası',rarity:'Rare',description:'Hücum için yükselip havada takım arkadaşına parmak pas çıkarır.'});byId.set('fake-set',catalog.at(-1));
 for(const skill of [{id:'court-vision',name:'Kort Görüşü',rarity:'Rare',description:'Havada savunmanın açığını fark ederek topu boş alana yönlendirir.'},{id:'team-heart',name:'Takımın Kalbi',rarity:'Legendary',description:'Sayı arasında toplanan takım arkadaşlarının temel özelliklerini her oyuncunun ilk top temasına kadar %12 güçlendirir.'},{id:'pipe-attack',name:'Pipe Attack',rarity:'Uncommon',description:'Üç metre çizgisinin gerisinden arka orta hücumu.'},{id:'setter-dump',name:'Pasör Plasesi',rarity:'Rare',description:'Ön hattaki pasör ikinci dokunuşu boş ön alana bırakır.'},{id:'kick-save',name:'Ayakla Kurtarış',rarity:'Rare',description:'Elleri yetişmeyen alçak topa ayağıyla dokunup ralliyi sürdürür.'}]){catalog.push(skill);byId.set(skill.id,skill);}
+catalog.push({id:'sky-ball-serve',name:'Sky Ball Servisi',rarity:'Legendary',description:'Sol eliyle topu havalandırıp sağ eliyle vurur; top çok yüksek bir yayla kameraya yaklaşır ve rakip sahaya iner.'});byId.set('sky-ball-serve',catalog.at(-1));
 const pools={
- setter:{Rare:['deceive','fake-set','setter-dump','sky-serve'],Common:['tempo-third'],Uncommon:['back','float','tempo-second'],Legendary:['team-heart','sync-attack','perfect-second-touch','one-hand-rescue','jump-float-legendary']},
- outside:{Rare:['court-vision','jump','dive'],Common:['cross','commit-block','line'],Uncommon:['power-hit','wipe','rebound','float','pipe-attack'],Legendary:['ghost-tip','jump-legendary','jump-float-legendary','tempo-minus']},
- opposite:{Rare:['court-vision','jump','roof'],Common:['cross','commit-block','line'],Uncommon:['power-hit','wipe','close','rebound'],Legendary:['jump-legendary','ghost-tip','tempo-minus']},
- middle:{Rare:['roof','court-vision','kick-save'],Common:['commit-block'],Uncommon:['read','close','triple-block','slide-attack'],Legendary:['absolute-read','tempo-minus']},
+ setter:{Rare:['deceive','fake-set','setter-dump','sky-serve'],Common:['tempo-third'],Uncommon:['back','float','tempo-second'],Legendary:['sky-ball-serve','team-heart','sync-attack','perfect-second-touch','one-hand-rescue','jump-float-legendary']},
+ outside:{Rare:['court-vision','jump','dive'],Common:['cross','commit-block','line'],Uncommon:['power-hit','wipe','rebound','float','pipe-attack'],Legendary:['sky-ball-serve','ghost-tip','jump-legendary','jump-float-legendary','tempo-minus']},
+ opposite:{Rare:['court-vision','jump','roof'],Common:['cross','commit-block','line'],Uncommon:['power-hit','wipe','close','rebound'],Legendary:['sky-ball-serve','jump-legendary','ghost-tip','tempo-minus']},
+ middle:{Rare:['roof','court-vision','kick-save'],Common:['commit-block'],Uncommon:['read','close','triple-block','slide-attack'],Legendary:['sky-ball-serve','absolute-read','tempo-minus']},
  libero:{Rare:['dive','kick-save'],Common:['court-read'],Uncommon:['cover'],Legendary:['pancake']}
 };
 function hash(text){let n=2166136261;for(const c of String(text)){n^=c.charCodeAt(0);n=Math.imul(n,16777619)}return n>>>0}

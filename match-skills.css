@@ -13,10 +13,11 @@
 @keyframes skill-notice-after-left{0%{opacity:0;transform:translateY(-3px)}10%,78%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-16px)}}
 @keyframes skill-notice-after-right{0%{opacity:0;transform:translateY(3px)}10%,78%{opacity:1;transform:none}100%{opacity:0;transform:translateY(16px)}}
 @media(prefers-reduced-motion:reduce){.match-skill-stack,.match-skill-stack[data-team="1"]{animation:skill-notice-after-reduced 2.5s linear both}@keyframes skill-notice-after-reduced{0%,78%{opacity:1}100%{opacity:0}}}
-body.skill-blackout{background:#000!important}body.skill-blackout main>*:not(.court-space){visibility:hidden!important}body.skill-blackout .court-team,body.skill-blackout #matchSkillNotice{visibility:hidden!important}body.skill-blackout .court-space,body.skill-blackout .court-viewport{background:#000!important;border-color:#000!important;box-shadow:none!important}
 
 /* Resolve both teams together, then keep their shared fade deadline. */
 .match-skill-stack[data-result=won]{--result-bg:#d8edcf;--result-ink:#315f39;--result-accent:#62a363}
 .match-skill-stack[data-result=lost]{--result-bg:#f2d8d2;--result-ink:#8b443f;--result-accent:#c7766b}
 .match-skill-item{animation:skill-notice-result 2.5s ease both}
 @keyframes skill-notice-result{0%,60%{background-color:var(--notice-bg);color:var(--notice-ink);border-color:var(--notice-accent)}74%,100%{background-color:var(--result-bg);color:var(--result-ink);border-color:var(--result-accent)}}
+
+body.skill-blackout{background:#000!important}body.skill-blackout main>*:not(.court-space){visibility:hidden!important}body.skill-blackout .court-team,body.skill-blackout #matchSkillNotice{visibility:hidden!important}body.skill-blackout .court-space,body.skill-blackout .court-viewport{background:#000!important;border-color:#000!important;box-shadow:none!important}

@@ -58,6 +58,7 @@ function capacity(s){return 3+Math.max(0,(s.levels[1]||0)-5);}
 function reward(s,type,special=false){const c=contents.find(c=>c.id===type);return {followers:Math.round(c.followers*(1+(s.levels[1]||0)*.18)*(special?1.6:1)),cash:type==='sponsor'?Math.round(income(s)*.8):0};}
 function duration(s,type,lane=0){const c=contents.find(c=>c.id===type);const speed=1+(s.levels[0]||0)*.14;return Math.round(c.seconds*1000/speed);}
 function price(level){return [1500,3500,7000,12000,20000,32000,48000,68000,95000,130000][level];}
-function blockPrice(index,level){return index===1?price(level):level<5?price(level*2)+price(level*2+1):undefined;}
+const blockPriceSteps=[[5000,20000,65000,200000,600000],[1500,3500,12000,42000,90000,160000,280000,550000,950000,1600000],[5000,24000,80000,280000,800000]];
+function blockPrice(index,level){return blockPriceSteps[index]?.[level];}
 const api={extraQueue,enqueue,blockPrice,contents,sponsors,followers,income,normalize,slots,capacity,reward,duration,price,playerQuotes,quoteDraft,caption,trainingCaptions,sponsorCaptions};root.SocialStudioRules=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

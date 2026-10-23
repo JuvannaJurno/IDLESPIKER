@@ -247,3 +247,5 @@ html[data-theme=dark] #preMatchStage .formation-position{color:#e0e8d7;backgroun
 #preMatchStage .formation-half::before,#preMatchStage .formation-half::after{pointer-events:none}
 #preMatchStage .formation-half>.formation-player:focus-visible{outline:2px solid #fff8df!important;outline-offset:-3px;border-radius:8px}
 @media(max-height:620px){#preMatchStage .formation-side-libero .formation-libero{min-height:30px;padding:2px 5px}#preMatchStage .formation-side-libero .formation-libero .formation-shirt{width:22px;height:22px}#preMatchStage .formation-side-libero{padding:1px 0}}
+
+#preMatchStage .formation-shirt b{top:50%;left:50%;right:auto;transform:translate(-50%,-40%);width:100%;text-align:center;line-height:1;font-size:clamp(8px,1.5vw,12px)}#preMatchStage .formation-libero .formation-shirt b{font-size:9px;top:50%;left:50%;right:auto;text-align:center}

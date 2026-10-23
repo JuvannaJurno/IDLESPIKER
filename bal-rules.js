@@ -49,7 +49,7 @@ const professional=[
  ['pro_analysis',0,'Uyum Antrenmanı','▤',.03,v=>'Yeni transferin ilk 3 kart yükseltmesinde %'+display(v*100)+' AP indirimi.'],
  ['pro_coordinator',1,'Antrenman Koordinatörü','◷',1.2,v=>'Saniyede +'+display(v)+' otomatik talimat.'],
  ['pro_camp',1,'Kamp Organizasyonu','✚',.2,v=>'Yeni kamplar '+display(v)+' gün daha kısa sürer.'],
- ['pro_travel',1,'Fazladan Mesai','◷',.2,v=>'Maç beklerken ve maç sırasında vardiya, maç başına en fazla '+(5+Math.round(v*5)*5)+' dakika devam eder. Süre vardiyandan düşer. Normal kazancın %'+display(v*100)+' kadarı üretilir.'],
+ ['pro_travel',1,'Fazladan Mesai','◷',.2,v=>'Maç beklerken ve maç sırasında vardiya, maç başına en fazla '+(5+Math.round(v*5)*5)+' dakika devam eder. Süre vardiyandan düşer.'],
  ['pro_sponsor',2,'Lig Sponsorluğu','▣',30000,v=>'Her 3 tamamlanan maçta +'+display(v)+' bütçe.'],
  ['pro_shop',2,'Lisanslı Ürünler','▤',2,v=>'Her gün takipçi başına +'+display(v)+' bütçe.'],
  ['pro_tickets',2,'Antrenman Sponsorluğu','◎',1000,v=>'Her ücretli kart yükseltmesinde +'+display(v)+' bütçe.'],
@@ -92,22 +92,23 @@ function requirement(s,r){if(r.division&&s.division!==r.division)return '2. Lig 
 const investmentPrices={bal_sponsor:[400,900,2000,4000,7500,13000,22000,36000,65000,120000],bal_coach:[500,1000,2400,5000,9500,16500,28000,44000,80000,140000]};
 const balLatePriceScale={bal_shop:.95,bal_coach:1.45,bal_sponsor:1.45};
 const priceSteps=[400,900,2000,4000,7500,13000,22000,36000,65000,120000];
-// Weekly bonus prices alternate saving goals and affordable upgrades across departments.
-// Levels 1–5 and legacy seasons retain their original prices.
+// Professional bonuses alternate saving goals and affordable upgrades across departments.
+// Compressed block levels 1–5 retain their original entry prices; existing upgrades are preserved.
 const weeklyProfessionalEntryPrices=Object.freeze([30000,50000,80000,110000,150000]);
 const weeklyProfessionalBonusPrices=Object.freeze({
- pro_coach:[450000,626500,958000,1101000,1380500],
- pro_repeat:[282000,533500,633500,1185500,1257000],
- pro_analysis:[391500,580000,812000,1058500,1232500],
- pro_coordinator:[438500,684500,844500,1217500,1331000],
- pro_camp:[333000,441000,893000,910500,1429500],
- pro_travel:[274000,591500,649500,1164500,1174500],
- pro_sponsor:[336500,626500,666000,1217500,1294000],
- pro_shop:[423000,475500,917500,952500,1429500],
- pro_tickets:[297500,591500,731000,1122000,1331000],
- pro_scout:[313000,533500,877000,887000,1454500]
+ pro_coach:[720000,840000,1000000,1240000,1680000],
+ pro_repeat:[520000,625000,760000,960000,1280000],
+ pro_analysis:[320000,400000,520000,680000,960000],
+ pro_coordinator:[800000,960000,1160000,1440000,2000000],
+ pro_camp:[360000,465000,600000,800000,1120000],
+ pro_travel:[240000,360000,480000,640000,880000],
+ pro_sponsor:[600000,760000,960000,1240000,1760000],
+ pro_shop:[1280000,1520000,1840000,2240000,2880000],
+ pro_tickets:[560000,705000,880000,1120000,1600000],
+ pro_scout:[960000,1200000,1480000,1840000,2560000]
 });
-function price(s,r){const n=level(s,r.id);if(n>=maxLevel(s,r))return Infinity;if(r.compressed)return (Clock.isWeekly(s)&&r.division===3?[...weeklyProfessionalEntryPrices,...weeklyProfessionalBonusPrices[r.id]]:[30000,50000,80000,110000,150000,190000,240000,290000,340000,390000])[n];if(r.division)return [12000,18000,27000,40000,58000,82000,114000,156000,210000,280000][n];if(!r.bal)return 10*([10,6,9,10,15][n]??Infinity);const base=investmentPrices[r.id]?.[n]??r.price/300*priceSteps[n],lateDiscount=n===9?.9:n===8?.95:1;return Math.round(base*(n>=5?1.4:1)*lateDiscount*(s.division!==3&&n>=5?(balLatePriceScale[r.id]??1.7):1)*(s.division!==3&&r.id==='bal_video'&&n===9?1.7:1)*(s.division===3?1:n>=5?.85:.9)/10)*10;}
+const professionalSinglePrices={pro_search:[12000,40000,160000,400000,1120000],pro_negotiator:[12000,50000,200000,520000,1280000]};
+function price(s,r){const n=level(s,r.id);if(n>=maxLevel(s,r))return Infinity;if(r.compressed)return [...weeklyProfessionalEntryPrices,...weeklyProfessionalBonusPrices[r.id]][n];if(r.division&&professionalSinglePrices[r.id])return professionalSinglePrices[r.id][n];if(r.division)return [12000,18000,27000,40000,58000,82000,114000,156000,210000,280000][n];if(!r.bal)return 10*([10,6,9,10,15][n]??Infinity);const base=investmentPrices[r.id]?.[n]??r.price/300*priceSteps[n],lateDiscount=n===9?.9:n===8?.95:1;return Math.round(base*(n>=5?1.4:1)*lateDiscount*(s.division!==3&&n>=5?(balLatePriceScale[r.id]??1.7):1)*(s.division!==3&&r.id==='bal_video'&&n===9?1.7:1)*(s.division===3?1:n>=5?.85:.9)/10)*10;}
 function effects(s,e){if(s.stage!=='bal')return e;return {...e,doubleChance:value(s,'bal_double'),manualBonusAP:value(s,'bal_hands'),offlineHours:e.offlineHours?e.offlineHours+value(s,'bal_longshift'):0,critChance:Math.min(1,e.critChance+value(s,'pro_focus')+value(s,'bal_precision')),critMult:Math.max(e.critMult,value(s,'bal_precision')?2:1),clickAP:e.clickAP*2.5+value(s,'pro_coach')+value(s,'bal_position')+value(s,'bal_hands'),autoAP:e.autoAP*2.5+value(s,'pro_coach')+value(s,'bal_position'),baseAP:e.baseAP*2.5+value(s,'pro_coach')+value(s,'bal_position'),autoRate:(e.autoRate*1.4+(value(s,'bal_coach')+value(s,'pro_coordinator'))*e.workflowRate)*1.4,baseAutoRate:(e.baseAutoRate*1.4+value(s,'bal_coach')+value(s,'pro_coordinator'))*1.4,repeatAP:e.repeatAP*1.25+value(s,'bal_video'),morningAP:e.morningAP*1.25+value(s,'bal_warmstart'),dayAP:e.dayAP*1.25+value(s,'bal_evening'),offlineBonus:e.offlineBonus*1.25+value(s,'bal_recovery')+value(s,'bal_remote'),offlineEfficiency:e.offlineEfficiency+value(s,'bal_shift')};}
 function cash(s){if(!departmentOpen(s,2))return 0;return ((20+value(s,'bal_sponsor'))*(1+value(s,'bal_shop'))+value(s,'bal_orders'))}
 // Merge old separate bonuses into levels 6–10, without charging again.

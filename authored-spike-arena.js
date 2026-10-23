@@ -5,8 +5,8 @@ const attacks={
 'power-hit':[[0,2,.29,.43,.59]],cross:[[0,2,.28,.43,.60]],line:[[0,2,.28,.43,.60]],wipe:[[0,2,.28,.43,.60]],rebound:[[0,2,.23,.49,.53]],'pipe-attack':[[0,6,.40,.56,.72]],'slide-attack':[[0,2,.37,.51,.66]],'court-vision':[[0,2,.32,.58,.80]],
 'fake-set':[[0,2,.58,.70,.84]],'perfect-second-touch':[[0,2,.63,.72,.86]],'one-hand-rescue':[[0,2,.63,.72,.86]],
 'sync-attack':[[0,4,.43,.58,.73],[0,1,.439,.589,.739],[0,2,.448,.598,.748],[0,3,.457,.607,.757]],
- 'tempo-third':[[0,2,.52,.67,.84]],'tempo-second':[[0,2,.40,.54,.71]],'tempo-first':[[0,2,.27,.43,.60]],'tempo-minus':[[0,2,.19,.38,.55]],
-roof:[[1,3,.22,.49,.58]],close:[[1,3,.22,.49,.58]],read:[[1,3,.22,.49,.58]],'triple-block':[[1,3,.22,.49,.58]],'commit-block':[[1,3,.35,.53,.65]],'absolute-read':[[1,2,.22,.34,.43],[1,4,.49,.60,.72]],pancake:[[1,3,.17,.28,.34]]};
+ 'tempo-third':[[0,2,.52,.67,.84]],'tempo-second':[[0,2,.40,.54,.71]],'tempo-first':[[0,2,.27,.43,.60]],'tempo-minus':[[0,2,.3105555556,.38,.55]],
+pancake:[[1,3,.17,.28,.34]]};
 const original=draw,smooth=x=>{x=Math.max(0,Math.min(1,x));return x*x*(3-2*x)};
 function blend(t){if(t<=0)return MatchVectorCharacters.poses.get('aim').map(p=>({...p}));if(t>=1)return MatchVectorCharacters.poses.get('strike').map(p=>({...p}));const a=MatchVectorCharacters.poses.get('aim'),b=MatchVectorCharacters.poses.get('strike');return b.map(p=>{const from=a.find(q=>q.id===p.id)||p,out={...p};for(const k of ['x','y','scale'])out[k]=from[k]+(p[k]-from[k])*t;out.rotation=from.rotation+(((p.rotation-from.rotation+540)%360)-180)*t;if(p.id==='arm-right'||p.id==='sleeve-right')out.projectedArmStep=t;return out})}
 function handVector(list,id){const p=list.find(q=>q.id===id),a=p.rotation*Math.PI/180,dx=(p.width*.94-p.width*p.pivotX)*p.scale,dy=(p.height*.5-p.height*p.pivotY)*p.scale;return{x:p.x+p.width*p.scale*p.pivotX+Math.cos(a)*dx-Math.sin(a)*dy-33,y:p.y+p.height*p.scale*p.pivotY+Math.sin(a)*dx+Math.cos(a)*dy-43}}
