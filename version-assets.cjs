@@ -6,7 +6,7 @@ require('./sync-lab-assets.cjs');
 const crestSymbols={};for(const id of ['ball','bolt','peak','star','sun','moon','wave','wing','crown','leaf','flame','net','cat','deer','eagle','owl','wolf']){const file='assets/crest-symbols/'+id+'.png';if(fs.existsSync(file))crestSymbols[id]='data:image/png;base64,'+fs.readFileSync(file).toString('base64');}
 fs.writeFileSync('crest-symbols-data.js','window.CrestSymbolData='+JSON.stringify(crestSymbols)+';\n');
 // Run before publishing to refresh changed scripts and styles in browser caches.
-for(const name of ['index.html','mac.html','deneme-modu.html','skill-animation-lab.html']){
+for(const name of ['index.html','mac.html','deneme-modu.html','skill-animation-lab.html','legendary-preview.html']){
  const html=fs.readFileSync(name,'utf8').replace(/((?:src|href)=")([^"?:]+\.(?:js|css))(?:\?v=[^"\s]+)?"/g,(match,prefix,file)=>{
   if(!fs.existsSync(file))return match;
   const version=crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex').slice(0,12);

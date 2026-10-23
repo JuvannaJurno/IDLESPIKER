@@ -1,0 +1,82 @@
+[
+  {
+    "running": true,
+    "frames": 218,
+    "maxGap": 17,
+    "progress": 0.7507708333482345,
+    "player": "player-0",
+    "skill": "absolute-read"
+  },
+  {
+    "running": true,
+    "frames": 217,
+    "maxGap": 16.899999999999636,
+    "progress": 0.7512708333383004,
+    "player": "player-0",
+    "skill": "tempo-minus"
+  },
+  {
+    "running": true,
+    "frames": 217,
+    "maxGap": 16.900000000001455,
+    "progress": 0.7513750000099344,
+    "player": "player-0",
+    "skill": "pancake"
+  },
+  {
+    "running": true,
+    "frames": 217,
+    "maxGap": 16.900000000001455,
+    "progress": 0.7510833333283661,
+    "player": "player-0",
+    "skill": "sync-attack"
+  },
+  {
+    "running": true,
+    "frames": 217,
+    "maxGap": 16.899999999997817,
+    "progress": 0.7516875000099345,
+    "player": "player-0",
+    "skill": "ghost-tip"
+  },
+  {
+    "running": true,
+    "frames": 217,
+    "maxGap": 16.900000000001455,
+    "progress": 0.7508333333432673,
+    "player": "player-0",
+    "skill": "jump-float-legendary"
+  },
+  {
+    "running": true,
+    "frames": 218,
+    "maxGap": 16.900000000001455,
+    "progress": 0.7528958333333337,
+    "player": "player-0",
+    "skill": "jump-legendary"
+  },
+  {
+    "running": true,
+    "frames": 217,
+    "maxGap": 16.80000000000291,
+    "progress": 0.7507500000099344,
+    "player": "player-0",
+    "skill": "team-heart"
+  },
+  {
+    "running": true,
+    "frames": 218,
+    "maxGap": 16.80000000000291,
+    "progress": 0.752708333343268,
+    "player": "player-0",
+    "skill": "one-hand-rescue"
+  },
+  {
+    "running": true,
+    "frames": 218,
+    "maxGap": 17,
+    "progress": 0.7504583333333327,
+    "player": "player-0",
+    "skill": "perfect-second-touch"
+  }
+]
