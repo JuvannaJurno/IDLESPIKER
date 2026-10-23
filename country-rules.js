@@ -29,5 +29,6 @@ function set(code){if(!countries.some(c=>c.code===code))throw Error('Geçersiz �
 function setTurkishNames(names,surnames){Object.assign(countries[0],{names:[...names],surnames:[...surnames]});}
 function skinTint(code,random=Math.random){const weights=get(code).skinWeights;let n=random()*weights.reduce((a,b)=>a+b,0);for(let i=0;i<weights.length;i++)if((n-=weights[i])<0)return i+1;return 8;}
 function name(code,random=Math.random,used=new Set()){const c=get(code);if(!c.names.length||!c.surnames.length)throw Error('İsim havuzu hazır değil');let result;for(let i=0;i<100;i++){result={name:c.names[Math.floor(random()*c.names.length)],surname:c.surnames[Math.floor(random()*c.surnames.length)]};if(!used.has(result.name+' '+result.surname))return result;}return result;}
-const api={countries,get,current,set,setTurkishNames,skinTint,name};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.CountryRules=api;
+function latinizePlayer(p){if(!p||(p.nationality||current())!=='JP')return p;const map=expanded.JP?.romanization;if(!map)return p;for(const [field,pool]of [['name','names'],['surname','surnames']])if(typeof p[field]==='string'&&/[\u3040-\u30ff\u3400-\u9fff]/.test(p[field]))p[field]=map[pool][p[field]]||p[field];return p;}
+const api={latinizePlayer,countries,get,current,set,setTurkishNames,skinTint,name};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.CountryRules=api;
 })(globalThis);

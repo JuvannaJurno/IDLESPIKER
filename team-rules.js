@@ -107,7 +107,7 @@ if(players.some(p=>p.developmentVersion!==3)){try{if(!root.localStorage?.getItem
 for(const p of players){migrateDevelopment(p);if(p.cardVersion!==1){const skillGains=p.skills.filter(s=>s.unlocked).reduce((n,s)=>n+(skillCatalog.find(k=>k.id===s.id)?.bonus||0),0);p.cardLevel=1+Math.floor(Math.max(0,growth(p)-skillGains)/6);p.cardVersion=1}else p.cardLevel=cardLevel(p)};
 for(const p of players)if(Number.isInteger(p.transferStartLevel)&&p.transferStartLevel>0){p.transferUpgradeCount=Math.min(3,Math.max(0,Number.isInteger(p.transferUpgradeCount)?p.transferUpgradeCount:cardLevel(p)-p.transferStartLevel));p.transferStartLevel=Math.min(p.transferStartLevel,cardLevel(p));}
 function maxEpic(p){if(!p?.epicTeam)return;const maximum=cap(p);p.baseStats??={};p.training??={};for(const k of trainable){p[k]=maximum;p.baseStats[k]=Math.min(maximum,Number.isFinite(p.baseStats[k])?p.baseStats[k]:maximum);p.training[k]=maximum-p.baseStats[k];}p.cardVersion=1;p.cardLevel=cardLimit(p);}
-for(const p of players){Skills.ensure(p);maxEpic(p);}
+for(const p of players){(root.CountryRules||(typeof require==='function'?require('./country-rules'):null))?.latinizePlayer(p);Skills.ensure(p);maxEpic(p);}
 for(const p of players)if(!p.surname)p.surname=surnames[integer(0,surnames.length-1)];savePlayers();
 function rename(id,name,surname){const p=players.find(p=>p.id===id);name=name.trim();surname=surname.trim();if(!p||!name||!surname||name.length>24||surname.length>24)return false;p.name=name;p.surname=surname;savePlayers();root.CampSystem?.refresh();return true}
 const defaults=()=>Object.fromEntries(slots.map((s,i)=>[s.id,players[i].id]));
