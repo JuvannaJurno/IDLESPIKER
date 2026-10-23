@@ -203,3 +203,6 @@ html[data-theme=dark] #transferReplaceScreen,html[data-theme=dark] #transferRepl
 #scoutDialog #packCard .player-skill-strip>summary{padding:6px;background:var(--club-action);border:1px solid var(--club-line)}
 #scoutDialog #packCard .player-card:has(.player-skill-strip[open]) .card-stats{display:none}
 #scoutDialog #packCard .player-skill-info{max-height:195px;overflow:auto;overscroll-behavior:contain}
+
+.card-art .transfer-upgrade-marker[data-direction=down]{color:#986449;border-color:#c69c85;background:#f6e7d9}
+#scoutAlert:disabled{opacity:.55;cursor:not-allowed;box-shadow:none}

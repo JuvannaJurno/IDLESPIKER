@@ -1,4 +1,5 @@
-/* Keep the scene visible behind menus and tutorial guidance. */
-html dialog::backdrop{background:transparent!important;backdrop-filter:none!important}
-#learningSpotlight path{fill:none!important}
-.camp-tour-shade{background:transparent!important}
+/* Dialogs and tutorial guidance intentionally dim only while open. */
+html dialog::backdrop{background:rgb(24 43 41 / 60%);backdrop-filter:blur(2px)}
+#learningSpotlight[hidden]{display:none!important}
+#learningSpotlight path{fill:rgb(17 29 38 / 68%)}
+html:has(dialog:modal),html:has(dialog:modal) body{overflow:hidden!important;overscroll-behavior:none}

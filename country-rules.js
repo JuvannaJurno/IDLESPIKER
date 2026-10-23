@@ -21,7 +21,8 @@ const rows=[
 ['BE','Belçika',light,'Amélie Anna Camille Charlotte Chloé Clara Élise Emma Eva Fien Fleur Helena Jade Julie Lise Louise Marie Mila Nina Noor Olivia Sarah Sofie Zoé'.split(' '),'Peeters|Janssens|Maes|Jacobs|Mertens|Willems|Claes|Goossens|Wouters|De Smet|Dubois|Lambert|Martin|Dupont|Simon|Laurent|Leclercq|Dumont|Renard|Van den Berg|Hermans|Declercq|Vermeulen|Cools'.split('|')],
 ['CZ','Çekya',light,'Adéla Alena Andrea Anna Barbora Denisa Eliška Eva Gabriela Hana Jana Kateřina Klára Kristýna Lenka Lucie Markéta Michaela Monika Natálie Nikola Petra Tereza Veronika'.split(' '),'Nováková Svobodová Novotná Dvořáková Černá Procházková Kučerová Veselá Horáková Němcová Marková Pokorná Pospíšilová Hájková Jelínková Králová Růžičková Benešová Fialová Sedláčková Doležalová Zemanová Kolářová Navrátilová'.split(' ')]
 ];
-const countries=rows.map(([code,name,skinWeights,names,surnames])=>({code,name,skinWeights,names,surnames,flag:'flags/Vector/'+code+'.svg'}));
+const expanded=root.CountryNameData||(typeof require==='function'?require('./country-name-data.js'):{});
+const countries=rows.map(([code,name,skinWeights,names,surnames])=>({code,name,skinWeights,names:expanded[code]?.names||names,surnames:expanded[code]?.surnames||surnames,flag:'flags/Vector/'+code+'.svg'}));
 function get(code){return countries.find(c=>c.code===code)||countries[0];}
 function current(){try{return get(root.localStorage?.getItem(key)).code}catch{return 'TR'}}
 function set(code){if(!countries.some(c=>c.code===code))throw Error('Geçersiz ülke');root.localStorage?.setItem(key,code);}

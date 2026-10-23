@@ -95,3 +95,15 @@ html[data-theme=dark] .card-cap[data-cap-state=full] .card-cap-heading b{color:#
 .card-art>.camp-badge{left:auto;right:7px}.card-art.camp-evolved:after{width:auto;height:auto;transform:none;box-sizing:border-box}
 
 .player-country-badge{display:inline-flex;align-items:center;justify-content:center;padding:4px;background:#fff9e8;border:1px solid #d5ddc5;border-radius:7px;box-shadow:0 2px 4px #38545a18}.player-country-badge img{width:26px!important;height:18px!important;object-fit:contain!important;border-radius:2px}.card-art>.player-country-badge{position:absolute;right:8px;bottom:8px;z-index:2}.detail-portrait-country{position:relative;display:table;margin:0 auto}.detail-portrait-country>.player-country-badge{position:absolute;right:-12px;bottom:10px}
+
+/* Keep quick upgrades from selecting card text on repeated taps. */
+.player-card,.card-open-upgrade,.card-upgrade-button{user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent}
+.card-art>.player-country-badge{right:auto;left:7px;bottom:7px;padding:2px;background:transparent;border:1px solid #fff8e5;border-radius:4px;box-shadow:0 0 0 1px #66857b55}
+.player-country-badge img{width:21px!important;height:14px!important}.detail-portrait-country>.player-country-badge{right:auto;left:0;bottom:10px}
+.free-upgraded{position:relative;animation:free-upgrade-glow 1.4s ease-out}.free-upgrade-notice{position:absolute;inset:auto 7px 48px;z-index:5;text-align:center;background:#f7e5a6;color:#6c582c;border:1px solid #fff4cc;border-radius:8px;padding:7px;font-size:11px;pointer-events:none}
+@keyframes free-upgrade-glow{0%,35%{box-shadow:0 0 0 3px #efcb73,0 0 20px #efcb7380}100%{box-shadow:0 0 0 0 transparent}}
+@media(prefers-reduced-motion:reduce){.free-upgraded{animation:none}}
+
+.player-card *{-webkit-user-select:none;user-select:none}
+
+.player-country-badge{padding:2px;background:transparent;border:1px solid #fff8e5;box-shadow:0 0 0 1px #66857b55;border-radius:4px}

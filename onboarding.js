@@ -69,7 +69,7 @@ function contextualGuide(){
 const q=s=>document.querySelector(s),state=RoomSystem.tutorialState(),campSent=()=>RoomSystem.developmentState().camp.entries.some(e=>e.status==='running');
 if(q('#campDialog[open]')&&visible(q('#campPanel'))&&!GuidedTutorial.completed('camp')&&!GuidedTutorial.paused('camp')){q('.camp-first-help')?.remove();q('#campDialog').classList.remove('camp-guiding');GuidedTutorial.start([
 {id:'camp-players',allowNext:true,done:()=>!!q('#campSlots [data-state="selected"]')||campSent(),target:()=>visible(q('#campCandidates'))?q('#campCandidates'):q('.camp-overview'),text:'Gelişim sınırına yaklaşan oyuncularını kampa seç.'},
-{id:'camp-cost',allowNext:true,done:campSent,target:()=>q('#campEntryCost'),text:'Kampın süresi ve gereken kaynaklar burada görünür.'},
+{id:'camp-cost',allowNext:true,done:campSent,target:()=>q('.camp-send-footer'),text:'Seçtiğin oyuncuların toplam AP ve bütçe maliyeti burada. Kamp süresi üstteki Kamp süresi alanında görünür.'},
 {id:'camp-send',allowNext:true,done:campSent,target:()=>visible(q('#campEnroll'))?q('#campEnroll'):q('.camp-overview'),text:'Seçtiğin oyuncuları buradan gönder. Kamptayken yükseltilemezler.'},
 {id:'camp-stars',target:()=>visible(q('#campSlots'))?q('#campSlots'):q('.camp-overview'),text:'Tamamlanan kamplar yıldızları doldurur ve gelişim sınırını artırır.'}
 ],null,'camp');return true;}
@@ -77,6 +77,7 @@ if(q('#playerDialog[open]')&&!GuidedTutorial.completed('skills')&&!GuidedTutoria
 {id:'skill-unlocks',target:()=>q('#playerSkills'),text:'Common yeteneklerin başlangıçtan açık. İlk kamp Uncommon, ikinci kamp Rare, üçüncü kamp gizli yeteneği açar.'}
 ],null,'skills');return true;}
 const club=()=>!q('.dashboard').hidden&&!q('dialog[open]');
+if(club()&&window.RoomSystem.snapshot().shiftTutorialPending&&!GuidedTutorial.completed('shift-unlock')&&!GuidedTutorial.paused('shift-unlock')){GuidedTutorial.start([{id:'shift-ready',target:()=>q('#dailyShiftStatus:not([hidden])')||q('.shift-summary'),text:'Vardiyayı açtın! Oyunda olmadığında da talimatlar çalışır. Kalan süren burada görünür; süre dolunca 4 saat dinlenir.'}],()=>RoomSystem.acknowledgeShiftTutorial(),'shift-unlock');return true;}
 if(state.stage==='bal'&&state.division!==3&&club()&&!GuidedTutorial.completed('income')&&!GuidedTutorial.paused('income')){
 const incomeInstructions=state.instructions;let incomeReceiptsBefore=incomeReceipts;
 GuidedTutorial.start([

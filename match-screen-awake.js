@@ -1,7 +1,7 @@
 (function(){
 'use strict';
 let watching=false,lock=null,pending=false,generation=0,suspended=false;
-const wanted=()=>watching&&!document.hidden&&!suspended;
+const wanted=()=>!document.hidden&&!suspended;
 async function release(){
  generation++;
  const current=lock;lock=null;
@@ -22,10 +22,11 @@ async function acquire(){
   if(requestGeneration!==generation&&wanted())acquire();
  }
 }
-window.MatchScreenAwake={setWatching(value){watching=!!value;if(watching)acquire();else release();}};
+window.MatchScreenAwake={setWatching(value){watching=!!value;acquire();}};
 document.addEventListener('visibilitychange',()=>{if(document.hidden)release();else acquire();});
 window.addEventListener('pageshow',()=>{suspended=false;acquire();});
 window.addEventListener('pagehide',()=>{suspended=true;release();});
 // Retry after interaction if the operating system previously released the lock.
 document.addEventListener('pointerdown',acquire,{passive:true});
+acquire();
 })();
