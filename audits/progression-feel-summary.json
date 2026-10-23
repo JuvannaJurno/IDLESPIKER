@@ -1,0 +1,74 @@
+[
+  {
+    "profile": "active",
+    "seed": 41,
+    "minutes": 66.5,
+    "cards": 243,
+    "ovr": 86.5,
+    "longestGap": 60,
+    "lateGoals": [
+      {
+        "id": "bal_video",
+        "upcomingMatch": 9
+      },
+      {
+        "id": "bal_contacts",
+        "upcomingMatch": 10
+      }
+    ]
+  },
+  {
+    "profile": "active",
+    "seed": 73,
+    "minutes": 66.5,
+    "cards": 244,
+    "ovr": 87,
+    "longestGap": 60,
+    "lateGoals": [
+      {
+        "id": "bal_video",
+        "upcomingMatch": 9
+      },
+      {
+        "id": "bal_contacts",
+        "upcomingMatch": 10
+      }
+    ]
+  },
+  {
+    "profile": "idle",
+    "seed": 41,
+    "minutes": 100,
+    "cards": 242,
+    "ovr": 85.7,
+    "longestGap": 301,
+    "lateGoals": [
+      {
+        "id": "bal_video",
+        "upcomingMatch": 11
+      },
+      {
+        "id": "bal_contacts",
+        "upcomingMatch": 12
+      }
+    ]
+  },
+  {
+    "profile": "idle",
+    "seed": 73,
+    "minutes": 100,
+    "cards": 242,
+    "ovr": 85.8,
+    "longestGap": 301,
+    "lateGoals": [
+      {
+        "id": "bal_video",
+        "upcomingMatch": 11
+      },
+      {
+        "id": "bal_contacts",
+        "upcomingMatch": 12
+      }
+    ]
+  }
+]
