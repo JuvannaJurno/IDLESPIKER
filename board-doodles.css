@@ -1,0 +1,1 @@
+.board-doodles{position:absolute;inset:0;display:block;pointer-events:none;opacity:.58;overflow:hidden}.board-doodle{position:absolute;display:block;background-repeat:no-repeat}.board-doodle[hidden]{display:none}.chalk-doodles .board-doodle{filter:brightness(0) invert(1);opacity:.7}
