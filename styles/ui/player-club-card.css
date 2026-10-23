@@ -137,3 +137,5 @@ html[data-theme=dark] .player-card .card-art>.card-grade{color:#d8e5d9;opacity:.
 #teamPanel .player-card .player-overall,#scoutDialog .player-card .player-overall{box-sizing:border-box;width:48px;min-width:48px;height:46px;min-height:46px;padding:5px 4px;border-radius:8px}
 #teamPanel .player-card .player-overall b,#scoutDialog .player-card .player-overall b{font-size:22px;line-height:1.05;letter-spacing:-.6px;font-weight:600;font-variant-numeric:tabular-nums}
 #teamPanel .player-card .player-overall small,#scoutDialog .player-card .player-overall small{font-size:6px;letter-spacing:1px;margin-top:3px}
+
+.player-card{--player-ovr-left:10px}.player-card .card-art>.player-country-badge{left:var(--player-ovr-left);right:auto;bottom:10px}#teamPanel .player-card{--player-ovr-left:12px}@media(max-width:540px){#teamPanel .player-card{--player-ovr-left:7px}}
