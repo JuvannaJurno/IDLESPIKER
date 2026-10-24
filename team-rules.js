@@ -52,7 +52,7 @@ function cardQuote(p){const level=cardLevel(p),limit=cardLimit(p),role=cardRoles
  const next={...p};for(const [k,n]of Object.entries(gains))next[k]+=n;
  return {level,limit,gains,cost,before:overall(p),after:overall(next),blocked:level>=limit?'Seviye sınırında · Kamp ile sınırı artır':Camps.active(developmentState(),p)?'Oyuncu kampta · dönüşünü bekliyor':!points?'Stat sınırında · Kamp ile sınırı artır':''};
 }
-function upgradeCard(p,pay){const q=cardQuote(p);if(q.blocked||!pay(q.cost))return false;for(const [k,n]of Object.entries(q.gains)){p[k]+=n;p.training[k]=(p.training[k]||0)+n}p.cardLevel=q.level+1;if(Number.isInteger(p.transferStartLevel)){const used=Number.isInteger(p.transferUpgradeCount)?p.transferUpgradeCount:Math.max(0,q.level-p.transferStartLevel);p.transferUpgradeCount=Math.min(3,Math.max(0,used)+1);}p.cardVersion=1;savePlayers();root.CampSystem?.refresh();return true}
+function upgradeCard(p,pay){const q=cardQuote(p);if(q.blocked||!pay(q.cost))return false;p.training??={};for(const [k,n]of Object.entries(q.gains)){p[k]+=n;p.training[k]=(p.training[k]||0)+n}p.cardLevel=q.level+1;if(Number.isInteger(p.transferStartLevel)){const used=Number.isInteger(p.transferUpgradeCount)?p.transferUpgradeCount:Math.max(0,q.level-p.transferStartLevel);p.transferUpgradeCount=Math.min(3,Math.max(0,used)+1);}p.cardVersion=1;savePlayers();root.CampSystem?.refresh();return true}
 
 function growth(p){return trainable.reduce((n,k)=>n+Math.max(0,p[k]-p.baseStats[k]),0)}
 function trainingBlock(p,k,amount=1){if(!trainable.includes(k)||!Number.isInteger(amount)||amount<1)return 'Bu özellik çalıştırılamaz.';if(Camps.active(developmentState(),p))return 'Oyuncu kampta · dönüşünü bekliyor.';if(p[k]+amount>cap(p))return 'Stat sınırı: '+cap(p)+'.';return ''}

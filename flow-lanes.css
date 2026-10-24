@@ -1,0 +1,141 @@
+/* Shared lane geometry: no negative offsets or squeezed parallel rails. */
+.workflow[data-flow-lanes]{--flow-rail:#b6c7ac;--flow-edge:#e6edda;--flow-ink:#91ad99}
+.workflow[data-flow-lanes] .tier,.workflow[data-flow-lanes] .stage-heading{margin-left:var(--flow-gutter,38px)}
+.workflow[data-flow-lanes]>.energy-track{left:0;top:0;width:var(--flow-gutter);bottom:0!important;background:none;border:0;box-shadow:none;overflow:visible;pointer-events:none}
+.workflow[data-flow-lanes]>.energy-track:before{display:none}
+.flow-rail{position:absolute;top:13px;bottom:8px;width:3px;translate:-50% 0;border-radius:5px;background:var(--flow-rail);box-shadow:0 0 0 2px var(--flow-edge)}
+.flow-rail:before{content:'';position:absolute;left:50%;top:-5px;translate:-50% 0;width:7px;height:7px;border-radius:50%;background:#d8b865;border:1.5px solid #fff7df;box-shadow:0 1px 0 #b6b597}
+.workflow[data-flow-lanes] .connector{left:calc(0px - var(--flow-gutter));width:var(--flow-gutter);height:0;background:none!important;box-shadow:none!important;pointer-events:none}
+.workflow[data-flow-lanes] .connector>i{display:none}
+.flow-junctions{position:absolute;left:calc(0px - var(--flow-gutter));top:50%;translate:0 -50%;overflow:visible;pointer-events:none;z-index:2;fill:none;stroke:var(--flow-rail);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.flow-junctions circle{fill:#ecf0dd;stroke:var(--flow-ink);stroke-width:1.25}.flow-junctions .flow-inlet{fill:#d9e2c8;stroke:#9eb49a;stroke-width:1.5}
+.workflow[data-flow-lanes] .energy-pulse{left:var(--flow-x,14px)!important;translate:-50% 0;width:6px!important;height:15px!important;border:1px solid #fff7dc;border-radius:6px!important;clip-path:none!important;background:linear-gradient(#f9df99,#d6ab52)!important;box-shadow:0 1px 2px #9c884d33!important;z-index:4}
+.workflow[data-flow-lanes] .energy-pulse:before,.workflow[data-flow-lanes] .energy-pulse:after{display:none}
+.workflow[data-flow-lanes] .energy-pulse.auto-pulse{height:10px!important;opacity:.9}
+.workflow[data-flow-lanes] .energy-pulse.tempo-charged{background:linear-gradient(#edfaff,#7db8c9)!important;border-color:#f1fcff;box-shadow:0 0 4px #83bbca88!important}
+.workflow[data-flow-lanes] .tempo-wave{left:10px;width:calc(var(--flow-gutter) - 30px);background:#bad7d526;box-shadow:none;border-radius:8px;z-index:1}.workflow[data-flow-lanes] .tempo-wave:before{left:0;right:0;background:linear-gradient(transparent,#c2e1d633,transparent)}
+.tier.energized .flow-junctions{stroke:#d1ae5e}.tier.energized .flow-inlet{fill:#efcf7e;stroke:#b69d63}.tier.energized-blue .flow-junctions{stroke:#79acbb}.tier.energized-blue .flow-inlet{fill:#b7dce3;stroke:#79acbb}
+/* B: inset cords, compact paper tabs. */
+html[data-flow-style="ribbon"] .flow-rail{width:6px;background:#aebda5;box-shadow:inset 1px 0 #819b8b55,0 0 0 2px #f7f3dc,0 1px 0 3px #bdcbb055}
+html[data-flow-style="ribbon"] .flow-rail:before{width:8px;height:8px;background:#adbb9d}
+html[data-flow-style="ribbon"] .workflow .energy-pulse{width:8px!important;height:13px!important;border-radius:3px!important;background:#e4bf72!important;box-shadow:inset 0 2px #ffe4a6,0 1px 1px #8e804655!important}
+html[data-flow-style="ribbon"] .flow-junctions{stroke:#afbea5;stroke-width:3}
+/* C: offset dots avoid ladder rungs across parallel lanes. */
+html[data-flow-style="beads"] .flow-rail{width:3px;background:radial-gradient(circle,#9bb29d 1.25px,transparent 1.6px) 0 calc(var(--rail-index)*2px)/3px 9px;box-shadow:none}
+html[data-flow-style="beads"] .flow-rail:before{width:6px;height:6px;background:#b7c7aa}
+html[data-flow-style="beads"] .flow-junctions{stroke-width:1.5;stroke:#b6c4aa}
+html[data-flow-style="beads"] .workflow .energy-pulse{width:7px!important;height:7px!important;border-radius:50%!important;background:#d7ae5c!important;border-color:#fff3d2;box-shadow:0 0 0 2px #efdfa766!important}
+html[data-theme="dark"] .workflow[data-flow-lanes]{--flow-rail:#5c7566;--flow-edge:#293e32;--flow-ink:#809b83}html[data-theme="dark"] .flow-junctions circle{fill:#334c3c}
+@media(prefers-reduced-motion:reduce){.flow-junctions,.flow-rail{transition:none}}
+
+html[data-flow-style] .workflow[data-flow-lanes] .energy-pulse.tempo-charged{background:linear-gradient(#edfaff,#7db8c9)!important;border-color:#f1fcff}
+
+/* Keep the isolated design view clear while the real economy runs. */
+html[data-flow-preview="true"] .achievement-notice{display:none!important}
+html[data-theme="dark"][data-flow-style="ribbon"] .flow-rail{background:#66816d;box-shadow:inset 1px 0 #365644,0 0 0 2px #293e32,0 0 0 3px #59735e44}
+
+/* The bonus lane fills its source dial as its five upgrades are purchased. */
+.flow-rail:before{background:conic-gradient(#d1ad62 calc(var(--flow-capacity,1)*1turn),#cbd6bc 0)!important}
+.flow-rail{opacity:calc(.55 + var(--flow-capacity,1)*.45)}
+.flow-capacity-status{display:inline-block;margin-left:9px;padding:3px 6px;border:1px solid #c7d2b9;border-radius:5px;color:#7d906f;background:#edf0dc;font-size:8px;letter-spacing:0;font-weight:600;white-space:nowrap}
+.flow-capacity-status[hidden]{display:none}html[data-theme="dark"] .flow-capacity-status{color:#c7d5b5;background:#304738;border-color:#536e54}
+
+/* Source mechanisms and media use the same warm workshop materials. */
+.flow-amplifier{position:absolute;top:-7px;left:50%;translate:-50% 0;width:10px;height:16px;border:1px solid #b29862;border-radius:4px;background:linear-gradient(90deg,#d3bb80,#fff0bf,#c8ad72);box-shadow:0 1px 1px #83754b33;z-index:5}
+.flow-amplifier:after{content:'';position:absolute;inset:3px 2px;border-radius:2px;background:#a1b49b;box-shadow:inset 0 1px 2px #647b6633}
+.amplifier-fire{animation:amplifier-fire .55s ease-out}.amplifier-fire:after{background:#ffe3a1}
+@keyframes amplifier-fire{30%{scale:1.12 .86;box-shadow:0 0 7px #e8c57b99}100%{scale:1}}
+html[data-flow-style] .workflow .energy-pulse.critical-pulse{width:9px!important;height:16px!important;background:linear-gradient(#fff0bc,#dfb35e)!important;border-color:#ffefbb;box-shadow:0 0 4px #dfb35e66!important}
+html[data-flow-style] .workflow .flow-rail.social-rail{background:#9ebdc2;box-shadow:inset 1px 0 #739ca655,0 0 0 2px #f7f3dc,0 1px 0 3px #bdcbb055;opacity:.8}
+.flow-rail.social-rail:before{background:#a9cbd0!important}
+html[data-flow-style] .workflow .energy-pulse.social-pulse{background:linear-gradient(#dcecf0,#8ebcc9)!important;border-color:#f3faf5;box-shadow:0 0 4px #98bdc566!important}
+.tier.critical-arrival .flow-inlet{fill:#f2d591;stroke:#c7a15b}.tier.critical-arrival .room-tile{box-shadow:0 3px 0 #b7b998,0 0 6px #ddbd7544}
+.tier.energized-blue .room-tile,.tier.energized-blue .upgrade-room[data-upgrade="ready"]{box-shadow:0 3px 0 #9aafa1,0 0 5px #87b9c133!important;border-color:#a8c3bd!important}
+@media(prefers-reduced-motion:reduce){.amplifier-fire{animation:none}}
+
+/* Tempo stays warm; only media packets use blue. */
+html[data-flow-style] .workflow[data-flow-lanes] .energy-pulse.tempo-charged:not(.social-pulse){background:linear-gradient(#fff0c3,#d5b56e)!important;border-color:#fff5d6;box-shadow:0 0 4px #dec58666!important}
+.flow-rail.social-rail{animation:media-rail-open .65s ease-out;transform-origin:top}
+@keyframes media-rail-open{from{scale:1 0;opacity:0}to{scale:1 1;opacity:.8}}
+@media(prefers-reduced-motion:reduce){.flow-rail.social-rail{animation:none}}
+
+/* Media enters from the outside left; its light follows each department. */
+.tier.energized-blue .flow-junctions .media-junction{stroke:#6caabb;filter:drop-shadow(0 0 2px #9ecfd066)}
+.workflow[data-flow-lanes] .tier.energized-blue .room-tile,
+.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room[data-upgrade="ready"],
+.workflow[data-flow-lanes] .tier.energized-blue .foundation-block{border-color:#83b3bf!important;box-shadow:0 3px 0 #8fa9a9,inset 0 0 24px #82bfc438,0 0 7px #8dbfc54d!important}
+
+
+
+
+/* Restore the heading tint while a media wave passes. */
+
+
+
+/* Media powers the blocks; the department keeps its illustration in a blue palette. */
+.workflow[data-flow-lanes] .tier.energized-blue .purchased-room,
+.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room[data-upgrade],
+.workflow[data-flow-lanes] .tier.energized-blue .foundation-block{background:linear-gradient(145deg,#dce9eb,#bad1da)!important}
+.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-main-effect,
+.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-bonus-panel,
+.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .room-active{background-color:#d2e2e6!important;border-color:#9bbac5!important}
+
+
+html[data-theme="dark"] .workflow[data-flow-lanes] .tier.energized-blue .purchased-room,
+html[data-theme="dark"] .workflow[data-flow-lanes] .tier.energized-blue .upgrade-room[data-upgrade],
+html[data-theme="dark"] .workflow[data-flow-lanes] .tier.energized-blue .foundation-block{background:linear-gradient(135deg,#3d626f,#31515e)!important}
+html[data-theme="dark"] .workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-main-effect,
+html[data-theme="dark"] .workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-bonus-panel,
+html[data-theme="dark"] .workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .room-active{background-color:#385b69!important;border-color:#628f9e!important}
+@media(prefers-reduced-motion:reduce){}
+
+/* Keep a paper surface, a quieter inset bonus and a distinct blue action. */
+.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-main-effect{background:transparent!important}
+.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-bonus-panel{background:#c8dce1!important;border-color:#9fbfc9!important}
+.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-upgrade-action{background:#8fb3c4!important;color:#244b60!important;border-color:#6b99af!important;box-shadow:0 2px 0 #769aab!important}
+.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room[data-upgrade="locked"] .block-upgrade-action{background:#cfdee1!important;color:#657d86!important;border-color:#b0c5cd!important;box-shadow:0 2px 0 #a5bcc5!important}
+.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room[data-upgrade="max"] .block-upgrade-action{background:#b6d0d8!important;color:#486c7c!important;border-color:#96b7c4!important;box-shadow:none!important}
+.workflow[data-flow-lanes] .tier.energized-blue .block-level-track{background:#b0c8ce!important}
+.workflow[data-flow-lanes] .tier.energized-blue .block-level-track>i{background:#6798ad!important}
+html[data-theme="dark"] .workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-bonus-panel{background:#426574!important}
+html[data-theme="dark"] .workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-upgrade-action{background:#608fa5!important;color:#f1f7f5!important;border-color:#7fa8b9!important;box-shadow:0 2px 0 #345c70!important}
+
+.workflow[data-flow-lanes] .tier.energized-blue .base-room{border-color:#83b3bf!important;box-shadow:0 3px 0 #8fa9a9,0 0 7px #8dbfc54d!important}
+
+/* A complete ink palette accompanies the blue block surface. */
+.workflow[data-flow-lanes] .tier.energized-blue{--media-ink:#294f67;--media-copy:#496b7b;--media-muted:#658695}
+.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room,
+.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room>strong,
+.workflow[data-flow-lanes] .tier.energized-blue .block-bonus-title,
+.workflow[data-flow-lanes] .tier.energized-blue .base-room h3{color:var(--media-ink)!important}
+.workflow[data-flow-lanes] .tier.energized-blue .block-main-copy,
+.workflow[data-flow-lanes] .tier.energized-blue .block-bonus-copy,
+.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room>small,
+.workflow[data-flow-lanes] .tier.energized-blue .block-level-number,
+.workflow[data-flow-lanes] .tier.energized-blue .base-room .department-purpose{color:var(--media-copy)!important}
+.workflow[data-flow-lanes] .tier.energized-blue .block-main-label,
+.workflow[data-flow-lanes] .tier.energized-blue .block-bonus-label,
+.workflow[data-flow-lanes] .tier.energized-blue .block-level-number small,
+.workflow[data-flow-lanes] .tier.energized-blue .base-room .floor-type{color:var(--media-muted)!important}
+.workflow[data-flow-lanes] .tier.energized-blue .slot-icon{color:#507c94!important}
+.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-upgrade-action{color:#254a60!important}
+.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room[data-upgrade=locked] .block-upgrade-action{color:#617c8a!important}
+html[data-theme=dark] .workflow[data-flow-lanes] .tier.energized-blue{--media-ink:#e2edf1;--media-copy:#c2d8e3;--media-muted:#97b6c7}
+html[data-theme=dark] .workflow[data-flow-lanes] .tier.energized-blue .slot-icon{color:#a5c8db!important}
+html[data-theme=dark] .workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-upgrade-action{color:#f0f6f8!important}
+
+/* Hand-sent instructions stand out from small automatic tabs. */
+html[data-flow-style] .workflow[data-flow-lanes] .energy-pulse.manual-pulse{width:10px!important;height:20px!important;border:1.5px solid #c78c35!important;border-radius:4px!important;background:linear-gradient(90deg,#e6b962,#fff1bd 45%,#e6b962)!important;box-shadow:0 0 0 1px #fff7dc,0 0 5px #d7a54b66!important;z-index:7}
+html[data-flow-style] .workflow[data-flow-lanes] .energy-pulse.manual-pulse::after{content:'';display:block;position:absolute;inset:4px 2px;border-radius:1px;background:#fff9dc;opacity:.8}
+.flow-rail.manual-source::before{animation:manual-source-ping .45s ease-out}
+@keyframes manual-source-ping{20%{scale:1.5;box-shadow:0 0 0 5px #e6ba6655}100%{scale:1;box-shadow:0 0 0 0 #e6ba6600}}
+@media(prefers-reduced-motion:reduce){.flow-rail.manual-source::before{animation:none}}
+
+/* The media source has its own small blue transmitter housing. */
+.flow-rail.social-rail::before{display:none}
+.flow-media-head{position:absolute;top:-7px;left:50%;translate:-50% 0;width:10px;height:16px;box-sizing:border-box;border:1px solid #648e9f;border-radius:5px 5px 3px 3px;background:linear-gradient(90deg,#779fae,#bdd7df 48%,#759eae);box-shadow:0 0 0 1px #f5f6e7,0 2px 0 #809c9f66;z-index:6;transition:box-shadow .18s ease}
+.flow-media-head::before{content:'';position:absolute;left:2px;right:2px;top:3px;height:6px;border-radius:2px;background:repeating-linear-gradient(0deg,#e6f4f3 0 1px,#84adbc 1px 3px);box-shadow:inset 0 0 0 1px #638d9c66}
+.flow-media-head::after{content:'';position:absolute;left:2px;right:2px;bottom:2px;height:2px;border-radius:2px;background:#5f899b}
+.flow-media-head.media-source-active{box-shadow:0 0 0 1px #eaf7f4,0 0 7px #8dc6dbbb}
+.flow-media-head.media-source-active::before{background:repeating-linear-gradient(0deg,#f5ffff 0 1px,#addce8 1px 3px)}
+html[data-theme=dark] .flow-media-head{border-color:#739bab;box-shadow:0 0 0 1px #30443d,0 2px 0 #1b343d99}

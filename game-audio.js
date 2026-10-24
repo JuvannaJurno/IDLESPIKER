@@ -83,7 +83,7 @@ function cue(kind){
 function point(big=false,team=null){
  if(mode!=='match')return;rallyActive=false;cancelFade(bed);sync();
  if(!allowed()||mode!=='match')return;
- if(team===0){ownPointMusicCount++;if(ownPointMusicCount%3===0)playPointMusic(window.PlayerProfile?.track());else stopPointMusic();}else stopPointMusic();
+ ownPointMusicCount++;if(ownPointMusicCount%2===0)playPointMusic(window.PlayerProfile?.track());else stopPointMusic();
  shot('whistleShort',.6);
  if(big){const t=setTimeout(()=>{timers.delete(t);shot('whistleLong',.65)},520);timers.add(t)}
  for(const v of [...cheers,...legendaryCheers])stop(v);

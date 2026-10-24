@@ -239,7 +239,7 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 .match-arena:before{display:none}
 
 /* The entire lower sheet, including its rounded outside edges, turns together. */
-.match-arena .match-board>.serve-strip.has-server{width:calc(100% + 20px);margin-left:-10px;margin-right:-10px;padding-left:10px;padding-right:10px;background:#fff7e5;border-radius:0 0 17px 17px}
+.match-arena .serve-strip.has-server{width:calc(100% + 20px);margin-left:-10px;margin-right:-10px;padding-left:10px;padding-right:10px;background:#fff7e5;border-radius:0 0 17px 17px}
 .match-board.paper-turning{background:transparent;border-color:transparent;box-shadow:none}
 .match-board.paper-turning:after{content:'';position:absolute;z-index:-1;left:-1px;right:-1px;top:-1px;height:calc(var(--paper-fold-top) + 1px);background:#fff7e5;border:1px solid #fffcf3;border-bottom:0;border-radius:18px 18px 0 0;pointer-events:none}
 .notice-page-front,.notice-page-back,.score-page-back{border-radius:0 0 17px 17px}
@@ -262,8 +262,8 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 .serve-strip .server-number[hidden]{display:none!important}
 
 /* One stable row keeps the court still throughout the point announcement. */
-.match-arena .match-board>.serve-strip.has-server{height:82px;min-height:82px;max-height:82px;overflow:hidden;display:grid;grid-template-columns:38px minmax(54px,1fr) minmax(0,1.35fr) 24px;column-gap:7px;padding:7px 10px;align-items:center}
-.match-arena .match-board>.serve-strip.has-server:has(.server-skill[hidden]){grid-template-columns:38px minmax(0,1fr) 24px}
+.match-arena .serve-strip.has-server{height:82px;min-height:82px;max-height:82px;overflow:hidden;display:grid;grid-template-columns:38px minmax(54px,1fr) minmax(0,1.35fr) 24px;column-gap:7px;padding:7px 10px;align-items:center}
+.match-arena .serve-strip.has-server:has(.server-skill[hidden]){grid-template-columns:38px minmax(0,1fr) 24px}
 .match-arena .serve-strip.has-server .server-portrait{width:38px;height:38px;min-width:0}
 .match-arena .serve-strip.has-server .server-copy{min-width:0;gap:3px}
 .match-arena .serve-strip.has-server .server-name{font-size:10px;line-height:1.2;overflow-wrap:anywhere}
@@ -275,5 +275,13 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 .match-arena .serve-strip.has-server .server-skill-emblem svg{width:14px;height:16px}
 .match-arena .serve-strip.has-server .server-skill-words{max-width:calc(100% - 18px);min-width:0}
 .match-arena .serve-strip.has-server .server-skill strong{font-size:9px;line-height:1.2;overflow-wrap:anywhere}
-@media(max-height:700px){.match-arena .match-board>.serve-strip.has-server{height:76px;min-height:76px;max-height:76px}}
-@media(min-aspect-ratio:6/5) and (max-height:500px){.match-arena .match-board>.serve-strip.has-server{grid-template-columns:28px minmax(0,1fr) 24px;gap:4px;height:116px;min-height:116px;max-height:116px;align-content:center}.match-arena .serve-strip.has-server .server-portrait{width:28px;height:32px}.match-arena .serve-strip.has-server .server-skill{grid-column:1/-1;grid-row:2;min-height:34px;max-height:42px}}
+@media(max-height:700px){.match-arena .serve-strip.has-server{height:76px;min-height:76px;max-height:76px}}
+@media(min-aspect-ratio:6/5) and (max-height:500px){.match-arena .serve-strip.has-server{grid-template-columns:28px minmax(0,1fr) 24px;gap:4px;height:116px;min-height:116px;max-height:116px;align-content:center}.match-arena .serve-strip.has-server .server-portrait{width:28px;height:32px}.match-arena .serve-strip.has-server .server-skill{grid-column:1/-1;grid-row:2;min-height:34px;max-height:42px}}
+
+/* A folded copy uses exactly the same portrait box as the live announcement. */
+.match-arena .serve-strip.has-server .server-portrait{box-sizing:border-box;flex-shrink:0;align-self:center;justify-self:start;aspect-ratio:1;position:relative}
+.match-arena .serve-strip.has-server .server-portrait img{position:absolute;inset:0;width:100%;height:100%;max-width:none;max-height:none;box-sizing:border-box;object-fit:cover;object-position:center;transform:none;animation:none}
+.match-arena .serve-strip.has-server .server-portrait img.is-team-badge{object-fit:contain;padding:4px}
+.match-arena .serve-strip.has-server .server-portrait [hidden]{display:none!important}
+
+.match-arena .serve-strip.has-server .server-portrait[data-empty="true"]{visibility:hidden}

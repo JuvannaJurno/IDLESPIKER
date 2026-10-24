@@ -1,14 +1,15 @@
 (function(root){'use strict';
-const restMs=4*60*60*1000;
+const restMs=60*60*1000;
 const nonnegative=v=>Number.isFinite(v)?Math.max(0,v):0;
 function normalize(raw,capacity,reference=Date.now()){
  if(!raw||!Number.isFinite(raw.used)||raw.used<0)return null;
  let used=raw.used,cooldownUntil=nonnegative(raw.cooldownUntil);
- if(raw.version!==2){const date=new Date(reference);date.setHours(0,0,0,0);if(raw.day!==date.getTime())used=0;cooldownUntil=0;}
+ if(raw.version===2&&cooldownUntil)cooldownUntil=Math.max(1,cooldownUntil-3*60*60*1000);
+ if(raw.version!==2&&raw.version!==3){const date=new Date(reference);date.setHours(0,0,0,0);if(raw.day!==date.getTime())used=0;cooldownUntil=0;}
  if(capacity>0&&used>=capacity&&!cooldownUntil)cooldownUntil=reference+restMs;
- return {version:2,used,cooldownUntil};
+ return {version:3,used,cooldownUntil};
 }
-function at(raw,capacity,reference,now){const work=normalize(raw,capacity,reference)||{version:2,used:0,cooldownUntil:0};if(work.cooldownUntil&&now>=work.cooldownUntil){work.used=0;work.cooldownUntil=0;}return work;}
+function at(raw,capacity,reference,now){const work=normalize(raw,capacity,reference)||{version:3,used:0,cooldownUntil:0};if(work.cooldownUntil&&now>=work.cooldownUntil){work.used=0;work.cooldownUntil=0;}return work;}
 function status(s,capacity,now=Date.now()){
  const work=at(s.dailyShift,capacity,s.lastSeen||now,now),rest=Math.max(0,work.cooldownUntil-now);
  return {capacity,used:work.used,remaining:rest?0:Math.max(0,capacity-work.used),cooldownUntil:work.cooldownUntil,cooldownRemainingMs:rest};

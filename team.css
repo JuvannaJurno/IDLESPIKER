@@ -107,3 +107,43 @@ html[data-theme=dark] .card-cap[data-cap-state=full] .card-cap-heading b{color:#
 .player-card *{-webkit-user-select:none;user-select:none}
 
 .player-country-badge{padding:1px;background:transparent;border:1px solid #fff8e5;box-shadow:none;border-radius:3px;line-height:0}
+
+.player-card.elite-player{border-color:#496775!important;box-shadow:0 3px 0 #49677544!important;background:#f5f3e9!important}.player-card.elite-player .card-top{background:linear-gradient(110deg,#293e4d,#405969)!important;color:#f4f3e9!important;min-height:38px;letter-spacing:.65px}.player-card.elite-player .card-art{background:radial-gradient(ellipse at 50% 45%,#c9d9db,transparent 68%),linear-gradient(145deg,#7897a0,#b5c8c8)!important}.player-card.elite-player .card-name{border-top:1px solid #9bafb3!important;background:#e2e9e6!important}.player-card.elite-player .player-overall{background:#314e5e!important;color:#f6f5e9!important}.player-card.elite-player .card-grade{display:none!important}
+
+.player-card.elite-player .elite-seal{position:absolute;right:8px;bottom:8px;z-index:7;padding:4px 7px;border:1px solid #7896a3;border-radius:4px;background:#304d5ee8;color:#f4f3e9;font-size:8px;font-weight:750;letter-spacing:1px;pointer-events:none}
+.player-card.elite-player .card-halo{opacity:.3;background:#d9e4e1!important}
+
+.player-card.elite-player{--growth-edge:#6c8a99!important;--growth-light:#d9e4e3!important;outline:none!important}
+.player-card.elite-player::after{box-shadow:inset 0 0 0 1px #7796a2!important}
+
+/* Elite players share a muted purple paper palette, without an extra tag. */
+.player-card.elite-player{--club-paper:#f2edf5!important;--club-soft:#e6deed!important;--club-ink:#594469!important;--club-muted:#8a7895!important;--club-line:#d6c9df!important;--club-gold:#c0accf!important;--club-edge:#a18caf!important;--club-shadow:#9683a555!important;--growth-edge:#a18caf!important;--growth-light:#ece4f1!important;background:#f2edf5!important;color:#594469!important;border-color:#a18caf!important;box-shadow:0 3px 0 #9683a555!important}
+.player-card.elite-player::after{box-shadow:inset 0 0 0 1px #ad99ba!important}
+.player-card.elite-player .card-top{background:#7b648e!important;color:#f9f2fc!important}
+.player-card.elite-player .card-top b{color:#f9f2fc!important}
+.player-card.elite-player .card-art{background:radial-gradient(ellipse at 50% 48%,#e9e1ee,transparent 68%),#d5c7df!important}
+.player-card.elite-player .card-halo{background:#f0e9f5!important;border-color:#bbaac9!important}
+.player-card.elite-player .card-name{background:#e6ddec!important;border-top-color:#c5b5d0!important}
+.player-card.elite-player .card-inspect,.player-card.elite-player .card-inspect small,.player-card.elite-player .card-stats b{color:#594469!important}
+.player-card.elite-player .player-overall{background:#826a96!important;color:#fff7ff!important}
+.player-card.elite-player .player-overall small{color:#ede2f3!important}
+.player-card.elite-player .player-skill-tag{background:#eee5f3!important;border-color:#c6b4d3!important;color:#79628c!important}
+.player-card.elite-player .card-cap-meter{background:#d8cce2!important}
+.player-card.elite-player .card-cap-meter>i{background:#a18bb4!important}
+.player-card.elite-player .card-stats i{background:linear-gradient(to right,#ad96bd var(--stat),#dfd3e7 var(--stat))!important}
+.player-card.elite-player .scout-hire,.player-card.elite-player .card-open-upgrade{background:#bda6cd!important;color:#513b63!important;border-color:#a48ab7!important;box-shadow:0 2px 0 #9c85ac44!important}
+.player-card.elite-player .scout-hold,.player-card.elite-player .scout-compare>summary{background:#e7deed!important;color:#79658b!important;border-color:#cebddb!important}
+html[data-theme=dark] .player-card.elite-player{--club-paper:#3c3347!important;--club-soft:#493c56!important;--club-ink:#e4d9ee!important;--club-muted:#b5a0c6!important;--club-line:#62516e!important;background:#3c3347!important;color:#e4d9ee!important}
+html[data-theme=dark] .player-card.elite-player .card-name{background:#493c56!important}
+html[data-theme=dark] .player-card.elite-player .card-inspect,html[data-theme=dark] .player-card.elite-player .card-inspect small,html[data-theme=dark] .player-card.elite-player .card-stats b{color:#e4d9ee!important}
+
+#scoutDialog .player-card.elite-player .scout-hire{background:#8c74a1!important;color:#fff8ff!important;border-color:#79628e!important;box-shadow:0 2px 0 #6d567e55!important}
+#scoutDialog .player-card.elite-player .scout-hold,#scoutDialog .player-card.elite-player .scout-compare>summary{background:#e7deed!important;color:#756087!important;border-color:#cbb9d9!important}
+#scoutDialog .player-card.elite-player .transfer-fit{background:#e9e0ef!important;color:#725980!important;border-color:#d5c6df!important}
+
+.player-card.elite-player .card-art{background:radial-gradient(ellipse at 50% 38%,#ffffff 0%,#fbf9fd 52%,#eee8f4 100%)!important}
+.player-card.elite-player .card-halo{background:#ffffff80!important;border-color:#e6deed!important}
+.player-card.elite-player{--club-action:#e1d4eb!important}
+#scoutDialog .scout-player.player-card.elite-player>.scout-compare{background:#e1d4eb!important;color:#6c5280!important;border:1px solid #c1aad2!important;box-shadow:0 2px 0 #bba4cb33!important}
+#scoutDialog .scout-player.player-card.elite-player>.scout-compare:hover{background:#d8c7e5!important;border-color:#a88cbd!important}
+html[data-theme=dark] #scoutDialog .scout-player.player-card.elite-player>.scout-compare{background:#53415f!important;color:#eadcf2!important;border-color:#8c739f!important}
