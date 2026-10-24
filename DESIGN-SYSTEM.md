@@ -296,3 +296,87 @@ Yeni bir görsel tema tasarlanmadı. Ortak bileşenler, tema varyantları ve kay
 6. Yetkili kullanıcı kararı değiştiyse bu dosyayı da güncelle. Tek seferlik görsel düzenleme için yeni test yazmak zorunlu değil; ortak davranış veya geometri riski varsa mevcut anlamlı kontrolleri kullan.
 
 Bu rehber, tutarlılığı korumak içindir; kendi başına izin/onarım onayı isteme kapısı değildir. Kullanıcının verdiği kapsam içinde ilerle.
+
+## Altyapı Akademisi — ilk çalışan taslak
+
+24 Ekim: 1. Lig için oynanabilir prototip, player-card-design-lab-v3.html#academy-design-lab bölümüne eklendi. Ayrı URL index.html?academyPreview=1. Üretim lig geçişi değildir; ilk üç aşamanın menüsüne giriş eklenmez.
+
+- Akademi ana ekranının merkezi canlı antrenman salonudur. Yalnız kaydedilen gençler burada maçtaki vektör karakter çizimi ve onaylı pozlarla antrenman yapar; statik tesis illüstrasyonu kaldırıldı. Bütçe altta tek satır, deneme kontrolleri kapalı details içindedir.
+- Aday ve oyuncu dosyaları mevcut GameUI.selection kabuğunu kullanır. Mobil/masaüstü aynı ölçü; mevcut karartma, tek içerik kaydırması, kapat/Tamam ailesi.
+- Oyuncu portresi TeamAppearance, mezun kartı TeamView.transferCard üzerinden gelir. Kartın dikey anatomisi, üst yıldız yerleşimi ve orijinal görünüşü korunur. Akademi için ayrı kart veya portre çizimi yok.
+- Eğitim raporu isteğe bağlı; karar gelmeyince süre durmaz. Program değişimi süre çubuğunu geriye götürmez ve kazanılan özellikleri silmez.
+- Mezunlar ayrı deneme kadrosuna gelir. Gerçek oyunculara ekleme/ilk yedi değişikliği yapılmaz. Deneme storage alanı idle-spiker-academy-preview: ile ayrıdır; akademi dışı modallar yalnız bu URL içinde bastırılır.
+- Yetiştirme ve ikinci alan değerleri deneme içindir; gerçek 1. Lig profili henüz yoktur. Tam taslak FIRST-LEAGUE-ACADEMY-PLAN.md dosyasında, kaynaklar academy-rules.js / academy-preview.js / academy.css / academy-design-lab.js.
+- Kontrol test-academy-browser.cjs; ekran görüntüleri audits/academy-home-mobile.png, academy-candidates-mobile.png, academy-report-mobile.png, academy-graduation-mobile.png, academy-dark-mobile.png.
+
+### Akademi canlı salon düzeni — son kullanıcı kararı
+
+- Kullanıcı küçük açıklama yazılarını azaltıp oyuncuyu eylemlerle yönlendirmeyi istedi. Üstte Altyapı Akademisi ve yuva sayısı; Antrenman/Mezunlar; geniş canlı salon; oyuncu seçim düğmeleri; yalnız seçili gencin ilerleme kartı. Boş yuvada açık Oyuncu ekle eylemi.
+- Salondaki karakter maçın kendisiyle aynıdır: mac.html?academyTraining=1 içindeki gerçek drawPlayer ve mevcut tickScenario kullanılır; bunlar MatchVectorCharacters, EquipmentActionPoses ve authored walk kaynaklarını kendileri seçer. Portreyi oynatarak animasyon yapılmaz; animation lab bağımlılığı yok.
+- academy-native-training.js yalnız bu query içinde çalışır. Maç simülasyonu durur; tek sahne kendi 30 FPS çizimini yürütür. Maç sonucu, puan, ödül veya oyuncu kaydı üretmez. Normal maç çizimi bu query dışında değişmez.
+- Son kullanıcı düzeltmesi: yeni animasyon kurgulamak yasak. Smaç, pas ve blok için oyunun mevcut tickScenario fonksiyonu ve drawPlayer zinciri doğrudan çağrılır. Özel pose blend, kol/ten geçişi, değiştirilmiş açı, zıplama eğrisi ve özel top uçuşu kaldırıldı. Gençlerin görünüşü kaydedilmiş appearance üzerinden native renderer'a verilir.
+- Tüm gençler salonda birlikte görünür. Oyuncuya dokunma veya sahne altındaki isim düğmesi seçim yapar; alt kart seçili oyuncuyu gösterir. Eğitim ve ekonomik kurallar değişmez.
+- Tek iframe korunur; seçim/kayıt güncellemesi sahneyi yeniden yüklemez. Ekran dışında, Mezunlar sekmesinde ve arka sekmede çizim durur. Reduced-motion'da antrenman pozu sabittir; eğitim süresi devam eder.
+- İlk sürümdeki uzun tanıtım, tesis açıklaması ve sürekli görünür deneme metinleri kaldırıldı. Yeni gereksiz açıklama katmanı ekleme.
+- Test test-academy-browser.cjs artık iki native karakter, değişen görüntü, seçim, sekme duraklaması ve reduced-motion kontrolünü de içerir. Referans audits/academy-live-gym-mobile.png.
+
+### Akademi kamera/animasyon düzeltmesi
+
+Kullanıcı ilk canlı salon animasyonunu reddetti: yalnız aynı parçaları kullanmak yeterli değil, açı ve hareketler de oyunla aynı olmalı. academy-native-training.js içindeki özel blend/handPoint/athlete zaman çizelgesi tamamen kaldırıldı. Mevcut tickScenario ve drawPlayer değiştirilmeden çağrılır. Kamera maç mobil görünüşündeki -90 derecedir; karakter açısı, ölçeği ve hareket parametreleri akademiye özel yeniden yorumlanmaz. Karakter çizimi için ana 1000×620 maç canvas'ı korunur, tamamlanmış görüntü kamera dönüşüyle akademi canvas'ına aktarılır. Sonraki salon revizyonunda maç sahasının zemini ve ekipmanı ayrı antrenman tesisiyle değiştirildi; karakter kamerası ve animasyonları korunur. Test kamera metadatasını ve file çizgisinin yatay görüntü piksellerini doğrular.
+
+### Akademi yaşayan tesis ve ortak çalışmalar — 24 Ekim
+
+Kullanıcı daha doğal, ekipman ve hocaları olan bir sandbox ve zaman zaman birlikte çalışan gençler istedi.
+
+- academy-gym-scene.js, aynı -90 derece kamera için native dünya koordinatlarında çizilen ayrı bir tesis zemini sağlar. Tam maç sahası kopyası yerine kısa antrenman filesi, ahşap zemin, iki top arabası, taktik panosu, bank/su/havlu, minder/ağırlık/roller köşesi, koordinasyon merdiveni, koniler, iniş hedefleri ve ekipman rafı bulunur. Statik zemin bir kez rasterize edilip tekrar kullanılır.
+- İki hoca mevcut TeamAppearance üretimi ve native drawPlayer ile çizilir. Hocalar öğrenci yuvası/kadro sayılmaz; nötr yeşil kıyafet kullanır. Bireysel çalışmada karşıdaki partner olur; boşta salonda mevcut native yürüyüşle dolaşırlar.
+- Otomatik çalışma planı 6,8 saniyelik bölümlerde bireysel temel çalışma, diğer temel çalışma, ortak pas, ortak smaç, koordinasyon/ayak çalışması ve karşılıklı hücum-blok arasında değişir. Ortak çalışmalar yalnız iki genç varsa devreye girer; tek genç hocasıyla çalışır.
+- Eşli çalışmada iki gencin aynı native senaryo bağlamını paylaşması gerekir; iki bağımsız top/animasyonu eşli gibi sunma. Pas çalışmasında pasör/hücumcu, ardından smaç çalışmasında aynı ikili; blok çalışmasında vurucu/blokçu rolleri görünür. Hoca diğer tarafta hedef/partner olur.
+- Vuruş, pas ve blok hâlâ mevcut tickScenario/drawPlayer kullanır. Koordinasyon ve hocaların dolaşması mevcut moveCourtPlayer/updateFacing ve native yürüyüştür. Özel kol animasyonu, yeni pose blending veya kamera açısı yok.
+- Çalışma çeşitliliği görseldir; seçilmiş gelişim programının özellik kazancını, eğitim süresini veya ekonomisini değiştirmez.
+- Akademi testi artık iki hoca, ekipmanlar, ortak pas/smaç/blok, bireysel ayak çalışması, aynı native kamera ve ekran dışı duraklamayı da doğrular. Görseller: audits/academy-paired-passing-mobile.png, academy-paired-attack-mobile.png, academy-footwork-mobile.png.
+
+### Akademi dinlenme, sohbet, gölgeler ve seçili saha — son karar
+
+- Gençler banklarına mevcut native yürüyüşle gider; fileyi geçmeleri gerekiyorsa kenardan dolaşır. Bankta native dinlenme gövdesi oturma yüzeyine yerleşir, bankın ön çıtası üst katmanda çizilir. Konuşma başlamadan önce koçun da öğrencinin yanına varması gerekir.
+- Konuşma balonları yeni çizim değildir: MatchReactionArt içindeki dot-dot ve lightbulb stripleri kullanılır. Konuşma için ek küçük açıklama yazısı yoktur.
+- Koç pası → yaklaşma → smaç, gerçek maçın launch ve temel tick fonksiyonlarıyla aynı top üzerinden çalışır. Bu döngüde sadece görünür pasör koç, hücumcu ve karşılayan partner simüle edilir; görünmeyen oyuncu çarpışması yoktur. Sonuç/ekonomi üretmeden, karşıdaki partnerin temasından önce çalışma yeniden hazırlanır.
+- Bağımsız çalışmalar ayrı koridorlarda tutulur; eşli çalışmada tek ortak top vardır. Yere yakın topun kendi çalışma grubunun dışındaki bir karaktere mesafesi deneme metriklerinde izlenir.
+- Gölge, karakter ve top üç ayrı çizim katmanıdır. Bütün zemin gölgeleri önce çizilir, sonra derinliğe göre karakterler, en son uçan toplar. Native drawPlayer'ın kendi gölgesi yalnız akademideki bu çizim çağrısında bastırılır; gerçek maç görünüşü değiştirilmez.
+- Sepetler ve yerdeki yedek toplar ball_volley1.png / ballSprites kaynağını kullanır. Elle çizilmiş benzer toplar kaldırıldı. Statik tesis zemini yine önbellektedir; top görselleri üstüne gerçek assetten çizilir.
+- Çalışma planına dinlenme ve sohbet bölümleri eklendi. Koşu bölümü 22 sn, dinlenme 8 sn, sohbet 9 sn sürer; temel antrenman bölümleri 6,8 sn. Tüm süreler görseldir, akademi gelişim saati ve ekonomisi değişmez.
+- Koşu ve saha çalışmasında gerçek oyunda profilden seçilmiş saha, Armalı/Armasız ayarı ve kulüp kimliği kullanılır. Akademi denemesi bu seçimleri salt okur; gerçek profil/kulüp/kaynak kaydına yazmaz. Saha ödülü kilidi mevcut SocialJourneyRules kontrolünden geçer. Seçim değişikliği ve sekmeye dönüş sahne verisini yeniler.
+- Salon ve saha arasında 0,5 sn geçiş vardır. Kamera açısı yine maçtaki -90 derecedir. Saha sahnesinde tam saha ve dış koşu yolu görünsün diye bütün kamera eşit oranda uzaklaştırılır; karakterin native rig ölçeği veya pozları değiştirilmez.
+- Koşu rotası çizgilerin ve file direklerinin dışındadır. Native moveCourtPlayer'a akademi için isteğe bağlı sınırlar tanımlanır; normal maçta bu alan yoktur ve eski sınırlar aynen geçerlidir.
+- Test test-academy-browser.cjs: bankta iki genç, dört konuşma stripi, native pasın gerçek smaç uçuşuna dönüşmesi, sepette gerçek top kaynağı, gölge katmanı, gerçek profilin seçili gece sahası ve saha dışı koşu rotası. Görseller audits/academy-bench-mobile.png, academy-coach-talk-mobile.png, academy-selected-court-running-mobile.png.
+
+### Akademi pas tamamlama, koşu yönü ve kalabalık denemesi
+
+- Pas gösterimi olarak kalan bütün toss çalışmaları gerçek native launch/tick zincirine bağlandı. İki genç varsa biri pasör, diğeri hücumcu olur; tek gençte koç diğer rolü üstlenir. Koç pası çalışması da aynı zinciri kullanır. Yeni çalışma bölümü başlayacak olsa bile uçuş/vuruş tamamlanmadan sahne kesilmez.
+- Çizim için kimlik uygulaması native simülasyon oyuncusunu değiştirmemelidir. character artık kopyayı süsler; pasör/hücumcu rolü kareler arasında değişip hedef noktasını bozamaz.
+- Koşucular ve yürüyen koçlar maçın fileye dönük kalma kısıtını kullanmaz. Mevcut native dönüş serbest dolaşım modunda çağrılır; ters yönde adımlamadan önce yön değişir. Kamera ve yürüme rig'i aynıdır.
+- Koç hedefe sekiz birim yaklaşınca durur; gerçek yer değiştirme çok düşükse yürüyüş fazı ilerlemez. Hedefte/yol tıkalıyken yerinde koşma yoktur.
+- Görünür 10 oyuncuyla dene düğmesi, gerçek eğitim girişlerine örnek karakterler ekleyip on genç + iki hoca gösterir. Gerçek kadro, yuva, bütçe ve kayıt değişmez. Aynı düğme Normal görünüme dön olur. Örnekler salonda ayrı köşelerde, saha sahnesinde eşit aralıklı koşu rotasında görünür. Ek top kalabalığı oluşturulmaz.
+- Test: öğrenci pasının smaç uçuşuna dönüşmesi, koşu yönü/hız vektörü uyumu, sohbet eden koçların durması, on genç + iki hoca ve düğmenin kayıt değiştirmeden açılıp kapanması. Görseller audits/academy-crowd-gym-mobile.png ve academy-crowd-court-mobile.png.
+
+### Akademide top görsellerini deneme
+
+- Kullanıcının balls.png atlasındaki altı top, salonun altındaki Top satırında görsel düğmelerle seçilir. Mevcut maç topu da ilk seçenek olarak korunur. Renk adları aria-label/title içindedir; gereksiz ek açıklama yoktur.
+- Seçim, uçan toplara, sepetlere ve yerdeki yedek toplara birlikte uygulanır. Aynı görüntü alanına normalize edilir; top fiziği, vuruş anı, sahne saati ve karakter animasyonu değişmez.
+- Atlasın kendisi değiştirilmez. sync-academy-balls.cjs kaynak dosyayı file:// canvas güvenliği için academy-ball-atlas-data.js içine gömer. version-assets.cjs bunu yeniler. Atlas yalnız akademi önizlemesi açıldığında yüklenir.
+- academy-ball-picker.js her hücrenin saydam sınırını kırpıp eşit 128px kutuda hazırlar; native sahne seçilen PNG'yi aynı top çapında çizer. Yeni top seçimi antrenmanı yeniden başlatmaz.
+- Tercih, ayrı akademi deneme alanında ball-choice-v1 anahtarına kaydolur; gerçek oyun profili ve ekonomi değişmez. Hızlı seçimlerde eski resmin geç yüklenip son seçimi ezmesi engellenir.
+- Kontrol test-academy-balls.cjs: altı saydam kırpım, yedi seçenek, canlı değişim, hızlı seçim sırası, yeniden açılışta tercih, kayıt/ekonomi korunması ve 320/1440 taşmama. Görsel audits/academy-ball-picker-mobile.png.
+
+### Sürekli antrenman istasyonları ve ortak top konturu — son karar
+
+Kullanıcı, başa sardığı belli olan klipler yerine topun geri döndüğü, oyuncuların sırayla çalışıp arkasına geçtiği akış istedi.
+
+- academy-training-stations.js kalıcı istasyon durumunu tutar. Salonun ilk dört bölümü aynı hücum istasyonunu sürdürür; saat/oyuncu/top her bölümde sıfırlanmaz. Sahne değişimi yalnız devam eden top teması ve vuruş tamamlandıktan sonra yapılır. İstasyonlar tekrar görünürken önceki durum ve sıra korunur.
+- Hücum sırası: koç topu pasör koça geri atar, pasör sıradaki gence kaldırır, genç native yaklaşma/smaç hareketiyle vurur. Vuruş sonrası takip hareketi biter, oyuncu kenardan dolaşıp sıranın arkasına yürür; sıradaki genç yaklaşma yerine gelir. Koç tuttuğu topu geri döndürür; bütün turda aynı top kimliği korunur.
+- Normal ve 10 oyunculu denemede bütün gençler gerçek sıraya dahildir. Bekleyenler art arda zıplayan sahte klipler oynatmaz; sırayı takip eder. Sadece aktif ve seçilmiş oyuncunun adı gösterilerek kalabalık isim çakışması azaltılır.
+- Saha sahnesinde ayrı native servis sırası vardır. Oyuncu servis noktasına yürür, sahaya döner, native servis hazırlığı/vuruşunu yapar ve arka sıraya geçer. Her servis yeni bir top kullanır. Servis sahnesi 28 sn sürer; küçük top arabası servis noktasının yanındadır.
+- Zemine gelen toplar native sekme hesabını kullanır ve durunca dönmeyi bırakır. Birden fazla top yerde kalır. Sekizden fazla top biriktiğinde koç, atış yapılmayan arada bir topu alıp güvenli yerine döner; koç geri dönmeden sonraki servis başlamaz.
+- Vuruşlar native tick/launch/serve, hareketler native yürüyüş ve dönüş üzerinden çalışır. Yeni özel kol pozu veya sıfırlanan keyframe klibi yoktur. Bekleyenlerin konumları ve sıra dönüşü gerçek hareketle ilerler.
+- Bütün yedi top seçeneği ortak koyu bir siluet konturu kullanır: saydam kenardan yaklaşık 3px dışarı, 1px içeri taşar (128px önizleme ölçeğinde). Bu ayrı daire/halo değildir; topun gerçek dış biçimini sarar. Kontur seçici, uçuş, sepet ve yerdeki toplarda aynıdır; orijinal balls.png değiştirilmez.
+- Test test-academy-stations.cjs: on oyuncuda iki sıra dönüşü, tek top kimliğiyle koç geri dönüşü, konum sıçramaması, sırada kayıp/tekrar olmaması, iki native servis ve birden fazla yerde top. test-academy-browser.cjs ve test-academy-balls.cjs de devam eder. Görseller audits/academy-attack-queue-mobile.png ve academy-serve-queue-mobile.png.
