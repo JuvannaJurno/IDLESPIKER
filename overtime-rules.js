@@ -16,7 +16,7 @@ function settle(s,id,from,now,e){
  if(!Number.isFinite(from)||!Number.isFinite(now)||now<=from||!status(s,id,e,now).unlocked||!validId(id))return result;
  const capacity=e.offlineHours*3600,limit=matchLimit(s),rate=e.autoRate*(1+(e.doubleChance||0));if(capacity<=0||rate<=0)return result;
  let work=normalize(s.matchOvertime);if(work&&work.fixtureId!==id&&!s.attendanceRewards?.includes(work.fixtureId))return result;
- if(!work||work.fixtureId!==id)work={fixtureId:id,used:0,lastAt:from,carry:0,steady:0,repeat:0,income:0};
+ if(!work||work.fixtureId!==id)work={fixtureId:id,used:0,lastAt:from,carry:0,steady:(s.steadyProgress||0)%10,repeat:(s.trainingProgress||0)%5,income:(s.incomeProgress||0)%10};
  let cursor=Math.max(from,work.lastAt);const efficiency=1;
  const charged=Shift.consume(s,capacity,cursor,now,Math.max(0,limit-work.used)),seconds=charged.seconds;
  if(seconds){
@@ -25,7 +25,8 @@ function settle(s,id,from,now,e){
    const bonus=Math.floor((work.steady+n)/10)*(steadyValue+B.value(s,'bal_plan'));
    const repeats=Math.floor((work.repeat+n)/5)*e.repeatAP;
    work.steady=(work.steady+n)%10;work.repeat=(work.repeat+n)%5;
-   const ap=(n*e.autoAP*(1+e.critChance*(e.critMult-1))+bonus+repeats)*(1+B.value(s,'pro_campap'));
+   const production=rules.automaticProduction(s,e);
+   const ap=(n*(production.base+production.calendar)+bonus+repeats)*(1+B.value(s,'pro_campap'));
    const cash=B.departmentOpen(s,2)?Math.floor((work.income+n)/10)*B.cash(s)*efficiency:0;
    work.income=(work.income+n)%10;work.used+=seconds;
    s.ap+=ap;s.budget+=cash;result.ap+=ap;result.cash+=cash;result.seconds+=seconds;result.cycles+=n;

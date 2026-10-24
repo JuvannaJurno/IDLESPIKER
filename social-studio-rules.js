@@ -55,7 +55,7 @@ function extraQueue(s){return Math.max(0,Math.min(5,Math.floor(Number(s.levels?.
 function enqueue(s,limit=Infinity){const st=s.studio;if(!st?.jobs?.length)return 0;const count=Math.min(Math.max(0,Number(limit)||0),Math.max(0,extraQueue(s)-st.queue.length)),types=['moment','story','sponsor'];for(let i=0;i<count;i++)st.queue.push(types[((st.offer||0)+1+st.queue.length)%3]);return count;}
 function slots(){return 1;}
 function capacity(s){return 3+Math.max(0,(s.levels[1]||0)-5);}
-function waveCount(s){return [0,10,15,20,25,30][Math.max(0,Math.min(5,Math.floor(s.levels?.[0]||0)))];}
+function waveCount(s,room){const base=[0,10,15,20,25,30][Math.max(0,Math.min(5,Math.floor(s.levels?.[0]||0)))],journey=room||root.RoomSystem?.journeyView?.();return Math.round(base*(journey&&root.SocialJourneyRules?root.SocialJourneyRules.mediaMultiplier(journey):1));}
 function sponsorRate(s){return [0,.5,.75,1,1.25,1.5][Math.max(0,Math.min(5,Math.floor(s.levels?.[2]||0)))];}
 function reward(s,type,special=false){const c=contents.find(c=>c.id===type);return {followers:Math.round(c.followers*(1+(s.levels[1]||0)*.18)*(special?1.6:1)),cash:type==='sponsor'?Math.round(followers(s)*sponsorRate(s)):0};}
 function duration(s,type,lane=0){const c=contents.find(c=>c.id===type);const speed=1+(s.levels[0]||0)*.14;return Math.round(c.seconds*1000/speed);}

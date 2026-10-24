@@ -2,9 +2,5 @@
 .tempo-wave{left:20px;width:5px;border-radius:5px;background:linear-gradient(90deg,#68a8c288,#e3f7ff 45%,#a1d8ef 65%,#5b9db888);box-shadow:0 0 0 2px #91cce92b,0 0 7px #75bfe64d;overflow:hidden;z-index:5}
 .tempo-wave:before{content:'';position:absolute;left:1px;right:1px;top:0;height:34px;border-radius:4px;background:linear-gradient(transparent,#fff 45%,#d6f3ff 70%,transparent);transform:translateY(var(--tempo-head,0px));}
 .energy-pulse.tempo-charged{background:linear-gradient(#d7f4ff,#70b9da)!important;clip-path:none!important;outline:0;border-radius:5px;box-shadow:inset 0 0 0 1px #d9f4ff,0 0 5px #72bfd866!important}
-/* Blue packets illuminate both the department and the blocks they pass. */
-.tier.energized-blue .connector{background:#71b9d8!important;box-shadow:0 0 6px #80c6e455}
-.tier.energized-blue .connector i{background:#abe5f7!important;border-color:#effbff!important}
-.tier.energized-blue .room-tile,.tier.energized-blue .upgrade-room[data-upgrade="ready"]{border-color:#80bfd8!important;box-shadow:0 3px 0 #7fa5b1,inset 0 0 18px #86cce729!important}
-@media(prefers-reduced-motion:reduce){.tempo-wave{box-shadow:none}.tempo-wave:before{display:none}.tier.energized-blue .room-tile{box-shadow:0 3px 0 #7fa5b1!important}}
+@media(prefers-reduced-motion:reduce){.tempo-wave{box-shadow:none}.tempo-wave:before{display:none}}
 .energy-pulse.tempo-charged{left:17px;width:11px;border:1px solid #dff8ff;box-sizing:border-box;box-shadow:inset 0 0 4px #f2fdff,0 0 7px #62b9df99!important}

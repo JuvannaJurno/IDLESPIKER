@@ -14,7 +14,7 @@
 .workflow[data-flow-lanes] .energy-pulse.auto-pulse{height:10px!important;opacity:.9}
 .workflow[data-flow-lanes] .energy-pulse.tempo-charged{background:linear-gradient(#edfaff,#7db8c9)!important;border-color:#f1fcff;box-shadow:0 0 4px #83bbca88!important}
 .workflow[data-flow-lanes] .tempo-wave{left:10px;width:calc(var(--flow-gutter) - 30px);background:#bad7d526;box-shadow:none;border-radius:8px;z-index:1}.workflow[data-flow-lanes] .tempo-wave:before{left:0;right:0;background:linear-gradient(transparent,#c2e1d633,transparent)}
-.tier.energized .flow-junctions{stroke:#d1ae5e}.tier.energized .flow-inlet{fill:#efcf7e;stroke:#b69d63}.tier.energized-blue .flow-junctions{stroke:#79acbb}.tier.energized-blue .flow-inlet{fill:#b7dce3;stroke:#79acbb}
+.tier.energized .flow-junctions{stroke:#d1ae5e}.tier.energized .flow-inlet{fill:#efcf7e;stroke:#b69d63}
 /* B: inset cords, compact paper tabs. */
 html[data-flow-style="ribbon"] .flow-rail{width:6px;background:#aebda5;box-shadow:inset 1px 0 #819b8b55,0 0 0 2px #f7f3dc,0 1px 0 3px #bdcbb055}
 html[data-flow-style="ribbon"] .flow-rail:before{width:8px;height:8px;background:#adbb9d}
@@ -50,7 +50,6 @@ html[data-flow-style] .workflow .flow-rail.social-rail{background:#9ebdc2;box-sh
 .flow-rail.social-rail:before{background:#a9cbd0!important}
 html[data-flow-style] .workflow .energy-pulse.social-pulse{background:linear-gradient(#dcecf0,#8ebcc9)!important;border-color:#f3faf5;box-shadow:0 0 4px #98bdc566!important}
 .tier.critical-arrival .flow-inlet{fill:#f2d591;stroke:#c7a15b}.tier.critical-arrival .room-tile{box-shadow:0 3px 0 #b7b998,0 0 6px #ddbd7544}
-.tier.energized-blue .room-tile,.tier.energized-blue .upgrade-room[data-upgrade="ready"]{box-shadow:0 3px 0 #9aafa1,0 0 5px #87b9c133!important;border-color:#a8c3bd!important}
 @media(prefers-reduced-motion:reduce){.amplifier-fire{animation:none}}
 
 /* Tempo stays warm; only media packets use blue. */
@@ -58,71 +57,7 @@ html[data-flow-style] .workflow[data-flow-lanes] .energy-pulse.tempo-charged:not
 .flow-rail.social-rail{animation:media-rail-open .65s ease-out;transform-origin:top}
 @keyframes media-rail-open{from{scale:1 0;opacity:0}to{scale:1 1;opacity:.8}}
 @media(prefers-reduced-motion:reduce){.flow-rail.social-rail{animation:none}}
-
-/* Media enters from the outside left; its light follows each department. */
-.tier.energized-blue .flow-junctions .media-junction{stroke:#6caabb;filter:drop-shadow(0 0 2px #9ecfd066)}
-.workflow[data-flow-lanes] .tier.energized-blue .room-tile,
-.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room[data-upgrade="ready"],
-.workflow[data-flow-lanes] .tier.energized-blue .foundation-block{border-color:#83b3bf!important;box-shadow:0 3px 0 #8fa9a9,inset 0 0 24px #82bfc438,0 0 7px #8dbfc54d!important}
-
-
-
-
-/* Restore the heading tint while a media wave passes. */
-
-
-
-/* Media powers the blocks; the department keeps its illustration in a blue palette. */
-.workflow[data-flow-lanes] .tier.energized-blue .purchased-room,
-.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room[data-upgrade],
-.workflow[data-flow-lanes] .tier.energized-blue .foundation-block{background:linear-gradient(145deg,#dce9eb,#bad1da)!important}
-.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-main-effect,
-.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-bonus-panel,
-.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .room-active{background-color:#d2e2e6!important;border-color:#9bbac5!important}
-
-
-html[data-theme="dark"] .workflow[data-flow-lanes] .tier.energized-blue .purchased-room,
-html[data-theme="dark"] .workflow[data-flow-lanes] .tier.energized-blue .upgrade-room[data-upgrade],
-html[data-theme="dark"] .workflow[data-flow-lanes] .tier.energized-blue .foundation-block{background:linear-gradient(135deg,#3d626f,#31515e)!important}
-html[data-theme="dark"] .workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-main-effect,
-html[data-theme="dark"] .workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-bonus-panel,
-html[data-theme="dark"] .workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .room-active{background-color:#385b69!important;border-color:#628f9e!important}
 @media(prefers-reduced-motion:reduce){}
-
-/* Keep a paper surface, a quieter inset bonus and a distinct blue action. */
-.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-main-effect{background:transparent!important}
-.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-bonus-panel{background:#c8dce1!important;border-color:#9fbfc9!important}
-.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-upgrade-action{background:#8fb3c4!important;color:#244b60!important;border-color:#6b99af!important;box-shadow:0 2px 0 #769aab!important}
-.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room[data-upgrade="locked"] .block-upgrade-action{background:#cfdee1!important;color:#657d86!important;border-color:#b0c5cd!important;box-shadow:0 2px 0 #a5bcc5!important}
-.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room[data-upgrade="max"] .block-upgrade-action{background:#b6d0d8!important;color:#486c7c!important;border-color:#96b7c4!important;box-shadow:none!important}
-.workflow[data-flow-lanes] .tier.energized-blue .block-level-track{background:#b0c8ce!important}
-.workflow[data-flow-lanes] .tier.energized-blue .block-level-track>i{background:#6798ad!important}
-html[data-theme="dark"] .workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-bonus-panel{background:#426574!important}
-html[data-theme="dark"] .workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-upgrade-action{background:#608fa5!important;color:#f1f7f5!important;border-color:#7fa8b9!important;box-shadow:0 2px 0 #345c70!important}
-
-.workflow[data-flow-lanes] .tier.energized-blue .base-room{border-color:#83b3bf!important;box-shadow:0 3px 0 #8fa9a9,0 0 7px #8dbfc54d!important}
-
-/* A complete ink palette accompanies the blue block surface. */
-.workflow[data-flow-lanes] .tier.energized-blue{--media-ink:#294f67;--media-copy:#496b7b;--media-muted:#658695}
-.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room,
-.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room>strong,
-.workflow[data-flow-lanes] .tier.energized-blue .block-bonus-title,
-.workflow[data-flow-lanes] .tier.energized-blue .base-room h3{color:var(--media-ink)!important}
-.workflow[data-flow-lanes] .tier.energized-blue .block-main-copy,
-.workflow[data-flow-lanes] .tier.energized-blue .block-bonus-copy,
-.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room>small,
-.workflow[data-flow-lanes] .tier.energized-blue .block-level-number,
-.workflow[data-flow-lanes] .tier.energized-blue .base-room .department-purpose{color:var(--media-copy)!important}
-.workflow[data-flow-lanes] .tier.energized-blue .block-main-label,
-.workflow[data-flow-lanes] .tier.energized-blue .block-bonus-label,
-.workflow[data-flow-lanes] .tier.energized-blue .block-level-number small,
-.workflow[data-flow-lanes] .tier.energized-blue .base-room .floor-type{color:var(--media-muted)!important}
-.workflow[data-flow-lanes] .tier.energized-blue .slot-icon{color:#507c94!important}
-.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-upgrade-action{color:#254a60!important}
-.workflow[data-flow-lanes] .tier.energized-blue .upgrade-room[data-upgrade=locked] .block-upgrade-action{color:#617c8a!important}
-html[data-theme=dark] .workflow[data-flow-lanes] .tier.energized-blue{--media-ink:#e2edf1;--media-copy:#c2d8e3;--media-muted:#97b6c7}
-html[data-theme=dark] .workflow[data-flow-lanes] .tier.energized-blue .slot-icon{color:#a5c8db!important}
-html[data-theme=dark] .workflow[data-flow-lanes] .tier.energized-blue .upgrade-room .block-upgrade-action{color:#f0f6f8!important}
 
 /* Hand-sent instructions stand out from small automatic tabs. */
 html[data-flow-style] .workflow[data-flow-lanes] .energy-pulse.manual-pulse{width:10px!important;height:20px!important;border:1.5px solid #c78c35!important;border-radius:4px!important;background:linear-gradient(90deg,#e6b962,#fff1bd 45%,#e6b962)!important;box-shadow:0 0 0 1px #fff7dc,0 0 5px #d7a54b66!important;z-index:7}

@@ -22,7 +22,7 @@ document.addEventListener('click',e=>{const tour=guided,index=tour?.index;if(!to
 document.addEventListener('pointerup',()=>{if(guided)setTimeout(update,0)},true);
 window.addEventListener('spiker-stage-changed',()=>{if(guided)endGuide(false);done.clear();try{JSON.parse(localStorage.getItem(key)||'[]').forEach(id=>done.add(id))}catch{}for(const id of seenSteps)done.add(id);following=false;arrival=null;cooldown=0;clear();update()});
 // Navigation can hide a tutorial's target before the next polling update.
-document.querySelector('.mobile-nav')?.addEventListener('click',event=>{const link=event.target.closest('a');if(!link||!guided)return;if(['social','social-growth','social-entry'].includes(guided.id)&&link.id!=='socialTab')endGuide(false);});
+document.querySelector('.mobile-nav')?.addEventListener('click',event=>{const link=event.target.closest('a');if(!link||!guided)return;if(['social','social-growth','social-entry'].includes(guided.id)&&link.id!=='socialTab')endGuide(false);if(guided?.id==='match-overtime'&&link.getAttribute('href')!=='#clubPanel')endGuide(false);});
 function clear(){if(active&&!active.startsWith('guided-'))finish(active);reviewStop.hidden=true;close.hidden=false;document.body.classList.remove('instruction-path-guide');target?.classList.remove('learning-focus');target=null;hint.hidden=true;spotlight.setAttribute('hidden','');active=null}
 close.onclick=()=>{if(guided){const step=guided.steps[guided.index];if(step.allowNext||(!step.click&&!step.done))nextGuide();else endGuide(false);return}const tour=active?.startsWith('blocks-')||active==='player-stats'||active==='quick-upgrade';if(active)finish(active);clear();cooldown=Date.now()+(tour?250:6000)};
 window.addEventListener('spiker-ap-arrived',e=>{if(!done.has('arrival')&&!arrival){arrival={ap:e.detail.ap,showAt:Date.now()+1200,until:Date.now()+8500};cooldown=0;update()}});
@@ -81,7 +81,8 @@ if(q('#playerDialog[open]')&&!GuidedTutorial.completed('skills')&&!GuidedTutoria
 {id:'skill-unlocks',target:()=>q('#playerSkills'),text:'Common yeteneklerin başlangıçtan açık. İlk kamp Uncommon, ikinci kamp Rare, üçüncü kamp gizli yeteneği açar.'}
 ],null,'skills');return true;}
 const club=()=>!q('.dashboard').hidden&&!q('dialog[open]');
-if(club()&&window.RoomSystem.snapshot().shiftTutorialPending&&!GuidedTutorial.completed('shift-unlock')&&!GuidedTutorial.paused('shift-unlock')){GuidedTutorial.start([{id:'shift-ready',target:()=>q('#dailyShiftStatus:not([hidden])')||q('.shift-summary'),text:'Vardiyayı açtın! Oyunda olmadığında da talimatlar çalışır. Kalan süren burada görünür; süre dolunca 4 saat dinlenir.'}],()=>RoomSystem.acknowledgeShiftTutorial(),'shift-unlock');return true;}
+if(club()&&RoomSystem.overtimeStarted?.()&&visible(q('#matchOvertimeCountdown:not([hidden])'))&&!GuidedTutorial.completed('match-overtime')&&!GuidedTutorial.paused('match-overtime')){GuidedTutorial.start([{id:'overtime-started',target:()=>q('#matchOvertimeCountdown:not([hidden])'),text:'Maç mesaisi başladı! Maçı beklerken ve izlerken otomatik üretim aynı hızda sürer. Çalışılan süre ortak vardiyandan düşer. Bu sayaç, bu maç için kalan mesaiyi gösterir; süre bitince mesai durur.'}],null,'match-overtime');return true;}
+if(club()&&window.RoomSystem.snapshot().shiftTutorialPending&&!GuidedTutorial.completed('shift-unlock')&&!GuidedTutorial.paused('shift-unlock')){GuidedTutorial.start([{id:'shift-ready',target:()=>q('#dailyShiftStatus:not([hidden])')||q('.shift-summary'),text:'Vardiyayı açtın! Oyunda olmadığında da talimatlar çalışır. Kalan süren burada görünür; süre dolunca 1 saat dinlenir.'}],()=>RoomSystem.acknowledgeShiftTutorial(),'shift-unlock');return true;}
 if(state.stage==='bal'&&state.division!==3&&club()&&!GuidedTutorial.completed('income')&&!GuidedTutorial.paused('income')){
 const incomeInstructions=state.instructions;let incomeReceiptsBefore=incomeReceipts;
 GuidedTutorial.start([
@@ -110,7 +111,7 @@ function update(){if(window.PlayerProfile?.needsCreation){clear();return;}
 
  if(document.getElementById('bootScreen')||document.hidden||window.BalTransition?.active||window.gameResetting||window.MatchGateway?.active()){clear();return}
  if(guided?.id==='income'&&RoomSystem.tutorialState().division===3)endGuide(false);
- if(guided?.id==='social-entry'&&!RoomSystem.mediaDepartmentOpen())endGuide(false);
+ if(guided?.id==='social-entry'&&!RoomSystem.mediaDepartmentOpen())endGuide(false);if(guided?.id==='match-overtime'&&(document.querySelector('.dashboard').hidden||document.getElementById('matchOvertimeCountdown')?.hidden))endGuide(false);
  if(guided&&((guided.id==='transfer'&&guided.index>0&&document.getElementById('teamPanel').hidden&&!document.querySelector('#scoutDialog[open],#transferCompareScreen[open],#transferReplaceScreen[open],#transferLineupPrompt[open]'))||(guided.id==='camp'&&!document.getElementById('campDialog')?.open)||(guided.id==='skills'&&!document.getElementById('playerDialog')?.open)||(guided.id==='income'&&document.querySelector('.dashboard').hidden)||((guided.id==='social'||guided.id==='social-growth')&&document.getElementById('socialPanel')?.hidden&&document.getElementById('socialJourneyScreen')?.hidden)))endGuide(false);
  if(guided){const step=guided.steps[guided.index];if(step.skip?.()||step.done?.()){nextGuide();return}if(step.wait||(step.ready&&!step.ready())){clear();return}const el=step.target();show('guided-'+step.id,typeof step.text==='function'?step.text():step.text,el);return}
  if(done.has('ask')&&RoomSystem.tutorialState().stage==='bal'){chooseTutorial(false);return;}

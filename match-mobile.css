@@ -257,31 +257,51 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 
 .notice-page-back>.serve-strip[data-point="false"]{background:#fff7e5!important}
 
-.serve-strip.has-server:has(.server-skill:not([hidden])){display:grid;grid-template-columns:clamp(32px,5vw,48px) minmax(0,1fr) minmax(0,1.35fr) clamp(26px,4vw,34px);column-gap:clamp(6px,1.6vw,16px);align-items:center}.serve-strip.has-server .server-skill{left:auto;right:auto;justify-self:stretch;align-self:center;width:auto;max-width:100%;min-width:0;margin:0;box-sizing:border-box;justify-content:center;padding:clamp(6px,1.2vw,12px)}.server-skill-words{min-width:0;flex:0 1 auto;text-align:center}.server-skill-words strong{white-space:normal;overflow-wrap:anywhere;font-size:clamp(9px,1.5vw,14px);line-height:1.2}.server-skill-emblem{flex:0 0 clamp(16px,2.4vw,24px)}
-
-.serve-strip .server-number[hidden]{display:none!important}
-
-/* One stable row keeps the court still throughout the point announcement. */
-.match-arena .serve-strip.has-server{height:82px;min-height:82px;max-height:82px;overflow:hidden;display:grid;grid-template-columns:38px minmax(54px,1fr) minmax(0,1.35fr) 24px;column-gap:7px;padding:7px 10px;align-items:center}
-.match-arena .serve-strip.has-server:has(.server-skill[hidden]){grid-template-columns:38px minmax(0,1fr) 24px}
-.match-arena .serve-strip.has-server .server-portrait{width:38px;height:38px;min-width:0}
-.match-arena .serve-strip.has-server .server-copy{min-width:0;gap:3px}
-.match-arena .serve-strip.has-server .server-name{font-size:10px;line-height:1.2;overflow-wrap:anywhere}
-.match-arena .serve-strip.has-server .server-label{font-size:6px;letter-spacing:.5px;line-height:1.25}
-.match-arena .serve-strip.has-server .server-club{font-size:8px;line-height:1.2;overflow-wrap:anywhere}
-.match-arena .serve-strip.has-server .server-number{width:24px;height:26px;font-size:9px;grid-column:-2;grid-row:1}
-.match-arena .serve-strip.has-server .server-skill{grid-column:3;grid-row:1;position:static;width:100%;min-width:0;min-height:46px;max-height:66px;padding:5px;gap:4px;margin:0;justify-content:center}
-.match-arena .serve-strip.has-server .server-skill-emblem{flex:0 0 14px;width:14px;height:18px}
-.match-arena .serve-strip.has-server .server-skill-emblem svg{width:14px;height:16px}
-.match-arena .serve-strip.has-server .server-skill-words{max-width:calc(100% - 18px);min-width:0}
-.match-arena .serve-strip.has-server .server-skill strong{font-size:9px;line-height:1.2;overflow-wrap:anywhere}
-@media(max-height:700px){.match-arena .serve-strip.has-server{height:76px;min-height:76px;max-height:76px}}
-@media(min-aspect-ratio:6/5) and (max-height:500px){.match-arena .serve-strip.has-server{grid-template-columns:28px minmax(0,1fr) 24px;gap:4px;height:116px;min-height:116px;max-height:116px;align-content:center}.match-arena .serve-strip.has-server .server-portrait{width:28px;height:32px}.match-arena .serve-strip.has-server .server-skill{grid-column:1/-1;grid-row:2;min-height:34px;max-height:42px}}
-
-/* A folded copy uses exactly the same portrait box as the live announcement. */
-.match-arena .serve-strip.has-server .server-portrait{box-sizing:border-box;flex-shrink:0;align-self:center;justify-self:start;aspect-ratio:1;position:relative}
-.match-arena .serve-strip.has-server .server-portrait img{position:absolute;inset:0;width:100%;height:100%;max-width:none;max-height:none;box-sizing:border-box;object-fit:cover;object-position:center;transform:none;animation:none}
+/* Fixed announcement footprint: content never resizes the match court. */
+.match-arena .serve-strip.has-server,
+.match-arena .serve-strip.has-server:has(.server-skill[hidden]),
+.match-arena .serve-strip.has-server:has(.server-skill:not([hidden])){
+ height:62px;min-height:62px;max-height:62px;overflow:hidden;display:grid;
+ grid-template-columns:38px minmax(72px,1fr) minmax(0,1.2fr) 24px;grid-template-rows:1fr;
+ column-gap:9px;row-gap:4px;padding:7px 10px;align-items:center;align-content:center;
+}
+.match-arena .serve-strip.has-server .server-portrait{
+ grid-column:1;grid-row:1;width:38px;height:38px;min-width:0;box-sizing:border-box;
+ flex-shrink:0;align-self:center;justify-self:start;position:relative;overflow:hidden;
+}
+.match-arena .serve-strip.has-server .server-portrait img{
+ position:absolute;inset:0;width:100%;height:100%;max-width:none;max-height:none;
+ box-sizing:border-box;object-fit:cover;object-position:center;transform:none;animation:none;
+}
 .match-arena .serve-strip.has-server .server-portrait img.is-team-badge{object-fit:contain;padding:4px}
 .match-arena .serve-strip.has-server .server-portrait [hidden]{display:none!important}
-
 .match-arena .serve-strip.has-server .server-portrait[data-empty="true"]{visibility:hidden}
+.match-arena .serve-strip.has-server .server-copy{
+ grid-column:2;grid-row:1;display:grid;grid-template-rows:9px 14px 11px;gap:1px;
+ min-width:0;width:100%;text-align:left;align-content:center;
+}
+.match-arena .serve-strip.has-server .server-copy>*{display:block;min-width:0;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;overflow-wrap:normal;margin:0}
+.match-arena .serve-strip.has-server .server-label{font-size:7px;letter-spacing:.5px;line-height:9px}
+.match-arena .serve-strip.has-server .server-name{font-size:11px;line-height:14px;letter-spacing:0}
+.match-arena .serve-strip.has-server .server-club{font-size:9px;line-height:11px;letter-spacing:0}
+.match-arena .serve-strip.has-server .server-number{grid-column:4;grid-row:1;width:24px;height:26px;font-size:9px;justify-self:end}
+.match-arena .serve-strip.has-server .server-number[hidden]{display:none!important}
+.match-arena .serve-strip.has-server .server-skill{
+ grid-column:3;grid-row:1;position:static;left:auto;right:auto;display:flex;
+ width:100%;height:40px;min-height:40px;max-height:40px;min-width:0;max-width:100%;
+ box-sizing:border-box;align-self:center;justify-self:stretch;align-items:center;justify-content:center;
+ margin:0;padding:0 7px;gap:5px;border-radius:6px;overflow:hidden;animation:none;
+}
+.match-arena .serve-strip.has-server .server-skill[hidden]{display:none!important}
+.match-arena .serve-strip.has-server .server-skill-emblem{flex:0 0 12px;width:12px;height:14px;animation:none}
+.match-arena .serve-strip.has-server .server-skill-emblem svg{width:12px;height:14px}
+.match-arena .serve-strip.has-server .server-skill-words{flex:0 1 auto;min-width:0;max-width:calc(100% - 17px);text-align:center}
+.match-arena .serve-strip.has-server .server-skill strong{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;max-height:33px;overflow:hidden;font-size:10px;line-height:11px;letter-spacing:0;white-space:normal;overflow-wrap:normal;word-break:normal}
+@media(max-height:700px){.match-arena .serve-strip.has-server,.match-arena .serve-strip.has-server:has(.server-skill[hidden]),.match-arena .serve-strip.has-server:has(.server-skill:not([hidden])){height:62px;min-height:62px;max-height:62px;padding-top:4px;padding-bottom:4px}}
+@media(min-aspect-ratio:6/5) and (max-height:500px){
+ .match-arena .serve-strip.has-server,.match-arena .serve-strip.has-server:has(.server-skill[hidden]),.match-arena .serve-strip.has-server:has(.server-skill:not([hidden])){height:62px;min-height:62px;max-height:62px;grid-template-columns:28px minmax(62px,1fr) minmax(0,1.2fr) 24px;column-gap:7px}
+ .match-arena .serve-strip.has-server .server-portrait{width:28px;height:32px}
+}
+/* No empty skill row while the announcement only shows the player. */
+.match-arena .serve-strip.has-server:has(.server-skill[hidden]){grid-template-columns:38px minmax(0,1fr) 24px;grid-template-rows:1fr;row-gap:0}.match-arena .serve-strip.has-server:has(.server-skill[hidden]) .server-number{grid-column:3}
+

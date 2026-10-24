@@ -1,0 +1,37 @@
+/* One complete palette for media-powered blocks, including inactive bonus states. */
+#workflow .tier.energized-blue{--media-card:#dce9f3;--media-paper:#e6f0f7;--media-panel:#c9dcea;--media-locked:#bdcede;--media-line:#7e9fbb;--media-ink:#193d59;--media-copy:#34576f;--media-muted:#466880;--media-action:#3b7099;--media-action-ink:#fff;--media-disabled:#c4d4e3;--media-disabled-ink:#385a73;--inactive-block-fill:#bdcede;--inactive-block-ink:#34566e;--inactive-block-line:#92abc0}
+#workflow .tier.energized-blue .upgrade-room,#workflow .tier.energized-blue .foundation-block{background:linear-gradient(145deg,#e4eff7,#d4e3ef) var(--media-card)!important;border-color:#7196b4!important;box-shadow:0 3px 0 #7899b266,inset 0 1px 0 #f7fcff!important;color:var(--media-ink)!important;opacity:1!important;filter:none!important}
+#workflow .tier.energized-blue .upgrade-room>strong{color:var(--media-ink)!important}
+#workflow .tier.energized-blue .upgrade-room .block-main-effect{background:var(--media-paper)!important;border-color:#aac0d2!important}
+#workflow .tier.energized-blue .upgrade-room .block-main-copy,#workflow .tier.energized-blue .upgrade-room>small,#workflow .tier.energized-blue .block-level-number{color:var(--media-copy)!important}
+#workflow .tier.energized-blue .block-main-label,#workflow .tier.energized-blue .block-bonus-label,#workflow .tier.energized-blue .block-level-number small{color:var(--media-muted)!important;opacity:1!important}
+#workflow .tier.energized-blue .upgrade-room .block-bonus-panel{background:var(--media-panel)!important;border-color:#96b2c9!important}
+#workflow .tier.energized-blue .block-bonus-title{color:var(--media-ink)!important}
+#workflow .tier.energized-blue .block-bonus-copy{color:var(--media-copy)!important}
+#workflow .tier.energized-blue .upgrade-room .block-bonus-locked{background:var(--media-locked)!important;color:#34566e!important;border-color:#92abc0!important;box-shadow:inset 0 1px 0 #d9e6f0!important;opacity:1!important}
+#workflow .tier.energized-blue .block-bonus-locked>.block-main-label{color:#304f68!important;opacity:1!important}
+#workflow .tier.energized-blue .block-bonus-locked>.bonus-lock-icon{color:#456782!important;opacity:1!important}
+#workflow .tier.energized-blue .upgrade-room .room-active{background:var(--media-paper)!important;border-color:#adc2d3!important}
+#workflow .tier.energized-blue .upgrade-room .block-upgrade-action{background:var(--media-action)!important;color:var(--media-action-ink)!important;border-color:#2a587e!important;box-shadow:0 2px 0 #284f7077!important}
+#workflow .tier.energized-blue .upgrade-room:not([data-upgrade=ready]):not([data-upgrade=max]) .block-upgrade-action{background:var(--media-disabled)!important;color:var(--media-disabled-ink)!important;border-color:#8da9c0!important;box-shadow:none!important}
+#workflow .tier.energized-blue .upgrade-room[data-upgrade=max] .block-upgrade-action{background:#c2d8e9!important;color:#315570!important;border-color:#90afc7!important;box-shadow:none!important}
+#workflow .tier.energized-blue .block-level-track{background:#afc6da!important}
+#workflow .tier.energized-blue .block-level-track>i{background:#417fae!important}
+#workflow .tier.energized-blue .upgrade-room .block-level-milestone{background:#f4faff!important;border:1.5px solid #4b7598!important;box-shadow:0 0 0 1px #dcebf5!important}
+#workflow .tier.energized-blue .upgrade-room .block-level-milestone.reached{background:#3d79a6!important;border-color:#295a80!important;box-shadow:0 0 0 1.5px #e9f5ff,inset 0 0 0 1px #9ac4e2!important}
+#workflow .tier.energized-blue .upgrade-room .slot-icon{background:#c8dcea!important;border-color:#89a9c1!important;color:#365f80!important}
+#workflow .tier.energized-blue .foundation-block>header,#workflow .tier.energized-blue .foundation-floor,#workflow .tier.energized-blue .foundation-tab[aria-selected=true]{background:#d0e1ee!important;color:var(--media-ink)!important;border-color:var(--media-line)!important}
+#workflow .tier.energized-blue .foundation-block>header strong{color:var(--media-ink)!important}
+/* Department illustrations stay untouched: only their outline and ink respond. */
+#workflow .tier.energized-blue .base-room{border-color:#83b3bf!important;box-shadow:0 3px 0 #7697aa66,0 0 5px #8fb4cc33!important}
+#workflow .tier.energized-blue .base-room h3{color:var(--media-ink)!important}
+#workflow .tier.energized-blue .base-room .floor-type,#workflow .tier.energized-blue .base-room .department-purpose{color:var(--media-copy)!important}
+#workflow .tier.energized-blue .flow-junctions .media-junction{stroke:#658fae}
+#workflow .tier.energized-blue .flow-junctions .flow-inlet{fill:#c5e2f3;stroke:#5b86a7}
+#workflow .tier.energized-blue .energy-status{color:#416c8b!important}
+#workflow .tier.energized-blue .energy-status i{background:#72a5c7!important;box-shadow:none!important}
+html[data-theme=dark] #workflow .tier.energized-blue{--media-card:#29475e;--media-paper:#304f67;--media-panel:#365970;--media-locked:#293e50;--media-line:#6689a6;--media-ink:#e7f2fa;--media-copy:#d2e3ef;--media-muted:#b0cada;--media-action:#76a6cc;--media-action-ink:#15354e;--media-disabled:#405e75;--media-disabled-ink:#d0e3f2;--inactive-block-fill:#293e50;--inactive-block-ink:#b9d2e3;--inactive-block-line:#58768e}
+html[data-theme=dark] #workflow .tier.energized-blue .upgrade-room,html[data-theme=dark] #workflow .tier.energized-blue .foundation-block{background:linear-gradient(145deg,#365770,#29465d) var(--media-card)!important}
+html[data-theme=dark] #workflow .tier.energized-blue .upgrade-room .block-bonus-locked,html[data-theme=dark] #workflow .tier.energized-blue .block-bonus-locked>.block-main-label,html[data-theme=dark] #workflow .tier.energized-blue .block-bonus-locked>.bonus-lock-icon{color:#bfd7e8!important;box-shadow:none!important}
+html[data-theme=dark] #workflow .tier.energized-blue .upgrade-room .slot-icon{background:#3d5f78!important;color:#d2e9fa!important}
+html[data-theme=dark] #workflow .tier.energized-blue .foundation-block>header,html[data-theme=dark] #workflow .tier.energized-blue .foundation-floor,html[data-theme=dark] #workflow .tier.energized-blue .foundation-tab[aria-selected=true]{background:#3a5e77!important}
