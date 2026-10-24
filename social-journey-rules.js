@@ -18,7 +18,8 @@ const courtPacks=[
 const defaultCourts=[{id:'parquet',name:'Sade parke',floor:'#d6a16e',surround:'#789b9c',pattern:'wood'},{id:'orange',name:'Klasik turuncu',floor:'#d99160',surround:'#6eaaa5'}];
 const leagueCourts=['parquet','sage','orange','maple','lavender','ice','honey','night'];
 function courtPreset(id){return [...defaultCourts,...courtPacks.flatMap(p=>p.courts)].find(c=>c.id===id);}
-function leagueCourt(division){return {...courtPreset(leagueCourts[Math.max(0,Math.min(7,(Number(division)||1)-1))])};}
+const classicFloors=['#c79e73','#d5aa7b','#d3a174','#dfb785','#d4a77b','#dbb88b','#cfa174','#d7ae7b'],classicBorders=['#83958a','#68877d','#63818b','#6d857c','#766f83','#647c86','#6b8178','#607783'];
+function leagueCourt(division){const index=Math.max(0,Math.min(7,(Number(division)||1)-1));return {...courtPreset(leagueCourts[index]),name:index===0?'Mahalle parkesi':'Klasik lig parkesi',floor:classicFloors[index],surround:classicBorders[index],pattern:index===0?'neighborhood-wood':'wood'};}
 function courtAvailable(s,id){return id==='classic'||courtPacks.some(p=>state(s).claimed.includes(p.at)&&p.courts.some(c=>c.id===id));}
 for(const pack of courtPacks){const m=milestones.find(m=>m.at===pack.at);m.reward+=' + '+pack.name+' · 2 saha';}
 function normalize(raw){const ids=milestones.map(m=>m.at),valid=xs=>Array.isArray(xs)?[...new Set(xs.filter(x=>ids.includes(x)))]:[];return {claimed:valid(raw?.claimed),reached:Object.fromEntries(Object.entries(raw?.reached||{}).filter(([id,v])=>ids.includes(Number(id))&&Number.isSafeInteger(v)&&v>=0)),transferUsed:!!raw?.transferUsed,campUsed:!!raw?.campUsed};}

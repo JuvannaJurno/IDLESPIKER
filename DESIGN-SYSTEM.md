@@ -143,10 +143,40 @@ Kaynaklar: `social-studio.js`, `social-follower-counter.js/css`.
 - Açık/koyu görünüş mevcut sosyal medya değişkenlerinden gelir. Efekt işaretçi/tıklama yakalamaz ve post yerleşimini değiştirmez.
 - Görsel: `audits/social-follower-flight-mobile.png`. Kontrol: `test-social-follower-flight.cjs` ve `test-social-match-offline.cjs`.
 
+## Maç saati bildirimi
+
+Kullanıcının 24 Ekim son kararıyla otomatik maç bildirimi geri açıldı. Sahibi `match-arrival.js`, görünüşü `menu-game.css` içindeki `#matchArrival`dır; önceki krem/altın, saat simgeli kısa modal ailesi kullanılır.
+
+- Kulüp ekranında maç gerçekten hazır olduğunda bir kez açılır. Başka modal/tutorial, aşama geçişi, açık maç veya arka sekme üstüne binmez.
+- “Maça hazırlan” mevcut kadro onay ekranına götürür; “Önce kulübe bak” kapatır. Maçı kendiliğinden başlatmaz.
+- Görülmüş maç kimliği `idle-spiker-match-arrival-seen-v1` ile korunur. Aynı maç için gezinme/yenileme sonrasında tekrar gösterilmez; yeni maçın kimliği geldiğinde tekrar açılabilir.
+- Kontrol: `test-match-arrival-restored.cjs`; görsel: `audits/match-arrival-restored.png`.
+
+## Legendary sıklığı — oyun içi kullanımlar artırıldı
+
+Kullanıcının 24 Ekim kararı: servis legendary'leri görünürken oyun içi legendary'ler çok seyrek kalıyordu. Eski ayarda servis ilk fırsatı kullanıyor ve ortak 14 saniyelik bekleme ile %10 ikinci legendary şansı, sonraki oyun içi kullanımları bastırıyordu.
+
+Güncel kaynak `match-skills.js` içindeki `legendaryCadence`tır:
+
+| Parametre | Önce | Güncel |
+| --- | --- | --- |
+| Servis legendary seçim çarpanı | 1,18 | 1,18 |
+| Oyun içi legendary seçim çarpanı | 1,18 | 2 |
+| Servis legendary beklemesi | 14 sn | 14 sn |
+| Legendary servisten sonra oyun içi legendary beklemesi | 14 sn | 2,5 sn |
+| Oyun içi legendary'den sonra diğer oyun içi legendary beklemesi | 14 sn | 8 sn |
+| Bir rallide ikinci legendary şansı | %10 | %45 |
+| Ralli başına üst sınır | 2 | 2 |
+
+İki bekleme ayrı izlenir; oyun içi sıklık artışı servislerin ağırlığını yükseltmez. Genel skill deneme olasılığı, normal skill beklemesi, sahiplik/kamp koşulları, zor top/pozisyon uygunluğu ve tekrarlanan son skill kısıtı korunur. Açılmamış legendary'ler sıklık ayarıyla açılmaz. Animation lab'in özel gösterim oranı ve 2,2 sn beklemesi korunur.
+
+Doğrulama: `test-legendary-cadence.cjs`, gerçek maç motorunda aynı 12 seed'i eski ve yeni ayarla oynatır (24 maç). Legendary'leri açık örnek kadrolarda 107 sayı boyunca oyun içi kullanım **21 → 28** (+%33), servis kullanımı **19 → 19** oldu. Bu örneklem oyuncunun her maçına garanti oran değildir. Ralli başına en çok iki legendary ve kilitli oyuncularda sıfır legendary de kontrol edilir. Rapor: `audits/legendary-cadence-comparison.json`.
+
 ## Ev sahibi saha kimliği ve takım tanıtımı
 
 - Rakip sahalarında arma kararı `MatchCourtSurface.teamCrest(name)` ile takım adına bağlı ve sabittir. İstanbul korunur; diğer kulüplerin yaklaşık üçte biri armalı, kalanlar armasızdır. Örneğin mevcut Türkçe adlarda Karadeniz Gücü ve Uludağ Akademi de armalıdır. Her maçta rastgele yeniden seçilmez.
-- Her ligde en güçlü üç rakip, maç motorunun pozisyona göre gerçek oyuncu gücü ortalamasıyla belirlenir; lig tablosundaki anlık sıralama kullanılmaz. Bu üç kulübün ev sahibi sahasında takım renklerinden türetilen özel zemin/dış alan tonu ve hafif doku bulunur. Diğer rakipler lig varsayılanını kullanır. Sıralama lig/kimlik bazlıdır; maçtan maça rastgele renk seçilmez. Kaynak `ClubJourney.matchCourt`, çizim varyantları `MatchCourtSurface.featuredCourt`; kontrol `test-featured-courts.cjs`.
+- Her ligde en güçlü üç rakip, maç motorunun pozisyona göre gerçek oyuncu gücü ortalamasıyla belirlenir; lig tablosundaki anlık sıralama kullanılmaz. Bu üç kulübün ev sahibi sahasında takım renklerinden türetilen özel zemin/dış alan tonu ve hafif doku bulunur. Diğer rakipler lig varsayılanını kullanır. Sıralama lig/kimlik bazlıdır; maçtan maça rastgele renk seçilmez. Kaynak `ClubJourney.matchCourt`, çizim varyantları `MatchCourtSurface.featuredCourt`; kontrol `test-featured-courts.cjs`. Gerçek maç aktarımı/profil önceliği ayrıca `test-court-match-integration.cjs` ile denetlenir.
+- Kullanıcının son kararı: lig varsayılanları klasik ve şık parke ailesidir; beyaz/mor gibi özel tam zemin renkleri ödül seçimi veya güçlü rakibin özel sahası içindir. Mahallede sade, birleşim çizgileri görünen tahta parke vardır; render edilen hakem ve hakem platformu yoktur. Diğer liglerde hakem korunur. Bu çizim kuralı lig kimliğine bağlıdır; profil sahası seçimi hakemi geri açmaz.
 - Varsayılan zemin ve takım renkleri bütün sahalarda devam eder. Biz ev sahibiyken profilin Armalı/Armasız seçimi otomatik kulüp kararının önüne geçer; deplasmanda rakibin saha kimliği kullanılır.
 - Takım tanıtımında takım adının altındaki mevcut açıklama satırına **EV SAHİBİ / DEPLASMAN** küçük rozeti eklenir. İki taraf değiştirildiğinde rozet de gerçek fikstüre göre değişir. Bizim takım her zaman ev sahibi varsayılmaz.
 - Üst karşılaşma isimleri ev sahibi / deplasman sırasında yazılır. Yeni tanıtım penceresi, portre değişimi veya maçın sahasına etki eden geometri yok.
@@ -186,14 +216,14 @@ Armalı/armasız ayrı ödül veya iki ayrı saha değildir; her zeminin kullan�
 
 | Aşama | Lig | Varsayılan |
 | --- | --- | --- |
-| 1 | Mahalle Spor Kulübü – Yerel Altyapı | Sade parke |
-| 2 | Bölgesel Voleybol Ligi | Adaçayı |
-| 3 | Ulusal Voleybol 2. Ligi | Klasik turuncu |
-| 4 | Ulusal Voleybol 1. Ligi | Açık akçaağaç |
-| 5 | Voleybolun Sultanları Ligi | Lavanta |
-| 6 | Milletler Kupası karşılığı; son adı belirlenmedi | Buz beyazı |
-| 7 | Dünya Şampiyonası | Bal rengi |
-| 8 | Olimpus Küresel Oyunları — Büyük Final | Gece mavisi |
+| 1 | Mahalle Spor Kulübü – Yerel Altyapı | Basit tahta parke; hakem yok |
+| 2 | Bölgesel Voleybol Ligi | Klasik parke · adaçayı çevre |
+| 3 | Ulusal Voleybol 2. Ligi | Klasik parke · mat mavi çevre |
+| 4 | Ulusal Voleybol 1. Ligi | Klasik açık parke · yeşil çevre |
+| 5 | Voleybolun Sultanları Ligi | Klasik parke · mat mor çevre |
+| 6 | Milletler Kupası karşılığı; son adı belirlenmedi | Klasik açık parke · gri mavi çevre |
+| 7 | Dünya Şampiyonası | Klasik parke · koyu yeşil çevre |
+| 8 | Olimpus Küresel Oyunları — Büyük Final | Klasik parke · koyu mavi çevre |
 
 İlk üç aşama uygulanmış durumda. Sonraki beş aşama için burada görünüm eşlemesi bulunması, o liglerin oynanabilir olduğu anlamına gelmez.
 
