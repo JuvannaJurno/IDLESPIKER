@@ -1,0 +1,50 @@
+/* Single geometry owner for live announcements and their folded copies. */
+.match-arena{--announcement-height:62px}
+.match-arena .match-board .serve-strip{box-sizing:border-box;height:var(--announcement-height);min-height:var(--announcement-height);max-height:var(--announcement-height)}
+.match-arena .serve-strip.has-server,
+.match-arena .serve-strip.has-server:has(.server-skill[hidden]),
+.match-arena .serve-strip.has-server:has(.server-skill:not([hidden])){
+ height:var(--announcement-height);min-height:var(--announcement-height);max-height:var(--announcement-height);overflow:hidden;display:grid;
+ grid-template-columns:38px minmax(72px,1fr) minmax(0,1.2fr) 24px;grid-template-rows:1fr;
+ column-gap:9px;row-gap:4px;padding:7px 10px;align-items:center;align-content:center;
+}
+.match-arena .serve-strip.has-server .server-portrait{
+ grid-column:1;grid-row:1;width:38px;height:38px;min-width:0;box-sizing:border-box;
+ flex-shrink:0;align-self:center;justify-self:start;position:relative;overflow:hidden;
+}
+.match-arena .serve-strip.has-server .server-portrait img{
+ position:absolute;inset:0;width:100%;height:100%;max-width:none;max-height:none;
+ box-sizing:border-box;object-fit:cover;object-position:center;transform:none;animation:none;
+}
+.match-arena .serve-strip.has-server .server-portrait img.is-team-badge{object-fit:contain;padding:4px}
+.match-arena .serve-strip.has-server .server-portrait [hidden]{display:none!important}
+.match-arena .serve-strip.has-server .server-portrait[data-empty="true"]{visibility:hidden}
+.match-arena .serve-strip.has-server .server-copy{
+ grid-column:2;grid-row:1;display:grid;grid-template-rows:9px 14px 11px;gap:1px;
+ min-width:0;width:100%;text-align:left;align-content:center;
+}
+.match-arena .serve-strip.has-server .server-copy>*{display:block;min-width:0;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;overflow-wrap:normal;margin:0}
+.match-arena .serve-strip.has-server .server-label{font-size:7px;letter-spacing:.5px;line-height:9px}
+.match-arena .serve-strip.has-server .server-name{font-size:11px;line-height:14px;letter-spacing:0}
+.match-arena .serve-strip.has-server .server-club{font-size:9px;line-height:11px;letter-spacing:0}
+.match-arena .serve-strip.has-server .server-number{grid-column:4;grid-row:1;width:24px;height:26px;font-size:9px;justify-self:end}
+.match-arena .serve-strip.has-server .server-number[hidden]{display:none!important}
+.match-arena .serve-strip.has-server .server-skill{
+ grid-column:3;grid-row:1;position:static;left:auto;right:auto;display:flex;
+ width:100%;height:40px;min-height:40px;max-height:40px;min-width:0;max-width:100%;
+ box-sizing:border-box;align-self:center;justify-self:stretch;align-items:center;justify-content:center;
+ margin:0;padding:0 7px;gap:5px;border-radius:6px;overflow:hidden;animation:none;
+}
+.match-arena .serve-strip.has-server .server-skill[hidden]{display:none!important}
+.match-arena .serve-strip.has-server .server-skill-emblem{flex:0 0 12px;width:12px;height:14px;animation:none}
+.match-arena .serve-strip.has-server .server-skill-emblem svg{width:12px;height:14px}
+.match-arena .serve-strip.has-server .server-skill-words{flex:0 1 auto;min-width:0;max-width:calc(100% - 17px);text-align:center}
+.match-arena .serve-strip.has-server .server-skill strong{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;max-height:33px;overflow:hidden;font-size:10px;line-height:11px;letter-spacing:0;white-space:normal;overflow-wrap:normal;word-break:normal}
+@media(max-height:700px){.match-arena .serve-strip.has-server,.match-arena .serve-strip.has-server:has(.server-skill[hidden]),.match-arena .serve-strip.has-server:has(.server-skill:not([hidden])){height:var(--announcement-height);min-height:var(--announcement-height);max-height:var(--announcement-height);padding-top:4px;padding-bottom:4px}}
+@media(min-aspect-ratio:6/5) and (max-height:500px){
+ .match-arena .serve-strip.has-server,.match-arena .serve-strip.has-server:has(.server-skill[hidden]),.match-arena .serve-strip.has-server:has(.server-skill:not([hidden])){height:var(--announcement-height);min-height:var(--announcement-height);max-height:var(--announcement-height);grid-template-columns:28px minmax(62px,1fr) minmax(0,1.2fr) 24px;column-gap:7px}
+ .match-arena .serve-strip.has-server .server-portrait{width:28px;height:32px}
+}
+/* No empty skill row while the announcement only shows the player. */
+.match-arena .serve-strip.has-server:has(.server-skill[hidden]){grid-template-columns:38px minmax(0,1fr) 24px;grid-template-rows:1fr;row-gap:0}.match-arena .serve-strip.has-server:has(.server-skill[hidden]) .server-number{grid-column:3}
+

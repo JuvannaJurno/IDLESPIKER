@@ -274,3 +274,5 @@ html[data-theme=dark] #preMatchStage .formation-position{color:#e0e8d7;backgroun
 .shift-summary>:is(#dailyShiftStatus,#matchOvertimeCountdown) .shift-progress{grid-column:1/-1;width:100%;height:3px;margin:0;align-self:end}
 @media(max-width:370px){.shift-summary>:is(#dailyShiftStatus,#matchOvertimeCountdown){padding:14px 16px}.shift-summary>:is(#dailyShiftStatus,#matchOvertimeCountdown) .shift-time{font-size:24px}}
 .shift-summary>:is(#dailyShiftStatus,#matchOvertimeCountdown)[hidden]{display:none!important}
+/* Venue is part of each team's introduction, not an extra screen. */
+#matchIntro .intro-venue{display:inline-flex;align-items:center;padding:3px 6px;border:1px solid #d8c79e;border-radius:6px;background:#fff1d0;color:#8a6a33;font-size:8px;font-weight:800;letter-spacing:.6px;line-height:1.3;vertical-align:middle}#matchIntro .intro-venue[data-venue=away]{background:#e4eddf;color:#587966;border-color:#b9cbb8}html[data-theme=dark] #matchIntro .intro-venue{background:#554e35;color:#edd69d;border-color:#8e8051}html[data-theme=dark] #matchIntro .intro-venue[data-venue=away]{background:#354f43;color:#caddc5;border-color:#6b8a70}

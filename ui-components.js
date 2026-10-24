@@ -1,0 +1,11 @@
+(function(root){'use strict';
+function selection({id,title,eyebrow,content,scrollClass='',statusId,doneClass='',returnFocus,onClose}){
+ const dialog=document.createElement('dialog');dialog.id=id;dialog.className='selection-dialog';dialog.setAttribute('aria-labelledby',id+'Title');
+ const header=document.createElement('header');header.className='selection-header court-picker-header';const words=document.createElement('div'),small=document.createElement('small'),h=document.createElement('h2');small.textContent=eyebrow;h.id=id+'Title';h.textContent=title;words.append(small,h);const close=document.createElement('button');close.type='button';close.className='selection-close court-picker-close';close.textContent='×';close.setAttribute('aria-label',title+' penceresini kapat');header.append(words,close);
+ const scroll=document.createElement('div');scroll.className='selection-scroll '+scrollClass;scroll.innerHTML=content;const footer=document.createElement('footer'),status=document.createElement('span'),done=document.createElement('button');status.textContent='Seçimlerin otomatik kaydedilir.';if(statusId){status.id=statusId;status.setAttribute('role','status');}done.type='button';done.className='team-action '+doneClass;done.textContent='Tamam';footer.append(status,done);dialog.append(header,scroll,footer);document.body.append(dialog);
+ close.onclick=done.onclick=()=>dialog.close();dialog.addEventListener('close',()=>{onClose?.();document.getElementById(returnFocus)?.focus({preventScroll:true});});
+ return {dialog,open(){if(!dialog.open)dialog.showModal();scroll.scrollTop=0;},close(){dialog.close();}};
+}
+function stage({host,title,note,onSkip,kind}){const panel=document.createElement('aside');panel.className='stage-transition-banner '+(kind==='bal'?'bal-live-banner':'division-banner');panel.setAttribute('role','status');const text=document.createElement('strong'),detail=document.createElement('small'),button=document.createElement('button');text.textContent=title;detail.textContent=note;button.type='button';button.textContent='Animasyonu geç';button.onclick=()=>{button.disabled=true;onSkip?.();};panel.append(text,detail,button);host.prepend(panel);return {panel,text,note:detail,button,remove:()=>panel.remove()};}
+root.GameUI={selection,stage};
+})(window);

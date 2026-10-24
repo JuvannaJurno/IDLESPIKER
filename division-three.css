@@ -8,7 +8,7 @@
 #socialClub{padding:20px;border:1px solid #d6dfc7;border-radius:15px;background:#f5f1da;color:#5c796b}#socialClub h2{font-size:22px}#socialClub p{font-size:12px;line-height:1.7}
 .division-discovery{display:flex;gap:9px;flex:0 0 auto}.division-three .tier[data-floor="4"] .scout-open,.division-three .tier[data-floor="4"] .foundation-toggle{display:none}
 .social-block{display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:13px;background:#f7eac5;color:#627c6d;text-align:left;cursor:pointer}.social-block strong{font-size:12px}.social-block small{font-size:10px;line-height:1.5}.social-block-level{margin-top:auto;font-size:9px;font-weight:800;color:#8a9b7d}.social-block-action{display:block;width:100%;padding:10px 4px;border-radius:9px;background:#f0d89b;color:#8c713d;font-size:10px;text-align:center}.social-block:disabled .social-block-action{background:#e9e6d1;color:#96a089}
-.division-banner{position:sticky;top:0;z-index:20;padding:16px;margin-bottom:12px;background:#f7e1a3;color:#7d6942;border:2px solid #fff3cc;border-radius:13px;font-size:13px;font-weight:800;text-align:center}
+
 .division-transition .energy-button{pointer-events:none;opacity:.4}.division-transition .building-scroll{overflow:visible}.division-error{font-size:12px;color:#b67859}
 html[data-theme=dark] :is(.social-post,#socialClub){background:#293f45;border-color:#496266;box-shadow:none;color:#d8e4d8}
 html[data-theme=dark] .social-post header strong{color:#e3eadc}html[data-theme=dark] .social-post :is(p,small){color:#bed1c2}
@@ -83,7 +83,7 @@ body.social-open .social-feed-window{height:auto}
 
 .division-transition .room-lane{overflow:visible}.division-transition .tier{position:relative;overflow-anchor:none}.division-stage-preview{position:relative;flex:0 0 auto;display:flex;gap:10px;z-index:1;pointer-events:none}.division-stage-area{box-sizing:border-box;flex:0 0 166px;width:166px;min-height:222px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:18px 12px;border:2px dashed #adc1a4;border-radius:13px;background:#f6f0d9;color:#567f79;text-align:center;box-shadow:0 3px 0 #b7baa033}.division-stage-area>span{font-size:27px;color:#a3b699}.division-stage-area strong{font-size:12px;line-height:1.4}.division-stage-area small{font-size:10px;color:#8a9982}html[data-theme=dark] .division-stage-area{background:#2d4146;border-color:#647c76;color:#d9e1d2}
 
-.division-transition .division-banner{position:fixed;top:12px;left:50%;transform:translateX(-50%);box-sizing:border-box;width:min(440px,calc(100% - 24px));margin:0;z-index:1000;background:#fff6dfee;backdrop-filter:blur(10px);box-shadow:0 6px 24px #294b4020}.division-transition .energy-dock{opacity:.28;pointer-events:none}.division-transition .achievement-notice{visibility:hidden}
+.division-transition .division-transition .energy-dock{opacity:.28;pointer-events:none}.division-transition .achievement-notice{visibility:hidden}
 
 .division-transition .reward-pop,.division-transition .energy-pulse{visibility:hidden}
 

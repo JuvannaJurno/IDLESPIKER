@@ -12,7 +12,7 @@ const rules=[
  ['button.close-dialog,#closeSettings,#closeCamp,#closeProfile,#closeAchievements','close'],
  ['#previousMonth,#previousRound,.journey-back','left'],['#nextMonth,#nextRound','right'],
  ['.slot-icon',blockIcon],['.bonus-lock-icon','lock'],['.name-pencil','edit'],
- ['.journey-entry-mark','diamond'],['.journey-reward-art[data-kind="cash"]>b','basket'],['.journey-reward-art[data-kind="music"]>b','music'],
+ ['.journey-entry-mark',node=>node.closest('.journey-entry')?.dataset.ready==='true'?'award':'diamond'],['.journey-reward-art[data-kind="cash"]>b','basket'],['.journey-reward-art[data-kind="music"]>b','music'],
  ['.follower-heading>svg:not(.spiker-icon)','team'],['.foundation-toggle>b','right']
 ];
 const selector=rules.map(rule=>rule[0]).join(',');

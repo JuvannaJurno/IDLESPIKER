@@ -1,4 +1,4 @@
-/* Dialogs and tutorial guidance intentionally dim only while open. */
+/* Standalone match/lab modal backdrop; main UI uses ui-components.css tokens. */
 html dialog::backdrop{background:rgb(24 43 41 / 60%);backdrop-filter:blur(2px)}
 #learningSpotlight[hidden]{display:none!important}
 #learningSpotlight path{fill:rgb(17 29 38 / 68%)}

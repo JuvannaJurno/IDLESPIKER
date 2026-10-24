@@ -15,7 +15,7 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 .score-center{text-align:center}.score-numbers{display:flex;align-items:center;justify-content:center;gap:8px;font-variant-numeric:tabular-nums}
 .score-numbers b{font-size:34px;line-height:1;font-weight:900;letter-spacing:-1.5px;color:#426b72}.score-numbers span{color:#b7baa4;font-size:18px}
 .score-center small{display:block;margin-top:5px;color:#929981;font-size:8px;letter-spacing:1.4px}
-.serve-strip{grid-column:1/-1;margin-top:9px;padding:7px 0;border-top:1px solid #e9e4cf;text-align:center;font-size:8px;color:#7f937c;letter-spacing:.6px}
+.serve-strip{grid-column:1/-1;margin-top:9px;border-top:1px solid #e9e4cf;text-align:center;font-size:8px;color:#7f937c;letter-spacing:.6px}
 .court-space{position:relative;flex:1;min-height:0;min-width:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .court-viewport{position:relative;flex:none;overflow:hidden;background:#80b8b4;border:0;border-radius:12px;box-shadow:0 0 0 1px #fff7e86b}
 #court{position:absolute;width:178.571429%;max-width:none;height:auto;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-90deg);border:0;border-radius:0}
@@ -27,7 +27,7 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 #mobileSpeed{background:#ede9d5;color:#8b805a}.match-controls button:hover{filter:brightness(.97)}.match-controls button:active{transform:translateY(1px)}button:focus-visible{outline:2px solid #54897c;outline-offset:2px}.match-controls button:disabled{opacity:.5}
 #matchResult:not([hidden]){position:fixed;left:50%;transform:translate(-50%,-50%);border:3px solid #fffdf0;box-shadow:0 6px 0 #8dada7,0 0 0 100vmax #365c7088;color:#527888}
 #resultContinue{width:100%;min-height:46px;font-family:inherit;font-weight:800;cursor:pointer}#resultScore{font-weight:800}
-@media(max-height:700px){main{gap:6px}.match-board{padding-top:7px}.score-numbers b{font-size:27px}.serve-strip{margin-top:5px;padding:4px 0}.match-console{padding-bottom:6px}#event{height:28px}.match-controls{padding-top:5px}}
+@media(max-height:700px){main{gap:6px}.match-board{padding-top:7px}.score-numbers b{font-size:27px}.serve-strip{margin-top:5px}.match-console{padding-bottom:6px}#event{height:28px}.match-controls{padding-top:5px}}
 @media(min-aspect-ratio:6/5) and (max-height:500px){main{max-width:760px;display:grid;grid-template-columns:190px minmax(0,1fr);grid-template-rows:42px 1fr auto;gap:8px;padding-top:10px}.match-heading{grid-column:1;grid-row:1;padding-right:0}.match-board{grid-column:1;grid-row:2;align-self:start;grid-template-columns:1fr 74px 1fr;padding:12px 6px 0}.score-team strong{font-size:10px}.score-numbers b{font-size:25px}.court-space{grid-column:2;grid-row:1/4;height:100%}.match-console{grid-column:1;grid-row:3}.match-controls button{font-size:10px}}
 #matchResult:not([hidden]){z-index:20;top:50%;width:calc(100% - 24px);max-width:430px;max-height:calc(100dvh - 30px);overflow-y:auto;padding:22px 18px 18px;border-radius:22px;text-align:center;background:#fff6df}#resultTitle{display:block;font-size:27px}#resultScore{font-size:16px!important;margin:10px 0 18px;line-height:1.5}#resultStats,#matchReward{text-align:left}#matchResult h3{font-size:11px;letter-spacing:.6px;color:#7c927f;margin:16px 0 9px}.result-stat-row{display:grid;grid-template-columns:1fr 1.2fr 1fr;align-items:center;text-align:center;padding:7px 4px;border-bottom:1px solid #e5e5cd;font-size:12px;color:#557a81}.result-stat-row span:first-child,.result-stat-row span:last-child{font-weight:900;font-size:16px}.result-stat-row.result-stat-legend span{font-size:9px;font-weight:600;color:#879782}.result-scorers{padding:0;margin:0;list-style:none}.result-scorers li{display:flex;align-items:center;gap:9px;padding:9px 0;border-bottom:1px solid #e8e5ce;font-size:11px}.result-scorers i{font-style:normal;display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#e8ecd6;color:#8e9c7b}.result-scorers li:first-child i{background:#f4dfaa;color:#a48445}.result-scorers span{flex:1;min-width:0}.result-scorers strong,.result-scorers small{display:block}.result-scorers strong{color:#4f7880}.result-scorers small{font-size:9px;color:#8c9a82;margin-top:3px}.result-scorers b{color:#658574;white-space:nowrap}.result-rewards{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:17px}.result-rewards>div{background:#e6edd8;border:1px solid #d9e3c9;border-radius:12px;padding:12px 8px;text-align:center}.result-rewards b{display:block;color:#557864;font-size:18px}.result-rewards small{display:block;color:#82977b;font-size:9px;margin-top:5px}#resultContinue{background:#e0e9d4;color:#567669;border:1px solid #cddcbe;border-radius:12px}
 
@@ -35,9 +35,9 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 .match-board .team-mark{display:grid!important;place-items:center;width:34px;height:36px;margin:0 auto 4px;border:0;background:none;box-shadow:none;color:#658471;font-size:22px}.team-mark img{display:block;width:100%;height:100%;object-fit:contain}.match-board .score-team{min-width:0}.match-board .score-team strong{overflow-wrap:anywhere}
 
 /* Server portrait lives inside the scoreboard so the court never shifts mid-rally. */
-.serve-strip.has-server{display:flex;align-items:center;gap:10px;min-height:66px;padding:7px 3px;text-align:left;letter-spacing:0;color:#426b72}.server-portrait{display:block;flex:0 0 48px;width:48px;height:48px;overflow:hidden;border:1px solid #ddd9b9;border-radius:14px;background:linear-gradient(145deg,#f5e8c8,#dce7db)}.server-portrait img{display:block;width:100%;height:100%;object-fit:cover}.server-copy{display:flex;flex:1;min-width:0;flex-direction:column;gap:2px}.server-label{font-size:7px;line-height:1.2;letter-spacing:1.2px;font-weight:800;color:#7f927c}.server-name{font-size:12px;line-height:1.2;font-weight:800;color:#41666d;overflow-wrap:anywhere}.server-club{font-size:9px;line-height:1.2;color:#839082}.server-number{display:grid;place-items:center;flex:0 0 30px;height:30px;border-radius:10px;background:#e8efdf;color:#638779;font-size:10px;font-weight:800}.serve-strip.has-server[data-team="1"] .server-number{background:#f4e5d1;color:#ab7856}.serve-strip.has-server[data-serving="true"] .server-label:before{content:'';display:inline-block;width:5px;height:5px;margin-right:5px;border-radius:50%;background:#d3a44e;box-shadow:0 0 0 3px #d3a44e18;vertical-align:1px}.serve-strip.has-server[data-serving="false"] .server-label{color:#98a492}@media(max-height:700px){.serve-strip.has-server{min-height:50px;padding:5px 2px;gap:8px}.server-portrait{width:38px;height:38px;flex-basis:38px;border-radius:11px}.server-name{font-size:11px}.server-club{font-size:8px}.server-number{height:26px;flex-basis:26px}}@media(min-aspect-ratio:6/5) and (max-height:500px){.serve-strip.has-server{gap:5px}.server-name{font-size:10px}.server-club{font-size:8px}.server-number{display:none}}
+.serve-strip.has-server{;text-align:left;letter-spacing:0;color:#426b72}.server-portrait{;;;;overflow:hidden;border:1px solid #ddd9b9;border-radius:14px;background:linear-gradient(145deg,#f5e8c8,#dce7db)}.server-portrait img{;;;object-fit:cover}.server-copy{;;;flex-direction:column;}.server-label{;;letter-spacing:1.2px;font-weight:800;color:#7f927c}.server-name{;;font-weight:800;color:#41666d;}.server-club{;;color:#839082}.server-number{;place-items:center;;;border-radius:10px;background:#e8efdf;color:#638779;;font-weight:800}.serve-strip.has-server[data-team="1"] .server-number{background:#f4e5d1;color:#ab7856}.serve-strip.has-server[data-serving="true"] .server-label:before{content:'';display:inline-block;width:5px;height:5px;margin-right:5px;border-radius:50%;background:#d3a44e;box-shadow:0 0 0 3px #d3a44e18;vertical-align:1px}.serve-strip.has-server[data-serving="false"] .server-label{color:#98a492}@media(max-height:700px){.serve-strip.has-server{}.server-portrait{;;;border-radius:11px}.server-name{}.server-club{}.server-number{;}}@media(min-aspect-ratio:6/5) and (max-height:500px){.serve-strip.has-server{}.server-name{}.server-club{}.server-number{}}
 
-.server-portrait{display:grid;place-items:center}.server-fallback{font-size:16px;font-weight:800;color:#718a7e}.server-portrait [hidden]{display:none}
+.server-portrait{;place-items:center}.server-fallback{;font-weight:800;color:#718a7e}.server-portrait [hidden]{}
 
 /* Commentary is replaced by the persistent player portrait above the court. */
 #event{display:none!important}
@@ -45,23 +45,23 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 #matchSkillNotice{display:none!important}
 
 
-.server-skill{--skill-ink:#66716d;--skill-tint:#e8ece5;--skill-edge:#b8c2b7;flex:0 1 52%;min-width:0;min-height:46px;display:flex;align-items:center;justify-content:center;gap:8px;margin-left:auto;padding:8px 12px;border:1px solid var(--skill-edge);border-radius:10px;background:linear-gradient(105deg,var(--skill-tint),#fff8e700);color:var(--skill-ink);text-align:left}
-.server-skill[hidden]{display:none}.server-skill strong{font-size:11px;font-weight:900;line-height:1.25;color:var(--skill-ink);overflow-wrap:anywhere}.server-skill small{font-size:8px;color:var(--skill-ink);opacity:.8;line-height:1.2}.serve-strip.has-server:has(.server-skill:not([hidden])) .server-number{display:grid}
+.server-skill{--skill-ink:#66716d;--skill-tint:#e8ece5;--skill-edge:#b8c2b7;;;;;align-items:center;justify-content:center;;;;border:1px solid var(--skill-edge);border-radius:10px;background:linear-gradient(105deg,var(--skill-tint),#fff8e700);color:var(--skill-ink);text-align:left}
+.server-skill[hidden]{}.server-skill strong{;font-weight:900;;color:var(--skill-ink);}.server-skill small{;color:var(--skill-ink);opacity:.8;}.serve-strip.has-server:has(.server-skill:not([hidden])) .server-number{}
 .serve-strip[data-skill="uncommon"] .server-skill{--skill-ink:#397746;--skill-tint:#e0efd9;--skill-edge:#a5c695}
 .serve-strip[data-skill="rare"] .server-skill{--skill-ink:#286ca5;--skill-tint:#deedf9;--skill-edge:#96bddd}
 .serve-strip[data-skill="epic"] .server-skill{--skill-ink:#8150a4;--skill-tint:#eee0f6;--skill-edge:#c2a3d6}
 .serve-strip[data-skill="legendary"] .server-skill{--skill-ink:#986515;--skill-tint:#ffebba;--skill-edge:#dfb957}
-@media(max-width:350px){.serve-strip.has-server{gap:7px}.server-skill{padding:7px 8px;flex-basis:43%}.server-skill strong{font-size:10px}}
+@media(max-width:350px){.serve-strip.has-server{}.server-skill{;}.server-skill strong{}}
 
-.server-skill-emblem{display:grid;place-items:center;flex:0 0 24px;width:24px;height:26px;color:var(--skill-ink)}.server-skill-emblem svg{display:block;width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linejoin:round}.server-skill-words{display:flex;flex-direction:column;justify-content:center;gap:3px;min-width:0;max-width:calc(100% - 32px)}.server-skill.skill-enter{animation:server-skill-enter .4s cubic-bezier(.16,1,.3,1) both}.server-skill.skill-enter .server-skill-emblem{animation:server-seal-enter .5s ease both}@keyframes server-skill-enter{from{opacity:0;transform:translateX(9px)}to{opacity:1;transform:translateX(0)}}@keyframes server-seal-enter{0%{scale:.7;opacity:.3}60%{scale:1.1;opacity:1}100%{scale:1}}@media(prefers-reduced-motion:reduce){.server-skill.skill-enter,.server-skill.skill-enter .server-skill-emblem{animation:none}}@media(max-width:350px){.server-skill{flex-basis:52%;gap:5px;padding:7px}.server-skill-emblem{flex-basis:20px;width:20px}.server-skill-emblem svg{width:20px;height:20px}}
+.server-skill-emblem{;place-items:center;;;;color:var(--skill-ink)}.server-skill-emblem svg{;;;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linejoin:round}.server-skill-words{;flex-direction:column;justify-content:center;;;}.server-skill.skill-enter{animation:server-skill-enter .4s cubic-bezier(.16,1,.3,1) both}.server-skill.skill-enter .server-skill-emblem{animation:server-seal-enter .5s ease both}@keyframes server-skill-enter{from{opacity:0;transform:translateX(9px)}to{opacity:1;transform:translateX(0)}}@keyframes server-seal-enter{0%{scale:.7;opacity:.3}60%{scale:1.1;opacity:1}100%{scale:1}}@media(prefers-reduced-motion:reduce){.server-skill.skill-enter,.server-skill.skill-enter .server-skill-emblem{animation:none}}@media(max-width:350px){.server-skill{;;}.server-skill-emblem{;}.server-skill-emblem svg{;}}
 
 /* Small inset keeps the skill panel closer to the player information. */
-.serve-strip.has-server .server-skill{margin-right:12px}
+.serve-strip.has-server .server-skill{}
 
-.serve-strip.has-server .server-number{display:grid;order:4;margin-left:auto;flex-shrink:0}.serve-strip.has-server .server-skill{margin-right:0;flex-basis:48%}
+.serve-strip.has-server .server-number{;;;}.serve-strip.has-server .server-skill{;}
 
 /* Balance the free space on both sides of the skill card. */
-.serve-strip.has-server:has(.server-skill:not([hidden])){display:grid;grid-template-columns:48px minmax(0,1fr) minmax(0,1.7fr) 30px;column-gap:10px}.serve-strip.has-server .server-skill{width:calc(100% - 12px);justify-self:center;margin:0;min-width:0}.serve-strip.has-server .server-number{margin-left:0;order:initial}@media(max-height:700px){.serve-strip.has-server:has(.server-skill:not([hidden])){grid-template-columns:38px minmax(0,1fr) minmax(0,1.7fr) 26px;column-gap:8px}}@media(max-width:350px){.serve-strip.has-server:has(.server-skill:not([hidden])){column-gap:6px}.serve-strip.has-server .server-skill{width:100%}}
+.serve-strip.has-server:has(.server-skill:not([hidden])){;;}.serve-strip.has-server .server-skill{;;margin:0;}.serve-strip.has-server .server-number{;}@media(max-height:700px){.serve-strip.has-server:has(.server-skill:not([hidden])){;}}@media(max-width:350px){.serve-strip.has-server:has(.server-skill:not([hidden])){}.serve-strip.has-server .server-skill{}}
 
 /* One continuous match surface, with a highlighted court inset. */
 .match-arena{display:flex;flex-direction:column;flex:1;min-height:0;min-width:0;gap:10px;padding:0 10px 10px;background:#fff7e5;border:1px solid #fffcf3;border-radius:19px;box-shadow:0 4px 16px #43675d18;overflow:hidden}
@@ -76,16 +76,16 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 /* Shared inner edges and a single highlight around the actual court. */
 .match-arena{padding-left:10px;padding-right:10px;gap:10px}
 .match-arena .match-board{width:100%;margin:0;padding-top:10px}
-.match-arena .serve-strip.has-server{padding-left:0;padding-right:0;min-height:66px;align-items:center}
+.match-arena .serve-strip.has-server{padding-left:0;padding-right:0}
 .match-arena .court-space{padding:5px;background:transparent;box-shadow:none;border-radius:0}
 .match-arena .court-viewport{border-radius:12px;box-shadow:0 0 0 2px #fffaf0,0 0 0 3px #9fc5b6,0 3px 8px #466f6324}
 .match-arena .match-console,.match-arena .match-controls{width:100%;margin:0}
 .match-arena .match-controls{gap:8px;align-items:stretch}
 .match-arena .match-controls button{margin:0;min-width:0;flex:1 1 0}
-.match-arena .server-number{justify-self:end;width:30px}
-.match-arena .server-copy{align-self:center}
-.match-arena .server-skill{align-self:center;min-height:46px}
-@media(max-height:700px){.match-arena{gap:8px;padding-left:10px;padding-right:10px}.match-arena .serve-strip.has-server{min-height:50px}.match-arena .server-number{width:26px}}
+.match-arena .server-number{;}
+.match-arena .server-copy{}
+.match-arena .server-skill{;}
+@media(max-height:700px){.match-arena{gap:8px;padding-left:10px;padding-right:10px}.match-arena .serve-strip.has-server{}.match-arena .server-number{}}
 @media(min-aspect-ratio:6/5) and (max-height:500px){.match-arena{gap:10px}.match-arena .match-board{padding-top:0}}
 
 /* Separate the scoreboard from the court and its controls. */
@@ -96,13 +96,13 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 @media(min-aspect-ratio:6/5) and (max-height:500px){.match-arena{display:grid;grid-template-columns:190px minmax(0,1fr);grid-template-rows:minmax(0,1fr);padding:0;gap:10px}.match-arena .match-board{grid-column:1;grid-row:1}.match-play-area{grid-column:2;grid-row:1;height:100%}.match-play-area .court-space{height:auto}.match-play-area .match-console{flex:none}}
 
 .match-play-area{align-self:center;max-width:100%;padding-top:6px;padding-bottom:8px;gap:8px}
-.match-arena .serve-strip.has-server{min-height:58px}
+.match-arena .serve-strip.has-server{}
 .match-point-notice{position:absolute;z-index:4;left:50%;top:12px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:2px;max-width:80%;padding:7px 16px;border:1px solid #c6d8bb;border-radius:12px;background:#fff8e8f2;color:#527665;box-shadow:0 3px 10px #345a4826;pointer-events:none;text-align:center}.match-point-notice[hidden]{display:none}.match-point-notice strong{font-size:19px;line-height:1}.match-point-notice small{font-size:9px;line-height:1.2;overflow-wrap:anywhere}.match-point-notice[data-team="1"]{border-color:#dfc5a6;color:#966b45}.match-point-notice.point-enter{animation:point-notice-enter .25s ease-out both}.point-score-flash{animation:point-score-flash .65s ease-out both}
 @keyframes point-notice-enter{from{opacity:0;transform:translate(-50%,5px) scale(.94)}to{opacity:1;transform:translate(-50%,0) scale(1)}}@keyframes point-score-flash{0%{transform:scale(1);color:#426b72}35%{transform:scale(1.22);color:#b28a33;text-shadow:0 0 12px #e5c87888}100%{transform:scale(1);color:#426b72}}
 @media(prefers-reduced-motion:reduce){.match-point-notice.point-enter,.point-score-flash{animation:none}}
-@media(min-aspect-ratio:6/5) and (max-height:500px){.match-play-area{width:auto;align-self:stretch}.match-arena .serve-strip.has-server{min-height:50px}}
+@media(min-aspect-ratio:6/5) and (max-height:500px){.match-play-area{width:auto;align-self:stretch}.match-arena .serve-strip.has-server{}}
 
-.serve-strip.has-server[data-point="true"] .server-label{color:#a0792e;font-weight:900;letter-spacing:.5px}.serve-strip.has-server .server-number[hidden]{display:none}.serve-strip.point-strip-enter{animation:point-strip-enter .3s ease-out both}@keyframes point-strip-enter{from{background:#f4dfab66}to{background:transparent}}@media(prefers-reduced-motion:reduce){.serve-strip.point-strip-enter{animation:none}}
+.serve-strip.has-server[data-point="true"] .server-label{color:#a0792e;font-weight:900;letter-spacing:.5px}.serve-strip.has-server .server-number[hidden]{}.serve-strip.point-strip-enter{animation:point-strip-enter .3s ease-out both}@keyframes point-strip-enter{from{background:#f4dfab66}to{background:transparent}}@media(prefers-reduced-motion:reduce){.serve-strip.point-strip-enter{animation:none}}
 
 .match-arena .match-board{perspective:750px;isolation:isolate}
 .score-turn-leaf{position:absolute;z-index:5;left:0;right:0;top:0;display:grid;grid-template-columns:minmax(0,1fr) 106px minmax(0,1fr);column-gap:6px;align-items:center;background:#fff7e5;border-radius:17px 17px 0 0;transform-origin:50% 0;backface-visibility:hidden;pointer-events:none;overflow:hidden;will-change:transform;box-shadow:0 4px 9px #796b3520}
@@ -135,8 +135,8 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 
 /* Restore the full-width court card and its original spacing. */
 .match-play-area{align-self:stretch;width:auto;max-width:100%;padding:10px;gap:10px}
-.match-arena .serve-strip.has-server{min-height:66px}
-@media(max-height:700px){.match-play-area{padding:8px 10px;gap:8px}.match-arena .serve-strip.has-server{min-height:50px}}
+.match-arena .serve-strip.has-server{}
+@media(max-height:700px){.match-play-area{padding:8px 10px;gap:8px}.match-arena .serve-strip.has-server{}}
 
 /* Continuous acceleration into the fall, followed by a gentle landing. */
 .score-turn-leaf.score-turn-toward{animation:score-page-soft-drop 1.05s cubic-bezier(.37,0,.2,1) both}
@@ -148,7 +148,7 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 .match-paused .score-turn-leaf.score-turn-toward,.match-paused .serve-strip.point-page-reveal{animation-play-state:paused}
 @media(prefers-reduced-motion:reduce){.score-turn-leaf.score-turn-toward{display:none}.serve-strip.point-page-reveal{animation:none}}
 
-.serve-strip[data-point-phase="celebrate"] .server-skill strong{font-size:15px;font-weight:900;letter-spacing:1.5px}.server-skill.point-chip-pop{animation:point-chip-pop .42s cubic-bezier(.2,.8,.3,1) both}.match-paused .server-skill.point-chip-pop{animation-play-state:paused}@keyframes point-chip-pop{0%{opacity:.45;transform:scale(.94)}55%{opacity:1;transform:scale(1.025)}100%{opacity:1;transform:scale(1)}}@media(prefers-reduced-motion:reduce){.server-skill.point-chip-pop{animation:none}}
+.serve-strip[data-point-phase="celebrate"] .server-skill strong{;font-weight:900;letter-spacing:1.5px}.server-skill.point-chip-pop{animation:point-chip-pop .42s cubic-bezier(.2,.8,.3,1) both}.match-paused .server-skill.point-chip-pop{animation-play-state:paused}@keyframes point-chip-pop{0%{opacity:.45;transform:scale(.94)}55%{opacity:1;transform:scale(1.025)}100%{opacity:1;transform:scale(1)}}@media(prefers-reduced-motion:reduce){.server-skill.point-chip-pop{animation:none}}
 
 /* Point celebration occupies the complete announcement paper, not its skill chip. */
 .serve-strip.has-server{position:relative}.point-paper-banner{display:none;pointer-events:none}
@@ -180,8 +180,8 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 #mobileSpeed .speed-current{color:var(--speed-ink)}#mobileSpeed .speed-indicators i{background:var(--speed-track)}#mobileSpeed .speed-indicators i[data-active="true"]{background:var(--speed-dot)}
 
 /* Reserve the final announcement height before player portraits finish loading. */
-.match-arena .match-board .serve-strip{min-height:66px;box-sizing:border-box}
-@media(max-height:700px){.match-arena .match-board .serve-strip{min-height:50px}}
+.match-arena .match-board .serve-strip{;box-sizing:border-box}
+@media(max-height:700px){.match-arena .match-board .serve-strip{}}
 
 /* Red paper for point celebrations and opponent-error explanations. */
 .serve-strip[data-point-phase="celebrate"],.serve-strip[data-point-error="true"],.score-page-back[data-point-phase="celebrate"],.score-page-back[data-point-error="true"],.notice-page-front[data-point-phase="celebrate"],.notice-page-front[data-point-error="true"]{background:#ba514b!important;border-color:#d77c70;border-radius:0 0 12px 12px;color:#fff6e6}
@@ -195,7 +195,7 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 .serve-strip[data-point="true"][data-point-phase="skill"]{background:var(--point-accent)!important}
 .serve-strip[data-point="true"] .server-label,.serve-strip[data-point="true"] .server-name,.serve-strip[data-point="true"] .server-club,.serve-strip[data-point="true"]>.point-paper-banner{color:var(--point-ink)!important;text-shadow:none}
 .serve-strip[data-point-error="true"] .server-skill{--skill-ink:var(--point-ink);--skill-edge:color-mix(in srgb,var(--point-ink) 35%,transparent);background:color-mix(in srgb,var(--point-ink) 7%,transparent)}
-.server-portrait img.is-team-badge{object-fit:contain;padding:4px}
+.server-portrait img.is-team-badge{object-fit:contain;}
 .notice-page-front[data-point-error="true"],.notice-page-front[data-point-phase="celebrate"]{background:transparent!important}
 @media(prefers-reduced-motion:reduce){.serve-strip[data-point="true"]{transition:none}}
 
@@ -246,8 +246,8 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 .notice-turn-leaf .serve-strip.has-server,.score-page-back .serve-strip.has-server{padding-left:10px;padding-right:10px;border-radius:0 0 17px 17px}
 
 /* Move the skill panel left while keeping the jersey number at the edge. */
-.serve-strip.has-server .server-skill{position:relative;left:-14px}
-@media(max-width:350px){.serve-strip.has-server .server-skill{left:-9px}}
+.serve-strip.has-server .server-skill{;}
+@media(max-width:350px){.serve-strip.has-server .server-skill{}}
 
 /* Preserve the previous lower sheet until the falling page covers it. */
 .score-page-underlay{position:absolute;z-index:4;left:0;right:0;background:#fff7e5;border-radius:0 0 17px 17px;overflow:hidden;pointer-events:none}.score-page-underlay .serve-strip.has-server{width:100%!important;height:100%;margin:0!important;padding-left:10px;padding-right:10px;animation:none!important;opacity:1!important;transform:none!important}.score-page-underlay .server-skill,.score-page-underlay .server-skill-emblem{animation:none!important}
@@ -256,52 +256,4 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 .serve-strip.point-strip-enter{animation:none}.serve-strip.has-server{transition:none}
 
 .notice-page-back>.serve-strip[data-point="false"]{background:#fff7e5!important}
-
-/* Fixed announcement footprint: content never resizes the match court. */
-.match-arena .serve-strip.has-server,
-.match-arena .serve-strip.has-server:has(.server-skill[hidden]),
-.match-arena .serve-strip.has-server:has(.server-skill:not([hidden])){
- height:62px;min-height:62px;max-height:62px;overflow:hidden;display:grid;
- grid-template-columns:38px minmax(72px,1fr) minmax(0,1.2fr) 24px;grid-template-rows:1fr;
- column-gap:9px;row-gap:4px;padding:7px 10px;align-items:center;align-content:center;
-}
-.match-arena .serve-strip.has-server .server-portrait{
- grid-column:1;grid-row:1;width:38px;height:38px;min-width:0;box-sizing:border-box;
- flex-shrink:0;align-self:center;justify-self:start;position:relative;overflow:hidden;
-}
-.match-arena .serve-strip.has-server .server-portrait img{
- position:absolute;inset:0;width:100%;height:100%;max-width:none;max-height:none;
- box-sizing:border-box;object-fit:cover;object-position:center;transform:none;animation:none;
-}
-.match-arena .serve-strip.has-server .server-portrait img.is-team-badge{object-fit:contain;padding:4px}
-.match-arena .serve-strip.has-server .server-portrait [hidden]{display:none!important}
-.match-arena .serve-strip.has-server .server-portrait[data-empty="true"]{visibility:hidden}
-.match-arena .serve-strip.has-server .server-copy{
- grid-column:2;grid-row:1;display:grid;grid-template-rows:9px 14px 11px;gap:1px;
- min-width:0;width:100%;text-align:left;align-content:center;
-}
-.match-arena .serve-strip.has-server .server-copy>*{display:block;min-width:0;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;overflow-wrap:normal;margin:0}
-.match-arena .serve-strip.has-server .server-label{font-size:7px;letter-spacing:.5px;line-height:9px}
-.match-arena .serve-strip.has-server .server-name{font-size:11px;line-height:14px;letter-spacing:0}
-.match-arena .serve-strip.has-server .server-club{font-size:9px;line-height:11px;letter-spacing:0}
-.match-arena .serve-strip.has-server .server-number{grid-column:4;grid-row:1;width:24px;height:26px;font-size:9px;justify-self:end}
-.match-arena .serve-strip.has-server .server-number[hidden]{display:none!important}
-.match-arena .serve-strip.has-server .server-skill{
- grid-column:3;grid-row:1;position:static;left:auto;right:auto;display:flex;
- width:100%;height:40px;min-height:40px;max-height:40px;min-width:0;max-width:100%;
- box-sizing:border-box;align-self:center;justify-self:stretch;align-items:center;justify-content:center;
- margin:0;padding:0 7px;gap:5px;border-radius:6px;overflow:hidden;animation:none;
-}
-.match-arena .serve-strip.has-server .server-skill[hidden]{display:none!important}
-.match-arena .serve-strip.has-server .server-skill-emblem{flex:0 0 12px;width:12px;height:14px;animation:none}
-.match-arena .serve-strip.has-server .server-skill-emblem svg{width:12px;height:14px}
-.match-arena .serve-strip.has-server .server-skill-words{flex:0 1 auto;min-width:0;max-width:calc(100% - 17px);text-align:center}
-.match-arena .serve-strip.has-server .server-skill strong{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;max-height:33px;overflow:hidden;font-size:10px;line-height:11px;letter-spacing:0;white-space:normal;overflow-wrap:normal;word-break:normal}
-@media(max-height:700px){.match-arena .serve-strip.has-server,.match-arena .serve-strip.has-server:has(.server-skill[hidden]),.match-arena .serve-strip.has-server:has(.server-skill:not([hidden])){height:62px;min-height:62px;max-height:62px;padding-top:4px;padding-bottom:4px}}
-@media(min-aspect-ratio:6/5) and (max-height:500px){
- .match-arena .serve-strip.has-server,.match-arena .serve-strip.has-server:has(.server-skill[hidden]),.match-arena .serve-strip.has-server:has(.server-skill:not([hidden])){height:62px;min-height:62px;max-height:62px;grid-template-columns:28px minmax(62px,1fr) minmax(0,1.2fr) 24px;column-gap:7px}
- .match-arena .serve-strip.has-server .server-portrait{width:28px;height:32px}
-}
-/* No empty skill row while the announcement only shows the player. */
-.match-arena .serve-strip.has-server:has(.server-skill[hidden]){grid-template-columns:38px minmax(0,1fr) 24px;grid-template-rows:1fr;row-gap:0}.match-arena .serve-strip.has-server:has(.server-skill[hidden]) .server-number{grid-column:3}
 
