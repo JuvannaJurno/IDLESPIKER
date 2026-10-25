@@ -46,6 +46,8 @@ academy-career.js/css içindeki academyConversation mevcut GameUI.selection aile
 
 Üstte gerçek portre, isim ve pozisyon; altında kısa soru ve iki seçenek. Elit potansiyeli ikincil açıklamadır. Ana akademi ekranında uzun seçim listesi yerine mevcut çalışma özeti ve konuşma düğmesi vardır. Diğer gençlerin portrelerinde “…” konuşma işareti bulunur. Normal seçilmiş seçenek aynı yeşil sınırı kullanır; yeni renk ailesi eklenmez.
 
+Son portre revizyonu: Konuşmanın üst kısmında 118×140px gerçek, şeffaf portre ve yanında kimlik bulunur. Arkasında aynı native antrenman sahnesinden alınan tek kare 3px blur ile yer alır; kâğıt geçişi yazıyı okunabilir tutar. İkinci renderer/iframe açılmaz. Kare yalnız konuşma açılışında ve ilk native hazır bildiriminde istenir; sürekli görüntü aktarımı yoktur. Parent/iframe mesajlarında kaynak ve istek kimliği doğrulanır. Küçük/yatay ekranda içerik ortak modal içinde kayar.
+
 Görüldü bilgisi idle-spiker-academy-conversations-v1 içinde genç kimliği/aşama olarak gösterim sırasında saklanır. Kapatma karar vermek değildir; yön/yetenek kaydı yalnız başarılı seçim işleminden gelir. Başarılı yanıtta “Tamam hocam, buna çalışacağım!” yaklaşık 1,1 saniye görünür, pencere kısa hareketle kapanır. Azaltılmış harekette geçiş hareketi kaldırılır. Aynı anda bekleyen diğer soru kendiliğinden zincirlenmez. Konuşma açıkken native salon durur; kapandığında görünürse devam eder.
 
 Kontrol: test-academy-conversation.cjs (görülme/yenileme, manuel açma, aynı anda iki genç, süre aşımı, eğitim saatinin korunması, 320/390/1440 ve yatay görünüm, karanlık tema ve modal temizliği). Görseller: audits/academy-conversation-direction.png, academy-conversation-skill.png, academy-conversation-reply.png, academy-conversation-dark.png.
