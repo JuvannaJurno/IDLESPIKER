@@ -114,14 +114,14 @@ html[data-theme=dark] .player-card .player-overall{background:#35545e!important}
 /* Desktop previews the same phone-width, two-column roster. */
 #teamPanel{max-width:390px;margin-inline:auto}
 #teamPanel #activeTeam,#teamPanel #benchCards{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important}
-#teamPanel #activeTeam[hidden],#teamPanel #benchSection[hidden]{display:none!important}
+#teamPanel #activeTeam[hidden],#teamPanel #reserveTeam[hidden]{display:none!important}
 #teamPanel .lineup-banner{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:8px;padding:10px 12px;min-height:48px}
 #teamPanel .lineup-banner>strong{font-size:9px;letter-spacing:.7px;min-width:0}#teamPanel .lineup-summary{font-size:9px;line-height:1.35;letter-spacing:0;text-align:right;min-width:0}
 #teamPanel .roster-view-switch{position:relative;display:grid;grid-template-columns:1fr 1fr;align-items:center;width:96px;min-width:96px;height:30px;padding:3px;border:1px solid #fff9e75c;border-radius:9px;background:#335a6033;color:#fff8e7;box-shadow:inset 0 1px 2px #24484a12;cursor:pointer;font:inherit}
 #teamPanel .roster-view-switch:before{content:'';position:absolute;top:3px;bottom:3px;left:3px;width:calc(50% - 3px);border-radius:6px;background:#fff5df;box-shadow:0 1px 2px #24484a26;transition:transform .18s cubic-bezier(.22,1,.36,1)}#teamPanel .roster-view-switch[aria-checked=true]:before{transform:translateX(100%)}
 #teamPanel .roster-view-switch>span{position:relative;z-index:1;opacity:1;font-size:10px;font-weight:600;letter-spacing:0;line-height:1}#teamPanel .roster-view-switch[aria-checked=false]>span:first-child,#teamPanel .roster-view-switch[aria-checked=true]>span:last-child{color:#426b72}
-#teamPanel[data-roster-view=reserves] #benchSection{margin:0;padding:12px 12px 15px;background:#c5e0dc;border:2px solid #eaf3e3;border-top:0;border-radius:0 0 16px 16px}#teamPanel[data-roster-view=reserves] #benchSection .bench-heading{display:none}#teamPanel[data-roster-view=reserves] .bench-filter{margin:0 0 12px}
-html[data-theme=dark] #teamPanel[data-roster-view=reserves] #benchSection{background:#2a4046;border-color:#405a5d}html[data-theme=dark] #teamPanel .roster-view-switch{background:#192f3280;border-color:#93aaa460}html[data-theme=dark] #teamPanel .roster-view-switch:before{background:#dbe5d4}
+#teamPanel[data-roster-view=reserves] #reserveTeam{margin:0;padding:12px 12px 15px;background:#c5e0dc;border:2px solid #eaf3e3;border-top:0;border-radius:0 0 16px 16px}
+html[data-theme=dark] #teamPanel[data-roster-view=reserves] #reserveTeam{background:#2a4046;border-color:#405a5d}html[data-theme=dark] #teamPanel .roster-view-switch{background:#192f3280;border-color:#93aaa460}html[data-theme=dark] #teamPanel .roster-view-switch:before{background:#dbe5d4}
 @media(prefers-reduced-motion:reduce){#teamPanel .roster-view-switch:before{transition:none}}
 /* Three role-relevant stats, each with its own full-width row. */
 #teamPanel .player-card .card-stats,#scoutDialog .scout-player.player-card .card-stats,#scoutDialog.is-opening #packCard .card-stats{grid-template-columns:minmax(0,1fr)!important;gap:8px}
@@ -158,3 +158,5 @@ html:not(.elite-preview-page) .player-card:not(.elite-player) .card-halo{backgro
 html:not(.elite-preview-page) .player-card:not(.elite-player)[data-can-upgrade=true] .card-open-upgrade,html:not(.elite-preview-page) .player-card:not(.elite-player) .scout-hire:not(:disabled){background:#dedfc9!important;border-color:#a7b397!important;color:#38565a!important}
 html:not(.elite-preview-page) .player-card:not(.elite-player)[data-can-upgrade=true] .card-open-upgrade small{color:inherit!important}
 html[data-theme=dark]:not(.elite-preview-page) .player-card:not(.elite-player){--club-paper:#303438;--club-soft:#3d4347;--club-name:#23272c;--club-port:#444b50;--club-ink:#edece5;--club-muted:#c0c5c3;--club-line:#5d676d;--club-edge:#737d83;--club-action:#454c51;--club-shadow:#171a1d}
+
+#teamPanel #rosterViewSwitch[hidden]{display:none!important}#teamPanel .lineup-summary{grid-column:3}#teamPanel #benchSection{margin-top:24px}#teamPanel #reserveTeam .empty-player{min-height:240px}#teamPanel #reserveTeam .libero-slot{grid-column:auto;width:auto;justify-self:stretch}
