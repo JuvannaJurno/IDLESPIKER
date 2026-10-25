@@ -7,3 +7,5 @@
 .department-development-art{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}.player-card[data-growth-band="5"]{--growth-edge:#a87a37;--growth-light:#ffe6a1}.player-card[data-growth-band="6"]{--growth-edge:#977136;--growth-light:#fff0b7}
 
 .player-card[data-growth-band]:not([data-growth-band="0"]):not([data-growth-band="1"])::after{content:"";position:absolute;inset:-2px;border-radius:inherit;box-shadow:inset 0 0 0 2px var(--growth-edge),inset 0 0 0 5px var(--growth-light);z-index:12;pointer-events:none}.player-card[data-growth-band="5"]::after,.player-card[data-growth-band="6"]::after{box-shadow:inset 0 0 0 3px var(--growth-edge),inset 0 0 0 6px var(--growth-light)}
+/* Graphite cards keep their own edge at every growth level. */
+.player-card[data-growth-band]:not(.elite-player)::after{content:none!important;box-shadow:none!important}
