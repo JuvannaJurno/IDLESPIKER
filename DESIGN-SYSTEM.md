@@ -390,3 +390,12 @@ Kullanıcı, başa sardığı belli olan klipler yerine topun geri döndüğü, 
 - Doğrulama: profil top seçimi ve gerçek maça aktarımı, 5/7/9/çift sayılı deneme maçı, native pepper; mobil ekran görüntüleri audits/profile-ball-picker-mobile.png ve audits/boot-pepper-loading-mobile.png.
 
 - 25 Ekim: Kalabalık akademi denemesi maçtan başlamaz. Normal antrenmanlar arasında tek 20 saniyelik deneme maçı bölümü vardır; biten bölümde ralli en fazla 5 saniye beklenir ve akış sonraki antrenmana döner. test-academy-curriculum.cjs gerçek zamanlı otomatik geçişi doğrular.
+
+
+## 25 Ekim 2026 — Yükleme ve seçici düzeltmeleri
+
+- Yükleme iframe’i ilk HTML ayrıştırmasından itibaren maç arayüzünü gizler. İki oyuncu hazır olunca görünür olur; normal maç döngüsü durdurulur, Legendary efektleri kapalıdır. Yalnız native perspektifte iki oyuncu ve top çizilir.
+- Profilde top girişi saha/müzikle aynı düğme anatomisindedir: başlık, güncel seçim ve ok. Top seçimi saha kartlarının aynı seçili/koyu tema ailesini kullanır; altı top açık, kayıt kalıcıdır. Kısa seçici içerik kadar büyür, gereksiz boş panel bırakmaz.
+- Medya blok seçimi ortak GameUI.selection kabuğundadır; tema tokenları, ikon/isim/fiyat satırı, ortak kapat ve Vazgeç eylemi kullanır. Seçim bütçeden bir kez düşer.
+- 2. Lig medya kilidi renderBalFloor içinde ilk çizimde uygulanır; render sonunda bölüm yerleşimi eşzamanlı güncellenir. Bir kareliğine eski keşif/blok düzeni veya açık medya gösterilmez. Yükseltme önbelleği lig kimliğini de içerir.
+- Kontrol: test-menu-consistency-fixes.cjs; animasyonlu/azaltılmış iki lig geçişi test-stage-transition-flow.cjs. Görseller audits/boot-two-players-loading.png, audits/ball-picker-consistent-mobile.png, audits/media-picker-consistent-mobile.png ve koyu varyantı.
