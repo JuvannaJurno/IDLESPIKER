@@ -18,3 +18,21 @@ html,body{margin:0;background:#edf0e5;color:#365968;font:13px 'Segoe UI',system-
 @media(max-width:760px){#scoutDialog{padding:12px 14px 20px}.card-lab-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px}}
 html.elite-preview-page #scoutDialog{width:100%!important;max-width:1240px!important;max-height:none!important;height:auto!important;}
 #scoutDialog .card-lab-grid .yellow{--club-edge:#cbb68d;--club-shadow:#b9a57d}#scoutDialog .card-lab-grid .growing{--club-edge:#a8ba92;--club-shadow:#8d9e7b}#scoutDialog .card-lab-grid .specialist{--club-edge:#7caaa0;--club-shadow:#659287}#scoutDialog .card-lab-grid .contender{--club-edge:#829fab;--club-shadow:#688695}#scoutDialog .card-lab-grid .elite-player{--club-kit:#887394;--club-edge:#a18bb3;--club-shadow:#82708f}
+/* Tier identity uses saturated edges over warm, quiet paper. */
+#scoutDialog #cardProgression .growing{--club-kit:#397551;--club-edge:#4d8a60;--club-shadow:#315b40;--club-paper:#f3f3dd;--club-soft:#dfe8c8;--club-name:#d5e2bc;--club-port:#f5f5e8;--club-ink:#2f573c;--club-line:#baca9e;--club-action:#d8e5c3}
+#scoutDialog #cardProgression .specialist{--club-kit:#176b79;--club-edge:#268a98;--club-shadow:#205662;--club-paper:#edf4ed;--club-soft:#d2e9e3;--club-name:#c3e0d9;--club-port:#f4faf5;--club-ink:#205663;--club-line:#a1c9c3;--club-action:#cde5de}
+#scoutDialog #cardProgression .contender{--club-kit:#294b83;--club-edge:#4d74b0;--club-shadow:#2a426c;--club-paper:#eef1f7;--club-soft:#dbe3f1;--club-name:#c9d6ec;--club-port:#f9faff;--club-ink:#2c4774;--club-line:#aebedc;--club-action:#d3def0}
+#scoutDialog #cardProgression .elite-player{--club-kit:#654086;--club-edge:#9c6ac0;--club-shadow:#4f326c;--club-paper:#f3ebf8;--club-soft:#e8d9f0;--club-name:#ddc6ea;--club-port:#fcfaff;--club-ink:#55316f;--club-muted:#7b638b;--club-line:#c8a8d9;--club-action:#e2ceee}
+html #scoutDialog #cardProgression .player-card:not(.yellow){border:2px solid var(--club-edge)!important;box-shadow:0 4px 0 var(--club-shadow),0 7px 13px #243e4218!important}
+#scoutDialog #cardProgression .player-card:not(.yellow) .player-overall{background:var(--club-kit)!important;color:#fff8ed!important;border:1px solid #ffffff60}
+#scoutDialog #cardProgression .player-card:not(.yellow) .card-art{background:radial-gradient(ellipse at 50% 85%,var(--club-soft),var(--club-port) 75%)!important}
+#scoutDialog #cardProgression .player-card:not(.yellow) .card-halo{background:transparent;border:1px solid var(--club-line)}
+#scoutDialog #cardProgression :is(.specialist,.contender,.elite-player) .card-top{background:linear-gradient(115deg,var(--club-kit),var(--club-shadow))!important}
+#scoutDialog #cardProgression .contender .card-name{border-bottom:2px solid var(--club-edge)}
+#scoutDialog #cardProgression .elite-player .card-name{border-bottom:3px double var(--club-edge)}
+#scoutDialog #cardProgression .elite-player .card-top{box-shadow:inset 0 -2px #e6c4fa80}
+#scoutDialog #cardProgression .elite-player .scout-hire{background:var(--club-kit)!important;color:#fff5ff!important;border-color:var(--club-edge)!important}
+#scoutDialog .card-lab-grid .potential-player{--club-kit:#4d7654;--club-edge:#77935b;--club-ink:#36543a;--club-line:#c1cda8}
+#scoutDialog .option-B .potential-player{--club-kit:#99622f;--club-edge:#b3854b;--club-ink:#754d2a;--club-line:#ddc3a1}
+#scoutDialog .option-C .potential-player{--club-kit:#276d75;--club-edge:#5d9998;--club-ink:#29585d;--club-line:#b1d1c9}
+#scoutDialog .option-D .potential-player{--club-kit:#66732f;--club-edge:#8d994e;--club-ink:#515c29;--club-line:#c7cf9e}
