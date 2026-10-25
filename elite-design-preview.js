@@ -1,20 +1,14 @@
 (function(){
-'use strict';if(!new URLSearchParams(location.search).has('eliteDesignPreview'))return;
-addEventListener('load',()=>setTimeout(()=>{
- for(const d of document.querySelectorAll('dialog[open]'))d.close();RoomSystem.setAutoClick(()=>{});
- const s=BalRules.enter(RoomRules.defaults(),1);s.division=4;s.divisionCalendar=2;s.openDepartments=[2,4];s.budget=1000000;s.instructions=15000;s.floors[0]=['first_academy'];s.scouting.firstTransferUsed=true;
- ScoutRules.report(s,()=>TeamRules.generate().map(p=>({...p,appearance:TeamAppearance.generate(Math.random,{country:p.nationality||CountryRules.current()})})),()=>.1,TeamRules.players);
- const candidate=s.scouting.catalog.find(c=>AcademyCareerRules.eligible(c.player));if(!candidate)return;
- LeagueSeason.loadStage({mode:'bal',division:4,divisionCalendar:2,startDay:1,run:4,results:{}});RoomSystem.loadStage(s);
- localStorage.setItem('idle-spiker-scout-opened-v1',s.scouting.catalog.map(c=>c.id).join('|'));Scouting.open();document.getElementById('homeCurrentCatalog').click();
- const original=document.querySelector('.scout-player[data-candidate-id="'+candidate.id+'"]');if(!original)return;
- const dialog=document.getElementById('scoutDialog'),host=document.createElement('main');host.id='eliteOptions';host.dataset.purpose='academy-potential';
- const families=[['O','Elit referansı','Mevcut mor elit yüzey. Yalnız karşılaştırma.'],['A','Leylak','Açık leylak yüzey, sakin mor başlık.'],['B','Ametist','Daha belirgin mor; elit aileden bir adım önce.'],['C','İnci','Beyaza yakın portre zemini, ince leylak kenar.'],['D','Adaçayı','Sıcak adaçayı yüzey, mor gelişim vurgusu.']];
- for(const [id,name,copy]of families){
-  const article=document.createElement('article');article.className='option-'+id;const heading=document.createElement('h2');heading.textContent=id+' · '+name;const note=document.createElement('p');note.textContent=copy;
-  const card=original.cloneNode(true);card.classList.remove('elite-player','valuable-candidate');card.classList.add(id==='O'?'elite-player':'potential-player');card.dataset.designVariant=id;card.removeAttribute('data-growth-band');card.removeAttribute('data-candidate-id');card.querySelector('.card-grade')?.remove();card.querySelectorAll('button').forEach(b=>{b.disabled=true;b.tabIndex=-1;});
-  const pick=document.createElement('button');pick.type='button';pick.className='elite-pick';pick.textContent=id==='O'?'Elit referansı':'Bu tasarımı seç';pick.disabled=id==='O';pick.setAttribute('aria-pressed','false');pick.onclick=()=>{host.querySelectorAll('.elite-pick:not(:disabled)').forEach(b=>{b.setAttribute('aria-pressed',String(b===pick));b.textContent=b===pick?'Seçildi':'Bu tasarımı seç';});parent.postMessage({type:'elite-design-choice',name:id+' · '+name,kind:'academy-potential'},'*');};article.append(heading,note,card,pick);host.append(article);
- }
- const originalUI=document.createElement('div');originalUI.hidden=true;originalUI.append(...dialog.childNodes);dialog.append(originalUI,host);document.documentElement.classList.add('elite-preview-page');const style=document.createElement('link');style.rel='stylesheet';style.href='elite-design-preview.css';document.head.append(style);
-},650));
+'use strict';if(!window.CardLabTemplate||!document.getElementById('cardProgression'))return;
+function card(className,potential=false){
+ const template=document.createElement('template');template.innerHTML=CardLabTemplate;const el=template.content.firstElementChild;el.classList.add(className);el.querySelectorAll('button').forEach(b=>{b.disabled=true;b.tabIndex=-1;});
+ if(potential){const note=document.createElement('div');note.className='card-potential';note.innerHTML='<span>Potansiyel</span><strong>???</strong>';note.title='Mezuniyet gücü eğitim sonunda belli olur. Şimdiki OVR üstte gösterilir.';el.querySelector('.card-cap').after(note);}
+ return el;
+}
+const stages=[['yellow','01 · Başlangıç','Varsayılan sıcak sarı kart.'],['growing','02 · Gelişen','Sarı kâğıtta adaçayı ayrıntılar.'],['specialist','03 · Uzman','Daha belirgin teal çerçeve.'],['contender','04 · Zirve adayı','Çelik mavi vurgu, açık yüzey.'],['elite-player','05 · Elit','Mevcut mor elit kart ailesi.']];
+for(const [type,title,copy]of stages){const article=document.createElement('article');article.dataset.tier=type;const h=document.createElement('h3');h.textContent=title;const p=document.createElement('p');p.textContent=copy;article.append(h,p,card(type));document.getElementById('cardProgression').append(article);}
+const families=[['O','Normal referans','Karşılaştırmak için sarı kart.'],['A','Filiz','Krem kâğıt, adaçayı kenar ve küçük gelişim izi.'],['B','Keşif','Sıcak kâğıt ve defter çizgisi gibi çift kenar.'],['C','Ufuk','Açık kâğıt üzerinde sakin teal ayrıntılar.'],['D','Kozası','Yumuşak yeşil yüzey ve ince köşe vurguları.']];
+for(const [id,name,copy]of families){const article=document.createElement('article');article.className='option-'+id;const h=document.createElement('h3');h.textContent=id+' · '+name;const p=document.createElement('p');p.textContent=copy;const face=card(id==='O'?'yellow':'potential-player',id!=='O');face.dataset.designVariant=id;const pick=document.createElement('button');pick.type='button';pick.className='elite-pick';pick.disabled=id==='O';pick.textContent=id==='O'?'Normal referans':'Bu tasarımı seç';pick.setAttribute('aria-pressed','false');pick.onclick=()=>{document.querySelectorAll('.elite-pick:not(:disabled)').forEach(b=>{b.setAttribute('aria-pressed',String(b===pick));b.textContent=b===pick?'Seçildi':'Bu tasarımı seç';});parent.postMessage({type:'elite-design-choice',name:id+' · '+name,kind:'academy-potential'},'*');};article.append(h,p,face,pick);document.getElementById('eliteOptions').append(article);}
+let lastHeight=0;function reportHeight(){const height=Math.ceil(document.getElementById('scoutDialog').getBoundingClientRect().height)+1;if(height===lastHeight)return;lastHeight=height;parent.postMessage({type:'card-design-size',height},'*');}
+new ResizeObserver(reportHeight).observe(document.getElementById('scoutDialog'));addEventListener('load',reportHeight);
 })();
