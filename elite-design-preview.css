@@ -36,3 +36,16 @@ html #scoutDialog #cardProgression .player-card:not(.yellow){border:2px solid va
 #scoutDialog .option-B .potential-player{--club-kit:#99622f;--club-edge:#b3854b;--club-ink:#754d2a;--club-line:#ddc3a1}
 #scoutDialog .option-C .potential-player{--club-kit:#276d75;--club-edge:#5d9998;--club-ink:#29585d;--club-line:#b1d1c9}
 #scoutDialog .option-D .potential-player{--club-kit:#66732f;--club-edge:#8d994e;--club-ink:#515c29;--club-line:#c7cf9e}
+/* Potential cards carry their identity across the surface, not only the border. */
+#scoutDialog #eliteOptions .option-A .potential-player{--club-kit:#22664e;--club-edge:#3a8c68;--club-shadow:#25553e;--club-paper:#e8efdc;--club-soft:#caddb2;--club-name:#327653;--club-port:#f3f5e7;--club-ink:#294d37;--club-muted:#5d7559;--club-line:#a8bf8c;--club-action:#c7dda9;--potential-name-ink:#fff8df}
+#scoutDialog #eliteOptions .option-B .potential-player{--club-kit:#95502b;--club-edge:#b97544;--club-shadow:#754327;--club-paper:#f7e8d1;--club-soft:#ebc797;--club-name:#a55c32;--club-port:#fff3df;--club-ink:#694225;--club-muted:#8b6441;--club-line:#d5ad77;--club-action:#eed0a1;--potential-name-ink:#fff5df}
+#scoutDialog #eliteOptions .option-C .potential-player{--club-kit:#146879;--club-edge:#338c99;--club-shadow:#214e59;--club-paper:#e0eeeb;--club-soft:#b6d9d2;--club-name:#236f7a;--club-port:#f2faf4;--club-ink:#264f55;--club-muted:#577b79;--club-line:#90bdb7;--club-action:#badbd1;--potential-name-ink:#f4ffed}
+#scoutDialog #eliteOptions .option-D .potential-player{--club-kit:#a24740;--club-edge:#c46c5b;--club-shadow:#763d36;--club-paper:#f8e7dc;--club-soft:#edc6b3;--club-name:#ad5246;--club-port:#fff4e8;--club-ink:#70443b;--club-muted:#926b5e;--club-line:#d9aa95;--club-action:#efcbb6;--potential-name-ink:#fff5e2;outline:none}
+html #scoutDialog #eliteOptions .potential-player:not(.has-inline-comparison){border:2px solid var(--club-edge)!important;box-shadow:0 4px var(--club-shadow),0 7px 12px #29433420!important}
+#scoutDialog #eliteOptions .potential-player .card-top{background:var(--club-kit)!important;color:#fff8e9!important}
+#scoutDialog #eliteOptions .potential-player .card-name,#scoutDialog #eliteOptions .potential-player .card-name *{color:var(--potential-name-ink)!important}
+#scoutDialog #eliteOptions .potential-player .card-name{background:var(--club-name)!important;border-bottom:2px solid var(--club-edge)}
+#scoutDialog #eliteOptions .potential-player .card-potential{background:var(--club-kit);color:#fff8e9;border-color:var(--club-edge)}
+#scoutDialog #eliteOptions .potential-player .card-potential strong{color:#fff8e9}
+#scoutDialog #eliteOptions .potential-player .scout-hire{background:var(--club-kit)!important;color:#fff8e9!important;border-color:var(--club-edge)!important}
+#scoutDialog #eliteOptions .potential-player .card-art{background:radial-gradient(ellipse at 50% 25%,var(--club-port) 25%,var(--club-soft) 100%)!important}
