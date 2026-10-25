@@ -2,6 +2,7 @@
 'use strict';
 // Production academy state lives in the room transaction, alongside scouting and budget.
 const copy=o=>JSON.parse(JSON.stringify(o));
+const Potential=root.ProspectPotentialRules||(typeof require==='function'?require('./prospect-potential-rules.js'):null);
 const stats=['spike','block','serve','receive','set','stamina','mental'];
 const paths={
  setter:[['playmaker','Oyun kurucu','set','mental','deceive','sync-attack'],['support','Güvenli pas','receive','set','fake-set','perfect-second-touch']],
@@ -17,7 +18,7 @@ const capacity=s=>unlocked(s)?2+Math.max(0,(s.floors.flat().filter(x=>x==='first
 function normalize(raw){
  const s=defaults();if(raw?.version!==1)return s;
  for(const k of ['sequence','graduates'])if(Number.isSafeInteger(raw[k])&&raw[k]>=0)s[k]=raw[k];
- const seen=new Set();s.entries=(Array.isArray(raw.entries)?raw.entries:[]).filter(e=>e&&/^academy-\d+$/.test(e.id)&&!seen.has(e.id)&&seen.add(e.id)&&e.player&&paths[e.player.role]&&typeof e.player.name==='string'&&/^team-assets\/woman-\d+\.svg$/.test(e.player.art)&&stats.every(k=>Number.isSafeInteger(e.player[k])&&e.player[k]>=0)&&Number.isFinite(e.start)&&Number.isFinite(e.end)&&e.end>e.start&&Number.isFinite(e.roll)&&e.roll>=0&&e.roll<1&&plans(e.player).some(p=>p.id===e.path)).slice(0,6).map(e=>({...copy(e),chance:.25,skillChoice:e.skillChoice==='alternate'?'alternate':'recommended'}));
+ const seen=new Set();s.entries=(Array.isArray(raw.entries)?raw.entries:[]).filter(e=>e&&/^academy-\d+$/.test(e.id)&&!seen.has(e.id)&&seen.add(e.id)&&e.player&&paths[e.player.role]&&typeof e.player.name==='string'&&/^team-assets\/woman-\d+\.svg$/.test(e.player.art)&&stats.every(k=>Number.isSafeInteger(e.player[k])&&e.player[k]>=0)&&Number.isFinite(e.start)&&Number.isFinite(e.end)&&e.end>e.start&&Number.isFinite(e.roll)&&e.roll>=0&&e.roll<1&&plans(e.player).some(p=>p.id===e.path)).slice(0,6).map(e=>({...copy(e),chance:Potential.rating(e.player).chance,skillChoice:e.skillChoice==='alternate'?'alternate':'recommended'}));
  s.sequence=Math.max(s.sequence,...s.entries.map(e=>Number(e.id.split('-')[1])),0);return s;
 }
 const progress=(e,now=Date.now())=>Math.max(0,Math.min(1,(now-e.start)/(e.end-e.start)));
@@ -28,7 +29,7 @@ function enroll(room,candidate,price,now=Date.now(),random=Math.random){
  const s=room.academy,p=copy(candidate.player),id='academy-'+(++s.sequence),duration=s.sequence===1?20*60000:2*3600000;
  const roll=random();if(!Number.isFinite(roll)||roll<0||roll>=1){s.sequence--;return false;}
  p.art=p.art.startsWith('team-assets/')?p.art:'team-assets/woman-0.svg';
- s.entries.push({id,player:p,start:now,end:now+duration,path:plans(p)[0].id,skillChoice:'recommended',directionChosen:false,skillChosen:false,chance:.25,roll,paid:price});
+ s.entries.push({id,player:p,start:now,end:now+duration,path:plans(p)[0].id,skillChoice:'recommended',directionChosen:false,skillChosen:false,chance:Potential.rating(p).chance,roll,paid:price});
  const free=!room.scouting.firstTransferUsed&&!room.scouting.recruits.length;
  room.budget-=price;candidate.hired=true;candidate.academyId=id;room.scouting.firstTransferUsed=true;
  const Journey=root.SocialJourneyRules||(typeof require==='function'?require('./social-journey-rules.js'):null);if(!free&&Journey?.available(room,'transfer'))room.socialJourney.transferUsed=true;
