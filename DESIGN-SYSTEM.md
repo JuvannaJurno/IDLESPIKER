@@ -491,3 +491,7 @@ Kullanıcı, başa sardığı belli olan klipler yerine topun geri döndüğü, 
 - Tam ekran maçın kamera/kenar dolgusu ayrı düz mavi bant olarak çizilmez. gameMatchDialog, maçın mevcut krem-yeşil geçişli arka planını tek seferde bütün alana çizer.
 - Parent’ın doğrulanmış spiker-host-layout mesajını alan oyun iframe’i match-hosted sınıfıyla html/body arka planını saydam yapar. Böylece iframe sınırında renk kesilmesi ve yeniden başlayan gradient olmaz. Bağımsız maç/lab zemini aynı kalır.
 - Kamera/çentik payları, kontrol konumları, ayrı skor ve saha kartlarının ölçüleri korunur. test-device-safe-area.cjs gerçek iframe’de ortak parent zemini ve saydam çocuk yüzeyini doğrular; anons geometrisi testi de geçti. Görsel audits/safe-area-match.png.
+
+### Kadro adlandırması
+As ve atanmış yedek kadro dışında kalan oyuncuların bölüm başlığı Alternatif oyuncular olarak belirlenmiştir. Mevcut koleksiyon başlığı güncellenmiştir; 1. Lig özel yedek slotları henüz uygulanmış değildir.
+
