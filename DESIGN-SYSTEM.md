@@ -71,6 +71,10 @@ Görsel kanıtlar: audits/first-league-transfer-choice.png, first-league-academy
 
 ## Tema kaynakları ve bileşen anatomisi
 
+### TeamSong kataloğu — 25 Ekim ekleri
+
+point-music-data.js içinde Kâtibim, Taiko ve Bizet · Carmen Uvertürü eklendi. Üçü ilk sayı müziği ödülüyle (1000 takipçi) açılır; mevcut Beethoven 5000 koşulunu korur. Profilde mevcut ayrı sayı müziği seçicisi ve en fazla iki seçim kullanılır. Dinlemede normal dosya, maçta aynı parçanın Reverbed dosyası çalar. OST/teamsong içindeki dosya adları birebir eşlenir; normal/reverb ayrı seçenek gibi listelenmez. Kontrol test-new-teamsongs.cjs; görsel audits/teamsong-new-tracks.png.
+
 Ortak bileşen tokenlarının kaynağı `ui-components.css`, davranış/kabuk fabrikasının kaynağı `ui-components.js`tir. Tutorial, aşama bildirimi, seçici, modal arka planı ve açık/koyu varyantları buradan beslenir. Oyuncu kartı, medya bloğu ve maç gibi anlamlı aileler kendi dosyalarını korur. Son CSS sırasını ve gerçek hesaplanmış stili kontrol et; ilk gördüğün renk güncel referans olmayabilir.
 
 | Alan | Gerçek kaynaklar | Korunacak aile |
