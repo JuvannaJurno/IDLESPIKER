@@ -160,3 +160,15 @@ html:not(.elite-preview-page) .player-card:not(.elite-player)[data-can-upgrade=t
 html[data-theme=dark]:not(.elite-preview-page) .player-card:not(.elite-player){--club-paper:#303438;--club-soft:#3d4347;--club-name:#23272c;--club-port:#444b50;--club-ink:#edece5;--club-muted:#c0c5c3;--club-line:#5d676d;--club-edge:#737d83;--club-action:#454c51;--club-shadow:#171a1d}
 
 #teamPanel #rosterViewSwitch[hidden]{display:none!important}#teamPanel .lineup-summary{grid-column:3}#teamPanel #benchSection{margin-top:24px}#teamPanel #reserveTeam .empty-player{min-height:240px}#teamPanel #reserveTeam .libero-slot{grid-column:auto;width:auto;justify-self:stretch}
+/* Six camp steps complete a three-star card tier. */
+html:not(.elite-preview-page) .player-card:not(.elite-player)[data-card-tier="1"]{--club-kit:#586b75;--club-edge:#93a3a6;--club-paper:#fbfaf0;--club-soft:#e4e8e1;--club-port:#f7f9f2;--club-name:#e2e6df;--club-action:#e0e6dc;--club-line:#c1ccc4}
+html:not(.elite-preview-page) .player-card:not(.elite-player)[data-card-tier="2"]{--club-kit:#96702d;--club-edge:#bd9955;--club-paper:#fff7e2;--club-soft:#efe3bf;--club-port:#fff9e9;--club-name:#efe3c4;--club-action:#eddfba;--club-line:#dccba0}
+html:not(.elite-preview-page) .player-card:not(.elite-player):is([data-card-tier="1"],[data-card-tier="2"]) .card-top{background:var(--club-kit)!important}
+html:not(.elite-preview-page) .player-card:not(.elite-player):is([data-card-tier="1"],[data-card-tier="2"]) .player-overall{background:var(--club-kit)!important}
+.player-card[data-card-tier="0"] .camp-stars{background:#f5f1e7!important}.player-card[data-card-tier="0"] .camp-star{filter:grayscale(1) brightness(.65)!important}
+.player-card[data-card-tier="1"] .camp-stars{background:#53626b!important}.player-card[data-card-tier="1"] .camp-star{filter:grayscale(1) brightness(1.45)!important}
+.player-card[data-card-tier="2"] .camp-stars{background:#765a30!important}.player-card[data-card-tier="2"] .camp-star{filter:none!important}
+.player-card[data-card-tier="3"] .camp-stars{background:#eee5f4!important}.player-card[data-card-tier="3"] .camp-star{filter:hue-rotate(220deg) saturate(.75)!important}
+.potential-marker{display:inline-flex;align-items:center;justify-content:center;min-width:26px;min-height:25px;background:#eef0de!important;color:#4f775b!important;border-color:#a8b99a!important}.potential-marker .spiker-icon{display:block;width:18px;height:18px}
+.player-card[data-prospect="unknown"] .camp-stars{color:var(--club-ink);font-size:11px;letter-spacing:2px}.player-card[data-prospect="unknown"] .player-skill-strip{color:var(--club-muted)}
+html[data-theme=dark] .player-card:not(.elite-player):is([data-card-tier="1"],[data-card-tier="2"]){--club-paper:#303b3c;--club-name:#3d4947;--club-soft:#3c4947;--club-port:#46524e;--club-ink:#edece5;--club-muted:#c0c5c3;--club-line:#647068;--club-action:#454f46}

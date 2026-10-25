@@ -3,7 +3,7 @@
 function card(className,potential=false){
  const template=document.createElement('template');template.innerHTML=CardLabTemplate;const el=template.content.firstElementChild;el.classList.add(className);el.querySelectorAll('button').forEach(b=>{b.disabled=true;b.tabIndex=-1;});
  if(potential){const note=document.createElement('div');note.className='card-potential';note.innerHTML='<span>Potansiyel</span><strong>???</strong>';note.title='Mezuniyet gücü eğitim sonunda belli olur. Şimdiki OVR üstte gösterilir.';el.querySelector('.card-cap').after(note);}
- return el;
+ if(potential)PlayerCardPresentation.conceal(el);return el;
 }
 const stages=[['growing','01 · Siyah','Sıcak kırık beyaz, kömür başlık.'],['specialist','02 · Gümüş','Fırçalanmış gümüş, çelik ayrıntılar.'],['contender','03 · Altın','Sıcak altın yüzey, bronz kenar.'],['elite-player','04 · Mor','Ametist başlık, mor elit yüzey.']];
 for(const [type,title,copy]of stages){const article=document.createElement('article');article.dataset.tier=type;const h=document.createElement('h3');h.textContent=title;const p=document.createElement('p');p.textContent=copy;article.append(h,p,card(type));document.getElementById('cardProgression').append(article);}
