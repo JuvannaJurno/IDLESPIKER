@@ -399,3 +399,11 @@ Kullanıcı, başa sardığı belli olan klipler yerine topun geri döndüğü, 
 - Medya blok seçimi ortak GameUI.selection kabuğundadır; tema tokenları, ikon/isim/fiyat satırı, ortak kapat ve Vazgeç eylemi kullanır. Seçim bütçeden bir kez düşer.
 - 2. Lig medya kilidi renderBalFloor içinde ilk çizimde uygulanır; render sonunda bölüm yerleşimi eşzamanlı güncellenir. Bir kareliğine eski keşif/blok düzeni veya açık medya gösterilmez. Yükseltme önbelleği lig kimliğini de içerir.
 - Kontrol: test-menu-consistency-fixes.cjs; animasyonlu/azaltılmış iki lig geçişi test-stage-transition-flow.cjs. Görseller audits/boot-two-players-loading.png, audits/ball-picker-consistent-mobile.png, audits/media-picker-consistent-mobile.png ve koyu varyantı.
+
+
+## 25 Ekim 2026 — Transfer kataloğunun hazır durumu
+
+- İlk katalogla sınırlı olmadan, henüz açılmamış her mevcut katalog kapatıldıktan veya sayfa yenilendikten sonra yeniden açılabilir. Hazır göstergesi, giriş eylemi ve katalog düğmesi aynı açılmamışlık durumunu kullanır.
+- Katalog tamamlanınca hazır durumunu tutan render önbelleği anında yenilenir; açık sanılan fakat bekleme nedeniyle işlem yapmayan düğme kalmaz. Aday sayısı açılacak gerçek katalogdan okunur.
+- Kart açma görünümünde ortak transfer kapat/geri rayı gizlenmez. Yenileme kaydedilemezse onay penceresi açık kalır ve durum yazısı görünür olur.
+- Doğrulama: test-transfer-unopened-catalog.cjs (8 kart, kapat/aç, yenileme, hazır göstergesinin kapanması ve başarısız kayıt sonrası tekrar deneme); test-transfer-pointer.cjs; test-scout-consistency.cjs. Eski test-scouting.cjs ve test-scout-cadence.cjs mevcut 10 günlük süre / %55 başlangıç şansı yerine eski 6 gün / %40 değerlerini bekliyor; bu değişiklik keşif dengesini değiştirmez.
