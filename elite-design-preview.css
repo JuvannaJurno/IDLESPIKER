@@ -49,3 +49,16 @@ html #scoutDialog #eliteOptions .potential-player:not(.has-inline-comparison){bo
 #scoutDialog #eliteOptions .potential-player .card-potential strong{color:#fff8e9}
 #scoutDialog #eliteOptions .potential-player .scout-hire{background:var(--club-kit)!important;color:#fff8e9!important;border-color:var(--club-edge)!important}
 #scoutDialog #eliteOptions .potential-player .card-art{background:radial-gradient(ellipse at 50% 25%,var(--club-port) 25%,var(--club-soft) 100%)!important}
+/* Progression series shares the filled identity of the potential alternatives. */
+#scoutDialog #cardProgression .yellow{--club-kit:#a9752d;--club-edge:#c99b4d;--club-shadow:#896130;--club-paper:#fff0cb;--club-soft:#f3daa2;--club-name:#b78235;--club-port:#fff4d9;--club-ink:#674f2b;--club-line:#d9bb7d;--club-action:#efd49a}
+#scoutDialog #cardProgression .growing{--club-paper:#e8efdc;--club-soft:#caddb2;--club-name:#327653;--club-action:#c7dda9;--club-line:#a8bf8c}
+#scoutDialog #cardProgression .specialist{--club-paper:#e0eeeb;--club-soft:#b6d9d2;--club-name:#236f7a;--club-action:#badbd1;--club-line:#90bdb7}
+#scoutDialog #cardProgression .contender{--club-paper:#e3eaf7;--club-soft:#c2d0e9;--club-name:#365b95;--club-action:#c1d1ee;--club-line:#9eb4d8}
+#scoutDialog #cardProgression .elite-player{--club-paper:#eee0f6;--club-soft:#d6b9e7;--club-name:#764692;--club-action:#d9bde9;--club-line:#bc95d1}
+#scoutDialog #cardProgression .player-card .card-name,#scoutDialog #cardProgression .player-card .card-name *{color:#fff8e9!important}
+#scoutDialog #cardProgression .player-card .card-name{background:var(--club-name)!important;border-bottom:2px solid var(--club-edge)}
+#scoutDialog #cardProgression .player-card .scout-hire{background:var(--club-kit)!important;color:#fff8e9!important;border-color:var(--club-edge)!important}
+#scoutDialog #cardProgression .yellow .player-overall{background:var(--club-kit)!important;color:#fff8e9!important}
+#scoutDialog #cardProgression .yellow .card-art{background:radial-gradient(ellipse at 50% 25%,var(--club-port),var(--club-soft))!important}
+html #scoutDialog #cardProgression .yellow:not(.has-inline-comparison){border:2px solid var(--club-edge)!important;box-shadow:0 4px var(--club-shadow)!important}
+#scoutDialog #cardProgression .elite-player .card-top{background:var(--club-kit)!important}
