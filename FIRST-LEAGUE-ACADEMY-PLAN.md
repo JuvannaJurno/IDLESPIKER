@@ -20,6 +20,8 @@ Durum: 25 Ekim 2026 — 1. Lig ve gerçek kayda bağlı akademinin ilk oynanabil
 
 ## Doğrulama
 
+25 Ekim konuşma revizyonu: Yön ve yetenek seçimleri akademiye girişte gencin portresiyle küçük bir konuşmada sunulur. Aynı ziyarette bir otomatik soru açılır; diğerleri portre işaretinden erişilir. Gösterilen soru genç/aşama bazında kaydedilir ve kapatıldıysa yenilemede tekrarlanmaz. Eğitim mevcut seçimle ilerler. Ana ekran çalışma özeti ve konuşma erişimini gösterir. Seçim kaydolunca genç kısa yanıt verir ve pencere kapanır. Kontrol: test-academy-conversation.cjs.
+
 test-first-league-academy.cjs: 1. Lig takvimi, profesyonel etkilerin korunması, genç transfer üretimi, eğitim seçimlerinin sınırları, normal/elit sonuçlar, kadro doluluğu, tekrar mezuniyet ve beceri kazanımı.
 
 test-first-league-academy-browser.cjs: gerçek geçiş, mevcut kadronun korunması, tesis kurulumu, transfer seçimi, native salon, yön/yetenek seçimi, 320/390/1440 genişlik, çevrimdışı tamamlanma, kalıcı mor mezun kartı, doğal sezon sonu yükselişi ve gerçek 1. Lig maçı. Görseller audits/first-league-*.png.

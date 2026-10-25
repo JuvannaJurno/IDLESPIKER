@@ -31,6 +31,17 @@ Son inceleme ve tutarlılık düzeltmeleri: 24 Ekim 2026. Bu dosya, kullanıcın
 16. 1. Lig akademisi mevcut native antrenman salonunu merkez alır. Yeni alt navigasyon yok; Takım ekranında kısa giriş ve Kulüp'te tesis erişimi bulunur. Portre şeridinden seçilen tek gencin durumu/kararı gösterilir. Deneme kontrolleri üretim menüsüne taşınmaz.
 17. Genç transfer kararında iki eylem (“A takıma transfer et”, “Akademiye transfer et”) ortak seçicinin sabit alt alanında görünür. Bedel, süre, garanti gelişim ve elit ihtimali iç kaydırma alanının başındadır; gerçek oyuncu kartı aynı anatomiyi korur. Küçük ekranda eylemler kartın altında kaybolmaz.
 18. Akademi mezunu aynı isim/portreyle gelir. Elit sonuç mevcut mor oyuncu kartını kullanır; beyaza yakın portre zemini ve aynı kart sırası korunur. Ayrı elit etiketi yok. Normal mezuniyet kayıp olarak gösterilmez.
+19. Akademide yön ve yetenek kararları gencin gerçek portresiyle küçük konuşma penceresinde sunulur. Genç birinci ağızdan “Hocam, hangi yönümü geliştireyim?” / “Hocam, bugün hangi yeteneği çalışayım?” diye sorar. Seçim kaydolunca kısa yanıt verir, yumuşakça kapanır. Aynı menü ziyaretinde en fazla bir otomatik konuşma; diğer gençler portrelerindeki konuşma işaretinden açılır. Kapatılan soru aynı genç/aşama için otomatik tekrarlanmaz; manuel tekrar mümkündür. Eğitim beklemez.
+
+### Akademide konuşarak yönlendirme — 25 Ekim
+
+academy-career.js/css içindeki academyConversation mevcut GameUI.selection ailesinin küçük, içeriğine göre boylanan varyantıdır: en çok 348px, mobil/masaüstünde aynı genişlik; aynı kâğıt, kapatma, modal arka planı ve kaydırma kilidi. Yeni tutorial kabuğu değildir. Ortak rehberin veya oyuncu dosyasının üzerine otomatik konuşma bindirilmez.
+
+Üstte gerçek portre, isim ve pozisyon; altında kısa soru ve iki seçenek. Elit potansiyeli ikincil açıklamadır. Ana akademi ekranında uzun seçim listesi yerine mevcut çalışma özeti ve konuşma düğmesi vardır. Diğer gençlerin portrelerinde “…” konuşma işareti bulunur. Normal seçilmiş seçenek aynı yeşil sınırı kullanır; yeni renk ailesi eklenmez.
+
+Görüldü bilgisi idle-spiker-academy-conversations-v1 içinde genç kimliği/aşama olarak gösterim sırasında saklanır. Kapatma karar vermek değildir; yön/yetenek kaydı yalnız başarılı seçim işleminden gelir. Başarılı yanıtta “Tamam hocam, buna çalışacağım!” yaklaşık 1,1 saniye görünür, pencere kısa hareketle kapanır. Azaltılmış harekette geçiş hareketi kaldırılır. Aynı anda bekleyen diğer soru kendiliğinden zincirlenmez. Konuşma açıkken native salon durur; kapandığında görünürse devam eder.
+
+Kontrol: test-academy-conversation.cjs (görülme/yenileme, manuel açma, aynı anda iki genç, süre aşımı, eğitim saatinin korunması, 320/390/1440 ve yatay görünüm, karanlık tema ve modal temizliği). Görseller: audits/academy-conversation-direction.png, academy-conversation-skill.png, academy-conversation-reply.png, academy-conversation-dark.png.
 
 ### 25 Ekim — 1. Lig ve akademi ilk taslağı
 
