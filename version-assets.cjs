@@ -8,11 +8,12 @@ const crestSymbols={};for(const id of ['ball','bolt','peak','star','sun','moon',
 fs.writeFileSync('crest-symbols-data.js','window.CrestSymbolData='+JSON.stringify(crestSymbols)+';\n');
 // Run before publishing to refresh changed scripts and styles in browser caches.
 for(const name of ['index.html','mac.html','deneme-modu.html','skill-animation-lab.html','legendary-preview.html','card-design-preview.html','player-card-design-lab-v3.html']){
- const html=fs.readFileSync(name,'utf8').replace(/((?:src|href)=")([^"?:]+\.(?:js|css))(?:\?v=[^"\s]+)?"/g,(match,prefix,file)=>{
+ let html=fs.readFileSync(name,'utf8').replace(/((?:src|href)=")([^"?:]+\.(?:js|css))(?:\?v=[^"\s]+)?"/g,(match,prefix,file)=>{
   if(!fs.existsSync(file))return match;
   const version=crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex').slice(0,12);
   return prefix+file+'?v='+version+'"';
  });
+ html=html.replace(/((?:src|poster)=")(assets\/preview-media\/[^"?]+\.(?:mp4|png))(?:\?v=[^"\s]+)?"/g,(match,prefix,file)=>{if(!fs.existsSync(file))return match;return prefix+file+'?v='+crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex').slice(0,12)+'"';});
  fs.writeFileSync(name,html);
 }
 console.log('Script and stylesheet versions updated.');
