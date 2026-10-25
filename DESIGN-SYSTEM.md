@@ -32,6 +32,13 @@ Son inceleme ve tutarlılık düzeltmeleri: 24 Ekim 2026. Bu dosya, kullanıcın
 17. Genç transfer kararında iki eylem (“A takıma transfer et”, “Akademiye transfer et”) ortak seçicinin sabit alt alanında görünür. Bedel, süre, garanti gelişim ve elit ihtimali iç kaydırma alanının başındadır; gerçek oyuncu kartı aynı anatomiyi korur. Küçük ekranda eylemler kartın altında kaybolmaz.
 18. Akademi mezunu aynı isim/portreyle gelir. Elit sonuç mevcut mor oyuncu kartını kullanır; beyaza yakın portre zemini ve aynı kart sırası korunur. Ayrı elit etiketi yok. Normal mezuniyet kayıp olarak gösterilmez.
 19. Akademide yön ve yetenek kararları gencin gerçek portresiyle küçük konuşma penceresinde sunulur. Genç birinci ağızdan “Hocam, hangi yönümü geliştireyim?” / “Hocam, bugün hangi yeteneği çalışayım?” diye sorar. Seçim kaydolunca kısa yanıt verir, yumuşakça kapanır. Aynı menü ziyaretinde en fazla bir otomatik konuşma; diğer gençler portrelerindeki konuşma işaretinden açılır. Kapatılan soru aynı genç/aşama için otomatik tekrarlanmaz; manuel tekrar mümkündür. Eğitim beklemez.
+20. Maç kadrosu başlığının ortasında As / Yedek switch'i bulunur. As görünümü mevcut ilk altı/liberoyu, Yedek görünümü mevcut yedek koleksiyonunu aynı yüzeyde gösterir. Switch kadroyu değiştirmez. Portre/kart anatomisi, yükseltme, pozisyon filtresi ve mevcut oyuncu değişimi korunur. Tahtadan veya transferden oyuncuya yönlendirme, oyuncunun bulunduğu görünümü açar. Rol başına özel yedek ataması ve otomatik rotasyon henüz bu görünüm geçişine dahil değildir.
+
+### As / Yedek görünüm geçişi — 25 Ekim
+
+Kaynak team.js ve styles/ui/player-club-card.css. Başlık / switch / sayaç üç sütundadır; 320px'te üst üste binmez. Switch role=switch ve aria-checked kullanır, Space/Enter ile çalışır. Mevcut teal başlık içinde krem hareketli seçim yüzeyi vardır; karanlık tema ve reduced-motion desteklenir. As ve yedek kartları aynı anda uzun liste halinde gösterilmez. Görünüm değişimi, yükseltme/render sonrasında korunur; ilk açılış As'tır. hidden kuralı mevcut !important grid kuralından güçlü olmalıdır.
+
+Kontrol: test-roster-switch.cjs (maç kadrosunun değişmemesi, filtre, render, klavye, oyuncuya yönlendirme, 320/390/1440 ve karanlık tema). Görseller audits/roster-switch-starters.png, roster-switch-reserves.png ve roster-switch-dark.png.
 
 ### Akademide konuşarak yönlendirme — 25 Ekim
 
