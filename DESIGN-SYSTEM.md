@@ -33,6 +33,11 @@ Son inceleme ve tutarlılık düzeltmeleri: 24 Ekim 2026. Bu dosya, kullanıcın
 18. Akademi mezunu aynı isim/portreyle gelir. Elit sonuç mevcut mor oyuncu kartını kullanır; beyaza yakın portre zemini ve aynı kart sırası korunur. Ayrı elit etiketi yok. Normal mezuniyet kayıp olarak gösterilmez.
 19. Akademide yön ve yetenek kararları gencin gerçek portresiyle küçük konuşma penceresinde sunulur. Genç birinci ağızdan “Hocam, hangi yönümü geliştireyim?” / “Hocam, bugün hangi yeteneği çalışayım?” diye sorar. Seçim kaydolunca kısa yanıt verir, yumuşakça kapanır. Aynı menü ziyaretinde en fazla bir otomatik konuşma; diğer gençler portrelerindeki konuşma işaretinden açılır. Kapatılan soru aynı genç/aşama için otomatik tekrarlanmaz; manuel tekrar mümkündür. Eğitim beklemez.
 20. Maç kadrosu başlığının ortasında As / Yedek switch'i bulunur. As görünümü mevcut ilk altı/liberoyu, Yedek görünümü mevcut yedek koleksiyonunu aynı yüzeyde gösterir. Switch kadroyu değiştirmez. Portre/kart anatomisi, yükseltme, pozisyon filtresi ve mevcut oyuncu değişimi korunur. Tahtadan veya transferden oyuncuya yönlendirme, oyuncunun bulunduğu görünümü açar. Rol başına özel yedek ataması ve otomatik rotasyon henüz bu görünüm geçişine dahil değildir.
+21. Tasarım dosyasının eski Melisa alternatif satırı potansiyelli genç kartları için yenilendi. Solda mevcut mor elit yüzey referansı, yanında Leylak / Ametist / İnci / Adaçayı seçenekleri vardır. Aynı gerçek genç, kart anatomisi ve değerler kullanılır. Kart içindeki karakter .86 ölçekle 8px aşağı alınmıştır. Bu değişiklik yalnız laboratuvara aittir; gerçek oyuncu portrelerinin kırpması veya üretim kartları seçilmeden değiştirilmez.
+
+### Potansiyelli genç kartı alternatifleri
+
+Dosya player-card-design-lab-v3.html#elite-design-lab; kaynaklar elite-design-lab.js ve elite-design-preview.js/css. İzole flowDesignPreview belleği üzerinde gerçek bir akademi adayının transfer kartı klonlanır. Mor elit referansı seçilemez; diğer dört kart daha açık, gelişim potansiyelini çağrıştıran mor/adaçayı yüzeyler kullanır. Elit etiketi veya yeni kart anatomisi yoktur. Seçim yalnız dosyadaki seçim satırına yansır. Kontrol test-elite-design-lab.cjs; görseller audits/elite-card-alternatives.png ve potential-cards-mobile.png.
 
 ### As / Yedek görünüm geçişi — 25 Ekim
 
