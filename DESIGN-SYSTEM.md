@@ -414,3 +414,13 @@ Kullanıcı, başa sardığı belli olan klipler yerine topun geri döndüğü, 
 - Kullanıcının isteğiyle skor/anons ve saha ayrı kutular yerine tek krem yüzeyde birleşir. Aradaki 12px bölüm boşluğu ve ikinci kutunun üst dolgusu kaldırılır; ince saha çerçevesi korunur.
 - Anonsun 62px sabit yüksekliği, tek satır portre/yetenek düzeni ve sayı-sebebi dönüşü korunur. Saha çizim açısı ve oyuncu ölçeğiyle oynanmaz; aynı orandaki görünüm daha büyük alana sığdırılır.
 - 390×844 kontrolünde saha 308×528 yerine yaklaşık 327×560px. Mobil/masaüstü/yatay fit, anons dönüşünde sabit geometri ve portre testleri geçti: test-match-unified-sheet.cjs, test-announcement-layout.cjs, test-announcement-portraits.cjs. Görsel audits/match-unified-sheet-mobile.png.
+
+
+## 25 Ekim 2026 — Tam ekran ve ana ekran desteği
+
+- Ayarlar’da mevcut settings-group ailesinde Ekran ve uygulama bölümü: Tam ekran ve Ana ekrana ekle. Sayfa kendiliğinden tam ekrana geçmez; yalnız doğrudan kullanıcı tıklamasında belge kökü fullscreen olur. Çıkış ve tarayıcının fullscreenchange olayları düğmelerle eşlenir.
+- Maç üst kontrolünde küçük çerçeve simgesi aynı eylemi kullanır; parent belgeyi tam ekran yapar, iframe’e ayrı izin gerekmez. Destek yoksa maç simgesi gizlenir ve ayarlarda ana ekran alternatifi açıklanır. Tarayıcıdaki fullscreen, kurulmuş uygulama sayılmaz.
+- Manifest standalone açılış, göreli kapsam/start_url, 192/512px baykuş simgeleri ve Apple 180px simgesini içerir. Simge mevcut 5.png’den build-app-icons.cjs ile üretilir. Apple web-app metaları eklenir. Kurulum için canlı HTTPS adresi kullanılmalı; dosya önizlemesi kurulum sunmaz.
+- beforeinstallprompt desteklenirse kullanıcı tıklamasıyla tek seferlik tarayıcı kurulum akışı; desteklenmezse ortak GameUI.selection içinde kısa platforma uygun adımlar. iPhone/iPad Safari için Paylaş → Ana Ekrana Ekle ve Web Uygulaması Olarak Aç açıklaması. Kurulum otomatik zorlanmaz.
+- Bu kapsamda offline cache veya service worker eklenmedi; güncel kod/asset yüklemesi değiştirilmez. Kaynaklar app-display.js/css ve manifest.webmanifest.
+- Kontrol: test-app-display.cjs gerçek Chromium tam ekran giriş/çıkışı, CDP manifest doğrulaması, simgelerin yüklenmesi; kurulum prompt durumları ve desteklenmeyen iPhone davranışı simüle edilmiştir. Fiziksel iPhone’da kurulum testi yapılmadı. test-match-preload.cjs gerçek maçta tam ekran simgesini de doğrular. Görseller audits/app-display-settings.png, audits/app-install-help.png, audits/app-display-match-mobile.png.
