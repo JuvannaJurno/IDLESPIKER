@@ -24,3 +24,6 @@ html.app-expanded .match-shellbar{top:var(--app-safe-top);left:var(--app-safe-le
 
 html.app-expanded :is(.achievement-notice,.stage-transition-banner){top:calc(var(--app-view-top,0px) + var(--app-safe-top) + 68px);max-width:calc(var(--app-view-width,100vw) - var(--app-safe-left) - var(--app-safe-right) - 24px);left:calc(var(--app-view-left,0px) + var(--app-view-width,100vw)/2)}
 html.app-expanded :is(.toast,#tapRhythm){bottom:calc(var(--app-view-bottom,0px) + var(--app-nav-height,68px) + var(--app-energy-height,84px) + 28px);max-width:calc(var(--app-view-width,100vw) - var(--app-safe-left) - var(--app-safe-right) - 24px)}
+
+/* The host paints one continuous background through the transparent match iframe. */
+#gameMatchDialog{background:radial-gradient(ellipse at 50% 0,#fff8e8,transparent 60%),#bedcd8}

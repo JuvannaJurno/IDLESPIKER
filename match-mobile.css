@@ -256,3 +256,5 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 .serve-strip.point-strip-enter{animation:none}.serve-strip.has-server{transition:none}
 
 .notice-page-back>.serve-strip[data-point="false"]{background:#fff7e5!important}
+
+html.match-hosted,html.match-hosted body{background:transparent}

@@ -440,3 +440,10 @@ Kullanıcı, başa sardığı belli olan klipler yerine topun geri döndüğü, 
 - Parent, maçın üst düğmelerinin ölçülmüş toplam genişliğini spiker-host-layout mesajıyla yalnız oyun iframe’ine bildirir. match-mobile.js yalnız parent kaynağından ve sınırlı sayısal aralıktan kabul eder. Başlık sağında gerçek kontrol alanı ayrılır; skor/anons/saha anatomisi değişmez.
 - Geçici üst bildirimler kamera ve üst kontrollerin altından başlar; alt bildirimler sabit menü ve talimat düğmesinin üstünde kalır.
 - test-device-safe-area.cjs 320/390px dikey ve 844px yatay görünüm, 54px kamera/34px alt alan simülasyonu, gezinme öğelerinin birbirine girmemesi, alt kontrol aralığı ve gerçek maç başlığı/düğme çakışmasını doğrular. test-fullscreen-layout.cjs, test-app-display.cjs ve iki anons testi de geçti. Fiziksel mobil cihaz testi yapılmadı. Görseller audits/safe-area-club.png ve audits/safe-area-match.png.
+
+
+## 25 Ekim 2026 — Maç güvenli alanında kesintisiz zemin
+
+- Tam ekran maçın kamera/kenar dolgusu ayrı düz mavi bant olarak çizilmez. gameMatchDialog, maçın mevcut krem-yeşil geçişli arka planını tek seferde bütün alana çizer.
+- Parent’ın doğrulanmış spiker-host-layout mesajını alan oyun iframe’i match-hosted sınıfıyla html/body arka planını saydam yapar. Böylece iframe sınırında renk kesilmesi ve yeniden başlayan gradient olmaz. Bağımsız maç/lab zemini aynı kalır.
+- Kamera/çentik payları, kontrol konumları, ayrı skor ve saha kartlarının ölçüleri korunur. test-device-safe-area.cjs gerçek iframe’de ortak parent zemini ve saydam çocuk yüzeyini doğrular; anons geometrisi testi de geçti. Görsel audits/safe-area-match.png.
