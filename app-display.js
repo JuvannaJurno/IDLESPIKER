@@ -13,6 +13,10 @@ function fitViewport(){
  const top=unzoomed?v.offsetTop:0,left=unzoomed?v.offsetLeft:0;
  const values={'--app-view-height':height,'--app-view-width':width,'--app-view-top':top,'--app-view-left':left,'--app-view-bottom':Math.max(0,innerHeight-height-top),'--app-view-right':Math.max(0,innerWidth-width-left)};
  for(const [key,value]of Object.entries(values)){const px=Math.round(value*100)/100+'px';if(root.style.getPropertyValue(key)!==px)root.style.setProperty(key,px);}
+ const nav=document.querySelector('.mobile-nav'),energy=document.querySelector('.energy-button');
+ for(const [key,element]of [['--app-nav-height',nav],['--app-energy-height',energy]]){const px=Math.ceil(element?.getBoundingClientRect().height||0)+'px';if(root.style.getPropertyValue(key)!==px)root.style.setProperty(key,px);}
+ const frame=document.getElementById('gameMatchFrame'),bar=document.querySelector('.match-shellbar');
+ if(frame?.contentWindow&&bar){const buttons=[...bar.querySelectorAll('button')].filter(b=>b.getClientRects().length&&getComputedStyle(b).display!=='none');const reserve=buttons.reduce((sum,b)=>sum+b.getBoundingClientRect().width,0)+Math.max(0,buttons.length-1)*8+16;frame.contentWindow.postMessage({type:'spiker-host-layout',controlsWidth:Math.max(112,Math.ceil(reserve))},'*');}
 }
 function scheduleViewport(){if(viewportFrame)return;viewportFrame=requestAnimationFrame(()=>{viewportFrame=0;fitViewport();});}
 addEventListener('resize',scheduleViewport);addEventListener('orientationchange',scheduleViewport);
@@ -41,6 +45,7 @@ addEventListener('appinstalled',()=>{installPrompt=null;installed=true;update();
 document.addEventListener('fullscreenchange',update);document.addEventListener('webkitfullscreenchange',update);
 standalone.addEventListener('change',update);fullscreen.addEventListener('change',update);
 document.addEventListener('DOMContentLoaded',()=>{
+ document.getElementById('gameMatchFrame')?.addEventListener('load',scheduleViewport);
  const settings=document.getElementById('settingsDialog');if(!settings)return;
  const group=document.createElement('section');group.className='settings-group';group.id='appDisplaySettings';
  group.innerHTML='<h3>Ekran ve uygulama</h3><div class="settings-row"><span>Tam ekran</span><button type="button" id="fullscreenToggle" class="team-action" aria-pressed="false">Tam ekran</button></div><div class="settings-row"><span>Ana ekrana ekle</span><button type="button" id="installApp" class="team-action">Nasıl eklenir?</button></div><p id="appDisplayStatus" class="app-display-status" role="status" aria-live="polite"></p>';

@@ -4,7 +4,7 @@ html,body{height:100%;margin:0;overflow:hidden}
 body{font-family:inherit;background:radial-gradient(ellipse at 50% 0,#fff8e8,transparent 60%),#bedcd8}
 main{width:100%;max-width:480px;height:100dvh;margin:auto;padding:calc(12px + env(safe-area-inset-top)) 12px calc(10px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:10px;overflow:hidden}
 main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team small{display:none!important}
-.match-heading{min-height:38px;flex:none;display:flex;flex-direction:column;justify-content:center;gap:4px;padding-right:112px}
+.match-heading{min-height:38px;flex:none;display:flex;flex-direction:column;justify-content:center;gap:4px;padding-right:var(--match-header-reserve,112px)}
 .match-heading h2{font-size:12px;line-height:1.3;margin:0;color:#426a6d;font-weight:800}
 #matchRound{font-size:9px;letter-spacing:1.5px;color:#839789}
 .match-board{flex:none;position:relative;display:grid;grid-template-columns:minmax(0,1fr) 106px minmax(0,1fr);align-items:center;column-gap:6px;padding:10px 9px 0;background:#fff7e5;border:1px solid #fffcf3;border-radius:16px;box-shadow:0 4px 16px #43675d12}

@@ -430,3 +430,13 @@ Kullanıcı, başa sardığı belli olan klipler yerine topun geri döndüğü, 
 - Tam ekran/kurulu uygulamada VisualViewport resize/scroll, pencere resize ve orientationchange olayları tek animation frame içinde ekran ölçülerini günceller. Pinch zoom büyütmesi düzeni küçültme amacıyla kullanılmaz.
 - Alt menü ve talimat düğmesi 480px kulüp kabuğuyla ortalanır; görünür alan genişliği ve konumuyla sınırlandırılır. Ekran daralınca dialog ölçüleri ve merkez konumu da daralan alana uyar. Maç dialogu görünür yüksekliği kullanır; diğer menüler normal içerik kaydırmasını korur.
 - Kontrol: test-fullscreen-layout.cjs; 320×568, 390×844, 844×390, 1024×768 ve klavye benzeri daraltılmış/kaydırılmış VisualViewport simülasyonu. Native tam ekran girişi/çıkışı, gerçek maç hazırlanması, canlı/kopya portre ve anons geometrisi testleri de çalıştırıldı. Fiziksel mobil cihaz testi yapılmadı.
+
+
+## 25 Ekim 2026 — Kamera, kavis ve düğme çakışmaları
+
+- Tam ekran/kurulu uygulama ortak --app-safe-* değişkenleri ile safe-area-inset değerlerini kullanır. Bilgi verilmediğinde üstte 24px, diğer kenarlarda en az 8px pay bırakılır. 480px kulüp kabuğunun yanındaki boş alan, yatay cihaz çentiğini zaten dışarıda bırakıyorsa gereksiz ek yan dolgu düşülür.
+- Alt gezinme düğmeleri sabit minimum genişlik yerine esnek eşit alan kullanır. Üst logo ve eylemler dar ekranda ayrı kalır. Talimat düğmesinin alt konumu sabit 68px yerine alt menünün gerçek ölçüsünden hesaplanır; basılı hareket ve gölge için 12px aralık korunur. Son kartların altında kaydırma payı gerçek sabit kontrol yüksekliklerine göre ayrılır.
+- Modal sınırları görünür alanın güvenli kısmıyla kısıtlanır. Maç dialogunun dış zemini ekranı doldurur; iframe ve üst kontroller kamera/kavis alanından içeri alınır. Maç iframe’i güvenli alanı kendisi alamayabileceği için kenar payını parent uygular.
+- Parent, maçın üst düğmelerinin ölçülmüş toplam genişliğini spiker-host-layout mesajıyla yalnız oyun iframe’ine bildirir. match-mobile.js yalnız parent kaynağından ve sınırlı sayısal aralıktan kabul eder. Başlık sağında gerçek kontrol alanı ayrılır; skor/anons/saha anatomisi değişmez.
+- Geçici üst bildirimler kamera ve üst kontrollerin altından başlar; alt bildirimler sabit menü ve talimat düğmesinin üstünde kalır.
+- test-device-safe-area.cjs 320/390px dikey ve 844px yatay görünüm, 54px kamera/34px alt alan simülasyonu, gezinme öğelerinin birbirine girmemesi, alt kontrol aralığı ve gerçek maç başlığı/düğme çakışmasını doğrular. test-fullscreen-layout.cjs, test-app-display.cjs ve iki anons testi de geçti. Fiziksel mobil cihaz testi yapılmadı. Görseller audits/safe-area-club.png ve audits/safe-area-match.png.

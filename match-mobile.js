@@ -1,4 +1,5 @@
 (function(){
+window.addEventListener('message',event=>{if(event.source!==parent||event.data?.type!=='spiker-host-layout')return;const width=event.data.controlsWidth;if(Number.isFinite(width)&&width>=80&&width<=240)document.documentElement.style.setProperty('--match-header-reserve',Math.ceil(width)+'px');});
 const space=document.querySelector('.court-space'),courtBox=document.querySelector('.court-viewport');function fitCourt(){const w=Math.max(0,Math.min(space.clientWidth-10,(space.clientHeight-10)*560/960));courtBox.style.width=w+'px';courtBox.style.height=(w*960/560)+'px';const panel=space.closest('.match-play-area');if(panel)panel.style.width='';}new ResizeObserver(fitCourt).observe(space);fitCourt();
 const baseAward=awardPoint,baseSound=matchSound;let finished=false,skipping=false,speedIndex=0;
 const totals=Array.from({length:2},()=>({spike:0,block:0,ace:0,error:0})),scorers=new Map();let lastPoint=0;
