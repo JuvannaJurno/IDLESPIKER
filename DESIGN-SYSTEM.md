@@ -16,7 +16,7 @@ Son inceleme ve tutarlılık düzeltmeleri: 24 Ekim 2026. Bu dosya, kullanıcın
 1. Oyun sakin, sıcak, okunabilir, mobil ölçülerinde bir idle voleybol oyunu. Gelişim görünmeli; ekranda kalabalık ve aşırı efekt oluşmamalı.
 2. Mobilde onaylanan görünüm masaüstünde genişletilip başka bir tasarıma dönüştürülmemeli. Özellikle saha/müzik seçicileri birebir aynı ölçü ve düzende olmalı.
 3. Kullanıcının yaptığı karakter portrelerini ve kırpma sistemini koru. Görsel sorunu düzeltmek için portreyi yeniden çizme veya farklı bir temsil koyma.
-4. Normal oyuncu kartı referanstır. Elit kart aynı anatomiyi kullanır; mor çerçeve ve mora çalan iç renkler, portrede beyaza yakın zemin. Ayrı “Elit oyuncu” etiketi yok.
+4. Normal oyuncu kartı artık onaylanan siyah grafit görünümünü kullanır: mat siyah başlık/OVR, krem yazılı grafit isim alanı, açık sıcak gri iç yüzey ve koyu kenar. Takım ve transfer kartları aynı renk ailesindedir; koyu temada iç yüzey koyu grafittir. Portre kırpması ve kart anatomisi korunur. Gümüş/altın henüz yalnız tasarım alternatifidir. Elit kart aynı anatomiyi kullanır; mor çerçeve ve mora çalan iç renkler, portrede beyaza yakın zemin. Ayrı “Elit oyuncu” etiketi yok.
 5. Tutorial görülünce tekrar otomatik gösterilmez. “Anladım”a basılmamış olması yeniden gösterme sebebi değildir. Kullanıcının bilerek açtığı tekrar inceleme ayrı durumdur.
 6. Tutorialın rengi, kutusu, karartması, hedef vurgusu ve düğme düzeni yeni özellik başına değiştirilmez. Yerleşim hedefe göre değişebilir; görsel aile değişmez.
 7. Küçük modal açıkken arka plan kararır ve arka sayfa kaymaz. Modal/tour kapandığında karartma ve kaydırma kilidi kalmaz. Normal menü gezinmesinde kalıcı karartma yok.
