@@ -149,12 +149,12 @@ html[data-theme=dark] .player-card .card-art>.card-grade{color:#d8e5d9;opacity:.
 
 .player-card{--player-ovr-left:10px}.player-card .card-art>.player-country-badge{left:var(--player-ovr-left);right:auto;bottom:10px}#teamPanel .player-card{--player-ovr-left:12px}@media(max-width:540px){#teamPanel .player-card{--player-ovr-left:7px}}
 /* Approved graphite card: shared team and transfer anatomy, elite stays purple. */
-html:not(.elite-preview-page) .player-card:not(.elite-player){--club-kit:#292d32;--club-edge:#656b73;--club-shadow:#202328;--club-paper:#e4e3df;--club-soft:#c9cbc9;--club-name:#34393f;--club-port:#f2f1e9;--club-ink:#343b41;--club-muted:#62696c;--club-line:#adb1b2;--club-action:#c9cdcd;--club-gold:#292d32}
-html:not(.elite-preview-page) .player-card:not(.elite-player) .card-top{background:linear-gradient(115deg,#434a52,#25292e)!important}
-html:not(.elite-preview-page) .player-card:not(.elite-player) .card-name,html:not(.elite-preview-page) .player-card:not(.elite-player) .card-name *{color:#fff8e9!important}
+html:not(.elite-preview-page) .player-card:not(.elite-player){--club-kit:#343a3b;--club-edge:#747a75;--club-shadow:#74796b55;--club-paper:#fff9eb;--club-soft:#e8e8d8;--club-name:#eae5d5;--club-port:#f9f7e9;--club-ink:#42616a;--club-muted:#758074;--club-line:#d0d4c1;--club-action:#e8e7d6;--club-gold:#343a3b}
+html:not(.elite-preview-page) .player-card:not(.elite-player) .card-top{background:linear-gradient(115deg,#465050,#303637)!important}
+html:not(.elite-preview-page) .player-card:not(.elite-player) .card-name,html:not(.elite-preview-page) .player-card:not(.elite-player) .card-name *{color:var(--club-ink)!important}
 html:not(.elite-preview-page) .player-card:not(.elite-player) .player-overall{background:#292d32!important;color:#fff8e9!important}
 html:not(.elite-preview-page) .player-card:not(.elite-player) .card-art{background:radial-gradient(ellipse at 50% 25%,var(--club-port),var(--club-soft))!important}
 html:not(.elite-preview-page) .player-card:not(.elite-player) .card-halo{background:transparent;border-color:#adb1b255}
-html:not(.elite-preview-page) .player-card:not(.elite-player)[data-can-upgrade=true] .card-open-upgrade,html:not(.elite-preview-page) .player-card:not(.elite-player) .scout-hire:not(:disabled){background:#292d32!important;border-color:#656b73!important;color:#fff8e9!important}
+html:not(.elite-preview-page) .player-card:not(.elite-player)[data-can-upgrade=true] .card-open-upgrade,html:not(.elite-preview-page) .player-card:not(.elite-player) .scout-hire:not(:disabled){background:#dedfc9!important;border-color:#a7b397!important;color:#38565a!important}
 html:not(.elite-preview-page) .player-card:not(.elite-player)[data-can-upgrade=true] .card-open-upgrade small{color:inherit!important}
 html[data-theme=dark]:not(.elite-preview-page) .player-card:not(.elite-player){--club-paper:#303438;--club-soft:#3d4347;--club-name:#23272c;--club-port:#444b50;--club-ink:#edece5;--club-muted:#c0c5c3;--club-line:#5d676d;--club-edge:#737d83;--club-action:#454c51;--club-shadow:#171a1d}
