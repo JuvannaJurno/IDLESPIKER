@@ -407,3 +407,10 @@ Kullanıcı, başa sardığı belli olan klipler yerine topun geri döndüğü, 
 - Katalog tamamlanınca hazır durumunu tutan render önbelleği anında yenilenir; açık sanılan fakat bekleme nedeniyle işlem yapmayan düğme kalmaz. Aday sayısı açılacak gerçek katalogdan okunur.
 - Kart açma görünümünde ortak transfer kapat/geri rayı gizlenmez. Yenileme kaydedilemezse onay penceresi açık kalır ve durum yazısı görünür olur.
 - Doğrulama: test-transfer-unopened-catalog.cjs (8 kart, kapat/aç, yenileme, hazır göstergesinin kapanması ve başarısız kayıt sonrası tekrar deneme); test-transfer-pointer.cjs; test-scout-consistency.cjs. Eski test-scouting.cjs ve test-scout-cadence.cjs mevcut 10 günlük süre / %55 başlangıç şansı yerine eski 6 gün / %40 değerlerini bekliyor; bu değişiklik keşif dengesini değiştirmez.
+
+
+## 25 Ekim 2026 — Birleşik maç yüzeyi
+
+- Kullanıcının isteğiyle skor/anons ve saha ayrı kutular yerine tek krem yüzeyde birleşir. Aradaki 12px bölüm boşluğu ve ikinci kutunun üst dolgusu kaldırılır; ince saha çerçevesi korunur.
+- Anonsun 62px sabit yüksekliği, tek satır portre/yetenek düzeni ve sayı-sebebi dönüşü korunur. Saha çizim açısı ve oyuncu ölçeğiyle oynanmaz; aynı orandaki görünüm daha büyük alana sığdırılır.
+- 390×844 kontrolünde saha 308×528 yerine yaklaşık 327×560px. Mobil/masaüstü/yatay fit, anons dönüşünde sabit geometri ve portre testleri geçti: test-match-unified-sheet.cjs, test-announcement-layout.cjs, test-announcement-portraits.cjs. Görsel audits/match-unified-sheet-mobile.png.

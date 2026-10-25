@@ -257,3 +257,13 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 
 .notice-page-back>.serve-strip[data-point="false"]{background:#fff7e5!important}
 
+
+/* One continuous match sheet: the court starts directly under the announcement. */
+.match-arena{gap:0;padding:0;background:#fff7e5;border:1px solid #fffcf3;border-radius:18px;box-shadow:0 3px 10px #43675d12;overflow:hidden}
+.match-arena .match-board{flex:none;padding:9px 10px 0;background:transparent;border:0;border-radius:0;box-shadow:none}
+.match-play-area{padding:0 7px 7px;gap:6px;background:transparent;border:0;border-radius:0;box-shadow:none}
+.match-arena .court-space{padding:3px 0;border-radius:0}
+.match-arena .court-viewport{border-radius:10px;box-shadow:0 0 0 1px #fffaf0,0 0 0 2px #9fc5b6}
+.match-arena .serve-strip.has-server,.match-arena .notice-page-front,.match-arena .notice-page-back,.match-arena .score-page-back,.match-arena .score-page-underlay{border-radius:0}
+@media(max-height:700px){.match-arena{gap:0;padding:0}.match-arena .match-board{padding-top:7px}.match-play-area{padding:0 6px 6px;gap:5px}}
+@media(min-aspect-ratio:6/5) and (max-height:500px){.match-arena{gap:8px;padding:7px}.match-arena .match-board{padding:0}.match-play-area{padding:0;gap:6px}}
