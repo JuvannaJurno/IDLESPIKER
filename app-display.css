@@ -5,3 +5,11 @@ html:fullscreen,html:fullscreen body{background:#bedcd8;width:100%;height:100%}
 html:-webkit-full-screen,html:-webkit-full-screen body{background:#bedcd8;width:100%;height:100%}
 
 #installAppHelp footer{justify-content:flex-end}
+
+/* The layout viewport can stay larger than the visible screen during rotation or keyboard use. */
+html.app-expanded body{min-width:0;min-height:100%;height:auto}
+html.app-expanded .shell{min-width:0;width:min(480px,100%);max-width:100%}html.app-expanded .content{min-width:0;max-width:100%}
+html.app-expanded .mobile-nav{left:var(--app-view-left,0px);right:var(--app-view-right,0px);bottom:var(--app-view-bottom,0px);margin-inline:auto;transform:none;width:min(480px,var(--app-view-width,100vw));max-width:100%}
+html.app-expanded .energy-button{left:var(--app-view-left,0px);right:var(--app-view-right,0px);bottom:calc(var(--app-view-bottom,0px) + 68px + env(safe-area-inset-bottom));margin-inline:auto;width:min(452px,calc(var(--app-view-width,100vw) - 28px));max-width:calc(100% - 28px)}
+html.app-expanded dialog:modal{inset:var(--app-view-top,0px) var(--app-view-right,0px) var(--app-view-bottom,0px) var(--app-view-left,0px);margin:auto;max-width:calc(var(--app-view-width,100vw) - 24px)!important;max-height:calc(var(--app-view-height,100dvh) - 24px)!important;overscroll-behavior:contain}
+html.app-expanded dialog.game-match-dialog:modal{width:min(480px,var(--app-view-width,100vw));height:var(--app-view-height,100dvh);max-width:var(--app-view-width,100vw)!important;max-height:var(--app-view-height,100dvh)!important}

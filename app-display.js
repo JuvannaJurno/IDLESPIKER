@@ -6,9 +6,21 @@ const appMode=()=>installed||standalone.matches||(fullscreen.matches&&!fullEleme
 const fullElement=()=>document.fullscreenElement||document.webkitFullscreenElement;
 const supported=()=>!!((document.fullscreenEnabled&&document.documentElement.requestFullscreen)||(document.webkitFullscreenEnabled&&document.documentElement.webkitRequestFullscreen));
 let toggle,install,status,matchButton,help;
+let viewportFrame=0;
+function fitViewport(){
+ const root=document.documentElement,v=window.visualViewport,unzoomed=v&&Math.abs(v.scale-1)<.01;
+ const width=unzoomed?Math.min(innerWidth,v.width):innerWidth,height=unzoomed?Math.min(innerHeight,v.height):innerHeight;
+ const top=unzoomed?v.offsetTop:0,left=unzoomed?v.offsetLeft:0;
+ const values={'--app-view-height':height,'--app-view-width':width,'--app-view-top':top,'--app-view-left':left,'--app-view-bottom':Math.max(0,innerHeight-height-top),'--app-view-right':Math.max(0,innerWidth-width-left)};
+ for(const [key,value]of Object.entries(values)){const px=Math.round(value*100)/100+'px';if(root.style.getPropertyValue(key)!==px)root.style.setProperty(key,px);}
+}
+function scheduleViewport(){if(viewportFrame)return;viewportFrame=requestAnimationFrame(()=>{viewportFrame=0;fitViewport();});}
+addEventListener('resize',scheduleViewport);addEventListener('orientationchange',scheduleViewport);
+window.visualViewport?.addEventListener('resize',scheduleViewport);window.visualViewport?.addEventListener('scroll',scheduleViewport);
 function update(){
  if(!toggle)return;
  const active=!!fullElement();
+ document.documentElement.classList.toggle('app-expanded',active||standalone.matches||fullscreen.matches||navigator.standalone===true);fitViewport();
  toggle.disabled=busy||!supported();toggle.textContent=active?'Tam ekrandan çık':'Tam ekran';toggle.setAttribute('aria-pressed',String(active));
  matchButton.hidden=!supported();matchButton.disabled=busy;const label=active?'Tam ekrandan çık':'Tam ekran';matchButton.title=label;matchButton.setAttribute('aria-label',label);matchButton.innerHTML='<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="'+(active?'M4 9h5V4m11 5h-5V4M4 15h5v5m11-5h-5v5':'M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5')+'"/></svg>';matchButton.setAttribute('aria-pressed',String(active));
  install.disabled=appMode()||busy;install.textContent=appMode()?(installed?'Ana ekrana eklendi':'Uygulama olarak açık'):installPrompt?'Yükle':'Nasıl eklenir?';

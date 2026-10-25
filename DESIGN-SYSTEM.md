@@ -409,12 +409,11 @@ Kullanıcı, başa sardığı belli olan klipler yerine topun geri döndüğü, 
 - Doğrulama: test-transfer-unopened-catalog.cjs (8 kart, kapat/aç, yenileme, hazır göstergesinin kapanması ve başarısız kayıt sonrası tekrar deneme); test-transfer-pointer.cjs; test-scout-consistency.cjs. Eski test-scouting.cjs ve test-scout-cadence.cjs mevcut 10 günlük süre / %55 başlangıç şansı yerine eski 6 gün / %40 değerlerini bekliyor; bu değişiklik keşif dengesini değiştirmez.
 
 
-## 25 Ekim 2026 — Birleşik maç yüzeyi
+## 25 Ekim 2026 — Maç düzeni (güncel)
 
-- Kullanıcının isteğiyle skor/anons ve saha ayrı kutular yerine tek krem yüzeyde birleşir. Aradaki 12px bölüm boşluğu ve ikinci kutunun üst dolgusu kaldırılır; ince saha çerçevesi korunur.
-- Anonsun 62px sabit yüksekliği, tek satır portre/yetenek düzeni ve sayı-sebebi dönüşü korunur. Saha çizim açısı ve oyuncu ölçeğiyle oynanmaz; aynı orandaki görünüm daha büyük alana sığdırılır.
-- 390×844 kontrolünde saha 308×528 yerine yaklaşık 327×560px. Mobil/masaüstü/yatay fit, anons dönüşünde sabit geometri ve portre testleri geçti: test-match-unified-sheet.cjs, test-announcement-layout.cjs, test-announcement-portraits.cjs. Görsel audits/match-unified-sheet-mobile.png.
-
+- Kullanıcının son kararı: skor/anons kutusu ve saha kutusu önceki ayrı düzeninde kalır. Birleşik yüzey denemesi geri alındı; üretim referansı değildir.
+- Anons 62px yüksekliğini, portre/yetenek satırını ve sayı-sebebi dönüşünü korur. Forma numarası mevcut 24×26px rozet içinde grid ile yatay/dikey ortalanır; rozet de oyuncu bilgisiyle aynı merkez hizasındadır.
+- test-match-unified-sheet.cjs artık geçerli olmayan birleşik tasarımı doğruladığı için kaldırıldı. test-fullscreen-layout.cjs ve mevcut anons testleri güncel düzeni doğrular.
 
 ## 25 Ekim 2026 — Tam ekran ve ana ekran desteği
 
@@ -424,3 +423,10 @@ Kullanıcı, başa sardığı belli olan klipler yerine topun geri döndüğü, 
 - beforeinstallprompt desteklenirse kullanıcı tıklamasıyla tek seferlik tarayıcı kurulum akışı; desteklenmezse ortak GameUI.selection içinde kısa platforma uygun adımlar. iPhone/iPad Safari için Paylaş → Ana Ekrana Ekle ve Web Uygulaması Olarak Aç açıklaması. Kurulum otomatik zorlanmaz.
 - Bu kapsamda offline cache veya service worker eklenmedi; güncel kod/asset yüklemesi değiştirilmez. Kaynaklar app-display.js/css ve manifest.webmanifest.
 - Kontrol: test-app-display.cjs gerçek Chromium tam ekran giriş/çıkışı, CDP manifest doğrulaması, simgelerin yüklenmesi; kurulum prompt durumları ve desteklenmeyen iPhone davranışı simüle edilmiştir. Fiziksel iPhone’da kurulum testi yapılmadı. test-match-preload.cjs gerçek maçta tam ekran simgesini de doğrular. Görseller audits/app-display-settings.png, audits/app-install-help.png, audits/app-display-match-mobile.png.
+
+
+## Tam ekran: görünür alan sınırları
+
+- Tam ekran/kurulu uygulamada VisualViewport resize/scroll, pencere resize ve orientationchange olayları tek animation frame içinde ekran ölçülerini günceller. Pinch zoom büyütmesi düzeni küçültme amacıyla kullanılmaz.
+- Alt menü ve talimat düğmesi 480px kulüp kabuğuyla ortalanır; görünür alan genişliği ve konumuyla sınırlandırılır. Ekran daralınca dialog ölçüleri ve merkez konumu da daralan alana uyar. Maç dialogu görünür yüksekliği kullanır; diğer menüler normal içerik kaydırmasını korur.
+- Kontrol: test-fullscreen-layout.cjs; 320×568, 390×844, 844×390, 1024×768 ve klavye benzeri daraltılmış/kaydırılmış VisualViewport simülasyonu. Native tam ekran girişi/çıkışı, gerçek maç hazırlanması, canlı/kopya portre ve anons geometrisi testleri de çalıştırıldı. Fiziksel mobil cihaz testi yapılmadı.
