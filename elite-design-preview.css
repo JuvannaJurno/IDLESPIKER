@@ -62,3 +62,15 @@ html #scoutDialog #eliteOptions .potential-player:not(.has-inline-comparison){bo
 #scoutDialog #cardProgression .yellow .card-art{background:radial-gradient(ellipse at 50% 25%,var(--club-port),var(--club-soft))!important}
 html #scoutDialog #cardProgression .yellow:not(.has-inline-comparison){border:2px solid var(--club-edge)!important;box-shadow:0 4px var(--club-shadow)!important}
 #scoutDialog #cardProgression .elite-player .card-top{background:var(--club-kit)!important}
+/* Material progression study: graphite, silver, gold, amethyst. */
+#cardProgression.card-lab-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+#scoutDialog #cardProgression .growing{--club-kit:#292d32;--club-edge:#656b73;--club-shadow:#202328;--club-paper:#e4e3df;--club-soft:#c9cbc9;--club-name:#34393f;--club-port:#f2f1e9;--club-ink:#343b41;--club-muted:#62696c;--club-line:#adb1b2;--club-action:#c9cdcd}
+#scoutDialog #cardProgression .specialist{--club-kit:#5d6b79;--club-edge:#9caab5;--club-shadow:#4e5964;--club-paper:#eef1f2;--club-soft:#d6dfe4;--club-name:#b5c1c9;--club-port:#fcfdf9;--club-ink:#354b5b;--club-muted:#627683;--club-line:#b5c3cc;--club-action:#d4dfe5}
+#scoutDialog #cardProgression .contender{--club-kit:#96702d;--club-edge:#c29a48;--club-shadow:#735321;--club-paper:#faedca;--club-soft:#eed49b;--club-name:#b38431;--club-port:#fff9e8;--club-ink:#6e5128;--club-muted:#8b754d;--club-line:#d1b578;--club-action:#ecd29a}
+#scoutDialog #cardProgression .specialist .card-name,#scoutDialog #cardProgression .specialist .card-name *{color:#2f4655!important}
+#scoutDialog #cardProgression .growing .card-top{background:linear-gradient(115deg,#434a52,#25292e)!important}
+#scoutDialog #cardProgression .specialist .card-top{background:linear-gradient(115deg,#748694,#4d5e6d)!important}
+#scoutDialog #cardProgression .contender .card-top{background:linear-gradient(115deg,#b58a38,#886027)!important}
+#scoutDialog #cardProgression .specialist .card-name{background:linear-gradient(115deg,#ccd5da,#aabac5,#e0e6e8)!important}
+#scoutDialog #cardProgression .contender .card-name{background:linear-gradient(115deg,#b08132,#c59b48,#a7762d)!important}
+@media(max-width:760px){#cardProgression.card-lab-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
