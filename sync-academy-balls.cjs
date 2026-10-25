@@ -9,4 +9,9 @@ const cells=[
  ['atlas-6','Kırmızı–mavi',875,384,400,384]
 ];
 const source=fs.readFileSync('balls.png');
-fs.writeFileSync('academy-ball-atlas-data.js','window.AcademyBallAtlasData='+JSON.stringify({source:'balls.png',classicSrc:'data:image/png;base64,'+fs.readFileSync('ball_volley1.png').toString('base64'),src:'data:image/png;base64,'+source.toString('base64'),cells})+';\n');
+fs.writeFileSync('academy-ball-atlas-data.js','window.AcademyBallAtlasData='+JSON.stringify({source:'balls.png',src:'data:image/png;base64,'+source.toString('base64'),cells})+';\n');
+
+const replacement='data:image/png;base64,'+fs.readFileSync('assets/balls/atlas-1.png').toString('base64');
+for(const file of ['mac.html','deneme-modu.html','legendary-preview.html']){if(!fs.existsSync(file))continue;const html=fs.readFileSync(file,'utf8');fs.writeFileSync(file,html.replace(/"ball_volley1\.png":"data:image\/[^" ]+"/g,()=>JSON.stringify('ball_volley1.png')+':'+JSON.stringify(replacement)));}
+
+const labels=['Sarı–lacivert','Pembe–beyaz','Mavi–beyaz','Yeşil–kırmızı','Gri–beyaz','Kırmızı–mavi'];fs.writeFileSync('volleyball-balls.js','window.VolleyballBalls='+JSON.stringify(labels.map((name,i)=>({id:'atlas-'+(i+1),name,src:'assets/balls/atlas-'+(i+1)+'.png',data:'data:image/png;base64,'+fs.readFileSync('assets/balls/atlas-'+(i+1)+'.png').toString('base64')})))+';\n');

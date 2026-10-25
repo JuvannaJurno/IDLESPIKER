@@ -90,7 +90,7 @@ function init(){
  if(settings&&!supported.includes(saved)){
   clearTimeout(window.bootFallback);
   const dialog=document.createElement('dialog');dialog.id='languageChoice';dialog.setAttribute('aria-labelledby','languageChoiceTitle');dialog.setAttribute('data-no-translate','');
-  dialog.innerHTML='<span class="language-brand">IDLE<span>SPIKER</span></span><img src="ball_volley1.png" width="42" height="42" alt=""><h1 id="languageChoiceTitle">Hoş geldin · Welcome</h1><p>Dilini seç / Choose your language</p><div class="language-options"><button type="button" data-language="tr"><strong>Türkçe</strong><small>Oynamaya başla →</small></button><button type="button" data-language="en"><strong>English</strong><small>Start playing →</small></button></div><p class="language-note">Dili ayarlardan değiştirebilirsin.<br>You can change the language in settings.</p>';
+  dialog.innerHTML='<span class="language-brand">IDLE<span>SPIKER</span></span><img src="assets/balls/atlas-1.png" width="42" height="42" alt=""><h1 id="languageChoiceTitle">Hoş geldin · Welcome</h1><p>Dilini seç / Choose your language</p><div class="language-options"><button type="button" data-language="tr"><strong>Türkçe</strong><small>Oynamaya başla →</small></button><button type="button" data-language="en"><strong>English</strong><small>Start playing →</small></button></div><p class="language-note">Dili ayarlardan değiştirebilirsin.<br>You can change the language in settings.</p>';
   document.body.append(dialog);dialog.addEventListener('cancel',event=>event.preventDefault());dialog.querySelectorAll('[data-language]').forEach(button=>button.onclick=()=>choose(button.dataset.language));dialog.showModal();
  }else resolveReady();
 }

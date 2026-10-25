@@ -37,3 +37,7 @@ html[data-academy-preview=true] body>:not(#academyPreview):not(#academyPicker):n
 #academyPreview .academy-crowd-button{display:block;width:100%;min-height:36px;margin:8px 0 12px;font-size:11px}#academyPreview .academy-crowd-button[aria-pressed=true]{border-color:var(--ui-focus);background:var(--ui-soft)}
 
 .academy-ball-picker{border-top:1px solid var(--ui-edge);padding:10px;background:var(--ui-paper)}.academy-ball-picker>span{display:block;font-size:11px;color:var(--ui-ink);margin:0 0 8px 2px}.academy-ball-options{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}.academy-ball-options button{display:grid;place-items:center;min-width:0;padding:5px 2px;border:1px solid var(--ui-edge);border-radius:8px;background:var(--ui-soft);cursor:pointer}.academy-ball-options img{display:block;width:min(100%,32px);height:32px;object-fit:contain}.academy-ball-options button[aria-pressed=true]{border-color:var(--ui-focus);box-shadow:inset 0 0 0 1px var(--ui-focus);background:var(--ui-paper)}
+
+.academy-ball-options{grid-template-columns:repeat(6,minmax(0,1fr))}
+
+#academyCrowdCount{width:100%;padding:9px 12px;border:1px solid var(--ui-edge);border-radius:9px;background:var(--ui-paper);color:var(--ui-ink);font:inherit;font-size:12px;margin-top:8px}

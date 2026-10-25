@@ -100,3 +100,11 @@ Yaşayan salon revizyonu: Maç sahası kopyası yerine bank, top arabaları, tak
 Son sandbox revizyonu: Gençler banklarına yürür, dinlenir ve yanlarına gelen koçlarla mevcut konuşma stripleriyle sohbet eder. Koç pası ve smaç gerçek tick/launch zincirini paylaşır. Sepetlerde gerçek maç topları vardır; zemin gölgeleri karakterlerden önce çizilir. Sahne dönemsel olarak gerçek profilde seçili sahaya geçer; gençler çizgiler ve direkler dışındaki rotada koşar. Bu seçimler salt okunur; akademi gelişim ekonomisi ve gerçek oyun kaydı değişmez.
 
 Sürekli istasyon revizyonu: Kalıcı hücum kuyruğu ve servis kuyruğu eklendi. Koç geri pası, pasör ve sıradaki hücumcu tek top akışını sürdürür; vuran oyuncu yürüyerek arka sıraya katılır. Servisler ayrı toplar kullanır, toplar sekip zeminde kalır. Native hareketler ve gerçek sıra korunur; ekonomi değişmez. Top seçicinin bütün seçeneklerinde aynı siluet konturu vardır.
+
+
+## 25 Ekim 2026 — Top seçimi ve akademi sahnesi
+
+- Profilde “Maç topum → Top seç” mevcut ortak seçim ekranını kullanır. Altı yeni top şimdilik ücretsiz ve açık; seçim kaydedilir ve gerçek maça aktarılır. Topların ortak dış çizgisi korunur. Eski spiral top ve iki kopya dosyası kaldırıldı.
+- Akademide dörtten fazla oyuncuyla deneme maçı yapılabilir. Beş kişide bir, yedi ve üzeri tek sayıda üç kişi kenarda izler; çift sayıda herkes oynar. Oyuncu sayısı deneme menüsünden seçilir. Maç gerçek oyun kamerasını ve animasyonlarını kullanır.
+- Yükleme ekranında logonun altında iki oyuncu native perspektifte pepper yapar. Bu sahne yüklemeyi bekletmez; ek animasyon laboratuvarı açmaz.
+- Doğrulama: profil top seçimi ve gerçek maça aktarımı, 5/7/9/çift sayılı deneme maçı, native pepper; mobil ekran görüntüleri audits/profile-ball-picker-mobile.png ve audits/boot-pepper-loading-mobile.png.

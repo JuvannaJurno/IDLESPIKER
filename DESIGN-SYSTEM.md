@@ -380,3 +380,11 @@ Kullanıcı, başa sardığı belli olan klipler yerine topun geri döndüğü, 
 - Vuruşlar native tick/launch/serve, hareketler native yürüyüş ve dönüş üzerinden çalışır. Yeni özel kol pozu veya sıfırlanan keyframe klibi yoktur. Bekleyenlerin konumları ve sıra dönüşü gerçek hareketle ilerler.
 - Bütün yedi top seçeneği ortak koyu bir siluet konturu kullanır: saydam kenardan yaklaşık 3px dışarı, 1px içeri taşar (128px önizleme ölçeğinde). Bu ayrı daire/halo değildir; topun gerçek dış biçimini sarar. Kontur seçici, uçuş, sepet ve yerdeki toplarda aynıdır; orijinal balls.png değiştirilmez.
 - Test test-academy-stations.cjs: on oyuncuda iki sıra dönüşü, tek top kimliğiyle koç geri dönüşü, konum sıçramaması, sırada kayıp/tekrar olmaması, iki native servis ve birden fazla yerde top. test-academy-browser.cjs ve test-academy-balls.cjs de devam eder. Görseller audits/academy-attack-queue-mobile.png ve academy-serve-queue-mobile.png.
+
+
+## 25 Ekim 2026 — Top seçimi ve akademi sahnesi
+
+- Profilde “Maç topum → Top seç” mevcut ortak seçim ekranını kullanır. Altı yeni top şimdilik ücretsiz ve açık; seçim kaydedilir ve gerçek maça aktarılır. Topların ortak dış çizgisi korunur. Eski spiral top ve iki kopya dosyası kaldırıldı.
+- Akademide dörtten fazla oyuncuyla deneme maçı yapılabilir. Beş kişide bir, yedi ve üzeri tek sayıda üç kişi kenarda izler; çift sayıda herkes oynar. Oyuncu sayısı deneme menüsünden seçilir. Maç gerçek oyun kamerasını ve animasyonlarını kullanır.
+- Yükleme ekranında logonun altında iki oyuncu native perspektifte pepper yapar. Bu sahne yüklemeyi bekletmez; ek animasyon laboratuvarı açmaz.
+- Doğrulama: profil top seçimi ve gerçek maça aktarımı, 5/7/9/çift sayılı deneme maçı, native pepper; mobil ekran görüntüleri audits/profile-ball-picker-mobile.png ve audits/boot-pepper-loading-mobile.png.
