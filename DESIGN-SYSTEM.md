@@ -388,3 +388,5 @@ Kullanıcı, başa sardığı belli olan klipler yerine topun geri döndüğü, 
 - Akademide dörtten fazla oyuncuyla deneme maçı yapılabilir. Beş kişide bir, yedi ve üzeri tek sayıda üç kişi kenarda izler; çift sayıda herkes oynar. Oyuncu sayısı deneme menüsünden seçilir. Maç gerçek oyun kamerasını ve animasyonlarını kullanır.
 - Yükleme ekranında logonun altında iki oyuncu native perspektifte pepper yapar. Bu sahne yüklemeyi bekletmez; ek animasyon laboratuvarı açmaz.
 - Doğrulama: profil top seçimi ve gerçek maça aktarımı, 5/7/9/çift sayılı deneme maçı, native pepper; mobil ekran görüntüleri audits/profile-ball-picker-mobile.png ve audits/boot-pepper-loading-mobile.png.
+
+- 25 Ekim: Kalabalık akademi denemesi maçtan başlamaz. Normal antrenmanlar arasında tek 20 saniyelik deneme maçı bölümü vardır; biten bölümde ralli en fazla 5 saniye beklenir ve akış sonraki antrenmana döner. test-academy-curriculum.cjs gerçek zamanlı otomatik geçişi doğrular.
