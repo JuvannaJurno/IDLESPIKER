@@ -2,23 +2,24 @@
 'use strict';
 for(const id of ['skipStage','skipThirdStage'])document.getElementById(id)?.closest('.settings-row')?.setAttribute('hidden','');
 const row=document.createElement('div');row.className='settings-row stage-test-row';
-row.innerHTML='<label for="stageTestSelect">Aşamaya geç<select id="stageTestSelect"><option value="1">1 · Mahalle Spor Kulübü – Yerel Altyapı</option><option value="2">2 · Bölgesel Voleybol Ligi</option><option value="3">3 · Ulusal Voleybol 2. Ligi</option></select><small>Geçerken başlangıç veya tamamlanmış blokları seç. Takımın korunur.</small></label><button id="stageTestGo" class="team-action" type="button">Geç</button><span id="stageTestError" role="alert"></span>';
+row.innerHTML='<label for="stageTestSelect">Aşamaya geç<select id="stageTestSelect"><option value="1">1 · Mahalle Spor Kulübü – Yerel Altyapı</option><option value="2">2 · Bölgesel Voleybol Ligi</option><option value="3">3 · Ulusal Voleybol 2. Ligi</option><option value="4">4 · Ulusal Voleybol 1. Ligi · Akademi taslağı</option></select><small>Geçerken başlangıç veya tamamlanmış blokları seç. Takımın korunur.</small></label><button id="stageTestGo" class="team-action" type="button">Geç</button><span id="stageTestError" role="alert"></span>';
 document.getElementById('settingsDialog').append(row);
 const select=document.getElementById('stageTestSelect'),button=document.getElementById('stageTestGo');
-select.value=String(LeagueRules.config.division===3?3:LeagueRules.config.bal?2:1);
+select.value=String(LeagueRules.config.division>=3?LeagueRules.config.division:LeagueRules.config.bal?2:1);
 const choice=document.createElement('dialog');choice.id='stageTestPosition';choice.innerHTML='<button type="button" class="close-dialog" aria-label="Kapat">×</button><h2>Aşamanın neresine geçelim?</h2><p>Önceki aşamaların blokları tamamlanmış gelir.</p><button type="button" class="team-action" data-position="start">Başından başla · Bloklar boş</button><button type="button" class="team-secondary" data-position="end">Sonuna geç · Bloklar tam</button><small>Sezon ilk günden açılır; bu seçim blok seviyelerini belirler.</small>';document.body.append(choice);choice.querySelector('.close-dialog').onclick=()=>choice.close();button.onclick=()=>choice.showModal();for(const option of choice.querySelectorAll('[data-position]'))option.onclick=()=>{const end=option.dataset.position==='end';choice.close();go(end);};
 async function go(end){
  document.getElementById('stageTestError').textContent='';button.disabled=true;let exitAnimations=[],restoreExit=null;
  try{
-  const target=Number(select.value);let prologueMarkup=null;if(target===1){const response=await fetch('index.html');if(!response.ok)throw Error('Başlangıç görselleri yüklenemedi');prologueMarkup=new DOMParser().parseFromString(await response.text(),'text/html');}if(![1,2,3].includes(target))throw Error('Geçersiz aşama');
+  const target=Number(select.value);if(target===4){if(!await window.FirstLeague?.start(true))throw Error('1. Lig açılamadı');if(end){const room=RoomSystem.snapshot();for(const r of RoomRules.catalog.filter(r=>r.division===4))while(RoomRules.count(room,r.id)<RoomRules.maxLevel(room,r))room.floors[r.floor].push(r.id);localStorage.setItem('idle-spiker-rooms-v2',JSON.stringify(room));RoomSystem.loadStage(room);AcademyCareer.refresh();}button.disabled=false;select.value='4';return;}let prologueMarkup=null;if(target===1){const response=await fetch('index.html');if(!response.ok)throw Error('Başlangıç görselleri yüklenemedi');prologueMarkup=new DOMParser().parseFromString(await response.text(),'text/html');}if(![1,2,3].includes(target))throw Error('Geçersiz aşama');
   const profile=target>1?ClubJourney.ensureRandom():ClubJourney.profile();
-  let current=RoomSystem.snapshot();const currentStage=LeagueRules.config.division===3?3:LeagueRules.config.bal?2:1;
+  let current=RoomSystem.snapshot();const currentStage=LeagueRules.config.division>=3?LeagueRules.config.division:LeagueRules.config.bal?2:1;
   if(target>currentStage){if(currentStage===1){await BalTransition.start(true);while(BalTransition.active)await new Promise(requestAnimationFrame);if(!LeagueRules.config.bal)throw Error('BAL geçişi tamamlanamadı');}if(target===3){await DivisionThree.start(true);if(!DivisionThree.active())throw Error('2. Lig geçişi tamamlanamadı');}current=RoomSystem.snapshot();}
   if(target<=currentStage){restoreExit=BalVisual.capture(document.getElementById('workflow'));exitAnimations=await CardMotion.testExit();}let room;
   room=target===1?RoomRules.defaults():BalRules.enter(RoomRules.defaults(),1);
   if(current.dailyShift)room.dailyShift=JSON.parse(JSON.stringify(current.dailyShift));
+  if(current.academy)room.academy=AcademyCareerRules.normalize(current.academy);
   if(target===3){room.division=3;room.divisionCalendar=2;room.openDepartments=[2,4];room.mediaDepartmentOpen=end;}
-  for(const card of RoomRules.catalog){const stage=card.division===3?3:card.bal?2:1;if(stage<target||end&&stage===target)room.floors[card.floor].push(...Array(RoomRules.maxLevel(room,card)).fill(card.id));}
+  for(const card of RoomRules.catalog){const stage=card.division||(card.bal?2:1);if(stage<target||end&&stage===target)room.floors[card.floor].push(...Array(RoomRules.maxLevel(room,card)).fill(card.id));}
   room.lastSeen=Date.now();
   const players=(TeamRules.players.length?TeamRules.players:TeamRules.generate().map(p=>({...p,appearance:TeamAppearance.generate()}))).map(p=>({...p,art:typeof p.art==='string'&&p.art.startsWith('team-assets/')?p.art:'team-assets/woman-0.svg'}));
   const entrants=target===3?LeagueRules.divisionEntrants().map(t=>({...t,name:t.id===0?profile?.name||LeagueRules.teams[0]:t.name})):LeagueRules.teams.map((name,id)=>({id,name:id===0?profile?.name||name:name}));

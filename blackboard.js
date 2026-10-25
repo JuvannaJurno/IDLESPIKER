@@ -28,8 +28,8 @@ function showLegacy(rows,actions=[],transferRows=null){advicePanel.hidden=!rows.
 function show(rows,actions,transferRows,context){showLegacy(rows,actions,transferRows);window.BoardPresentation?.render(document.getElementById('blackboardAdvice'),context);}
 function refresh(){
  if(document.hidden||(document.getElementById('teamPanel').hidden&&!document.getElementById('scoutDialog')?.open))return;
- const bal=LeagueRules.config.bal;document.getElementById('blackboardTitle').textContent=LeagueRules.config.division===3?'Sportif Direktörlük':bal?'Teknik Ekip':'Kara Tahta';
- const department=LeagueRules.config.division===3?'Sportif Direktörlük':bal?'Teknik Ekip':'Kara Tahta',lead=RoomSystem.blackboard().leadDays,next=LeagueSeason.progress().next,rows=[],actions=[];
+ const bal=LeagueRules.config.bal;document.getElementById('blackboardTitle').textContent=LeagueRules.config.division>=3?'Sportif Direktörlük':bal?'Teknik Ekip':'Kara Tahta';
+ const department=LeagueRules.config.division>=3?'Sportif Direktörlük':bal?'Teknik Ekip':'Kara Tahta',lead=RoomSystem.blackboard().leadDays,next=LeagueSeason.progress().next,rows=[],actions=[];
  const squad=TeamView.snapshot(),opponents=next?MatchIntro.opponents(next):[],report=analyze(squad,opponents,TeamRules),{need,weak,upgrade,swap}=report;
  if(next){let day=1;try{day=JSON.parse(localStorage.getItem('idle-spiker-main-menu-v1')).day}catch{}const remaining=next.day-day,rival=LeagueRules.teams[next.home===0?next.away:next.home];rows.push(['Sıradaki rakip',rival+' · '+(remaining>0?remaining+' gün sonra':'Maç günü')]);
  if(!lead)rows.push(['Rakip raporu',department+' bölümündeki '+(bal?'Gözlemci':'Rakip Analizi')+' bloğunu geliştirerek açabilirsin.']);
@@ -47,7 +47,7 @@ function refresh(){
  const transferRows=[];
  if(bal&&document.getElementById('scoutDialog')?.open){
  if(level<6)transferRows.push(['Kilitli',department+' bölümündeki Gözlemci bloğunu 6. seviyeye getir. Burada transfer adaylarını kadronla karşılaştırabilirsin.']);
- else if(!ScoutRules.available(state))transferRows.push(['Katalog kapalı',(LeagueRules.config.division===3?'Sportif Direktörlük bölümünden oyuncu keşfini aç.':'Oyuncu Keşfi departmanını aç.')]);
+ else if(!ScoutRules.available(state))transferRows.push(['Katalog kapalı',(LeagueRules.config.division>=3?'Sportif Direktörlük bölümünden oyuncu keşfini aç.':'Oyuncu Keşfi departmanını aç.')]);
  else{
  const cacheKey=JSON.stringify([squad.lineup,squad.players.map(p=>[p.id,p.role,p.cardLevel,...TeamRules.trainable.map(k=>p[k])]),state.scouting?.catalog,state.floors,RoomSystem.developmentState().camp]);if(cacheKey!==transferCacheKey){transferCacheKey=cacheKey;transferCache=transfers(squad,state.scouting?.catalog||[],TeamRules)}const options=transferCache,useful=options.filter(o=>o.kind!=='pass');
  if(!options.length)transferRows.push(['Henüz aday yok','Transfer Merkezi’nde yeni kataloğu açtığında öneriler burada görünecek.']);

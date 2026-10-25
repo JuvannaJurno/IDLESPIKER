@@ -83,7 +83,7 @@ if(q('#playerDialog[open]')&&!GuidedTutorial.completed('skills')&&!GuidedTutoria
 const club=()=>!q('.dashboard').hidden&&!q('dialog[open]');
 if(club()&&RoomSystem.overtimeStarted?.()&&visible(q('#matchOvertimeCountdown:not([hidden])'))&&!GuidedTutorial.completed('match-overtime')&&!GuidedTutorial.paused('match-overtime')){GuidedTutorial.start([{id:'overtime-started',target:()=>q('#matchOvertimeCountdown:not([hidden])'),text:'Maç mesaisi başladı! Maçı beklerken ve izlerken otomatik üretim aynı hızda sürer. Çalışılan süre ortak vardiyandan düşer. Bu sayaç, bu maç için kalan mesaiyi gösterir; süre bitince mesai durur.'}],null,'match-overtime');return true;}
 if(club()&&window.RoomSystem.snapshot().shiftTutorialPending&&!GuidedTutorial.completed('shift-unlock')&&!GuidedTutorial.paused('shift-unlock')){GuidedTutorial.start([{id:'shift-ready',target:()=>q('#dailyShiftStatus:not([hidden])')||q('.shift-summary'),text:'Vardiyayı açtın! Oyunda olmadığında da talimatlar çalışır. Kalan süren burada görünür; süre dolunca 1 saat dinlenir.'}],()=>RoomSystem.acknowledgeShiftTutorial(),'shift-unlock');return true;}
-if(state.stage==='bal'&&state.division!==3&&club()&&!GuidedTutorial.completed('income')&&!GuidedTutorial.paused('income')){
+if(state.stage==='bal'&&(state.division||1)<3&&club()&&!GuidedTutorial.completed('income')&&!GuidedTutorial.paused('income')){
 const incomeInstructions=state.instructions;let incomeReceiptsBefore=incomeReceipts;
 GuidedTutorial.start([
 {id:'income-center',skip:()=>RoomSystem.tutorialState().openDepartments.includes(2),target:()=>q('.tier[data-floor="2"] .base-room'),click:'.department-buy[data-floor="2"]',done:()=>RoomSystem.tutorialState().openDepartments.includes(2),text:'[[Ücretsiz aç]] ile Gelir Merkezi’ni aç. Talimatlarla bütçe kazandırır.'},
@@ -91,14 +91,14 @@ GuidedTutorial.start([
 {id:'income-send',target:()=>q('#energyButton'),click:'#energyButton',done:()=>RoomSystem.tutorialState().instructions>incomeInstructions,text:'[[Talimat ver]] düğmesine dokun. Talimatın Gelir Merkezi’ne gidişini izleyelim.'},
 {id:'income-conversion',allowNext:true,enter:()=>{incomeReceiptsBefore=incomeReceipts;},done:()=>incomeReceipts>incomeReceiptsBefore,target:incomeFlowTarget,text:'Talimatlar buraya geldiğinde üretim ilerler. Şimdilik her 10 talimatta bütçe kazanıyorsun.'},
 ],null,'income');return true;}
-if(!q('#socialPanel')?.hidden&&state.division===3&&!GuidedTutorial.completed('social')&&!GuidedTutorial.paused('social')){
+if(!q('#socialPanel')?.hidden&&state.division>=3&&!GuidedTutorial.completed('social')&&!GuidedTutorial.paused('social')){
 const followersBefore=socialFollowerCount(),published=()=>socialFollowerCount()>followersBefore;
 GuidedTutorial.start([
 {id:'social-draft',allowNext:true,done:published,target:()=>q('#socialDraft'),text:'Kulübünün gönderileri burada hazırlanır.'},
 {id:'social-publish',allowNext:true,target:()=>q('#socialPublish'),done:published,text:()=>q('#socialPublish')?.disabled?'Gönderiler arka planda hazırlanır. Hazır olduğunda buradan paylaşabilirsin.':'Gönderin hazır. [[Paylaş]] ile yayınlayabilirsin.'},
 ],null,'social');return true;}
 let socialGrowth=false;try{const social=JSON.parse(localStorage.getItem('idle-spiker-social-v1')||'{}');socialGrowth=!!social.studio?.completedDraft&&social.earnedFollowers>0;}catch{}
-if(!q('#socialPanel')?.hidden&&state.division===3&&socialGrowth&&!GuidedTutorial.completed('social-growth')&&!GuidedTutorial.paused('social-growth')){GuidedTutorial.start([
+if(!q('#socialPanel')?.hidden&&state.division>=3&&socialGrowth&&!GuidedTutorial.completed('social-growth')&&!GuidedTutorial.paused('social-growth')){GuidedTutorial.start([
 {id:'social-followers',target:()=>q('#socialTopFollowers'),text:'Takipçilerin burada görünür. Paylaşımlarla topluluğunu büyüt.'},
 {id:'social-rewards',target:()=>q('#socialJourneyEntry'),done:()=>!q('#socialJourneyScreen')?.hidden,click:'#socialJourneyEntry',text:'Takipçi hedeflerini ve ödüllerini görmek için buraya dokun.'},
 ],null,'social-growth');return true;}
@@ -110,7 +110,7 @@ function update(){if(window.PlayerProfile?.needsCreation){clear();return;}
  for(const id of [...pausedGuides]){const away=id==='income'?document.querySelector('.dashboard').hidden:(id==='social'||id==='social-growth')?document.getElementById('socialPanel')?.hidden&&document.getElementById('socialJourneyScreen')?.hidden:id==='camp'?!document.getElementById('campDialog')?.open:id==='skills'?!document.getElementById('playerDialog')?.open:false;if(away)pausedGuides.delete(id);}
 
  if(document.getElementById('bootScreen')||document.hidden||window.BalTransition?.active||window.gameResetting||window.MatchGateway?.active()){clear();return}
- if(guided?.id==='income'&&RoomSystem.tutorialState().division===3)endGuide(false);
+ if(guided?.id==='income'&&RoomSystem.tutorialState().division>=3)endGuide(false);
  if(guided?.id==='social-entry'&&!RoomSystem.mediaDepartmentOpen())endGuide(false);if(guided?.id==='match-overtime'&&(document.querySelector('.dashboard').hidden||document.getElementById('matchOvertimeCountdown')?.hidden))endGuide(false);
  if(guided&&((guided.id==='transfer'&&guided.index>0&&document.getElementById('teamPanel').hidden&&!document.querySelector('#scoutDialog[open],#transferCompareScreen[open],#transferReplaceScreen[open],#transferLineupPrompt[open]'))||(guided.id==='camp'&&!document.getElementById('campDialog')?.open)||(guided.id==='skills'&&!document.getElementById('playerDialog')?.open)||(guided.id==='income'&&document.querySelector('.dashboard').hidden)||((guided.id==='social'||guided.id==='social-growth')&&document.getElementById('socialPanel')?.hidden&&document.getElementById('socialJourneyScreen')?.hidden)))endGuide(false);
  if(guided){const step=guided.steps[guided.index];if(step.skip?.()||step.done?.()){nextGuide();return}if(step.wait||(step.ready&&!step.ready())){clear();return}const el=step.target();show('guided-'+step.id,typeof step.text==='function'?step.text():step.text,el);return}

@@ -37,7 +37,7 @@ const overallWeights={
 function overall(p){const weights=overallWeights[p.role]||trainable.map(()=>100/trainable.length);return Math.round(trainable.reduce((sum,k,i)=>sum+(Number.isFinite(p[k])?Math.max(0,p[k]):0)*weights[i],0)/100)}
 
 const cardRoles={setter:['set','serve','mental','stamina'],outside:['spike','receive','stamina','mental'],opposite:['spike','serve','block','stamina'],middle:['block','spike','stamina','mental'],libero:['receive','set','mental','stamina']};
-function cardLimit(p,state=developmentState()){return state.stage==='bal'?11+Math.ceil((Camps.cap(state,p)-50)/3)+(state.division===3&&Camps.progress(state,p).count>=4?6:0):10}
+function cardLimit(p,state=developmentState()){return state.stage==='bal'?11+Math.ceil((Camps.cap(state,p)-50)/3)+(state.division>=3&&Camps.progress(state,p).count>=4?6:0):10}
 function transferUpgradesRemaining(p){if(!Number.isInteger(p?.transferStartLevel)||p.transferStartLevel<1)return 0;const used=Number.isInteger(p.transferUpgradeCount)?p.transferUpgradeCount:Math.max(0,cardLevel(p)-p.transferStartLevel);return Math.max(0,3-Math.max(0,used));}
 function cardLevel(p){return Number.isSafeInteger(p.cardLevel)&&p.cardLevel>0?p.cardLevel:1}
 function cardGains(p,level=cardLevel(p),statCap=cap(p)){

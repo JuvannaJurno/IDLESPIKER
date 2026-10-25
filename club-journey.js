@@ -52,7 +52,7 @@ function matchProfile(id){const symbolsForTeams=['ball','wave','sun','peak','win
 function matchBadge(id){return 'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(new XMLSerializer().serializeToString(emblem(matchProfile(id))));}
 function matchCourt(id){
  if(id===0||!window.MatchCourtSurface)return {};
- const division=LeagueRules.config.division||1,stage=division===3?'division2':division===2?'bal':'prologue';
+ const division=LeagueRules.config.division||1,stage=division>=3?'division2':division===2?'bal':'prologue';
  const ranked=LeagueRules.teams.map((name,team)=>({team,strength:team?Array.from({length:6},(_,i)=>TeamRules.overall(TeamRules.opponentStats(division===1?Math.max(1,8-team):1,i,stage,team))).reduce((a,b)=>a+b,0)/6:0})).filter(t=>t.team>0).sort((a,b)=>b.strength-a.strength||a.team-b.team).slice(0,3);
  const rank=ranked.findIndex(t=>t.team===id);return rank<0?{}:{...MatchCourtSurface.featuredCourt(matchColors(id),rank),...(division===1?{pattern:'neighborhood-wood'}:{})};
 }

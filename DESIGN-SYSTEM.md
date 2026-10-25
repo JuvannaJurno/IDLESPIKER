@@ -28,6 +28,21 @@ Son inceleme ve tutarlılık düzeltmeleri: 24 Ekim 2026. Bu dosya, kullanıcın
 13. Beyaz tahtada doodle olabilir; kara tahtada doodle yok. Doodlelar boşluklara dağıtılır, yazıya/portreye girmez. Rakip portresi sağ üstte bantla iliştirilmiş fotoğraf gibi; altında güçlü yönünü anlatan lakap olabilir.
 14. Tüp/akış geliştirmeleri mevcut oyunun sıcak temasına oturur. Kullanıcının el talimatı fark edilir; medya dalgası sadece mavi medya tüpünden gider. Tüm departmanı düz maviye boyama.
 15. Alternatif tasarımlar `player-card-design-lab-v3.html` içindedir. Alternatif üretmek, üretimde hepsini uygulamak veya seçilmiş saymak değildir.
+16. 1. Lig akademisi mevcut native antrenman salonunu merkez alır. Yeni alt navigasyon yok; Takım ekranında kısa giriş ve Kulüp'te tesis erişimi bulunur. Portre şeridinden seçilen tek gencin durumu/kararı gösterilir. Deneme kontrolleri üretim menüsüne taşınmaz.
+17. Genç transfer kararında iki eylem (“A takıma transfer et”, “Akademiye transfer et”) ortak seçicinin sabit alt alanında görünür. Bedel, süre, garanti gelişim ve elit ihtimali iç kaydırma alanının başındadır; gerçek oyuncu kartı aynı anatomiyi korur. Küçük ekranda eylemler kartın altında kaybolmaz.
+18. Akademi mezunu aynı isim/portreyle gelir. Elit sonuç mevcut mor oyuncu kartını kullanır; beyaza yakın portre zemini ve aynı kart sırası korunur. Ayrı elit etiketi yok. Normal mezuniyet kayıp olarak gösterilmez.
+
+### 25 Ekim — 1. Lig ve akademi ilk taslağı
+
+Kaynaklar: first-league.js, academy-career-rules.js, academy-career.js/css. 1. Lig geçişi GameUI.stage ve CardMotion.handoff kullanır; yeni tanıtım/karartma ailesi yoktur. Akademi, transfer kararı ve mezuniyet GameUI.selection içindedir; modal arka planı ve kaydırma kilidi ortak sistemden gelir. İlk açılış rehberi GuidedTutorial / academy-unlock kimliğiyle bir kez gösterilir.
+
+Canlı salon mac.html?academyTraining=1 üzerinden gerçek native karakterleri kullanır. İlk açılışta yüklenir; kapalıyken/arka sekmede çalışmaz. Üretimde lab bütçesi, hızlandırma düğmeleri veya ayrı test kadrosu yoktur. Eğitim gerçek zamanlı kayıttan hesaplanır; ekranda bekleme gerektirmez.
+
+Kulüpteki kısa akademi girişi talimat hattının hemen üstünde normal ekran genişliğindedir. Yatay kaydırılan workflow içine tam genişlikte panel koyma: düğmeyi ekran dışına taşır ve tüplerin arasını keser. Performans Merkezi içindeki kurulum/yükseltme bloğu mevcut blok ailesini kullanır.
+
+Mezuniyet kartı kısa belirme hareketi kullanır; reduced-motion halinde hareket kaldırılır. Salon içindeki kapsamlı mezuniyet kutlaması bu ilk taslakta henüz yoktur. Ekonomi, süreler ve elit ihtimali prototip değerleridir; görsel kararlarla kesin dengeyi birbirine karıştırma.
+
+Görsel kanıtlar: audits/first-league-transfer-choice.png, first-league-academy-training.png, first-league-academy-direction.png, first-league-academy-skill.png, first-league-academy-elite.png. Kontrol: test-first-league-academy.cjs ve test-first-league-academy-browser.cjs.
 
 ## Tema kaynakları ve bileşen anatomisi
 

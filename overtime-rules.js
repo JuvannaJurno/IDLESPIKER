@@ -6,7 +6,7 @@ const Shift=root.ShiftRules||(typeof require==='function'?require('./shift-rules
 function normalize(raw){if(!validId(raw?.fixtureId))return null;return {fixtureId:raw.fixtureId,used:number(raw.used),lastAt:number(raw.lastAt),carry:number(raw.carry,.999999),steady:Math.floor(number(raw.steady))%10,repeat:Math.floor(number(raw.repeat))%5,income:Math.floor(number(raw.income))%10};}
 function matchLimit(s){return B.value(s,'pro_travel')>0?(5+Math.round(B.value(s,'pro_travel')*5)*5)*60:0;}
 function status(s,id,e,now=Date.now()){
- const capacity=e.offlineHours*3600,limit=matchLimit(s),unlocked=s.division===3&&B.value(s,'pro_travel')>0;
+ const capacity=e.offlineHours*3600,limit=matchLimit(s),unlocked=s.division>=3&&B.value(s,'pro_travel')>0;
  const shift=Shift.status(s,capacity,now),old=s.matchOvertime;
  const allowed=!old||old.fixtureId===id||s.attendanceRewards?.includes(old.fixtureId);
  return {unlocked,capacity,matchCapacity:limit,remaining:unlocked&&validId(id)&&allowed?Math.max(0,Math.min(shift.remaining,limit-(old?.fixtureId===id?old.used:0))):0};

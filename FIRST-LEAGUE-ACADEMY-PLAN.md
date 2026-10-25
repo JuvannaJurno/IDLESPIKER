@@ -1,7 +1,32 @@
 # 1. Lig — Altyapı Akademisi taslağı
 
-Durum: İlk çalışan, kaydı ayrılmış prototip tamamlandı. 24 Ekim 2026. Tam 1. Lig geçişi ve üretim entegrasyonu henüz uygulanmadı.
-Kapsam: Aşama 4 / Ulusal Voleybol 1. Ligi. Önce tek mekanik prototipi; tam lig uygulaması ayrı iş.
+Durum: 25 Ekim 2026 — 1. Lig ve gerçek kayda bağlı akademinin ilk oynanabilir taslağı eklendi. Aşağıdaki güncel kararlar önceki prototip taslağının üstündedir. Ekonomi ve süreler son denge değildir.
+
+## Güncel üretim planı ve uygulanan kapsam
+
+- Aşama 4, Ulusal Voleybol 1. Ligi. 2. Lig sezonunu ilk üçte bitirince mevcut sezon sonu yönlendirmesi ortak seçim kabuğunda 1. Lig geçişini açar. 14 maçlık haftalık takvim, 2.500 talimat/gün, 1.500 talimatta maç hazırlığı korunur. Mevcut ulusal rakip havuzu ilk taslakta tekrar kullanılır; ayrı 1. Lig takımları ve denge sonraki çalışmadır.
+- Oyuncular, AP, bütçe, departman yatırımları, sosyal medya ve akademi kaydı korunur. Takvim yeni sezon için başlar; devam eden kamplar yeni günlere taşınır. 1. Lig temel özellik sınırı 220'dir; kazanılmış kamp hakları devam eder. Profesyonel üretim/transfer/sosyal medya kuralları Bölgesel değerlere dönmez.
+- Ayarlar → Aşamaya geç → 4 · Ulusal Voleybol 1. Ligi · Akademi taslağı. Test başlangıcında önceki aşamaların blokları tamamlanır ve deneme için en az 1m bütçe/10m AP verilir; normal yükseliş bu kaynakları vermez. Başlangıç seçimi yeni akademi bloğunu boş, son seçim tamamlanmış getirir.
+- Kulüp Performans Merkezi'ndeki Altyapı Akademisi kurulum bloğu 2 eğitim kontenjanı açar. Sonraki iki yükseltmeyle 3 ve 4 olur. Mevcut blok satın alma/yükseltme sistemini kullanır; yanında kısa tesis girişi vardır. Takım ekranında Transfer Merkezi'nin altında kalıcı akademi girişi bulunur. Yeni alt navigasyon sekmesi yok.
+- Transferde bazı gençler akademiye uygundur; yaşları 16–18 olarak gösterilir. Hazır özel elit karakterler akademiye gönderilemez. Genç seçilince “A takıma transfer et” ve “Akademiye transfer et” çıkar. İki yolda da aynı transfer bedeli ödenir; akademi için ek giriş ücreti yoktur. Kontenjan yoksa nedeni görünür ve işlem kapalıdır.
+- İlk eğitim 20 dakika, sonrakiler 2 saat; elit ihtimali %25. Bunlar açıkça gösterilen taslak değerlerdir. Bedel ve adayın katalogdan ayrılması aynı oda kaydı işlemiyle saklanır. Aday, mezun olana kadar maç kadrosuna katılmaz.
+- Eğitim aşamaları: %0–25 adaptasyon; %25–60 gelişim yönü; %60–100 yetenek çalışması; %100 mezuniyet. Başlangıç yönü ve önerilen yetenek otomatik devam eder. Seçimler eğitimi durdurmaz/sıfırlamaz; bitmiş aşamalar geriye dönük değişmez. Çevrimdışı ve maç sırasında gerçek zamanla ilerler.
+- Pozisyona göre iki yön vardır. Seçilen yön ana/yan özellik gelişimini ve önerilen yetenek çiftini belirler. Yetenek aşamasında iki seçenek sunulur: normal mezuniyette kazanılacak Rare yetenek ve elit olursa açılacak Legendary potansiyeli ayrı yazılır. Eğitimde kazanılan Rare yetenek mezuniyette çalışabilir; Legendary mevcut 3 kamp koşuluna bağlıdır. Kamp yıldızı uydurulmaz.
+- Her mezun güçlenir ve çalıştığı yeteneği kazanır. Elit mezun güçlü yönünde ek gelişim, aynı kimlikle mor elit kart ve seçilen Legendary potansiyeli kazanır. Normal mezun kayıp/başarısızlık gibi sunulmaz. İlk sürümde erken ayrılma veya oyuncu kaybetme yoktur.
+- Elitlik çekilişi kayıt sırasında bir kere saklanır; sonuç yalnız tamamlanınca gösterilir. Yenileme yeni çekiliş oluşturmaz. Mezuniyet oda kaydında recruit olarak saklanır, mevcut gerçek kadro içe alma zinciriyle eklenir. Kadro doluysa mezun bekler; otomatik silme/değiştirme yoktur. Tek mezun ikinci kez alınamaz.
+- Akademi mevcut GameUI.selection kabuğunda açılır. Canlı native antrenman salonu merkezdir; altında portre seçimi ve yalnız seçilen gencin durumu/kararı vardır. Gerçek maç açısı, karakterler, antrenörler, istasyonlar ve profil sahası/topu kullanılır. Ayrı lab kayıtları üretim sistemine bağlanmaz.
+- Akademi kaydı idle-spiker-rooms-v2 içindeki academy alanıdır. academy-career-rules.js saf kuralları, academy-career.js/css üretim ekranlarını, first-league.js geçişi yönetir. Eski academy-rules.js ve academy-preview.js izole görsel deneme olarak kalır; üretim kaydını yönetmez.
+- Sonraki genişlemeler: daha fazla yön/yetenek, erken uyum değerlendirmesi, koç ve ekipman geliştirmeleri, sahnede daha zengin mezuniyet tepkisi. Eğitim süreleri, olasılıklar, mezun gücü ve 1. Lig rakipleri gerçek sezon üzerinde ayrıca dengelenecek.
+
+## Doğrulama
+
+test-first-league-academy.cjs: 1. Lig takvimi, profesyonel etkilerin korunması, genç transfer üretimi, eğitim seçimlerinin sınırları, normal/elit sonuçlar, kadro doluluğu, tekrar mezuniyet ve beceri kazanımı.
+
+test-first-league-academy-browser.cjs: gerçek geçiş, mevcut kadronun korunması, tesis kurulumu, transfer seçimi, native salon, yön/yetenek seçimi, 320/390/1440 genişlik, çevrimdışı tamamlanma, kalıcı mor mezun kartı, doğal sezon sonu yükselişi ve gerçek 1. Lig maçı. Görseller audits/first-league-*.png.
+
+## Arşiv — 24 Ekim izole prototip taslağı
+
+Bu bölüm geçmiş tasarımın kaydıdır. Aşağıdaki doğrudan üç aday seçme, deneme bütçesi ve yalnız normal mezun üretme akışı üretim akademisinin güncel kararı değildir.
 
 ## Amaç
 Oyuncu ihtiyaç duyduğu pozisyonda bir genç seçip gelişim yönünü belirleyerek kendi kadro oyuncusunu yetiştirir. Fayda, kontrollü pozisyon ve özellik dağılımı ile geleceğe yatırım; sınırsız otomatik üstün oyuncu üretimi değildir. Oyuncunun kendi yetiştirdiği karaktere bağlanması ve tesiste kalıcı büyüme görmesi hedeflenir.
