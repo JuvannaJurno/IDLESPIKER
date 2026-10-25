@@ -5,7 +5,7 @@ const state=()=>RoomSystem.snapshot(),portrait=p=>TeamAppearance.valid(p.appeara
 const names={spike:'Smaç',block:'Blok',serve:'Servis',receive:'Manşet',set:'Pas',stamina:'Dayanıklılık',mental:'Mental'};
 const duration=ms=>{const s=Math.max(0,Math.ceil(ms/1000));return s>=3600?Math.floor(s/3600)+' sa '+Math.floor(s%3600/60)+' dk':Math.floor(s/60)+':'+String(s%60).padStart(2,'0');};
 const skillName=id=>PlayerSkills.catalog.find(s=>s.id===id)?.name||id;
-let selected=null,signature='',decision=null,lastEntryFocus=null,sceneVisible=false,autoConversation=false,conversationContext=null,replyTimer=null;
+let selected=null,signature='',decision=null,lastEntryFocus=null,sceneVisible=false,autoConversation=false,conversationContext=null,replyTimer=null,previewSequence=0,previewRequest=null;
 const conversationSeenKey='idle-spiker-academy-conversations-v1',seenConversations=new Set();
 try{const saved=JSON.parse(localStorage.getItem(conversationSeenKey)||'[]');if(Array.isArray(saved))saved.filter(k=>/^academy-\d+:(direction|skill)$/.test(k)).slice(-512).forEach(k=>seenConversations.add(k));}catch{}
 const entry=document.createElement('button');entry.id='academyEntry';entry.type='button';entry.className='scout-alert academy-entry';entry.hidden=true;entry.innerHTML='<span class="academy-entry-portraits" aria-hidden="true"></span><span class="transfer-entry-copy"><span class="transfer-entry-kicker">KENDİ OYUNCUNU YETİŞTİR</span><strong>Altyapı Akademisi</strong><small></small></span><span class="transfer-entry-arrow" aria-hidden="true">›</span>';$('scoutAlert').after(entry);
@@ -19,11 +19,13 @@ const transferFooter=transfer.dialog.querySelector('footer');transferFooter.quer
 $('academyTransferPlayer').before($('academyTransferSummary'));
 const detail=GameUI.selection({id:'academyCareerPlayer',title:'Oyuncu dosyası',eyebrow:'ALTYAPI AKADEMİSİ',content:'<div id="academyCareerCard"></div><div id="academyCareerOutcome"></div><button id="academyGraduateLive" class="team-action" type="button">A takıma al</button>',returnFocus:'academyInspectLive',statusId:'academyGraduateNotice'});
 detail.dialog.querySelector('footer span').textContent='';let reviewing=null;
-const conversation=GameUI.selection({id:'academyConversation',title:'Birlikte çalışalım',eyebrow:'ANTRENMAN ARASI',returnFocus:'academyTalk',statusId:'academyConversationStatus',content:'<div class="academy-conversation-speaker"><img id="academyConversationPortrait" alt=""><div><strong id="academyConversationName"></strong><small id="academyConversationRole"></small></div></div><p id="academyConversationQuestion"></p><div id="academyConversationOptions"></div><p id="academyConversationNote"></p>'});
+const conversation=GameUI.selection({id:'academyConversation',title:'Birlikte çalışalım',eyebrow:'ANTRENMAN ARASI',returnFocus:'academyTalk',statusId:'academyConversationStatus',content:'<div class="academy-conversation-speaker"><div class="academy-conversation-gym" aria-hidden="true"><img id="academyConversationGym" alt="" hidden></div><img id="academyConversationPortrait" alt=""><div class="academy-conversation-identity"><strong id="academyConversationName"></strong><small id="academyConversationRole"></small></div></div><p id="academyConversationQuestion"></p><div id="academyConversationOptions"></div><p id="academyConversationNote"></p>'});
 conversation.dialog.setAttribute('aria-describedby','academyConversationQuestion');
 const later=conversation.dialog.querySelector('footer button');later.className='team-secondary';later.textContent='Sonra konuşalım';$('academyConversationStatus').textContent='';
 function needsDecision(e){const phase=R.phase(e);return phase==='direction'&&!e.directionChosen||phase==='skill'&&!e.skillChosen;}
 function rememberConversation(key){seenConversations.add(key);try{localStorage.setItem(conversationSeenKey,JSON.stringify([...seenConversations].slice(-512)));}catch{}}
+function requestGymPreview(){if(!conversation.dialog.open)return;const frame=$('academyCareerFrame');if(!frame?.contentWindow)return;previewRequest='academy-preview-'+(++previewSequence);frame.contentWindow.postMessage({type:'academy-training-preview-request',requestId:previewRequest},'*');}
+addEventListener('message',event=>{if(event.source!==$('academyCareerFrame').contentWindow||event.data?.type!=='academy-training-preview'||!conversation.dialog.open||event.data.requestId!==previewRequest)return;const image=event.data.image;if(typeof image!=='string'||!image.startsWith('data:image/jpeg;base64,')||image.length>1000000)return;$('academyConversationGym').src=image;$('academyConversationGym').hidden=false;$('academyConversationGym').dataset.scene=event.data.scene==='court'?'court':'gym';});
 function talk(id){
  const e=state().academy.entries.find(e=>e.id===id);if(!screen.dialog.open||!e||!['direction','skill'].includes(R.phase(e)))return false;
  if(detail.dialog.open||transfer.dialog.open||GuidedTutorial.active)return false;
@@ -34,7 +36,7 @@ function talk(id){
  $('academyConversationStatus').textContent='';conversation.dialog.dataset.state='question';const options=$('academyConversationOptions');options.replaceChildren();
  const choices=phase==='direction'?R.plans(e.player).map(p=>({id:p.id,name:p.name,copy:names[p.primary]+' +12 · '+names[p.secondary]+' +5',active:e.path===p.id})):R.skills(e).map(s=>({id:s.id,name:skillName(s.skill),copy:'Elit olursa: '+skillName(s.legendary)+' potansiyeli',active:e.skillChoice===s.id}));
  for(const choice of choices){const b=document.createElement('button');b.type='button';b.className='team-secondary';b.dataset.academyAnswer=choice.id;b.setAttribute('aria-pressed',String(choice.active));const name=document.createElement('strong'),copy=document.createElement('small');name.textContent=choice.name;copy.textContent=choice.copy;b.append(name,copy);b.onclick=()=>answer(choice.id);options.append(b);}
- rememberConversation(id+':'+phase);conversation.open();syncScene();if(!CardMotion.reduced())conversation.dialog.animate([{opacity:0,transform:'translateY(8px)'},{opacity:1,transform:'none'}],{duration:220,easing:CardMotion.ease});return true;
+ rememberConversation(id+':'+phase);conversation.open();syncScene();requestGymPreview();if(!CardMotion.reduced())conversation.dialog.animate([{opacity:0,transform:'translateY(8px)'},{opacity:1,transform:'none'}],{duration:220,easing:CardMotion.ease});return true;
 }
 function answer(value){
  const context=conversationContext;if(!context||conversation.dialog.dataset.state==='reply')return;
@@ -48,7 +50,7 @@ function maybeTalk(){
  const entries=state().academy.entries,e=entries.find(e=>needsDecision(e)&&!seenConversations.has(e.id+':'+R.phase(e)));
  autoConversation=false;if(e)talk(e.id);
 }
-conversation.dialog.addEventListener('close',()=>{clearTimeout(replyTimer);conversationContext=null;syncScene();});
+conversation.dialog.addEventListener('close',()=>{clearTimeout(replyTimer);conversationContext=null;previewRequest=null;syncScene();});
 const coaches=[.28,.72].map((seed,i)=>{const appearance=TeamAppearance.generate(()=>seed,{country:CountryRules.current()});appearance.palette.shirt=i?'#7b8f89':'#476c66';return {id:'academy-coach-'+i,name:i?'Yardımcı antrenör':'Antrenör',surname:'',role:'setter',appearance};});
 function card(p){const node=TeamView.transferCard({...p,art:portrait(p)});node.querySelectorAll('button').forEach(b=>b.remove());node.classList.add('academy-real-card');return node;}
 function refreshEntry(){
@@ -110,7 +112,7 @@ $('academyGraduateLive').onclick=()=>{const id=RoomSystem.academyGraduate(review
 screen.dialog.addEventListener('close',()=>{autoConversation=false;conversation.close();syncScene();lastEntryFocus?.isConnected&&lastEntryFocus.focus({preventScroll:true});});
 detail.dialog.addEventListener('close',syncScene);
 new IntersectionObserver(entries=>{sceneVisible=entries[0].isIntersecting;syncScene();},{threshold:.01}).observe($('academyCareerFrame'));
-addEventListener('message',event=>{if(event.source!==$('academyCareerFrame').contentWindow)return;if(event.data?.type==='academy-training-mounted')syncScene();if(event.data?.type==='academy-training-ready')$('academyCareerFrame').dataset.ready='true';if(event.data?.type==='academy-training-select'&&state().academy.entries.some(e=>e.id===event.data.id)){selected=event.data.id;render();}});
+addEventListener('message',event=>{if(event.source!==$('academyCareerFrame').contentWindow)return;if(event.data?.type==='academy-training-mounted')syncScene();if(event.data?.type==='academy-training-ready'){$('academyCareerFrame').dataset.ready='true';requestGymPreview();}if(event.data?.type==='academy-training-select'&&state().academy.entries.some(e=>e.id===event.data.id)){selected=event.data.id;render();}});
 addEventListener('spiker-academy-changed',()=>render(true));addEventListener('spiker-stage-changed',()=>{if(state().division!==4){screen.close();detail.close();transfer.close();}refreshEntry();});addEventListener('visibilitychange',()=>{render();syncScene();});
 new MutationObserver(()=>{refreshEntry();}).observe($('roomSlots0'),{childList:true});
 new MutationObserver(syncScene).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
