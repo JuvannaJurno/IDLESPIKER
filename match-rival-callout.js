@@ -1,0 +1,14 @@
+(function(){
+'use strict';if(typeof draw!=='function'||new URLSearchParams(location.search).has('academyTraining'))return;
+const box=document.createElement('aside');box.className='match-rival-callout';box.hidden=true;box.innerHTML='<small>RAKİP OYUNCU</small><strong></strong><span></span><button type="button" aria-label="Oyuncu tanıtımını kapat">×</button>';document.body.append(box);
+const style=document.createElement('style');style.textContent='.match-rival-callout{position:fixed;z-index:40;box-sizing:border-box;width:172px;padding:11px 24px 11px 12px;border:1px solid #eee4cd;border-radius:11px;background:#faf5e6f5;box-shadow:0 3px 10px #132e3530;color:#476b76;font:11px system-ui;pointer-events:auto}.match-rival-callout[hidden]{display:none}.match-rival-callout small{display:block;font-size:7px;letter-spacing:1.1px;color:#929b83}.match-rival-callout strong{display:block;margin:5px 0;font-size:12px}.match-rival-callout span{font-size:9px;line-height:1.4;color:#7a8c84}.match-rival-callout button{position:absolute;right:4px;top:4px;padding:3px;border:0;background:none;color:#8e997f;cursor:pointer}';document.head.append(style);
+const previousDraw=draw,previousTick=tick;let fixture=null,shown=false,current=null;
+function stop(){current=null;box.hidden=true;window.MatchFrames?.invalidate();}
+box.querySelector('button').onclick=stop;
+function place(p){const rect=canvas.getBoundingClientRect(),vertical=rect.height>rect.width;let x,y;if(vertical){x=rect.left+p.y/620*rect.width;y=rect.top+(1-p.x/1000)*rect.height;}else{x=rect.left+p.x/1000*rect.width;y=rect.top+p.y/620*rect.height;}const width=Math.min(172,innerWidth-16);box.style.width=width+'px';box.style.left=Math.max(8,Math.min(innerWidth-width-8,x+24))+'px';box.style.top=Math.max(8,Math.min(innerHeight-box.offsetHeight-8,y-box.offsetHeight/2))+'px';}
+draw=function(){previousDraw();const key=window.matchInfo?.fixtureId||window.matchInfo?.round||'preview';if(key!==fixture){fixture=key;shown=false;stop();}if(!shown&&!paused&&ready){const actor=players.filter(p=>p.team===1&&p.roster?.specialCharacter).sort((a,b)=>(b.roster.spike+b.roster.set)-(a.roster.spike+a.roster.set))[0];if(actor){shown=true;current={actor,start:performance.now()};box.querySelector('strong').textContent=[actor.roster.name,actor.roster.surname].filter(Boolean).join(' ');const skill=window.PlayerSkills?.view(actor.roster,{division:window.matchInfo?.division||3}).find(s=>s.rarity==='Legendary');box.querySelector('span').textContent=skill?.name||'Rakibin kadrosunda';box.hidden=false;}}
+if(!current)return;if(performance.now()-current.start>=3400){stop();return;}ctx.save();ctx.fillStyle='#0b1c254d';ctx.fillRect(0,0,1000,620);drawPlayer(current.actor);ctx.restore();place(current.actor);
+};
+tick=function(dt){if(current){window.MatchFrames?.invalidate();return;}return previousTick(dt);};
+window.MatchRivalCallout={stop,get active(){return !!current}};
+})();

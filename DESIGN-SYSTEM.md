@@ -604,3 +604,11 @@ Kort Görüşü için son kullanıcı seçimi window_h_blur.png: circle_rings_b_
 Lab top gölgesinin son asset seçimi window_h.png (27 Ekim). Önceki circle_rings_a yerine kullanılır; kırmızı deneme rengi, eşit en-boy ve zemin konumu korunur.
 
 Animation lab’de Oyuncu tanıtımı düğmesi, aynı arena içinde oyunun gerçek MatchIntro/Rakip Dosyası bileşenini açar. Tanıtımı tekrar oynat ve Yetenek sahasına dön vardır. Önizleme index.html?rivalIntroPreview=1 ile gerçek görünümü kullanır; localStorage/sessionStorage bellekte izole edildiğinden kullanıcının oyun kaydı değişmez. Masaüstünde de 390 px mobil genişlik korunur. Doğrulama: test-rival-intro-lab.cjs ve audits/rival-intro-animation-lab.png.
+
+## Sahada küçük rakip tanıtımı, gölge hilesi ve Pancake — 27 Ekim 2026
+
+Önceki büyük Rakip Dosyası penceresi otomatik açılmaz. Özel oyuncu gerçek maç başlayınca sahadaki karakterinin yanında 172 px küçük etiketle tanıtılır; isim ve gerçek Legendary adı vardır, portreli modal yoktur. Saha hafif kararır ve o oyuncu önde kalır; 3,4 saniye boyunca ralli bekler, sonra normal devam eder. İptal tuşu vardır. Lab oyuncu tanıtımı da aynı gerçek maç katmanını kullanır.
+
+Hileler içinde Top gölgesi Siyah/Kırmızı anahtarı vardır. Tercih kaydolur, açık maç iframeine de iletilir; gerçek maçtaki top gölgesinin rengi değişir. Oyuncu gölgelerini etkilemez.
+
+Pancake vektör ve yedek çiziminde yalnız seçilen elin kol/forması manşet pozundadır, diğer kol dinlenme pozunda kalır. Kurtarış eline göre temas hizası seçilir; sol/sağ el ayrı doğrulanır. Gerçek maç ve animation lab aynı vektör poz yardımcısını kullanır. Kontroller: test-shadow-toggle-pancake.cjs ve test-rival-intro-lab.cjs.
