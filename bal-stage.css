@@ -375,3 +375,10 @@ html[data-theme=dark] #campReturnDialog .return-skill-reveal[data-rarity=rare] s
 #clubPanel>.camp-alert[hidden]{display:none!important}
 
 .camp-frame-fill{transition:stroke-dashoffset .4s ease,stroke .3s}
+/* Camp return uses the same card tier skin and local star cycle as the squad. */
+#campReturnDialog .return-player-card,html[data-theme=dark] #campReturnDialog .return-player-card{background:var(--club-paper)!important;border-color:var(--club-edge)!important;box-shadow:0 4px var(--club-shadow),0 7px 18px #35595218!important}
+#campReturnDialog .return-player-card .card-name,html[data-theme=dark] #campReturnDialog .return-player-card .card-name{background:var(--club-name)!important;color:var(--club-ink)!important}
+#campReturnDialog .return-star-track{background:var(--club-kit);border-color:var(--club-edge)}
+#campReturnDialog [data-card-tier="0"] .return-star-track{background:#f5f1e7}#campReturnDialog [data-card-tier="0"] .return-star-track img{filter:grayscale(1) brightness(.65)}
+#campReturnDialog [data-card-tier="1"] .return-star-track img{filter:grayscale(1) brightness(1.45)}#campReturnDialog [data-card-tier="3"] .return-star-track img{filter:hue-rotate(220deg) saturate(.75)}
+#campReturnDialog .return-tier-up .return-star-caption{color:var(--club-ink);font-weight:650}
