@@ -582,3 +582,7 @@ Kontroller: test-upgrade-and-rival-dossier.cjs, test-lab-shield-alternatives.cjs
 ## Kalkanın oyuncuya bağlanması — 27 Ekim 2026
 
 Lab blok kalkanları artık sabit top temas koordinatına çizilmez. Blokçunun gerçek konumuna, sıçrama yüksekliğine ve baktığı açıya bağlanır; normal kalkan oyuncunun 29 dünya birimi önündedir. İkili/üçlü blokta her blokçunun önü ayrı izlenir. shieldWhite_Edit.png üç renkli Çevre kalkanı seçeneğidir: oyuncu merkezinde 76–84 birimlik saydam koruma kabuğu olarak büyür; portreyi kapatmaz, aynı kullanıcı görseli karakterin gerisinde ve ince ön saydamlıkta kullanılır. Top en önde korunur. Ayrı bir daire çizilmez. Kanıt: audits/shield-edited-around-player.png ve güncel alternatif tablosu; test-lab-shield-alternatives.cjs merkez/ön hizasını da doğrular.
+
+## Aura ve çevre kalkanı baş merkezi — 27 Ekim 2026
+
+Lab’de üç aura ve shieldWhite_Edit çevre kalkanı, gövde/oyuncu konumu yerine native head parçasının merkezine bağlanır. Merkez, başın poz boyutu/pivot/dönüşü ve çizim anındaki gerçek canvas matrisiyle dünya koordinatına çevrilir; oyuncu açısı, beden hareketi ve sıçrama dönüşümü dahildir. Sadece elin yeniden çizildiği katman merkezi değiştirmez. Duman baş merkezinden çıkar ve eski parçalar dünya içinde dağılmayı sürdürür. Normal ön blok kalkanlarının konumu korunur.
