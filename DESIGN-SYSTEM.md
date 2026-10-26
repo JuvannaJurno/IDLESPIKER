@@ -590,3 +590,7 @@ Lab’de üç aura ve shieldWhite_Edit çevre kalkanı, gövde/oyuncu konumu yer
 ## Lab top gölgesi — 27 Ekim 2026
 
 Animation lab’de topun eski dolu elips gölgesi yerine circle_rings_a.png denenir. Görsel koyu saha gölgesine renklendirilir ve zemine yatık çizilir; top yükseldikçe biraz genişler/silikleşir. Merkez topun zemin x/y koordinatıdır, z yüksekliği gölgeyi havaya kaldırmaz. Yalnız lab srcdoc katmanına uygulanır, gerçek maçın gölgesi değişmez.
+
+## Blok kalkanı durduruldu; yeni görüş maskesi — 27 Ekim 2026
+
+Kullanıcı blok kalkanı fikrini şimdilik bıraktı: lab seçicisi ve blok efektleri kapalı, eski alternatifler yalnız arşivde. Lab’de Kort Görüşü aydınlık alanı circle_rings_b_streaks.png saydamlığıyla açılır; çevresi karanlık ve gerçek saha/oyuncu içeriği korunur. circle_rings_a.png top gölgesi artık yatık elips değil eşit en-boylu tam dairedir; zemin merkezi değişmez. Üretim maçına aktarılmadı.
