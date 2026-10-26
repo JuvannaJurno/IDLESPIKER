@@ -1,15 +1,28 @@
 {
   "version": 2,
-  "sourceHash": "0e59b04284824eade2e4ce28ff7fb7ad0b826a91443511e89c6e98889a631615",
+  "sourceHash": "e0e2c5f0bcadfae87fa8e1245ca80751d57760230352de2c2f7bd7a8041ca1ab",
   "camera": "native-mobile-minus-90",
   "fps": 30,
+  "encoding": "H264 4Mbps, 2x native raster, per-skill crop",
   "pepper": {
     "src": "assets/preview-media/boot-pepper.mp4",
     "poster": "assets/preview-media/boot-pepper.png",
     "width": 640,
     "height": 520,
-    "duration": 8.4277,
-    "revision": "91a295cab3772a76"
+    "duration": 12.4978,
+    "crop": null,
+    "endProgress": null,
+    "revision": "cc47f9ada726d921"
+  },
+  "pepperReverse": {
+    "src": "assets/preview-media/boot-pepper-reverse.mp4",
+    "poster": "assets/preview-media/boot-pepper-reverse.png",
+    "width": 640,
+    "height": 520,
+    "duration": 12.462033,
+    "crop": null,
+    "endProgress": null,
+    "revision": "db0be97f175fb14d"
   },
   "clips": {
     "sky-ball-serve": {
@@ -17,166 +30,165 @@
       "poster": "assets/preview-media/sky-ball-serve.png",
       "width": 720,
       "height": 900,
-      "duration": 5.317967,
-      "revision": "85d157f96fd88590",
+      "duration": 6.8644,
       "crop": [
         0,
-        250,
-        440,
-        352
+        40,
+        650,
+        520
       ],
-      "endProgress": 0.62
+      "endProgress": 0.94,
+      "revision": "23acd327389af225"
     },
     "jump-legendary": {
       "src": "assets/preview-media/jump-legendary.mp4",
       "poster": "assets/preview-media/jump-legendary.png",
       "width": 720,
       "height": 900,
-      "duration": 5.4402,
-      "revision": "b7fd7e0022a39264",
+      "duration": 6.898833,
       "crop": [
         0,
-        250,
-        400,
-        320
+        70,
+        650,
+        520
       ],
-      "endProgress": 0.48
+      "endProgress": 0.62,
+      "revision": "24c5b55b79949540"
     },
     "jump-float-legendary": {
       "src": "assets/preview-media/jump-float-legendary.mp4",
       "poster": "assets/preview-media/jump-float-legendary.png",
       "width": 720,
       "height": 900,
-      "duration": 5.3788,
-      "revision": "9a6e0edf6a6f9f86",
+      "duration": 6.893333,
       "crop": [
         0,
-        250,
-        440,
-        352
+        40,
+        650,
+        520
       ],
-      "endProgress": 0.62
+      "endProgress": 0.96,
+      "revision": "03a44a41b80a55b3"
     },
     "sync-attack": {
       "src": "assets/preview-media/sync-attack.mp4",
       "poster": "assets/preview-media/sync-attack.png",
       "width": 720,
       "height": 900,
-      "duration": 5.525067,
-      "revision": "cc805d2d9be4d467",
+      "duration": 7.135167,
       "crop": [
-        220,
-        70,
-        600,
-        480
+        200,
+        40,
+        700,
+        560
       ],
-      "endProgress": 0.88
+      "endProgress": 0.94,
+      "revision": "571fed9fa08539f9"
     },
     "tempo-minus": {
       "src": "assets/preview-media/tempo-minus.mp4",
       "poster": "assets/preview-media/tempo-minus.png",
       "width": 720,
       "height": 900,
-      "duration": 5.2864,
-      "revision": "4a6466caed2e5761",
+      "duration": 6.639767,
       "crop": [
-        300,
-        200,
-        400,
-        320
+        260,
+        10,
+        640,
+        512
       ],
-      "endProgress": 0.64
+      "endProgress": 0.94,
+      "revision": "3f7fbe702acfe4c6"
     },
     "absolute-read": {
       "src": "assets/preview-media/absolute-read.mp4",
       "poster": "assets/preview-media/absolute-read.png",
       "width": 720,
       "height": 900,
-      "duration": 5.474067,
-      "revision": "768f0f19241cd2d7",
+      "duration": 6.815867,
       "crop": [
-        330,
-        100,
-        500,
-        400
+        260,
+        40,
+        600,
+        480
       ],
-      "endProgress": 0.82
+      "endProgress": 0.94,
+      "revision": "8552128f94904978"
     },
     "perfect-second-touch": {
       "src": "assets/preview-media/perfect-second-touch.mp4",
       "poster": "assets/preview-media/perfect-second-touch.png",
       "width": 720,
       "height": 900,
-      "duration": 5.3019,
-      "revision": "6367c97b54283c73",
+      "duration": 6.735033,
       "crop": [
-        140,
-        200,
-        440,
-        352
+        100,
+        20,
+        700,
+        560
       ],
-      "endProgress": 0.75
+      "endProgress": 0.96,
+      "revision": "6315177ea124f6a4"
     },
     "one-hand-rescue": {
       "src": "assets/preview-media/one-hand-rescue.mp4",
       "poster": "assets/preview-media/one-hand-rescue.png",
       "width": 720,
       "height": 900,
-      "duration": 5.317667,
-      "revision": "537a3648fb5d0218",
+      "duration": 6.5424,
       "crop": [
         100,
-        60,
-        400,
-        320
+        20,
+        700,
+        560
       ],
-      "endProgress": 0.75
+      "endProgress": 0.96,
+      "revision": "0fcac59cfe00ffdc"
     },
     "pancake": {
       "src": "assets/preview-media/pancake.mp4",
       "poster": "assets/preview-media/pancake.png",
       "width": 720,
       "height": 900,
-      "duration": 5.3085,
-      "revision": "7f99fa95b3af1c61",
+      "duration": 6.543367,
       "crop": [
-        150,
-        240,
-        440,
-        352
+        120,
+        40,
+        650,
+        520
       ],
-      "endProgress": 0.76
+      "endProgress": 0.96,
+      "revision": "3fc69da9c5547eac"
     },
     "ghost-tip": {
       "src": "assets/preview-media/ghost-tip.mp4",
       "poster": "assets/preview-media/ghost-tip.png",
       "width": 720,
       "height": 900,
-      "duration": 5.279567,
-      "revision": "4b541bae22c3c32d",
+      "duration": 6.569733,
       "crop": [
-        330,
-        100,
-        400,
-        320
+        260,
+        40,
+        600,
+        480
       ],
-      "endProgress": 0.82
+      "endProgress": 0.94,
+      "revision": "230c17cd4721c538"
     },
     "team-heart": {
       "src": "assets/preview-media/team-heart.mp4",
       "poster": "assets/preview-media/team-heart.png",
       "width": 720,
       "height": 900,
-      "duration": 5.403633,
-      "revision": "7e6c24da1b4b6074",
+      "duration": 6.700467,
       "crop": [
         140,
         150,
         400,
         320
       ],
-      "endProgress": 0.85
+      "endProgress": 0.85,
+      "revision": "7a1310ff908fda8d"
     }
-  },
-  "encoding": "H264 4Mbps, 2x native raster, per-skill crop"
+  }
 }

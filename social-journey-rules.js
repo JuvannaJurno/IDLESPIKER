@@ -1,14 +1,14 @@
 (function(root){'use strict';
 const milestones=[
-{at:250,title:'İlk topluluğumuz',reward:'Başarım + bütçe desteği',kind:'cash',factor:1,icon:'✦'},
+{at:250,title:'İlk topluluğumuz',reward:'Bütçe desteği',kind:'cash',factor:1,icon:'✦'},
 {at:500,title:'İlk izimiz',reward:'Bronz profil çerçevesi',kind:'bronze',icon:'◈'},
 {at:1000,title:'Birlikte büyüyoruz',reward:'İkinci medya hattı · Paylaşım dalgası +%25 · Sayı müziği + bütçe desteği',kind:'cash',factor:3,icon:'▣'},
 {at:2500,title:'Yeni bir forma',reward:'Bir transferde %10 indirim',kind:'transfer',icon:'↗'},
 {at:5000,title:'Tribündeki sesimiz',reward:"Beethoven's Symphony No. 5 in C minor, Op. 67 + Gümüş çerçeve + Işıklar arka planı",kind:'silver',icon:'◈'},
 {at:10000,title:'Daha güçlü dön',reward:'Bir kampın başlangıç bütçesinde %25 indirim',kind:'camp',icon:'⚑'},
-{at:15000,title:'Büyük destek',reward:'Sponsor anlaşması + büyük bütçe desteği',kind:'cash',factor:8,icon:'▣'},
+{at:15000,title:'Büyük destek',reward:'Bütçe desteği',kind:'cash',factor:8,icon:'▣'},
 {at:25000,title:'Aynı renklerin peşinde',reward:'Altın çerçeve + özel taraftar paylaşımı',kind:'gold',icon:'★'},
-{at:40000,title:'Sesimiz arenada',reward:'Arena sponsoru kutlaması + Arena teması',kind:'arena',icon:'✧'}];
+{at:40000,title:'Sesimiz arenada',reward:'Arena teması',kind:'arena',icon:'✧'}];
 const courtPacks=[
 {at:2500,name:'Doğal zeminler',courts:[{id:'maple',name:'Açık akçaağaç',floor:'#edd5aa',surround:'#658e90',pattern:'wood'},{id:'sage',name:'Adaçayı',floor:'#c6cfac',surround:'#6f8f83',pattern:'panels'}]},
 {at:5000,name:'Serin arena',courts:[{id:'night',name:'Gece mavisi',floor:'#93b5c2',surround:'#354f70'},{id:'ice',name:'Buz beyazı',floor:'#e0e7e0',surround:'#688797'}]},

@@ -80,10 +80,10 @@ function cue(kind){
  if(!allowed()||mode!=='match'||performance.now()-lastSqueak<280)return;
  lastSqueak=performance.now();shot(kind==='jump'?'jump'+(1+Math.floor(Math.random()*3)):kind,.4,kind==='approach'?1.1:.6);
 }
-function point(big=false,team=null){
+function point(big=false,team=null,musicId=null){
  if(mode!=='match')return;rallyActive=false;cancelFade(bed);sync();
  if(!allowed()||mode!=='match')return;
- ownPointMusicCount++;if(ownPointMusicCount%2===0)playPointMusic(window.PlayerProfile?.track());else stopPointMusic();
+ ownPointMusicCount++;const id=musicId??(team===1?'':window.MatchPointMusic?.next(window.PlayerProfile?.selectedMusic?.(),ownPointMusicCount));const track=window.PointMusicCatalog?.find(t=>t.id===id);if(track)playPointMusic(track);else stopPointMusic();
  shot('whistleShort',.6);
  if(big){const t=setTimeout(()=>{timers.delete(t);shot('whistleLong',.65)},520);timers.add(t)}
  for(const v of [...cheers,...legendaryCheers])stop(v);
@@ -100,7 +100,7 @@ const clubPanel=document.getElementById('clubPanel');if(clubPanel)new MutationOb
 window.addEventListener('blur',()=>{stopDrawNotes();criticalClicks.forEach(stop);stopSkillSlow();stop(heartbeatSound);});
 document.addEventListener('visibilitychange',sync);window.addEventListener('pageshow',sync);
 window.addEventListener('pagehide',()=>{stopDrawNotes();for(const v of voices)stop(v);clearShots()});
-window.addEventListener('message',e=>{const frame=document.getElementById('gameMatchFrame');if(mode!=='match'||!frame||e.source!==frame.contentWindow||e.data?.type!=='spiker-audio')return;const d=e.data;if(d.action==='hit'&& (d.kind?.startsWith('slot-')||['hard','soft','toss','tip','netball_1','netball_hard','floorslam','veryhardball','hardfloorslam','floorslam_2','floorslam_hard','whoosh','whoosh-stop'].includes(d.kind)))hit(d.kind);if(d.action==='cue'&&['serve','bounce','approach','jump','set','heart-pling'].includes(d.kind))cue(d.kind);if(d.action==='point')point(!!d.big,d.team);if(d.action==='legendary-point')legendaryPoint();if(d.action==='pause')GameAudio.setPaused(d.value);if(d.action==='finish')GameAudio.finish();if(d.action==='heartbeat')heartbeat();if(d.action==='heartbeat-stop')stopHeartbeat();if(d.action==='skill-slow')skillSlow();if(d.action==='skill-slow-stop')stopSkillSlow();if(d.action==='unlock')sync()});
+window.addEventListener('message',e=>{const frame=document.getElementById('gameMatchFrame');if(mode!=='match'||!frame||e.source!==frame.contentWindow||e.data?.type!=='spiker-audio')return;const d=e.data;if(d.action==='hit'&& (d.kind?.startsWith('slot-')||['hard','soft','toss','tip','netball_1','netball_hard','floorslam','veryhardball','hardfloorslam','floorslam_2','floorslam_hard','whoosh','whoosh-stop'].includes(d.kind)))hit(d.kind);if(d.action==='cue'&&['serve','bounce','approach','jump','set','heart-pling'].includes(d.kind))cue(d.kind);if(d.action==='point')point(!!d.big,d.team,d.musicId);if(d.action==='legendary-point')legendaryPoint();if(d.action==='pause')GameAudio.setPaused(d.value);if(d.action==='finish')GameAudio.finish();if(d.action==='heartbeat')heartbeat();if(d.action==='heartbeat-stop')stopHeartbeat();if(d.action==='skill-slow')skillSlow();if(d.action==='skill-slow-stop')stopSkillSlow();if(d.action==='unlock')sync()});
 for(const key of ['music','crowd','effects']){const input=document.getElementById('volume-'+key);if(!input)continue;input.value=Math.round(levels[key]*100);input.oninput=()=>{levels[key]=Number(input.value)/100;for(const v of voices){const f=v.fade,t=f?Math.min(1,(performance.now()-f.start)/1500):0;v.a.volume=levels[v.group]*v.scale*(f?f.gain*(1-t)*(1-t):1)}try{localStorage.setItem('idle-spiker-mix',JSON.stringify(levels))}catch{}}}
 // Recover a stalled background track without waiting for another score or click.
 setInterval(sync,2000);sync();
