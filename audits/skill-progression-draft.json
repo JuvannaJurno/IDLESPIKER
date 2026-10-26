@@ -5,7 +5,7 @@
     {
       "cashPerDay": 4700,
       "budgetDays": 14.893617021276595,
-      "minimumWallMinutes": 32.51045296167248,
+      "minimumWallMinutes": 32.75578300425862,
       "division": 2,
       "target": 4,
       "startingCamps": [
@@ -18,7 +18,7 @@
         0
       ],
       "players": 7,
-      "cardAP": 320892,
+      "cardAP": 331031,
       "campAP": 1022700,
       "campCash": 70000,
       "upgrades": 112,
@@ -27,8 +27,8 @@
       "sampleAutoAP": 60,
       "sampleAutoRate": 11.479999999999999,
       "apPerGameDay": 30000,
-      "resourceDays": 44.7864,
-      "lowerBoundGameDays": 44.7864,
+      "resourceDays": 45.12436666666667,
+      "lowerBoundGameDays": 45.12436666666667,
       "levels": [
         17,
         17,
@@ -64,7 +64,7 @@
         4
       ],
       "players": 7,
-      "cardAP": 2670363,
+      "cardAP": 2858264,
       "campAP": 9273600,
       "campCash": 182000,
       "upgrades": 84,
@@ -73,7 +73,7 @@
       "sampleAutoAP": 1560,
       "sampleAutoRate": 21.559999999999995,
       "apPerGameDay": 3900000,
-      "resourceDays": 3.0625546153846153,
+      "resourceDays": 3.110734358974359,
       "lowerBoundGameDays": 10,
       "levels": [
         29,
@@ -97,7 +97,7 @@
     {
       "cashPerDay": 56000,
       "budgetDays": 8.625,
-      "minimumWallMinutes": 56.597988816738834,
+      "minimumWallMinutes": 59.35358094286667,
       "division": 4,
       "target": 14,
       "startingCamps": [
@@ -110,7 +110,7 @@
         8
       ],
       "players": 7,
-      "cardAP": 46764347,
+      "cardAP": 52325176,
       "campAP": 67451300,
       "campCash": 483000,
       "upgrades": 126,
@@ -119,8 +119,8 @@
       "sampleAutoAP": 1560,
       "sampleAutoRate": 21.559999999999995,
       "apPerGameDay": 3900000,
-      "resourceDays": 29.286063333333335,
-      "lowerBoundGameDays": 29.286063333333335,
+      "resourceDays": 30.711916923076924,
+      "lowerBoundGameDays": 30.711916923076924,
       "levels": [
         47,
         47,
@@ -143,7 +143,7 @@
     {
       "cashPerDay": 56000,
       "budgetDays": 8.25,
-      "minimumWallMinutes": 144.2280497280498,
+      "minimumWallMinutes": 157.64192157049305,
       "division": 5,
       "target": 18,
       "startingCamps": [
@@ -156,7 +156,7 @@
         14
       ],
       "players": 7,
-      "cardAP": 170153312,
+      "cardAP": 197222720,
       "campAP": 120901200,
       "campCash": 462000,
       "upgrades": 84,
@@ -165,8 +165,8 @@
       "sampleAutoAP": 1560,
       "sampleAutoRate": 21.559999999999995,
       "apPerGameDay": 3900000,
-      "resourceDays": 74.62936205128206,
-      "lowerBoundGameDays": 74.62936205128206,
+      "resourceDays": 81.5702358974359,
+      "lowerBoundGameDays": 81.5702358974359,
       "levels": [
         59,
         59,

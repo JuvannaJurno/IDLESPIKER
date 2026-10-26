@@ -1,0 +1,1581 @@
+{
+  "checks": 875,
+  "levelChecks": 160780,
+  "rows": [
+    {
+      "division": 2,
+      "camps": 0,
+      "tier": "Siyah",
+      "stars": 0,
+      "statCap": 100,
+      "levelCap": 28,
+      "preparation": 8
+    },
+    {
+      "division": 2,
+      "camps": 1,
+      "tier": "Siyah",
+      "stars": 0.5,
+      "statCap": 130,
+      "levelCap": 38,
+      "preparation": 11
+    },
+    {
+      "division": 2,
+      "camps": 2,
+      "tier": "Siyah",
+      "stars": 1,
+      "statCap": 160,
+      "levelCap": 48,
+      "preparation": 14
+    },
+    {
+      "division": 2,
+      "camps": 3,
+      "tier": "Siyah",
+      "stars": 1.5,
+      "statCap": 190,
+      "levelCap": 58,
+      "preparation": 17
+    },
+    {
+      "division": 2,
+      "camps": 4,
+      "tier": "Siyah",
+      "stars": 2,
+      "statCap": 220,
+      "levelCap": 68,
+      "preparation": 20
+    },
+    {
+      "division": 2,
+      "camps": 5,
+      "tier": "Siyah",
+      "stars": 2.5,
+      "statCap": 250,
+      "levelCap": 78,
+      "preparation": 23
+    },
+    {
+      "division": 2,
+      "camps": 6,
+      "tier": "Gümüş",
+      "stars": 0,
+      "statCap": 280,
+      "levelCap": 88,
+      "preparation": 26
+    },
+    {
+      "division": 2,
+      "camps": 7,
+      "tier": "Gümüş",
+      "stars": 0.5,
+      "statCap": 310,
+      "levelCap": 98,
+      "preparation": 29
+    },
+    {
+      "division": 2,
+      "camps": 8,
+      "tier": "Gümüş",
+      "stars": 1,
+      "statCap": 340,
+      "levelCap": 108,
+      "preparation": 32
+    },
+    {
+      "division": 2,
+      "camps": 9,
+      "tier": "Gümüş",
+      "stars": 1.5,
+      "statCap": 370,
+      "levelCap": 118,
+      "preparation": 35
+    },
+    {
+      "division": 2,
+      "camps": 10,
+      "tier": "Gümüş",
+      "stars": 2,
+      "statCap": 400,
+      "levelCap": 128,
+      "preparation": 38
+    },
+    {
+      "division": 2,
+      "camps": 11,
+      "tier": "Gümüş",
+      "stars": 2.5,
+      "statCap": 430,
+      "levelCap": 138,
+      "preparation": 41
+    },
+    {
+      "division": 2,
+      "camps": 12,
+      "tier": "Altın",
+      "stars": 0,
+      "statCap": 460,
+      "levelCap": 148,
+      "preparation": 44
+    },
+    {
+      "division": 2,
+      "camps": 13,
+      "tier": "Altın",
+      "stars": 0.5,
+      "statCap": 490,
+      "levelCap": 158,
+      "preparation": 47
+    },
+    {
+      "division": 2,
+      "camps": 14,
+      "tier": "Altın",
+      "stars": 1,
+      "statCap": 520,
+      "levelCap": 168,
+      "preparation": 50
+    },
+    {
+      "division": 2,
+      "camps": 15,
+      "tier": "Altın",
+      "stars": 1.5,
+      "statCap": 550,
+      "levelCap": 178,
+      "preparation": 53
+    },
+    {
+      "division": 2,
+      "camps": 16,
+      "tier": "Altın",
+      "stars": 2,
+      "statCap": 580,
+      "levelCap": 188,
+      "preparation": 56
+    },
+    {
+      "division": 2,
+      "camps": 17,
+      "tier": "Altın",
+      "stars": 2.5,
+      "statCap": 610,
+      "levelCap": 198,
+      "preparation": 59
+    },
+    {
+      "division": 2,
+      "camps": 18,
+      "tier": "Mor",
+      "stars": 0,
+      "statCap": 640,
+      "levelCap": 208,
+      "preparation": 62
+    },
+    {
+      "division": 2,
+      "camps": 19,
+      "tier": "Mor",
+      "stars": 0.5,
+      "statCap": 670,
+      "levelCap": 218,
+      "preparation": 65
+    },
+    {
+      "division": 2,
+      "camps": 20,
+      "tier": "Mor",
+      "stars": 1,
+      "statCap": 700,
+      "levelCap": 228,
+      "preparation": 68
+    },
+    {
+      "division": 2,
+      "camps": 21,
+      "tier": "Mor",
+      "stars": 1.5,
+      "statCap": 730,
+      "levelCap": 238,
+      "preparation": 71
+    },
+    {
+      "division": 2,
+      "camps": 22,
+      "tier": "Mor",
+      "stars": 2,
+      "statCap": 760,
+      "levelCap": 248,
+      "preparation": 74
+    },
+    {
+      "division": 2,
+      "camps": 23,
+      "tier": "Mor",
+      "stars": 2.5,
+      "statCap": 790,
+      "levelCap": 258,
+      "preparation": 77
+    },
+    {
+      "division": 2,
+      "camps": 24,
+      "tier": "Mor",
+      "stars": 3,
+      "statCap": 820,
+      "levelCap": 268,
+      "preparation": 80
+    },
+    {
+      "division": 3,
+      "camps": 0,
+      "tier": "Siyah",
+      "stars": 0,
+      "statCap": 160,
+      "levelCap": 48,
+      "preparation": 8
+    },
+    {
+      "division": 3,
+      "camps": 1,
+      "tier": "Siyah",
+      "stars": 0.5,
+      "statCap": 190,
+      "levelCap": 58,
+      "preparation": 11
+    },
+    {
+      "division": 3,
+      "camps": 2,
+      "tier": "Siyah",
+      "stars": 1,
+      "statCap": 220,
+      "levelCap": 68,
+      "preparation": 14
+    },
+    {
+      "division": 3,
+      "camps": 3,
+      "tier": "Siyah",
+      "stars": 1.5,
+      "statCap": 250,
+      "levelCap": 78,
+      "preparation": 17
+    },
+    {
+      "division": 3,
+      "camps": 4,
+      "tier": "Siyah",
+      "stars": 2,
+      "statCap": 280,
+      "levelCap": 94,
+      "preparation": 20
+    },
+    {
+      "division": 3,
+      "camps": 5,
+      "tier": "Siyah",
+      "stars": 2.5,
+      "statCap": 310,
+      "levelCap": 104,
+      "preparation": 23
+    },
+    {
+      "division": 3,
+      "camps": 6,
+      "tier": "Gümüş",
+      "stars": 0,
+      "statCap": 340,
+      "levelCap": 114,
+      "preparation": 26
+    },
+    {
+      "division": 3,
+      "camps": 7,
+      "tier": "Gümüş",
+      "stars": 0.5,
+      "statCap": 370,
+      "levelCap": 124,
+      "preparation": 29
+    },
+    {
+      "division": 3,
+      "camps": 8,
+      "tier": "Gümüş",
+      "stars": 1,
+      "statCap": 400,
+      "levelCap": 134,
+      "preparation": 32
+    },
+    {
+      "division": 3,
+      "camps": 9,
+      "tier": "Gümüş",
+      "stars": 1.5,
+      "statCap": 430,
+      "levelCap": 144,
+      "preparation": 35
+    },
+    {
+      "division": 3,
+      "camps": 10,
+      "tier": "Gümüş",
+      "stars": 2,
+      "statCap": 460,
+      "levelCap": 154,
+      "preparation": 38
+    },
+    {
+      "division": 3,
+      "camps": 11,
+      "tier": "Gümüş",
+      "stars": 2.5,
+      "statCap": 490,
+      "levelCap": 164,
+      "preparation": 41
+    },
+    {
+      "division": 3,
+      "camps": 12,
+      "tier": "Altın",
+      "stars": 0,
+      "statCap": 520,
+      "levelCap": 174,
+      "preparation": 44
+    },
+    {
+      "division": 3,
+      "camps": 13,
+      "tier": "Altın",
+      "stars": 0.5,
+      "statCap": 550,
+      "levelCap": 184,
+      "preparation": 47
+    },
+    {
+      "division": 3,
+      "camps": 14,
+      "tier": "Altın",
+      "stars": 1,
+      "statCap": 580,
+      "levelCap": 194,
+      "preparation": 50
+    },
+    {
+      "division": 3,
+      "camps": 15,
+      "tier": "Altın",
+      "stars": 1.5,
+      "statCap": 610,
+      "levelCap": 204,
+      "preparation": 53
+    },
+    {
+      "division": 3,
+      "camps": 16,
+      "tier": "Altın",
+      "stars": 2,
+      "statCap": 640,
+      "levelCap": 214,
+      "preparation": 56
+    },
+    {
+      "division": 3,
+      "camps": 17,
+      "tier": "Altın",
+      "stars": 2.5,
+      "statCap": 670,
+      "levelCap": 224,
+      "preparation": 59
+    },
+    {
+      "division": 3,
+      "camps": 18,
+      "tier": "Mor",
+      "stars": 0,
+      "statCap": 700,
+      "levelCap": 234,
+      "preparation": 62
+    },
+    {
+      "division": 3,
+      "camps": 19,
+      "tier": "Mor",
+      "stars": 0.5,
+      "statCap": 730,
+      "levelCap": 244,
+      "preparation": 65
+    },
+    {
+      "division": 3,
+      "camps": 20,
+      "tier": "Mor",
+      "stars": 1,
+      "statCap": 760,
+      "levelCap": 254,
+      "preparation": 68
+    },
+    {
+      "division": 3,
+      "camps": 21,
+      "tier": "Mor",
+      "stars": 1.5,
+      "statCap": 790,
+      "levelCap": 264,
+      "preparation": 71
+    },
+    {
+      "division": 3,
+      "camps": 22,
+      "tier": "Mor",
+      "stars": 2,
+      "statCap": 820,
+      "levelCap": 274,
+      "preparation": 74
+    },
+    {
+      "division": 3,
+      "camps": 23,
+      "tier": "Mor",
+      "stars": 2.5,
+      "statCap": 850,
+      "levelCap": 284,
+      "preparation": 77
+    },
+    {
+      "division": 3,
+      "camps": 24,
+      "tier": "Mor",
+      "stars": 3,
+      "statCap": 880,
+      "levelCap": 294,
+      "preparation": 80
+    },
+    {
+      "division": 4,
+      "camps": 0,
+      "tier": "Siyah",
+      "stars": 0,
+      "statCap": 220,
+      "levelCap": 68,
+      "preparation": 8
+    },
+    {
+      "division": 4,
+      "camps": 1,
+      "tier": "Siyah",
+      "stars": 0.5,
+      "statCap": 250,
+      "levelCap": 78,
+      "preparation": 11
+    },
+    {
+      "division": 4,
+      "camps": 2,
+      "tier": "Siyah",
+      "stars": 1,
+      "statCap": 280,
+      "levelCap": 88,
+      "preparation": 14
+    },
+    {
+      "division": 4,
+      "camps": 3,
+      "tier": "Siyah",
+      "stars": 1.5,
+      "statCap": 310,
+      "levelCap": 98,
+      "preparation": 17
+    },
+    {
+      "division": 4,
+      "camps": 4,
+      "tier": "Siyah",
+      "stars": 2,
+      "statCap": 340,
+      "levelCap": 114,
+      "preparation": 20
+    },
+    {
+      "division": 4,
+      "camps": 5,
+      "tier": "Siyah",
+      "stars": 2.5,
+      "statCap": 370,
+      "levelCap": 124,
+      "preparation": 23
+    },
+    {
+      "division": 4,
+      "camps": 6,
+      "tier": "Gümüş",
+      "stars": 0,
+      "statCap": 400,
+      "levelCap": 134,
+      "preparation": 26
+    },
+    {
+      "division": 4,
+      "camps": 7,
+      "tier": "Gümüş",
+      "stars": 0.5,
+      "statCap": 430,
+      "levelCap": 144,
+      "preparation": 29
+    },
+    {
+      "division": 4,
+      "camps": 8,
+      "tier": "Gümüş",
+      "stars": 1,
+      "statCap": 460,
+      "levelCap": 154,
+      "preparation": 32
+    },
+    {
+      "division": 4,
+      "camps": 9,
+      "tier": "Gümüş",
+      "stars": 1.5,
+      "statCap": 490,
+      "levelCap": 164,
+      "preparation": 35
+    },
+    {
+      "division": 4,
+      "camps": 10,
+      "tier": "Gümüş",
+      "stars": 2,
+      "statCap": 520,
+      "levelCap": 174,
+      "preparation": 38
+    },
+    {
+      "division": 4,
+      "camps": 11,
+      "tier": "Gümüş",
+      "stars": 2.5,
+      "statCap": 550,
+      "levelCap": 184,
+      "preparation": 41
+    },
+    {
+      "division": 4,
+      "camps": 12,
+      "tier": "Altın",
+      "stars": 0,
+      "statCap": 580,
+      "levelCap": 194,
+      "preparation": 44
+    },
+    {
+      "division": 4,
+      "camps": 13,
+      "tier": "Altın",
+      "stars": 0.5,
+      "statCap": 610,
+      "levelCap": 204,
+      "preparation": 47
+    },
+    {
+      "division": 4,
+      "camps": 14,
+      "tier": "Altın",
+      "stars": 1,
+      "statCap": 640,
+      "levelCap": 214,
+      "preparation": 50
+    },
+    {
+      "division": 4,
+      "camps": 15,
+      "tier": "Altın",
+      "stars": 1.5,
+      "statCap": 670,
+      "levelCap": 224,
+      "preparation": 53
+    },
+    {
+      "division": 4,
+      "camps": 16,
+      "tier": "Altın",
+      "stars": 2,
+      "statCap": 700,
+      "levelCap": 234,
+      "preparation": 56
+    },
+    {
+      "division": 4,
+      "camps": 17,
+      "tier": "Altın",
+      "stars": 2.5,
+      "statCap": 730,
+      "levelCap": 244,
+      "preparation": 59
+    },
+    {
+      "division": 4,
+      "camps": 18,
+      "tier": "Mor",
+      "stars": 0,
+      "statCap": 760,
+      "levelCap": 254,
+      "preparation": 62
+    },
+    {
+      "division": 4,
+      "camps": 19,
+      "tier": "Mor",
+      "stars": 0.5,
+      "statCap": 790,
+      "levelCap": 264,
+      "preparation": 65
+    },
+    {
+      "division": 4,
+      "camps": 20,
+      "tier": "Mor",
+      "stars": 1,
+      "statCap": 820,
+      "levelCap": 274,
+      "preparation": 68
+    },
+    {
+      "division": 4,
+      "camps": 21,
+      "tier": "Mor",
+      "stars": 1.5,
+      "statCap": 850,
+      "levelCap": 284,
+      "preparation": 71
+    },
+    {
+      "division": 4,
+      "camps": 22,
+      "tier": "Mor",
+      "stars": 2,
+      "statCap": 880,
+      "levelCap": 294,
+      "preparation": 74
+    },
+    {
+      "division": 4,
+      "camps": 23,
+      "tier": "Mor",
+      "stars": 2.5,
+      "statCap": 910,
+      "levelCap": 304,
+      "preparation": 77
+    },
+    {
+      "division": 4,
+      "camps": 24,
+      "tier": "Mor",
+      "stars": 3,
+      "statCap": 940,
+      "levelCap": 314,
+      "preparation": 80
+    },
+    {
+      "division": 5,
+      "camps": 0,
+      "tier": "Siyah",
+      "stars": 0,
+      "statCap": 220,
+      "levelCap": 68,
+      "preparation": 8
+    },
+    {
+      "division": 5,
+      "camps": 1,
+      "tier": "Siyah",
+      "stars": 0.5,
+      "statCap": 250,
+      "levelCap": 78,
+      "preparation": 11
+    },
+    {
+      "division": 5,
+      "camps": 2,
+      "tier": "Siyah",
+      "stars": 1,
+      "statCap": 280,
+      "levelCap": 88,
+      "preparation": 14
+    },
+    {
+      "division": 5,
+      "camps": 3,
+      "tier": "Siyah",
+      "stars": 1.5,
+      "statCap": 310,
+      "levelCap": 98,
+      "preparation": 17
+    },
+    {
+      "division": 5,
+      "camps": 4,
+      "tier": "Siyah",
+      "stars": 2,
+      "statCap": 340,
+      "levelCap": 114,
+      "preparation": 20
+    },
+    {
+      "division": 5,
+      "camps": 5,
+      "tier": "Siyah",
+      "stars": 2.5,
+      "statCap": 370,
+      "levelCap": 124,
+      "preparation": 23
+    },
+    {
+      "division": 5,
+      "camps": 6,
+      "tier": "Gümüş",
+      "stars": 0,
+      "statCap": 400,
+      "levelCap": 134,
+      "preparation": 26
+    },
+    {
+      "division": 5,
+      "camps": 7,
+      "tier": "Gümüş",
+      "stars": 0.5,
+      "statCap": 430,
+      "levelCap": 144,
+      "preparation": 29
+    },
+    {
+      "division": 5,
+      "camps": 8,
+      "tier": "Gümüş",
+      "stars": 1,
+      "statCap": 460,
+      "levelCap": 154,
+      "preparation": 32
+    },
+    {
+      "division": 5,
+      "camps": 9,
+      "tier": "Gümüş",
+      "stars": 1.5,
+      "statCap": 490,
+      "levelCap": 164,
+      "preparation": 35
+    },
+    {
+      "division": 5,
+      "camps": 10,
+      "tier": "Gümüş",
+      "stars": 2,
+      "statCap": 520,
+      "levelCap": 174,
+      "preparation": 38
+    },
+    {
+      "division": 5,
+      "camps": 11,
+      "tier": "Gümüş",
+      "stars": 2.5,
+      "statCap": 550,
+      "levelCap": 184,
+      "preparation": 41
+    },
+    {
+      "division": 5,
+      "camps": 12,
+      "tier": "Altın",
+      "stars": 0,
+      "statCap": 580,
+      "levelCap": 194,
+      "preparation": 44
+    },
+    {
+      "division": 5,
+      "camps": 13,
+      "tier": "Altın",
+      "stars": 0.5,
+      "statCap": 610,
+      "levelCap": 204,
+      "preparation": 47
+    },
+    {
+      "division": 5,
+      "camps": 14,
+      "tier": "Altın",
+      "stars": 1,
+      "statCap": 640,
+      "levelCap": 214,
+      "preparation": 50
+    },
+    {
+      "division": 5,
+      "camps": 15,
+      "tier": "Altın",
+      "stars": 1.5,
+      "statCap": 670,
+      "levelCap": 224,
+      "preparation": 53
+    },
+    {
+      "division": 5,
+      "camps": 16,
+      "tier": "Altın",
+      "stars": 2,
+      "statCap": 700,
+      "levelCap": 234,
+      "preparation": 56
+    },
+    {
+      "division": 5,
+      "camps": 17,
+      "tier": "Altın",
+      "stars": 2.5,
+      "statCap": 730,
+      "levelCap": 244,
+      "preparation": 59
+    },
+    {
+      "division": 5,
+      "camps": 18,
+      "tier": "Mor",
+      "stars": 0,
+      "statCap": 760,
+      "levelCap": 254,
+      "preparation": 62
+    },
+    {
+      "division": 5,
+      "camps": 19,
+      "tier": "Mor",
+      "stars": 0.5,
+      "statCap": 790,
+      "levelCap": 264,
+      "preparation": 65
+    },
+    {
+      "division": 5,
+      "camps": 20,
+      "tier": "Mor",
+      "stars": 1,
+      "statCap": 820,
+      "levelCap": 274,
+      "preparation": 68
+    },
+    {
+      "division": 5,
+      "camps": 21,
+      "tier": "Mor",
+      "stars": 1.5,
+      "statCap": 850,
+      "levelCap": 284,
+      "preparation": 71
+    },
+    {
+      "division": 5,
+      "camps": 22,
+      "tier": "Mor",
+      "stars": 2,
+      "statCap": 880,
+      "levelCap": 294,
+      "preparation": 74
+    },
+    {
+      "division": 5,
+      "camps": 23,
+      "tier": "Mor",
+      "stars": 2.5,
+      "statCap": 910,
+      "levelCap": 304,
+      "preparation": 77
+    },
+    {
+      "division": 5,
+      "camps": 24,
+      "tier": "Mor",
+      "stars": 3,
+      "statCap": 940,
+      "levelCap": 314,
+      "preparation": 80
+    },
+    {
+      "division": 6,
+      "camps": 0,
+      "tier": "Siyah",
+      "stars": 0,
+      "statCap": 220,
+      "levelCap": 68,
+      "preparation": 8
+    },
+    {
+      "division": 6,
+      "camps": 1,
+      "tier": "Siyah",
+      "stars": 0.5,
+      "statCap": 250,
+      "levelCap": 78,
+      "preparation": 11
+    },
+    {
+      "division": 6,
+      "camps": 2,
+      "tier": "Siyah",
+      "stars": 1,
+      "statCap": 280,
+      "levelCap": 88,
+      "preparation": 14
+    },
+    {
+      "division": 6,
+      "camps": 3,
+      "tier": "Siyah",
+      "stars": 1.5,
+      "statCap": 310,
+      "levelCap": 98,
+      "preparation": 17
+    },
+    {
+      "division": 6,
+      "camps": 4,
+      "tier": "Siyah",
+      "stars": 2,
+      "statCap": 340,
+      "levelCap": 114,
+      "preparation": 20
+    },
+    {
+      "division": 6,
+      "camps": 5,
+      "tier": "Siyah",
+      "stars": 2.5,
+      "statCap": 370,
+      "levelCap": 124,
+      "preparation": 23
+    },
+    {
+      "division": 6,
+      "camps": 6,
+      "tier": "Gümüş",
+      "stars": 0,
+      "statCap": 400,
+      "levelCap": 134,
+      "preparation": 26
+    },
+    {
+      "division": 6,
+      "camps": 7,
+      "tier": "Gümüş",
+      "stars": 0.5,
+      "statCap": 430,
+      "levelCap": 144,
+      "preparation": 29
+    },
+    {
+      "division": 6,
+      "camps": 8,
+      "tier": "Gümüş",
+      "stars": 1,
+      "statCap": 460,
+      "levelCap": 154,
+      "preparation": 32
+    },
+    {
+      "division": 6,
+      "camps": 9,
+      "tier": "Gümüş",
+      "stars": 1.5,
+      "statCap": 490,
+      "levelCap": 164,
+      "preparation": 35
+    },
+    {
+      "division": 6,
+      "camps": 10,
+      "tier": "Gümüş",
+      "stars": 2,
+      "statCap": 520,
+      "levelCap": 174,
+      "preparation": 38
+    },
+    {
+      "division": 6,
+      "camps": 11,
+      "tier": "Gümüş",
+      "stars": 2.5,
+      "statCap": 550,
+      "levelCap": 184,
+      "preparation": 41
+    },
+    {
+      "division": 6,
+      "camps": 12,
+      "tier": "Altın",
+      "stars": 0,
+      "statCap": 580,
+      "levelCap": 194,
+      "preparation": 44
+    },
+    {
+      "division": 6,
+      "camps": 13,
+      "tier": "Altın",
+      "stars": 0.5,
+      "statCap": 610,
+      "levelCap": 204,
+      "preparation": 47
+    },
+    {
+      "division": 6,
+      "camps": 14,
+      "tier": "Altın",
+      "stars": 1,
+      "statCap": 640,
+      "levelCap": 214,
+      "preparation": 50
+    },
+    {
+      "division": 6,
+      "camps": 15,
+      "tier": "Altın",
+      "stars": 1.5,
+      "statCap": 670,
+      "levelCap": 224,
+      "preparation": 53
+    },
+    {
+      "division": 6,
+      "camps": 16,
+      "tier": "Altın",
+      "stars": 2,
+      "statCap": 700,
+      "levelCap": 234,
+      "preparation": 56
+    },
+    {
+      "division": 6,
+      "camps": 17,
+      "tier": "Altın",
+      "stars": 2.5,
+      "statCap": 730,
+      "levelCap": 244,
+      "preparation": 59
+    },
+    {
+      "division": 6,
+      "camps": 18,
+      "tier": "Mor",
+      "stars": 0,
+      "statCap": 760,
+      "levelCap": 254,
+      "preparation": 62
+    },
+    {
+      "division": 6,
+      "camps": 19,
+      "tier": "Mor",
+      "stars": 0.5,
+      "statCap": 790,
+      "levelCap": 264,
+      "preparation": 65
+    },
+    {
+      "division": 6,
+      "camps": 20,
+      "tier": "Mor",
+      "stars": 1,
+      "statCap": 820,
+      "levelCap": 274,
+      "preparation": 68
+    },
+    {
+      "division": 6,
+      "camps": 21,
+      "tier": "Mor",
+      "stars": 1.5,
+      "statCap": 850,
+      "levelCap": 284,
+      "preparation": 71
+    },
+    {
+      "division": 6,
+      "camps": 22,
+      "tier": "Mor",
+      "stars": 2,
+      "statCap": 880,
+      "levelCap": 294,
+      "preparation": 74
+    },
+    {
+      "division": 6,
+      "camps": 23,
+      "tier": "Mor",
+      "stars": 2.5,
+      "statCap": 910,
+      "levelCap": 304,
+      "preparation": 77
+    },
+    {
+      "division": 6,
+      "camps": 24,
+      "tier": "Mor",
+      "stars": 3,
+      "statCap": 940,
+      "levelCap": 314,
+      "preparation": 80
+    },
+    {
+      "division": 7,
+      "camps": 0,
+      "tier": "Siyah",
+      "stars": 0,
+      "statCap": 220,
+      "levelCap": 68,
+      "preparation": 8
+    },
+    {
+      "division": 7,
+      "camps": 1,
+      "tier": "Siyah",
+      "stars": 0.5,
+      "statCap": 250,
+      "levelCap": 78,
+      "preparation": 11
+    },
+    {
+      "division": 7,
+      "camps": 2,
+      "tier": "Siyah",
+      "stars": 1,
+      "statCap": 280,
+      "levelCap": 88,
+      "preparation": 14
+    },
+    {
+      "division": 7,
+      "camps": 3,
+      "tier": "Siyah",
+      "stars": 1.5,
+      "statCap": 310,
+      "levelCap": 98,
+      "preparation": 17
+    },
+    {
+      "division": 7,
+      "camps": 4,
+      "tier": "Siyah",
+      "stars": 2,
+      "statCap": 340,
+      "levelCap": 114,
+      "preparation": 20
+    },
+    {
+      "division": 7,
+      "camps": 5,
+      "tier": "Siyah",
+      "stars": 2.5,
+      "statCap": 370,
+      "levelCap": 124,
+      "preparation": 23
+    },
+    {
+      "division": 7,
+      "camps": 6,
+      "tier": "Gümüş",
+      "stars": 0,
+      "statCap": 400,
+      "levelCap": 134,
+      "preparation": 26
+    },
+    {
+      "division": 7,
+      "camps": 7,
+      "tier": "Gümüş",
+      "stars": 0.5,
+      "statCap": 430,
+      "levelCap": 144,
+      "preparation": 29
+    },
+    {
+      "division": 7,
+      "camps": 8,
+      "tier": "Gümüş",
+      "stars": 1,
+      "statCap": 460,
+      "levelCap": 154,
+      "preparation": 32
+    },
+    {
+      "division": 7,
+      "camps": 9,
+      "tier": "Gümüş",
+      "stars": 1.5,
+      "statCap": 490,
+      "levelCap": 164,
+      "preparation": 35
+    },
+    {
+      "division": 7,
+      "camps": 10,
+      "tier": "Gümüş",
+      "stars": 2,
+      "statCap": 520,
+      "levelCap": 174,
+      "preparation": 38
+    },
+    {
+      "division": 7,
+      "camps": 11,
+      "tier": "Gümüş",
+      "stars": 2.5,
+      "statCap": 550,
+      "levelCap": 184,
+      "preparation": 41
+    },
+    {
+      "division": 7,
+      "camps": 12,
+      "tier": "Altın",
+      "stars": 0,
+      "statCap": 580,
+      "levelCap": 194,
+      "preparation": 44
+    },
+    {
+      "division": 7,
+      "camps": 13,
+      "tier": "Altın",
+      "stars": 0.5,
+      "statCap": 610,
+      "levelCap": 204,
+      "preparation": 47
+    },
+    {
+      "division": 7,
+      "camps": 14,
+      "tier": "Altın",
+      "stars": 1,
+      "statCap": 640,
+      "levelCap": 214,
+      "preparation": 50
+    },
+    {
+      "division": 7,
+      "camps": 15,
+      "tier": "Altın",
+      "stars": 1.5,
+      "statCap": 670,
+      "levelCap": 224,
+      "preparation": 53
+    },
+    {
+      "division": 7,
+      "camps": 16,
+      "tier": "Altın",
+      "stars": 2,
+      "statCap": 700,
+      "levelCap": 234,
+      "preparation": 56
+    },
+    {
+      "division": 7,
+      "camps": 17,
+      "tier": "Altın",
+      "stars": 2.5,
+      "statCap": 730,
+      "levelCap": 244,
+      "preparation": 59
+    },
+    {
+      "division": 7,
+      "camps": 18,
+      "tier": "Mor",
+      "stars": 0,
+      "statCap": 760,
+      "levelCap": 254,
+      "preparation": 62
+    },
+    {
+      "division": 7,
+      "camps": 19,
+      "tier": "Mor",
+      "stars": 0.5,
+      "statCap": 790,
+      "levelCap": 264,
+      "preparation": 65
+    },
+    {
+      "division": 7,
+      "camps": 20,
+      "tier": "Mor",
+      "stars": 1,
+      "statCap": 820,
+      "levelCap": 274,
+      "preparation": 68
+    },
+    {
+      "division": 7,
+      "camps": 21,
+      "tier": "Mor",
+      "stars": 1.5,
+      "statCap": 850,
+      "levelCap": 284,
+      "preparation": 71
+    },
+    {
+      "division": 7,
+      "camps": 22,
+      "tier": "Mor",
+      "stars": 2,
+      "statCap": 880,
+      "levelCap": 294,
+      "preparation": 74
+    },
+    {
+      "division": 7,
+      "camps": 23,
+      "tier": "Mor",
+      "stars": 2.5,
+      "statCap": 910,
+      "levelCap": 304,
+      "preparation": 77
+    },
+    {
+      "division": 7,
+      "camps": 24,
+      "tier": "Mor",
+      "stars": 3,
+      "statCap": 940,
+      "levelCap": 314,
+      "preparation": 80
+    },
+    {
+      "division": 8,
+      "camps": 0,
+      "tier": "Siyah",
+      "stars": 0,
+      "statCap": 220,
+      "levelCap": 68,
+      "preparation": 8
+    },
+    {
+      "division": 8,
+      "camps": 1,
+      "tier": "Siyah",
+      "stars": 0.5,
+      "statCap": 250,
+      "levelCap": 78,
+      "preparation": 11
+    },
+    {
+      "division": 8,
+      "camps": 2,
+      "tier": "Siyah",
+      "stars": 1,
+      "statCap": 280,
+      "levelCap": 88,
+      "preparation": 14
+    },
+    {
+      "division": 8,
+      "camps": 3,
+      "tier": "Siyah",
+      "stars": 1.5,
+      "statCap": 310,
+      "levelCap": 98,
+      "preparation": 17
+    },
+    {
+      "division": 8,
+      "camps": 4,
+      "tier": "Siyah",
+      "stars": 2,
+      "statCap": 340,
+      "levelCap": 114,
+      "preparation": 20
+    },
+    {
+      "division": 8,
+      "camps": 5,
+      "tier": "Siyah",
+      "stars": 2.5,
+      "statCap": 370,
+      "levelCap": 124,
+      "preparation": 23
+    },
+    {
+      "division": 8,
+      "camps": 6,
+      "tier": "Gümüş",
+      "stars": 0,
+      "statCap": 400,
+      "levelCap": 134,
+      "preparation": 26
+    },
+    {
+      "division": 8,
+      "camps": 7,
+      "tier": "Gümüş",
+      "stars": 0.5,
+      "statCap": 430,
+      "levelCap": 144,
+      "preparation": 29
+    },
+    {
+      "division": 8,
+      "camps": 8,
+      "tier": "Gümüş",
+      "stars": 1,
+      "statCap": 460,
+      "levelCap": 154,
+      "preparation": 32
+    },
+    {
+      "division": 8,
+      "camps": 9,
+      "tier": "Gümüş",
+      "stars": 1.5,
+      "statCap": 490,
+      "levelCap": 164,
+      "preparation": 35
+    },
+    {
+      "division": 8,
+      "camps": 10,
+      "tier": "Gümüş",
+      "stars": 2,
+      "statCap": 520,
+      "levelCap": 174,
+      "preparation": 38
+    },
+    {
+      "division": 8,
+      "camps": 11,
+      "tier": "Gümüş",
+      "stars": 2.5,
+      "statCap": 550,
+      "levelCap": 184,
+      "preparation": 41
+    },
+    {
+      "division": 8,
+      "camps": 12,
+      "tier": "Altın",
+      "stars": 0,
+      "statCap": 580,
+      "levelCap": 194,
+      "preparation": 44
+    },
+    {
+      "division": 8,
+      "camps": 13,
+      "tier": "Altın",
+      "stars": 0.5,
+      "statCap": 610,
+      "levelCap": 204,
+      "preparation": 47
+    },
+    {
+      "division": 8,
+      "camps": 14,
+      "tier": "Altın",
+      "stars": 1,
+      "statCap": 640,
+      "levelCap": 214,
+      "preparation": 50
+    },
+    {
+      "division": 8,
+      "camps": 15,
+      "tier": "Altın",
+      "stars": 1.5,
+      "statCap": 670,
+      "levelCap": 224,
+      "preparation": 53
+    },
+    {
+      "division": 8,
+      "camps": 16,
+      "tier": "Altın",
+      "stars": 2,
+      "statCap": 700,
+      "levelCap": 234,
+      "preparation": 56
+    },
+    {
+      "division": 8,
+      "camps": 17,
+      "tier": "Altın",
+      "stars": 2.5,
+      "statCap": 730,
+      "levelCap": 244,
+      "preparation": 59
+    },
+    {
+      "division": 8,
+      "camps": 18,
+      "tier": "Mor",
+      "stars": 0,
+      "statCap": 760,
+      "levelCap": 254,
+      "preparation": 62
+    },
+    {
+      "division": 8,
+      "camps": 19,
+      "tier": "Mor",
+      "stars": 0.5,
+      "statCap": 790,
+      "levelCap": 264,
+      "preparation": 65
+    },
+    {
+      "division": 8,
+      "camps": 20,
+      "tier": "Mor",
+      "stars": 1,
+      "statCap": 820,
+      "levelCap": 274,
+      "preparation": 68
+    },
+    {
+      "division": 8,
+      "camps": 21,
+      "tier": "Mor",
+      "stars": 1.5,
+      "statCap": 850,
+      "levelCap": 284,
+      "preparation": 71
+    },
+    {
+      "division": 8,
+      "camps": 22,
+      "tier": "Mor",
+      "stars": 2,
+      "statCap": 880,
+      "levelCap": 294,
+      "preparation": 74
+    },
+    {
+      "division": 8,
+      "camps": 23,
+      "tier": "Mor",
+      "stars": 2.5,
+      "statCap": 910,
+      "levelCap": 304,
+      "preparation": 77
+    },
+    {
+      "division": 8,
+      "camps": 24,
+      "tier": "Mor",
+      "stars": 3,
+      "statCap": 940,
+      "levelCap": 314,
+      "preparation": 80
+    }
+  ]
+}

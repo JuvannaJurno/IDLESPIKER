@@ -12,3 +12,5 @@
 .skill-study>strong{font-size:12px}.skill-study>small{font-size:10px;line-height:1.5;color:var(--ui-muted,#778b80)}
 .skill-study button.team-secondary{width:100%;min-height:38px;margin:0;white-space:normal;font-size:11px}
 .skill-study button[aria-pressed=true]{border-color:var(--ui-focus,#779c87);box-shadow:inset 0 0 0 1px var(--ui-focus,#779c87)}
+
+.return-potential{opacity:0;transform:translateY(7px);padding:10px;border:1px solid #bba7d2;border-radius:10px;color:#776087;background:#eee7f5;font-size:12px;transition:opacity .45s,transform .45s}.return-tier-up .return-potential{opacity:1;transform:none}.legendary-potential{border-color:#bba7d2!important;color:#776087!important}

@@ -9,3 +9,6 @@
 .player-card[data-growth-band]:not([data-growth-band="0"]):not([data-growth-band="1"])::after{content:"";position:absolute;inset:-2px;border-radius:inherit;box-shadow:inset 0 0 0 2px var(--growth-edge),inset 0 0 0 5px var(--growth-light);z-index:12;pointer-events:none}.player-card[data-growth-band="5"]::after,.player-card[data-growth-band="6"]::after{box-shadow:inset 0 0 0 3px var(--growth-edge),inset 0 0 0 6px var(--growth-light)}
 /* Graphite cards keep their own edge at every growth level. */
 .player-card[data-growth-band]:not(.elite-player)::after{content:none!important;box-shadow:none!important}
+
+/* Accumulate rapid upgrades in one stable portrait overlay. */
+.development-gain{animation:development-gain-enter .16s ease-out both}@keyframes development-gain-enter{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}

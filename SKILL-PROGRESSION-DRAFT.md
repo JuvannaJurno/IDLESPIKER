@@ -6,10 +6,10 @@ Kamp yarım yıldız, renk başına 6 kamp: gümüş 6, altın 12, mor 18. Norma
 
 | Aşama | Hedef kamp | 7 oyuncu yükseltme AP | Kamp AP | Kamp bütçesi | Altı yuva ile gün | Örnek AP/gün | AP kaynağı için gün |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| 2 | 4 | 320.892 | 1.022.700 | 70.000 | 15 | 30.000 | 44.8 |
-| 3 | 8 | 2.670.363 | 9.273.600 | 182.000 | 10 | 3.900.000 | 3.1 |
-| 4 | 14 | 46.764.347 | 67.451.300 | 483.000 | 14 | 3.900.000 | 29.3 |
-| 5 | 18 | 170.153.312 | 120.901.200 | 462.000 | 10 | 3.900.000 | 74.6 |
+| 2 | 4 | 331.031 | 1.022.700 | 70.000 | 15 | 30.000 | 45.1 |
+| 3 | 8 | 2.858.264 | 9.273.600 | 182.000 | 10 | 3.900.000 | 3.1 |
+| 4 | 14 | 52.325.176 | 67.451.300 | 483.000 | 14 | 3.900.000 | 30.7 |
+| 5 | 18 | 197.222.720 | 120.901.200 | 462.000 | 10 | 3.900.000 | 81.6 |
 
 Hesap gerçek CampRules.price/enrollMany/update ve TeamRules.cardQuote/upgradeCard ile çalışır. Yedi oyuncu, altı kamp yuvası ve mevcut üç günlük süre (2. Lig ve sonrasında 5 Kamp Organizasyonu ile iki gün) kullanılır. Dengeli oyunculara sıra verilerek en az kampı olanlar önce gönderilir. Akademiden renkli mezun veya transfer kullanımı hesaba katılmadığı için onlar süreyi kısaltabilir.
 
