@@ -586,3 +586,7 @@ Lab blok kalkanları artık sabit top temas koordinatına çizilmez. Blokçunun 
 ## Aura ve çevre kalkanı baş merkezi — 27 Ekim 2026
 
 Lab’de üç aura ve shieldWhite_Edit çevre kalkanı, gövde/oyuncu konumu yerine native head parçasının merkezine bağlanır. Merkez, başın poz boyutu/pivot/dönüşü ve çizim anındaki gerçek canvas matrisiyle dünya koordinatına çevrilir; oyuncu açısı, beden hareketi ve sıçrama dönüşümü dahildir. Sadece elin yeniden çizildiği katman merkezi değiştirmez. Duman baş merkezinden çıkar ve eski parçalar dünya içinde dağılmayı sürdürür. Normal ön blok kalkanlarının konumu korunur.
+
+## Lab top gölgesi — 27 Ekim 2026
+
+Animation lab’de topun eski dolu elips gölgesi yerine circle_rings_a.png denenir. Görsel koyu saha gölgesine renklendirilir ve zemine yatık çizilir; top yükseldikçe biraz genişler/silikleşir. Merkez topun zemin x/y koordinatıdır, z yüksekliği gölgeyi havaya kaldırmaz. Yalnız lab srcdoc katmanına uygulanır, gerçek maçın gölgesi değişmez.
