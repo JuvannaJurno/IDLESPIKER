@@ -6,7 +6,7 @@ const control=document.createElement('label');control.innerHTML='Aura <select id
 function syncAuraStyle(){frame.contentWindow.postMessage({type:'lab-aura-style',value:document.getElementById('labAuraStyle').value},'*');}
 control.querySelector('select').onchange=()=>{document.getElementById('experimentalAura').checked=true;syncAuraStyle();lastPreviewMessage='';draw(time/length);};
 window.addEventListener('message',e=>{if(e.source===frame.contentWindow&&e.data?.type==='lab-shield-smoke-ready')syncAuraStyle();});
-const shieldControl=document.createElement('label');shieldControl.innerHTML='Blok kalkanı <select id="labShieldStyle" aria-label="Kalkan alternatifi"></select>';for(const option of window.LabShieldOptions||[]){const el=document.createElement('option');el.value=option.id;el.textContent=option.name;shieldControl.querySelector('select').append(el);}shieldControl.querySelector('select').value='atlas-1-1';control.after(shieldControl);
+const shieldControl=document.createElement('label');shieldControl.innerHTML='Blok kalkanı <select id="labShieldStyle" aria-label="Kalkan alternatifi"></select>';for(const option of window.LabShieldOptions||[]){const el=document.createElement('option');el.value=option.id;el.textContent=option.id.startsWith('white-')?option.name.replace('Yeni ·','Çevre kalkanı ·'):option.name;shieldControl.querySelector('select').append(el);}shieldControl.querySelector('select').value='atlas-1-1';control.after(shieldControl);
 function syncShield(){frame.contentWindow.postMessage({type:'lab-shield-style',value:document.getElementById('labShieldStyle').value},'*');}
 shieldControl.querySelector('select').onchange=()=>{syncShield();lastPreviewMessage='';draw(time/length);};window.addEventListener('message',e=>{if(e.source===frame.contentWindow&&e.data?.type==='lab-shield-smoke-ready')syncShield();});
 function install(shieldSrc,smokeSrc,lightSrc,shieldOptions){
@@ -45,7 +45,22 @@ function emission(id,progress){
 }
 const contacts={roof:[.49,490,310],close:[.49,490,310],read:[.49,490,310],'triple-block':[.49,490,310],'commit-block':[.53,500,370],rebound:[.49,500,310]};
 const originalPreview=previewDraw;
-previewDraw=function(id,p,effects,...args){const result=originalPreview.call(this,id,p,effects,...args),contact=contacts[id],particleCount=emission(id,p);window.LabShieldSmoke={id,shieldStyle,auraStyle,particleCount,lightReady:!!light.naturalWidth,shieldVisible:false,smokeReady:!!smoke.naturalWidth,shieldReady:!!shield.naturalWidth,tintCount:tints.size};if(!effects||!contact||!shield.complete||!shield.naturalWidth)return result;const age=(p-contact[0])*3.6;if(age<0||age>.38)return result;const enter=Math.min(1,age/.075),fade=Math.max(0,Math.min(1,(.38-age)/.19)),size=28+8*(1-Math.pow(1-enter,3));ctx.save();ctx.globalAlpha=enter*fade*.94;ctx.shadowColor='#fff9dc';ctx.shadowBlur=7*fade;ctx.translate(contact[1],contact[2]-16);ctx.rotate(Math.PI/2);ctx.drawImage(selectedShield(),-size/2,-size/2,size,size);ctx.restore();window.LabShieldSmoke.shieldVisible=true;window.LabShieldSmoke.age=age;return result;};
+previewDraw=function(id,p,effects,...args){
+ const result=originalPreview.call(this,id,p,effects,...args),contact=contacts[id],particleCount=emission(id,p);
+ window.LabShieldSmoke={id,shieldStyle,auraStyle,particleCount,lightReady:!!light.naturalWidth,shieldVisible:false,smokeReady:!!smoke.naturalWidth,shieldReady:!!shield.naturalWidth,tintCount:tints.size};
+ if(!effects||!contact||!shield.complete||!shield.naturalWidth)return result;
+ const age=(p-contact[0])*3.6;if(age<0||age>.38)return result;
+ const enter=Math.min(1,age/.075),fade=Math.max(0,Math.min(1,(.38-age)/.19)),bubble=shieldStyle.startsWith('white-'),art=selectedShield();
+ let blockers=players.filter(actor=>actor.block>0&&Math.hypot(actor.x-contact[1],actor.y-contact[2])<110);
+ if(!blockers.length){const actor=players.find(q=>q.index===window.previewAuraActor);if(actor)blockers=[actor];}
+ const anchors=[];
+ for(const actor of blockers){const angle=actor.angle||0,lift=Math.sin(Math.max(0,actor.jump||0)/.5*Math.PI)*12,center={x:actor.x,y:actor.y-lift},size=bubble?76+8*enter:28+8*(1-Math.pow(1-enter,3)),anchor=bubble?center:{x:center.x+Math.cos(angle)*29,y:center.y+Math.sin(angle)*29};
+  ctx.save();ctx.globalAlpha=enter*fade*(bubble?.72:.94);ctx.shadowColor=bubble?teamColor(actor):'#fff9dc';ctx.shadowBlur=bubble?12:5;ctx.translate(anchor.x,anchor.y);ctx.rotate(bubble?Math.PI/2:angle+Math.PI/2);ctx.drawImage(art,-size/2,-size/2,size,size);ctx.restore();
+  if(bubble){drawPlayer(actor);ctx.save();ctx.globalAlpha=enter*fade*.14;ctx.translate(anchor.x,anchor.y);ctx.rotate(Math.PI/2);ctx.drawImage(art,-size/2,-size/2,size,size);ctx.restore();}
+  anchors.push({actor:actor.index,center,anchor,angle,size,bubble});
+ }
+ if(Number.isFinite(ball.x)){const image=ballSprites[$('ballStyle').value]||ballSprites['ball_volley1.png'];if(image){ctx.save();ctx.translate(ball.x,ball.y-(ball.z||0));ctx.rotate(elapsed*3);const size=9*(ball.visualScale??1);ctx.drawImage(image,-size,-size,size*2,size*2);ctx.restore();}}window.LabShieldSmoke.shieldVisible=anchors.length>0;window.LabShieldSmoke.age=age;window.LabShieldSmoke.anchors=anchors;return result;
+};
 Promise.all([shield.decode(),smoke.decode(),light.decode()]).then(()=>{let attempts=0;function repaint(){if(typeof ready!=='undefined'&&ready)parent.postMessage({type:'lab-shield-smoke-ready'},'*');else if(++attempts<100)setTimeout(repaint,100);}repaint();}).catch(()=>parent.postMessage({type:'lab-shield-smoke-ready'},'*'));
 
 }
