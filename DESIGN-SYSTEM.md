@@ -616,3 +616,10 @@ Pancake vektör ve yedek çiziminde yalnız seçilen elin kol/forması manşet p
 ## Tanıtım önizlemesi doğrudan yetenek sahasında — 27 Ekim 2026
 
 Lab Oyuncu tanıtımı düğmesi artık mevcut matchPreview srcdoc sahasını kullanır. index/mac URL’sine gitmez, ek iframe açmaz. Oyundaki küçük etiket ortak rival-callout-ui.js bileşenidir; başlık/renk/tipografi aynı kalır. Dar sahada etiket oyuncunun boş olan yanına, daralabilen genişlikle yerleşir; karakterin üstünü kapatmaz. Tekrar oynat / Tanıtımı kapat aynı bölümde kalır. Oyun kaydı değişmez. Eski ayrı oyun açan lab önizlemesi kaldırıldı. test-rival-intro-lab.cjs yeni navigasyon ve iframe olmadığını da doğrular.
+
+## Tanıtım yalnız lab; isteğe bağlı maç isimleri — 27 Ekim 2026
+
+Kullanıcı oyuncu tanıtımını henüz üretime istemiyor: mac.html match-rival-callout.js dosyasını yüklemez. Küçük etiket/karartma/duraklama yalnız animation lab düğmesinde kalır. Gerçek maçta otomatik tanıtım yoktur.
+
+Hilelerde Oyuncu isimleri ve Kırmızı top gölgesi iki ayrı anahtardır. Yeni kayıtta ikisi de kapalıdır: isim yerine mevcut forma numarası, gölgede standart siyah görünür. Oyuncu isimleri açılırsa gerçek kadro adı + soyad baş harfi, sahanın mobil dönüşüne uygun yatay küçük açık renkli etiketle karakterin altında gösterilir; uzun isimler kısaltılır. İki takım da kapsanır, hakem/yedek için boş etiket üretilmez. Seçimler ayrı kaydolur ve açık maç iframeine de iletilir.
+Lab top gölgesi de açılışta kayıtlı Siyah/Kırmızı tercihini okur; tercih yoksa siyah başlar. Kontroller: test-optional-match-names.cjs (yeni kayıtta iki anahtar kapalı, gerçek kadro adları, kalıcılık, üretim tanıtımı yok), test-rival-intro-lab.cjs ve test-lab-vision-shadow.cjs geçti.
