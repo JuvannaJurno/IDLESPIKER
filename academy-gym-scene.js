@@ -9,9 +9,11 @@ function cart(x,y){rect(x+5,y+5,45,54,'#51695224');rect(x,y,45,54,'#8b9e87');rec
 function cone(x,y){ellipse(x+2,y+4,8,6,'#936d3b26');g.fillStyle='#d89b67';g.beginPath();g.moveTo(x-7,y+4);g.lineTo(x+7,y+4);g.lineTo(x,y-11);g.closePath();g.fill();line(x-4,y,x+4,y,'#f5d2a3',2);}
 function bench(x,y){rect(x+4,y+5,105,24,'#536a5929');rect(x,y,105,22,'#9b805e');for(const py of [4,11,18])line(x+3,y+py,x+102,y+py,'#cdb486',3);rect(x+10,y+20,5,10,'#687c6c');rect(x+91,y+20,5,10,'#687c6c');}
 function bottle(x,y,color){rect(x,y,7,14,color);rect(x+1,y-3,5,4,'#f2e7cc');line(x+2,y+3,x+2,y+10,'#ffffff66',1);}
+function rebuild(){ballSpots.length=0;g.clearRect(0,0,1000,620);
 // World coordinates and camera match the game; this is a practice facility, not a match court.
 rect(0,0,1000,620,'#b5c9b5');rect(130,36,740,548,'#6d897a33');rect(122,28,748,548,'#e8e6cf');rect(140,48,710,508,'#d7ba8a');
 for(let y=48;y<556;y+=23){line(140,y,850,y,'#c3a778',1);for(let x=140+(y%46===2?42:106);x<850;x+=128)line(x,y,x,Math.min(556,y+23),'#c6ab7d',1);}
+window.EnvironmentTiles?.paintFloor(g,140,48,710,508,'light');
 // Two windows, storage wall, and a small tactics board on the entrance side.
 for(const y of [103,431]){rect(124,y,13,72,'#f7f2da');rect(126,y+3,7,66,'#aac8be');line(129,y+4,129,y+67,'#edf1d8',2);line(125,y+36,134,y+36,'#edf1d8',2);}
 rect(155,55,92,43,'#78988a');rect(160,60,82,33,'#f5f0da');line(177,67,228,67,'#9caf9b');line(177,75,218,75,'#9caf9b');line(177,83,226,83,'#9caf9b');
@@ -30,5 +32,8 @@ for(const [x,y]of [[351,90],[408,90],[467,90],[580,530],[822,186]])cone(x,y);
 for(const [x,y]of [[780,267],[780,339],[780,411]]){g.strokeStyle='#a4b39a';g.lineWidth=3;g.beginPath();g.arc(x,y,17,0,Math.PI*2);g.stroke();g.beginPath();g.arc(x,y,6,0,Math.PI*2);g.stroke();}
 // Equipment rack, towels and a basket of spare balls.
 rect(810,449,28,76,'#718c7c');for(const y of [455,476,497]){rect(814,y,20,15,'#c6cdb5');line(818,y+4,829,y+4,'#e9e5ce',2);}ball(586,93);ball(603,96);
+window.EnvironmentTiles?.sprite(g,'crate',153,323,38,38);window.EnvironmentTiles?.sprite(g,'crateTurned',158,367,33,33);
+}
+rebuild();window.EnvironmentTiles?.ready.then(rebuild);
 window.AcademyGymScene={draw(ctx,image=ballSprites['ball_volley1.png']){ctx.drawImage(floor,0,0);if(image?.complete&&image.naturalWidth)for(const p of ballSpots)ctx.drawImage(image,p.x-8,p.y-8,16,16);},cartAt(ctx,image,x=65,y=535){ctx.fillStyle='#8b9e87';ctx.fillRect(x,y,38,45);ctx.fillStyle='#c8d0b3';ctx.fillRect(x+3,y+3,32,38);if(image?.complete)for(const [dx,dy]of [[11,12],[27,13],[12,29],[27,30]])ctx.drawImage(image,x+dx-7,y+dy-7,14,14);ctx.strokeStyle='#6c8274';ctx.lineWidth=2;ctx.strokeRect(x,y,38,45);},ballSpots,ballAsset:'ball_volley1.png',foreground(ctx){ctx.fillStyle='#987e5a';ctx.fillRect(167,524,105,5);},equipment:['training-net','ball-carts','bench','water','tactics-board','mats','weights','agility-ladder','cones','landing-targets','storage']};
 })();
