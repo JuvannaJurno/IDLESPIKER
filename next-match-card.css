@@ -39,3 +39,7 @@ html body[data-league-division] .league-match-group .match-preview-team{width:10
 /* Keep the league summary close to the calendar above it. */
 html body[data-league-division] #clubPanel:has(.league-match-group){padding-top:6px}
 html body[data-league-division] #clubPanel>.league-match-group{margin-top:0}
+
+/* Decorative clipping must not turn the club/league card into a scroll container. */
+html #clubPanel,html body[data-league-division] .league-match-group,html .next-match.match-preview{overflow:clip}
+.league-match-group,.league-match-group *{touch-action:pan-y pinch-zoom;user-select:none;-webkit-user-select:none;-webkit-user-drag:none}
