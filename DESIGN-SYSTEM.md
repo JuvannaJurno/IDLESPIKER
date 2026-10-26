@@ -600,3 +600,7 @@ Kullanıcı blok kalkanı fikrini şimdilik bıraktı: lab seçicisi ve blok efe
 Takımın Kalbi ana dalgası ve takım arkadaşlarının ışığı, aura ile aynı window_h_noise.png maskesini kullanır. Dalga zamanlaması/karartma ve karşıt takım rengi mantığı korunur; ışık baş merkezinden çıkar. circle_rings_a.png top gölgesi test için kırmızıdır (#d9333e), tam daire ve zemine bağlıdır. Oyuncuların eski elips gölgesi window_g_blur.png ile değiştirilir; koyu renge dönüştürülüp oyuncu sıçramasından önce zemine çizilir. Hepsi yalnız animation lab’de; üretim sahası etkilenmez.
 
 Kort Görüşü için son kullanıcı seçimi window_h_blur.png: circle_rings_b_streaks yerine yumuşak yatay pencere maskesi kullanılır. Önceki streaks görünümü güncel değildir.
+
+Lab top gölgesinin son asset seçimi window_h.png (27 Ekim). Önceki circle_rings_a yerine kullanılır; kırmızı deneme rengi, eşit en-boy ve zemin konumu korunur.
+
+Animation lab’de Oyuncu tanıtımı düğmesi, aynı arena içinde oyunun gerçek MatchIntro/Rakip Dosyası bileşenini açar. Tanıtımı tekrar oynat ve Yetenek sahasına dön vardır. Önizleme index.html?rivalIntroPreview=1 ile gerçek görünümü kullanır; localStorage/sessionStorage bellekte izole edildiğinden kullanıcının oyun kaydı değişmez. Masaüstünde de 390 px mobil genişlik korunur. Doğrulama: test-rival-intro-lab.cjs ve audits/rival-intro-animation-lab.png.
