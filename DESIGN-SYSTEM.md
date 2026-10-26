@@ -561,3 +561,10 @@ Kullanıcının vector_tiles.svg atlasında işaretlediği parke, ahşap kutular
 ## Oyuncu Merkezi ve akademi zemini — 26 Ekim 2026
 
 Transfer Merkezi artık Oyuncu Merkezi olarak adlandırılır. 1. Lig’den itibaren Akademi, bu menünün ana seçenekleri içindedir; ayrı Takım/Kulüp akademi kısayolu yoktur. Kurulum aynı düğmeden yapılır; modal kapanınca mevcut merkeze dönülür. Akademi salonunun parke tabakasına oyuncuları ayırmak için hafif koyu nötr ton uygulanır; ekipman, oyuncu ve toplar karartılmaz.
+
+## Kaydırma sınırı fiziği ve doğal aura seçenekleri — 27 Ekim 2026
+
+Dikey menülerin dokunmatik sınır esnemesi scroll-spring.js ile ortaklaşır. İç bölgede tarayıcının scrollTop ve momentumu korunur; dışa sürüklemede 0,55 katsayılı rubber-band eğrisi uygulanır. Bırakınca mevcut görsel hız korunarak analitik sönümlü yayla geri dönülür. Fare tekeri, yatay talimat hattı ve maç canvası değiştirilmez. iOS/iPadOS kendi esnemesini kullanır; aynı anda ikinci efekt eklenmez. Reduced-motion açıkken özel esneme yoktur. Modal kapanması, sekme değişimi, blur ve resize geçici translate değerlerini temizler; sabit gezinme öğeleri hareket ettirilmez. Test: test-scroll-spring.cjs.
+
+Animation lab’de Deney aura için İnce duman / Hareket izi / Işıklı aura seçicisi bulunur. Parçalar oyuncunun geçmiş dünya konumlarından çıkar, doğdukları yerde ilerler ve kendi ömründe söner; oyuncuya yapışık dönen bulut kullanılmaz. En fazla 56 parçacık, renk başına önbellek, duraklatmada sabit görüntü ve seek/loopta temizleme vardır. window_h_noise.png saydam maskesi üçüncü seçenekte yumuşak takım ışığıdır; keskin kenarı feather edilir. Karakter ve top tekrar ön planda çizilir. Üretim aura/maçları değişmez. Test: test-lab-aura-emission.cjs; audits/aura-natural-{soft,trail,light}.png.
+Doğrulama notu: test-social-unified-scroll.cjs mevcut başlık/tekerlek konumu assertionında başarısız; yeni scroll-spring.js tamamen engellenerek yapılan aynı testte de aynı hata tekrarlandı. Yeni dokunmatik sınır fiziğinin ayrı testi geçer; bu eski sosyal test sonucu tamamlanmış sayılmaz.
