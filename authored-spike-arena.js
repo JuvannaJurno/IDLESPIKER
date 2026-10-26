@@ -4,7 +4,7 @@
 const attacks={
 'power-hit':[[0,2,.29,.43,.59]],cross:[[0,2,.28,.43,.60]],line:[[0,2,.28,.43,.60]],wipe:[[0,2,.28,.43,.60]],rebound:[[0,2,.23,.49,.53]],'pipe-attack':[[0,6,.40,.56,.72]],'slide-attack':[[0,2,.37,.51,.66]],'court-vision':[[0,2,.32,.58,.80]],
 'fake-set':[[0,2,.58,.70,.84]],'perfect-second-touch':[[0,2,.63,.72,.86]],'one-hand-rescue':[[0,2,.63,.72,.86]],
-'sync-attack':[[0,4,.43,.58,.73],[0,1,.439,.589,.739],[0,2,.448,.598,.748],[0,3,.457,.607,.757]],
+'sync-attack':[], // Native vectorAttackAge already drives this jump and strike.
  'tempo-third':[[0,2,.52,.67,.84]],'tempo-second':[[0,2,.40,.54,.71]],'tempo-first':[[0,2,.27,.43,.60]],'tempo-minus':[[0,2,.3105555556,.38,.55]],
 pancake:[[1,3,.17,.28,.34]]};
 const original=draw,smooth=x=>{x=Math.max(0,Math.min(1,x));return x*x*(3-2*x)};

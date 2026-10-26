@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "sourceHash": "e0e2c5f0bcadfae87fa8e1245ca80751d57760230352de2c2f7bd7a8041ca1ab",
+  "sourceHash": "b69b9888a51b62ed5bb5c34db808f36a0c80decbd540d6e3fa711b4960d24abf",
   "camera": "native-mobile-minus-90",
   "fps": 30,
   "encoding": "H264 4Mbps, 2x native raster, per-skill crop",
@@ -75,7 +75,7 @@
       "poster": "assets/preview-media/sync-attack.png",
       "width": 720,
       "height": 900,
-      "duration": 7.135167,
+      "duration": 7.514233,
       "crop": [
         200,
         40,
@@ -83,7 +83,7 @@
         560
       ],
       "endProgress": 0.94,
-      "revision": "571fed9fa08539f9"
+      "revision": "820d1070da392c52"
     },
     "tempo-minus": {
       "src": "assets/preview-media/tempo-minus.mp4",
