@@ -1,0 +1,74 @@
+[
+  {
+    "name": "(program) @ native:-1",
+    "ms": 2069
+  },
+  {
+    "name": "(idle) @ native:-1",
+    "ms": 1543
+  },
+  {
+    "name": "querySelectorAll @ native:-1",
+    "ms": 60
+  },
+  {
+    "name": "applyGain @ rooms.js?v=6100646bc422:101",
+    "ms": 56
+  },
+  {
+    "name": "animate @ menu.js?v=7ca4048c06e8:51",
+    "ms": 41
+  },
+  {
+    "name": "(garbage collector) @ native:-1",
+    "ms": 26
+  },
+  {
+    "name": "setItem @ native:-1",
+    "ms": 18
+  },
+  {
+    "name": "animatePulse @ menu.js?v=7ca4048c06e8:27",
+    "ms": 16
+  },
+  {
+    "name": "closest @ native:-1",
+    "ms": 16
+  },
+  {
+    "name": "progress @ league-rules.js?v=25643967df56:32",
+    "ms": 15
+  },
+  {
+    "name": "(anonymous) @ rooms.js?v=6100646bc422:101",
+    "ms": 14
+  },
+  {
+    "name": "animate @ native:-1",
+    "ms": 14
+  },
+  {
+    "name": "refresh @ scouting.js?v=e0f80bdde998:50",
+    "ms": 13
+  },
+  {
+    "name": "requestAnimationFrame @ native:-1",
+    "ms": 12
+  },
+  {
+    "name": "save @ rooms.js?v=6100646bc422:6",
+    "ms": 11
+  },
+  {
+    "name": "CustomEvent @ native:-1",
+    "ms": 10
+  },
+  {
+    "name": "compact @ number-ui.js?v=a24b5930e991:3",
+    "ms": 10
+  },
+  {
+    "name": "pulseY @ menu.js?v=7ca4048c06e8:58",
+    "ms": 9
+  }
+]

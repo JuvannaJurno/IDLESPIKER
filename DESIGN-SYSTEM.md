@@ -617,9 +617,17 @@ Pancake vektör ve yedek çiziminde yalnız seçilen elin kol/forması manşet p
 
 Lab Oyuncu tanıtımı düğmesi artık mevcut matchPreview srcdoc sahasını kullanır. index/mac URL’sine gitmez, ek iframe açmaz. Oyundaki küçük etiket ortak rival-callout-ui.js bileşenidir; başlık/renk/tipografi aynı kalır. Dar sahada etiket oyuncunun boş olan yanına, daralabilen genişlikle yerleşir; karakterin üstünü kapatmaz. Tekrar oynat / Tanıtımı kapat aynı bölümde kalır. Oyun kaydı değişmez. Eski ayrı oyun açan lab önizlemesi kaldırıldı. test-rival-intro-lab.cjs yeni navigasyon ve iframe olmadığını da doğrular.
 
-## Tanıtım yalnız lab; isteğe bağlı maç isimleri — 27 Ekim 2026
+## Tanıtım yalnız lab; isteğe bağlı maç isimleri — 27 Ekim 2026 (aşağıdaki yeni kararla güncellendi)
 
 Kullanıcı oyuncu tanıtımını henüz üretime istemiyor: mac.html match-rival-callout.js dosyasını yüklemez. Küçük etiket/karartma/duraklama yalnız animation lab düğmesinde kalır. Gerçek maçta otomatik tanıtım yoktur.
 
 Hilelerde Oyuncu isimleri ve Kırmızı top gölgesi iki ayrı anahtardır. Yeni kayıtta ikisi de kapalıdır: isim yerine mevcut forma numarası, gölgede standart siyah görünür. Oyuncu isimleri açılırsa gerçek kadro adı + soyad baş harfi, sahanın mobil dönüşüne uygun yatay küçük açık renkli etiketle karakterin altında gösterilir; uzun isimler kısaltılır. İki takım da kapsanır, hakem/yedek için boş etiket üretilmez. Seçimler ayrı kaydolur ve açık maç iframeine de iletilir.
 Lab top gölgesi de açılışta kayıtlı Siyah/Kırmızı tercihini okur; tercih yoksa siyah başlar. Kontroller: test-optional-match-names.cjs (yeni kayıtta iki anahtar kapalı, gerçek kadro adları, kalıcılık, üretim tanıtımı yok), test-rival-intro-lab.cjs ve test-lab-vision-shadow.cjs geçti.
+
+## Güncel tanıtım ve Ortak Tempo — 27 Ekim 2026
+
+Son kullanıcı kararı önceki yalnız-lab kararının yerini alır: Oyuncu tanıtımları Hileler içinde ayrı anahtardır ve varsayılan kapalıdır. Açılırsa özel rakip gerçek maçta karakterinin yanında, gerçek portresi ve Legendary adıyla görünür. Ortak etiket bileşeni lab'de de kullanılır. Giriş 390 ms, çıkış 230 ms; reduced-motion tercihinde anlıktır. Saha hafif kararır, oyuncu önde kalır; 3,4 saniye sonra ralli devam eder. İsim ve kırmızı gölge tercihleri ayrı kalır. Kanıt: audits/portrait-intro-mobile.png, audits/portrait-intro-court.png ve audits/rival-intro-animation-lab.png.
+
+Ortak Tempo artık periyodik lazer/AP çarpanı değildir. Standart hatların her birini mevcut kapasitesiyle çoğaltır; toplam standart kapasite iki kat olur. Medya hattı çoğalmaz. İlk ek özellikte (koordinatör seviye 6) açılır; yeni satın alma sınırı 6, eski 7–10 seviyeli kayıtlar korunur. Çoklu hat başlığı kompakt toplam sayıyı gösterir, kapasiteler açıklamada kalır. Kanıt: audits/tempo-doubled-lanes.png.
+
+Saf oda etkileri bağımlılık anahtarıyla, lig fikstürleri sezon anahtarıyla önbelleklenir; dışarıya verilen diziler kopyadır. Hat eşleme 120 ms ile sınırlıdır; gerçek oda değişimi zorunlu eşleme yapar. Hareket yolları geometri değişene kadar tekrar kullanılır. AP teslimi ve çevrimdışı hesap azaltılmaz. Kontrollü yerel yoğun testte JavaScript süresi 1806 ms'den 608 ms'ye indi; cihaz FPS garantisi değildir. Yöntem ve sınırlar RUNTIME-PERFORMANCE-AUDIT.md içindedir. test-tempo-cache-rules.cjs, test-portrait-intro-tempo.cjs, test-flow-rules-debug.cjs, test-flow-settlement.cjs, test-flow-capacity.cjs, test-flow-amplifiers.cjs, test-optional-match-names.cjs, test-shadow-toggle-pancake.cjs ve test-rival-intro-lab.cjs geçti.

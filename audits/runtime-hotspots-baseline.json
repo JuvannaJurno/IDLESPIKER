@@ -1,0 +1,74 @@
+[
+  {
+    "name": "(program) @ native:-1",
+    "ms": 1676
+  },
+  {
+    "name": "(idle) @ native:-1",
+    "ms": 737
+  },
+  {
+    "name": "level @ bal-rules.js?v=fb4deaedcae3:86",
+    "ms": 212
+  },
+  {
+    "name": "pairings @ league-rules.js?v=25643967df56:20",
+    "ms": 198
+  },
+  {
+    "name": "querySelectorAll @ native:-1",
+    "ms": 131
+  },
+  {
+    "name": "count @ room-rules.js?v=c6eff2510061:34",
+    "ms": 86
+  },
+  {
+    "name": "applyGain @ rooms.js?v=6100646bc422:101",
+    "ms": 75
+  },
+  {
+    "name": "(garbage collector) @ native:-1",
+    "ms": 65
+  },
+  {
+    "name": "standings @ league-rules.js?v=25643967df56:28",
+    "ms": 60
+  },
+  {
+    "name": "(anonymous) @ league-rules.js?v=25643967df56:20",
+    "ms": 58
+  },
+  {
+    "name": "schedule @ league-rules.js?v=25643967df56:22",
+    "ms": 58
+  },
+  {
+    "name": "(anonymous) @ bal-rules.js?v=fb4deaedcae3:87",
+    "ms": 52
+  },
+  {
+    "name": "value @ bal-rules.js?v=fb4deaedcae3:87",
+    "ms": 50
+  },
+  {
+    "name": "sync @ flow-lanes.js?v=3975ee4ab6e7:9",
+    "ms": 49
+  },
+  {
+    "name": "setItem @ native:-1",
+    "ms": 36
+  },
+  {
+    "name": "(anonymous) @ league-rules.js?v=25643967df56:29",
+    "ms": 31
+  },
+  {
+    "name": "animatePulse @ menu.js?v=7ca4048c06e8:31",
+    "ms": 29
+  },
+  {
+    "name": "value @ room-rules.js?v=c6eff2510061:35",
+    "ms": 29
+  }
+]
