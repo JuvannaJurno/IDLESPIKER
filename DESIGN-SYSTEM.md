@@ -594,3 +594,9 @@ Animation lab’de topun eski dolu elips gölgesi yerine circle_rings_a.png dene
 ## Blok kalkanı durduruldu; yeni görüş maskesi — 27 Ekim 2026
 
 Kullanıcı blok kalkanı fikrini şimdilik bıraktı: lab seçicisi ve blok efektleri kapalı, eski alternatifler yalnız arşivde. Lab’de Kort Görüşü aydınlık alanı circle_rings_b_streaks.png saydamlığıyla açılır; çevresi karanlık ve gerçek saha/oyuncu içeriği korunur. circle_rings_a.png top gölgesi artık yatık elips değil eşit en-boylu tam dairedir; zemin merkezi değişmez. Üretim maçına aktarılmadı.
+
+## Lab ışık ve gölge malzemeleri — 27 Ekim 2026
+
+Takımın Kalbi ana dalgası ve takım arkadaşlarının ışığı, aura ile aynı window_h_noise.png maskesini kullanır. Dalga zamanlaması/karartma ve karşıt takım rengi mantığı korunur; ışık baş merkezinden çıkar. circle_rings_a.png top gölgesi test için kırmızıdır (#d9333e), tam daire ve zemine bağlıdır. Oyuncuların eski elips gölgesi window_g_blur.png ile değiştirilir; koyu renge dönüştürülüp oyuncu sıçramasından önce zemine çizilir. Hepsi yalnız animation lab’de; üretim sahası etkilenmez.
+
+Kort Görüşü için son kullanıcı seçimi window_h_blur.png: circle_rings_b_streaks yerine yumuşak yatay pencere maskesi kullanılır. Önceki streaks görünümü güncel değildir.
