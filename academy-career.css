@@ -21,3 +21,30 @@
 #academyConversationQuestion{font-size:16px;font-weight:700;line-height:1.5;color:var(--ui-ink);margin:0 0 15px}#academyConversationOptions{display:grid;gap:8px}#academyConversationOptions button{width:100%;margin:0;min-width:0;text-align:left;white-space:normal;padding:11px 12px}#academyConversationOptions strong{display:block;font-size:12px}#academyConversationOptions small{display:block;font-size:10px;font-weight:400;line-height:1.5;margin-top:4px;color:var(--ui-muted)}#academyConversationOptions [aria-pressed=true]{border-color:var(--ui-focus);box-shadow:inset 0 0 0 1px var(--ui-focus)}#academyConversationNote{font-size:10px;line-height:1.6;color:var(--ui-muted);margin:13px 0 0}
 #academyConversation[data-state=reply] footer{display:none}#academyConversation[data-state=reply] .selection-scroll{flex:1}#academyConversation[data-state=reply] #academyConversationQuestion{margin:20px 0 0}#academyConversation[data-state=reply] #academyConversationNote{display:none}
 .academy-conversation-badge{position:relative;display:grid;place-items:center;min-width:20px;height:17px;padding:0 4px;border:1px solid var(--ui-focus);border-radius:7px;background:var(--ui-paper);color:var(--ui-ink);font-size:14px;font-weight:700;line-height:1}.academy-conversation-badge:after{content:'';position:absolute;bottom:-3px;left:5px;width:4px;height:4px;background:var(--ui-paper);border-bottom:1px solid var(--ui-focus);border-right:1px solid var(--ui-focus);transform:rotate(45deg)}
+/* The academy is a live room, with the menu placed over its edges. */
+#academyCareer[open]{position:relative;isolation:isolate;display:flex;flex-direction:column;width:min(480px,calc(100vw - 24px));height:min(820px,calc(100dvh - 24px));max-height:calc(100dvh - 24px);padding:0;overflow:hidden;background:#80b8b4}
+#academyCareer>.selection-header{position:relative;z-index:3;flex:0 0 auto;padding:16px 18px;background:var(--ui-paper);border-bottom:1px solid var(--ui-edge);box-shadow:0 2px 10px #244b4e12}
+#academyCareer>.selection-header h2{font-size:21px;margin:4px 0 0}
+#academyCareer>.selection-header small{font-size:8px;letter-spacing:1px}
+#academyCareer>.selection-scroll{position:static;padding:0;overflow:hidden;flex:1;min-height:0}
+#academyCareer .academy-stage{position:absolute;inset:0;z-index:0;margin:0;border:0;border-radius:0;background:#80b8b4;box-shadow:none}
+#academyCareer #academyCareerFrame{position:absolute;inset:0;width:100%;height:100%;max-height:none;min-height:0;aspect-ratio:auto}
+#academyCareer .academy-career-players{position:absolute;z-index:2;top:88px;left:12px;right:12px;gap:6px;padding:6px;border:1px solid var(--ui-edge);border-radius:12px;background:var(--ui-paper);box-shadow:0 3px 12px #254f4b18;scrollbar-width:thin}
+#academyCareer .academy-career-players button{min-height:40px;background:transparent;border-color:transparent;padding:4px 7px;font-size:10px}
+#academyCareer .academy-career-players button[aria-pressed=true]{background:var(--ui-soft);border-color:var(--ui-focus)}
+#academyCareer .academy-career-players img{width:28px;height:32px}
+#academyCareerStudent{position:absolute;z-index:2;bottom:14px;left:12px;right:12px;max-height:34%;overflow:auto;border-radius:14px;scrollbar-width:thin;box-shadow:0 4px 16px #244b4b26}
+#academyCareerStudent .academy-student{margin:0;padding:12px 14px;border-radius:14px;border:1px solid var(--ui-edge);background:var(--ui-paper);box-shadow:none}
+#academyCareerStudent .academy-student-head>img{width:38px;height:44px}
+#academyCareerStudent .academy-student-head h3{font-size:14px}
+#academyCareerStudent .academy-student-head small{font-size:9px}
+#academyCareerStudent .academy-student-head p{font-size:10px}
+#academyCareerStudent .academy-student-state{margin-top:10px;font-size:10px}
+#academyCareerStudent .academy-career-decision p{display:none}
+#academyCareerStudent .academy-career-decision button{margin:9px 0 0;min-height:36px;font-size:11px}
+#academyCareerStudent .academy-career-empty{padding:14px;background:var(--ui-paper);border:1px solid var(--ui-edge);border-radius:14px}
+#academyCareerStudent .academy-career-empty p{margin:7px 0 10px;font-size:11px}
+#academyCareer>footer{display:none}
+#academyCareerStatus:empty{display:none}
+html[data-theme=dark] #academyCareer[open]{background:#42676c!important}
+@media(max-height:520px){#academyCareer>.selection-header{padding:8px 12px}#academyCareer>.selection-header h2{font-size:17px}#academyCareer .academy-career-players{top:64px;left:10px;right:auto;max-width:46%;max-height:calc(100% - 82px);flex-direction:column;overflow:auto}#academyCareerStudent{left:auto;right:10px;bottom:10px;width:45%;max-height:calc(100% - 84px)}#academyCareerStudent .academy-student{padding:10px}#academyCareerStudent .academy-student-head h3{font-size:12px}}
