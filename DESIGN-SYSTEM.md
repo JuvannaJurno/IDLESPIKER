@@ -612,3 +612,7 @@ Animation lab’de Oyuncu tanıtımı düğmesi, aynı arena içinde oyunun ger�
 Hileler içinde Top gölgesi Siyah/Kırmızı anahtarı vardır. Tercih kaydolur, açık maç iframeine de iletilir; gerçek maçtaki top gölgesinin rengi değişir. Oyuncu gölgelerini etkilemez.
 
 Pancake vektör ve yedek çiziminde yalnız seçilen elin kol/forması manşet pozundadır, diğer kol dinlenme pozunda kalır. Kurtarış eline göre temas hizası seçilir; sol/sağ el ayrı doğrulanır. Gerçek maç ve animation lab aynı vektör poz yardımcısını kullanır. Kontroller: test-shadow-toggle-pancake.cjs ve test-rival-intro-lab.cjs.
+
+## Tanıtım önizlemesi doğrudan yetenek sahasında — 27 Ekim 2026
+
+Lab Oyuncu tanıtımı düğmesi artık mevcut matchPreview srcdoc sahasını kullanır. index/mac URL’sine gitmez, ek iframe açmaz. Oyundaki küçük etiket ortak rival-callout-ui.js bileşenidir; başlık/renk/tipografi aynı kalır. Dar sahada etiket oyuncunun boş olan yanına, daralabilen genişlikle yerleşir; karakterin üstünü kapatmaz. Tekrar oynat / Tanıtımı kapat aynı bölümde kalır. Oyun kaydı değişmez. Eski ayrı oyun açan lab önizlemesi kaldırıldı. test-rival-intro-lab.cjs yeni navigasyon ve iframe olmadığını da doğrular.
