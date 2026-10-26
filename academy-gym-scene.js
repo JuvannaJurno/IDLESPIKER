@@ -14,6 +14,7 @@ function rebuild(){ballSpots.length=0;g.clearRect(0,0,1000,620);
 rect(0,0,1000,620,'#b5c9b5');rect(130,36,740,548,'#6d897a33');rect(122,28,748,548,'#e8e6cf');rect(140,48,710,508,'#d7ba8a');
 for(let y=48;y<556;y+=23){line(140,y,850,y,'#c3a778',1);for(let x=140+(y%46===2?42:106);x<850;x+=128)line(x,y,x,Math.min(556,y+23),'#c6ab7d',1);}
 window.EnvironmentTiles?.paintFloor(g,140,48,710,508,'light');
+rect(140,48,710,508,'#26362e24');
 // Two windows, storage wall, and a small tactics board on the entrance side.
 for(const y of [103,431]){rect(124,y,13,72,'#f7f2da');rect(126,y+3,7,66,'#aac8be');line(129,y+4,129,y+67,'#edf1d8',2);line(125,y+36,134,y+36,'#edf1d8',2);}
 rect(155,55,92,43,'#78988a');rect(160,60,82,33,'#f5f0da');line(177,67,228,67,'#9caf9b');line(177,75,218,75,'#9caf9b');line(177,83,226,83,'#9caf9b');

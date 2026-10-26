@@ -24,7 +24,7 @@ function start(){
  add('budget',()=>$('roomBudget'),'Kazandığın bütçe bu sayaca eklenir.');
  }
  if(ScoutRules.available(RoomSystem.scoutView())){
- add('transfer',()=>$('scoutAlert'),'Transfer Merkezi, kadronu güçlendirebilecek adayları gösterir.',team);
+ add('transfer',()=>$('scoutAlert'),'Oyuncu Merkezi, kadronu güçlendirebilecek adayları gösterir.',team);
  add('catalog',()=>$('transferHome'),'Buradan mevcut kataloğunu inceleyebilir veya zamanı gelince yeni kataloğu açabilirsin.',()=>Scouting.open({preview:true}));
  if(!Scouting.hasUnopenedCatalog()&&RoomSystem.scoutView().scouting.catalog.some(c=>!c.hired)){
  add('candidate',()=>q('#scoutCatalog .valuable-candidate')||q('#scoutCatalog .scout-player'),'Yukarı ok, aynı pozisyondaki oyuncundan daha yüksek OVR anlamına gelir.',()=>$('homeCurrentCatalog').click());

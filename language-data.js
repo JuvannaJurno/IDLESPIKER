@@ -446,6 +446,9 @@ AP harcayarak kartı doğrudan yükseltir.|spends AP to upgrade the card directl
 Takımının sıralamasını ve maç sonuçlarını buradan takip edebilirsin.|Follow your team's standings and match results here.
 Lig durumunu buradan görebilirsin.|Check your league progress here.
 Transfer Merkezi|Transfer Center
+Oyuncu Merkezi|Player Center
+Akademi|Academy
+Oyuncu keşfet, kadronu geliştir.|Discover players and develop your squad.
 TRANSFER BÜTÇESİ|TRANSFER BUDGET
 KADRO|SQUAD
 Transfer olanakları|Transfer options

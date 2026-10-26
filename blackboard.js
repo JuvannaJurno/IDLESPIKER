@@ -50,7 +50,7 @@ function refresh(){
  else if(!ScoutRules.available(state))transferRows.push(['Katalog kapalı',(LeagueRules.config.division>=3?'Sportif Direktörlük bölümünden oyuncu keşfini aç.':'Oyuncu Keşfi departmanını aç.')]);
  else{
  const cacheKey=JSON.stringify([squad.lineup,squad.players.map(p=>[p.id,p.role,p.cardLevel,...TeamRules.trainable.map(k=>p[k])]),state.scouting?.catalog,state.floors,RoomSystem.developmentState().camp]);if(cacheKey!==transferCacheKey){transferCacheKey=cacheKey;transferCache=transfers(squad,state.scouting?.catalog||[],TeamRules)}const options=transferCache,useful=options.filter(o=>o.kind!=='pass');
- if(!options.length)transferRows.push(['Henüz aday yok','Transfer Merkezi’nde yeni kataloğu açtığında öneriler burada görünecek.']);
+ if(!options.length)transferRows.push(['Henüz aday yok','Oyuncu Merkezi’nde yeni kataloğu açtığında öneriler burada görünecek.']);
  else if(!useful.length)transferRows.push(['Öneri','Bu katalogda kadrona belirgin katkı sağlayacak bir fırsat görünmüyor. Bütçeni saklayabilirsin.']);
  for(const o of useful.slice(0,2)){
  const brief=transferBrief(o);
