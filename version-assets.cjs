@@ -1,6 +1,7 @@
 const fs=require('fs'),crypto=require('crypto');
 require('./sync-match-rules.cjs');
 require('./sync-academy-balls.cjs');
+require('./sync-match-light-masks.cjs');
 require('./sync-lab-core.cjs').sync();
 require('./sync-lab-assets.cjs');
 // Embed optional crest PNGs so file:// play can safely recolor/export them.

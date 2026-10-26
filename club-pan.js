@@ -2,7 +2,7 @@
 'use strict';
 const area=document.querySelector('.building-scroll');if(!area)return;
 let drag=null,suppressUntil=0,momentum=0;
-area.style.touchAction='pinch-zoom';
+area.style.touchAction='pan-y pinch-zoom';
 function verticalScroller(){for(let el=area.parentElement;el;el=el.parentElement){if(/auto|scroll/.test(getComputedStyle(el).overflowY)&&el.scrollHeight>el.clientHeight)return el;}return document.scrollingElement;}
 area.addEventListener('pointerdown',e=>{
  if(!e.isPrimary||e.button!==0||document.body.classList.contains('bal-transforming'))return;
@@ -13,6 +13,7 @@ area.addEventListener('pointermove',e=>{
  if(!drag||drag.id!==e.pointerId)return;
  const dx=e.clientX-drag.x,dy=e.clientY-drag.y;
  if(!drag.moved&&Math.hypot(dx,dy)<5)return;
+ if(e.pointerType==='touch'&&!drag.moved&&Math.abs(dy)>Math.abs(dx)){drag=null;return;}
  if(!drag.moved){drag.moved=true;area.setPointerCapture(e.pointerId);area.classList.add('is-panning');}
  e.preventDefault();const now=performance.now(),dt=Math.max(8,now-drag.time);drag.vx=(drag.lastX-e.clientX)/dt;drag.vy=(drag.lastY-e.clientY)/dt;drag.lastX=e.clientX;drag.lastY=e.clientY;drag.time=now;area.scrollTo({left:drag.left-dx,behavior:'instant'});drag.vertical.scrollTo({top:drag.top-dy,behavior:'instant'});
 },{passive:false});

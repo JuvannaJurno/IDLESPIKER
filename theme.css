@@ -299,3 +299,12 @@ html[data-theme=dark] .camp-alert-copy small{background:#263e36!important;color:
 #settingsDialog :is(#soundToggle,#vibrationToggle){flex:0 0 54px;max-width:54px;overflow:hidden;opacity:1;transform:none;isolation:isolate;align-self:center}#settingsDialog :is(#soundToggle,#vibrationToggle):active{transform:none;box-shadow:none}
 
 #settingsDialog #soundToggle,#settingsDialog #vibrationToggle{height:32px!important;min-height:32px!important;max-height:32px!important;border-radius:20px!important;padding:4px!important;box-shadow:none!important}#settingsDialog #soundToggle::before,#settingsDialog #vibrationToggle::before{top:4px!important;transform:none!important}
+
+/* Keep the close control outside the settings scroll surface. */
+#settingsDialog{padding:0;overflow:hidden}
+#settingsDialog[open]{display:flex;flex-direction:column}
+#settingsDialog .settings-header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex:none;padding:16px 18px 10px}
+#settingsDialog .settings-header h2{margin:0;font-size:25px}
+#settingsDialog #closeSettings{position:static;inset:auto;flex:0 0 38px;width:38px;height:38px;margin:0;transform:none}
+#settingsDialog .settings-scroll{min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:0 18px 18px}
+#settingsDialog :is(#soundToggle,#vibrationToggle){inset:auto}

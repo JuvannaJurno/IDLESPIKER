@@ -17,5 +17,9 @@ document.addEventListener('DOMContentLoaded',()=>{
  const tutorial=document.getElementById('reviewTutorials')?.closest('.tutorial-review-row');if(tutorial){const note=tutorial.nextElementSibling?.matches('.tutorial-review-note')?tutorial.nextElementSibling:null;cheats.querySelector('.cheat-drawer-content').append(tutorial);if(note)cheats.querySelector('.cheat-drawer-content').append(note);}
  dialog.append(cheats);
  const reset=dialog.querySelector('.reset-section');if(reset)dialog.append(reset);
+ const header=document.createElement('header');header.className='settings-header';
+ header.append(dialog.querySelector('h2'),document.getElementById('closeSettings'));
+ const scroll=document.createElement('div');scroll.className='settings-scroll';
+ scroll.append(...dialog.children);dialog.append(header,scroll);
 });
 })();

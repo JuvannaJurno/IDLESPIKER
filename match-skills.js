@@ -35,8 +35,8 @@ function drawAura(context,p,color,opacity=1,radius=24){
  if(!sprite){sprite=document.createElement('canvas');sprite.width=sprite.height=128;const c=sprite.getContext('2d'),g=c.createRadialGradient(64,64,0,64,64,64);g.addColorStop(0,color+'c4');g.addColorStop(.28,color+'a8');g.addColorStop(.52,color+'70');g.addColorStop(.76,color+'2c');g.addColorStop(1,color+'00');c.fillStyle=g;c.fillRect(0,0,128,128);auraSprites.set(color,sprite);}
  const width=radius*2.7,height=width*.72;context.save();context.globalAlpha*=limit(opacity);context.drawImage(sprite,p.x-width/2,p.y+3-height/2,width,height);context.restore();
 }
-function drawTeamBuff(p){const buff=teamBuffs.get(p.index);if(!buff)return;const age=clock-buff.start-buff.delay;if(age<0||age>1.6)return;drawAura(ctx,p,'#91d6bd',limit(age/.2)*(.68+Math.sin(clock*2.8+p.index*.4)*.06),22);}
-function drawHeartWave(p,age){if(age<0||age>1.1)return;drawAura(ctx,p,'#efd397',Math.sin(limit(age/1.1)*Math.PI)*.26,24+age*30);}
+function drawTeamBuff(p){const buff=teamBuffs.get(p.index);if(!buff)return;const age=clock-buff.start-buff.delay;if(age<0||age>1.6)return;MatchSkillVisuals.light(ctx,p,'#91d6bd',limit(age/.2)*.65,76);}
+function drawHeartWave(p,age){if(age<0||age>1.1)return;MatchSkillVisuals.light(ctx,p,'#efd397',Math.sin(limit(age/1.1)*Math.PI)*.75,90+age*100);}
 
 const reactionIcons=new Map();
 const knockbacks=new Map();

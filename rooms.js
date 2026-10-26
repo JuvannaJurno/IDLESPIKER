@@ -51,16 +51,16 @@ const bonusLevels=new Map();
 function showBlockBonus(card,room,level){
  if(RoomRules.maxLevel(state,room)<=5){card.dataset.bonusActive='false';card.querySelector('.block-bonus-panel')?.remove();card.querySelector('.block-bonus-locked')?.remove();return;}
  const previous=bonusLevels.get(room.id);bonusLevels.set(room.id,level);
- const active=!!room.bonus&&level>=6;card.dataset.bonusActive=String(active);
+ const bonusCaption=room.id==='pro_coordinator'?'EK ÖZELLİK · AÇIK':'EK ÖZELLİK · '+(level-5)+'/5';const active=!!room.bonus&&level>=6;card.dataset.bonusActive=String(active);
  let panel=card.querySelector('.block-bonus-panel');if(!active){panel?.remove();if(room.bonus&&!card.querySelector('.block-bonus-locked')){const locked=document.createElement('span');locked.className='block-bonus-locked';locked.innerHTML='<span class="block-main-label">EK ÖZELLİK</span><span class="bonus-lock-icon" aria-hidden="true">♙</span><span>Seviye 6’da açılır</span>';card.querySelector('.room-active').before(locked);}return;}
  card.querySelector('.block-bonus-locked')?.remove();
  if(!panel){panel=document.createElement('span');panel.className='block-bonus-panel';panel.innerHTML='<span class="block-bonus-label"></span><strong class="block-bonus-title"></strong><span class="block-bonus-copy"></span>';card.querySelector('.room-active').before(panel);}
  if(panel.dataset.level===String(level))return;panel.dataset.level=level;
  const label=panel.querySelector('.block-bonus-label'),title=panel.querySelector('.block-bonus-title'),copy=panel.querySelector('.block-bonus-copy');
- label.textContent='EK ÖZELLİK · '+(level-5)+'/5';title.textContent=room.bonus[2];copy.textContent=BalRules.describeBonus(state,room,level);
+ label.textContent=bonusCaption;title.textContent=room.bonus[2];copy.textContent=BalRules.describeBonus(state,room,level);
  if(previous!==undefined&&level>previous){
   label.textContent=previous<6?'YENİ ÖZELLİK AÇILDI':'EK ÖZELLİK GÜÇLENDİ';
-  setTimeout(()=>{if(panel.isConnected&&panel.dataset.level===String(level))label.textContent='EK ÖZELLİK · '+(level-5)+'/5';},1800);
+  setTimeout(()=>{if(panel.isConnected&&panel.dataset.level===String(level))label.textContent=bonusCaption;},1800);
   if(!matchMedia('(prefers-reduced-motion: reduce)').matches)panel.animate([{opacity:0,transform:'translateY(24px)'},{opacity:1,transform:'translateY(0)'}],{duration:560,easing:CardMotion.ease});
  }
 }

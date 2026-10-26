@@ -27,3 +27,8 @@ html.app-expanded :is(.toast,#tapRhythm){bottom:calc(var(--app-view-bottom,0px) 
 
 /* The host paints one continuous background through the transparent match iframe. */
 #gameMatchDialog{background:radial-gradient(ellipse at 50% 0,#fff8e8,transparent 60%),#bedcd8}
+
+/* Match iframe cannot paint into host safe-area gutters. Dim those too on results. */
+#gameMatchDialog.match-result-visible{background:linear-gradient(#365c7088,#365c7088),radial-gradient(ellipse at 50% 0,#fff8e8,transparent 60%),#bedcd8}
+#gameMatchDialog.match-result-visible .match-fullscreen{visibility:hidden}
+#gameMatchDialog.match-result-visible::backdrop{background:#365c70cc}

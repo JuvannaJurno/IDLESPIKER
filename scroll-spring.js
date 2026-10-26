@@ -19,6 +19,8 @@ document.addEventListener('touchmove',e=>{
  if(g.axis!=='y'||!g.scroller||g.target.closest('input,textarea,select,[contenteditable=true],iframe,canvas'))return;
  const el=g.scroller,delta=t.clientY-g.lastY,dt=Math.max(.008,Math.min(.08,(e.timeStamp-g.lastTime)/1000)),max=Math.max(0,el.scrollHeight-el.clientHeight),atTop=el.scrollTop<=.5,atBottom=el.scrollTop>=max-.5;
  g.lastY=t.clientY;g.lastTime=e.timeStamp;
+ // Root pull-down belongs to the browser refresh gesture, never translate club cards.
+ if(el===document.scrollingElement&&atTop&&delta>0&&!g.state){gesture=null;return;}
  if(!g.state&&!((atTop&&delta>0)||(atBottom&&delta<0)))return;if(!e.cancelable)return;e.preventDefault();
  if(!g.state){const list=nodes(el);if(!list.length)return;const old=[...states].find(s=>s.scroller===el);g.state=old||{scroller:el,nodes:list,original:new Map(list.map(n=>[n,n.style.translate])),x:0,v:0,dragging:true};g.state.dragging=true;states.add(g.state);const dimension=Math.max(1,Math.min(el.clientHeight||innerHeight,innerHeight)),distance=Math.min(dimension-.01,Math.abs(g.state.x));g.raw=Math.sign(g.state.x)*distance*dimension/(coefficient*(dimension-distance));}
  const s=g.state;let raw=g.raw+delta;

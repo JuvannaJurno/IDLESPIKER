@@ -25,7 +25,7 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 .match-controls{display:flex;gap:8px;border-top:1px solid #e3e5d2;padding-top:7px;margin:0}
 .match-controls button{flex:1;min-height:40px;padding:7px;border:0;border-radius:9px;background:#e2eade;color:#52766e;font-family:inherit;font-size:11px;font-weight:800;cursor:pointer}
 #mobileSpeed{background:#ede9d5;color:#8b805a}.match-controls button:hover{filter:brightness(.97)}.match-controls button:active{transform:translateY(1px)}button:focus-visible{outline:2px solid #54897c;outline-offset:2px}.match-controls button:disabled{opacity:.5}
-#matchResult:not([hidden]){position:fixed;left:50%;transform:translate(-50%,-50%);border:3px solid #fffdf0;box-shadow:0 6px 0 #8dada7,0 0 0 100vmax #365c7088;color:#527888}
+#matchResult:not([hidden]){position:fixed;left:50%;transform:translate(-50%,-50%);border:3px solid #fffdf0;box-shadow:0 6px 0 #8dada7;color:#527888}
 #resultContinue{width:100%;min-height:46px;font-family:inherit;font-weight:800;cursor:pointer}#resultScore{font-weight:800}
 @media(max-height:700px){main{gap:6px}.match-board{padding-top:7px}.score-numbers b{font-size:27px}.serve-strip{margin-top:5px}.match-console{padding-bottom:6px}#event{height:28px}.match-controls{padding-top:5px}}
 @media(min-aspect-ratio:6/5) and (max-height:500px){main{max-width:760px;display:grid;grid-template-columns:190px minmax(0,1fr);grid-template-rows:42px 1fr auto;gap:8px;padding-top:10px}.match-heading{grid-column:1;grid-row:1;padding-right:0}.match-board{grid-column:1;grid-row:2;align-self:start;grid-template-columns:1fr 74px 1fr;padding:12px 6px 0}.score-team strong{font-size:10px}.score-numbers b{font-size:25px}.court-space{grid-column:2;grid-row:1/4;height:100%}.match-console{grid-column:1;grid-row:3}.match-controls button{font-size:10px}}
@@ -258,3 +258,5 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 .notice-page-back>.serve-strip[data-point="false"]{background:#fff7e5!important}
 
 html.match-hosted,html.match-hosted body{background:transparent}
+
+body:has(#matchResult:not([hidden]))::after{content:"";position:fixed;inset:0;background:#365c7088;z-index:19;pointer-events:auto}
