@@ -1,6 +1,6 @@
 (function(root){
 'use strict';
-const isProspect=p=>!!(p?.academyProspect||p?.transferProfile==='potential');
+const isProspect=p=>!p?.academyOrigin&&!!(p?.academyProspect||p?.transferProfile==='potential');
 function icon(){const data=root.SpikerIconData?.diamond;if(!data)return '';return '<svg class="spiker-icon" viewBox="'+data.viewBox+'" aria-hidden="true"><path fill="currentColor" d="'+data.d+'"/></svg>';}
 function conceal(face,p={}){
  const potential=root.ProspectPotentialRules.rating(p);face.dataset.potentialRating=potential.tier;
@@ -16,7 +16,7 @@ function conceal(face,p={}){
  face.querySelectorAll('.camp-stars').forEach(n=>{n.replaceChildren(document.createTextNode('??'));n.title='Yıldızlar henüz bilinmiyor';n.setAttribute('aria-label',n.title);});
  face.querySelectorAll('.card-grade,.special-player-tag,.card-potential,.transfer-upgrade-marker').forEach(n=>n.remove());
  const fit=face.querySelector('.transfer-fit');if(fit){fit.dataset.fit='potential';fit.textContent=potential.label;}
- const marker=document.createElement('span');marker.className='transfer-upgrade-marker potential-marker';marker.dataset.direction='potential';marker.title=potential.label+' · Akademide elit olma ihtimali %'+Math.round(potential.chance*100)+'. Garanti değildir.';marker.setAttribute('aria-label',potential.label+' · '+potential.tier+' / 3 elmas');marker.innerHTML=Array.from({length:3},(_,i)=>'<span class="potential-diamond" data-filled="'+(i<potential.tier)+'">'+icon()+'</span>').join('');face.querySelector('.card-art')?.append(marker);
+ const marker=document.createElement('span');marker.className='transfer-upgrade-marker potential-marker';marker.dataset.direction='potential';marker.title=potential.label+' · Akademide altın mezuniyet ihtimali %'+Math.round(potential.chance*100)+'. Garanti değildir.';marker.setAttribute('aria-label',potential.label+' · '+potential.tier+' / 3 elmas');marker.innerHTML=Array.from({length:3},(_,i)=>'<span class="potential-diamond" data-filled="'+(i<potential.tier)+'">'+icon()+'</span>').join('');face.querySelector('.card-art')?.append(marker);
  return face;
 }
 root.PlayerCardPresentation={isProspect,conceal,icon};

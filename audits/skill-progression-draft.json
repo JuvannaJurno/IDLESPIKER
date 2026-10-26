@@ -1,0 +1,253 @@
+{
+  "draft": true,
+  "seed": "skill-draft-balance",
+  "rows": [
+    {
+      "cashPerDay": 4700,
+      "budgetDays": 14.893617021276595,
+      "minimumWallMinutes": 32.51045296167248,
+      "division": 2,
+      "target": 4,
+      "startingCamps": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "players": 7,
+      "cardAP": 320892,
+      "campAP": 1022700,
+      "campCash": 70000,
+      "upgrades": 112,
+      "campBatches": 5,
+      "campDays": 15,
+      "sampleAutoAP": 60,
+      "sampleAutoRate": 11.479999999999999,
+      "apPerGameDay": 30000,
+      "resourceDays": 44.7864,
+      "lowerBoundGameDays": 44.7864,
+      "levels": [
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17
+      ],
+      "ovrs": [
+        40,
+        41,
+        40,
+        42,
+        44,
+        43,
+        50
+      ]
+    },
+    {
+      "cashPerDay": 56000,
+      "budgetDays": 3.25,
+      "minimumWallMinutes": 19.325912183055046,
+      "division": 3,
+      "target": 8,
+      "startingCamps": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "players": 7,
+      "cardAP": 2670363,
+      "campAP": 9273600,
+      "campCash": 182000,
+      "upgrades": 84,
+      "campBatches": 5,
+      "campDays": 10,
+      "sampleAutoAP": 1560,
+      "sampleAutoRate": 21.559999999999995,
+      "apPerGameDay": 3900000,
+      "resourceDays": 3.0625546153846153,
+      "lowerBoundGameDays": 10,
+      "levels": [
+        29,
+        29,
+        29,
+        29,
+        29,
+        29,
+        29
+      ],
+      "ovrs": [
+        58,
+        59,
+        58,
+        62,
+        64,
+        64,
+        75
+      ]
+    },
+    {
+      "cashPerDay": 56000,
+      "budgetDays": 8.625,
+      "minimumWallMinutes": 56.597988816738834,
+      "division": 4,
+      "target": 14,
+      "startingCamps": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "players": 7,
+      "cardAP": 46764347,
+      "campAP": 67451300,
+      "campCash": 483000,
+      "upgrades": 126,
+      "campBatches": 7,
+      "campDays": 14,
+      "sampleAutoAP": 1560,
+      "sampleAutoRate": 21.559999999999995,
+      "apPerGameDay": 3900000,
+      "resourceDays": 29.286063333333335,
+      "lowerBoundGameDays": 29.286063333333335,
+      "levels": [
+        47,
+        47,
+        47,
+        47,
+        47,
+        47,
+        47
+      ],
+      "ovrs": [
+        86,
+        86,
+        85,
+        91,
+        95,
+        94,
+        113
+      ]
+    },
+    {
+      "cashPerDay": 56000,
+      "budgetDays": 8.25,
+      "minimumWallMinutes": 144.2280497280498,
+      "division": 5,
+      "target": 18,
+      "startingCamps": [
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14
+      ],
+      "players": 7,
+      "cardAP": 170153312,
+      "campAP": 120901200,
+      "campCash": 462000,
+      "upgrades": 84,
+      "campBatches": 5,
+      "campDays": 10,
+      "sampleAutoAP": 1560,
+      "sampleAutoRate": 21.559999999999995,
+      "apPerGameDay": 3900000,
+      "resourceDays": 74.62936205128206,
+      "lowerBoundGameDays": 74.62936205128206,
+      "levels": [
+        59,
+        59,
+        59,
+        59,
+        59,
+        59,
+        59
+      ],
+      "ovrs": [
+        104,
+        104,
+        103,
+        111,
+        115,
+        115,
+        138
+      ]
+    }
+  ],
+  "availabilityWeights": {
+    "sky-ball-serve": 1,
+    "jump-legendary": 1,
+    "jump-float-legendary": 0.8,
+    "ghost-tip": 0.7,
+    "pancake": 0.7,
+    "perfect-second-touch": 0.55,
+    "one-hand-rescue": 0.55,
+    "absolute-read": 0.4,
+    "tempo-minus": 0.35,
+    "sync-attack": 0.3
+  },
+  "firstLegendarySamples": {
+    "setter": {
+      "jump-float-legendary": 1905,
+      "perfect-second-touch": 1261,
+      "sky-ball-serve": 2443,
+      "one-hand-rescue": 1305,
+      "sync-attack": 722,
+      "team-heart": 2364
+    },
+    "outside": {
+      "jump-legendary": 2527,
+      "sky-ball-serve": 2624,
+      "ghost-tip": 1820,
+      "jump-float-legendary": 2102,
+      "tempo-minus": 927
+    },
+    "opposite": {
+      "sky-ball-serve": 3254,
+      "ghost-tip": 2286,
+      "jump-legendary": 3305,
+      "tempo-minus": 1155
+    },
+    "middle": {
+      "absolute-read": 2264,
+      "tempo-minus": 2010,
+      "sky-ball-serve": 5726
+    },
+    "libero": {
+      "pancake": 10000
+    }
+  },
+  "academy": [
+    {
+      "gold": 0.15,
+      "silver": 0.4675,
+      "black": 0.3825,
+      "expectedStartingCamps": 4.605
+    },
+    {
+      "gold": 0.25,
+      "silver": 0.41250000000000003,
+      "black": 0.3375,
+      "expectedStartingCamps": 5.475
+    },
+    {
+      "gold": 0.4,
+      "silver": 0.33,
+      "black": 0.27,
+      "expectedStartingCamps": 6.780000000000001
+    }
+  ]
+}

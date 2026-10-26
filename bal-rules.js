@@ -72,11 +72,11 @@ const professionalBonuses=[
 for(const [id,floor,name,icon,step,describe] of professional){const bonus=professionalBonuses.find(b=>b[0]===id),r={id,floor,name,icon,values:Array.from({length:5},(_,i)=>step*(i+1)*(id==='pro_coach'||id==='pro_coordinator'?2:1)),compressed:!!bonus,describe,price:300,bal:true,division:3};if(bonus){successors.push(bonus);r.bonus=bonus;r.values.push(...Array(5).fill(r.values[4]));}catalog.push(r);}
 
 catalog.push({id:'first_academy',floor:0,name:'Altyapı Akademisi',icon:'♟',values:[2,3,4],describe:v=>v+' genç için eğitim alanı. Transferden genç al, yönünü ve yeteneğini seç.',price:300,bal:true,division:4});
-function maxLevel(s,r){return r.division?r.values.length:!r.bal?r.values.length:Math.max(longBal.has(r.id)?10:5,level(s,r.id));}
+function maxLevel(s,r){if(r.id==='pro_scout'&&(s.division||2)<6)return Math.max(5,level(s,r.id));return r.division?r.values.length:!r.bal?r.values.length:Math.max(longBal.has(r.id)?10:5,level(s,r.id));}
 
 function bonusLevel(s,id){const bonus=successors.find(row=>row[1]===id);return bonus?Math.max(0,Math.min(5,level(s,bonus[0])-5)):0;}
 function describePrimary(s,r,n=level(s,r.id)){let v=r.values[Math.max(0,n-1)];if(r.id==='bal_shift'&&s.division>=3)v*=3;if(Clock.isWeekly(s)){if(r.id==='pro_shop')v*=Clock.economyScale(s);if(r.id==='bal_fans')v*=2;if(r.id==='pro_sponsor')return '3 maçta toplam +'+display(v*2)+' bütçe.';}return r.describe(v);}
-function describeBonus(s,r,n){let v=r.bonus[3][n-6],text;if(Clock.isWeekly(s)){if(['bal_evening','bal_members'].includes(r.bonus[1]))v*=Clock.economyScale(s);if(['bal_matchsponsor','bal_review'].includes(r.bonus[1]))v*=2;}text=r.bonus[4](v);if(Clock.isWeekly(s)&&r.bonus[1]==='bal_warmstart')text=text.replace('ilk 20','ilk '+Clock.morningInstructions(s));return text;}
+function describeBonus(s,r,n){if(r.bonus?.[1]==='pro_elite'&&(s.division||2)<6)return 'Milletler Kupası’nda etkinleşir. '+r.bonus[4](r.bonus[3][n-6]);let v=r.bonus[3][n-6],text;if(Clock.isWeekly(s)){if(['bal_evening','bal_members'].includes(r.bonus[1]))v*=Clock.economyScale(s);if(['bal_matchsponsor','bal_review'].includes(r.bonus[1]))v*=2;}text=r.bonus[4](v);if(Clock.isWeekly(s)&&r.bonus[1]==='bal_warmstart')text=text.replace('ilk 20','ilk '+Clock.morningInstructions(s));return text;}
 function describeBlock(s,r,n=level(s,r.id)){const primary=describePrimary(s,r,n);if(!r.bonus)return primary;return primary+(n>5?' '+r.bonus[2]+': '+describeBonus(s,r,n):'');}
 const departmentPrices={2:0,4:0};
 function departmentOpen(s,f){return s.stage==='bal'&&(!Object.hasOwn(departmentPrices,f)||!Array.isArray(s.openDepartments)||s.openDepartments.includes(f));}
@@ -85,7 +85,7 @@ const gates=[];
 function remainingDays(){return 0}
 function upgraded(s,id){if(s.balReadyDay)delete s.balReadyDay[id]}
 function level(s,id){return (s.floors||[]).flat().filter(x=>x===id).length}
-function value(s,id){const bonus=successors.find(row=>row[1]===id);if(bonus){const r=catalog.find(x=>x.id===bonus[0]);return (!r.division||s.division>=r.division)&&departmentOpen(s,r.floor)?bonus[3][bonusLevel(s,id)-1]||0:0;}const r=catalog.find(x=>x.id===id);return r&&(!r.division||s.division>=r.division)&&departmentOpen(s,r.floor)?r.values[level(s,id)-1]||0:0}
+function value(s,id){if(id==='pro_elite'&&(s.division||2)<6)return 0;const bonus=successors.find(row=>row[1]===id);if(bonus){const r=catalog.find(x=>x.id===bonus[0]);return (!r.division||s.division>=r.division)&&departmentOpen(s,r.floor)?bonus[3][bonusLevel(s,id)-1]||0:0;}const r=catalog.find(x=>x.id===id);return r&&(!r.division||s.division>=r.division)&&departmentOpen(s,r.floor)?r.values[level(s,id)-1]||0:0}
 function enter(raw,day){if(raw.stage==='bal')return JSON.parse(JSON.stringify(raw));const R=root.RoomRules||(typeof require==='function'?require('./room-rules.js'):null),s=R.defaults();s.stage='bal';if(raw.dailyShift)s.dailyShift=JSON.parse(JSON.stringify(raw.dailyShift));s.floors=s.floors.map((_,f)=>(raw.floors?.[f]||[]).filter(id=>R.catalog.some(r=>r.id===id&&!r.bal&&r.floor===f)));s.budget*=10;s.budgetScale=10;s.balVersion=1;s.balStart=0;s.balStartDay=1;return s}
 function requirement(s,r){if(r.division&&(s.division||2)<r.division)return r.division===4?'1. Lig aşamasında açılır':'2. Lig aşamasında açılır';if(r.bal&&s.stage!=='bal')return 'BAL aşamasında açılır';if(s.stage!=='bal')return null;if(r.bal&&!departmentOpen(s,r.floor))return 'Önce '+departments[r.floor]+' aç';return null}
 // Early investments offer several routes; later levels remain long-term goals.

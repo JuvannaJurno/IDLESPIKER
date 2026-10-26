@@ -46,7 +46,7 @@ const nativeCourt=court,courtCache=document.createElement('canvas');courtCache.w
 const label=document.createElement('div');label.id='matchSkillNotice';label.hidden=true;label.setAttribute('role','status');label.setAttribute('aria-live','polite');label.innerHTML='<span></span><strong></strong><small></small>';document.querySelector('.court-space').append(label);
 const limit=(v,a=0,b=1)=>Math.max(a,Math.min(b,v)),role=p=>p?.stats?.role||p?.roster?.role,number=p=>p?.index;
 const sound=action=>{if(parent!==window)parent.postMessage({type:'spiker-audio',action},'*');else if(action==='skill-slow')window.GameAudio?.skillSlow?.();else if(action==='heartbeat')window.GameAudio?.heartbeat?.();else if(action==='heartbeat-stop')window.GameAudio?.stopHeartbeat?.();else window.GameAudio?.stopSkillSlow?.();};
-function leagueEnabled(){return !!window.matchInfo?.epicTeam||[1,2,3,4].includes(Number(window.matchInfo?.division||1));}
+function leagueEnabled(){return !!window.matchInfo?.epicTeam||[1,2,3,4,5,6,7,8].includes(Number(window.matchInfo?.division||1));}
 function canShow(){return enabled&&leagueEnabled()&&!suppressed&&!document.hidden&&!scenario&&!formationPreview&&!serviceGame;}
 function finishFocus(reason='cancelled'){if(focus){const f=focus.flight,progress=f?limit(f.t/Math.max(.001,f.duration)):null;focusEvents.push({id:focus.skill.id,reason,progress,age:focus.age});if(focusEvents.length>40)focusEvents.shift();}focus=null;sound('skill-slow-stop');if(!pendingDive?.heartbeatStarted)sound('heartbeat-stop');}
 function resetEffects(preserveNotices=false){if(active.some(e=>e.ballGhosts))matchSound('hit',{kind:'whoosh-stop'});rallyLegendaryCount=0;secondLegendaryAllowed=false;knockbacks.clear();reactionIcons.clear();if(!preserveNotices){currentNotice=null;completedNotices.length=0;clearTimeout(noticeTimer);noticeTimer=null;}attempts.length=0;visionHold=null;pancakeHold=null;document.body.classList.remove('skill-blackout');if(impactHold)impactHold.flight.impactFlash=0;impactHold=null;overheadUntil.clear();sound('heartbeat-stop');window.MatchMotion?.reset();window.MatchFrames?.invalidate();active.length=0;trace.length=0;motion.clear();servePlan=null;approachPlan=null;pendingSet=null;pendingAttack=null;pendingBlock=null;pendingSync=null;pendingDive=null;serveLabelUntil=0;currentServe=null;reactions.clear();finishFocus('reset');carry=0;lastBall=null;if(!preserveNotices)label.hidden=true;}
@@ -83,11 +83,13 @@ function portraitNotice(effect){if(!effect||effect.portraitShown||effect.prepare
 function failNotice(effect){if(effect)effect.failed=true;}
 function resolveAttempt(flight){for(const e of attempts)if(!e.failed&&e.flight===flight&&['attack','serve','block'].includes(e.kind))failNotice(e);}
 function creditFlight(effect,flight){if(flight){const credit={id:effect.skill.id,actor:effect.actor,team:effect.team};flight.skillCredit=credit;(flight.skillCredits??=[]).push(credit);}}
+let opportunitySerial=0;
 function trigger(skill,actor,kind,flight=ball,extra={}){
  if(!skill||!actor||!canShow()||!owns(actor,skill.id)||(skill.rarity==='Legendary'&&!canRallyLegendary()))return null;
+ const contact=extra.incoming||flight||ball;let opportunity=null;if(skill.rarity==='Legendary'&&contact){if(contact.legendaryActors?.includes(actor.index))return null;(contact.legendaryActors??=[]).push(actor.index);opportunity=contact.skillOpportunity??=++opportunitySerial;}
  const effect={skill,actorName:commentaryName(actor),actor:number(actor),team:actor.team,kind,start:clock,contact:clock,until:clock+1.5,flight,...extra};active.push(effect);if(active.length>5)active.shift();lastSkill=skill.id;cooldown=clock+(labShowcase()?.65:1.7);
  if(skill.rarity==='Legendary'){rallyLegendaryCount++;if(rallyLegendaryCount===1&&!labShowcase())secondLegendaryAllowed=random()<legendaryCadence.secondChance;legendaryUntil=clock+(labShowcase()?2.2:kind==='serve'?legendaryCadence.afterServeCooldown:legendaryCadence.playCooldown);serveLegendaryUntil=clock+(labShowcase()?2.2:legendaryCadence.serveCooldown);legendaryUsed=true;}
- events.push({id:skill.id,actor:actor.index,role:role(actor),kind,at:clock,team:actor.team});if(events.length>80)events.shift();
+ events.push({id:skill.id,actor:actor.index,opportunity,role:role(actor),kind,at:clock,team:actor.team});if(events.length>80)events.shift();
  attempts.push(effect);anticipate(effect);
  if(!extra.prepared){signatureContact(effect);creditFlight(effect,flight);startFocus(effect);}return effect;
 }
@@ -142,6 +144,7 @@ function pipeOption(setter){if(role(setter)!=='setter')return null;const middle=
 function dumpOption(setter){if(role(setter)!=='setter'||!frontRow(setter)||pendingSet)return null;const candidates=[155,310,465].map(y=>({x:setter.team?430:570,y})),rivals=players.filter(p=>p.team!==setter.team);candidates.sort((a,b)=>Math.min(...rivals.map(p=>Math.hypot(p.x-b.x,p.y-b.y)))-Math.min(...rivals.map(p=>Math.hypot(p.x-a.x,p.y-a.y))));const goal=candidates[0];if(!goal||Math.min(...rivals.map(p=>Math.hypot(p.x-goal.x,p.y-goal.y)))<85)return null;const skill=pickSkill(['setter-dump'],setter);return skill?{skill,goal,target:rivals.sort((a,b)=>Math.hypot(a.x-goal.x,a.y-goal.y)-Math.hypot(b.x-goal.x,b.y-goal.y))[0]}:null;}
 launch=function(from,target,touch,kind='pass'){
  if(!enabled||!leagueEnabled()||suppressed)return originalLaunch(from,target,touch,kind);
+ const emergencySetter=canShow()&&touch===2&&kind==='pass'&&role(from)==='setter'?players.find(p=>p.team===from.team&&p!==from&&role(p)==='libero'&&owns(p,'perfect-second-touch')):null;if(emergencySetter)target=emergencySetter;
  const heartStats=empowered(from.stats);
  const dump=canShow()&&touch===3&&kind==='pass'?dumpOption(from):null,pipe=!dump&&canShow()&&touch===3&&kind==='pass'&&!pendingSet?pipeOption(from):null;if(dump){kind='attack';touch=1;target=dump.target;}if(pipe)target=pipe.actor;
  let release=canShow()&&ball.state==='flight'?{x:ball.x,y:ball.y,z:pendingDive?.incoming===ball&&['pancake','kick-save'].includes(pendingDive.skill.id)?2:skillHeight(ball)}:null;
@@ -161,6 +164,7 @@ launch=function(from,target,touch,kind='pass'){
  const audio=matchSound,delayedSounds=[];
  try{matchSound=(action,detail)=>{const data=action==='hit'&&prepared?.skill.id==='ghost-tip'?{...detail,kind:'soft'}:detail;if(action==='hit')delayedSounds.push(()=>audio(action,data));else audio(action,data);};originalLaunch(from,target,touch,kind);}
  finally{matchSound=audio;}
+ if(emergencySetter)ball.emergencySet=true;
  if(heartStats!==from.stats){if(kind==='attack')ball.heartAttackerStats=heartStats;teamBuffs.delete(from.index);}
  if(release&&(kind!=='serve'||!servePlan?.effect||['float','sky-serve','sky-ball-serve','jump','jump-legendary','jump-float-legendary'].includes(servePlan?.effect?.skill.id))){ball.from={x:release.x,y:release.y};ball.x=release.x;ball.y=release.y;ball.z=release.z;ball.startZ=release.z;ball.skillArc={style:'normal',start:release.z,end:18,lift:kind==='attack'?45:touch===3?105:75};}
  if(placement&&ball.outcome?.event!=='serve-error'){ball.targetX=placement.goal.x;ball.targetY=placement.goal.y;ball.duration=safeDuration(ball,ball.duration,.25);}
@@ -257,7 +261,7 @@ function planMovement(){
  if(ball.miss||planned.has(ball))return;
  if(ball.touch===1&&!active.some(e=>e.flight===ball&&['float','jump-float-legendary'].includes(e.skill.id))&&(role(target)==='libero'||owns(target,'dive'))&&remaining<=.34&&(info?.distance||0)>32){
   planned.add(ball);const skill=pickSkill(['dive'],target);if(!skill)return;const dx=ball.targetX-target.x,dy=ball.targetY-target.y,length=Math.hypot(dx,dy),fallback=Math.max(1,Math.hypot(ball.from.x-target.x,ball.from.y-target.y));pendingDive=trigger(skill,target,'receive',null,{prepared:true,incoming:ball,contact:clock+remaining,until:clock+remaining+.85,diveStart:clock,diveX:length>4?dx/length:(ball.from.x-target.x)/fallback,diveY:length>4?dy/length:(ball.from.y-target.y)/fallback});
- }else if(ball.touch===2&&role(target)==='setter'&&remaining<=.85){
+ }else if(ball.touch===2&&(role(target)==='setter'||role(target)==='libero'&&ball.emergencySet&&owns(target,'perfect-second-touch'))&&remaining<=.85){
   const gap=Math.hypot(target.x-ball.targetX,target.y-ball.targetY),broken=distantRescue(target,ball,info);if(!broken&&remaining>.3)return;if(gap>movementSpeed(target)*remaining+12)return;planned.add(ball);const skill=pickSkill(broken?['perfect-second-touch','one-hand-rescue']:['fake-set'],target);if(!skill)return;pendingSet=trigger(skill,target,'set',null,{prepared:true,incoming:ball,contact:clock+remaining,until:clock+remaining+2.5});startFocus(pendingSet);
  }else if(ball.touch===3&&target?.spike>0&&!pendingAttack){
   planned.add(ball);const combo=pendingSync?.setFlight===ball&&pendingSync.hitter===target.index,skill=pickSkill(combo?['cross','line','wipe','power-hit','court-vision']:['ghost-tip','power-hit','court-vision'],target,!!combo);if(!skill)return;pendingAttack=trigger(skill,target,'attack',null,{prepared:true,incoming:ball,contact:clock+remaining,until:clock+remaining+2.5});planAim(pendingAttack,target);startFocus(pendingAttack);
@@ -353,7 +357,7 @@ drawPlayer=function(p){
    if(e.skill.id==='tempo-minus'&&age>=-.5&&age<.6)p.vectorAttackAge=age;
    if(e.skill.id==='tempo-minus'&&age>=-.3&&age<.28){p.spike=age<0?.35+Math.min(.3,-age):Math.max(.01,.35-age);p.moving=false;p.jump=Math.max(0,Math.min(.5,.25-age));p.toss=0;p.block=0;p.approach=false;p.moving=false;}
    if(e.skill.id==='back'&&age>=0&&age<.7){const turn=Math.atan2(Math.sin(e.faceAngle-p.angle),Math.cos(e.faceAngle-p.angle)),u=limit(age/.12),settle=1-limit((age-.5)/.2);p.angle+=turn*u*u*(3-2*u)*settle;p.toss=Math.max(p.toss,.2);p.spike=0;}
-   if(e.skill.id==='perfect-second-touch'&&age>=-.3&&age<.48){p.toss=Math.max(p.toss,.2);p.spike=0;}
+   if(e.skill.id==='perfect-second-touch'&&age>=-.3&&age<.48){if(role(p)==='libero'){p.receive=Math.max(p.receive,.3);p.toss=0;}else p.toss=Math.max(p.toss,.2);p.spike=0;}
 
    if(e.skill.id==='slide-attack'&&age>=-.3&&age<.45)p.vectorSingleFoot=strikeSide(p)==='left'?'upper':'lower';if(e.skill.id==='kick-save')p.vectorSingleFoot=strikeSide(p)==='left'?'upper':'lower';if(e.skill.id==='slide-attack'&&!e.prepared&&age>=-.3&&age<.45){p.angle+=(p.team?-1:1)*.12;if(age>=0){p.approach=false;}}
    if(e.runningBlock&&age>=-.22&&age<.36){const u=limit((age+.22)/.58),drift=12*(1-limit((age+.22)/.22));p.x-=e.runningBlock.dx*drift;p.y-=e.runningBlock.dy*drift;p.jump=.5*(1-u);p.block=age>-.10?1:0;p.approach=false;p.moving=false;p.angle=Math.atan2(e.runningBlock.dy,e.runningBlock.dx)*(1-limit((age+.12)/.12));}

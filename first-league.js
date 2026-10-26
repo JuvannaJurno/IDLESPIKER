@@ -3,7 +3,7 @@
 if(window.AcademyPreview)return;
 const $=id=>document.getElementById(id);let busy=false,decoratedDivision=null;
 const active=()=>LeagueRules.config.division===4;
-const promotion=GameUI.selection({id:'firstLeaguePromotion',title:'Ulusal Voleybol 1. Ligi',eyebrow:'YENİ SEZON',content:'<p>1. Lig’de kulübünün altyapısını kur. Transferden gençleri akademiye al, gelişim yönlerini seç ve kendi elit oyuncunu yetiştir.</p><button id="enterFirstLeague" class="team-action" type="button">Kulübü 1. Lig’e taşı</button><p id="firstLeagueError" role="alert"></p>'});
+const promotion=GameUI.selection({id:'firstLeaguePromotion',title:'Ulusal Voleybol 1. Ligi',eyebrow:'YENİ SEZON',content:'<p>1. Lig’de kulübünün altyapısını kur. Transferden gençleri akademiye al, gelişim yönlerini seç ve kendi oyuncularını yetiştir.</p><button id="enterFirstLeague" class="team-action" type="button">Kulübü 1. Lig’e taşı</button><p id="firstLeagueError" role="alert"></p>'});
 promotion.dialog.querySelector('footer span').textContent='Oyuncuların, kaynakların ve yatırımların korunur.';
 const button=document.createElement('button');button.type='button';button.className='team-action';button.id='firstLeaguePromotionEntry';button.hidden=true;$('prologueComplete').append(button);
 button.onclick=()=>showPromotion();$('enterFirstLeague').onclick=()=>start();
