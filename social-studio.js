@@ -63,7 +63,7 @@ window.SocialStudio={mount(bridge){
   if(matchPosts())changed=true;
   for(const j of st.jobs){if(j.matchPausedAt){delete j.matchPausedAt;changed=true;}}
   if(prepareNext(now))changed=true;
-  for(let i=0;i<10;i++){const j=state().jobs[0];if(!j||j.matchPausedAt||j.end>now||(!j.queued&&(!state().queue.length||j.manualReadyHold))||!publishCurrent(true))break;changed=true;}
+  for(let i=0;i<10;i++){const j=state().jobs[0];if(!j||j.matchPausedAt||j.end>now||!j.queued||!publishCurrent(true))break;changed=true;}
   st=state();
   const today=day();if(today>st.lastDay){st.lastDay=today;changed=true;}
   if(now>=st.nextAmbient){ambient();st.nextAmbient=now+10000+(st.ambient%3)*2000;changed=true;}if(changed){bridge.save();bridge.render();}updateReady();if(!bridge.hidden())render();
