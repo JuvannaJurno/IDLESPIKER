@@ -34,8 +34,8 @@ function start(){
  }
  if(CampRules.available(RoomSystem.developmentState())&&RoomSystem.developmentState().camp.announcedDay!==null){
  add('camp',()=>q('.camp-overview'),'Kamp süresi ve katılım bilgilerini burada incele.',()=>{closeDialogs();CampSystem.open(true);});
- add('camp-players',()=>$('campCandidates'),'Gelişim sınırına yaklaşan oyuncuları kampa seçebilirsin.');
- add('camp-cost',()=>$('campQuote'),'Seçtiğin oyuncuların toplam AP ve bütçe maliyeti burada görünür.');
+ add('camp-players',()=>$('campCandidates'),'Kampa göndermek istediğin en fazla 6 oyuncuyu seç.');
+ add('camp-stars',()=>$('campSlots'),'Her kamp yarım yıldız verir; seviye sınırı 10, özellik sınırı 30 artar. Üç yıldız dolunca kart sıradaki renge geçer.');
  }
  if(Number(LeagueRules.config.division)===3&&RoomSystem.mediaDepartmentOpen()){
  add('social',()=>$('socialDraft'),'Kulübünün gönderileri burada hazırlanır.',()=>{closeDialogs();$('socialTab').click();});

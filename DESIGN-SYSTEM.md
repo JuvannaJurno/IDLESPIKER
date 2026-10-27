@@ -792,3 +792,13 @@ Maçın üst kenarı sabit mavi tarayıcı rengi ile açık krem maç zemininin 
 Doğrulama: test-journey-match-chrome.cjs (320/390/1280px, modalın içeriğe oturması, kulüp adı kaydı ve geri gezinme, koyu tema, gerçek fullscreen, iframe şeffaflığı/üst zemin ve theme-color açılış/sonuç/kapanış); test-fullscreen-layout.cjs; test-app-display.cjs. Gerçek telefonun işletim sistemi çubuğu otomatik tarayıcı ekran görüntüsüne girmez; bu kısmın renk girdisi meta üzerinden kontrol edilmiştir. İncelenen görseller: audits/journey-completion-compact.png, journey-completion-dark.png ve match-continuous-top.png.
 
 Eski test-club-journey.cjs HTTP fikstüründe bootScreen kapanmasını beklerken zaman aşımına uğradı. Bu test PASS sayılmadı; değişen seçim/kulüp kaydı/geri gezinme akışı test-journey-match-chrome.cjs içinde kayıtlı profil ile ayrıca geçti.
+
+### 28 Ekim — Departman avatarı geri alımı, seviye barı ve kamp rehberinin sırası
+
+Yeni kullanıcı kararı önceki profil avatarı kararının yerini alır: Mahalle departmanlarında bizim profil karakterimiz görünmez; varsayılan departman çizimleri korunur. Profilin kendi portresi değiştirilmez.
+
+Oyuncu kartında Seviye n / sınır satırının hemen altındaki bar artık kart seviyesini kendi seviye sınırına böler. Özelliklerin en büyüğünü stat sınırına bölmez. Böylece Mahallede 10/10 ve Bölgeselde Kamp gerekli durumunda 10/10 tam doludur. Özellik sınırı alttaki ayrı metin olarak kalır. ARIA adı ve min/max/now değerleri aynı seviye hesabını kullanır.
+
+Kamp rehberi oyuncu seçimi → kamp dönüşü/yıldız açıklaması olarak iki adımdır; aradaki maliyet ve gönderme açıklamaları kaldırılmıştır. Metin yarım yıldız, +10 seviye sınırı ve +30 özellik sınırını somut olarak belirtir. Manuel rehber incelemesi de aynı kısa sırayı kullanır. Gelir Merkezi rehberi Bölgeselde bekliyorsa kampın tanıtımı ertelenir. Gelir Merkezi aktif rehberken kamp paneli üstüne açılmaz; bitince normal açılır. Tamamlandı kontrolünün ilk görülmeyi de sayması nedeniyle aktifId ayrıca kontrol edilir.
+
+Doğrulama: test-training-flow-limits-browser.cjs (profil avatarı departmana yazılmaz; iki aşamada 10/10 = %100 ve doğru ARIA), test-camp-tutorial-short.cjs (seçimden doğrudan yıldız metnine geçiş ve gerçek kayıt), test-camp-income-order.cjs (gerçek Gelir Merkezi tıklamaları sırasında kampın beklemesi, gelir rehberi sonrası açılış). Görseller audits/card-level-ten-full.png, card-camp-limit-full.png ve camp-tutorial-direct-stars.png incelendi. Eski test-tutorial-action-completion.cjs ilk kamp adımını beklerken zaman aşımına uğradı; yeni davranış ayrı kayıtlı profil fikstürlerinde doğrulandı.
