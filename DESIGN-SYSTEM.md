@@ -730,3 +730,11 @@ Doğrulama: test-installed-header.cjs (Android display-mode standalone ve iOS na
 Takımın Kalbi kullanan oyuncu standart Legendary sarı ışığıyla, etkilenen takım arkadaşları aynı boyut/yoğunluktaki beyaz ışıkla parlar. Takım arkadaşlarının 1,6 saniyelik görsel süresi kaldırılmıştır: ışık kendi ilk top temasına kadar kalır. Kullanan oyuncunun ışığı ayrı takip edilir ve kendi ilk hamlesinde söner; arkadaşlarının bekleyen beyaz ışıkları bundan etkilenmez. Servis/pas/hücum, gelen top teması ve blok teması aynı tüketim yoluna bağlanır. Sayı değişiminde henüz kullanılmamış durum korunur; maç resetinde temizlenir. Mevcut %12 arkadaş güçlendirmesi, süre/aktivasyon kuralları ve kalıcı statlar değişmez. Renk başına mevcut Legendary ışık önbelleği kullanılır.
 
 Doğrulama: test-team-heart-persistent-glows.cjs (2,4 saniye sonrasında ışıkların sürmesi, sarı/beyaz ayrımı, bağımsız ilk temas, diğer takımın korunması, gerçek güçlendirme hesabı ve reset), test-team-heart.cjs ve test-skill-rarity-glow.cjs. Görsel audits/team-heart-persistent-glows.png. Eski test-match-skills.cjs mevcut katalog için 31 yetenek bekliyor; bu değişiklik öncesinde de katalog 37 yetenek içeriyor, dolayısıyla bu genel testin sabit sayı beklentisi güncel değil.
+
+### 27 Ekim — Kusursuz Hücum Okuma el teması
+
+Kusursuz Hücum Okuma başarılı blok / blok teması verdiğinde topun temas ve sekme başlangıcı gerçek blok kolunun yerleşim, ölçek, pivot, dönüş ve sıçrama konumundan hesaplanır. Top, gelen uçuşun son 0,25 saniyesinde bu el noktasına yumuşakça yaklaşır; file ortasında boşlukta yön değiştirmez. Topun gölge/zemin koordinatı korunurken yüksekliği elin ekrandaki yüksekliğine uyar. Temasta 0,10 saniyelik mevcut impactHold kullanılır; yeni modal/animasyon ailesi yoktur.
+
+Bu yetenekte yavaş çekim gelen top el temasına kadar kalır ve block-contact sebebiyle kapanır; sektikten sonra uçuşun yarısını beklemez. Diğer Legendarylerin mevcut yarı uçuş kuralı korunur. Native maç sonucu, RNG ve blok başarı ihtimali değiştirilmez.
+
+Doğrulama: test-absolute-read-contact.cjs (iki saha yönü, başarılı blokta el ve top merkezinin 10px içinde olması, temas öncesi yavaş çekim, temasla bitiş ve görünen etki), test-team-heart-persistent-glows.cjs, test-skill-rarity-glow.cjs. Görseller audits/absolute-read-hand-contact-0.png ve absolute-read-hand-contact-1.png.

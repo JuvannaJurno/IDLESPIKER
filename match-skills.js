@@ -138,7 +138,14 @@ function skillHeight(f,t=f.t){if(f.state==='drop'&&f.floorBounce)return groundBo
  const lift=arc.style==='tip'?38*(1-u*.3):arc.style==='power'?6:arc.lift??45;
  return arc.start*(1-u)+arc.end*u+Math.sin(u*Math.PI)*lift;
 }
-function syncSkillHeight(f){if(!f.skillArc)return;f.z=skillHeight(f);f.visualScale=f.state==='drop'&&f.skillArc.bounce&&f.outcome?.event==='kill'?1+(f.t<.98?Math.sin(limit((f.t-.28)/.70)*Math.PI)*(f.skillArc.camera?2.6:.65):0):1;}
+function readImpact(effect){
+ const actor=players.find(p=>p.index===effect.actor);if(!actor)return null;
+ const pose=effect.foresight?{...actor,...effect.foresight.to,jump:.25,moving:false,block:1,spike:0,toss:0}:actor;
+ const body=window.PlayerBodyMotion?.pose(pose,typeof elapsed==='number'?elapsed:0,false)||{x:0,y:0},lift=12*Math.sin(Math.max(0,pose.jump||0)/.5*Math.PI),cos=Math.cos(pose.angle),sin=Math.sin(pose.angle);
+ const hands=BLOCK_LAYOUT.filter(part=>part.id.startsWith('arm-')).map(part=>{const px=part.width*(part.flip?.15:.85),py=part.height*.5,a=part.rotation*Math.PI/180,dx=(px-part.width*part.pivotX)*part.scale,dy=(py-part.height*part.pivotY)*part.scale,x=(part.x+part.width*part.scale*part.pivotX+dx*Math.cos(a)-dy*Math.sin(a)-16)*1.35,y=(part.y+part.height*part.scale*part.pivotY+dx*Math.sin(a)+dy*Math.cos(a)-43)*1.35;return {x:pose.x+body.x+x*cos-y*sin,y:pose.y+body.y-lift+x*sin+y*cos};});
+ const hand=hands.sort((a,b)=>a.y-b.y)[0];return hand?{x:hand.x,y:effect.incoming.netY,z:Math.max(0,effect.incoming.netY-hand.y)}:null;
+}
+function syncSkillHeight(f){if(!f.skillArc)return;f.z=skillHeight(f);const read=pendingBlock?.skill.id==='absolute-read'&&pendingBlock.incoming===f&&f.attackPending?pendingBlock:null;if(read){const impact=readImpact(read),u=limit(1-(f.netTime-f.t)/.25),mix=u*u*(3-2*u);if(impact){f.x+=(impact.x-f.x)*mix;f.z+=(impact.z-f.z)*mix;}}f.visualScale=f.state==='drop'&&f.skillArc.bounce&&f.outcome?.event==='kill'?1+(f.t<.98?Math.sin(limit((f.t-.28)/.70)*Math.PI)*(f.skillArc.camera?2.6:.65):0):1;}
 function refreshNet(f){if(f.kind!=='attack'||!f.attackPending)return;f.netTime=f.duration*limit((500-f.from.x)/(f.targetX-f.from.x),.02,.95);f.netY=f.from.y+(f.targetY-f.from.y)*(f.netTime/f.duration);f.blockPlan=blockPlan(f.target.team,f.netY);for(const p of players)if(p.team===f.target.team&&p.block>0){p.block=0;p.jump=0;}for(const goal of f.blockPlan){const p=players.find(p=>p.index===goal.index);if(p&&Math.hypot(p.x-goal.x,p.y-goal.y)<=180*f.netTime+42){p.jump=.5;p.block=Math.max(.5,f.netTime+.25);}}}
 
 function pipeOption(setter){if(role(setter)!=='setter')return null;const middle=players.some(p=>p.team===setter.team&&frontRow(p)&&role(p)==='middle'&&Math.abs(p.y-310)<100),committed=players.filter(p=>p.team!==setter.team&&frontRow(p)&&Math.abs(p.x-500)<110&&Math.abs(p.y-310)<145).length;if(!middle||committed<2)return null;const actor=players.filter(p=>p.team===setter.team&&!frontRow(p)&&role(p)==='outside'&&owns(p,'pipe-attack')).sort((a,b)=>Math.hypot(a.x-(a.team?660:340),a.y-310)-Math.hypot(b.x-(b.team?660:340),b.y-310))[0];if(!actor)return null;const skill=pickSkill(['pipe-attack'],actor);return skill?{actor,skill}:null;}
@@ -231,6 +238,7 @@ resolveNetContact=function(){
  const before=ball,attacker=ball.attacker,prepared=pendingBlock?.incoming===ball?pendingBlock:null;
  const netT=ball.netTime,netU=limit(netT/ball.duration),contact={x:ball.from.x+(ball.targetX-ball.from.x)*netU,y:ball.netY,z:ball.skillArc?skillHeight(ball,netT):18+((ball.startZ||18)-18)*(1-netU)+Math.sin(Math.PI*netU)*45},oldDuration=ball.duration,arc=ball.skillArc;
  const heartHistoryStart=history.length;originalNet();
+ if(prepared?.skill.id==='absolute-read'){if(['block','block-touch'].includes(ball.outcome?.event)){const impact=readImpact(prepared);if(impact){Object.assign(contact,impact);prepared.readImpact={...impact};}}if(focus?.effect===prepared)finishFocus('block-contact');}
  for(const contact of history.slice(heartHistoryStart))if(contact.type==='block-contact')for(const index of contact.players||[])consumeHeartGlow(index);
  if(['block','block-touch'].includes(ball.outcome?.event)){
   ball.from={x:contact.x,y:contact.y};ball.x=contact.x;ball.y=contact.y;ball.z=contact.z;ball.startZ=contact.z;
@@ -240,7 +248,7 @@ resolveNetContact=function(){
   ball.skillArc={style:'deflection',start:contact.z,end:0,lift:14,bounce:false,camera:false};
  }else if(arc)ball.skillArc=arc;
  if(canShow()&&ball.kind==='block'&&ball.outcome?.event==='block'){const skill=pickSkill(['rebound'],attacker);if(skill){const defenders=players.filter(p=>p.team===attacker.team&&p!==attacker),receiver=defenders.sort((a,b)=>Math.hypot(a.x-ball.targetX,a.y-ball.targetY)-Math.hypot(b.x-ball.targetX,b.y-ball.targetY))[0]||attacker;ball.target=receiver;ball.targetX=receiver.x;ball.targetY=receiver.y;ball.duration=safeDuration(ball,.95,.28);ball.miss=false;delete ball.pointWinner;ball.outcome={...ball.outcome,winner:null,event:'rebound',quality:.4};receiver.contactQuality=.4;const resolution=[...history].reverse().find(e=>e.type==='resolution');if(resolution){resolution.counteredEvent=resolution.event;resolution.event='rebound';resolution.winner=null;}trigger(skill,attacker,'receive',ball);announce(commentaryName(attacker)+' bloktan sektiriyor, top bizde kalıyor!');}}
- if(prepared){pendingBlock=null;bindFlight(prepared,ball);prepared.until=clock+ball.duration+.4;return;}
+ if(prepared){if(prepared.readImpact){impactHold={flight:ball,age:0,duration:.10};}pendingBlock=null;bindFlight(prepared,ball);prepared.until=clock+ball.duration+.4;return;}
  if(!canShow()||!['block','block-touch'].includes(ball.outcome?.event))return;
  const entry=history.at(-1);if(entry?.type!=='block-contact')return;const blockers=(entry.players||[]).map(index=>players.find(p=>p.index===index)).filter(Boolean);if(!blockers.length)return;
  const main=blockers.find(p=>role(p)==='middle')||blockers[0],pool=['roof','read'];if(blockers.length>1)pool.push('close');
