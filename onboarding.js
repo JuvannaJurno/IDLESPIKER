@@ -50,7 +50,7 @@ function show(id,text,el){
  const dialog=el.closest('dialog[open]'),parent=dialog||document.body;if(hint.parentElement!==parent)parent.append(hint);if(spotlight.parentElement!==parent)parent.append(spotlight);
  if(active!==id||target!==el){target?.classList.remove('learning-focus');active=id;target=el;el.classList.add('learning-focus');hint.dataset.step=id;setCopy(guided?.review?(guided.index+1)+' / '+guided.steps.length+' · '+text:text);const bounds=viewportRect(el),raw=el.getBoundingClientRect();if(bounds.height<Math.min(raw.height,innerHeight-200)||raw.top<110||raw.bottom>innerHeight-145)el.scrollIntoView({behavior:'instant',block:raw.height>innerHeight-220?'start':'center',inline:'nearest'});}else setCopy(guided?.review?(guided.index+1)+' / '+guided.steps.length+' · '+text:text);
  const r=viewportRect(el);if(!r.width||!r.height){hint.hidden=true;spotlight.setAttribute('hidden','');return;}
- const holes=[r];if(id==='guided-social-publish'){const draft=document.getElementById('socialDraft');if(visible(draft))holes.push(viewportRect(draft));}if(id==='train'&&el.classList.contains('development-panel')){holes.length=0;for(const selector of ['#trainingStats .card-upgrade-button','#trainingBalance']){const part=document.querySelector(selector);if(visible(part))holes.push(viewportRect(part));}}
+ const holes=[r];if(id==='guided-social-publish'){const draft=document.getElementById('socialDraft');if(visible(draft))holes.push(viewportRect(draft));}if((id==='train'&&el.classList.contains('development-panel'))||id==='guided-training-upgrade'){holes.length=0;for(const selector of ['#trainingStats .card-upgrade-button','#trainingBalance']){const part=document.querySelector(selector);if(visible(part))holes.push(viewportRect(part));}}
  if(id==='train'&&el.classList.contains('player-card')){const quick=el.querySelector('.card-open-upgrade');if(visible(quick)){const bottom=quick.getBoundingClientRect().top-7;holes[0]={...r,bottom,height:Math.max(0,bottom-r.top)};}}
  if(id==='instruction-path'){const track=document.querySelector('.energy-track');if(visible(track))holes.push(viewportRect(track));}
  if(id==='arrival'||id==='instruction-path'){const tap=document.getElementById('energyButton');if(visible(tap))holes.push(viewportRect(tap));}
@@ -113,6 +113,7 @@ function update(){if(window.PlayerProfile?.needsCreation){clear();return;}
  if(guided?.id==='income'&&RoomSystem.tutorialState().division>=3)endGuide(false);
  if(guided?.id==='social-entry'&&!RoomSystem.mediaDepartmentOpen())endGuide(false);if(guided?.id==='match-overtime'&&(document.querySelector('.dashboard').hidden||document.getElementById('matchOvertimeCountdown')?.hidden))endGuide(false);
  if(guided&&((guided.id==='transfer'&&guided.index>0&&document.getElementById('teamPanel').hidden&&!document.querySelector('#scoutDialog[open],#transferCompareScreen[open],#transferReplaceScreen[open],#transferLineupPrompt[open]'))||(guided.id==='camp'&&!document.getElementById('campDialog')?.open)||(guided.id==='skills'&&!document.getElementById('playerDialog')?.open)||(guided.id==='income'&&document.querySelector('.dashboard').hidden)||((guided.id==='social'||guided.id==='social-growth')&&document.getElementById('socialPanel')?.hidden&&document.getElementById('socialJourneyScreen')?.hidden)))endGuide(false);
+ if(guided?.id==='training'&&guided.index===2&&!document.getElementById('playerDialog').open)endGuide(false);
  if(guided){const step=guided.steps[guided.index];if(step.skip?.()||step.done?.()){nextGuide();return}if(step.wait||(step.ready&&!step.ready())){clear();return}const el=step.target();show('guided-'+step.id,typeof step.text==='function'?step.text():step.text,el);return}
  if(done.has('ask')&&RoomSystem.tutorialState().stage==='bal'){chooseTutorial(false);return;}
  if(done.has('ask')){clear();if(!choice.open&&!document.querySelector('dialog[open]'))choice.showModal();return}
@@ -136,14 +137,13 @@ function update(){if(window.PlayerProfile?.needsCreation){clear();return;}
  if(club&&!modal&&!done.has('blocks-basics')){show('blocks-basics','[[Yeni alan aç]] ile blok seçebilirsin. Blokları bütçeyle alır, üzerlerine dokunarak yükseltirsin.',document.querySelector('#roomSlots1 .unlock-room')||document.querySelector('#roomSlots1 .upgrade-room'));return}
  if(!done.has('assistant')&&club&&s.budget>=10){show('assistant',document.querySelector('#roomDialog[open]')?'[[Otomatik Asistan]] seç. Senin yerine talimat göndersin.':'İlk bloğunu kuralım. [[Yeni alan aç]] düğmesine dokun.',block('assistant',1));return}
  if(!done.has('train')){
- const lineup=TeamView.snapshot().lineup,p=TeamRules.players.find(p=>p.id===lineup.p),stat='set';
- if(p&&!TeamRules.cardQuote(p).blocked&&s.ap>=TeamRules.cardQuote(p).cost){
- if(club&&!modal){show('train','AP birikti. [[Takım]] menüsüne geçip bir oyuncunu geliştir.',document.getElementById('teamTab'));return}
- if(document.body.classList.contains('team-open')){
- const card=document.querySelector('[data-player="'+p.id+'"]');
- if(modal?.id==='playerDialog'){if(document.getElementById('playerName').textContent===p.name+' '+p.surname){if(!done.has('player-stats')){document.getElementById('playerAttributes').open=true;show('player-stats','Bunlar oyuncunun özellikleri. Her biri maçta farklı bir beceriyi etkiler.',document.getElementById('playerStats'));return}show('train','[[Kartı yükselt]]: Oyuncunun özellikleri pozisyonuna göre artar.',document.querySelector('#playerDialog .development-panel'));return}}
- else{show('train','Oyuncu kartına dokun. Özelliklerini ve yükseltmesini görelim.',card);return}
- }
+ const lineup=TeamView.snapshot().lineup,p=TeamRules.players.find(p=>p.id===lineup.p),q=p&&TeamRules.cardQuote(p);
+ if(p&&q&&!q.blocked&&s.ap>=q.cost&&!modal){const initialLevel=TeamRules.cardLevel(p),cardSelector='.player-card[data-player="'+p.id+'"] .card-inspect';
+ GuidedTutorial.start([
+ {id:'training-team',target:()=>document.getElementById('teamTab'),click:'#teamTab',skip:()=>document.body.classList.contains('team-open'),text:'AP, oyuncularını geliştirmek için kullanılır. [[Takım]] menüsünü aç.'},
+ {id:'training-player',enter:()=>TeamView.reveal(p.id),target:()=>document.querySelector(cardSelector),click:cardSelector,done:()=>document.getElementById('playerDialog').open&&document.getElementById('playerName').textContent===p.name+' '+p.surname,text:p.name+' için bir antrenman yapalım. Adına dokun.'},
+ {id:'training-upgrade',target:()=>document.querySelector('#trainingStats .card-upgrade-button'),click:'#trainingStats .card-upgrade-button',done:()=>TeamRules.cardLevel(p)>initialLevel,text:()=>{const quote=TeamRules.cardQuote(p);return '[[Kartı yükselt]] düğmesine bas. '+NumberUI.compact(quote.cost)+' AP harcanır; gösterilen özellikler artar.';}}
+ ],()=>{finish('train');finish('player-stats');},'training');return;
  }
  }
  if(done.has('train')&&!done.has('quick-upgrade')&&document.body.classList.contains('team-open')){

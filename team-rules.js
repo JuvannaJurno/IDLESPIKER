@@ -37,7 +37,9 @@ const overallWeights={
 function overall(p){const weights=overallWeights[p.role]||trainable.map(()=>100/trainable.length);return Math.round(trainable.reduce((sum,k,i)=>sum+(Number.isFinite(p[k])?Math.max(0,p[k]):0)*weights[i],0)/100)}
 
 const cardRoles={setter:['set','serve','mental','stamina'],outside:['spike','receive','stamina','mental'],opposite:['spike','serve','block','stamina'],middle:['block','spike','stamina','mental'],libero:['receive','set','mental','stamina']};
-function cardLimit(p,state=developmentState()){return state.stage==='bal'?11+Math.ceil((Camps.cap(state,p)-50)/3)+(state.division>=3&&Camps.progress(state,p).count>=4?6:0):10}
+// Promotions do not replace a player's earned training limit. Only completed camps extend it.
+function cardLimit(p,state=developmentState()){return (Number.isSafeInteger(p.trainingLimitBase)&&p.trainingLimitBase>=10?p.trainingLimitBase:10)+Camps.progress(state,p).count*10;}
+
 function transferUpgradesRemaining(p){if(!Number.isInteger(p?.transferStartLevel)||p.transferStartLevel<1)return 0;const used=Number.isInteger(p.transferUpgradeCount)?p.transferUpgradeCount:Math.max(0,cardLevel(p)-p.transferStartLevel);return Math.max(0,3-Math.max(0,used));}
 function cardLevel(p){return Number.isSafeInteger(p.cardLevel)&&p.cardLevel>0?p.cardLevel:1}
 function cardGains(p,level=cardLevel(p),statCap=cap(p)){
@@ -50,7 +52,7 @@ function cardQuote(p){const level=cardLevel(p),limit=cardLimit(p),role=cardRoles
  const points=Object.values(gains).reduce((a,b)=>a+b,0),discount=Object.entries(gains).reduce((n,[k,v])=>n+v*Math.max(0,Math.min(developmentState().stage==='bal'?.35:.25,root.RoomSystem?.trainingDiscount?.(k)||0)),0);
  const state=developmentState(),B=root.BalRules||(typeof require==='function'?require('./bal-rules.js'):null),adapt=transferUpgradesRemaining(p)>0?(B?.value(state,'pro_analysis')||0):0;const strength=overall(p),balCost=1200*1.12**Math.min(25,Math.max(0,strength-25))*1.10**Math.max(0,strength-50),advancedCost=2500*1.14**Math.min(25,Math.max(0,strength-25))*1.125**Math.min(20,Math.max(0,strength-50))*(1+Math.max(0,strength-70)*.02)*(1+Math.max(0,level-48)/10)**1.65,baseCost=state.stage==='bal'?Math.min(balCost,advancedCost)*(1+.003*Math.max(0,level-1)):140*1.8**(level-1);const cost=points?Math.ceil(baseCost*(points-discount)/6*(1-adapt)):0;
  const next={...p};for(const [k,n]of Object.entries(gains))next[k]+=n;
- return {level,limit,gains,cost,before:overall(p),after:overall(next),blocked:level>=limit?'Seviye sınırında · Kamp ile sınırı artır':Camps.active(developmentState(),p)?'Oyuncu kampta · dönüşünü bekliyor':!points?'Stat sınırında · Kamp ile sınırı artır':''};
+ return {level,limit,gains,cost,before:overall(p),after:overall(next),blocked:Camps.active(state,p)?'Oyuncu kampta · dönüşünü bekliyor':level>=limit?(Camps.available(state)?'Seviye sınırında · Kamp ile sınırı artır':'Seviye sınırına ulaştı · Yeni ligde gelişime devam et'):!points?(Camps.available(state)?'Stat sınırında · Kamp ile sınırı artır':'Özellik sınırına ulaştı'):''};
 }
 function upgradeCard(p,pay){const q=cardQuote(p);if(q.blocked||!pay(q.cost))return false;p.training??={};for(const [k,n]of Object.entries(q.gains)){p[k]+=n;p.training[k]=(p.training[k]||0)+n}p.cardLevel=q.level+1;if(Number.isInteger(p.transferStartLevel)){const used=Number.isInteger(p.transferUpgradeCount)?p.transferUpgradeCount:Math.max(0,q.level-p.transferStartLevel);p.transferUpgradeCount=Math.min(3,Math.max(0,used)+1);}p.cardVersion=1;savePlayers();root.CampSystem?.refresh();return true}
 
@@ -106,6 +108,7 @@ function savePlayers(){try{root.localStorage?.setItem('idle-spiker-women-v1',JSO
 if(players.some(p=>p.matchSkillsVersion!==3)){try{if(!root.localStorage?.getItem('idle-spiker-pre-skill-progression-v3'))root.localStorage?.setItem('idle-spiker-pre-skill-progression-v3',JSON.stringify(players))}catch{}}
 if(players.some(p=>p.developmentVersion!==3)){try{if(!root.localStorage?.getItem('idle-spiker-pre-cap50-balance'))root.localStorage?.setItem('idle-spiker-pre-cap50-balance',JSON.stringify(players))}catch{}}
 for(const p of players){migrateDevelopment(p);if(p.cardVersion!==1){const skillGains=p.skills.filter(s=>s.unlocked).reduce((n,s)=>n+(skillCatalog.find(k=>k.id===s.id)?.bonus||0),0);p.cardLevel=1+Math.floor(Math.max(0,growth(p)-skillGains)/6);p.cardVersion=1}else p.cardLevel=cardLevel(p)};
+for(const p of players)if(!Number.isSafeInteger(p.trainingLimitBase)||p.trainingLimitBase<10)p.trainingLimitBase=Math.max(10,cardLevel(p)-Camps.progress(developmentState(),p).count*10);
 for(const p of players)if(Number.isInteger(p.transferStartLevel)&&p.transferStartLevel>0){p.transferUpgradeCount=Math.min(3,Math.max(0,Number.isInteger(p.transferUpgradeCount)?p.transferUpgradeCount:cardLevel(p)-p.transferStartLevel));p.transferStartLevel=Math.min(p.transferStartLevel,cardLevel(p));}
 function maxEpic(p){if(!p?.epicTeam)return;const maximum=cap(p);p.baseStats??={};p.training??={};for(const k of trainable){p[k]=maximum;p.baseStats[k]=Math.min(maximum,Number.isFinite(p.baseStats[k])?p.baseStats[k]:maximum);p.training[k]=maximum-p.baseStats[k];}p.cardVersion=1;p.cardLevel=cardLimit(p);}
 for(const p of players){(root.CountryRules||(typeof require==='function'?require('./country-rules'):null))?.latinizePlayer(p);Skills.ensure(p);maxEpic(p);}
