@@ -1,56 +1,133 @@
-/* This stylesheet is loaded exclusively by index-beta.html. */
-.beta-original{font-size:11px;color:var(--ink,#496d73);text-decoration:none;white-space:nowrap}
+/* Desktop experiment only: no production page loads this stylesheet. */
+.beta-original{font-size:11px;color:#53767a;white-space:nowrap;text-decoration:none}
 @media(min-width:1000px){
- html.desktop-beta{--app-letterbox:0px}
- html.desktop-beta body{background:#82b3c0}
- html.desktop-beta .shell,html.desktop-beta.app-expanded .shell{width:100%;max-width:1600px;border:0;box-shadow:none;background:#eaf0df;min-height:100dvh}
+ html.desktop-beta{--app-letterbox:0px;--beta-surface:#fff9e9;--beta-floor:#eaf0df;--beta-edge:#d3ddc9;--beta-ink:#3e6670}
+ html.desktop-beta body{background:#d8e6da}
+ html.desktop-beta .shell,html.desktop-beta.app-expanded .shell{width:100%;max-width:none;min-height:100dvh;border:0;box-shadow:none;background:var(--beta-floor)}
  html.desktop-beta .rail{display:none}
  html.desktop-beta .content,html.desktop-beta.app-expanded .content{width:100%;max-width:none;margin:0;min-width:0}
- html.desktop-beta .topbar,html.desktop-beta.app-expanded .topbar{position:relative;width:100%;height:88px;padding:14px 30px;box-sizing:border-box;gap:24px;background:#9ed7df;border-bottom:1px solid #eff7e9;box-shadow:0 3px #6f9fa526}
- html.desktop-beta .topbar .wordmark{flex:1;min-width:0;font-size:29px}
- html.desktop-beta .topbar .wordmark small{font-size:8px;letter-spacing:2px;margin-top:6px}
- html.desktop-beta .topbar nav{display:none}
- html.desktop-beta .mobile-nav,html.desktop-beta.app-expanded .mobile-nav{position:fixed;left:max(20px,calc((100vw - 1600px)/2 + 20px));right:auto;top:114px;bottom:auto;transform:none;width:156px;max-width:156px;padding:10px;box-sizing:border-box;display:flex;flex-direction:column;gap:5px;border:2px solid #fff9e6;border-radius:20px;background:#fff5db;box-shadow:0 4px #6b948d33;z-index:13}
- html.desktop-beta .mobile-nav>a{width:100%;min-width:0;box-sizing:border-box;min-height:68px;flex:none;padding:11px 9px;display:flex;flex-direction:row;justify-content:flex-start;gap:12px;font-size:12px;border-radius:12px;text-align:left}
- html.desktop-beta .mobile-nav>a[aria-current=page]{background:#e3eacc;color:#42666a}
- html.desktop-beta .mobile-nav>a>span{flex:none}
- html.desktop-beta body .content>main{max-width:none;width:100%;box-sizing:border-box;padding:26px 28px 145px 200px}
+ html.desktop-beta .topbar,html.desktop-beta.app-expanded .topbar{position:sticky;top:0;z-index:25;height:78px;padding:0 max(28px,calc((100vw - 1344px)/2));gap:22px;background:#a3d4d8;border-bottom:1px solid #faffef;box-shadow:0 3px 0 #658f8b16;box-sizing:border-box}
+ html.desktop-beta .topbar .wordmark{flex:none;min-width:180px;font-size:26px;white-space:nowrap}
+ html.desktop-beta .topbar .wordmark small{font-size:7px;letter-spacing:1.8px;margin-top:5px}
+ html.desktop-beta .topbar>nav:not(.mobile-nav){display:none}
+ html.desktop-beta .beta-navigation{display:flex;flex:1;justify-content:center;min-width:0}
+ html.desktop-beta .mobile-nav,html.desktop-beta.app-expanded .mobile-nav{position:static;left:auto;right:auto;top:auto;bottom:auto;transform:none;margin:0;display:flex;flex-direction:row;gap:4px;min-height:0;width:auto;max-width:none;padding:4px;border:1px solid #fcffedaa;border-radius:15px;background:#e5f0dd70;box-shadow:none;box-sizing:border-box}
+ html.desktop-beta .mobile-nav>a{flex:none;display:flex;flex-direction:row;justify-content:center;gap:8px;width:auto;min-width:84px;min-height:39px;padding:8px 14px;box-sizing:border-box;border-radius:10px;font-size:12px;white-space:nowrap;color:#527879}
+ html.desktop-beta .mobile-nav>a>span{flex:none;display:grid;place-items:center}
+ html.desktop-beta .mobile-nav>a>span>.spiker-icon{width:18px;height:18px}
+ html.desktop-beta .mobile-nav>a[data-beta-current=true]{background:#fff7dd;color:#52716a;box-shadow:0 2px 0 #789b8928}
+ html.desktop-beta .topbar-actions{flex:none}
+ html.desktop-beta .topbar-actions .topbar-profile{width:38px;height:38px}
+ html.desktop-beta body .content>main{width:100%;max-width:1400px;box-sizing:border-box;margin:0 auto;padding:24px 28px 36px}
  html.desktop-beta .dashboard{display:block;max-width:none}
- html.desktop-beta #clubPanel{display:grid;grid-template-columns:300px minmax(0,1fr);gap:24px;align-items:start;margin:0;width:100%;padding:0;background:none;border:0;box-shadow:none;overflow:visible;border-radius:0}
+ html.desktop-beta #clubPanel{display:flex;flex-direction:column;gap:18px;width:100%;margin:0;padding:0;border:0;border-radius:0;background:none;box-shadow:none;overflow:visible}
  html.desktop-beta #clubPanel>.section-top{display:none}
- html.desktop-beta .beta-sidebar{position:sticky;top:24px;display:flex;flex-direction:column;gap:18px;min-width:0}
- html.desktop-beta .beta-sidebar>:is(.calendar-card,.league-match-group,.club-wallet,.club-rates,.shift-summary,#campAlert){margin:0!important;width:100%;box-sizing:border-box}
- html.desktop-beta .beta-sidebar .calendar-card{padding:14px 11px}
- html.desktop-beta .beta-sidebar .calendar{gap:4px}
- html.desktop-beta .beta-sidebar .calendar-day strong{font-size:18px}
- html.desktop-beta .beta-sidebar .league-match-group{display:block;height:auto!important}
- html.desktop-beta .beta-sidebar .match-preview-open{display:block}
- html.desktop-beta .beta-sidebar .match-preview-teams{margin:17px 0!important}
- html.desktop-beta .beta-sidebar .match-preview-team img{width:58px;height:62px}
- html.desktop-beta .beta-workspace{min-width:0;background:#eaf0df;border:2px solid #fff9e8;border-radius:22px;padding:20px 0 20px 18px;box-shadow:0 4px #92b3a942;overflow:hidden}
- html.desktop-beta .beta-workspace .building-header{padding:0 18px 18px 0;margin:0;font-size:10px}
- html.desktop-beta .beta-workspace .building-scroll{width:100%;max-width:100%;box-sizing:border-box;overscroll-behavior-x:contain}
- html.desktop-beta .beta-workspace .workflow{min-width:100%}
- html.desktop-beta .energy-button,html.desktop-beta.app-expanded .energy-button{left:auto;right:max(28px,calc((100vw - 1600px)/2 + 28px));bottom:22px;width:320px;max-width:320px;min-height:84px;margin:0;z-index:14}
- html.desktop-beta .right-column{margin:0;display:block}
- html.desktop-beta #teamPanel,html.desktop-beta #leaguePanel,html.desktop-beta #socialPanel{max-width:1120px;margin:0 auto;min-width:0}
- html.desktop-beta #teamPanel .team-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:18px}
+ html.desktop-beta .beta-toolbar{position:sticky;top:78px;z-index:14;display:grid;grid-template-columns:minmax(180px,1fr) minmax(340px,480px) 274px;gap:24px;align-items:center;width:100%;padding:0 0 17px;background:var(--beta-floor);border-bottom:1px solid var(--beta-edge);box-shadow:0 8px 0 var(--beta-floor);box-sizing:border-box}
+ html.desktop-beta .beta-page-title{font-family:'Trebuchet MS','Segoe UI',sans-serif;font-size:25px;font-weight:700;letter-spacing:-.6px;color:var(--beta-ink);margin:0}
+ html.desktop-beta #clubPanel .beta-toolbar .club-wallet{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0;width:100%;box-sizing:border-box}
+ html.desktop-beta .beta-toolbar .club-wallet>span{padding:10px 14px 8px;border-width:1px;border-radius:13px;box-shadow:0 2px #94a88445;min-width:0}
+ html.desktop-beta .beta-toolbar .club-wallet small{font-size:9px;letter-spacing:.8px}
+ html.desktop-beta .beta-toolbar .club-wallet b{font-size:25px;line-height:1.2;margin:3px 0}
+ html.desktop-beta .beta-toolbar .club-wallet :is(#budgetIncome,#apIncome){font-size:10px;line-height:1.4}
+ html.desktop-beta .beta-toolbar .budget-cycle{height:3px;margin-top:6px}
+ html.desktop-beta .beta-command{display:block;min-width:0}
+ html.desktop-beta .beta-command .energy-button>span:nth-child(2){min-width:0}
+ html.desktop-beta .mobile-nav .social-empty-note{top:0;left:auto;right:-18px}
+ html.desktop-beta .beta-command .energy-button,html.desktop-beta.app-expanded .beta-command .energy-button{display:grid;grid-template-columns:40px minmax(0,1fr) 48px;column-gap:8px;align-items:center;position:relative;inset:auto;transform:none;width:100%;max-width:none;min-height:79px;margin:0;padding:12px 14px;border-width:3px;border-radius:18px;box-sizing:border-box;box-shadow:0 4px #cd9645}
+ html.desktop-beta .beta-command .energy-button strong{font-size:22px;white-space:nowrap}
+ html.desktop-beta .beta-command .bolt{width:40px;height:40px}
+ html.desktop-beta .beta-command .ap-feedback{font-size:10px;line-height:1.3;min-width:0;width:auto;max-width:48px;white-space:normal;text-align:right}
+ html.desktop-beta .dashboard>.right-column{display:none}
+ html.desktop-beta .beta-overview{display:grid;grid-template-columns:320px minmax(0,1fr);gap:0;align-items:stretch;width:100%;padding:0;border:1px solid var(--beta-edge);border-radius:18px;background:var(--beta-surface);box-shadow:0 2px #a9bba22b;overflow:hidden;box-sizing:border-box}
+ html.desktop-beta .beta-overview>.calendar-card{width:100%;margin:0;padding:14px 16px;border:0;border-radius:0;background:none;box-shadow:none;box-sizing:border-box}
+ html.desktop-beta .beta-overview .calendar-card h2{font-size:15px}
+ html.desktop-beta .beta-overview .calendar-day-summary{margin:5px 0 8px;font-size:10px}
+ html.desktop-beta .beta-overview .calendar{gap:5px;margin:0 0 9px}
+ html.desktop-beta .beta-overview .calendar-day{height:50px;min-height:50px;padding:5px 0;border-radius:9px;box-sizing:border-box}
+ html.desktop-beta .beta-overview .calendar-day strong{font-size:18px}
+ html.desktop-beta .beta-overview .calendar-day small{font-size:7px}
+ html.desktop-beta .beta-overview .calendar-legend{font-size:8px}
+ html.desktop-beta body[data-league-division] .beta-overview .league-match-group{display:grid;grid-template-columns:minmax(200px,.8fr) minmax(300px,1.2fr);align-items:center;height:auto!important;width:auto;margin:8px 8px 8px 0;border:0;border-radius:12px;box-shadow:none;box-sizing:border-box;overflow:hidden}
+ html.desktop-beta body[data-league-division] .beta-overview .league-match-group>#leagueQuick{padding:14px 18px;margin:0;height:100%;gap:10px;align-items:center;min-width:0}
+ html.desktop-beta .beta-overview #leagueQuick strong{font-size:13px;line-height:1.4}
+ html.desktop-beta .beta-overview #leagueQuick small{font-size:10px;line-height:1.5}
+ html.desktop-beta .beta-overview #leagueQuickRecord{font-size:11px}
+ html.desktop-beta .beta-overview .league-quick-icon{width:36px;height:42px}
+ html.desktop-beta body[data-league-division] .beta-overview .next-match.match-preview{min-width:0;height:100%;margin:0;border-left:1px solid #fff5de30}
+ html.desktop-beta body[data-league-division] .beta-overview .match-preview-open{display:flex;flex-direction:column;justify-content:center;height:100%;padding:14px 18px;min-width:0}
+ html.desktop-beta .beta-overview .match-preview-open:before{display:none}
+ html.desktop-beta .beta-overview .match-preview-heading{font-size:8px;letter-spacing:1px;width:100%}
+ html.desktop-beta body[data-league-division] .beta-overview .match-preview-teams{display:grid;grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr);width:100%;gap:10px;margin:15px 0 0!important}
+ html.desktop-beta .beta-overview .match-preview-team{display:grid;grid-template-columns:40px minmax(0,1fr);justify-items:start;text-align:left;gap:4px 9px;align-items:center;min-width:0}
+ html.desktop-beta .beta-overview .match-preview-team img{grid-column:1;grid-row:1/3;width:40px;height:44px}
+ html.desktop-beta .beta-overview .match-preview-team strong{grid-column:2;grid-row:1;align-self:end;min-height:0;font-size:12px;line-height:1.35;text-align:left}
+ html.desktop-beta .beta-overview .match-preview-team small{grid-column:2;grid-row:2;font-size:7px;letter-spacing:.5px;align-self:start;text-align:left}
+ html.desktop-beta .beta-overview .match-preview-versus{font-size:9px;gap:4px}
+ html.desktop-beta .beta-overview .match-preview-versus i{height:8px}
+ html.desktop-beta .beta-notices[hidden]{display:none!important}
+ html.desktop-beta .beta-notices{display:none;width:100%;gap:16px}
+ html.desktop-beta .beta-notices:has(>:not([hidden])){display:flex;align-items:stretch}
+ html.desktop-beta .beta-notices>:is(#campAlert,.shift-summary){flex:1;min-width:0;width:auto;margin:0!important}
+ html.desktop-beta .beta-workspace{width:100%;min-width:0;padding:0 20px 16px;border:1px solid #becfba;border-top:3px solid #91ad91;border-radius:18px;background:linear-gradient(145deg,#f0f3e4,#e8eedb);box-shadow:0 3px #a1b69830;box-sizing:border-box;overflow:hidden}
+ html.desktop-beta .beta-workspace .building-header{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:0;padding:18px 0 16px;border-bottom:1px solid #ccd9c24d}
+ html.desktop-beta .beta-workspace .power-label{font-size:11px;letter-spacing:1.1px}
+ html.desktop-beta .beta-workspace .club-rates{display:flex;align-items:center;gap:28px;justify-content:center;margin:0 auto;min-width:0;padding:0;width:auto}
+ html.desktop-beta .beta-workspace .club-rates>span{display:flex;align-items:baseline;gap:8px;font-size:10px;white-space:nowrap;letter-spacing:0;text-transform:none;padding:0;background:none;border:0}
+ html.desktop-beta .beta-workspace .club-rates b{font-size:13px;letter-spacing:0;margin:0}
+ html.desktop-beta .beta-workspace .building-scroll{width:100%;max-width:100%;box-sizing:border-box;padding-top:16px;scrollbar-width:thin;overscroll-behavior-x:contain}
+ html.desktop-beta .beta-workspace .workflow{width:max-content;min-width:0;margin-inline:auto}
+ html.desktop-beta .beta-workspace .stage-heading{font-size:11px;margin-bottom:17px}
+ html.desktop-beta .beta-workspace .room-tile{flex-basis:218px;min-width:218px;height:246px;border-radius:13px}
+ html.desktop-beta .beta-workspace .room-lane{gap:12px}
+ html.desktop-beta .beta-workspace .base-room .tier-info h3{font-size:14px;line-height:1.3}
+ html.desktop-beta .beta-workspace .base-room .department-purpose{font-size:12px;line-height:1.45}
+ html.desktop-beta .beta-workspace .purchased-room>strong{font-size:14px;line-height:1.35;min-height:45px}
+ html.desktop-beta .beta-workspace .purchased-room>small{font-size:12px;line-height:1.45}
+ html.desktop-beta .beta-workspace .block-upgrade-action{font-size:11px}
+ html.desktop-beta .beta-workspace .tier{width:max-content;margin-bottom:22px}
+ html.desktop-beta #teamPanel,html.desktop-beta #leaguePanel,html.desktop-beta #socialPanel{max-width:1200px;margin:0 auto;min-width:0}
+ html.desktop-beta #teamPanel :is(#activeTeam,#reserveTeam,#benchCards){grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:18px;align-items:start}
  html.desktop-beta #teamPanel .libero-slot{width:100%;grid-column:auto}
- html.desktop-beta #teamPanel .player-card{min-width:0}
- html.desktop-beta #teamPanel .bench-heading{margin-top:28px}
- html.desktop-beta .lineup-banner{border-radius:16px 16px 0 0}
- html.desktop-beta body #toast{left:50%;bottom:125px;width:min(440px,calc(100vw - 48px))}
- html.desktop-beta footer{padding-bottom:10px}
- html.desktop-beta[data-theme=dark] body{background:#243c43}
- html.desktop-beta[data-theme=dark] :is(.shell,.beta-workspace){background:#293e3e}
- html.desktop-beta[data-theme=dark] .topbar{background:#365762;border-color:#547577}
- html.desktop-beta[data-theme=dark] .mobile-nav{background:#314a47;border-color:#6b8173}
- html.desktop-beta[data-theme=dark] .mobile-nav>a[aria-current=page]{background:#496357;color:#f3edda}
- html.desktop-beta[data-theme=dark] .beta-original{color:#e5eadb}
+ html.desktop-beta #teamPanel .player-card{min-width:0;scroll-margin-top:96px}
+ html.desktop-beta #teamPanel .player-card .card-stats>span{font-size:11px}
+ html.desktop-beta #teamPanel .player-card .card-stats b{font-size:13px}
+ html.desktop-beta #teamPanel .player-card .card-cap{font-size:10px}
+ html.desktop-beta #teamPanel .player-card .card-open-upgrade :is(span,small){font-size:11px}
+ html.desktop-beta #teamPanel .player-card .card-physical{font-size:10px}
+ html.desktop-beta #teamPanel .bench-heading{margin-top:26px}
+ html.desktop-beta #teamPanel .lineup-banner{border-radius:16px 16px 0 0}
+ html.desktop-beta #teamPanel .match-advice-player-row:has(>.match-advice-note:empty){display:none}
+ html.desktop-beta #teamPanel .match-advice-footer{grid-template-columns:minmax(0,1fr) auto;align-items:center}
+ html.desktop-beta #teamPanel .match-advice-action{min-width:240px;max-width:320px}
+ html.desktop-beta body #toast{left:50%;bottom:24px;width:min(440px,calc(100vw - 48px))}
+ html.desktop-beta footer{padding-bottom:0}
+ html.desktop-beta[data-theme=dark]{--beta-floor:#293f3e;--beta-surface:#304946;--beta-edge:#50675b;--beta-ink:#e1e9d5}
+ html.desktop-beta[data-theme=dark] body{background:#243c3c}
+ html.desktop-beta[data-theme=dark] .topbar{background:#365b62;border-color:#67827b}
+ html.desktop-beta[data-theme=dark] .mobile-nav{background:#2b4a4e;border-color:#6d8a7c}
+ html.desktop-beta[data-theme=dark] .mobile-nav>a{color:#c0d1c3}
+ html.desktop-beta[data-theme=dark] .mobile-nav>a[data-beta-current=true]{background:#4d6557;color:#fff5d8}
+ html.desktop-beta[data-theme=dark] .beta-workspace{background:linear-gradient(145deg,#30483f,#2a413a);border-color:#58745d}
+ html.desktop-beta[data-theme=dark] .beta-original{color:#dce6d4}
+ html.desktop-beta[data-theme=dark] .beta-workspace .stage-heading,html.desktop-beta[data-theme=dark] .beta-workspace .stage-heading strong{color:#bfcfb7}
+ html.desktop-beta[data-theme=dark] .beta-workspace .club-rates{background:transparent;border:0}
 }
-@media(min-width:1400px){html.desktop-beta #teamPanel .team-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
-@media(max-width:999px){.beta-sidebar,.beta-workspace{display:contents}.beta-original{display:none}}
-@media(min-width:1000px){html.desktop-beta #teamPanel .team-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
-@media(min-width:1400px){html.desktop-beta #teamPanel .team-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}}
-@media(min-width:1000px){html.desktop-beta #teamPanel :is(#activeTeam,#reserveTeam,#benchCards){grid-template-columns:repeat(3,minmax(0,1fr))!important}}
-@media(min-width:1400px){html.desktop-beta #teamPanel :is(#activeTeam,#reserveTeam,#benchCards){grid-template-columns:repeat(4,minmax(0,1fr))!important}}
+@media(min-width:1000px) and (max-width:1199px){
+ html.desktop-beta .topbar,html.desktop-beta.app-expanded .topbar{gap:12px;padding-inline:24px}
+ html.desktop-beta .topbar .wordmark{font-size:23px;min-width:160px}
+ html.desktop-beta .mobile-nav>a{min-width:72px;padding-inline:10px}
+ html.desktop-beta .beta-original{display:none}
+ html.desktop-beta .beta-toolbar{grid-template-columns:180px minmax(300px,1fr) 250px;gap:16px}
+ html.desktop-beta .beta-page-title{font-size:23px}
+ html.desktop-beta .beta-command .energy-button strong{font-size:20px}
+ html.desktop-beta .beta-overview{grid-template-columns:280px minmax(0,1fr)}
+ html.desktop-beta body[data-league-division] .beta-overview .league-match-group{grid-template-columns:minmax(0,1fr)}
+ html.desktop-beta body[data-league-division] .beta-overview .league-match-group>#leagueQuick{padding:8px 14px;min-height:40px;height:auto}
+ html.desktop-beta .beta-overview .league-quick-icon{width:28px;height:30px}
+ html.desktop-beta body[data-league-division] .beta-overview .match-preview-open{padding:8px 14px 12px}
+ html.desktop-beta body[data-league-division] .beta-overview .match-preview-teams{margin-top:8px!important}
+ html.desktop-beta .beta-workspace .club-rates{gap:14px}
+ html.desktop-beta .beta-workspace .club-rates>span{font-size:9px;gap:5px}
+ html.desktop-beta #teamPanel :is(#activeTeam,#reserveTeam,#benchCards){grid-template-columns:repeat(3,minmax(0,1fr))!important}
+}
+@media(max-width:999px){.beta-toolbar,.beta-overview,.beta-workspace,.beta-command,.beta-notices{display:contents}.beta-page-title,.beta-original{display:none}.beta-navigation{display:contents}}
