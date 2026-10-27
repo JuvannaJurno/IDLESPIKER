@@ -1,0 +1,16 @@
+{
+  "frameCount": 104,
+  "frameP95": 66.70000000000073,
+  "longFrames": 18,
+  "mutations": 2177,
+  "pulses": 102,
+  "flow": null,
+  "nodes": 3763,
+  "instructions": 2616,
+  "lanes": 6,
+  "cpuThrottle": 4,
+  "scriptMs": 1378,
+  "taskMs": 3958,
+  "layouts": 101,
+  "styleRecalculations": 104
+}

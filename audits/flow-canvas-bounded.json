@@ -1,0 +1,22 @@
+{
+  "frameCount": 212,
+  "frameP95": 33.399999999999636,
+  "longFrames": 3,
+  "mutations": 1080,
+  "pulses": 24,
+  "flow": {
+    "logical": 114,
+    "rendered": 24,
+    "pooled": 6,
+    "created": 30,
+    "peak": 30,
+    "limit": 36
+  },
+  "nodes": 3682,
+  "instructions": 3294,
+  "lanes": 6,
+  "scriptMs": 1170,
+  "taskMs": 3330,
+  "layouts": 210,
+  "styleRecalculations": 213
+}

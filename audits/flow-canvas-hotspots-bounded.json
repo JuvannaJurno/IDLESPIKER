@@ -1,0 +1,74 @@
+[
+  {
+    "name": "(program) @ native:-1",
+    "ms": 2300
+  },
+  {
+    "name": "(idle) @ native:-1",
+    "ms": 747
+  },
+  {
+    "name": "applyGain @ rooms.js?v=a7c016a96eab:101",
+    "ms": 110
+  },
+  {
+    "name": "querySelectorAll @ native:-1",
+    "ms": 99
+  },
+  {
+    "name": "compact @ number-ui.js?v=a24b5930e991:3",
+    "ms": 61
+  },
+  {
+    "name": "animate @ menu.js?v=3ee0fecb216b:56",
+    "ms": 49
+  },
+  {
+    "name": "progress @ league-rules.js?v=25643967df56:32",
+    "ms": 48
+  },
+  {
+    "name": "addPulse @ menu.js?v=3ee0fecb216b:67",
+    "ms": 41
+  },
+  {
+    "name": "(anonymous) @ rooms.js?v=a7c016a96eab:101",
+    "ms": 40
+  },
+  {
+    "name": "closest @ native:-1",
+    "ms": 36
+  },
+  {
+    "name": "setItem @ native:-1",
+    "ms": 33
+  },
+  {
+    "name": "standings @ league-rules.js?v=25643967df56:31",
+    "ms": 32
+  },
+  {
+    "name": "snapshot @ rooms.js?v=a7c016a96eab:97",
+    "ms": 28
+  },
+  {
+    "name": "(anonymous) @ league-rules.js?v=25643967df56:32",
+    "ms": 26
+  },
+  {
+    "name": "professionalDaily @ room-rules.js?v=c6eff2510061:88",
+    "ms": 26
+  },
+  {
+    "name": "writeText @ rooms.js?v=a7c016a96eab:5",
+    "ms": 22
+  },
+  {
+    "name": "applyBudget @ rooms.js?v=a7c016a96eab:101",
+    "ms": 21
+  },
+  {
+    "name": "persist @ menu.js?v=3ee0fecb216b:10",
+    "ms": 21
+  }
+]

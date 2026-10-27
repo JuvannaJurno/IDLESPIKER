@@ -1,0 +1,74 @@
+[
+  {
+    "name": "(program) @ native:-1",
+    "ms": 3163
+  },
+  {
+    "name": "querySelectorAll @ native:-1",
+    "ms": 149
+  },
+  {
+    "name": "applyGain @ rooms.js?v=a7c016a96eab:101",
+    "ms": 101
+  },
+  {
+    "name": "(garbage collector) @ native:-1",
+    "ms": 44
+  },
+  {
+    "name": "closest @ native:-1",
+    "ms": 43
+  },
+  {
+    "name": "animate @ menu.js?v=83782f2a102b:51",
+    "ms": 35
+  },
+  {
+    "name": "setItem @ native:-1",
+    "ms": 35
+  },
+  {
+    "name": "animate @ native:-1",
+    "ms": 35
+  },
+  {
+    "name": "standings @ league-rules.js?v=25643967df56:31",
+    "ms": 34
+  },
+  {
+    "name": "compact @ number-ui.js?v=a24b5930e991:3",
+    "ms": 33
+  },
+  {
+    "name": "(idle) @ native:-1",
+    "ms": 33
+  },
+  {
+    "name": "effects @ room-rules.js?v=c6eff2510061:38",
+    "ms": 29
+  },
+  {
+    "name": "(anonymous) @ rooms.js?v=a7c016a96eab:101",
+    "ms": 29
+  },
+  {
+    "name": "addPulse @ menu.js?v=83782f2a102b:62",
+    "ms": 27
+  },
+  {
+    "name": "progress @ league-rules.js?v=25643967df56:32",
+    "ms": 24
+  },
+  {
+    "name": "matches @ native:-1",
+    "ms": 23
+  },
+  {
+    "name": "querySelector @ native:-1",
+    "ms": 23
+  },
+  {
+    "name": "(anonymous) @ league-rules.js?v=25643967df56:32",
+    "ms": 22
+  }
+]

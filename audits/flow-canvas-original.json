@@ -1,0 +1,15 @@
+{
+  "frameCount": 202,
+  "frameP95": 50,
+  "longFrames": 7,
+  "mutations": 2943,
+  "pulses": 108,
+  "flow": null,
+  "nodes": 3766,
+  "instructions": 3270,
+  "lanes": 6,
+  "scriptMs": 873,
+  "taskMs": 3120,
+  "layouts": 198,
+  "styleRecalculations": 205
+}

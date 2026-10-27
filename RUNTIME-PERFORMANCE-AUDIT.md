@@ -16,7 +16,7 @@ Ortak Tempo ilk ek özellik açılışında standart hatları aynı kapasitede i
 
 Maç çizimi ayrıca 4× CPU yavaşlatmada 120 kareyle kontrol edildi: ortalama 3,57 ms, p95 10,5 ms; tekil en kötü kare 41,2 ms. Bu bir çizim örneğidir; tüm maç/ses/yükleme için uçtan uca FPS ölçümü değildir.
 
-## Yoğun akış için çizim bütçesi ve yeniden kullanım
+## Yoğun akış için çizim bütçesi ve yeniden kullanım (sonradan kaldırıldı)
 
 Son uygulamada oyun hesabı ve görsel paket ayrı tutulur. Aynı anda en fazla 36 span/WAAPI animasyonu (18 otomatik, 6 medya, 12 manuel) çizilir. Ek talimatlar hesaplanmaya, kendi rotalarında ilerlemeye ve varışlarında kazanç vermeye devam eder. Biten düğümler en fazla 36 öğelik havuza alınır; tekrar kullanımda sınıf/stil temizlenir. Tüplerin tasarımı korunur. Kamera dışında kritik varış efekti ve aynı öğe için yinelenen kritik timer üretilmez.
 
@@ -35,3 +35,28 @@ Hareketli öğeler yaklaşık %74, DOM değişiklikleri %64, toplam görev süre
 `test-flow-density-budget.cjs` gerçek varışları bekleyerek 33 görsel sınırı içinde, 100 ek görünmez mantıksal paketle AP/bütçenin tam geldiğini; tekrar durdurmanın tekrar ödeme yapmadığını ve düğümlerin doğru sınıflarla yeniden kullanıldığını denetler. Görseli `audits/flow-density-bounded-mobile.png` içindedir. Eski teslimat/hat/medya testleri de geçer.
 
 Güncel Ortak Tempo kararı: 6–10 seviyeleri ek hatları 1/5’ten 5/5’e geliştirir. Önceki bölümdeki seviye 6’da tek açılış bilgisi geçmiş sürüm ölçümüne aittir.
+
+## Güncel: Kota yerine kesintisiz Canvas akışı
+
+Önceki 36 düğüm/hat başına üç paket sınırı kullanıcıda gönderimlerin duraklaması hissini yarattığından kaldırıldı. Artık her paket aynı simülasyon konumunda tek bir dar canvas üzerinde çizilir. Akış sayısına göre çizim kesilmez; yalnız ekran dışında kalan alan çizilmez. Küçük sprite'lar önbelleklidir. Canvas geometri ölçümü scroll/resize/rota değişimi dışında tekrarlanmaz. Hat başlığı DOM sorguları da gönderim başına yapılmaz. Üretim katsayıları ve gelir kuralları değişmedi.
+
+`audit-flow-canvas.cjs original` menu.js ve flow-lanes.js dosyalarını 7537d73'ten, `bounded` d95b0f4'ten yükler. `canvas` güncel sürümü kullanır. Diğer kaynaklar aynıdır. Görünür workflow, altı tam standart hat, 390×844, 1,2 sn ısınma ve 4 sn hızlı test kullanılır. Ek üçüncü argüman `4`, CDP ile 4× CPU yavaşlatması uygular. Kare aralığı requestAnimationFrame ile, süreler Performance/Profiler ile kaydedilir. Farklı çalışmalarda işletim sistemi/timer zamanlaması nedeniyle işlenen talimat sayısı değişebilir.
+
+| Normal CPU, 4 sn | Eski sınırsız DOM | Reddedilen kota | Canvas |
+|---|---:|---:|---:|
+| Çizilen kare | 202 | 212 | 236 |
+| Kare aralığı p95 (ms) | 50 | 33,4 | 16,8 |
+| 50 ms üstü kare | 7 | 3 | 1 |
+| Workflow DOM değişikliği | 2943 | 1080 | 511 |
+| Toplam görev süresi (ms) | 3120 | 3330 | 2466 |
+| JS süresi (ms) | 873 | 1170 | 861 |
+
+| 4× CPU, 4 sn | Eski sınırsız DOM | Canvas |
+|---|---:|---:|
+| Çizilen kare | 104 | 151 |
+| Kare aralığı p95 (ms) | 66,7 | 50 |
+| 50 ms üstü kare | 18 | 5 |
+| İşlenen talimat | 2616 | 3054 |
+| Toplam görev süresi (ms) | 3958 | 3951 |
+
+Normal örnekte toplam görev süresi yaklaşık %21 azaldı; 4× CPU koşulunda görev süresi azalmadı ve CPU doygunluğu sürüyor, ancak kare ilerlemesi daha iyi. Bu bir fiziksel telefon FPS garantisi değildir. Önceki kota uygulamasındaki 30 öğe sayısı artık hedef değildir: Canvas'ta yüzlerce mantıksal paket, bunların ekranda kalanları için tek HTML çizim yüzeyi vardır. AP/bütçe tutarlılığı ve akışta kota boşluğu olmaması ilgili testlerle ayrı doğrulanır.

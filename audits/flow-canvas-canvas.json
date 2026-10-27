@@ -1,0 +1,23 @@
+{
+  "frameCount": 236,
+  "frameP95": 16.800000000000182,
+  "longFrames": 1,
+  "mutations": 511,
+  "pulses": 0,
+  "flow": {
+    "logical": 330,
+    "renderer": "canvas",
+    "rendered": 186,
+    "peak": 204,
+    "nodes": 1,
+    "sprites": 2,
+    "pixels": 109880
+  },
+  "nodes": 3664,
+  "instructions": 3336,
+  "lanes": 6,
+  "scriptMs": 861,
+  "taskMs": 2466,
+  "layouts": 235,
+  "styleRecalculations": 240
+}
