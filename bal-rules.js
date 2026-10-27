@@ -1,7 +1,7 @@
 (function(root){
 'use strict';
 const Clock=root.SeasonClock||(typeof require==='function'?require('./season-clock.js'):null);
-const display=v=>Number(v.toFixed(1)).toLocaleString('tr-TR');
+const display=v=>Number(v.toFixed(2)).toLocaleString('tr-TR');
 const departments=['Performans Merkezi','Kulüp Yönetimi','Gelir Merkezi','Teknik Ekip','Oyuncu Keşfi'];
 const definitions=[
  ['bal_coach',1,'Yardımcı Antrenör','♟',[.6,1.2,2,3,4],v=>'Saniyede +'+display(v)+' otomatik talimat.',220],
@@ -11,23 +11,23 @@ const definitions=[
  ['bal_video',0,'Video Destekli Çalışma','▤',[70,160,300,500,800],v=>'Her 5. talimata +'+display(v)+' AP.',300],
  ['bal_recovery',0,'Toparlanma Ünitesi','✚',[.08,.16,.25,.35,.5],v=>'Çevrimdışı AP +%'+display(v*100)+'.',260],
  ['bal_sponsor',2,'Yerel Sponsor','▣',[2,4,7,12,20],v=>'Her 10 talimatta ek +'+display(v)+' bütçe.',400],
- ['bal_shop',2,'Kulüp Mağazası','▤',[.1,.2,.35,.55,.8],v=>'Gelir Merkezi kazancını %'+display(v*100)+' artırır.',350],
+ ['bal_shop',2,'Kulüp Mağazası','▤',[.1,.2,.35,.55,.8],v=>'Temel gelir ve Yerel Sponsor ödemeleri +%'+display(v*100)+' bütçe.',350],
  ['bal_fans',2,'Taraftar Organizasyonu','◎',[150,350,650,1100,1800],v=>'Oynanan her maç için +'+display(v)+' bütçe.',260],
  ['bal_scout',3,'Gözlemci','▤',[1,2,3,4,5],v=>'Rakip raporu +'+display(v)+' gün erken.',250],
- ['bal_personal',3,'Bireysel Gelişim Planı','+',[.01,.02,.03,.04,.05],v=>'Ücretsiz kart yükseltme ihtimali +'+display(v*100)+' puan.',400],
+ ['bal_personal',3,'Bireysel Gelişim Planı','+',[.01,.02,.03,.04,.05],v=>'Kart yükseltmelerinin ücretsiz olma şansını artırır.',400],
  ['bal_archive',3,'Analiz Arşivi','▥',[.02,.04,.06,.08,.1],v=>'Kart yükseltmelerinde %'+display(v*100)+' AP indirimi.',360],
  ['bal_search',4,'Keşif Ağı','◎',[9,8,7,6,5],v=>'Her '+display(v)+' oyun gününde yeni katalog.',300],
  ['bal_contacts',4,'Yerel Bağlantılar','♧',[4,5,6,7,8],v=>'Yeni kataloglarda '+display(v)+' aday.',350],
- ['bal_talent',4,'Yetenek Tarama','↗',[.03,.06,.09,.12,.15],v=>'Katkılı katalog şansı +'+display(v*100)+' puan. Büyük fırsat şansı +'+display(v*100*.004/.03)+' puan.',400]
+ ['bal_talent',4,'Yetenek Tarama','↗',[.025,.05,.075,.1,.125],v=>'Katalogda daha güçlü adaylar bulma şansını artırır.',400]
 ];
 const extendedIds=new Set(['bal_coach','bal_shift','bal_plan','bal_position','bal_video','bal_recovery','bal_sponsor','bal_shop','bal_fans']);
 for(const d of definitions)if(d[0]==='bal_sponsor'||d[0]==='bal_fans')d[4]=d[4].map(v=>v*10);
 const successors=[
  ['bal_coach','bal_double','Üçüncü Hat',[.2,.4,.6,.8,1],v=>'Üçüncü hat '+Math.round(v*5)+'/5 kapasitede çalışır. Her talimatta %'+Math.round(v*100)+' ihtimalle ek talimat üretir.'],
- ['bal_shift','bal_efficiency','Vardiya Verimi',[.03,.06,.09,.12,.15],v=>'Çevrimdışı verim +'+display(v*100)+' puan.'],
+ ['bal_shift','bal_efficiency','Vardiya Verimi',[.03,.06,.09,.12,.15],v=>'Vardiyada kazanılan çevrimdışı AP payını artırır.'],
  ['bal_plan','bal_hands','Birebir Çalışma',[20,40,60,80,100],v=>'Elle verilen her talimata +'+v+' AP.'],
  ['bal_position','bal_warmstart','Maç Öncesi Isınma',[250,650,1400,2700,5000],v=>'Günün ilk 20 talimatına +'+v+' AP.'],
- ['bal_video','bal_precision','Hedefli Tekrar',[.02,.04,.06,.08,.1],v=>'Kritik AP kazanma şansına +'+Math.round(v*100)+' puan.'],
+ ['bal_video','bal_precision','Hedefli Tekrar',[.02,.04,.06,.08,.1],v=>'Talimatların kritik AP kazandırma şansını artırır.'],
  ['bal_recovery','bal_evening','Gün Sonu Toparlanma',[1000,2500,5500,11000,20000],v=>'Gün sonunda +'+v+' AP.'],
  ['bal_sponsor','bal_matchsponsor','Maç Günü Sponsorluğu',[2000,6000,16000,36000,80000],v=>'Oynanan her maç için ek +'+v+' bütçe.'],
  ['bal_shop','bal_members','Kulüp Üyeliği',[1000,3000,7000,15000,30000],v=>'Her gün +'+v+' bütçe.'],
@@ -36,7 +36,7 @@ const successors=[
  ['bal_personal','bal_mentor','Gelişim Mentoru',[.01,.02,.03,.04,.05],v=>'Tüm kart yükseltmelerinde ek %'+Math.round(v*100)+' AP indirimi.'],
  ['bal_archive','bal_remote','Uzaktan Antrenman',[.03,.06,.09,.12,.15],v=>'Çevrimdışı AP verimine +%'+Math.round(v*100)+'.'],
  ['bal_search','bal_negotiator','Transfer Görüşmeleri',[.03,.06,.09,.12,.15],v=>'Yeni katalog transfer fiyatları %'+Math.round(v*100)+' daha uygun.'],
- ['bal_contacts','bal_network','Bölgesel Bağlantılar',[.085,.095,.105,.115,.125],v=>'Katkılı katalog şansı +'+display(v*100)+' puan. Büyük fırsat şansı +'+display((v-.075)*40)+' puan.'],
+ ['bal_contacts','bal_network','Bölgesel Bağlantılar',[.085,.095,.105,.115,.125],v=>'Katalogda güçlü ve çok güçlü aday bulma şansını artırır.'],
  ['bal_talent','bal_academy','Akademi İşbirliği',[1,2,3,4,5],v=>'Yeni adaylar +'+v+' kart seviyesi gelişmiş gelir.']
 ];
 const catalog=definitions.map(([id,floor,name,icon,core,describe,price])=>({id,floor,name,icon,values:[...core,...Array(5).fill(core[4])],describe,price,bal:true,bonus:successors.find(row=>row[0]===id)}));
@@ -53,13 +53,13 @@ const professional=[
  ['pro_sponsor',2,'Lig Sponsorluğu','▣',30000,v=>'Her 3 tamamlanan maçta +'+display(v)+' bütçe.'],
  ['pro_shop',2,'Lisanslı Ürünler','▤',2,v=>'Her gün takipçi başına +'+display(v)+' bütçe.'],
  ['pro_tickets',2,'Antrenman Sponsorluğu','◎',1000,v=>'Her ücretli kart yükseltmesinde +'+display(v)+' bütçe.'],
- ['pro_search',3,'İhtiyaç Analizi','↗',.08,v=>'Bir aday kadronun en düşük OVR’li pozisyonundan gelir. Katkılı adayın bu pozisyondan gelme şansına +'+display(v*100)+' puan.'],
+ ['pro_search',3,'İhtiyaç Analizi','↗',.08,v=>'Güçlü aday seçiminde kadronun en zayıf rolüne öncelik verir.'],
  ['pro_negotiator',3,'Transfer Görüşmeleri','♧',.04,v=>'Yeni katalog transferleri %'+display(v*100)+' daha uygun.'],
- ['pro_scout',3,'Ulusal Gözlem Ağı','◎',.01,v=>'Katkılı katalog şansı +'+display(v*100)+' puan. Büyük fırsat şansı +'+display(v*60)+' puan.']
+ ['pro_scout',3,'Ulusal Gözlem Ağı','◎',.01,v=>'Katalogda güçlü ve çok güçlü aday bulma şansını artırır.']
 ];
 // Stable bonus IDs preserve saved levels; their outcomes are independent of the primary effect.
 const professionalBonuses=[
- ['pro_coach','pro_focus','Hedefli Antrenman',[.01,.02,.03,.04,.05],v=>'Kritik AP şansı +'+display(v*100)+' puan.'],
+ ['pro_coach','pro_focus','Hedefli Antrenman',[.01,.02,.03,.04,.05],v=>'Talimatların kritik AP kazandırma şansını artırır.'],
  ['pro_repeat','pro_refund','Eğitim Bursu',[1000,2000,3000,4000,5000],v=>'Her 5 ücretli kart yükseltmesinde +'+display(v)+' bütçe.'],
  ['pro_analysis','pro_adapt','Transfer Desteği',[.01,.02,.03,.04,.05],v=>'Yeni katalogdaki transfer bedelleri %'+display(v*100)+' azalır.'],
  ['pro_coordinator','pro_tempo','Ortak Tempo',[.2,.4,.6,.8,1],v=>'Ek standart hatlar açar. Yeni hatların her biri %'+display(v*100)+' kapasiteyle çalışır; her yükseltmede 1/5 artar. Medya hattını etkilemez.'],
@@ -68,7 +68,7 @@ const professionalBonuses=[
  ['pro_sponsor','pro_contract','Galibiyet Primi',[2000,4000,6000,8000,10000],v=>'Her galibiyette +'+display(v)+' AP.'],
  ['pro_shop','pro_merch','Tanıtım Anlaşmaları',[.1,.2,.3,.4,.5],v=>'Sponsor paylaşımlarının bütçe kazancı +%'+display(v*100)+'.'],
  ['pro_tickets','pro_trainingcash','Günlük Antrenman Desteği',[200,400,600,800,1000],v=>'Gün sonunda +'+display(v)+' AP.'],
- ['pro_scout','pro_elite','Elit Oyuncu Bağlantıları',[.001,.002,.003,.004,.005],v=>'Elit oyuncu bulma ihtimaline +'+display(v*100)+' puan. En yüksek toplam ihtimal %3.']
+ ['pro_scout','pro_elite','Elit Oyuncu Bağlantıları',[.001,.002,.003,.004,.005],v=>'Milletler Kupası’ndan itibaren elit aday bulma şansını artırır.']
 ];
 for(const [id,floor,name,icon,step,describe] of professional){const bonus=professionalBonuses.find(b=>b[0]===id),r={id,floor,name,icon,values:Array.from({length:5},(_,i)=>step*(i+1)*(id==='pro_coach'||id==='pro_coordinator'?2:1)),compressed:!!bonus,describe,price:300,bal:true,division:3};if(bonus){successors.push(bonus);r.bonus=bonus;r.values.push(...Array(5).fill(r.values[4]));}catalog.push(r);}
 
@@ -76,8 +76,24 @@ catalog.push({id:'first_academy',floor:0,name:'Altyapı Akademisi',icon:'♟',va
 function maxLevel(s,r){if(r.id==='pro_scout'&&(s.division||2)<6)return Math.max(5,level(s,r.id));return r.division?r.values.length:!r.bal?r.values.length:Math.max(longBal.has(r.id)?10:5,level(s,r.id));}
 
 function bonusLevel(s,id){const bonus=successors.find(row=>row[1]===id);return bonus?Math.max(0,Math.min(5,level(s,bonus[0])-5)):0;}
-function describePrimary(s,r,n=level(s,r.id)){let v=r.values[Math.max(0,n-1)];if(r.id==='bal_shift'&&s.division>=3)v*=3;if(Clock.isWeekly(s)){if(r.id==='pro_shop')v*=Clock.economyScale(s);if(r.id==='bal_fans')v*=2;if(r.id==='pro_sponsor')return '3 maçta toplam +'+display(v*2)+' bütçe.';}return r.describe(v);}
-function describeBonus(s,r,n){if(r.bonus?.[1]==='pro_elite'&&(s.division||2)<6)return 'Milletler Kupası’nda etkinleşir. '+r.bonus[4](r.bonus[3][n-6]);let v=r.bonus[3][n-6],text;if(Clock.isWeekly(s)){if(['bal_evening','bal_members','pro_trainingcash'].includes(r.bonus[1]))v*=Clock.economyScale(s);if(['bal_matchsponsor','bal_review'].includes(r.bonus[1]))v*=2;}text=r.bonus[4](v);if(Clock.isWeekly(s)&&r.bonus[1]==='bal_warmstart')text=text.replace('ilk 20','ilk '+Clock.morningInstructions(s));return text;}
+// Project a card level without mutating the saved game or running migrations.
+function previewLevel(s,r,n){const floors=s.floors.slice();floors[r.floor]=floors[r.floor].filter(id=>id!==r.id).concat(Array(Math.max(0,n)).fill(r.id));return {...s,floors};}
+const percent=v=>'%'+display(v*100);
+const range=(a,b)=>percent(a)+' → '+percent(b);
+function contextualDescription(s,r,n,bonus=false){
+ const R=root.RoomRules||(typeof require==='function'?require('./room-rules.js'):null),S=root.ScoutRules||(typeof require==='function'?require('./scout-rules.js'):null);
+ if(!R)return null;const a=previewLevel(s,r,bonus?5:0),b=previewLevel(s,r,n),id=bonus?r.bonus?.[1]:r.id;
+ if(['bal_coach','pro_coordinator'].includes(id))return display(R.effects(b).autoRate-R.effects(a).autoRate)+' talimat/sn. otomatik.';
+ if(id==='bal_personal')return 'Ücretsiz yükseltme şansı: '+range(R.freeTrainingChance(a),R.freeTrainingChance(b))+'.';
+ if(['bal_precision','pro_focus'].includes(id))return 'Kritik AP şansı: '+range(R.effects(a).critChance,R.effects(b).critChance)+'.';
+ if(['bal_efficiency','bal_remote','bal_recovery'].includes(id)){const share=x=>{const e=R.effects(x);return e.offlineEfficiency*(1+e.offlineBonus)};return 'Vardiyada çevrimdışı AP payı: '+range(share(a),share(b))+'.';}
+ if(S&&['bal_talent','pro_scout','bal_network'].includes(id)){const x=S.config(a),y=S.config(b);return 'Güçlü adaylı katalog: '+range(x.opportunityChance,y.opportunityChance)+'. Çok güçlü veya iki güçlü aday: '+range(x.greatChance,y.greatChance)+'.';}
+ if(S&&id==='pro_search')return 'En zayıf rolünden bir aday gelir. Güçlü aday seçiminde '+percent(S.config(b).needRolePriority)+' şansla bu role öncelik verilir.';
+ if(S&&id==='pro_elite'){if((s.division||2)<6)return 'Milletler Kupası’nda açılır. Elit aday şansı: '+range(S.eliteChance({...a,division:6}),S.eliteChance({...b,division:6}))+'.';return 'Elit aday şansı: '+range(S.eliteChance(a),S.eliteChance(b))+'.';}
+ return null;
+}
+function describePrimary(s,r,n=level(s,r.id)){const contextual=contextualDescription(s,r,n);if(contextual)return contextual;let v=r.values[Math.max(0,n-1)];if(r.id==='bal_shift'&&s.division>=3)v*=3;if(Clock.isWeekly(s)){if(r.id==='pro_shop')v*=Clock.economyScale(s);if(r.id==='bal_fans')v*=2;if(r.id==='pro_sponsor')return '3 maçta toplam +'+display(v*2)+' bütçe.';}return r.describe(v);}
+function describeBonus(s,r,n){const contextual=contextualDescription(s,r,n,true);if(contextual)return contextual;if(r.bonus?.[1]==='pro_elite'&&(s.division||2)<6)return 'Milletler Kupası’nda etkinleşir. '+r.bonus[4](r.bonus[3][n-6]);let v=r.bonus[3][n-6],text;if(Clock.isWeekly(s)){if(['bal_evening','bal_members','pro_trainingcash'].includes(r.bonus[1]))v*=Clock.economyScale(s);if(['bal_matchsponsor','bal_review'].includes(r.bonus[1]))v*=2;}text=r.bonus[4](v);if(Clock.isWeekly(s)&&r.bonus[1]==='bal_warmstart')text=text.replace('ilk 20','ilk '+Clock.morningInstructions(s));return text;}
 function describeBlock(s,r,n=level(s,r.id)){const primary=describePrimary(s,r,n);if(!r.bonus)return primary;return primary+(n>5?' '+r.bonus[2]+': '+describeBonus(s,r,n):'');}
 const departmentPrices={2:0,4:0};
 function departmentOpen(s,f){return s.stage==='bal'&&(!Object.hasOwn(departmentPrices,f)||!Array.isArray(s.openDepartments)||s.openDepartments.includes(f));}
@@ -123,5 +139,5 @@ function migrateLevels(s,raw){
  for(const r of catalog.filter(r=>r.bonus)){const old=(raw?.floors?.[r.floor]||[]),n=old.filter(id=>id===r.id).length,extra=old.filter(id=>id===r.bonus[1]).length;const base=raw?.balBlockVersion===2&&extendedIds.has(r.id)?map[Math.min(10,n)]:Math.min(5,n),target=extra?5+Math.min(5,extra):base;s.floors[r.floor]=s.floors[r.floor].filter(id=>id!==r.id);s.floors[r.floor].push(...Array(target).fill(r.id));}
  s.balBlockVersion=4;
 }
-const api={describePrimary,describeBonus,maxLevel,bonusLevel,describeBlock,migrateLevels,departmentPrices,departmentOpen,openDepartment,departments,catalog,gates,remainingDays,upgraded,enter,requirement,price,effects,value,cash};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.BalRules=api;
+const api={previewLevel,describePrimary,describeBonus,maxLevel,bonusLevel,describeBlock,migrateLevels,departmentPrices,departmentOpen,openDepartment,departments,catalog,gates,remainingDays,upgraded,enter,requirement,price,effects,value,cash};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.BalRules=api;
 })(globalThis);
