@@ -30,6 +30,7 @@ window.visualViewport?.addEventListener('resize',scheduleViewport);window.visual
 function update(){
  if(!toggle)return;
  const active=!!fullElement();
+ document.documentElement.classList.toggle('app-fullscreen',active||fullscreen.matches);
  document.documentElement.classList.toggle('app-expanded',active||standalone.matches||fullscreen.matches||navigator.standalone===true);fitViewport();
  toggle.disabled=busy||!supported();toggle.textContent=active?'Tam ekrandan çık':'Tam ekran';toggle.setAttribute('aria-pressed',String(active));
  matchButton.hidden=!supported();matchButton.disabled=busy;const label=active?'Tam ekrandan çık':'Tam ekran';matchButton.title=label;matchButton.setAttribute('aria-label',label);matchButton.innerHTML='<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="'+(active?'M4 9h5V4m11 5h-5V4M4 15h5v5m11-5h-5v5':'M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5')+'"/></svg>';matchButton.setAttribute('aria-pressed',String(active));

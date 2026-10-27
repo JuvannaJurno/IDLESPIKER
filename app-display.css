@@ -11,6 +11,8 @@ html:-webkit-full-screen,html:-webkit-full-screen body{background:#bedcd8;width:
 html.app-expanded body{min-width:0;min-height:100%;height:auto}
 html.app-expanded .shell{min-width:0;width:min(480px,100%);max-width:100%}html.app-expanded .content{min-width:0;max-width:100%}
 html.app-expanded .topbar{height:calc(67px + var(--app-safe-top));padding:var(--app-safe-top) max(16px,var(--app-safe-right)) 0 max(16px,var(--app-safe-left));gap:10px}
+/* Installed mode already has the OS status bar; only reserve its actual device inset. */
+html.app-expanded:not(.app-fullscreen) .topbar{height:calc(67px + env(safe-area-inset-top,0px));padding-top:env(safe-area-inset-top,0px)}
 html.app-expanded .topbar .wordmark{flex:1;min-width:0;font-size:clamp(18px,6vw,25px);white-space:nowrap}
 html.app-expanded .topbar .topbar-actions{flex:none}
 html.app-expanded .mobile-nav{left:var(--app-view-left,0px);right:var(--app-view-right,0px);bottom:var(--app-view-bottom,0px);margin-inline:auto;transform:none;width:min(480px,var(--app-view-width,100vw));max-width:100%;padding:5px max(8px,var(--app-safe-right)) var(--app-safe-bottom) max(8px,var(--app-safe-left))}

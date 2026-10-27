@@ -718,3 +718,9 @@ Yeni blok alanının varlığı ve maliyeti gerçek seçici seçeneklerinden hes
 Takım kartında Hızlı Yükselt aktifken koyu renkli dolu yüzey ve krem yazı kullanır: siyah kartta petrol, gümüşte arduvaz, altında koyu altın, morda mor. Pasif yüzey açık nötr, kesik kenarlı ve opak okunabilir yazılıdır; AP eksikliği miktarı doğrudan düğmede belirtilir. Kamp kilidi mevcut açıklamasını korur. Koyu temanın pasif yüzeyi ayrı koyu nötrdür. Normal kartın ve portrenin anatomisi korunur.
 
 Gün tamamlandı anonsu desktop ve tam ekranda da en fazla 440px genişlikte, görünen ekranın merkezinde ve alt düğmenin üstünde durur; kutu ölçüsüne padding/border dahildir. Doğrulama: test-menu-feedback-fixes.cjs (eski boş alan temizliği, departman adı/varış vurgusu, dört renk × iki tema × yeterli/yetersiz AP, gerçek hızlı yükselt tıklaması, 390/1902px anons sınırları), test-exhausted-blocks-camp-stage.cjs, test-board-presentation.cjs, test-club-responsive-dock.cjs, test-fullscreen-layout.cjs. Görseller audits/quick-upgrade-ready.png, quick-upgrade-disabled.png, day-toast-desktop-fit.png.
+
+### 27 Ekim — Ana ekrana eklenmiş uygulamada logo üstü boşluk
+
+Ana ekran kısayolundan açılan standalone uygulama, yerleşim açısından app-expanded olarak kalır; ancak açıkça tam ekrana geçilmedikçe başlığa yapay 24px üst pay eklenmez. Başlık yalnız gerçek env(safe-area-inset-top) değerini kullanır; çentik/kamera güvenliği korunur. app-fullscreen sınıfı gerçek fullscreen/display-mode fullscreen durumunu ayrıca takip eder; çıkışta standalone başlık ölçüsü geri gelir. Modal ve maç güvenli alanları değiştirilmez.
+
+Doğrulama: test-installed-header.cjs (Android display-mode standalone ve iOS navigator.standalone emülasyonu, 67px başlık, tam ekran giriş/çıkış), test-fullscreen-layout.cjs. Görsel audits/installed-header-no-gap.png.
