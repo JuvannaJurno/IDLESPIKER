@@ -32,3 +32,5 @@ html.app-expanded :is(.toast,#tapRhythm){bottom:calc(var(--app-view-bottom,0px) 
 #gameMatchDialog.match-result-visible{background:linear-gradient(#365c7088,#365c7088),radial-gradient(ellipse at 50% 0,#fff8e8,transparent 60%),#bedcd8}
 #gameMatchDialog.match-result-visible .match-fullscreen{visibility:hidden}
 #gameMatchDialog.match-result-visible::backdrop{background:#365c70cc}
+
+html.app-expanded .achievement-notice{top:calc(var(--app-view-top,0px) + var(--app-safe-top) + 12px)}

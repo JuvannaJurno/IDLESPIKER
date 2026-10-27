@@ -32,14 +32,14 @@ function start(){
  add('hidden-skill',()=>q('#transferCompareContent .skill-detail-gallery'),'Gizli yeteneğin açılması için gereken kamp koşulu burada yazar.');
  }
  }
- if(RoomSystem.developmentState().camp.announcedDay!==null){
+ if(CampRules.available(RoomSystem.developmentState())&&RoomSystem.developmentState().camp.announcedDay!==null){
  add('camp',()=>q('.camp-overview'),'Kamp süresi ve katılım bilgilerini burada incele.',()=>{closeDialogs();CampSystem.open(true);});
  add('camp-players',()=>$('campCandidates'),'Gelişim sınırına yaklaşan oyuncuları kampa seçebilirsin.');
  add('camp-cost',()=>$('campQuote'),'Seçtiğin oyuncuların toplam AP ve bütçe maliyeti burada görünür.');
  }
  if(Number(LeagueRules.config.division)===3&&RoomSystem.mediaDepartmentOpen()){
  add('social',()=>$('socialDraft'),'Kulübünün gönderileri burada hazırlanır.',()=>{closeDialogs();$('socialTab').click();});
- add('publish',()=>$('socialPublish'),'Gönderiler arka planda hazırlanır. Hazır olduğunda Paylaş ile yayınla; bu rehberde beklemene gerek yok.');
+ add('publish',()=>$('socialPublish'),'Gönderiler arka planda hazırlanır. Video sırası açıldıysa eklediğin videolar sırayla otomatik paylaşılır; bu rehberde beklemene gerek yok.');
  add('followers',()=>$('socialTopFollowers'),'Takipçilerin burada görünür. Paylaşımlarla topluluğunu büyüt.');
  add('rewards',()=>$('socialJourneyEntry'),'Takipçi hedeflerine ulaşarak topluluk ödüllerini aç.');
  }

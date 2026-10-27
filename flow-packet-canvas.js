@@ -9,7 +9,7 @@ function sprite(p){
  const manual=p.source==='manual',social=p.source==='social',critical=p.critical;
  const style=currentStyle,key=[style,manual,social,critical,!!p.manualBonus,p.strength>1].join(':');
  if(sprites.has(key))return sprites.get(key);
- const w=manual?10:critical?9:style==='beads'?7:8,h=manual?20:critical?16:p.source==='auto'?10:style==='beads'?7:13;
+ const w=manual?10:critical?9:style==='beads'?7:8,h=manual?20:critical?16:style==='beads'?7:15;
  const image=document.createElement('canvas');image.width=(w+8)*2;image.height=(h+8)*2;
  const g=image.getContext('2d');g.scale(2,2);g.translate(4,4);
  const fill=g.createLinearGradient(0,0,manual?w:0,manual?0:h);
