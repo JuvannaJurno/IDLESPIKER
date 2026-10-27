@@ -724,3 +724,9 @@ Gün tamamlandı anonsu desktop ve tam ekranda da en fazla 440px genişlikte, g�
 Ana ekran kısayolundan açılan standalone uygulama, yerleşim açısından app-expanded olarak kalır; ancak açıkça tam ekrana geçilmedikçe başlığa yapay 24px üst pay eklenmez. Başlık yalnız gerçek env(safe-area-inset-top) değerini kullanır; çentik/kamera güvenliği korunur. app-fullscreen sınıfı gerçek fullscreen/display-mode fullscreen durumunu ayrıca takip eder; çıkışta standalone başlık ölçüsü geri gelir. Modal ve maç güvenli alanları değiştirilmez.
 
 Doğrulama: test-installed-header.cjs (Android display-mode standalone ve iOS navigator.standalone emülasyonu, 67px başlık, tam ekran giriş/çıkış), test-fullscreen-layout.cjs. Görsel audits/installed-header-no-gap.png.
+
+### 27 Ekim — Takımın Kalbi ilk hamleye kadar parlama
+
+Takımın Kalbi kullanan oyuncu standart Legendary sarı ışığıyla, etkilenen takım arkadaşları aynı boyut/yoğunluktaki beyaz ışıkla parlar. Takım arkadaşlarının 1,6 saniyelik görsel süresi kaldırılmıştır: ışık kendi ilk top temasına kadar kalır. Kullanan oyuncunun ışığı ayrı takip edilir ve kendi ilk hamlesinde söner; arkadaşlarının bekleyen beyaz ışıkları bundan etkilenmez. Servis/pas/hücum, gelen top teması ve blok teması aynı tüketim yoluna bağlanır. Sayı değişiminde henüz kullanılmamış durum korunur; maç resetinde temizlenir. Mevcut %12 arkadaş güçlendirmesi, süre/aktivasyon kuralları ve kalıcı statlar değişmez. Renk başına mevcut Legendary ışık önbelleği kullanılır.
+
+Doğrulama: test-team-heart-persistent-glows.cjs (2,4 saniye sonrasında ışıkların sürmesi, sarı/beyaz ayrımı, bağımsız ilk temas, diğer takımın korunması, gerçek güçlendirme hesabı ve reset), test-team-heart.cjs ve test-skill-rarity-glow.cjs. Görsel audits/team-heart-persistent-glows.png. Eski test-match-skills.cjs mevcut katalog için 31 yetenek bekliyor; bu değişiklik öncesinde de katalog 37 yetenek içeriyor, dolayısıyla bu genel testin sabit sayı beklentisi güncel değil.
