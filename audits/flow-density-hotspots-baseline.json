@@ -1,0 +1,74 @@
+[
+  {
+    "name": "(program) @ native:-1",
+    "ms": 2388
+  },
+  {
+    "name": "(idle) @ native:-1",
+    "ms": 821
+  },
+  {
+    "name": "applyGain @ rooms.js?v=a7c016a96eab:101",
+    "ms": 113
+  },
+  {
+    "name": "querySelectorAll @ native:-1",
+    "ms": 92
+  },
+  {
+    "name": "animate @ menu.js?v=c658786eb132:51",
+    "ms": 52
+  },
+  {
+    "name": "setItem @ native:-1",
+    "ms": 34
+  },
+  {
+    "name": "(garbage collector) @ native:-1",
+    "ms": 31
+  },
+  {
+    "name": "effects @ room-rules.js?v=c6eff2510061:38",
+    "ms": 29
+  },
+  {
+    "name": "save @ rooms.js?v=a7c016a96eab:6",
+    "ms": 28
+  },
+  {
+    "name": "(anonymous) @ rooms.js?v=a7c016a96eab:101",
+    "ms": 26
+  },
+  {
+    "name": "compact @ number-ui.js?v=a24b5930e991:3",
+    "ms": 26
+  },
+  {
+    "name": "addPulse @ menu.js?v=c658786eb132:62",
+    "ms": 23
+  },
+  {
+    "name": "closest @ native:-1",
+    "ms": 22
+  },
+  {
+    "name": "progress @ league-rules.js?v=25643967df56:32",
+    "ms": 21
+  },
+  {
+    "name": "applyNode @ ui-icons.js?v=fc006f2718db:18",
+    "ms": 18
+  },
+  {
+    "name": "animatePulse @ menu.js?v=c658786eb132:27",
+    "ms": 18
+  },
+  {
+    "name": "(anonymous) @ ui-icons.js?v=fc006f2718db:22",
+    "ms": 15
+  },
+  {
+    "name": "(anonymous) @ rooms.js?v=a7c016a96eab:44",
+    "ms": 15
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "mutations": 1049,
+  "pulses": 30,
+  "flow": {
+    "logical": 114,
+    "rendered": 30,
+    "pooled": 0,
+    "created": 30,
+    "peak": 30,
+    "limit": 36
+  },
+  "nodes": 3687,
+  "instructions": 3384,
+  "lanes": 6,
+  "scriptMs": 963,
+  "taskMs": 2990,
+  "layouts": 210,
+  "styleRecalculations": 214
+}

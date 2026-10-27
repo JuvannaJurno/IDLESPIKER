@@ -1,0 +1,74 @@
+[
+  {
+    "name": "(program) @ native:-1",
+    "ms": 2502
+  },
+  {
+    "name": "(idle) @ native:-1",
+    "ms": 1105
+  },
+  {
+    "name": "applyGain @ rooms.js?v=a7c016a96eab:101",
+    "ms": 108
+  },
+  {
+    "name": "querySelectorAll @ native:-1",
+    "ms": 98
+  },
+  {
+    "name": "(garbage collector) @ native:-1",
+    "ms": 47
+  },
+  {
+    "name": "(anonymous) @ ui-icons.js?v=fc006f2718db:22",
+    "ms": 37
+  },
+  {
+    "name": "setItem @ native:-1",
+    "ms": 30
+  },
+  {
+    "name": "(anonymous) @ rooms.js?v=a7c016a96eab:101",
+    "ms": 26
+  },
+  {
+    "name": "(anonymous) @ league-rules.js?v=25643967df56:32",
+    "ms": 25
+  },
+  {
+    "name": "progress @ league-rules.js?v=25643967df56:32",
+    "ms": 24
+  },
+  {
+    "name": "compact @ number-ui.js?v=a24b5930e991:3",
+    "ms": 23
+  },
+  {
+    "name": "animate @ menu.js?v=c658786eb132:56",
+    "ms": 22
+  },
+  {
+    "name": "standings @ league-rules.js?v=25643967df56:31",
+    "ms": 21
+  },
+  {
+    "name": "(anonymous) @ rooms.js?v=a7c016a96eab:44",
+    "ms": 19
+  },
+  {
+    "name": "getAttribute @ native:-1",
+    "ms": 18
+  },
+  {
+    "name": "closest @ native:-1",
+    "ms": 16
+  },
+  {
+    "name": "AudioContext @ native:-1",
+    "ms": 16
+  },
+  {
+    "name": "exact @ number-ui.js?v=a24b5930e991:4",
+    "ms": 16
+  }
+]

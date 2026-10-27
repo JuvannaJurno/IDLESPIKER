@@ -1,0 +1,12 @@
+{
+  "mutations": 2926,
+  "pulses": 114,
+  "flow": null,
+  "nodes": 3771,
+  "instructions": 3234,
+  "lanes": 6,
+  "scriptMs": 1006,
+  "taskMs": 3276,
+  "layouts": 189,
+  "styleRecalculations": 194
+}
