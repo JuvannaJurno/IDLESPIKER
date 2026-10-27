@@ -74,3 +74,5 @@ html.club-overview-fit body[data-league-division] .league-match-group #leagueQui
  html.club-overview-fit body[data-league-division] .league-match-group .match-preview-team img{width:36px;height:36px}
  html.club-overview-fit body[data-league-division] .league-match-group .match-preview-team strong{min-height:0;font-size:10px}
 }
+/* Day notices stay within the same mobile shell on desktop and fullscreen. */
+html body #toast{box-sizing:border-box;width:min(440px,calc(var(--app-view-width,100vw) - 28px));max-width:440px;left:calc(var(--app-view-left,0px) + var(--app-view-width,100vw)/2);right:auto;bottom:var(--app-dock-clearance,175px);white-space:normal;overflow-wrap:anywhere;line-height:1.45}

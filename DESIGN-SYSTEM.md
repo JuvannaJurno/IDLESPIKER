@@ -708,3 +708,13 @@ Alt içerik payı sabit 166/185 piksel yerine gerçekten görünen düğme ve na
 Başarım bildirimi görünen ekranın üstüne, gerçek cihaz güvenli alanından 6px aşağıya hizalanır. Tam ekran başlığının yapay 24px boşluğunu veya başlık yüksekliğini kullanmaz. Yukarıdan giriş ve sağa/sola kaydırarak kapatma korunur; açık modalın önünde tıklanabilir kalır.
 
 Doğrulama: test-club-responsive-dock.cjs (320×568, 360×640, 390×740/844, 412×915, 1280×900; normal ve gerçek tam ekran; lig/CTA/navigasyon hizası, en altta içerik açıklığı, yatay taşma ve takım bilgilerinin sığması), test-achievement-notice-layer.cjs, test-fullscreen-layout.cjs, test-app-display.cjs ve test-achievements-fixed-close.cjs. Görseller audits/responsive-club-overview.png, responsive-club-short.png, responsive-club-bottom.png ve achievement-notice-above-modal-fullscreen.png.
+
+### 27 Ekim — Tahta yönlendirmesi, boş blok alanı ve hızlı yükselt
+
+Tahtanın rapor açma eylemi genel “Analiz bloğuna git” yerine hedef departmanın ekranda kullanılan adını söyler (Mahallede Kara Tahta, sonraki aşamalarda Teknik Ekip / birleşmiş Sportif Direktörlük). Varışta departman kartı, oyuncuya yönlendirmedeki aynı 3px turuncu outline animasyonuyla 1,8 saniye vurgulanır.
+
+Yeni blok alanının varlığı ve maliyeti gerçek seçici seçeneklerinden hesaplanır. Aşama/lig/önkoşul kapalı veya fiyatı sonlu olmayan bloklar alan açma sebebi değildir. Uygun, henüz alınmamış blok kalmadığında eski kayıt/önceki çizimden kalan kutu da kaynak yenilemesinde kaldırılır. Kaynak yetersizliği ise geçerli bir blok için alanı gizlemez.
+
+Takım kartında Hızlı Yükselt aktifken koyu renkli dolu yüzey ve krem yazı kullanır: siyah kartta petrol, gümüşte arduvaz, altında koyu altın, morda mor. Pasif yüzey açık nötr, kesik kenarlı ve opak okunabilir yazılıdır; AP eksikliği miktarı doğrudan düğmede belirtilir. Kamp kilidi mevcut açıklamasını korur. Koyu temanın pasif yüzeyi ayrı koyu nötrdür. Normal kartın ve portrenin anatomisi korunur.
+
+Gün tamamlandı anonsu desktop ve tam ekranda da en fazla 440px genişlikte, görünen ekranın merkezinde ve alt düğmenin üstünde durur; kutu ölçüsüne padding/border dahildir. Doğrulama: test-menu-feedback-fixes.cjs (eski boş alan temizliği, departman adı/varış vurgusu, dört renk × iki tema × yeterli/yetersiz AP, gerçek hızlı yükselt tıklaması, 390/1902px anons sınırları), test-exhausted-blocks-camp-stage.cjs, test-board-presentation.cjs, test-club-responsive-dock.cjs, test-fullscreen-layout.cjs. Görseller audits/quick-upgrade-ready.png, quick-upgrade-disabled.png, day-toast-desktop-fit.png.

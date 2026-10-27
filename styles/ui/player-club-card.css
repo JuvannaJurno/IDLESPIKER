@@ -183,3 +183,11 @@ html:not(.elite-preview-page) .player-card:not(.elite-player)[data-card-tier="1"
 html:not(.elite-preview-page) .player-card:not(.elite-player)[data-card-tier="1"] .card-name{background:linear-gradient(115deg,#dae4e6,#b6cbd3,#e3ebea)!important}
 html[data-theme=dark]:not(.elite-preview-page) .player-card:not(.elite-player)[data-card-tier="1"]{--club-paper:#344750;--club-soft:#4e6875;--club-port:#506775;--club-name:#546f7a;--club-ink:#f1f4eb;--club-muted:#c5d4d5;--club-line:#6c8790;--club-action:#4a626b}
 html[data-theme=dark]:not(.elite-preview-page) .player-card:not(.elite-player)[data-card-tier="1"] .card-name{background:#546f7a!important}
+/* The quick action has an explicit enabled/disabled surface in every card tier. */
+html body #teamPanel .player-card .card-open-upgrade:disabled{background:#e6e4db!important;border:1px dashed #a6aaa0!important;color:#686e67!important;box-shadow:none!important;opacity:1;cursor:not-allowed}
+html body #teamPanel .player-card[data-can-upgrade=true] .card-open-upgrade:not(:disabled){background:var(--quick-action,#42696b)!important;border:1px solid var(--quick-action,#42696b)!important;color:#fff9eb!important;box-shadow:0 2px 0 #243f4933!important;cursor:pointer;font-weight:650}
+html body #teamPanel .player-card[data-card-tier="1"]{--quick-action:#526d7c}
+html body #teamPanel .player-card[data-card-tier="2"]{--quick-action:#80612e}
+html body #teamPanel .player-card:is([data-card-tier="3"],.elite-player){--quick-action:#735783}
+html body #teamPanel .player-card .card-open-upgrade small{color:inherit!important}
+html[data-theme=dark] body #teamPanel .player-card .card-open-upgrade:disabled{background:#344344!important;border-color:#718281!important;color:#c1cac4!important}
