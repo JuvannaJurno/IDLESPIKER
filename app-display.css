@@ -28,10 +28,10 @@ html.app-expanded .stage-transition-banner{top:calc(var(--app-view-top,0px) + va
 html.app-expanded :is(.toast,#tapRhythm){bottom:calc(var(--app-view-bottom,0px) + var(--app-nav-height,68px) + var(--app-energy-height,84px) + 28px);max-width:calc(var(--app-view-width,100vw) - var(--app-safe-left) - var(--app-safe-right) - 24px)}
 
 /* The host paints one continuous background through the transparent match iframe. */
-#gameMatchDialog{background:radial-gradient(ellipse at 50% 0,#fff8e8,transparent 60%),#bedcd8}
+#gameMatchDialog{background:linear-gradient(#bedcd8,transparent 140px),radial-gradient(ellipse at 50% 0,#fff8e8,transparent 60%),#bedcd8}
 
 /* Match iframe cannot paint into host safe-area gutters. Dim those too on results. */
-#gameMatchDialog.match-result-visible{background:linear-gradient(#365c7088,#365c7088),radial-gradient(ellipse at 50% 0,#fff8e8,transparent 60%),#bedcd8}
+#gameMatchDialog.match-result-visible{background:linear-gradient(#365c7088,#365c7088),linear-gradient(#bedcd8,transparent 140px),radial-gradient(ellipse at 50% 0,#fff8e8,transparent 60%),#bedcd8}
 #gameMatchDialog.match-result-visible .match-fullscreen{visibility:hidden}
 #gameMatchDialog.match-result-visible::backdrop{background:#365c70cc}
 

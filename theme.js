@@ -2,9 +2,11 @@
 'use strict';
 const key='idle-spiker-theme-v1',root=document.documentElement;
 let theme='light';try{if(localStorage.getItem(key)==='dark')theme='dark'}catch{}
-function apply(){root.dataset.theme=theme;root.style.colorScheme=theme;document.querySelector('meta[name="theme-color"]')?.setAttribute('content',theme==='dark'?'#192d31':'#72c8e5');}
+function matchChrome(){const match=document.getElementById('gameMatchDialog'),color=match?.open?(theme==='dark'?'#20393c':match.classList.contains('match-result-visible')?'#7598a1':'#bedcd8'):(theme==='dark'?'#192d31':'#72c8e5');document.querySelector('meta[name="theme-color"]')?.setAttribute('content',color);}
+function apply(){root.dataset.theme=theme;root.style.colorScheme=theme;matchChrome();}
 apply();
 document.addEventListener('DOMContentLoaded',()=>{
+ const match=document.getElementById('gameMatchDialog');if(match)new MutationObserver(matchChrome).observe(match,{attributes:true,attributeFilter:['open','class']});matchChrome();
  const row=document.createElement('div');row.className='settings-row';
  const label=document.createElement('span');label.textContent='Koyu tema';label.id='themeLabel';
  const toggle=document.createElement('button');toggle.type='button';toggle.id='themeToggle';toggle.className='theme-switch';toggle.setAttribute('role','switch');toggle.setAttribute('aria-labelledby','themeLabel');
