@@ -1,0 +1,453 @@
+{
+  "method": "Starts from RoomRules.defaults (0 AP, 20 budget), fresh generated roster, earns all resources through actual rules. Existing economy audit policy buys affordable blocks and upgrades; optional AP banking while players are away. Camp lasts real game days; no income during the immediate-return click test. Immediate upgrades conservatively charge every cost (no random free upgrades). Match outcomes use the audit fixed 50% RNG and promotion is assumed; this is an economy scenario, not a manually played full season.",
+  "runs": [
+    {
+      "policy": "active",
+      "bankWhileAway": false,
+      "seed": 41,
+      "day": 10,
+      "arrival": {
+        "ap": 955670.5625,
+        "budget": 4708
+      },
+      "costs": [
+        {
+          "id": "player-4",
+          "level": 10,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 39778,
+          "total": 65006
+        }
+      ],
+      "after": {
+        "ap": 890664.5625,
+        "budget": 4708,
+        "clicks": 10,
+        "levels": [
+          20
+        ],
+        "allFull": true,
+        "readyAgain": 1,
+        "nextCampIndividuallyAffordable": 1,
+        "allNextCampAP": 60800,
+        "allNextCampBudget": 2000,
+        "canSendAllTogether": true,
+        "nextCampSequentialCount": 1
+      }
+    },
+    {
+      "policy": "active",
+      "bankWhileAway": false,
+      "seed": 42,
+      "day": 10,
+      "arrival": {
+        "ap": 940774.1875,
+        "budget": 4708
+      },
+      "costs": [
+        {
+          "id": "player-4",
+          "level": 10,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 35515,
+          "total": 56696
+        }
+      ],
+      "after": {
+        "ap": 884078.1875,
+        "budget": 4708,
+        "clicks": 10,
+        "levels": [
+          20
+        ],
+        "allFull": true,
+        "readyAgain": 1,
+        "nextCampIndividuallyAffordable": 1,
+        "allNextCampAP": 60800,
+        "allNextCampBudget": 2000,
+        "canSendAllTogether": true,
+        "nextCampSequentialCount": 1
+      }
+    },
+    {
+      "policy": "active",
+      "bankWhileAway": true,
+      "seed": 41,
+      "day": 10,
+      "arrival": {
+        "ap": 955670.5625,
+        "budget": 4708
+      },
+      "costs": [
+        {
+          "id": "player-4",
+          "level": 10,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 39778,
+          "total": 65006
+        }
+      ],
+      "after": {
+        "ap": 890664.5625,
+        "budget": 4708,
+        "clicks": 10,
+        "levels": [
+          20
+        ],
+        "allFull": true,
+        "readyAgain": 1,
+        "nextCampIndividuallyAffordable": 1,
+        "allNextCampAP": 60800,
+        "allNextCampBudget": 2000,
+        "canSendAllTogether": true,
+        "nextCampSequentialCount": 1
+      }
+    },
+    {
+      "policy": "active",
+      "bankWhileAway": true,
+      "seed": 42,
+      "day": 10,
+      "arrival": {
+        "ap": 940774.1875,
+        "budget": 4708
+      },
+      "costs": [
+        {
+          "id": "player-4",
+          "level": 10,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 35515,
+          "total": 56696
+        }
+      ],
+      "after": {
+        "ap": 884078.1875,
+        "budget": 4708,
+        "clicks": 10,
+        "levels": [
+          20
+        ],
+        "allFull": true,
+        "readyAgain": 1,
+        "nextCampIndividuallyAffordable": 1,
+        "allNextCampAP": 60800,
+        "allNextCampBudget": 2000,
+        "canSendAllTogether": true,
+        "nextCampSequentialCount": 1
+      }
+    },
+    {
+      "policy": "idle",
+      "bankWhileAway": false,
+      "seed": 41,
+      "day": 10,
+      "arrival": {
+        "ap": 757448.90625,
+        "budget": 8340
+      },
+      "costs": [
+        {
+          "id": "player-4",
+          "level": 9,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 43585,
+          "total": 69911
+        },
+        {
+          "id": "player-1",
+          "level": 9,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 37652,
+          "total": 57387
+        },
+        {
+          "id": "player-0",
+          "level": 8,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 37319,
+          "total": 57054
+        },
+        {
+          "id": "player-5",
+          "level": 8,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 46895,
+          "total": 73221
+        },
+        {
+          "id": "player-2",
+          "level": 8,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 41797,
+          "total": 62785
+        }
+      ],
+      "after": {
+        "ap": 437090.90625,
+        "budget": 8340,
+        "clicks": 58,
+        "levels": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ],
+        "allFull": true,
+        "readyAgain": 5,
+        "nextCampIndividuallyAffordable": 5,
+        "allNextCampAP": 304000,
+        "allNextCampBudget": 10000,
+        "canSendAllTogether": false,
+        "nextCampSequentialCount": 4
+      }
+    },
+    {
+      "policy": "idle",
+      "bankWhileAway": false,
+      "seed": 42,
+      "day": 10,
+      "arrival": {
+        "ap": 749555.625,
+        "budget": 8340
+      },
+      "costs": [
+        {
+          "id": "player-4",
+          "level": 9,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 38718,
+          "total": 60821
+        },
+        {
+          "id": "player-1",
+          "level": 9,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 35846,
+          "total": 54585
+        },
+        {
+          "id": "player-0",
+          "level": 8,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 35091,
+          "total": 52712
+        },
+        {
+          "id": "player-5",
+          "level": 8,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 43424,
+          "total": 66930
+        },
+        {
+          "id": "player-2",
+          "level": 8,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 35091,
+          "total": 52712
+        }
+      ],
+      "after": {
+        "ap": 461795.625,
+        "budget": 8340,
+        "clicks": 58,
+        "levels": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ],
+        "allFull": true,
+        "readyAgain": 5,
+        "nextCampIndividuallyAffordable": 5,
+        "allNextCampAP": 304000,
+        "allNextCampBudget": 10000,
+        "canSendAllTogether": false,
+        "nextCampSequentialCount": 4
+      }
+    },
+    {
+      "policy": "idle",
+      "bankWhileAway": true,
+      "seed": 41,
+      "day": 10,
+      "arrival": {
+        "ap": 766089.90625,
+        "budget": 8340
+      },
+      "costs": [
+        {
+          "id": "player-4",
+          "level": 9,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 43585,
+          "total": 69911
+        },
+        {
+          "id": "player-1",
+          "level": 9,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 37652,
+          "total": 57387
+        },
+        {
+          "id": "player-0",
+          "level": 8,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 37319,
+          "total": 57054
+        },
+        {
+          "id": "player-5",
+          "level": 8,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 46895,
+          "total": 73221
+        },
+        {
+          "id": "player-2",
+          "level": 8,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 41797,
+          "total": 62785
+        }
+      ],
+      "after": {
+        "ap": 445731.90625,
+        "budget": 8340,
+        "clicks": 58,
+        "levels": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ],
+        "allFull": true,
+        "readyAgain": 5,
+        "nextCampIndividuallyAffordable": 5,
+        "allNextCampAP": 304000,
+        "allNextCampBudget": 10000,
+        "canSendAllTogether": false,
+        "nextCampSequentialCount": 4
+      }
+    },
+    {
+      "policy": "idle",
+      "bankWhileAway": true,
+      "seed": 42,
+      "day": 10,
+      "arrival": {
+        "ap": 758605.625,
+        "budget": 8340
+      },
+      "costs": [
+        {
+          "id": "player-4",
+          "level": 9,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 38718,
+          "total": 60821
+        },
+        {
+          "id": "player-1",
+          "level": 9,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 35846,
+          "total": 54585
+        },
+        {
+          "id": "player-0",
+          "level": 8,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 35091,
+          "total": 52712
+        },
+        {
+          "id": "player-5",
+          "level": 8,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 43424,
+          "total": 66930
+        },
+        {
+          "id": "player-2",
+          "level": 8,
+          "limit": 20,
+          "ready": 18,
+          "eligibleOnArrival": false,
+          "toReady": 35091,
+          "total": 52712
+        }
+      ],
+      "after": {
+        "ap": 470845.625,
+        "budget": 8340,
+        "clicks": 58,
+        "levels": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ],
+        "allFull": true,
+        "readyAgain": 5,
+        "nextCampIndividuallyAffordable": 5,
+        "allNextCampAP": 304000,
+        "allNextCampBudget": 10000,
+        "canSendAllTogether": false,
+        "nextCampSequentialCount": 4
+      }
+    }
+  ]
+}

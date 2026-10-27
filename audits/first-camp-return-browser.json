@@ -1,0 +1,27 @@
+{
+  "before": {
+    "ap": 757448.90625,
+    "budget": 8340,
+    "levels": [
+      9,
+      9,
+      8,
+      8,
+      8
+    ]
+  },
+  "after": {
+    "ap": 437090.90625,
+    "budget": 8340,
+    "levels": [
+      20,
+      20,
+      20,
+      20,
+      20
+    ]
+  },
+  "clicks": 58,
+  "reenteredPlayers": 4,
+  "method": "Replays the earned fresh-economy checkpoint in an isolated browser. Income stopped; no AP grants; random free upgrades disabled; every quick upgrade and camp selection runs the actual button handler."
+}
