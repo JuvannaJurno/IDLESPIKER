@@ -1,5 +1,7 @@
 # Yıldız ve yetenek ilerlemesi — taslak hesap
 
+28 Ekim güncellemesi: Kamp hazırlığı normal oyuncuda 8 + 10 × tamamlanmış kamp sayısıdır; korunmuş eski seviye tabanı ayrıca hesaba katılır. Kamp dönüşü aynı seviyede yeniden gönderim yoktur. Aşağıdaki +3 hazırlık adımıyla üretilmiş AP/gün tabloları tarihsel taslaktır, güncel süre tahmini değildir. Güncel seviye/kamp matrisi CAMP-CAP-AUDIT.md içindedir; yıldız ve yetenek açılma sayıları değişmemiştir.
+
 Bu bir denge hedefidir; lig bitiş garantisi veya yeni lig takvimi değildir. Oyun şu anda 1–4. aşamaları içerir; 5–8 hedefleri gelecek aşamaların ayarlarıdır.
 
 Kamp yarım yıldız, renk başına 6 kamp: gümüş 6, altın 12, mor 18. Normal yetenekler 0/1/2/8; Legendary 3/14. İkinci Legendary ayrıca seçilmiş çalışma ister (3 kamp veya altın akademi hazırlığı).

@@ -1,6 +1,6 @@
 {
   "checks": 875,
-  "levelChecks": 160780,
+  "levelChecks": 113750,
   "rows": [
     {
       "division": 2,
@@ -8,7 +8,7 @@
       "tier": "Siyah",
       "stars": 0,
       "statCap": 100,
-      "levelCap": 28,
+      "levelCap": 10,
       "preparation": 8
     },
     {
@@ -17,8 +17,8 @@
       "tier": "Siyah",
       "stars": 0.5,
       "statCap": 130,
-      "levelCap": 38,
-      "preparation": 11
+      "levelCap": 20,
+      "preparation": 18
     },
     {
       "division": 2,
@@ -26,8 +26,8 @@
       "tier": "Siyah",
       "stars": 1,
       "statCap": 160,
-      "levelCap": 48,
-      "preparation": 14
+      "levelCap": 30,
+      "preparation": 28
     },
     {
       "division": 2,
@@ -35,8 +35,8 @@
       "tier": "Siyah",
       "stars": 1.5,
       "statCap": 190,
-      "levelCap": 58,
-      "preparation": 17
+      "levelCap": 40,
+      "preparation": 38
     },
     {
       "division": 2,
@@ -44,8 +44,8 @@
       "tier": "Siyah",
       "stars": 2,
       "statCap": 220,
-      "levelCap": 68,
-      "preparation": 20
+      "levelCap": 50,
+      "preparation": 48
     },
     {
       "division": 2,
@@ -53,8 +53,8 @@
       "tier": "Siyah",
       "stars": 2.5,
       "statCap": 250,
-      "levelCap": 78,
-      "preparation": 23
+      "levelCap": 60,
+      "preparation": 58
     },
     {
       "division": 2,
@@ -62,8 +62,8 @@
       "tier": "Gümüş",
       "stars": 0,
       "statCap": 280,
-      "levelCap": 88,
-      "preparation": 26
+      "levelCap": 70,
+      "preparation": 68
     },
     {
       "division": 2,
@@ -71,8 +71,8 @@
       "tier": "Gümüş",
       "stars": 0.5,
       "statCap": 310,
-      "levelCap": 98,
-      "preparation": 29
+      "levelCap": 80,
+      "preparation": 78
     },
     {
       "division": 2,
@@ -80,8 +80,8 @@
       "tier": "Gümüş",
       "stars": 1,
       "statCap": 340,
-      "levelCap": 108,
-      "preparation": 32
+      "levelCap": 90,
+      "preparation": 88
     },
     {
       "division": 2,
@@ -89,8 +89,8 @@
       "tier": "Gümüş",
       "stars": 1.5,
       "statCap": 370,
-      "levelCap": 118,
-      "preparation": 35
+      "levelCap": 100,
+      "preparation": 98
     },
     {
       "division": 2,
@@ -98,8 +98,8 @@
       "tier": "Gümüş",
       "stars": 2,
       "statCap": 400,
-      "levelCap": 128,
-      "preparation": 38
+      "levelCap": 110,
+      "preparation": 108
     },
     {
       "division": 2,
@@ -107,8 +107,8 @@
       "tier": "Gümüş",
       "stars": 2.5,
       "statCap": 430,
-      "levelCap": 138,
-      "preparation": 41
+      "levelCap": 120,
+      "preparation": 118
     },
     {
       "division": 2,
@@ -116,8 +116,8 @@
       "tier": "Altın",
       "stars": 0,
       "statCap": 460,
-      "levelCap": 148,
-      "preparation": 44
+      "levelCap": 130,
+      "preparation": 128
     },
     {
       "division": 2,
@@ -125,8 +125,8 @@
       "tier": "Altın",
       "stars": 0.5,
       "statCap": 490,
-      "levelCap": 158,
-      "preparation": 47
+      "levelCap": 140,
+      "preparation": 138
     },
     {
       "division": 2,
@@ -134,8 +134,8 @@
       "tier": "Altın",
       "stars": 1,
       "statCap": 520,
-      "levelCap": 168,
-      "preparation": 50
+      "levelCap": 150,
+      "preparation": 148
     },
     {
       "division": 2,
@@ -143,8 +143,8 @@
       "tier": "Altın",
       "stars": 1.5,
       "statCap": 550,
-      "levelCap": 178,
-      "preparation": 53
+      "levelCap": 160,
+      "preparation": 158
     },
     {
       "division": 2,
@@ -152,8 +152,8 @@
       "tier": "Altın",
       "stars": 2,
       "statCap": 580,
-      "levelCap": 188,
-      "preparation": 56
+      "levelCap": 170,
+      "preparation": 168
     },
     {
       "division": 2,
@@ -161,8 +161,8 @@
       "tier": "Altın",
       "stars": 2.5,
       "statCap": 610,
-      "levelCap": 198,
-      "preparation": 59
+      "levelCap": 180,
+      "preparation": 178
     },
     {
       "division": 2,
@@ -170,8 +170,8 @@
       "tier": "Mor",
       "stars": 0,
       "statCap": 640,
-      "levelCap": 208,
-      "preparation": 62
+      "levelCap": 190,
+      "preparation": 188
     },
     {
       "division": 2,
@@ -179,8 +179,8 @@
       "tier": "Mor",
       "stars": 0.5,
       "statCap": 670,
-      "levelCap": 218,
-      "preparation": 65
+      "levelCap": 200,
+      "preparation": 198
     },
     {
       "division": 2,
@@ -188,8 +188,8 @@
       "tier": "Mor",
       "stars": 1,
       "statCap": 700,
-      "levelCap": 228,
-      "preparation": 68
+      "levelCap": 210,
+      "preparation": 208
     },
     {
       "division": 2,
@@ -197,8 +197,8 @@
       "tier": "Mor",
       "stars": 1.5,
       "statCap": 730,
-      "levelCap": 238,
-      "preparation": 71
+      "levelCap": 220,
+      "preparation": 218
     },
     {
       "division": 2,
@@ -206,8 +206,8 @@
       "tier": "Mor",
       "stars": 2,
       "statCap": 760,
-      "levelCap": 248,
-      "preparation": 74
+      "levelCap": 230,
+      "preparation": 228
     },
     {
       "division": 2,
@@ -215,8 +215,8 @@
       "tier": "Mor",
       "stars": 2.5,
       "statCap": 790,
-      "levelCap": 258,
-      "preparation": 77
+      "levelCap": 240,
+      "preparation": 238
     },
     {
       "division": 2,
@@ -224,8 +224,8 @@
       "tier": "Mor",
       "stars": 3,
       "statCap": 820,
-      "levelCap": 268,
-      "preparation": 80
+      "levelCap": 250,
+      "preparation": 248
     },
     {
       "division": 3,
@@ -233,7 +233,7 @@
       "tier": "Siyah",
       "stars": 0,
       "statCap": 160,
-      "levelCap": 48,
+      "levelCap": 10,
       "preparation": 8
     },
     {
@@ -242,8 +242,8 @@
       "tier": "Siyah",
       "stars": 0.5,
       "statCap": 190,
-      "levelCap": 58,
-      "preparation": 11
+      "levelCap": 20,
+      "preparation": 18
     },
     {
       "division": 3,
@@ -251,8 +251,8 @@
       "tier": "Siyah",
       "stars": 1,
       "statCap": 220,
-      "levelCap": 68,
-      "preparation": 14
+      "levelCap": 30,
+      "preparation": 28
     },
     {
       "division": 3,
@@ -260,8 +260,8 @@
       "tier": "Siyah",
       "stars": 1.5,
       "statCap": 250,
-      "levelCap": 78,
-      "preparation": 17
+      "levelCap": 40,
+      "preparation": 38
     },
     {
       "division": 3,
@@ -269,8 +269,8 @@
       "tier": "Siyah",
       "stars": 2,
       "statCap": 280,
-      "levelCap": 94,
-      "preparation": 20
+      "levelCap": 50,
+      "preparation": 48
     },
     {
       "division": 3,
@@ -278,8 +278,8 @@
       "tier": "Siyah",
       "stars": 2.5,
       "statCap": 310,
-      "levelCap": 104,
-      "preparation": 23
+      "levelCap": 60,
+      "preparation": 58
     },
     {
       "division": 3,
@@ -287,8 +287,8 @@
       "tier": "Gümüş",
       "stars": 0,
       "statCap": 340,
-      "levelCap": 114,
-      "preparation": 26
+      "levelCap": 70,
+      "preparation": 68
     },
     {
       "division": 3,
@@ -296,8 +296,8 @@
       "tier": "Gümüş",
       "stars": 0.5,
       "statCap": 370,
-      "levelCap": 124,
-      "preparation": 29
+      "levelCap": 80,
+      "preparation": 78
     },
     {
       "division": 3,
@@ -305,8 +305,8 @@
       "tier": "Gümüş",
       "stars": 1,
       "statCap": 400,
-      "levelCap": 134,
-      "preparation": 32
+      "levelCap": 90,
+      "preparation": 88
     },
     {
       "division": 3,
@@ -314,8 +314,8 @@
       "tier": "Gümüş",
       "stars": 1.5,
       "statCap": 430,
-      "levelCap": 144,
-      "preparation": 35
+      "levelCap": 100,
+      "preparation": 98
     },
     {
       "division": 3,
@@ -323,8 +323,8 @@
       "tier": "Gümüş",
       "stars": 2,
       "statCap": 460,
-      "levelCap": 154,
-      "preparation": 38
+      "levelCap": 110,
+      "preparation": 108
     },
     {
       "division": 3,
@@ -332,8 +332,8 @@
       "tier": "Gümüş",
       "stars": 2.5,
       "statCap": 490,
-      "levelCap": 164,
-      "preparation": 41
+      "levelCap": 120,
+      "preparation": 118
     },
     {
       "division": 3,
@@ -341,8 +341,8 @@
       "tier": "Altın",
       "stars": 0,
       "statCap": 520,
-      "levelCap": 174,
-      "preparation": 44
+      "levelCap": 130,
+      "preparation": 128
     },
     {
       "division": 3,
@@ -350,8 +350,8 @@
       "tier": "Altın",
       "stars": 0.5,
       "statCap": 550,
-      "levelCap": 184,
-      "preparation": 47
+      "levelCap": 140,
+      "preparation": 138
     },
     {
       "division": 3,
@@ -359,8 +359,8 @@
       "tier": "Altın",
       "stars": 1,
       "statCap": 580,
-      "levelCap": 194,
-      "preparation": 50
+      "levelCap": 150,
+      "preparation": 148
     },
     {
       "division": 3,
@@ -368,8 +368,8 @@
       "tier": "Altın",
       "stars": 1.5,
       "statCap": 610,
-      "levelCap": 204,
-      "preparation": 53
+      "levelCap": 160,
+      "preparation": 158
     },
     {
       "division": 3,
@@ -377,8 +377,8 @@
       "tier": "Altın",
       "stars": 2,
       "statCap": 640,
-      "levelCap": 214,
-      "preparation": 56
+      "levelCap": 170,
+      "preparation": 168
     },
     {
       "division": 3,
@@ -386,8 +386,8 @@
       "tier": "Altın",
       "stars": 2.5,
       "statCap": 670,
-      "levelCap": 224,
-      "preparation": 59
+      "levelCap": 180,
+      "preparation": 178
     },
     {
       "division": 3,
@@ -395,8 +395,8 @@
       "tier": "Mor",
       "stars": 0,
       "statCap": 700,
-      "levelCap": 234,
-      "preparation": 62
+      "levelCap": 190,
+      "preparation": 188
     },
     {
       "division": 3,
@@ -404,8 +404,8 @@
       "tier": "Mor",
       "stars": 0.5,
       "statCap": 730,
-      "levelCap": 244,
-      "preparation": 65
+      "levelCap": 200,
+      "preparation": 198
     },
     {
       "division": 3,
@@ -413,8 +413,8 @@
       "tier": "Mor",
       "stars": 1,
       "statCap": 760,
-      "levelCap": 254,
-      "preparation": 68
+      "levelCap": 210,
+      "preparation": 208
     },
     {
       "division": 3,
@@ -422,8 +422,8 @@
       "tier": "Mor",
       "stars": 1.5,
       "statCap": 790,
-      "levelCap": 264,
-      "preparation": 71
+      "levelCap": 220,
+      "preparation": 218
     },
     {
       "division": 3,
@@ -431,8 +431,8 @@
       "tier": "Mor",
       "stars": 2,
       "statCap": 820,
-      "levelCap": 274,
-      "preparation": 74
+      "levelCap": 230,
+      "preparation": 228
     },
     {
       "division": 3,
@@ -440,8 +440,8 @@
       "tier": "Mor",
       "stars": 2.5,
       "statCap": 850,
-      "levelCap": 284,
-      "preparation": 77
+      "levelCap": 240,
+      "preparation": 238
     },
     {
       "division": 3,
@@ -449,8 +449,8 @@
       "tier": "Mor",
       "stars": 3,
       "statCap": 880,
-      "levelCap": 294,
-      "preparation": 80
+      "levelCap": 250,
+      "preparation": 248
     },
     {
       "division": 4,
@@ -458,7 +458,7 @@
       "tier": "Siyah",
       "stars": 0,
       "statCap": 220,
-      "levelCap": 68,
+      "levelCap": 10,
       "preparation": 8
     },
     {
@@ -467,8 +467,8 @@
       "tier": "Siyah",
       "stars": 0.5,
       "statCap": 250,
-      "levelCap": 78,
-      "preparation": 11
+      "levelCap": 20,
+      "preparation": 18
     },
     {
       "division": 4,
@@ -476,8 +476,8 @@
       "tier": "Siyah",
       "stars": 1,
       "statCap": 280,
-      "levelCap": 88,
-      "preparation": 14
+      "levelCap": 30,
+      "preparation": 28
     },
     {
       "division": 4,
@@ -485,8 +485,8 @@
       "tier": "Siyah",
       "stars": 1.5,
       "statCap": 310,
-      "levelCap": 98,
-      "preparation": 17
+      "levelCap": 40,
+      "preparation": 38
     },
     {
       "division": 4,
@@ -494,8 +494,8 @@
       "tier": "Siyah",
       "stars": 2,
       "statCap": 340,
-      "levelCap": 114,
-      "preparation": 20
+      "levelCap": 50,
+      "preparation": 48
     },
     {
       "division": 4,
@@ -503,8 +503,8 @@
       "tier": "Siyah",
       "stars": 2.5,
       "statCap": 370,
-      "levelCap": 124,
-      "preparation": 23
+      "levelCap": 60,
+      "preparation": 58
     },
     {
       "division": 4,
@@ -512,8 +512,8 @@
       "tier": "Gümüş",
       "stars": 0,
       "statCap": 400,
-      "levelCap": 134,
-      "preparation": 26
+      "levelCap": 70,
+      "preparation": 68
     },
     {
       "division": 4,
@@ -521,8 +521,8 @@
       "tier": "Gümüş",
       "stars": 0.5,
       "statCap": 430,
-      "levelCap": 144,
-      "preparation": 29
+      "levelCap": 80,
+      "preparation": 78
     },
     {
       "division": 4,
@@ -530,8 +530,8 @@
       "tier": "Gümüş",
       "stars": 1,
       "statCap": 460,
-      "levelCap": 154,
-      "preparation": 32
+      "levelCap": 90,
+      "preparation": 88
     },
     {
       "division": 4,
@@ -539,8 +539,8 @@
       "tier": "Gümüş",
       "stars": 1.5,
       "statCap": 490,
-      "levelCap": 164,
-      "preparation": 35
+      "levelCap": 100,
+      "preparation": 98
     },
     {
       "division": 4,
@@ -548,8 +548,8 @@
       "tier": "Gümüş",
       "stars": 2,
       "statCap": 520,
-      "levelCap": 174,
-      "preparation": 38
+      "levelCap": 110,
+      "preparation": 108
     },
     {
       "division": 4,
@@ -557,8 +557,8 @@
       "tier": "Gümüş",
       "stars": 2.5,
       "statCap": 550,
-      "levelCap": 184,
-      "preparation": 41
+      "levelCap": 120,
+      "preparation": 118
     },
     {
       "division": 4,
@@ -566,8 +566,8 @@
       "tier": "Altın",
       "stars": 0,
       "statCap": 580,
-      "levelCap": 194,
-      "preparation": 44
+      "levelCap": 130,
+      "preparation": 128
     },
     {
       "division": 4,
@@ -575,8 +575,8 @@
       "tier": "Altın",
       "stars": 0.5,
       "statCap": 610,
-      "levelCap": 204,
-      "preparation": 47
+      "levelCap": 140,
+      "preparation": 138
     },
     {
       "division": 4,
@@ -584,8 +584,8 @@
       "tier": "Altın",
       "stars": 1,
       "statCap": 640,
-      "levelCap": 214,
-      "preparation": 50
+      "levelCap": 150,
+      "preparation": 148
     },
     {
       "division": 4,
@@ -593,8 +593,8 @@
       "tier": "Altın",
       "stars": 1.5,
       "statCap": 670,
-      "levelCap": 224,
-      "preparation": 53
+      "levelCap": 160,
+      "preparation": 158
     },
     {
       "division": 4,
@@ -602,8 +602,8 @@
       "tier": "Altın",
       "stars": 2,
       "statCap": 700,
-      "levelCap": 234,
-      "preparation": 56
+      "levelCap": 170,
+      "preparation": 168
     },
     {
       "division": 4,
@@ -611,8 +611,8 @@
       "tier": "Altın",
       "stars": 2.5,
       "statCap": 730,
-      "levelCap": 244,
-      "preparation": 59
+      "levelCap": 180,
+      "preparation": 178
     },
     {
       "division": 4,
@@ -620,8 +620,8 @@
       "tier": "Mor",
       "stars": 0,
       "statCap": 760,
-      "levelCap": 254,
-      "preparation": 62
+      "levelCap": 190,
+      "preparation": 188
     },
     {
       "division": 4,
@@ -629,8 +629,8 @@
       "tier": "Mor",
       "stars": 0.5,
       "statCap": 790,
-      "levelCap": 264,
-      "preparation": 65
+      "levelCap": 200,
+      "preparation": 198
     },
     {
       "division": 4,
@@ -638,8 +638,8 @@
       "tier": "Mor",
       "stars": 1,
       "statCap": 820,
-      "levelCap": 274,
-      "preparation": 68
+      "levelCap": 210,
+      "preparation": 208
     },
     {
       "division": 4,
@@ -647,8 +647,8 @@
       "tier": "Mor",
       "stars": 1.5,
       "statCap": 850,
-      "levelCap": 284,
-      "preparation": 71
+      "levelCap": 220,
+      "preparation": 218
     },
     {
       "division": 4,
@@ -656,8 +656,8 @@
       "tier": "Mor",
       "stars": 2,
       "statCap": 880,
-      "levelCap": 294,
-      "preparation": 74
+      "levelCap": 230,
+      "preparation": 228
     },
     {
       "division": 4,
@@ -665,8 +665,8 @@
       "tier": "Mor",
       "stars": 2.5,
       "statCap": 910,
-      "levelCap": 304,
-      "preparation": 77
+      "levelCap": 240,
+      "preparation": 238
     },
     {
       "division": 4,
@@ -674,8 +674,8 @@
       "tier": "Mor",
       "stars": 3,
       "statCap": 940,
-      "levelCap": 314,
-      "preparation": 80
+      "levelCap": 250,
+      "preparation": 248
     },
     {
       "division": 5,
@@ -683,7 +683,7 @@
       "tier": "Siyah",
       "stars": 0,
       "statCap": 220,
-      "levelCap": 68,
+      "levelCap": 10,
       "preparation": 8
     },
     {
@@ -692,8 +692,8 @@
       "tier": "Siyah",
       "stars": 0.5,
       "statCap": 250,
-      "levelCap": 78,
-      "preparation": 11
+      "levelCap": 20,
+      "preparation": 18
     },
     {
       "division": 5,
@@ -701,8 +701,8 @@
       "tier": "Siyah",
       "stars": 1,
       "statCap": 280,
-      "levelCap": 88,
-      "preparation": 14
+      "levelCap": 30,
+      "preparation": 28
     },
     {
       "division": 5,
@@ -710,8 +710,8 @@
       "tier": "Siyah",
       "stars": 1.5,
       "statCap": 310,
-      "levelCap": 98,
-      "preparation": 17
+      "levelCap": 40,
+      "preparation": 38
     },
     {
       "division": 5,
@@ -719,8 +719,8 @@
       "tier": "Siyah",
       "stars": 2,
       "statCap": 340,
-      "levelCap": 114,
-      "preparation": 20
+      "levelCap": 50,
+      "preparation": 48
     },
     {
       "division": 5,
@@ -728,8 +728,8 @@
       "tier": "Siyah",
       "stars": 2.5,
       "statCap": 370,
-      "levelCap": 124,
-      "preparation": 23
+      "levelCap": 60,
+      "preparation": 58
     },
     {
       "division": 5,
@@ -737,8 +737,8 @@
       "tier": "Gümüş",
       "stars": 0,
       "statCap": 400,
-      "levelCap": 134,
-      "preparation": 26
+      "levelCap": 70,
+      "preparation": 68
     },
     {
       "division": 5,
@@ -746,8 +746,8 @@
       "tier": "Gümüş",
       "stars": 0.5,
       "statCap": 430,
-      "levelCap": 144,
-      "preparation": 29
+      "levelCap": 80,
+      "preparation": 78
     },
     {
       "division": 5,
@@ -755,8 +755,8 @@
       "tier": "Gümüş",
       "stars": 1,
       "statCap": 460,
-      "levelCap": 154,
-      "preparation": 32
+      "levelCap": 90,
+      "preparation": 88
     },
     {
       "division": 5,
@@ -764,8 +764,8 @@
       "tier": "Gümüş",
       "stars": 1.5,
       "statCap": 490,
-      "levelCap": 164,
-      "preparation": 35
+      "levelCap": 100,
+      "preparation": 98
     },
     {
       "division": 5,
@@ -773,8 +773,8 @@
       "tier": "Gümüş",
       "stars": 2,
       "statCap": 520,
-      "levelCap": 174,
-      "preparation": 38
+      "levelCap": 110,
+      "preparation": 108
     },
     {
       "division": 5,
@@ -782,8 +782,8 @@
       "tier": "Gümüş",
       "stars": 2.5,
       "statCap": 550,
-      "levelCap": 184,
-      "preparation": 41
+      "levelCap": 120,
+      "preparation": 118
     },
     {
       "division": 5,
@@ -791,8 +791,8 @@
       "tier": "Altın",
       "stars": 0,
       "statCap": 580,
-      "levelCap": 194,
-      "preparation": 44
+      "levelCap": 130,
+      "preparation": 128
     },
     {
       "division": 5,
@@ -800,8 +800,8 @@
       "tier": "Altın",
       "stars": 0.5,
       "statCap": 610,
-      "levelCap": 204,
-      "preparation": 47
+      "levelCap": 140,
+      "preparation": 138
     },
     {
       "division": 5,
@@ -809,8 +809,8 @@
       "tier": "Altın",
       "stars": 1,
       "statCap": 640,
-      "levelCap": 214,
-      "preparation": 50
+      "levelCap": 150,
+      "preparation": 148
     },
     {
       "division": 5,
@@ -818,8 +818,8 @@
       "tier": "Altın",
       "stars": 1.5,
       "statCap": 670,
-      "levelCap": 224,
-      "preparation": 53
+      "levelCap": 160,
+      "preparation": 158
     },
     {
       "division": 5,
@@ -827,8 +827,8 @@
       "tier": "Altın",
       "stars": 2,
       "statCap": 700,
-      "levelCap": 234,
-      "preparation": 56
+      "levelCap": 170,
+      "preparation": 168
     },
     {
       "division": 5,
@@ -836,8 +836,8 @@
       "tier": "Altın",
       "stars": 2.5,
       "statCap": 730,
-      "levelCap": 244,
-      "preparation": 59
+      "levelCap": 180,
+      "preparation": 178
     },
     {
       "division": 5,
@@ -845,8 +845,8 @@
       "tier": "Mor",
       "stars": 0,
       "statCap": 760,
-      "levelCap": 254,
-      "preparation": 62
+      "levelCap": 190,
+      "preparation": 188
     },
     {
       "division": 5,
@@ -854,8 +854,8 @@
       "tier": "Mor",
       "stars": 0.5,
       "statCap": 790,
-      "levelCap": 264,
-      "preparation": 65
+      "levelCap": 200,
+      "preparation": 198
     },
     {
       "division": 5,
@@ -863,8 +863,8 @@
       "tier": "Mor",
       "stars": 1,
       "statCap": 820,
-      "levelCap": 274,
-      "preparation": 68
+      "levelCap": 210,
+      "preparation": 208
     },
     {
       "division": 5,
@@ -872,8 +872,8 @@
       "tier": "Mor",
       "stars": 1.5,
       "statCap": 850,
-      "levelCap": 284,
-      "preparation": 71
+      "levelCap": 220,
+      "preparation": 218
     },
     {
       "division": 5,
@@ -881,8 +881,8 @@
       "tier": "Mor",
       "stars": 2,
       "statCap": 880,
-      "levelCap": 294,
-      "preparation": 74
+      "levelCap": 230,
+      "preparation": 228
     },
     {
       "division": 5,
@@ -890,8 +890,8 @@
       "tier": "Mor",
       "stars": 2.5,
       "statCap": 910,
-      "levelCap": 304,
-      "preparation": 77
+      "levelCap": 240,
+      "preparation": 238
     },
     {
       "division": 5,
@@ -899,8 +899,8 @@
       "tier": "Mor",
       "stars": 3,
       "statCap": 940,
-      "levelCap": 314,
-      "preparation": 80
+      "levelCap": 250,
+      "preparation": 248
     },
     {
       "division": 6,
@@ -908,7 +908,7 @@
       "tier": "Siyah",
       "stars": 0,
       "statCap": 220,
-      "levelCap": 68,
+      "levelCap": 10,
       "preparation": 8
     },
     {
@@ -917,8 +917,8 @@
       "tier": "Siyah",
       "stars": 0.5,
       "statCap": 250,
-      "levelCap": 78,
-      "preparation": 11
+      "levelCap": 20,
+      "preparation": 18
     },
     {
       "division": 6,
@@ -926,8 +926,8 @@
       "tier": "Siyah",
       "stars": 1,
       "statCap": 280,
-      "levelCap": 88,
-      "preparation": 14
+      "levelCap": 30,
+      "preparation": 28
     },
     {
       "division": 6,
@@ -935,8 +935,8 @@
       "tier": "Siyah",
       "stars": 1.5,
       "statCap": 310,
-      "levelCap": 98,
-      "preparation": 17
+      "levelCap": 40,
+      "preparation": 38
     },
     {
       "division": 6,
@@ -944,8 +944,8 @@
       "tier": "Siyah",
       "stars": 2,
       "statCap": 340,
-      "levelCap": 114,
-      "preparation": 20
+      "levelCap": 50,
+      "preparation": 48
     },
     {
       "division": 6,
@@ -953,8 +953,8 @@
       "tier": "Siyah",
       "stars": 2.5,
       "statCap": 370,
-      "levelCap": 124,
-      "preparation": 23
+      "levelCap": 60,
+      "preparation": 58
     },
     {
       "division": 6,
@@ -962,8 +962,8 @@
       "tier": "Gümüş",
       "stars": 0,
       "statCap": 400,
-      "levelCap": 134,
-      "preparation": 26
+      "levelCap": 70,
+      "preparation": 68
     },
     {
       "division": 6,
@@ -971,8 +971,8 @@
       "tier": "Gümüş",
       "stars": 0.5,
       "statCap": 430,
-      "levelCap": 144,
-      "preparation": 29
+      "levelCap": 80,
+      "preparation": 78
     },
     {
       "division": 6,
@@ -980,8 +980,8 @@
       "tier": "Gümüş",
       "stars": 1,
       "statCap": 460,
-      "levelCap": 154,
-      "preparation": 32
+      "levelCap": 90,
+      "preparation": 88
     },
     {
       "division": 6,
@@ -989,8 +989,8 @@
       "tier": "Gümüş",
       "stars": 1.5,
       "statCap": 490,
-      "levelCap": 164,
-      "preparation": 35
+      "levelCap": 100,
+      "preparation": 98
     },
     {
       "division": 6,
@@ -998,8 +998,8 @@
       "tier": "Gümüş",
       "stars": 2,
       "statCap": 520,
-      "levelCap": 174,
-      "preparation": 38
+      "levelCap": 110,
+      "preparation": 108
     },
     {
       "division": 6,
@@ -1007,8 +1007,8 @@
       "tier": "Gümüş",
       "stars": 2.5,
       "statCap": 550,
-      "levelCap": 184,
-      "preparation": 41
+      "levelCap": 120,
+      "preparation": 118
     },
     {
       "division": 6,
@@ -1016,8 +1016,8 @@
       "tier": "Altın",
       "stars": 0,
       "statCap": 580,
-      "levelCap": 194,
-      "preparation": 44
+      "levelCap": 130,
+      "preparation": 128
     },
     {
       "division": 6,
@@ -1025,8 +1025,8 @@
       "tier": "Altın",
       "stars": 0.5,
       "statCap": 610,
-      "levelCap": 204,
-      "preparation": 47
+      "levelCap": 140,
+      "preparation": 138
     },
     {
       "division": 6,
@@ -1034,8 +1034,8 @@
       "tier": "Altın",
       "stars": 1,
       "statCap": 640,
-      "levelCap": 214,
-      "preparation": 50
+      "levelCap": 150,
+      "preparation": 148
     },
     {
       "division": 6,
@@ -1043,8 +1043,8 @@
       "tier": "Altın",
       "stars": 1.5,
       "statCap": 670,
-      "levelCap": 224,
-      "preparation": 53
+      "levelCap": 160,
+      "preparation": 158
     },
     {
       "division": 6,
@@ -1052,8 +1052,8 @@
       "tier": "Altın",
       "stars": 2,
       "statCap": 700,
-      "levelCap": 234,
-      "preparation": 56
+      "levelCap": 170,
+      "preparation": 168
     },
     {
       "division": 6,
@@ -1061,8 +1061,8 @@
       "tier": "Altın",
       "stars": 2.5,
       "statCap": 730,
-      "levelCap": 244,
-      "preparation": 59
+      "levelCap": 180,
+      "preparation": 178
     },
     {
       "division": 6,
@@ -1070,8 +1070,8 @@
       "tier": "Mor",
       "stars": 0,
       "statCap": 760,
-      "levelCap": 254,
-      "preparation": 62
+      "levelCap": 190,
+      "preparation": 188
     },
     {
       "division": 6,
@@ -1079,8 +1079,8 @@
       "tier": "Mor",
       "stars": 0.5,
       "statCap": 790,
-      "levelCap": 264,
-      "preparation": 65
+      "levelCap": 200,
+      "preparation": 198
     },
     {
       "division": 6,
@@ -1088,8 +1088,8 @@
       "tier": "Mor",
       "stars": 1,
       "statCap": 820,
-      "levelCap": 274,
-      "preparation": 68
+      "levelCap": 210,
+      "preparation": 208
     },
     {
       "division": 6,
@@ -1097,8 +1097,8 @@
       "tier": "Mor",
       "stars": 1.5,
       "statCap": 850,
-      "levelCap": 284,
-      "preparation": 71
+      "levelCap": 220,
+      "preparation": 218
     },
     {
       "division": 6,
@@ -1106,8 +1106,8 @@
       "tier": "Mor",
       "stars": 2,
       "statCap": 880,
-      "levelCap": 294,
-      "preparation": 74
+      "levelCap": 230,
+      "preparation": 228
     },
     {
       "division": 6,
@@ -1115,8 +1115,8 @@
       "tier": "Mor",
       "stars": 2.5,
       "statCap": 910,
-      "levelCap": 304,
-      "preparation": 77
+      "levelCap": 240,
+      "preparation": 238
     },
     {
       "division": 6,
@@ -1124,8 +1124,8 @@
       "tier": "Mor",
       "stars": 3,
       "statCap": 940,
-      "levelCap": 314,
-      "preparation": 80
+      "levelCap": 250,
+      "preparation": 248
     },
     {
       "division": 7,
@@ -1133,7 +1133,7 @@
       "tier": "Siyah",
       "stars": 0,
       "statCap": 220,
-      "levelCap": 68,
+      "levelCap": 10,
       "preparation": 8
     },
     {
@@ -1142,8 +1142,8 @@
       "tier": "Siyah",
       "stars": 0.5,
       "statCap": 250,
-      "levelCap": 78,
-      "preparation": 11
+      "levelCap": 20,
+      "preparation": 18
     },
     {
       "division": 7,
@@ -1151,8 +1151,8 @@
       "tier": "Siyah",
       "stars": 1,
       "statCap": 280,
-      "levelCap": 88,
-      "preparation": 14
+      "levelCap": 30,
+      "preparation": 28
     },
     {
       "division": 7,
@@ -1160,8 +1160,8 @@
       "tier": "Siyah",
       "stars": 1.5,
       "statCap": 310,
-      "levelCap": 98,
-      "preparation": 17
+      "levelCap": 40,
+      "preparation": 38
     },
     {
       "division": 7,
@@ -1169,8 +1169,8 @@
       "tier": "Siyah",
       "stars": 2,
       "statCap": 340,
-      "levelCap": 114,
-      "preparation": 20
+      "levelCap": 50,
+      "preparation": 48
     },
     {
       "division": 7,
@@ -1178,8 +1178,8 @@
       "tier": "Siyah",
       "stars": 2.5,
       "statCap": 370,
-      "levelCap": 124,
-      "preparation": 23
+      "levelCap": 60,
+      "preparation": 58
     },
     {
       "division": 7,
@@ -1187,8 +1187,8 @@
       "tier": "Gümüş",
       "stars": 0,
       "statCap": 400,
-      "levelCap": 134,
-      "preparation": 26
+      "levelCap": 70,
+      "preparation": 68
     },
     {
       "division": 7,
@@ -1196,8 +1196,8 @@
       "tier": "Gümüş",
       "stars": 0.5,
       "statCap": 430,
-      "levelCap": 144,
-      "preparation": 29
+      "levelCap": 80,
+      "preparation": 78
     },
     {
       "division": 7,
@@ -1205,8 +1205,8 @@
       "tier": "Gümüş",
       "stars": 1,
       "statCap": 460,
-      "levelCap": 154,
-      "preparation": 32
+      "levelCap": 90,
+      "preparation": 88
     },
     {
       "division": 7,
@@ -1214,8 +1214,8 @@
       "tier": "Gümüş",
       "stars": 1.5,
       "statCap": 490,
-      "levelCap": 164,
-      "preparation": 35
+      "levelCap": 100,
+      "preparation": 98
     },
     {
       "division": 7,
@@ -1223,8 +1223,8 @@
       "tier": "Gümüş",
       "stars": 2,
       "statCap": 520,
-      "levelCap": 174,
-      "preparation": 38
+      "levelCap": 110,
+      "preparation": 108
     },
     {
       "division": 7,
@@ -1232,8 +1232,8 @@
       "tier": "Gümüş",
       "stars": 2.5,
       "statCap": 550,
-      "levelCap": 184,
-      "preparation": 41
+      "levelCap": 120,
+      "preparation": 118
     },
     {
       "division": 7,
@@ -1241,8 +1241,8 @@
       "tier": "Altın",
       "stars": 0,
       "statCap": 580,
-      "levelCap": 194,
-      "preparation": 44
+      "levelCap": 130,
+      "preparation": 128
     },
     {
       "division": 7,
@@ -1250,8 +1250,8 @@
       "tier": "Altın",
       "stars": 0.5,
       "statCap": 610,
-      "levelCap": 204,
-      "preparation": 47
+      "levelCap": 140,
+      "preparation": 138
     },
     {
       "division": 7,
@@ -1259,8 +1259,8 @@
       "tier": "Altın",
       "stars": 1,
       "statCap": 640,
-      "levelCap": 214,
-      "preparation": 50
+      "levelCap": 150,
+      "preparation": 148
     },
     {
       "division": 7,
@@ -1268,8 +1268,8 @@
       "tier": "Altın",
       "stars": 1.5,
       "statCap": 670,
-      "levelCap": 224,
-      "preparation": 53
+      "levelCap": 160,
+      "preparation": 158
     },
     {
       "division": 7,
@@ -1277,8 +1277,8 @@
       "tier": "Altın",
       "stars": 2,
       "statCap": 700,
-      "levelCap": 234,
-      "preparation": 56
+      "levelCap": 170,
+      "preparation": 168
     },
     {
       "division": 7,
@@ -1286,8 +1286,8 @@
       "tier": "Altın",
       "stars": 2.5,
       "statCap": 730,
-      "levelCap": 244,
-      "preparation": 59
+      "levelCap": 180,
+      "preparation": 178
     },
     {
       "division": 7,
@@ -1295,8 +1295,8 @@
       "tier": "Mor",
       "stars": 0,
       "statCap": 760,
-      "levelCap": 254,
-      "preparation": 62
+      "levelCap": 190,
+      "preparation": 188
     },
     {
       "division": 7,
@@ -1304,8 +1304,8 @@
       "tier": "Mor",
       "stars": 0.5,
       "statCap": 790,
-      "levelCap": 264,
-      "preparation": 65
+      "levelCap": 200,
+      "preparation": 198
     },
     {
       "division": 7,
@@ -1313,8 +1313,8 @@
       "tier": "Mor",
       "stars": 1,
       "statCap": 820,
-      "levelCap": 274,
-      "preparation": 68
+      "levelCap": 210,
+      "preparation": 208
     },
     {
       "division": 7,
@@ -1322,8 +1322,8 @@
       "tier": "Mor",
       "stars": 1.5,
       "statCap": 850,
-      "levelCap": 284,
-      "preparation": 71
+      "levelCap": 220,
+      "preparation": 218
     },
     {
       "division": 7,
@@ -1331,8 +1331,8 @@
       "tier": "Mor",
       "stars": 2,
       "statCap": 880,
-      "levelCap": 294,
-      "preparation": 74
+      "levelCap": 230,
+      "preparation": 228
     },
     {
       "division": 7,
@@ -1340,8 +1340,8 @@
       "tier": "Mor",
       "stars": 2.5,
       "statCap": 910,
-      "levelCap": 304,
-      "preparation": 77
+      "levelCap": 240,
+      "preparation": 238
     },
     {
       "division": 7,
@@ -1349,8 +1349,8 @@
       "tier": "Mor",
       "stars": 3,
       "statCap": 940,
-      "levelCap": 314,
-      "preparation": 80
+      "levelCap": 250,
+      "preparation": 248
     },
     {
       "division": 8,
@@ -1358,7 +1358,7 @@
       "tier": "Siyah",
       "stars": 0,
       "statCap": 220,
-      "levelCap": 68,
+      "levelCap": 10,
       "preparation": 8
     },
     {
@@ -1367,8 +1367,8 @@
       "tier": "Siyah",
       "stars": 0.5,
       "statCap": 250,
-      "levelCap": 78,
-      "preparation": 11
+      "levelCap": 20,
+      "preparation": 18
     },
     {
       "division": 8,
@@ -1376,8 +1376,8 @@
       "tier": "Siyah",
       "stars": 1,
       "statCap": 280,
-      "levelCap": 88,
-      "preparation": 14
+      "levelCap": 30,
+      "preparation": 28
     },
     {
       "division": 8,
@@ -1385,8 +1385,8 @@
       "tier": "Siyah",
       "stars": 1.5,
       "statCap": 310,
-      "levelCap": 98,
-      "preparation": 17
+      "levelCap": 40,
+      "preparation": 38
     },
     {
       "division": 8,
@@ -1394,8 +1394,8 @@
       "tier": "Siyah",
       "stars": 2,
       "statCap": 340,
-      "levelCap": 114,
-      "preparation": 20
+      "levelCap": 50,
+      "preparation": 48
     },
     {
       "division": 8,
@@ -1403,8 +1403,8 @@
       "tier": "Siyah",
       "stars": 2.5,
       "statCap": 370,
-      "levelCap": 124,
-      "preparation": 23
+      "levelCap": 60,
+      "preparation": 58
     },
     {
       "division": 8,
@@ -1412,8 +1412,8 @@
       "tier": "Gümüş",
       "stars": 0,
       "statCap": 400,
-      "levelCap": 134,
-      "preparation": 26
+      "levelCap": 70,
+      "preparation": 68
     },
     {
       "division": 8,
@@ -1421,8 +1421,8 @@
       "tier": "Gümüş",
       "stars": 0.5,
       "statCap": 430,
-      "levelCap": 144,
-      "preparation": 29
+      "levelCap": 80,
+      "preparation": 78
     },
     {
       "division": 8,
@@ -1430,8 +1430,8 @@
       "tier": "Gümüş",
       "stars": 1,
       "statCap": 460,
-      "levelCap": 154,
-      "preparation": 32
+      "levelCap": 90,
+      "preparation": 88
     },
     {
       "division": 8,
@@ -1439,8 +1439,8 @@
       "tier": "Gümüş",
       "stars": 1.5,
       "statCap": 490,
-      "levelCap": 164,
-      "preparation": 35
+      "levelCap": 100,
+      "preparation": 98
     },
     {
       "division": 8,
@@ -1448,8 +1448,8 @@
       "tier": "Gümüş",
       "stars": 2,
       "statCap": 520,
-      "levelCap": 174,
-      "preparation": 38
+      "levelCap": 110,
+      "preparation": 108
     },
     {
       "division": 8,
@@ -1457,8 +1457,8 @@
       "tier": "Gümüş",
       "stars": 2.5,
       "statCap": 550,
-      "levelCap": 184,
-      "preparation": 41
+      "levelCap": 120,
+      "preparation": 118
     },
     {
       "division": 8,
@@ -1466,8 +1466,8 @@
       "tier": "Altın",
       "stars": 0,
       "statCap": 580,
-      "levelCap": 194,
-      "preparation": 44
+      "levelCap": 130,
+      "preparation": 128
     },
     {
       "division": 8,
@@ -1475,8 +1475,8 @@
       "tier": "Altın",
       "stars": 0.5,
       "statCap": 610,
-      "levelCap": 204,
-      "preparation": 47
+      "levelCap": 140,
+      "preparation": 138
     },
     {
       "division": 8,
@@ -1484,8 +1484,8 @@
       "tier": "Altın",
       "stars": 1,
       "statCap": 640,
-      "levelCap": 214,
-      "preparation": 50
+      "levelCap": 150,
+      "preparation": 148
     },
     {
       "division": 8,
@@ -1493,8 +1493,8 @@
       "tier": "Altın",
       "stars": 1.5,
       "statCap": 670,
-      "levelCap": 224,
-      "preparation": 53
+      "levelCap": 160,
+      "preparation": 158
     },
     {
       "division": 8,
@@ -1502,8 +1502,8 @@
       "tier": "Altın",
       "stars": 2,
       "statCap": 700,
-      "levelCap": 234,
-      "preparation": 56
+      "levelCap": 170,
+      "preparation": 168
     },
     {
       "division": 8,
@@ -1511,8 +1511,8 @@
       "tier": "Altın",
       "stars": 2.5,
       "statCap": 730,
-      "levelCap": 244,
-      "preparation": 59
+      "levelCap": 180,
+      "preparation": 178
     },
     {
       "division": 8,
@@ -1520,8 +1520,8 @@
       "tier": "Mor",
       "stars": 0,
       "statCap": 760,
-      "levelCap": 254,
-      "preparation": 62
+      "levelCap": 190,
+      "preparation": 188
     },
     {
       "division": 8,
@@ -1529,8 +1529,8 @@
       "tier": "Mor",
       "stars": 0.5,
       "statCap": 790,
-      "levelCap": 264,
-      "preparation": 65
+      "levelCap": 200,
+      "preparation": 198
     },
     {
       "division": 8,
@@ -1538,8 +1538,8 @@
       "tier": "Mor",
       "stars": 1,
       "statCap": 820,
-      "levelCap": 274,
-      "preparation": 68
+      "levelCap": 210,
+      "preparation": 208
     },
     {
       "division": 8,
@@ -1547,8 +1547,8 @@
       "tier": "Mor",
       "stars": 1.5,
       "statCap": 850,
-      "levelCap": 284,
-      "preparation": 71
+      "levelCap": 220,
+      "preparation": 218
     },
     {
       "division": 8,
@@ -1556,8 +1556,8 @@
       "tier": "Mor",
       "stars": 2,
       "statCap": 880,
-      "levelCap": 294,
-      "preparation": 74
+      "levelCap": 230,
+      "preparation": 228
     },
     {
       "division": 8,
@@ -1565,8 +1565,8 @@
       "tier": "Mor",
       "stars": 2.5,
       "statCap": 910,
-      "levelCap": 304,
-      "preparation": 77
+      "levelCap": 240,
+      "preparation": 238
     },
     {
       "division": 8,
@@ -1574,8 +1574,8 @@
       "tier": "Mor",
       "stars": 3,
       "statCap": 940,
-      "levelCap": 314,
-      "preparation": 80
+      "levelCap": 250,
+      "preparation": 248
     }
   ]
 }

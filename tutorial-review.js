@@ -17,7 +17,6 @@ function start(){
  add('player',()=>q('[data-player="'+id+'"] .card-stats')||q('[data-player="'+id+'"]'),'Karttan oyuncunun özelliklerini ve gelişimini incele.');
  add('stats',()=>$('playerStats'),'Her özellik maçta farklı bir beceriyi etkiler.',()=>{TeamView.inspect(id);$('playerAttributes').open=true;});
  add('upgrade',()=>q('#trainingStats .card-upgrade-button'),'Kartı yükselt, AP harcayarak oyuncunun özelliklerini artırır. Bu gösterimde yükseltme yapmana gerek yok.');
- if(state.stage==='bal')add('skills',()=>$('playerSkills'),'Yeteneklerin açılma koşulları ve gizli yetenek ilerlemesi burada görünür.');
  add('league',()=>q('#standingsPane .standings-scroll')||$('leaguePanel'),'Lig sıralamasını ve maç sonuçlarını buradan takip et.',()=>{closeDialogs();LeagueSeason.open();$('standingsTab')?.click();});
  if(state.openDepartments.includes(2)){
  add('income',()=>q('.tier[data-floor="2"] .base-room'),'Gelir Merkezi, talimatlarla bütçe kazandırır.',club);

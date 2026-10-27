@@ -392,3 +392,8 @@ html[data-theme=dark] #campDialog #campEnroll{--camp-wait:#35443b;--camp-fill:#7
 @media(prefers-reduced-motion:reduce){#campDialog #campEnroll::before{transition:none}}
 
 html[data-theme=dark] #campDialog #campEnroll:disabled[data-funding]{background:var(--camp-wait)!important;color:#f3e4bd!important}
+
+#campDialog .camp-candidate>img{grid-row:1;align-self:center}#campDialog .camp-candidate-info{display:grid;gap:4px;min-width:0}
+#campDialog .camp-candidate-stars{display:flex;align-items:center;justify-self:start;gap:2px;padding:2px 4px;border-radius:5px;background:#eee7d4}
+#campDialog .camp-candidate-stars img{display:block;width:12px;height:12px;grid-row:auto;background:transparent;object-fit:contain;border-radius:0;margin:0}
+#campDialog .camp-candidate-stars[data-card-tier="0"] img{filter:grayscale(1) brightness(.65)}#campDialog .camp-candidate-stars[data-card-tier="1"]{background:#53626b}#campDialog .camp-candidate-stars[data-card-tier="1"] img{filter:grayscale(1) brightness(1.45)}#campDialog .camp-candidate-stars[data-card-tier="2"]{background:#765a30}#campDialog .camp-candidate-stars[data-card-tier="3"] img{filter:hue-rotate(220deg) saturate(.75)}

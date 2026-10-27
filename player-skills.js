@@ -197,7 +197,7 @@ const pools={
 };
 function hash(text){let n=2166136261;for(const c of String(text)){n^=c.charCodeAt(0);n=Math.imul(n,16777619)}return n>>>0}
 // Draft progression: slot indices 0–3 remain compatible with existing saves.
-const progression=Object.freeze({version:3,preparationBaseLevel:8,preparationLevelsPerCamp:3,requirements:[0,1,3,2,8,14],minimumDivision:[1,2,2,2,3,4],studyCamps:3,signatureDivision:6,stageTargets:{1:[0,2],2:[2,4],3:[6,8],4:[12,14],5:[18,18],6:[18,20],7:[20,22],8:[22,24]},availability:{'sky-ball-serve':1,'jump-legendary':1,'jump-float-legendary':.8,'ghost-tip':.7,pancake:.7,'perfect-second-touch':.55,'one-hand-rescue':.55,'absolute-read':.4,'tempo-minus':.35,'sync-attack':.3}});
+const progression=Object.freeze({version:3,preparationBaseLevel:8,preparationLevelsPerCamp:10,requirements:[0,1,3,2,8,14],minimumDivision:[1,2,2,2,3,4],studyCamps:3,signatureDivision:6,stageTargets:{1:[0,2],2:[2,4],3:[6,8],4:[12,14],5:[18,18],6:[18,20],7:[20,22],8:[22,24]},availability:{'sky-ball-serve':1,'jump-legendary':1,'jump-float-legendary':.8,'ghost-tip':.7,pancake:.7,'perfect-second-touch':.55,'one-hand-rescue':.55,'absolute-read':.4,'tempo-minus':.35,'sync-attack':.3}});
 const serveSkills=new Set(['sky-ball-serve','jump-legendary','jump-float-legendary']);
 function weighted(ids,key){let roll=hash(key)/4294967296*ids.reduce((n,id)=>n+(progression.availability[id]||1),0);for(const id of ids){roll-=progression.availability[id]||1;if(roll<0)return id;}return ids.at(-1);}
 function legendaryOptions(p,first=p?.matchSkills?.[2]){const all=(pools[p?.role]||pools.outside).Legendary.filter(id=>id!==first),complement=all.filter(id=>serveSkills.has(id)!==serveSkills.has(first));return [...complement,...all.filter(id=>!complement.includes(id))];}
@@ -212,7 +212,7 @@ function ensure(p){
  return p.matchSkills;
 }
 function stageTarget(division){return progression.stageTargets[Math.max(1,Math.min(8,Number(division)||1))];}
-function preparationLevel(count){return progression.preparationBaseLevel+Math.max(0,Math.floor(count))*progression.preparationLevelsPerCamp;}
+function preparationLevel(count,baseLimit=10){return Math.max(progression.preparationBaseLevel,baseLimit-2)+Math.max(0,Math.floor(count))*progression.preparationLevelsPerCamp;}
 function studyReady(p,count){const s=p.legendaryStudy;return !!s&&s.id===p.matchSkills?.[5]&&(s.prepared===true||Number.isFinite(s.startedAt)&&count>=s.startedAt+progression.studyCamps);}
 function beginStudy(p,id,{division=1,state}={}){ensure(p);const count=campCount(p,state);if(division<4||count<8||!p.legendaryTalent&&!p.specialCharacter||!legendaryOptions(p).includes(id))return false;const old=p.legendaryStudy;if(old?.id===id)return true;if(studyReady(p,count)&&count>=14)return false;p.legendaryStudy={id,startedAt:count,prepared:false,source:'camp'};p.matchSkills[5]=id;return true;}
 function signatureState(p,{division=1}={}){const eligible=!!(p.specialCharacter||p.academyOrigin);return {version:1,eligible,division:6,available:eligible&&division>=6,id:p.signatureProgress?.id||null,unlocked:false};}
