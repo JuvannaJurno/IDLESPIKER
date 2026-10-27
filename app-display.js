@@ -15,6 +15,12 @@ function fitViewport(){
  for(const [key,value]of Object.entries(values)){const px=Math.round(value*100)/100+'px';if(root.style.getPropertyValue(key)!==px)root.style.setProperty(key,px);}
  const nav=document.querySelector('.mobile-nav'),energy=document.querySelector('.energy-button');
  for(const [key,element]of [['--app-nav-height',nav],['--app-energy-height',energy]]){const px=Math.ceil(element?.getBoundingClientRect().height||0)+'px';if(root.style.getPropertyValue(key)!==px)root.style.setProperty(key,px);}
+ const dock=energy?.getClientRects().length?energy:nav;
+ if(dock){const clearance=Math.ceil(innerHeight-dock.getBoundingClientRect().top+16)+'px';if(root.style.getPropertyValue('--app-dock-clearance')!==clearance)root.style.setProperty('--app-dock-clearance',clearance);}
+ const group=document.querySelector('.league-match-group'),calendar=document.querySelector('.calendar-card'),camp=document.getElementById('campAlert');
+ const fit=!!(group?.getClientRects().length&&calendar?.getClientRects().length&&!camp?.getClientRects().length&&height>=568&&energy?.getClientRects().length);
+ root.classList.toggle('club-overview-fit',fit);
+ if(fit){const groupTop=group.getBoundingClientRect().top+scrollY,available=Math.floor(energy.getBoundingClientRect().top-groupTop-8);const px=Math.max(160,available)+'px';if(root.style.getPropertyValue('--app-overview-height')!==px)root.style.setProperty('--app-overview-height',px);}
  const frame=document.getElementById('gameMatchFrame'),bar=document.querySelector('.match-shellbar');
  if(frame?.contentWindow&&bar){const buttons=[...bar.querySelectorAll('button')].filter(b=>b.getClientRects().length&&getComputedStyle(b).display!=='none');const reserve=buttons.reduce((sum,b)=>sum+b.getBoundingClientRect().width,0)+Math.max(0,buttons.length-1)*8+16;frame.contentWindow.postMessage({type:'spiker-host-layout',controlsWidth:Math.max(112,Math.ceil(reserve))},'*');}
 }
@@ -45,6 +51,11 @@ addEventListener('appinstalled',()=>{installPrompt=null;installed=true;update();
 document.addEventListener('fullscreenchange',update);document.addEventListener('webkitfullscreenchange',update);
 standalone.addEventListener('change',update);fullscreen.addEventListener('change',update);
 document.addEventListener('DOMContentLoaded',()=>{
+ const resize=new ResizeObserver(scheduleViewport);
+ for(const selector of ['.mobile-nav','.energy-button','.topbar','.calendar-card','#clubPanel']){const el=document.querySelector(selector);if(el)resize.observe(el);}
+ new MutationObserver(scheduleViewport).observe(document.body,{attributes:true,attributeFilter:['class','data-league-division']});
+ const campObserver=new MutationObserver(scheduleViewport);const camp=document.getElementById('campAlert');if(camp)campObserver.observe(camp,{attributes:true,attributeFilter:['hidden','class','style']});
+ addEventListener('spiker-stage-changed',scheduleViewport);
  document.getElementById('gameMatchFrame')?.addEventListener('load',scheduleViewport);
  const settings=document.getElementById('settingsDialog');if(!settings)return;
  const group=document.createElement('section');group.className='settings-group';group.id='appDisplaySettings';

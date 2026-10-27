@@ -698,3 +698,13 @@ Yeni ölçüm: aynı görünür altı hatlı 4 sn yerel testte eski sınırsız 
 - Maç öncesi rakip adı artık formation-court'un ilk başlığıdır; kartın dışında stage kardeşi değildir. Rakip adı üstte, kendi takım adı altta kart içinde aynı tipografiyle kalır. test-prematch-fit.cjs üç aşama × beş mobil boyutta iki başlığın da kart sınırları içinde olduğunu, libero düzenini ve taşma olmadığını doğrular. Kanıt: audits/prematch-team-names-inside.png.
 
 Kontroller ayrıca test-achievements-fixed-close.cjs, test-regional-achievements-browser.cjs, test-camp-skill-rules.cjs ve test-camp-tier-return.cjs ile geçti. Tasarım aileleri ve üretim/kazanç katsayıları değişmedi.
+
+### 27 Ekim — Görünen ekran ve sabit alt düğmeler
+
+Kulüp ekranında kamp yokken takvim + lig kartı, görünen ekran yüksekliğine göre sabit Talimat ver / Maça geç düğmesinin üstüne oturur. Kısa ekranlarda takvim hücreleri ve arma boşlukları daralır; yazılar ve düğmeler üst üste bindirilmez. Kamp görünürken bu tek ekran yerleşimi devreden çıkar, kamp doğal yüksekliğiyle sayfaya eklenir. Kulüp sekmesinin mevcut vardiya/bütçe ve kamp gelişine yönlendirmesi korunur.
+
+Alt içerik payı sabit 166/185 piksel yerine gerçekten görünen düğme ve navigasyon ölçüsünden hesaplanır. Tarayıcı çubuğu, tam ekran, pencere boyutu ve görünür viewport değişimleri aynı ölçümden güncellenir. ResizeObserver yalnız ana yerleşim kutularını izler; talimat başına veya her karede ölçüm eklenmez.
+
+Başarım bildirimi görünen ekranın üstüne, gerçek cihaz güvenli alanından 6px aşağıya hizalanır. Tam ekran başlığının yapay 24px boşluğunu veya başlık yüksekliğini kullanmaz. Yukarıdan giriş ve sağa/sola kaydırarak kapatma korunur; açık modalın önünde tıklanabilir kalır.
+
+Doğrulama: test-club-responsive-dock.cjs (320×568, 360×640, 390×740/844, 412×915, 1280×900; normal ve gerçek tam ekran; lig/CTA/navigasyon hizası, en altta içerik açıklığı, yatay taşma ve takım bilgilerinin sığması), test-achievement-notice-layer.cjs, test-fullscreen-layout.cjs, test-app-display.cjs ve test-achievements-fixed-close.cjs. Görseller audits/responsive-club-overview.png, responsive-club-short.png, responsive-club-bottom.png ve achievement-notice-above-modal-fullscreen.png.

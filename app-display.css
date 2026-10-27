@@ -22,7 +22,7 @@ html.app-expanded dialog.game-match-dialog:modal{width:min(480px,var(--app-view-
 html.app-expanded dialog.game-match-dialog:modal{inset:var(--app-view-top,0px) var(--app-view-right,0px) var(--app-view-bottom,0px) var(--app-view-left,0px);padding:var(--app-safe-top) var(--app-safe-right) var(--app-safe-bottom) var(--app-safe-left);box-sizing:border-box}
 html.app-expanded .match-shellbar{top:var(--app-safe-top);left:var(--app-safe-left);right:var(--app-safe-right);padding:7px 12px}
 
-html.app-expanded :is(.achievement-notice,.stage-transition-banner){top:calc(var(--app-view-top,0px) + var(--app-safe-top) + 68px);max-width:calc(var(--app-view-width,100vw) - var(--app-safe-left) - var(--app-safe-right) - 24px);left:calc(var(--app-view-left,0px) + var(--app-view-width,100vw)/2)}
+html.app-expanded .stage-transition-banner{top:calc(var(--app-view-top,0px) + var(--app-safe-top) + 68px);max-width:calc(var(--app-view-width,100vw) - var(--app-safe-left) - var(--app-safe-right) - 24px);left:calc(var(--app-view-left,0px) + var(--app-view-width,100vw)/2)}
 html.app-expanded :is(.toast,#tapRhythm){bottom:calc(var(--app-view-bottom,0px) + var(--app-nav-height,68px) + var(--app-energy-height,84px) + 28px);max-width:calc(var(--app-view-width,100vw) - var(--app-safe-left) - var(--app-safe-right) - 24px)}
 
 /* The host paints one continuous background through the transparent match iframe. */
@@ -33,4 +33,44 @@ html.app-expanded :is(.toast,#tapRhythm){bottom:calc(var(--app-view-bottom,0px) 
 #gameMatchDialog.match-result-visible .match-fullscreen{visibility:hidden}
 #gameMatchDialog.match-result-visible::backdrop{background:#365c70cc}
 
-html.app-expanded .achievement-notice{top:calc(var(--app-view-top,0px) + var(--app-safe-top) + 12px)}
+
+/* One measured dock in browser and fullscreen; content always clears its visible controls. */
+html body .mobile-nav{left:var(--app-view-left,0px);right:var(--app-view-right,0px);bottom:var(--app-view-bottom,0px);margin-inline:auto;transform:none;width:min(480px,var(--app-view-width,100vw));max-width:100%}
+html body .energy-button{bottom:calc(var(--app-view-bottom,0px) + var(--app-nav-height,67px) + 8px)}
+html body .content>main{padding-bottom:var(--app-dock-clearance,175px)}
+html.club-overview-fit body .league-match-group{height:var(--app-overview-height,245px);box-sizing:border-box;display:flex;flex-direction:column}
+html.club-overview-fit body .league-match-group>.next-match{flex:1;min-height:0;display:flex}
+html.club-overview-fit body .league-match-group .match-preview-open{display:flex;flex-direction:column;flex:1;min-height:0}
+html.club-overview-fit body .league-match-group .match-preview-teams{flex:1;width:100%;margin-block:8px;align-content:center}
+@media(max-height:680px){
+ html.club-overview-fit body .calendar-card{padding:10px}
+ html.club-overview-fit body .calendar{margin-block:8px}
+ html.club-overview-fit body .calendar-day{min-height:46px;padding-block:5px}
+ html.club-overview-fit body .league-match-group #leagueQuick{padding-block:8px}
+ html.club-overview-fit body .league-match-group .match-preview-open{padding-top:8px}
+ html.club-overview-fit body .league-match-group .match-preview-team{gap:4px}
+ html.club-overview-fit body .league-match-group .match-preview-team img{height:42px;width:44px}
+ html.club-overview-fit body .league-match-group .match-preview-team strong{min-height:0;font-size:11px}
+}
+/* Toast uses the real device inset, not the header's extra fullscreen breathing room. */
+html body .achievement-notice,html.app-expanded .achievement-notice{top:calc(var(--app-view-top,0px) + env(safe-area-inset-top,0px) + 6px);left:calc(var(--app-view-left,0px) + var(--app-view-width,100vw)/2);max-width:calc(var(--app-view-width,100vw) - 28px)}
+@media(max-height:680px){
+ html.club-overview-fit body .dashboard{gap:8px}
+ html.club-overview-fit body .calendar-card{padding:8px}
+ html.club-overview-fit body .calendar{margin-block:6px}
+ html.club-overview-fit body .calendar-day{min-height:36px;padding-block:3px}
+ html.club-overview-fit body .calendar-day-summary{margin-block:6px}
+ html.club-overview-fit body .calendar-legend{margin-top:6px}
+}
+html.club-overview-fit body[data-league-division] .league-match-group #leagueQuick{flex:none}
+@media(max-height:680px){
+ html.club-overview-fit body .calendar-card{padding:6px}
+ html.club-overview-fit body .calendar-day{height:40px;min-height:40px}
+ html.club-overview-fit body .calendar-day-summary{margin-block:3px}
+ html.club-overview-fit body[data-league-division] .league-match-group #leagueQuick{min-height:0;padding:6px 10px}
+ html.club-overview-fit body[data-league-division] .league-match-group .match-preview-open{padding:6px 10px 0}
+ html.club-overview-fit body[data-league-division] .league-match-group .match-preview-teams{margin-block:4px;min-height:0}
+ html.club-overview-fit body[data-league-division] .league-match-group .match-preview-team{gap:3px}
+ html.club-overview-fit body[data-league-division] .league-match-group .match-preview-team img{width:36px;height:36px}
+ html.club-overview-fit body[data-league-division] .league-match-group .match-preview-team strong{min-height:0;font-size:10px}
+}
