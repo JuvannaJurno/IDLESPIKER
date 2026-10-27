@@ -17,7 +17,7 @@ const definitions=[
  ['bal_personal',3,'Bireysel Gelişim Planı','+',[.01,.02,.03,.04,.05],v=>'Ücretsiz kart yükseltme ihtimali +'+display(v*100)+' puan.',400],
  ['bal_archive',3,'Analiz Arşivi','▥',[.02,.04,.06,.08,.1],v=>'Kart yükseltmelerinde %'+display(v*100)+' AP indirimi.',360],
  ['bal_search',4,'Keşif Ağı','◎',[9,8,7,6,5],v=>'Her '+display(v)+' oyun gününde yeni katalog.',300],
- ['bal_contacts',4,'Yerel Bağlantılar','♧',[4,5,6,7,8],v=>'Katalogda '+display(v)+' aday. Katkılı katalog şansı +'+display(v-3)+' puan.',350],
+ ['bal_contacts',4,'Yerel Bağlantılar','♧',[4,5,6,7,8],v=>'Yeni kataloglarda '+display(v)+' aday.',350],
  ['bal_talent',4,'Yetenek Tarama','↗',[.03,.06,.09,.12,.15],v=>'Katkılı katalog şansı +'+display(v*100)+' puan. Büyük fırsat şansı +'+display(v*100*.004/.03)+' puan.',400]
 ];
 const extendedIds=new Set(['bal_coach','bal_shift','bal_plan','bal_position','bal_video','bal_recovery','bal_sponsor','bal_shop','bal_fans']);
@@ -32,11 +32,11 @@ const successors=[
  ['bal_sponsor','bal_matchsponsor','Maç Günü Sponsorluğu',[2000,6000,16000,36000,80000],v=>'Oynanan her maç için ek +'+v+' bütçe.'],
  ['bal_shop','bal_members','Kulüp Üyeliği',[1000,3000,7000,15000,30000],v=>'Her gün +'+v+' bütçe.'],
  ['bal_fans','bal_orders','Taraftar Siparişleri',[10,30,70,150,310],v=>'Her 10 talimatta ek +'+v+' bütçe.'],
- ['bal_scout','bal_review','Maç Sonu İnceleme',[5000,12000,25000,45000,75000],v=>'Transfer önerileri açılır. Galibiyete +'+display(v)+' AP.'],
+ ['bal_scout','bal_review','Maç Sonu İnceleme',[5000,12000,25000,45000,75000],v=>'Galibiyete +'+display(v)+' AP.'],
  ['bal_personal','bal_mentor','Gelişim Mentoru',[.01,.02,.03,.04,.05],v=>'Tüm kart yükseltmelerinde ek %'+Math.round(v*100)+' AP indirimi.'],
  ['bal_archive','bal_remote','Uzaktan Antrenman',[.03,.06,.09,.12,.15],v=>'Çevrimdışı AP verimine +%'+Math.round(v*100)+'.'],
  ['bal_search','bal_negotiator','Transfer Görüşmeleri',[.03,.06,.09,.12,.15],v=>'Yeni katalog transfer fiyatları %'+Math.round(v*100)+' daha uygun.'],
- ['bal_contacts','bal_network','Bölgesel Bağlantılar',[.01,.02,.03,.04,.05],v=>'Katkılı katalog şansı +'+display(v*100)+' puan. Büyük fırsat şansı +'+display(v*40)+' puan.'],
+ ['bal_contacts','bal_network','Bölgesel Bağlantılar',[.085,.095,.105,.115,.125],v=>'Katkılı katalog şansı +'+display(v*100)+' puan. Büyük fırsat şansı +'+display((v-.075)*40)+' puan.'],
  ['bal_talent','bal_academy','Akademi İşbirliği',[1,2,3,4,5],v=>'Yeni adaylar +'+v+' kart seviyesi gelişmiş gelir.']
 ];
 const catalog=definitions.map(([id,floor,name,icon,core,describe,price])=>({id,floor,name,icon,values:[...core,...Array(5).fill(core[4])],describe,price,bal:true,bonus:successors.find(row=>row[0]===id)}));
@@ -57,16 +57,17 @@ const professional=[
  ['pro_negotiator',3,'Transfer Görüşmeleri','♧',.04,v=>'Yeni katalog transferleri %'+display(v*100)+' daha uygun.'],
  ['pro_scout',3,'Ulusal Gözlem Ağı','◎',.01,v=>'Katkılı katalog şansı +'+display(v*100)+' puan. Büyük fırsat şansı +'+display(v*60)+' puan.']
 ];
+// Stable bonus IDs preserve saved levels; their outcomes are independent of the primary effect.
 const professionalBonuses=[
  ['pro_coach','pro_focus','Hedefli Antrenman',[.01,.02,.03,.04,.05],v=>'Kritik AP şansı +'+display(v*100)+' puan.'],
- ['pro_repeat','pro_refund','Verimli Gelişim',[.01,.02,.03,.04,.05],v=>'Beşli yükseltme AP iadesine +'+display(v*100)+' puan.'],
- ['pro_analysis','pro_adapt','Hızlı Uyum',[.01,.02,.03,.04,.05],v=>'Yeni transfer yükseltme indirimine +'+display(v*100)+' puan.'],
+ ['pro_repeat','pro_refund','Eğitim Bursu',[1000,2000,3000,4000,5000],v=>'Her 5 ücretli kart yükseltmesinde +'+display(v)+' bütçe.'],
+ ['pro_analysis','pro_adapt','Transfer Desteği',[.01,.02,.03,.04,.05],v=>'Yeni katalogdaki transfer bedelleri %'+display(v*100)+' azalır.'],
  ['pro_coordinator','pro_tempo','Ortak Tempo',[.2,.4,.6,.8,1],v=>'Ek standart hatlar açar. Yeni hatların her biri %'+display(v*100)+' kapasiteyle çalışır; her yükseltmede 1/5 artar. Medya hattını etkilemez.'],
  ['pro_camp','pro_campcash','Kamp Anlaşmaları',[.04,.08,.12,.16,.2],v=>'Kamp bütçe maliyeti %'+display(v*100)+' azalır.'],
  ['pro_travel','pro_campap','Mesai Verimi',[.04,.08,.12,.16,.2],v=>'Fazladan mesaide kazanılan AP +%'+display(v*100)+'.'],
- ['pro_sponsor','pro_contract','Büyüyen Sözleşme',[.1,.2,.3,.4,.5],v=>'Üç maçlık sponsor ödemesi +%'+display(v*100)+'.'],
- ['pro_shop','pro_merch','Ürün Anlaşmaları',[.1,.2,.3,.4,.5],v=>'Takipçiden gelen günlük bütçe +%'+display(v*100)+'.'],
- ['pro_tickets','pro_trainingcash','Gelişim Desteği',[200,400,600,800,1000],v=>'Ücretli kart yükseltmesine ek +'+display(v)+' bütçe.'],
+ ['pro_sponsor','pro_contract','Galibiyet Primi',[2000,4000,6000,8000,10000],v=>'Her galibiyette +'+display(v)+' AP.'],
+ ['pro_shop','pro_merch','Tanıtım Anlaşmaları',[.1,.2,.3,.4,.5],v=>'Sponsor paylaşımlarının bütçe kazancı +%'+display(v*100)+'.'],
+ ['pro_tickets','pro_trainingcash','Günlük Antrenman Desteği',[200,400,600,800,1000],v=>'Gün sonunda +'+display(v)+' AP.'],
  ['pro_scout','pro_elite','Elit Oyuncu Bağlantıları',[.001,.002,.003,.004,.005],v=>'Elit oyuncu bulma ihtimaline +'+display(v*100)+' puan. En yüksek toplam ihtimal %3.']
 ];
 for(const [id,floor,name,icon,step,describe] of professional){const bonus=professionalBonuses.find(b=>b[0]===id),r={id,floor,name,icon,values:Array.from({length:5},(_,i)=>step*(i+1)*(id==='pro_coach'||id==='pro_coordinator'?2:1)),compressed:!!bonus,describe,price:300,bal:true,division:3};if(bonus){successors.push(bonus);r.bonus=bonus;r.values.push(...Array(5).fill(r.values[4]));}catalog.push(r);}
@@ -76,7 +77,7 @@ function maxLevel(s,r){if(r.id==='pro_scout'&&(s.division||2)<6)return Math.max(
 
 function bonusLevel(s,id){const bonus=successors.find(row=>row[1]===id);return bonus?Math.max(0,Math.min(5,level(s,bonus[0])-5)):0;}
 function describePrimary(s,r,n=level(s,r.id)){let v=r.values[Math.max(0,n-1)];if(r.id==='bal_shift'&&s.division>=3)v*=3;if(Clock.isWeekly(s)){if(r.id==='pro_shop')v*=Clock.economyScale(s);if(r.id==='bal_fans')v*=2;if(r.id==='pro_sponsor')return '3 maçta toplam +'+display(v*2)+' bütçe.';}return r.describe(v);}
-function describeBonus(s,r,n){if(r.bonus?.[1]==='pro_elite'&&(s.division||2)<6)return 'Milletler Kupası’nda etkinleşir. '+r.bonus[4](r.bonus[3][n-6]);let v=r.bonus[3][n-6],text;if(Clock.isWeekly(s)){if(['bal_evening','bal_members'].includes(r.bonus[1]))v*=Clock.economyScale(s);if(['bal_matchsponsor','bal_review'].includes(r.bonus[1]))v*=2;}text=r.bonus[4](v);if(Clock.isWeekly(s)&&r.bonus[1]==='bal_warmstart')text=text.replace('ilk 20','ilk '+Clock.morningInstructions(s));return text;}
+function describeBonus(s,r,n){if(r.bonus?.[1]==='pro_elite'&&(s.division||2)<6)return 'Milletler Kupası’nda etkinleşir. '+r.bonus[4](r.bonus[3][n-6]);let v=r.bonus[3][n-6],text;if(Clock.isWeekly(s)){if(['bal_evening','bal_members','pro_trainingcash'].includes(r.bonus[1]))v*=Clock.economyScale(s);if(['bal_matchsponsor','bal_review'].includes(r.bonus[1]))v*=2;}text=r.bonus[4](v);if(Clock.isWeekly(s)&&r.bonus[1]==='bal_warmstart')text=text.replace('ilk 20','ilk '+Clock.morningInstructions(s));return text;}
 function describeBlock(s,r,n=level(s,r.id)){const primary=describePrimary(s,r,n);if(!r.bonus)return primary;return primary+(n>5?' '+r.bonus[2]+': '+describeBonus(s,r,n):'');}
 const departmentPrices={2:0,4:0};
 function departmentOpen(s,f){return s.stage==='bal'&&(!Object.hasOwn(departmentPrices,f)||!Array.isArray(s.openDepartments)||s.openDepartments.includes(f));}
@@ -113,7 +114,7 @@ const professionalSinglePrices={pro_search:[12000,40000,160000,400000,1120000],p
 const regionalCorePrices=Object.freeze({bal_video:[540,1500,4500,13500,38000],bal_contacts:[630,1750,4900,14000,35000]});
 const regionalBonusPriceScale=Object.freeze({bal_shift:[.8,.85,.9,.95,1],bal_coach:[1,1,1.05,1.08,1.12],bal_position:[.9,.95,1,1.1,1.15],bal_video:[3.5,2.4,1.8,1.5,1.3],bal_sponsor:[1.15,1.15,1.1,1.1,1.15],bal_scout:[.9,1,1.2,1.4,1.5],bal_contacts:[3,2.2,1.8,1.6,1.5]});
 function price(s,r){const n=level(s,r.id);if(n>=maxLevel(s,r))return Infinity;if(r.compressed)return [...weeklyProfessionalEntryPrices,...weeklyProfessionalBonusPrices[r.id]][n];if(r.division&&professionalSinglePrices[r.id])return professionalSinglePrices[r.id][n];if(r.division)return [12000,18000,27000,40000,58000,82000,114000,156000,210000,280000][n];if(!r.bal)return 10*([10,6,9,10,15][n]??Infinity);if((s.division||1)<3&&n<5&&regionalCorePrices[r.id])return regionalCorePrices[r.id][n];const base=investmentPrices[r.id]?.[n]??r.price/300*priceSteps[n],lateDiscount=n===9?.9:n===8?.95:1;return Math.round(base*(n>=5?1.4:1)*lateDiscount*((s.division||1)<3&&n>=5?(balLatePriceScale[r.id]??1.7):1)*((s.division||1)<3&&r.id==='bal_video'&&n===9?1.7:1)*(s.division>=3?1:n>=5?.85:.9)*((s.division||1)<3&&n>=5?(regionalBonusPriceScale[r.id]?.[n-5]??1):1)/10)*10;}
-function effects(s,e){if(s.stage!=='bal')return e;const lanes=[1,e.instructionLanes?.[1]||0,value(s,'bal_double')];while(lanes.length>1&&!lanes.at(-1))lanes.pop();const instructionLanes=value(s,'pro_tempo')?lanes.concat(lanes.map(()=>value(s,'pro_tempo'))):lanes;return {...e,instructionLanes,doubleChance:instructionLanes.reduce((n,v)=>n+v,0)-1,manualBonusAP:value(s,'bal_hands'),offlineHours:value(s,'bal_shift')*(s.division>=3?3:1),critChance:Math.min(1,e.critChance+value(s,'pro_focus')+value(s,'bal_precision')),critMult:Math.max(e.critMult,value(s,'bal_precision')?2:1),clickAP:e.clickAP*2.5+value(s,'pro_coach')+value(s,'bal_position')+value(s,'bal_hands'),autoAP:e.autoAP*2.5+value(s,'pro_coach')+value(s,'bal_position'),baseAP:e.baseAP*2.5+value(s,'pro_coach')+value(s,'bal_position'),autoRate:(e.autoRate*1.4+(value(s,'bal_coach')+value(s,'pro_coordinator'))*e.workflowRate)*1.4,baseAutoRate:(e.baseAutoRate*1.4+value(s,'bal_coach')+value(s,'pro_coordinator'))*1.4,repeatAP:e.repeatAP*1.25+value(s,'bal_video'),morningAP:e.morningAP*1.25+value(s,'bal_warmstart'),dayAP:e.dayAP*1.25+value(s,'bal_evening'),offlineBonus:e.offlineBonus*1.25+value(s,'bal_recovery')+value(s,'bal_remote'),offlineEfficiency:e.offlineEfficiency+value(s,'bal_efficiency')};}
+function effects(s,e){if(s.stage!=='bal')return e;const lanes=[1,e.instructionLanes?.[1]||0,value(s,'bal_double')];while(lanes.length>1&&!lanes.at(-1))lanes.pop();const instructionLanes=value(s,'pro_tempo')?lanes.concat(lanes.map(()=>value(s,'pro_tempo'))):lanes;return {...e,instructionLanes,doubleChance:instructionLanes.reduce((n,v)=>n+v,0)-1,manualBonusAP:value(s,'bal_hands'),offlineHours:value(s,'bal_shift')*(s.division>=3?3:1),critChance:Math.min(1,e.critChance+value(s,'pro_focus')+value(s,'bal_precision')),critMult:Math.max(e.critMult,value(s,'bal_precision')?2:1),clickAP:e.clickAP*2.5+value(s,'pro_coach')+value(s,'bal_position')+value(s,'bal_hands'),autoAP:e.autoAP*2.5+value(s,'pro_coach')+value(s,'bal_position'),baseAP:e.baseAP*2.5+value(s,'pro_coach')+value(s,'bal_position'),autoRate:(e.autoRate*1.4+(value(s,'bal_coach')+value(s,'pro_coordinator'))*e.workflowRate)*1.4,baseAutoRate:(e.baseAutoRate*1.4+value(s,'bal_coach')+value(s,'pro_coordinator'))*1.4,repeatAP:e.repeatAP*1.25+value(s,'bal_video'),morningAP:e.morningAP*1.25+value(s,'bal_warmstart'),dayAP:e.dayAP*1.25+value(s,'bal_evening')+value(s,'pro_trainingcash'),offlineBonus:e.offlineBonus*1.25+value(s,'bal_recovery')+value(s,'bal_remote'),offlineEfficiency:e.offlineEfficiency+value(s,'bal_efficiency')};}
 function cash(s){if(!departmentOpen(s,2))return 0;return ((20+value(s,'bal_sponsor'))*(1+value(s,'bal_shop'))+value(s,'bal_orders'))}
 // Merge old separate bonuses into levels 6–10, without charging again.
 function migrateLevels(s,raw){

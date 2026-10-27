@@ -738,3 +738,27 @@ Kusursuz Hücum Okuma başarılı blok / blok teması verdiğinde topun temas ve
 Bu yetenekte yavaş çekim gelen top el temasına kadar kalır ve block-contact sebebiyle kapanır; sektikten sonra uçuşun yarısını beklemez. Diğer Legendarylerin mevcut yarı uçuş kuralı korunur. Native maç sonucu, RNG ve blok başarı ihtimali değiştirilmez.
 
 Doğrulama: test-absolute-read-contact.cjs (iki saha yönü, başarılı blokta el ve top merkezinin 10px içinde olması, temas öncesi yavaş çekim, temasla bitiş ve görünen etki), test-team-heart-persistent-glows.cjs, test-skill-rarity-glow.cjs. Görseller audits/absolute-read-hand-contact-0.png ve absolute-read-hand-contact-1.png.
+
+### 27 Ekim — Blokların katkılarını ayırma
+
+Güncel karar: 5 seviyeli kart tek işlev, 10 seviyeli kart iki farklı işlev sunar. Parametre/olasılık kademeleri aynı işlev olabilir; ek özellik ana etkinin yalnız daha büyük sayısı olarak sunulmaz. Bu kayıt önceki medya dağılımının ve aşağıdaki beş eski ek özellik tarifinin yerini alır. Beta tasarımı bu çalışmanın kapsamında değildir.
+
+Medya kartları:
+- Çekim Ekibi artık 10 seviyedir. 1–5 yalnız hazırlama hızını +%14…70 artırır. 6–10 Medya Dağıtım Hattını açar: paylaşım başına 10/15/20/25/30 talimat. Hazırlama hızı bu bölümde sabittir. Tüp yalnız bu kartın ek özelliğidir.
+- Sosyal Medya Editörü takipçi kazancını artırır; 6–10'da gerçek Video Sırası kapasitesi +1…5 bekleyen video olur. İşleme giren video ayrıca bir yuva kullanır. Kullanılmayan hazır paylaşım arşivi açıklaması kaldırılmıştır. Mevcut takipçi kazanımları korunur; 6–10'da da mevcut takipçi oranı büyümeye devam eder, yeni ayrı katkı sıra kapasitesidir.
+- Sponsor İlişkileri 5 seviyeli tek sponsor paylaşımı geliri katkısını korur. Medya kartları aynı ANA ÖZELLİK / EK ÖZELLİK · n/5 ailesini kullanır; yeni kart kabuğu yoktur.
+
+2. Lig'de aynı ana etkiyi tekrar büyüten ek özellikler ayrı çıktılara çevrildi. Seviye, fiyat ve kayıt ID'leri korunur; ek katkıların işlevleri değişir:
+- Gelişim Takibi: beş ücretli yükseltmede AP iadesi + Eğitim Bursu (aynı beşli tamamlanınca 1–5 bin bütçe). Ücretsiz yükseltme sayılmaz.
+- Uyum Antrenmanı: yeni transferin ilk üç yükseltmesinde AP indirimi + yeni katalog transfer bedellerine %1…5 indirim.
+- Lig Sponsorluğu: üç maçlık bütçe + galibiyet başına 2–10 bin AP. Aynı maç ikinci kez ödüllendirilmez.
+- Lisanslı Ürünler: takipçiye bağlı günlük bütçe + sponsor paylaşımlarının bütçesine %10…50 destek. Günlük gelire tekrar çarpan değildir.
+- Antrenman Sponsorluğu: ücretli yükseltmeden bütçe + gün sonunda 200…1000 AP. Haftalık ekonomide gün sonu tutarı mevcut ×5 ölçeğine uyar; kart açıklaması aynı ölçeği gösterir.
+
+Yerel Bağlantılar'da ana özellik yalnız aday sayısıdır; katalog kalitesi ayrı ek özellik olur. Ek katkı +8,5…12,5 yüzde puan katkılı katalog ve +0,4…2 puan büyük fırsattır. İkisi aynı katalog kalite işlevinin iki sonuç aralığıdır. Gözlemci'nin ek açıklamasından uygulanmayan transfer önerisi cümlesi çıkarılmıştır; gerçek galibiyet AP katkısı korunur.
+
+Kayıt taşıma: sosyal mediaBlockVersion=3. Eski Çekim Ekibi'nin açık tüpü ve dalga seviyesi, Editör'e taşınan en az eski sıra kapasitesi, mevcut takipçiler/gönderiler/işler korunur; devam eden işlerin start/end/reward kayıtları değiştirilmez. Eski açık medya özellikleri yeniden kilitlenmesin diye gerekli seviyeler ücretsiz taşınır. Düşük eski Çekim Ekibi seviyeleri bu taşıma sırasında hazırlama hızında artış alabilir. Oda blockContributionVersion=1, eski Yerel Bağlantılar 1–5 kayıtlarını 6'ya taşıyarak kazanılmış kalite etkisini korur; 6–10 seviyeler korunur. Taşıma ikinci yüklemede tekrarlanmaz. Yeni kayıtlar doğal 1→10 yolunu izler.
+
+Doğrulama: test-block-contributions.cjs (beş ayrı yeni çıktı, gerçek transfer fiyatı, ücretsiz yükseltme/duble ödül koruması, haftalık ölçek, 66 medya kayıt kombinasyonu ve idempotent oda kaydı); test-block-contributions-browser.cjs (gerçek 5→6 açılışları, tüp/sıra ayrımı, yeni metinler ve 320/390/480px); test-social-video-queue.cjs; test-social-match-offline.cjs; test-media-flow-card.cjs; test-second-media-tube.cjs; test-flow-density-budget.cjs; test-exhausted-blocks-camp-stage.cjs. Görseller audits/block-crew-two-features.png, block-editor-two-features.png, block-distinct-bonus.png.
+
+28 Ekim son kontrolü: Video sırası sonradan açıldığında tamamlanmış, sıraya alınmamış eski manuel yer tutucu otomatik ödül üretmez. Gerçek sıradaki işler ve devam eden hazırlıklar korunur. Kuyruk ve maç/çevrimdışı testleri son kod üzerinde tekrar geçti.
