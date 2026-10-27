@@ -382,3 +382,13 @@ html[data-theme=dark] #campReturnDialog .return-skill-reveal[data-rarity=rare] s
 #campReturnDialog [data-card-tier="0"] .return-star-track{background:#f5f1e7}#campReturnDialog [data-card-tier="0"] .return-star-track img{filter:grayscale(1) brightness(.65)}
 #campReturnDialog [data-card-tier="1"] .return-star-track img{filter:grayscale(1) brightness(1.45)}#campReturnDialog [data-card-tier="3"] .return-star-track img{filter:hue-rotate(220deg) saturate(.75)}
 #campReturnDialog .return-tier-up .return-star-caption{color:var(--club-ink);font-weight:650}
+
+/* The send button itself shows the limiting resource and accumulated funding. */
+#campDialog #campEnroll{--camp-wait:#eee7d3;--camp-fill:#f4ce80;position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:10px 12px;min-height:50px;background:var(--camp-wait)!important;border:2px solid #e5cd96;color:#70582f;opacity:1;box-shadow:0 3px #c6ad75;font-family:inherit}
+#campDialog #campEnroll::before{content:'';position:absolute;z-index:0;inset:0 auto 0 0;width:var(--camp-funding,0%);background:var(--camp-fill);pointer-events:none;transition:width .25s ease-out}
+#campDialog #campEnroll>span,#campDialog #campEnroll>small{position:relative;z-index:1;line-height:1.3}#campDialog #campEnroll>small{font-size:10px;font-weight:700}
+#campDialog #campEnroll:disabled{opacity:1;color:#70582f;cursor:default}#campDialog #campEnroll[data-funding=none]{color:#8a8069;border-color:#d8d4bf;box-shadow:0 2px #c5c5ac}
+html[data-theme=dark] #campDialog #campEnroll{--camp-wait:#35443b;--camp-fill:#73623e;color:#f3e4bd!important;border-color:#9a865b!important;background:var(--camp-wait)!important;box-shadow:0 3px #192d27!important}html[data-theme=dark] #campDialog #campEnroll[data-funding=ready]{--camp-fill:#bfa36d;color:#292f25!important}
+@media(prefers-reduced-motion:reduce){#campDialog #campEnroll::before{transition:none}}
+
+html[data-theme=dark] #campDialog #campEnroll:disabled[data-funding]{background:var(--camp-wait)!important;color:#f3e4bd!important}
