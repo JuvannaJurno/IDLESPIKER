@@ -4,6 +4,7 @@ const key='idle-spiker-onboarding-v1',done=new Set();
 try{const saved=JSON.parse(localStorage.getItem(key));if(Array.isArray(saved))saved.forEach(x=>done.add(x))}catch{}
 const initial=RoomSystem.tutorialState();
 function finish(id){if(done.has(id))return;done.add(id);try{localStorage.setItem(key,JSON.stringify([...done]))}catch{}}
+if(window.PlayerProfile?.needsCreation&&!done.size&&initial.instructions===0)finish('ask');
 // Returning players do not need the first-click explanation.
 if(initial.instructions>0){finish('tap');finish('arrival')}
 const hint=document.createElement('div');hint.id='learningHint';hint.hidden=true;hint.setAttribute('role','note');
@@ -74,7 +75,15 @@ function show(id,text,el){
 function block(id,floor){return document.querySelector('#roomDialog[open] [data-block="'+id+'"]')||document.querySelector('#roomSlots'+floor+' .unlock-room')}
 const choice=document.createElement('dialog');choice.id='tutorialChoice';choice.setAttribute('aria-labelledby','tutorialChoiceTitle');
 choice.innerHTML='<span class="eyebrow">YENİ BAŞLANGIÇ</span><h2 id="tutorialChoiceTitle">Kısa bir hatırlatma ister misin?</h2><p>Talimatları, blokları ve oyuncu geliştirmeyi birlikte gözden geçirelim.</p><button type="button" class="team-action" data-tutorial="yes">Evet, göster</button><button type="button" class="team-secondary" data-tutorial="no">Doğrudan oyna</button>';document.body.append(choice);
-function chooseTutorial(enabled){const next=enabled?[]:['tap','arrival','blocks-basics','assistant','train','player-stats','match','quick-upgrade'];try{localStorage.setItem(key,JSON.stringify(next))}catch{}done.clear();next.forEach(id=>done.add(id));following=false;arrival=null;cooldown=0;choice.close();update();}
+const introduction=GameUI.selection({id:'clubIntroduction',title:'Hoş geldin, hocam',eyebrow:'KULÜP SORUMLUSU',content:'<div class="club-introduction-scene"><img alt="Kulüp sorumlusu" width="108" height="132"><p id="clubIntroductionLine" aria-live="polite" aria-atomic="true"></p></div>',onClose:()=>{cooldown=0;update();}});
+introduction.dialog.setAttribute('aria-describedby','clubIntroductionLine');
+const introductionLines=['Mahalle kulübümüzün başına geçtiğin için teşekkür ederim.','Ligde dört maç gerideyiz. Toparlanmak için sana ihtiyacımız var.','Sezonu ilk dörtte bitirirsen, önünde yeni kariyer fırsatları açılabilir.'];
+let introductionIndex=0;
+const introductionNext=introduction.dialog.querySelector('footer button'),introductionCount=introduction.dialog.querySelector('footer span');
+function paintIntroduction(){introduction.dialog.querySelector('#clubIntroductionLine').textContent=introductionLines[introductionIndex];introductionCount.textContent=(introductionIndex+1)+' / '+introductionLines.length;introductionNext.textContent=introductionIndex===introductionLines.length-1?'Başlayalım':'Devam';}
+function showIntroduction(){const appearance=TeamAppearance.generate(MatchRules.seeded('mahalle-club-guide-v1'));appearance.palette.shirt='#527d70';appearance.palette.hair='#8b938a';appearance.hairGradient=null;for(const part of appearance.parts){if(part.colorSource==='shirt'||part.path.includes('/Shirts/'))part.tint='#527d70';if(part.id==='hair'||part.id.startsWith('brow-'))part.tint='#8b938a';}introduction.dialog.querySelector('img').src=TeamAppearance.portrait(appearance);introductionIndex=0;paintIntroduction();clear();finish('club-introduction');introduction.open();}
+introductionNext.onclick=()=>{window.GameAudio?.uiClick?.();if(introductionIndex<introductionLines.length-1){introductionIndex++;paintIntroduction();}else introduction.close();};
+function chooseTutorial(enabled){const introduce=enabled&&!done.has('club-introduction')&&initial.instructions===0&&!LeagueRules.config.bal&&LeagueSeason.progress().played===0;const next=enabled?[]:['tap','arrival','blocks-basics','assistant','train','player-stats','match','quick-upgrade'];try{localStorage.setItem(key,JSON.stringify(next))}catch{}done.clear();next.forEach(id=>done.add(id));following=false;arrival=null;cooldown=0;choice.close();if(introduce)showIntroduction();else update();}
 choice.querySelector('[data-tutorial=yes]').onclick=()=>chooseTutorial(true);choice.querySelector('[data-tutorial=no]').onclick=()=>chooseTutorial(false);choice.addEventListener('cancel',e=>{e.preventDefault();chooseTutorial(false)});
 let incomeArrival=guideProgress.incomeAmount??null,incomeReceipts=0;
 window.addEventListener('spiker-income-arrived',e=>{incomeArrival=e.detail.cash;incomeReceipts++;guideProgress.incomeAmount=incomeArrival;saveGuide();setTimeout(update,0);});
@@ -113,6 +122,7 @@ return false;
 }
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&guided?.review){e.preventDefault();e.stopImmediatePropagation();endGuide(false);}},true);
 function update(){if(window.PlayerProfile?.needsCreation){clear();return;}
+ if(introduction.dialog.open){clear();return;}
  if(document.getElementById('settingsDialog')?.open&&!guided?.review){clear();return;}
  for(const id of [...pausedGuides]){const away=id==='income'?document.querySelector('.dashboard').hidden:(id==='social'||id==='social-growth')?document.getElementById('socialPanel')?.hidden&&document.getElementById('socialJourneyScreen')?.hidden:id==='camp'?!document.getElementById('campDialog')?.open:id==='skills'?!document.getElementById('playerDialog')?.open:false;if(away)pausedGuides.delete(id);}
 

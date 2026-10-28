@@ -106,6 +106,14 @@ Bunlar yeni bir palet önerisi değil, mevcut referanslardır:
 
 ## Tutorial: tek davranış, bilinen istisnalar
 
+### Mahalle başlangıç konuşması — 28 Ekim
+
+İlk profil oluşturulduktan/kapatıldıktan sonra tutorial tercihi sorulur. Yalnız yeni Mahalle başlangıcında “Evet, göster” seçilince `#clubIntroduction` açılır. Mevcut `GameUI.selection` kabuğu kullanılır: sıcak kâğıt, ortak karartma, başlık/kapatma, altta adım sayısı ve Devam; son replikte Başlayalım. Üç kısa replik kulübe hoş geldin, dört maç geride olma ve ilk dörtte bitirmenin kariyer fırsatlarını anlatır. Bu diyalog lig takvimini/puanlarını değiştirmez.
+
+Kulüp sorumlusu mevcut `TeamAppearance` renderer’ıyla sabit seed’den üretilir; oyuncunun avatarı veya yeni bir çizim değildir. Portre solda 108×132, 350px altında 88×116; yazı sağda esnek sütun. Mobil ve masaüstünde pencere en çok 366px, `height:fit-content`; tam boy boş menüye dönüşmez. Kısa/yatay ekranda yalnız içerik alanı kayar, alt düğme ve kapatma görünür kalır. Açık/koyu tema ortak tokenları izler.
+
+Konuşma açıkken normal tutorial gizlidir. Tamamlanınca, × veya Escape ile kapatılınca normal ilk talimat adımı devam eder. Göründüğü anda `club-introduction` onboarding kaydı tutulur; ilk replikte yenilemek bile yeniden konuşma çıkarmaz. “Doğrudan oyna”, mevcut ilerleyiş, sonraki ligler ve manuel özellik rehberleri bu konuşmayı açmaz. Yeni kayıt ve açık sıfırlama yeniden başlangıç sayılır. Test: `test-club-introduction.cjs` gerçek profil oluşturma/evet/hayır, üç replik, normal tutoriala dönüş, yarıda yenileme, Escape ve 10 tema/viewport kombinasyonunu denetler. Görseller `audits/club-introduction-{light,dark,small}.png`; gerçek görsel incelemede içeriğe göre boylanma kontrol edilmiştir.
+
 ### Ortak sistemin bugünkü işleyişi
 
 - Sahibi `onboarding.js`, API `GuidedTutorial`.

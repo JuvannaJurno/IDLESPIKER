@@ -1,4 +1,15 @@
 /* Shared visual families. Mobile is the reference at every viewport width. */
+/* A short first-day conversation, using the shared selection modal shell. */
+#clubIntroduction{height:fit-content;min-height:0;max-height:calc(100dvh - 24px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px))}
+#clubIntroduction .selection-header h2{font-size:20px;line-height:1.25}
+#clubIntroduction .selection-header>div{min-width:0}
+#clubIntroduction .selection-close{flex:0 0 38px;margin-left:8px}
+.club-introduction-scene{display:grid;grid-template-columns:108px minmax(0,1fr);align-items:center;gap:14px;min-height:156px}
+.club-introduction-scene img{display:block;width:108px;height:132px;object-fit:contain;align-self:end;border-radius:16px;background:var(--ui-soft)}
+#clubIntroductionLine{margin:0;color:var(--ui-ink);font-size:15px;line-height:1.65;overflow-wrap:anywhere}
+#clubIntroduction footer span{font-variant-numeric:tabular-nums;letter-spacing:2px}
+#clubIntroduction footer button{min-height:44px}
+@media(max-width:350px){.club-introduction-scene{grid-template-columns:88px minmax(0,1fr);gap:12px}.club-introduction-scene img{width:88px;height:116px}#clubIntroductionLine{font-size:14px}}
 :root{--ui-paper:#f9f5e6;--ui-ink:#466b70;--ui-muted:#778b80;--ui-edge:#dce1ce;--ui-outline:#fff9e7;--ui-soft:#e9eddd;--ui-focus:#779c87;--ui-tutorial:#fff7dd;--ui-tutorial-ink:#665437;--ui-tutorial-edge:#e4cd96;--ui-transition-paper:#fdf4db;--ui-transition-ink:#365f53;--ui-tutorial-tag:#efe5c9;--ui-tutorial-tag-ink:#66522f;--ui-backdrop:rgb(24 43 41 / 60%);--ui-spotlight:rgb(17 29 38 / 68%)}
 html[data-theme=dark]{--ui-paper:#293d3b;--ui-ink:#e1e8d7;--ui-muted:#b8c9b8;--ui-edge:#607361;--ui-outline:#607361;--ui-soft:#344c41;--ui-focus:#a1bea5;--ui-tutorial:#293d3b;--ui-tutorial-ink:#e1e8d7;--ui-tutorial-edge:#8ba183;--ui-transition-paper:#293d3b;--ui-transition-ink:#e1e8d7;--ui-tutorial-tag:#344c41;--ui-tutorial-tag-ink:#e1e8d7;--ui-backdrop:rgb(8 25 25 / 79%)}
 html dialog::backdrop{background:var(--ui-backdrop);backdrop-filter:blur(2px)}
