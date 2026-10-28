@@ -1,6 +1,6 @@
 /* Shared visual families. Mobile is the reference at every viewport width. */
 /* Visual-novel staging; the dialogue paper keeps the tutorial tokens. */
-html[data-theme] dialog#clubIntroduction{height:fit-content;min-height:0;max-height:calc(100dvh - 24px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));padding:0;border:0!important;background:transparent!important;box-shadow:none!important;overflow:visible;border-radius:0}
+html[data-theme] dialog#clubIntroduction{--club-intro-bottom:calc(var(--app-view-bottom,0px) + var(--app-nav-height,68px) + 16px + var(--app-safe-bottom,env(safe-area-inset-bottom,0px)));top:auto;bottom:var(--club-intro-bottom);margin:0 auto;height:fit-content;min-height:0;max-height:calc(100dvh - var(--club-intro-bottom) - 12px - var(--app-safe-top,env(safe-area-inset-top,0px)));padding:0;border:0!important;background:transparent!important;box-shadow:none!important;overflow:visible;border-radius:0}
 #clubIntroduction .selection-header{position:absolute;inset:8px 8px auto auto;z-index:2;padding:0;border:0;background:transparent}
 #clubIntroduction .selection-header>div{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 #clubIntroduction .selection-close{flex:0 0 38px;background:var(--ui-tutorial);color:var(--ui-tutorial-ink);border-color:var(--ui-tutorial-edge);margin:0}
@@ -15,7 +15,7 @@ html[data-theme=dark] #clubIntroductionLine{color:var(--ui-tutorial-ink)!importa
 #clubIntroduction footer span{font-variant-numeric:tabular-nums;letter-spacing:2px;color:var(--ui-tutorial-ink)}
 #clubIntroduction footer button{min-height:44px}
 @media(max-width:350px){.club-introduction-dialogue{padding:25px 16px 10px;min-height:116px}#clubIntroductionLine{font-size:14px}.club-introduction-actor{padding-left:12px}}
-@media(max-height:450px){.club-introduction-actor{height:80px}.club-introduction-dialogue{min-height:0;padding-top:23px}#clubIntroductionLine{font-size:14px}#clubIntroduction footer{padding-top:4px;padding-bottom:8px}}
+@media(max-height:450px){html[data-theme] dialog#clubIntroduction{--club-intro-bottom:calc(var(--app-view-bottom,0px) + 12px + var(--app-safe-bottom,env(safe-area-inset-bottom,0px)))}.club-introduction-actor{height:80px}.club-introduction-dialogue{min-height:0;padding-top:23px}#clubIntroductionLine{font-size:14px}#clubIntroduction footer{padding-top:4px;padding-bottom:8px}}
 :root{--ui-paper:#f9f5e6;--ui-ink:#466b70;--ui-muted:#778b80;--ui-edge:#dce1ce;--ui-outline:#fff9e7;--ui-soft:#e9eddd;--ui-focus:#779c87;--ui-tutorial:#fff7dd;--ui-tutorial-ink:#665437;--ui-tutorial-edge:#e4cd96;--ui-transition-paper:#fdf4db;--ui-transition-ink:#365f53;--ui-tutorial-tag:#efe5c9;--ui-tutorial-tag-ink:#66522f;--ui-backdrop:rgb(24 43 41 / 60%);--ui-spotlight:rgb(17 29 38 / 68%)}
 html[data-theme=dark]{--ui-paper:#293d3b;--ui-ink:#e1e8d7;--ui-muted:#b8c9b8;--ui-edge:#607361;--ui-outline:#607361;--ui-soft:#344c41;--ui-focus:#a1bea5;--ui-tutorial:#293d3b;--ui-tutorial-ink:#e1e8d7;--ui-tutorial-edge:#8ba183;--ui-transition-paper:#293d3b;--ui-transition-ink:#e1e8d7;--ui-tutorial-tag:#344c41;--ui-tutorial-tag-ink:#e1e8d7;--ui-backdrop:rgb(8 25 25 / 79%)}
 html dialog::backdrop{background:var(--ui-backdrop);backdrop-filter:blur(2px)}
