@@ -82,12 +82,12 @@ if(state.stage==='bal'&&club()&&(state.division>=3||GuidedTutorial.completed('in
 if(club()&&RoomSystem.overtimeStarted?.()&&visible(q('#matchOvertimeCountdown:not([hidden])'))&&!GuidedTutorial.completed('match-overtime')&&!GuidedTutorial.paused('match-overtime')){GuidedTutorial.start([{id:'overtime-started',target:()=>q('#matchOvertimeCountdown:not([hidden])'),text:'Maç mesaisi başladı! Maçı beklerken ve izlerken otomatik üretim aynı hızda sürer. Çalışılan süre ortak vardiyandan düşer. Bu sayaç, bu maç için kalan mesaiyi gösterir; süre bitince mesai durur.'}],null,'match-overtime');return true;}
 if(club()&&window.RoomSystem.snapshot().shiftTutorialPending&&!GuidedTutorial.completed('shift-unlock')&&!GuidedTutorial.paused('shift-unlock')){GuidedTutorial.start([{id:'shift-ready',target:()=>q('#dailyShiftStatus:not([hidden])')||q('.shift-summary'),text:'Vardiyayı açtın! Oyunda olmadığında da talimatlar çalışır. Kalan süren burada görünür; süre dolunca 1 saat dinlenir.'}],()=>RoomSystem.acknowledgeShiftTutorial(),'shift-unlock');return true;}
 if(state.stage==='bal'&&(state.division||1)<3&&club()&&!GuidedTutorial.completed('income')&&!GuidedTutorial.paused('income')){
-const incomeInstructions=state.instructions;let incomeReceiptsBefore=incomeReceipts;
+const incomeInstructions=state.instructions;
 GuidedTutorial.start([
 {id:'income-center',skip:()=>RoomSystem.tutorialState().openDepartments.includes(2),target:()=>q('.tier[data-floor="2"] .base-room'),click:'.department-buy[data-floor="2"]',done:()=>RoomSystem.tutorialState().openDepartments.includes(2),text:'[[Ücretsiz aç]] ile Gelir Merkezi’ni aç. Talimatlarla bütçe kazandırır.'},
 {id:'income-open',skip:()=>RoomSystem.tutorialState().openDepartments.includes(2),target:()=>q('.department-buy[data-floor="2"]'),click:'.department-buy[data-floor="2"]',done:()=>RoomSystem.tutorialState().openDepartments.includes(2),text:'[[Ücretsiz aç]] ile Gelir Merkezi’ni etkinleştir.'},
 {id:'income-send',target:()=>q('#energyButton'),click:'#energyButton',done:()=>RoomSystem.tutorialState().instructions>incomeInstructions,text:'[[Talimat ver]] düğmesine dokun. Talimatın Gelir Merkezi’ne gidişini izleyelim.'},
-{id:'income-conversion',allowNext:true,enter:()=>{incomeReceiptsBefore=incomeReceipts;},done:()=>incomeReceipts>incomeReceiptsBefore,target:incomeFlowTarget,text:'Talimatlar buraya geldiğinde üretim ilerler. Şimdilik her 10 talimatta bütçe kazanıyorsun.'},
+{id:'income-conversion',allowNext:true,target:incomeFlowTarget,text:'Talimatlar buraya geldiğinde üretim ilerler. Her 10 talimat tamamlandığında bütçe kazanırsın.'},
 ],null,'income');return true;}
 if(!q('#socialPanel')?.hidden&&state.division>=3&&!GuidedTutorial.completed('social')&&!GuidedTutorial.paused('social')){
 const followersBefore=socialFollowerCount(),published=()=>socialFollowerCount()>followersBefore;

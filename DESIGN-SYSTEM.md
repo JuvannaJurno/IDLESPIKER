@@ -859,3 +859,10 @@ Kadroyu incele / Başlangıç kadrosuna bak / sezon sonu Oyuncularına bak genel
 Arma oluşturucunun 16 ana ve 12 vurgu rengi daha doygun orman yeşili, mavi, bordo, mor, lacivert, altın, turuncu ve canlı vurgu tonlarıyla güncellendi. Başlangıç orman yeşili/altın sarısıdır. Renk seçici, HEX alanı ve kayıtlı özel renkler korunur. Rakip takım paleti ayrı eski listede korunur; sadece editör önerilerini değiştirmek rakip forma/saha renklerini değiştirmez.
 
 Doğrulama: test-roster-advice-crest-colors.cjs, genel eylemde oyuncuya yönlenmeme, hazır öneride doğru hedef, gerçek SVG/picker değişimi; test-board-presentation.cjs ve test-crest-png.cjs geçti. audits/crest-vivid-preview.png ve crest-vivid-palette.png incelendi.
+
+
+### 28 Ekim — Bütçe açıklaması kullanıcı onayı ve aynı gün kamp hazır oluşu
+
+Gelir Merkezi rehberinin income-conversion açıklaması bütçe ödemesi gelince otomatik geçmez; Anladım kullanıcı eylemini bekler. Şimdilik ifadesi çıkarılmıştır. Kamp ilk giriş rehberi bu aktif rehberi bölmez; kapandıktan sonra ortak contextualGuide sırasına girer. CampSystem.advance önbelleği gün/aşamaya ek olarak oyuncu kimliği/seviyesi, transfer kampı ve kamp duyuru durumunu içerir; aynı gün hazırlık değişince yenileme gerekmez. Yeni sürekli çizim veya ek polling yoktur.
+
+Test: test-camp-income-order.cjs kamp yokken başlar; gerçek yükseltmeyle oyuncuyu bütçe tutorialı sırasında hazır eder, bütçe ödeme olayı gönderir, açıklamanın 1,2 saniye sonra hâlâ açık kaldığını doğrular. Anladım sonrasında kamp girişi ve seçme rehberi aynı oturumda görünür; giriş tekrar etmez. test-camp-tutorial-short.cjs ve görülmüş tutorialı tekrar göstermeme testi de kontrol edilir.
