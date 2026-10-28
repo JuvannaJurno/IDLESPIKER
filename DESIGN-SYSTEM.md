@@ -850,3 +850,12 @@ Kamp ilk görünür olduğunda ortak GuidedTutorial içinde tek adımlık camp-e
 Vardiya Planı Bölgesel aşamanın mevcut bal_shift kartıdır (eski adı Vardiya Koordinasyonu). Ayrı ikinci vardiya kartı eklenmez. Eski offline_time tanımı yalnız kayıt uyumluluğu için korunur, aşama 2 olarak işaretlidir ve Mahallede görünmez. Süre, fiyat ve ek özellikler aynı.
 
 Hızlı İnternet ve diğer standart ek hatlar ihtimal atmaz; ana talimat başına kapasite birikir. 1/5 düzeyinde her beş ana talimatta bir, 5/5 düzeyinde her ana talimatta bir ek talimat. laneCarry kesirleri kayıtta saklanır. Manuel ve otomatik akış aynı hesabı kullanır; çevrimdışı/mesai toplam üretim oranı korunur. Açıklamalar şans değil düzenli kapasite der. test-instruction-capacity.cjs ve test-instruction-capacity-browser.cjs beş seviyede tam sayıları, kayıt devamını, ikinci raydaki gerçek paketleri ve vardiya kartının aşamasını kontrol eder.
+
+
+### 28 Ekim — Genel kadro yönlendirmesi ve arma hazır renkleri
+
+Kadroyu incele / Başlangıç kadrosuna bak / sezon sonu Oyuncularına bak genel eylemleri TeamView.showRoster ile As kadrosunun başına gider; bir oyuncuyu odaklayıp turuncu vurgulamaz. Rapor zamanı gelmiş belirli oyuncu yükseltme önerisi TeamView.reveal ile gerçek hedefe gider. Karşılaştırma ve eksik slot akışı korunur.
+
+Arma oluşturucunun 16 ana ve 12 vurgu rengi daha doygun orman yeşili, mavi, bordo, mor, lacivert, altın, turuncu ve canlı vurgu tonlarıyla güncellendi. Başlangıç orman yeşili/altın sarısıdır. Renk seçici, HEX alanı ve kayıtlı özel renkler korunur. Rakip takım paleti ayrı eski listede korunur; sadece editör önerilerini değiştirmek rakip forma/saha renklerini değiştirmez.
+
+Doğrulama: test-roster-advice-crest-colors.cjs, genel eylemde oyuncuya yönlenmeme, hazır öneride doğru hedef, gerçek SVG/picker değişimi; test-board-presentation.cjs ve test-crest-png.cjs geçti. audits/crest-vivid-preview.png ve crest-vivid-palette.png incelendi.
