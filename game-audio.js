@@ -9,7 +9,7 @@ const voices=[],pending=new WeakSet(),timers=new Set();
 function media(src,group,scale=1,loop=false){const a=new Audio(src);a.preload='auto';a.loop=loop;const v={a,group,scale,busy:false,timer:null};voices.push(v);a.load();return v}
 const dialogueNotes=[1,2,3,4].map(n=>media('female_voice/female_light_'+n+'.ogg','effects',.42));let dialogueStep=0;
 function stopDialogue(){for(const v of dialogueNotes)stop(v);}
-function dialogueNote(){if(!allowed()||mode!=='menu'||levels.effects<=0)return;const v=dialogueNotes[dialogueStep++%dialogueNotes.length];stopDialogue();v.busy=true;v.a.currentTime=0;v.a.onended=v.a.onerror=()=>stop(v);play(v);}
+function dialogueNote(){if(!allowed()||mode!=='menu'||levels.effects<=0)return;if(dialogueNotes.some(v=>v.busy||pending.has(v.a)))return false;const v=dialogueNotes[dialogueStep++%dialogueNotes.length];v.busy=true;v.a.currentTime=0;v.a.onended=v.a.onerror=()=>stop(v);play(v);}
 const notifySound=media('assets/audio/notify-placeholder.wav','effects',.65);
 const pointMusicVoices=new Map();let pointMusicVoice=null;
 function stopPointMusic(){if(pointMusicVoice)stop(pointMusicVoice);pointMusicVoice=null;}
@@ -66,7 +66,7 @@ function fadeOut(v,duration=1500){
 }
 function stop(v){cancelFade(v);clearTimeout(v.timer);v.timer=null;v.busy=false;v.a.pause();v.a.onplaying=null}
 function play(v){if(pending.has(v.a)||!v.a.paused)return;pending.add(v.a);v.a.volume=levels[v.group]*v.scale;Promise.resolve(v.a.play()).then(()=>{if(!allowed()||(v.group==='music'&&(v.pointMusic?(!v.busy||(mode==='match'&&rallyActive&&!v.fade)):mode!=='menu'))||(v.group==='crowd'&&(mode!=='match'||(v!==bed&&v!==rallyBed&&rallyActive&&!v.fade)))||(v.group!=='music'&&v!==bed&&v!==rallyBed&&!v.busy))stop(v)}).catch(()=>{v.busy=false}).finally(()=>pending.delete(v.a))}
-function clearShots(){stopPointMusic();for(const t of timers)clearTimeout(t);timers.clear();for(const v of voices)if(v.group!=='music'&&v!==bed&&v!==rallyBed)stop(v)}
+function clearShots(){stopPointMusic();for(const t of timers)clearTimeout(t);timers.clear();for(const v of voices)if(v.group!=='music'&&v!==bed&&v!==rallyBed&&!dialogueNotes.includes(v))stop(v)}
 function sync(){if(!allowed()||finished)stopPointMusic();else if(mode==='match'&&rallyActive&&pointMusicVoice)fadeOut(pointMusicVoice,450);
  if(!allowed()||mode!=='menu'||levels.effects<=0)stopDrawNotes();
  if(!allowed()){haltMusic();for(const v of voices)if(v.group!=='music')stop(v);clearShots();return}

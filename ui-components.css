@@ -49,3 +49,9 @@ html[data-theme=dark] .selection-dialog :is(.profile-court-choice,.profile-track
 #clubIntroduction.is-speaking .club-introduction-actor img{animation:club-guide-speaking .28s ease-in-out infinite alternate;transform-origin:center bottom}
 @keyframes club-guide-speaking{from{transform:translateY(0)}to{transform:translateY(-4px)}}
 @media(prefers-reduced-motion:reduce){#clubIntroduction.is-speaking .club-introduction-actor img{animation:none}}
+
+/* Guide is a complete native figure, with room for the speaking motion. */
+#clubIntroduction .club-introduction-actor{height:clamp(120px,23dvh,190px);padding:6px 24px 2px;box-sizing:border-box}
+#clubIntroduction .club-introduction-actor img{width:168px;height:100%;object-fit:contain;object-position:center bottom}
+#clubIntroduction .club-introduction-dialogue{margin-top:8px}
+@media(max-height:450px){#clubIntroduction .club-introduction-actor{height:100px;padding-top:5px}}
