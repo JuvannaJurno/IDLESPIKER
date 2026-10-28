@@ -308,3 +308,25 @@ html[data-theme=dark] .camp-alert-copy small{background:#263e36!important;color:
 #settingsDialog #closeSettings{position:static;inset:auto;flex:0 0 38px;width:38px;height:38px;margin:0;transform:none}
 #settingsDialog .settings-scroll{min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:0 18px 18px}
 #settingsDialog :is(#soundToggle,#vibrationToggle){inset:auto}
+
+/* Settings share one compact, stationary header and one scroll surface. */
+#settingsDialog .settings-header{border-bottom:1px solid var(--ui-edge);padding-bottom:14px;margin-bottom:14px}
+#settingsDialog .settings-group{border-radius:14px;padding:0 14px;margin-bottom:12px}
+#settingsDialog .settings-group h3{font-size:11px;letter-spacing:.3px;text-transform:none;color:var(--ui-ink);padding:14px 0 8px}
+#settingsDialog .settings-row{gap:12px;min-height:54px;font-weight:500;color:var(--ui-ink)}
+#settingsDialog .settings-row>span{flex:1;min-width:0}
+#settingsDialog .settings-row input[type=range]{width:48%;min-width:75px;flex:0 1 48%;accent-color:#759987}
+#settingsDialog .settings-row select{max-width:58%;min-width:0}
+#settingsDialog .cheat-drawer>summary{min-height:54px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;gap:12px}
+#settingsDialog .cheat-drawer>summary small{display:block;margin-top:4px;font-size:10px;font-weight:400;color:var(--ui-muted)}
+#settingsDialog .cheat-drawer[open]>summary{border-bottom:1px solid var(--ui-edge)}
+#settingsDialog .cheat-warning{font-size:11px;line-height:1.6;padding:10px 0;color:var(--ui-muted)}
+#settingsDialog #playtestSettings{margin:14px 0;padding:0 12px 12px;background:var(--ui-soft);border:1px solid var(--ui-edge)}
+#settingsDialog .reset-section{padding:12px 0 0;border-top:1px solid var(--ui-edge)}
+#settingsDialog .reset-section p{font-size:10px;line-height:1.5;text-align:center}
+#settingsDialog .cheat-drawer-content>.settings-row{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:14px}
+#settingsDialog .settings-row>span small{display:block;margin-top:5px;font-size:10px;line-height:1.5;font-weight:400;color:var(--ui-muted)}
+#settingsDialog .settings-row>button{flex:none;min-height:40px;margin:0}
+#settingsDialog .epic-team-error{grid-column:1/-1}
+#settingsDialog .epic-team-error:empty{display:none}
+#settingsDialog .cheat-drawer-content>.settings-row>button{width:96px!important;min-width:96px!important;max-width:96px;white-space:normal;box-sizing:border-box;padding:9px 10px!important;line-height:1.4}

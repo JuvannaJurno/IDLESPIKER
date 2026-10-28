@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded',()=>{
  section('Ses',['soundToggle','volume-music','volume-crowd','volume-effects']);
  const fast=document.querySelector('#testAutoclicker')?.closest('.settings-row')?.querySelector('span');if(fast)fast.textContent='Hızlı test · 100× talimat';
  const cheats=document.createElement('details');cheats.id='cheatDrawer';cheats.className='settings-group cheat-drawer';
- cheats.innerHTML='<summary><span>Hileler<small>Test araçları</small></span><b aria-hidden="true">›</b></summary><div class="cheat-drawer-content"><p class="cheat-warning" role="note"><strong>Normal ilerlemeyi bozar.</strong> Hileleri kullanmak oyunun gelişim dengesini değiştirir. Aşama değiştirdiğinde sezon ilerlemesi sıfırlanır.</p></div>';
+ cheats.innerHTML='<summary><span>Hileler<small>Denemeler ve oyun kaydı</small></span><b aria-hidden="true">›</b></summary><div class="cheat-drawer-content"><p class="cheat-warning" role="note"><strong>İlerleme araçları</strong> Hızlı test ve aşama değiştirmek oyun dengesini değiştirir. Oyun testi kaydı ilerlemene dokunmaz.</p></div>';
  for(const id of ['testAutoclicker','stageTestGo']){const row=document.getElementById(id)?.closest('.settings-row');if(row)cheats.querySelector('.cheat-drawer-content').append(row);}
  const tutorial=document.getElementById('reviewTutorials')?.closest('.tutorial-review-row');if(tutorial){const note=tutorial.nextElementSibling?.matches('.tutorial-review-note')?tutorial.nextElementSibling:null;cheats.querySelector('.cheat-drawer-content').append(tutorial);if(note)cheats.querySelector('.cheat-drawer-content').append(note);}
  dialog.append(cheats);

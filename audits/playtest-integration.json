@@ -1,13 +1,13 @@
 {
   "events": 133,
-  "codeLength": 10420,
-  "run": "8e680963-17eb-4fb0-8232-0e53d43766b1",
+  "codeLength": 10482,
+  "run": "eba32f46-7243-44c1-93ad-17311cd0c352",
   "safety": {
     "samePlayers": true,
     "sameRoom": true,
     "randomCalls": 0
   },
-  "completedAt": 1793231286974,
+  "completedAt": 1793231776416,
   "types": [
     "oturum",
     "başlangıç",

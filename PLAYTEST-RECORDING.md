@@ -4,7 +4,7 @@
 
 Kayıt bu sürüm açıldığı andan itibaren otomatik tutulur. Üçüncü aşamanın bütün kendi maçları tamamlanınca kod arka planda hazırlanır; oyunun ilerlemesi kodu beklemez.
 
-1. Test eden kişi **Ayarlar → Oyun testi → Test kodunu al** bölümüne girer.
+1. Test eden kişi **Ayarlar → Hileler → Oyun testi → Test kodunu al** bölümüne girer.
 2. Kodu kopyalar veya **Kodu dosya olarak indir** ile `.txt` dosyasını paylaşır. Uzun kayıtlarda dosya, mesaj uygulamalarının metni kesmesini önler.
 3. İnceleyen kişi **Kodu incele** bağlantısından `playtest-report.html` sayfasını açar; kodu yapıştırır veya dosyayı seçer.
 
