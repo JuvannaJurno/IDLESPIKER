@@ -55,3 +55,7 @@ html[data-theme=dark] .selection-dialog :is(.profile-court-choice,.profile-track
 #clubIntroduction .club-introduction-actor img{width:168px;height:100%;object-fit:contain;object-position:center bottom}
 #clubIntroduction .club-introduction-dialogue{margin-top:8px}
 @media(max-height:450px){#clubIntroduction .club-introduction-actor{height:100px;padding-top:5px}}
+
+/* Upper-body guide stands behind the dialogue paper, hiding the crop edge. */
+#clubIntroduction .club-introduction-actor img{width:210px;object-position:left bottom}
+#clubIntroduction .club-introduction-dialogue{margin-top:-12px;z-index:1}

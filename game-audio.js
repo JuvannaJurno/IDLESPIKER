@@ -9,7 +9,7 @@ const voices=[],pending=new WeakSet(),timers=new Set();
 function media(src,group,scale=1,loop=false){const a=new Audio(src);a.preload='auto';a.loop=loop;const v={a,group,scale,busy:false,timer:null};voices.push(v);a.load();return v}
 const dialogueNotes=[1,2,3,4].map(n=>media('female_voice/female_light_'+n+'.ogg','effects',.42));let dialogueStep=0;
 function stopDialogue(){for(const v of dialogueNotes)stop(v);}
-function dialogueNote(){if(!allowed()||mode!=='menu'||levels.effects<=0)return;if(dialogueNotes.some(v=>v.busy||pending.has(v.a)))return false;const v=dialogueNotes[dialogueStep++%dialogueNotes.length];v.busy=true;v.a.currentTime=0;v.a.onended=v.a.onerror=()=>stop(v);play(v);}
+function dialogueNote(final=false){if(!allowed()||mode!=='menu'||levels.effects<=0)return;if(dialogueNotes.some(v=>v.dialogueFinal&&(v.busy||pending.has(v.a))))return false;stopDialogue();const v=dialogueNotes[dialogueStep++%dialogueNotes.length];v.dialogueFinal=final===true;v.busy=true;v.a.currentTime=0;v.a.onended=v.a.onerror=()=>{v.dialogueFinal=false;stop(v);};play(v);}
 const notifySound=media('assets/audio/notify-placeholder.wav','effects',.65);
 const pointMusicVoices=new Map();let pointMusicVoice=null;
 function stopPointMusic(){if(pointMusicVoice)stop(pointMusicVoice);pointMusicVoice=null;}

@@ -1,34 +1,45 @@
 [
   {
     "type": "playing",
-    "src": "http://localhost:49621/female_voice/female_light_1.ogg",
+    "src": "http://localhost:39159/female_voice/female_light_1.ogg",
     "time": 0
   },
   {
     "type": "pause",
-    "src": "http://localhost:49621/female_voice/female_light_1.ogg",
-    "time": 0.28458,
+    "src": "http://localhost:39159/female_voice/female_light_1.ogg",
+    "time": 0.058155,
     "duration": 0.28458
   },
   {
-    "type": "ended",
-    "src": "http://localhost:49621/female_voice/female_light_1.ogg",
-    "time": 0.28458
-  },
-  {
     "type": "playing",
-    "src": "http://localhost:49621/female_voice/female_light_2.ogg",
+    "src": "http://localhost:39159/female_voice/female_light_2.ogg",
     "time": 0
   },
   {
     "type": "pause",
-    "src": "http://localhost:49621/female_voice/female_light_2.ogg",
+    "src": "http://localhost:39159/female_voice/female_light_2.ogg",
     "time": 0.258685,
     "duration": 0.258685
   },
   {
     "type": "ended",
-    "src": "http://localhost:49621/female_voice/female_light_2.ogg",
+    "src": "http://localhost:39159/female_voice/female_light_2.ogg",
     "time": 0.258685
+  },
+  {
+    "type": "playing",
+    "src": "http://localhost:39159/female_voice/female_light_3.ogg",
+    "time": 0
+  },
+  {
+    "type": "pause",
+    "src": "http://localhost:39159/female_voice/female_light_3.ogg",
+    "time": 0.28254,
+    "duration": 0.28254
+  },
+  {
+    "type": "ended",
+    "src": "http://localhost:39159/female_voice/female_light_3.ogg",
+    "time": 0.28254
   }
 ]
