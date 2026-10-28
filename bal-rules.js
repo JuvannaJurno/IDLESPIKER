@@ -5,7 +5,7 @@ const display=v=>Number(v.toFixed(2)).toLocaleString('tr-TR');
 const departments=['Performans Merkezi','Kulüp Yönetimi','Gelir Merkezi','Teknik Ekip','Oyuncu Keşfi'];
 const definitions=[
  ['bal_coach',1,'Yardımcı Antrenör','♟',[.6,1.2,2,3,4],v=>'Saniyede +'+display(v)+' otomatik talimat.',220],
- ['bal_shift',1,'Vardiya Koordinasyonu','◷',[10,15,20,25,30].map(v=>v/60),v=>'Vardiyayı açar: '+Math.round(v*60)+' dk çevrimdışı çalışma. Bitince 1 saat dinlenir.',300],
+ ['bal_shift',1,'Vardiya Planı','◷',[10,15,20,25,30].map(v=>v/60),v=>'Vardiyayı açar: '+Math.round(v*60)+' dk çevrimdışı çalışma. Bitince 1 saat dinlenir.',300],
  ['bal_plan',1,'Çalışma Planı','↻',[40,90,160,250,360],v=>'Her 10. otomatik talimata +'+display(v)+' AP.',260],
  ['bal_position',0,'Pozisyon Antrenmanı','↗',[12,25,42,65,95],v=>'Ulaşan her talimata +'+display(v)+' AP.',220],
  ['bal_video',0,'Video Destekli Çalışma','▤',[70,160,300,500,800],v=>'Her 5. talimata +'+display(v)+' AP.',300],
@@ -23,7 +23,7 @@ const definitions=[
 const extendedIds=new Set(['bal_coach','bal_shift','bal_plan','bal_position','bal_video','bal_recovery','bal_sponsor','bal_shop','bal_fans']);
 for(const d of definitions)if(d[0]==='bal_sponsor'||d[0]==='bal_fans')d[4]=d[4].map(v=>v*10);
 const successors=[
- ['bal_coach','bal_double','Üçüncü Hat',[.2,.4,.6,.8,1],v=>'Üçüncü hat '+Math.round(v*5)+'/5 kapasitede çalışır. Her talimatta %'+Math.round(v*100)+' ihtimalle ek talimat üretir.'],
+ ['bal_coach','bal_double','Üçüncü Hat',[.2,.4,.6,.8,1],v=>'Üçüncü hat ana hattın '+Math.round(v*5)+'/5 kapasitesinde düzenli çalışır.'],
  ['bal_shift','bal_efficiency','Vardiya Verimi',[.03,.06,.09,.12,.15],v=>'Vardiyada kazanılan çevrimdışı AP payını artırır.'],
  ['bal_plan','bal_hands','Birebir Çalışma',[20,40,60,80,100],v=>'Elle verilen her talimata +'+v+' AP.'],
  ['bal_position','bal_warmstart','Maç Öncesi Isınma',[250,650,1400,2700,5000],v=>'Günün ilk 20 talimatına +'+v+' AP.'],

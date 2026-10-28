@@ -841,3 +841,12 @@ Güncel denge kaynağı CAMP-ECONOMY-BALANCE.md; önceki CAMP-PACING-REVIEW.md t
 20 sıfır kayıt dönüşünde ücretli anlık yükseltmeyle tekrar gönderim yok. Gerçek arayüzde 757.448,91 AP ile beş oyuncu 12/11/11/11/11 oldu; 14 tıklama ve 37.571,91 AP kaldı. Camp adayları doğru kapalı. audits/first-camp-return-balanced.png incelendi; mevcut portre, yıldızlar, seviye barı, pasif Hızlı Yükselt/eksik AP metni korunur. Uzun süre biriktiren kayıt ve rastgele ücretsiz yükseltme avantajı korunur.
 
 Doğrulama: audit-camp-economy-pacing.cjs 36 rota/108 sezon; aktif/beş dakikalık/çevrimdışı, ücretli/ücretsiz, tek kişiye yoğunlaşma, sosyal medyasız ve rotasyonlu maç hesabı. İlk üç aşamanın süreleri karşılaştırmada uzamadı. Çevrimdışı Bölgesel ücretli rotada ikinci kampın sezon bitiminde sürmesi ayrıca raporlandı. test-camp-economy-curve.cjs, audit-camp-cap-matrix.cjs (875 durum/113750 teklif), test-camp-training-gap.cjs, test-camp-promotion-limits.cjs, test-draft-skill-progression.cjs ve gerçek eğitim tutorialı testi geçti. Sonraki aşamaların geliri uygulanmadan tam oyun dengesi iddia edilmez.
+
+
+### 28 Ekim — İlk kamp yönlendirmesi ve düzenli hat kapasitesi
+
+Kamp ilk görünür olduğunda ortak GuidedTutorial içinde tek adımlık camp-entry yönlendirmesi vardır: kamp kartını vurgular ve açmaya yöneltir. Gelir Merkezi rehberini bekler; kamp seçiminde mevcut kısa seçim adımı sürer. Kaldırılmış yıldız/yetenek açıklamaları dönmez. Görülen giriş tekrar açılmaz. test-camp-income-order.cjs, gelir rehberinin tamamlanması → giriş → gerçek kamp açma → tekrar etmeme sırasını kontrol eder. audits/camp-first-entry.png incelendi; mevcut karartma/krem ipucu/vurgu kullanılır.
+
+Vardiya Planı Bölgesel aşamanın mevcut bal_shift kartıdır (eski adı Vardiya Koordinasyonu). Ayrı ikinci vardiya kartı eklenmez. Eski offline_time tanımı yalnız kayıt uyumluluğu için korunur, aşama 2 olarak işaretlidir ve Mahallede görünmez. Süre, fiyat ve ek özellikler aynı.
+
+Hızlı İnternet ve diğer standart ek hatlar ihtimal atmaz; ana talimat başına kapasite birikir. 1/5 düzeyinde her beş ana talimatta bir, 5/5 düzeyinde her ana talimatta bir ek talimat. laneCarry kesirleri kayıtta saklanır. Manuel ve otomatik akış aynı hesabı kullanır; çevrimdışı/mesai toplam üretim oranı korunur. Açıklamalar şans değil düzenli kapasite der. test-instruction-capacity.cjs ve test-instruction-capacity-browser.cjs beş seviyede tam sayıları, kayıt devamını, ikinci raydaki gerçek paketleri ve vardiya kartının aşamasını kontrol eder.
