@@ -1,0 +1,1013 @@
+{
+  "method": "Earned teams from deterministic economy/market runs, actual mac.html tick/MatchSkills engine with the actual squad message/setup, six starters plus libero, skills, fatigue and native rotations. Two fixed match seeds per snapshot. First regional opponent has its actual opening legendary. Fast-forwarded simulation; no render performance or complete league ranking claim.",
+  "rows": [
+    {
+      "scenario": "active-market",
+      "version": "before",
+      "division": 1,
+      "round": 1,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        6,
+        4
+      ],
+      "won": true,
+      "steps": 7949
+    },
+    {
+      "scenario": "active-market",
+      "version": "before",
+      "division": 1,
+      "round": 1,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        6,
+        4
+      ],
+      "won": true,
+      "steps": 9054
+    },
+    {
+      "scenario": "active-market",
+      "version": "before",
+      "division": 1,
+      "round": 3,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        6,
+        4
+      ],
+      "won": true,
+      "steps": 8546
+    },
+    {
+      "scenario": "active-market",
+      "version": "before",
+      "division": 1,
+      "round": 3,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        2,
+        5
+      ],
+      "won": false,
+      "steps": 6472
+    },
+    {
+      "scenario": "active-market",
+      "version": "before",
+      "division": 1,
+      "round": 5,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        5,
+        2
+      ],
+      "won": true,
+      "steps": 6306
+    },
+    {
+      "scenario": "active-market",
+      "version": "before",
+      "division": 1,
+      "round": 5,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        6,
+        4
+      ],
+      "won": true,
+      "steps": 8335
+    },
+    {
+      "scenario": "active-market",
+      "version": "before",
+      "division": 2,
+      "round": 1,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        5,
+        0
+      ],
+      "won": true,
+      "steps": 4479
+    },
+    {
+      "scenario": "active-market",
+      "version": "before",
+      "division": 2,
+      "round": 1,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        5,
+        3
+      ],
+      "won": true,
+      "steps": 9683
+    },
+    {
+      "scenario": "active-market",
+      "version": "before",
+      "division": 2,
+      "round": 7,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        5,
+        1
+      ],
+      "won": true,
+      "steps": 5215
+    },
+    {
+      "scenario": "active-market",
+      "version": "before",
+      "division": 2,
+      "round": 7,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        4,
+        6
+      ],
+      "won": false,
+      "steps": 9971
+    },
+    {
+      "scenario": "active-market",
+      "version": "before",
+      "division": 2,
+      "round": 14,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        5,
+        1
+      ],
+      "won": true,
+      "steps": 6187
+    },
+    {
+      "scenario": "active-market",
+      "version": "before",
+      "division": 2,
+      "round": 14,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        5,
+        3
+      ],
+      "won": true,
+      "steps": 6753
+    },
+    {
+      "scenario": "active-market",
+      "version": "before",
+      "division": 3,
+      "round": 1,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        5,
+        3
+      ],
+      "won": true,
+      "steps": 8138
+    },
+    {
+      "scenario": "active-market",
+      "version": "before",
+      "division": 3,
+      "round": 1,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        5,
+        0
+      ],
+      "won": true,
+      "steps": 4701
+    },
+    {
+      "scenario": "active-market",
+      "version": "before",
+      "division": 3,
+      "round": 7,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        5,
+        3
+      ],
+      "won": true,
+      "steps": 6765
+    },
+    {
+      "scenario": "active-market",
+      "version": "before",
+      "division": 3,
+      "round": 7,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        5,
+        1
+      ],
+      "won": true,
+      "steps": 4926
+    },
+    {
+      "scenario": "active-market",
+      "version": "before",
+      "division": 3,
+      "round": 14,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        5,
+        3
+      ],
+      "won": true,
+      "steps": 6282
+    },
+    {
+      "scenario": "active-market",
+      "version": "before",
+      "division": 3,
+      "round": 14,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        5,
+        2
+      ],
+      "won": true,
+      "steps": 7816
+    },
+    {
+      "scenario": "return-market",
+      "version": "before",
+      "division": 1,
+      "round": 1,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        6,
+        4
+      ],
+      "won": true,
+      "steps": 7949
+    },
+    {
+      "scenario": "return-market",
+      "version": "before",
+      "division": 1,
+      "round": 1,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        6,
+        4
+      ],
+      "won": true,
+      "steps": 9054
+    },
+    {
+      "scenario": "return-market",
+      "version": "before",
+      "division": 1,
+      "round": 3,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        6,
+        4
+      ],
+      "won": true,
+      "steps": 8546
+    },
+    {
+      "scenario": "return-market",
+      "version": "before",
+      "division": 1,
+      "round": 3,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        2,
+        5
+      ],
+      "won": false,
+      "steps": 6472
+    },
+    {
+      "scenario": "return-market",
+      "version": "before",
+      "division": 1,
+      "round": 5,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        5,
+        2
+      ],
+      "won": true,
+      "steps": 6306
+    },
+    {
+      "scenario": "return-market",
+      "version": "before",
+      "division": 1,
+      "round": 5,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        6,
+        4
+      ],
+      "won": true,
+      "steps": 8335
+    },
+    {
+      "scenario": "return-market",
+      "version": "before",
+      "division": 2,
+      "round": 1,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        5,
+        0
+      ],
+      "won": true,
+      "steps": 4480
+    },
+    {
+      "scenario": "return-market",
+      "version": "before",
+      "division": 2,
+      "round": 1,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        5,
+        0
+      ],
+      "won": true,
+      "steps": 4670
+    },
+    {
+      "scenario": "return-market",
+      "version": "before",
+      "division": 2,
+      "round": 7,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        2,
+        5
+      ],
+      "won": false,
+      "steps": 5994
+    },
+    {
+      "scenario": "return-market",
+      "version": "before",
+      "division": 2,
+      "round": 7,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        4,
+        6
+      ],
+      "won": false,
+      "steps": 9951
+    },
+    {
+      "scenario": "return-market",
+      "version": "before",
+      "division": 2,
+      "round": 14,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        9,
+        11
+      ],
+      "won": false,
+      "steps": 19563
+    },
+    {
+      "scenario": "return-market",
+      "version": "before",
+      "division": 2,
+      "round": 14,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        5,
+        3
+      ],
+      "won": true,
+      "steps": 7664
+    },
+    {
+      "scenario": "return-market",
+      "version": "before",
+      "division": 3,
+      "round": 1,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        2,
+        5
+      ],
+      "won": false,
+      "steps": 5385
+    },
+    {
+      "scenario": "return-market",
+      "version": "before",
+      "division": 3,
+      "round": 1,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        5,
+        3
+      ],
+      "won": true,
+      "steps": 7725
+    },
+    {
+      "scenario": "return-market",
+      "version": "before",
+      "division": 3,
+      "round": 7,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        2,
+        5
+      ],
+      "won": false,
+      "steps": 5915
+    },
+    {
+      "scenario": "return-market",
+      "version": "before",
+      "division": 3,
+      "round": 7,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        3,
+        5
+      ],
+      "won": false,
+      "steps": 6359
+    },
+    {
+      "scenario": "return-market",
+      "version": "before",
+      "division": 3,
+      "round": 14,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        5,
+        1
+      ],
+      "won": true,
+      "steps": 6300
+    },
+    {
+      "scenario": "return-market",
+      "version": "before",
+      "division": 3,
+      "round": 14,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        5,
+        1
+      ],
+      "won": true,
+      "steps": 5418
+    },
+    {
+      "scenario": "active-market",
+      "version": "after",
+      "division": 1,
+      "round": 1,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        6,
+        4
+      ],
+      "won": true,
+      "steps": 7949
+    },
+    {
+      "scenario": "active-market",
+      "version": "after",
+      "division": 1,
+      "round": 1,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        6,
+        4
+      ],
+      "won": true,
+      "steps": 9054
+    },
+    {
+      "scenario": "active-market",
+      "version": "after",
+      "division": 1,
+      "round": 3,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        6,
+        4
+      ],
+      "won": true,
+      "steps": 8546
+    },
+    {
+      "scenario": "active-market",
+      "version": "after",
+      "division": 1,
+      "round": 3,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        2,
+        5
+      ],
+      "won": false,
+      "steps": 6472
+    },
+    {
+      "scenario": "active-market",
+      "version": "after",
+      "division": 1,
+      "round": 5,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        5,
+        2
+      ],
+      "won": true,
+      "steps": 6306
+    },
+    {
+      "scenario": "active-market",
+      "version": "after",
+      "division": 1,
+      "round": 5,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        6,
+        4
+      ],
+      "won": true,
+      "steps": 8335
+    },
+    {
+      "scenario": "active-market",
+      "version": "after",
+      "division": 2,
+      "round": 1,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        5,
+        0
+      ],
+      "won": true,
+      "steps": 4498
+    },
+    {
+      "scenario": "active-market",
+      "version": "after",
+      "division": 2,
+      "round": 1,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        5,
+        3
+      ],
+      "won": true,
+      "steps": 9655
+    },
+    {
+      "scenario": "active-market",
+      "version": "after",
+      "division": 2,
+      "round": 7,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        5,
+        2
+      ],
+      "won": true,
+      "steps": 6029
+    },
+    {
+      "scenario": "active-market",
+      "version": "after",
+      "division": 2,
+      "round": 7,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        5,
+        3
+      ],
+      "won": true,
+      "steps": 7542
+    },
+    {
+      "scenario": "active-market",
+      "version": "after",
+      "division": 2,
+      "round": 14,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        5,
+        3
+      ],
+      "won": true,
+      "steps": 9232
+    },
+    {
+      "scenario": "active-market",
+      "version": "after",
+      "division": 2,
+      "round": 14,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        5,
+        1
+      ],
+      "won": true,
+      "steps": 6881
+    },
+    {
+      "scenario": "active-market",
+      "version": "after",
+      "division": 3,
+      "round": 1,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        5,
+        2
+      ],
+      "won": true,
+      "steps": 7767
+    },
+    {
+      "scenario": "active-market",
+      "version": "after",
+      "division": 3,
+      "round": 1,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        5,
+        0
+      ],
+      "won": true,
+      "steps": 4739
+    },
+    {
+      "scenario": "active-market",
+      "version": "after",
+      "division": 3,
+      "round": 7,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        5,
+        3
+      ],
+      "won": true,
+      "steps": 6707
+    },
+    {
+      "scenario": "active-market",
+      "version": "after",
+      "division": 3,
+      "round": 7,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        5,
+        2
+      ],
+      "won": true,
+      "steps": 5994
+    },
+    {
+      "scenario": "active-market",
+      "version": "after",
+      "division": 3,
+      "round": 14,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        5,
+        2
+      ],
+      "won": true,
+      "steps": 6323
+    },
+    {
+      "scenario": "active-market",
+      "version": "after",
+      "division": 3,
+      "round": 14,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        5,
+        1
+      ],
+      "won": true,
+      "steps": 5094
+    },
+    {
+      "scenario": "return-market",
+      "version": "after",
+      "division": 1,
+      "round": 1,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        6,
+        4
+      ],
+      "won": true,
+      "steps": 7949
+    },
+    {
+      "scenario": "return-market",
+      "version": "after",
+      "division": 1,
+      "round": 1,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        6,
+        4
+      ],
+      "won": true,
+      "steps": 9054
+    },
+    {
+      "scenario": "return-market",
+      "version": "after",
+      "division": 1,
+      "round": 3,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        6,
+        4
+      ],
+      "won": true,
+      "steps": 8546
+    },
+    {
+      "scenario": "return-market",
+      "version": "after",
+      "division": 1,
+      "round": 3,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        2,
+        5
+      ],
+      "won": false,
+      "steps": 6472
+    },
+    {
+      "scenario": "return-market",
+      "version": "after",
+      "division": 1,
+      "round": 5,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        5,
+        2
+      ],
+      "won": true,
+      "steps": 6306
+    },
+    {
+      "scenario": "return-market",
+      "version": "after",
+      "division": 1,
+      "round": 5,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        6,
+        4
+      ],
+      "won": true,
+      "steps": 8335
+    },
+    {
+      "scenario": "return-market",
+      "version": "after",
+      "division": 2,
+      "round": 1,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        5,
+        2
+      ],
+      "won": true,
+      "steps": 7897
+    },
+    {
+      "scenario": "return-market",
+      "version": "after",
+      "division": 2,
+      "round": 1,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        5,
+        0
+      ],
+      "won": true,
+      "steps": 5407
+    },
+    {
+      "scenario": "return-market",
+      "version": "after",
+      "division": 2,
+      "round": 7,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        2,
+        5
+      ],
+      "won": false,
+      "steps": 6010
+    },
+    {
+      "scenario": "return-market",
+      "version": "after",
+      "division": 2,
+      "round": 7,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        3,
+        5
+      ],
+      "won": false,
+      "steps": 10260
+    },
+    {
+      "scenario": "return-market",
+      "version": "after",
+      "division": 2,
+      "round": 14,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        2,
+        5
+      ],
+      "won": false,
+      "steps": 6781
+    },
+    {
+      "scenario": "return-market",
+      "version": "after",
+      "division": 2,
+      "round": 14,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        5,
+        3
+      ],
+      "won": true,
+      "steps": 8478
+    },
+    {
+      "scenario": "return-market",
+      "version": "after",
+      "division": 3,
+      "round": 1,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        3,
+        5
+      ],
+      "won": false,
+      "steps": 7535
+    },
+    {
+      "scenario": "return-market",
+      "version": "after",
+      "division": 3,
+      "round": 1,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        6,
+        4
+      ],
+      "won": true,
+      "steps": 10800
+    },
+    {
+      "scenario": "return-market",
+      "version": "after",
+      "division": 3,
+      "round": 7,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        2,
+        5
+      ],
+      "won": false,
+      "steps": 6216
+    },
+    {
+      "scenario": "return-market",
+      "version": "after",
+      "division": 3,
+      "round": 7,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        4,
+        6
+      ],
+      "won": false,
+      "steps": 9446
+    },
+    {
+      "scenario": "return-market",
+      "version": "after",
+      "division": 3,
+      "round": 14,
+      "seed": 91,
+      "finished": true,
+      "score": [
+        5,
+        3
+      ],
+      "won": true,
+      "steps": 6972
+    },
+    {
+      "scenario": "return-market",
+      "version": "after",
+      "division": 3,
+      "round": 14,
+      "seed": 92,
+      "finished": true,
+      "score": [
+        5,
+        3
+      ],
+      "won": true,
+      "steps": 8766
+    }
+  ]
+}

@@ -3,14 +3,24 @@ const fs=require('fs'),path=require('path'),Module=require('module'),assert=requ
 const T=require('./team-rules'),R=require('./room-rules'),C=require('./camp-rules');
 const source=fs.readFileSync(path.join(__dirname,'audit-progression-balance.cjs'),'utf8');
 function replace(code,from,to){assert(code.includes(from),'audit source anchor changed: '+from.slice(0,70));return code.replace(from,to);}
-function runtime({social=true,free=false,focus=false,matchResults=false}={}){
+function runtime({social=true,free=false,focus=false,matchResults=false,transfers=false,investments=10}={}){
  let code=source.replaceAll('console.log(', '(()=>{})(');
+ code=replace(code,'for(let n=0;n<10;n++){const options=',`for(let n=0;n<${investments};n++){const options=`);
  // Mahalle has no offline shift. Stay online until the actual unlock exists;
  // otherwise the legacy offline profile stalls forever before its first season.
  code=code.replaceAll('policy.offline&&wall-start>=300','policy.offline&&wall-start>=300&&R.effects(state).offlineHours>0');
  code=replace(code,'const players=T.generate();Math.random=old;',`const descriptor=Object.getOwnPropertyDescriptor(globalThis,'crypto');
  Object.defineProperty(globalThis,'crypto',{configurable:true,value:{getRandomValues(a){for(let i=0;i<a.length;i++)a[i]=Math.floor(rng()*4294967296);return a;}}});
  let players;try{players=T.generate();}finally{if(descriptor)Object.defineProperty(globalThis,'crypto',descriptor);else delete globalThis.crypto;Math.random=old;}`);
+ if(transfers){
+  code=replace(code,'const line=T.defaults()',"const recruitPool=structuredClone(players),Scout=require('./scout-rules');const line=T.defaults()");
+  code=replace(code,'C.update(state,team,day);for(const p of team.filter',`if(Scout.available(state)){
+   const slots=['o1','s1','p','o2','s2','pc','l'],lineup=Object.fromEntries(slots.map((id,i)=>[id,team[i].id]));Scout.recordLineup(state,lineup);
+   if(Scout.canReport(state))Scout.report(state,()=>structuredClone(recruitPool),rng,players);
+   const choices=state.scouting.catalog.filter(c=>!c.hired&&!c.player.academyProspect).map(c=>({c,fit:Scout.upgradeFit(c.player,team,lineup)})).filter(x=>x.fit?.delta>=3&&Scout.price(state,x.c)<=state.budget*.35).sort((a,b)=>b.fit.delta-a.fit.delta);
+   if(choices.length&&players.length<30){const {c,fit}=choices[0],slot=team.findIndex(p=>p.id===fit.referenceId),cost=Scout.price(state,c);if(slot>=0&&Scout.hire(state,c.id,players,T.valid)){const recruit=structuredClone(state.scouting.recruits.at(-1));players.push(recruit);team[slot]=recruit;mark('transfer',{id:recruit.id,level:recruit.cardLevel,camps:recruit.transferCamps,ovr:T.overall(recruit),delta:fit.delta,cost});}}
+  }C.update(state,team,day);for(const p of team.filter`);
+ }
  // The old audit had obsolete video durations and only five preparation levels.
  if(social){
   code=replace(code,"x.level<(x.i===1?10:5)","x.level<[10,10,5][x.i]");
@@ -20,7 +30,7 @@ function runtime({social=true,free=false,focus=false,matchResults=false}={}){
  // Optional real free-upgrade RNG. The default paid-only run is conservative.
  if(free)code=replace(code,'R.trainingPayment(state,q.cost,()=>1,true)','R.trainingPayment(state,q.cost,rng,true)');
  if(focus)code=replace(code,'.sort((a,b)=>a.q.cost-b.q.cost);if(!choices.length)', '.sort((a,b)=>team.indexOf(a.p)-team.indexOf(b.p));if(!choices.length)');
- if(matchResults)code=replace(code,'const won=rng()<.5;',`const courtStage=division>=3?'division2':state.stage,rivalId=f.home===0?f.away:f.home,rival=Array.from({length:6},(_,i)=>T.opponentStats(f.round,i,courtStage,rivalId)),own=team.slice(0,6).map(p=>({...p,skillCamps:C.progress(state,p).count})),rosters=f.home===0?[own,rival]:[rival,own],score=M.simulateRotationSet(rosters,'camp-paced-'+seed+'-'+f.id,state.stage);const won=(score[0]>score[1])===(f.home===0);`);
+ if(matchResults)code=replace(code,'const won=rng()<.5;',`const courtStage=division>=3?'division2':state.stage,rivalId=f.home===0?f.away:f.home,legendary=require('./player-skills').teamHasLegendary(players,{division,state}),rival=Array.from({length:division>1?7:6},(_,i)=>{const p={...T.opponentStats(f.round,i,courtStage,rivalId),id:'opponent-'+rivalId+'-'+i,number:i+1,skillCamps:0};if(i===6){p.role='libero';p.receive+=6;p.stamina+=4;p.spike=Math.max(1,p.spike-8);p.block=Math.max(1,p.block-10);}p.skillCamps=p.specialCharacter?3:division>=2&&legendary?((rivalId+i)%4===3?3:(rivalId+i)%3):0;return p;}),own=team.slice(0,division>1?7:6).map(p=>({...p,skillCamps:C.progress(state,p).count})),rosters=f.home===0?[own,rival]:[rival,own];globalThis.__tempoMatchSample?.({division,round:f.round,fixture:f.id,home:f.home,rosters:structuredClone(rosters),stage:state.stage,opponentLegendaryUnlocked:legendary});const score=M.simulateRotationSet(rosters,'camp-paced-'+seed+'-'+f.id,state.stage);const won=(score[0]>score[1])===(f.home===0);`);
  code=replace(code,'final:samples.at(-1),samples,events,matches','final:{...samples.at(-1),production:R.effects(state),dailyBudget:R.dailyBudget(state),running:state.camp.entries.filter(e=>e.status===\'running\').map(e=>e.playerId),holdings:Object.fromEntries(R.catalog.map(r=>[r.id,R.count(state,r.id)]).filter(([id,n])=>n))},samples,events,matches');
  const mod=new Module(path.join(__dirname,'camp-economy-runtime.cjs'),module);mod.filename=path.join(__dirname,'camp-economy-runtime.cjs');mod.paths=module.paths;mod._compile(code,mod.filename);return mod.exports;
 }

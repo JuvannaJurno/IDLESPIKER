@@ -51,7 +51,8 @@
         "player-1": 30,
         "player-0": 30,
         "player-5": 30,
-        "player-2": 30
+        "player-2": 30,
+        "player-3": 30
       },
       "entries": [
         {
@@ -88,6 +89,13 @@
           "endDay": 8,
           "targetBoost": 30,
           "status": "complete"
+        },
+        {
+          "playerId": "player-3",
+          "startDay": 5,
+          "endDay": 8,
+          "targetBoost": 30,
+          "status": "complete"
         }
       ]
     },
@@ -97,8 +105,8 @@
       "graduates": 0,
       "entries": []
     },
-    "budget": 8340,
-    "ap": 757448.90625,
+    "budget": 12140,
+    "ap": 754855.90625,
     "matchRewards": [],
     "instructions": 4800,
     "floors": [
@@ -169,7 +177,7 @@
       ],
       []
     ],
-    "lastSeen": 1793195748288,
+    "lastSeen": 1793196659143,
     "autoCarry": 0,
     "laneCarry": [],
     "steadyProgress": 0,
@@ -487,13 +495,13 @@
       "gender": "female",
       "number": 4,
       "art": "team-assets/woman-10.svg",
-      "spike": 44,
-      "block": 17,
-      "serve": 35,
+      "spike": 38,
+      "block": 16,
+      "serve": 31,
       "receive": 14,
       "set": 16,
       "height": 191,
-      "stamina": 20,
+      "stamina": 19,
       "mental": 17,
       "legendaryTalent": true,
       "matchSkills": [
@@ -512,7 +520,7 @@
       },
       "developmentVersion": 3,
       "cardVersion": 1,
-      "cardLevel": 10,
+      "cardLevel": 8,
       "training": {},
       "baseStats": {
         "spike": 17,
@@ -605,6 +613,7 @@
     "player-1",
     "player-0",
     "player-5",
-    "player-2"
+    "player-2",
+    "player-3"
   ]
 }

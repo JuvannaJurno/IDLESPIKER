@@ -1,0 +1,7191 @@
+{
+  "baseline": "fe629e6",
+  "method": "Fresh deterministic rosters and real economy/camp/transfer rules. Generated offers are bought only if at least +3 OVR and price <=35% current budget; one purchase per return, no unknown prospects, roster cap 30. Transfers replace the weakest matching starter. Active decisions every 30s; return profiles every 5m; 3 or 10 block purchases per visit. Rotational MatchRules outcomes feed win AP. Promotion is assumed; calendar is not a full league standings gate. No paid gains or academy. See native court replay for visual match engine evidence.",
+  "rows": [
+    {
+      "version": "before",
+      "scenario": "active",
+      "seed": 41,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgradeClicks": 54,
+          "upgradeVisits": 29,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "ovr": 29.166666666666668,
+          "wins": 2,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 39.5,
+          "upgradeClicks": 128,
+          "upgradeVisits": 65,
+          "medianBurst": 2,
+          "maxUpgradeGap": 330,
+          "firstUpgrade": 31,
+          "camps": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "medianCamps": 2,
+          "levels": [
+            27,
+            27,
+            27,
+            27,
+            27,
+            27,
+            27
+          ],
+          "ovr": 57.833333333333336,
+          "wins": 12,
+          "matches": 14,
+          "transfers": []
+        },
+        {
+          "division": 3,
+          "minutes": 78.7,
+          "upgradeClicks": 358,
+          "upgradeVisits": 110,
+          "medianBurst": 2,
+          "maxUpgradeGap": 121,
+          "firstUpgrade": 1,
+          "camps": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            7,
+            7
+          ],
+          "medianCamps": 8,
+          "levels": [
+            78,
+            80,
+            79,
+            78,
+            80,
+            78,
+            74
+          ],
+          "ovr": 140.66666666666666,
+          "wins": 12,
+          "matches": 14,
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "scenario": "active",
+      "seed": 42,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgradeClicks": 54,
+          "upgradeVisits": 29,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "ovr": 28.333333333333332,
+          "wins": 3,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 39.5,
+          "upgradeClicks": 127,
+          "upgradeVisits": 64,
+          "medianBurst": 2,
+          "maxUpgradeGap": 330,
+          "firstUpgrade": 31,
+          "camps": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "medianCamps": 2,
+          "levels": [
+            27,
+            27,
+            27,
+            27,
+            27,
+            27,
+            26
+          ],
+          "ovr": 57.5,
+          "wins": 11,
+          "matches": 14,
+          "transfers": []
+        },
+        {
+          "division": 3,
+          "minutes": 78.7,
+          "upgradeClicks": 360,
+          "upgradeVisits": 104,
+          "medianBurst": 2,
+          "maxUpgradeGap": 150,
+          "firstUpgrade": 0,
+          "camps": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            7,
+            7
+          ],
+          "medianCamps": 8,
+          "levels": [
+            78,
+            80,
+            80,
+            78,
+            80,
+            78,
+            74
+          ],
+          "ovr": 140.16666666666666,
+          "wins": 14,
+          "matches": 14,
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "scenario": "active",
+      "seed": 43,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgradeClicks": 54,
+          "upgradeVisits": 29,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "ovr": 28.5,
+          "wins": 4,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 39.5,
+          "upgradeClicks": 127,
+          "upgradeVisits": 64,
+          "medianBurst": 2,
+          "maxUpgradeGap": 330,
+          "firstUpgrade": 1,
+          "camps": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "medianCamps": 2,
+          "levels": [
+            27,
+            27,
+            27,
+            27,
+            27,
+            27,
+            26
+          ],
+          "ovr": 57.333333333333336,
+          "wins": 11,
+          "matches": 14,
+          "transfers": []
+        },
+        {
+          "division": 3,
+          "minutes": 78.7,
+          "upgradeClicks": 361,
+          "upgradeVisits": 105,
+          "medianBurst": 2,
+          "maxUpgradeGap": 150,
+          "firstUpgrade": 0,
+          "camps": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            7,
+            7
+          ],
+          "medianCamps": 8,
+          "levels": [
+            78,
+            80,
+            80,
+            78,
+            80,
+            79,
+            74
+          ],
+          "ovr": 140.5,
+          "wins": 14,
+          "matches": 14,
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "scenario": "active",
+      "seed": 44,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgradeClicks": 54,
+          "upgradeVisits": 29,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "ovr": 28.666666666666668,
+          "wins": 4,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 39.5,
+          "upgradeClicks": 128,
+          "upgradeVisits": 63,
+          "medianBurst": 2,
+          "maxUpgradeGap": 330,
+          "firstUpgrade": 31,
+          "camps": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "medianCamps": 2,
+          "levels": [
+            27,
+            27,
+            27,
+            27,
+            27,
+            27,
+            27
+          ],
+          "ovr": 57.666666666666664,
+          "wins": 12,
+          "matches": 14,
+          "transfers": []
+        },
+        {
+          "division": 3,
+          "minutes": 78.7,
+          "upgradeClicks": 359,
+          "upgradeVisits": 107,
+          "medianBurst": 2,
+          "maxUpgradeGap": 121,
+          "firstUpgrade": 1,
+          "camps": [
+            8,
+            8,
+            8,
+            7,
+            8,
+            7,
+            7
+          ],
+          "medianCamps": 8,
+          "levels": [
+            78,
+            80,
+            80,
+            78,
+            80,
+            78,
+            74
+          ],
+          "ovr": 140.33333333333334,
+          "wins": 13,
+          "matches": 14,
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "scenario": "active",
+      "seed": 45,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgradeClicks": 54,
+          "upgradeVisits": 29,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "ovr": 28.333333333333332,
+          "wins": 4,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 39.5,
+          "upgradeClicks": 127,
+          "upgradeVisits": 65,
+          "medianBurst": 2,
+          "maxUpgradeGap": 330,
+          "firstUpgrade": 1,
+          "camps": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "medianCamps": 2,
+          "levels": [
+            27,
+            27,
+            27,
+            27,
+            27,
+            27,
+            26
+          ],
+          "ovr": 57.333333333333336,
+          "wins": 11,
+          "matches": 14,
+          "transfers": []
+        },
+        {
+          "division": 3,
+          "minutes": 78.7,
+          "upgradeClicks": 361,
+          "upgradeVisits": 109,
+          "medianBurst": 2,
+          "maxUpgradeGap": 121,
+          "firstUpgrade": 0,
+          "camps": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            7,
+            7
+          ],
+          "medianCamps": 8,
+          "levels": [
+            78,
+            80,
+            80,
+            78,
+            80,
+            79,
+            74
+          ],
+          "ovr": 140.33333333333334,
+          "wins": 13,
+          "matches": 14,
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "scenario": "active-market",
+      "seed": 41,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgradeClicks": 54,
+          "upgradeVisits": 30,
+          "medianBurst": 1,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "ovr": 29.166666666666668,
+          "wins": 2,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 40,
+          "upgradeClicks": 136,
+          "upgradeVisits": 70,
+          "medianBurst": 2,
+          "maxUpgradeGap": 210,
+          "firstUpgrade": 1,
+          "camps": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3
+          ],
+          "medianCamps": 2,
+          "levels": [
+            28,
+            20,
+            28,
+            20,
+            21,
+            27,
+            30
+          ],
+          "ovr": 79.5,
+          "wins": 12,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 0,
+              "day": 1,
+              "kind": "transfer",
+              "id": "player-12",
+              "level": 5,
+              "camps": 0,
+              "ovr": 37,
+              "delta": 8,
+              "cost": 0
+            },
+            {
+              "at": 991,
+              "day": 32,
+              "kind": "transfer",
+              "id": "player-13",
+              "level": 10,
+              "camps": 0,
+              "ovr": 47,
+              "delta": 8,
+              "cost": 6600
+            },
+            {
+              "at": 1141,
+              "day": 39,
+              "kind": "transfer",
+              "id": "player-14",
+              "level": 10,
+              "camps": 0,
+              "ovr": 49,
+              "delta": 8,
+              "cost": 7400
+            },
+            {
+              "at": 1231,
+              "day": 43,
+              "kind": "transfer",
+              "id": "player-15",
+              "level": 12,
+              "camps": 1,
+              "ovr": 50,
+              "delta": 8,
+              "cost": 7800
+            },
+            {
+              "at": 1321,
+              "day": 48,
+              "kind": "transfer",
+              "id": "player-16",
+              "level": 19,
+              "camps": 1,
+              "ovr": 64,
+              "delta": 10,
+              "cost": 15900
+            },
+            {
+              "at": 1441,
+              "day": 53,
+              "kind": "transfer",
+              "id": "player-17",
+              "level": 10,
+              "camps": 0,
+              "ovr": 55,
+              "delta": 12,
+              "cost": 10300
+            },
+            {
+              "at": 1531,
+              "day": 58,
+              "kind": "transfer",
+              "id": "player-18",
+              "level": 20,
+              "camps": 1,
+              "ovr": 71,
+              "delta": 12,
+              "cost": 21200
+            },
+            {
+              "at": 1651,
+              "day": 64,
+              "kind": "transfer",
+              "id": "player-19",
+              "level": 20,
+              "camps": 1,
+              "ovr": 73,
+              "delta": 9,
+              "cost": 22900
+            },
+            {
+              "at": 1741,
+              "day": 70,
+              "kind": "transfer",
+              "id": "player-20",
+              "level": 20,
+              "camps": 1,
+              "ovr": 81,
+              "delta": 10,
+              "cost": 30400
+            },
+            {
+              "at": 1831,
+              "day": 74,
+              "kind": "transfer",
+              "id": "player-21",
+              "level": 20,
+              "camps": 1,
+              "ovr": 68,
+              "delta": 11,
+              "cost": 18800
+            },
+            {
+              "at": 1921,
+              "day": 79,
+              "kind": "transfer",
+              "id": "player-22",
+              "level": 20,
+              "camps": 1,
+              "ovr": 82,
+              "delta": 10,
+              "cost": 31400
+            },
+            {
+              "at": 2161,
+              "day": 92,
+              "kind": "transfer",
+              "id": "player-23",
+              "level": 30,
+              "camps": 2,
+              "ovr": 91,
+              "delta": 9,
+              "cost": 41400
+            },
+            {
+              "at": 2251,
+              "day": 96,
+              "kind": "transfer",
+              "id": "player-24",
+              "level": 20,
+              "camps": 1,
+              "ovr": 84,
+              "delta": 12,
+              "cost": 33500
+            },
+            {
+              "at": 2311,
+              "day": 100,
+              "kind": "transfer",
+              "id": "player-25",
+              "level": 20,
+              "camps": 1,
+              "ovr": 90,
+              "delta": 9,
+              "cost": 40200
+            }
+          ]
+        },
+        {
+          "division": 3,
+          "minutes": 79.2,
+          "upgradeClicks": 389,
+          "upgradeVisits": 112,
+          "medianBurst": 2,
+          "maxUpgradeGap": 121,
+          "firstUpgrade": 31,
+          "camps": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "medianCamps": 7,
+          "levels": [
+            77,
+            76,
+            78,
+            75,
+            77,
+            73,
+            74
+          ],
+          "ovr": 172.16666666666666,
+          "wins": 13,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 2105,
+              "day": 47,
+              "kind": "transfer",
+              "id": "player-26",
+              "level": 30,
+              "camps": 2,
+              "ovr": 122,
+              "delta": 5,
+              "cost": 336900
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "scenario": "active-market",
+      "seed": 42,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgradeClicks": 54,
+          "upgradeVisits": 30,
+          "medianBurst": 1,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "ovr": 28.333333333333332,
+          "wins": 3,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 40,
+          "upgradeClicks": 141,
+          "upgradeVisits": 71,
+          "medianBurst": 2,
+          "maxUpgradeGap": 210,
+          "firstUpgrade": 31,
+          "camps": [
+            3,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2
+          ],
+          "medianCamps": 2,
+          "levels": [
+            30,
+            26,
+            26,
+            30,
+            21,
+            26,
+            26
+          ],
+          "ovr": 78.33333333333333,
+          "wins": 13,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 0,
+              "day": 1,
+              "kind": "transfer",
+              "id": "player-12",
+              "level": 4,
+              "camps": 0,
+              "ovr": 36,
+              "delta": 8,
+              "cost": 0
+            },
+            {
+              "at": 841,
+              "day": 25,
+              "kind": "transfer",
+              "id": "player-13",
+              "level": 12,
+              "camps": 1,
+              "ovr": 47,
+              "delta": 10,
+              "cost": 6600
+            },
+            {
+              "at": 1021,
+              "day": 33,
+              "kind": "transfer",
+              "id": "player-14",
+              "level": 10,
+              "camps": 0,
+              "ovr": 49,
+              "delta": 11,
+              "cost": 7400
+            },
+            {
+              "at": 1321,
+              "day": 48,
+              "kind": "transfer",
+              "id": "player-15",
+              "level": 10,
+              "camps": 0,
+              "ovr": 52,
+              "delta": 9,
+              "cost": 8800
+            },
+            {
+              "at": 1531,
+              "day": 58,
+              "kind": "transfer",
+              "id": "player-16",
+              "level": 20,
+              "camps": 1,
+              "ovr": 70,
+              "delta": 12,
+              "cost": 20400
+            },
+            {
+              "at": 1561,
+              "day": 59,
+              "kind": "transfer",
+              "id": "player-17",
+              "level": 10,
+              "camps": 0,
+              "ovr": 65,
+              "delta": 8,
+              "cost": 16600
+            },
+            {
+              "at": 1621,
+              "day": 63,
+              "kind": "transfer",
+              "id": "player-18",
+              "level": 14,
+              "camps": 1,
+              "ovr": 55,
+              "delta": 12,
+              "cost": 10300
+            },
+            {
+              "at": 1831,
+              "day": 74,
+              "kind": "transfer",
+              "id": "player-19",
+              "level": 30,
+              "camps": 2,
+              "ovr": 81,
+              "delta": 12,
+              "cost": 30400
+            },
+            {
+              "at": 2011,
+              "day": 84,
+              "kind": "transfer",
+              "id": "player-20",
+              "level": 20,
+              "camps": 1,
+              "ovr": 63,
+              "delta": 12,
+              "cost": 15200
+            },
+            {
+              "at": 2311,
+              "day": 100,
+              "kind": "transfer",
+              "id": "player-21",
+              "level": 30,
+              "camps": 2,
+              "ovr": 87,
+              "delta": 8,
+              "cost": 36800
+            }
+          ]
+        },
+        {
+          "division": 3,
+          "minutes": 79.2,
+          "upgradeClicks": 382,
+          "upgradeVisits": 114,
+          "medianBurst": 2,
+          "maxUpgradeGap": 121,
+          "firstUpgrade": 1,
+          "camps": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "medianCamps": 7,
+          "levels": [
+            75,
+            71,
+            71,
+            76,
+            75,
+            75,
+            72
+          ],
+          "ovr": 168.5,
+          "wins": 14,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 4032,
+              "day": 91,
+              "kind": "transfer",
+              "id": "player-22",
+              "level": 50,
+              "camps": 4,
+              "ovr": 153,
+              "delta": 5,
+              "cost": 534400
+            },
+            {
+              "at": 4122,
+              "day": 96,
+              "kind": "transfer",
+              "id": "player-23",
+              "level": 50,
+              "camps": 4,
+              "ovr": 154,
+              "delta": 4,
+              "cost": 542400
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "scenario": "active-market",
+      "seed": 43,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgradeClicks": 54,
+          "upgradeVisits": 29,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "ovr": 28.5,
+          "wins": 4,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 40,
+          "upgradeClicks": 144,
+          "upgradeVisits": 70,
+          "medianBurst": 2,
+          "maxUpgradeGap": 210,
+          "firstUpgrade": 1,
+          "camps": [
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2
+          ],
+          "medianCamps": 2,
+          "levels": [
+            25,
+            25,
+            30,
+            25,
+            24,
+            24,
+            30
+          ],
+          "ovr": 76,
+          "wins": 12,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 0,
+              "day": 1,
+              "kind": "transfer",
+              "id": "player-12",
+              "level": 7,
+              "camps": 0,
+              "ovr": 40,
+              "delta": 8,
+              "cost": 0
+            },
+            {
+              "at": 841,
+              "day": 25,
+              "kind": "transfer",
+              "id": "player-13",
+              "level": 7,
+              "camps": 0,
+              "ovr": 42,
+              "delta": 7,
+              "cost": 4800
+            },
+            {
+              "at": 1141,
+              "day": 39,
+              "kind": "transfer",
+              "id": "player-14",
+              "level": 10,
+              "camps": 0,
+              "ovr": 52,
+              "delta": 11,
+              "cost": 8800
+            },
+            {
+              "at": 1231,
+              "day": 43,
+              "kind": "transfer",
+              "id": "player-15",
+              "level": 10,
+              "camps": 0,
+              "ovr": 53,
+              "delta": 12,
+              "cost": 9300
+            },
+            {
+              "at": 1531,
+              "day": 58,
+              "kind": "transfer",
+              "id": "player-16",
+              "level": 10,
+              "camps": 0,
+              "ovr": 51,
+              "delta": 9,
+              "cost": 8300
+            },
+            {
+              "at": 1621,
+              "day": 63,
+              "kind": "transfer",
+              "id": "player-17",
+              "level": 20,
+              "camps": 1,
+              "ovr": 71,
+              "delta": 8,
+              "cost": 21200
+            },
+            {
+              "at": 1861,
+              "day": 76,
+              "kind": "transfer",
+              "id": "player-18",
+              "level": 30,
+              "camps": 2,
+              "ovr": 83,
+              "delta": 12,
+              "cost": 32500
+            },
+            {
+              "at": 1921,
+              "day": 79,
+              "kind": "transfer",
+              "id": "player-19",
+              "level": 10,
+              "camps": 0,
+              "ovr": 58,
+              "delta": 12,
+              "cost": 12000
+            },
+            {
+              "at": 2011,
+              "day": 84,
+              "kind": "transfer",
+              "id": "player-20",
+              "level": 30,
+              "camps": 2,
+              "ovr": 95,
+              "delta": 12,
+              "cost": 46300
+            },
+            {
+              "at": 2131,
+              "day": 90,
+              "kind": "transfer",
+              "id": "player-21",
+              "level": 20,
+              "camps": 1,
+              "ovr": 76,
+              "delta": 9,
+              "cost": 25600
+            },
+            {
+              "at": 2221,
+              "day": 95,
+              "kind": "transfer",
+              "id": "player-22",
+              "level": 30,
+              "camps": 2,
+              "ovr": 91,
+              "delta": 12,
+              "cost": 41400
+            },
+            {
+              "at": 2341,
+              "day": 102,
+              "kind": "transfer",
+              "id": "player-23",
+              "level": 30,
+              "camps": 2,
+              "ovr": 106,
+              "delta": 11,
+              "cost": 61200
+            }
+          ]
+        },
+        {
+          "division": 3,
+          "minutes": 80.2,
+          "upgradeClicks": 390,
+          "upgradeVisits": 116,
+          "medianBurst": 2,
+          "maxUpgradeGap": 121,
+          "firstUpgrade": 0,
+          "camps": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "medianCamps": 7,
+          "levels": [
+            76,
+            73,
+            76,
+            75,
+            77,
+            73,
+            72
+          ],
+          "ovr": 169.66666666666666,
+          "wins": 14,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 2767,
+              "day": 61,
+              "kind": "transfer",
+              "id": "player-24",
+              "level": 40,
+              "camps": 3,
+              "ovr": 128,
+              "delta": 3,
+              "cost": 377200
+            },
+            {
+              "at": 3911,
+              "day": 91,
+              "kind": "transfer",
+              "id": "player-25",
+              "level": 50,
+              "camps": 4,
+              "ovr": 151,
+              "delta": 4,
+              "cost": 546200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "scenario": "active-market",
+      "seed": 44,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgradeClicks": 54,
+          "upgradeVisits": 29,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "ovr": 28.666666666666668,
+          "wins": 4,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 40,
+          "upgradeClicks": 141,
+          "upgradeVisits": 73,
+          "medianBurst": 2,
+          "maxUpgradeGap": 180,
+          "firstUpgrade": 1,
+          "camps": [
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "medianCamps": 2,
+          "levels": [
+            26,
+            30,
+            26,
+            24,
+            30,
+            26,
+            23
+          ],
+          "ovr": 77.5,
+          "wins": 13,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 0,
+              "day": 1,
+              "kind": "transfer",
+              "id": "player-12",
+              "level": 4,
+              "camps": 0,
+              "ovr": 38,
+              "delta": 10,
+              "cost": 0
+            },
+            {
+              "at": 841,
+              "day": 25,
+              "kind": "transfer",
+              "id": "player-13",
+              "level": 10,
+              "camps": 0,
+              "ovr": 45,
+              "delta": 7,
+              "cost": 5800
+            },
+            {
+              "at": 901,
+              "day": 28,
+              "kind": "transfer",
+              "id": "player-14",
+              "level": 9,
+              "camps": 1,
+              "ovr": 46,
+              "delta": 10,
+              "cost": 6200
+            },
+            {
+              "at": 1021,
+              "day": 33,
+              "kind": "transfer",
+              "id": "player-15",
+              "level": 10,
+              "camps": 0,
+              "ovr": 52,
+              "delta": 9,
+              "cost": 8800
+            },
+            {
+              "at": 1381,
+              "day": 50,
+              "kind": "transfer",
+              "id": "player-16",
+              "level": 20,
+              "camps": 1,
+              "ovr": 76,
+              "delta": 9,
+              "cost": 25600
+            },
+            {
+              "at": 1531,
+              "day": 58,
+              "kind": "transfer",
+              "id": "player-17",
+              "level": 10,
+              "camps": 0,
+              "ovr": 55,
+              "delta": 11,
+              "cost": 10300
+            },
+            {
+              "at": 1621,
+              "day": 63,
+              "kind": "transfer",
+              "id": "player-18",
+              "level": 20,
+              "camps": 1,
+              "ovr": 71,
+              "delta": 10,
+              "cost": 21200
+            },
+            {
+              "at": 1921,
+              "day": 79,
+              "kind": "transfer",
+              "id": "player-19",
+              "level": 20,
+              "camps": 1,
+              "ovr": 75,
+              "delta": 11,
+              "cost": 24700
+            },
+            {
+              "at": 2011,
+              "day": 84,
+              "kind": "transfer",
+              "id": "player-20",
+              "level": 16,
+              "camps": 1,
+              "ovr": 60,
+              "delta": 8,
+              "cost": 13200
+            },
+            {
+              "at": 2131,
+              "day": 90,
+              "kind": "transfer",
+              "id": "player-21",
+              "level": 20,
+              "camps": 1,
+              "ovr": 74,
+              "delta": 8,
+              "cost": 23800
+            },
+            {
+              "at": 2221,
+              "day": 95,
+              "kind": "transfer",
+              "id": "player-22",
+              "level": 30,
+              "camps": 2,
+              "ovr": 84,
+              "delta": 8,
+              "cost": 33500
+            },
+            {
+              "at": 2341,
+              "day": 102,
+              "kind": "transfer",
+              "id": "player-23",
+              "level": 30,
+              "camps": 2,
+              "ovr": 89,
+              "delta": 8,
+              "cost": 39100
+            }
+          ]
+        },
+        {
+          "division": 3,
+          "minutes": 79.7,
+          "upgradeClicks": 399,
+          "upgradeVisits": 113,
+          "medianBurst": 2,
+          "maxUpgradeGap": 121,
+          "firstUpgrade": 0,
+          "camps": [
+            7,
+            7,
+            6,
+            7,
+            7,
+            6,
+            7
+          ],
+          "medianCamps": 7,
+          "levels": [
+            76,
+            72,
+            64,
+            74,
+            76,
+            63,
+            72
+          ],
+          "ovr": 173.33333333333334,
+          "wins": 14,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 2737,
+              "day": 61,
+              "kind": "transfer",
+              "id": "player-24",
+              "level": 40,
+              "camps": 3,
+              "ovr": 128,
+              "delta": 4,
+              "cost": 377200
+            },
+            {
+              "at": 3911,
+              "day": 91,
+              "kind": "transfer",
+              "id": "player-25",
+              "level": 50,
+              "camps": 4,
+              "ovr": 155,
+              "delta": 5,
+              "cost": 579900
+            },
+            {
+              "at": 4303,
+              "day": 98,
+              "kind": "transfer",
+              "id": "player-26",
+              "level": 50,
+              "camps": 4,
+              "ovr": 157,
+              "delta": 3,
+              "cost": 566800
+            },
+            {
+              "at": 4574,
+              "day": 107,
+              "kind": "transfer",
+              "id": "player-27",
+              "level": 60,
+              "camps": 5,
+              "ovr": 186,
+              "delta": 5,
+              "cost": 830400
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "scenario": "active-market",
+      "seed": 45,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgradeClicks": 54,
+          "upgradeVisits": 29,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "ovr": 28.333333333333332,
+          "wins": 4,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 40,
+          "upgradeClicks": 134,
+          "upgradeVisits": 69,
+          "medianBurst": 2,
+          "maxUpgradeGap": 210,
+          "firstUpgrade": 31,
+          "camps": [
+            3,
+            1,
+            2,
+            3,
+            2,
+            2,
+            2
+          ],
+          "medianCamps": 2,
+          "levels": [
+            30,
+            17,
+            20,
+            30,
+            28,
+            27,
+            22
+          ],
+          "ovr": 76.66666666666667,
+          "wins": 12,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 0,
+              "day": 1,
+              "kind": "transfer",
+              "id": "player-12",
+              "level": 7,
+              "camps": 0,
+              "ovr": 41,
+              "delta": 12,
+              "cost": 0
+            },
+            {
+              "at": 991,
+              "day": 32,
+              "kind": "transfer",
+              "id": "player-13",
+              "level": 9,
+              "camps": 0,
+              "ovr": 48,
+              "delta": 9,
+              "cost": 7000
+            },
+            {
+              "at": 1111,
+              "day": 38,
+              "kind": "transfer",
+              "id": "player-14",
+              "level": 10,
+              "camps": 0,
+              "ovr": 50,
+              "delta": 11,
+              "cost": 7800
+            },
+            {
+              "at": 1231,
+              "day": 43,
+              "kind": "transfer",
+              "id": "player-15",
+              "level": 16,
+              "camps": 1,
+              "ovr": 58,
+              "delta": 9,
+              "cost": 12000
+            },
+            {
+              "at": 1381,
+              "day": 50,
+              "kind": "transfer",
+              "id": "player-16",
+              "level": 20,
+              "camps": 1,
+              "ovr": 70,
+              "delta": 9,
+              "cost": 20400
+            },
+            {
+              "at": 1531,
+              "day": 58,
+              "kind": "transfer",
+              "id": "player-17",
+              "level": 20,
+              "camps": 1,
+              "ovr": 82,
+              "delta": 12,
+              "cost": 31400
+            },
+            {
+              "at": 1831,
+              "day": 74,
+              "kind": "transfer",
+              "id": "player-18",
+              "level": 20,
+              "camps": 1,
+              "ovr": 75,
+              "delta": 8,
+              "cost": 24700
+            },
+            {
+              "at": 1951,
+              "day": 80,
+              "kind": "transfer",
+              "id": "player-19",
+              "level": 20,
+              "camps": 1,
+              "ovr": 80,
+              "delta": 9,
+              "cost": 29400
+            },
+            {
+              "at": 2101,
+              "day": 88,
+              "kind": "transfer",
+              "id": "player-20",
+              "level": 20,
+              "camps": 1,
+              "ovr": 92,
+              "delta": 10,
+              "cost": 42600
+            },
+            {
+              "at": 2161,
+              "day": 92,
+              "kind": "transfer",
+              "id": "player-21",
+              "level": 30,
+              "camps": 2,
+              "ovr": 86,
+              "delta": 10,
+              "cost": 35700
+            },
+            {
+              "at": 2251,
+              "day": 96,
+              "kind": "transfer",
+              "id": "player-22",
+              "level": 30,
+              "camps": 2,
+              "ovr": 92,
+              "delta": 10,
+              "cost": 42600
+            },
+            {
+              "at": 2311,
+              "day": 100,
+              "kind": "transfer",
+              "id": "player-23",
+              "level": 10,
+              "camps": 0,
+              "ovr": 63,
+              "delta": 8,
+              "cost": 15200
+            }
+          ]
+        },
+        {
+          "division": 3,
+          "minutes": 79.2,
+          "upgradeClicks": 402,
+          "upgradeVisits": 113,
+          "medianBurst": 2,
+          "maxUpgradeGap": 121,
+          "firstUpgrade": 0,
+          "camps": [
+            7,
+            7,
+            7,
+            6,
+            7,
+            7,
+            7
+          ],
+          "medianCamps": 7,
+          "levels": [
+            76,
+            77,
+            75,
+            68,
+            74,
+            77,
+            73
+          ],
+          "ovr": 171,
+          "wins": 14,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 1774,
+              "day": 40,
+              "kind": "transfer",
+              "id": "player-24",
+              "level": 30,
+              "camps": 2,
+              "ovr": 111,
+              "delta": 3,
+              "cost": 272400
+            },
+            {
+              "at": 4273,
+              "day": 98,
+              "kind": "transfer",
+              "id": "player-25",
+              "level": 50,
+              "camps": 4,
+              "ovr": 166,
+              "delta": 5,
+              "cost": 643200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "scenario": "return-market",
+      "seed": 41,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgradeClicks": 49,
+          "upgradeVisits": 6,
+          "medianBurst": 7,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "ovr": 27.666666666666668,
+          "wins": 2,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgradeClicks": 85,
+          "upgradeVisits": 20,
+          "medianBurst": 5,
+          "maxUpgradeGap": 900,
+          "firstUpgrade": 301,
+          "camps": [
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1
+          ],
+          "medianCamps": 1,
+          "levels": [
+            20,
+            18,
+            18,
+            20,
+            18,
+            17,
+            18
+          ],
+          "ovr": 60.833333333333336,
+          "wins": 13,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 0,
+              "day": 1,
+              "kind": "transfer",
+              "id": "player-12",
+              "level": 5,
+              "camps": 0,
+              "ovr": 36,
+              "delta": 8,
+              "cost": 0
+            },
+            {
+              "at": 2401,
+              "day": 21,
+              "kind": "transfer",
+              "id": "player-13",
+              "level": 10,
+              "camps": 0,
+              "ovr": 48,
+              "delta": 15,
+              "cost": 7000
+            },
+            {
+              "at": 3001,
+              "day": 29,
+              "kind": "transfer",
+              "id": "player-14",
+              "level": 9,
+              "camps": 0,
+              "ovr": 47,
+              "delta": 12,
+              "cost": 6600
+            },
+            {
+              "at": 4801,
+              "day": 55,
+              "kind": "transfer",
+              "id": "player-15",
+              "level": 8,
+              "camps": 0,
+              "ovr": 44,
+              "delta": 8,
+              "cost": 5400
+            },
+            {
+              "at": 6301,
+              "day": 80,
+              "kind": "transfer",
+              "id": "player-16",
+              "level": 20,
+              "camps": 1,
+              "ovr": 69,
+              "delta": 12,
+              "cost": 19600
+            },
+            {
+              "at": 6601,
+              "day": 88,
+              "kind": "transfer",
+              "id": "player-17",
+              "level": 10,
+              "camps": 0,
+              "ovr": 50,
+              "delta": 10,
+              "cost": 7800
+            },
+            {
+              "at": 7201,
+              "day": 104,
+              "kind": "transfer",
+              "id": "player-18",
+              "level": 20,
+              "camps": 1,
+              "ovr": 75,
+              "delta": 12,
+              "cost": 24700
+            }
+          ]
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgradeClicks": 412,
+          "upgradeVisits": 42,
+          "medianBurst": 10,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            6,
+            6,
+            6,
+            7,
+            6,
+            5,
+            5
+          ],
+          "medianCamps": 6,
+          "levels": [
+            67,
+            66,
+            68,
+            68,
+            65,
+            59,
+            59
+          ],
+          "ovr": 159.16666666666666,
+          "wins": 10,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 3901,
+              "day": 28,
+              "kind": "transfer",
+              "id": "player-19",
+              "level": 17,
+              "camps": 1,
+              "ovr": 61,
+              "delta": 3,
+              "cost": 72200
+            },
+            {
+              "at": 5701,
+              "day": 41,
+              "kind": "transfer",
+              "id": "player-20",
+              "level": 30,
+              "camps": 2,
+              "ovr": 91,
+              "delta": 5,
+              "cost": 198400
+            },
+            {
+              "at": 6601,
+              "day": 48,
+              "kind": "transfer",
+              "id": "player-21",
+              "level": 30,
+              "camps": 2,
+              "ovr": 98,
+              "delta": 4,
+              "cost": 238400
+            },
+            {
+              "at": 7501,
+              "day": 56,
+              "kind": "transfer",
+              "id": "player-22",
+              "level": 30,
+              "camps": 2,
+              "ovr": 106,
+              "delta": 5,
+              "cost": 288800
+            },
+            {
+              "at": 8401,
+              "day": 63,
+              "kind": "transfer",
+              "id": "player-23",
+              "level": 40,
+              "camps": 3,
+              "ovr": 113,
+              "delta": 4,
+              "cost": 322900
+            },
+            {
+              "at": 9601,
+              "day": 77,
+              "kind": "transfer",
+              "id": "player-24",
+              "level": 40,
+              "camps": 3,
+              "ovr": 135,
+              "delta": 4,
+              "cost": 491300
+            },
+            {
+              "at": 10801,
+              "day": 91,
+              "kind": "transfer",
+              "id": "player-25",
+              "level": 40,
+              "camps": 3,
+              "ovr": 135,
+              "delta": 6,
+              "cost": 491300
+            },
+            {
+              "at": 11101,
+              "day": 96,
+              "kind": "transfer",
+              "id": "player-26",
+              "level": 50,
+              "camps": 4,
+              "ovr": 160,
+              "delta": 3,
+              "cost": 725900
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "scenario": "return-market",
+      "seed": 42,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgradeClicks": 49,
+          "upgradeVisits": 6,
+          "medianBurst": 6,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "ovr": 27.166666666666668,
+          "wins": 3,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgradeClicks": 85,
+          "upgradeVisits": 19,
+          "medianBurst": 4,
+          "maxUpgradeGap": 900,
+          "firstUpgrade": 301,
+          "camps": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "medianCamps": 1,
+          "levels": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            17,
+            10
+          ],
+          "ovr": 53.666666666666664,
+          "wins": 9,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 0,
+              "day": 1,
+              "kind": "transfer",
+              "id": "player-12",
+              "level": 3,
+              "camps": 0,
+              "ovr": 35,
+              "delta": 8,
+              "cost": 0
+            },
+            {
+              "at": 3001,
+              "day": 29,
+              "kind": "transfer",
+              "id": "player-13",
+              "level": 10,
+              "camps": 0,
+              "ovr": 49,
+              "delta": 12,
+              "cost": 7400
+            },
+            {
+              "at": 3601,
+              "day": 39,
+              "kind": "transfer",
+              "id": "player-14",
+              "level": 9,
+              "camps": 0,
+              "ovr": 43,
+              "delta": 10,
+              "cost": 5100
+            },
+            {
+              "at": 5701,
+              "day": 64,
+              "kind": "transfer",
+              "id": "player-15",
+              "level": 10,
+              "camps": 0,
+              "ovr": 63,
+              "delta": 11,
+              "cost": 15200
+            },
+            {
+              "at": 6301,
+              "day": 80,
+              "kind": "transfer",
+              "id": "player-16",
+              "level": 11,
+              "camps": 1,
+              "ovr": 48,
+              "delta": 9,
+              "cost": 7000
+            },
+            {
+              "at": 7201,
+              "day": 104,
+              "kind": "transfer",
+              "id": "player-17",
+              "level": 10,
+              "camps": 0,
+              "ovr": 71,
+              "delta": 9,
+              "cost": 21200
+            }
+          ]
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgradeClicks": 415,
+          "upgradeVisits": 42,
+          "medianBurst": 9,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            5,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "medianCamps": 6,
+          "levels": [
+            60,
+            68,
+            66,
+            68,
+            68,
+            65,
+            64
+          ],
+          "ovr": 154,
+          "wins": 11,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 5101,
+              "day": 35,
+              "kind": "transfer",
+              "id": "player-18",
+              "level": 20,
+              "camps": 1,
+              "ovr": 69,
+              "delta": 4,
+              "cost": 97000
+            },
+            {
+              "at": 7501,
+              "day": 56,
+              "kind": "transfer",
+              "id": "player-19",
+              "level": 30,
+              "camps": 2,
+              "ovr": 102,
+              "delta": 5,
+              "cost": 263000
+            },
+            {
+              "at": 8401,
+              "day": 63,
+              "kind": "transfer",
+              "id": "player-20",
+              "level": 40,
+              "camps": 3,
+              "ovr": 121,
+              "delta": 3,
+              "cost": 380000
+            },
+            {
+              "at": 9601,
+              "day": 77,
+              "kind": "transfer",
+              "id": "player-21",
+              "level": 30,
+              "camps": 2,
+              "ovr": 109,
+              "delta": 4,
+              "cost": 296100
+            },
+            {
+              "at": 10201,
+              "day": 84,
+              "kind": "transfer",
+              "id": "player-22",
+              "level": 30,
+              "camps": 2,
+              "ovr": 114,
+              "delta": 4,
+              "cost": 329800
+            },
+            {
+              "at": 11101,
+              "day": 96,
+              "kind": "transfer",
+              "id": "player-23",
+              "level": 40,
+              "camps": 3,
+              "ovr": 134,
+              "delta": 3,
+              "cost": 482900
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "scenario": "return-market",
+      "seed": 43,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgradeClicks": 49,
+          "upgradeVisits": 6,
+          "medianBurst": 6,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "ovr": 27.166666666666668,
+          "wins": 4,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgradeClicks": 85,
+          "upgradeVisits": 18,
+          "medianBurst": 5,
+          "maxUpgradeGap": 900,
+          "firstUpgrade": 301,
+          "camps": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "medianCamps": 1,
+          "levels": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            17,
+            10
+          ],
+          "ovr": 55.166666666666664,
+          "wins": 11,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 0,
+              "day": 1,
+              "kind": "transfer",
+              "id": "player-12",
+              "level": 7,
+              "camps": 0,
+              "ovr": 40,
+              "delta": 8,
+              "cost": 0
+            },
+            {
+              "at": 1801,
+              "day": 15,
+              "kind": "transfer",
+              "id": "player-13",
+              "level": 5,
+              "camps": 0,
+              "ovr": 41,
+              "delta": 10,
+              "cost": 4500
+            },
+            {
+              "at": 3301,
+              "day": 32,
+              "kind": "transfer",
+              "id": "player-14",
+              "level": 17,
+              "camps": 1,
+              "ovr": 59,
+              "delta": 8,
+              "cost": 12600
+            },
+            {
+              "at": 4801,
+              "day": 55,
+              "kind": "transfer",
+              "id": "player-15",
+              "level": 10,
+              "camps": 0,
+              "ovr": 47,
+              "delta": 11,
+              "cost": 6600
+            },
+            {
+              "at": 5701,
+              "day": 64,
+              "kind": "transfer",
+              "id": "player-16",
+              "level": 10,
+              "camps": 0,
+              "ovr": 49,
+              "delta": 12,
+              "cost": 7400
+            },
+            {
+              "at": 6901,
+              "day": 96,
+              "kind": "transfer",
+              "id": "player-17",
+              "level": 11,
+              "camps": 1,
+              "ovr": 52,
+              "delta": 9,
+              "cost": 8800
+            },
+            {
+              "at": 7201,
+              "day": 104,
+              "kind": "transfer",
+              "id": "player-18",
+              "level": 10,
+              "camps": 0,
+              "ovr": 68,
+              "delta": 9,
+              "cost": 18800
+            }
+          ]
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgradeClicks": 419,
+          "upgradeVisits": 42,
+          "medianBurst": 10,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            7,
+            5
+          ],
+          "medianCamps": 6,
+          "levels": [
+            66,
+            65,
+            65,
+            67,
+            66,
+            68,
+            59
+          ],
+          "ovr": 156.66666666666666,
+          "wins": 11,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 5101,
+              "day": 35,
+              "kind": "transfer",
+              "id": "player-19",
+              "level": 20,
+              "camps": 1,
+              "ovr": 73,
+              "delta": 5,
+              "cost": 112700
+            },
+            {
+              "at": 6601,
+              "day": 48,
+              "kind": "transfer",
+              "id": "player-20",
+              "level": 20,
+              "camps": 1,
+              "ovr": 93,
+              "delta": 4,
+              "cost": 209400
+            },
+            {
+              "at": 7501,
+              "day": 56,
+              "kind": "transfer",
+              "id": "player-21",
+              "level": 30,
+              "camps": 2,
+              "ovr": 101,
+              "delta": 4,
+              "cost": 256700
+            },
+            {
+              "at": 8401,
+              "day": 63,
+              "kind": "transfer",
+              "id": "player-22",
+              "level": 40,
+              "camps": 3,
+              "ovr": 114,
+              "delta": 5,
+              "cost": 329800
+            },
+            {
+              "at": 9001,
+              "day": 70,
+              "kind": "transfer",
+              "id": "player-23",
+              "level": 40,
+              "camps": 3,
+              "ovr": 125,
+              "delta": 5,
+              "cost": 410300
+            },
+            {
+              "at": 10201,
+              "day": 84,
+              "kind": "transfer",
+              "id": "player-24",
+              "level": 40,
+              "camps": 3,
+              "ovr": 124,
+              "delta": 5,
+              "cost": 402600
+            },
+            {
+              "at": 11101,
+              "day": 96,
+              "kind": "transfer",
+              "id": "player-25",
+              "level": 50,
+              "camps": 4,
+              "ovr": 171,
+              "delta": 4,
+              "cost": 843700
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "scenario": "return-market",
+      "seed": 44,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgradeClicks": 49,
+          "upgradeVisits": 6,
+          "medianBurst": 7,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "ovr": 27.166666666666668,
+          "wins": 3,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgradeClicks": 85,
+          "upgradeVisits": 20,
+          "medianBurst": 4,
+          "maxUpgradeGap": 900,
+          "firstUpgrade": 301,
+          "camps": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "medianCamps": 1,
+          "levels": [
+            18,
+            18,
+            20,
+            18,
+            18,
+            18,
+            18
+          ],
+          "ovr": 59,
+          "wins": 10,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 0,
+              "day": 1,
+              "kind": "transfer",
+              "id": "player-12",
+              "level": 3,
+              "camps": 0,
+              "ovr": 36,
+              "delta": 10,
+              "cost": 0
+            },
+            {
+              "at": 3001,
+              "day": 29,
+              "kind": "transfer",
+              "id": "player-13",
+              "level": 10,
+              "camps": 0,
+              "ovr": 45,
+              "delta": 12,
+              "cost": 5800
+            },
+            {
+              "at": 3601,
+              "day": 39,
+              "kind": "transfer",
+              "id": "player-14",
+              "level": 7,
+              "camps": 0,
+              "ovr": 43,
+              "delta": 8,
+              "cost": 5100
+            },
+            {
+              "at": 4801,
+              "day": 55,
+              "kind": "transfer",
+              "id": "player-15",
+              "level": 10,
+              "camps": 0,
+              "ovr": 62,
+              "delta": 9,
+              "cost": 14500
+            },
+            {
+              "at": 6301,
+              "day": 80,
+              "kind": "transfer",
+              "id": "player-16",
+              "level": 16,
+              "camps": 1,
+              "ovr": 54,
+              "delta": 13,
+              "cost": 9800
+            },
+            {
+              "at": 6901,
+              "day": 96,
+              "kind": "transfer",
+              "id": "player-17",
+              "level": 20,
+              "camps": 1,
+              "ovr": 82,
+              "delta": 9,
+              "cost": 31400
+            },
+            {
+              "at": 7201,
+              "day": 104,
+              "kind": "transfer",
+              "id": "player-18",
+              "level": 20,
+              "camps": 1,
+              "ovr": 91,
+              "delta": 9,
+              "cost": 41400
+            }
+          ]
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgradeClicks": 433,
+          "upgradeVisits": 42,
+          "medianBurst": 10,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            5
+          ],
+          "medianCamps": 6,
+          "levels": [
+            65,
+            65,
+            65,
+            60,
+            65,
+            65,
+            59
+          ],
+          "ovr": 162.33333333333334,
+          "wins": 11,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 5101,
+              "day": 35,
+              "kind": "transfer",
+              "id": "player-19",
+              "level": 20,
+              "camps": 1,
+              "ovr": 71,
+              "delta": 5,
+              "cost": 104700
+            },
+            {
+              "at": 5701,
+              "day": 41,
+              "kind": "transfer",
+              "id": "player-20",
+              "level": 20,
+              "camps": 1,
+              "ovr": 91,
+              "delta": 4,
+              "cost": 198400
+            },
+            {
+              "at": 6601,
+              "day": 48,
+              "kind": "transfer",
+              "id": "player-21",
+              "level": 30,
+              "camps": 2,
+              "ovr": 89,
+              "delta": 3,
+              "cost": 187600
+            },
+            {
+              "at": 7501,
+              "day": 56,
+              "kind": "transfer",
+              "id": "player-22",
+              "level": 30,
+              "camps": 2,
+              "ovr": 98,
+              "delta": 4,
+              "cost": 238400
+            },
+            {
+              "at": 8401,
+              "day": 63,
+              "kind": "transfer",
+              "id": "player-23",
+              "level": 30,
+              "camps": 2,
+              "ovr": 109,
+              "delta": 5,
+              "cost": 296100
+            },
+            {
+              "at": 9001,
+              "day": 70,
+              "kind": "transfer",
+              "id": "player-24",
+              "level": 40,
+              "camps": 3,
+              "ovr": 123,
+              "delta": 5,
+              "cost": 395000
+            },
+            {
+              "at": 10201,
+              "day": 84,
+              "kind": "transfer",
+              "id": "player-25",
+              "level": 40,
+              "camps": 3,
+              "ovr": 132,
+              "delta": 5,
+              "cost": 466200
+            },
+            {
+              "at": 10801,
+              "day": 91,
+              "kind": "transfer",
+              "id": "player-26",
+              "level": 40,
+              "camps": 3,
+              "ovr": 131,
+              "delta": 3,
+              "cost": 458000
+            },
+            {
+              "at": 11101,
+              "day": 96,
+              "kind": "transfer",
+              "id": "player-27",
+              "level": 40,
+              "camps": 3,
+              "ovr": 134,
+              "delta": 3,
+              "cost": 482900
+            },
+            {
+              "at": 11701,
+              "day": 103,
+              "kind": "transfer",
+              "id": "player-28",
+              "level": 50,
+              "camps": 4,
+              "ovr": 178,
+              "delta": 4,
+              "cost": 923300
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "scenario": "return-market",
+      "seed": 45,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgradeClicks": 49,
+          "upgradeVisits": 6,
+          "medianBurst": 6,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "ovr": 27.166666666666668,
+          "wins": 4,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgradeClicks": 83,
+          "upgradeVisits": 21,
+          "medianBurst": 4,
+          "maxUpgradeGap": 900,
+          "firstUpgrade": 301,
+          "camps": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "medianCamps": 1,
+          "levels": [
+            18,
+            18,
+            18,
+            17,
+            17,
+            17,
+            17
+          ],
+          "ovr": 54.166666666666664,
+          "wins": 9,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 0,
+              "day": 1,
+              "kind": "transfer",
+              "id": "player-12",
+              "level": 6,
+              "camps": 0,
+              "ovr": 39,
+              "delta": 12,
+              "cost": 0
+            },
+            {
+              "at": 3601,
+              "day": 39,
+              "kind": "transfer",
+              "id": "player-13",
+              "level": 7,
+              "camps": 0,
+              "ovr": 44,
+              "delta": 11,
+              "cost": 5400
+            },
+            {
+              "at": 6301,
+              "day": 80,
+              "kind": "transfer",
+              "id": "player-14",
+              "level": 10,
+              "camps": 0,
+              "ovr": 51,
+              "delta": 10,
+              "cost": 8300
+            },
+            {
+              "at": 6601,
+              "day": 88,
+              "kind": "transfer",
+              "id": "player-15",
+              "level": 13,
+              "camps": 1,
+              "ovr": 52,
+              "delta": 12,
+              "cost": 8800
+            }
+          ]
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgradeClicks": 441,
+          "upgradeVisits": 42,
+          "medianBurst": 10,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            4,
+            6,
+            6,
+            6,
+            4,
+            6,
+            6
+          ],
+          "medianCamps": 6,
+          "levels": [
+            50,
+            67,
+            65,
+            68,
+            50,
+            67,
+            63
+          ],
+          "ovr": 159.83333333333334,
+          "wins": 12,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 3901,
+              "day": 28,
+              "kind": "transfer",
+              "id": "player-16",
+              "level": 20,
+              "camps": 1,
+              "ovr": 81,
+              "delta": 5,
+              "cost": 153800
+            },
+            {
+              "at": 5101,
+              "day": 35,
+              "kind": "transfer",
+              "id": "player-17",
+              "level": 10,
+              "camps": 0,
+              "ovr": 67,
+              "delta": 3,
+              "cost": 89600
+            },
+            {
+              "at": 5701,
+              "day": 41,
+              "kind": "transfer",
+              "id": "player-18",
+              "level": 20,
+              "camps": 1,
+              "ovr": 91,
+              "delta": 5,
+              "cost": 198400
+            },
+            {
+              "at": 6601,
+              "day": 48,
+              "kind": "transfer",
+              "id": "player-19",
+              "level": 20,
+              "camps": 1,
+              "ovr": 86,
+              "delta": 4,
+              "cost": 172100
+            },
+            {
+              "at": 7501,
+              "day": 56,
+              "kind": "transfer",
+              "id": "player-20",
+              "level": 30,
+              "camps": 2,
+              "ovr": 107,
+              "delta": 5,
+              "cost": 295400
+            },
+            {
+              "at": 8401,
+              "day": 63,
+              "kind": "transfer",
+              "id": "player-21",
+              "level": 30,
+              "camps": 2,
+              "ovr": 98,
+              "delta": 3,
+              "cost": 228500
+            },
+            {
+              "at": 9001,
+              "day": 70,
+              "kind": "transfer",
+              "id": "player-22",
+              "level": 40,
+              "camps": 3,
+              "ovr": 113,
+              "delta": 4,
+              "cost": 322900
+            },
+            {
+              "at": 9601,
+              "day": 77,
+              "kind": "transfer",
+              "id": "player-23",
+              "level": 40,
+              "camps": 3,
+              "ovr": 151,
+              "delta": 4,
+              "cost": 636100
+            },
+            {
+              "at": 10801,
+              "day": 91,
+              "kind": "transfer",
+              "id": "player-24",
+              "level": 50,
+              "camps": 4,
+              "ovr": 153,
+              "delta": 7,
+              "cost": 655600
+            },
+            {
+              "at": 11101,
+              "day": 96,
+              "kind": "transfer",
+              "id": "player-25",
+              "level": 30,
+              "camps": 2,
+              "ovr": 130,
+              "delta": 3,
+              "cost": 449900
+            },
+            {
+              "at": 12301,
+              "day": 111,
+              "kind": "transfer",
+              "id": "player-26",
+              "level": 50,
+              "camps": 4,
+              "ovr": 153,
+              "delta": 4,
+              "cost": 655600
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "scenario": "return-no-market",
+      "seed": 41,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgradeClicks": 49,
+          "upgradeVisits": 6,
+          "medianBurst": 7,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "ovr": 27.666666666666668,
+          "wins": 2,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgradeClicks": 73,
+          "upgradeVisits": 20,
+          "medianBurst": 4,
+          "maxUpgradeGap": 900,
+          "firstUpgrade": 301,
+          "camps": [
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "medianCamps": 1,
+          "levels": [
+            19,
+            19,
+            19,
+            18,
+            18,
+            18,
+            18
+          ],
+          "ovr": 44.5,
+          "wins": 10,
+          "matches": 14,
+          "transfers": []
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgradeClicks": 356,
+          "upgradeVisits": 42,
+          "medianBurst": 8,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            6,
+            7,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "medianCamps": 6,
+          "levels": [
+            68,
+            73,
+            69,
+            68,
+            69,
+            69,
+            69
+          ],
+          "ovr": 125.33333333333333,
+          "wins": 11,
+          "matches": 14,
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "scenario": "return-no-market",
+      "seed": 42,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgradeClicks": 49,
+          "upgradeVisits": 6,
+          "medianBurst": 6,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "ovr": 27.166666666666668,
+          "wins": 3,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgradeClicks": 73,
+          "upgradeVisits": 20,
+          "medianBurst": 4,
+          "maxUpgradeGap": 900,
+          "firstUpgrade": 301,
+          "camps": [
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "medianCamps": 1,
+          "levels": [
+            19,
+            19,
+            18,
+            18,
+            18,
+            19,
+            18
+          ],
+          "ovr": 43.833333333333336,
+          "wins": 10,
+          "matches": 14,
+          "transfers": []
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgradeClicks": 357,
+          "upgradeVisits": 42,
+          "medianBurst": 7,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            6,
+            7,
+            6,
+            6,
+            7,
+            6,
+            6
+          ],
+          "medianCamps": 6,
+          "levels": [
+            68,
+            72,
+            69,
+            68,
+            72,
+            69,
+            68
+          ],
+          "ovr": 125.33333333333333,
+          "wins": 10,
+          "matches": 14,
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "scenario": "return-no-market",
+      "seed": 43,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgradeClicks": 49,
+          "upgradeVisits": 6,
+          "medianBurst": 6,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "ovr": 27.166666666666668,
+          "wins": 4,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgradeClicks": 73,
+          "upgradeVisits": 21,
+          "medianBurst": 3,
+          "maxUpgradeGap": 900,
+          "firstUpgrade": 301,
+          "camps": [
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "medianCamps": 1,
+          "levels": [
+            19,
+            19,
+            19,
+            18,
+            18,
+            18,
+            18
+          ],
+          "ovr": 43.833333333333336,
+          "wins": 10,
+          "matches": 14,
+          "transfers": []
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgradeClicks": 358,
+          "upgradeVisits": 42,
+          "medianBurst": 8,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            6,
+            7,
+            6,
+            6,
+            7,
+            6,
+            6
+          ],
+          "medianCamps": 6,
+          "levels": [
+            68,
+            73,
+            69,
+            68,
+            73,
+            69,
+            67
+          ],
+          "ovr": 125.66666666666667,
+          "wins": 10,
+          "matches": 14,
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "scenario": "return-no-market",
+      "seed": 44,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgradeClicks": 49,
+          "upgradeVisits": 6,
+          "medianBurst": 7,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "ovr": 27.166666666666668,
+          "wins": 3,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgradeClicks": 73,
+          "upgradeVisits": 21,
+          "medianBurst": 3,
+          "maxUpgradeGap": 900,
+          "firstUpgrade": 301,
+          "camps": [
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "medianCamps": 1,
+          "levels": [
+            19,
+            19,
+            19,
+            18,
+            18,
+            18,
+            18
+          ],
+          "ovr": 44,
+          "wins": 10,
+          "matches": 14,
+          "transfers": []
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgradeClicks": 357,
+          "upgradeVisits": 42,
+          "medianBurst": 7,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            6,
+            7,
+            7,
+            6,
+            6,
+            6,
+            6
+          ],
+          "medianCamps": 6,
+          "levels": [
+            68,
+            72,
+            72,
+            68,
+            69,
+            69,
+            68
+          ],
+          "ovr": 125.5,
+          "wins": 11,
+          "matches": 14,
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "scenario": "return-no-market",
+      "seed": 45,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgradeClicks": 49,
+          "upgradeVisits": 6,
+          "medianBurst": 6,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "ovr": 27.166666666666668,
+          "wins": 4,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgradeClicks": 73,
+          "upgradeVisits": 19,
+          "medianBurst": 4,
+          "maxUpgradeGap": 900,
+          "firstUpgrade": 301,
+          "camps": [
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "medianCamps": 1,
+          "levels": [
+            19,
+            19,
+            18,
+            18,
+            18,
+            19,
+            18
+          ],
+          "ovr": 43.833333333333336,
+          "wins": 8,
+          "matches": 14,
+          "transfers": []
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgradeClicks": 358,
+          "upgradeVisits": 42,
+          "medianBurst": 8,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            6,
+            7,
+            6,
+            6,
+            7,
+            6,
+            6
+          ],
+          "medianCamps": 6,
+          "levels": [
+            68,
+            73,
+            69,
+            68,
+            73,
+            69,
+            67
+          ],
+          "ovr": 125.66666666666667,
+          "wins": 9,
+          "matches": 14,
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "scenario": "active",
+      "seed": 41,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgradeClicks": 54,
+          "upgradeVisits": 29,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "ovr": 29.166666666666668,
+          "wins": 2,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 39.5,
+          "upgradeClicks": 169,
+          "upgradeVisits": 71,
+          "medianBurst": 2,
+          "maxUpgradeGap": 120,
+          "firstUpgrade": 31,
+          "camps": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "medianCamps": 3,
+          "levels": [
+            34,
+            33,
+            33,
+            33,
+            33,
+            33,
+            31
+          ],
+          "ovr": 67.83333333333333,
+          "wins": 13,
+          "matches": 14,
+          "transfers": []
+        },
+        {
+          "division": 3,
+          "minutes": 78.7,
+          "upgradeClicks": 383,
+          "upgradeVisits": 112,
+          "medianBurst": 2,
+          "maxUpgradeGap": 121,
+          "firstUpgrade": 0,
+          "camps": [
+            8,
+            9,
+            9,
+            8,
+            9,
+            8,
+            8
+          ],
+          "medianCamps": 8,
+          "levels": [
+            87,
+            90,
+            90,
+            87,
+            90,
+            87,
+            82
+          ],
+          "ovr": 155.83333333333334,
+          "wins": 12,
+          "matches": 14,
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "scenario": "active",
+      "seed": 42,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgradeClicks": 54,
+          "upgradeVisits": 29,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "ovr": 28.333333333333332,
+          "wins": 3,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 39.5,
+          "upgradeClicks": 169,
+          "upgradeVisits": 71,
+          "medianBurst": 2,
+          "maxUpgradeGap": 120,
+          "firstUpgrade": 31,
+          "camps": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "medianCamps": 3,
+          "levels": [
+            33,
+            33,
+            33,
+            33,
+            33,
+            33,
+            32
+          ],
+          "ovr": 67,
+          "wins": 13,
+          "matches": 14,
+          "transfers": []
+        },
+        {
+          "division": 3,
+          "minutes": 78.7,
+          "upgradeClicks": 384,
+          "upgradeVisits": 111,
+          "medianBurst": 2,
+          "maxUpgradeGap": 121,
+          "firstUpgrade": 0,
+          "camps": [
+            8,
+            9,
+            9,
+            8,
+            9,
+            8,
+            8
+          ],
+          "medianCamps": 8,
+          "levels": [
+            88,
+            90,
+            90,
+            87,
+            90,
+            87,
+            82
+          ],
+          "ovr": 155.83333333333334,
+          "wins": 14,
+          "matches": 14,
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "scenario": "active",
+      "seed": 43,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgradeClicks": 54,
+          "upgradeVisits": 29,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "ovr": 28.5,
+          "wins": 4,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 39.5,
+          "upgradeClicks": 170,
+          "upgradeVisits": 73,
+          "medianBurst": 2,
+          "maxUpgradeGap": 120,
+          "firstUpgrade": 1,
+          "camps": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "medianCamps": 3,
+          "levels": [
+            34,
+            34,
+            33,
+            33,
+            33,
+            33,
+            31
+          ],
+          "ovr": 67.5,
+          "wins": 14,
+          "matches": 14,
+          "transfers": []
+        },
+        {
+          "division": 3,
+          "minutes": 78.7,
+          "upgradeClicks": 383,
+          "upgradeVisits": 110,
+          "medianBurst": 2,
+          "maxUpgradeGap": 121,
+          "firstUpgrade": 1,
+          "camps": [
+            8,
+            9,
+            9,
+            8,
+            9,
+            8,
+            8
+          ],
+          "medianCamps": 8,
+          "levels": [
+            88,
+            90,
+            90,
+            87,
+            90,
+            87,
+            82
+          ],
+          "ovr": 155.66666666666666,
+          "wins": 14,
+          "matches": 14,
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "scenario": "active",
+      "seed": 44,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgradeClicks": 54,
+          "upgradeVisits": 29,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "ovr": 28.666666666666668,
+          "wins": 4,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 39.5,
+          "upgradeClicks": 170,
+          "upgradeVisits": 74,
+          "medianBurst": 2,
+          "maxUpgradeGap": 120,
+          "firstUpgrade": 31,
+          "camps": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "medianCamps": 3,
+          "levels": [
+            34,
+            33,
+            33,
+            33,
+            33,
+            33,
+            32
+          ],
+          "ovr": 67.5,
+          "wins": 13,
+          "matches": 14,
+          "transfers": []
+        },
+        {
+          "division": 3,
+          "minutes": 78.7,
+          "upgradeClicks": 383,
+          "upgradeVisits": 109,
+          "medianBurst": 2,
+          "maxUpgradeGap": 121,
+          "firstUpgrade": 1,
+          "camps": [
+            8,
+            9,
+            9,
+            8,
+            9,
+            8,
+            8
+          ],
+          "medianCamps": 8,
+          "levels": [
+            87,
+            91,
+            90,
+            87,
+            90,
+            87,
+            82
+          ],
+          "ovr": 155.83333333333334,
+          "wins": 14,
+          "matches": 14,
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "scenario": "active",
+      "seed": 45,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgradeClicks": 54,
+          "upgradeVisits": 29,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "ovr": 28.333333333333332,
+          "wins": 4,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 39.5,
+          "upgradeClicks": 170,
+          "upgradeVisits": 74,
+          "medianBurst": 2,
+          "maxUpgradeGap": 120,
+          "firstUpgrade": 1,
+          "camps": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "medianCamps": 3,
+          "levels": [
+            34,
+            34,
+            33,
+            33,
+            33,
+            33,
+            31
+          ],
+          "ovr": 67.5,
+          "wins": 13,
+          "matches": 14,
+          "transfers": []
+        },
+        {
+          "division": 3,
+          "minutes": 78.7,
+          "upgradeClicks": 383,
+          "upgradeVisits": 109,
+          "medianBurst": 2,
+          "maxUpgradeGap": 121,
+          "firstUpgrade": 1,
+          "camps": [
+            8,
+            9,
+            9,
+            8,
+            9,
+            8,
+            8
+          ],
+          "medianCamps": 8,
+          "levels": [
+            88,
+            90,
+            90,
+            87,
+            90,
+            87,
+            82
+          ],
+          "ovr": 155.66666666666666,
+          "wins": 14,
+          "matches": 14,
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "scenario": "active-market",
+      "seed": 41,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgradeClicks": 54,
+          "upgradeVisits": 30,
+          "medianBurst": 1,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "ovr": 29.166666666666668,
+          "wins": 2,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 40,
+          "upgradeClicks": 148,
+          "upgradeVisits": 70,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 1,
+          "camps": [
+            4,
+            3,
+            3,
+            4,
+            4,
+            4,
+            3
+          ],
+          "medianCamps": 4,
+          "levels": [
+            42,
+            38,
+            39,
+            44,
+            40,
+            38,
+            34
+          ],
+          "ovr": 79.33333333333333,
+          "wins": 14,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 0,
+              "day": 1,
+              "kind": "transfer",
+              "id": "player-12",
+              "level": 14,
+              "camps": 1,
+              "ovr": 37,
+              "delta": 8,
+              "cost": 0
+            },
+            {
+              "at": 1111,
+              "day": 38,
+              "kind": "transfer",
+              "id": "player-13",
+              "level": 28,
+              "camps": 2,
+              "ovr": 61,
+              "delta": 12,
+              "cost": 13900
+            },
+            {
+              "at": 1231,
+              "day": 43,
+              "kind": "transfer",
+              "id": "player-14",
+              "level": 27,
+              "camps": 2,
+              "ovr": 55,
+              "delta": 6,
+              "cost": 10300
+            },
+            {
+              "at": 1441,
+              "day": 53,
+              "kind": "transfer",
+              "id": "player-15",
+              "level": 32,
+              "camps": 3,
+              "ovr": 67,
+              "delta": 12,
+              "cost": 18100
+            },
+            {
+              "at": 1531,
+              "day": 58,
+              "kind": "transfer",
+              "id": "player-16",
+              "level": 32,
+              "camps": 3,
+              "ovr": 64,
+              "delta": 9,
+              "cost": 15900
+            },
+            {
+              "at": 1651,
+              "day": 64,
+              "kind": "transfer",
+              "id": "player-17",
+              "level": 33,
+              "camps": 3,
+              "ovr": 72,
+              "delta": 11,
+              "cost": 22100
+            },
+            {
+              "at": 1711,
+              "day": 68,
+              "kind": "transfer",
+              "id": "player-18",
+              "level": 34,
+              "camps": 3,
+              "ovr": 85,
+              "delta": 10,
+              "cost": 34600
+            },
+            {
+              "at": 1921,
+              "day": 79,
+              "kind": "transfer",
+              "id": "player-19",
+              "level": 40,
+              "camps": 3,
+              "ovr": 75,
+              "delta": 11,
+              "cost": 24700
+            },
+            {
+              "at": 2041,
+              "day": 86,
+              "kind": "transfer",
+              "id": "player-20",
+              "level": 38,
+              "camps": 3,
+              "ovr": 79,
+              "delta": 10,
+              "cost": 28400
+            },
+            {
+              "at": 2281,
+              "day": 98,
+              "kind": "transfer",
+              "id": "player-21",
+              "level": 42,
+              "camps": 4,
+              "ovr": 86,
+              "delta": 9,
+              "cost": 35700
+            },
+            {
+              "at": 2341,
+              "day": 102,
+              "kind": "transfer",
+              "id": "player-22",
+              "level": 44,
+              "camps": 4,
+              "ovr": 89,
+              "delta": 10,
+              "cost": 39100
+            }
+          ]
+        },
+        {
+          "division": 3,
+          "minutes": 79.2,
+          "upgradeClicks": 357,
+          "upgradeVisits": 113,
+          "medianBurst": 2,
+          "maxUpgradeGap": 121,
+          "firstUpgrade": 1,
+          "camps": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            8
+          ],
+          "medianCamps": 9,
+          "levels": [
+            90,
+            93,
+            93,
+            90,
+            93,
+            90,
+            85
+          ],
+          "ovr": 161.5,
+          "wins": 12,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 3761,
+              "day": 84,
+              "kind": "transfer",
+              "id": "player-23",
+              "level": 88,
+              "camps": 8,
+              "ovr": 148,
+              "delta": 4,
+              "cost": 521700
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "scenario": "active-market",
+      "seed": 42,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgradeClicks": 54,
+          "upgradeVisits": 30,
+          "medianBurst": 1,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "ovr": 28.333333333333332,
+          "wins": 3,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 40,
+          "upgradeClicks": 151,
+          "upgradeVisits": 72,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            4,
+            3,
+            4,
+            3,
+            3,
+            3,
+            3
+          ],
+          "medianCamps": 3,
+          "levels": [
+            39,
+            35,
+            39,
+            39,
+            35,
+            35,
+            37
+          ],
+          "ovr": 73.83333333333333,
+          "wins": 14,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 0,
+              "day": 1,
+              "kind": "transfer",
+              "id": "player-12",
+              "level": 14,
+              "camps": 1,
+              "ovr": 36,
+              "delta": 8,
+              "cost": 0
+            },
+            {
+              "at": 1021,
+              "day": 33,
+              "kind": "transfer",
+              "id": "player-13",
+              "level": 24,
+              "camps": 2,
+              "ovr": 54,
+              "delta": 8,
+              "cost": 9800
+            },
+            {
+              "at": 1081,
+              "day": 37,
+              "kind": "transfer",
+              "id": "player-14",
+              "level": 27,
+              "camps": 2,
+              "ovr": 59,
+              "delta": 10,
+              "cost": 12600
+            },
+            {
+              "at": 1441,
+              "day": 53,
+              "kind": "transfer",
+              "id": "player-15",
+              "level": 31,
+              "camps": 3,
+              "ovr": 78,
+              "delta": 11,
+              "cost": 27500
+            },
+            {
+              "at": 1831,
+              "day": 74,
+              "kind": "transfer",
+              "id": "player-16",
+              "level": 34,
+              "camps": 3,
+              "ovr": 71,
+              "delta": 8,
+              "cost": 21200
+            },
+            {
+              "at": 2011,
+              "day": 84,
+              "kind": "transfer",
+              "id": "player-17",
+              "level": 35,
+              "camps": 3,
+              "ovr": 87,
+              "delta": 9,
+              "cost": 36800
+            },
+            {
+              "at": 2161,
+              "day": 92,
+              "kind": "transfer",
+              "id": "player-18",
+              "level": 37,
+              "camps": 3,
+              "ovr": 95,
+              "delta": 8,
+              "cost": 46300
+            },
+            {
+              "at": 2221,
+              "day": 96,
+              "kind": "transfer",
+              "id": "player-19",
+              "level": 39,
+              "camps": 3,
+              "ovr": 79,
+              "delta": 8,
+              "cost": 28400
+            },
+            {
+              "at": 2251,
+              "day": 96,
+              "kind": "transfer",
+              "id": "player-20",
+              "level": 39,
+              "camps": 3,
+              "ovr": 74,
+              "delta": 8,
+              "cost": 23800
+            },
+            {
+              "at": 2341,
+              "day": 102,
+              "kind": "transfer",
+              "id": "player-21",
+              "level": 39,
+              "camps": 3,
+              "ovr": 81,
+              "delta": 8,
+              "cost": 30400
+            }
+          ]
+        },
+        {
+          "division": 3,
+          "minutes": 79.7,
+          "upgradeClicks": 370,
+          "upgradeVisits": 112,
+          "medianBurst": 2,
+          "maxUpgradeGap": 121,
+          "firstUpgrade": 0,
+          "camps": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            8
+          ],
+          "medianCamps": 9,
+          "levels": [
+            91,
+            94,
+            93,
+            91,
+            94,
+            91,
+            85
+          ],
+          "ovr": 161.83333333333334,
+          "wins": 14,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 2737,
+              "day": 61,
+              "kind": "transfer",
+              "id": "player-22",
+              "level": 79,
+              "camps": 7,
+              "ovr": 133,
+              "delta": 5,
+              "cost": 412600
+            },
+            {
+              "at": 3309,
+              "day": 74,
+              "kind": "transfer",
+              "id": "player-23",
+              "level": 86,
+              "camps": 8,
+              "ovr": 144,
+              "delta": 5,
+              "cost": 489800
+            },
+            {
+              "at": 4062,
+              "day": 93,
+              "kind": "transfer",
+              "id": "player-24",
+              "level": 92,
+              "camps": 9,
+              "ovr": 152,
+              "delta": 3,
+              "cost": 554500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "scenario": "active-market",
+      "seed": 43,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgradeClicks": 54,
+          "upgradeVisits": 29,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "ovr": 28.5,
+          "wins": 4,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 40,
+          "upgradeClicks": 150,
+          "upgradeVisits": 73,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 1,
+          "camps": [
+            3,
+            3,
+            4,
+            4,
+            3,
+            3,
+            3
+          ],
+          "medianCamps": 3,
+          "levels": [
+            38,
+            37,
+            47,
+            41,
+            37,
+            37,
+            33
+          ],
+          "ovr": 77.66666666666667,
+          "wins": 14,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 0,
+              "day": 1,
+              "kind": "transfer",
+              "id": "player-12",
+              "level": 12,
+              "camps": 1,
+              "ovr": 40,
+              "delta": 8,
+              "cost": 0
+            },
+            {
+              "at": 841,
+              "day": 25,
+              "kind": "transfer",
+              "id": "player-13",
+              "level": 22,
+              "camps": 2,
+              "ovr": 51,
+              "delta": 8,
+              "cost": 8300
+            },
+            {
+              "at": 1021,
+              "day": 33,
+              "kind": "transfer",
+              "id": "player-14",
+              "level": 26,
+              "camps": 2,
+              "ovr": 53,
+              "delta": 8,
+              "cost": 9300
+            },
+            {
+              "at": 1081,
+              "day": 37,
+              "kind": "transfer",
+              "id": "player-15",
+              "level": 28,
+              "camps": 2,
+              "ovr": 57,
+              "delta": 11,
+              "cost": 11400
+            },
+            {
+              "at": 1411,
+              "day": 51,
+              "kind": "transfer",
+              "id": "player-16",
+              "level": 36,
+              "camps": 3,
+              "ovr": 69,
+              "delta": 12,
+              "cost": 19600
+            },
+            {
+              "at": 1651,
+              "day": 64,
+              "kind": "transfer",
+              "id": "player-17",
+              "level": 33,
+              "camps": 3,
+              "ovr": 72,
+              "delta": 12,
+              "cost": 22100
+            },
+            {
+              "at": 1921,
+              "day": 79,
+              "kind": "transfer",
+              "id": "player-18",
+              "level": 37,
+              "camps": 3,
+              "ovr": 77,
+              "delta": 11,
+              "cost": 26500
+            },
+            {
+              "at": 2131,
+              "day": 90,
+              "kind": "transfer",
+              "id": "player-19",
+              "level": 41,
+              "camps": 4,
+              "ovr": 77,
+              "delta": 8,
+              "cost": 26500
+            },
+            {
+              "at": 2221,
+              "day": 96,
+              "kind": "transfer",
+              "id": "player-20",
+              "level": 41,
+              "camps": 4,
+              "ovr": 82,
+              "delta": 8,
+              "cost": 31400
+            },
+            {
+              "at": 2341,
+              "day": 102,
+              "kind": "transfer",
+              "id": "player-21",
+              "level": 47,
+              "camps": 4,
+              "ovr": 86,
+              "delta": 9,
+              "cost": 35700
+            }
+          ]
+        },
+        {
+          "division": 3,
+          "minutes": 79.7,
+          "upgradeClicks": 361,
+          "upgradeVisits": 113,
+          "medianBurst": 2,
+          "maxUpgradeGap": 121,
+          "firstUpgrade": 0,
+          "camps": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            8
+          ],
+          "medianCamps": 9,
+          "levels": [
+            90,
+            94,
+            93,
+            91,
+            94,
+            90,
+            85
+          ],
+          "ovr": 161.5,
+          "wins": 14,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 3008,
+              "day": 67,
+              "kind": "transfer",
+              "id": "player-22",
+              "level": 79,
+              "camps": 7,
+              "ovr": 133,
+              "delta": 3,
+              "cost": 407500
+            },
+            {
+              "at": 3911,
+              "day": 91,
+              "kind": "transfer",
+              "id": "player-23",
+              "level": 92,
+              "camps": 9,
+              "ovr": 152,
+              "delta": 6,
+              "cost": 554500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "scenario": "active-market",
+      "seed": 44,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgradeClicks": 54,
+          "upgradeVisits": 29,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "ovr": 28.666666666666668,
+          "wins": 4,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 40,
+          "upgradeClicks": 147,
+          "upgradeVisits": 72,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 1,
+          "camps": [
+            3,
+            3,
+            4,
+            3,
+            3,
+            4,
+            3
+          ],
+          "medianCamps": 3,
+          "levels": [
+            38,
+            37,
+            50,
+            37,
+            37,
+            42,
+            34
+          ],
+          "ovr": 78.5,
+          "wins": 14,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 0,
+              "day": 1,
+              "kind": "transfer",
+              "id": "player-12",
+              "level": 15,
+              "camps": 1,
+              "ovr": 38,
+              "delta": 10,
+              "cost": 0
+            },
+            {
+              "at": 841,
+              "day": 25,
+              "kind": "transfer",
+              "id": "player-13",
+              "level": 22,
+              "camps": 2,
+              "ovr": 49,
+              "delta": 7,
+              "cost": 7400
+            },
+            {
+              "at": 1021,
+              "day": 33,
+              "kind": "transfer",
+              "id": "player-14",
+              "level": 27,
+              "camps": 2,
+              "ovr": 55,
+              "delta": 10,
+              "cost": 10300
+            },
+            {
+              "at": 1261,
+              "day": 45,
+              "kind": "transfer",
+              "id": "player-15",
+              "level": 32,
+              "camps": 3,
+              "ovr": 63,
+              "delta": 12,
+              "cost": 15200
+            },
+            {
+              "at": 1441,
+              "day": 53,
+              "kind": "transfer",
+              "id": "player-16",
+              "level": 29,
+              "camps": 2,
+              "ovr": 62,
+              "delta": 8,
+              "cost": 14500
+            },
+            {
+              "at": 1591,
+              "day": 61,
+              "kind": "transfer",
+              "id": "player-17",
+              "level": 32,
+              "camps": 3,
+              "ovr": 80,
+              "delta": 10,
+              "cost": 29400
+            },
+            {
+              "at": 1711,
+              "day": 68,
+              "kind": "transfer",
+              "id": "player-18",
+              "level": 37,
+              "camps": 3,
+              "ovr": 74,
+              "delta": 12,
+              "cost": 23800
+            },
+            {
+              "at": 1861,
+              "day": 76,
+              "kind": "transfer",
+              "id": "player-19",
+              "level": 38,
+              "camps": 3,
+              "ovr": 72,
+              "delta": 9,
+              "cost": 22100
+            },
+            {
+              "at": 2041,
+              "day": 86,
+              "kind": "transfer",
+              "id": "player-20",
+              "level": 42,
+              "camps": 4,
+              "ovr": 83,
+              "delta": 9,
+              "cost": 32500
+            },
+            {
+              "at": 2221,
+              "day": 96,
+              "kind": "transfer",
+              "id": "player-21",
+              "level": 43,
+              "camps": 4,
+              "ovr": 80,
+              "delta": 8,
+              "cost": 29400
+            },
+            {
+              "at": 2341,
+              "day": 102,
+              "kind": "transfer",
+              "id": "player-22",
+              "level": 50,
+              "camps": 4,
+              "ovr": 90,
+              "delta": 10,
+              "cost": 40200
+            }
+          ]
+        },
+        {
+          "division": 3,
+          "minutes": 79.7,
+          "upgradeClicks": 351,
+          "upgradeVisits": 115,
+          "medianBurst": 2,
+          "maxUpgradeGap": 121,
+          "firstUpgrade": 0,
+          "camps": [
+            8,
+            9,
+            9,
+            8,
+            9,
+            9,
+            8
+          ],
+          "medianCamps": 9,
+          "levels": [
+            87,
+            98,
+            95,
+            87,
+            95,
+            91,
+            86
+          ],
+          "ovr": 161.33333333333334,
+          "wins": 14,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 2737,
+              "day": 61,
+              "kind": "transfer",
+              "id": "player-23",
+              "level": 79,
+              "camps": 7,
+              "ovr": 133,
+              "delta": 4,
+              "cost": 412600
+            },
+            {
+              "at": 3640,
+              "day": 84,
+              "kind": "transfer",
+              "id": "player-24",
+              "level": 89,
+              "camps": 8,
+              "ovr": 149,
+              "delta": 5,
+              "cost": 529800
+            },
+            {
+              "at": 4303,
+              "day": 98,
+              "kind": "transfer",
+              "id": "player-25",
+              "level": 95,
+              "camps": 9,
+              "ovr": 158,
+              "delta": 7,
+              "cost": 575100
+            },
+            {
+              "at": 4664,
+              "day": 112,
+              "kind": "transfer",
+              "id": "player-26",
+              "level": 98,
+              "camps": 9,
+              "ovr": 162,
+              "delta": 4,
+              "cost": 608700
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "scenario": "active-market",
+      "seed": 45,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgradeClicks": 54,
+          "upgradeVisits": 29,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 31,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "ovr": 28.333333333333332,
+          "wins": 4,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 40,
+          "upgradeClicks": 148,
+          "upgradeVisits": 72,
+          "medianBurst": 2,
+          "maxUpgradeGap": 60,
+          "firstUpgrade": 1,
+          "camps": [
+            3,
+            3,
+            4,
+            3,
+            3,
+            3,
+            4
+          ],
+          "medianCamps": 3,
+          "levels": [
+            37,
+            37,
+            38,
+            37,
+            36,
+            36,
+            44
+          ],
+          "ovr": 73,
+          "wins": 12,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 0,
+              "day": 1,
+              "kind": "transfer",
+              "id": "player-12",
+              "level": 16,
+              "camps": 1,
+              "ovr": 41,
+              "delta": 12,
+              "cost": 0
+            },
+            {
+              "at": 841,
+              "day": 25,
+              "kind": "transfer",
+              "id": "player-13",
+              "level": 22,
+              "camps": 2,
+              "ovr": 48,
+              "delta": 6,
+              "cost": 7000
+            },
+            {
+              "at": 1021,
+              "day": 33,
+              "kind": "transfer",
+              "id": "player-14",
+              "level": 24,
+              "camps": 2,
+              "ovr": 54,
+              "delta": 8,
+              "cost": 9800
+            },
+            {
+              "at": 1231,
+              "day": 43,
+              "kind": "transfer",
+              "id": "player-15",
+              "level": 26,
+              "camps": 2,
+              "ovr": 69,
+              "delta": 8,
+              "cost": 19600
+            },
+            {
+              "at": 1441,
+              "day": 53,
+              "kind": "transfer",
+              "id": "player-16",
+              "level": 32,
+              "camps": 3,
+              "ovr": 67,
+              "delta": 11,
+              "cost": 18100
+            },
+            {
+              "at": 1591,
+              "day": 61,
+              "kind": "transfer",
+              "id": "player-17",
+              "level": 31,
+              "camps": 3,
+              "ovr": 80,
+              "delta": 9,
+              "cost": 29400
+            },
+            {
+              "at": 1711,
+              "day": 68,
+              "kind": "transfer",
+              "id": "player-18",
+              "level": 35,
+              "camps": 3,
+              "ovr": 88,
+              "delta": 8,
+              "cost": 37900
+            },
+            {
+              "at": 1831,
+              "day": 74,
+              "kind": "transfer",
+              "id": "player-19",
+              "level": 35,
+              "camps": 3,
+              "ovr": 67,
+              "delta": 9,
+              "cost": 18100
+            },
+            {
+              "at": 2011,
+              "day": 84,
+              "kind": "transfer",
+              "id": "player-20",
+              "level": 38,
+              "camps": 3,
+              "ovr": 72,
+              "delta": 9,
+              "cost": 22100
+            },
+            {
+              "at": 2311,
+              "day": 100,
+              "kind": "transfer",
+              "id": "player-21",
+              "level": 39,
+              "camps": 3,
+              "ovr": 97,
+              "delta": 9,
+              "cost": 48900
+            },
+            {
+              "at": 2371,
+              "day": 104,
+              "kind": "transfer",
+              "id": "player-22",
+              "level": 44,
+              "camps": 4,
+              "ovr": 106,
+              "delta": 9,
+              "cost": 61200
+            }
+          ]
+        },
+        {
+          "division": 3,
+          "minutes": 79.2,
+          "upgradeClicks": 365,
+          "upgradeVisits": 111,
+          "medianBurst": 2,
+          "maxUpgradeGap": 121,
+          "firstUpgrade": 31,
+          "camps": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            8
+          ],
+          "medianCamps": 9,
+          "levels": [
+            90,
+            89,
+            93,
+            91,
+            94,
+            91,
+            85
+          ],
+          "ovr": 159.83333333333334,
+          "wins": 14,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 4122,
+              "day": 96,
+              "kind": "transfer",
+              "id": "player-23",
+              "level": 92,
+              "camps": 9,
+              "ovr": 154,
+              "delta": 4,
+              "cost": 542400
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "scenario": "return-market",
+      "seed": 41,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgradeClicks": 49,
+          "upgradeVisits": 6,
+          "medianBurst": 7,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "ovr": 27.666666666666668,
+          "wins": 2,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgradeClicks": 96,
+          "upgradeVisits": 20,
+          "medianBurst": 5,
+          "maxUpgradeGap": 601,
+          "firstUpgrade": 601,
+          "camps": [
+            3,
+            2,
+            2,
+            3,
+            2,
+            3,
+            2
+          ],
+          "medianCamps": 2,
+          "levels": [
+            29,
+            26,
+            26,
+            33,
+            26,
+            28,
+            25
+          ],
+          "ovr": 59.666666666666664,
+          "wins": 13,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 0,
+              "day": 1,
+              "kind": "transfer",
+              "id": "player-12",
+              "level": 14,
+              "camps": 1,
+              "ovr": 36,
+              "delta": 8,
+              "cost": 0
+            },
+            {
+              "at": 1801,
+              "day": 15,
+              "kind": "transfer",
+              "id": "player-13",
+              "level": 18,
+              "camps": 1,
+              "ovr": 45,
+              "delta": 12,
+              "cost": 5800
+            },
+            {
+              "at": 3601,
+              "day": 39,
+              "kind": "transfer",
+              "id": "player-14",
+              "level": 23,
+              "camps": 2,
+              "ovr": 52,
+              "delta": 12,
+              "cost": 8800
+            },
+            {
+              "at": 6301,
+              "day": 80,
+              "kind": "transfer",
+              "id": "player-15",
+              "level": 28,
+              "camps": 2,
+              "ovr": 60,
+              "delta": 8,
+              "cost": 13200
+            },
+            {
+              "at": 6601,
+              "day": 88,
+              "kind": "transfer",
+              "id": "player-16",
+              "level": 27,
+              "camps": 2,
+              "ovr": 60,
+              "delta": 8,
+              "cost": 13200
+            },
+            {
+              "at": 6901,
+              "day": 96,
+              "kind": "transfer",
+              "id": "player-17",
+              "level": 29,
+              "camps": 2,
+              "ovr": 64,
+              "delta": 9,
+              "cost": 15900
+            },
+            {
+              "at": 7201,
+              "day": 104,
+              "kind": "transfer",
+              "id": "player-18",
+              "level": 33,
+              "camps": 3,
+              "ovr": 70,
+              "delta": 10,
+              "cost": 20400
+            }
+          ]
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgradeClicks": 335,
+          "upgradeVisits": 43,
+          "medianBurst": 8,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 0,
+          "camps": [
+            7,
+            7,
+            8,
+            7,
+            7,
+            7,
+            6
+          ],
+          "medianCamps": 7,
+          "levels": [
+            80,
+            78,
+            83,
+            78,
+            79,
+            80,
+            68
+          ],
+          "ovr": 141.83333333333334,
+          "wins": 11,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 3901,
+              "day": 28,
+              "kind": "transfer",
+              "id": "player-19",
+              "level": 40,
+              "camps": 3,
+              "ovr": 76,
+              "delta": 3,
+              "cost": 130400
+            },
+            {
+              "at": 5101,
+              "day": 35,
+              "kind": "transfer",
+              "id": "player-20",
+              "level": 42,
+              "camps": 4,
+              "ovr": 85,
+              "delta": 3,
+              "cost": 167000
+            },
+            {
+              "at": 8401,
+              "day": 63,
+              "kind": "transfer",
+              "id": "player-21",
+              "level": 58,
+              "camps": 5,
+              "ovr": 113,
+              "delta": 4,
+              "cost": 322900
+            },
+            {
+              "at": 9001,
+              "day": 70,
+              "kind": "transfer",
+              "id": "player-22",
+              "level": 63,
+              "camps": 6,
+              "ovr": 117,
+              "delta": 6,
+              "cost": 350900
+            },
+            {
+              "at": 10201,
+              "day": 84,
+              "kind": "transfer",
+              "id": "player-23",
+              "level": 68,
+              "camps": 6,
+              "ovr": 118,
+              "delta": 4,
+              "cost": 358000
+            },
+            {
+              "at": 10801,
+              "day": 91,
+              "kind": "transfer",
+              "id": "player-24",
+              "level": 70,
+              "camps": 6,
+              "ovr": 129,
+              "delta": 5,
+              "cost": 441800
+            },
+            {
+              "at": 12301,
+              "day": 111,
+              "kind": "transfer",
+              "id": "player-25",
+              "level": 81,
+              "camps": 8,
+              "ovr": 137,
+              "delta": 3,
+              "cost": 508400
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "scenario": "return-market",
+      "seed": 42,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgradeClicks": 49,
+          "upgradeVisits": 6,
+          "medianBurst": 6,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "ovr": 27.166666666666668,
+          "wins": 3,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgradeClicks": 97,
+          "upgradeVisits": 21,
+          "medianBurst": 5,
+          "maxUpgradeGap": 601,
+          "firstUpgrade": 601,
+          "camps": [
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            2
+          ],
+          "medianCamps": 2,
+          "levels": [
+            26,
+            26,
+            26,
+            26,
+            31,
+            30,
+            28
+          ],
+          "ovr": 58.166666666666664,
+          "wins": 11,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 0,
+              "day": 1,
+              "kind": "transfer",
+              "id": "player-12",
+              "level": 13,
+              "camps": 1,
+              "ovr": 35,
+              "delta": 8,
+              "cost": 0
+            },
+            {
+              "at": 2101,
+              "day": 16,
+              "kind": "transfer",
+              "id": "player-13",
+              "level": 16,
+              "camps": 1,
+              "ovr": 49,
+              "delta": 10,
+              "cost": 7400
+            },
+            {
+              "at": 3001,
+              "day": 29,
+              "kind": "transfer",
+              "id": "player-14",
+              "level": 22,
+              "camps": 2,
+              "ovr": 48,
+              "delta": 11,
+              "cost": 7000
+            },
+            {
+              "at": 5701,
+              "day": 64,
+              "kind": "transfer",
+              "id": "player-15",
+              "level": 26,
+              "camps": 2,
+              "ovr": 56,
+              "delta": 8,
+              "cost": 10800
+            },
+            {
+              "at": 6601,
+              "day": 88,
+              "kind": "transfer",
+              "id": "player-16",
+              "level": 31,
+              "camps": 3,
+              "ovr": 60,
+              "delta": 12,
+              "cost": 13200
+            },
+            {
+              "at": 6901,
+              "day": 96,
+              "kind": "transfer",
+              "id": "player-17",
+              "level": 30,
+              "camps": 2,
+              "ovr": 63,
+              "delta": 10,
+              "cost": 15200
+            },
+            {
+              "at": 7201,
+              "day": 104,
+              "kind": "transfer",
+              "id": "player-18",
+              "level": 28,
+              "camps": 2,
+              "ovr": 74,
+              "delta": 8,
+              "cost": 23800
+            }
+          ]
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgradeClicks": 334,
+          "upgradeVisits": 43,
+          "medianBurst": 8,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 0,
+          "camps": [
+            7,
+            7,
+            8,
+            7,
+            7,
+            7,
+            7
+          ],
+          "medianCamps": 7,
+          "levels": [
+            79,
+            78,
+            81,
+            75,
+            79,
+            79,
+            74
+          ],
+          "ovr": 139.66666666666666,
+          "wins": 11,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 5101,
+              "day": 35,
+              "kind": "transfer",
+              "id": "player-19",
+              "level": 42,
+              "camps": 4,
+              "ovr": 78,
+              "delta": 4,
+              "cost": 134000
+            },
+            {
+              "at": 5701,
+              "day": 41,
+              "kind": "transfer",
+              "id": "player-20",
+              "level": 48,
+              "camps": 4,
+              "ovr": 86,
+              "delta": 5,
+              "cost": 172100
+            },
+            {
+              "at": 6601,
+              "day": 48,
+              "kind": "transfer",
+              "id": "player-21",
+              "level": 51,
+              "camps": 5,
+              "ovr": 100,
+              "delta": 5,
+              "cost": 250600
+            },
+            {
+              "at": 7501,
+              "day": 56,
+              "kind": "transfer",
+              "id": "player-22",
+              "level": 56,
+              "camps": 5,
+              "ovr": 99,
+              "delta": 3,
+              "cost": 244500
+            },
+            {
+              "at": 10201,
+              "day": 84,
+              "kind": "transfer",
+              "id": "player-23",
+              "level": 68,
+              "camps": 6,
+              "ovr": 117,
+              "delta": 4,
+              "cost": 350900
+            },
+            {
+              "at": 11701,
+              "day": 103,
+              "kind": "transfer",
+              "id": "player-24",
+              "level": 78,
+              "camps": 7,
+              "ovr": 133,
+              "delta": 5,
+              "cost": 474500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "scenario": "return-market",
+      "seed": 43,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgradeClicks": 49,
+          "upgradeVisits": 6,
+          "medianBurst": 6,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "ovr": 27.166666666666668,
+          "wins": 4,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgradeClicks": 98,
+          "upgradeVisits": 20,
+          "medianBurst": 5,
+          "maxUpgradeGap": 601,
+          "firstUpgrade": 601,
+          "camps": [
+            3,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2
+          ],
+          "medianCamps": 2,
+          "levels": [
+            32,
+            27,
+            27,
+            29,
+            27,
+            26,
+            26
+          ],
+          "ovr": 58.833333333333336,
+          "wins": 13,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 0,
+              "day": 1,
+              "kind": "transfer",
+              "id": "player-12",
+              "level": 12,
+              "camps": 1,
+              "ovr": 40,
+              "delta": 8,
+              "cost": 0
+            },
+            {
+              "at": 2401,
+              "day": 21,
+              "kind": "transfer",
+              "id": "player-13",
+              "level": 19,
+              "camps": 1,
+              "ovr": 54,
+              "delta": 10,
+              "cost": 9800
+            },
+            {
+              "at": 3601,
+              "day": 39,
+              "kind": "transfer",
+              "id": "player-14",
+              "level": 22,
+              "camps": 2,
+              "ovr": 51,
+              "delta": 12,
+              "cost": 8300
+            },
+            {
+              "at": 4801,
+              "day": 55,
+              "kind": "transfer",
+              "id": "player-15",
+              "level": 24,
+              "camps": 2,
+              "ovr": 54,
+              "delta": 10,
+              "cost": 9800
+            },
+            {
+              "at": 5701,
+              "day": 64,
+              "kind": "transfer",
+              "id": "player-16",
+              "level": 29,
+              "camps": 2,
+              "ovr": 62,
+              "delta": 11,
+              "cost": 14500
+            },
+            {
+              "at": 6301,
+              "day": 80,
+              "kind": "transfer",
+              "id": "player-17",
+              "level": 26,
+              "camps": 2,
+              "ovr": 58,
+              "delta": 8,
+              "cost": 12000
+            },
+            {
+              "at": 7201,
+              "day": 104,
+              "kind": "transfer",
+              "id": "player-18",
+              "level": 32,
+              "camps": 3,
+              "ovr": 68,
+              "delta": 10,
+              "cost": 18800
+            }
+          ]
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgradeClicks": 337,
+          "upgradeVisits": 42,
+          "medianBurst": 8,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "medianCamps": 7,
+          "levels": [
+            79,
+            78,
+            79,
+            80,
+            78,
+            79,
+            75
+          ],
+          "ovr": 139.83333333333334,
+          "wins": 11,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 3901,
+              "day": 28,
+              "kind": "transfer",
+              "id": "player-19",
+              "level": 40,
+              "camps": 3,
+              "ovr": 75,
+              "delta": 3,
+              "cost": 126000
+            },
+            {
+              "at": 7501,
+              "day": 56,
+              "kind": "transfer",
+              "id": "player-20",
+              "level": 55,
+              "camps": 5,
+              "ovr": 97,
+              "delta": 4,
+              "cost": 232500
+            },
+            {
+              "at": 8401,
+              "day": 63,
+              "kind": "transfer",
+              "id": "player-21",
+              "level": 59,
+              "camps": 5,
+              "ovr": 103,
+              "delta": 3,
+              "cost": 258100
+            },
+            {
+              "at": 9001,
+              "day": 70,
+              "kind": "transfer",
+              "id": "player-22",
+              "level": 64,
+              "camps": 6,
+              "ovr": 110,
+              "delta": 5,
+              "cost": 302700
+            },
+            {
+              "at": 10801,
+              "day": 91,
+              "kind": "transfer",
+              "id": "player-23",
+              "level": 70,
+              "camps": 6,
+              "ovr": 119,
+              "delta": 3,
+              "cost": 365300
+            },
+            {
+              "at": 11101,
+              "day": 96,
+              "kind": "transfer",
+              "id": "player-24",
+              "level": 73,
+              "camps": 7,
+              "ovr": 134,
+              "delta": 5,
+              "cost": 482900
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "scenario": "return-market",
+      "seed": 44,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgradeClicks": 49,
+          "upgradeVisits": 6,
+          "medianBurst": 7,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "ovr": 27.166666666666668,
+          "wins": 3,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgradeClicks": 101,
+          "upgradeVisits": 20,
+          "medianBurst": 6,
+          "maxUpgradeGap": 601,
+          "firstUpgrade": 601,
+          "camps": [
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2
+          ],
+          "medianCamps": 2,
+          "levels": [
+            26,
+            25,
+            31,
+            30,
+            25,
+            25,
+            27
+          ],
+          "ovr": 58,
+          "wins": 12,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 0,
+              "day": 1,
+              "kind": "transfer",
+              "id": "player-12",
+              "level": 14,
+              "camps": 1,
+              "ovr": 36,
+              "delta": 10,
+              "cost": 0
+            },
+            {
+              "at": 3601,
+              "day": 39,
+              "kind": "transfer",
+              "id": "player-13",
+              "level": 20,
+              "camps": 1,
+              "ovr": 49,
+              "delta": 8,
+              "cost": 7400
+            },
+            {
+              "at": 5701,
+              "day": 64,
+              "kind": "transfer",
+              "id": "player-14",
+              "level": 23,
+              "camps": 2,
+              "ovr": 62,
+              "delta": 8,
+              "cost": 14500
+            },
+            {
+              "at": 6601,
+              "day": 88,
+              "kind": "transfer",
+              "id": "player-15",
+              "level": 27,
+              "camps": 2,
+              "ovr": 71,
+              "delta": 9,
+              "cost": 21200
+            },
+            {
+              "at": 6901,
+              "day": 96,
+              "kind": "transfer",
+              "id": "player-16",
+              "level": 31,
+              "camps": 3,
+              "ovr": 61,
+              "delta": 11,
+              "cost": 13900
+            },
+            {
+              "at": 7201,
+              "day": 104,
+              "kind": "transfer",
+              "id": "player-17",
+              "level": 30,
+              "camps": 2,
+              "ovr": 66,
+              "delta": 10,
+              "cost": 17300
+            }
+          ]
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgradeClicks": 336,
+          "upgradeVisits": 43,
+          "medianBurst": 8,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 0,
+          "camps": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "medianCamps": 7,
+          "levels": [
+            79,
+            79,
+            79,
+            79,
+            79,
+            76,
+            75
+          ],
+          "ovr": 140,
+          "wins": 13,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 3901,
+              "day": 28,
+              "kind": "transfer",
+              "id": "player-18",
+              "level": 40,
+              "camps": 3,
+              "ovr": 83,
+              "delta": 3,
+              "cost": 163800
+            },
+            {
+              "at": 5101,
+              "day": 35,
+              "kind": "transfer",
+              "id": "player-19",
+              "level": 43,
+              "camps": 4,
+              "ovr": 80,
+              "delta": 5,
+              "cost": 143000
+            },
+            {
+              "at": 5401,
+              "day": 37,
+              "kind": "transfer",
+              "id": "player-20",
+              "level": 39,
+              "camps": 3,
+              "ovr": 95,
+              "delta": 3,
+              "cost": 220800
+            },
+            {
+              "at": 6601,
+              "day": 48,
+              "kind": "transfer",
+              "id": "player-21",
+              "level": 50,
+              "camps": 4,
+              "ovr": 100,
+              "delta": 3,
+              "cost": 250600
+            },
+            {
+              "at": 7501,
+              "day": 56,
+              "kind": "transfer",
+              "id": "player-22",
+              "level": 55,
+              "camps": 5,
+              "ovr": 107,
+              "delta": 5,
+              "cost": 295400
+            },
+            {
+              "at": 9601,
+              "day": 77,
+              "kind": "transfer",
+              "id": "player-23",
+              "level": 63,
+              "camps": 6,
+              "ovr": 110,
+              "delta": 3,
+              "cost": 302700
+            },
+            {
+              "at": 10201,
+              "day": 84,
+              "kind": "transfer",
+              "id": "player-24",
+              "level": 68,
+              "camps": 6,
+              "ovr": 118,
+              "delta": 3,
+              "cost": 358000
+            },
+            {
+              "at": 10801,
+              "day": 91,
+              "kind": "transfer",
+              "id": "player-25",
+              "level": 66,
+              "camps": 6,
+              "ovr": 151,
+              "delta": 3,
+              "cost": 636100
+            },
+            {
+              "at": 12301,
+              "day": 111,
+              "kind": "transfer",
+              "id": "player-26",
+              "level": 71,
+              "camps": 7,
+              "ovr": 162,
+              "delta": 4,
+              "cost": 746600
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "scenario": "return-market",
+      "seed": 45,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgradeClicks": 49,
+          "upgradeVisits": 6,
+          "medianBurst": 6,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "ovr": 27.166666666666668,
+          "wins": 4,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgradeClicks": 95,
+          "upgradeVisits": 21,
+          "medianBurst": 5,
+          "maxUpgradeGap": 601,
+          "firstUpgrade": 601,
+          "camps": [
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            3
+          ],
+          "medianCamps": 2,
+          "levels": [
+            26,
+            30,
+            26,
+            26,
+            26,
+            26,
+            28
+          ],
+          "ovr": 56.5,
+          "wins": 10,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 0,
+              "day": 1,
+              "kind": "transfer",
+              "id": "player-12",
+              "level": 15,
+              "camps": 1,
+              "ovr": 39,
+              "delta": 12,
+              "cost": 0
+            },
+            {
+              "at": 1801,
+              "day": 15,
+              "kind": "transfer",
+              "id": "player-13",
+              "level": 16,
+              "camps": 1,
+              "ovr": 39,
+              "delta": 8,
+              "cost": 4000
+            },
+            {
+              "at": 3601,
+              "day": 39,
+              "kind": "transfer",
+              "id": "player-14",
+              "level": 24,
+              "camps": 2,
+              "ovr": 50,
+              "delta": 11,
+              "cost": 7800
+            },
+            {
+              "at": 4801,
+              "day": 55,
+              "kind": "transfer",
+              "id": "player-15",
+              "level": 24,
+              "camps": 2,
+              "ovr": 64,
+              "delta": 11,
+              "cost": 15900
+            },
+            {
+              "at": 6301,
+              "day": 80,
+              "kind": "transfer",
+              "id": "player-16",
+              "level": 28,
+              "camps": 2,
+              "ovr": 73,
+              "delta": 9,
+              "cost": 22900
+            },
+            {
+              "at": 6601,
+              "day": 88,
+              "kind": "transfer",
+              "id": "player-17",
+              "level": 30,
+              "camps": 2,
+              "ovr": 59,
+              "delta": 10,
+              "cost": 12600
+            }
+          ]
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgradeClicks": 342,
+          "upgradeVisits": 41,
+          "medianBurst": 8,
+          "maxUpgradeGap": 600,
+          "firstUpgrade": 301,
+          "camps": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "medianCamps": 7,
+          "levels": [
+            78,
+            79,
+            79,
+            78,
+            79,
+            75,
+            74
+          ],
+          "ovr": 138.66666666666666,
+          "wins": 12,
+          "matches": 14,
+          "transfers": [
+            {
+              "at": 3901,
+              "day": 28,
+              "kind": "transfer",
+              "id": "player-18",
+              "level": 40,
+              "camps": 3,
+              "ovr": 82,
+              "delta": 4,
+              "cost": 158800
+            },
+            {
+              "at": 5701,
+              "day": 41,
+              "kind": "transfer",
+              "id": "player-19",
+              "level": 46,
+              "camps": 4,
+              "ovr": 83,
+              "delta": 4,
+              "cost": 157200
+            },
+            {
+              "at": 7501,
+              "day": 56,
+              "kind": "transfer",
+              "id": "player-20",
+              "level": 55,
+              "camps": 5,
+              "ovr": 97,
+              "delta": 3,
+              "cost": 232500
+            },
+            {
+              "at": 8401,
+              "day": 63,
+              "kind": "transfer",
+              "id": "player-21",
+              "level": 55,
+              "camps": 5,
+              "ovr": 129,
+              "delta": 3,
+              "cost": 441800
+            },
+            {
+              "at": 9001,
+              "day": 70,
+              "kind": "transfer",
+              "id": "player-22",
+              "level": 60,
+              "camps": 5,
+              "ovr": 116,
+              "delta": 4,
+              "cost": 343700
+            },
+            {
+              "at": 11101,
+              "day": 96,
+              "kind": "transfer",
+              "id": "player-23",
+              "level": 66,
+              "camps": 6,
+              "ovr": 154,
+              "delta": 4,
+              "cost": 665400
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "scenario": "return-no-market",
+      "seed": 41,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgradeClicks": 49,
+          "upgradeVisits": 6,
+          "medianBurst": 7,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "ovr": 27.666666666666668,
+          "wins": 2,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgradeClicks": 110,
+          "upgradeVisits": 18,
+          "medianBurst": 6,
+          "maxUpgradeGap": 900,
+          "firstUpgrade": 301,
+          "camps": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "medianCamps": 2,
+          "levels": [
+            24,
+            24,
+            24,
+            24,
+            24,
+            23,
+            23
+          ],
+          "ovr": 53,
+          "wins": 11,
+          "matches": 14,
+          "transfers": []
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgradeClicks": 365,
+          "upgradeVisits": 41,
+          "medianBurst": 9,
+          "maxUpgradeGap": 600,
+          "firstUpgrade": 301,
+          "camps": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "medianCamps": 7,
+          "levels": [
+            76,
+            78,
+            78,
+            75,
+            78,
+            75,
+            71
+          ],
+          "ovr": 137,
+          "wins": 10,
+          "matches": 14,
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "scenario": "return-no-market",
+      "seed": 42,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgradeClicks": 49,
+          "upgradeVisits": 6,
+          "medianBurst": 6,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "ovr": 27.166666666666668,
+          "wins": 3,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgradeClicks": 109,
+          "upgradeVisits": 18,
+          "medianBurst": 6,
+          "maxUpgradeGap": 900,
+          "firstUpgrade": 301,
+          "camps": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "medianCamps": 2,
+          "levels": [
+            24,
+            24,
+            24,
+            24,
+            23,
+            23,
+            23
+          ],
+          "ovr": 52.166666666666664,
+          "wins": 11,
+          "matches": 14,
+          "transfers": []
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgradeClicks": 367,
+          "upgradeVisits": 42,
+          "medianBurst": 9,
+          "maxUpgradeGap": 600,
+          "firstUpgrade": 0,
+          "camps": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "medianCamps": 7,
+          "levels": [
+            76,
+            78,
+            78,
+            76,
+            78,
+            75,
+            71
+          ],
+          "ovr": 136.66666666666666,
+          "wins": 12,
+          "matches": 14,
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "scenario": "return-no-market",
+      "seed": 43,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgradeClicks": 49,
+          "upgradeVisits": 6,
+          "medianBurst": 6,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "ovr": 27.166666666666668,
+          "wins": 4,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgradeClicks": 110,
+          "upgradeVisits": 20,
+          "medianBurst": 6,
+          "maxUpgradeGap": 900,
+          "firstUpgrade": 301,
+          "camps": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "medianCamps": 2,
+          "levels": [
+            24,
+            24,
+            24,
+            24,
+            24,
+            23,
+            23
+          ],
+          "ovr": 52.5,
+          "wins": 12,
+          "matches": 14,
+          "transfers": []
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgradeClicks": 366,
+          "upgradeVisits": 41,
+          "medianBurst": 9,
+          "maxUpgradeGap": 600,
+          "firstUpgrade": 301,
+          "camps": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "medianCamps": 7,
+          "levels": [
+            76,
+            78,
+            78,
+            76,
+            78,
+            75,
+            71
+          ],
+          "ovr": 136.83333333333334,
+          "wins": 10,
+          "matches": 14,
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "scenario": "return-no-market",
+      "seed": 44,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgradeClicks": 49,
+          "upgradeVisits": 6,
+          "medianBurst": 7,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "ovr": 27.166666666666668,
+          "wins": 3,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgradeClicks": 110,
+          "upgradeVisits": 19,
+          "medianBurst": 6,
+          "maxUpgradeGap": 900,
+          "firstUpgrade": 301,
+          "camps": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "medianCamps": 2,
+          "levels": [
+            24,
+            24,
+            24,
+            24,
+            24,
+            23,
+            23
+          ],
+          "ovr": 52.666666666666664,
+          "wins": 12,
+          "matches": 14,
+          "transfers": []
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgradeClicks": 366,
+          "upgradeVisits": 42,
+          "medianBurst": 9,
+          "maxUpgradeGap": 600,
+          "firstUpgrade": 0,
+          "camps": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "medianCamps": 7,
+          "levels": [
+            76,
+            78,
+            78,
+            76,
+            78,
+            75,
+            71
+          ],
+          "ovr": 136.83333333333334,
+          "wins": 13,
+          "matches": 14,
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "scenario": "return-no-market",
+      "seed": 45,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgradeClicks": 49,
+          "upgradeVisits": 6,
+          "medianBurst": 6,
+          "maxUpgradeGap": 301,
+          "firstUpgrade": 301,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "medianCamps": 0,
+          "levels": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "ovr": 27.166666666666668,
+          "wins": 4,
+          "matches": 5,
+          "transfers": []
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgradeClicks": 110,
+          "upgradeVisits": 20,
+          "medianBurst": 6,
+          "maxUpgradeGap": 900,
+          "firstUpgrade": 301,
+          "camps": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "medianCamps": 2,
+          "levels": [
+            24,
+            24,
+            24,
+            24,
+            24,
+            23,
+            23
+          ],
+          "ovr": 52.333333333333336,
+          "wins": 10,
+          "matches": 14,
+          "transfers": []
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgradeClicks": 366,
+          "upgradeVisits": 41,
+          "medianBurst": 9,
+          "maxUpgradeGap": 600,
+          "firstUpgrade": 301,
+          "camps": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "medianCamps": 7,
+          "levels": [
+            76,
+            78,
+            78,
+            76,
+            78,
+            75,
+            71
+          ],
+          "ovr": 136.66666666666666,
+          "wins": 12,
+          "matches": 14,
+          "transfers": []
+        }
+      ]
+    }
+  ]
+}
