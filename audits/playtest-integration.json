@@ -1,0 +1,24 @@
+{
+  "events": 133,
+  "codeLength": 10420,
+  "run": "8e680963-17eb-4fb0-8232-0e53d43766b1",
+  "safety": {
+    "samePlayers": true,
+    "sameRoom": true,
+    "randomCalls": 0
+  },
+  "completedAt": 1793231286974,
+  "types": [
+    "oturum",
+    "başlangıç",
+    "eylem",
+    "oyuncu",
+    "üretim",
+    "blok",
+    "aşama",
+    "catalog",
+    "camps",
+    "maç",
+    "üçüncü-aşama-tamamlandı"
+  ]
+}

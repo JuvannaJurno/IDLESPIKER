@@ -17,7 +17,7 @@ await p.locator('#trainingStats .card-upgrade-button').click();
 await p.waitForFunction(()=>GuidedTutorial.completed('training'));
 assert.equal(await p.evaluate(()=>TeamRules.cardLevel(TeamRules.players.find(p=>p.id===TeamView.snapshot().lineup.p))),before+1);
 await p.evaluate(()=>{document.querySelectorAll('dialog[open]').forEach(d=>d.close());GuidedTutorial.stop();});
-assert(await p.locator('.room-player').evaluateAll(images=>images.every(image=>image.getAttribute('src')==='menu-player.svg')));
+assert.equal(await p.locator('.room-player').count(),0,'neighbourhood departments contain no character');
 await p.evaluate(()=>{const player=TeamRules.players[0];player.cardLevel=10;player.trainingLimitBase=10;TeamView.refresh();});
 const card=p.locator('.player-card[data-player="player-0"]');assert(!(await card.textContent()).includes('Kamp gerekli'));assert((await card.textContent()).includes('Seviye sınırında'));assert.equal(await card.locator('.card-cap-meter').getAttribute('aria-valuenow'),'10');assert.equal(await card.locator('.card-cap-meter').getAttribute('aria-valuemax'),'10');assert.equal(await card.locator('.card-cap-meter i').evaluate(e=>e.style.width),'100%');await card.locator('.card-cap').evaluate(e=>e.scrollIntoView({block:'center'}));await card.locator('.card-cap').screenshot({path:'audits/card-level-ten-full.png'});
 await p.evaluate(()=>{const s=BalRules.enter(RoomSystem.snapshot(),1);s.division=2;RoomSystem.loadStage(s);TeamView.refresh();});
