@@ -1,0 +1,74 @@
+[
+  {
+    "name": "getClientRects @ native:-1",
+    "ms": 3118
+  },
+  {
+    "name": "(program) @ native:-1",
+    "ms": 851
+  },
+  {
+    "name": "fitViewport @ app-display.js?v=77358ca90155:9",
+    "ms": 190
+  },
+  {
+    "name": "getBoundingClientRect @ native:-1",
+    "ms": 107
+  },
+  {
+    "name": "applyGain @ rooms.js?v=127e16940e8c:104",
+    "ms": 47
+  },
+  {
+    "name": "(garbage collector) @ native:-1",
+    "ms": 32
+  },
+  {
+    "name": "querySelector @ native:-1",
+    "ms": 29
+  },
+  {
+    "name": "standings @ league-rules.js?v=25643967df56:31",
+    "ms": 25
+  },
+  {
+    "name": "setItem @ native:-1",
+    "ms": 22
+  },
+  {
+    "name": "closest @ native:-1",
+    "ms": 16
+  },
+  {
+    "name": "progress @ league-rules.js?v=25643967df56:32",
+    "ms": 16
+  },
+  {
+    "name": "count @ room-rules.js?v=dd9dcc1cc72e:38",
+    "ms": 16
+  },
+  {
+    "name": "(anonymous) @ league-rules.js?v=25643967df56:32",
+    "ms": 15
+  },
+  {
+    "name": "(idle) @ native:-1",
+    "ms": 14
+  },
+  {
+    "name": "drawImage @ native:-1",
+    "ms": 13
+  },
+  {
+    "name": "snapshot @ rooms.js?v=127e16940e8c:100",
+    "ms": 13
+  },
+  {
+    "name": "compact @ number-ui.js?v=a24b5930e991:3",
+    "ms": 11
+  },
+  {
+    "name": "querySelectorAll @ native:-1",
+    "ms": 10
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "(program) @ native:-1",
+    "ms": 3243
+  },
+  {
+    "name": "fitViewport @ app-display.js?v=6eab26d2992b:9",
+    "ms": 405
+  },
+  {
+    "name": "applyGain @ rooms.js?v=127e16940e8c:104",
+    "ms": 62
+  },
+  {
+    "name": "drawImage @ native:-1",
+    "ms": 57
+  },
+  {
+    "name": "querySelector @ native:-1",
+    "ms": 34
+  },
+  {
+    "name": "standings @ league-rules.js?v=25643967df56:31",
+    "ms": 33
+  },
+  {
+    "name": "animate @ menu.js?v=3a2e74da3c3d:29",
+    "ms": 30
+  },
+  {
+    "name": "setItem @ native:-1",
+    "ms": 26
+  },
+  {
+    "name": "(anonymous) @ rooms.js?v=127e16940e8c:104",
+    "ms": 25
+  },
+  {
+    "name": "(idle) @ native:-1",
+    "ms": 23
+  },
+  {
+    "name": "(anonymous) @ rooms.js?v=127e16940e8c:44",
+    "ms": 22
+  },
+  {
+    "name": "save @ rooms.js?v=127e16940e8c:6",
+    "ms": 19
+  },
+  {
+    "name": "progress @ league-rules.js?v=25643967df56:32",
+    "ms": 17
+  },
+  {
+    "name": "persist @ menu.js?v=3a2e74da3c3d:12",
+    "ms": 17
+  },
+  {
+    "name": "(anonymous) @ league-rules.js?v=25643967df56:32",
+    "ms": 16
+  },
+  {
+    "name": "exact @ number-ui.js?v=a24b5930e991:4",
+    "ms": 16
+  },
+  {
+    "name": "(garbage collector) @ native:-1",
+    "ms": 15
+  },
+  {
+    "name": "closest @ native:-1",
+    "ms": 14
+  }
+]

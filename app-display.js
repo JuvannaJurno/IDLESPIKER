@@ -12,18 +12,21 @@ function fitViewport(){
  const width=unzoomed?Math.min(innerWidth,v.width):innerWidth,height=unzoomed?Math.min(innerHeight,v.height):innerHeight;
  const top=unzoomed?v.offsetTop:0,left=unzoomed?v.offsetLeft:0;
  const values={'--app-view-height':height,'--app-view-width':width,'--app-view-top':top,'--app-view-left':left,'--app-view-bottom':Math.max(0,innerHeight-height-top),'--app-view-right':Math.max(0,innerWidth-width-left)};
+ // Read the complete layout before changing any CSS variables/classes.
+ const nav=document.querySelector('.mobile-nav'),energy=document.querySelector('.energy-button'),group=document.querySelector('.league-match-group'),calendar=document.querySelector('.calendar-card'),camp=document.getElementById('campAlert');
+ const navRect=nav?.getBoundingClientRect(),energyRect=energy?.getBoundingClientRect(),groupRect=group?.getBoundingClientRect(),calendarRect=calendar?.getBoundingClientRect(),campRect=camp?.getBoundingClientRect();
+ const shown=r=>!!(r&&(r.width||r.height));
+ values['--app-nav-height']=Math.ceil(navRect?.height||0);values['--app-energy-height']=Math.ceil(energyRect?.height||0);
+ const dock=shown(energyRect)?energyRect:navRect;if(dock)values['--app-dock-clearance']=Math.ceil(innerHeight-dock.top+16);
+ const fit=!!(shown(groupRect)&&shown(calendarRect)&&!shown(campRect)&&height>=568&&shown(energyRect));
+ if(fit)values['--app-overview-height']=Math.max(160,Math.floor(energyRect.top-(groupRect.top+scrollY)-8));
+ const frame=document.getElementById('gameMatchFrame'),bar=document.querySelector('.match-shellbar');let controlsWidth=null;
+ if(frame?.contentWindow&&bar){const rects=[...bar.querySelectorAll('button')].map(b=>b.getBoundingClientRect()).filter(shown);controlsWidth=Math.max(112,Math.ceil(rects.reduce((sum,r)=>sum+r.width,0)+Math.max(0,rects.length-1)*8+16));}
  for(const [key,value]of Object.entries(values)){const px=Math.round(value*100)/100+'px';if(root.style.getPropertyValue(key)!==px)root.style.setProperty(key,px);}
- const nav=document.querySelector('.mobile-nav'),energy=document.querySelector('.energy-button');
- for(const [key,element]of [['--app-nav-height',nav],['--app-energy-height',energy]]){const px=Math.ceil(element?.getBoundingClientRect().height||0)+'px';if(root.style.getPropertyValue(key)!==px)root.style.setProperty(key,px);}
- const dock=energy?.getClientRects().length?energy:nav;
- if(dock){const clearance=Math.ceil(innerHeight-dock.getBoundingClientRect().top+16)+'px';if(root.style.getPropertyValue('--app-dock-clearance')!==clearance)root.style.setProperty('--app-dock-clearance',clearance);}
- const group=document.querySelector('.league-match-group'),calendar=document.querySelector('.calendar-card'),camp=document.getElementById('campAlert');
- const fit=!!(group?.getClientRects().length&&calendar?.getClientRects().length&&!camp?.getClientRects().length&&height>=568&&energy?.getClientRects().length);
- root.classList.toggle('club-overview-fit',fit);
- if(fit){const groupTop=group.getBoundingClientRect().top+scrollY,available=Math.floor(energy.getBoundingClientRect().top-groupTop-8);const px=Math.max(160,available)+'px';if(root.style.getPropertyValue('--app-overview-height')!==px)root.style.setProperty('--app-overview-height',px);}
- const frame=document.getElementById('gameMatchFrame'),bar=document.querySelector('.match-shellbar');
- if(frame?.contentWindow&&bar){const buttons=[...bar.querySelectorAll('button')].filter(b=>b.getClientRects().length&&getComputedStyle(b).display!=='none');const reserve=buttons.reduce((sum,b)=>sum+b.getBoundingClientRect().width,0)+Math.max(0,buttons.length-1)*8+16;frame.contentWindow.postMessage({type:'spiker-host-layout',controlsWidth:Math.max(112,Math.ceil(reserve))},'*');}
+ const changed=root.classList.contains('club-overview-fit')!==fit;root.classList.toggle('club-overview-fit',fit);if(changed)scheduleViewport();
+ if(controlsWidth!==null)frame.contentWindow.postMessage({type:'spiker-host-layout',controlsWidth},'*');
 }
+
 function scheduleViewport(){if(viewportFrame)return;viewportFrame=requestAnimationFrame(()=>{viewportFrame=0;fitViewport();});}
 addEventListener('resize',scheduleViewport);addEventListener('orientationchange',scheduleViewport);
 window.visualViewport?.addEventListener('resize',scheduleViewport);window.visualViewport?.addEventListener('scroll',scheduleViewport);
