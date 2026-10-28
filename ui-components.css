@@ -45,3 +45,7 @@ html[data-theme=dark] .selection-dialog :is(p,small){color:var(--ui-muted)!impor
 .selection-dialog .profile-track-choice{min-width:0}.selection-dialog .profile-track-choice strong{overflow-wrap:anywhere}.selection-dialog .profile-track-preview{flex:0 0 42px}
 html[data-theme=dark] .selection-dialog :is(.profile-court-choice,.profile-track-choice,.profile-track-preview){background:var(--ui-soft);color:var(--ui-ink);border-color:var(--ui-edge)}
 html[data-theme=dark] .selection-dialog :is(.profile-court-choice,.profile-track-choice)[aria-pressed=true]{background:#466c62;border-color:#a1bea5}
+
+#clubIntroduction.is-speaking .club-introduction-actor img{animation:club-guide-speaking .28s ease-in-out infinite alternate;transform-origin:center bottom}
+@keyframes club-guide-speaking{from{transform:translateY(0)}to{transform:translateY(-4px)}}
+@media(prefers-reduced-motion:reduce){#clubIntroduction.is-speaking .club-introduction-actor img{animation:none}}

@@ -11,7 +11,7 @@ function update(state){
    if(!group.parentElement.classList.contains('foundation-drawer')){const shell=document.createElement('div');shell.className='foundation-drawer';shell.id='foundation-drawer-'+group.dataset.foundation;group.before(shell);shell.append(group);}
    const shell=group.parentElement;shell.classList.add('has-inherited-blocks');shell.classList.toggle('has-stored-blocks',group.classList.contains('stored-blocks'));shell.classList.toggle('has-stored-bal-blocks',group.classList.contains('stored-bal-blocks'));let pending=shell.parentElement.querySelector('.foundation-pending[data-foundation="'+group.dataset.foundation+'"]');
    if(!pending){pending=document.createElement('section');pending.className='foundation-pending';pending.dataset.foundation=group.dataset.foundation;pending.setAttribute('aria-label','Geliştirilmeyi bekleyen önceki aşama blokları');shell.before(pending);}
-   for(const card of [...group.children]){const room=RoomRules.catalog.find(r=>r.id===card.dataset.id);if(room&&RoomRules.count(state,room.id)<RoomRules.maxLevel(state,room)&&!(state.division>=3&&room.bal))pending.append(card);}
+   for(const card of [...group.children]){const room=RoomRules.catalog.find(r=>r.id===card.dataset.id);if(room&&room.id!=='sugar_boost'&&RoomRules.count(state,room.id)<RoomRules.maxLevel(state,room)&&!(state.division>=3&&room.bal))pending.append(card);}
    for(const card of [...pending.children]){const room=RoomRules.catalog.find(r=>r.id===card.dataset.id);if(!room||RoomRules.count(state,room.id)<RoomRules.maxLevel(state,room)&&!(state.division>=3&&room.bal)||storing.has(card))continue;storing.add(card);
     const depth={position:card.style.position,zIndex:card.style.zIndex};card.style.position='relative';card.style.zIndex='15';base.style.position='relative';base.style.zIndex='20';
     const animation=card.animate(CardMotion.frames(card,base),CardMotion.options());
@@ -27,7 +27,7 @@ function update(state){
  }
 }
 function create(floor,perform,state){
- const rooms=RoomRules.catalog.filter(r=>r.floor===floor&&r.id!=='offline_time'&&(!r.bal||state?.division>=3&&!r.division));if(!rooms.length)return null;
+ const rooms=RoomRules.catalog.filter(r=>r.floor===floor&&r.id!=='offline_time'&&(r.id!=='sugar_boost'||RoomRules.count(state,r.id)>0)&&(!r.bal||state?.division>=3&&!r.division));if(!rooms.length)return null;
  const group=document.createElement('section');group.className='foundation-block inherited-block-group';group.dataset.foundation=floor;group.style.setProperty('--stored-count',rooms.length);group.setAttribute('aria-label','Önceki aşamadan gelen bloklar');
  for(const r of rooms){const card=document.createElement('button');card.type='button';card.className='room-tile purchased-room upgrade-room room-'+r.id;card.dataset.id=r.id;const icon=document.createElement('span'),title=document.createElement('strong'),description=document.createElement('small'),badge=document.createElement('span');icon.className='slot-icon';icon.textContent=r.icon;title.textContent=r.name;badge.className='room-active';card.append(icon,title,description,badge);card.onclick=()=>{if(perform(r)){window.GameAudio?.uiClick?.();update(RoomSystem.snapshot());}};group.append(card);}
  return group;
