@@ -1,5 +1,7 @@
 # Sıfır kayıt → ilk kamp dönüşü ve lig ilerleyişi — 28 Ekim 2026
 
+> Tarihsel sorun ve deney kaydı. Bu rapordan sonra eğitim maliyeti değiştirildi. Güncel kurallar, önce/sonra sonuçları ve sınırlar için [CAMP-ECONOMY-BALANCE.md](CAMP-ECONOMY-BALANCE.md) kullanılır. Aşağıdaki “sorun sürüyor” sonucu değişiklik öncesini anlatır.
+
 Sonuç: Kamp hazırlık kilidi çalışıyor, fakat ekonomik sorun sürüyor. Denenen sekiz senaryonun sekizinde, ilk kamptan dönen bütün oyuncular yeni gelir olmadan tekrar seviye sınırına ulaşabildi. Bu bir denge başarısı değil, yeniden üretilebilen sorun kaydıdır.
 
 ## Gerçek arayüz doğrulaması

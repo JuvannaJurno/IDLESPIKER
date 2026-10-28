@@ -11,17 +11,17 @@
     ]
   },
   "after": {
-    "ap": 437090.90625,
+    "ap": 37571.90625,
     "budget": 8340,
     "levels": [
-      20,
-      20,
-      20,
-      20,
-      20
+      12,
+      11,
+      11,
+      11,
+      11
     ]
   },
-  "clicks": 58,
-  "reenteredPlayers": 4,
-  "method": "Replays the earned fresh-economy checkpoint in an isolated browser. Income stopped; no AP grants; random free upgrades disabled; every quick upgrade and camp selection runs the actual button handler."
+  "clicks": 14,
+  "reenteredPlayers": 0,
+  "method": "Earned fresh-save checkpoint, actual quick-upgrade and camp UI, no new income/AP grants, no free procs. Compares actual levels/click count against isolated economy rules."
 }

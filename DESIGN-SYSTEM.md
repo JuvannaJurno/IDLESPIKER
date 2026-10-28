@@ -825,10 +825,19 @@ Kamp adaylarında isim altında üç küçük yıldız, kadrodaki aynı dolu/yar
 
 Doğrulama: test-camp-training-gap.cjs (96 gerçek kamp dönüşü; dört lig, normal ve eski taban, hemen yeniden gönderim engeli, stat atlaması engeli, gerçek yükseltmeyle açılma ve reload); test-camp-gap-stars-browser.cjs (yetenek rehberi yok, dönüşte seviye 18 gereği, tam/yarım yıldızlar, iki renk kademesi, 320/390px ve yalnız sayaçlı dönüş); test-camp-tutorial-short.cjs; test-camp-promotion-limits.cjs; test-camp-rebalance.cjs. audit-camp-cap-matrix.cjs, 875 durum ve 113750 seviye fiyatını kontrol etti; rapor güncel eşikleri içerir. Eski +3 hazırlık AP/süre taslağı güncel denge hesabı olarak kullanılmaması için işaretlendi. Görseller audits/camp-candidate-stars.png ve camp-return-counter-only.png incelendi.
 
-### 28 Ekim — Sıfır kayıt ilk kamp ekonomisi denetimi
+### 28 Ekim — Sıfır kayıt ilk kamp ekonomisi denetimi (değişiklik öncesi)
 
 Kamp hazırlık koşulunun düzelmesi ekonomik tekrar döngüsünün çözülmesi anlamına gelmez. audit-first-camp-return.cjs gerçek başlangıç kaynaklarıyla sekiz rota denedi; hepsinde ilk dönen oyuncular birikmiş AP ile tekrar seviye sınırına ulaştı. audit-first-camp-return-browser.cjs aynı kazanılmış kaydı izole tarayıcıda gerçek düğmelerle tekrar etti: 757448,91 AP ile dönen beş oyuncu 58 tıklamada seviye 20 oldu, 437090,91 AP kaldı; bütçe dört oyuncuyu tekrar göndermeye yetti. Bu sonuç bilinen açık denge sorunudur, çözülmüş sayılmaz.
 
 İlk dört aşamada sabit ×10/30/60 kamp sonrası maliyet deneyleri sonraki yıldız ilerlemesini de geriletti. Bu katsayılar üretime uygulanmadı. Transfer/akademi kullanılmayan model ile tüm oyunun gelecekteki hedefleri ayrı raporlandı; 5–8. aşamalar henüz oynanabilir ekonomi olarak test edilmiş değildir. Ayrıntı ve yöntem CAMP-PACING-REVIEW.md içindedir.
 
 İzole dönüş kaydında tespit edilen açılış hatası giderildi: Takım kartı, RoomSystem kurulmadan önce sınırda/kampta görünürse kaynak düğmesini çizerken tanımsız RoomSystem erişimi yapmaz. Görünüş değiştirilmez. Gerçek tarayıcı denetiminde JS hatası kalmadı; test-training-flow-limits-browser.cjs ve test-camp-gap-stars-browser.cjs geçti.
+
+
+### 28 Ekim — İlk üç aşama kamp ekonomisi revizyonu
+
+Güncel denge kaynağı CAMP-ECONOMY-BALANCE.md; önceki CAMP-PACING-REVIEW.md tarihsel sorun kaydıdır. Eğitimde 10. seviyeden itibaren 120.000 × (seviye / 10)^1,3 tabanı, eski OVR bedeliyle karşılaştırılarak yüksek olan alınır; gerçek kazanım/indirim/transfer uyumu sonra uygulanır. Mahalle fiyatları, kazanılmış limitler, kamp bedeli/süresi ve üretim blokları korunur. Mahalle hedefi 0 kamp olarak düzeltilir. Bankaya göre fiyat veya yeni bekleme kilidi yoktur. Kart, kamp, tutorial ve dönüş bileşenlerinin tasarımı değişmez.
+
+20 sıfır kayıt dönüşünde ücretli anlık yükseltmeyle tekrar gönderim yok. Gerçek arayüzde 757.448,91 AP ile beş oyuncu 12/11/11/11/11 oldu; 14 tıklama ve 37.571,91 AP kaldı. Camp adayları doğru kapalı. audits/first-camp-return-balanced.png incelendi; mevcut portre, yıldızlar, seviye barı, pasif Hızlı Yükselt/eksik AP metni korunur. Uzun süre biriktiren kayıt ve rastgele ücretsiz yükseltme avantajı korunur.
+
+Doğrulama: audit-camp-economy-pacing.cjs 36 rota/108 sezon; aktif/beş dakikalık/çevrimdışı, ücretli/ücretsiz, tek kişiye yoğunlaşma, sosyal medyasız ve rotasyonlu maç hesabı. İlk üç aşamanın süreleri karşılaştırmada uzamadı. Çevrimdışı Bölgesel ücretli rotada ikinci kampın sezon bitiminde sürmesi ayrıca raporlandı. test-camp-economy-curve.cjs, audit-camp-cap-matrix.cjs (875 durum/113750 teklif), test-camp-training-gap.cjs, test-camp-promotion-limits.cjs, test-draft-skill-progression.cjs ve gerçek eğitim tutorialı testi geçti. Sonraki aşamaların geliri uygulanmadan tam oyun dengesi iddia edilmez.
