@@ -1,6 +1,6 @@
 (function(){
 const screen=document.getElementById('bootScreen');if(!screen)return;
-const pepper=document.getElementById('bootPepper');if(pepper){let alternate=false;try{alternate=localStorage.getItem('idle-spiker-pepper-start')!=='1';localStorage.setItem('idle-spiker-pepper-start',alternate?'1':'0');}catch{}const media=alternate?window.PreviewMedia?.pepperReverse:window.PreviewMedia?.pepper;if(media){pepper.src=media.src+'?v='+media.revision;pepper.poster=media.poster+'?v='+media.revision;}if(matchMedia('(prefers-reduced-motion: reduce)').matches){pepper.autoplay=false;pepper.pause();pepper.removeAttribute('src');pepper.load();}else pepper.play().catch(()=>{});}
+const pepper=document.getElementById('bootPepper');
 const images=[...document.images].filter(img=>{const r=img.getBoundingClientRect();return r.width&&r.height&&r.bottom>0&&r.top<innerHeight});
 const ready=Promise.all(images.map(img=>img.decode?img.decode().catch(()=>{}):Promise.resolve()));
 function finish(){clearTimeout(window.bootFallback);pepper?.pause();pepper?.removeAttribute('src');pepper?.load();screen.remove()}

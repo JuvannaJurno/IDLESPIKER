@@ -1,0 +1,63 @@
+{
+  "method": "Edge 4x CPU, real video decode; main-thread stall clock check. Not physical-device FPS.",
+  "reports": [
+    {
+      "src": "assets/preview-media/boot-pepper.mp4?v=20506f6646f0",
+      "sources": [
+        "assets/preview-media/boot-pepper.mp4?v=20506f6646f0"
+      ],
+      "width": 520,
+      "height": 424,
+      "duration": 12,
+      "rect": {
+        "left": 30,
+        "right": 290,
+        "top": 358,
+        "bottom": 570
+      },
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "before": {
+        "total": 127,
+        "dropped": 7
+      },
+      "after": {
+        "total": 143,
+        "dropped": 7
+      },
+      "advanced": 0.5318999999999994,
+      "frames": 50
+    },
+    {
+      "src": "assets/preview-media/boot-pepper-reverse.mp4?v=0e72e84817e4",
+      "sources": [
+        "assets/preview-media/boot-pepper-reverse.mp4?v=0e72e84817e4"
+      ],
+      "width": 520,
+      "height": 424,
+      "duration": 12,
+      "rect": {
+        "left": 65,
+        "right": 325,
+        "top": 358,
+        "bottom": 570
+      },
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "before": {
+        "total": 127,
+        "dropped": 3
+      },
+      "after": {
+        "total": 144,
+        "dropped": 3
+      },
+      "advanced": 0.5455999999999994,
+      "frames": 53
+    }
+  ]
+}

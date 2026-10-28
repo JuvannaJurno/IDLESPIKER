@@ -1,0 +1,14 @@
+[
+  {
+    "name": "boot-pepper",
+    "frames": 360,
+    "fps": 30,
+    "maxTimestampError": 3.333333342681044e-7
+  },
+  {
+    "name": "boot-pepper-reverse",
+    "frames": 360,
+    "fps": 30,
+    "maxTimestampError": 3.333333342681044e-7
+  }
+]

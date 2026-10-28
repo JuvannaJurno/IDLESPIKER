@@ -7,22 +7,30 @@
   "pepper": {
     "src": "assets/preview-media/boot-pepper.mp4",
     "poster": "assets/preview-media/boot-pepper.png",
-    "width": 640,
-    "height": 520,
-    "duration": 12.4978,
+    "width": 520,
+    "height": 424,
+    "duration": 12,
     "crop": null,
     "endProgress": null,
-    "revision": "cc47f9ada726d921"
+    "revision": "20506f6646f05ae5",
+    "fps": 30,
+    "frames": 360,
+    "encoding": "H264 baseline CFR, faststart, 30-frame GOP",
+    "ball": "5.png"
   },
   "pepperReverse": {
     "src": "assets/preview-media/boot-pepper-reverse.mp4",
     "poster": "assets/preview-media/boot-pepper-reverse.png",
-    "width": 640,
-    "height": 520,
-    "duration": 12.462033,
+    "width": 520,
+    "height": 424,
+    "duration": 12,
     "crop": null,
     "endProgress": null,
-    "revision": "db0be97f175fb14d"
+    "revision": "0e72e84817e4f630",
+    "fps": 30,
+    "frames": 360,
+    "encoding": "H264 baseline CFR, faststart, 30-frame GOP",
+    "ball": "5.png"
   },
   "clips": {
     "sky-ball-serve": {
