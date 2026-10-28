@@ -5,7 +5,9 @@ html:fullscreen,html:fullscreen body{background:#bedcd8;width:100%;height:100%}
 html:-webkit-full-screen,html:-webkit-full-screen body{background:#bedcd8;width:100%;height:100%}
 
 #installAppHelp footer{justify-content:flex-end}
-:root{--app-letterbox:max(0px,calc((var(--app-view-width,100vw) - 480px)/2));--app-safe-top:max(24px,env(safe-area-inset-top,0px));--app-safe-bottom:max(8px,env(safe-area-inset-bottom,0px));--app-safe-left:max(8px,calc(env(safe-area-inset-left,0px) - var(--app-letterbox)));--app-safe-right:max(8px,calc(env(safe-area-inset-right,0px) - var(--app-letterbox)))}
+:root{--app-letterbox:max(0px,calc((var(--app-view-width,100vw) - 480px)/2));--app-safe-top:env(safe-area-inset-top,0px);--app-safe-bottom:max(8px,env(safe-area-inset-bottom,0px));--app-safe-left:max(8px,calc(env(safe-area-inset-left,0px) - var(--app-letterbox)));--app-safe-right:max(8px,calc(env(safe-area-inset-right,0px) - var(--app-letterbox)))}
+
+html.app-fullscreen{--app-safe-top:max(24px,env(safe-area-inset-top,0px))}
 
 /* The layout viewport can stay larger than the visible screen during rotation or keyboard use. */
 html.app-expanded body{min-width:0;min-height:100%;height:auto}
@@ -24,7 +26,7 @@ html.app-expanded dialog.game-match-dialog:modal{width:min(480px,var(--app-view-
 html.app-expanded dialog.game-match-dialog:modal{inset:var(--app-view-top,0px) var(--app-view-right,0px) var(--app-view-bottom,0px) var(--app-view-left,0px);padding:var(--app-safe-top) var(--app-safe-right) var(--app-safe-bottom) var(--app-safe-left);box-sizing:border-box}
 html.app-expanded .match-shellbar{top:var(--app-safe-top);left:var(--app-safe-left);right:var(--app-safe-right);padding:7px 12px}
 
-html.app-expanded .stage-transition-banner{top:calc(var(--app-view-top,0px) + var(--app-safe-top) + 68px);max-width:calc(var(--app-view-width,100vw) - var(--app-safe-left) - var(--app-safe-right) - 24px);left:calc(var(--app-view-left,0px) + var(--app-view-width,100vw)/2)}
+html.app-expanded .stage-transition-banner{top:calc(var(--app-view-top,0px) + var(--app-safe-top) + 8px);max-width:calc(var(--app-view-width,100vw) - var(--app-safe-left) - var(--app-safe-right) - 24px);left:calc(var(--app-view-left,0px) + var(--app-view-width,100vw)/2)}
 html.app-expanded :is(.toast,#tapRhythm){bottom:calc(var(--app-view-bottom,0px) + var(--app-nav-height,68px) + var(--app-energy-height,84px) + 28px);max-width:calc(var(--app-view-width,100vw) - var(--app-safe-left) - var(--app-safe-right) - 24px)}
 
 /* The host paints one continuous background through the transparent match iframe. */

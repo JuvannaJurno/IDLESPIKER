@@ -13,11 +13,7 @@
   },
   "state": {
     "version": 5,
-    "recoveryMergeVersion": 1,
-    "legacyBlockBenefits": {
-      "manualAP": 0,
-      "dayAP": 0
-    },
+    "recoveryRestoreVersion": 1,
     "blockContributionVersion": 1,
     "shiftUnlockVersion": 1,
     "proBlockVersion": 1,
@@ -173,7 +169,7 @@
       ],
       []
     ],
-    "lastSeen": 1793194744662,
+    "lastSeen": 1793195748288,
     "autoCarry": 0,
     "laneCarry": [],
     "steadyProgress": 0,

@@ -117,3 +117,8 @@ Simülasyon transfer, tek özellik eğitimi, akademi, reklam veya satın alınan
 ## Sonraki revizyon: Toparlanma kartının Çalışma Planı ile birleşmesi
 
 28 Ekim aynı gün sonraki kullanıcı kararıyla ayrı Toparlanma Ünitesi kaldırılıp etkisi Çalışma Planı’nın 6–10 ek seviyelerine taşındı. Bu nedenle yukarıdaki ilk fiyat revizyonunun tablo/sabit seed karşılaştırmaları tarihsel ölçümlerdir. Ham camp-economy-pacing ve first-camp-return sonuçları yeni kart düzeniyle tekrar üretildi. 20 dönüşte yeni gelir olmadan tekrar gönderim hâlâ sıfır. Beş kişilik gerçek arayüz sonucu yine 12/11/11/11/11; aktif erken dönüş artık iki kişilik olabilir. Yeni 108 sezonda aktif/beş dakikalık Bölgesel ortancası 2, 2. Lig 8; aktif 2. Lig süresi seedlere göre 78,7–79,2 dakika. Çevrimdışı ücretli 2. Lig ortancası 7–9; bu stilin sonucu sabit bir yıldıza zorlanmadı. Eski yatırımlar idempotent aktarılır, eski ayrı ücretli ek faydalar korunur. Eğitim fiyatı, kamp bedeli ve seviye/yıldız sınır formülleri bu birleşimde değişmedi.
+
+
+## Son karar: Toparlanma birleşimi geri alındı
+
+Kullanıcı birleşimden vazgeçti. Ayrı Toparlanma Ünitesi ve Çalışma Planı’nın Birebir Çalışma ek özelliği geri geldi; yukarıdaki birleşim bölümü tarihsel kayıttır. Birleşimi yüklemiş kayıtların etkileri özgün kart seviyelerine geri çevrilir; AP/bütçe eksilmez. Ham 20 dönüş/108 sezon verisi ayrı kart düzeniyle yeniden üretildi ve ilk fiyat revizyonunun hedefleri korundu. Eğitim ve kamp fiyat formülleri değişmedi.

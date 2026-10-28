@@ -260,3 +260,6 @@ main>header,.team-labels,.toolbar,.muted,.match-live,.team-mark,.score-team smal
 html.match-hosted,html.match-hosted body{background:transparent}
 
 body:has(#matchResult:not([hidden]))::after{content:"";position:fixed;inset:0;background:#365c7088;z-index:19;pointer-events:auto}
+
+/* The host already applies device insets; an iframe must not reserve them again. */
+html.match-hosted main{padding-top:8px;padding-bottom:8px}

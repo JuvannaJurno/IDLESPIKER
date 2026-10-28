@@ -7,8 +7,8 @@
       "seed": 41,
       "day": 10,
       "arrival": {
-        "ap": 978191.5625,
-        "budget": 4874
+        "ap": 955670.5625,
+        "budget": 4708
       },
       "costs": [
         {
@@ -19,30 +19,20 @@
           "eligibleOnArrival": false,
           "toReady": 1309641,
           "total": 1800094
-        },
-        {
-          "id": "player-1",
-          "level": 10,
-          "limit": 20,
-          "ready": 18,
-          "eligibleOnArrival": false,
-          "toReady": 1309641,
-          "total": 1800094
         }
       ],
       "after": {
-        "ap": 73975.5625,
-        "budget": 4874,
-        "clicks": 7,
+        "ap": 68717.5625,
+        "budget": 4708,
+        "clicks": 6,
         "levels": [
-          14,
-          13
+          16
         ],
         "allFull": false,
         "readyAgain": 0,
         "nextCampIndividuallyAffordable": 0,
-        "allNextCampAP": 49700,
-        "allNextCampBudget": 4000,
+        "allNextCampAP": 36800,
+        "allNextCampBudget": 2000,
         "canAffordAllPrices": true,
         "canSendAllTogether": false,
         "nextCampSequentialCount": 0
@@ -54,8 +44,8 @@
       "seed": 42,
       "day": 10,
       "arrival": {
-        "ap": 962995.6875,
-        "budget": 4874
+        "ap": 940774.1875,
+        "budget": 4708
       },
       "costs": [
         {
@@ -66,30 +56,20 @@
           "eligibleOnArrival": false,
           "toReady": 1309641,
           "total": 1800094
-        },
-        {
-          "id": "player-1",
-          "level": 10,
-          "limit": 20,
-          "ready": 18,
-          "eligibleOnArrival": false,
-          "toReady": 1309641,
-          "total": 1800094
         }
       ],
       "after": {
-        "ap": 58779.6875,
-        "budget": 4874,
-        "clicks": 7,
+        "ap": 53821.1875,
+        "budget": 4708,
+        "clicks": 6,
         "levels": [
-          14,
-          13
+          16
         ],
         "allFull": false,
         "readyAgain": 0,
         "nextCampIndividuallyAffordable": 0,
-        "allNextCampAP": 49700,
-        "allNextCampBudget": 4000,
+        "allNextCampAP": 36800,
+        "allNextCampBudget": 2000,
         "canAffordAllPrices": true,
         "canSendAllTogether": false,
         "nextCampSequentialCount": 0
@@ -101,8 +81,8 @@
       "seed": 43,
       "day": 10,
       "arrival": {
-        "ap": 981971.4375,
-        "budget": 4874
+        "ap": 959596.9375,
+        "budget": 4708
       },
       "costs": [
         {
@@ -113,30 +93,20 @@
           "eligibleOnArrival": false,
           "toReady": 1309641,
           "total": 1800094
-        },
-        {
-          "id": "player-1",
-          "level": 10,
-          "limit": 20,
-          "ready": 18,
-          "eligibleOnArrival": false,
-          "toReady": 1309641,
-          "total": 1800094
         }
       ],
       "after": {
-        "ap": 77755.4375,
-        "budget": 4874,
-        "clicks": 7,
+        "ap": 72643.9375,
+        "budget": 4708,
+        "clicks": 6,
         "levels": [
-          14,
-          13
+          16
         ],
         "allFull": false,
         "readyAgain": 0,
         "nextCampIndividuallyAffordable": 0,
-        "allNextCampAP": 49700,
-        "allNextCampBudget": 4000,
+        "allNextCampAP": 36800,
+        "allNextCampBudget": 2000,
         "canAffordAllPrices": true,
         "canSendAllTogether": false,
         "nextCampSequentialCount": 0
@@ -148,8 +118,8 @@
       "seed": 44,
       "day": 10,
       "arrival": {
-        "ap": 978255.1875,
-        "budget": 4874
+        "ap": 955778.6875,
+        "budget": 4708
       },
       "costs": [
         {
@@ -160,30 +130,20 @@
           "eligibleOnArrival": false,
           "toReady": 1309641,
           "total": 1800094
-        },
-        {
-          "id": "player-1",
-          "level": 10,
-          "limit": 20,
-          "ready": 18,
-          "eligibleOnArrival": false,
-          "toReady": 1309641,
-          "total": 1800094
         }
       ],
       "after": {
-        "ap": 74039.1875,
-        "budget": 4874,
-        "clicks": 7,
+        "ap": 68825.6875,
+        "budget": 4708,
+        "clicks": 6,
         "levels": [
-          14,
-          13
+          16
         ],
         "allFull": false,
         "readyAgain": 0,
         "nextCampIndividuallyAffordable": 0,
-        "allNextCampAP": 49700,
-        "allNextCampBudget": 4000,
+        "allNextCampAP": 36800,
+        "allNextCampBudget": 2000,
         "canAffordAllPrices": true,
         "canSendAllTogether": false,
         "nextCampSequentialCount": 0
@@ -195,8 +155,8 @@
       "seed": 45,
       "day": 10,
       "arrival": {
-        "ap": 994887.6875,
-        "budget": 4974
+        "ap": 972666.1875,
+        "budget": 4808
       },
       "costs": [
         {
@@ -207,30 +167,20 @@
           "eligibleOnArrival": false,
           "toReady": 1309641,
           "total": 1800094
-        },
-        {
-          "id": "player-1",
-          "level": 10,
-          "limit": 20,
-          "ready": 18,
-          "eligibleOnArrival": false,
-          "toReady": 1309641,
-          "total": 1800094
         }
       ],
       "after": {
-        "ap": 90671.6875,
-        "budget": 4974,
-        "clicks": 7,
+        "ap": 85713.1875,
+        "budget": 4808,
+        "clicks": 6,
         "levels": [
-          14,
-          13
+          16
         ],
         "allFull": false,
         "readyAgain": 0,
         "nextCampIndividuallyAffordable": 0,
-        "allNextCampAP": 49700,
-        "allNextCampBudget": 4000,
+        "allNextCampAP": 36800,
+        "allNextCampBudget": 2000,
         "canAffordAllPrices": true,
         "canSendAllTogether": false,
         "nextCampSequentialCount": 0
@@ -242,8 +192,8 @@
       "seed": 41,
       "day": 10,
       "arrival": {
-        "ap": 978191.5625,
-        "budget": 4874
+        "ap": 955670.5625,
+        "budget": 4708
       },
       "costs": [
         {
@@ -254,30 +204,20 @@
           "eligibleOnArrival": false,
           "toReady": 1309641,
           "total": 1800094
-        },
-        {
-          "id": "player-1",
-          "level": 10,
-          "limit": 20,
-          "ready": 18,
-          "eligibleOnArrival": false,
-          "toReady": 1309641,
-          "total": 1800094
         }
       ],
       "after": {
-        "ap": 73975.5625,
-        "budget": 4874,
-        "clicks": 7,
+        "ap": 68717.5625,
+        "budget": 4708,
+        "clicks": 6,
         "levels": [
-          14,
-          13
+          16
         ],
         "allFull": false,
         "readyAgain": 0,
         "nextCampIndividuallyAffordable": 0,
-        "allNextCampAP": 49700,
-        "allNextCampBudget": 4000,
+        "allNextCampAP": 36800,
+        "allNextCampBudget": 2000,
         "canAffordAllPrices": true,
         "canSendAllTogether": false,
         "nextCampSequentialCount": 0
@@ -289,8 +229,8 @@
       "seed": 42,
       "day": 10,
       "arrival": {
-        "ap": 962995.6875,
-        "budget": 4874
+        "ap": 940774.1875,
+        "budget": 4708
       },
       "costs": [
         {
@@ -301,30 +241,20 @@
           "eligibleOnArrival": false,
           "toReady": 1309641,
           "total": 1800094
-        },
-        {
-          "id": "player-1",
-          "level": 10,
-          "limit": 20,
-          "ready": 18,
-          "eligibleOnArrival": false,
-          "toReady": 1309641,
-          "total": 1800094
         }
       ],
       "after": {
-        "ap": 58779.6875,
-        "budget": 4874,
-        "clicks": 7,
+        "ap": 53821.1875,
+        "budget": 4708,
+        "clicks": 6,
         "levels": [
-          14,
-          13
+          16
         ],
         "allFull": false,
         "readyAgain": 0,
         "nextCampIndividuallyAffordable": 0,
-        "allNextCampAP": 49700,
-        "allNextCampBudget": 4000,
+        "allNextCampAP": 36800,
+        "allNextCampBudget": 2000,
         "canAffordAllPrices": true,
         "canSendAllTogether": false,
         "nextCampSequentialCount": 0
@@ -336,8 +266,8 @@
       "seed": 43,
       "day": 10,
       "arrival": {
-        "ap": 981971.4375,
-        "budget": 4874
+        "ap": 959596.9375,
+        "budget": 4708
       },
       "costs": [
         {
@@ -348,30 +278,20 @@
           "eligibleOnArrival": false,
           "toReady": 1309641,
           "total": 1800094
-        },
-        {
-          "id": "player-1",
-          "level": 10,
-          "limit": 20,
-          "ready": 18,
-          "eligibleOnArrival": false,
-          "toReady": 1309641,
-          "total": 1800094
         }
       ],
       "after": {
-        "ap": 77755.4375,
-        "budget": 4874,
-        "clicks": 7,
+        "ap": 72643.9375,
+        "budget": 4708,
+        "clicks": 6,
         "levels": [
-          14,
-          13
+          16
         ],
         "allFull": false,
         "readyAgain": 0,
         "nextCampIndividuallyAffordable": 0,
-        "allNextCampAP": 49700,
-        "allNextCampBudget": 4000,
+        "allNextCampAP": 36800,
+        "allNextCampBudget": 2000,
         "canAffordAllPrices": true,
         "canSendAllTogether": false,
         "nextCampSequentialCount": 0
@@ -383,8 +303,8 @@
       "seed": 44,
       "day": 10,
       "arrival": {
-        "ap": 978255.1875,
-        "budget": 4874
+        "ap": 955778.6875,
+        "budget": 4708
       },
       "costs": [
         {
@@ -395,30 +315,20 @@
           "eligibleOnArrival": false,
           "toReady": 1309641,
           "total": 1800094
-        },
-        {
-          "id": "player-1",
-          "level": 10,
-          "limit": 20,
-          "ready": 18,
-          "eligibleOnArrival": false,
-          "toReady": 1309641,
-          "total": 1800094
         }
       ],
       "after": {
-        "ap": 74039.1875,
-        "budget": 4874,
-        "clicks": 7,
+        "ap": 68825.6875,
+        "budget": 4708,
+        "clicks": 6,
         "levels": [
-          14,
-          13
+          16
         ],
         "allFull": false,
         "readyAgain": 0,
         "nextCampIndividuallyAffordable": 0,
-        "allNextCampAP": 49700,
-        "allNextCampBudget": 4000,
+        "allNextCampAP": 36800,
+        "allNextCampBudget": 2000,
         "canAffordAllPrices": true,
         "canSendAllTogether": false,
         "nextCampSequentialCount": 0
@@ -430,8 +340,8 @@
       "seed": 45,
       "day": 10,
       "arrival": {
-        "ap": 994887.6875,
-        "budget": 4974
+        "ap": 972666.1875,
+        "budget": 4808
       },
       "costs": [
         {
@@ -442,30 +352,20 @@
           "eligibleOnArrival": false,
           "toReady": 1309641,
           "total": 1800094
-        },
-        {
-          "id": "player-1",
-          "level": 10,
-          "limit": 20,
-          "ready": 18,
-          "eligibleOnArrival": false,
-          "toReady": 1309641,
-          "total": 1800094
         }
       ],
       "after": {
-        "ap": 90671.6875,
-        "budget": 4974,
-        "clicks": 7,
+        "ap": 85713.1875,
+        "budget": 4808,
+        "clicks": 6,
         "levels": [
-          14,
-          13
+          16
         ],
         "allFull": false,
         "readyAgain": 0,
         "nextCampIndividuallyAffordable": 0,
-        "allNextCampAP": 49700,
-        "allNextCampBudget": 4000,
+        "allNextCampAP": 36800,
+        "allNextCampBudget": 2000,
         "canAffordAllPrices": true,
         "canSendAllTogether": false,
         "nextCampSequentialCount": 0
