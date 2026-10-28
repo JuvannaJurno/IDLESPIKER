@@ -1,0 +1,35 @@
+{
+  "method": "Isolated Edge canvas, 12 labels x 300 frames, fixed long/short names, warm cache. CPU submission timing only; not full game FPS or a physical phone benchmark.",
+  "before": {
+    "warm": {
+      "measures": 108,
+      "texts": 12
+    },
+    "hot": {
+      "measures": 32400,
+      "texts": 3600,
+      "ms": 71.80000001192093
+    },
+    "rename": {
+      "measures": 32402,
+      "texts": 3601
+    },
+    "disabled": false
+  },
+  "after": {
+    "warm": {
+      "measures": 22,
+      "texts": 6
+    },
+    "hot": {
+      "measures": 0,
+      "texts": 0,
+      "ms": 22.700000002980232
+    },
+    "rename": {
+      "measures": 2,
+      "texts": 1
+    },
+    "disabled": false
+  }
+}
