@@ -1,0 +1,342 @@
+{
+  "before": {
+    "minusContacts": 0,
+    "minusPositionErrors": 0,
+    "minus": 0,
+    "points": 101,
+    "play": 12,
+    "serve": 23,
+    "playPer100Points": 11.881188118811881,
+    "servePer100Points": 22.772277227722775,
+    "runs": [
+      {
+        "seed": 1,
+        "finished": true,
+        "points": 12,
+        "play": 0,
+        "serve": 1,
+        "ids": [],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 1
+      },
+      {
+        "seed": 2,
+        "finished": true,
+        "points": 7,
+        "play": 1,
+        "serve": 0,
+        "ids": [
+          "team-heart"
+        ],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 0
+      },
+      {
+        "seed": 3,
+        "finished": true,
+        "points": 8,
+        "play": 2,
+        "serve": 0,
+        "ids": [
+          "team-heart"
+        ],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 0
+      },
+      {
+        "seed": 4,
+        "finished": true,
+        "points": 12,
+        "play": 0,
+        "serve": 3,
+        "ids": [],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 1
+      },
+      {
+        "seed": 5,
+        "finished": true,
+        "points": 8,
+        "play": 0,
+        "serve": 2,
+        "ids": [],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 1
+      },
+      {
+        "seed": 6,
+        "finished": true,
+        "points": 7,
+        "play": 2,
+        "serve": 2,
+        "ids": [
+          "team-heart"
+        ],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 1
+      },
+      {
+        "seed": 7,
+        "finished": true,
+        "points": 8,
+        "play": 0,
+        "serve": 3,
+        "ids": [],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 1
+      },
+      {
+        "seed": 8,
+        "finished": true,
+        "points": 10,
+        "play": 0,
+        "serve": 2,
+        "ids": [],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 1
+      },
+      {
+        "seed": 9,
+        "finished": true,
+        "points": 6,
+        "play": 2,
+        "serve": 3,
+        "ids": [
+          "team-heart"
+        ],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 1
+      },
+      {
+        "seed": 10,
+        "finished": true,
+        "points": 8,
+        "play": 5,
+        "serve": 4,
+        "ids": [
+          "team-heart"
+        ],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 1
+      },
+      {
+        "seed": 11,
+        "finished": true,
+        "points": 7,
+        "play": 0,
+        "serve": 2,
+        "ids": [],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 1
+      },
+      {
+        "seed": 12,
+        "finished": true,
+        "points": 8,
+        "play": 0,
+        "serve": 1,
+        "ids": [],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 1
+      }
+    ]
+  },
+  "after": {
+    "minusContacts": 2,
+    "minusPositionErrors": 0,
+    "minus": 2,
+    "points": 100,
+    "play": 19,
+    "serve": 23,
+    "playPer100Points": 19,
+    "servePer100Points": 23,
+    "runs": [
+      {
+        "seed": 1,
+        "finished": true,
+        "points": 12,
+        "play": 3,
+        "serve": 1,
+        "ids": [
+          "tempo-minus",
+          "sync-attack"
+        ],
+        "minusContacts": 1,
+        "minusPositionErrors": 0,
+        "minus": 1,
+        "maxLegendary": 2
+      },
+      {
+        "seed": 2,
+        "finished": true,
+        "points": 7,
+        "play": 1,
+        "serve": 2,
+        "ids": [
+          "team-heart"
+        ],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 1
+      },
+      {
+        "seed": 3,
+        "finished": true,
+        "points": 7,
+        "play": 1,
+        "serve": 0,
+        "ids": [
+          "team-heart"
+        ],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 0
+      },
+      {
+        "seed": 4,
+        "finished": true,
+        "points": 7,
+        "play": 0,
+        "serve": 3,
+        "ids": [],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 1
+      },
+      {
+        "seed": 5,
+        "finished": true,
+        "points": 8,
+        "play": 0,
+        "serve": 2,
+        "ids": [],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 1
+      },
+      {
+        "seed": 6,
+        "finished": true,
+        "points": 7,
+        "play": 2,
+        "serve": 2,
+        "ids": [
+          "team-heart"
+        ],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 1
+      },
+      {
+        "seed": 7,
+        "finished": true,
+        "points": 8,
+        "play": 1,
+        "serve": 3,
+        "ids": [
+          "ghost-tip"
+        ],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 1
+      },
+      {
+        "seed": 8,
+        "finished": true,
+        "points": 10,
+        "play": 0,
+        "serve": 1,
+        "ids": [],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 1
+      },
+      {
+        "seed": 9,
+        "finished": true,
+        "points": 12,
+        "play": 6,
+        "serve": 3,
+        "ids": [
+          "team-heart",
+          "ghost-tip"
+        ],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 2
+      },
+      {
+        "seed": 10,
+        "finished": true,
+        "points": 7,
+        "play": 4,
+        "serve": 3,
+        "ids": [
+          "team-heart"
+        ],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 1
+      },
+      {
+        "seed": 11,
+        "finished": true,
+        "points": 7,
+        "play": 0,
+        "serve": 2,
+        "ids": [],
+        "minusContacts": 0,
+        "minusPositionErrors": 0,
+        "minus": 0,
+        "maxLegendary": 1
+      },
+      {
+        "seed": 12,
+        "finished": true,
+        "points": 8,
+        "play": 1,
+        "serve": 1,
+        "ids": [
+          "tempo-minus"
+        ],
+        "minusContacts": 1,
+        "minusPositionErrors": 0,
+        "minus": 1,
+        "maxLegendary": 1
+      }
+    ]
+  }
+}

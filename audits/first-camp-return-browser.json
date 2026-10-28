@@ -1,7 +1,7 @@
 {
   "before": {
-    "ap": 754855.90625,
-    "budget": 12140,
+    "ap": 780777.3125,
+    "budget": 12240,
     "levels": [
       9,
       9,
@@ -12,18 +12,18 @@
     ]
   },
   "after": {
-    "ap": 48835.90625,
-    "budget": 12140,
+    "ap": 13784.3125,
+    "budget": 12240,
     "levels": [
       13,
       13,
-      12,
+      13,
       12,
       12,
       12
     ]
   },
-  "clicks": 24,
+  "clicks": 25,
   "reenteredPlayers": 0,
   "method": "Earned fresh-save checkpoint, actual quick-upgrade and camp UI, no new income/AP grants, no free procs. Compares actual levels/click count against isolated economy rules."
 }

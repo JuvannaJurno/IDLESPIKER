@@ -208,3 +208,7 @@ html[data-theme=dark] #transferReplaceScreen,html[data-theme=dark] #transferRepl
 #scoutAlert:disabled{opacity:.55;cursor:not-allowed;box-shadow:none}
 
 #scoutDialog #transferHome>button:disabled{background:var(--ui-soft);border-color:var(--ui-edge);color:var(--ui-muted);box-shadow:none;opacity:1}#scoutDialog #transferHome>button:disabled .home-option-icon{background:transparent;border-color:var(--ui-edge);color:var(--ui-muted)}#scoutDialog #transferHome>button:disabled>b{visibility:hidden}
+
+.legendary-comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}.legendary-comparison>h3{grid-column:1/-1;margin:0;font-size:14px}.legendary-comparison>div{padding:10px;border:1px solid var(--ui-edge);border-radius:10px;background:var(--ui-soft);min-width:0}.legendary-comparison strong{font-size:10px}.legendary-comparison p{font-size:12px;line-height:1.5;overflow-wrap:anywhere;margin:8px 0 0}.pack-stage{touch-action:pan-y}
+
+.scout-versus .compare-material{display:inline-block;font-size:10px;line-height:1.3;font-weight:700;padding:3px 8px;margin:4px 0;border:1px solid var(--ui-edge);border-radius:7px;background:var(--ui-paper);color:var(--ui-ink)}

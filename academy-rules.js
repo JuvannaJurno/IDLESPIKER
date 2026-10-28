@@ -1,6 +1,6 @@
 (function(root){
 'use strict';
-const stats=['spike','block','serve','receive','set','stamina','mental'];
+const stats=['spike','block','serve','receive','set','stamina'];
 const profiles={setter:['set','serve'],outside:['spike','receive'],opposite:['spike','serve'],middle:['block','spike'],libero:['receive','set']};
 const copy=o=>JSON.parse(JSON.stringify(o));
 const defaults=()=>({version:1,budget:250000,sequence:0,graduates:0,slots:1,candidates:null,entries:[],roster:[]});
@@ -25,7 +25,7 @@ function prepare(s,role,pool,reference){
  const target=Math.max(30,Math.min(150,center));
  const players=Array.from({length:3},(_,i)=>{
   const p=copy(eligible[i%eligible.length]);p.id='academy-candidate-'+i;p.cardLevel=1;p.cardVersion=1;p.transferCamps=0;p.training={};delete p.transferProfile;delete p.specialCharacter;
-  const weights={spike:.7,block:.7,serve:.7,receive:.7,set:.7,stamina:.9,mental:.9};weights[profiles[role][0]]=1.15;weights[profiles[role][1]]=1.05;
+  const weights={spike:.7,block:.7,serve:.7,receive:.7,set:.7,stamina:.9};weights[profiles[role][0]]=1.15;weights[profiles[role][1]]=1.05;
   stats.forEach(k=>p[k]=Math.max(1,Math.round(target*weights[k])));
   const weighted=root.TeamRules.overall(p)||1;stats.forEach(k=>p[k]=Math.max(1,Math.round(p[k]*target/weighted)));
   const pair=profiles[role];p[pair[i===1?1:0]]+=i===2?0:3;p[pair[i===1?0:1]]=Math.max(1,p[pair[i===1?0:1]]-(i===2?0:3));

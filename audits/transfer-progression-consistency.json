@@ -7,13 +7,13 @@
       "power": 25,
       "candidates": 440,
       "minLevel": 1,
-      "maxLevel": 15,
+      "maxLevel": 14,
       "minCamps": 0,
       "maxCamps": 1,
       "examples": [
         {
           "ovr": 18,
-          "level": 2,
+          "level": 3,
           "camps": 0,
           "cap": 10,
           "role": "outside"
@@ -58,15 +58,15 @@
           "role": "opposite"
         },
         {
-          "ovr": 47,
-          "level": 20,
-          "camps": 1,
-          "cap": 20,
+          "ovr": 28,
+          "level": 8,
+          "camps": 0,
+          "cap": 10,
           "role": "opposite"
         },
         {
           "ovr": 35,
-          "level": 14,
+          "level": 13,
           "camps": 1,
           "cap": 20,
           "role": "outside"
@@ -85,34 +85,34 @@
       "power": 55,
       "candidates": 440,
       "minLevel": 15,
-      "maxLevel": 35,
+      "maxLevel": 32,
       "minCamps": 1,
       "maxCamps": 3,
       "examples": [
         {
-          "ovr": 64,
-          "level": 33,
-          "camps": 3,
-          "cap": 40,
-          "role": "setter"
-        },
-        {
-          "ovr": 52,
-          "level": 22,
-          "camps": 2,
-          "cap": 30,
-          "role": "middle"
-        },
-        {
-          "ovr": 52,
+          "ovr": 53,
           "level": 24,
           "camps": 2,
           "cap": 30,
           "role": "setter"
         },
         {
+          "ovr": 52,
+          "level": 21,
+          "camps": 2,
+          "cap": 30,
+          "role": "middle"
+        },
+        {
+          "ovr": 52,
+          "level": 23,
+          "camps": 2,
+          "cap": 30,
+          "role": "setter"
+        },
+        {
           "ovr": 50,
-          "level": 17,
+          "level": 16,
           "camps": 1,
           "cap": 20,
           "role": "libero"
@@ -123,35 +123,35 @@
       "division": 2,
       "power": 75,
       "candidates": 440,
-      "minLevel": 25,
-      "maxLevel": 48,
+      "minLevel": 23,
+      "maxLevel": 45,
       "minCamps": 2,
       "maxCamps": 4,
       "examples": [
         {
           "ovr": 69,
-          "level": 32,
+          "level": 31,
           "camps": 3,
           "cap": 40,
           "role": "middle"
         },
         {
           "ovr": 75,
-          "level": 40,
+          "level": 37,
           "camps": 3,
           "cap": 40,
           "role": "outside"
         },
         {
           "ovr": 68,
-          "level": 25,
+          "level": 24,
           "camps": 2,
           "cap": 30,
           "role": "libero"
         },
         {
           "ovr": 73,
-          "level": 38,
+          "level": 36,
           "camps": 3,
           "cap": 40,
           "role": "setter"
@@ -162,21 +162,21 @@
       "division": 3,
       "power": 75,
       "candidates": 440,
-      "minLevel": 23,
-      "maxLevel": 44,
+      "minLevel": 22,
+      "maxLevel": 41,
       "minCamps": 2,
       "maxCamps": 4,
       "examples": [
         {
           "ovr": 69,
-          "level": 36,
+          "level": 34,
           "camps": 3,
           "cap": 40,
           "role": "outside"
         },
         {
           "ovr": 69,
-          "level": 36,
+          "level": 34,
           "camps": 3,
           "cap": 40,
           "role": "outside"
@@ -190,7 +190,7 @@
         },
         {
           "ovr": 73,
-          "level": 38,
+          "level": 36,
           "camps": 3,
           "cap": 40,
           "role": "setter"
@@ -201,35 +201,35 @@
       "division": 3,
       "power": 110,
       "candidates": 440,
-      "minLevel": 41,
-      "maxLevel": 67,
-      "minCamps": 4,
+      "minLevel": 39,
+      "maxLevel": 63,
+      "minCamps": 3,
       "maxCamps": 6,
       "examples": [
         {
           "ovr": 109,
-          "level": 45,
+          "level": 42,
           "camps": 4,
           "cap": 50,
           "role": "libero"
         },
         {
           "ovr": 107,
-          "level": 44,
+          "level": 41,
           "camps": 4,
           "cap": 50,
           "role": "libero"
         },
         {
           "ovr": 107,
-          "level": 55,
+          "level": 52,
           "camps": 5,
           "cap": 60,
           "role": "middle"
         },
         {
           "ovr": 110,
-          "level": 46,
+          "level": 43,
           "camps": 4,
           "cap": 50,
           "role": "libero"
@@ -240,37 +240,37 @@
       "division": 3,
       "power": 145,
       "candidates": 440,
-      "minLevel": 58,
-      "maxLevel": 90,
+      "minLevel": 54,
+      "maxLevel": 85,
       "minCamps": 5,
       "maxCamps": 8,
       "examples": [
         {
           "ovr": 143,
-          "level": 84,
-          "camps": 8,
-          "cap": 90,
+          "level": 78,
+          "camps": 7,
+          "cap": 80,
           "role": "setter"
         },
         {
           "ovr": 147,
-          "level": 81,
-          "camps": 8,
-          "cap": 90,
+          "level": 79,
+          "camps": 7,
+          "cap": 80,
           "role": "opposite"
         },
         {
           "ovr": 140,
-          "level": 58,
+          "level": 54,
           "camps": 5,
           "cap": 60,
           "role": "libero"
         },
         {
           "ovr": 142,
-          "level": 85,
-          "camps": 8,
-          "cap": 90,
+          "level": 80,
+          "camps": 7,
+          "cap": 80,
           "role": "outside"
         }
       ]
@@ -279,37 +279,37 @@
       "division": 4,
       "power": 170,
       "candidates": 440,
-      "minLevel": 70,
-      "maxLevel": 107,
+      "minLevel": 66,
+      "maxLevel": 101,
       "minCamps": 6,
       "maxCamps": 10,
       "examples": [
         {
           "ovr": 170,
-          "level": 104,
-          "camps": 10,
-          "cap": 110,
+          "level": 97,
+          "camps": 9,
+          "cap": 100,
           "role": "outside"
         },
         {
           "ovr": 174,
-          "level": 97,
+          "level": 96,
           "camps": 9,
           "cap": 100,
           "role": "opposite"
         },
         {
           "ovr": 163,
-          "level": 99,
+          "level": 93,
           "camps": 9,
           "cap": 100,
           "role": "outside"
         },
         {
           "ovr": 169,
-          "level": 73,
-          "camps": 7,
-          "cap": 80,
+          "level": 69,
+          "camps": 6,
+          "cap": 70,
           "role": "libero"
         }
       ]
@@ -318,37 +318,37 @@
       "division": 4,
       "power": 210,
       "candidates": 440,
-      "minLevel": 89,
-      "maxLevel": 134,
+      "minLevel": 83,
+      "maxLevel": 126,
       "minCamps": 8,
-      "maxCamps": 13,
+      "maxCamps": 12,
       "examples": [
         {
           "ovr": 202,
-          "level": 114,
+          "level": 112,
           "camps": 11,
           "cap": 120,
           "role": "opposite"
         },
         {
           "ovr": 206,
-          "level": 125,
-          "camps": 12,
-          "cap": 130,
+          "level": 116,
+          "camps": 11,
+          "cap": 120,
           "role": "setter"
         },
         {
           "ovr": 212,
-          "level": 132,
-          "camps": 13,
-          "cap": 140,
+          "level": 124,
+          "camps": 12,
+          "cap": 130,
           "role": "outside"
         },
         {
           "ovr": 206,
-          "level": 113,
-          "camps": 11,
-          "cap": 120,
+          "level": 107,
+          "camps": 10,
+          "cap": 110,
           "role": "middle"
         }
       ]
@@ -357,37 +357,37 @@
       "division": 6,
       "power": 230,
       "candidates": 440,
-      "minLevel": 99,
-      "maxLevel": 152,
+      "minLevel": 92,
+      "maxLevel": 143,
       "minCamps": 9,
-      "maxCamps": 15,
+      "maxCamps": 14,
       "examples": [
         {
           "ovr": 229,
-          "level": 131,
-          "camps": 13,
-          "cap": 140,
+          "level": 128,
+          "camps": 12,
+          "cap": 130,
           "role": "opposite"
         },
         {
           "ovr": 225,
-          "level": 140,
+          "level": 131,
           "camps": 13,
           "cap": 140,
           "role": "outside"
         },
         {
           "ovr": 223,
-          "level": 139,
+          "level": 131,
           "camps": 13,
           "cap": 140,
           "role": "outside"
         },
         {
           "ovr": 230,
-          "level": 131,
-          "camps": 13,
-          "cap": 140,
+          "level": 129,
+          "camps": 12,
+          "cap": 130,
           "role": "opposite"
         }
       ]

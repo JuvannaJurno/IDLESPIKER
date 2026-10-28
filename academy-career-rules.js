@@ -3,13 +3,13 @@
 // Production academy state lives in the room transaction, alongside scouting and budget.
 const copy=o=>JSON.parse(JSON.stringify(o));
 const Potential=root.ProspectPotentialRules||(typeof require==='function'?require('./prospect-potential-rules.js'):null);
-const stats=['spike','block','serve','receive','set','stamina','mental'];
+const stats=['spike','block','serve','receive','set','stamina'];
 const paths={
- setter:[['playmaker','Oyun kurucu','set','mental','deceive','sync-attack'],['support','Güvenli pas','receive','set','fake-set','perfect-second-touch']],
- outside:[['finisher','Güçlü bitirici','spike','serve','jump','jump-legendary'],['technical','Teknik hücumcu','spike','mental','court-vision','ghost-tip']],
- opposite:[['finisher','Güçlü bitirici','spike','serve','jump','jump-legendary'],['technical','Teknik hücumcu','spike','mental','court-vision','ghost-tip']],
- middle:[['wall','File savunması','block','mental','roof','absolute-read'],['quick','Hızlı hücum','spike','block','court-vision','tempo-minus']],
- libero:[['defender','Güvenli karşılama','receive','mental','dive','pancake'],['rescue','Top kurtarma','receive','stamina','kick-save','pancake']]
+ setter:[['playmaker','Oyun kurucu','set','stamina','deceive','sync-attack'],['support','Güvenli pas','receive','set','fake-set','perfect-second-touch']],
+ outside:[['finisher','Güçlü bitirici','spike','serve','jump','jump-legendary'],['technical','Teknik hücumcu','spike','stamina','court-vision','ghost-tip']],
+ opposite:[['finisher','Güçlü bitirici','spike','serve','jump','jump-legendary'],['technical','Teknik hücumcu','spike','stamina','court-vision','ghost-tip']],
+ middle:[['wall','File savunması','block','stamina','roof','absolute-read'],['quick','Hızlı hücum','spike','block','court-vision','tempo-minus']],
+ libero:[['defender','Güvenli karşılama','receive','stamina','dive','pancake'],['rescue','Top kurtarma','receive','stamina','kick-save','pancake']]
 };
 const defaults=()=>({version:1,sequence:0,graduates:0,entries:[]});
 const plans=p=>(paths[p.role]||[]).map(([id,name,primary,secondary,skill,legendary])=>({id,name,primary,secondary,skill,legendary}));

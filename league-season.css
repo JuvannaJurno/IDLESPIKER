@@ -37,3 +37,5 @@ html body[data-league-division] .season-hero progress::-webkit-progress-value{ba
 html body[data-league-division] .season-hero progress::-moz-progress-bar{background:var(--league-fill);border-radius:8px}
 
 #fixturesPane>.season-route-title{margin-top:0}#fixturesPane>.round-controls{margin-top:24px}
+
+.season-end-dialog #continueSeason{margin-bottom:10px}

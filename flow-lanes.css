@@ -74,3 +74,5 @@ html[data-flow-style] .workflow[data-flow-lanes] .energy-pulse.manual-pulse::aft
 .flow-media-head.media-source-active{box-shadow:0 0 0 1px #eaf7f4,0 0 7px #8dc6dbbb}
 .flow-media-head.media-source-active::before{background:repeating-linear-gradient(0deg,#f5ffff 0 1px,#addce8 1px 3px)}
 html[data-theme=dark] .flow-media-head{border-color:#739bab;box-shadow:0 0 0 1px #30443d,0 2px 0 #1b343d99}
+
+.flow-rail.flow-unlock-reveal{outline:3px solid #d6a651;outline-offset:3px;animation:flow-new-lane 1.8s ease-out both}.flow-unlock-heading{outline:2px solid #d6a651;outline-offset:7px;border-radius:9px}@keyframes flow-new-lane{0%{opacity:0;transform:scaleY(.06);transform-origin:top}45%{opacity:1;transform:scaleY(1);transform-origin:top}100%{opacity:1;transform:none}}@media(prefers-reduced-motion:reduce){.flow-rail.flow-unlock-reveal{animation:none}}

@@ -1,0 +1,188 @@
+{
+  "before": [
+    {
+      "id": "player-0",
+      "name": "Nehir",
+      "level": 18,
+      "ovr": 26
+    },
+    {
+      "id": "player-1",
+      "name": "Çiler",
+      "level": 18,
+      "ovr": 24
+    },
+    {
+      "id": "player-2",
+      "name": "Zeren",
+      "level": 18,
+      "ovr": 25
+    },
+    {
+      "id": "player-3",
+      "name": "Defne",
+      "level": 18,
+      "ovr": 23
+    },
+    {
+      "id": "player-4",
+      "name": "Şeyda",
+      "level": 18,
+      "ovr": 24
+    },
+    {
+      "id": "player-5",
+      "name": "Gülhan",
+      "level": 18,
+      "ovr": 24
+    },
+    {
+      "id": "player-6",
+      "name": "Elif",
+      "level": 18,
+      "ovr": 28
+    },
+    {
+      "id": "player-7",
+      "name": "Burcu",
+      "level": 18,
+      "ovr": 27
+    },
+    {
+      "id": "player-8",
+      "name": "Fatma",
+      "level": 18,
+      "ovr": 24
+    },
+    {
+      "id": "player-9",
+      "name": "Öykü",
+      "level": 18,
+      "ovr": 22
+    },
+    {
+      "id": "player-10",
+      "name": "Seval",
+      "level": 18,
+      "ovr": 24
+    },
+    {
+      "id": "player-11",
+      "name": "Melis",
+      "level": 18,
+      "ovr": 29
+    }
+  ],
+  "after": [
+    {
+      "id": "player-0",
+      "name": "Nehir",
+      "level": 18,
+      "ovr": 26,
+      "stamina": 58,
+      "marker": 1,
+      "camps": 1
+    },
+    {
+      "id": "player-1",
+      "name": "Çiler",
+      "level": 18,
+      "ovr": 24,
+      "stamina": 55,
+      "marker": 1,
+      "camps": 1
+    },
+    {
+      "id": "player-2",
+      "name": "Zeren",
+      "level": 18,
+      "ovr": 25,
+      "stamina": 55,
+      "marker": 1,
+      "camps": 1
+    },
+    {
+      "id": "player-3",
+      "name": "Defne",
+      "level": 18,
+      "ovr": 23,
+      "stamina": 54,
+      "marker": 1,
+      "camps": 1
+    },
+    {
+      "id": "player-4",
+      "name": "Şeyda",
+      "level": 18,
+      "ovr": 24,
+      "stamina": 55,
+      "marker": 1,
+      "camps": 1
+    },
+    {
+      "id": "player-5",
+      "name": "Gülhan",
+      "level": 18,
+      "ovr": 24,
+      "stamina": 55,
+      "marker": 1,
+      "camps": 1
+    },
+    {
+      "id": "player-6",
+      "name": "Elif",
+      "level": 18,
+      "ovr": 28,
+      "stamina": 55,
+      "marker": 1,
+      "camps": 1
+    },
+    {
+      "id": "player-7",
+      "name": "Burcu",
+      "level": 18,
+      "ovr": 27,
+      "stamina": 58,
+      "marker": 1,
+      "camps": 1
+    },
+    {
+      "id": "player-8",
+      "name": "Fatma",
+      "level": 18,
+      "ovr": 24,
+      "stamina": 55,
+      "marker": 1,
+      "camps": 1
+    },
+    {
+      "id": "player-9",
+      "name": "Öykü",
+      "level": 18,
+      "ovr": 22,
+      "stamina": 54,
+      "marker": 1,
+      "camps": 1
+    },
+    {
+      "id": "player-10",
+      "name": "Seval",
+      "level": 18,
+      "ovr": 24,
+      "stamina": 55,
+      "marker": 1,
+      "camps": 1
+    },
+    {
+      "id": "player-11",
+      "name": "Melis",
+      "level": 18,
+      "ovr": 29,
+      "stamina": 55,
+      "marker": 1,
+      "camps": 1
+    }
+  ],
+  "backupPreserved": true,
+  "reloadIdentical": true
+}

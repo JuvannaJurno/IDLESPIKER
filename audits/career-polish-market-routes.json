@@ -1,0 +1,635 @@
+{
+  "method": "Current six-stat economy and BAL transfer chance, ten fresh deterministic routes / thirty seasons. Active decisions 30s, return profile 5m, three building purchases per visit, one affordable +3 OVR transfer per visit. Uses production rotation stat resolution; promotion assumed. Native skill frequency is tested separately. No retention or guaranteed promotion claim.",
+  "rows": [
+    {
+      "profile": "active",
+      "seed": 41,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgrades": 54,
+          "maxCardGapSeconds": 60,
+          "transfers": 0,
+          "ovr": 29.666666666666668,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rotationWins": 2,
+          "matches": 5
+        },
+        {
+          "division": 2,
+          "minutes": 40,
+          "upgrades": 156,
+          "maxCardGapSeconds": 60,
+          "transfers": 7,
+          "ovr": 77.5,
+          "camps": [
+            3,
+            4,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "rotationWins": 13,
+          "matches": 14
+        },
+        {
+          "division": 3,
+          "minutes": 79.7,
+          "upgrades": 359,
+          "maxCardGapSeconds": 151,
+          "transfers": 3,
+          "ovr": 167.33333333333334,
+          "camps": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            8
+          ],
+          "rotationWins": 12,
+          "matches": 14
+        }
+      ]
+    },
+    {
+      "profile": "active",
+      "seed": 42,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgrades": 54,
+          "maxCardGapSeconds": 60,
+          "transfers": 0,
+          "ovr": 29.5,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rotationWins": 3,
+          "matches": 5
+        },
+        {
+          "division": 2,
+          "minutes": 40,
+          "upgrades": 157,
+          "maxCardGapSeconds": 60,
+          "transfers": 5,
+          "ovr": 74.83333333333333,
+          "camps": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "rotationWins": 13,
+          "matches": 14
+        },
+        {
+          "division": 3,
+          "minutes": 79.7,
+          "upgrades": 372,
+          "maxCardGapSeconds": 121,
+          "transfers": 2,
+          "ovr": 167,
+          "camps": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            8,
+            8
+          ],
+          "rotationWins": 14,
+          "matches": 14
+        }
+      ]
+    },
+    {
+      "profile": "active",
+      "seed": 43,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgrades": 54,
+          "maxCardGapSeconds": 60,
+          "transfers": 0,
+          "ovr": 29.166666666666668,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rotationWins": 4,
+          "matches": 5
+        },
+        {
+          "division": 2,
+          "minutes": 40,
+          "upgrades": 157,
+          "maxCardGapSeconds": 60,
+          "transfers": 6,
+          "ovr": 75.33333333333333,
+          "camps": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "rotationWins": 14,
+          "matches": 14
+        },
+        {
+          "division": 3,
+          "minutes": 79.2,
+          "upgrades": 370,
+          "maxCardGapSeconds": 151,
+          "transfers": 0,
+          "ovr": 165.5,
+          "camps": [
+            9,
+            8,
+            8,
+            9,
+            9,
+            9,
+            8
+          ],
+          "rotationWins": 14,
+          "matches": 14
+        }
+      ]
+    },
+    {
+      "profile": "active",
+      "seed": 44,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgrades": 54,
+          "maxCardGapSeconds": 60,
+          "transfers": 0,
+          "ovr": 29.5,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rotationWins": 4,
+          "matches": 5
+        },
+        {
+          "division": 2,
+          "minutes": 40,
+          "upgrades": 159,
+          "maxCardGapSeconds": 60,
+          "transfers": 4,
+          "ovr": 74.66666666666667,
+          "camps": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "rotationWins": 13,
+          "matches": 14
+        },
+        {
+          "division": 3,
+          "minutes": 79.7,
+          "upgrades": 373,
+          "maxCardGapSeconds": 151,
+          "transfers": 2,
+          "ovr": 166,
+          "camps": [
+            9,
+            9,
+            9,
+            8,
+            9,
+            9,
+            8
+          ],
+          "rotationWins": 14,
+          "matches": 14
+        }
+      ]
+    },
+    {
+      "profile": "active",
+      "seed": 45,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 16.5,
+          "upgrades": 54,
+          "maxCardGapSeconds": 60,
+          "transfers": 0,
+          "ovr": 29.166666666666668,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rotationWins": 4,
+          "matches": 5
+        },
+        {
+          "division": 2,
+          "minutes": 40,
+          "upgrades": 154,
+          "maxCardGapSeconds": 60,
+          "transfers": 6,
+          "ovr": 75.83333333333333,
+          "camps": [
+            3,
+            3,
+            3,
+            3,
+            4,
+            3,
+            3
+          ],
+          "rotationWins": 12,
+          "matches": 14
+        },
+        {
+          "division": 3,
+          "minutes": 79.2,
+          "upgrades": 367,
+          "maxCardGapSeconds": 121,
+          "transfers": 1,
+          "ovr": 165.83333333333334,
+          "camps": [
+            8,
+            9,
+            9,
+            9,
+            9,
+            9,
+            8
+          ],
+          "rotationWins": 14,
+          "matches": 14
+        }
+      ]
+    },
+    {
+      "profile": "idle",
+      "seed": 41,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgrades": 49,
+          "maxCardGapSeconds": 301,
+          "transfers": 0,
+          "ovr": 28.166666666666668,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rotationWins": 2,
+          "matches": 5
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgrades": 100,
+          "maxCardGapSeconds": 601,
+          "transfers": 4,
+          "ovr": 58,
+          "camps": [
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "rotationWins": 12,
+          "matches": 14
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgrades": 340,
+          "maxCardGapSeconds": 600,
+          "transfers": 8,
+          "ovr": 147.16666666666666,
+          "camps": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            6
+          ],
+          "rotationWins": 10,
+          "matches": 14
+        }
+      ]
+    },
+    {
+      "profile": "idle",
+      "seed": 42,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgrades": 49,
+          "maxCardGapSeconds": 301,
+          "transfers": 0,
+          "ovr": 28.166666666666668,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rotationWins": 3,
+          "matches": 5
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgrades": 103,
+          "maxCardGapSeconds": 601,
+          "transfers": 3,
+          "ovr": 56.833333333333336,
+          "camps": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "rotationWins": 11,
+          "matches": 14
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgrades": 346,
+          "maxCardGapSeconds": 600,
+          "transfers": 7,
+          "ovr": 145.33333333333334,
+          "camps": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "rotationWins": 11,
+          "matches": 14
+        }
+      ]
+    },
+    {
+      "profile": "idle",
+      "seed": 43,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgrades": 49,
+          "maxCardGapSeconds": 301,
+          "transfers": 0,
+          "ovr": 27.833333333333332,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rotationWins": 4,
+          "matches": 5
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgrades": 100,
+          "maxCardGapSeconds": 601,
+          "transfers": 4,
+          "ovr": 58.333333333333336,
+          "camps": [
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "rotationWins": 12,
+          "matches": 14
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgrades": 340,
+          "maxCardGapSeconds": 600,
+          "transfers": 7,
+          "ovr": 145,
+          "camps": [
+            7,
+            7,
+            7,
+            7,
+            8,
+            7,
+            7
+          ],
+          "rotationWins": 10,
+          "matches": 14
+        }
+      ]
+    },
+    {
+      "profile": "idle",
+      "seed": 44,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgrades": 49,
+          "maxCardGapSeconds": 301,
+          "transfers": 0,
+          "ovr": 28.5,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rotationWins": 3,
+          "matches": 5
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgrades": 95,
+          "maxCardGapSeconds": 601,
+          "transfers": 4,
+          "ovr": 59,
+          "camps": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2
+          ],
+          "rotationWins": 12,
+          "matches": 14
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgrades": 328,
+          "maxCardGapSeconds": 600,
+          "transfers": 10,
+          "ovr": 147.16666666666666,
+          "camps": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            6
+          ],
+          "rotationWins": 13,
+          "matches": 14
+        }
+      ]
+    },
+    {
+      "profile": "idle",
+      "seed": 45,
+      "stages": [
+        {
+          "division": 1,
+          "minutes": 30,
+          "upgrades": 49,
+          "maxCardGapSeconds": 301,
+          "transfers": 0,
+          "ovr": 27.5,
+          "camps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rotationWins": 4,
+          "matches": 5
+        },
+        {
+          "division": 2,
+          "minutes": 120,
+          "upgrades": 101,
+          "maxCardGapSeconds": 601,
+          "transfers": 4,
+          "ovr": 57,
+          "camps": [
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2
+          ],
+          "rotationWins": 10,
+          "matches": 14
+        },
+        {
+          "division": 3,
+          "minutes": 212,
+          "upgrades": 344,
+          "maxCardGapSeconds": 900,
+          "transfers": 6,
+          "ovr": 144.83333333333334,
+          "camps": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "rotationWins": 11,
+          "matches": 14
+        }
+      ]
+    }
+  ]
+}

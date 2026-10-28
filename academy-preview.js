@@ -11,7 +11,7 @@ function start(){
  const reference=TeamRules.players.filter(p=>!p.academyOrigin).slice(0,12);
  const coaches=[.28,.72].map((seed,index)=>{const appearance=TeamAppearance.generate(()=>seed,{country:CountryRules.current()});appearance.palette.shirt=index?'#7b8f89':'#476c66';appearance.palette.hair=index?'#625e56':'#a7aaa0';const hair=appearance.parts.find(p=>p.id==='hair');if(hair)hair.tint=appearance.palette.hair;delete appearance.hairGradient;return {id:'academy-coach-'+index,name:index?'Yardımcı antrenör':'Antrenör',surname:'',role:'setter',appearance};});
  const $=id=>document.getElementById(id),now=()=>Date.now()+offset;
- const names={spike:'Smaç',block:'Blok',serve:'Servis',receive:'Manşet',set:'Pas',stamina:'Dayanıklılık',mental:'Mental'};
+ const names={spike:'Smaç',block:'Blok',serve:'Servis',receive:'Manşet',set:'Pas',stamina:'Dayanıklılık'};
  const fmt=n=>new Intl.NumberFormat('tr-TR').format(n),escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const portrait=p=>TeamAppearance.valid(p.appearance)?TeamAppearance.portrait(p.appearance):p.art;
  const clock=ms=>{const n=Math.max(0,Math.ceil(ms/1000));return n>=3600?Math.floor(n/3600)+' sa '+Math.floor(n%3600/60)+' dk':Math.floor(n/60)+':'+String(n%60).padStart(2,'0');};

@@ -4,7 +4,7 @@
     "mode": "bal",
     "run": 1,
     "startDay": 1,
-    "entryRating": 28,
+    "entryRating": 29,
     "scheduleVersion": 2,
     "results": {},
     "legacyResults": {},
@@ -105,9 +105,11 @@
       "graduates": 0,
       "entries": []
     },
-    "budget": 12140,
-    "ap": 754855.90625,
-    "matchRewards": [],
+    "budget": 12240,
+    "ap": 780777.3125,
+    "matchRewards": [
+      "bal1_r1-0-6"
+    ],
     "instructions": 4800,
     "floors": [
       [
@@ -177,7 +179,7 @@
       ],
       []
     ],
-    "lastSeen": 1793196659143,
+    "lastSeen": 1793211179980,
     "autoCarry": 0,
     "laneCarry": [],
     "steadyProgress": 0,
@@ -189,27 +191,26 @@
     {
       "id": "player-4",
       "name": "Sıla",
-      "surname": "Boz",
+      "surname": "Dinçer",
       "nationality": "TR",
       "role": "middle",
       "gender": "female",
       "number": 5,
       "art": "team-assets/woman-2.svg",
-      "spike": 32,
-      "block": 41,
-      "serve": 14,
-      "receive": 13,
+      "spike": 29,
+      "block": 43,
+      "serve": 15,
+      "receive": 16,
       "set": 16,
-      "height": 197,
-      "stamina": 21,
-      "mental": 18,
-      "legendaryTalent": false,
+      "height": 185,
+      "stamina": 24,
+      "legendaryTalent": true,
       "matchSkills": [
         "commit-block",
         "triple-block",
         "sky-ball-serve",
+        "roof",
         "kick-save",
-        "read",
         "tempo-minus"
       ],
       "matchSkillsVersion": 3,
@@ -221,15 +222,16 @@
       "developmentVersion": 3,
       "cardVersion": 1,
       "cardLevel": 9,
-      "training": {},
+      "training": {
+        "stamina": 0
+      },
       "baseStats": {
-        "spike": 16,
-        "block": 17,
-        "serve": 14,
-        "receive": 13,
+        "spike": 13,
+        "block": 19,
+        "serve": 15,
+        "receive": 16,
         "set": 16,
-        "stamina": 17,
-        "mental": 14
+        "stamina": 16
       },
       "skills": [
         {
@@ -241,35 +243,35 @@
           "unlocked": false
         },
         {
-          "id": "close",
+          "id": "roof",
           "unlocked": false
         }
-      ]
+      ],
+      "mentalRemovedVersion": 1
     },
     {
       "id": "player-1",
       "name": "Serap",
-      "surname": "Bayhan",
+      "surname": "Avcı",
       "nationality": "TR",
       "role": "outside",
       "gender": "female",
       "number": 2,
       "art": "team-assets/woman-12.svg",
       "spike": 43,
-      "block": 14,
+      "block": 13,
       "serve": 15,
       "receive": 34,
       "set": 15,
-      "height": 190,
-      "stamina": 21,
-      "mental": 21,
+      "height": 185,
+      "stamina": 25,
       "legendaryTalent": true,
       "matchSkills": [
-        "commit-block",
+        "line",
         "float",
-        "jump-float-legendary",
+        "jump-legendary",
         "dive",
-        "jump",
+        "pipe-attack",
         "ghost-tip"
       ],
       "matchSkillsVersion": 3,
@@ -281,19 +283,20 @@
       "developmentVersion": 3,
       "cardVersion": 1,
       "cardLevel": 9,
-      "training": {},
+      "training": {
+        "stamina": 0
+      },
       "baseStats": {
         "spike": 19,
-        "block": 14,
+        "block": 13,
         "serve": 15,
         "receive": 18,
         "set": 15,
-        "stamina": 17,
-        "mental": 17
+        "stamina": 17
       },
       "skills": [
         {
-          "id": "read",
+          "id": "cross",
           "unlocked": false
         },
         {
@@ -301,10 +304,11 @@
           "unlocked": false
         },
         {
-          "id": "line",
+          "id": "jump",
           "unlocked": false
         }
-      ]
+      ],
+      "mentalRemovedVersion": 1
     },
     {
       "id": "player-0",
@@ -319,10 +323,9 @@
       "block": 12,
       "serve": 29,
       "receive": 14,
-      "set": 40,
+      "set": 39,
       "height": 191,
-      "stamina": 18,
-      "mental": 21,
+      "stamina": 23,
       "legendaryTalent": false,
       "matchSkills": [
         "tempo-third",
@@ -341,15 +344,16 @@
       "developmentVersion": 3,
       "cardVersion": 1,
       "cardLevel": 8,
-      "training": {},
+      "training": {
+        "stamina": 0
+      },
       "baseStats": {
         "spike": 16,
         "block": 12,
         "serve": 15,
         "receive": 14,
-        "set": 19,
-        "stamina": 15,
-        "mental": 17
+        "set": 18,
+        "stamina": 16
       },
       "skills": [
         {
@@ -357,40 +361,40 @@
           "unlocked": false
         },
         {
-          "id": "calm",
+          "id": "breath",
           "unlocked": false
         },
         {
           "id": "deceive",
           "unlocked": false
         }
-      ]
+      ],
+      "mentalRemovedVersion": 1
     },
     {
       "id": "player-5",
       "name": "Doğa",
-      "surname": "Karadağ",
+      "surname": "Canbolat",
       "nationality": "TR",
       "role": "middle",
       "gender": "female",
       "number": 6,
       "art": "team-assets/woman-28.svg",
-      "spike": 30,
+      "spike": 26,
       "block": 39,
       "serve": 13,
-      "receive": 15,
-      "set": 16,
-      "height": 194,
-      "stamina": 18,
-      "mental": 19,
+      "receive": 12,
+      "set": 12,
+      "height": 193,
+      "stamina": 22,
       "legendaryTalent": false,
       "matchSkills": [
         "commit-block",
-        "close",
+        "triple-block",
         "sky-ball-serve",
-        "roof",
-        "slide-attack",
-        "tempo-minus"
+        "kick-save",
+        "court-vision",
+        "absolute-read"
       ],
       "matchSkillsVersion": 3,
       "signatureProgress": {
@@ -401,15 +405,16 @@
       "developmentVersion": 3,
       "cardVersion": 1,
       "cardLevel": 8,
-      "training": {},
+      "training": {
+        "stamina": 0
+      },
       "baseStats": {
-        "spike": 16,
+        "spike": 12,
         "block": 18,
         "serve": 13,
-        "receive": 15,
-        "set": 16,
-        "stamina": 14,
-        "mental": 16
+        "receive": 12,
+        "set": 12,
+        "stamina": 15
       },
       "skills": [
         {
@@ -421,36 +426,36 @@
           "unlocked": false
         },
         {
-          "id": "close",
+          "id": "roof",
           "unlocked": false
         }
-      ]
+      ],
+      "mentalRemovedVersion": 1
     },
     {
       "id": "player-2",
       "name": "Selin",
-      "surname": "Demirkol",
+      "surname": "Çağlar",
       "nationality": "TR",
       "role": "outside",
       "gender": "female",
       "number": 3,
       "art": "team-assets/woman-4.svg",
       "spike": 40,
-      "block": 14,
+      "block": 16,
       "serve": 16,
       "receive": 33,
-      "set": 16,
-      "height": 189,
-      "stamina": 21,
-      "mental": 19,
+      "set": 15,
+      "height": 181,
+      "stamina": 24,
       "legendaryTalent": false,
       "matchSkills": [
         "cross",
-        "wipe",
-        "ghost-tip",
+        "float",
+        "tempo-minus",
         "court-vision",
-        "power-hit",
-        "sky-ball-serve"
+        "dive",
+        "jump-legendary"
       ],
       "matchSkillsVersion": 3,
       "signatureProgress": {
@@ -461,19 +466,20 @@
       "developmentVersion": 3,
       "cardVersion": 1,
       "cardLevel": 8,
-      "training": {},
+      "training": {
+        "stamina": 0
+      },
       "baseStats": {
         "spike": 19,
-        "block": 14,
+        "block": 16,
         "serve": 16,
         "receive": 19,
-        "set": 16,
-        "stamina": 17,
-        "mental": 16
+        "set": 15,
+        "stamina": 17
       },
       "skills": [
         {
-          "id": "read",
+          "id": "cross",
           "unlocked": false
         },
         {
@@ -481,15 +487,16 @@
           "unlocked": false
         },
         {
-          "id": "wipe",
+          "id": "line",
           "unlocked": false
         }
-      ]
+      ],
+      "mentalRemovedVersion": 1
     },
     {
       "id": "player-3",
       "name": "Özüm",
-      "surname": "Bingöl",
+      "surname": "Köseoğlu",
       "nationality": "TR",
       "role": "opposite",
       "gender": "female",
@@ -498,18 +505,17 @@
       "spike": 38,
       "block": 16,
       "serve": 31,
-      "receive": 14,
-      "set": 16,
-      "height": 191,
-      "stamina": 19,
-      "mental": 17,
-      "legendaryTalent": true,
+      "receive": 12,
+      "set": 13,
+      "height": 187,
+      "stamina": 18,
+      "legendaryTalent": false,
       "matchSkills": [
         "line",
         "power-hit",
         "sky-ball-serve",
-        "roof",
-        "rebound",
+        "jump",
+        "cross",
         "ghost-tip"
       ],
       "matchSkillsVersion": 3,
@@ -521,15 +527,16 @@
       "developmentVersion": 3,
       "cardVersion": 1,
       "cardLevel": 8,
-      "training": {},
+      "training": {
+        "stamina": 0
+      },
       "baseStats": {
         "spike": 17,
         "block": 12,
         "serve": 17,
-        "receive": 14,
-        "set": 16,
-        "stamina": 16,
-        "mental": 17
+        "receive": 12,
+        "set": 13,
+        "stamina": 15
       },
       "skills": [
         {
@@ -537,39 +544,39 @@
           "unlocked": false
         },
         {
-          "id": "calm",
+          "id": "breath",
           "unlocked": false
         },
         {
-          "id": "wipe",
+          "id": "close",
           "unlocked": false
         }
-      ]
+      ],
+      "mentalRemovedVersion": 1
     },
     {
       "id": "player-6",
       "name": "Azra",
-      "surname": "Savaş",
+      "surname": "Ertaş",
       "nationality": "TR",
       "role": "libero",
       "gender": "female",
       "number": 7,
       "art": "team-assets/woman-17.svg",
-      "spike": 14,
+      "spike": 13,
       "block": 15,
-      "serve": 12,
-      "receive": 45,
-      "set": 34,
-      "height": 177,
-      "stamina": 18,
-      "mental": 20,
-      "legendaryTalent": true,
+      "serve": 14,
+      "receive": 46,
+      "set": 33,
+      "height": 163,
+      "stamina": 25,
+      "legendaryTalent": false,
       "matchSkills": [
         "court-read",
         "cover",
         "pancake",
-        "dive",
         "kick-save",
+        "dive",
         "perfect-second-touch"
       ],
       "matchSkillsVersion": 3,
@@ -581,15 +588,16 @@
       "developmentVersion": 3,
       "cardVersion": 1,
       "cardLevel": 10,
-      "training": {},
+      "training": {
+        "stamina": 0
+      },
       "baseStats": {
-        "spike": 14,
+        "spike": 13,
         "block": 15,
-        "serve": 12,
-        "receive": 18,
-        "set": 16,
-        "stamina": 14,
-        "mental": 15
+        "serve": 14,
+        "receive": 19,
+        "set": 15,
+        "stamina": 16
       },
       "skills": [
         {
@@ -601,10 +609,11 @@
           "unlocked": false
         },
         {
-          "id": "dive",
+          "id": "cover",
           "unlocked": false
         }
-      ]
+      ],
+      "mentalRemovedVersion": 1
     }
   ],
   "day": 10,

@@ -1,0 +1,8 @@
+const fs=require('fs'),assert=require('assert/strict'),{runtime}=require('./audit-camp-economy-pacing.cjs');
+const rows=[];
+for(const profile of ['active','idle'])for(const seed of [41,42,43,44,45]){
+ const run=runtime({matchResults:true,transfers:true,investments:3}).run(profile,seed);assert(run.stages.every(s=>s.completed));
+ rows.push({profile,seed,stages:run.stages.map(s=>{const cards=s.events.filter(e=>e.kind==='card'),times=[...new Set(cards.map(e=>e.at))],gaps=times.map((time,i)=>time-(times[i-1]||0));gaps.push(s.durationSeconds-(times.at(-1)||0));return {division:s.division,minutes:+(s.durationSeconds/60).toFixed(1),upgrades:cards.length,maxCardGapSeconds:Math.max(...gaps),transfers:s.events.filter(e=>e.kind==='transfer').length,ovr:s.final.ovr,camps:s.final.camps,rotationWins:s.matches.filter(m=>m.won).length,matches:s.matches.length};})});
+}
+fs.writeFileSync('audits/career-polish-market-routes.json',JSON.stringify({method:'Current six-stat economy and BAL transfer chance, ten fresh deterministic routes / thirty seasons. Active decisions 30s, return profile 5m, three building purchases per visit, one affordable +3 OVR transfer per visit. Uses production rotation stat resolution; promotion assumed. Native skill frequency is tested separately. No retention or guaranteed promotion claim.',rows},null,2));
+console.log('PASS 10 fresh market routes / 30 seasons with six stats and revised BAL catalogs.');for(const profile of ['active','idle'])console.log(profile,JSON.stringify(rows.filter(r=>r.profile===profile).map(r=>r.stages.map(s=>({d:s.division,ovr:+s.ovr.toFixed(1),hires:s.transfers,upgrades:s.upgrades,wins:s.rotationWins})))));

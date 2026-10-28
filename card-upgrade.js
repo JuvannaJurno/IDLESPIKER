@@ -1,5 +1,5 @@
 (function(){
-const labels={spike:'Smaç',block:'Blok',serve:'Servis',receive:'Manşet',set:'Oyun Kurma ve Pas',stamina:'Dayanıklılık',mental:'Mental'};
+const labels={spike:'Smaç',block:'Blok',serve:'Servis',receive:'Manşet',set:'Oyun Kurma ve Pas',stamina:'Dayanıklılık'};
 window.CardUpgrade={panel(p,onUpgrade){const q=TeamRules.cardQuote(p),box=document.createElement('section');box.className='card-upgrade-panel';
  const heading=document.createElement('div');heading.className='card-upgrade-heading';const level=document.createElement('strong'),ovr=document.createElement('span');level.textContent=q.blocked?'Seviye '+q.level:'Seviye '+q.level+' → '+(q.level+1);ovr.textContent=q.blocked?'OVR '+q.before:'OVR '+q.before+' → '+q.after;heading.append(level,ovr);box.append(heading);const eyebrow=document.createElement('small');eyebrow.className='upgrade-eyebrow';eyebrow.textContent=q.blocked?'KART GELİŞİMİ':'BİR SEVİYE, BİRLİKTE GELİŞEN ÖZELLİKLER';box.prepend(eyebrow);
  if(!q.blocked)for(const [k,n]of Object.entries(q.gains)){const row=document.createElement('div');row.className='card-upgrade-gain';const name=document.createElement('span'),value=document.createElement('b');name.textContent=labels[k];value.textContent=p[k]+' → '+(p[k]+n)+'  (+'+n+')';row.append(name,value);box.append(row)}

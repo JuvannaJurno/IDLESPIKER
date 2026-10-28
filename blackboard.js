@@ -1,6 +1,6 @@
 (function(root){
 'use strict';
-const labels={receive:'Manşet',serve:'Servis',spike:'Smaç',block:'Blok',set:'Oyun Kurma ve Pas',mental:'Mental',stamina:'Dayanıklılık'};
+const labels={receive:'Manşet',serve:'Servis',spike:'Smaç',block:'Blok',set:'Oyun Kurma ve Pas',stamina:'Dayanıklılık'};
 const matchups=[{key:'receive',against:'serve',roles:['libero','outside'],opRoles:null},{key:'block',against:'spike',roles:['middle','opposite'],opRoles:['outside','opposite']},{key:'spike',against:'block',roles:['outside','opposite'],opRoles:['middle']},{key:'serve',against:'receive',roles:['outside','opposite','setter'],opRoles:['outside','libero']}];
 const mean=(ps,k)=>ps.length?ps.reduce((a,p)=>a+p[k],0)/ps.length:0;
 function analyze(squad,opponents,R){

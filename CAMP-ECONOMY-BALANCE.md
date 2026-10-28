@@ -1,5 +1,7 @@
 # Kamp ekonomisi ve yıldız temposu — 28 Ekim 2026
 
+Sonraki revizyon: aktif mental kaldırma, BAL katalog sıklığı ve güncel doğrulamalar [CAREER-POLISH-AUDIT.md](CAREER-POLISH-AUDIT.md) içindedir. Aşağıdaki ölçümler kendi sürümlerinin tarihsel karşılaştırmasıdır.
+
 **Güncel revizyon:** Aşağıdaki ilk dengeleme tarihsel kayıttır. Oyuncu geri bildirimi sonrası 45.000 × (seviye / 10)^1,8 tabanı, ilk kamp 200 bütçe ve düzeltilmiş transfer geçmişi uygulanmıştır. Güncel gerekçe, önce/sonra ve test sınırları [TEMPO-AND-TRANSFER-AUDIT.md](TEMPO-AND-TRANSFER-AUDIT.md) içindedir. Aşağıdaki 120.000 tabanı, 1.000 ilk kamp ve 14 tıklamalı örnek artık üretim ayarı değildir.
 
 Bu revizyon ilk üç aşamayı hedefler. İlk kamp dönüşünde yeni gelir olmadan kadroyu doldurup yeniden gönderebilme sorunu, sıfır kayıt testlerinde giderildi. Talimat üretimi ve lig takvimi yavaşlatılmadı. Taslak 1. Lig ve uygulanmamış son dört aşama için tamamlanmış denge iddiası değildir.

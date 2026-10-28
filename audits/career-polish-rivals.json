@@ -1,0 +1,394 @@
+[
+  {
+    "division": 2,
+    "count": 0,
+    "team": 1,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 0,
+    "team": 2,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 0,
+    "team": 3,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 0,
+    "team": 4,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 0,
+    "team": 5,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 0,
+    "team": 6,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 0,
+    "team": 7,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 1,
+    "team": 1,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 1,
+    "team": 2,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 1,
+    "team": 3,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 1,
+    "team": 4,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 1,
+    "team": 5,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 1,
+    "team": 6,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 1,
+    "team": 7,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 3,
+    "team": 1,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 3,
+    "team": 2,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 3,
+    "team": 3,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 3,
+    "team": 4,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 3,
+    "team": 5,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 3,
+    "team": 6,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 3,
+    "team": 7,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 5,
+    "team": 1,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 5,
+    "team": 2,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 5,
+    "team": 3,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 5,
+    "team": 4,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 5,
+    "team": 5,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 5,
+    "team": 6,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 2,
+    "count": 5,
+    "team": 7,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 3,
+    "count": 0,
+    "team": 1,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 3,
+    "count": 0,
+    "team": 2,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 3,
+    "count": 0,
+    "team": 3,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 3,
+    "count": 0,
+    "team": 4,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 3,
+    "count": 0,
+    "team": 5,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 3,
+    "count": 0,
+    "team": 6,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 3,
+    "count": 0,
+    "team": 7,
+    "expected": 0,
+    "actual": 0
+  },
+  {
+    "division": 3,
+    "count": 1,
+    "team": 1,
+    "expected": 1,
+    "actual": 1
+  },
+  {
+    "division": 3,
+    "count": 1,
+    "team": 2,
+    "expected": 1,
+    "actual": 1
+  },
+  {
+    "division": 3,
+    "count": 1,
+    "team": 3,
+    "expected": 1,
+    "actual": 1
+  },
+  {
+    "division": 3,
+    "count": 1,
+    "team": 4,
+    "expected": 1,
+    "actual": 1
+  },
+  {
+    "division": 3,
+    "count": 1,
+    "team": 5,
+    "expected": 1,
+    "actual": 1
+  },
+  {
+    "division": 3,
+    "count": 1,
+    "team": 6,
+    "expected": 1,
+    "actual": 1
+  },
+  {
+    "division": 3,
+    "count": 1,
+    "team": 7,
+    "expected": 1,
+    "actual": 1
+  },
+  {
+    "division": 3,
+    "count": 3,
+    "team": 1,
+    "expected": 2,
+    "actual": 2
+  },
+  {
+    "division": 3,
+    "count": 3,
+    "team": 2,
+    "expected": 3,
+    "actual": 3
+  },
+  {
+    "division": 3,
+    "count": 3,
+    "team": 3,
+    "expected": 3,
+    "actual": 3
+  },
+  {
+    "division": 3,
+    "count": 3,
+    "team": 4,
+    "expected": 2,
+    "actual": 2
+  },
+  {
+    "division": 3,
+    "count": 3,
+    "team": 5,
+    "expected": 3,
+    "actual": 3
+  },
+  {
+    "division": 3,
+    "count": 3,
+    "team": 6,
+    "expected": 2,
+    "actual": 2
+  },
+  {
+    "division": 3,
+    "count": 3,
+    "team": 7,
+    "expected": 3,
+    "actual": 3
+  },
+  {
+    "division": 3,
+    "count": 5,
+    "team": 1,
+    "expected": 2,
+    "actual": 2
+  },
+  {
+    "division": 3,
+    "count": 5,
+    "team": 2,
+    "expected": 5,
+    "actual": 5
+  },
+  {
+    "division": 3,
+    "count": 5,
+    "team": 3,
+    "expected": 5,
+    "actual": 5
+  },
+  {
+    "division": 3,
+    "count": 5,
+    "team": 4,
+    "expected": 2,
+    "actual": 2
+  },
+  {
+    "division": 3,
+    "count": 5,
+    "team": 5,
+    "expected": 5,
+    "actual": 5
+  },
+  {
+    "division": 3,
+    "count": 5,
+    "team": 6,
+    "expected": 2,
+    "actual": 2
+  },
+  {
+    "division": 3,
+    "count": 5,
+    "team": 7,
+    "expected": 5,
+    "actual": 5
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "migrations": 125,
+  "paidGains": 6,
+  "balCatalogs": 500,
+  "positiveCatalogs": 180,
+  "positiveRate": 0.36,
+  "maxDry": 3
+}

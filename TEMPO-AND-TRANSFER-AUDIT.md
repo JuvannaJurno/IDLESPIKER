@@ -1,5 +1,7 @@
 # Tempo, kamp ve transfer dengelemesi — 28 Ekim 2026
 
+Sonraki revizyon: aktif mental kaldırma, BAL katalog sıklığı ve güncel doğrulamalar [CAREER-POLISH-AUDIT.md](CAREER-POLISH-AUDIT.md) içindedir. Aşağıdaki ölçümler kendi sürümlerinin tarihsel karşılaştırmasıdır.
+
 Bu rapor `fe629e6` sürümünü yeni ayarla karşılaştırır. İlk üç aşama test edildi; 1. Lig taslağı ve uygulanmamış 5–8. aşamalar için tamamlanmış denge iddiası yoktur. Önceki [kamp raporundaki](CAMP-ECONOMY-BALANCE.md) 120.000 AP tabanı bu revizyonla değişmiştir.
 
 ## Oyuncunun hissettiği sorun
