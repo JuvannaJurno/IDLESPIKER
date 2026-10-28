@@ -116,17 +116,17 @@
             27,
             27,
             27,
-            27,
+            26,
             26,
             26
           ],
-          "ovr": 57.666666666666664,
-          "ap": 196263,
+          "ovr": 57.333333333333336,
+          "ap": 287456,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
             "baseAP": 204.375,
-            "critChance": 0.33,
+            "critChance": 0.31,
             "critMult": 2.5,
             "instructionLanes": [
               1,
@@ -142,9 +142,9 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
-            "morningAP": 5012.5,
+            "morningAP": 2712.5,
             "slots": 0,
             "travel": 2400,
             "transition": 250,
@@ -168,10 +168,9 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
-            "bal_position": 10,
-            "bal_video": 9,
-            "bal_recovery": 5,
+            "bal_plan": 9,
+            "bal_position": 9,
+            "bal_video": 8,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -185,8 +184,8 @@
           "wins": 4,
           "matches": 14,
           "coreActionsByQuarter": [
-            85,
-            71,
+            84,
+            69,
             53,
             43
           ],
@@ -219,11 +218,11 @@
             79,
             78,
             80,
-            78,
+            77,
             74
           ],
-          "ovr": 140.66666666666666,
-          "ap": 79795891,
+          "ovr": 140.33333333333334,
+          "ap": 86389784,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -256,7 +255,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 321700,
+          "dailyBudget": 320550,
           "running": [
             "player-5"
           ],
@@ -275,10 +274,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -304,14 +302,14 @@
           "wins": 6,
           "matches": 14,
           "coreActionsByQuarter": [
-            319,
+            321,
             87,
             65,
-            55
+            56
           ],
           "longestCoreGapSeconds": 121,
           "firstTwoStarSeconds": 511,
-          "shortestCampStartGapSeconds": 210,
+          "shortestCampStartGapSeconds": 150,
           "matchGapSeconds": {
             "min": 241,
             "median": 301,
@@ -430,17 +428,17 @@
             27,
             27,
             27,
-            27,
+            26,
             26,
             26
           ],
-          "ovr": 57.333333333333336,
-          "ap": 434489,
+          "ovr": 57.166666666666664,
+          "ap": 507497,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
             "baseAP": 204.375,
-            "critChance": 0.33,
+            "critChance": 0.31,
             "critMult": 2.5,
             "instructionLanes": [
               1,
@@ -456,7 +454,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 5012.5,
             "slots": 0,
@@ -482,10 +480,9 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 10,
-            "bal_video": 9,
-            "bal_recovery": 5,
+            "bal_video": 8,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -499,10 +496,10 @@
           "wins": 7,
           "matches": 14,
           "coreActionsByQuarter": [
-            85,
-            71,
+            84,
+            69,
             54,
-            43
+            42
           ],
           "longestCoreGapSeconds": 60,
           "firstTwoStarSeconds": null,
@@ -516,7 +513,7 @@
         {
           "division": 3,
           "complete": true,
-          "minutes": 78.7,
+          "minutes": 79.2,
           "camps": [
             8,
             8,
@@ -533,11 +530,11 @@
             80,
             78,
             80,
-            78,
+            77,
             74
           ],
-          "ovr": 140.16666666666666,
-          "ap": 77707198,
+          "ovr": 139.83333333333334,
+          "ap": 84318713,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -570,7 +567,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 323100,
+          "dailyBudget": 321800,
           "running": [
             "player-5"
           ],
@@ -589,10 +586,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -618,18 +614,18 @@
           "wins": 10,
           "matches": 14,
           "coreActionsByQuarter": [
-            321,
-            86,
-            65,
-            55
+            320,
+            89,
+            64,
+            56
           ],
           "longestCoreGapSeconds": 121,
-          "firstTwoStarSeconds": 481,
-          "shortestCampStartGapSeconds": 180,
+          "firstTwoStarSeconds": 541,
+          "shortestCampStartGapSeconds": 150,
           "matchGapSeconds": {
             "min": 241,
             "median": 301,
-            "max": 931
+            "max": 961
           }
         }
       ]
@@ -745,16 +741,16 @@
             27,
             27,
             27,
-            27,
+            26,
             26
           ],
-          "ovr": 57.333333333333336,
-          "ap": 36256,
+          "ovr": 57,
+          "ap": 114420,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
             "baseAP": 204.375,
-            "critChance": 0.33,
+            "critChance": 0.31,
             "critMult": 2.5,
             "instructionLanes": [
               1,
@@ -770,9 +766,9 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
-            "morningAP": 5012.5,
+            "morningAP": 2712.5,
             "slots": 0,
             "travel": 2400,
             "transition": 250,
@@ -796,10 +792,9 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
-            "bal_position": 10,
-            "bal_video": 9,
-            "bal_recovery": 5,
+            "bal_plan": 9,
+            "bal_position": 9,
+            "bal_video": 8,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -813,8 +808,8 @@
           "wins": 6,
           "matches": 14,
           "coreActionsByQuarter": [
-            85,
-            71,
+            84,
+            69,
             54,
             43
           ],
@@ -851,7 +846,7 @@
             74
           ],
           "ovr": 140,
-          "ap": 86822563,
+          "ap": 84990634,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -884,7 +879,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 321700,
+          "dailyBudget": 320750,
           "running": [
             "player-5"
           ],
@@ -903,10 +898,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -932,14 +926,14 @@
           "wins": 4,
           "matches": 14,
           "coreActionsByQuarter": [
-            320,
+            322,
             87,
             64,
-            54
+            56
           ],
-          "longestCoreGapSeconds": 150,
-          "firstTwoStarSeconds": 481,
-          "shortestCampStartGapSeconds": 180,
+          "longestCoreGapSeconds": 121,
+          "firstTwoStarSeconds": 511,
+          "shortestCampStartGapSeconds": 150,
           "matchGapSeconds": {
             "min": 241,
             "median": 301,
@@ -1058,17 +1052,17 @@
             27,
             27,
             27,
-            27,
+            26,
             26,
             26
           ],
-          "ovr": 57.5,
-          "ap": 213374,
+          "ovr": 57.166666666666664,
+          "ap": 261408,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
             "baseAP": 204.375,
-            "critChance": 0.33,
+            "critChance": 0.31,
             "critMult": 2.5,
             "instructionLanes": [
               1,
@@ -1084,7 +1078,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 5012.5,
             "slots": 0,
@@ -1110,10 +1104,9 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 10,
-            "bal_video": 9,
-            "bal_recovery": 5,
+            "bal_video": 8,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -1127,14 +1120,14 @@
           "wins": 6,
           "matches": 14,
           "coreActionsByQuarter": [
-            86,
-            71,
-            54,
+            84,
+            69,
+            55,
             41
           ],
           "longestCoreGapSeconds": 60,
           "firstTwoStarSeconds": null,
-          "shortestCampStartGapSeconds": 840,
+          "shortestCampStartGapSeconds": 870,
           "matchGapSeconds": {
             "min": 150,
             "median": 180,
@@ -1144,7 +1137,7 @@
         {
           "division": 3,
           "complete": true,
-          "minutes": 78.7,
+          "minutes": 79.2,
           "camps": [
             8,
             8,
@@ -1159,13 +1152,13 @@
             78,
             80,
             80,
-            78,
+            77,
             80,
             78,
             74
           ],
-          "ovr": 140.33333333333334,
-          "ap": 76511397,
+          "ovr": 140.16666666666666,
+          "ap": 83439985,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -1198,10 +1191,8 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 322100,
-          "running": [
-            "player-3"
-          ],
+          "dailyBudget": 321450,
+          "running": [],
           "holdings": {
             "warmup": 5,
             "crit_smash": 5,
@@ -1217,10 +1208,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -1246,18 +1236,18 @@
           "wins": 7,
           "matches": 14,
           "coreActionsByQuarter": [
-            322,
-            86,
+            321,
+            88,
             64,
             55
           ],
           "longestCoreGapSeconds": 121,
-          "firstTwoStarSeconds": 481,
-          "shortestCampStartGapSeconds": 150,
+          "firstTwoStarSeconds": 391,
+          "shortestCampStartGapSeconds": 180,
           "matchGapSeconds": {
             "min": 241,
             "median": 301,
-            "max": 931
+            "max": 961
           }
         }
       ]
@@ -1373,16 +1363,16 @@
             27,
             27,
             27,
-            27,
+            26,
             26
           ],
-          "ovr": 57.333333333333336,
-          "ap": 152855,
+          "ovr": 57,
+          "ap": 167969,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
             "baseAP": 204.375,
-            "critChance": 0.33,
+            "critChance": 0.31,
             "critMult": 2.5,
             "instructionLanes": [
               1,
@@ -1398,7 +1388,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 5012.5,
             "slots": 0,
@@ -1424,10 +1414,9 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 10,
-            "bal_video": 9,
-            "bal_recovery": 5,
+            "bal_video": 8,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -1441,14 +1430,14 @@
           "wins": 8,
           "matches": 14,
           "coreActionsByQuarter": [
-            86,
-            71,
-            54,
-            43
+            84,
+            69,
+            55,
+            42
           ],
           "longestCoreGapSeconds": 60,
           "firstTwoStarSeconds": null,
-          "shortestCampStartGapSeconds": 840,
+          "shortestCampStartGapSeconds": 870,
           "matchGapSeconds": {
             "min": 150,
             "median": 180,
@@ -1458,12 +1447,12 @@
         {
           "division": 3,
           "complete": true,
-          "minutes": 78.7,
+          "minutes": 79.2,
           "camps": [
             8,
             8,
             8,
-            8,
+            7,
             8,
             7,
             7
@@ -1479,7 +1468,7 @@
             74
           ],
           "ovr": 140,
-          "ap": 85233679,
+          "ap": 70382423,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -1512,8 +1501,10 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 322300,
-          "running": [],
+          "dailyBudget": 320950,
+          "running": [
+            "player-5"
+          ],
           "holdings": {
             "warmup": 5,
             "crit_smash": 5,
@@ -1529,10 +1520,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -1559,17 +1549,17 @@
           "matches": 14,
           "coreActionsByQuarter": [
             321,
-            86,
+            87,
             64,
-            55
+            57
           ],
           "longestCoreGapSeconds": 121,
-          "firstTwoStarSeconds": 481,
-          "shortestCampStartGapSeconds": 180,
+          "firstTwoStarSeconds": 541,
+          "shortestCampStartGapSeconds": 150,
           "matchGapSeconds": {
             "min": 241,
             "median": 301,
-            "max": 931
+            "max": 961
           }
         }
       ]
@@ -1684,12 +1674,12 @@
             24,
             24,
             24,
+            24,
             23,
-            23,
-            23
+            24
           ],
-          "ovr": 52.833333333333336,
-          "ap": 312744,
+          "ovr": 53,
+          "ap": 292508,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -1710,7 +1700,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.24,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.625,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -1736,10 +1726,9 @@
             "rhythm": 5,
             "bal_coach": 8,
             "bal_shift": 8,
-            "bal_plan": 5,
+            "bal_plan": 8,
             "bal_position": 9,
             "bal_video": 7,
-            "bal_recovery": 5,
             "bal_sponsor": 8,
             "bal_shop": 9,
             "bal_fans": 5,
@@ -1747,7 +1736,7 @@
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
-            "bal_contacts": 7,
+            "bal_contacts": 6,
             "bal_talent": 5
           },
           "wins": 4,
@@ -1755,12 +1744,12 @@
           "coreActionsByQuarter": [
             61,
             50,
-            74,
-            38
+            70,
+            42
           ],
           "longestCoreGapSeconds": 301,
           "firstTwoStarSeconds": null,
-          "shortestCampStartGapSeconds": 2700,
+          "shortestCampStartGapSeconds": 2400,
           "matchGapSeconds": {
             "min": 300,
             "median": 300,
@@ -1783,15 +1772,15 @@
           "median": 8,
           "levels": [
             81,
+            84,
             83,
-            83,
-            80,
+            81,
             83,
             81,
             77
           ],
-          "ovr": 145.5,
-          "ap": 97467080,
+          "ovr": 146,
+          "ap": 92812398,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -1824,7 +1813,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 339550,
+          "dailyBudget": 375900,
           "running": [],
           "holdings": {
             "warmup": 5,
@@ -1841,10 +1830,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -1861,7 +1849,7 @@
             "pro_camp": 10,
             "pro_travel": 10,
             "pro_sponsor": 10,
-            "pro_shop": 8,
+            "pro_shop": 9,
             "pro_tickets": 10,
             "pro_search": 5,
             "pro_negotiator": 5,
@@ -1870,12 +1858,12 @@
           "wins": 6,
           "matches": 14,
           "coreActionsByQuarter": [
-            196,
-            188,
-            119,
-            76
+            195,
+            191,
+            118,
+            80
           ],
-          "longestCoreGapSeconds": 301,
+          "longestCoreGapSeconds": 300,
           "firstTwoStarSeconds": 1801,
           "shortestCampStartGapSeconds": 600,
           "matchGapSeconds": {
@@ -1997,11 +1985,11 @@
             24,
             24,
             24,
-            23,
-            23
+            24,
+            24
           ],
-          "ovr": 52.5,
-          "ap": 221285,
+          "ovr": 52.833333333333336,
+          "ap": 161997,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -2022,7 +2010,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.24,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -2048,10 +2036,9 @@
             "rhythm": 5,
             "bal_coach": 8,
             "bal_shift": 8,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 9,
             "bal_video": 7,
-            "bal_recovery": 5,
             "bal_sponsor": 8,
             "bal_shop": 9,
             "bal_fans": 5,
@@ -2059,16 +2046,16 @@
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
-            "bal_contacts": 7,
+            "bal_contacts": 6,
             "bal_talent": 5
           },
           "wins": 7,
           "matches": 14,
           "coreActionsByQuarter": [
             61,
-            50,
-            73,
-            40
+            51,
+            70,
+            42
           ],
           "longestCoreGapSeconds": 301,
           "firstTwoStarSeconds": null,
@@ -2098,12 +2085,12 @@
             83,
             83,
             81,
-            83,
+            84,
             81,
             77
           ],
-          "ovr": 145,
-          "ap": 97027887,
+          "ovr": 145.33333333333334,
+          "ap": 90938104,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -2136,7 +2123,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 340950,
+          "dailyBudget": 380900,
           "running": [],
           "holdings": {
             "warmup": 5,
@@ -2153,10 +2140,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -2173,7 +2159,7 @@
             "pro_camp": 10,
             "pro_travel": 10,
             "pro_sponsor": 10,
-            "pro_shop": 8,
+            "pro_shop": 9,
             "pro_tickets": 10,
             "pro_search": 5,
             "pro_negotiator": 5,
@@ -2182,10 +2168,10 @@
           "wins": 10,
           "matches": 14,
           "coreActionsByQuarter": [
-            195,
-            198,
-            110,
-            76
+            192,
+            202,
+            106,
+            82
           ],
           "longestCoreGapSeconds": 300,
           "firstTwoStarSeconds": 1801,
@@ -2309,11 +2295,11 @@
             24,
             24,
             24,
-            23,
-            23
+            24,
+            24
           ],
-          "ovr": 52.5,
-          "ap": 193619,
+          "ovr": 52.833333333333336,
+          "ap": 140150,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -2334,7 +2320,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.24,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -2360,10 +2346,9 @@
             "rhythm": 5,
             "bal_coach": 8,
             "bal_shift": 8,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 9,
             "bal_video": 7,
-            "bal_recovery": 5,
             "bal_sponsor": 8,
             "bal_shop": 9,
             "bal_fans": 5,
@@ -2371,16 +2356,16 @@
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
-            "bal_contacts": 7,
+            "bal_contacts": 6,
             "bal_talent": 5
           },
           "wins": 6,
           "matches": 14,
           "coreActionsByQuarter": [
             61,
-            50,
-            73,
-            40
+            51,
+            70,
+            42
           ],
           "longestCoreGapSeconds": 301,
           "firstTwoStarSeconds": null,
@@ -2407,15 +2392,15 @@
           "median": 8,
           "levels": [
             81,
-            83,
+            84,
             83,
             81,
             83,
             81,
             77
           ],
-          "ovr": 145,
-          "ap": 95529269,
+          "ovr": 145.33333333333334,
+          "ap": 89608419,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -2448,7 +2433,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 339550,
+          "dailyBudget": 379500,
           "running": [],
           "holdings": {
             "warmup": 5,
@@ -2465,10 +2450,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -2485,7 +2469,7 @@
             "pro_camp": 10,
             "pro_travel": 10,
             "pro_sponsor": 10,
-            "pro_shop": 8,
+            "pro_shop": 9,
             "pro_tickets": 10,
             "pro_search": 5,
             "pro_negotiator": 5,
@@ -2494,12 +2478,12 @@
           "wins": 4,
           "matches": 14,
           "coreActionsByQuarter": [
-            195,
-            208,
-            100,
-            76
+            192,
+            212,
+            96,
+            82
           ],
-          "longestCoreGapSeconds": 301,
+          "longestCoreGapSeconds": 300,
           "firstTwoStarSeconds": 1801,
           "shortestCampStartGapSeconds": 600,
           "matchGapSeconds": {
@@ -2620,12 +2604,12 @@
             24,
             24,
             24,
+            24,
             23,
-            23,
-            23
+            24
           ],
-          "ovr": 52.5,
-          "ap": 270282,
+          "ovr": 52.666666666666664,
+          "ap": 224155,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -2646,7 +2630,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.24,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -2672,10 +2656,9 @@
             "rhythm": 5,
             "bal_coach": 8,
             "bal_shift": 8,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 9,
             "bal_video": 7,
-            "bal_recovery": 5,
             "bal_sponsor": 8,
             "bal_shop": 9,
             "bal_fans": 5,
@@ -2683,16 +2666,16 @@
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
-            "bal_contacts": 7,
+            "bal_contacts": 6,
             "bal_talent": 5
           },
           "wins": 6,
           "matches": 14,
           "coreActionsByQuarter": [
             61,
-            50,
-            73,
-            39
+            51,
+            70,
+            41
           ],
           "longestCoreGapSeconds": 301,
           "firstTwoStarSeconds": null,
@@ -2719,15 +2702,15 @@
           "median": 8,
           "levels": [
             81,
-            83,
+            84,
             83,
             81,
             83,
             81,
             77
           ],
-          "ovr": 145.5,
-          "ap": 89136394,
+          "ovr": 145.66666666666666,
+          "ap": 85122494,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -2760,7 +2743,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 349900,
+          "dailyBudget": 380100,
           "running": [],
           "holdings": {
             "warmup": 5,
@@ -2777,10 +2760,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -2797,7 +2779,7 @@
             "pro_camp": 10,
             "pro_travel": 10,
             "pro_sponsor": 10,
-            "pro_shop": 8,
+            "pro_shop": 9,
             "pro_tickets": 10,
             "pro_search": 5,
             "pro_negotiator": 5,
@@ -2806,10 +2788,10 @@
           "wins": 7,
           "matches": 14,
           "coreActionsByQuarter": [
-            196,
-            188,
-            120,
-            77
+            193,
+            192,
+            116,
+            82
           ],
           "longestCoreGapSeconds": 300,
           "firstTwoStarSeconds": 1801,
@@ -2933,11 +2915,11 @@
             24,
             24,
             24,
-            23,
+            24,
             24
           ],
-          "ovr": 52.333333333333336,
-          "ap": 149214,
+          "ovr": 52.666666666666664,
+          "ap": 186206,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -2958,7 +2940,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.24,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -2984,10 +2966,9 @@
             "rhythm": 5,
             "bal_coach": 8,
             "bal_shift": 8,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 9,
             "bal_video": 7,
-            "bal_recovery": 5,
             "bal_sponsor": 8,
             "bal_shop": 9,
             "bal_fans": 5,
@@ -2995,7 +2976,7 @@
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
-            "bal_contacts": 7,
+            "bal_contacts": 6,
             "bal_talent": 5
           },
           "wins": 8,
@@ -3003,8 +2984,8 @@
           "coreActionsByQuarter": [
             61,
             51,
-            72,
-            41
+            70,
+            42
           ],
           "longestCoreGapSeconds": 301,
           "firstTwoStarSeconds": null,
@@ -3030,16 +3011,16 @@
           ],
           "median": 8,
           "levels": [
-            82,
+            81,
             84,
             83,
-            82,
-            84,
+            81,
+            83,
             81,
             77
           ],
-          "ovr": 146,
-          "ap": 82416211,
+          "ovr": 145,
+          "ap": 92327570,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -3072,7 +3053,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 338600,
+          "dailyBudget": 380300,
           "running": [],
           "holdings": {
             "warmup": 5,
@@ -3089,10 +3070,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -3118,13 +3098,13 @@
           "wins": 6,
           "matches": 14,
           "coreActionsByQuarter": [
-            196,
-            179,
-            128,
-            80
+            192,
+            212,
+            96,
+            82
           ],
           "longestCoreGapSeconds": 300,
-          "firstTwoStarSeconds": 2101,
+          "firstTwoStarSeconds": 1801,
           "shortestCampStartGapSeconds": 600,
           "matchGapSeconds": {
             "min": 300,
@@ -3243,13 +3223,13 @@
             18,
             18,
             18,
+            19,
             18,
             18,
-            20,
             18
           ],
-          "ovr": 44.333333333333336,
-          "ap": 471842,
+          "ovr": 44.166666666666664,
+          "ap": 149190,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -3270,7 +3250,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -3279,14 +3259,11 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 30750,
+          "dailyBudget": 30790,
           "running": [
             "player-4",
             "player-1",
-            "player-0",
-            "player-5",
-            "player-2",
-            "player-6"
+            "player-0"
           ],
           "holdings": {
             "warmup": 5,
@@ -3303,27 +3280,26 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 9,
             "bal_video": 8,
-            "bal_recovery": 5,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
-            "bal_scout": 9,
+            "bal_scout": 8,
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
             "bal_contacts": 7,
             "bal_talent": 5
           },
-          "wins": 5,
+          "wins": 7,
           "matches": 14,
           "coreActionsByQuarter": [
             95,
-            59,
-            25,
-            11
+            56,
+            27,
+            7
           ],
           "longestCoreGapSeconds": 3600,
           "firstTwoStarSeconds": null,
@@ -3339,26 +3315,26 @@
           "complete": true,
           "minutes": 348,
           "camps": [
+            7,
             8,
-            9,
-            9,
             8,
-            9,
+            7,
             8,
-            8
+            7,
+            7
           ],
-          "median": 8,
+          "median": 7,
           "levels": [
+            80,
             90,
-            100,
-            100,
             90,
-            100,
+            80,
             90,
-            90
+            80,
+            80
           ],
-          "ovr": 166.16666666666666,
-          "ap": 508252209,
+          "ovr": 150,
+          "ap": 2477108705,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -3391,9 +3367,10 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 616050,
+          "dailyBudget": 616850,
           "running": [
             "player-4",
+            "player-1",
             "player-5",
             "player-3",
             "player-6"
@@ -3413,10 +3390,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -3439,17 +3415,17 @@
             "pro_negotiator": 5,
             "pro_scout": 5
           },
-          "wins": 5,
+          "wins": 7,
           "matches": 14,
           "coreActionsByQuarter": [
-            297,
-            102,
-            210,
-            113
+            301,
+            99,
+            152,
+            100
           ],
-          "longestCoreGapSeconds": 3600,
+          "longestCoreGapSeconds": 3720,
           "firstTwoStarSeconds": 4260,
-          "shortestCampStartGapSeconds": 2039,
+          "shortestCampStartGapSeconds": 300,
           "matchGapSeconds": {
             "min": 1020,
             "median": 1020,
@@ -3566,14 +3542,14 @@
           "levels": [
             18,
             18,
+            19,
             18,
             18,
             18,
-            20,
             18
           ],
-          "ovr": 43.666666666666664,
-          "ap": 701044,
+          "ovr": 43.333333333333336,
+          "ap": 214944,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -3594,7 +3570,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -3603,14 +3579,10 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 30770,
+          "dailyBudget": 30790,
           "running": [
             "player-4",
-            "player-1",
-            "player-0",
-            "player-5",
-            "player-2",
-            "player-6"
+            "player-1"
           ],
           "holdings": {
             "warmup": 5,
@@ -3627,27 +3599,26 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 9,
             "bal_video": 8,
-            "bal_recovery": 5,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
-            "bal_scout": 9,
+            "bal_scout": 8,
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
             "bal_contacts": 7,
             "bal_talent": 5
           },
-          "wins": 6,
+          "wins": 7,
           "matches": 14,
           "coreActionsByQuarter": [
             94,
-            60,
-            24,
-            11
+            56,
+            26,
+            7
           ],
           "longestCoreGapSeconds": 3600,
           "firstTwoStarSeconds": null,
@@ -3664,25 +3635,25 @@
           "minutes": 348,
           "camps": [
             8,
-            9,
-            9,
             8,
-            9,
             8,
-            8
+            8,
+            8,
+            8,
+            7
           ],
           "median": 8,
           "levels": [
             90,
-            100,
-            100,
             90,
-            100,
             90,
-            90
+            90,
+            90,
+            90,
+            80
           ],
-          "ovr": 165.5,
-          "ap": 537980602,
+          "ovr": 158,
+          "ap": 1775768767,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -3715,11 +3686,11 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 617850,
+          "dailyBudget": 616850,
           "running": [
-            "player-4",
-            "player-5",
-            "player-3",
+            "player-1",
+            "player-0",
+            "player-2",
             "player-6"
           ],
           "holdings": {
@@ -3737,10 +3708,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -3763,17 +3733,17 @@
             "pro_negotiator": 5,
             "pro_scout": 5
           },
-          "wins": 12,
+          "wins": 7,
           "matches": 14,
           "coreActionsByQuarter": [
-            297,
-            102,
-            210,
-            113
+            302,
+            99,
+            173,
+            111
           ],
           "longestCoreGapSeconds": 3600,
           "firstTwoStarSeconds": 4260,
-          "shortestCampStartGapSeconds": 2039,
+          "shortestCampStartGapSeconds": 300,
           "matchGapSeconds": {
             "min": 1020,
             "median": 1020,
@@ -3878,7 +3848,7 @@
           "complete": true,
           "minutes": 260,
           "camps": [
-            2,
+            1,
             1,
             1,
             1,
@@ -3888,16 +3858,16 @@
           ],
           "median": 1,
           "levels": [
-            20,
+            18,
+            18,
+            19,
             18,
             18,
             18,
-            18,
-            20,
             18
           ],
-          "ovr": 44.166666666666664,
-          "ap": 219832,
+          "ovr": 43.333333333333336,
+          "ap": 161545,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -3918,7 +3888,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -3927,13 +3897,10 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 30790,
+          "dailyBudget": 30810,
           "running": [
-            "player-1",
-            "player-0",
-            "player-5",
-            "player-2",
-            "player-6"
+            "player-4",
+            "player-1"
           ],
           "holdings": {
             "warmup": 5,
@@ -3950,29 +3917,28 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 9,
             "bal_video": 8,
-            "bal_recovery": 5,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
-            "bal_scout": 9,
+            "bal_scout": 8,
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
             "bal_contacts": 7,
             "bal_talent": 5
           },
-          "wins": 7,
+          "wins": 8,
           "matches": 14,
           "coreActionsByQuarter": [
             95,
-            60,
-            24,
-            12
+            56,
+            26,
+            7
           ],
-          "longestCoreGapSeconds": 3600,
+          "longestCoreGapSeconds": 4500,
           "firstTwoStarSeconds": null,
           "shortestCampStartGapSeconds": 13500,
           "matchGapSeconds": {
@@ -3987,25 +3953,25 @@
           "minutes": 348,
           "camps": [
             9,
-            8,
-            8,
-            8,
-            8,
-            8,
+            9,
+            9,
+            9,
+            9,
+            9,
             8
           ],
-          "median": 8,
+          "median": 9,
           "levels": [
+            95,
             100,
-            90,
-            90,
-            90,
-            90,
-            90,
+            100,
+            94,
+            97,
+            95,
             90
           ],
-          "ovr": 160.66666666666666,
-          "ap": 1218145694,
+          "ovr": 168.66666666666666,
+          "ap": 89357498,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -4038,14 +4004,11 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 616650,
+          "dailyBudget": 616450,
           "running": [
-            "player-4",
             "player-1",
             "player-0",
-            "player-5",
-            "player-2",
-            "player-3"
+            "player-6"
           ],
           "holdings": {
             "warmup": 5,
@@ -4062,10 +4025,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -4088,17 +4050,17 @@
             "pro_negotiator": 5,
             "pro_scout": 5
           },
-          "wins": 6,
+          "wins": 4,
           "matches": 14,
           "coreActionsByQuarter": [
-            265,
-            133,
-            205,
-            97
+            322,
+            105,
+            209,
+            106
           ],
-          "longestCoreGapSeconds": 2700,
+          "longestCoreGapSeconds": 3600,
           "firstTwoStarSeconds": 3240,
-          "shortestCampStartGapSeconds": 2039,
+          "shortestCampStartGapSeconds": 300,
           "matchGapSeconds": {
             "min": 1020,
             "median": 1020,
@@ -4218,11 +4180,11 @@
             18,
             18,
             18,
-            20,
+            18,
             18
           ],
-          "ovr": 43.833333333333336,
-          "ap": 486659,
+          "ovr": 43.333333333333336,
+          "ap": 71832,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -4243,7 +4205,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -4254,12 +4216,7 @@
           },
           "dailyBudget": 30750,
           "running": [
-            "player-4",
-            "player-1",
-            "player-0",
-            "player-5",
-            "player-2",
-            "player-6"
+            "player-4"
           ],
           "holdings": {
             "warmup": 5,
@@ -4276,14 +4233,13 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 9,
             "bal_video": 8,
-            "bal_recovery": 5,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
-            "bal_scout": 9,
+            "bal_scout": 8,
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
@@ -4294,13 +4250,13 @@
           "matches": 14,
           "coreActionsByQuarter": [
             95,
-            59,
-            24,
-            12
+            56,
+            25,
+            7
           ],
-          "longestCoreGapSeconds": 3600,
+          "longestCoreGapSeconds": 4500,
           "firstTwoStarSeconds": null,
-          "shortestCampStartGapSeconds": 13500,
+          "shortestCampStartGapSeconds": 14400,
           "matchGapSeconds": {
             "min": 211,
             "median": 900,
@@ -4312,26 +4268,26 @@
           "complete": true,
           "minutes": 348,
           "camps": [
-            8,
             9,
             9,
-            8,
             9,
-            8,
+            9,
+            9,
+            9,
             8
           ],
-          "median": 8,
+          "median": 9,
           "levels": [
-            90,
+            95,
             100,
             100,
-            90,
-            100,
-            90,
+            94,
+            97,
+            95,
             90
           ],
-          "ovr": 165.66666666666666,
-          "ap": 531257878,
+          "ovr": 169,
+          "ap": 101171911,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -4364,11 +4320,10 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 616250,
+          "dailyBudget": 616050,
           "running": [
-            "player-4",
-            "player-5",
-            "player-3",
+            "player-1",
+            "player-0",
             "player-6"
           ],
           "holdings": {
@@ -4386,10 +4341,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -4412,17 +4366,17 @@
             "pro_negotiator": 5,
             "pro_scout": 5
           },
-          "wins": 6,
+          "wins": 5,
           "matches": 14,
           "coreActionsByQuarter": [
-            297,
-            102,
+            324,
+            105,
             210,
-            113
+            105
           ],
           "longestCoreGapSeconds": 3600,
-          "firstTwoStarSeconds": 4260,
-          "shortestCampStartGapSeconds": 2039,
+          "firstTwoStarSeconds": 3240,
+          "shortestCampStartGapSeconds": 299,
           "matchGapSeconds": {
             "min": 1020,
             "median": 1020,
@@ -4527,7 +4481,7 @@
           "complete": true,
           "minutes": 260,
           "camps": [
-            2,
+            1,
             1,
             1,
             1,
@@ -4537,16 +4491,16 @@
           ],
           "median": 1,
           "levels": [
-            20,
             18,
             18,
             18,
+            19,
             18,
-            20,
+            18,
             18
           ],
-          "ovr": 44.166666666666664,
-          "ap": 76753,
+          "ovr": 43.333333333333336,
+          "ap": 214281,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -4567,7 +4521,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -4576,13 +4530,11 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 30790,
+          "dailyBudget": 30830,
           "running": [
+            "player-4",
             "player-1",
-            "player-0",
-            "player-5",
-            "player-2",
-            "player-6"
+            "player-0"
           ],
           "holdings": {
             "warmup": 5,
@@ -4599,29 +4551,28 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 9,
             "bal_video": 8,
-            "bal_recovery": 5,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
-            "bal_scout": 9,
+            "bal_scout": 8,
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
             "bal_contacts": 7,
             "bal_talent": 5
           },
-          "wins": 7,
+          "wins": 9,
           "matches": 14,
           "coreActionsByQuarter": [
             95,
-            60,
-            25,
-            11
+            56,
+            27,
+            7
           ],
-          "longestCoreGapSeconds": 3600,
+          "longestCoreGapSeconds": 4500,
           "firstTwoStarSeconds": null,
           "shortestCampStartGapSeconds": 13500,
           "matchGapSeconds": {
@@ -4635,7 +4586,7 @@
           "complete": true,
           "minutes": 348,
           "camps": [
-            9,
+            8,
             8,
             8,
             8,
@@ -4645,7 +4596,7 @@
           ],
           "median": 8,
           "levels": [
-            100,
+            90,
             90,
             90,
             90,
@@ -4653,8 +4604,8 @@
             90,
             90
           ],
-          "ovr": 160.83333333333334,
-          "ap": 1218436513,
+          "ovr": 158,
+          "ap": 1460713091,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -4687,7 +4638,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 616050,
+          "dailyBudget": 616650,
           "running": [
             "player-4",
             "player-1",
@@ -4711,10 +4662,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -4737,17 +4687,17 @@
             "pro_negotiator": 5,
             "pro_scout": 5
           },
-          "wins": 3,
+          "wins": 4,
           "matches": 14,
           "coreActionsByQuarter": [
-            265,
-            132,
-            206,
-            97
+            301,
+            98,
+            200,
+            98
           ],
-          "longestCoreGapSeconds": 2700,
-          "firstTwoStarSeconds": 3240,
-          "shortestCampStartGapSeconds": 2039,
+          "longestCoreGapSeconds": 3600,
+          "firstTwoStarSeconds": 4260,
+          "shortestCampStartGapSeconds": 300,
           "matchGapSeconds": {
             "min": 1020,
             "median": 1020,
@@ -4855,28 +4805,28 @@
             3,
             3,
             3,
+            3,
+            3,
             2,
-            2,
-            2,
-            2
+            3
           ],
-          "median": 2,
+          "median": 3,
           "levels": [
             29,
             29,
+            29,
+            29,
+            29,
             28,
-            28,
-            28,
-            27,
-            28
+            29
           ],
-          "ovr": 59.833333333333336,
-          "ap": 295897,
+          "ovr": 61,
+          "ap": 312619,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
             "baseAP": 204.375,
-            "critChance": 0.33,
+            "critChance": 0.31,
             "critMult": 2.5,
             "instructionLanes": [
               1,
@@ -4892,20 +4842,18 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
-            "morningAP": 5012.5,
+            "morningAP": 2712.5,
             "slots": 0,
             "travel": 2400,
             "transition": 250,
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 30810,
+          "dailyBudget": 30750,
           "running": [
-            "player-5",
-            "player-2",
-            "player-6"
+            "player-3"
           ],
           "holdings": {
             "warmup": 5,
@@ -4922,10 +4870,9 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
-            "bal_position": 10,
-            "bal_video": 9,
-            "bal_recovery": 5,
+            "bal_plan": 9,
+            "bal_position": 9,
+            "bal_video": 8,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -4936,17 +4883,17 @@
             "bal_contacts": 8,
             "bal_talent": 5
           },
-          "wins": 8,
+          "wins": 5,
           "matches": 14,
           "coreActionsByQuarter": [
-            85,
-            78,
-            57,
-            48
+            84,
+            76,
+            61,
+            49
           ],
           "longestCoreGapSeconds": 60,
           "firstTwoStarSeconds": null,
-          "shortestCampStartGapSeconds": 750,
+          "shortestCampStartGapSeconds": 780,
           "matchGapSeconds": {
             "min": 150,
             "median": 180,
@@ -4956,7 +4903,7 @@
         {
           "division": 3,
           "complete": true,
-          "minutes": 78.7,
+          "minutes": 79.7,
           "camps": [
             8,
             8,
@@ -4977,7 +4924,7 @@
             76
           ],
           "ovr": 144.83333333333334,
-          "ap": 84782219,
+          "ap": 75010251,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -5010,7 +4957,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 321600,
+          "dailyBudget": 321800,
           "running": [],
           "holdings": {
             "warmup": 5,
@@ -5027,10 +4974,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -5053,13 +4999,13 @@
             "pro_negotiator": 5,
             "pro_scout": 5
           },
-          "wins": 6,
+          "wins": 10,
           "matches": 14,
           "coreActionsByQuarter": [
             316,
-            87,
-            67,
-            59
+            84,
+            70,
+            56
           ],
           "longestCoreGapSeconds": 121,
           "firstTwoStarSeconds": 391,
@@ -5067,7 +5013,7 @@
           "matchGapSeconds": {
             "min": 241,
             "median": 301,
-            "max": 931
+            "max": 961
           }
         }
       ]
@@ -5182,17 +5128,17 @@
             29,
             29,
             29,
-            29,
             28,
-            29
+            27,
+            28
           ],
-          "ovr": 60.333333333333336,
-          "ap": 9710,
+          "ovr": 59.833333333333336,
+          "ap": 245362,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
             "baseAP": 204.375,
-            "critChance": 0.33,
+            "critChance": 0.31,
             "critMult": 2.5,
             "instructionLanes": [
               1,
@@ -5208,19 +5154,17 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
-            "morningAP": 5012.5,
+            "morningAP": 2712.5,
             "slots": 0,
             "travel": 2400,
             "transition": 250,
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 30810,
-          "running": [
-            "player-3"
-          ],
+          "dailyBudget": 30750,
+          "running": [],
           "holdings": {
             "warmup": 5,
             "crit_smash": 5,
@@ -5236,10 +5180,9 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
-            "bal_position": 10,
-            "bal_video": 9,
-            "bal_recovery": 5,
+            "bal_plan": 9,
+            "bal_position": 9,
+            "bal_video": 8,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -5250,13 +5193,13 @@
             "bal_contacts": 8,
             "bal_talent": 5
           },
-          "wins": 8,
+          "wins": 5,
           "matches": 14,
           "coreActionsByQuarter": [
-            86,
-            77,
-            61,
-            48
+            88,
+            75,
+            51,
+            52
           ],
           "longestCoreGapSeconds": 60,
           "firstTwoStarSeconds": null,
@@ -5270,7 +5213,7 @@
         {
           "division": 3,
           "complete": true,
-          "minutes": 78.7,
+          "minutes": 79.7,
           "camps": [
             8,
             8,
@@ -5284,14 +5227,14 @@
           "levels": [
             81,
             83,
-            83,
+            82,
             81,
             83,
             81,
             77
           ],
-          "ovr": 145,
-          "ap": 77786289,
+          "ovr": 144.83333333333334,
+          "ap": 83269410,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -5324,7 +5267,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 322450,
+          "dailyBudget": 321600,
           "running": [],
           "holdings": {
             "warmup": 5,
@@ -5341,10 +5284,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -5367,13 +5309,13 @@
             "pro_negotiator": 5,
             "pro_scout": 5
           },
-          "wins": 8,
+          "wins": 9,
           "matches": 14,
           "coreActionsByQuarter": [
-            316,
-            94,
-            61,
-            56
+            321,
+            93,
+            65,
+            54
           ],
           "longestCoreGapSeconds": 121,
           "firstTwoStarSeconds": 391,
@@ -5381,7 +5323,7 @@
           "matchGapSeconds": {
             "min": 241,
             "median": 301,
-            "max": 931
+            "max": 961
           }
         }
       ]
@@ -5486,7 +5428,7 @@
             3,
             3,
             3,
-            2,
+            3,
             2,
             2
           ],
@@ -5501,12 +5443,12 @@
             28
           ],
           "ovr": 59.5,
-          "ap": 516482,
+          "ap": 451480,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
             "baseAP": 204.375,
-            "critChance": 0.33,
+            "critChance": 0.31,
             "critMult": 2.5,
             "instructionLanes": [
               1,
@@ -5522,18 +5464,17 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
-            "morningAP": 5012.5,
+            "morningAP": 2712.5,
             "slots": 0,
             "travel": 2400,
             "transition": 250,
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 30830,
+          "dailyBudget": 30850,
           "running": [
-            "player-2",
             "player-6"
           ],
           "holdings": {
@@ -5551,10 +5492,9 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
-            "bal_position": 10,
-            "bal_video": 9,
-            "bal_recovery": 5,
+            "bal_plan": 9,
+            "bal_position": 9,
+            "bal_video": 8,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -5565,13 +5505,13 @@
             "bal_contacts": 8,
             "bal_talent": 5
           },
-          "wins": 9,
+          "wins": 10,
           "matches": 14,
           "coreActionsByQuarter": [
+            83,
             85,
-            84,
-            49,
-            50
+            51,
+            46
           ],
           "longestCoreGapSeconds": 60,
           "firstTwoStarSeconds": null,
@@ -5585,7 +5525,7 @@
         {
           "division": 3,
           "complete": true,
-          "minutes": 78.7,
+          "minutes": 79.2,
           "camps": [
             8,
             8,
@@ -5597,16 +5537,16 @@
           ],
           "median": 8,
           "levels": [
-            82,
+            81,
             84,
             83,
             81,
-            84,
+            83,
             81,
             77
           ],
-          "ovr": 146,
-          "ap": 75188225,
+          "ovr": 145.33333333333334,
+          "ap": 77866313,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -5639,7 +5579,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 322200,
+          "dailyBudget": 321700,
           "running": [],
           "holdings": {
             "warmup": 5,
@@ -5656,10 +5596,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -5682,21 +5621,21 @@
             "pro_negotiator": 5,
             "pro_scout": 5
           },
-          "wins": 8,
+          "wins": 7,
           "matches": 14,
           "coreActionsByQuarter": [
-            321,
-            86,
-            65,
-            63
+            324,
+            85,
+            69,
+            58
           ],
           "longestCoreGapSeconds": 121,
           "firstTwoStarSeconds": 391,
-          "shortestCampStartGapSeconds": 210,
+          "shortestCampStartGapSeconds": 150,
           "matchGapSeconds": {
             "min": 241,
             "median": 301,
-            "max": 931
+            "max": 961
           }
         }
       ]
@@ -5801,7 +5740,7 @@
             3,
             3,
             3,
-            3,
+            2,
             2,
             2
           ],
@@ -5810,18 +5749,18 @@
             29,
             29,
             29,
-            29,
-            29,
+            28,
+            28,
             27,
             28
           ],
-          "ovr": 60.166666666666664,
-          "ap": 365788,
+          "ovr": 59.5,
+          "ap": 201705,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
             "baseAP": 204.375,
-            "critChance": 0.33,
+            "critChance": 0.31,
             "critMult": 2.5,
             "instructionLanes": [
               1,
@@ -5837,17 +5776,18 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
-            "morningAP": 5012.5,
+            "morningAP": 2712.5,
             "slots": 0,
             "travel": 2400,
             "transition": 250,
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 30810,
+          "dailyBudget": 30730,
           "running": [
+            "player-2",
             "player-6"
           ],
           "holdings": {
@@ -5865,10 +5805,9 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
-            "bal_position": 10,
-            "bal_video": 9,
-            "bal_recovery": 5,
+            "bal_plan": 9,
+            "bal_position": 9,
+            "bal_video": 8,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -5879,17 +5818,17 @@
             "bal_contacts": 8,
             "bal_talent": 5
           },
-          "wins": 8,
+          "wins": 4,
           "matches": 14,
           "coreActionsByQuarter": [
-            91,
+            87,
             79,
-            57,
-            45
+            54,
+            46
           ],
           "longestCoreGapSeconds": 60,
           "firstTwoStarSeconds": null,
-          "shortestCampStartGapSeconds": 690,
+          "shortestCampStartGapSeconds": 720,
           "matchGapSeconds": {
             "min": 150,
             "median": 180,
@@ -5899,7 +5838,7 @@
         {
           "division": 3,
           "complete": true,
-          "minutes": 79.2,
+          "minutes": 79.7,
           "camps": [
             8,
             8,
@@ -5920,7 +5859,7 @@
             77
           ],
           "ovr": 145.16666666666666,
-          "ap": 77471811,
+          "ap": 82901441,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -5953,7 +5892,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 322500,
+          "dailyBudget": 321200,
           "running": [],
           "holdings": {
             "warmup": 5,
@@ -5970,10 +5909,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -5996,21 +5934,21 @@
             "pro_negotiator": 5,
             "pro_scout": 5
           },
-          "wins": 6,
+          "wins": 8,
           "matches": 14,
           "coreActionsByQuarter": [
-            316,
-            87,
-            70,
-            56
+            319,
+            82,
+            71,
+            62
           ],
           "longestCoreGapSeconds": 121,
           "firstTwoStarSeconds": 451,
-          "shortestCampStartGapSeconds": 180,
+          "shortestCampStartGapSeconds": 210,
           "matchGapSeconds": {
             "min": 241,
             "median": 301,
-            "max": 931
+            "max": 961
           }
         }
       ]
@@ -6115,27 +6053,27 @@
             3,
             3,
             3,
-            3,
             2,
-            3
+            2,
+            2
           ],
           "median": 3,
           "levels": [
-            30,
-            30,
-            30,
             29,
             29,
-            29,
-            29
+            28,
+            28,
+            28,
+            27,
+            28
           ],
-          "ovr": 61.333333333333336,
-          "ap": 88143,
+          "ovr": 59.166666666666664,
+          "ap": 376675,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
             "baseAP": 204.375,
-            "critChance": 0.33,
+            "critChance": 0.31,
             "critMult": 2.5,
             "instructionLanes": [
               1,
@@ -6151,18 +6089,19 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
-            "morningAP": 5012.5,
+            "morningAP": 2712.5,
             "slots": 0,
             "travel": 2400,
             "transition": 250,
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 30830,
+          "dailyBudget": 30810,
           "running": [
-            "player-3"
+            "player-2",
+            "player-6"
           ],
           "holdings": {
             "warmup": 5,
@@ -6179,10 +6118,9 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
-            "bal_position": 10,
-            "bal_video": 9,
-            "bal_recovery": 5,
+            "bal_plan": 9,
+            "bal_position": 9,
+            "bal_video": 8,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -6193,17 +6131,17 @@
             "bal_contacts": 8,
             "bal_talent": 5
           },
-          "wins": 9,
+          "wins": 8,
           "matches": 14,
           "coreActionsByQuarter": [
-            87,
-            83,
-            55,
-            53
+            85,
+            78,
+            54,
+            48
           ],
           "longestCoreGapSeconds": 60,
           "firstTwoStarSeconds": null,
-          "shortestCampStartGapSeconds": 660,
+          "shortestCampStartGapSeconds": 750,
           "matchGapSeconds": {
             "min": 150,
             "median": 180,
@@ -6225,16 +6163,16 @@
           ],
           "median": 8,
           "levels": [
-            80,
-            83,
-            83,
-            80,
+            81,
+            84,
             83,
             81,
-            76
+            83,
+            81,
+            77
           ],
-          "ovr": 144.33333333333334,
-          "ap": 81683644,
+          "ovr": 145,
+          "ap": 76984144,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -6267,7 +6205,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 322700,
+          "dailyBudget": 320900,
           "running": [],
           "holdings": {
             "warmup": 5,
@@ -6284,10 +6222,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -6310,21 +6247,21 @@
             "pro_negotiator": 5,
             "pro_scout": 5
           },
-          "wins": 6,
+          "wins": 5,
           "matches": 14,
           "coreActionsByQuarter": [
-            312,
-            91,
-            64,
-            53
+            325,
+            90,
+            67,
+            55
           ],
-          "longestCoreGapSeconds": 151,
-          "firstTwoStarSeconds": 391,
+          "longestCoreGapSeconds": 121,
+          "firstTwoStarSeconds": 451,
           "shortestCampStartGapSeconds": 210,
           "matchGapSeconds": {
             "min": 241,
             "median": 301,
-            "max": 931
+            "max": 961
           }
         }
       ]
@@ -6438,13 +6375,13 @@
             26,
             26,
             26,
-            25,
+            26,
             25,
             25,
             25
           ],
-          "ovr": 55.666666666666664,
-          "ap": 40293,
+          "ovr": 56,
+          "ap": 132918,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -6465,7 +6402,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.24,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -6474,7 +6411,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 15790,
+          "dailyBudget": 15850,
           "running": [],
           "holdings": {
             "warmup": 5,
@@ -6491,27 +6428,26 @@
             "rhythm": 5,
             "bal_coach": 8,
             "bal_shift": 8,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 9,
             "bal_video": 7,
-            "bal_recovery": 5,
-            "bal_sponsor": 9,
+            "bal_sponsor": 8,
             "bal_shop": 9,
             "bal_fans": 5,
             "bal_scout": 8,
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
-            "bal_contacts": 7,
+            "bal_contacts": 6,
             "bal_talent": 5
           },
-          "wins": 7,
+          "wins": 10,
           "matches": 14,
           "coreActionsByQuarter": [
             61,
-            52,
+            53,
             79,
-            43
+            41
           ],
           "longestCoreGapSeconds": 301,
           "firstTwoStarSeconds": null,
@@ -6533,7 +6469,7 @@
             8,
             8,
             8,
-            8
+            7
           ],
           "median": 8,
           "levels": [
@@ -6543,10 +6479,10 @@
             84,
             86,
             84,
-            80
+            78
           ],
           "ovr": 150.33333333333334,
-          "ap": 98383232,
+          "ap": 94777495,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -6579,8 +6515,10 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 339500,
-          "running": [],
+          "dailyBudget": 377300,
+          "running": [
+            "player-6"
+          ],
           "holdings": {
             "warmup": 5,
             "crit_smash": 5,
@@ -6596,10 +6534,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -6616,21 +6553,21 @@
             "pro_camp": 10,
             "pro_travel": 10,
             "pro_sponsor": 10,
-            "pro_shop": 8,
+            "pro_shop": 9,
             "pro_tickets": 10,
             "pro_search": 5,
             "pro_negotiator": 5,
             "pro_scout": 5
           },
-          "wins": 8,
+          "wins": 7,
           "matches": 14,
           "coreActionsByQuarter": [
-            182,
-            188,
-            139,
+            180,
+            193,
+            137,
             79
           ],
-          "longestCoreGapSeconds": 301,
+          "longestCoreGapSeconds": 300,
           "firstTwoStarSeconds": 1801,
           "shortestCampStartGapSeconds": 600,
           "matchGapSeconds": {
@@ -6750,13 +6687,13 @@
             26,
             26,
             26,
-            25,
-            25,
+            26,
+            26,
             25,
             25
           ],
-          "ovr": 54.833333333333336,
-          "ap": 457725,
+          "ovr": 55.5,
+          "ap": 438450,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -6777,7 +6714,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.24,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -6786,7 +6723,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 15790,
+          "dailyBudget": 15750,
           "running": [],
           "holdings": {
             "warmup": 5,
@@ -6803,10 +6740,9 @@
             "rhythm": 5,
             "bal_coach": 8,
             "bal_shift": 8,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 9,
             "bal_video": 7,
-            "bal_recovery": 5,
             "bal_sponsor": 8,
             "bal_shop": 9,
             "bal_fans": 5,
@@ -6814,20 +6750,20 @@
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
-            "bal_contacts": 7,
+            "bal_contacts": 6,
             "bal_talent": 5
           },
-          "wins": 7,
+          "wins": 5,
           "matches": 14,
           "coreActionsByQuarter": [
             62,
-            55,
-            77,
-            43
+            59,
+            76,
+            39
           ],
           "longestCoreGapSeconds": 301,
           "firstTwoStarSeconds": null,
-          "shortestCampStartGapSeconds": 2400,
+          "shortestCampStartGapSeconds": 2100,
           "matchGapSeconds": {
             "min": 300,
             "median": 300,
@@ -6850,15 +6786,15 @@
           "median": 8,
           "levels": [
             84,
-            86,
+            87,
             86,
             84,
             86,
-            83,
+            85,
             78
           ],
-          "ovr": 149.66666666666666,
-          "ap": 98290518,
+          "ovr": 150.66666666666666,
+          "ap": 86610466,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -6891,7 +6827,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 339300,
+          "dailyBudget": 364800,
           "running": [
             "player-6"
           ],
@@ -6910,10 +6846,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -6930,7 +6865,7 @@
             "pro_camp": 10,
             "pro_travel": 10,
             "pro_sponsor": 10,
-            "pro_shop": 8,
+            "pro_shop": 9,
             "pro_tickets": 10,
             "pro_search": 5,
             "pro_negotiator": 5,
@@ -6939,12 +6874,12 @@
           "wins": 7,
           "matches": 14,
           "coreActionsByQuarter": [
-            182,
-            199,
-            123,
-            82
+            179,
+            203,
+            121,
+            87
           ],
-          "longestCoreGapSeconds": 301,
+          "longestCoreGapSeconds": 300,
           "firstTwoStarSeconds": 1801,
           "shortestCampStartGapSeconds": 600,
           "matchGapSeconds": {
@@ -7066,11 +7001,11 @@
             26,
             26,
             26,
-            26,
+            25,
             26
           ],
-          "ovr": 56,
-          "ap": 47420,
+          "ovr": 55.666666666666664,
+          "ap": 329575,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -7091,7 +7026,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.24,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -7100,7 +7035,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 15770,
+          "dailyBudget": 15730,
           "running": [],
           "holdings": {
             "warmup": 5,
@@ -7117,10 +7052,9 @@
             "rhythm": 5,
             "bal_coach": 8,
             "bal_shift": 8,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 9,
             "bal_video": 7,
-            "bal_recovery": 5,
             "bal_sponsor": 8,
             "bal_shop": 9,
             "bal_fans": 5,
@@ -7128,15 +7062,15 @@
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
-            "bal_contacts": 7,
+            "bal_contacts": 6,
             "bal_talent": 5
           },
-          "wins": 6,
+          "wins": 4,
           "matches": 14,
           "coreActionsByQuarter": [
             62,
             56,
-            80,
+            78,
             38
           ],
           "longestCoreGapSeconds": 301,
@@ -7172,7 +7106,7 @@
             79
           ],
           "ovr": 151.16666666666666,
-          "ap": 78654785,
+          "ap": 93355554,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -7205,7 +7139,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 339100,
+          "dailyBudget": 364600,
           "running": [
             "player-6"
           ],
@@ -7224,10 +7158,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -7244,7 +7177,7 @@
             "pro_camp": 10,
             "pro_travel": 10,
             "pro_sponsor": 10,
-            "pro_shop": 8,
+            "pro_shop": 9,
             "pro_tickets": 10,
             "pro_search": 5,
             "pro_negotiator": 5,
@@ -7254,11 +7187,11 @@
           "matches": 14,
           "coreActionsByQuarter": [
             178,
-            209,
+            213,
             119,
             83
           ],
-          "longestCoreGapSeconds": 301,
+          "longestCoreGapSeconds": 300,
           "firstTwoStarSeconds": 1801,
           "shortestCampStartGapSeconds": 600,
           "matchGapSeconds": {
@@ -7378,13 +7311,13 @@
             26,
             26,
             26,
-            25,
+            26,
             25,
             25,
             25
           ],
-          "ovr": 55.166666666666664,
-          "ap": 280229,
+          "ovr": 55.5,
+          "ap": 172253,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -7405,7 +7338,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.24,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -7431,10 +7364,9 @@
             "rhythm": 5,
             "bal_coach": 8,
             "bal_shift": 8,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 9,
             "bal_video": 7,
-            "bal_recovery": 5,
             "bal_sponsor": 8,
             "bal_shop": 9,
             "bal_fans": 5,
@@ -7442,16 +7374,16 @@
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
-            "bal_contacts": 7,
+            "bal_contacts": 6,
             "bal_talent": 5
           },
           "wins": 7,
           "matches": 14,
           "coreActionsByQuarter": [
             62,
-            51,
-            80,
-            39
+            53,
+            78,
+            38
           ],
           "longestCoreGapSeconds": 301,
           "firstTwoStarSeconds": null,
@@ -7486,7 +7418,7 @@
             80
           ],
           "ovr": 150.5,
-          "ap": 76879550,
+          "ap": 94263755,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -7497,11 +7429,11 @@
               1,
               1,
               1,
-              0.8,
-              0.8,
-              0.8
+              1,
+              1,
+              1
             ],
-            "doubleChance": 4.3999999999999995,
+            "doubleChance": 5,
             "echoChance": 0,
             "energyDrinkChance": 0,
             "repeatAP": 881.25,
@@ -7519,7 +7451,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 325800,
+          "dailyBudget": 365000,
           "running": [],
           "holdings": {
             "warmup": 5,
@@ -7536,10 +7468,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -7552,23 +7483,23 @@
             "pro_coach": 10,
             "pro_repeat": 10,
             "pro_analysis": 10,
-            "pro_coordinator": 9,
+            "pro_coordinator": 10,
             "pro_camp": 10,
             "pro_travel": 10,
             "pro_sponsor": 10,
-            "pro_shop": 8,
+            "pro_shop": 9,
             "pro_tickets": 10,
             "pro_search": 5,
             "pro_negotiator": 5,
             "pro_scout": 5
           },
-          "wins": 5,
+          "wins": 6,
           "matches": 14,
           "coreActionsByQuarter": [
-            182,
-            189,
+            180,
+            192,
             140,
-            80
+            81
           ],
           "longestCoreGapSeconds": 300,
           "firstTwoStarSeconds": 1801,
@@ -7696,7 +7627,7 @@
             26
           ],
           "ovr": 55.833333333333336,
-          "ap": 175610,
+          "ap": 16588,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -7717,7 +7648,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.24,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -7726,7 +7657,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 15810,
+          "dailyBudget": 15830,
           "running": [],
           "holdings": {
             "warmup": 5,
@@ -7743,27 +7674,26 @@
             "rhythm": 5,
             "bal_coach": 8,
             "bal_shift": 8,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 9,
             "bal_video": 7,
-            "bal_recovery": 5,
-            "bal_sponsor": 9,
+            "bal_sponsor": 8,
             "bal_shop": 9,
             "bal_fans": 5,
             "bal_scout": 8,
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
-            "bal_contacts": 7,
+            "bal_contacts": 6,
             "bal_talent": 5
           },
-          "wins": 8,
+          "wins": 9,
           "matches": 14,
           "coreActionsByQuarter": [
             58,
             54,
-            76,
-            46
+            82,
+            37
           ],
           "longestCoreGapSeconds": 301,
           "firstTwoStarSeconds": null,
@@ -7789,16 +7719,16 @@
           ],
           "median": 8,
           "levels": [
-            84,
+            85,
             87,
-            86,
-            84,
-            86,
+            87,
+            85,
+            87,
             85,
             78
           ],
-          "ovr": 150.33333333333334,
-          "ap": 102172186,
+          "ovr": 151.16666666666666,
+          "ap": 79864040,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -7831,7 +7761,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 350500,
+          "dailyBudget": 377300,
           "running": [
             "player-6"
           ],
@@ -7850,10 +7780,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -7870,7 +7799,7 @@
             "pro_camp": 10,
             "pro_travel": 10,
             "pro_sponsor": 10,
-            "pro_shop": 8,
+            "pro_shop": 9,
             "pro_tickets": 10,
             "pro_search": 5,
             "pro_negotiator": 5,
@@ -7879,10 +7808,10 @@
           "wins": 8,
           "matches": 14,
           "coreActionsByQuarter": [
-            178,
-            208,
-            119,
-            80
+            177,
+            213,
+            115,
+            87
           ],
           "longestCoreGapSeconds": 300,
           "firstTwoStarSeconds": 1801,
@@ -7991,26 +7920,26 @@
           "complete": true,
           "minutes": 260,
           "camps": [
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
           ],
-          "median": 2,
+          "median": 1,
           "levels": [
-            21,
-            20,
-            20,
-            20,
-            20,
-            20,
-            20
+            18,
+            18,
+            18,
+            18,
+            18,
+            19,
+            19
           ],
-          "ovr": 47.333333333333336,
-          "ap": 217803,
+          "ovr": 44,
+          "ap": 373736,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -8031,7 +7960,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -8040,8 +7969,14 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 30770,
-          "running": [],
+          "dailyBudget": 30750,
+          "running": [
+            "player-4",
+            "player-1",
+            "player-0",
+            "player-5",
+            "player-2"
+          ],
           "holdings": {
             "warmup": 5,
             "crit_smash": 5,
@@ -8057,31 +7992,30 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 9,
             "bal_video": 8,
-            "bal_recovery": 5,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
-            "bal_scout": 9,
+            "bal_scout": 8,
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
             "bal_contacts": 7,
             "bal_talent": 5
           },
-          "wins": 6,
+          "wins": 5,
           "matches": 14,
           "coreActionsByQuarter": [
-            96,
-            65,
-            29,
-            15
+            93,
+            58,
+            27,
+            7
           ],
-          "longestCoreGapSeconds": 3600,
+          "longestCoreGapSeconds": 4500,
           "firstTwoStarSeconds": null,
-          "shortestCampStartGapSeconds": 8100,
+          "shortestCampStartGapSeconds": 13500,
           "matchGapSeconds": {
             "min": 211,
             "median": 900,
@@ -8112,7 +8046,7 @@
             80
           ],
           "ovr": 150,
-          "ap": 3038942067,
+          "ap": 2835547056,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -8145,7 +8079,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 616650,
+          "dailyBudget": 616850,
           "running": [
             "player-4",
             "player-1",
@@ -8168,10 +8102,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -8194,17 +8127,17 @@
             "pro_negotiator": 5,
             "pro_scout": 5
           },
-          "wins": 7,
+          "wins": 9,
           "matches": 14,
           "coreActionsByQuarter": [
-            282,
-            98,
+            297,
+            100,
             152,
             100
           ],
           "longestCoreGapSeconds": 3720,
           "firstTwoStarSeconds": 4260,
-          "shortestCampStartGapSeconds": 2040,
+          "shortestCampStartGapSeconds": 1200,
           "matchGapSeconds": {
             "min": 1020,
             "median": 1020,
@@ -8314,21 +8247,21 @@
             2,
             2,
             2,
-            2,
-            2
+            1,
+            1
           ],
           "median": 2,
           "levels": [
-            21,
             20,
             20,
             20,
-            20,
-            20,
-            20
+            19,
+            19,
+            19,
+            19
           ],
-          "ovr": 46.666666666666664,
-          "ap": 301990,
+          "ovr": 45.333333333333336,
+          "ap": 268798,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -8349,7 +8282,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -8358,8 +8291,11 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 30830,
-          "running": [],
+          "dailyBudget": 30750,
+          "running": [
+            "player-3",
+            "player-6"
+          ],
           "holdings": {
             "warmup": 5,
             "crit_smash": 5,
@@ -8375,31 +8311,30 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 9,
             "bal_video": 8,
-            "bal_recovery": 5,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
-            "bal_scout": 9,
+            "bal_scout": 8,
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
             "bal_contacts": 7,
             "bal_talent": 5
           },
-          "wins": 9,
+          "wins": 5,
           "matches": 14,
           "coreActionsByQuarter": [
-            96,
-            63,
-            30,
-            15
+            94,
+            60,
+            31,
+            11
           ],
-          "longestCoreGapSeconds": 2700,
+          "longestCoreGapSeconds": 3600,
           "firstTwoStarSeconds": null,
-          "shortestCampStartGapSeconds": 9000,
+          "shortestCampStartGapSeconds": 9900,
           "matchGapSeconds": {
             "min": 211,
             "median": 900,
@@ -8430,7 +8365,7 @@
             80
           ],
           "ovr": 158,
-          "ap": 2311698369,
+          "ap": 2267075851,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -8463,7 +8398,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 618050,
+          "dailyBudget": 617250,
           "running": [
             "player-1",
             "player-0",
@@ -8485,10 +8420,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -8514,12 +8448,12 @@
           "wins": 11,
           "matches": 14,
           "coreActionsByQuarter": [
-            282,
-            98,
+            287,
+            100,
             173,
             111
           ],
-          "longestCoreGapSeconds": 2700,
+          "longestCoreGapSeconds": 3600,
           "firstTwoStarSeconds": 4260,
           "shortestCampStartGapSeconds": 2040,
           "matchGapSeconds": {
@@ -8636,16 +8570,16 @@
           ],
           "median": 2,
           "levels": [
-            21,
             20,
             20,
             20,
             20,
-            20,
-            20
+            19,
+            19,
+            19
           ],
-          "ovr": 46.666666666666664,
-          "ap": 1024,
+          "ovr": 45.833333333333336,
+          "ap": 172627,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -8666,7 +8600,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -8692,14 +8626,13 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 9,
             "bal_video": 8,
-            "bal_recovery": 5,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
-            "bal_scout": 9,
+            "bal_scout": 8,
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
@@ -8710,8 +8643,8 @@
           "matches": 14,
           "coreActionsByQuarter": [
             93,
-            68,
-            33,
+            57,
+            37,
             10
           ],
           "longestCoreGapSeconds": 3600,
@@ -8747,7 +8680,7 @@
             90
           ],
           "ovr": 157.83333333333334,
-          "ap": 1958820558,
+          "ap": 1935779655,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -8780,7 +8713,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 616250,
+          "dailyBudget": 617050,
           "running": [
             "player-4",
             "player-1",
@@ -8804,10 +8737,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -8830,15 +8762,15 @@
             "pro_negotiator": 5,
             "pro_scout": 5
           },
-          "wins": 4,
+          "wins": 8,
           "matches": 14,
           "coreActionsByQuarter": [
-            282,
-            98,
+            286,
+            100,
             199,
             98
           ],
-          "longestCoreGapSeconds": 2700,
+          "longestCoreGapSeconds": 3600,
           "firstTwoStarSeconds": 4260,
           "shortestCampStartGapSeconds": 2040,
           "matchGapSeconds": {
@@ -8947,24 +8879,24 @@
           "camps": [
             2,
             2,
-            2,
-            2,
-            2,
-            2,
-            2
+            1,
+            1,
+            1,
+            1,
+            1
           ],
-          "median": 2,
+          "median": 1,
           "levels": [
             21,
-            20,
-            20,
-            20,
-            20,
-            20,
-            20
+            21,
+            19,
+            18,
+            18,
+            18,
+            18
           ],
-          "ovr": 46.833333333333336,
-          "ap": 45913,
+          "ovr": 45.166666666666664,
+          "ap": 131788,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -8985,7 +8917,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -8995,7 +8927,13 @@
             "manualBonusAP": 0
           },
           "dailyBudget": 30770,
-          "running": [],
+          "running": [
+            "player-0",
+            "player-5",
+            "player-2",
+            "player-3",
+            "player-6"
+          ],
           "holdings": {
             "warmup": 5,
             "crit_smash": 5,
@@ -9011,14 +8949,13 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 9,
             "bal_video": 8,
-            "bal_recovery": 5,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
-            "bal_scout": 9,
+            "bal_scout": 8,
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
@@ -9028,14 +8965,14 @@
           "wins": 6,
           "matches": 14,
           "coreActionsByQuarter": [
-            92,
-            67,
-            32,
-            13
+            93,
+            59,
+            29,
+            10
           ],
-          "longestCoreGapSeconds": 2700,
+          "longestCoreGapSeconds": 3600,
           "firstTwoStarSeconds": null,
-          "shortestCampStartGapSeconds": 8100,
+          "shortestCampStartGapSeconds": 9000,
           "matchGapSeconds": {
             "min": 211,
             "median": 900,
@@ -9066,7 +9003,7 @@
             80
           ],
           "ovr": 149.5,
-          "ap": 2903712929,
+          "ap": 3004526184,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -9099,7 +9036,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 617250,
+          "dailyBudget": 605800,
           "running": [
             "player-4",
             "player-1",
@@ -9122,10 +9059,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -9148,12 +9084,12 @@
             "pro_negotiator": 5,
             "pro_scout": 5
           },
-          "wins": 9,
+          "wins": 5,
           "matches": 14,
           "coreActionsByQuarter": [
-            282,
-            98,
-            152,
+            290,
+            101,
+            151,
             100
           ],
           "longestCoreGapSeconds": 3720,
@@ -9268,7 +9204,7 @@
             2,
             2,
             2,
-            1,
+            2,
             2
           ],
           "median": 2,
@@ -9277,12 +9213,12 @@
             20,
             20,
             20,
-            20,
-            18,
-            20
+            19,
+            19,
+            19
           ],
           "ovr": 45.833333333333336,
-          "ap": 183265,
+          "ap": 124863,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -9303,7 +9239,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -9312,10 +9248,8 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 30750,
-          "running": [
-            "player-3"
-          ],
+          "dailyBudget": 30850,
+          "running": [],
           "holdings": {
             "warmup": 5,
             "crit_smash": 5,
@@ -9331,31 +9265,30 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 9,
             "bal_video": 8,
-            "bal_recovery": 5,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
-            "bal_scout": 9,
+            "bal_scout": 8,
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
             "bal_contacts": 7,
             "bal_talent": 5
           },
-          "wins": 5,
+          "wins": 10,
           "matches": 14,
           "coreActionsByQuarter": [
-            92,
-            67,
-            26,
-            14
+            93,
+            61,
+            36,
+            8
           ],
-          "longestCoreGapSeconds": 2700,
+          "longestCoreGapSeconds": 3600,
           "firstTwoStarSeconds": null,
-          "shortestCampStartGapSeconds": 10829,
+          "shortestCampStartGapSeconds": 9000,
           "matchGapSeconds": {
             "min": 211,
             "median": 900,
@@ -9386,7 +9319,7 @@
             90
           ],
           "ovr": 158,
-          "ap": 2386332832,
+          "ap": 2171330266,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -9419,7 +9352,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 616450,
+          "dailyBudget": 617250,
           "running": [
             "player-4",
             "player-1",
@@ -9443,10 +9376,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -9472,12 +9404,12 @@
           "wins": 6,
           "matches": 14,
           "coreActionsByQuarter": [
-            285,
-            97,
+            286,
+            99,
             200,
             98
           ],
-          "longestCoreGapSeconds": 2700,
+          "longestCoreGapSeconds": 3600,
           "firstTwoStarSeconds": 4260,
           "shortestCampStartGapSeconds": 2040,
           "matchGapSeconds": {
@@ -9587,28 +9519,28 @@
             4,
             3,
             2,
-            2,
+            1,
             1,
             1,
             1
           ],
-          "median": 2,
+          "median": 1,
           "levels": [
             44,
-            36,
+            35,
             21,
-            19,
+            17,
             16,
-            12,
-            12
+            15,
+            14
           ],
-          "ovr": 54.5,
-          "ap": 248869,
+          "ovr": 54.333333333333336,
+          "ap": 244173,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
             "baseAP": 204.375,
-            "critChance": 0.33,
+            "critChance": 0.31,
             "critMult": 2.5,
             "instructionLanes": [
               1,
@@ -9624,9 +9556,9 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
-            "morningAP": 5012.5,
+            "morningAP": 2712.5,
             "slots": 0,
             "travel": 2400,
             "transition": 250,
@@ -9650,10 +9582,9 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
-            "bal_position": 10,
-            "bal_video": 9,
-            "bal_recovery": 5,
+            "bal_plan": 9,
+            "bal_position": 9,
+            "bal_video": 8,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -9667,14 +9598,14 @@
           "wins": 4,
           "matches": 14,
           "coreActionsByQuarter": [
-            83,
+            82,
             61,
-            40,
-            42
+            43,
+            38
           ],
           "longestCoreGapSeconds": 60,
-          "firstTwoStarSeconds": 1801,
-          "shortestCampStartGapSeconds": 270,
+          "firstTwoStarSeconds": 1951,
+          "shortestCampStartGapSeconds": 390,
           "matchGapSeconds": {
             "min": 150,
             "median": 180,
@@ -9684,7 +9615,7 @@
         {
           "division": 3,
           "complete": true,
-          "minutes": 78.2,
+          "minutes": 78.7,
           "camps": [
             9,
             8,
@@ -9698,14 +9629,14 @@
           "levels": [
             92,
             80,
-            78,
-            75,
-            77,
-            71,
-            60
+            80,
+            76,
+            76,
+            69,
+            58
           ],
-          "ovr": 141,
-          "ap": 74212666,
+          "ovr": 140.83333333333334,
+          "ap": 71089483,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -9738,7 +9669,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 322400,
+          "dailyBudget": 319900,
           "running": [],
           "holdings": {
             "warmup": 5,
@@ -9755,10 +9686,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -9784,10 +9714,10 @@
           "wins": 6,
           "matches": 14,
           "coreActionsByQuarter": [
-            260,
-            146,
-            75,
-            56
+            281,
+            122,
+            79,
+            55
           ],
           "longestCoreGapSeconds": 121,
           "firstTwoStarSeconds": 1,
@@ -9907,15 +9837,15 @@
           "median": 1,
           "levels": [
             44,
-            28,
+            29,
             17,
             12,
-            10,
+            11,
             10,
             10
           ],
-          "ovr": 47.5,
-          "ap": 190340,
+          "ovr": 48,
+          "ap": 249820,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -9936,7 +9866,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.24,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.625,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -9962,10 +9892,9 @@
             "rhythm": 5,
             "bal_coach": 8,
             "bal_shift": 8,
-            "bal_plan": 5,
+            "bal_plan": 8,
             "bal_position": 9,
             "bal_video": 7,
-            "bal_recovery": 5,
             "bal_sponsor": 8,
             "bal_shop": 9,
             "bal_fans": 5,
@@ -9973,15 +9902,15 @@
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
-            "bal_contacts": 7,
+            "bal_contacts": 6,
             "bal_talent": 5
           },
           "wins": 4,
           "matches": 14,
           "coreActionsByQuarter": [
             68,
-            45,
-            59,
+            47,
+            58,
             28
           ],
           "longestCoreGapSeconds": 301,
@@ -9999,25 +9928,25 @@
           "minutes": 112,
           "camps": [
             10,
-            8,
+            9,
             7,
             6,
             6,
             6,
-            6
+            4
           ],
           "median": 6,
           "levels": [
-            106,
-            89,
-            69,
-            64,
-            61,
-            60,
-            60
+            105,
+            91,
+            74,
+            66,
+            63,
+            59,
+            49
           ],
-          "ovr": 134.5,
-          "ap": 77649878,
+          "ovr": 137,
+          "ap": 81308921,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -10050,8 +9979,10 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 338500,
-          "running": [],
+          "dailyBudget": 379500,
+          "running": [
+            "player-6"
+          ],
           "holdings": {
             "warmup": 5,
             "crit_smash": 5,
@@ -10067,10 +9998,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -10087,7 +10017,7 @@
             "pro_camp": 10,
             "pro_travel": 10,
             "pro_sponsor": 10,
-            "pro_shop": 8,
+            "pro_shop": 9,
             "pro_tickets": 10,
             "pro_search": 5,
             "pro_negotiator": 5,
@@ -10096,10 +10026,10 @@
           "wins": 6,
           "matches": 14,
           "coreActionsByQuarter": [
-            215,
-            197,
-            87,
-            51
+            226,
+            181,
+            80,
+            64
           ],
           "longestCoreGapSeconds": 300,
           "firstTwoStarSeconds": 1,
@@ -10222,17 +10152,17 @@
             27,
             27,
             27,
-            27,
+            26,
             26,
             26
           ],
-          "ovr": 57.666666666666664,
-          "ap": 196263,
+          "ovr": 57.333333333333336,
+          "ap": 287456,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
             "baseAP": 204.375,
-            "critChance": 0.33,
+            "critChance": 0.31,
             "critMult": 2.5,
             "instructionLanes": [
               1,
@@ -10248,9 +10178,9 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
-            "morningAP": 5012.5,
+            "morningAP": 2712.5,
             "slots": 0,
             "travel": 2400,
             "transition": 250,
@@ -10274,10 +10204,9 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
-            "bal_position": 10,
-            "bal_video": 9,
-            "bal_recovery": 5,
+            "bal_plan": 9,
+            "bal_position": 9,
+            "bal_video": 8,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -10291,8 +10220,8 @@
           "wins": 4,
           "matches": 14,
           "coreActionsByQuarter": [
-            85,
-            71,
+            84,
+            69,
             53,
             43
           ],
@@ -10323,13 +10252,13 @@
             78,
             80,
             79,
-            78,
+            77,
             79,
             77,
             74
           ],
-          "ovr": 140.16666666666666,
-          "ap": 71929009,
+          "ovr": 139.83333333333334,
+          "ap": 82345810,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -10363,9 +10292,7 @@
             "manualBonusAP": 0
           },
           "dailyBudget": 160250,
-          "running": [
-            "player-4"
-          ],
+          "running": [],
           "holdings": {
             "warmup": 5,
             "crit_smash": 5,
@@ -10381,10 +10308,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -10410,13 +10336,13 @@
           "wins": 6,
           "matches": 14,
           "coreActionsByQuarter": [
-            308,
-            84,
-            61,
-            49
+            309,
+            85,
+            62,
+            48
           ],
-          "longestCoreGapSeconds": 121,
-          "firstTwoStarSeconds": 481,
+          "longestCoreGapSeconds": 151,
+          "firstTwoStarSeconds": 511,
           "shortestCampStartGapSeconds": 150,
           "matchGapSeconds": {
             "min": 241,
@@ -10536,12 +10462,12 @@
             24,
             24,
             24,
+            24,
             23,
-            23,
-            23
+            24
           ],
-          "ovr": 52.833333333333336,
-          "ap": 312744,
+          "ovr": 53,
+          "ap": 292508,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -10562,7 +10488,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.24,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.625,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -10588,10 +10514,9 @@
             "rhythm": 5,
             "bal_coach": 8,
             "bal_shift": 8,
-            "bal_plan": 5,
+            "bal_plan": 8,
             "bal_position": 9,
             "bal_video": 7,
-            "bal_recovery": 5,
             "bal_sponsor": 8,
             "bal_shop": 9,
             "bal_fans": 5,
@@ -10599,7 +10524,7 @@
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
-            "bal_contacts": 7,
+            "bal_contacts": 6,
             "bal_talent": 5
           },
           "wins": 4,
@@ -10607,12 +10532,12 @@
           "coreActionsByQuarter": [
             61,
             50,
-            74,
-            38
+            70,
+            42
           ],
           "longestCoreGapSeconds": 301,
           "firstTwoStarSeconds": null,
-          "shortestCampStartGapSeconds": 2700,
+          "shortestCampStartGapSeconds": 2400,
           "matchGapSeconds": {
             "min": 300,
             "median": 300,
@@ -10643,7 +10568,7 @@
             76
           ],
           "ovr": 144.83333333333334,
-          "ap": 89712858,
+          "ap": 77655827,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -10693,10 +10618,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -10723,11 +10647,11 @@
           "matches": 14,
           "coreActionsByQuarter": [
             183,
-            188,
-            113,
-            72
+            189,
+            112,
+            73
           ],
-          "longestCoreGapSeconds": 301,
+          "longestCoreGapSeconds": 300,
           "firstTwoStarSeconds": 1801,
           "shortestCampStartGapSeconds": 600,
           "matchGapSeconds": {
@@ -10850,16 +10774,16 @@
             27,
             27,
             27,
-            27,
+            26,
             26
           ],
-          "ovr": 57.833333333333336,
-          "ap": 86599,
+          "ovr": 57.666666666666664,
+          "ap": 97973,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
             "baseAP": 204.375,
-            "critChance": 0.33,
+            "critChance": 0.31,
             "critMult": 2.5,
             "instructionLanes": [
               1,
@@ -10875,7 +10799,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.27,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 5012.5,
             "slots": 0,
@@ -10901,10 +10825,9 @@
             "rhythm": 5,
             "bal_coach": 9,
             "bal_shift": 9,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 10,
-            "bal_video": 9,
-            "bal_recovery": 5,
+            "bal_video": 8,
             "bal_sponsor": 9,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -10918,14 +10841,14 @@
           "wins": 9,
           "matches": 14,
           "coreActionsByQuarter": [
-            86,
-            71,
+            85,
+            69,
             54,
             43
           ],
           "longestCoreGapSeconds": 60,
           "firstTwoStarSeconds": null,
-          "shortestCampStartGapSeconds": 840,
+          "shortestCampStartGapSeconds": 870,
           "matchGapSeconds": {
             "min": 150,
             "median": 180,
@@ -10935,12 +10858,12 @@
         {
           "division": 3,
           "complete": true,
-          "minutes": 78.7,
+          "minutes": 79.2,
           "camps": [
             8,
             8,
             8,
-            8,
+            7,
             8,
             7,
             7
@@ -10952,11 +10875,11 @@
             79,
             78,
             80,
-            78,
+            77,
             74
           ],
-          "ovr": 140.66666666666666,
-          "ap": 81663253,
+          "ovr": 140.33333333333334,
+          "ap": 82095516,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -10989,8 +10912,10 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 323750,
-          "running": [],
+          "dailyBudget": 321950,
+          "running": [
+            "player-5"
+          ],
           "holdings": {
             "warmup": 5,
             "crit_smash": 5,
@@ -11006,10 +10931,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -11036,17 +10960,17 @@
           "matches": 14,
           "coreActionsByQuarter": [
             319,
-            86,
+            87,
             65,
-            55
+            56
           ],
           "longestCoreGapSeconds": 121,
-          "firstTwoStarSeconds": 481,
-          "shortestCampStartGapSeconds": 180,
+          "firstTwoStarSeconds": 541,
+          "shortestCampStartGapSeconds": 150,
           "matchGapSeconds": {
             "min": 241,
             "median": 301,
-            "max": 931
+            "max": 961
           }
         }
       ]
@@ -11163,11 +11087,11 @@
             24,
             24,
             24,
-            23,
+            24,
             24
           ],
-          "ovr": 53,
-          "ap": 183792,
+          "ovr": 53.333333333333336,
+          "ap": 223158,
           "production": {
             "clickAP": 204.375,
             "autoAP": 204.375,
@@ -11188,7 +11112,7 @@
             "workflowRate": 1,
             "offlineHours": 0.5,
             "offlineEfficiency": 0.24,
-            "offlineBonus": 0.875,
+            "offlineBonus": 0.725,
             "dayAP": 625,
             "morningAP": 2712.5,
             "slots": 0,
@@ -11214,27 +11138,26 @@
             "rhythm": 5,
             "bal_coach": 8,
             "bal_shift": 8,
-            "bal_plan": 5,
+            "bal_plan": 9,
             "bal_position": 9,
             "bal_video": 7,
-            "bal_recovery": 5,
-            "bal_sponsor": 9,
+            "bal_sponsor": 8,
             "bal_shop": 9,
             "bal_fans": 5,
             "bal_scout": 8,
             "bal_personal": 5,
             "bal_archive": 5,
             "bal_search": 5,
-            "bal_contacts": 7,
+            "bal_contacts": 6,
             "bal_talent": 5
           },
           "wins": 10,
           "matches": 14,
           "coreActionsByQuarter": [
             61,
-            51,
-            72,
-            41
+            52,
+            69,
+            42
           ],
           "longestCoreGapSeconds": 301,
           "firstTwoStarSeconds": null,
@@ -11261,15 +11184,15 @@
           "median": 8,
           "levels": [
             81,
-            84,
+            83,
             83,
             81,
-            84,
+            83,
             81,
             77
           ],
-          "ovr": 146.16666666666666,
-          "ap": 79816469,
+          "ovr": 145.66666666666666,
+          "ap": 98582027,
           "production": {
             "clickAP": 1704.375,
             "autoAP": 1704.375,
@@ -11302,7 +11225,7 @@
             "rest": 400,
             "manualBonusAP": 0
           },
-          "dailyBudget": 363650,
+          "dailyBudget": 381500,
           "running": [],
           "holdings": {
             "warmup": 5,
@@ -11319,10 +11242,9 @@
             "rhythm": 5,
             "bal_coach": 10,
             "bal_shift": 10,
-            "bal_plan": 5,
+            "bal_plan": 10,
             "bal_position": 10,
             "bal_video": 10,
-            "bal_recovery": 5,
             "bal_sponsor": 10,
             "bal_shop": 10,
             "bal_fans": 5,
@@ -11348,12 +11270,12 @@
           "wins": 10,
           "matches": 14,
           "coreActionsByQuarter": [
-            193,
-            189,
-            118,
-            80
+            192,
+            192,
+            115,
+            82
           ],
-          "longestCoreGapSeconds": 301,
+          "longestCoreGapSeconds": 300,
           "firstTwoStarSeconds": 1801,
           "shortestCampStartGapSeconds": 600,
           "matchGapSeconds": {

@@ -45,13 +45,22 @@ function placeHint(r,holes,dialog){
  const scored=candidates.map(c=>{const x=clamp(c.x,minX,maxX),y=clamp(c.y,pad,maxY),rect={left:x,top:y,right:x+width,bottom:y+height};const overlap=obstacles.reduce((n,o)=>n+intersect(rect,{left:o.left-8,top:o.top-8,right:o.right+8,bottom:o.bottom+8}),0),distance=Math.min(Math.abs(rect.bottom-r.top),Math.abs(rect.top-r.bottom));return {x,y,score:overlap*10000+distance+Math.abs(x-r.left)*.1};}).sort((a,b)=>a.score-b.score);
  hint.style.left=scored[0].x+'px';hint.style.top=scored[0].y+'px';
 }
+function scrollTutorialTarget(el,dialog){
+ el.scrollIntoView({behavior:'instant',block:'center',inline:'center'});
+ let top=16,bottom=innerHeight-16;
+ if(dialog){const box=dialog.getBoundingClientRect(),close=dialog.querySelector('.close-dialog');top=Math.max(top,box.top+16);bottom=Math.min(bottom,box.bottom-16);if(visible(close)&&!close.contains(el))top=Math.max(top,close.getBoundingClientRect().bottom+12);}
+ else for(const control of [document.querySelector('.mobile-nav'),document.getElementById('energyButton')]){if(visible(control)&&!control.contains(el)&&!el.contains(control)){const box=control.getBoundingClientRect();if(box.top>innerHeight/2)bottom=Math.min(bottom,box.top-16);}}
+ if(bottom<=top)return;const raw=el.getBoundingClientRect(),delta=raw.top+Math.min(raw.height,bottom-top)/2-(top+bottom)/2;
+ let host=el.parentElement;while(host&&host!==document.body){if(/auto|scroll/.test(getComputedStyle(host).overflowY)&&host.scrollHeight>host.clientHeight+1)break;host=host.parentElement;}
+ if(Math.abs(delta)>1){if(host&&host!==document.body)host.scrollTop+=delta;else window.scrollBy({top:delta,behavior:'instant'});}
+}
 function show(id,text,el){
  if(!visible(el)){clear();return;}
  if(!guided&&seenSteps.has(id)&&active!==id){finish(id);clear();return;}
  reviewStop.hidden=!guided?.review;const step=guided?.steps[guided.index],manual=step?step.allowNext||(!step.click&&!step.done):id.startsWith('blocks-')||id==='player-stats'||id==='quick-upgrade';
  close.classList.remove('dialog-nav-control');close.style.removeProperty('translate');close.style.removeProperty('z-index');close.hidden=false;close.textContent=step?(manual?(guided.index===guided.steps.length-1?'Anladım':'Devam →'):'Daha sonra'):(manual?'Devam →':'×');close.setAttribute('aria-label',step&&!manual?'Rehberi daha sonra sürdür':manual?'Sonraki adım':'İpucunu kapat');hint.dataset.action=manual?'next':step?'pause':'close';
  const dialog=el.closest('dialog[open]'),parent=dialog||document.body;if(hint.parentElement!==parent)parent.append(hint);if(spotlight.parentElement!==parent)parent.append(spotlight);
- if(active!==id||target!==el){target?.classList.remove('learning-focus');active=id;target=el;el.classList.add('learning-focus');hint.dataset.step=id;setCopy(guided?.review?(guided.index+1)+' / '+guided.steps.length+' · '+text:text);const bounds=viewportRect(el),raw=el.getBoundingClientRect();if(bounds.height<Math.min(raw.height,innerHeight-200)||raw.top<110||raw.bottom>innerHeight-145)el.scrollIntoView({behavior:'instant',block:raw.height>innerHeight-220?'start':'center',inline:'nearest'});}else setCopy(guided?.review?(guided.index+1)+' / '+guided.steps.length+' · '+text:text);
+ if(active!==id||target!==el){target?.classList.remove('learning-focus');active=id;target=el;el.classList.add('learning-focus');hint.dataset.step=id;setCopy(guided?.review?(guided.index+1)+' / '+guided.steps.length+' · '+text:text);scrollTutorialTarget(el,dialog);}else setCopy(guided?.review?(guided.index+1)+' / '+guided.steps.length+' · '+text:text);
  const r=viewportRect(el);if(!r.width||!r.height){hint.hidden=true;spotlight.setAttribute('hidden','');return;}
  const holes=[r];if(id==='guided-social-publish'){const draft=document.getElementById('socialDraft');if(visible(draft))holes.push(viewportRect(draft));}if((id==='train'&&el.classList.contains('development-panel'))||id==='guided-training-upgrade'){holes.length=0;for(const selector of ['#trainingStats .card-upgrade-button','#trainingBalance']){const part=document.querySelector(selector);if(visible(part))holes.push(viewportRect(part));}}
  if(id==='train'&&el.classList.contains('player-card')){const quick=el.querySelector('.card-open-upgrade');if(visible(quick)){const bottom=quick.getBoundingClientRect().top-7;holes[0]={...r,bottom,height:Math.max(0,bottom-r.top)};}}
@@ -75,7 +84,7 @@ function socialFollowerCount(){try{return Number(JSON.parse(localStorage.getItem
 function contextualGuide(){
 const q=s=>document.querySelector(s),state=RoomSystem.tutorialState(),campSent=()=>RoomSystem.developmentState().camp.entries.some(e=>e.status==='running');
 if((state.division>=3||GuidedTutorial.completed('income'))&&q('#campDialog[open]')&&visible(q('#campPanel'))&&!GuidedTutorial.completed('camp')&&!GuidedTutorial.paused('camp')){q('.camp-first-help')?.remove();q('#campDialog').classList.remove('camp-guiding');GuidedTutorial.start([
-{id:'camp-players',allowNext:true,done:()=>!!q('#campSlots [data-state="selected"]')||campSent(),target:()=>visible(q('#campCandidates'))?q('#campCandidates'):q('.camp-overview'),text:'Kampa göndermek istediğin oyunculara dokun. En fazla 6 oyuncu seçebilirsin.'}
+{id:'camp-players',allowNext:true,done:()=>!!q('#campSlots [data-state="selected"]')||campSent(),target:()=>q('#campCandidates .camp-candidate:enabled')||q('.camp-overview'),text:'Kampa göndermek istediğin oyunculara dokun. En fazla 6 oyuncu seçebilirsin.'}
 ],null,'camp');return true;}
 const club=()=>!q('.dashboard').hidden&&!q('dialog[open]');
 if(state.stage==='bal'&&club()&&(state.division>=3||GuidedTutorial.completed('income'))&&visible(q('#campAlert:not([hidden])'))&&!GuidedTutorial.completed('camp')&&!GuidedTutorial.completed('camp-entry')&&!GuidedTutorial.paused('camp-entry')){GuidedTutorial.start([{id:'camp-entry',target:()=>q('#campAlert'),click:'#campAlert',done:()=>!!q('#campDialog[open]'),text:'Antrenman Kampı açıldı. Oyuncularının gelişim sınırını artırmak için [[Antrenman Kampı]] bölümüne dokun.'}],null,'camp-entry');return true;}
@@ -154,5 +163,5 @@ function update(){if(window.PlayerProfile?.needsCreation){clear();return;}
  if(!done.has('match')&&progress.next&&progress.next.day-day<=1&&!modal){if(!document.getElementById('leaguePanel').hidden){if(document.getElementById('standingsPane').hidden)document.getElementById('standingsTab').click();show('match',LeagueRules.config.bal?'Takımının sıralamasını ve maç sonuçlarını buradan takip edebilirsin.':'Takımın son sırada. Kalan '+(progress.total-progress.played)+' maçta ilk 4’e yüksel.',document.querySelector('#standingsPane .standings-scroll'));return}show('match','Lig durumunu buradan görebilirsin.',document.getElementById('calendarTab'));return}
  clear();
 }
-setInterval(update,400);window.addEventListener('resize',update);window.addEventListener('scroll',update,{passive:true,capture:true});update();
+setInterval(update,400);window.addEventListener('resize',()=>{target?.classList.remove('learning-focus');target=null;update();});window.addEventListener('scroll',update,{passive:true,capture:true});update();
 })();

@@ -866,3 +866,14 @@ Doğrulama: test-roster-advice-crest-colors.cjs, genel eylemde oyuncuya yönlenm
 Gelir Merkezi rehberinin income-conversion açıklaması bütçe ödemesi gelince otomatik geçmez; Anladım kullanıcı eylemini bekler. Şimdilik ifadesi çıkarılmıştır. Kamp ilk giriş rehberi bu aktif rehberi bölmez; kapandıktan sonra ortak contextualGuide sırasına girer. CampSystem.advance önbelleği gün/aşamaya ek olarak oyuncu kimliği/seviyesi, transfer kampı ve kamp duyuru durumunu içerir; aynı gün hazırlık değişince yenileme gerekmez. Yeni sürekli çizim veya ek polling yoktur.
 
 Test: test-camp-income-order.cjs kamp yokken başlar; gerçek yükseltmeyle oyuncuyu bütçe tutorialı sırasında hazır eder, bütçe ödeme olayı gönderir, açıklamanın 1,2 saniye sonra hâlâ açık kaldığını doğrular. Anladım sonrasında kamp girişi ve seçme rehberi aynı oturumda görünür; giriş tekrar etmez. test-camp-tutorial-short.cjs ve görülmüş tutorialı tekrar göstermeme testi de kontrol edilir.
+
+
+### 28 Ekim — Tutorial hedeflerinin görünür alanı, pasif yetenek tanıtımı ve Toparlanma birleşimi
+
+Tutorialın yeni hedefi dikey ve yatay ortalanır; modal kapatma alanı, alt navigasyon ve sabit Talimat ver düğmesi dışında kalan alana yerleştirilir. Ekran boyu değişince yeniden konumlanır. Uzun kamp aday listesinin tamamı yerine ilk seçilebilir aday vurgulanır. Aynı maske/krem ipucu kullanılır.
+
+İlk transfer rehberinde yetenek özetine dokunma adımı kaldırılmıştır. Yetenek bölümü kendiliğinden açılır; gizli yetenek ve açılma koşulunu anlatan tek onaylanabilir açıklama vardır. Kazıma veya ek etkileşim yoktur. test-transfer-skill-passive.cjs gerçek ilk katalog/ilk kart açılışını, dokunmadan açılan bölümü, 320/390px modal sınırlarını ve sabit düğmenin üstündeki vurguyu kontrol eder. audits/tutorial-skills-auto-open.png ve tutorial-plan-recovery.png incelendi.
+
+Toparlanma Ünitesi ayrı kartı katalogdan kaldırıldı. Çalışma Planı 1–5te her 10 otomatik talimat AP’sini, 6–10da Toparlanma ek özelliğini (%8/%16/%25/%35/%50 çevrimdışı AP artışı) geliştirir; Bölgeselde on seviye açıktır. Eski Toparlanma yatırımı Çalışma Planı ek seviyelerine aktarılır. Önceden satın alınmış Birebir Çalışma manuel AP ve Gün Sonu Toparlanma günlük AP faydaları yalnız eski kayıtta sabit legacyBlockBenefits olarak korunur; yeni kartlara ikinci/üçüncü özellik diye eklenmez. recoveryMergeVersion=1 sayesinde aktarım tek seferdir. 363 eski portföyde AP/bütçe korunumu, seviye dönüşümü ve tekrar normalizasyon test edildi.
+
+Ekonomi yeniden doğrulandı: 20 ilk dönüş testinde hemen yeniden kamp yok; gerçek beş kişilik dönüşte 12/11/11/11/11 seviyeler ve sıfır yeniden gönderim korunur. 108 sezon denemesinde aktif/beş dakikalık ortanca Bölgesel 2 ve 2. Lig 8 kamp; çevrimdışı ücretli 2. Lig ortancası seedlere göre 7–9. test-block-descriptions.cjs ve test-block-contributions.cjs geçti.
