@@ -1,0 +1,65 @@
+{
+  "method": "60 seeded careers per target, 5 rotation-simulation matches each; manual income, affordable blocks, repeated board upgrades. Model simulation, not physical-device/court replay.",
+  "results": [
+    {
+      "margin": 0,
+      "legacy": true,
+      "first4": 30,
+      "avgWins": 3.0833333333333335,
+      "avgUpgrades": 31.216666666666665,
+      "ranks": {
+        "3": 6,
+        "4": 24,
+        "5": 11,
+        "6": 7,
+        "7": 4,
+        "8": 8
+      }
+    },
+    {
+      "margin": 0,
+      "legacy": false,
+      "first4": 32,
+      "avgWins": 3.15,
+      "avgUpgrades": 29.433333333333334,
+      "ranks": {
+        "3": 6,
+        "4": 26,
+        "5": 9,
+        "6": 6,
+        "7": 6,
+        "8": 7
+      }
+    },
+    {
+      "margin": 3,
+      "legacy": false,
+      "first4": 37,
+      "avgWins": 3.433333333333333,
+      "avgUpgrades": 34.666666666666664,
+      "ranks": {
+        "3": 11,
+        "4": 26,
+        "5": 10,
+        "6": 2,
+        "7": 6,
+        "8": 5
+      }
+    },
+    {
+      "margin": 5,
+      "legacy": false,
+      "first4": 38,
+      "avgWins": 3.45,
+      "avgUpgrades": 35.15,
+      "ranks": {
+        "3": 11,
+        "4": 27,
+        "5": 10,
+        "6": 2,
+        "7": 5,
+        "8": 5
+      }
+    }
+  ]
+}

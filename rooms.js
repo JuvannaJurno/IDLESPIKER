@@ -92,7 +92,8 @@ stats();upgradeStats();window.dispatchEvent?.(new Event('spiker-offline-settled'
 }
 $('closeRoom').onclick=()=>$('roomDialog').close();$('roomDialog').addEventListener('close',()=>{if(lastTrigger?.isConnected)lastTrigger.focus();else $('energyButton').focus();selection=null});
 function commitCamp(previous){try{localStorage.setItem(KEY,JSON.stringify(state));return true}catch{state=previous;return false}}
-function productionPaused(){return !!(window.BalTransition?.active||document.querySelector('#clubJourney[open],#divisionPromotionDialog[open],#firstLeaguePromotion[open]'));}
+let leagueIntermission=false;function refreshIntermission(){try{if(window.LeagueSeason)leagueIntermission=!!LeagueSeason.progress().prologueComplete;else if(window.LeagueRules){const raw=JSON.parse(localStorage.getItem('idle-spiker-league-v1')||'null');leagueIntermission=!!LeagueRules.progress(LeagueRules.normalize(raw)).prologueComplete;}}catch{leagueIntermission=false;}}for(const type of ['spiker-league-result','spiker-stage-changed'])window.addEventListener(type,refreshIntermission);document.addEventListener('DOMContentLoaded',refreshIntermission,{once:true});refreshIntermission();
+function productionPaused(){return !!(window.BalTransition?.active||leagueIntermission||document.querySelector('#seasonEndDialog[open],#clubIntroduction[open],#clubJourney[open],#divisionPromotionDialog[open],#firstLeaguePromotion[open]'));}
 window.RoomSystem={productionPaused,
  academyBuild(){const previous=JSON.parse(JSON.stringify(state));if(state.division!==4||!RoomRules.purchase(state,0,'first_academy')||!commitCamp(previous))return false;render();window.dispatchEvent(new Event('spiker-academy-changed'));return true;},
 
