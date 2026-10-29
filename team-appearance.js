@@ -57,5 +57,8 @@ if(d.glasses==='lower-rim'){const l=a.parts.find(p=>p.id==='eye-left'),r=a.parts
 return out;}
 function hairClip(a,d){if(!d.hairClip)return '';const hair=portraitPart(a,a.parts.find(p=>p.id==='hair'));if(!hair||! /Woman[1-6]\.png$/.test(hair.path))return '';const color=d.hairClip==='coral'?'#d58a80':'#dab66c';return partGroup(hair,'<g data-detail="hair-clip" transform="translate('+(hair.width*.79)+' 46) rotate(27)"><rect x="-11" y="-3" width="22" height="6" rx="3" fill="'+color+'"/><path d="M-7 0H7" stroke="'+(d.hairClip==='coral'?'#efb3a6':'#f0d495')+'" stroke-width="1.4" stroke-linecap="round"/></g>');}
 
+// One shared, static screen-space effect for card portraits; no per-card filters or game loop.
+function installCardPortraitEffect(){const d=root.document;if(!d||d.getElementById('cardPortraitShadow'))return;const svg=d.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('width','0');svg.setAttribute('height','0');svg.setAttribute('aria-hidden','true');svg.style.cssText='position:absolute;pointer-events:none';svg.innerHTML='<defs><filter id="cardPortraitShadow" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB"><feMorphology in="SourceAlpha" operator="dilate" radius="5" result="wide"/><feFlood flood-color="#263e4a" flood-opacity="0.24"/><feComposite in2="wide" operator="in" result="shadow"/><feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>';(d.body||d.documentElement).append(svg);d.documentElement.classList.add('card-portrait-effect-ready');}
+installCardPortraitEffect();
 root.TeamAppearance={generate,valid,portrait,playerPortrait,earringsFor,detailsFor,noseColor,neckColor,lookSignature};
 })(globalThis);
