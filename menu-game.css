@@ -323,3 +323,30 @@ html[data-theme=dark] #matchIntro .intro-card[data-card-tier]>.intro-card-top>sm
 [data-theme=dark] .profile-background-music{background:#293e43;border-color:#526866}
 [data-theme=dark] .profile-background-music select,[data-theme=dark] .profile-background-music label{color:#e2e7d6}
 [data-theme=dark] .lineup-legendary p{background:#34494a;color:#ede5cb;border-color:#697669}
+/* A tiny cream radio, using the game's green ink and warm raised controls. */
+#profileDialog .profile-background-music{display:block;padding:12px;margin:8px 0 18px;border:1px solid #c8cbaa;border-radius:15px;background:#eee7ca;box-shadow:inset 0 1px #fffbed,0 3px #bac5aa}
+#profileDialog .profile-background-music[hidden]{display:none}
+.profile-radio-label{display:flex;justify-content:space-between;margin:0 2px 8px;font-size:8px;font-weight:800;letter-spacing:1.2px;color:#617c6c}
+.profile-radio-label>span:last-child{font-size:7px;letter-spacing:1px;opacity:.65}
+.profile-radio-screen{position:relative;overflow:hidden;background:#d7e2c3;border:1px solid #a6b796;border-radius:7px;padding:8px 10px;box-shadow:inset 0 2px 3px #536a5520;color:#3e6459;font-family:Consolas,monospace}
+.profile-radio-status{display:flex;justify-content:space-between;font-size:8px;letter-spacing:1px;opacity:.75}
+.profile-radio-title{overflow:hidden;margin:7px 0 9px;white-space:nowrap;font-size:12px;line-height:18px;text-align:left}
+#profileRadioName{display:block;width:max-content;min-width:100%;font-weight:700}
+#profileRadioName[data-scroll=true]{animation:profile-radio-scroll 9s ease-in-out infinite alternate}
+@keyframes profile-radio-scroll{0%,15%{transform:translateX(0)}85%,100%{transform:translateX(var(--radio-travel))}}
+#profileDialog #profileBackgroundTrack{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;z-index:1}
+.profile-radio-screen:focus-within{outline:2px solid #be944c;outline-offset:2px}
+.profile-radio-bottom{display:flex;gap:9px;align-items:center;font-size:10px}
+.profile-radio-bars{height:10px;display:flex;gap:2px;align-items:flex-end}
+.profile-radio-bars i{display:block;width:3px;height:9px;background:#638671;transform-origin:bottom;animation:profile-radio-level .7s ease-in-out infinite alternate}
+.profile-radio-bars i:nth-child(2n){animation-delay:-.25s;height:6px}.profile-radio-bars i:nth-child(3n){animation-delay:-.45s}
+@keyframes profile-radio-level{to{transform:scaleY(.25)}}
+.profile-radio-progress{height:3px;flex:1;background:#b5c6a4;border-radius:2px;overflow:hidden}.profile-radio-progress i{display:block;height:100%;background:#638671;width:0}
+.profile-radio-controls{display:flex;justify-content:center;gap:8px;margin-top:9px}
+#profileDialog .profile-radio-controls button{flex:0 0 48px;min-height:30px;height:30px;font-size:11px;border:1px solid #c2c7a9;border-radius:8px;background:#fff8e4;color:#557768;box-shadow:0 2px #aab998;padding:0;cursor:pointer}
+#profileDialog .profile-radio-controls #profileRadioPlay{flex-basis:64px;background:#e3c786;border-color:#c4aa70;color:#675733;box-shadow:0 2px #aa925e;font-weight:800}
+#profileDialog .profile-radio-controls button:active{transform:translateY(2px);box-shadow:none}
+.profile-background-music[data-paused=true] .profile-radio-bars i{animation-play-state:paused;transform:scaleY(.25)}
+[data-theme=dark] #profileDialog .profile-background-music{background:#344b4b;border-color:#65766a;box-shadow:inset 0 1px #ffffff12,0 3px #263b3e}
+[data-theme=dark] .profile-radio-label{color:#c4cfb6}
+@media(prefers-reduced-motion:reduce){#profileRadioName[data-scroll=true],.profile-radio-bars i{animation:none}.profile-radio-title{overflow:auto}}
