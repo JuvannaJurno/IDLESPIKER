@@ -192,9 +192,14 @@ html body #teamPanel .player-card:is([data-card-tier="3"],.elite-player){--quick
 html body #teamPanel .player-card .card-open-upgrade small{color:inherit!important}
 html[data-theme=dark] body #teamPanel .player-card .card-open-upgrade:disabled{background:#344344!important;border-color:#718281!important;color:#c1cac4!important}
 
-/* Cool gym backdrop keeps warm skin tones distinct across card materials. */
-html:not(.elite-preview-page) .player-card.player-card .card-art{background:radial-gradient(ellipse at 50% 22%,#b8ced0 0%,#98b6bd 58%,#789ba6 100%)!important}
-html:not(.elite-preview-page) .player-card.player-card.elite-player .card-art{background:radial-gradient(ellipse at 50% 22%,#cbd0df 0%,#acb4cc 58%,#939fbc 100%)!important}
-html:not(.elite-preview-page) .player-card.player-card .card-halo{background:transparent;border-color:#eef6ee55}
-html[data-theme=dark]:not(.elite-preview-page) .player-card.player-card .card-art{background:radial-gradient(ellipse at 50% 22%,#8ba8b3 0%,#6b8d9b 58%,#527384 100%)!important}
-html[data-theme=dark]:not(.elite-preview-page) .player-card.player-card.elite-player .card-art{background:radial-gradient(ellipse at 50% 22%,#a4adc8 0%,#858eaf 58%,#6b789d 100%)!important}
+/* Approved C set: material-specific club poster backdrops. Shared by roster and transfer cards. */
+html:not(.elite-preview-page) .player-card{--portrait-light:#a9b8ad;--portrait-deep:#788d85}
+html:not(.elite-preview-page) .player-card[data-card-tier="1"]{--portrait-light:#afc3d2;--portrait-deep:#7b94ac}
+html:not(.elite-preview-page) .player-card[data-card-tier="2"]{--portrait-light:#c3b286;--portrait-deep:#958554}
+html:not(.elite-preview-page) .player-card:is([data-card-tier="3"],.elite-player){--portrait-light:#baabcc;--portrait-deep:#8a76a3}
+html:not(.elite-preview-page) .player-card[data-prospect="unknown"]{--portrait-light:#c6aa92;--portrait-deep:#a27f65}
+html:not(.elite-preview-page) .player-card.player-card .card-art{background:linear-gradient(var(--portrait-light),var(--portrait-deep))!important;isolation:isolate}
+html:not(.elite-preview-page) .player-card.player-card .card-art::before{content:'';display:block;position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(135deg,transparent 28%,#f6f9eb20 28%,#f6f9eb20 51%,transparent 51%),repeating-linear-gradient(135deg,transparent 0 40px,#fff9e51c 41px 42px)}
+html:not(.elite-preview-page) .player-card.player-card .card-halo,html:not(.elite-preview-page) .player-card.player-card .card-art::after{display:none!important}
+#scoutDialog .player-card>button.scout-compare{background:transparent!important;border:0!important;box-shadow:none!important;color:var(--club-ink)!important}
+#scoutDialog .player-card>.scout-hire:disabled{background:transparent!important;border:1px solid var(--club-line)!important;box-shadow:none!important;color:var(--club-muted)!important;opacity:.6;font-weight:500!important}
