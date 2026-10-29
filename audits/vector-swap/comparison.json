@@ -1,0 +1,2102 @@
+[
+  {
+    "key": "PNG/Shoes/Brown 2/brown2Shoe5.png",
+    "error": 0.010985407373907715,
+    "iou": 0.9744539059607553
+  },
+  {
+    "key": "PNG/Hair/Grey/greyMan4.png",
+    "error": 0.0032923890977034423,
+    "iou": 0.9884492830589485
+  },
+  {
+    "key": "PNG/Shoes/Brown 1/brownShoe5.png",
+    "error": 0.012177083321160485,
+    "iou": 0.9744539059607553
+  },
+  {
+    "key": "PNG/Hair/Black/blackWoman3.png",
+    "error": 0.001554055581807738,
+    "iou": 0.9866980973227816
+  },
+  {
+    "key": "PNG/Skin/Tint 6/tint6_neck.png",
+    "error": 0.004962166968006067,
+    "iou": 0.9883900928792569
+  },
+  {
+    "key": "PNG/Shirts/Grey/greyArm_shorter.png",
+    "error": 0.00782207146977405,
+    "iou": 0.990857946554149
+  },
+  {
+    "key": "PNG/Skin/Tint 4/tint4_head.png",
+    "error": 0.0023039797731779334,
+    "iou": 0.9957997557997558
+  },
+  {
+    "key": "PNG/Shoes/Brown 1/brownShoe4.png",
+    "error": 0.005196227427141068,
+    "iou": 0.9913130638155697
+  },
+  {
+    "key": "PNG/Hair/Brown 2/brown2Man4.png",
+    "error": 0.0023169343073395202,
+    "iou": 0.9869992040329
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 4/tint4Nose3.png",
+    "error": 0.022396700569710954,
+    "iou": 0.9437751004016064
+  },
+  {
+    "key": "PNG/Shoes/Tan/tanShoe1.png",
+    "error": 0.004729492826194585,
+    "iou": 0.994328922495274
+  },
+  {
+    "key": "PNG/Pants/Yellow/pantsYellow4.png",
+    "error": 0.0052386246189341885,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Shirts/Red/redArm_long.png",
+    "error": 0.0026480218131558764,
+    "iou": 0.9921333107765183
+  },
+  {
+    "key": "PNG/Hair/White/whiteMan7.png",
+    "error": 0.00468377928090135,
+    "iou": 0.9871035662587182
+  },
+  {
+    "key": "PNG/Hair/Tan/tanWoman3.png",
+    "error": 0.004080504643478799,
+    "iou": 0.9868672046955246
+  },
+  {
+    "key": "PNG/Shirts/Green/greenArm_short.png",
+    "error": 0.0033104512714579562,
+    "iou": 0.99265605875153
+  },
+  {
+    "key": "PNG/Shoes/Brown 1/brownShoe1.png",
+    "error": 0.003935480742150844,
+    "iou": 0.994328922495274
+  },
+  {
+    "key": "PNG/Pants/Blue 2/pantsBlue2_shorter.png",
+    "error": 0.0038008236477094608,
+    "iou": 0.994266876881181
+  },
+  {
+    "key": "PNG/Face/Completes/face3.png",
+    "error": 0.004871799624827297,
+    "iou": 0.9674109837054918
+  },
+  {
+    "key": "PNG/Pants/White/pantsWhite3.png",
+    "error": 0.0060853529640060786,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Skin/Tint 8/tint8_hand.png",
+    "error": 0.0031322872727760163,
+    "iou": 0.9921259842519685
+  },
+  {
+    "key": "PNG/Shoes/Grey/greyShoe3.png",
+    "error": 0.006556061167339948,
+    "iou": 0.9906119610570236
+  },
+  {
+    "key": "PNG/Skin/Tint 1/tint1_leg.png",
+    "error": 0.0022354930566457942,
+    "iou": 0.9968711587886915
+  },
+  {
+    "key": "PNG/Shoes/Brown 2/brown2Shoe3.png",
+    "error": 0.0054067457882889134,
+    "iou": 0.9906119610570236
+  },
+  {
+    "key": "PNG/Hair/Brown 1/brown1Woman6.png",
+    "error": 0.002321325750220921,
+    "iou": 0.9870139398385913
+  },
+  {
+    "key": "PNG/Shirts/White/whiteShirt4.png",
+    "error": 0.004232683048819987,
+    "iou": 0.9970561998215879
+  },
+  {
+    "key": "PNG/Hair/Grey/greyWoman1.png",
+    "error": 0.0019870812768419607,
+    "iou": 0.9882235986847137
+  },
+  {
+    "key": "PNG/Shirts/Pine/pineShirt3.png",
+    "error": 0.003386612021502772,
+    "iou": 0.9970632087832648
+  },
+  {
+    "key": "PNG/Face/Eyebrows/whiteBrow2.png",
+    "error": 0.08697153832186315,
+    "iou": 0.8501529051987767
+  },
+  {
+    "key": "PNG/Face/Eyes/eyeGreen_small.png",
+    "error": 0.010082660515186467,
+    "iou": 0.9611111111111111
+  },
+  {
+    "key": "PNG/Hair/Blonde/blondeMan6.png",
+    "error": 0.004211374756136619,
+    "iou": 0.986770965144369
+  },
+  {
+    "key": "PNG/Pants/Blue 2/pantsBlue2_long.png",
+    "error": 0.002428741953276087,
+    "iou": 0.9956464954288202
+  },
+  {
+    "key": "PNG/Shirts/Green/greenShirt7.png",
+    "error": 0.006817923915291654,
+    "iou": 0.9966129250779028
+  },
+  {
+    "key": "PNG/Hair/Brown 1/brown1Woman2.png",
+    "error": 0.0017589910564726923,
+    "iou": 0.9866980973227816
+  },
+  {
+    "key": "PNG/Shoes/Brown 1/brownShoe2.png",
+    "error": 0.00373163602807275,
+    "iou": 0.9950407368048175
+  },
+  {
+    "key": "PNG/Shoes/Blue/blueShoe5.png",
+    "error": 0.009751603603477278,
+    "iou": 0.9744539059607553
+  },
+  {
+    "key": "PNG/Shoes/Red/redShoe5.png",
+    "error": 0.01306762421280569,
+    "iou": 0.9744539059607553
+  },
+  {
+    "key": "PNG/Hair/Blonde/blondeWoman3.png",
+    "error": 0.003105343792129302,
+    "iou": 0.9867096254530809
+  },
+  {
+    "key": "PNG/Pants/Yellow/legYellow_long.png",
+    "error": 0.002738727805222155,
+    "iou": 0.9953844814072977
+  },
+  {
+    "key": "PNG/Skin/Tint 1/tint1_arm.png",
+    "error": 0.0023428773402298033,
+    "iou": 0.9934557530767728
+  },
+  {
+    "key": "PNG/Face/Eyebrows/tanBrow2.png",
+    "error": 0.07896205706316257,
+    "iou": 0.8501529051987767
+  },
+  {
+    "key": "PNG/Pants/Tan/pantsTan2.png",
+    "error": 0.005394348129745481,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Face/Eyebrows/blackBrow1.png",
+    "error": 0.006464939955220846,
+    "iou": 0.9748858447488584
+  },
+  {
+    "key": "PNG/Skin/Tint 4/tint4_leg.png",
+    "error": 0.001967362509507079,
+    "iou": 0.9970939979881525
+  },
+  {
+    "key": "PNG/Hair/Red/redMan4.png",
+    "error": 0.0033195285905269836,
+    "iou": 0.9889818133545732
+  },
+  {
+    "key": "PNG/Shirts/Pine/pineArm_shorter.png",
+    "error": 0.004208057643703921,
+    "iou": 0.9953183520599251
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 7/tint7Nose3.png",
+    "error": 0.01744951242529097,
+    "iou": 0.9437751004016064
+  },
+  {
+    "key": "PNG/Pants/Brown/pantsBrown_shorter.png",
+    "error": 0.004364701939096408,
+    "iou": 0.994266876881181
+  },
+  {
+    "key": "PNG/Pants/Pine/pantsPine1.png",
+    "error": 0.00433858087913835,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Hair/Grey/greyMan7.png",
+    "error": 0.0035267704174224606,
+    "iou": 0.9871035662587182
+  },
+  {
+    "key": "PNG/Shoes/Red/redShoe2.png",
+    "error": 0.004007027925897098,
+    "iou": 0.9950407368048175
+  },
+  {
+    "key": "PNG/Hair/Red/redWoman4.png",
+    "error": 0.0029618346578241805,
+    "iou": 0.9877243311761958
+  },
+  {
+    "key": "PNG/Pants/Red/pantsRed2.png",
+    "error": 0.005254836305645211,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Pants/Light Blue/pantsLightBlue1.png",
+    "error": 0.005500568841899493,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Skin/Tint 2/tint2_head.png",
+    "error": 0.0023067052012538856,
+    "iou": 0.9960429897410845
+  },
+  {
+    "key": "PNG/Hair/Grey/greyWoman4.png",
+    "error": 0.00269307251747076,
+    "iou": 0.9886545648691938
+  },
+  {
+    "key": "PNG/Face/Eyebrows/brown1Brow1.png",
+    "error": 0.007362931677861456,
+    "iou": 0.9748858447488584
+  },
+  {
+    "key": "PNG/Skin/Tint 3/tint3_hand.png",
+    "error": 0.004922576978056945,
+    "iou": 0.9924265374129052
+  },
+  {
+    "key": "PNG/Pants/Green/pantsGreen_short.png",
+    "error": 0.002802227365913987,
+    "iou": 0.9956151340516162
+  },
+  {
+    "key": "PNG/Hair/Blonde/blondeMan3.png",
+    "error": 0.0032542457183667127,
+    "iou": 0.990407016582157
+  },
+  {
+    "key": "PNG/Skin/Tint 2/tint2_arm.png",
+    "error": 0.0022266153289458896,
+    "iou": 0.9934557530767728
+  },
+  {
+    "key": "PNG/Hair/Blonde/blondeWoman6.png",
+    "error": 0.0033561482526669245,
+    "iou": 0.9891256429096252
+  },
+  {
+    "key": "PNG/Skin/Tint 2/tint2_hand.png",
+    "error": 0.004513779977880026,
+    "iou": 0.9924265374129052
+  },
+  {
+    "key": "PNG/Hair/Black/blackWoman5.png",
+    "error": 0.00207677050383808,
+    "iou": 0.9868672046955246
+  },
+  {
+    "key": "PNG/Face/Eyebrows/greyBrow3.png",
+    "error": 0.00752272881470928,
+    "iou": 0.9742857142857143
+  },
+  {
+    "key": "PNG/Skin/Tint 5/tint5_neck.png",
+    "error": 0.005387131292191848,
+    "iou": 0.9883900928792569
+  },
+  {
+    "key": "PNG/Shoes/Grey/greyShoe1.png",
+    "error": 0.004306712950790104,
+    "iou": 0.994328922495274
+  },
+  {
+    "key": "PNG/Shirts/Blue/blueShirt7.png",
+    "error": 0.007824450100400322,
+    "iou": 0.9966129250779028
+  },
+  {
+    "key": "PNG/Shoes/Red/redShoe1.png",
+    "error": 0.004227119995543758,
+    "iou": 0.994328922495274
+  },
+  {
+    "key": "PNG/Hair/Tan/tanMan1.png",
+    "error": 0.004327566688713934,
+    "iou": 0.9864217252396166
+  },
+  {
+    "key": "PNG/Shirts/Pine/pineShirt8.png",
+    "error": 0.0036736737322211675,
+    "iou": 0.9970632087832648
+  },
+  {
+    "key": "PNG/Shoes/Blue/blueShoe4.png",
+    "error": 0.004165755163141605,
+    "iou": 0.9913130638155697
+  },
+  {
+    "key": "PNG/Shirts/Navy/navyShirt8.png",
+    "error": 0.0029961429627613687,
+    "iou": 0.9970632087832648
+  },
+  {
+    "key": "PNG/Hair/Grey/greyMan1.png",
+    "error": 0.003160664931899498,
+    "iou": 0.9881197167009367
+  },
+  {
+    "key": "PNG/Hair/Tan/tanMan3.png",
+    "error": 0.003362212155970389,
+    "iou": 0.989179564443227
+  },
+  {
+    "key": "PNG/Hair/Red/redMan7.png",
+    "error": 0.003555533651006201,
+    "iou": 0.9876315789473684
+  },
+  {
+    "key": "PNG/Shirts/Red/redArm_shorter.png",
+    "error": 0.00499721471033937,
+    "iou": 0.9960159362549801
+  },
+  {
+    "key": "PNG/Hair/Brown 1/brown1Man5.png",
+    "error": 0.0020275111323493702,
+    "iou": 0.9894769421231817
+  },
+  {
+    "key": "PNG/Pants/Blue 1/pantsBlue1_long.png",
+    "error": 0.0026756944128854057,
+    "iou": 0.9956464954288202
+  },
+  {
+    "key": "PNG/Hair/Blonde/blondeMan7.png",
+    "error": 0.0039850521973422565,
+    "iou": 0.9876315789473684
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 5/tint5Nose1.png",
+    "error": 0.013666426300648868,
+    "iou": 0.9741035856573705
+  },
+  {
+    "key": "PNG/Pants/Red/pantsRed3.png",
+    "error": 0.00576210084896696,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Pants/Green/pantsGreen1.png",
+    "error": 0.004387221820432041,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Shirts/Grey/greyShirt1.png",
+    "error": 0.0027320726172509625,
+    "iou": 0.9971992591588743
+  },
+  {
+    "key": "PNG/Hair/White/whiteWoman4.png",
+    "error": 0.0037611131050456024,
+    "iou": 0.9879951980792316
+  },
+  {
+    "key": "PNG/Hair/Grey/greyWoman3.png",
+    "error": 0.0026386855009122687,
+    "iou": 0.9867080959779043
+  },
+  {
+    "key": "PNG/Shoes/Brown 2/brown2Shoe2.png",
+    "error": 0.00337460418738487,
+    "iou": 0.9950407368048175
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 3/tint3Nose2.png",
+    "error": 0.019860517055406018,
+    "iou": 0.9669603524229075
+  },
+  {
+    "key": "PNG/Shirts/Pine/pineShirt1.png",
+    "error": 0.0015268056693924282,
+    "iou": 0.9970632087832648
+  },
+  {
+    "key": "PNG/Pants/Yellow/pantsYellow2.png",
+    "error": 0.006132781851550848,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Shirts/Grey/greyShirt4.png",
+    "error": 0.003196993940004775,
+    "iou": 0.9971897582299938
+  },
+  {
+    "key": "PNG/Skin/Tint 6/tint6_head.png",
+    "error": 0.001860330667459093,
+    "iou": 0.9960429897410845
+  },
+  {
+    "key": "PNG/Pants/Grey/pantsGrey4.png",
+    "error": 0.005307991305078216,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Face/Completes/face2.png",
+    "error": 0.004536602949095404,
+    "iou": 0.96057171020207
+  },
+  {
+    "key": "PNG/Shirts/Red/redArm_short.png",
+    "error": 0.0034014656737847574,
+    "iou": 0.9931982043259421
+  },
+  {
+    "key": "PNG/Hair/Grey/greyWoman2.png",
+    "error": 0.0020389352748095674,
+    "iou": 0.9895385134565089
+  },
+  {
+    "key": "PNG/Pants/Grey/pantsGrey_long.png",
+    "error": 0.0025882302446691508,
+    "iou": 0.9956464954288202
+  },
+  {
+    "key": "PNG/Pants/Light Blue/pantsLightBlue_short.png",
+    "error": 0.003687238327775214,
+    "iou": 0.9956151340516162
+  },
+  {
+    "key": "PNG/Shirts/Pine/pineShirt6.png",
+    "error": 0.004054866006674199,
+    "iou": 0.9966129250779028
+  },
+  {
+    "key": "PNG/Skin/Tint 1/tint1_hand.png",
+    "error": 0.004752725959883817,
+    "iou": 0.9924265374129052
+  },
+  {
+    "key": "PNG/Hair/Brown 1/brown1Woman1.png",
+    "error": 0.0013758529812625323,
+    "iou": 0.9882235986847137
+  },
+  {
+    "key": "PNG/Shoes/Brown 2/brown2Shoe1.png",
+    "error": 0.0035584523059675826,
+    "iou": 0.994328922495274
+  },
+  {
+    "key": "PNG/Hair/Black/blackMan1.png",
+    "error": 0.002204676009951103,
+    "iou": 0.9864217252396166
+  },
+  {
+    "key": "PNG/Pants/Blue 2/pantsBlue23.png",
+    "error": 0.006558584834486218,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 6/tint6Nose3.png",
+    "error": 0.019255962159076344,
+    "iou": 0.9437751004016064
+  },
+  {
+    "key": "PNG/Pants/White/pantsWhite_shorter.png",
+    "error": 0.0052907176445238496,
+    "iou": 0.994266876881181
+  },
+  {
+    "key": "PNG/Shirts/Yellow/shirtYellow4.png",
+    "error": 0.003018943238876547,
+    "iou": 0.9971897582299938
+  },
+  {
+    "key": "PNG/Pants/Navy/pantsNavy4.png",
+    "error": 0.00557862627956011,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Shirts/White/armWhite_shorter.png",
+    "error": 0.007393344294861088,
+    "iou": 0.9953183520599251
+  },
+  {
+    "key": "PNG/Face/Mouth/mouth_teethUpper.png",
+    "error": 0.02494679213181147,
+    "iou": 0.9429530201342282
+  },
+  {
+    "key": "PNG/Hair/Red/redWoman3.png",
+    "error": 0.003038076081753044,
+    "iou": 0.9868875086266391
+  },
+  {
+    "key": "PNG/Pants/Blue 1/pantsBlue1_shorter.png",
+    "error": 0.00417954773664116,
+    "iou": 0.994266876881181
+  },
+  {
+    "key": "PNG/Pants/Green/pantsGreen2.png",
+    "error": 0.004790972589460619,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Pants/Yellow/pantsYellow1.png",
+    "error": 0.005389635181445287,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Pants/Tan/pantsTan1.png",
+    "error": 0.006596898992295209,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Skin/Tint 1/tint1_head.png",
+    "error": 0.002431638358618988,
+    "iou": 0.9960429897410845
+  },
+  {
+    "key": "PNG/Shirts/Navy/navyShirt3.png",
+    "error": 0.002779051393205886,
+    "iou": 0.9970632087832648
+  },
+  {
+    "key": "PNG/Hair/Black/blackMan3.png",
+    "error": 0.001711066100479902,
+    "iou": 0.989179564443227
+  },
+  {
+    "key": "PNG/Shirts/White/whiteShirt6.png",
+    "error": 0.007067646699224672,
+    "iou": 0.9966129250779028
+  },
+  {
+    "key": "PNG/Pants/Green/pantsGreen3.png",
+    "error": 0.005865448346808424,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Face/Mouth/mouth_happy.png",
+    "error": 0.023838977699144608,
+    "iou": 0.9591836734693877
+  },
+  {
+    "key": "PNG/Skin/Tint 7/tint7_hand.png",
+    "error": 0.003356478614915619,
+    "iou": 0.9924265374129052
+  },
+  {
+    "key": "PNG/Face/Eyebrows/greyBrow1.png",
+    "error": 0.010532210462039495,
+    "iou": 0.9748858447488584
+  },
+  {
+    "key": "PNG/Pants/Navy/pantsNavy1.png",
+    "error": 0.0035017200523680134,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Shoes/Blue/blueShoe3.png",
+    "error": 0.004799122541521128,
+    "iou": 0.9906119610570236
+  },
+  {
+    "key": "PNG/Face/Eyes/eyeBlack_large.png",
+    "error": 0.00979792352670916,
+    "iou": 0.9514285714285714
+  },
+  {
+    "key": "PNG/Shirts/Blue/blueArm_long.png",
+    "error": 0.00281340253558556,
+    "iou": 0.9921333107765183
+  },
+  {
+    "key": "PNG/Shirts/Green/greenShirt8.png",
+    "error": 0.004176248243489525,
+    "iou": 0.9970632087832648
+  },
+  {
+    "key": "PNG/Skin/Tint 3/tint3_neck.png",
+    "error": 0.007008402217095985,
+    "iou": 0.9883900928792569
+  },
+  {
+    "key": "PNG/Shirts/White/armWhite_long.png",
+    "error": 0.004011053512234736,
+    "iou": 0.9921333107765183
+  },
+  {
+    "key": "PNG/Hair/Tan/tanWoman5.png",
+    "error": 0.003950646709666894,
+    "iou": 0.9861370301253
+  },
+  {
+    "key": "PNG/Shirts/Navy/navyArm_short.png",
+    "error": 0.0026382009336913064,
+    "iou": 0.99265605875153
+  },
+  {
+    "key": "PNG/Shirts/Green/greenShirt4.png",
+    "error": 0.002651679460429073,
+    "iou": 0.9970561998215879
+  },
+  {
+    "key": "PNG/Face/Eyebrows/greyBrow2.png",
+    "error": 0.06561141842937779,
+    "iou": 0.8501529051987767
+  },
+  {
+    "key": "PNG/Shoes/Black/blackShoe3.png",
+    "error": 0.004730148212810364,
+    "iou": 0.9906119610570236
+  },
+  {
+    "key": "PNG/Pants/White/pantsWhite_short.png",
+    "error": 0.004574963948177451,
+    "iou": 0.9956151340516162
+  },
+  {
+    "key": "PNG/Face/Eyebrows/whiteBrow3.png",
+    "error": 0.010040928828278714,
+    "iou": 0.9742857142857143
+  },
+  {
+    "key": "PNG/Shoes/Brown 1/brownShoe3.png",
+    "error": 0.0059888060355556445,
+    "iou": 0.9906119610570236
+  },
+  {
+    "key": "PNG/Face/Mouth/mouth_teethLower.png",
+    "error": 0.025875185492527215,
+    "iou": 0.9493243243243243
+  },
+  {
+    "key": "PNG/Face/Eyes/eyeBrown_small.png",
+    "error": 0.009741669870562604,
+    "iou": 0.9611111111111111
+  },
+  {
+    "key": "PNG/Shirts/Navy/navyShirt2.png",
+    "error": 0.0067038168401507385,
+    "iou": 0.9972443079147091
+  },
+  {
+    "key": "PNG/Shirts/Red/redShirt6.png",
+    "error": 0.004947945825405227,
+    "iou": 0.9966129250779028
+  },
+  {
+    "key": "PNG/Shirts/Blue/blueShirt5.png",
+    "error": 0.0025290738573038084,
+    "iou": 0.9967470859311467
+  },
+  {
+    "key": "PNG/Shirts/Grey/greyShirt8.png",
+    "error": 0.003481348415458632,
+    "iou": 0.9972438098680644
+  },
+  {
+    "key": "PNG/Face/Eyebrows/tanBrow1.png",
+    "error": 0.012703790397358476,
+    "iou": 0.9748858447488584
+  },
+  {
+    "key": "PNG/Face/Eyebrows/whiteBrow1.png",
+    "error": 0.014026375602143959,
+    "iou": 0.9748858447488584
+  },
+  {
+    "key": "PNG/Hair/Brown 1/brown1Woman5.png",
+    "error": 0.0019471008935116614,
+    "iou": 0.9863392857142858
+  },
+  {
+    "key": "PNG/Pants/Brown/pantsBrown2.png",
+    "error": 0.005208030286480431,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Hair/Grey/greyMan6.png",
+    "error": 0.00356295986218906,
+    "iou": 0.988015671813782
+  },
+  {
+    "key": "PNG/Pants/Grey/pantsGrey1.png",
+    "error": 0.005559157499140162,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Face/Eyebrows/brown2Brow3.png",
+    "error": 0.005400275911979559,
+    "iou": 0.9742857142857143
+  },
+  {
+    "key": "PNG/Hair/Black/blackMan2.png",
+    "error": 0.0014269685233887434,
+    "iou": 0.9903028851909493
+  },
+  {
+    "key": "PNG/Pants/Light Blue/pantsLightBlue_long.png",
+    "error": 0.002692349664042656,
+    "iou": 0.9956464954288202
+  },
+  {
+    "key": "PNG/Pants/Yellow/legYellow_shorter.png",
+    "error": 0.003987230186192122,
+    "iou": 0.994266876881181
+  },
+  {
+    "key": "PNG/Pants/White/pantsWhite2.png",
+    "error": 0.005783992132931819,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Hair/Grey/greyMan5.png",
+    "error": 0.0030361555116608656,
+    "iou": 0.9886539453326457
+  },
+  {
+    "key": "PNG/Shirts/Yellow/shirtYellow2.png",
+    "error": 0.00805482617640605,
+    "iou": 0.9972443079147091
+  },
+  {
+    "key": "PNG/Hair/Brown 2/brown2Woman6.png",
+    "error": 0.002398213773219861,
+    "iou": 0.9870139398385913
+  },
+  {
+    "key": "PNG/Hair/Tan/tanMan5.png",
+    "error": 0.0031953795410360787,
+    "iou": 0.9902872494317008
+  },
+  {
+    "key": "PNG/Pants/Yellow/pantsYellow3.png",
+    "error": 0.005742380782591076,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Pants/Tan/pantsTan_shorter.png",
+    "error": 0.004719447507509796,
+    "iou": 0.994266876881181
+  },
+  {
+    "key": "PNG/Hair/Brown 1/brown1Woman4.png",
+    "error": 0.002207719005213032,
+    "iou": 0.9866719978675197
+  },
+  {
+    "key": "PNG/Face/Eyes/eyeGreen_large.png",
+    "error": 0.010306545276062493,
+    "iou": 0.9514285714285714
+  },
+  {
+    "key": "PNG/Hair/Blonde/blondeMan4.png",
+    "error": 0.003719919978901728,
+    "iou": 0.9889818133545732
+  },
+  {
+    "key": "PNG/Shoes/Grey/greyShoe2.png",
+    "error": 0.004087555756553763,
+    "iou": 0.9950407368048175
+  },
+  {
+    "key": "PNG/Hair/Brown 1/brown1Man2.png",
+    "error": 0.0016154500008499146,
+    "iou": 0.9903028851909493
+  },
+  {
+    "key": "PNG/Shoes/Blue/blueShoe1.png",
+    "error": 0.0031593393858725476,
+    "iou": 0.994328922495274
+  },
+  {
+    "key": "PNG/Shirts/Green/greenShirt1.png",
+    "error": 0.0016245108480580498,
+    "iou": 0.9970632087832648
+  },
+  {
+    "key": "PNG/Hair/Tan/tanMan7.png",
+    "error": 0.004328317343026437,
+    "iou": 0.9858044164037855
+  },
+  {
+    "key": "PNG/Shirts/White/whiteShirt3.png",
+    "error": 0.005901094540968579,
+    "iou": 0.9970632087832648
+  },
+  {
+    "key": "PNG/Face/Eyebrows/redBrow2.png",
+    "error": 0.06671092731688565,
+    "iou": 0.8501529051987767
+  },
+  {
+    "key": "PNG/Shirts/White/whiteShirt7.png",
+    "error": 0.010385336182049523,
+    "iou": 0.9966129250779028
+  },
+  {
+    "key": "PNG/Shirts/Red/redShirt4.png",
+    "error": 0.0027747667057337684,
+    "iou": 0.9971897582299938
+  },
+  {
+    "key": "PNG/Hair/White/whiteWoman6.png",
+    "error": 0.004167936299070927,
+    "iou": 0.9879633027522936
+  },
+  {
+    "key": "PNG/Shirts/Red/redShirt8.png",
+    "error": 0.004459860549003235,
+    "iou": 0.9972438098680644
+  },
+  {
+    "key": "PNG/Shirts/Green/greenShirt3.png",
+    "error": 0.003838808031133831,
+    "iou": 0.9970632087832648
+  },
+  {
+    "key": "PNG/Pants/Tan/pantsTan_long.png",
+    "error": 0.0031182266186643662,
+    "iou": 0.9953844814072977
+  },
+  {
+    "key": "PNG/Hair/Tan/tanWoman1.png",
+    "error": 0.0023880675730469244,
+    "iou": 0.9882235986847137
+  },
+  {
+    "key": "PNG/Pants/Grey/pantsGrey2.png",
+    "error": 0.004462136579691267,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Shirts/Navy/navyShirt1.png",
+    "error": 0.0012739200040113462,
+    "iou": 0.9970632087832648
+  },
+  {
+    "key": "PNG/Hair/Black/blackMan6.png",
+    "error": 0.002383323966001817,
+    "iou": 0.9850574712643678
+  },
+  {
+    "key": "PNG/Hair/Brown 2/brown2Woman4.png",
+    "error": 0.0022796033954060367,
+    "iou": 0.9866719978675197
+  },
+  {
+    "key": "PNG/Pants/Red/pantsRed_shorter.png",
+    "error": 0.003574251168541829,
+    "iou": 0.994266876881181
+  },
+  {
+    "key": "PNG/Hair/Red/redMan5.png",
+    "error": 0.002825576965017261,
+    "iou": 0.9894628099173554
+  },
+  {
+    "key": "PNG/Face/Eyebrows/redBrow1.png",
+    "error": 0.010738330280208964,
+    "iou": 0.9748858447488584
+  },
+  {
+    "key": "PNG/Face/Eyebrows/brown2Brow2.png",
+    "error": 0.047262531637584385,
+    "iou": 0.8501529051987767
+  },
+  {
+    "key": "PNG/Face/Eyebrows/blondeBrow2.png",
+    "error": 0.07471047720857826,
+    "iou": 0.8501529051987767
+  },
+  {
+    "key": "PNG/Hair/Grey/greyMan2.png",
+    "error": 0.002657440077158418,
+    "iou": 0.9885153726522311
+  },
+  {
+    "key": "PNG/Shirts/Green/greenArm_long.png",
+    "error": 0.0025388806665851684,
+    "iou": 0.9921333107765183
+  },
+  {
+    "key": "PNG/Pants/White/pantsWhite_long.png",
+    "error": 0.003420979031309629,
+    "iou": 0.9956464954288202
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 1/tint1Nose3.png",
+    "error": 0.025893735509652467,
+    "iou": 0.9437751004016064
+  },
+  {
+    "key": "PNG/Hair/Red/redWoman1.png",
+    "error": 0.002298113385718142,
+    "iou": 0.9891420706530051
+  },
+  {
+    "key": "PNG/Pants/Blue 1/pantsBlue14.png",
+    "error": 0.005779025760071864,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 6/tint6Nose2.png",
+    "error": 0.014017505286428292,
+    "iou": 0.9669603524229075
+  },
+  {
+    "key": "PNG/Face/Eyebrows/tanBrow3.png",
+    "error": 0.009073540719632714,
+    "iou": 0.9742857142857143
+  },
+  {
+    "key": "PNG/Pants/Red/pantsRed4.png",
+    "error": 0.005021449929589146,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Hair/Brown 2/brown2Woman3.png",
+    "error": 0.0018933402480991253,
+    "iou": 0.9867080959779043
+  },
+  {
+    "key": "PNG/Skin/Tint 8/tint8_leg.png",
+    "error": 0.0014451597375295915,
+    "iou": 0.9970939979881525
+  },
+  {
+    "key": "PNG/Pants/Blue 2/pantsBlue22.png",
+    "error": 0.005193147742080756,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Hair/Blonde/blondeWoman5.png",
+    "error": 0.0027846742435778836,
+    "iou": 0.9885509838998211
+  },
+  {
+    "key": "PNG/Shirts/Navy/navyShirt5.png",
+    "error": 0.0029838651887239905,
+    "iou": 0.9970180273799304
+  },
+  {
+    "key": "PNG/Skin/Tint 7/tint7_neck.png",
+    "error": 0.004496072629723146,
+    "iou": 0.9883900928792569
+  },
+  {
+    "key": "PNG/Hair/Blonde/blondeWoman4.png",
+    "error": 0.003150115753411317,
+    "iou": 0.988383737232125
+  },
+  {
+    "key": "PNG/Shoes/Red/redShoe3.png",
+    "error": 0.006432127850444869,
+    "iou": 0.9906119610570236
+  },
+  {
+    "key": "PNG/Face/Mouth/mouth_oh.png",
+    "error": 0.01227416805502158,
+    "iou": 0.9415584415584416
+  },
+  {
+    "key": "PNG/Skin/Tint 5/tint5_hand.png",
+    "error": 0.0039022573684650208,
+    "iou": 0.9924265374129052
+  },
+  {
+    "key": "PNG/Pants/Pine/pantsPine3.png",
+    "error": 0.005684282934940847,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Shirts/Green/greenShirt5.png",
+    "error": 0.0022607072440339903,
+    "iou": 0.9967470859311467
+  },
+  {
+    "key": "PNG/Hair/Red/redWoman5.png",
+    "error": 0.002721641360621414,
+    "iou": 0.9870466321243523
+  },
+  {
+    "key": "PNG/Pants/Brown/pantsBrown3.png",
+    "error": 0.005295723203921586,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Pants/Blue 1/pantsBlue12.png",
+    "error": 0.004892137642042752,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Hair/Tan/tanMan2.png",
+    "error": 0.002806724986389172,
+    "iou": 0.9903028851909493
+  },
+  {
+    "key": "PNG/Shoes/Tan/tanShoe3.png",
+    "error": 0.007201954902389265,
+    "iou": 0.9906119610570236
+  },
+  {
+    "key": "PNG/Pants/Grey/pantsGrey3.png",
+    "error": 0.005608229903766561,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Shirts/Red/redShirt2.png",
+    "error": 0.01039914044606031,
+    "iou": 0.9972443079147091
+  },
+  {
+    "key": "PNG/Hair/Tan/tanWoman2.png",
+    "error": 0.0030533493132936006,
+    "iou": 0.9866980973227816
+  },
+  {
+    "key": "PNG/Face/Eyebrows/brown1Brow3.png",
+    "error": 0.005211383630730262,
+    "iou": 0.9742857142857143
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 8/tint8Nose2.png",
+    "error": 0.011689888237430052,
+    "iou": 0.9669603524229075
+  },
+  {
+    "key": "PNG/Shirts/Red/redShirt5.png",
+    "error": 0.0023795438385824487,
+    "iou": 0.9967470859311467
+  },
+  {
+    "key": "PNG/Skin/Tint 6/tint6_arm.png",
+    "error": 0.0018072573896917507,
+    "iou": 0.9934557530767728
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 8/tint8Nose1.png",
+    "error": 0.009593976321289624,
+    "iou": 0.98
+  },
+  {
+    "key": "PNG/Face/Completes/face4.png",
+    "error": 0.004461018708721857,
+    "iou": 0.9645756457564576
+  },
+  {
+    "key": "PNG/Hair/Blonde/blondeMan5.png",
+    "error": 0.003164821551211402,
+    "iou": 0.9894628099173554
+  },
+  {
+    "key": "PNG/Pants/Light Blue/pantsLightBlue2.png",
+    "error": 0.005189179027930765,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Hair/Grey/greyMan3.png",
+    "error": 0.002856550946639233,
+    "iou": 0.990407016582157
+  },
+  {
+    "key": "PNG/Pants/Red/pantsRed_long.png",
+    "error": 0.0022607409594110816,
+    "iou": 0.9955586519202299
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 4/tint4Nose2.png",
+    "error": 0.01630056148276304,
+    "iou": 0.9669603524229075
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 7/tint7Nose2.png",
+    "error": 0.012728364357725659,
+    "iou": 0.9669603524229075
+  },
+  {
+    "key": "PNG/Hair/White/whiteMan1.png",
+    "error": 0.00419539581408944,
+    "iou": 0.9881197167009367
+  },
+  {
+    "key": "PNG/Face/Mouth/mouth_glad.png",
+    "error": 0.012964931691778836,
+    "iou": 0.926829268292683
+  },
+  {
+    "key": "PNG/Face/Mouth/mouth_straight.png",
+    "error": 0.016680407820353984,
+    "iou": 0.9683544303797469
+  },
+  {
+    "key": "PNG/Hair/Blonde/blondeMan2.png",
+    "error": 0.0030273235114166774,
+    "iou": 0.9885153726522311
+  },
+  {
+    "key": "PNG/Pants/Brown/pantsBrown1.png",
+    "error": 0.006059996072453961,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Pants/Pine/pantsPine_long.png",
+    "error": 0.00204064238499557,
+    "iou": 0.9956464954288202
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 3/tint3Nose1.png",
+    "error": 0.017710020546274588,
+    "iou": 0.9741035856573705
+  },
+  {
+    "key": "PNG/Shirts/Yellow/armYellow_shorter.png",
+    "error": 0.00781576528136438,
+    "iou": 0.9906279287722587
+  },
+  {
+    "key": "PNG/Hair/White/whiteWoman2.png",
+    "error": 0.00288583258939867,
+    "iou": 0.9887043749473152
+  },
+  {
+    "key": "PNG/Hair/Brown 1/brown1Man1.png",
+    "error": 0.0024857730457315294,
+    "iou": 0.9864217252396166
+  },
+  {
+    "key": "PNG/Shirts/Navy/navyShirt4.png",
+    "error": 0.0020050441907074265,
+    "iou": 0.9970561998215879
+  },
+  {
+    "key": "PNG/Skin/Tint 5/tint5_arm.png",
+    "error": 0.001929152548460868,
+    "iou": 0.9934557530767728
+  },
+  {
+    "key": "PNG/Shirts/Grey/greyShirt3.png",
+    "error": 0.0025336293539660495,
+    "iou": 0.9970632087832648
+  },
+  {
+    "key": "PNG/Pants/Red/pantsRed_short.png",
+    "error": 0.003004691867833077,
+    "iou": 0.9956151340516162
+  },
+  {
+    "key": "PNG/Skin/Tint 4/tint4_neck.png",
+    "error": 0.0063167232976921615,
+    "iou": 0.9876208897485493
+  },
+  {
+    "key": "PNG/Shirts/Pine/pineShirt7.png",
+    "error": 0.0059146723587846,
+    "iou": 0.9966129250779028
+  },
+  {
+    "key": "PNG/Hair/Brown 2/brown2Woman2.png",
+    "error": 0.0018164359226458117,
+    "iou": 0.9866980973227816
+  },
+  {
+    "key": "PNG/Hair/Tan/tanMan4.png",
+    "error": 0.0038549951392526107,
+    "iou": 0.9874005305039788
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 6/tint6Nose1.png",
+    "error": 0.012545883628593758,
+    "iou": 0.9741035856573705
+  },
+  {
+    "key": "PNG/Hair/Grey/greyWoman5.png",
+    "error": 0.002427292914188454,
+    "iou": 0.9886404293381038
+  },
+  {
+    "key": "PNG/Pants/Pine/pantsPine2.png",
+    "error": 0.004794076772992176,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Shirts/Yellow/armYellow_short.png",
+    "error": 0.004011965668897452,
+    "iou": 0.9931982043259421
+  },
+  {
+    "key": "PNG/Skin/Tint 3/tint3_leg.png",
+    "error": 0.0023168178169484938,
+    "iou": 0.9968711587886915
+  },
+  {
+    "key": "PNG/Pants/Green/pantsGreen_shorter.png",
+    "error": 0.003296773007845671,
+    "iou": 0.994266876881181
+  },
+  {
+    "key": "PNG/Hair/White/whiteMan5.png",
+    "error": 0.004029322263159501,
+    "iou": 0.9886539453326457
+  },
+  {
+    "key": "PNG/Shirts/White/armWhite_short.png",
+    "error": 0.005397097107370696,
+    "iou": 0.99265605875153
+  },
+  {
+    "key": "PNG/Shirts/Navy/navyShirt6.png",
+    "error": 0.003247038847740103,
+    "iou": 0.9968830464832633
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 4/tint4Nose1.png",
+    "error": 0.010754761107479045,
+    "iou": 0.9840637450199203
+  },
+  {
+    "key": "PNG/Shirts/Grey/greyShirt6.png",
+    "error": 0.003477982338987587,
+    "iou": 0.996658086076864
+  },
+  {
+    "key": "PNG/Hair/Black/blackWoman6.png",
+    "error": 0.0017350816765636268,
+    "iou": 0.9863392857142858
+  },
+  {
+    "key": "PNG/Face/Eyebrows/redBrow3.png",
+    "error": 0.007657094556392336,
+    "iou": 0.9742857142857143
+  },
+  {
+    "key": "PNG/Shirts/Grey/greyShirt2.png",
+    "error": 0.003225534546605475,
+    "iou": 0.9962052764727142
+  },
+  {
+    "key": "PNG/Face/Eyes/eyePine_small.png",
+    "error": 0.010517973856209145,
+    "iou": 0.9611111111111111
+  },
+  {
+    "key": "PNG/Shirts/White/whiteShirt8.png",
+    "error": 0.006401123265552854,
+    "iou": 0.9970632087832648
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 7/tint7Nose1.png",
+    "error": 0.010415077268520727,
+    "iou": 0.98
+  },
+  {
+    "key": "PNG/Hair/White/whiteWoman5.png",
+    "error": 0.0035189280580851254,
+    "iou": 0.9871359656959086
+  },
+  {
+    "key": "PNG/Hair/Brown 1/brown1Woman3.png",
+    "error": 0.0018328471931029905,
+    "iou": 0.9867080959779043
+  },
+  {
+    "key": "PNG/Pants/Navy/pantsNavy_shorter.png",
+    "error": 0.002586513992223344,
+    "iou": 0.994266876881181
+  },
+  {
+    "key": "PNG/Hair/Brown 2/brown2Man6.png",
+    "error": 0.0026782691526963417,
+    "iou": 0.9861830742659758
+  },
+  {
+    "key": "PNG/Face/Eyebrows/blondeBrow1.png",
+    "error": 0.012026720492118411,
+    "iou": 0.9748858447488584
+  },
+  {
+    "key": "PNG/Pants/Tan/pantsTan3.png",
+    "error": 0.0055596686254674186,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Pants/Grey/pantsGrey_short.png",
+    "error": 0.0034025049035898854,
+    "iou": 0.9956151340516162
+  },
+  {
+    "key": "PNG/Hair/Black/blackMan4.png",
+    "error": 0.0019637981774988664,
+    "iou": 0.9874005305039788
+  },
+  {
+    "key": "PNG/Shirts/Yellow/shirtYellow1.png",
+    "error": 0.0019030714393552675,
+    "iou": 0.9970632087832648
+  },
+  {
+    "key": "PNG/Shirts/Blue/blueShirt4.png",
+    "error": 0.0029488582725718123,
+    "iou": 0.9971897582299938
+  },
+  {
+    "key": "PNG/Face/Eyebrows/brown2Brow1.png",
+    "error": 0.007650044100685257,
+    "iou": 0.9748858447488584
+  },
+  {
+    "key": "PNG/Shoes/Grey/greyShoe5.png",
+    "error": 0.013311263456849845,
+    "iou": 0.9744539059607553
+  },
+  {
+    "key": "PNG/Hair/Red/redMan2.png",
+    "error": 0.0027023978248060963,
+    "iou": 0.9885153726522311
+  },
+  {
+    "key": "PNG/Shirts/Green/greenShirt6.png",
+    "error": 0.004603626732215935,
+    "iou": 0.9966129250779028
+  },
+  {
+    "key": "PNG/Pants/Tan/pantsTan_short.png",
+    "error": 0.00408278645829051,
+    "iou": 0.9956151340516162
+  },
+  {
+    "key": "PNG/Hair/White/whiteMan2.png",
+    "error": 0.0035331318584793984,
+    "iou": 0.9885153726522311
+  },
+  {
+    "key": "PNG/Skin/Tint 8/tint8_head.png",
+    "error": 0.0016813278637988196,
+    "iou": 0.9957997557997558
+  },
+  {
+    "key": "PNG/Hair/Red/redMan1.png",
+    "error": 0.003207469752062646,
+    "iou": 0.9881197167009367
+  },
+  {
+    "key": "PNG/Skin/Tint 2/tint2_leg.png",
+    "error": 0.0021221908437040354,
+    "iou": 0.9968711587886915
+  },
+  {
+    "key": "PNG/Hair/Blonde/blondeMan1.png",
+    "error": 0.003595806120029481,
+    "iou": 0.9881197167009367
+  },
+  {
+    "key": "PNG/Shirts/Yellow/shirtYellow8.png",
+    "error": 0.003806351561587711,
+    "iou": 0.9972438098680644
+  },
+  {
+    "key": "PNG/Hair/Brown 1/brown1Man7.png",
+    "error": 0.002512204624889406,
+    "iou": 0.985406258217197
+  },
+  {
+    "key": "PNG/Pants/Navy/pantsNavy3.png",
+    "error": 0.006357012864397384,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Shirts/Blue/blueArm_short.png",
+    "error": 0.0036188649465546665,
+    "iou": 0.9931982043259421
+  },
+  {
+    "key": "PNG/Hair/Brown 1/brown1Man3.png",
+    "error": 0.0019417862775320649,
+    "iou": 0.989179564443227
+  },
+  {
+    "key": "PNG/Pants/Blue 1/pantsBlue13.png",
+    "error": 0.006039798562761983,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Hair/White/whiteMan3.png",
+    "error": 0.003793696451834868,
+    "iou": 0.990407016582157
+  },
+  {
+    "key": "PNG/Skin/Tint 3/tint3_arm.png",
+    "error": 0.00232857022651656,
+    "iou": 0.9936498632278233
+  },
+  {
+    "key": "PNG/Shirts/Blue/blueShirt2.png",
+    "error": 0.01106661342292744,
+    "iou": 0.9972443079147091
+  },
+  {
+    "key": "PNG/Hair/Brown 1/brown1Man4.png",
+    "error": 0.0022422917453667817,
+    "iou": 0.9869992040329
+  },
+  {
+    "key": "PNG/Hair/White/whiteWoman1.png",
+    "error": 0.0029972392407320737,
+    "iou": 0.9891420706530051
+  },
+  {
+    "key": "PNG/Skin/Tint 4/tint4_arm.png",
+    "error": 0.00174017678853888,
+    "iou": 0.9942349032636311
+  },
+  {
+    "key": "PNG/Shirts/Grey/greyArm_short.png",
+    "error": 0.003926403659392185,
+    "iou": 0.9931982043259421
+  },
+  {
+    "key": "PNG/Skin/Tint 1/tint1_neck.png",
+    "error": 0.006657010600565972,
+    "iou": 0.9883900928792569
+  },
+  {
+    "key": "PNG/Pants/Light Blue/pantsLightBlue4.png",
+    "error": 0.005956330457285384,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 2/tint2Nose2.png",
+    "error": 0.01778387185484217,
+    "iou": 0.9669603524229075
+  },
+  {
+    "key": "PNG/Skin/Tint 4/tint4_hand.png",
+    "error": 0.004268385665211795,
+    "iou": 0.9921259842519685
+  },
+  {
+    "key": "PNG/Pants/Brown/pantsBrown_short.png",
+    "error": 0.0037758531259803147,
+    "iou": 0.9956151340516162
+  },
+  {
+    "key": "PNG/Hair/Grey/greyWoman6.png",
+    "error": 0.002923250447191662,
+    "iou": 0.989199911836015
+  },
+  {
+    "key": "PNG/Shirts/Blue/blueShirt6.png",
+    "error": 0.005256067176650072,
+    "iou": 0.9966129250779028
+  },
+  {
+    "key": "PNG/Skin/Tint 5/tint5_leg.png",
+    "error": 0.0018394496740294342,
+    "iou": 0.9968711587886915
+  },
+  {
+    "key": "PNG/Pants/Brown/pantsBrown4.png",
+    "error": 0.005047437174634795,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Hair/Red/redMan6.png",
+    "error": 0.003755805442167002,
+    "iou": 0.986770965144369
+  },
+  {
+    "key": "PNG/Hair/Brown 2/brown2Man3.png",
+    "error": 0.0020098449202582726,
+    "iou": 0.989179564443227
+  },
+  {
+    "key": "PNG/Shirts/Yellow/shirtYellow3.png",
+    "error": 0.0036023515570818955,
+    "iou": 0.9970632087832648
+  },
+  {
+    "key": "PNG/Hair/Brown 2/brown2Man7.png",
+    "error": 0.002594986193563471,
+    "iou": 0.985406258217197
+  },
+  {
+    "key": "PNG/Shirts/Navy/navyArm_long.png",
+    "error": 0.0019765669251982036,
+    "iou": 0.9921333107765183
+  },
+  {
+    "key": "PNG/Hair/White/whiteMan6.png",
+    "error": 0.004736656822420893,
+    "iou": 0.988015671813782
+  },
+  {
+    "key": "PNG/Pants/Light Blue/pantsLightBlue_shorter.png",
+    "error": 0.004097136139523665,
+    "iou": 0.994266876881181
+  },
+  {
+    "key": "PNG/Hair/White/whiteWoman3.png",
+    "error": 0.003885106355564108,
+    "iou": 0.9871713743312431
+  },
+  {
+    "key": "PNG/Pants/Yellow/legYellow_short.png",
+    "error": 0.003494588313734501,
+    "iou": 0.9956151340516162
+  },
+  {
+    "key": "PNG/Hair/Tan/tanMan6.png",
+    "error": 0.004683826489292218,
+    "iou": 0.9850574712643678
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 5/tint5Nose3.png",
+    "error": 0.020915207437698792,
+    "iou": 0.9437751004016064
+  },
+  {
+    "key": "PNG/Shirts/Blue/blueShirt3.png",
+    "error": 0.0043768379798561526,
+    "iou": 0.9970632087832648
+  },
+  {
+    "key": "PNG/Face/Eyes/eyeBlack_small.png",
+    "error": 0.009270921440471609,
+    "iou": 0.9611111111111111
+  },
+  {
+    "key": "PNG/Pants/Navy/pantsNavy_short.png",
+    "error": 0.0022102868597798342,
+    "iou": 0.9956151340516162
+  },
+  {
+    "key": "PNG/Shirts/Navy/navyArm_shorter.png",
+    "error": 0.0038414089526616632,
+    "iou": 0.9950865699578849
+  },
+  {
+    "key": "PNG/Pants/Red/pantsRed1.png",
+    "error": 0.004600056747853971,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Skin/Tint 8/tint8_neck.png",
+    "error": 0.003928517617963986,
+    "iou": 0.9876208897485493
+  },
+  {
+    "key": "PNG/Skin/Tint 5/tint5_head.png",
+    "error": 0.001993190887749562,
+    "iou": 0.9960429897410845
+  },
+  {
+    "key": "PNG/Hair/Black/blackWoman4.png",
+    "error": 0.0016702245311373029,
+    "iou": 0.9867096254530809
+  },
+  {
+    "key": "PNG/Shoes/Black/blackShoe2.png",
+    "error": 0.0029608964987747253,
+    "iou": 0.9950407368048175
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 3/tint3Nose3.png",
+    "error": 0.027286975871750947,
+    "iou": 0.9437751004016064
+  },
+  {
+    "key": "PNG/Shirts/Yellow/shirtYellow5.png",
+    "error": 0.0038473139163231296,
+    "iou": 0.9970180273799304
+  },
+  {
+    "key": "PNG/Shirts/White/whiteShirt1.png",
+    "error": 0.0025834050581436956,
+    "iou": 0.9970632087832648
+  },
+  {
+    "key": "PNG/Pants/Grey/pantsGrey_shorter.png",
+    "error": 0.003941451090240017,
+    "iou": 0.994266876881181
+  },
+  {
+    "key": "PNG/Face/Eyes/eyeBlue_large.png",
+    "error": 0.010450541872522427,
+    "iou": 0.9514285714285714
+  },
+  {
+    "key": "PNG/Pants/Blue 2/pantsBlue21.png",
+    "error": 0.00513541024918426,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Skin/Tint 3/tint3_head.png",
+    "error": 0.002523079559376747,
+    "iou": 0.9960429897410845
+  },
+  {
+    "key": "PNG/Pants/Blue 1/pantsBlue1_short.png",
+    "error": 0.0036195405598000445,
+    "iou": 0.9956151340516162
+  },
+  {
+    "key": "PNG/Shirts/Yellow/shirtYellow6.png",
+    "error": 0.004171788495441527,
+    "iou": 0.9968830464832633
+  },
+  {
+    "key": "PNG/Face/Eyebrows/blondeBrow3.png",
+    "error": 0.00856387814641427,
+    "iou": 0.9742857142857143
+  },
+  {
+    "key": "PNG/Pants/Navy/pantsNavy_long.png",
+    "error": 0.001803900452751922,
+    "iou": 0.995472355245973
+  },
+  {
+    "key": "PNG/Pants/Blue 2/pantsBlue2_short.png",
+    "error": 0.003222437324274195,
+    "iou": 0.9956151340516162
+  },
+  {
+    "key": "PNG/Skin/Tint 7/tint7_leg.png",
+    "error": 0.0015862735821613558,
+    "iou": 0.9968711587886915
+  },
+  {
+    "key": "PNG/Shoes/Tan/tanShoe5.png",
+    "error": 0.014635576800599256,
+    "iou": 0.9744539059607553
+  },
+  {
+    "key": "PNG/Pants/Light Blue/pantsLightBlue3.png",
+    "error": 0.006115787435819822,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Face/Eyes/eyeBlue_small.png",
+    "error": 0.009427463795975902,
+    "iou": 0.9664804469273743
+  },
+  {
+    "key": "PNG/Shirts/Green/greenShirt2.png",
+    "error": 0.009609218566820316,
+    "iou": 0.9972443079147091
+  },
+  {
+    "key": "PNG/Hair/Brown 2/brown2Man1.png",
+    "error": 0.0025627246211874497,
+    "iou": 0.9864217252396166
+  },
+  {
+    "key": "PNG/Skin/Tint 7/tint7_head.png",
+    "error": 0.0017096748027103825,
+    "iou": 0.9960429897410845
+  },
+  {
+    "key": "PNG/Shirts/Grey/greyShirt7.png",
+    "error": 0.006198777127004965,
+    "iou": 0.9966129250779028
+  },
+  {
+    "key": "PNG/Hair/Tan/tanWoman6.png",
+    "error": 0.003409178057942017,
+    "iou": 0.9863392857142858
+  },
+  {
+    "key": "PNG/Hair/Brown 1/brown1Man6.png",
+    "error": 0.0025953346313048295,
+    "iou": 0.9861830742659758
+  },
+  {
+    "key": "PNG/Shirts/Yellow/shirtYellow7.png",
+    "error": 0.005871068613168137,
+    "iou": 0.9968830464832633
+  },
+  {
+    "key": "PNG/Shoes/Tan/tanShoe2.png",
+    "error": 0.004485428992901568,
+    "iou": 0.9950407368048175
+  },
+  {
+    "key": "PNG/Shirts/Pine/pineShirt5.png",
+    "error": 0.0037311337320461266,
+    "iou": 0.9967921203632585
+  },
+  {
+    "key": "PNG/Shirts/Grey/greyArm_long.png",
+    "error": 0.0030526794909271435,
+    "iou": 0.9921333107765183
+  },
+  {
+    "key": "PNG/Shirts/Blue/blueArm_shorter.png",
+    "error": 0.007189276959937614,
+    "iou": 0.990857946554149
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 2/tint2Nose1.png",
+    "error": 0.011777320668938029,
+    "iou": 0.9840637450199203
+  },
+  {
+    "key": "PNG/Shoes/Black/blackShoe4.png",
+    "error": 0.004095793372278688,
+    "iou": 0.9913130638155697
+  },
+  {
+    "key": "PNG/Face/Eyebrows/blackBrow3.png",
+    "error": 0.004586369495895253,
+    "iou": 0.9742857142857143
+  },
+  {
+    "key": "PNG/Face/Completes/face1.png",
+    "error": 0.0042833023094697095,
+    "iou": 0.9661590524534687
+  },
+  {
+    "key": "PNG/Skin/Tint 8/tint8_arm.png",
+    "error": 0.0012777606496835894,
+    "iou": 0.9942349032636311
+  },
+  {
+    "key": "PNG/Skin/Tint 2/tint2_neck.png",
+    "error": 0.006288768223240543,
+    "iou": 0.9883900928792569
+  },
+  {
+    "key": "PNG/Shirts/Blue/blueShirt1.png",
+    "error": 0.0018084550561059422,
+    "iou": 0.9970632087832648
+  },
+  {
+    "key": "PNG/Shoes/Brown 2/brown2Shoe4.png",
+    "error": 0.004693072612162662,
+    "iou": 0.9913130638155697
+  },
+  {
+    "key": "PNG/Pants/Navy/pantsNavy2.png",
+    "error": 0.004948424626857747,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Pants/White/pantsWhite1.png",
+    "error": 0.007367877987943778,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Face/Mouth/mouth_sad.png",
+    "error": 0.010784261535330122,
+    "iou": 0.9329268292682927
+  },
+  {
+    "key": "PNG/Shirts/Blue/blueShirt8.png",
+    "error": 0.004732716949101957,
+    "iou": 0.9972438098680644
+  },
+  {
+    "key": "PNG/Pants/Green/pantsGreen4.png",
+    "error": 0.005108406097993704,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Hair/Red/redWoman2.png",
+    "error": 0.002209015126193494,
+    "iou": 0.9887043749473152
+  },
+  {
+    "key": "PNG/Pants/Blue 2/pantsBlue24.png",
+    "error": 0.006277286246408509,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 2/tint2Nose3.png",
+    "error": 0.02444917455990121,
+    "iou": 0.9437751004016064
+  },
+  {
+    "key": "PNG/Shirts/Pine/pineShirt4.png",
+    "error": 0.0024874744755375255,
+    "iou": 0.9970561998215879
+  },
+  {
+    "key": "PNG/Face/Eyebrows/brown1Brow2.png",
+    "error": 0.04570739038626622,
+    "iou": 0.8501529051987767
+  },
+  {
+    "key": "PNG/Face/Eyebrows/blackBrow2.png",
+    "error": 0.04025096095566174,
+    "iou": 0.8501529051987767
+  },
+  {
+    "key": "PNG/Shoes/Black/blackShoe5.png",
+    "error": 0.009607100106069407,
+    "iou": 0.9744539059607553
+  },
+  {
+    "key": "PNG/Shirts/White/whiteShirt2.png",
+    "error": 0.014552544196650438,
+    "iou": 0.9972443079147091
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 5/tint5Nose2.png",
+    "error": 0.01523373088342092,
+    "iou": 0.9669603524229075
+  },
+  {
+    "key": "PNG/Pants/Green/pantsGreen_long.png",
+    "error": 0.0022580301149943034,
+    "iou": 0.995472355245973
+  },
+  {
+    "key": "PNG/Hair/Brown 2/brown2Man5.png",
+    "error": 0.0020925676013395338,
+    "iou": 0.9894769421231817
+  },
+  {
+    "key": "PNG/Hair/Blonde/blondeWoman1.png",
+    "error": 0.002257415215436281,
+    "iou": 0.9882235986847137
+  },
+  {
+    "key": "PNG/Hair/Black/blackMan7.png",
+    "error": 0.0022034123096919744,
+    "iou": 0.9858044164037855
+  },
+  {
+    "key": "PNG/Pants/Pine/pantsPine_shorter.png",
+    "error": 0.0031147036994787877,
+    "iou": 0.994266876881181
+  },
+  {
+    "key": "PNG/Shirts/Pine/pineShirt2.png",
+    "error": 0.008233577141365798,
+    "iou": 0.9972443079147091
+  },
+  {
+    "key": "PNG/Hair/Brown 2/brown2Woman1.png",
+    "error": 0.0014214374406126616,
+    "iou": 0.9882235986847137
+  },
+  {
+    "key": "PNG/Shirts/White/whiteShirt5.png",
+    "error": 0.0036146397291588537,
+    "iou": 0.9967470859311467
+  },
+  {
+    "key": "PNG/Skin/Tint 6/tint6_hand.png",
+    "error": 0.003648018793901181,
+    "iou": 0.9924265374129052
+  },
+  {
+    "key": "PNG/Shoes/Black/blackShoe1.png",
+    "error": 0.003110208761574435,
+    "iou": 0.994328922495274
+  },
+  {
+    "key": "PNG/Face/Eyes/eyeBrown_large.png",
+    "error": 0.010306545276062493,
+    "iou": 0.9514285714285714
+  },
+  {
+    "key": "PNG/Hair/Brown 2/brown2Man2.png",
+    "error": 0.0016730319632790166,
+    "iou": 0.9903028851909493
+  },
+  {
+    "key": "PNG/Shoes/Blue/blueShoe2.png",
+    "error": 0.002999492245792762,
+    "iou": 0.9950407368048175
+  },
+  {
+    "key": "PNG/Shirts/Green/greenArm_shorter.png",
+    "error": 0.004843722163304341,
+    "iou": 0.9953183520599251
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 1/tint1Nose1.png",
+    "error": 0.012412365325636894,
+    "iou": 0.9840637450199203
+  },
+  {
+    "key": "PNG/Shirts/Red/redShirt1.png",
+    "error": 0.0017077387784862645,
+    "iou": 0.9970632087832648
+  },
+  {
+    "key": "PNG/Pants/Tan/pantsTan4.png",
+    "error": 0.005432069894279729,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Skin/Tint 7/tint7_arm.png",
+    "error": 0.001594545749638483,
+    "iou": 0.9936498632278233
+  },
+  {
+    "key": "PNG/Hair/Blonde/blondeWoman2.png",
+    "error": 0.002316655043722585,
+    "iou": 0.9895385134565089
+  },
+  {
+    "key": "PNG/Hair/Black/blackMan5.png",
+    "error": 0.0016281758132058834,
+    "iou": 0.9902872494317008
+  },
+  {
+    "key": "PNG/Shirts/Navy/navyShirt7.png",
+    "error": 0.0047521702369346525,
+    "iou": 0.9968830464832633
+  },
+  {
+    "key": "PNG/Hair/Black/blackWoman1.png",
+    "error": 0.0020111943636477343,
+    "iou": 0.9861370301253
+  },
+  {
+    "key": "PNG/Hair/Tan/tanWoman4.png",
+    "error": 0.003285080822748947,
+    "iou": 0.9867096254530809
+  },
+  {
+    "key": "PNG/Skin/Tint 6/tint6_leg.png",
+    "error": 0.0017225984720315262,
+    "iou": 0.9968711587886915
+  },
+  {
+    "key": "PNG/Hair/Brown 2/brown2Woman5.png",
+    "error": 0.0020105233948679467,
+    "iou": 0.9863392857142858
+  },
+  {
+    "key": "PNG/Hair/Red/redWoman6.png",
+    "error": 0.003226240694197226,
+    "iou": 0.987889019377569
+  },
+  {
+    "key": "PNG/Shirts/Grey/greyShirt5.png",
+    "error": 0.0031770211933130864,
+    "iou": 0.9960695730743166
+  },
+  {
+    "key": "PNG/Shoes/Red/redShoe4.png",
+    "error": 0.005579623728228609,
+    "iou": 0.9913130638155697
+  },
+  {
+    "key": "PNG/Face/Eyes/eyePine_large.png",
+    "error": 0.010776763864587228,
+    "iou": 0.9514285714285714
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 1/tint1Nose2.png",
+    "error": 0.01885816486180529,
+    "iou": 0.9669603524229075
+  },
+  {
+    "key": "PNG/Hair/Red/redMan3.png",
+    "error": 0.002905707965906366,
+    "iou": 0.990407016582157
+  },
+  {
+    "key": "PNG/Shoes/Grey/greyShoe4.png",
+    "error": 0.005679340850510691,
+    "iou": 0.9913130638155697
+  },
+  {
+    "key": "PNG/Face/Nose/Tint 8/tint8Nose3.png",
+    "error": 0.016056202160008384,
+    "iou": 0.9437751004016064
+  },
+  {
+    "key": "PNG/Shirts/Pine/pineArm_long.png",
+    "error": 0.002386275944313273,
+    "iou": 0.9921333107765183
+  },
+  {
+    "key": "PNG/Pants/Blue 1/pantsBlue11.png",
+    "error": 0.005615125831977069,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Hair/Black/blackWoman2.png",
+    "error": 0.0012139888286701532,
+    "iou": 0.9882235986847137
+  },
+  {
+    "key": "PNG/Pants/Brown/pantsBrown_long.png",
+    "error": 0.003114198535885278,
+    "iou": 0.995472355245973
+  },
+  {
+    "key": "PNG/Shirts/Yellow/armYellow_long.png",
+    "error": 0.0030177977963086015,
+    "iou": 0.9921333107765183
+  },
+  {
+    "key": "PNG/Hair/White/whiteMan4.png",
+    "error": 0.004369482118542242,
+    "iou": 0.9884492830589485
+  },
+  {
+    "key": "PNG/Pants/White/pantsWhite4.png",
+    "error": 0.0062865089756403295,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Shirts/Red/redShirt3.png",
+    "error": 0.004120677509684585,
+    "iou": 0.9970632087832648
+  },
+  {
+    "key": "PNG/Shirts/Red/redShirt7.png",
+    "error": 0.007360884556603506,
+    "iou": 0.9966129250779028
+  },
+  {
+    "key": "PNG/Shirts/Pine/pineArm_short.png",
+    "error": 0.003176984569168314,
+    "iou": 0.99265605875153
+  },
+  {
+    "key": "PNG/Shoes/Tan/tanShoe4.png",
+    "error": 0.006243560558697128,
+    "iou": 0.9913130638155697
+  },
+  {
+    "key": "PNG/Pants/Pine/pantsPine4.png",
+    "error": 0.005241855514745671,
+    "iou": 0.9942726231386025
+  },
+  {
+    "key": "PNG/Pants/Pine/pantsPine_short.png",
+    "error": 0.002694426341645761,
+    "iou": 0.9956151340516162
+  }
+]

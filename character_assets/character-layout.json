@@ -1,0 +1,2116 @@
+{
+  "version": 1,
+  "description": "Legacy keys preserve saved layouts; all sources are SVG paths extracted from character_assets/Vector using Spritesheet names and native dimensions.",
+  "base": [
+    {
+      "id": "neck",
+      "label": "Boyun",
+      "path": "PNG/Skin/Tint 1/tint1_neck.png",
+      "x": 250.9988267500977,
+      "y": 273.0258114978491,
+      "rotation": 0,
+      "scale": 1,
+      "flip": false,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 96,
+      "height": 37
+    },
+    {
+      "id": "hand-right",
+      "label": "Sağ el",
+      "path": "PNG/Skin/Tint 1/tint1_hand.png",
+      "x": 407.83067213492376,
+      "y": 434.60791411956814,
+      "rotation": 85,
+      "scale": 1,
+      "flip": false,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 61,
+      "height": 71
+    },
+    {
+      "id": "hand-left",
+      "label": "Sol el",
+      "path": "PNG/Skin/Tint 1/tint1_hand.png",
+      "x": 131.16932786507613,
+      "y": 437.61143386927495,
+      "rotation": -75,
+      "scale": 1,
+      "flip": true,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 61,
+      "height": 71
+    },
+    {
+      "id": "leg-left",
+      "label": "Sol bacak / ten",
+      "path": "PNG/Skin/Tint 1/tint1_leg.png",
+      "x": 198.9941337504889,
+      "y": 477,
+      "rotation": 0,
+      "scale": 1,
+      "flip": true,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 93,
+      "height": 164
+    },
+    {
+      "id": "leg-right",
+      "label": "Sağ bacak / ten",
+      "path": "PNG/Skin/Tint 1/tint1_leg.png",
+      "x": 307.0046929996089,
+      "y": 477,
+      "rotation": 0,
+      "scale": 1,
+      "flip": false,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 93,
+      "height": 164
+    },
+    {
+      "id": "pants-leg-left",
+      "label": "Sol pantolon bacağı",
+      "path": "PNG/Pants/Light Blue/pantsLightBlue_long.png",
+      "x": 193.0035197497067,
+      "y": 457.9800547516621,
+      "rotation": 0,
+      "scale": 1,
+      "flip": true,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 111,
+      "height": 166
+    },
+    {
+      "id": "pants-leg-right",
+      "label": "Sağ pantolon bacağı",
+      "path": "PNG/Pants/Light Blue/pantsLightBlue_long.png",
+      "x": 297.9988267500978,
+      "y": 463.9870942510754,
+      "rotation": 0,
+      "scale": 1,
+      "flip": false,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 111,
+      "height": 166
+    },
+    {
+      "id": "shoe-left",
+      "label": "Sol ayakkabı",
+      "path": "PNG/Shoes/Brown 1/brownShoe5.png",
+      "x": 161.98122800156432,
+      "y": 628.9999999999999,
+      "rotation": 0,
+      "scale": 1,
+      "flip": true,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 94,
+      "height": 42
+    },
+    {
+      "id": "waist",
+      "label": "Pantolon / bel",
+      "path": "PNG/Pants/Light Blue/pantsLightBlue3.png",
+      "x": 223.5,
+      "y": 445,
+      "rotation": 0,
+      "scale": 1,
+      "flip": false,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 153,
+      "height": 47
+    },
+    {
+      "id": "arm-left",
+      "label": "Sol kol / ten",
+      "path": "PNG/Skin/Tint 1/tint1_arm.png",
+      "x": 83.02111849824007,
+      "y": 288.0035197497067,
+      "rotation": -25,
+      "scale": 1,
+      "flip": true,
+      "pivotX": 1,
+      "pivotY": 0,
+      "width": 170,
+      "height": 136
+    },
+    {
+      "id": "arm-right",
+      "label": "Sağ kol / ten",
+      "path": "PNG/Skin/Tint 1/tint1_arm.png",
+      "x": 350.9835745013688,
+      "y": 283.9988267500977,
+      "rotation": 25,
+      "scale": 1,
+      "flip": false,
+      "pivotX": 0,
+      "pivotY": 0,
+      "width": 170,
+      "height": 136
+    },
+    {
+      "id": "sleeve-left",
+      "label": "Sol kıyafet kolu",
+      "path": "PNG/Shirts/Red/redArm_long.png",
+      "x": 83.33416520098407,
+      "y": 280.3735956019512,
+      "rotation": -25,
+      "scale": 1,
+      "flip": true,
+      "pivotX": 1,
+      "pivotY": 0,
+      "width": 171,
+      "height": 142
+    },
+    {
+      "id": "sleeve-right",
+      "label": "Sağ kıyafet kolu",
+      "path": "PNG/Shirts/Red/redArm_long.png",
+      "x": 352.6740475483316,
+      "y": 280.3735956019511,
+      "rotation": 25,
+      "scale": 1,
+      "flip": false,
+      "pivotX": 0,
+      "pivotY": 0,
+      "width": 171,
+      "height": 142
+    },
+    {
+      "id": "shirt",
+      "label": "Gövde",
+      "path": "PNG/Shirts/Red/redShirt1.png",
+      "x": 223.5,
+      "y": 280,
+      "rotation": 0,
+      "scale": 1,
+      "flip": false,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 153,
+      "height": 174
+    },
+    {
+      "id": "head",
+      "label": "Baş",
+      "path": "PNG/Skin/Tint 1/tint1_head.png",
+      "x": 214.5011732499022,
+      "y": 126.041063746578,
+      "rotation": 0,
+      "scale": 1,
+      "flip": false,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 173,
+      "height": 168
+    },
+    {
+      "id": "brow-left",
+      "label": "Sol kaş",
+      "path": "PNG/Face/Eyebrows/brown2Brow1.png",
+      "x": 250.0046929996089,
+      "y": 188.03637074696906,
+      "rotation": 0,
+      "scale": 1,
+      "flip": false,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 40,
+      "height": 17
+    },
+    {
+      "id": "brow-right",
+      "label": "Sağ kaş",
+      "path": "PNG/Face/Eyebrows/brown2Brow1.png",
+      "x": 317.0023464998044,
+      "y": 187.03519749706686,
+      "rotation": 0,
+      "scale": 1,
+      "flip": true,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 40,
+      "height": 17
+    },
+    {
+      "id": "eye-left",
+      "label": "Sol göz",
+      "path": "PNG/Face/Eyes/eyeBrown_small.png",
+      "x": 261.0070394994134,
+      "y": 209.03519749706686,
+      "rotation": 0,
+      "scale": 1,
+      "flip": false,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 15,
+      "height": 16
+    },
+    {
+      "id": "eye-right",
+      "label": "Sağ göz",
+      "path": "PNG/Face/Eyes/eyeBrown_small.png",
+      "x": 327.0082127493156,
+      "y": 208.03402424716467,
+      "rotation": 0,
+      "scale": 1,
+      "flip": false,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 15,
+      "height": 16
+    },
+    {
+      "id": "nose",
+      "label": "Burun",
+      "path": "PNG/Face/Nose/Tint 1/tint1Nose1.png",
+      "x": 285,
+      "y": 233.0375439968713,
+      "rotation": 0,
+      "scale": 1,
+      "flip": false,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 31,
+      "height": 21
+    },
+    {
+      "id": "mouth",
+      "label": "Ağız",
+      "path": "PNG/Face/Mouth/mouth_happy.png",
+      "x": 284,
+      "y": 263.04341024638256,
+      "rotation": 0,
+      "scale": 1,
+      "flip": false,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 34,
+      "height": 13
+    },
+    {
+      "id": "hair",
+      "label": "Saç",
+      "path": "PNG/Hair/Brown 1/brown1Woman3.png",
+      "x": 224.00351974970647,
+      "y": 111.04575674618684,
+      "rotation": 0,
+      "scale": 1,
+      "flip": false,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 158,
+      "height": 286
+    },
+    {
+      "id": "shoe-right",
+      "label": "Sağ ayakkabı",
+      "path": "PNG/Shoes/Brown 1/brownShoe5.png",
+      "x": 344.01877199843557,
+      "y": 629.0000000000001,
+      "rotation": 0,
+      "scale": 1,
+      "flip": false,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "width": 94,
+      "height": 42
+    }
+  ],
+  "dimensions": {
+    "PNG/Shoes/Brown 2/brown2Shoe5.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Hair/Grey/greyMan4.png": {
+      "width": 159,
+      "height": 119
+    },
+    "PNG/Shoes/Brown 1/brownShoe5.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Hair/Black/blackWoman3.png": {
+      "width": 160,
+      "height": 227
+    },
+    "PNG/Skin/Tint 6/tint6_neck.png": {
+      "width": 96,
+      "height": 37
+    },
+    "PNG/Shirts/Grey/greyArm_shorter.png": {
+      "width": 66,
+      "height": 86
+    },
+    "PNG/Skin/Tint 4/tint4_head.png": {
+      "width": 173,
+      "height": 168
+    },
+    "PNG/Shoes/Brown 1/brownShoe4.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Hair/Brown 2/brown2Man4.png": {
+      "width": 158,
+      "height": 119
+    },
+    "PNG/Face/Nose/Tint 4/tint4Nose3.png": {
+      "width": 22,
+      "height": 15
+    },
+    "PNG/Shoes/Tan/tanShoe1.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Pants/Yellow/pantsYellow4.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Shirts/Red/redArm_long.png": {
+      "width": 171,
+      "height": 142
+    },
+    "PNG/Hair/White/whiteMan7.png": {
+      "width": 159,
+      "height": 119
+    },
+    "PNG/Hair/Tan/tanWoman3.png": {
+      "width": 168,
+      "height": 213
+    },
+    "PNG/Shirts/Green/greenArm_short.png": {
+      "width": 118,
+      "height": 96
+    },
+    "PNG/Shoes/Brown 1/brownShoe1.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Pants/Blue 2/pantsBlue2_shorter.png": {
+      "width": 104,
+      "height": 105
+    },
+    "PNG/Face/Completes/face3.png": {
+      "width": 112,
+      "height": 65
+    },
+    "PNG/Pants/White/pantsWhite3.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Skin/Tint 8/tint8_hand.png": {
+      "width": 61,
+      "height": 71
+    },
+    "PNG/Shoes/Grey/greyShoe3.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Skin/Tint 1/tint1_leg.png": {
+      "width": 93,
+      "height": 164
+    },
+    "PNG/Shoes/Brown 2/brown2Shoe3.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Hair/Brown 1/brown1Woman6.png": {
+      "width": 168,
+      "height": 213
+    },
+    "PNG/Shirts/White/whiteShirt4.png": {
+      "width": 161,
+      "height": 174
+    },
+    "PNG/Hair/Grey/greyWoman1.png": {
+      "width": 158,
+      "height": 285
+    },
+    "PNG/Shirts/Pine/pineShirt3.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Face/Eyebrows/whiteBrow2.png": {
+      "width": 41,
+      "height": 11
+    },
+    "PNG/Face/Eyes/eyeGreen_small.png": {
+      "width": 15,
+      "height": 16
+    },
+    "PNG/Hair/Blonde/blondeMan6.png": {
+      "width": 159,
+      "height": 119
+    },
+    "PNG/Pants/Blue 2/pantsBlue2_long.png": {
+      "width": 111,
+      "height": 166
+    },
+    "PNG/Shirts/Green/greenShirt7.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Hair/Brown 1/brown1Woman2.png": {
+      "width": 160,
+      "height": 227
+    },
+    "PNG/Shoes/Brown 1/brownShoe2.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Shoes/Blue/blueShoe5.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Shoes/Red/redShoe5.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Hair/Blonde/blondeWoman3.png": {
+      "width": 158,
+      "height": 286
+    },
+    "PNG/Pants/Yellow/legYellow_long.png": {
+      "width": 111,
+      "height": 166
+    },
+    "PNG/Skin/Tint 1/tint1_arm.png": {
+      "width": 170,
+      "height": 136
+    },
+    "PNG/Face/Eyebrows/tanBrow2.png": {
+      "width": 41,
+      "height": 11
+    },
+    "PNG/Pants/Tan/pantsTan2.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Face/Eyebrows/blackBrow1.png": {
+      "width": 40,
+      "height": 17
+    },
+    "PNG/Skin/Tint 4/tint4_leg.png": {
+      "width": 93,
+      "height": 164
+    },
+    "PNG/Hair/Red/redMan4.png": {
+      "width": 159,
+      "height": 119
+    },
+    "PNG/Shirts/Pine/pineArm_shorter.png": {
+      "width": 67,
+      "height": 86
+    },
+    "PNG/Face/Nose/Tint 7/tint7Nose3.png": {
+      "width": 22,
+      "height": 15
+    },
+    "PNG/Pants/Brown/pantsBrown_shorter.png": {
+      "width": 104,
+      "height": 105
+    },
+    "PNG/Pants/Pine/pantsPine1.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Hair/Grey/greyMan7.png": {
+      "width": 159,
+      "height": 119
+    },
+    "PNG/Shoes/Red/redShoe2.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Hair/Red/redWoman4.png": {
+      "width": 165,
+      "height": 227
+    },
+    "PNG/Pants/Red/pantsRed2.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Pants/Light Blue/pantsLightBlue1.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Skin/Tint 2/tint2_head.png": {
+      "width": 173,
+      "height": 168
+    },
+    "PNG/Hair/Grey/greyWoman4.png": {
+      "width": 165,
+      "height": 227
+    },
+    "PNG/Face/Eyebrows/brown1Brow1.png": {
+      "width": 40,
+      "height": 17
+    },
+    "PNG/Skin/Tint 3/tint3_hand.png": {
+      "width": 61,
+      "height": 71
+    },
+    "PNG/Pants/Green/pantsGreen_short.png": {
+      "width": 107,
+      "height": 118
+    },
+    "PNG/Hair/Blonde/blondeMan3.png": {
+      "width": 159,
+      "height": 119
+    },
+    "PNG/Skin/Tint 2/tint2_arm.png": {
+      "width": 170,
+      "height": 136
+    },
+    "PNG/Hair/Blonde/blondeWoman6.png": {
+      "width": 168,
+      "height": 213
+    },
+    "PNG/Skin/Tint 2/tint2_hand.png": {
+      "width": 61,
+      "height": 71
+    },
+    "PNG/Hair/Black/blackWoman5.png": {
+      "width": 168,
+      "height": 213
+    },
+    "PNG/Face/Eyebrows/greyBrow3.png": {
+      "width": 40,
+      "height": 17
+    },
+    "PNG/Skin/Tint 5/tint5_neck.png": {
+      "width": 96,
+      "height": 37
+    },
+    "PNG/Shoes/Grey/greyShoe1.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Shirts/Blue/blueShirt7.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Shoes/Red/redShoe1.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Hair/Tan/tanMan1.png": {
+      "width": 158,
+      "height": 119
+    },
+    "PNG/Shirts/Pine/pineShirt8.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Shoes/Blue/blueShoe4.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Shirts/Navy/navyShirt8.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Hair/Grey/greyMan1.png": {
+      "width": 159,
+      "height": 119
+    },
+    "PNG/Hair/Tan/tanMan3.png": {
+      "width": 158,
+      "height": 119
+    },
+    "PNG/Hair/Red/redMan7.png": {
+      "width": 159,
+      "height": 119
+    },
+    "PNG/Shirts/Red/redArm_shorter.png": {
+      "width": 66,
+      "height": 86
+    },
+    "PNG/Hair/Brown 1/brown1Man5.png": {
+      "width": 171,
+      "height": 130
+    },
+    "PNG/Pants/Blue 1/pantsBlue1_long.png": {
+      "width": 111,
+      "height": 166
+    },
+    "PNG/Hair/Blonde/blondeMan7.png": {
+      "width": 159,
+      "height": 119
+    },
+    "PNG/Face/Nose/Tint 5/tint5Nose1.png": {
+      "width": 31,
+      "height": 21
+    },
+    "PNG/Pants/Red/pantsRed3.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Pants/Green/pantsGreen1.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Shirts/Grey/greyShirt1.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Hair/White/whiteWoman4.png": {
+      "width": 165,
+      "height": 227
+    },
+    "PNG/Hair/Grey/greyWoman3.png": {
+      "width": 158,
+      "height": 286
+    },
+    "PNG/Shoes/Brown 2/brown2Shoe2.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Face/Nose/Tint 3/tint3Nose2.png": {
+      "width": 24,
+      "height": 24
+    },
+    "PNG/Shirts/Pine/pineShirt1.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Pants/Yellow/pantsYellow2.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Shirts/Grey/greyShirt4.png": {
+      "width": 161,
+      "height": 174
+    },
+    "PNG/Skin/Tint 6/tint6_head.png": {
+      "width": 173,
+      "height": 168
+    },
+    "PNG/Pants/Grey/pantsGrey4.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Face/Completes/face2.png": {
+      "width": 98,
+      "height": 108
+    },
+    "PNG/Shirts/Red/redArm_short.png": {
+      "width": 118,
+      "height": 96
+    },
+    "PNG/Hair/Grey/greyWoman2.png": {
+      "width": 160,
+      "height": 227
+    },
+    "PNG/Pants/Grey/pantsGrey_long.png": {
+      "width": 111,
+      "height": 166
+    },
+    "PNG/Pants/Light Blue/pantsLightBlue_short.png": {
+      "width": 107,
+      "height": 118
+    },
+    "PNG/Shirts/Pine/pineShirt6.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Skin/Tint 1/tint1_hand.png": {
+      "width": 61,
+      "height": 71
+    },
+    "PNG/Hair/Brown 1/brown1Woman1.png": {
+      "width": 158,
+      "height": 285
+    },
+    "PNG/Shoes/Brown 2/brown2Shoe1.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Hair/Black/blackMan1.png": {
+      "width": 158,
+      "height": 119
+    },
+    "PNG/Pants/Blue 2/pantsBlue23.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Face/Nose/Tint 6/tint6Nose3.png": {
+      "width": 22,
+      "height": 15
+    },
+    "PNG/Pants/White/pantsWhite_shorter.png": {
+      "width": 104,
+      "height": 105
+    },
+    "PNG/Shirts/Yellow/shirtYellow4.png": {
+      "width": 161,
+      "height": 174
+    },
+    "PNG/Pants/Navy/pantsNavy4.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Shirts/White/armWhite_shorter.png": {
+      "width": 67,
+      "height": 86
+    },
+    "PNG/Face/Mouth/mouth_teethUpper.png": {
+      "width": 34,
+      "height": 13
+    },
+    "PNG/Hair/Red/redWoman3.png": {
+      "width": 159,
+      "height": 286
+    },
+    "PNG/Pants/Blue 1/pantsBlue1_shorter.png": {
+      "width": 104,
+      "height": 105
+    },
+    "PNG/Pants/Green/pantsGreen2.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Pants/Yellow/pantsYellow1.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Pants/Tan/pantsTan1.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Skin/Tint 1/tint1_head.png": {
+      "width": 173,
+      "height": 168
+    },
+    "PNG/Shirts/Navy/navyShirt3.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Hair/Black/blackMan3.png": {
+      "width": 158,
+      "height": 119
+    },
+    "PNG/Shirts/White/whiteShirt6.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Pants/Green/pantsGreen3.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Face/Mouth/mouth_happy.png": {
+      "width": 34,
+      "height": 13
+    },
+    "PNG/Skin/Tint 7/tint7_hand.png": {
+      "width": 61,
+      "height": 71
+    },
+    "PNG/Face/Eyebrows/greyBrow1.png": {
+      "width": 40,
+      "height": 17
+    },
+    "PNG/Pants/Navy/pantsNavy1.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Shoes/Blue/blueShoe3.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Face/Eyes/eyeBlack_large.png": {
+      "width": 21,
+      "height": 21
+    },
+    "PNG/Shirts/Blue/blueArm_long.png": {
+      "width": 171,
+      "height": 142
+    },
+    "PNG/Shirts/Green/greenShirt8.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Skin/Tint 3/tint3_neck.png": {
+      "width": 96,
+      "height": 37
+    },
+    "PNG/Shirts/White/armWhite_long.png": {
+      "width": 171,
+      "height": 142
+    },
+    "PNG/Hair/Tan/tanWoman5.png": {
+      "width": 165,
+      "height": 227
+    },
+    "PNG/Shirts/Navy/navyArm_short.png": {
+      "width": 118,
+      "height": 96
+    },
+    "PNG/Shirts/Green/greenShirt4.png": {
+      "width": 161,
+      "height": 174
+    },
+    "PNG/Face/Eyebrows/greyBrow2.png": {
+      "width": 41,
+      "height": 11
+    },
+    "PNG/Shoes/Black/blackShoe3.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Pants/White/pantsWhite_short.png": {
+      "width": 107,
+      "height": 118
+    },
+    "PNG/Face/Eyebrows/whiteBrow3.png": {
+      "width": 40,
+      "height": 17
+    },
+    "PNG/Shoes/Brown 1/brownShoe3.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Face/Mouth/mouth_teethLower.png": {
+      "width": 34,
+      "height": 13
+    },
+    "PNG/Face/Eyes/eyeBrown_small.png": {
+      "width": 15,
+      "height": 16
+    },
+    "PNG/Shirts/Navy/navyShirt2.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Shirts/Red/redShirt6.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Shirts/Blue/blueShirt5.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Shirts/Grey/greyShirt8.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Face/Eyebrows/tanBrow1.png": {
+      "width": 40,
+      "height": 17
+    },
+    "PNG/Face/Eyebrows/whiteBrow1.png": {
+      "width": 40,
+      "height": 17
+    },
+    "PNG/Hair/Brown 1/brown1Woman5.png": {
+      "width": 164,
+      "height": 213
+    },
+    "PNG/Pants/Brown/pantsBrown2.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Hair/Grey/greyMan6.png": {
+      "width": 159,
+      "height": 119
+    },
+    "PNG/Pants/Grey/pantsGrey1.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Face/Eyebrows/brown2Brow3.png": {
+      "width": 40,
+      "height": 17
+    },
+    "PNG/Hair/Black/blackMan2.png": {
+      "width": 158,
+      "height": 138
+    },
+    "PNG/Pants/Light Blue/pantsLightBlue_long.png": {
+      "width": 111,
+      "height": 166
+    },
+    "PNG/Pants/Yellow/legYellow_shorter.png": {
+      "width": 104,
+      "height": 105
+    },
+    "PNG/Pants/White/pantsWhite2.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Hair/Grey/greyMan5.png": {
+      "width": 171,
+      "height": 130
+    },
+    "PNG/Shirts/Yellow/shirtYellow2.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Hair/Brown 2/brown2Woman6.png": {
+      "width": 168,
+      "height": 213
+    },
+    "PNG/Hair/Tan/tanMan5.png": {
+      "width": 171,
+      "height": 130
+    },
+    "PNG/Pants/Yellow/pantsYellow3.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Pants/Tan/pantsTan_shorter.png": {
+      "width": 104,
+      "height": 105
+    },
+    "PNG/Hair/Brown 1/brown1Woman4.png": {
+      "width": 165,
+      "height": 227
+    },
+    "PNG/Face/Eyes/eyeGreen_large.png": {
+      "width": 21,
+      "height": 21
+    },
+    "PNG/Hair/Blonde/blondeMan4.png": {
+      "width": 159,
+      "height": 119
+    },
+    "PNG/Shoes/Grey/greyShoe2.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Hair/Brown 1/brown1Man2.png": {
+      "width": 158,
+      "height": 138
+    },
+    "PNG/Shoes/Blue/blueShoe1.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Shirts/Green/greenShirt1.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Hair/Tan/tanMan7.png": {
+      "width": 158,
+      "height": 119
+    },
+    "PNG/Shirts/White/whiteShirt3.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Face/Eyebrows/redBrow2.png": {
+      "width": 41,
+      "height": 11
+    },
+    "PNG/Shirts/White/whiteShirt7.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Shirts/Red/redShirt4.png": {
+      "width": 161,
+      "height": 174
+    },
+    "PNG/Hair/White/whiteWoman6.png": {
+      "width": 168,
+      "height": 213
+    },
+    "PNG/Shirts/Red/redShirt8.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Shirts/Green/greenShirt3.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Pants/Tan/pantsTan_long.png": {
+      "width": 111,
+      "height": 166
+    },
+    "PNG/Hair/Tan/tanWoman1.png": {
+      "width": 158,
+      "height": 285
+    },
+    "PNG/Pants/Grey/pantsGrey2.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Shirts/Navy/navyShirt1.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Hair/Black/blackMan6.png": {
+      "width": 158,
+      "height": 119
+    },
+    "PNG/Hair/Brown 2/brown2Woman4.png": {
+      "width": 165,
+      "height": 227
+    },
+    "PNG/Pants/Red/pantsRed_shorter.png": {
+      "width": 104,
+      "height": 105
+    },
+    "PNG/Hair/Red/redMan5.png": {
+      "width": 171,
+      "height": 130
+    },
+    "PNG/Face/Eyebrows/redBrow1.png": {
+      "width": 40,
+      "height": 17
+    },
+    "PNG/Face/Eyebrows/brown2Brow2.png": {
+      "width": 41,
+      "height": 11
+    },
+    "PNG/Face/Eyebrows/blondeBrow2.png": {
+      "width": 41,
+      "height": 11
+    },
+    "PNG/Hair/Grey/greyMan2.png": {
+      "width": 159,
+      "height": 138
+    },
+    "PNG/Shirts/Green/greenArm_long.png": {
+      "width": 171,
+      "height": 142
+    },
+    "PNG/Pants/White/pantsWhite_long.png": {
+      "width": 111,
+      "height": 166
+    },
+    "PNG/Face/Nose/Tint 1/tint1Nose3.png": {
+      "width": 22,
+      "height": 15
+    },
+    "PNG/Hair/Red/redWoman1.png": {
+      "width": 159,
+      "height": 285
+    },
+    "PNG/Pants/Blue 1/pantsBlue14.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Face/Nose/Tint 6/tint6Nose2.png": {
+      "width": 24,
+      "height": 24
+    },
+    "PNG/Face/Eyebrows/tanBrow3.png": {
+      "width": 40,
+      "height": 17
+    },
+    "PNG/Pants/Red/pantsRed4.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Hair/Brown 2/brown2Woman3.png": {
+      "width": 158,
+      "height": 286
+    },
+    "PNG/Skin/Tint 8/tint8_leg.png": {
+      "width": 93,
+      "height": 164
+    },
+    "PNG/Pants/Blue 2/pantsBlue22.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Hair/Blonde/blondeWoman5.png": {
+      "width": 164,
+      "height": 213
+    },
+    "PNG/Shirts/Navy/navyShirt5.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Skin/Tint 7/tint7_neck.png": {
+      "width": 96,
+      "height": 37
+    },
+    "PNG/Hair/Blonde/blondeWoman4.png": {
+      "width": 165,
+      "height": 227
+    },
+    "PNG/Shoes/Red/redShoe3.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Face/Mouth/mouth_oh.png": {
+      "width": 15,
+      "height": 15
+    },
+    "PNG/Skin/Tint 5/tint5_hand.png": {
+      "width": 61,
+      "height": 71
+    },
+    "PNG/Pants/Pine/pantsPine3.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Shirts/Green/greenShirt5.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Hair/Red/redWoman5.png": {
+      "width": 164,
+      "height": 213
+    },
+    "PNG/Pants/Brown/pantsBrown3.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Pants/Blue 1/pantsBlue12.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Hair/Tan/tanMan2.png": {
+      "width": 158,
+      "height": 138
+    },
+    "PNG/Shoes/Tan/tanShoe3.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Pants/Grey/pantsGrey3.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Shirts/Red/redShirt2.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Hair/Tan/tanWoman2.png": {
+      "width": 160,
+      "height": 227
+    },
+    "PNG/Face/Eyebrows/brown1Brow3.png": {
+      "width": 40,
+      "height": 17
+    },
+    "PNG/Face/Nose/Tint 8/tint8Nose2.png": {
+      "width": 24,
+      "height": 24
+    },
+    "PNG/Shirts/Red/redShirt5.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Skin/Tint 6/tint6_arm.png": {
+      "width": 170,
+      "height": 136
+    },
+    "PNG/Face/Nose/Tint 8/tint8Nose1.png": {
+      "width": 31,
+      "height": 21
+    },
+    "PNG/Face/Completes/face4.png": {
+      "width": 111,
+      "height": 87
+    },
+    "PNG/Hair/Blonde/blondeMan5.png": {
+      "width": 171,
+      "height": 130
+    },
+    "PNG/Pants/Light Blue/pantsLightBlue2.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Hair/Grey/greyMan3.png": {
+      "width": 159,
+      "height": 119
+    },
+    "PNG/Pants/Red/pantsRed_long.png": {
+      "width": 111,
+      "height": 166
+    },
+    "PNG/Face/Nose/Tint 4/tint4Nose2.png": {
+      "width": 24,
+      "height": 24
+    },
+    "PNG/Face/Nose/Tint 7/tint7Nose2.png": {
+      "width": 24,
+      "height": 24
+    },
+    "PNG/Hair/White/whiteMan1.png": {
+      "width": 159,
+      "height": 119
+    },
+    "PNG/Face/Mouth/mouth_glad.png": {
+      "width": 34,
+      "height": 13
+    },
+    "PNG/Face/Mouth/mouth_straight.png": {
+      "width": 36,
+      "height": 6
+    },
+    "PNG/Hair/Blonde/blondeMan2.png": {
+      "width": 159,
+      "height": 138
+    },
+    "PNG/Pants/Brown/pantsBrown1.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Pants/Pine/pantsPine_long.png": {
+      "width": 111,
+      "height": 166
+    },
+    "PNG/Face/Nose/Tint 3/tint3Nose1.png": {
+      "width": 31,
+      "height": 21
+    },
+    "PNG/Shirts/Yellow/armYellow_shorter.png": {
+      "width": 66,
+      "height": 86
+    },
+    "PNG/Hair/White/whiteWoman2.png": {
+      "width": 161,
+      "height": 227
+    },
+    "PNG/Hair/Brown 1/brown1Man1.png": {
+      "width": 158,
+      "height": 119
+    },
+    "PNG/Shirts/Navy/navyShirt4.png": {
+      "width": 161,
+      "height": 174
+    },
+    "PNG/Skin/Tint 5/tint5_arm.png": {
+      "width": 170,
+      "height": 136
+    },
+    "PNG/Shirts/Grey/greyShirt3.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Pants/Red/pantsRed_short.png": {
+      "width": 107,
+      "height": 118
+    },
+    "PNG/Skin/Tint 4/tint4_neck.png": {
+      "width": 96,
+      "height": 37
+    },
+    "PNG/Shirts/Pine/pineShirt7.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Hair/Brown 2/brown2Woman2.png": {
+      "width": 160,
+      "height": 227
+    },
+    "PNG/Hair/Tan/tanMan4.png": {
+      "width": 158,
+      "height": 119
+    },
+    "PNG/Face/Nose/Tint 6/tint6Nose1.png": {
+      "width": 31,
+      "height": 21
+    },
+    "PNG/Hair/Grey/greyWoman5.png": {
+      "width": 164,
+      "height": 213
+    },
+    "PNG/Pants/Pine/pantsPine2.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Shirts/Yellow/armYellow_short.png": {
+      "width": 118,
+      "height": 96
+    },
+    "PNG/Skin/Tint 3/tint3_leg.png": {
+      "width": 93,
+      "height": 164
+    },
+    "PNG/Pants/Green/pantsGreen_shorter.png": {
+      "width": 104,
+      "height": 105
+    },
+    "PNG/Hair/White/whiteMan5.png": {
+      "width": 171,
+      "height": 130
+    },
+    "PNG/Shirts/White/armWhite_short.png": {
+      "width": 118,
+      "height": 96
+    },
+    "PNG/Shirts/Navy/navyShirt6.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Face/Nose/Tint 4/tint4Nose1.png": {
+      "width": 31,
+      "height": 21
+    },
+    "PNG/Shirts/Grey/greyShirt6.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Hair/Black/blackWoman6.png": {
+      "width": 164,
+      "height": 213
+    },
+    "PNG/Face/Eyebrows/redBrow3.png": {
+      "width": 40,
+      "height": 17
+    },
+    "PNG/Shirts/Grey/greyShirt2.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Face/Eyes/eyePine_small.png": {
+      "width": 15,
+      "height": 16
+    },
+    "PNG/Shirts/White/whiteShirt8.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Face/Nose/Tint 7/tint7Nose1.png": {
+      "width": 31,
+      "height": 21
+    },
+    "PNG/Hair/White/whiteWoman5.png": {
+      "width": 164,
+      "height": 213
+    },
+    "PNG/Hair/Brown 1/brown1Woman3.png": {
+      "width": 158,
+      "height": 286
+    },
+    "PNG/Pants/Navy/pantsNavy_shorter.png": {
+      "width": 104,
+      "height": 105
+    },
+    "PNG/Hair/Brown 2/brown2Man6.png": {
+      "width": 158,
+      "height": 119
+    },
+    "PNG/Face/Eyebrows/blondeBrow1.png": {
+      "width": 40,
+      "height": 17
+    },
+    "PNG/Pants/Tan/pantsTan3.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Pants/Grey/pantsGrey_short.png": {
+      "width": 107,
+      "height": 118
+    },
+    "PNG/Hair/Black/blackMan4.png": {
+      "width": 158,
+      "height": 119
+    },
+    "PNG/Shirts/Yellow/shirtYellow1.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Shirts/Blue/blueShirt4.png": {
+      "width": 161,
+      "height": 174
+    },
+    "PNG/Face/Eyebrows/brown2Brow1.png": {
+      "width": 40,
+      "height": 17
+    },
+    "PNG/Shoes/Grey/greyShoe5.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Hair/Red/redMan2.png": {
+      "width": 159,
+      "height": 138
+    },
+    "PNG/Shirts/Green/greenShirt6.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Pants/Tan/pantsTan_short.png": {
+      "width": 107,
+      "height": 118
+    },
+    "PNG/Hair/White/whiteMan2.png": {
+      "width": 159,
+      "height": 138
+    },
+    "PNG/Skin/Tint 8/tint8_head.png": {
+      "width": 173,
+      "height": 168
+    },
+    "PNG/Hair/Red/redMan1.png": {
+      "width": 159,
+      "height": 119
+    },
+    "PNG/Skin/Tint 2/tint2_leg.png": {
+      "width": 93,
+      "height": 164
+    },
+    "PNG/Hair/Blonde/blondeMan1.png": {
+      "width": 159,
+      "height": 119
+    },
+    "PNG/Shirts/Yellow/shirtYellow8.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Hair/Brown 1/brown1Man7.png": {
+      "width": 158,
+      "height": 119
+    },
+    "PNG/Pants/Navy/pantsNavy3.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Shirts/Blue/blueArm_short.png": {
+      "width": 118,
+      "height": 96
+    },
+    "PNG/Hair/Brown 1/brown1Man3.png": {
+      "width": 158,
+      "height": 119
+    },
+    "PNG/Pants/Blue 1/pantsBlue13.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Hair/White/whiteMan3.png": {
+      "width": 159,
+      "height": 119
+    },
+    "PNG/Skin/Tint 3/tint3_arm.png": {
+      "width": 170,
+      "height": 136
+    },
+    "PNG/Shirts/Blue/blueShirt2.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Hair/Brown 1/brown1Man4.png": {
+      "width": 158,
+      "height": 119
+    },
+    "PNG/Hair/White/whiteWoman1.png": {
+      "width": 159,
+      "height": 285
+    },
+    "PNG/Skin/Tint 4/tint4_arm.png": {
+      "width": 170,
+      "height": 136
+    },
+    "PNG/Shirts/Grey/greyArm_short.png": {
+      "width": 118,
+      "height": 96
+    },
+    "PNG/Skin/Tint 1/tint1_neck.png": {
+      "width": 96,
+      "height": 37
+    },
+    "PNG/Pants/Light Blue/pantsLightBlue4.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Face/Nose/Tint 2/tint2Nose2.png": {
+      "width": 24,
+      "height": 24
+    },
+    "PNG/Skin/Tint 4/tint4_hand.png": {
+      "width": 61,
+      "height": 71
+    },
+    "PNG/Pants/Brown/pantsBrown_short.png": {
+      "width": 107,
+      "height": 118
+    },
+    "PNG/Hair/Grey/greyWoman6.png": {
+      "width": 168,
+      "height": 213
+    },
+    "PNG/Shirts/Blue/blueShirt6.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Skin/Tint 5/tint5_leg.png": {
+      "width": 93,
+      "height": 164
+    },
+    "PNG/Pants/Brown/pantsBrown4.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Hair/Red/redMan6.png": {
+      "width": 159,
+      "height": 119
+    },
+    "PNG/Hair/Brown 2/brown2Man3.png": {
+      "width": 158,
+      "height": 119
+    },
+    "PNG/Shirts/Yellow/shirtYellow3.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Hair/Brown 2/brown2Man7.png": {
+      "width": 158,
+      "height": 119
+    },
+    "PNG/Shirts/Navy/navyArm_long.png": {
+      "width": 171,
+      "height": 142
+    },
+    "PNG/Hair/White/whiteMan6.png": {
+      "width": 159,
+      "height": 119
+    },
+    "PNG/Pants/Light Blue/pantsLightBlue_shorter.png": {
+      "width": 104,
+      "height": 105
+    },
+    "PNG/Hair/White/whiteWoman3.png": {
+      "width": 159,
+      "height": 286
+    },
+    "PNG/Pants/Yellow/legYellow_short.png": {
+      "width": 107,
+      "height": 118
+    },
+    "PNG/Hair/Tan/tanMan6.png": {
+      "width": 158,
+      "height": 119
+    },
+    "PNG/Face/Nose/Tint 5/tint5Nose3.png": {
+      "width": 22,
+      "height": 15
+    },
+    "PNG/Shirts/Blue/blueShirt3.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Face/Eyes/eyeBlack_small.png": {
+      "width": 15,
+      "height": 16
+    },
+    "PNG/Pants/Navy/pantsNavy_short.png": {
+      "width": 107,
+      "height": 118
+    },
+    "PNG/Shirts/Navy/navyArm_shorter.png": {
+      "width": 67,
+      "height": 86
+    },
+    "PNG/Pants/Red/pantsRed1.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Skin/Tint 8/tint8_neck.png": {
+      "width": 96,
+      "height": 37
+    },
+    "PNG/Skin/Tint 5/tint5_head.png": {
+      "width": 173,
+      "height": 168
+    },
+    "PNG/Hair/Black/blackWoman4.png": {
+      "width": 158,
+      "height": 286
+    },
+    "PNG/Shoes/Black/blackShoe2.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Face/Nose/Tint 3/tint3Nose3.png": {
+      "width": 22,
+      "height": 15
+    },
+    "PNG/Shirts/Yellow/shirtYellow5.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Shirts/White/whiteShirt1.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Pants/Grey/pantsGrey_shorter.png": {
+      "width": 104,
+      "height": 105
+    },
+    "PNG/Face/Eyes/eyeBlue_large.png": {
+      "width": 21,
+      "height": 21
+    },
+    "PNG/Pants/Blue 2/pantsBlue21.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Skin/Tint 3/tint3_head.png": {
+      "width": 173,
+      "height": 168
+    },
+    "PNG/Pants/Blue 1/pantsBlue1_short.png": {
+      "width": 107,
+      "height": 118
+    },
+    "PNG/Shirts/Yellow/shirtYellow6.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Face/Eyebrows/blondeBrow3.png": {
+      "width": 40,
+      "height": 17
+    },
+    "PNG/Pants/Navy/pantsNavy_long.png": {
+      "width": 111,
+      "height": 166
+    },
+    "PNG/Pants/Blue 2/pantsBlue2_short.png": {
+      "width": 107,
+      "height": 118
+    },
+    "PNG/Skin/Tint 7/tint7_leg.png": {
+      "width": 93,
+      "height": 164
+    },
+    "PNG/Shoes/Tan/tanShoe5.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Pants/Light Blue/pantsLightBlue3.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Face/Eyes/eyeBlue_small.png": {
+      "width": 15,
+      "height": 16
+    },
+    "PNG/Shirts/Green/greenShirt2.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Hair/Brown 2/brown2Man1.png": {
+      "width": 158,
+      "height": 119
+    },
+    "PNG/Skin/Tint 7/tint7_head.png": {
+      "width": 173,
+      "height": 168
+    },
+    "PNG/Shirts/Grey/greyShirt7.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Hair/Tan/tanWoman6.png": {
+      "width": 164,
+      "height": 213
+    },
+    "PNG/Hair/Brown 1/brown1Man6.png": {
+      "width": 158,
+      "height": 119
+    },
+    "PNG/Shirts/Yellow/shirtYellow7.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Shoes/Tan/tanShoe2.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Shirts/Pine/pineShirt5.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Shirts/Grey/greyArm_long.png": {
+      "width": 171,
+      "height": 142
+    },
+    "PNG/Shirts/Blue/blueArm_shorter.png": {
+      "width": 66,
+      "height": 86
+    },
+    "PNG/Face/Nose/Tint 2/tint2Nose1.png": {
+      "width": 31,
+      "height": 21
+    },
+    "PNG/Shoes/Black/blackShoe4.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Face/Eyebrows/blackBrow3.png": {
+      "width": 40,
+      "height": 17
+    },
+    "PNG/Face/Completes/face1.png": {
+      "width": 100,
+      "height": 101
+    },
+    "PNG/Skin/Tint 8/tint8_arm.png": {
+      "width": 170,
+      "height": 136
+    },
+    "PNG/Skin/Tint 2/tint2_neck.png": {
+      "width": 96,
+      "height": 37
+    },
+    "PNG/Shirts/Blue/blueShirt1.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Shoes/Brown 2/brown2Shoe4.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Pants/Navy/pantsNavy2.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Pants/White/pantsWhite1.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Face/Mouth/mouth_sad.png": {
+      "width": 34,
+      "height": 13
+    },
+    "PNG/Shirts/Blue/blueShirt8.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Pants/Green/pantsGreen4.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Hair/Red/redWoman2.png": {
+      "width": 161,
+      "height": 227
+    },
+    "PNG/Pants/Blue 2/pantsBlue24.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Face/Nose/Tint 2/tint2Nose3.png": {
+      "width": 22,
+      "height": 15
+    },
+    "PNG/Shirts/Pine/pineShirt4.png": {
+      "width": 161,
+      "height": 174
+    },
+    "PNG/Face/Eyebrows/brown1Brow2.png": {
+      "width": 41,
+      "height": 11
+    },
+    "PNG/Face/Eyebrows/blackBrow2.png": {
+      "width": 41,
+      "height": 11
+    },
+    "PNG/Shoes/Black/blackShoe5.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Shirts/White/whiteShirt2.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Face/Nose/Tint 5/tint5Nose2.png": {
+      "width": 24,
+      "height": 24
+    },
+    "PNG/Pants/Green/pantsGreen_long.png": {
+      "width": 111,
+      "height": 166
+    },
+    "PNG/Hair/Brown 2/brown2Man5.png": {
+      "width": 171,
+      "height": 130
+    },
+    "PNG/Hair/Blonde/blondeWoman1.png": {
+      "width": 158,
+      "height": 285
+    },
+    "PNG/Hair/Black/blackMan7.png": {
+      "width": 158,
+      "height": 119
+    },
+    "PNG/Pants/Pine/pantsPine_shorter.png": {
+      "width": 104,
+      "height": 105
+    },
+    "PNG/Shirts/Pine/pineShirt2.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Hair/Brown 2/brown2Woman1.png": {
+      "width": 158,
+      "height": 285
+    },
+    "PNG/Shirts/White/whiteShirt5.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Skin/Tint 6/tint6_hand.png": {
+      "width": 61,
+      "height": 71
+    },
+    "PNG/Shoes/Black/blackShoe1.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Face/Eyes/eyeBrown_large.png": {
+      "width": 21,
+      "height": 21
+    },
+    "PNG/Hair/Brown 2/brown2Man2.png": {
+      "width": 158,
+      "height": 138
+    },
+    "PNG/Shoes/Blue/blueShoe2.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Shirts/Green/greenArm_shorter.png": {
+      "width": 67,
+      "height": 86
+    },
+    "PNG/Face/Nose/Tint 1/tint1Nose1.png": {
+      "width": 31,
+      "height": 21
+    },
+    "PNG/Shirts/Red/redShirt1.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Pants/Tan/pantsTan4.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Skin/Tint 7/tint7_arm.png": {
+      "width": 170,
+      "height": 136
+    },
+    "PNG/Hair/Blonde/blondeWoman2.png": {
+      "width": 160,
+      "height": 227
+    },
+    "PNG/Hair/Black/blackMan5.png": {
+      "width": 171,
+      "height": 130
+    },
+    "PNG/Shirts/Navy/navyShirt7.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Hair/Black/blackWoman1.png": {
+      "width": 165,
+      "height": 227
+    },
+    "PNG/Hair/Tan/tanWoman4.png": {
+      "width": 158,
+      "height": 286
+    },
+    "PNG/Skin/Tint 6/tint6_leg.png": {
+      "width": 93,
+      "height": 164
+    },
+    "PNG/Hair/Brown 2/brown2Woman5.png": {
+      "width": 164,
+      "height": 213
+    },
+    "PNG/Hair/Red/redWoman6.png": {
+      "width": 168,
+      "height": 213
+    },
+    "PNG/Shirts/Grey/greyShirt5.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Shoes/Red/redShoe4.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Face/Eyes/eyePine_large.png": {
+      "width": 21,
+      "height": 21
+    },
+    "PNG/Face/Nose/Tint 1/tint1Nose2.png": {
+      "width": 24,
+      "height": 24
+    },
+    "PNG/Hair/Red/redMan3.png": {
+      "width": 159,
+      "height": 119
+    },
+    "PNG/Shoes/Grey/greyShoe4.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Face/Nose/Tint 8/tint8Nose3.png": {
+      "width": 22,
+      "height": 15
+    },
+    "PNG/Shirts/Pine/pineArm_long.png": {
+      "width": 171,
+      "height": 142
+    },
+    "PNG/Pants/Blue 1/pantsBlue11.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Hair/Black/blackWoman2.png": {
+      "width": 158,
+      "height": 285
+    },
+    "PNG/Pants/Brown/pantsBrown_long.png": {
+      "width": 111,
+      "height": 166
+    },
+    "PNG/Shirts/Yellow/armYellow_long.png": {
+      "width": 171,
+      "height": 142
+    },
+    "PNG/Hair/White/whiteMan4.png": {
+      "width": 159,
+      "height": 119
+    },
+    "PNG/Pants/White/pantsWhite4.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Shirts/Red/redShirt3.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Shirts/Red/redShirt7.png": {
+      "width": 153,
+      "height": 174
+    },
+    "PNG/Shirts/Pine/pineArm_short.png": {
+      "width": 118,
+      "height": 96
+    },
+    "PNG/Shoes/Tan/tanShoe4.png": {
+      "width": 94,
+      "height": 42
+    },
+    "PNG/Pants/Pine/pantsPine4.png": {
+      "width": 153,
+      "height": 47
+    },
+    "PNG/Pants/Pine/pantsPine_short.png": {
+      "width": 107,
+      "height": 118
+    }
+  },
+  "profileStyles": [
+    {
+      "id": "profile-woman-1",
+      "name": "Kadın · 1",
+      "file": "Profile/profile-woman-1.svg",
+      "width": 159,
+      "height": 285,
+      "y": 105
+    },
+    {
+      "id": "profile-woman-2",
+      "name": "Kadın · 2",
+      "file": "Profile/profile-woman-2.svg",
+      "width": 161,
+      "height": 227,
+      "y": 105
+    },
+    {
+      "id": "profile-woman-3",
+      "name": "Kadın · 3",
+      "file": "Profile/profile-woman-3.svg",
+      "width": 159,
+      "height": 286,
+      "y": 105
+    },
+    {
+      "id": "profile-woman-4",
+      "name": "Kadın · 4",
+      "file": "Profile/profile-woman-4.svg",
+      "width": 165,
+      "height": 227,
+      "y": 105
+    },
+    {
+      "id": "profile-woman-5",
+      "name": "Kadın · 5",
+      "file": "Profile/profile-woman-5.svg",
+      "width": 164,
+      "height": 213,
+      "y": 105
+    },
+    {
+      "id": "profile-woman-6",
+      "name": "Kadın · 6",
+      "file": "Profile/profile-woman-6.svg",
+      "width": 168,
+      "height": 213,
+      "y": 105
+    },
+    {
+      "id": "profile-side",
+      "name": "Erkek · 1",
+      "file": "Profile/profile-side.svg",
+      "width": 159,
+      "height": 119,
+      "y": 111
+    },
+    {
+      "id": "profile-spiked",
+      "name": "Erkek · 2",
+      "file": "Profile/profile-spiked.svg",
+      "width": 159,
+      "height": 138,
+      "y": 102
+    },
+    {
+      "id": "profile-man-3",
+      "name": "Erkek · 3",
+      "file": "Profile/profile-man-3.svg",
+      "width": 159,
+      "height": 119,
+      "y": 111
+    },
+    {
+      "id": "profile-man-4",
+      "name": "Erkek · 4",
+      "file": "Profile/profile-man-4.svg",
+      "width": 159,
+      "height": 119,
+      "y": 111
+    },
+    {
+      "id": "profile-man-5",
+      "name": "Erkek · 5",
+      "file": "Profile/profile-man-5.svg",
+      "width": 171,
+      "height": 130,
+      "y": 99
+    },
+    {
+      "id": "profile-man-6",
+      "name": "Erkek · 6",
+      "file": "Profile/profile-man-6.svg",
+      "width": 159,
+      "height": 119,
+      "y": 111
+    },
+    {
+      "id": "profile-man-7",
+      "name": "Erkek · 7",
+      "file": "Profile/profile-man-7.svg",
+      "width": 159,
+      "height": 119,
+      "y": 111
+    }
+  ]
+}

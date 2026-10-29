@@ -1,0 +1,4 @@
+const fs=require('fs'),vm=require('vm');const ctx={window:{}};vm.createContext(ctx);vm.runInContext(fs.readFileSync('team-asset-data.js','utf8'),ctx);const assets=ctx.window.TeamAssetData.assets;
+function replace(source){return source.replace(/"(PNG\/[^"\n]+)":"(data:image\/[^"\n]+)"/g,(all,key)=>assets[key]?JSON.stringify(key)+':'+JSON.stringify(assets[key]):all)}
+for(const name of ['mac.html','deneme-modu.html','karakter-uretici.html','uc-parca-editoru.html','yerlesim-editoru.html']){fs.writeFileSync(name,replace(fs.readFileSync(name,'utf8')))}
+const lab='skill-animation-lab.html';let html=fs.readFileSync(lab,'utf8');html=html.replace(/canvas.srcdoc=("(?:\\.|[^"\\])*");/,(_,encoded)=>'canvas.srcdoc='+JSON.stringify(replace(JSON.parse(encoded))).replaceAll('<','\\u003c')+';');fs.writeFileSync(lab,html);console.log('Canonical vector assets synchronized to editors, native match and animation lab.');

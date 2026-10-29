@@ -1,0 +1,3426 @@
+{
+  "blackMan1.png": {
+    "kind": "hair",
+    "x": 100.0,
+    "y": 130.0,
+    "width": 158,
+    "height": 119,
+    "score": 0.0022078226320445538
+  },
+  "blackMan2.png": {
+    "kind": "hair",
+    "x": 170.0,
+    "y": 73.66666666666667,
+    "width": 158,
+    "height": 138,
+    "score": 0.0010544402757659554
+  },
+  "blackMan3.png": {
+    "kind": "hair",
+    "x": 170.0,
+    "y": 124.0,
+    "width": 158,
+    "height": 119,
+    "score": 0.0012635239399969578
+  },
+  "blackMan4.png": {
+    "kind": "hair",
+    "x": 170.0,
+    "y": 172.0,
+    "width": 158,
+    "height": 119,
+    "score": 0.0017854428151622415
+  },
+  "blackMan5.png": {
+    "kind": "hair",
+    "x": 170.0,
+    "y": 247.33333333333334,
+    "width": 171,
+    "height": 130,
+    "score": 0.0013984699035063386
+  },
+  "blackMan6.png": {
+    "kind": "hair",
+    "x": 170.0,
+    "y": 301.0,
+    "width": 158,
+    "height": 119,
+    "score": 0.002517945598810911
+  },
+  "blackMan7.png": {
+    "kind": "hair",
+    "x": 170.0,
+    "y": 351.0,
+    "width": 158,
+    "height": 119,
+    "score": 0.0023651202209293842
+  },
+  "blackMan8.png": {
+    "kind": "hair",
+    "x": 170.0,
+    "y": 223.0,
+    "width": 158,
+    "height": 47,
+    "score": 0.003032948123291135
+  },
+  "blackWoman1.png": {
+    "kind": "hair",
+    "x": 98.33333333333333,
+    "y": 130.0,
+    "width": 165,
+    "height": 227,
+    "score": 0.0020535048097372055
+  },
+  "blackWoman2.png": {
+    "kind": "hair",
+    "x": 30.0,
+    "y": 30.0,
+    "width": 158,
+    "height": 285,
+    "score": 0.0018957109423354268
+  },
+  "blackWoman3.png": {
+    "kind": "hair",
+    "x": 100.0,
+    "y": 30.0,
+    "width": 160,
+    "height": 227,
+    "score": 0.0020511047914624214
+  },
+  "blackWoman4.png": {
+    "kind": "hair",
+    "x": 30.0,
+    "y": 129.66666666666666,
+    "width": 158,
+    "height": 286,
+    "score": 0.0022604865953326225
+  },
+  "blackWoman5.png": {
+    "kind": "hair",
+    "x": 98.0,
+    "y": 320.0,
+    "width": 168,
+    "height": 213,
+    "score": 0.002195869106799364
+  },
+  "blackWoman6.png": {
+    "kind": "hair",
+    "x": 98.0,
+    "y": 230.0,
+    "width": 164,
+    "height": 213,
+    "score": 0.0023568938486278057
+  },
+  "blondeMan1.png": {
+    "kind": "hair",
+    "x": 539.6666666666666,
+    "y": 230.0,
+    "width": 159,
+    "height": 119,
+    "score": 0.001605052500963211
+  },
+  "blondeMan2.png": {
+    "kind": "hair",
+    "x": 609.6666666666666,
+    "y": 73.66666666666667,
+    "width": 159,
+    "height": 138,
+    "score": 0.0013828891096636653
+  },
+  "blondeMan3.png": {
+    "kind": "hair",
+    "x": 609.6666666666666,
+    "y": 124.0,
+    "width": 159,
+    "height": 119,
+    "score": 0.0013974006287753582
+  },
+  "blondeMan4.png": {
+    "kind": "hair",
+    "x": 609.6666666666666,
+    "y": 172.0,
+    "width": 159,
+    "height": 119,
+    "score": 0.0019172017928212881
+  },
+  "blondeMan5.png": {
+    "kind": "hair",
+    "x": 610.0,
+    "y": 247.33333333333334,
+    "width": 171,
+    "height": 130,
+    "score": 0.001348385470919311
+  },
+  "blondeMan6.png": {
+    "kind": "hair",
+    "x": 609.6666666666666,
+    "y": 301.0,
+    "width": 159,
+    "height": 119,
+    "score": 0.0023032601457089186
+  },
+  "blondeMan7.png": {
+    "kind": "hair",
+    "x": 609.6666666666666,
+    "y": 351.0,
+    "width": 159,
+    "height": 119,
+    "score": 0.002215030835941434
+  },
+  "blondeMan8.png": {
+    "kind": "hair",
+    "x": 610.0,
+    "y": 223.0,
+    "width": 158,
+    "height": 47,
+    "score": 0.0034064226783812046
+  },
+  "blondeWoman1.png": {
+    "kind": "hair",
+    "x": 470.0,
+    "y": 30.0,
+    "width": 158,
+    "height": 285,
+    "score": 0.001892376341857016
+  },
+  "blondeWoman2.png": {
+    "kind": "hair",
+    "x": 540.0,
+    "y": 30.0,
+    "width": 160,
+    "height": 227,
+    "score": 0.0013882656348869205
+  },
+  "blondeWoman3.png": {
+    "kind": "hair",
+    "x": 470.0,
+    "y": 129.66666666666666,
+    "width": 158,
+    "height": 286,
+    "score": 0.002262607915326953
+  },
+  "blondeWoman4.png": {
+    "kind": "hair",
+    "x": 538.3333333333334,
+    "y": 130.0,
+    "width": 165,
+    "height": 227,
+    "score": 0.0015048723435029387
+  },
+  "blondeWoman5.png": {
+    "kind": "hair",
+    "x": 538.0,
+    "y": 230.0,
+    "width": 164,
+    "height": 213,
+    "score": 0.0018177193123847246
+  },
+  "blondeWoman6.png": {
+    "kind": "hair",
+    "x": 538.0,
+    "y": 320.0,
+    "width": 168,
+    "height": 213,
+    "score": 0.0016864301869645715
+  },
+  "brown1Man1.png": {
+    "kind": "hair",
+    "x": 100.0,
+    "y": 510.0,
+    "width": 158,
+    "height": 119,
+    "score": 0.0021879558917135
+  },
+  "brown1Man2.png": {
+    "kind": "hair",
+    "x": 170.0,
+    "y": 453.6666666666667,
+    "width": 158,
+    "height": 138,
+    "score": 0.001050323829986155
+  },
+  "brown1Man3.png": {
+    "kind": "hair",
+    "x": 170.0,
+    "y": 504.0,
+    "width": 158,
+    "height": 119,
+    "score": 0.0012664225650951266
+  },
+  "brown1Man4.png": {
+    "kind": "hair",
+    "x": 170.0,
+    "y": 552.0,
+    "width": 158,
+    "height": 119,
+    "score": 0.001985452603548765
+  },
+  "brown1Man5.png": {
+    "kind": "hair",
+    "x": 170.0,
+    "y": 627.3333333333334,
+    "width": 171,
+    "height": 130,
+    "score": 0.0018335726344957948
+  },
+  "brown1Man6.png": {
+    "kind": "hair",
+    "x": 170.0,
+    "y": 681.0,
+    "width": 158,
+    "height": 119,
+    "score": 0.002185792662203312
+  },
+  "brown1Man7.png": {
+    "kind": "hair",
+    "x": 170.0,
+    "y": 731.0,
+    "width": 158,
+    "height": 119,
+    "score": 0.0025544578675180674
+  },
+  "brown1Man8.png": {
+    "kind": "hair",
+    "x": 170.0,
+    "y": 603.0,
+    "width": 158,
+    "height": 47,
+    "score": 0.003019510069862008
+  },
+  "brown1Woman1.png": {
+    "kind": "hair",
+    "x": 30.0,
+    "y": 410.0,
+    "width": 158,
+    "height": 285,
+    "score": 0.001887055579572916
+  },
+  "brown1Woman2.png": {
+    "kind": "hair",
+    "x": 100.0,
+    "y": 410.0,
+    "width": 160,
+    "height": 227,
+    "score": 0.0020409999415278435
+  },
+  "brown1Woman3.png": {
+    "kind": "hair",
+    "x": 30.0,
+    "y": 509.6666666666667,
+    "width": 158,
+    "height": 286,
+    "score": 0.0021659424528479576
+  },
+  "brown1Woman4.png": {
+    "kind": "hair",
+    "x": 98.33333333333333,
+    "y": 510.0,
+    "width": 165,
+    "height": 227,
+    "score": 0.0019369636429473758
+  },
+  "brown1Woman5.png": {
+    "kind": "hair",
+    "x": 98.0,
+    "y": 610.0,
+    "width": 164,
+    "height": 213,
+    "score": 0.002324662869796157
+  },
+  "brown1Woman6.png": {
+    "kind": "hair",
+    "x": 98.0,
+    "y": 700.0,
+    "width": 168,
+    "height": 213,
+    "score": 0.0021580159664154053
+  },
+  "brown2Man1.png": {
+    "kind": "hair",
+    "x": 320.0,
+    "y": 510.0,
+    "width": 158,
+    "height": 119,
+    "score": 0.002184550743550062
+  },
+  "brown2Man2.png": {
+    "kind": "hair",
+    "x": 390.0,
+    "y": 453.6666666666667,
+    "width": 158,
+    "height": 138,
+    "score": 0.0010494169546291232
+  },
+  "brown2Man3.png": {
+    "kind": "hair",
+    "x": 390.0,
+    "y": 504.0,
+    "width": 158,
+    "height": 119,
+    "score": 0.0012634373269975185
+  },
+  "brown2Man4.png": {
+    "kind": "hair",
+    "x": 390.0,
+    "y": 552.0,
+    "width": 158,
+    "height": 119,
+    "score": 0.00198117783293128
+  },
+  "brown2Man5.png": {
+    "kind": "hair",
+    "x": 390.0,
+    "y": 627.3333333333334,
+    "width": 171,
+    "height": 130,
+    "score": 0.0018347033765166998
+  },
+  "brown2Man6.png": {
+    "kind": "hair",
+    "x": 390.0,
+    "y": 681.0,
+    "width": 158,
+    "height": 119,
+    "score": 0.002182512078434229
+  },
+  "brown2Man7.png": {
+    "kind": "hair",
+    "x": 390.0,
+    "y": 731.0,
+    "width": 158,
+    "height": 119,
+    "score": 0.0025506294332444668
+  },
+  "brown2Man8.png": {
+    "kind": "hair",
+    "x": 390.0,
+    "y": 603.0,
+    "width": 158,
+    "height": 47,
+    "score": 0.0030229254625737667
+  },
+  "brown2Woman1.png": {
+    "kind": "hair",
+    "x": 250.0,
+    "y": 410.0,
+    "width": 158,
+    "height": 285,
+    "score": 0.001886680256575346
+  },
+  "brown2Woman2.png": {
+    "kind": "hair",
+    "x": 320.0,
+    "y": 410.0,
+    "width": 160,
+    "height": 227,
+    "score": 0.002039852784946561
+  },
+  "brown2Woman3.png": {
+    "kind": "hair",
+    "x": 250.0,
+    "y": 509.6666666666667,
+    "width": 158,
+    "height": 286,
+    "score": 0.0021639938931912184
+  },
+  "brown2Woman4.png": {
+    "kind": "hair",
+    "x": 318.3333333333333,
+    "y": 510.0,
+    "width": 165,
+    "height": 227,
+    "score": 0.0019367436179891229
+  },
+  "brown2Woman5.png": {
+    "kind": "hair",
+    "x": 318.0,
+    "y": 610.0,
+    "width": 164,
+    "height": 213,
+    "score": 0.0023243988398462534
+  },
+  "brown2Woman6.png": {
+    "kind": "hair",
+    "x": 318.0,
+    "y": 700.0,
+    "width": 168,
+    "height": 213,
+    "score": 0.0021578804589807987
+  },
+  "greyMan1.png": {
+    "kind": "hair",
+    "x": 539.6666666666666,
+    "y": 610.0,
+    "width": 159,
+    "height": 119,
+    "score": 0.0016088960692286491
+  },
+  "greyMan2.png": {
+    "kind": "hair",
+    "x": 609.6666666666666,
+    "y": 453.6666666666667,
+    "width": 159,
+    "height": 138,
+    "score": 0.001382888644002378
+  },
+  "greyMan3.png": {
+    "kind": "hair",
+    "x": 609.6666666666666,
+    "y": 504.0,
+    "width": 159,
+    "height": 119,
+    "score": 0.0013965066755190492
+  },
+  "greyMan4.png": {
+    "kind": "hair",
+    "x": 609.6666666666666,
+    "y": 552.0,
+    "width": 159,
+    "height": 119,
+    "score": 0.002131958259269595
+  },
+  "greyMan5.png": {
+    "kind": "hair",
+    "x": 610.0,
+    "y": 627.3333333333334,
+    "width": 171,
+    "height": 130,
+    "score": 0.0017503068083897233
+  },
+  "greyMan6.png": {
+    "kind": "hair",
+    "x": 609.6666666666666,
+    "y": 681.0,
+    "width": 159,
+    "height": 119,
+    "score": 0.0020067072473466396
+  },
+  "greyMan7.png": {
+    "kind": "hair",
+    "x": 609.6666666666666,
+    "y": 731.0,
+    "width": 159,
+    "height": 119,
+    "score": 0.002430662978440523
+  },
+  "greyMan8.png": {
+    "kind": "hair",
+    "x": 610.0,
+    "y": 603.0,
+    "width": 158,
+    "height": 47,
+    "score": 0.003410621080547571
+  },
+  "greyWoman1.png": {
+    "kind": "hair",
+    "x": 470.0,
+    "y": 410.0,
+    "width": 158,
+    "height": 285,
+    "score": 0.0018948307260870934
+  },
+  "greyWoman2.png": {
+    "kind": "hair",
+    "x": 540.0,
+    "y": 410.0,
+    "width": 160,
+    "height": 227,
+    "score": 0.0013902261853218079
+  },
+  "greyWoman3.png": {
+    "kind": "hair",
+    "x": 470.0,
+    "y": 509.6666666666667,
+    "width": 158,
+    "height": 286,
+    "score": 0.002167333848774433
+  },
+  "greyWoman4.png": {
+    "kind": "hair",
+    "x": 538.3333333333334,
+    "y": 510.0,
+    "width": 165,
+    "height": 227,
+    "score": 0.0014375036116689444
+  },
+  "greyWoman5.png": {
+    "kind": "hair",
+    "x": 538.0,
+    "y": 610.0,
+    "width": 164,
+    "height": 213,
+    "score": 0.0017935269279405475
+  },
+  "greyWoman6.png": {
+    "kind": "hair",
+    "x": 538.0,
+    "y": 700.0,
+    "width": 168,
+    "height": 213,
+    "score": 0.0016635105712339282
+  },
+  "redMan1.png": {
+    "kind": "hair",
+    "x": 759.6666666666666,
+    "y": 230.0,
+    "width": 159,
+    "height": 119,
+    "score": 0.0016034335130825639
+  },
+  "redMan2.png": {
+    "kind": "hair",
+    "x": 829.6666666666666,
+    "y": 73.66666666666667,
+    "width": 159,
+    "height": 138,
+    "score": 0.00138275942299515
+  },
+  "redMan3.png": {
+    "kind": "hair",
+    "x": 829.6666666666666,
+    "y": 124.0,
+    "width": 159,
+    "height": 119,
+    "score": 0.0013978370698168874
+  },
+  "redMan4.png": {
+    "kind": "hair",
+    "x": 829.6666666666666,
+    "y": 172.0,
+    "width": 159,
+    "height": 119,
+    "score": 0.0019153535831719637
+  },
+  "redMan5.png": {
+    "kind": "hair",
+    "x": 830.0,
+    "y": 247.33333333333334,
+    "width": 171,
+    "height": 130,
+    "score": 0.0013482222566381097
+  },
+  "redMan6.png": {
+    "kind": "hair",
+    "x": 829.6666666666666,
+    "y": 301.0,
+    "width": 159,
+    "height": 119,
+    "score": 0.00230130716226995
+  },
+  "redMan7.png": {
+    "kind": "hair",
+    "x": 829.6666666666666,
+    "y": 351.0,
+    "width": 159,
+    "height": 119,
+    "score": 0.0022141197696328163
+  },
+  "redMan8.png": {
+    "kind": "hair",
+    "x": 830.0,
+    "y": 223.0,
+    "width": 158,
+    "height": 47,
+    "score": 0.0034055772703140974
+  },
+  "redWoman1.png": {
+    "kind": "hair",
+    "x": 689.6666666666666,
+    "y": 30.0,
+    "width": 159,
+    "height": 285,
+    "score": 0.0020931691396981478
+  },
+  "redWoman2.png": {
+    "kind": "hair",
+    "x": 759.6666666666666,
+    "y": 30.0,
+    "width": 161,
+    "height": 227,
+    "score": 0.0014587552286684513
+  },
+  "redWoman3.png": {
+    "kind": "hair",
+    "x": 689.6666666666666,
+    "y": 129.66666666666666,
+    "width": 159,
+    "height": 286,
+    "score": 0.0024289917200803757
+  },
+  "redWoman4.png": {
+    "kind": "hair",
+    "x": 758.3333333333334,
+    "y": 130.0,
+    "width": 165,
+    "height": 227,
+    "score": 0.0015613175928592682
+  },
+  "redWoman5.png": {
+    "kind": "hair",
+    "x": 758.0,
+    "y": 230.0,
+    "width": 164,
+    "height": 213,
+    "score": 0.001986950170248747
+  },
+  "redWoman6.png": {
+    "kind": "hair",
+    "x": 758.0,
+    "y": 320.0,
+    "width": 168,
+    "height": 213,
+    "score": 0.0018261432414874434
+  },
+  "tanMan1.png": {
+    "kind": "hair",
+    "x": 320.0,
+    "y": 130.0,
+    "width": 158,
+    "height": 119,
+    "score": 0.002189574996009469
+  },
+  "tanMan2.png": {
+    "kind": "hair",
+    "x": 390.0,
+    "y": 73.66666666666667,
+    "width": 158,
+    "height": 138,
+    "score": 0.0010503813391551375
+  },
+  "tanMan3.png": {
+    "kind": "hair",
+    "x": 390.0,
+    "y": 124.0,
+    "width": 158,
+    "height": 119,
+    "score": 0.0012642019428312778
+  },
+  "tanMan4.png": {
+    "kind": "hair",
+    "x": 390.0,
+    "y": 172.0,
+    "width": 158,
+    "height": 119,
+    "score": 0.001770643750205636
+  },
+  "tanMan5.png": {
+    "kind": "hair",
+    "x": 390.0,
+    "y": 247.33333333333334,
+    "width": 171,
+    "height": 130,
+    "score": 0.0013874676078557968
+  },
+  "tanMan6.png": {
+    "kind": "hair",
+    "x": 390.0,
+    "y": 301.0,
+    "width": 158,
+    "height": 119,
+    "score": 0.002486234763637185
+  },
+  "tanMan7.png": {
+    "kind": "hair",
+    "x": 390.0,
+    "y": 351.0,
+    "width": 158,
+    "height": 119,
+    "score": 0.00234332331456244
+  },
+  "tanMan8.png": {
+    "kind": "hair",
+    "x": 390.0,
+    "y": 223.0,
+    "width": 158,
+    "height": 47,
+    "score": 0.003026515943929553
+  },
+  "tanWoman1.png": {
+    "kind": "hair",
+    "x": 250.0,
+    "y": 30.0,
+    "width": 158,
+    "height": 285,
+    "score": 0.0018925092881545424
+  },
+  "tanWoman2.png": {
+    "kind": "hair",
+    "x": 320.0,
+    "y": 30.0,
+    "width": 160,
+    "height": 227,
+    "score": 0.00204608216881752
+  },
+  "tanWoman3.png": {
+    "kind": "hair",
+    "x": 318.0,
+    "y": 320.0,
+    "width": 168,
+    "height": 213,
+    "score": 0.002193278865888715
+  },
+  "tanWoman4.png": {
+    "kind": "hair",
+    "x": 250.0,
+    "y": 129.66666666666666,
+    "width": 158,
+    "height": 286,
+    "score": 0.0022602793760597706
+  },
+  "tanWoman5.png": {
+    "kind": "hair",
+    "x": 318.3333333333333,
+    "y": 130.0,
+    "width": 165,
+    "height": 227,
+    "score": 0.0020493187475949526
+  },
+  "tanWoman6.png": {
+    "kind": "hair",
+    "x": 318.0,
+    "y": 230.0,
+    "width": 164,
+    "height": 213,
+    "score": 0.0023528404999524355
+  },
+  "whiteMan1.png": {
+    "kind": "hair",
+    "x": 759.6666666666666,
+    "y": 610.0,
+    "width": 159,
+    "height": 119,
+    "score": 0.0016048724064603448
+  },
+  "whiteMan2.png": {
+    "kind": "hair",
+    "x": 829.6666666666666,
+    "y": 453.6666666666667,
+    "width": 159,
+    "height": 138,
+    "score": 0.0013824262423440814
+  },
+  "whiteMan3.png": {
+    "kind": "hair",
+    "x": 829.6666666666666,
+    "y": 504.0,
+    "width": 159,
+    "height": 119,
+    "score": 0.0014015890192240477
+  },
+  "whiteMan4.png": {
+    "kind": "hair",
+    "x": 829.6666666666666,
+    "y": 552.0,
+    "width": 159,
+    "height": 119,
+    "score": 0.0021330369636416435
+  },
+  "whiteMan5.png": {
+    "kind": "hair",
+    "x": 830.0,
+    "y": 627.3333333333334,
+    "width": 171,
+    "height": 130,
+    "score": 0.0017447314457967877
+  },
+  "whiteMan6.png": {
+    "kind": "hair",
+    "x": 829.6666666666666,
+    "y": 681.0,
+    "width": 159,
+    "height": 119,
+    "score": 0.002006008056923747
+  },
+  "whiteMan7.png": {
+    "kind": "hair",
+    "x": 829.6666666666666,
+    "y": 731.0,
+    "width": 159,
+    "height": 119,
+    "score": 0.0024293118622153997
+  },
+  "whiteMan8.png": {
+    "kind": "hair",
+    "x": 830.0,
+    "y": 603.0,
+    "width": 158,
+    "height": 47,
+    "score": 0.0034126434475183487
+  },
+  "whiteWoman1.png": {
+    "kind": "hair",
+    "x": 689.6666666666666,
+    "y": 410.0,
+    "width": 159,
+    "height": 285,
+    "score": 0.002090242225676775
+  },
+  "whiteWoman2.png": {
+    "kind": "hair",
+    "x": 759.6666666666666,
+    "y": 410.0,
+    "width": 161,
+    "height": 227,
+    "score": 0.0014599704882130027
+  },
+  "whiteWoman3.png": {
+    "kind": "hair",
+    "x": 689.6666666666666,
+    "y": 509.6666666666667,
+    "width": 159,
+    "height": 286,
+    "score": 0.0023614903911948204
+  },
+  "whiteWoman4.png": {
+    "kind": "hair",
+    "x": 758.3333333333334,
+    "y": 510.0,
+    "width": 165,
+    "height": 227,
+    "score": 0.0014908304437994957
+  },
+  "whiteWoman5.png": {
+    "kind": "hair",
+    "x": 758.0,
+    "y": 610.0,
+    "width": 164,
+    "height": 213,
+    "score": 0.0019598237704485655
+  },
+  "whiteWoman6.png": {
+    "kind": "hair",
+    "x": 758.0,
+    "y": 700.0,
+    "width": 168,
+    "height": 213,
+    "score": 0.0017992752837017179
+  },
+  "tint1_arm.png": {
+    "kind": "skin",
+    "x": 131.33333333333334,
+    "y": 63.666666666666664,
+    "width": 170,
+    "height": 136,
+    "score": 0.001028836122713983
+  },
+  "tint1_hand.png": {
+    "kind": "skin",
+    "x": 131.0,
+    "y": 29.666666666666668,
+    "width": 61,
+    "height": 71,
+    "score": 0.0012463266029953957
+  },
+  "tint1_head.png": {
+    "kind": "skin",
+    "x": 64.66666666666667,
+    "y": 27.333333333333332,
+    "width": 173,
+    "height": 168,
+    "score": 0.0007028126274235547
+  },
+  "tint1_leg.png": {
+    "kind": "skin",
+    "x": 20.0,
+    "y": 30.0,
+    "width": 93,
+    "height": 164,
+    "score": 0.000569483614526689
+  },
+  "tint1_neck.png": {
+    "kind": "skin",
+    "x": 78.33333333333333,
+    "y": 91.0,
+    "width": 96,
+    "height": 37,
+    "score": 0.002146332059055567
+  },
+  "tint2_arm.png": {
+    "kind": "skin",
+    "x": 311.3333333333333,
+    "y": 63.666666666666664,
+    "width": 170,
+    "height": 136,
+    "score": 0.0010277271503582597
+  },
+  "tint2_hand.png": {
+    "kind": "skin",
+    "x": 311.0,
+    "y": 29.666666666666668,
+    "width": 61,
+    "height": 71,
+    "score": 0.0012439837446436286
+  },
+  "tint2_head.png": {
+    "kind": "skin",
+    "x": 244.66666666666666,
+    "y": 27.333333333333332,
+    "width": 173,
+    "height": 168,
+    "score": 0.000700499105732888
+  },
+  "tint2_leg.png": {
+    "kind": "skin",
+    "x": 200.0,
+    "y": 30.0,
+    "width": 93,
+    "height": 164,
+    "score": 0.0005684235948137939
+  },
+  "tint2_neck.png": {
+    "kind": "skin",
+    "x": 258.3333333333333,
+    "y": 91.0,
+    "width": 96,
+    "height": 37,
+    "score": 0.002142203040421009
+  },
+  "tint3_arm.png": {
+    "kind": "skin",
+    "x": 491.3333333333333,
+    "y": 63.666666666666664,
+    "width": 170,
+    "height": 136,
+    "score": 0.000973651884123683
+  },
+  "tint3_hand.png": {
+    "kind": "skin",
+    "x": 491.0,
+    "y": 29.666666666666668,
+    "width": 61,
+    "height": 71,
+    "score": 0.0012408075854182243
+  },
+  "tint3_head.png": {
+    "kind": "skin",
+    "x": 424.6666666666667,
+    "y": 27.333333333333332,
+    "width": 173,
+    "height": 168,
+    "score": 0.000701563956681639
+  },
+  "tint3_leg.png": {
+    "kind": "skin",
+    "x": 380.0,
+    "y": 30.0,
+    "width": 93,
+    "height": 164,
+    "score": 0.0005662128678523004
+  },
+  "tint3_neck.png": {
+    "kind": "skin",
+    "x": 438.3333333333333,
+    "y": 91.0,
+    "width": 96,
+    "height": 37,
+    "score": 0.002156275324523449
+  },
+  "tint4_arm.png": {
+    "kind": "skin",
+    "x": 671.3333333333334,
+    "y": 63.666666666666664,
+    "width": 170,
+    "height": 136,
+    "score": 0.0007517890771850944
+  },
+  "tint4_hand.png": {
+    "kind": "skin",
+    "x": 671.0,
+    "y": 29.666666666666668,
+    "width": 61,
+    "height": 71,
+    "score": 0.0012721054954454303
+  },
+  "tint4_head.png": {
+    "kind": "skin",
+    "x": 604.6666666666666,
+    "y": 27.333333333333332,
+    "width": 173,
+    "height": 168,
+    "score": 0.0007939419010654092
+  },
+  "tint4_leg.png": {
+    "kind": "skin",
+    "x": 560.0,
+    "y": 30.0,
+    "width": 93,
+    "height": 164,
+    "score": 0.0005598253919743001
+  },
+  "tint4_neck.png": {
+    "kind": "skin",
+    "x": 618.3333333333334,
+    "y": 91.0,
+    "width": 96,
+    "height": 37,
+    "score": 0.0019339234568178654
+  },
+  "tint5_arm.png": {
+    "kind": "skin",
+    "x": 131.33333333333334,
+    "y": 163.66666666666666,
+    "width": 170,
+    "height": 136,
+    "score": 0.0010287680197507143
+  },
+  "tint5_hand.png": {
+    "kind": "skin",
+    "x": 131.0,
+    "y": 129.66666666666666,
+    "width": 61,
+    "height": 71,
+    "score": 0.0012426087632775307
+  },
+  "tint5_head.png": {
+    "kind": "skin",
+    "x": 64.66666666666667,
+    "y": 127.33333333333333,
+    "width": 173,
+    "height": 168,
+    "score": 0.0006998626631684601
+  },
+  "tint5_leg.png": {
+    "kind": "skin",
+    "x": 20.0,
+    "y": 130.0,
+    "width": 93,
+    "height": 164,
+    "score": 0.0005678628804162145
+  },
+  "tint5_neck.png": {
+    "kind": "skin",
+    "x": 78.33333333333333,
+    "y": 191.0,
+    "width": 96,
+    "height": 37,
+    "score": 0.0021392018534243107
+  },
+  "tint6_arm.png": {
+    "kind": "skin",
+    "x": 311.3333333333333,
+    "y": 163.66666666666666,
+    "width": 170,
+    "height": 136,
+    "score": 0.001029256614856422
+  },
+  "tint6_hand.png": {
+    "kind": "skin",
+    "x": 311.0,
+    "y": 129.66666666666666,
+    "width": 61,
+    "height": 71,
+    "score": 0.0012403287691995502
+  },
+  "tint6_head.png": {
+    "kind": "skin",
+    "x": 244.66666666666666,
+    "y": 127.33333333333333,
+    "width": 173,
+    "height": 168,
+    "score": 0.0006984483916312456
+  },
+  "tint6_leg.png": {
+    "kind": "skin",
+    "x": 200.0,
+    "y": 130.0,
+    "width": 93,
+    "height": 164,
+    "score": 0.0005671361577697098
+  },
+  "tint6_neck.png": {
+    "kind": "skin",
+    "x": 258.3333333333333,
+    "y": 191.0,
+    "width": 96,
+    "height": 37,
+    "score": 0.0021353987976908684
+  },
+  "tint7_arm.png": {
+    "kind": "skin",
+    "x": 491.3333333333333,
+    "y": 163.66666666666666,
+    "width": 170,
+    "height": 136,
+    "score": 0.000974714697804302
+  },
+  "tint7_hand.png": {
+    "kind": "skin",
+    "x": 491.0,
+    "y": 129.66666666666666,
+    "width": 61,
+    "height": 71,
+    "score": 0.0012381968554109335
+  },
+  "tint7_head.png": {
+    "kind": "skin",
+    "x": 424.6666666666667,
+    "y": 127.33333333333333,
+    "width": 173,
+    "height": 168,
+    "score": 0.0006966152577660978
+  },
+  "tint7_leg.png": {
+    "kind": "skin",
+    "x": 380.0,
+    "y": 130.0,
+    "width": 93,
+    "height": 164,
+    "score": 0.0005653029656969011
+  },
+  "tint7_neck.png": {
+    "kind": "skin",
+    "x": 438.3333333333333,
+    "y": 191.0,
+    "width": 96,
+    "height": 37,
+    "score": 0.0021302811801433563
+  },
+  "tint8_arm.png": {
+    "kind": "skin",
+    "x": 671.3333333333334,
+    "y": 163.66666666666666,
+    "width": 170,
+    "height": 136,
+    "score": 0.0007495290483348072
+  },
+  "tint8_hand.png": {
+    "kind": "skin",
+    "x": 671.0,
+    "y": 129.66666666666666,
+    "width": 61,
+    "height": 71,
+    "score": 0.0012661539949476719
+  },
+  "tint8_head.png": {
+    "kind": "skin",
+    "x": 604.6666666666666,
+    "y": 127.33333333333333,
+    "width": 173,
+    "height": 168,
+    "score": 0.0007890790002420545
+  },
+  "tint8_leg.png": {
+    "kind": "skin",
+    "x": 560.0,
+    "y": 130.0,
+    "width": 93,
+    "height": 164,
+    "score": 0.0005556015530601144
+  },
+  "tint8_neck.png": {
+    "kind": "skin",
+    "x": 618.3333333333334,
+    "y": 191.0,
+    "width": 96,
+    "height": 37,
+    "score": 0.0019211689941585064
+  },
+  "blackBrow1.png": {
+    "kind": "face",
+    "x": 20.0,
+    "y": 15.0,
+    "width": 40,
+    "height": 17,
+    "score": 0.004723730497062206
+  },
+  "blackBrow2.png": {
+    "kind": "face",
+    "x": 20.0,
+    "y": 35.666666666666664,
+    "width": 41,
+    "height": 11,
+    "score": 0.08124669641256332
+  },
+  "blackBrow3.png": {
+    "kind": "face",
+    "x": 20.0,
+    "y": 55.0,
+    "width": 40,
+    "height": 17,
+    "score": 0.0030554484110325575
+  },
+  "blondeBrow1.png": {
+    "kind": "face",
+    "x": 60.0,
+    "y": 15.0,
+    "width": 40,
+    "height": 17,
+    "score": 0.004745975136756897
+  },
+  "blondeBrow2.png": {
+    "kind": "face",
+    "x": 80.0,
+    "y": 35.666666666666664,
+    "width": 41,
+    "height": 11,
+    "score": 0.07666698843240738
+  },
+  "blondeBrow3.png": {
+    "kind": "face",
+    "x": 60.0,
+    "y": 55.0,
+    "width": 40,
+    "height": 17,
+    "score": 0.0030557410791516304
+  },
+  "brown1Brow1.png": {
+    "kind": "face",
+    "x": 100.0,
+    "y": 15.0,
+    "width": 40,
+    "height": 17,
+    "score": 0.004755093716084957
+  },
+  "brown1Brow2.png": {
+    "kind": "face",
+    "x": 20.0,
+    "y": 35.666666666666664,
+    "width": 41,
+    "height": 11,
+    "score": 0.0768357366323471
+  },
+  "brown1Brow3.png": {
+    "kind": "face",
+    "x": 100.0,
+    "y": 55.0,
+    "width": 40,
+    "height": 17,
+    "score": 0.003041482763364911
+  },
+  "brown2Brow1.png": {
+    "kind": "face",
+    "x": 120.0,
+    "y": 15.0,
+    "width": 40,
+    "height": 17,
+    "score": 0.004764789715409279
+  },
+  "brown2Brow2.png": {
+    "kind": "face",
+    "x": 20.0,
+    "y": 35.666666666666664,
+    "width": 41,
+    "height": 11,
+    "score": 0.07694438099861145
+  },
+  "brown2Brow3.png": {
+    "kind": "face",
+    "x": 120.0,
+    "y": 55.0,
+    "width": 40,
+    "height": 17,
+    "score": 0.003044115612283349
+  },
+  "eyeBlack_large.png": {
+    "kind": "face",
+    "x": 40.0,
+    "y": 79.0,
+    "width": 21,
+    "height": 21,
+    "score": 0.005979270674288273
+  },
+  "eyeBlack_small.png": {
+    "kind": "face",
+    "x": 370.0,
+    "y": 70.0,
+    "width": 15,
+    "height": 16,
+    "score": 0.004411633126437664
+  },
+  "eyeBlue_large.png": {
+    "kind": "face",
+    "x": 20.0,
+    "y": 79.0,
+    "width": 21,
+    "height": 21,
+    "score": 0.006002900656312704
+  },
+  "eyeBlue_small.png": {
+    "kind": "face",
+    "x": 370.0,
+    "y": 70.0,
+    "width": 15,
+    "height": 16,
+    "score": 0.004377968143671751
+  },
+  "eyeBrown_large.png": {
+    "kind": "face",
+    "x": 60.0,
+    "y": 79.0,
+    "width": 21,
+    "height": 21,
+    "score": 0.0060452125035226345
+  },
+  "eyeBrown_small.png": {
+    "kind": "face",
+    "x": 20.0,
+    "y": 99.0,
+    "width": 15,
+    "height": 16,
+    "score": 0.004399132449179888
+  },
+  "eyeGreen_large.png": {
+    "kind": "face",
+    "x": 80.0,
+    "y": 79.0,
+    "width": 21,
+    "height": 21,
+    "score": 0.006207154132425785
+  },
+  "eyeGreen_small.png": {
+    "kind": "face",
+    "x": 20.0,
+    "y": 99.0,
+    "width": 15,
+    "height": 16,
+    "score": 0.005518630612641573
+  },
+  "eyePine_large.png": {
+    "kind": "face",
+    "x": 80.0,
+    "y": 79.0,
+    "width": 21,
+    "height": 21,
+    "score": 0.00614174222573638
+  },
+  "eyePine_small.png": {
+    "kind": "face",
+    "x": 20.0,
+    "y": 99.0,
+    "width": 15,
+    "height": 16,
+    "score": 0.005377499852329493
+  },
+  "face1.png": {
+    "kind": "face",
+    "x": 227.66666666666666,
+    "y": 55.0,
+    "width": 100,
+    "height": 101,
+    "score": 0.007302048150449991
+  },
+  "face2.png": {
+    "kind": "face",
+    "x": 296.0,
+    "y": 54.333333333333336,
+    "width": 98,
+    "height": 108,
+    "score": 0.008685711771249771
+  },
+  "face3.png": {
+    "kind": "face",
+    "x": 365.6666666666667,
+    "y": 62.666666666666664,
+    "width": 112,
+    "height": 65,
+    "score": 0.005913021042943001
+  },
+  "face4.png": {
+    "kind": "face",
+    "x": 436.3333333333333,
+    "y": 57.333333333333336,
+    "width": 111,
+    "height": 87,
+    "score": 0.005424233619123697
+  },
+  "greyBrow1.png": {
+    "kind": "face",
+    "x": 140.0,
+    "y": 15.0,
+    "width": 40,
+    "height": 17,
+    "score": 0.004737561568617821
+  },
+  "greyBrow2.png": {
+    "kind": "face",
+    "x": 140.0,
+    "y": 35.666666666666664,
+    "width": 41,
+    "height": 11,
+    "score": 0.08121752738952637
+  },
+  "greyBrow3.png": {
+    "kind": "face",
+    "x": 140.0,
+    "y": 55.0,
+    "width": 40,
+    "height": 17,
+    "score": 0.003062973730266094
+  },
+  "mouth_glad.png": {
+    "kind": "face",
+    "x": 40.0,
+    "y": 191.33333333333334,
+    "width": 34,
+    "height": 13,
+    "score": 0.016837412491440773
+  },
+  "mouth_happy.png": {
+    "kind": "face",
+    "x": 20.0,
+    "y": 191.33333333333334,
+    "width": 34,
+    "height": 13,
+    "score": 0.007291064597666264
+  },
+  "mouth_oh.png": {
+    "kind": "face",
+    "x": 121.66666666666667,
+    "y": 190.33333333333334,
+    "width": 15,
+    "height": 15,
+    "score": 0.007827729918062687
+  },
+  "mouth_sad.png": {
+    "kind": "face",
+    "x": 60.0,
+    "y": 191.33333333333334,
+    "width": 34,
+    "height": 13,
+    "score": 0.011549923568964005
+  },
+  "mouth_straight.png": {
+    "kind": "face",
+    "x": 135.33333333333334,
+    "y": 190.66666666666666,
+    "width": 36,
+    "height": 6,
+    "score": 0.006735122762620449
+  },
+  "mouth_teethLower.png": {
+    "kind": "face",
+    "x": 100.0,
+    "y": 191.33333333333334,
+    "width": 34,
+    "height": 13,
+    "score": 0.014090199954807758
+  },
+  "mouth_teethUpper.png": {
+    "kind": "face",
+    "x": 80.0,
+    "y": 191.33333333333334,
+    "width": 34,
+    "height": 13,
+    "score": 0.009367906488478184
+  },
+  "redBrow1.png": {
+    "kind": "face",
+    "x": 80.0,
+    "y": 15.0,
+    "width": 40,
+    "height": 17,
+    "score": 0.004743597935885191
+  },
+  "redBrow2.png": {
+    "kind": "face",
+    "x": 140.0,
+    "y": 35.666666666666664,
+    "width": 41,
+    "height": 11,
+    "score": 0.07845533639192581
+  },
+  "redBrow3.png": {
+    "kind": "face",
+    "x": 80.0,
+    "y": 55.0,
+    "width": 40,
+    "height": 17,
+    "score": 0.0030563126783818007
+  },
+  "tanBrow1.png": {
+    "kind": "face",
+    "x": 40.0,
+    "y": 15.0,
+    "width": 40,
+    "height": 17,
+    "score": 0.004741945303976536
+  },
+  "tanBrow2.png": {
+    "kind": "face",
+    "x": 80.0,
+    "y": 35.666666666666664,
+    "width": 41,
+    "height": 11,
+    "score": 0.07731098681688309
+  },
+  "tanBrow3.png": {
+    "kind": "face",
+    "x": 40.0,
+    "y": 55.0,
+    "width": 40,
+    "height": 17,
+    "score": 0.0030650687403976917
+  },
+  "tint1Nose1.png": {
+    "kind": "face",
+    "x": 40.0,
+    "y": 123.0,
+    "width": 31,
+    "height": 21,
+    "score": 0.005864797625690699
+  },
+  "tint1Nose2.png": {
+    "kind": "face",
+    "x": 21.0,
+    "y": 143.0,
+    "width": 24,
+    "height": 24,
+    "score": 0.006114347372204065
+  },
+  "tint1Nose3.png": {
+    "kind": "face",
+    "x": 61.0,
+    "y": 165.0,
+    "width": 22,
+    "height": 15,
+    "score": 0.009690617211163044
+  },
+  "tint2Nose1.png": {
+    "kind": "face",
+    "x": 40.0,
+    "y": 123.0,
+    "width": 31,
+    "height": 21,
+    "score": 0.004544078838080168
+  },
+  "tint2Nose2.png": {
+    "kind": "face",
+    "x": 41.0,
+    "y": 143.0,
+    "width": 24,
+    "height": 24,
+    "score": 0.006092378403991461
+  },
+  "tint2Nose3.png": {
+    "kind": "face",
+    "x": 21.0,
+    "y": 165.0,
+    "width": 22,
+    "height": 15,
+    "score": 0.009762481786310673
+  },
+  "tint3Nose1.png": {
+    "kind": "face",
+    "x": 60.0,
+    "y": 123.0,
+    "width": 31,
+    "height": 21,
+    "score": 0.00792662613093853
+  },
+  "tint3Nose2.png": {
+    "kind": "face",
+    "x": 61.0,
+    "y": 143.0,
+    "width": 24,
+    "height": 24,
+    "score": 0.006132033653557301
+  },
+  "tint3Nose3.png": {
+    "kind": "face",
+    "x": 61.0,
+    "y": 165.0,
+    "width": 22,
+    "height": 15,
+    "score": 0.0100172134116292
+  },
+  "tint4Nose1.png": {
+    "kind": "face",
+    "x": 40.0,
+    "y": 123.0,
+    "width": 31,
+    "height": 21,
+    "score": 0.006732471287250519
+  },
+  "tint4Nose2.png": {
+    "kind": "face",
+    "x": 81.0,
+    "y": 143.0,
+    "width": 24,
+    "height": 24,
+    "score": 0.006099673453718424
+  },
+  "tint4Nose3.png": {
+    "kind": "face",
+    "x": 81.0,
+    "y": 165.0,
+    "width": 22,
+    "height": 15,
+    "score": 0.009988844394683838
+  },
+  "tint5Nose1.png": {
+    "kind": "face",
+    "x": 100.0,
+    "y": 123.0,
+    "width": 31,
+    "height": 21,
+    "score": 0.007935836911201477
+  },
+  "tint5Nose2.png": {
+    "kind": "face",
+    "x": 101.0,
+    "y": 143.0,
+    "width": 24,
+    "height": 24,
+    "score": 0.006088703870773315
+  },
+  "tint5Nose3.png": {
+    "kind": "face",
+    "x": 81.0,
+    "y": 165.0,
+    "width": 22,
+    "height": 15,
+    "score": 0.009987522847950459
+  },
+  "tint6Nose1.png": {
+    "kind": "face",
+    "x": 120.0,
+    "y": 123.0,
+    "width": 31,
+    "height": 21,
+    "score": 0.007907513529062271
+  },
+  "tint6Nose2.png": {
+    "kind": "face",
+    "x": 121.0,
+    "y": 143.0,
+    "width": 24,
+    "height": 24,
+    "score": 0.006073616910725832
+  },
+  "tint6Nose3.png": {
+    "kind": "face",
+    "x": 121.0,
+    "y": 165.0,
+    "width": 22,
+    "height": 15,
+    "score": 0.00996799860149622
+  },
+  "tint7Nose1.png": {
+    "kind": "face",
+    "x": 140.0,
+    "y": 123.0,
+    "width": 31,
+    "height": 21,
+    "score": 0.005870846565812826
+  },
+  "tint7Nose2.png": {
+    "kind": "face",
+    "x": 141.0,
+    "y": 143.0,
+    "width": 24,
+    "height": 24,
+    "score": 0.006077487953007221
+  },
+  "tint7Nose3.png": {
+    "kind": "face",
+    "x": 141.0,
+    "y": 165.0,
+    "width": 22,
+    "height": 15,
+    "score": 0.009958501905202866
+  },
+  "tint8Nose1.png": {
+    "kind": "face",
+    "x": 140.0,
+    "y": 123.0,
+    "width": 31,
+    "height": 21,
+    "score": 0.00705711031332612
+  },
+  "tint8Nose2.png": {
+    "kind": "face",
+    "x": 161.0,
+    "y": 143.0,
+    "width": 24,
+    "height": 24,
+    "score": 0.006076448131352663
+  },
+  "tint8Nose3.png": {
+    "kind": "face",
+    "x": 161.0,
+    "y": 165.0,
+    "width": 22,
+    "height": 15,
+    "score": 0.009962133131921291
+  },
+  "whiteBrow1.png": {
+    "kind": "face",
+    "x": 160.0,
+    "y": 15.0,
+    "width": 40,
+    "height": 17,
+    "score": 0.004747596103698015
+  },
+  "whiteBrow2.png": {
+    "kind": "face",
+    "x": 60.0,
+    "y": 35.666666666666664,
+    "width": 41,
+    "height": 11,
+    "score": 0.07670000940561295
+  },
+  "whiteBrow3.png": {
+    "kind": "face",
+    "x": 160.0,
+    "y": 55.0,
+    "width": 40,
+    "height": 17,
+    "score": 0.003082141513004899
+  },
+  "armWhite_long.png": {
+    "kind": "shirts",
+    "x": 278.0,
+    "y": 25.333333333333332,
+    "width": 171,
+    "height": 142,
+    "score": 0.0017867260612547398
+  },
+  "armWhite_short.png": {
+    "kind": "shirts",
+    "x": 278.0,
+    "y": 85.33333333333333,
+    "width": 118,
+    "height": 96,
+    "score": 0.0017435243353247643
+  },
+  "armWhite_shorter.png": {
+    "kind": "shirts",
+    "x": 278.0,
+    "y": 125.33333333333333,
+    "width": 67,
+    "height": 86,
+    "score": 0.001737272017635405
+  },
+  "armYellow_long.png": {
+    "kind": "shirts",
+    "x": 608.0,
+    "y": 475.3333333333333,
+    "width": 171,
+    "height": 142,
+    "score": 0.001803062274120748
+  },
+  "armYellow_short.png": {
+    "kind": "shirts",
+    "x": 608.0,
+    "y": 535.3333333333334,
+    "width": 118,
+    "height": 96,
+    "score": 0.0017041722312569618
+  },
+  "armYellow_shorter.png": {
+    "kind": "shirts",
+    "x": 608.0,
+    "y": 575.3333333333334,
+    "width": 66,
+    "height": 86,
+    "score": 0.0031171280425041914
+  },
+  "blueArm_long.png": {
+    "kind": "shirts",
+    "x": 608.0,
+    "y": 25.333333333333332,
+    "width": 171,
+    "height": 142,
+    "score": 0.0018004289595410228
+  },
+  "blueArm_short.png": {
+    "kind": "shirts",
+    "x": 608.0,
+    "y": 85.33333333333333,
+    "width": 118,
+    "height": 96,
+    "score": 0.0016792516689747572
+  },
+  "blueArm_shorter.png": {
+    "kind": "shirts",
+    "x": 608.0,
+    "y": 125.33333333333333,
+    "width": 66,
+    "height": 86,
+    "score": 0.0031466567888855934
+  },
+  "blueShirt1.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 25.333333333333332,
+    "width": 153,
+    "height": 174,
+    "score": 0.0005960280541330576
+  },
+  "blueShirt2.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 175.33333333333334,
+    "width": 153,
+    "height": 174,
+    "score": 0.0010259469272568822
+  },
+  "blueShirt3.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 25.333333333333332,
+    "width": 153,
+    "height": 174,
+    "score": 0.0007294010138139129
+  },
+  "blueShirt4.png": {
+    "kind": "shirts",
+    "x": 535.6666666666666,
+    "y": 25.333333333333332,
+    "width": 161,
+    "height": 174,
+    "score": 0.001076716696843505
+  },
+  "blueShirt5.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 95.33333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0008937572711147368
+  },
+  "blueShirt6.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 25.333333333333332,
+    "width": 153,
+    "height": 174,
+    "score": 0.0009225374669767916
+  },
+  "blueShirt7.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 175.33333333333334,
+    "width": 153,
+    "height": 174,
+    "score": 0.0010258267866447568
+  },
+  "blueShirt8.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 25.333333333333332,
+    "width": 153,
+    "height": 174,
+    "score": 0.0007227385649457574
+  },
+  "greenArm_long.png": {
+    "kind": "shirts",
+    "x": 278.0,
+    "y": 175.33333333333334,
+    "width": 171,
+    "height": 142,
+    "score": 0.001804223284125328
+  },
+  "greenArm_short.png": {
+    "kind": "shirts",
+    "x": 278.0,
+    "y": 235.33333333333334,
+    "width": 118,
+    "height": 96,
+    "score": 0.0017019964288920164
+  },
+  "greenArm_shorter.png": {
+    "kind": "shirts",
+    "x": 278.0,
+    "y": 275.3333333333333,
+    "width": 67,
+    "height": 86,
+    "score": 0.001787414774298668
+  },
+  "greenShirt1.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 175.33333333333334,
+    "width": 153,
+    "height": 174,
+    "score": 0.0005985114257782698
+  },
+  "greenShirt2.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 175.33333333333334,
+    "width": 153,
+    "height": 174,
+    "score": 0.001112846308387816
+  },
+  "greenShirt3.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 175.33333333333334,
+    "width": 153,
+    "height": 174,
+    "score": 0.0007313060341402888
+  },
+  "greenShirt4.png": {
+    "kind": "shirts",
+    "x": 205.66666666666666,
+    "y": 175.33333333333334,
+    "width": 161,
+    "height": 174,
+    "score": 0.001090059638954699
+  },
+  "greenShirt5.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 245.33333333333334,
+    "width": 153,
+    "height": 174,
+    "score": 0.0008929970790632069
+  },
+  "greenShirt6.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 175.33333333333334,
+    "width": 153,
+    "height": 174,
+    "score": 0.0009232125012204051
+  },
+  "greenShirt7.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 175.33333333333334,
+    "width": 153,
+    "height": 174,
+    "score": 0.0010576522909104824
+  },
+  "greenShirt8.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 175.33333333333334,
+    "width": 153,
+    "height": 174,
+    "score": 0.0007473319419659674
+  },
+  "greyArm_long.png": {
+    "kind": "shirts",
+    "x": 608.0,
+    "y": 325.3333333333333,
+    "width": 171,
+    "height": 142,
+    "score": 0.0017977076349779963
+  },
+  "greyArm_short.png": {
+    "kind": "shirts",
+    "x": 608.0,
+    "y": 385.3333333333333,
+    "width": 118,
+    "height": 96,
+    "score": 0.0016667681047692895
+  },
+  "greyArm_shorter.png": {
+    "kind": "shirts",
+    "x": 608.0,
+    "y": 425.3333333333333,
+    "width": 66,
+    "height": 86,
+    "score": 0.0031409976072609425
+  },
+  "greyShirt1.png": {
+    "kind": "shirts",
+    "x": 476.6666666666667,
+    "y": 325.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0010772323003038764
+  },
+  "greyShirt2.png": {
+    "kind": "shirts",
+    "x": 416.6666666666667,
+    "y": 325.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0013407767983153462
+  },
+  "greyShirt3.png": {
+    "kind": "shirts",
+    "x": 476.6666666666667,
+    "y": 325.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0007886698585934937
+  },
+  "greyShirt4.png": {
+    "kind": "shirts",
+    "x": 535.6666666666666,
+    "y": 325.3333333333333,
+    "width": 161,
+    "height": 174,
+    "score": 0.001078793895430863
+  },
+  "greyShirt5.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 395.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0013001159531995654
+  },
+  "greyShirt6.png": {
+    "kind": "shirts",
+    "x": 416.6666666666667,
+    "y": 395.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.001176017103716731
+  },
+  "greyShirt7.png": {
+    "kind": "shirts",
+    "x": 476.6666666666667,
+    "y": 325.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0011368226259946823
+  },
+  "greyShirt8.png": {
+    "kind": "shirts",
+    "x": 536.6666666666666,
+    "y": 395.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0011018343502655625
+  },
+  "navyArm_long.png": {
+    "kind": "shirts",
+    "x": 278.0,
+    "y": 475.3333333333333,
+    "width": 171,
+    "height": 142,
+    "score": 0.0018002280266955495
+  },
+  "navyArm_short.png": {
+    "kind": "shirts",
+    "x": 278.0,
+    "y": 535.3333333333334,
+    "width": 118,
+    "height": 96,
+    "score": 0.0017310556722804904
+  },
+  "navyArm_shorter.png": {
+    "kind": "shirts",
+    "x": 278.0,
+    "y": 575.3333333333334,
+    "width": 67,
+    "height": 86,
+    "score": 0.0018473593518137932
+  },
+  "navyShirt1.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 475.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0005988104967400432
+  },
+  "navyShirt2.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 475.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0008854534826241434
+  },
+  "navyShirt3.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 475.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0006690872833132744
+  },
+  "navyShirt4.png": {
+    "kind": "shirts",
+    "x": 205.66666666666666,
+    "y": 475.3333333333333,
+    "width": 161,
+    "height": 174,
+    "score": 0.0010515653993934393
+  },
+  "navyShirt5.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 475.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0007339917938224971
+  },
+  "navyShirt6.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 475.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0007859019679017365
+  },
+  "navyShirt7.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 475.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0008566780597902834
+  },
+  "navyShirt8.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 475.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0006770608597435057
+  },
+  "pineArm_long.png": {
+    "kind": "shirts",
+    "x": 278.0,
+    "y": 325.3333333333333,
+    "width": 171,
+    "height": 142,
+    "score": 0.0018071954837068915
+  },
+  "pineArm_short.png": {
+    "kind": "shirts",
+    "x": 278.0,
+    "y": 385.3333333333333,
+    "width": 118,
+    "height": 96,
+    "score": 0.0017379401251673698
+  },
+  "pineArm_shorter.png": {
+    "kind": "shirts",
+    "x": 278.0,
+    "y": 425.3333333333333,
+    "width": 67,
+    "height": 86,
+    "score": 0.0016426356742158532
+  },
+  "pineShirt1.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 325.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0005965039599686861
+  },
+  "pineShirt2.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 325.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.000992711284197867
+  },
+  "pineShirt3.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 325.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0006969385431148112
+  },
+  "pineShirt4.png": {
+    "kind": "shirts",
+    "x": 205.66666666666666,
+    "y": 325.3333333333333,
+    "width": 161,
+    "height": 174,
+    "score": 0.0010830812389031053
+  },
+  "pineShirt5.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 325.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0008788619306869805
+  },
+  "pineShirt6.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 325.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0008835355984047055
+  },
+  "pineShirt7.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 325.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0009848522022366524
+  },
+  "pineShirt8.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 325.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0007095112814567983
+  },
+  "redArm_long.png": {
+    "kind": "shirts",
+    "x": 608.0,
+    "y": 175.33333333333334,
+    "width": 171,
+    "height": 142,
+    "score": 0.0017972039058804512
+  },
+  "redArm_short.png": {
+    "kind": "shirts",
+    "x": 608.0,
+    "y": 85.33333333333333,
+    "width": 118,
+    "height": 96,
+    "score": 0.0016650536563247442
+  },
+  "redArm_shorter.png": {
+    "kind": "shirts",
+    "x": 278.0,
+    "y": 425.3333333333333,
+    "width": 66,
+    "height": 86,
+    "score": 0.0027766097337007523
+  },
+  "redShirt1.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 175.33333333333334,
+    "width": 153,
+    "height": 174,
+    "score": 0.0005976401153020561
+  },
+  "redShirt2.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 175.33333333333334,
+    "width": 153,
+    "height": 174,
+    "score": 0.0011194419348612428
+  },
+  "redShirt3.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 175.33333333333334,
+    "width": 153,
+    "height": 174,
+    "score": 0.0007332551176659763
+  },
+  "redShirt4.png": {
+    "kind": "shirts",
+    "x": 535.6666666666666,
+    "y": 175.33333333333334,
+    "width": 161,
+    "height": 174,
+    "score": 0.0010775586124509573
+  },
+  "redShirt5.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 245.33333333333334,
+    "width": 153,
+    "height": 174,
+    "score": 0.0008933984790928662
+  },
+  "redShirt6.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 175.33333333333334,
+    "width": 153,
+    "height": 174,
+    "score": 0.0009261376108042896
+  },
+  "redShirt7.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 175.33333333333334,
+    "width": 153,
+    "height": 174,
+    "score": 0.0010625041322782636
+  },
+  "redShirt8.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 175.33333333333334,
+    "width": 153,
+    "height": 174,
+    "score": 0.0007270487258210778
+  },
+  "shirtYellow1.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 475.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0005965662421658635
+  },
+  "shirtYellow2.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 475.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0009200042695738375
+  },
+  "shirtYellow3.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 475.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0006776594091206789
+  },
+  "shirtYellow4.png": {
+    "kind": "shirts",
+    "x": 535.6666666666666,
+    "y": 475.3333333333333,
+    "width": 161,
+    "height": 174,
+    "score": 0.001035872963257134
+  },
+  "shirtYellow5.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 475.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0007474962621927261
+  },
+  "shirtYellow6.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 475.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.000796695938333869
+  },
+  "shirtYellow7.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 475.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0008772246656008065
+  },
+  "shirtYellow8.png": {
+    "kind": "shirts",
+    "x": 356.6666666666667,
+    "y": 475.3333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.0006635354366153479
+  },
+  "whiteShirt1.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 25.333333333333332,
+    "width": 153,
+    "height": 174,
+    "score": 0.0005966223543509841
+  },
+  "whiteShirt2.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 25.333333333333332,
+    "width": 153,
+    "height": 174,
+    "score": 0.0011957210954278708
+  },
+  "whiteShirt3.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 25.333333333333332,
+    "width": 153,
+    "height": 174,
+    "score": 0.0007528170826844871
+  },
+  "whiteShirt4.png": {
+    "kind": "shirts",
+    "x": 205.66666666666666,
+    "y": 25.333333333333332,
+    "width": 161,
+    "height": 174,
+    "score": 0.0010906894458457828
+  },
+  "whiteShirt5.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 95.33333333333333,
+    "width": 153,
+    "height": 174,
+    "score": 0.00088906055316329
+  },
+  "whiteShirt6.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 25.333333333333332,
+    "width": 153,
+    "height": 174,
+    "score": 0.0009509841329418123
+  },
+  "whiteShirt7.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 25.333333333333332,
+    "width": 153,
+    "height": 174,
+    "score": 0.001108444994315505
+  },
+  "whiteShirt8.png": {
+    "kind": "shirts",
+    "x": 26.666666666666668,
+    "y": 25.333333333333332,
+    "width": 153,
+    "height": 174,
+    "score": 0.0007714734529145062
+  },
+  "legYellow_long.png": {
+    "kind": "pants",
+    "x": 541.0,
+    "y": 356.0,
+    "width": 111,
+    "height": 166,
+    "score": 0.0011386835249140859
+  },
+  "legYellow_short.png": {
+    "kind": "pants",
+    "x": 503.0,
+    "y": 356.0,
+    "width": 107,
+    "height": 118,
+    "score": 0.0013026748783886433
+  },
+  "legYellow_shorter.png": {
+    "kind": "pants",
+    "x": 465.0,
+    "y": 356.0,
+    "width": 104,
+    "height": 105,
+    "score": 0.0014824458630755544
+  },
+  "pantsBlue11.png": {
+    "kind": "pants",
+    "x": 186.66666666666666,
+    "y": 70.66666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.0019035364966839552
+  },
+  "pantsBlue12.png": {
+    "kind": "pants",
+    "x": 246.66666666666666,
+    "y": 300.6666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.0015573102282360196
+  },
+  "pantsBlue13.png": {
+    "kind": "pants",
+    "x": 186.66666666666666,
+    "y": 70.66666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.00195564073510468
+  },
+  "pantsBlue14.png": {
+    "kind": "pants",
+    "x": 246.66666666666666,
+    "y": 330.6666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.0017899337690323591
+  },
+  "pantsBlue1_long.png": {
+    "kind": "pants",
+    "x": 261.0,
+    "y": 96.0,
+    "width": 111,
+    "height": 166,
+    "score": 0.0010595145868137479
+  },
+  "pantsBlue1_short.png": {
+    "kind": "pants",
+    "x": 223.0,
+    "y": 96.0,
+    "width": 107,
+    "height": 118,
+    "score": 0.0013003103667870164
+  },
+  "pantsBlue1_shorter.png": {
+    "kind": "pants",
+    "x": 185.0,
+    "y": 96.0,
+    "width": 104,
+    "height": 105,
+    "score": 0.0015233035665005445
+  },
+  "pantsBlue21.png": {
+    "kind": "pants",
+    "x": 186.66666666666666,
+    "y": 170.66666666666666,
+    "width": 153,
+    "height": 47,
+    "score": 0.001984647009521723
+  },
+  "pantsBlue22.png": {
+    "kind": "pants",
+    "x": 246.66666666666666,
+    "y": 170.66666666666666,
+    "width": 153,
+    "height": 47,
+    "score": 0.0017804260132834315
+  },
+  "pantsBlue23.png": {
+    "kind": "pants",
+    "x": 186.66666666666666,
+    "y": 200.66666666666666,
+    "width": 153,
+    "height": 47,
+    "score": 0.0023757119197398424
+  },
+  "pantsBlue24.png": {
+    "kind": "pants",
+    "x": 246.66666666666666,
+    "y": 200.66666666666666,
+    "width": 153,
+    "height": 47,
+    "score": 0.0020795834716409445
+  },
+  "pantsBlue2_long.png": {
+    "kind": "pants",
+    "x": 261.0,
+    "y": 226.0,
+    "width": 111,
+    "height": 166,
+    "score": 0.001080491580069065
+  },
+  "pantsBlue2_short.png": {
+    "kind": "pants",
+    "x": 223.0,
+    "y": 226.0,
+    "width": 107,
+    "height": 118,
+    "score": 0.0012959723826497793
+  },
+  "pantsBlue2_shorter.png": {
+    "kind": "pants",
+    "x": 185.0,
+    "y": 226.0,
+    "width": 104,
+    "height": 105,
+    "score": 0.00155935762450099
+  },
+  "pantsBrown1.png": {
+    "kind": "pants",
+    "x": 466.6666666666667,
+    "y": 300.6666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.0018852666253224015
+  },
+  "pantsBrown2.png": {
+    "kind": "pants",
+    "x": 386.6666666666667,
+    "y": 40.666666666666664,
+    "width": 153,
+    "height": 47,
+    "score": 0.0016392989782616496
+  },
+  "pantsBrown3.png": {
+    "kind": "pants",
+    "x": 466.6666666666667,
+    "y": 330.6666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.0016710717463865876
+  },
+  "pantsBrown4.png": {
+    "kind": "pants",
+    "x": 526.6666666666666,
+    "y": 330.6666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.0014946883311495185
+  },
+  "pantsBrown_long.png": {
+    "kind": "pants",
+    "x": 401.0,
+    "y": 96.0,
+    "width": 111,
+    "height": 166,
+    "score": 0.001203379244543612
+  },
+  "pantsBrown_short.png": {
+    "kind": "pants",
+    "x": 363.0,
+    "y": 96.0,
+    "width": 107,
+    "height": 118,
+    "score": 0.0012659147614613175
+  },
+  "pantsBrown_shorter.png": {
+    "kind": "pants",
+    "x": 325.0,
+    "y": 96.0,
+    "width": 104,
+    "height": 105,
+    "score": 0.0014898510416969657
+  },
+  "pantsGreen1.png": {
+    "kind": "pants",
+    "x": 386.6666666666667,
+    "y": 200.66666666666666,
+    "width": 153,
+    "height": 47,
+    "score": 0.001864774851128459
+  },
+  "pantsGreen2.png": {
+    "kind": "pants",
+    "x": 386.6666666666667,
+    "y": 170.66666666666666,
+    "width": 153,
+    "height": 47,
+    "score": 0.001645452226512134
+  },
+  "pantsGreen3.png": {
+    "kind": "pants",
+    "x": 326.6666666666667,
+    "y": 200.66666666666666,
+    "width": 153,
+    "height": 47,
+    "score": 0.00218783225864172
+  },
+  "pantsGreen4.png": {
+    "kind": "pants",
+    "x": 386.6666666666667,
+    "y": 200.66666666666666,
+    "width": 153,
+    "height": 47,
+    "score": 0.0019144926918670535
+  },
+  "pantsGreen_long.png": {
+    "kind": "pants",
+    "x": 401.0,
+    "y": 226.0,
+    "width": 111,
+    "height": 166,
+    "score": 0.0011491636978462338
+  },
+  "pantsGreen_short.png": {
+    "kind": "pants",
+    "x": 363.0,
+    "y": 226.0,
+    "width": 107,
+    "height": 118,
+    "score": 0.0012448735069483519
+  },
+  "pantsGreen_shorter.png": {
+    "kind": "pants",
+    "x": 325.0,
+    "y": 226.0,
+    "width": 104,
+    "height": 105,
+    "score": 0.001498688361607492
+  },
+  "pantsGrey1.png": {
+    "kind": "pants",
+    "x": 186.66666666666666,
+    "y": 300.6666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.001970115350559354
+  },
+  "pantsGrey2.png": {
+    "kind": "pants",
+    "x": 246.66666666666666,
+    "y": 300.6666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.0015172093408182263
+  },
+  "pantsGrey3.png": {
+    "kind": "pants",
+    "x": 186.66666666666666,
+    "y": 70.66666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.00197047833353281
+  },
+  "pantsGrey4.png": {
+    "kind": "pants",
+    "x": 246.66666666666666,
+    "y": 330.6666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.0017520042601972818
+  },
+  "pantsGrey_long.png": {
+    "kind": "pants",
+    "x": 261.0,
+    "y": 96.0,
+    "width": 111,
+    "height": 166,
+    "score": 0.0010681792628020048
+  },
+  "pantsGrey_short.png": {
+    "kind": "pants",
+    "x": 223.0,
+    "y": 356.0,
+    "width": 107,
+    "height": 118,
+    "score": 0.0012450732756406069
+  },
+  "pantsGrey_shorter.png": {
+    "kind": "pants",
+    "x": 185.0,
+    "y": 356.0,
+    "width": 104,
+    "height": 105,
+    "score": 0.0014699137536808848
+  },
+  "pantsLightBlue1.png": {
+    "kind": "pants",
+    "x": 46.666666666666664,
+    "y": 70.66666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.0018322441028431058
+  },
+  "pantsLightBlue2.png": {
+    "kind": "pants",
+    "x": 106.66666666666667,
+    "y": 40.666666666666664,
+    "width": 153,
+    "height": 47,
+    "score": 0.0014346962561830878
+  },
+  "pantsLightBlue3.png": {
+    "kind": "pants",
+    "x": 46.666666666666664,
+    "y": 70.66666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.001849028980359435
+  },
+  "pantsLightBlue4.png": {
+    "kind": "pants",
+    "x": 106.66666666666667,
+    "y": 70.66666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.0016356194391846657
+  },
+  "pantsLightBlue_long.png": {
+    "kind": "pants",
+    "x": 121.0,
+    "y": 96.0,
+    "width": 111,
+    "height": 166,
+    "score": 0.0010529541177675128
+  },
+  "pantsLightBlue_short.png": {
+    "kind": "pants",
+    "x": 83.0,
+    "y": 96.0,
+    "width": 107,
+    "height": 118,
+    "score": 0.0013229099567979574
+  },
+  "pantsLightBlue_shorter.png": {
+    "kind": "pants",
+    "x": 45.0,
+    "y": 96.0,
+    "width": 104,
+    "height": 105,
+    "score": 0.0014742572093382478
+  },
+  "pantsNavy1.png": {
+    "kind": "pants",
+    "x": 326.6666666666667,
+    "y": 300.6666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.0019414459820836782
+  },
+  "pantsNavy2.png": {
+    "kind": "pants",
+    "x": 386.6666666666667,
+    "y": 300.6666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.0026425032410770655
+  },
+  "pantsNavy3.png": {
+    "kind": "pants",
+    "x": 326.6666666666667,
+    "y": 330.6666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.003530588699504733
+  },
+  "pantsNavy4.png": {
+    "kind": "pants",
+    "x": 386.6666666666667,
+    "y": 330.6666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.003109744982793927
+  },
+  "pantsNavy_long.png": {
+    "kind": "pants",
+    "x": 401.0,
+    "y": 356.0,
+    "width": 111,
+    "height": 166,
+    "score": 0.0011758838081732392
+  },
+  "pantsNavy_short.png": {
+    "kind": "pants",
+    "x": 363.0,
+    "y": 356.0,
+    "width": 107,
+    "height": 118,
+    "score": 0.0012579956091940403
+  },
+  "pantsNavy_shorter.png": {
+    "kind": "pants",
+    "x": 325.0,
+    "y": 356.0,
+    "width": 104,
+    "height": 105,
+    "score": 0.0015000856947153807
+  },
+  "pantsPine1.png": {
+    "kind": "pants",
+    "x": 106.66666666666667,
+    "y": 300.6666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.001951701007783413
+  },
+  "pantsPine2.png": {
+    "kind": "pants",
+    "x": 106.66666666666667,
+    "y": 300.6666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.002005537273362279
+  },
+  "pantsPine3.png": {
+    "kind": "pants",
+    "x": 46.666666666666664,
+    "y": 330.6666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.0023653008975088596
+  },
+  "pantsPine4.png": {
+    "kind": "pants",
+    "x": 106.66666666666667,
+    "y": 330.6666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.002195365261286497
+  },
+  "pantsPine_long.png": {
+    "kind": "pants",
+    "x": 121.0,
+    "y": 356.0,
+    "width": 111,
+    "height": 166,
+    "score": 0.0010768823558464646
+  },
+  "pantsPine_short.png": {
+    "kind": "pants",
+    "x": 83.0,
+    "y": 356.0,
+    "width": 107,
+    "height": 118,
+    "score": 0.0012778970412909985
+  },
+  "pantsPine_shorter.png": {
+    "kind": "pants",
+    "x": 45.0,
+    "y": 356.0,
+    "width": 104,
+    "height": 105,
+    "score": 0.0015034526586532593
+  },
+  "pantsRed1.png": {
+    "kind": "pants",
+    "x": 466.6666666666667,
+    "y": 170.66666666666666,
+    "width": 153,
+    "height": 47,
+    "score": 0.001859462121501565
+  },
+  "pantsRed2.png": {
+    "kind": "pants",
+    "x": 246.66666666666666,
+    "y": 170.66666666666666,
+    "width": 153,
+    "height": 47,
+    "score": 0.0017998703988268971
+  },
+  "pantsRed3.png": {
+    "kind": "pants",
+    "x": 186.66666666666666,
+    "y": 200.66666666666666,
+    "width": 153,
+    "height": 47,
+    "score": 0.0023921693209558725
+  },
+  "pantsRed4.png": {
+    "kind": "pants",
+    "x": 246.66666666666666,
+    "y": 200.66666666666666,
+    "width": 153,
+    "height": 47,
+    "score": 0.0020961249247193336
+  },
+  "pantsRed_long.png": {
+    "kind": "pants",
+    "x": 261.0,
+    "y": 226.0,
+    "width": 111,
+    "height": 166,
+    "score": 0.0010702641448006034
+  },
+  "pantsRed_short.png": {
+    "kind": "pants",
+    "x": 503.0,
+    "y": 226.0,
+    "width": 107,
+    "height": 118,
+    "score": 0.0012813881039619446
+  },
+  "pantsRed_shorter.png": {
+    "kind": "pants",
+    "x": 185.0,
+    "y": 226.0,
+    "width": 104,
+    "height": 105,
+    "score": 0.0015471999067813158
+  },
+  "pantsTan1.png": {
+    "kind": "pants",
+    "x": 466.6666666666667,
+    "y": 40.666666666666664,
+    "width": 153,
+    "height": 47,
+    "score": 0.0019981914665549994
+  },
+  "pantsTan2.png": {
+    "kind": "pants",
+    "x": 526.6666666666666,
+    "y": 40.666666666666664,
+    "width": 153,
+    "height": 47,
+    "score": 0.0012949870433658361
+  },
+  "pantsTan3.png": {
+    "kind": "pants",
+    "x": 466.6666666666667,
+    "y": 70.66666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.0016044167568907142
+  },
+  "pantsTan4.png": {
+    "kind": "pants",
+    "x": 526.6666666666666,
+    "y": 70.66666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.00144317583180964
+  },
+  "pantsTan_long.png": {
+    "kind": "pants",
+    "x": 541.0,
+    "y": 96.0,
+    "width": 111,
+    "height": 166,
+    "score": 0.0010880654444918036
+  },
+  "pantsTan_short.png": {
+    "kind": "pants",
+    "x": 503.0,
+    "y": 96.0,
+    "width": 107,
+    "height": 118,
+    "score": 0.0012998669408261776
+  },
+  "pantsTan_shorter.png": {
+    "kind": "pants",
+    "x": 465.0,
+    "y": 96.0,
+    "width": 104,
+    "height": 105,
+    "score": 0.0015276182675734162
+  },
+  "pantsWhite1.png": {
+    "kind": "pants",
+    "x": 46.666666666666664,
+    "y": 170.66666666666666,
+    "width": 153,
+    "height": 47,
+    "score": 0.0019653653725981712
+  },
+  "pantsWhite2.png": {
+    "kind": "pants",
+    "x": 106.66666666666667,
+    "y": 170.66666666666666,
+    "width": 153,
+    "height": 47,
+    "score": 0.001525289029814303
+  },
+  "pantsWhite3.png": {
+    "kind": "pants",
+    "x": 46.666666666666664,
+    "y": 200.66666666666666,
+    "width": 153,
+    "height": 47,
+    "score": 0.0014062230475246906
+  },
+  "pantsWhite4.png": {
+    "kind": "pants",
+    "x": 106.66666666666667,
+    "y": 200.66666666666666,
+    "width": 153,
+    "height": 47,
+    "score": 0.0012951435055583715
+  },
+  "pantsWhite_long.png": {
+    "kind": "pants",
+    "x": 121.0,
+    "y": 226.0,
+    "width": 111,
+    "height": 166,
+    "score": 0.0010565357515588403
+  },
+  "pantsWhite_short.png": {
+    "kind": "pants",
+    "x": 83.0,
+    "y": 226.0,
+    "width": 107,
+    "height": 118,
+    "score": 0.0012790565378963947
+  },
+  "pantsWhite_shorter.png": {
+    "kind": "pants",
+    "x": 45.0,
+    "y": 226.0,
+    "width": 104,
+    "height": 105,
+    "score": 0.00150596396997571
+  },
+  "pantsYellow1.png": {
+    "kind": "pants",
+    "x": 466.6666666666667,
+    "y": 300.6666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.0019166532438248396
+  },
+  "pantsYellow2.png": {
+    "kind": "pants",
+    "x": 526.6666666666666,
+    "y": 40.666666666666664,
+    "width": 153,
+    "height": 47,
+    "score": 0.0014778375625610352
+  },
+  "pantsYellow3.png": {
+    "kind": "pants",
+    "x": 466.6666666666667,
+    "y": 330.6666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.001660889945924282
+  },
+  "pantsYellow4.png": {
+    "kind": "pants",
+    "x": 526.6666666666666,
+    "y": 330.6666666666667,
+    "width": 153,
+    "height": 47,
+    "score": 0.0014814039459452033
+  },
+  "blackShoe1.png": {
+    "kind": "shoes",
+    "x": 29.666666666666668,
+    "y": 30.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.0021699704229831696
+  },
+  "blackShoe2.png": {
+    "kind": "shoes",
+    "x": 69.66666666666667,
+    "y": 30.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.002558863488957286
+  },
+  "blackShoe3.png": {
+    "kind": "shoes",
+    "x": 109.66666666666667,
+    "y": 30.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.0028044129721820354
+  },
+  "blackShoe4.png": {
+    "kind": "shoes",
+    "x": 149.66666666666666,
+    "y": 30.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.002194151049479842
+  },
+  "blackShoe5.png": {
+    "kind": "shoes",
+    "x": 189.66666666666666,
+    "y": 30.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.01505801361054182
+  },
+  "blueShoe1.png": {
+    "kind": "shoes",
+    "x": 29.666666666666668,
+    "y": 30.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.002167169004678726
+  },
+  "blueShoe2.png": {
+    "kind": "shoes",
+    "x": 69.66666666666667,
+    "y": 30.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.0025498743634670973
+  },
+  "blueShoe3.png": {
+    "kind": "shoes",
+    "x": 109.66666666666667,
+    "y": 30.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.0028025961946696043
+  },
+  "blueShoe4.png": {
+    "kind": "shoes",
+    "x": 149.66666666666666,
+    "y": 30.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.0021907237824052572
+  },
+  "blueShoe5.png": {
+    "kind": "shoes",
+    "x": 189.66666666666666,
+    "y": 30.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.01500834058970213
+  },
+  "brown2Shoe1.png": {
+    "kind": "shoes",
+    "x": 29.666666666666668,
+    "y": 150.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.0021706419065594673
+  },
+  "brown2Shoe2.png": {
+    "kind": "shoes",
+    "x": 69.66666666666667,
+    "y": 150.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.002560283290222287
+  },
+  "brown2Shoe3.png": {
+    "kind": "shoes",
+    "x": 109.66666666666667,
+    "y": 150.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.0028035787399858236
+  },
+  "brown2Shoe4.png": {
+    "kind": "shoes",
+    "x": 149.66666666666666,
+    "y": 150.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.0021945948246866465
+  },
+  "brown2Shoe5.png": {
+    "kind": "shoes",
+    "x": 189.66666666666666,
+    "y": 150.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.015060268342494965
+  },
+  "brownShoe1.png": {
+    "kind": "shoes",
+    "x": 29.666666666666668,
+    "y": 130.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.0021717664785683155
+  },
+  "brownShoe2.png": {
+    "kind": "shoes",
+    "x": 69.66666666666667,
+    "y": 130.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.002563049551099539
+  },
+  "brownShoe3.png": {
+    "kind": "shoes",
+    "x": 109.66666666666667,
+    "y": 130.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.0028036567382514477
+  },
+  "brownShoe4.png": {
+    "kind": "shoes",
+    "x": 149.66666666666666,
+    "y": 130.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.002194030908867717
+  },
+  "brownShoe5.png": {
+    "kind": "shoes",
+    "x": 189.66666666666666,
+    "y": 130.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.015068648383021355
+  },
+  "greyShoe1.png": {
+    "kind": "shoes",
+    "x": 29.666666666666668,
+    "y": 70.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.0021629396360367537
+  },
+  "greyShoe2.png": {
+    "kind": "shoes",
+    "x": 69.66666666666667,
+    "y": 70.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.0025403741747140884
+  },
+  "greyShoe3.png": {
+    "kind": "shoes",
+    "x": 109.66666666666667,
+    "y": 90.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.0028015493880957365
+  },
+  "greyShoe4.png": {
+    "kind": "shoes",
+    "x": 149.66666666666666,
+    "y": 70.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.002187376841902733
+  },
+  "greyShoe5.png": {
+    "kind": "shoes",
+    "x": 189.66666666666666,
+    "y": 70.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.014986593276262283
+  },
+  "redShoe1.png": {
+    "kind": "shoes",
+    "x": 29.666666666666668,
+    "y": 70.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.0021683783270418644
+  },
+  "redShoe2.png": {
+    "kind": "shoes",
+    "x": 69.66666666666667,
+    "y": 70.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.0025581910740584135
+  },
+  "redShoe3.png": {
+    "kind": "shoes",
+    "x": 109.66666666666667,
+    "y": 70.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.0028039799071848392
+  },
+  "redShoe4.png": {
+    "kind": "shoes",
+    "x": 149.66666666666666,
+    "y": 70.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.002194533357396722
+  },
+  "redShoe5.png": {
+    "kind": "shoes",
+    "x": 189.66666666666666,
+    "y": 70.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.015059497207403183
+  },
+  "tanShoe1.png": {
+    "kind": "shoes",
+    "x": 29.666666666666668,
+    "y": 50.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.002171176252886653
+  },
+  "tanShoe2.png": {
+    "kind": "shoes",
+    "x": 69.66666666666667,
+    "y": 50.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.0025615482591092587
+  },
+  "tanShoe3.png": {
+    "kind": "shoes",
+    "x": 109.66666666666667,
+    "y": 50.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.002803113777190447
+  },
+  "tanShoe4.png": {
+    "kind": "shoes",
+    "x": 149.66666666666666,
+    "y": 50.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.0021948597859591246
+  },
+  "tanShoe5.png": {
+    "kind": "shoes",
+    "x": 189.66666666666666,
+    "y": 50.0,
+    "width": 94,
+    "height": 42,
+    "score": 0.01506005134433508
+  }
+}
