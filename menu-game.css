@@ -281,3 +281,9 @@ html[data-theme=dark] #preMatchStage .formation-position{color:#e0e8d7;backgroun
 
 #preMatchStage .formation-away-name,#preMatchStage .formation-home-name{flex:none;max-width:100%;min-width:0;font-size:12px;line-height:17px;text-align:center;color:#3c6971;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #preMatchStage .formation-away-name{margin:3px 0 6px}
+/* Intro frames use the same material identity as roster cards. */
+#matchIntro .intro-card{--intro-tier-edge:#48514f;border-color:var(--intro-tier-edge);box-shadow:0 3px 0 color-mix(in srgb,var(--intro-tier-edge) 65%,transparent),inset 0 0 0 1px #fff8e544}
+#matchIntro .intro-card[data-card-tier="1"]{--intro-tier-edge:#9ab5c5}
+#matchIntro .intro-card[data-card-tier="2"]{--intro-tier-edge:#be9547}
+#matchIntro .intro-card[data-card-tier="3"]{--intro-tier-edge:#9d80b6}
+html[data-theme=dark] #matchIntro .intro-card[data-card-tier]{border:2px solid var(--intro-tier-edge)!important;box-shadow:0 3px 0 color-mix(in srgb,var(--intro-tier-edge) 50%,#162c2b)!important}
