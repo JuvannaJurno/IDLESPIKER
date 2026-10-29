@@ -1027,3 +1027,7 @@ Editör doğrulaması: test-card-editor.cjs gerçek render görüntüsünün kon
 29 Ekim editör ayarı üretimde: Kontur yerine shadow, 5px alfa genişletme, blur/offset 0, #263e4a ve %24 opaklık; 4px #e6e9d5 mat çerçeve, inset/radius 0, %100 opaklık. Tek paylaşılan SVG filtre belgenin başında bir kez kurulur; maç rendererı etkilenmez. JSON ten/saç/tier bilgileri örnek karakter içindir, oyuncular yeniden renklendirilmez. Kart türlerine özel onaylı C paletleri, desen ve kadraj korunur. Önceki beyaz drop-shadow kaldırıldı.
 
 29 Ekim malzemeye göre mat çerçeve: Ortak 4px kalınlık korunur. Siyah #c2cbbd adaçayı-grafit; gümüş #c9dbe5 çelik mavisi; altın #e8d49f şampanya; mor #d6c7e5 açık lavanta; potansiyel #e4c4aa sıcak bakır. Kademe/prospect veri özniteliğiyle otomatik izler, açık/koyu temada portre zeminleriyle aynı kimliği korur.
+
+29 Ekim forma ülke arması: Mahalle sonrası portrelerde takım armasının karşısında (seyirciye göre sağ göğüs) seçilen kariyer ülkesi bayrağı vardır. Oyuncunun nationality değeri dıştaki kişisel ülke rozetinde kalır; forma bayrağı CountryRules.current değeridir. 28×28 kaynak piksel, ince krem kenar; forma/numara ile aynı gövde dönüşümü. Ülke SVGleri CountryRules.flagSource içinde gömülüdür; data SVG portresinde dış dosya isteği veya canvas taint oluşturmaz. Cache anahtarları ülkeyi içerir. Maçta forma işareti eklenmez.
+
+29 Ekim son opaklık kararı: Üretim portre kenar/gölge etkisinin opaklığı %24ten %15e indirildi; genişlik 5px, blur/offset 0 ve malzemeye göre 4px çerçeve korunur.
