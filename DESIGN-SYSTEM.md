@@ -993,3 +993,5 @@ Ek doğrulama: test-request-followups.cjs gerçek sosyal medya işiyle geçişte
 29 Ekim arma revizyonu: Mahalle sonrası oyuncu portresinde formanın seyirciye göre sol üst göğsünde gerçek takım arması yer alır. Arma ve numara gövde dönüşümünü paylaşır. Maçta ikisi de gösterilmez. Arma kaynağı mevcut ClubJourney.matchBadge; profil/lig kimliğiyle önbelleğe alınır, her renderda yeniden üretilmez.
 
 29 Ekim portre kol revizyonu: Oyuncu portrelerinde iki kol ve eski uzun kol katmanı yüzle aynı ten renginde çizilir. Forma gövdesi, numara, arma ve yaka korunur. Yalnız playerPortrait bareArms ayarı kullanır; profil editörü ve maç çizimi değişmez.
+
+29 Ekim kol aksesuarları: Oyuncu portrelerinin yaklaşık yarısı çıplak kollu kalır; kalanlarda tek/çift kısa kol bandı veya uzun koyu grafit kolluk vardır. Seçim oyuncu kimliğinden deterministiktir; render/yenileme rastgeleleştirmez. Aksesuar mevcut kol siluetine kırpılır ve kolun flip/rotation/scale dönüşümünü paylaşır. Forma numarası/arma/yaka ve maç rendererı korunur.
