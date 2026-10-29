@@ -1033,3 +1033,5 @@ Editör doğrulaması: test-card-editor.cjs gerçek render görüntüsünün kon
 29 Ekim son opaklık kararı: Üretim portre kenar/gölge etkisinin opaklığı %24ten %15e indirildi; genişlik 5px, blur/offset 0 ve malzemeye göre 4px çerçeve korunur.
 
 29 Ekim bant/kolluk temas gölgesi: Kumaşın iki bitiş kenarına 6 kaynak piksel genişliğinde, %22 koyu sıcak gölge; 1.25px blur uygulanır. Kumaşın altında kalan yarı örtülür; dışta yaklaşık 3px yumuşak temas kalır. Gölge kolun alfa maskesine kırpılır, dış siluete taşmaz ve aynı kol flip/dönüşümünü izler. Çıplak kolda üretilmez; genel portre gölgesi %15 olarak korunur.
+
+29 Ekim kolluk boyu: Uzun kolluk portrede kolun %30–62 aralığını kaplar (önceden %43–96). Alt bitiş, üst gövde kadrajının içinde kalır ve altında ten payı görünür. Kısa bantlar ile kadraj/kart ölçüleri değişmez; temas gölgesi yeni kumaş bitişini izler.
