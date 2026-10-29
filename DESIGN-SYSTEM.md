@@ -1031,3 +1031,5 @@ Editör doğrulaması: test-card-editor.cjs gerçek render görüntüsünün kon
 29 Ekim forma ülke arması: Mahalle sonrası portrelerde takım armasının karşısında (seyirciye göre sağ göğüs) seçilen kariyer ülkesi bayrağı vardır. Oyuncunun nationality değeri dıştaki kişisel ülke rozetinde kalır; forma bayrağı CountryRules.current değeridir. 28×28 kaynak piksel, ince krem kenar; forma/numara ile aynı gövde dönüşümü. Ülke SVGleri CountryRules.flagSource içinde gömülüdür; data SVG portresinde dış dosya isteği veya canvas taint oluşturmaz. Cache anahtarları ülkeyi içerir. Maçta forma işareti eklenmez.
 
 29 Ekim son opaklık kararı: Üretim portre kenar/gölge etkisinin opaklığı %24ten %15e indirildi; genişlik 5px, blur/offset 0 ve malzemeye göre 4px çerçeve korunur.
+
+29 Ekim bant/kolluk temas gölgesi: Kumaşın iki bitiş kenarına 6 kaynak piksel genişliğinde, %22 koyu sıcak gölge; 1.25px blur uygulanır. Kumaşın altında kalan yarı örtülür; dışta yaklaşık 3px yumuşak temas kalır. Gölge kolun alfa maskesine kırpılır, dış siluete taşmaz ve aynı kol flip/dönüşümünü izler. Çıplak kolda üretilmez; genel portre gölgesi %15 olarak korunur.
