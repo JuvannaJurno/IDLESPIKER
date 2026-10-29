@@ -1115,3 +1115,5 @@ Doğrulama: test-flow-lane-install.cjs görünür başlangıç, sıfır yatay pa
 30 Ekim kulak dikişi: Kaynak head SVG yüz/kulak şekilleri tam bitişik olduğundan antialias çizgisinden alttaki siyah kontur sızıyordu. Yalnız portre baş kaynağında her dolgu kendi renginde .22 SVG birimi stroke ile hafif üst üste bindirilir; iç çizgi eklenmez. Düzeltilmiş kaynak parça yoluna göre bir kez cachelenir. Native maç kaynağı değiştirilmez. test-portrait-head-seam.cjs gerçek browser kaynak ve yakın plan renderını doğruladı; portrait-ear-seam.png üzerinde noktalı dikiş kalktı. 300 seed aksesuar regresyonu geçti.
 
 30 Ekim kontur inceliği: Siyah dış kontur yarıçapı 1.2den 0.9 kaynak piksele indirildi (%25 inceldi). Portre gölgesi ve kulak dikişi düzeltmesi korundu; yakın plan kontrol edildi.
+
+30 Ekim takım üst boşluğu: Gizlenen takım başlığının ardından kalan main padding ve Oyuncu Merkezi üst marjı yalnız Takım paneli açıkken 5er piksele indirildi. Güvenli alan ve diğer menü ölçüleri korunur. Mobil gerçek görünüm ve hesaplanan değerler kontrol edildi (team-top-spacing.png).

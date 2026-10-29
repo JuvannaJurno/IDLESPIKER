@@ -362,3 +362,6 @@ body:has(#leaguePanel:not([hidden])) main{padding-top:4px!important}
 .lineup-legendary-owner strong{display:block;font-size:11px;line-height:1.35;color:#416a70;overflow-wrap:anywhere}
 [data-theme=dark] .lineup-legendary-owner strong{color:#e4e7d6}
 [data-theme=dark] .lineup-legendary-owner small{color:#adbdac}
+/* Team heading is hidden: don't retain its former top spacing. */
+body:has(#teamPanel:not([hidden])) main{padding-top:5px!important}
+html #teamPanel>.scout-alert{margin-top:5px!important}
