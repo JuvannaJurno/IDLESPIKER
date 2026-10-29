@@ -999,3 +999,5 @@ Ek doğrulama: test-request-followups.cjs gerçek sosyal medya işiyle geçişte
 29 Ekim forma arması ölçüsü: portrede 28×30 yerine 36×38 kaynak piksel; sol göğüsteki yatay merkez ve üst hizası korunur.
 
 29 Ekim oyuncu portresi kadraj düzeltmesi: Eski 150 65 300 355 kadrajı bileklerden keserek ten rengi kolları düz blok gibi gösteriyordu. Son kullanıcı kararıyla yalnız playerPortrait için 125 65 350 375 üst gövde kadrajı kullanılır: baş, omuzlar ve forma görünür; şort/bacak katmanları çizilmez, kart kutusu/OVR/yıldız/ülke hizaları değişmez. Profil editörü eski kadrajını korur; fullBody ve upperBody açık istekleri önceliklidir. Kontrol: jersey-roster-mobile.png ve jersey-front-colors.png elle incelendi; test-player-jersey-front.cjs ve test-portrait-arm-gear.cjs geçti.
+
+29 Ekim portre kontrastı: Oyuncu kartlarının krem/ten rengiyle karışan portre zemini soğuk, mat salon mavisi-gri geçişle değiştirildi. Tüm kart kademeleri aynı zemin ailesini kullanır; gerçek elitlerde hafif lavanta, karanlık temada daha derin tonlar vardır. Yüz/gövde renkleri ve kartın başlık/isim/çerçeve materyalleri değişmez. Halo dolgusuz ve ince açık çizgidir.

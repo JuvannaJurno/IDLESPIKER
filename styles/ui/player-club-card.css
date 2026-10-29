@@ -191,3 +191,10 @@ html body #teamPanel .player-card[data-card-tier="2"]{--quick-action:#80612e}
 html body #teamPanel .player-card:is([data-card-tier="3"],.elite-player){--quick-action:#735783}
 html body #teamPanel .player-card .card-open-upgrade small{color:inherit!important}
 html[data-theme=dark] body #teamPanel .player-card .card-open-upgrade:disabled{background:#344344!important;border-color:#718281!important;color:#c1cac4!important}
+
+/* Cool gym backdrop keeps warm skin tones distinct across card materials. */
+html:not(.elite-preview-page) .player-card.player-card .card-art{background:radial-gradient(ellipse at 50% 22%,#b8ced0 0%,#98b6bd 58%,#789ba6 100%)!important}
+html:not(.elite-preview-page) .player-card.player-card.elite-player .card-art{background:radial-gradient(ellipse at 50% 22%,#cbd0df 0%,#acb4cc 58%,#939fbc 100%)!important}
+html:not(.elite-preview-page) .player-card.player-card .card-halo{background:transparent;border-color:#eef6ee55}
+html[data-theme=dark]:not(.elite-preview-page) .player-card.player-card .card-art{background:radial-gradient(ellipse at 50% 22%,#8ba8b3 0%,#6b8d9b 58%,#527384 100%)!important}
+html[data-theme=dark]:not(.elite-preview-page) .player-card.player-card.elite-player .card-art{background:radial-gradient(ellipse at 50% 22%,#a4adc8 0%,#858eaf 58%,#6b789d 100%)!important}
