@@ -1,0 +1,38 @@
+[
+  {
+    "number": 1,
+    "color": "#4389b1",
+    "ink": "#fff7e3",
+    "accent": "#e7ba54"
+  },
+  {
+    "number": 12,
+    "color": "#dd765f",
+    "ink": "#24424a",
+    "accent": "#e7ba54"
+  },
+  {
+    "number": 7,
+    "color": "#24354b",
+    "ink": "#fff7e3",
+    "accent": "#e7ba54"
+  },
+  {
+    "number": 28,
+    "color": "#f1d77a",
+    "ink": "#24424a",
+    "accent": "#e7ba54"
+  },
+  {
+    "number": 9,
+    "color": "#63897b",
+    "ink": "#fff7e3",
+    "accent": "#e7ba54"
+  },
+  {
+    "number": 44,
+    "color": "#754d85",
+    "ink": "#fff7e3",
+    "accent": "#e7ba54"
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "division": 1,
+    "number": 9,
+    "pose": "idle",
+    "ok": true,
+    "hasNumber": false
+  },
+  {
+    "division": 2,
+    "number": 9,
+    "pose": "idle",
+    "ok": true,
+    "hasNumber": false,
+    "accent": "#e7ba54"
+  },
+  {
+    "division": 2,
+    "number": 12,
+    "pose": "idle",
+    "ok": true,
+    "hasNumber": false,
+    "accent": "#8bcebc"
+  },
+  {
+    "division": 2,
+    "number": 9,
+    "pose": "set",
+    "ok": true,
+    "hasNumber": false,
+    "accent": "#e7ba54"
+  },
+  {
+    "division": 2,
+    "number": 9,
+    "pose": "block",
+    "ok": true,
+    "hasNumber": false,
+    "accent": "#e7ba54"
+  },
+  {
+    "division": 2,
+    "number": 9,
+    "pose": "receive",
+    "ok": true,
+    "hasNumber": false,
+    "accent": "#e7ba54"
+  }
+]

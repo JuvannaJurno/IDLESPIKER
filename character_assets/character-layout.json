@@ -2162,7 +2162,7 @@
       "height": 174,
       "baseColor": "#EEEEEE",
       "fit": "unisex",
-      "playerAllowed": true
+      "playerAllowed": false
     },
     {
       "id": "profile-body-6",
@@ -2198,7 +2198,6 @@
   "playerBodyModels": [
     1,
     4,
-    5,
     8
   ]
 }

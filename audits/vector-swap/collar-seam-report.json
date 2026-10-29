@@ -1,0 +1,32 @@
+[
+  {
+    "model": 2,
+    "oldSeams": 106,
+    "newSeams": 0,
+    "silhouetteOverlap": 0.9992751653529038
+  },
+  {
+    "model": 3,
+    "oldSeams": 118,
+    "newSeams": 0,
+    "silhouetteOverlap": 1
+  },
+  {
+    "model": 5,
+    "oldSeams": 154,
+    "newSeams": 0,
+    "silhouetteOverlap": 0.9985523637186157
+  },
+  {
+    "model": 6,
+    "oldSeams": 262,
+    "newSeams": 0,
+    "silhouetteOverlap": 0.9998187913382259
+  },
+  {
+    "model": 7,
+    "oldSeams": 366,
+    "newSeams": 0,
+    "silhouetteOverlap": 0.9998187913382259
+  }
+]

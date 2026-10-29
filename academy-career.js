@@ -1,7 +1,7 @@
 (function(){
 'use strict';if(window.AcademyPreview)return;
 const R=AcademyCareerRules,$=id=>document.getElementById(id),escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const state=()=>RoomSystem.snapshot(),portrait=p=>TeamAppearance.valid(p.appearance)?TeamAppearance.portrait(p.appearance):p.art;
+const state=()=>RoomSystem.snapshot(),portrait=p=>TeamAppearance.valid(p.appearance)?TeamAppearance.playerPortrait(p):p.art;
 const names={spike:'Smaç',block:'Blok',serve:'Servis',receive:'Manşet',set:'Pas',stamina:'Dayanıklılık'};
 const duration=ms=>{const s=Math.max(0,Math.ceil(ms/1000));return s>=3600?Math.floor(s/3600)+' sa '+Math.floor(s%3600/60)+' dk':Math.floor(s/60)+':'+String(s%60).padStart(2,'0');};
 const skillName=id=>PlayerSkills.catalog.find(s=>s.id===id)?.name||id;
