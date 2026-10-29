@@ -76,3 +76,11 @@ html[data-flow-style] .workflow[data-flow-lanes] .energy-pulse.manual-pulse::aft
 html[data-theme=dark] .flow-media-head{border-color:#739bab;box-shadow:0 0 0 1px #30443d,0 2px 0 #1b343d99}
 
 .flow-rail.flow-unlock-reveal{outline:3px solid #d6a651;outline-offset:3px;animation:flow-new-lane 1.8s ease-out both}.flow-unlock-heading{outline:2px solid #d6a651;outline-offset:7px;border-radius:9px}@keyframes flow-new-lane{0%{opacity:0;transform:scaleY(.06);transform-origin:top}45%{opacity:1;transform:scaleY(1);transform-origin:top}100%{opacity:1;transform:none}}@media(prefers-reduced-motion:reduce){.flow-rail.flow-unlock-reveal{animation:none}}
+/* Build a newly unlocked tube only after its real source is on screen. */
+.flow-install-anchor{position:absolute;top:0;width:20px;height:24px;pointer-events:none;scroll-margin-top:calc(32px + env(safe-area-inset-top,0px))}
+.flow-rail.flow-awaiting-install{opacity:0;clip-path:inset(0 -12px 100% -12px)}
+.flow-rail.flow-unlock-reveal{outline:0;transform:none;animation:flow-tube-install 1.8s linear both;will-change:clip-path}
+@keyframes flow-tube-install{0%{opacity:1;clip-path:inset(-12px -12px 100% -12px)}70%{opacity:1;clip-path:inset(-12px -12px max(0px,calc(100% - var(--flow-build-visible,450px))) -12px)}100%{opacity:1;clip-path:inset(-12px -12px -12px -12px)}}
+.flow-install-branch{animation:flow-branch-install .4s .9s ease-out both}
+@keyframes flow-branch-install{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.flow-rail.flow-unlock-reveal{animation:none;clip-path:none}.flow-install-branch{animation:none}}

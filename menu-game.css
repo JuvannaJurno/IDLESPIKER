@@ -287,3 +287,39 @@ html[data-theme=dark] #preMatchStage .formation-position{color:#e0e8d7;backgroun
 #matchIntro .intro-card[data-card-tier="2"]{--intro-tier-edge:#be9547}
 #matchIntro .intro-card[data-card-tier="3"]{--intro-tier-edge:#9d80b6}
 html[data-theme=dark] #matchIntro .intro-card[data-card-tier]{border:2px solid var(--intro-tier-edge)!important;box-shadow:0 3px 0 color-mix(in srgb,var(--intro-tier-edge) 50%,#162c2b)!important}
+/* Material surfaces make the introduction feel like the player's actual cards. */
+#matchIntro .intro-card{--intro-kit:#343e3e;--intro-paper:#f6f1e2;--intro-field:#a9b8ad;--intro-field-end:#788d85;--intro-ink:#42616a;border-width:2px;border-color:var(--intro-kit);background:var(--intro-field)!important;box-shadow:0 4px 0 color-mix(in srgb,var(--intro-kit) 65%,transparent);border-radius:14px}
+#matchIntro .intro-card[data-card-tier="1"]{--intro-kit:#647986;--intro-paper:#eff3f2;--intro-field:#afc3d2;--intro-field-end:#7b94ac}
+#matchIntro .intro-card[data-card-tier="2"]{--intro-kit:#96702d;--intro-paper:#fff7e2;--intro-field:#c3b286;--intro-field-end:#958554}
+#matchIntro .intro-card[data-card-tier="3"]{--intro-kit:#7b648e;--intro-paper:#f0eaf5;--intro-field:#baabcc;--intro-field-end:#8a76a3}
+#matchIntro .intro-card>.intro-card-top{display:flex;align-items:center;justify-content:space-between;gap:2px;min-height:23px;padding:4px 6px;background:var(--intro-kit);color:#fff8e9;box-sizing:border-box;text-align:left}
+#matchIntro .intro-card-top>small{font-size:7px;font-weight:800;line-height:1.2;text-transform:uppercase;letter-spacing:.2px;color:inherit!important;background:transparent!important}
+#matchIntro .intro-card-top>.intro-number{position:static;font-size:7px;line-height:1;background:transparent;color:inherit;opacity:.9;padding:0}
+#matchIntro .intro-card>img{background:linear-gradient(132deg,#ffffff14 0 25%,transparent 25% 52%,#ffffff12 52% 53%,transparent 53%),linear-gradient(145deg,var(--intro-field),var(--intro-field-end));filter:none}
+#matchIntro .intro-card>div,html[data-theme=dark] #matchIntro .intro-card[data-card-tier]>div{background:var(--intro-paper)!important;border-top:1px solid color-mix(in srgb,var(--intro-kit) 30%,transparent);padding:8px 4px;min-height:36px;display:grid;place-items:center;box-sizing:border-box}
+#matchIntro .intro-card>div strong,html[data-theme=dark] #matchIntro .intro-card[data-card-tier]>div strong{color:var(--intro-ink)!important;background:transparent!important;font-weight:800;font-size:10px;line-height:1.25}
+#matchIntro .intro-card .player-overall{top:29px;background:var(--intro-kit)!important;color:#fff9ee!important;border:1px solid #fff8e566;box-shadow:0 2px 2px #243d3a33}
+#matchIntro .intro-card .player-overall small{color:inherit!important;opacity:.8}
+#matchIntro .libero-card{border-color:var(--intro-kit);background:var(--intro-paper)!important}
+#matchIntro .libero-card>.intro-card-top{position:absolute;top:5px;left:7px;z-index:3;min-height:0;padding:0;background:transparent;color:var(--intro-ink)}
+#matchIntro .libero-card>.intro-card-top>small{display:none}
+#matchIntro .libero-card>div{display:block;text-align:left;min-height:0;border:0;padding:8px}
+#matchIntro .libero-card .player-overall{position:static}
+html[data-theme=dark] #matchIntro .intro-card[data-card-tier]{background:var(--intro-field)!important;border-color:var(--intro-kit)!important}
+html[data-theme=dark] #matchIntro .intro-card[data-card-tier]>.intro-card-top>small{color:#fff8e9!important}
+/* Shared roster decisions: paired Legendary rows and compact profile playback. */
+#teamPanel>.team-heading,#calendarSummary,.base-room .media-ready-badge{display:none!important}
+.lineup-legendary{margin:12px 0 0;padding:12px 0 0;border-top:1px solid #cbd5bc}
+.lineup-legendary h3{font-size:12px;margin:0 0 8px;color:var(--ink,#416a70)}
+.lineup-legendary>div{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.lineup-legendary p{font-size:11px;margin:0 0 6px;padding:8px;border:1px solid #c9cbb6;border-radius:9px;background:#f5efd9;color:#536c66;overflow-wrap:anywhere}
+.lineup-legendary p small{display:block;font-size:9px;opacity:.7;margin-top:3px}
+.lineup-legendary p[data-locked=true]{background:transparent}
+.profile-background-music{display:flex;align-items:center;gap:8px;margin:8px 0 18px;padding:10px;border:1px solid #cbd5bc;border-radius:12px;background:#e8eedb}
+.profile-background-music[hidden]{display:none}
+.profile-background-music label{flex:1;min-width:0;font-size:10px;color:#577970}
+.profile-background-music select{display:block;width:100%;min-width:0;border:0;background:transparent;color:#416a70;font:inherit;font-size:11px;padding:7px 0;text-overflow:ellipsis}
+.profile-background-music button{flex:0 0 30px;height:34px;border:1px solid #c6cfb3;border-radius:9px;background:#fff8e5;color:#416a70;font-size:22px;cursor:pointer;box-shadow:0 2px #bac6ac}
+[data-theme=dark] .profile-background-music{background:#293e43;border-color:#526866}
+[data-theme=dark] .profile-background-music select,[data-theme=dark] .profile-background-music label{color:#e2e7d6}
+[data-theme=dark] .lineup-legendary p{background:#34494a;color:#ede5cb;border-color:#697669}
