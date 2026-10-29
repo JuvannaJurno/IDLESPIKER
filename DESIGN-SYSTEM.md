@@ -1017,3 +1017,5 @@ Koyu tema ek uyumluluk: Potansiyel kartların bakır isim/ikincil yazıları koy
 29 Ekim kontur alternatifleri: player-card-design-lab-v3.html#portrait-outline-lab içinde Asahi Azumane / smaçör / #7 / 220 OVR kartı üzerinde dört taslak vardır: A ince grafit, B yumuşak gölge, C kenar ışığı, D silik kontur. Aynı ten, saç, kadraj, zemin ve kart anatomisi; yalnız CSS portre filtresi değişir. Yeni seçenekler üretime uygulanmaz.
 
 29 Ekim portre paneli çerçeve taslakları: portrait-frame-lab bölümünde aynı Asahi kartıyla A ince iç çizgi, B çift çizgi, C dört köşe, D mat kenarlık bulunur. Yalnız fotoğraf alanını çevreler; kart dış çerçevesi/kadraj değişmez. Örneklerin tamamında aynı yumuşak portre gölgesi vardır. Çerçeve overlayi pointer-events none; üretime uygulanmaz.
+
+29 Ekim A+D taslağı: portrait-combo-lab bölümünde A ince grafit karakter konturu (.45px koyu kenar) ve D mat portre paneli çerçevesi (5px açık mat kenarlık) birlikte gösterilir. Asahi örneği aynıdır. Bu kombinasyon henüz üretim onayı değildir.
