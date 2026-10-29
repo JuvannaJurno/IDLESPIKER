@@ -28,4 +28,4 @@ html[data-theme=dark] #profileDialog #profileCountryLabel{background:#3a5147;col
 
 #profileBall{padding:14px 0;border-top:1px solid var(--ui-edge)}.profile-ball-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.profile-ball-choice img{display:block;box-sizing:border-box;width:100%;height:88px;object-fit:contain;padding:8px;margin:0 auto 4px;background:var(--ui-soft);border-radius:8px}.profile-ball-choice{gap:7px;padding:10px}.profile-ball-choice strong{font-size:12px}.profile-ball-choice small{font-size:10px}#profileBallPicker{height:fit-content;min-height:0;max-height:92dvh}#profileBallPicker .selection-scroll{flex:1}
 
-#profileHairStyle{box-sizing:border-box;width:100%;min-height:44px;padding:10px 12px;border:1px solid #c4cdb5;border-radius:10px;background:#fffdf2;color:inherit;font:inherit}
+#profileHairStyle,#profileBodyStyle{box-sizing:border-box;width:100%;min-height:44px;padding:10px 12px;border:1px solid #c4cdb5;border-radius:10px;background:#fffdf2;color:inherit;font:inherit}

@@ -1,0 +1,81 @@
+[
+  {
+    "id": "profile-body-1",
+    "width": 153,
+    "height": 174,
+    "aligned": true,
+    "shades": [
+      "#dd765f"
+    ]
+  },
+  {
+    "id": "profile-body-2",
+    "width": 153,
+    "height": 174,
+    "aligned": true,
+    "shades": [
+      "#dd765f",
+      "#c36854"
+    ]
+  },
+  {
+    "id": "profile-body-3",
+    "width": 153,
+    "height": 174,
+    "aligned": true,
+    "shades": [
+      "#dd765f",
+      "#c36854"
+    ]
+  },
+  {
+    "id": "profile-body-4",
+    "width": 161,
+    "height": 174,
+    "aligned": true,
+    "shades": [
+      "#dd765f",
+      "#c36854"
+    ]
+  },
+  {
+    "id": "profile-body-5",
+    "width": 153,
+    "height": 174,
+    "aligned": true,
+    "shades": [
+      "#dd765f",
+      "#c36854"
+    ]
+  },
+  {
+    "id": "profile-body-6",
+    "width": 153,
+    "height": 174,
+    "aligned": true,
+    "shades": [
+      "#dd765f",
+      "#c36854"
+    ]
+  },
+  {
+    "id": "profile-body-7",
+    "width": 153,
+    "height": 174,
+    "aligned": true,
+    "shades": [
+      "#dd765f",
+      "#c36854"
+    ]
+  },
+  {
+    "id": "profile-body-8",
+    "width": 153,
+    "height": 174,
+    "aligned": true,
+    "shades": [
+      "#dd765f",
+      "#c36854"
+    ]
+  }
+]

@@ -1,0 +1,176 @@
+{
+  "preservedSeededFaces": 300,
+  "distinctEyeScales": 143,
+  "samples": [
+    {
+      "i": 0,
+      "eyes": [
+        1.1232371316850185,
+        1.1232371316850185
+      ],
+      "earrings": 2,
+      "details": [
+        "beauty-mark",
+        "face-sticker",
+        "nose-strip",
+        "glasses",
+        "hair-clip"
+      ],
+      "gradient": true
+    },
+    {
+      "i": 1,
+      "eyes": [
+        1.107818770930171,
+        1.107818770930171
+      ],
+      "earrings": 2,
+      "details": [
+        "wink",
+        "face-sticker",
+        "glasses",
+        "hair-clip"
+      ],
+      "gradient": true
+    },
+    {
+      "i": 2,
+      "eyes": [
+        1.0924004101753235,
+        1.0924004101753235
+      ],
+      "earrings": 2,
+      "details": [
+        "beauty-mark",
+        "glasses"
+      ],
+      "gradient": true
+    },
+    {
+      "i": 3,
+      "eyes": [
+        1.076982049420476,
+        1.076982049420476
+      ],
+      "earrings": 2,
+      "details": [
+        "wink"
+      ],
+      "gradient": true
+    },
+    {
+      "i": 4,
+      "eyes": [
+        1.0615636886656283,
+        1.0615636886656283
+      ],
+      "earrings": 2,
+      "details": [
+        "beauty-mark",
+        "face-sticker",
+        "nose-strip",
+        "glasses",
+        "hair-clip"
+      ],
+      "gradient": true
+    },
+    {
+      "i": 5,
+      "eyes": [
+        1.0461453279107809,
+        1.0461453279107809
+      ],
+      "earrings": 2,
+      "details": [
+        "wink",
+        "face-sticker",
+        "glasses",
+        "hair-clip"
+      ],
+      "gradient": true
+    },
+    {
+      "i": 6,
+      "eyes": [
+        1.0307269671559334,
+        1.0307269671559334
+      ],
+      "earrings": 2,
+      "details": [
+        "beauty-mark",
+        "glasses"
+      ],
+      "gradient": true
+    },
+    {
+      "i": 7,
+      "eyes": [
+        1.015308606401086,
+        1.015308606401086
+      ],
+      "earrings": 2,
+      "details": [
+        "wink"
+      ],
+      "gradient": true
+    },
+    {
+      "i": 8,
+      "eyes": [
+        0.9998902456462383,
+        0.9998902456462383
+      ],
+      "earrings": 2,
+      "details": [
+        "beauty-mark",
+        "face-sticker",
+        "nose-strip",
+        "glasses",
+        "hair-clip"
+      ],
+      "gradient": true,
+      "clipAligned": true
+    },
+    {
+      "i": 9,
+      "eyes": [
+        0.9844718848913908,
+        0.9844718848913908
+      ],
+      "earrings": 2,
+      "details": [
+        "wink",
+        "face-sticker",
+        "glasses",
+        "hair-clip"
+      ],
+      "gradient": true,
+      "clipAligned": true
+    },
+    {
+      "i": 10,
+      "eyes": [
+        0.9690535241365432,
+        0.9690535241365432
+      ],
+      "earrings": 2,
+      "details": [
+        "beauty-mark",
+        "glasses"
+      ],
+      "gradient": true
+    },
+    {
+      "i": 11,
+      "eyes": [
+        0.9536351633816957,
+        0.9536351633816957
+      ],
+      "earrings": 2,
+      "details": [
+        "wink"
+      ],
+      "gradient": true
+    }
+  ]
+}

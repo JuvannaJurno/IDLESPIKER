@@ -2112,5 +2112,93 @@
       "height": 119,
       "y": 111
     }
+  ],
+  "profileBodies": [
+    {
+      "id": "profile-body-1",
+      "name": "Sade",
+      "file": "Profile/profile-body-1.svg",
+      "width": 153,
+      "height": 174,
+      "baseColor": "#EEEEEE",
+      "fit": "unisex",
+      "playerAllowed": true
+    },
+    {
+      "id": "profile-body-2",
+      "name": "Ön cepli",
+      "file": "Profile/profile-body-2.svg",
+      "width": 153,
+      "height": 174,
+      "baseColor": "#EEEEEE",
+      "fit": "unisex",
+      "playerAllowed": false
+    },
+    {
+      "id": "profile-body-3",
+      "name": "Göğüs cepli",
+      "file": "Profile/profile-body-3.svg",
+      "width": 153,
+      "height": 174,
+      "baseColor": "#EEEEEE",
+      "fit": "unisex",
+      "playerAllowed": false
+    },
+    {
+      "id": "profile-body-4",
+      "name": "Vücuda oturan",
+      "file": "Profile/profile-body-4.svg",
+      "width": 161,
+      "height": 174,
+      "baseColor": "#EEEEEE",
+      "fit": "female",
+      "playerAllowed": true
+    },
+    {
+      "id": "profile-body-5",
+      "name": "Yakalı",
+      "file": "Profile/profile-body-5.svg",
+      "width": 153,
+      "height": 174,
+      "baseColor": "#EEEEEE",
+      "fit": "unisex",
+      "playerAllowed": true
+    },
+    {
+      "id": "profile-body-6",
+      "name": "Fermuarlı",
+      "file": "Profile/profile-body-6.svg",
+      "width": 153,
+      "height": 174,
+      "baseColor": "#EEEEEE",
+      "fit": "unisex",
+      "playerAllowed": false
+    },
+    {
+      "id": "profile-body-7",
+      "name": "Fermuarlı · cepli",
+      "file": "Profile/profile-body-7.svg",
+      "width": 153,
+      "height": 174,
+      "baseColor": "#EEEEEE",
+      "fit": "unisex",
+      "playerAllowed": false
+    },
+    {
+      "id": "profile-body-8",
+      "name": "Vücuda oturan · 2",
+      "file": "Profile/profile-body-8.svg",
+      "width": 153,
+      "height": 174,
+      "baseColor": "#EEEEEE",
+      "fit": "female",
+      "playerAllowed": true
+    }
+  ],
+  "playerBodyModels": [
+    1,
+    4,
+    5,
+    8
   ]
 }
