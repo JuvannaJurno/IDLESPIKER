@@ -1,0 +1,14 @@
+[
+  {
+    "model": 4,
+    "oldSeams": 261,
+    "newSeams": 0,
+    "silhouetteOverlap": 0.9995083139638834
+  },
+  {
+    "model": 8,
+    "oldSeams": 322,
+    "newSeams": 0,
+    "silhouetteOverlap": 1
+  }
+]
