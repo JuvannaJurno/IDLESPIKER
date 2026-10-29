@@ -219,3 +219,15 @@ html[data-theme=dark] #transferReplaceScreen,html[data-theme=dark] #transferRepl
 #scoutDialog .scout-player.player-card button.scout-compare:hover{text-decoration:underline;text-underline-offset:3px}
 #scoutDialog .scout-player.player-card button.scout-compare:focus-visible{outline:2px solid var(--transfer-ink);outline-offset:-3px;border-radius:8px}
 #scoutDialog .scout-player.player-card .scout-hire{width:calc(100% - 16px);min-height:44px;margin:0 8px 8px;padding:9px 5px;font-size:11px;line-height:1.35;border-radius:10px}
+
+/* Comparison uses the shared floating back control, without a title surface. */
+#transferCompareScreen>header{position:sticky;top:calc(20px + env(safe-area-inset-top,0px));height:0;min-height:0;padding:0;margin:0;border:0;display:block;background:transparent!important;pointer-events:none;z-index:30}
+#transferCompareScreen #transferCompareTitle{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+#transferCompareScreen #closeTransferCompare{position:absolute;top:0;left:0;margin:0;pointer-events:auto}
+#transferCompareContent{padding-top:58px}
+#transferCompareScreen .scout-versus .compare-material{display:inline-grid;place-items:center;width:32px;height:42px;padding:0;margin:3px 0 6px;border:0;background:transparent;box-shadow:none;border-radius:0;--material-head:#343a3b;--material-paper:#fff9eb;--material-edge:#7e8980;--material-photo:#a9b8ad}
+#transferCompareScreen .compare-material[data-card-tier="1"]{--material-head:#647986;--material-paper:#eff3f2;--material-edge:#8cabb7;--material-photo:#afc3d2}
+#transferCompareScreen .compare-material[data-card-tier="2"]{--material-head:#96702d;--material-paper:#fff7e2;--material-edge:#bd9955;--material-photo:#c3b286}
+#transferCompareScreen .compare-material[data-card-tier="3"]{--material-head:#7b648e;--material-paper:#f0eaf5;--material-edge:#a18aaf;--material-photo:#baabcc}
+#transferCompareScreen .compare-material svg{width:30px;height:40px;display:block;filter:drop-shadow(0 1px 0 #36596826)}
+.compare-material .material-paper{fill:var(--material-paper);stroke:var(--material-edge);stroke-width:1}.compare-material .material-head{fill:var(--material-head)}.compare-material .material-photo{fill:var(--material-photo)}.compare-material .material-portrait{fill:var(--material-head);opacity:.75}.compare-material .material-lines{fill:none;stroke:var(--material-edge);stroke-width:1.5;stroke-linecap:round}
