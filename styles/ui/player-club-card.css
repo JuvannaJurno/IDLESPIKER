@@ -226,3 +226,8 @@ html #teamPanel .player-card>.card-lineup-action:after{content:'›';position:ab
 html :is(#teamPanel,#scoutDialog) .player-card>:is(.scout-hire,.card-lineup-action):not(:disabled):hover{filter:brightness(1.08)}
 html :is(#teamPanel,#scoutDialog) .player-card>:is(.scout-hire,.card-lineup-action):not(:disabled):active{transform:translateY(2px);box-shadow:inset 0 1px #00000010,0 1px 0 #41595355!important}
 html :is(#teamPanel,#scoutDialog) .player-card>:is(.scout-hire,.card-lineup-action):focus-visible{outline:3px solid #d7a44e;outline-offset:3px}
+/* Quick training is primary; roster changes remain secondary across materials. */
+html #teamPanel .player-card>.card-lineup-action{background:transparent!important;color:var(--club-ink,#385c61)!important;border:1px solid color-mix(in srgb,var(--club-kit,#53796a) 35%,transparent)!important;box-shadow:none!important;font-weight:600!important;min-height:36px}
+html #teamPanel .player-card[data-can-upgrade=true]>.card-open-upgrade{background:var(--club-kit,#426d69)!important;color:#fff9ed!important;border:1px solid color-mix(in srgb,var(--club-kit,#426d69) 75%,#182b2e)!important;box-shadow:inset 0 1px #ffffff30,0 3px color-mix(in srgb,var(--club-kit,#426d69) 65%,#182b2e)!important;font-weight:800!important;cursor:pointer}
+html #teamPanel .player-card[data-can-upgrade=true]>.card-open-upgrade :is(span,small){color:inherit!important}
+html #teamPanel .player-card[data-can-upgrade=true]>.card-open-upgrade:active{transform:translateY(2px);box-shadow:inset 0 1px #00000010,0 1px #41595355!important}
