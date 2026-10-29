@@ -39,3 +39,6 @@ html body[data-league-division] .season-hero progress::-moz-progress-bar{backgro
 #fixturesPane>.season-route-title{margin-top:0}#fixturesPane>.round-controls{margin-top:24px}
 
 .season-end-dialog #continueSeason{margin-bottom:10px}
+/* First League: woven ascending chevrons on a steel teal banner. */
+body[data-league-division="4"]{--league-base:#35596c;--league-end:#537c85;--league-ink:#fff3d9;--league-accent:#efcd89;--league-muted:#d8e5dd;--league-border:#f8edcf;--league-shadow:#8ba6a0;--league-fill:#e7c783;--league-pattern:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cg fill='none' stroke='%23f5ebcd' stroke-opacity='.09' stroke-width='1.5'%3E%3Cpath d='M-40 120 40 40l80 80 80-80M-40 140l80-80 80 80 80-80M-40-40 40 40l80-80 80 80M-40-20l80 80 80-80 80 80'/%3E%3C/g%3E%3C/svg%3E");--league-pattern-size:160px 160px}
+html[data-theme=dark] body[data-league-division="4"]{--league-base:#243e4c;--league-end:#365863;--league-ink:#f4ebd5;--league-muted:#c1d1cb;--league-border:#6d9193;--league-shadow:#243d40;--league-accent:#e1c487}
