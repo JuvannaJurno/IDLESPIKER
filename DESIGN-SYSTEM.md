@@ -1011,3 +1011,5 @@ Ek doğrulama: test-request-followups.cjs gerçek sosyal medya işiyle geçişte
 Üretim doğrulaması: test-production-card-backdrops.cjs gerçek TeamView.transferCard ile beş farklı zemin, her kartta diyagonal/noninteractive katman, açık/koyu tema ve 320/390px içerik taşması kontrolünü geçti. test-card-tiers-and-prospects.cjs kademe/yıldız ve transfer karşılaştırmasında gizli bilgiyi; test-player-jersey-front.cjs gerçek BAL kadrosunu geçti. card-backdrops-production-light/dark.png ve jersey-roster-mobile.png incelendi.
 
 Koyu tema ek uyumluluk: Potansiyel kartların bakır isim/ikincil yazıları koyu gövde üzerinde açık krem tonlarına çevrilir; maskeli yetenek alanı aynı koyu kâğıdı kullanır. Ten/portre paleti değişmez.
+
+29 Ekim portre konturu denemesi: Yalnız player-card .card-art > img üzerinde dört yönde .65px sıcak kırık beyaz alfa konturu uygulanır. Bayrak/OVR/yıldızlar ve canlı maç karakterleri etkilenmez. Yeni animasyon, canvas döngüsü veya kart ölçüsü değişikliği yoktur.
