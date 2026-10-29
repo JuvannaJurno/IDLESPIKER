@@ -997,3 +997,5 @@ Ek doğrulama: test-request-followups.cjs gerçek sosyal medya işiyle geçişte
 29 Ekim kol aksesuarları: Oyuncu portrelerinin yaklaşık yarısı çıplak kollu kalır; kalanlarda tek/çift kısa kol bandı veya uzun koyu grafit kolluk vardır. Seçim oyuncu kimliğinden deterministiktir; render/yenileme rastgeleleştirmez. Aksesuar mevcut kol siluetine kırpılır ve kolun flip/rotation/scale dönüşümünü paylaşır. Forma numarası/arma/yaka ve maç rendererı korunur.
 
 29 Ekim forma arması ölçüsü: portrede 28×30 yerine 36×38 kaynak piksel; sol göğüsteki yatay merkez ve üst hizası korunur.
+
+29 Ekim oyuncu portresi kadraj düzeltmesi: Eski 150 65 300 355 kadrajı bileklerden keserek ten rengi kolları düz blok gibi gösteriyordu. Yalnız playerPortrait için 95 65 410 455 kadrajı kullanılır: eller ve kolluk uçları görünür, kart kutusu/OVR/yıldız/ülke hizaları değişmez. Profil editörü eski kadrajını korur; fullBody ve upperBody açık istekleri önceliklidir. Kontrol: jersey-roster-mobile.png ve jersey-front-colors.png elle incelendi; test-player-jersey-front.cjs ve test-portrait-arm-gear.cjs geçti.
