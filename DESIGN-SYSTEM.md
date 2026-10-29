@@ -1068,3 +1068,7 @@ Doğrulama: test-transfer-comparison-ui.cjs 320/390 genişlikte açık/koyu tema
 30 Ekim ayarlar sırası: Hata ve öneri bildir bölümü kaydırılabilir ayarlar içeriğinin ilk bölümüdür; ses ayarlarının üstünde görünür. Bölümün tasarımı ve kayıt davranışı korunur.
 
 30 Ekim tahta öneri metni: Aynı öneriyi yineleyen başlık + açıklama yerine tek açıklayıcı cümle h3 olarak gösterilir (view.copy; yoksa view.title). Oyuncu, özellik artışı, maliyet ve eylem alanları korunur.
+
+30 Ekim portre lineart denemesi: Portre SVG'sinde baş/saç/boyun/gövde/kol ana parçalarına değişken ağırlıklı koyu çizgi eklenir. Üst-sol ince (.9), alt-sağ daha kalın (1.8 + .65/.85 kaydırma); renk #34403c, opaklık .65. Göz, kaş, ağız ve küçük aksesuar detayları ayrıca konturlanmaz. Önceden onaylanan genel silüet gölgesi .15 olarak korunur. Saçın gerçek alfa şekli 1.2px sağ / 5.5px aşağı taşınıp yumuşatılarak baş alfa maskesi ve üst %52 alın klibi içinde gölge verir; arka plana taşmaz. Efekt fullBody çıktısına uygulanmaz; maç rendererı değişmez. lineArt:false portre karşılaştırması için ham görünümü korur. Sekiz gerçek SVG görünümü portrait-variable-lineart.png üzerinden incelendi; gövde kırpımı, saç modeli, göz ölçeği ve aksesuarlar korunur.
+
+Lineart doğrulaması: Kısa saç / yan renk testi ve 300 seedli aksesuar koruma testi geçti. Eskiyle tam SVG eşitliği karşılaştırmasında yalnız yeni stil lineArt:false ile devre dışı bırakılır; gerçek tarayıcı aksesuar örnekleri yeni stille render edilir. 143 farklı göz ölçeği, gözlük, küpe, toka ve yüz detayları korundu.
