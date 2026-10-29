@@ -28,7 +28,6 @@ function start(){
  if(!Scouting.hasUnopenedCatalog()&&RoomSystem.scoutView().scouting.catalog.some(c=>!c.hired)){
  add('candidate',()=>q('#scoutCatalog .valuable-candidate')||q('#scoutCatalog .scout-player'),'Yukarı ok, aynı pozisyondaki oyuncundan daha yüksek OVR anlamına gelir.',()=>$('homeCurrentCatalog').click());
  add('comparison',()=>q('#transferCompareContent .scout-versus'),'Adayı kendi oyuncunla yan yana karşılaştır.',()=>q('#scoutCatalog .scout-compare')?.click());
- add('hidden-skill',()=>q('#transferCompareContent .skill-detail-gallery'),'Gizli yeteneğin açılması için gereken kamp koşulu burada yazar.');
  }
  }
  if(CampRules.available(RoomSystem.developmentState())&&RoomSystem.developmentState().camp.announcedDay!==null){

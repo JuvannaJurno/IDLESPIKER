@@ -2152,7 +2152,7 @@
       "height": 174,
       "baseColor": "#EEEEEE",
       "fit": "female",
-      "playerAllowed": true
+      "playerAllowed": false
     },
     {
       "id": "profile-body-5",
@@ -2192,12 +2192,10 @@
       "height": 174,
       "baseColor": "#EEEEEE",
       "fit": "female",
-      "playerAllowed": true
+      "playerAllowed": false
     }
   ],
   "playerBodyModels": [
-    1,
-    4,
-    8
+    1
   ]
 }
