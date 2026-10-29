@@ -48,3 +48,5 @@
 #academyCareerStatus:empty{display:none}
 html[data-theme=dark] #academyCareer[open]{background:#42676c!important}
 @media(max-height:520px){#academyCareer>.selection-header{padding:8px 12px}#academyCareer>.selection-header h2{font-size:17px}#academyCareer .academy-career-players{top:64px;left:10px;right:auto;max-width:46%;max-height:calc(100% - 82px);flex-direction:column;overflow:auto}#academyCareerStudent{left:auto;right:10px;bottom:10px;width:45%;max-height:calc(100% - 84px)}#academyCareerStudent .academy-student{padding:10px}#academyCareerStudent .academy-student-head h3{font-size:12px}}
+
+#academyTransferChoice.academy-only-prospect footer{grid-template-columns:1fr}#academyTransferChoice #academyImmediate[hidden]{display:none!important}
