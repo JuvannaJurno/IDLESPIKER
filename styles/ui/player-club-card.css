@@ -203,3 +203,7 @@ html:not(.elite-preview-page) .player-card.player-card .card-art::before{content
 html:not(.elite-preview-page) .player-card.player-card .card-halo,html:not(.elite-preview-page) .player-card.player-card .card-art::after{display:none!important}
 #scoutDialog .player-card>button.scout-compare{background:transparent!important;border:0!important;box-shadow:none!important;color:var(--club-ink)!important}
 #scoutDialog .player-card>.scout-hire:disabled{background:transparent!important;border:1px solid var(--club-line)!important;box-shadow:none!important;color:var(--club-muted)!important;opacity:.6;font-weight:500!important}
+
+html[data-theme=dark]:not(.elite-preview-page) .player-card.potential-player[data-prospect="unknown"]{--club-paper:#39352f;--club-soft:#484038;--club-name:#493b31;--club-ink:#f2dfc9;--club-muted:#d3bea5;--club-line:#74604b;--club-action:#554638;--potential-name-ink:#f2dfc9;--potential-accent:#e3b47f}
+html[data-theme=dark] .player-card[data-prospect="unknown"] :is(.card-name,.card-name *,.card-cap,.card-cap small,.card-physical){color:var(--club-ink)!important}
+html[data-theme=dark] .player-card[data-prospect="unknown"] .player-skill-strip{background:var(--club-paper)!important;color:var(--club-muted)!important}
