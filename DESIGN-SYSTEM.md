@@ -991,3 +991,5 @@ Kontrol: test-request-followups.cjs gerçek Chromium touch hareketi, üç geçi�
 Ek doğrulama: test-request-followups.cjs gerçek sosyal medya işiyle geçişte transitionPausedAt kaydını, kapanışta iş süresinin ötelenmesini de geçti. test-social-publishing.cjs eski clock kurulumunda boot ekranının kapanmasını bekleyerek tamamlanmadı; başarılı sayılmadı.
 
 29 Ekim arma revizyonu: Mahalle sonrası oyuncu portresinde formanın seyirciye göre sol üst göğsünde gerçek takım arması yer alır. Arma ve numara gövde dönüşümünü paylaşır. Maçta ikisi de gösterilmez. Arma kaynağı mevcut ClubJourney.matchBadge; profil/lig kimliğiyle önbelleğe alınır, her renderda yeniden üretilmez.
+
+29 Ekim portre kol revizyonu: Oyuncu portrelerinde iki kol ve eski uzun kol katmanı yüzle aynı ten renginde çizilir. Forma gövdesi, numara, arma ve yaka korunur. Yalnız playerPortrait bareArms ayarı kullanır; profil editörü ve maç çizimi değişmez.
