@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded',()=>{
  const settings=document.getElementById('settingsDialog');if(!settings)return;
  const group=document.createElement('section');group.className='settings-group';group.id='appDisplaySettings';
  group.innerHTML='<h3>Ekran ve uygulama</h3><div class="settings-row"><span>Tam ekran</span><button type="button" id="fullscreenToggle" class="team-action" aria-pressed="false">Tam ekran</button></div><div class="settings-row"><span>Ana ekrana ekle</span><button type="button" id="installApp" class="team-action">Nasıl eklenir?</button></div><p id="appDisplayStatus" class="app-display-status" role="status" aria-live="polite"></p>';
- const settingsScroll=settings.querySelector('.settings-scroll');if(settingsScroll)settingsScroll.prepend(group);else settings.querySelector('h2').after(group);toggle=group.querySelector('#fullscreenToggle');install=group.querySelector('#installApp');status=group.querySelector('#appDisplayStatus');
+ const settingsScroll=settings.querySelector('.settings-scroll');if(settingsScroll){const report=settingsScroll.querySelector('#playerReportSettings');if(report)report.after(group);else settingsScroll.prepend(group);}else settings.querySelector('h2').after(group);toggle=group.querySelector('#fullscreenToggle');install=group.querySelector('#installApp');status=group.querySelector('#appDisplayStatus');
  toggle.onclick=toggleFullscreen;
  matchButton=document.createElement('button');matchButton.type='button';matchButton.id='matchFullscreen';matchButton.className='match-fullscreen';matchButton.onclick=toggleFullscreen;
  document.querySelector('.match-shellbar').append(matchButton);
