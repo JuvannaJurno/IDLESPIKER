@@ -31,7 +31,7 @@ function buildState(){
 }
 async function start(test=false){
  if(busy||active()&&!test||!test&&(LeagueRules.config.division!==3||!LeagueSeason.progress().prologueComplete||LeagueSeason.progress().rank>3))return false;
- busy=true;let ui=null,committing=false;const previous=LeagueRules.config.division;
+ busy=true;let ui=null,committing=false,skipMotion=false;const animations=[],motion={fast:()=>skipMotion,track:animations};const previous=LeagueRules.config.division;
  try{
   if(test&&previous<3){if(previous===1){await BalTransition.start(true);while(BalTransition.active)await new Promise(requestAnimationFrame);}await DivisionThree.start(true);if(LeagueRules.config.division!==3)throw Error('Önce 2. Lig geçişi tamamlanmalı');}
   const {room,league}=buildState();
@@ -39,12 +39,12 @@ async function start(test=false){
   const entries={'idle-spiker-rooms-v2':JSON.stringify(room),'idle-spiker-league-v1':JSON.stringify(league),'idle-spiker-main-menu-v1':JSON.stringify({day:1,clicksToday:0}),'idle-spiker-match-results':JSON.stringify({version:3})};
   for(const d of document.querySelectorAll('dialog[open]'))d.close();GuidedTutorial.stop();document.querySelector('.mobile-nav a[href="#clubPanel"]').click();MenuUI.stopMotion();
   window.BalTransition.active=true;window.gameResetting=true;
-  ui=GameUI.stage({host:$('clubPanel'),kind:'division',title:'Kulübün 1. Lig’e hazırlanıyor',note:'Altyapı Akademisi bu sezon kurulabilir.',onSkip(){}});
+  ui=GameUI.stage({host:$('clubPanel'),kind:'division',title:'Kulübün 1. Lig’e hazırlanıyor',note:'Altyapı Akademisi bu sezon kurulabilir.',onSkip(){skipMotion=true;for(const a of animations)a.cancel();}});
   await CardMotion.handoff(()=>{
    localStorage.setItem('idle-spiker-division-transition-v1',JSON.stringify({version:1,entries}));committing=true;
    for(const [key,value]of Object.entries(entries))localStorage.setItem(key,value);
    LeagueSeason.loadStage(league);RoomSystem.loadStage(room);MenuUI.loadStage({day:1,clicksToday:0});$('apFeedback').textContent='+'+NumberUI.compact(RoomSystem.effects().clickAP)+' AP';DivisionThree.decorate();CampSystem.refresh();TeamView.refresh();localStorage.removeItem('idle-spiker-division-transition-v1');
-  });
+  },motion);
   window.dispatchEvent(new Event('spiker-stage-changed'));refresh();return true;
  }catch(error){console.error(error);$('firstLeagueError').textContent=committing?'Geçiş kaydı korunuyor. Oyunu yeniden açarak tamamlayabilirsin.':'1. Lig’e geçilemedi. Kayıt alanını kontrol edip tekrar dene.';promotion.open();return false;}
  finally{ui?.remove();window.gameResetting=false;window.BalTransition.active=false;busy=false;}

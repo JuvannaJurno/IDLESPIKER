@@ -23,7 +23,7 @@ window.scrollBy({top:anchor.getBoundingClientRect().top-anchorTop,behavior:'inst
 pending=null;window.gameResetting=false;api.active=false;window.FoundationBlocks?.update(RoomSystem.snapshot());
 window.dispatchEvent(new Event('spiker-stage-changed'));
 }catch(error){console.error('BAL geçişi tamamlanamadı',error);text.textContent='Geçiş tamamlanamadı';note.textContent='Kayıt alanını kontrol edip yeniden dene.';end.textContent='Yeniden dene';end.disabled=false;end.onclick=()=>{done=false;commit()};}}
-end.onclick=()=>{end.disabled=true;commit();};const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+end.onclick=()=>{end.disabled=true;for(const a of workflow.getAnimations({subtree:true}))a.cancel();animations.forEach(a=>a.cancel());commit(false);};const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 async function animate(el,frames,options){if(done)return;const a=el.animate(frames,{...options,duration:reduced?1:options.duration,fill:'forwards'});animations.push(a);await a.finished.catch(()=>{});}
 const tier=f=>workflow.querySelector('.tier[data-floor="'+f+'"]');
 try{await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));await BalVisual.play({animate,stopped:()=>done,text,note});if(!done)commit();}catch{commit();}}
