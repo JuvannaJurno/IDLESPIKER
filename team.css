@@ -147,3 +147,19 @@ html[data-theme=dark] .player-card.elite-player .card-inspect,html[data-theme=da
 #scoutDialog .scout-player.player-card.elite-player>.scout-compare{background:#e1d4eb!important;color:#6c5280!important;border:1px solid #c1aad2!important;box-shadow:0 2px 0 #bba4cb33!important}
 #scoutDialog .scout-player.player-card.elite-player>.scout-compare:hover{background:#d8c7e5!important;border-color:#a88cbd!important}
 html[data-theme=dark] #scoutDialog .scout-player.player-card.elite-player>.scout-compare{background:#53415f!important;color:#eadcf2!important;border-color:#8c739f!important}
+/* Show both sides of a roster swap before and after choosing a replacement. */
+#lineupDialog .lineup-current-pair{margin:14px 0}
+#lineupDialog .lineup-pair{grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr);gap:8px}
+#lineupDialog .lineup-preview-player{align-self:stretch;gap:0;border:1px solid #8f9e91;border-radius:11px;overflow:hidden;background:#fff9eb;box-shadow:0 2px 0 #61776a35}
+#lineupDialog .lineup-preview-player>small{width:100%;padding:7px 2px;background:#343e3e;color:#fff9e9;font-size:8px;letter-spacing:.6px}
+#lineupDialog .lineup-preview-art{position:relative;width:100%;height:106px;background:linear-gradient(135deg,#b2bfb2,#82978b);overflow:hidden}
+#lineupDialog .lineup-preview-art img{width:100%;height:100%;object-fit:contain;object-position:bottom;background:transparent;border-radius:0}
+#lineupDialog .lineup-preview-art>b{position:absolute;left:6px;top:7px;padding:4px 5px;border-radius:5px;background:#303a3b;color:#fff9e9;font-size:17px;line-height:1}
+#lineupDialog .lineup-preview-art>b small{display:block;font-size:6px;letter-spacing:1px;margin-top:3px}
+#lineupDialog .lineup-preview-player>strong{padding:8px 4px;font-size:11px;line-height:1.3}
+#lineupDialog .lineup-preview-player[data-card-tier="1"]>small{background:#647986}
+#lineupDialog .lineup-preview-player[data-card-tier="2"]>small{background:#96702d}
+#lineupDialog .lineup-preview-player[data-card-tier="3"]>small{background:#7b648e}
+#lineupDialog .lineup-vacant{display:grid;place-items:center;font-size:32px;color:#718f7c;background:#e5ebd6}
+#lineupDialog .lineup-swap-icon{color:#b18a45;display:grid;place-items:center}
+#lineupDialog .lineup-swap-icon svg{width:24px;height:24px}
