@@ -357,3 +357,8 @@ body:has(#leaguePanel:not([hidden])) main{padding-top:4px!important}
 .lineup-preview-art>.lineup-ovr-delta{position:absolute;right:5px;bottom:5px;z-index:3;display:inline-flex;align-items:center;justify-content:center;min-width:35px;padding:4px 6px;border:1px solid #a3b795;border-radius:7px;background:#e4efd8;color:#467457;font-size:10px;font-weight:800;line-height:1;box-shadow:0 1px 2px #263e4a20}
 .lineup-preview-art>.lineup-ovr-delta[data-result=worse]{background:#f5e6d5;color:#966949;border-color:#c7a98e}
 .lineup-preview-art>.lineup-ovr-delta[data-result=equal]{background:#f3efdd;color:#788372;border-color:#bdc5ae}
+.lineup-legendary-owner{margin:0 0 8px;padding:0 2px;min-height:32px;text-align:left}
+.lineup-legendary-owner small{display:block;font-size:7px;letter-spacing:.8px;color:#7b8d7d;margin-bottom:4px;font-weight:700}
+.lineup-legendary-owner strong{display:block;font-size:11px;line-height:1.35;color:#416a70;overflow-wrap:anywhere}
+[data-theme=dark] .lineup-legendary-owner strong{color:#e4e7d6}
+[data-theme=dark] .lineup-legendary-owner small{color:#adbdac}
