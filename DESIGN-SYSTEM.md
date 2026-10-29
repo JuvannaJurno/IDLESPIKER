@@ -1013,3 +1013,5 @@ Ek doğrulama: test-request-followups.cjs gerçek sosyal medya işiyle geçişte
 Koyu tema ek uyumluluk: Potansiyel kartların bakır isim/ikincil yazıları koyu gövde üzerinde açık krem tonlarına çevrilir; maskeli yetenek alanı aynı koyu kâğıdı kullanır. Ten/portre paleti değişmez.
 
 29 Ekim portre konturu denemesi: Yalnız player-card .card-art > img üzerinde dört yönde .65px sıcak kırık beyaz alfa konturu uygulanır. Bayrak/OVR/yıldızlar ve canlı maç karakterleri etkilenmez. Yeni animasyon, canvas döngüsü veya kart ölçüsü değişikliği yoktur.
+
+29 Ekim kontur alternatifleri: player-card-design-lab-v3.html#portrait-outline-lab içinde Asahi Azumane / smaçör / #7 / 220 OVR kartı üzerinde dört taslak vardır: A ince grafit, B yumuşak gölge, C kenar ışığı, D silik kontur. Aynı ten, saç, kadraj, zemin ve kart anatomisi; yalnız CSS portre filtresi değişir. Yeni seçenekler üretime uygulanmaz.
