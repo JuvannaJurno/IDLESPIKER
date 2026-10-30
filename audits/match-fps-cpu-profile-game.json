@@ -1,0 +1,173 @@
+{
+  "totalSamples": 10072,
+  "top": [
+    {
+      "name": "getImageData",
+      "file": "",
+      "line": 0,
+      "samples": 1917
+    },
+    {
+      "name": "drawImage",
+      "file": "",
+      "line": 0,
+      "samples": 941
+    },
+    {
+      "name": "(program)",
+      "file": "",
+      "line": 0,
+      "samples": 623
+    },
+    {
+      "name": "restore",
+      "file": "",
+      "line": 0,
+      "samples": 614
+    },
+    {
+      "name": "strikeSide",
+      "file": "mac.html",
+      "line": 239,
+      "samples": 367
+    },
+    {
+      "name": "drawPlayer",
+      "file": "mac.html",
+      "line": 268,
+      "samples": 360
+    },
+    {
+      "name": "getImageData",
+      "file": "",
+      "line": 0,
+      "samples": 338
+    },
+    {
+      "name": "restore",
+      "file": "",
+      "line": 0,
+      "samples": 294
+    },
+    {
+      "name": "draw",
+      "file": "match-vector-characters.js?v=62b75eff66e7",
+      "line": 57,
+      "samples": 235
+    },
+    {
+      "name": "(garbage collector)",
+      "file": "",
+      "line": 0,
+      "samples": 233
+    },
+    {
+      "name": "drawImage",
+      "file": "",
+      "line": 0,
+      "samples": 224
+    },
+    {
+      "name": "strikeSide",
+      "file": "mac.html",
+      "line": 239,
+      "samples": 201
+    },
+    {
+      "name": "drawImage",
+      "file": "",
+      "line": 0,
+      "samples": 182
+    },
+    {
+      "name": "drawPlayer",
+      "file": "match-skills.js?v=43fafc07062f",
+      "line": 364,
+      "samples": 157
+    },
+    {
+      "name": "image",
+      "file": "match-vector-characters.js?v=62b75eff66e7",
+      "line": 12,
+      "samples": 141
+    },
+    {
+      "name": "drawOrder",
+      "file": "match-hair.js?v=cccfd67024e5",
+      "line": 34,
+      "samples": 115
+    },
+    {
+      "name": "save",
+      "file": "",
+      "line": 0,
+      "samples": 104
+    },
+    {
+      "name": "getContext",
+      "file": "",
+      "line": 0,
+      "samples": 103
+    },
+    {
+      "name": "(anonymous)",
+      "file": "match-vector-characters.js?v=62b75eff66e7",
+      "line": 57,
+      "samples": 101
+    },
+    {
+      "name": "drawImage",
+      "file": "",
+      "line": 0,
+      "samples": 96
+    },
+    {
+      "name": "(anonymous)",
+      "file": "mac.html",
+      "line": 269,
+      "samples": 93
+    },
+    {
+      "name": "drawImage",
+      "file": "",
+      "line": 0,
+      "samples": 92
+    },
+    {
+      "name": "drawImage",
+      "file": "",
+      "line": 0,
+      "samples": 79
+    },
+    {
+      "name": "legImage",
+      "file": "match-hair.js?v=cccfd67024e5",
+      "line": 30,
+      "samples": 65
+    },
+    {
+      "name": "dominant",
+      "file": "mac.html",
+      "line": 277,
+      "samples": 59
+    },
+    {
+      "name": "(idle)",
+      "file": "",
+      "line": 0,
+      "samples": 56
+    },
+    {
+      "name": "moveCourtPlayer",
+      "file": "mac.html",
+      "line": 96,
+      "samples": 55
+    },
+    {
+      "name": "save",
+      "file": "",
+      "line": 0,
+      "samples": 53
+    }
+  ]
+}

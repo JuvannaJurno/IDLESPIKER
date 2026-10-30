@@ -1,0 +1,80 @@
+{
+  "rows": [
+    {
+      "mode": "baseline",
+      "mean": 21.535555554760826,
+      "p95": 81.59999999403954,
+      "profile": {
+        "tick": {
+          "ms": 166.10000014305115,
+          "calls": 180
+        },
+        "court": {
+          "ms": 15.799999922513962,
+          "calls": 180
+        },
+        "playerShadow": {
+          "ms": 188.39999943971634,
+          "calls": 2700
+        },
+        "captureHead": {
+          "ms": 53.099999725818634,
+          "calls": 1574
+        },
+        "draw": {
+          "ms": 2040.5000003874302,
+          "calls": 2700
+        },
+        "drawPlayer": {
+          "ms": 3770.599999964237,
+          "calls": 2700
+        },
+        "ballShadow": {
+          "ms": 6.299999952316284,
+          "calls": 113
+        }
+      }
+    },
+    {
+      "mode": "cached-reads",
+      "mean": 9.108333332008785,
+      "p95": 21.30000001192093,
+      "profile": {
+        "tick": {
+          "ms": 147.30000016093254,
+          "calls": 180
+        },
+        "court": {
+          "ms": 14.199999898672104,
+          "calls": 180
+        },
+        "playerShadow": {
+          "ms": 135.1999996304512,
+          "calls": 2700
+        },
+        "captureHead": {
+          "ms": 27.20000010728836,
+          "calls": 1611
+        },
+        "draw": {
+          "ms": 571.7000012993813,
+          "calls": 2700
+        },
+        "drawPlayer": {
+          "ms": 1541.0000002384186,
+          "calls": 2700
+        },
+        "ballShadow": {
+          "ms": 6.900000035762787,
+          "calls": 180
+        }
+      }
+    }
+  ],
+  "vectorMetrics": {
+    "paletteReads": 6981,
+    "paletteBuilds": 43,
+    "imageBuilds": 202,
+    "rasterized": 131
+  }
+}

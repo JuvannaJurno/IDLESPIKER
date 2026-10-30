@@ -1,0 +1,134 @@
+{
+  "rows": [
+    {
+      "mode": "baseline",
+      "mean": 20.57833333429363,
+      "p95": 49,
+      "profile": {
+        "tick": {
+          "ms": 276.3999997973442,
+          "calls": 180
+        },
+        "court": {
+          "ms": 16.59999990463257,
+          "calls": 180
+        },
+        "playerShadow": {
+          "ms": 117.8000001013279,
+          "calls": 2700
+        },
+        "captureHead": {
+          "ms": 54.80000039935112,
+          "calls": 1567
+        },
+        "draw": {
+          "ms": 2034.3999999463558,
+          "calls": 2700
+        },
+        "drawPlayer": {
+          "ms": 3563.599999845028,
+          "calls": 2700
+        },
+        "ballShadow": {
+          "ms": 42,
+          "calls": 113
+        }
+      }
+    },
+    {
+      "mode": "names-all",
+      "mean": 17.019444444278875,
+      "p95": 73.80000001192093,
+      "profile": {
+        "tick": {
+          "ms": 158.9000000357628,
+          "calls": 180
+        },
+        "court": {
+          "ms": 57.40000021457672,
+          "calls": 180
+        },
+        "playerShadow": {
+          "ms": 117.60000026226044,
+          "calls": 2700
+        },
+        "captureHead": {
+          "ms": 32.90000003576279,
+          "calls": 1594
+        },
+        "draw": {
+          "ms": 1850.799999922514,
+          "calls": 2700
+        },
+        "drawPlayer": {
+          "ms": 2880.7000002563,
+          "calls": 2700
+        },
+        "ballShadow": {
+          "ms": 4.099999904632568,
+          "calls": 180
+        }
+      }
+    },
+    {
+      "mode": "no-shadows",
+      "mean": 17.10333333214124,
+      "p95": 49.5,
+      "profile": {
+        "tick": {
+          "ms": 183.70000025629997,
+          "calls": 180
+        },
+        "court": {
+          "ms": 11.599999815225601,
+          "calls": 180
+        },
+        "captureHead": {
+          "ms": 47.900000244379044,
+          "calls": 1354
+        },
+        "draw": {
+          "ms": 1874.2000001966953,
+          "calls": 2700
+        },
+        "drawPlayer": {
+          "ms": 2974.50000038743,
+          "calls": 2700
+        },
+        "ballShadow": {
+          "ms": 7.099999904632568,
+          "calls": 169
+        }
+      }
+    },
+    {
+      "mode": "no-vector",
+      "mean": 0.9338888908425967,
+      "p95": 1.5999999940395355,
+      "profile": {
+        "tick": {
+          "ms": 71.89999958872795,
+          "calls": 180
+        },
+        "court": {
+          "ms": 10.99999988079071,
+          "calls": 180
+        },
+        "playerShadow": {
+          "ms": 67.09999999403954,
+          "calls": 2700
+        },
+        "drawPlayer": {
+          "ms": 136.60000044107437,
+          "calls": 2700
+        }
+      }
+    }
+  ],
+  "vectorMetrics": {
+    "paletteReads": 9732,
+    "paletteBuilds": 44,
+    "imageBuilds": 200,
+    "rasterized": 129
+  }
+}
