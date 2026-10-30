@@ -18,5 +18,6 @@ function vision(ctx,actor,aim,drawActor,drawBall,age=.25){
  g.globalCompositeOperation='destination-in';if(images.vision.naturalWidth)g.drawImage(images.vision,0,0,180,180);else{const fade=g.createRadialGradient(90,90,18,90,90,90);fade.addColorStop(0,'#fff');fade.addColorStop(1,'#fff0');g.fillStyle=fade;g.fillRect(0,0,180,180);}g.globalCompositeOperation='source-over';
  ctx.save();ctx.fillStyle='rgba(7,15,25,.86)';ctx.fillRect(0,0,1000,620);ctx.drawImage(crop,x-90,y-90);drawActor(actor);drawBall();ctx.restore();
 }
-window.MatchSkillVisuals={ghost,vision,assets,images,mask,captureHead,head,light,ballShadow,playerShadow};
+async function prewarm(colors=[]){await Promise.all(Object.values(images).map(im=>im.decode?.().catch(()=>{})));mask('player','#203238');mask('ball',window.BallShadowSettings?.ink||'#000000');for(const color of new Set(['#efd397','#ffffff',...colors].filter(Boolean))){mask('light',color);await new Promise(r=>setTimeout(r,0));}}
+window.MatchSkillVisuals={prewarm,ghost,vision,assets,images,mask,captureHead,head,light,ballShadow,playerShadow};
 })();

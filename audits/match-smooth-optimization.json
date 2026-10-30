@@ -1,0 +1,111 @@
+{
+  "shots": [
+    {
+      "label": "idle",
+      "meanDifference": 0.13174382716049382,
+      "channelsOver24": 0.0007098765432098765,
+      "max": 255
+    },
+    {
+      "label": "walk",
+      "meanDifference": 0.15009259259259258,
+      "channelsOver24": 0.000925925925925926,
+      "max": 255
+    },
+    {
+      "label": "set",
+      "meanDifference": 0.08739197530864197,
+      "channelsOver24": 0.0005169753086419753,
+      "max": 255
+    },
+    {
+      "label": "block",
+      "meanDifference": 0.045,
+      "channelsOver24": 0.0002546296296296296,
+      "max": 213
+    },
+    {
+      "label": "one-hand",
+      "meanDifference": 0.13746913580246914,
+      "channelsOver24": 0.0007330246913580247,
+      "max": 255
+    },
+    {
+      "label": "strike",
+      "meanDifference": 0,
+      "channelsOver24": 0,
+      "max": 0
+    },
+    {
+      "label": "filtered",
+      "meanDifference": 0,
+      "channelsOver24": 0,
+      "max": 0
+    },
+    {
+      "label": "long-hair",
+      "meanDifference": 0.11152006172839506,
+      "channelsOver24": 0.0006867283950617284,
+      "max": 255
+    },
+    {
+      "label": "short-hair",
+      "meanDifference": 0.15840277777777778,
+      "channelsOver24": 0.0008950617283950618,
+      "max": 255
+    },
+    {
+      "label": "sky-behind",
+      "meanDifference": 0.13174382716049382,
+      "channelsOver24": 0.0007098765432098765,
+      "max": 255
+    },
+    {
+      "label": "hidden-arm",
+      "meanDifference": 0.13174382716049382,
+      "channelsOver24": 0.0007098765432098765,
+      "max": 255
+    }
+  ],
+  "stablePlanBuilds": 0,
+  "imagesBuiltAfterWarmup": 0,
+  "metrics": {
+    "paletteReads": 7788,
+    "paletteBuilds": 44,
+    "imageBuilds": 257,
+    "rasterized": 257,
+    "planBuilds": 2791,
+    "planHits": 5567,
+    "batchBuilds": 217,
+    "batchDraws": 5110,
+    "batchBytes": 8365888,
+    "warmups": 2,
+    "warmupMs": 210.19999998807907
+  },
+  "rows": [
+    {
+      "optimized": false,
+      "mean": 13.81000000052154,
+      "p95": 46.20000001788139,
+      "imageCalls": 183
+    },
+    {
+      "optimized": true,
+      "mean": 13.986250000447034,
+      "p95": 48.39999997615814,
+      "imageCalls": 153
+    },
+    {
+      "optimized": true,
+      "mean": 9.391249999776482,
+      "p95": 50,
+      "imageCalls": 153
+    },
+    {
+      "optimized": false,
+      "mean": 11.557499999925493,
+      "p95": 43.099999994039536,
+      "imageCalls": 183
+    }
+  ]
+}

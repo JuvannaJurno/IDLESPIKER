@@ -1,0 +1,17 @@
+{
+  "median": 16.699999999999818,
+  "p95": 16.90000000000009,
+  "metrics": {
+    "paletteReads": 2820,
+    "paletteBuilds": 20,
+    "imageBuilds": 218,
+    "rasterized": 218,
+    "planBuilds": 141,
+    "planHits": 2904,
+    "batchBuilds": 151,
+    "batchDraws": 2785,
+    "batchBytes": 6762816,
+    "warmups": 1,
+    "warmupMs": 461
+  }
+}
