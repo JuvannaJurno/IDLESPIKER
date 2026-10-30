@@ -4,8 +4,8 @@
     true
   ],
   "all": 12,
-  "drawMs": 1.5330000001192092,
+  "drawMs": 1.5525,
   "frameMedianMs": 16.699999999999818,
-  "frameP95Ms": 33.30000000000018,
+  "frameP95Ms": 16.800000000000182,
   "method": "Headless Edge 390x844; 180 live rAF frames, 200 draw submissions; not a physical-phone FPS claim."
 }

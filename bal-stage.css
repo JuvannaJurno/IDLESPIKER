@@ -397,3 +397,9 @@ html[data-theme=dark] #campDialog #campEnroll:disabled[data-funding]{background:
 #campDialog .camp-candidate-stars{display:flex;align-items:center;justify-self:start;gap:2px;padding:2px 4px;border-radius:5px;background:#eee7d4}
 #campDialog .camp-candidate-stars img{display:block;width:12px;height:12px;grid-row:auto;background:transparent;object-fit:contain;border-radius:0;margin:0}
 #campDialog .camp-candidate-stars[data-card-tier="0"] img{filter:grayscale(1) brightness(.65)}#campDialog .camp-candidate-stars[data-card-tier="1"]{background:#53626b}#campDialog .camp-candidate-stars[data-card-tier="1"] img{filter:grayscale(1) brightness(1.45)}#campDialog .camp-candidate-stars[data-card-tier="2"]{background:#765a30}#campDialog .camp-candidate-stars[data-card-tier="3"] img{filter:hue-rotate(220deg) saturate(.75)}
+
+/* Camp reward stars share the card material, with an opaque inset surface. */
+#campReturnDialog .return-player-card[data-card-tier="0"] .return-star-track{background:#eee9dd;border-color:#68736d}
+#campReturnDialog .return-player-card[data-card-tier="1"] .return-star-track{background:#53626b;border-color:#a5b7c4}
+#campReturnDialog .return-player-card[data-card-tier="2"] .return-star-track{background:#765a30;border-color:#cdaa62}
+#campReturnDialog .return-player-card[data-card-tier="3"] .return-star-track{background:#eee5f4;border-color:#9476ab}

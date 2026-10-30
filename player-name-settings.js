@@ -1,5 +1,5 @@
 (function(root){
-'use strict';const key='idle-spiker-player-names-v1';let enabled=false,mode='off';try{const stored=localStorage.getItem(key);mode=stored==='active'?'active':stored==='on'?'all':'off';enabled=mode!=='off';}catch{}
+'use strict';const key='idle-spiker-player-names-v1';let enabled=false,mode='off';try{if(!localStorage.getItem('idle-spiker-active-names-default-v1')){localStorage.setItem(key,'active');localStorage.setItem('idle-spiker-active-names-default-v1','1');}const stored=localStorage.getItem(key);mode=stored==='active'?'active':stored==='on'?'all':'off';enabled=mode!=='off';}catch{}
 function update(){const b=document.getElementById('playerNamesToggle');if(b){b.textContent=mode==='active'?'Aktif oyuncular':enabled?'Herkes':'Kapalı';b.setAttribute('aria-checked',String(enabled));}root.MatchFrames?.invalidate();for(const frame of document.querySelectorAll('iframe'))frame.contentWindow?.postMessage({type:'spiker-player-names',value:enabled,mode},'*');}
 // Cache the complete label, not just its width: text shaping and rounded-box drawing stay off the frame path.
 const labels=new Map(),actors=new WeakMap(),scale=2;

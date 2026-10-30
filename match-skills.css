@@ -20,4 +20,4 @@
 .match-skill-item{animation:skill-notice-result 2.5s ease both}
 @keyframes skill-notice-result{0%,60%{background-color:var(--notice-bg);color:var(--notice-ink);border-color:var(--notice-accent)}74%,100%{background-color:var(--result-bg);color:var(--result-ink);border-color:var(--result-accent)}}
 
-body.skill-blackout{background:#000!important}body.skill-blackout main>*:not(.court-space){visibility:hidden!important}body.skill-blackout .court-team,body.skill-blackout #matchSkillNotice{visibility:hidden!important}body.skill-blackout .court-space,body.skill-blackout .court-viewport{background:#000!important;border-color:#000!important;box-shadow:none!important}
+body.skill-blackout .court-team{visibility:hidden!important}body.skill-blackout .court-space,body.skill-blackout .court-viewport{background:#000!important;border-color:#000!important;box-shadow:none!important}

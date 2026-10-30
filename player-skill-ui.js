@@ -2,11 +2,11 @@
 'use strict';
 const context=()=>({division:window.LeagueRules?.config?.division||1,state:window.RoomSystem?.developmentState?.()||{}});
 function studyPanel(p,refresh){
- const options=context(),count=PlayerSkills.campCount(p,options.state);if(PlayerSkills.view(p,options).some(s=>s.slot===5&&s.unlocked))return null;if(options.division<4||count<8||!p.legendaryTalent&&!p.specialCharacter||!window.TeamRules?.players?.includes(p))return null;
+ const options=context(),count=PlayerSkills.campCount(p,options.state);if(PlayerSkills.view(p,options).some(s=>s.slot===5&&s.unlocked))return null;if(options.division<3||count<6||!p.legendaryTalent&&!p.specialCharacter||!window.TeamRules?.players?.includes(p))return null;
  const box=document.createElement('section');box.className='skill-study';const title=document.createElement('strong');title.textContent='İkinci Legendary çalışması';box.append(title);
  const choices=[...new Set([p.legendaryStudy?.id,...PlayerSkills.legendaryOptions(p)].filter(Boolean))].slice(0,2);
  for(const id of choices){const skill=PlayerSkills.catalog.find(s=>s.id===id),button=document.createElement('button');button.type='button';button.className='team-secondary';button.dataset.studySkill=id;button.setAttribute('aria-pressed',String(p.legendaryStudy?.id===id));button.textContent=(p.legendaryStudy?.id===id?'✓ ':'')+skill.name;button.onclick=e=>{e.stopPropagation();if(TeamRules.chooseLegendaryStudy(p.id,id)){GameAudio?.uiClick?.();refresh();}else note.textContent='Çalışma kaydedilemedi. Yeniden dene.';};box.append(button);}
- const note=document.createElement('small');note.textContent=PlayerSkills.studyReady(p,count)?'Çalışma hazır · Altın 1 yıldızda açılır. Yol değişirse 3 kamp yeniden çalışılır.':p.legendaryStudy?Math.max(0,p.legendaryStudy.startedAt+3-count)+' kamp çalışması kaldı · Altın 1 yıldız gerekir. Yol değişirse çalışma yeniden başlar.':'Seçtiğin yolda 3 kamp tamamla. İkinci Legendary için Altın 1 yıldız gerekir.';box.append(note);return box;
+ const note=document.createElement('small');note.textContent='Gümüş 1,5 yıldızda açılır · '+Math.max(0,9-count)+' kamp kaldı. Seçim yapmazsan mevcut potansiyeli gelişir.';box.append(note);return box;
 }
 function create(p,{expanded=false,transfer=false}={}){
  const options=context(),all=PlayerSkills.view(p,options),skills=transfer?all.filter(s=>s.slot<4).sort((a,b)=>['Common','Uncommon','Rare','Epic','Legendary'].indexOf(b.rarity)-['Common','Uncommon','Rare','Epic','Legendary'].indexOf(a.rarity)).slice(0,3):all.filter(s=>s.unlocked),box=document.createElement('details');box.className='player-skill-strip';box.open=expanded;box.addEventListener('click',e=>e.stopPropagation());

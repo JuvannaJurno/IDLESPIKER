@@ -1,17 +1,17 @@
 {
   "median": 16.699999999999818,
-  "p95": 16.90000000000009,
+  "p95": 16.799999999999955,
   "metrics": {
-    "paletteReads": 2820,
+    "paletteReads": 2790,
     "paletteBuilds": 20,
-    "imageBuilds": 218,
-    "rasterized": 218,
+    "imageBuilds": 215,
+    "rasterized": 215,
     "planBuilds": 141,
-    "planHits": 2904,
-    "batchBuilds": 151,
-    "batchDraws": 2785,
-    "batchBytes": 6762816,
+    "planHits": 2874,
+    "batchBuilds": 149,
+    "batchDraws": 2755,
+    "batchBytes": 6742464,
     "warmups": 1,
-    "warmupMs": 461
+    "warmupMs": 347.5
   }
 }

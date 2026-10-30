@@ -198,7 +198,7 @@ const pools={
 };
 function hash(text){let n=2166136261;for(const c of String(text)){n^=c.charCodeAt(0);n=Math.imul(n,16777619)}return n>>>0}
 // Draft progression: slot indices 0–3 remain compatible with existing saves.
-const progression=Object.freeze({version:3,preparationBaseLevel:8,preparationLevelsPerCamp:10,requirements:[0,1,3,2,8,14],minimumDivision:[1,2,2,2,3,4],studyCamps:3,signatureDivision:6,stageTargets:{1:[0,0],2:[2,4],3:[6,8],4:[12,14],5:[18,18],6:[18,20],7:[20,22],8:[22,24]},availability:{'sky-ball-serve':1,'jump-legendary':1,'jump-float-legendary':1,'ghost-tip':1,pancake:1,'perfect-second-touch':1,'one-hand-rescue':1,'absolute-read':1,'tempo-minus':1,'sync-attack':1}});
+const progression=Object.freeze({version:3,preparationBaseLevel:8,preparationLevelsPerCamp:10,requirements:[0,1,3,2,8,9],minimumDivision:[1,2,2,2,3,3],studyCamps:3,signatureDivision:6,stageTargets:{1:[0,0],2:[2,4],3:[6,8],4:[12,14],5:[18,18],6:[18,20],7:[20,22],8:[22,24]},availability:{'sky-ball-serve':1,'jump-legendary':1,'jump-float-legendary':1,'ghost-tip':1,pancake:1,'perfect-second-touch':1,'one-hand-rescue':1,'absolute-read':1,'tempo-minus':1,'sync-attack':1}});
 const serveSkills=new Set(['sky-ball-serve','jump-legendary','jump-float-legendary']);
 function weighted(ids,key){return ids[hash(key)%ids.length];}
 function legendaryOptions(p,first=p?.matchSkills?.[2]){const all=(pools[p?.role]||pools.outside).Legendary.filter(id=>id!==first),complement=all.filter(id=>serveSkills.has(id)!==serveSkills.has(first));return [...complement,...all.filter(id=>!complement.includes(id))];}
@@ -214,8 +214,8 @@ function ensure(p){
 }
 function stageTarget(division){return progression.stageTargets[Math.max(1,Math.min(8,Number(division)||1))];}
 function preparationLevel(count,baseLimit=10){return Math.max(progression.preparationBaseLevel,baseLimit-2)+Math.max(0,Math.floor(count))*progression.preparationLevelsPerCamp;}
-function studyReady(p,count){const s=p.legendaryStudy;return !!s&&s.id===p.matchSkills?.[5]&&(s.prepared===true||Number.isFinite(s.startedAt)&&count>=s.startedAt+progression.studyCamps);}
-function beginStudy(p,id,{division=1,state}={}){ensure(p);const count=campCount(p,state);if(division<4||count<8||!p.legendaryTalent&&!p.specialCharacter||!legendaryOptions(p).includes(id))return false;const old=p.legendaryStudy;if(old?.id===id)return true;if(studyReady(p,count)&&count>=14)return false;p.legendaryStudy={id,startedAt:count,prepared:false,source:'camp'};p.matchSkills[5]=id;return true;}
+function studyReady(p,count){if(count>=9)return true;const s=p.legendaryStudy;return !!s&&s.id===p.matchSkills?.[5]&&(s.prepared===true||Number.isFinite(s.startedAt)&&count>=s.startedAt+progression.studyCamps);}
+function beginStudy(p,id,{division=1,state}={}){ensure(p);const count=campCount(p,state);if(division<3||count<6||!p.legendaryTalent&&!p.specialCharacter||!legendaryOptions(p).includes(id))return false;const old=p.legendaryStudy;if(old?.id===id)return true;if(count>=9)return false;p.legendaryStudy={id,startedAt:count,prepared:false,source:'camp'};p.matchSkills[5]=id;return true;}
 function signatureState(p,{division=1}={}){const eligible=!!(p.specialCharacter||p.academyOrigin);return {version:1,eligible,division:6,available:eligible&&division>=6,id:p.signatureProgress?.id||null,unlocked:false};}
 function milestone(count){const tier=Math.min(3,Math.floor(count/6)),stars=(count-tier*6)/2;return ['Siyah','Gümüş','Altın','Mor'][tier]+' · '+stars.toLocaleString('tr-TR')+' yıldız';}
 function campCount(p,state){if(p?.epicTeam)return 4;if(p?.specialCharacter&&p.id?.startsWith('opponent-')&&Number.isFinite(p.skillCamps))return Math.max(0,Math.floor(p.skillCamps));const C=root.CampRules||(typeof require==='function'?require('./camp-rules.js'):null);if(state?.camp&&C)return C.progress(state,p).count;return Number.isFinite(p?.skillCamps)?Math.max(0,Math.floor(p.skillCamps)):(C?.progress({},p).count||0);}
@@ -225,7 +225,6 @@ function view(p,{division=1,state}={}){
  const ids=ensure(p),count=campCount(p,state);return ids.map((id,slot)=>({id,slot})).filter(({id})=>byId.get(id)?.rarity!=='Legendary'||p.epicTeam||p.specialCharacter||p.legendaryTalent).map(({id,slot})=>{
   const skill=byId.get(id),granted=p.academySkillGrants?.includes(id),required=granted?0:progression.requirements[slot]??3,minDivision=progression.minimumDivision[slot]||1,study=slot!==5||studyReady(p,count),unlocked=!!p.epicTeam||granted||division>=minDivision&&count>=required&&study;
   let reason=unlocked?'':(division<minDivision?({2:'Bölgesel Lig',3:'2. Lig',4:'1. Lig'}[minDivision]||minDivision+'. aşama')+' · ':'')+milestone(required);
-  if(!unlocked&&slot===5)reason+=!p.legendaryStudy?' · Legendary çalışması seç':!study?' · '+Math.max(0,(p.legendaryStudy.startedAt||0)+progression.studyCamps-count)+' kamp çalışması kaldı':'';
   return {...skill,slot,unlocked,hidden:skill.rarity==='Legendary'&&!unlocked,camps:count,unlockCamp:required,minimumDivision:minDivision,reason,studyReady:study};
  }).sort((a,b)=>a.unlockCamp-b.unlockCamp);
 }
