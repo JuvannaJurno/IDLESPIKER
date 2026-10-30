@@ -58,5 +58,11 @@ function matchCourt(id){
 }
 function matchColors(id){const p=matchProfile(id);return {primary:p.primary,accent:p.accent};}
 window.ClubJourney={ensureRandom(){if(saved)return {...saved};const pick=values=>values[Math.floor(Math.random()*values.length)];const name=pick(['Çınar','Nilüfer','Yıldırım','Ufuk','Mavi'])+' '+pick(['Voleybol','Spor','File']);const profile=valid({...defaults,name,short:name.split(' ').map(w=>w[0]).join(''),primary:pick(colors),accent:pick(accents),shape:pick(Object.keys(shapes)),symbol:pick(['ball','leaf','flame','wave','wing','net']),pattern:pick(Object.keys(patterns)),border:pick(Object.keys(borders))});localStorage.setItem(key,JSON.stringify(profile));saved=profile;brand();return {...saved};},matchBadge,matchColors,matchCourt,beginNext(){if(!dialog.open)dialog.showModal();if(saved)nextLeague();else edit();},open(){if(LeagueRules.config.bal||!LeagueSeason.progress().prologueComplete)return;if(window.ClubGuide)ClubGuide.promotion(()=>ClubJourney.beginNext());else ClubJourney.beginNext();},profile:()=>saved?{...saved}:null};brand();
-Promise.all(Object.keys(symbols).map(symbol=>new Promise(resolve=>{const image=new Image();image.onload=()=>{symbolImages.set(symbol,image);resolve()};image.onerror=()=>resolve();image.src=(location.protocol==='file:'&&window.CrestSymbolData?.[symbol])||'assets/crest-symbols/'+symbol+'.png';}))).then(()=>{if(!symbolImages.size)return;preview();brand();});
+// Network failure must not permanently replace an authored symbol with the generic ball.
+Promise.all(Object.keys(window.CrestSymbolData||{}).map(symbol=>new Promise(resolve=>{
+ const image=new Image();let fallback=false;
+ image.onload=()=>{symbolImages.set(symbol,image);resolve();};
+ image.onerror=()=>{if(!fallback&&window.CrestSymbolData?.[symbol]){fallback=true;image.src=CrestSymbolData[symbol];}else resolve();};
+ image.src=location.protocol==='file:'?CrestSymbolData[symbol]:'assets/crest-symbols/'+symbol+'.png';
+}))).then(()=>{if(!symbolImages.size)return;portraitBadges.clear();symbolTints.clear();preview();brand();window.dispatchEvent(new Event('spiker-crests-ready'));window.TeamView?.refresh?.();});
 })();
