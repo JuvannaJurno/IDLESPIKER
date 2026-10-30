@@ -1,0 +1,40 @@
+{
+  "rows": [
+    {
+      "mode": "old",
+      "mean": 17.49466666777929,
+      "p95": 56.19999998807907,
+      "pixelReads": 225,
+      "pixelHash": 2217835522
+    },
+    {
+      "mode": "new",
+      "mean": 10.033333333730697,
+      "p95": 35.69999998807907,
+      "pixelReads": 0,
+      "pixelHash": 2217835522
+    },
+    {
+      "mode": "new",
+      "mean": 8.262666666905085,
+      "p95": 33.69999998807907,
+      "pixelReads": 0,
+      "pixelHash": 2217835522
+    },
+    {
+      "mode": "old",
+      "mean": 15.38266666650772,
+      "p95": 53.19999998807907,
+      "pixelReads": 225,
+      "pixelHash": 2217835522
+    }
+  ],
+  "red": "#ff0000",
+  "blue": "#0000ff",
+  "green": "#00ff00",
+  "hashes": 1,
+  "explicit": "left",
+  "replaced": true,
+  "method": "Frozen identical actual BAL match frame, CPU4x, 75 draws x4 in ABBA order; command submission time, not physical phone FPS.",
+  "improvementPercent": 44.350717819454935
+}

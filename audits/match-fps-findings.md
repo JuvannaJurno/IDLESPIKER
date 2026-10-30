@@ -16,3 +16,6 @@ probe-match-fps-cache: dominant görsel kaynağına WeakMap, strikeSide oyuncu k
 Sonraki uygulama önceliği: değişmeyen piksel okumalarını çizim dışına almak; kol seçimini kadro yüklemesinde hesaplamak; sonra oyuncu parça transform/array tahsislerini ölçmek. İsim, gölge veya animasyonları kısmadan başlanabilir.
 
 Tekrar üretim: node investigate-match-fps-game.cjs; node profile-match-fps-game.cjs; node probe-match-fps-cache.cjs. JSON çıktıları aynı klasörde match-fps-*game.json ve match-fps-cache-probe.json.
+
+## Uygulandı — 30 Ekim
+Yukarıdaki renk ve kol tekrar hesaplaması önbellekleri artık mac.html ve native labda üretim kodudur. Ayrıntı DESIGN-SYSTEM.md son FPS notu. test-match-fps-fixed-frame.cjs aynı gerçek kadro karesini ABBA sırasıyla ölçer: ortalama16.44→9.15ms, 225→0tekrar piksel okuması, aynı pixel hash. JSON: match-fps-fix-verified.json. Önceki tahmini cache denemesi yerine bu aynı-kare ölçümü kullanılmalı.
