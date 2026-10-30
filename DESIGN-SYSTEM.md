@@ -1117,3 +1117,5 @@ Doğrulama: test-flow-lane-install.cjs görünür başlangıç, sıfır yatay pa
 30 Ekim kontur inceliği: Siyah dış kontur yarıçapı 1.2den 0.9 kaynak piksele indirildi (%25 inceldi). Portre gölgesi ve kulak dikişi düzeltmesi korundu; yakın plan kontrol edildi.
 
 30 Ekim takım üst boşluğu: Gizlenen takım başlığının ardından kalan main padding ve Oyuncu Merkezi üst marjı yalnız Takım paneli açıkken 5er piksele indirildi. Güvenli alan ve diğer menü ölçüleri korunur. Mobil gerçek görünüm ve hesaplanan değerler kontrol edildi (team-top-spacing.png).
+
+30 Ekim loading topu: Mevcut atlas-1 topu korunur. 1.1sn döngüde çıkış yavaşlayarak, iniş hızlanarak ilerler; tepede 30px yükselir. Temasta kısa ve hafif ezilme, ayrılırken toparlanma ve küçük dönüş vardır. Zemindeki elips gölge yükselişte küçülüp solar. Yalnız CSS transform/opacity kullanır; yeni yükleme işi veya JS döngüsü eklenmez. index ve index-beta eşleşir. Reduced-motion kapalıdır. test-loading-ball-bounce.cjs temas/tepe/iniş karelerini, 320px taşma ve reduced-motion durumunu geçti; gerçek kareler incelendi.
