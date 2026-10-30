@@ -73,17 +73,6 @@ document.addEventListener('DOMContentLoaded',()=>{
   if(installPrompt){const prompt=installPrompt;installPrompt=null;busy=true;update();try{await prompt.prompt();const choice=await prompt.userChoice;notice(choice.outcome==='accepted'?'Kurulumu tarayıcından tamamlayabilirsin.':'İstersen daha sonra yeniden ekleyebilirsin.');}catch{showHelp();}finally{busy=false;update();}}
   else showHelp();
  };
- const welcome=GameUI.selection({id:'testInstallWelcome',title:'Kulübün hep yanında',eyebrow:'TEST SÜRÜMÜ',content:'<p>Test sürümünü tam deneyimlemek için Idle Spiker’ı ana ekranına ekle. Oyunu kendi simgesinden, adres çubuğu olmadan açabilirsin.</p><button type="button" class="team-action" id="welcomeInstallApp">Ana ekrana ekle</button><button type="button" class="team-secondary" id="welcomeInstallLater">Şimdilik tarayıcıda oyna</button>'});
- welcome.dialog.classList.add('app-install-help');welcome.dialog.querySelector('footer').hidden=true;
- welcome.dialog.querySelector('#welcomeInstallApp').onclick=()=>{welcome.close();install.click();};
- welcome.dialog.querySelector('#welcomeInstallLater').onclick=()=>welcome.close();
- const welcomeTimer=setInterval(()=>{
-  let seen=false;try{seen=localStorage.getItem('idle-spiker-install-welcome-v1')==='1';}catch{}
-  if(seen||appMode()){clearInterval(welcomeTimer);return;}
-  if(document.hidden||document.getElementById('bootScreen')||document.querySelector('dialog[open]')||window.PlayerProfile?.needsCreation||window.GuidedTutorial?.active||window.MatchGateway?.active?.())return;
-  try{localStorage.setItem('idle-spiker-install-welcome-v1','1');}catch{}
-  clearInterval(welcomeTimer);welcome.open();
- },500);
  function showHelp(){
   if(!help){
    help=GameUI.selection({id:'installAppHelp',title:'Ana ekrana ekle',eyebrow:'IDLE SPIKER',content:'<p>Ana ekranındaki simgeden açtığında tarayıcının adres çubuğu görünmez.</p><ol id="installAppSteps"></ol>',returnFocus:'installApp'});
