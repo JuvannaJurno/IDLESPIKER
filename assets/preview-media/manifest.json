@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "sourceHash": "c79cc58292958aa74335dba89e77823a745ed2403d8ad00b8b768e203322c463",
+  "sourceHash": "9bbd637b14247a04bad800cb4d7d168d9b4a7b3bd99051e36e6870f22cdf7996",
   "camera": "native-mobile-minus-90",
   "fps": 30,
   "encoding": "H264 4Mbps, 2x native raster, per-skill crop",
@@ -38,7 +38,7 @@
       "poster": "assets/preview-media/sky-ball-serve.png",
       "width": 720,
       "height": 900,
-      "duration": 12.4243,
+      "duration": 11.1782,
       "crop": [
         0,
         40,
@@ -46,7 +46,7 @@
         520
       ],
       "endProgress": 0.94,
-      "revision": "e92d64ee5ffeb01b"
+      "revision": "3f434fce19fece99"
     },
     "jump-legendary": {
       "src": "assets/preview-media/jump-legendary.mp4",

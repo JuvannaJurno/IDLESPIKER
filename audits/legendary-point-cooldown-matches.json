@@ -1,0 +1,564 @@
+[
+  {
+    "seed": 1,
+    "finished": true,
+    "events": [
+      {
+        "id": "tempo-minus",
+        "actor": 9,
+        "opportunity": 1,
+        "role": "outside",
+        "kind": "set",
+        "at": 6.11666666666665,
+        "team": 1
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 1,
+        "opportunity": 2,
+        "role": "outside",
+        "kind": "set",
+        "at": 9.366666666666712,
+        "team": 0
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 3,
+        "opportunity": 3,
+        "role": "outside",
+        "kind": "set",
+        "at": 20.65000000000011,
+        "team": 0
+      },
+      {
+        "id": "slide-attack",
+        "actor": 1,
+        "opportunity": null,
+        "role": "outside",
+        "kind": "set",
+        "at": 31.833333333332806,
+        "team": 0
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 9,
+        "opportunity": 4,
+        "role": "outside",
+        "kind": "set",
+        "at": 45.03333333333206,
+        "team": 1
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 4,
+        "opportunity": 5,
+        "role": "middle",
+        "kind": "set",
+        "at": 47.28333333333193,
+        "team": 0
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 10,
+        "opportunity": 6,
+        "role": "middle",
+        "kind": "set",
+        "at": 67.56666666666412,
+        "team": 1
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 11,
+        "opportunity": 7,
+        "role": "middle",
+        "kind": "set",
+        "at": 78.31666666666351,
+        "team": 1
+      }
+    ],
+    "points": 8,
+    "cooldowns": [
+      {
+        "actor": "1|cd-9",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 3,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-1",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-3",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 1,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-4",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 3,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-10",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": false,
+        "remaining": 1,
+        "until": 0,
+        "usedAt": 5,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-11",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": false,
+        "remaining": 2,
+        "until": 0,
+        "usedAt": 6,
+        "seconds": 0
+      }
+    ]
+  },
+  {
+    "seed": 2,
+    "finished": true,
+    "events": [
+      {
+        "id": "tempo-minus",
+        "actor": 9,
+        "opportunity": 1,
+        "role": "outside",
+        "kind": "set",
+        "at": 6.11666666666665,
+        "team": 1
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 7,
+        "opportunity": 2,
+        "role": "outside",
+        "kind": "set",
+        "at": 17.3000000000003,
+        "team": 1
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 3,
+        "opportunity": 3,
+        "role": "outside",
+        "kind": "set",
+        "at": 19.933333333333483,
+        "team": 0
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 1,
+        "opportunity": 4,
+        "role": "outside",
+        "kind": "set",
+        "at": 31.11666666666618,
+        "team": 0
+      },
+      {
+        "id": "slide-attack",
+        "actor": 1,
+        "opportunity": null,
+        "role": "outside",
+        "kind": "set",
+        "at": 42.29999999999888,
+        "team": 0
+      },
+      {
+        "id": "cross",
+        "actor": 9,
+        "opportunity": null,
+        "role": "outside",
+        "kind": "attack",
+        "at": 47.48333333333192,
+        "team": 1
+      },
+      {
+        "id": "slide-attack",
+        "actor": 1,
+        "opportunity": null,
+        "role": "outside",
+        "kind": "set",
+        "at": 49.98333333333178,
+        "team": 0
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 9,
+        "opportunity": 5,
+        "role": "outside",
+        "kind": "set",
+        "at": 63.21666666666436,
+        "team": 1
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 10,
+        "opportunity": 6,
+        "role": "middle",
+        "kind": "set",
+        "at": 74.39999999999706,
+        "team": 1
+      },
+      {
+        "id": "slide-attack",
+        "actor": 10,
+        "opportunity": null,
+        "role": "middle",
+        "kind": "set",
+        "at": 85.14999999999645,
+        "team": 1
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 3,
+        "opportunity": 7,
+        "role": "outside",
+        "kind": "set",
+        "at": 99.58333333332897,
+        "team": 0
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 4,
+        "opportunity": 8,
+        "role": "middle",
+        "kind": "set",
+        "at": 121.23333333332774,
+        "team": 0
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 9,
+        "opportunity": 9,
+        "role": "outside",
+        "kind": "set",
+        "at": 132.83333333333118,
+        "team": 1
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 11,
+        "opportunity": 10,
+        "role": "middle",
+        "kind": "set",
+        "at": 144.01666666667342,
+        "team": 1
+      }
+    ],
+    "points": 12,
+    "cooldowns": [
+      {
+        "actor": "1|cd-9",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": false,
+        "remaining": 2,
+        "until": 0,
+        "usedAt": 10,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-7",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 1,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-3",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 7,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-1",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 2,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-10",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 5,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-4",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 9,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-11",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": false,
+        "remaining": 3,
+        "until": 0,
+        "usedAt": 11,
+        "seconds": 0
+      }
+    ]
+  },
+  {
+    "seed": 3,
+    "finished": true,
+    "events": [
+      {
+        "id": "tempo-minus",
+        "actor": 7,
+        "opportunity": 1,
+        "role": "outside",
+        "kind": "set",
+        "at": 6.11666666666665,
+        "team": 1
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 9,
+        "opportunity": 2,
+        "role": "outside",
+        "kind": "set",
+        "at": 17.400000000000293,
+        "team": 1
+      },
+      {
+        "id": "cross",
+        "actor": 9,
+        "opportunity": null,
+        "role": "outside",
+        "kind": "attack",
+        "at": 30.249999999999563,
+        "team": 1
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 3,
+        "opportunity": 3,
+        "role": "outside",
+        "kind": "set",
+        "at": 42.23333333333222,
+        "team": 0
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 10,
+        "opportunity": 4,
+        "role": "middle",
+        "kind": "set",
+        "at": 73.18333333333047,
+        "team": 1
+      }
+    ],
+    "points": 7,
+    "cooldowns": [
+      {
+        "actor": "1|cd-7",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-9",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 1,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-3",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 3,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-10",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": false,
+        "remaining": 3,
+        "until": 0,
+        "usedAt": 6,
+        "seconds": 0
+      }
+    ]
+  },
+  {
+    "seed": 4,
+    "finished": true,
+    "events": [
+      {
+        "id": "tempo-minus",
+        "actor": 7,
+        "opportunity": 1,
+        "role": "outside",
+        "kind": "set",
+        "at": 6.11666666666665,
+        "team": 1
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 9,
+        "opportunity": 2,
+        "role": "outside",
+        "kind": "set",
+        "at": 17.400000000000293,
+        "team": 1
+      },
+      {
+        "id": "slide-attack",
+        "actor": 7,
+        "opportunity": null,
+        "role": "outside",
+        "kind": "set",
+        "at": 28.58333333333299,
+        "team": 1
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 1,
+        "opportunity": 3,
+        "role": "outside",
+        "kind": "set",
+        "at": 41.71666666666558,
+        "team": 0
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 10,
+        "opportunity": 4,
+        "role": "middle",
+        "kind": "set",
+        "at": 53.499999999998245,
+        "team": 1
+      },
+      {
+        "id": "slide-attack",
+        "actor": 10,
+        "opportunity": null,
+        "role": "middle",
+        "kind": "set",
+        "at": 64.24999999999764,
+        "team": 1
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 4,
+        "opportunity": 5,
+        "role": "middle",
+        "kind": "set",
+        "at": 68.04999999999742,
+        "team": 0
+      }
+    ],
+    "points": 6,
+    "cooldowns": [
+      {
+        "actor": "1|cd-7",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-9",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 1,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-1",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 3,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-10",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": false,
+        "remaining": 2,
+        "until": 0,
+        "usedAt": 4,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-4",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 5,
+        "seconds": 0
+      }
+    ]
+  }
+]

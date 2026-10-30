@@ -167,7 +167,7 @@ const catalog=[
   "id": "pancake",
   "name": "Pancake",
   "rarity": "Legendary",
-  "description": "Legendary hücumu yere değmeden son anda kurtarır."
+  "description": "Takım arkadaşının yetişemediği alçak topun altına elini uzatıp ralliyi sürdürür."
  },
  {
   "id": "ghost-tip",
@@ -187,7 +187,8 @@ const byId=new Map(catalog.map(s=>[s.id,s]));
 catalog.push({id:'sky-serve',name:'Alttan Servis',rarity:'Rare',description:'Sıçramadan, topa alttan vurarak servis atar.'});byId.set('sky-serve',catalog.at(-1));
 catalog.push({id:'fake-set',name:'Pasör Aldatmacası',rarity:'Rare',description:'Hücum için yükselip havada takım arkadaşına parmak pas çıkarır.'});byId.set('fake-set',catalog.at(-1));
 for(const skill of [{id:'court-vision',name:'Kort Görüşü',rarity:'Rare',description:'Havada savunmanın açığını fark ederek topu boş alana yönlendirir.'},{id:'team-heart',name:'Takımın Kalbi',rarity:'Legendary',description:'Sayı arasında toplanan takım arkadaşlarının temel özelliklerini her oyuncunun ilk top temasına kadar %12 güçlendirir.'},{id:'pipe-attack',name:'Pipe Attack',rarity:'Uncommon',description:'Üç metre çizgisinin gerisinden arka orta hücumu.'},{id:'setter-dump',name:'Pasör Plasesi',rarity:'Rare',description:'Ön hattaki pasör ikinci dokunuşu boş ön alana bırakır.'},{id:'kick-save',name:'Ayakla Kurtarış',rarity:'Rare',description:'Elleri yetişmeyen alçak topa ayağıyla dokunup ralliyi sürdürür.'}]){catalog.push(skill);byId.set(skill.id,skill);}
-catalog.push({id:'sky-ball-serve',name:'Sky Ball Servisi',rarity:'Legendary',description:'Sol eliyle topu havalandırıp sağ eliyle vurur; top çok yüksek bir yayla kameraya yaklaşır ve rakip sahaya iner.'});byId.set('sky-ball-serve',catalog.at(-1));
+catalog.push({id:'sky-ball-serve',name:'Sky Ball Servisi',rarity:'Legendary',description:'Topu yüksek bir yayla rakip sahaya göndererek savunmanın zamanlamasını bozar.'});byId.set('sky-ball-serve',catalog.at(-1));
+for(const [id,description]of Object.entries({'sync-attack':'Hücumcular birlikte yaklaşır; pası alan oyuncu bloğun boş bıraktığı alana vurur.','tempo-minus':'Pasörle aynı anda yükselerek topu sıçrayışının en yüksek noktasında hızla vurur.','absolute-read':'Rakibin gerçek hücumcusunu son anda okuyup topun önünü blokla kapatır.','jump-legendary':'Yükselerek topu sert ve çok hızlı bir servisle rakip sahaya yollar.','jump-float-legendary':'Sıçrayarak attığı servis havada yön değiştirir ve son anda düşer.','perfect-second-touch':'Dengesiz gelen topa yetişerek takımını hücumda tutan bir pas çıkarır.','one-hand-rescue':'İki eliyle yetişemediği topu tek elle hücum pasına çevirir.','pancake':'Takım arkadaşının yetişemediği alçak topun altına elini uzatıp ralliyi sürdürür.','ghost-tip':'Smaç vuracakmış gibi yükselip topu bloğun arkasındaki boşluğa bırakır.','sky-ball-serve':'Topu yüksek bir yayla rakip sahaya göndererek savunmanın zamanlamasını bozar.'})){const skill=byId.get(id);if(skill)skill.description=description;}
 const pools={
  setter:{Rare:['deceive','fake-set','setter-dump','sky-serve'],Common:['tempo-third'],Uncommon:['back','float','tempo-second'],Legendary:['sky-ball-serve','team-heart','sync-attack','perfect-second-touch','one-hand-rescue','jump-float-legendary']},
  outside:{Rare:['court-vision','jump','dive'],Common:['cross','commit-block','line'],Uncommon:['power-hit','wipe','rebound','float','pipe-attack'],Legendary:['sky-ball-serve','ghost-tip','jump-legendary','jump-float-legendary','tempo-minus']},
@@ -197,9 +198,9 @@ const pools={
 };
 function hash(text){let n=2166136261;for(const c of String(text)){n^=c.charCodeAt(0);n=Math.imul(n,16777619)}return n>>>0}
 // Draft progression: slot indices 0–3 remain compatible with existing saves.
-const progression=Object.freeze({version:3,preparationBaseLevel:8,preparationLevelsPerCamp:10,requirements:[0,1,3,2,8,14],minimumDivision:[1,2,2,2,3,4],studyCamps:3,signatureDivision:6,stageTargets:{1:[0,0],2:[2,4],3:[6,8],4:[12,14],5:[18,18],6:[18,20],7:[20,22],8:[22,24]},availability:{'sky-ball-serve':1,'jump-legendary':1,'jump-float-legendary':.8,'ghost-tip':.7,pancake:.7,'perfect-second-touch':.55,'one-hand-rescue':.55,'absolute-read':.4,'tempo-minus':.35,'sync-attack':.3}});
+const progression=Object.freeze({version:3,preparationBaseLevel:8,preparationLevelsPerCamp:10,requirements:[0,1,3,2,8,14],minimumDivision:[1,2,2,2,3,4],studyCamps:3,signatureDivision:6,stageTargets:{1:[0,0],2:[2,4],3:[6,8],4:[12,14],5:[18,18],6:[18,20],7:[20,22],8:[22,24]},availability:{'sky-ball-serve':1,'jump-legendary':1,'jump-float-legendary':1,'ghost-tip':1,pancake:1,'perfect-second-touch':1,'one-hand-rescue':1,'absolute-read':1,'tempo-minus':1,'sync-attack':1}});
 const serveSkills=new Set(['sky-ball-serve','jump-legendary','jump-float-legendary']);
-function weighted(ids,key){let roll=hash(key)/4294967296*ids.reduce((n,id)=>n+(progression.availability[id]||1),0);for(const id of ids){roll-=progression.availability[id]||1;if(roll<0)return id;}return ids.at(-1);}
+function weighted(ids,key){return ids[hash(key)%ids.length];}
 function legendaryOptions(p,first=p?.matchSkills?.[2]){const all=(pools[p?.role]||pools.outside).Legendary.filter(id=>id!==first),complement=all.filter(id=>serveSkills.has(id)!==serveSkills.has(first));return [...complement,...all.filter(id=>!complement.includes(id))];}
 function ensure(p){
  if(!p)return [];if(p.epicTeam){p.matchSkills=catalog.map(s=>s.id);p.matchSkillsVersion=3;return p.matchSkills;}

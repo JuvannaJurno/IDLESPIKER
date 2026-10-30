@@ -391,3 +391,21 @@ html .energy-button:after{content:none!important;display:none!important}
 #matchIntro .intro-cards{align-items:stretch}
 #matchIntro .intro-card:not(.libero-card){height:100%;align-self:stretch}
 #matchIntro .intro-cards{width:100%;max-height:calc((min(430px,100vw - 32px) - 16px)/3 * 2.3 + 116px)}
+/* Keep choice icons square regardless of description length. */
+#roomDialog .room-choice{align-items:flex-start;gap:12px}
+#roomDialog .room-choice>.slot-icon{flex:0 0 30px;width:30px;min-width:30px;height:30px;display:grid;place-items:center;align-self:flex-start}
+#roomDialog .room-choice>.slot-icon svg{display:block;flex:none;width:24px;height:24px;aspect-ratio:1}
+#roomDialog .room-choice>span:not(.slot-icon){min-width:0;flex:1}
+#roomDialog .room-choice small{white-space:normal;overflow-wrap:anywhere;line-height:1.5}
+#campReturnDialog .return-skill-reveal{background:#e8e0f0;border:1px solid #a88ab8;box-shadow:inset 0 1px #fff9ee,0 3px #c4b1cc;color:#635473}
+#campReturnDialog .return-skill-reveal small{color:#987546;letter-spacing:1.8px}
+#campReturnDialog .return-skill-reveal strong{color:#625176}
+#campReturnDialog .return-skill-reveal p{color:#786c83!important}
+#campReturnDialog .return-skill-reveal button{background:#8b739e;color:#fff8e5;border:2px solid #fff6e5;border-radius:10px;box-shadow:0 3px #665478;font:800 12px system-ui;min-height:44px}
+#campReturnDialog .return-skill-reveal button:disabled{background:#d1c7d7;color:#8b8092;border-color:#ece4ed;box-shadow:none}
+#campReturnDialog .return-skill-reveal.revealed{background:#eee4f3}
+#campReturnDialog .return-skill-reveal.revealed strong{color:#72578a}
+html[data-theme=dark] #campReturnDialog .return-skill-reveal{background:#463d53;color:#f0e3ce;border-color:#9983ad;box-shadow:inset 0 1px #ffffff15,0 3px #28293a}
+html[data-theme=dark] #campReturnDialog .return-skill-reveal strong{color:#e4d3ee}
+html[data-theme=dark] #campReturnDialog .return-skill-reveal p{color:#c8bbd1!important}
+.camp-hidden-notch{position:absolute;right:10px;top:50%;height:7px;width:1.5px;border-radius:1px;background:currentColor;transform:translate(50%,-50%);color:#785b37;pointer-events:none;box-shadow:0 0 1px #fff6dc}
