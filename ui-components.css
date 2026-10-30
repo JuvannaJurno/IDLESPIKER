@@ -1,4 +1,21 @@
 /* Shared visual families. Mobile is the reference at every viewport width. */
+/* Visual-novel staging; the dialogue paper keeps the tutorial tokens. */
+html[data-theme] dialog#clubIntroduction{--club-intro-bottom:calc(var(--app-view-bottom,0px) + var(--app-nav-height,68px) + 16px + var(--app-safe-bottom,env(safe-area-inset-bottom,0px)));top:auto;bottom:var(--club-intro-bottom);margin:0 auto;height:fit-content;min-height:0;max-height:calc(100dvh - var(--club-intro-bottom) - 12px - var(--app-safe-top,env(safe-area-inset-top,0px)));padding:0;border:0!important;background:transparent!important;box-shadow:none!important;overflow:visible;border-radius:0}
+#clubIntroduction .selection-header{position:absolute;inset:8px 8px auto auto;z-index:2;padding:0;border:0;background:transparent}
+#clubIntroduction .selection-header>div{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+#clubIntroduction .selection-close{flex:0 0 38px;background:var(--ui-tutorial);color:var(--ui-tutorial-ink);border-color:var(--ui-tutorial-edge);margin:0}
+#clubIntroduction .selection-scroll{padding:0;overflow-x:hidden;overflow-y:auto}
+.club-introduction-actor{display:flex;align-items:flex-end;height:clamp(96px,24dvh,196px);padding:0 20px}
+.club-introduction-actor img{display:block;width:168px;height:100%;object-fit:contain;object-position:left bottom;filter:drop-shadow(0 5px 7px #182b2926)}
+.club-introduction-dialogue{position:relative;min-height:116px;margin-top:12px;padding:27px 20px 12px;border:1px solid var(--ui-tutorial-edge);border-bottom:0;border-radius:16px 16px 0 0;background:var(--ui-tutorial);color:var(--ui-tutorial-ink)}
+.club-introduction-speaker{position:absolute;left:16px;top:-13px;padding:6px 12px;border:1px solid var(--ui-tutorial-edge);border-radius:8px;background:var(--ui-tutorial-tag);color:var(--ui-tutorial-tag-ink);font-size:12px;font-weight:800;line-height:1.2}
+#clubIntroductionLine{margin:0;color:var(--ui-tutorial-ink);font-size:15px;line-height:1.65;overflow-wrap:anywhere;text-align:left}
+#clubIntroduction footer{border:1px solid var(--ui-tutorial-edge);border-top:0;border-radius:0 0 16px 16px;background:var(--ui-tutorial);padding:10px 16px 14px;box-shadow:0 5px 0 #516b7926}
+html[data-theme=dark] #clubIntroductionLine{color:var(--ui-tutorial-ink)!important}
+#clubIntroduction footer span{font-variant-numeric:tabular-nums;letter-spacing:2px;color:var(--ui-tutorial-ink)}
+#clubIntroduction footer button{min-height:44px}
+@media(max-width:350px){.club-introduction-dialogue{padding:25px 16px 10px;min-height:116px}#clubIntroductionLine{font-size:14px}.club-introduction-actor{padding-left:12px}}
+@media(max-height:450px){html[data-theme] dialog#clubIntroduction{--club-intro-bottom:calc(var(--app-view-bottom,0px) + 12px + var(--app-safe-bottom,env(safe-area-inset-bottom,0px)))}.club-introduction-actor{height:80px}.club-introduction-dialogue{min-height:0;padding-top:23px}#clubIntroductionLine{font-size:14px}#clubIntroduction footer{padding-top:4px;padding-bottom:8px}}
 :root{--ui-paper:#f9f5e6;--ui-ink:#466b70;--ui-muted:#778b80;--ui-edge:#dce1ce;--ui-outline:#fff9e7;--ui-soft:#e9eddd;--ui-focus:#779c87;--ui-tutorial:#fff7dd;--ui-tutorial-ink:#665437;--ui-tutorial-edge:#e4cd96;--ui-transition-paper:#fdf4db;--ui-transition-ink:#365f53;--ui-tutorial-tag:#efe5c9;--ui-tutorial-tag-ink:#66522f;--ui-backdrop:rgb(24 43 41 / 60%);--ui-spotlight:rgb(17 29 38 / 68%)}
 html[data-theme=dark]{--ui-paper:#293d3b;--ui-ink:#e1e8d7;--ui-muted:#b8c9b8;--ui-edge:#607361;--ui-outline:#607361;--ui-soft:#344c41;--ui-focus:#a1bea5;--ui-tutorial:#293d3b;--ui-tutorial-ink:#e1e8d7;--ui-tutorial-edge:#8ba183;--ui-transition-paper:#293d3b;--ui-transition-ink:#e1e8d7;--ui-tutorial-tag:#344c41;--ui-tutorial-tag-ink:#e1e8d7;--ui-backdrop:rgb(8 25 25 / 79%)}
 html dialog::backdrop{background:var(--ui-backdrop);backdrop-filter:blur(2px)}
@@ -29,30 +46,18 @@ html[data-theme=dark] .selection-dialog :is(p,small){color:var(--ui-muted)!impor
 html[data-theme=dark] .selection-dialog :is(.profile-court-choice,.profile-track-choice,.profile-track-preview){background:var(--ui-soft);color:var(--ui-ink);border-color:var(--ui-edge)}
 html[data-theme=dark] .selection-dialog :is(.profile-court-choice,.profile-track-choice)[aria-pressed=true]{background:#466c62;border-color:#a1bea5}
 
-#clubIntroduction .club-guide-player-name{color:#226b9e;font-weight:750}html[data-theme=dark] #clubIntroduction .club-guide-player-name{color:#8acdf3}
-
-/* Club guide: one tutorial-paper dialogue shell, portrait above the paper. */
-html[data-theme] dialog#clubIntroduction{--club-intro-bottom:calc(var(--app-view-bottom,0px) + var(--app-nav-height,68px) + 16px + var(--app-safe-bottom,env(safe-area-inset-bottom,0px)));top:auto;bottom:var(--club-intro-bottom);margin:0 auto;height:fit-content;min-height:0;max-height:calc(100dvh - var(--club-intro-bottom) - 12px - var(--app-safe-top,env(safe-area-inset-top,0px)));padding:0;border:0!important;background:transparent!important;box-shadow:none!important;overflow:visible;border-radius:0}
-#clubIntroduction .selection-header{position:absolute;inset:10px 10px auto auto;z-index:3;padding:0;border:0;background:transparent}
-#clubIntroduction .selection-header>div{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
-#clubIntroduction .selection-close{flex:0 0 38px;background:var(--ui-tutorial);color:var(--ui-tutorial-ink);border-color:var(--ui-tutorial-edge);margin:0}
-#clubIntroduction .selection-scroll{padding:0;overflow-x:hidden;overflow-y:auto}
-#clubIntroduction .club-introduction-actor{display:flex;align-items:flex-end;height:clamp(120px,23dvh,182px);padding:4px 22px 0;box-sizing:border-box}
-#clubIntroduction .club-introduction-actor img{display:block;width:226px;height:100%;object-fit:contain;object-position:left bottom;filter:drop-shadow(0 4px 4px #182b2926);transform-origin:center bottom}
-#clubIntroduction .club-introduction-dialogue{position:relative;z-index:1;min-height:116px;margin-top:-8px;padding:29px 21px 12px;border:2px solid var(--ui-outline);border-bottom:0;border-radius:20px 20px 0 0;background:var(--ui-tutorial);color:var(--ui-tutorial-ink);box-shadow:inset 0 2px 0 #ffffff40}
-#clubIntroduction .club-introduction-speaker{position:absolute;left:17px;top:-14px;padding:7px 13px;border:1px solid var(--ui-tutorial-edge);border-radius:9px;background:var(--ui-tutorial-tag);color:var(--ui-tutorial-tag-ink);font-size:11px;font-weight:800;letter-spacing:.35px;line-height:1.2;box-shadow:0 2px 0 #8c75432b}
-#clubIntroduction #clubIntroductionLine{margin:0;color:var(--ui-tutorial-ink);font-size:15px;line-height:1.7;overflow-wrap:anywhere;text-align:left}
-#clubIntroduction footer{display:grid;grid-template-columns:auto minmax(24px,1fr) auto;align-items:center;gap:13px;border:2px solid var(--ui-outline);border-top:0;border-radius:0 0 20px 20px;background:var(--ui-tutorial);padding:13px 17px 16px;box-shadow:0 5px 0 #516b7940}
-#clubIntroduction footer>span{font-size:10px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:1px;color:var(--ui-tutorial-ink);opacity:.65}
-#clubIntroduction .club-introduction-meter{display:flex;gap:4px;max-width:65px}
-#clubIntroduction .club-introduction-meter i{flex:1;height:4px;border-radius:4px;background:var(--ui-tutorial-edge);opacity:.45}
-#clubIntroduction .club-introduction-meter i[data-state=current]{background:#bc9046;opacity:1}
-#clubIntroduction .club-introduction-meter i[data-state=read]{background:var(--ui-focus);opacity:1}
-#clubIntroduction footer button{display:flex;align-items:center;justify-content:center;gap:10px;min-height:44px;min-width:112px;border-radius:11px;font-weight:800;padding:10px 17px}
-#clubIntroduction.is-speaking .club-introduction-actor img{animation:club-guide-speaking .3s ease-in-out infinite alternate}
-@keyframes club-guide-speaking{from{transform:translateY(0)}to{transform:translateY(-2px)}}
+#clubIntroduction.is-speaking .club-introduction-actor img{animation:club-guide-speaking .28s ease-in-out infinite alternate;transform-origin:center bottom}
+@keyframes club-guide-speaking{from{transform:translateY(0)}to{transform:translateY(-4px)}}
 @media(prefers-reduced-motion:reduce){#clubIntroduction.is-speaking .club-introduction-actor img{animation:none}}
-@media(max-width:350px){#clubIntroduction .club-introduction-dialogue{padding:26px 17px 10px}#clubIntroduction #clubIntroductionLine{font-size:14px}#clubIntroduction .club-introduction-actor{padding-left:12px}#clubIntroduction footer{gap:9px;padding:10px 13px 13px}}
-@media(max-height:450px){html[data-theme] dialog#clubIntroduction{--club-intro-bottom:calc(var(--app-view-bottom,0px) + 12px + var(--app-safe-bottom,env(safe-area-inset-bottom,0px)))}#clubIntroduction .club-introduction-actor{height:82px}#clubIntroduction .club-introduction-dialogue{min-height:0;padding-top:24px}#clubIntroduction #clubIntroductionLine{font-size:14px;line-height:1.5}#clubIntroduction footer{padding-top:6px;padding-bottom:8px}}
 
-#clubIntroduction footer button::after{content:"›";font-size:21px;line-height:1;font-weight:500}
+/* Guide is a complete native figure, with room for the speaking motion. */
+#clubIntroduction .club-introduction-actor{height:clamp(120px,23dvh,190px);padding:6px 24px 2px;box-sizing:border-box}
+#clubIntroduction .club-introduction-actor img{width:168px;height:100%;object-fit:contain;object-position:center bottom}
+#clubIntroduction .club-introduction-dialogue{margin-top:8px}
+@media(max-height:450px){#clubIntroduction .club-introduction-actor{height:100px;padding-top:5px}}
+
+/* Upper-body guide stands behind the dialogue paper, hiding the crop edge. */
+#clubIntroduction .club-introduction-actor img{width:210px;object-position:left bottom}
+#clubIntroduction .club-introduction-dialogue{margin-top:-12px;z-index:1}
+
+#clubIntroduction .club-guide-player-name{color:#226b9e;font-weight:750}html[data-theme=dark] #clubIntroduction .club-guide-player-name{color:#8acdf3}

@@ -411,3 +411,8 @@ html[data-theme=dark] #campReturnDialog .return-skill-reveal p{color:#c8bbd1!imp
 
 
 .camp-legendary-milestone{position:absolute;bottom:-3px;width:6px;height:6px;transform:translateX(-50%) rotate(45deg);border:1px solid #fff7df;border-radius:2px;background:#c58b3f;box-shadow:0 1px 2px #49352655;pointer-events:none}
+
+#clubIntroduction .club-introduction-dialogue{background:#fff8e6;border:1px solid #dccba8;border-radius:14px;padding:16px 18px;box-shadow:0 3px 0 #c5b99444}
+#clubIntroduction .club-introduction-speaker{display:inline-block;color:#9a7038;letter-spacing:.6px;padding-bottom:7px;border-bottom:2px solid #d2a756}
+#clubIntroduction #clubIntroductionLine{line-height:1.65;margin-top:12px}
+html[data-theme=dark] #clubIntroduction .club-introduction-dialogue{background:#304b4b;border-color:#6c8170}
