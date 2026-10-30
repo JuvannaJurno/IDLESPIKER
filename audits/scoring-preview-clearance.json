@@ -1,0 +1,58 @@
+[
+  {
+    "id": "sky-ball-serve",
+    "z": 0,
+    "gap": 0,
+    "clearance": 123.42204017111368,
+    "saved": false,
+    "floatSaved": false
+  },
+  {
+    "id": "jump-legendary",
+    "z": 0,
+    "gap": 0,
+    "clearance": 123.42204017111368,
+    "saved": false,
+    "floatSaved": false
+  },
+  {
+    "id": "jump-float-legendary",
+    "z": 0,
+    "gap": 0,
+    "clearance": 123.42204017111368,
+    "saved": false,
+    "floatSaved": false
+  },
+  {
+    "id": "sync-attack",
+    "z": 0,
+    "gap": 0,
+    "clearance": 141.67475008964908,
+    "saved": false,
+    "floatSaved": false
+  },
+  {
+    "id": "tempo-minus",
+    "z": 0,
+    "gap": 0,
+    "clearance": 142.3411395205195,
+    "saved": false,
+    "floatSaved": false
+  },
+  {
+    "id": "ghost-tip",
+    "z": 0,
+    "gap": 0,
+    "clearance": 154.85799947048264,
+    "saved": false,
+    "floatSaved": false
+  },
+  {
+    "id": "absolute-read",
+    "z": 0,
+    "gap": 0,
+    "clearance": 122.723265927859,
+    "saved": false,
+    "floatSaved": false
+  }
+]

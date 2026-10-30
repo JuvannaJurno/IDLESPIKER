@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "sourceHash": "b69b9888a51b62ed5bb5c34db808f36a0c80decbd540d6e3fa711b4960d24abf",
+  "sourceHash": "c79cc58292958aa74335dba89e77823a745ed2403d8ad00b8b768e203322c463",
   "camera": "native-mobile-minus-90",
   "fps": 30,
   "encoding": "H264 4Mbps, 2x native raster, per-skill crop",
@@ -38,7 +38,7 @@
       "poster": "assets/preview-media/sky-ball-serve.png",
       "width": 720,
       "height": 900,
-      "duration": 6.8644,
+      "duration": 12.4243,
       "crop": [
         0,
         40,
@@ -46,14 +46,14 @@
         520
       ],
       "endProgress": 0.94,
-      "revision": "23acd327389af225"
+      "revision": "e92d64ee5ffeb01b"
     },
     "jump-legendary": {
       "src": "assets/preview-media/jump-legendary.mp4",
       "poster": "assets/preview-media/jump-legendary.png",
       "width": 720,
       "height": 900,
-      "duration": 6.898833,
+      "duration": 12.164967,
       "crop": [
         0,
         70,
@@ -61,14 +61,14 @@
         520
       ],
       "endProgress": 0.62,
-      "revision": "24c5b55b79949540"
+      "revision": "c3001617c6356fbc"
     },
     "jump-float-legendary": {
       "src": "assets/preview-media/jump-float-legendary.mp4",
       "poster": "assets/preview-media/jump-float-legendary.png",
       "width": 720,
       "height": 900,
-      "duration": 6.893333,
+      "duration": 12.2747,
       "crop": [
         0,
         40,
@@ -76,14 +76,14 @@
         520
       ],
       "endProgress": 0.96,
-      "revision": "03a44a41b80a55b3"
+      "revision": "c0c1e8d58ae8c040"
     },
     "sync-attack": {
       "src": "assets/preview-media/sync-attack.mp4",
       "poster": "assets/preview-media/sync-attack.png",
       "width": 720,
       "height": 900,
-      "duration": 7.514233,
+      "duration": 10.874967,
       "crop": [
         200,
         40,
@@ -91,14 +91,14 @@
         560
       ],
       "endProgress": 0.94,
-      "revision": "820d1070da392c52"
+      "revision": "96b3edb65983645f"
     },
     "tempo-minus": {
       "src": "assets/preview-media/tempo-minus.mp4",
       "poster": "assets/preview-media/tempo-minus.png",
       "width": 720,
       "height": 900,
-      "duration": 6.639767,
+      "duration": 12.2989,
       "crop": [
         260,
         10,
@@ -106,14 +106,14 @@
         512
       ],
       "endProgress": 0.94,
-      "revision": "3f7fbe702acfe4c6"
+      "revision": "a2ec4ffe9a1a6910"
     },
     "absolute-read": {
       "src": "assets/preview-media/absolute-read.mp4",
       "poster": "assets/preview-media/absolute-read.png",
       "width": 720,
       "height": 900,
-      "duration": 6.815867,
+      "duration": 11.8903,
       "crop": [
         260,
         40,
@@ -121,7 +121,7 @@
         480
       ],
       "endProgress": 0.94,
-      "revision": "8552128f94904978"
+      "revision": "e109e531c1751364"
     },
     "perfect-second-touch": {
       "src": "assets/preview-media/perfect-second-touch.mp4",
@@ -173,7 +173,7 @@
       "poster": "assets/preview-media/ghost-tip.png",
       "width": 720,
       "height": 900,
-      "duration": 6.569733,
+      "duration": 14.7412,
       "crop": [
         260,
         40,
@@ -181,7 +181,7 @@
         480
       ],
       "endProgress": 0.94,
-      "revision": "230c17cd4721c538"
+      "revision": "ff14660a7e042998"
     },
     "team-heart": {
       "src": "assets/preview-media/team-heart.mp4",

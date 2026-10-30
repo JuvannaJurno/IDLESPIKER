@@ -9,7 +9,8 @@ function analyze(squad,opponents,R){
  const need=needs[0];need.target=need.rival+(root.LeagueRules?.config?.division===1?3:0);const weak=[...need.players].sort((a,b)=>a[need.key]-b[need.key])[0];
  const upgrade=need.target>need.own?need.players.filter(p=>{const q=R.cardQuote(p);return !q.blocked&&q.gains[need.key]>0}).sort((a,b)=>a[need.key]-b[need.key])[0]:null;
  const swaps=need.players.flatMap(out=>squad.players.filter(p=>!used.has(p.id)&&p.role===out.role&&p[need.key]>out[need.key]).map(incoming=>({out,incoming,delta:incoming[need.key]-out[need.key],slot:Object.keys(squad.lineup).find(k=>squad.lineup[k]===out.id)}))).sort((a,b)=>b.delta-a.delta);
- return {need,weak,upgrade,swap:need.target>need.own?swaps[0]:null,missing:activeSlots.filter(slot=>!validSlots.includes(slot))};
+ const ranked=[...active].sort((a,b)=>R.overall(a)-R.overall(b)),others=ranked.slice(1),otherMean=others.length?others.reduce((sum,p)=>sum+R.overall(p),0)/others.length:0,outlier=ranked.length>=4&&otherMean-R.overall(ranked[0])>=Math.max(5,otherMean*.2)?{player:ranked[0],overall:R.overall(ranked[0]),teamOverall:Math.round(otherMean)}:null;
+ return {need,weak,upgrade,outlier,swap:need.target>need.own?swaps[0]:null,missing:activeSlots.filter(slot=>!validSlots.includes(slot))};
 }
 // Project real card upgrades on copies: no AP is spent and no player is changed.
 function project(player,target,R){const p={...player};let cost=0,steps=0;while(R.overall(p)<target&&steps<100){const q=R.cardQuote(p);if(q.blocked||!Object.values(q.gains).some(v=>v>0))break;for(const [k,v]of Object.entries(q.gains))p[k]+=v;p.cardLevel=q.level+1;cost+=q.cost;steps++;}return {cost,steps,overall:R.overall(p),reached:R.overall(p)>=target};}
@@ -36,7 +37,7 @@ function refresh(){
  else if(remaining>lead)rows.push(['Rakip raporu',(next.day-lead-day)+' gün sonra hazır. O zamana kadar oyuncularını geliştirebilirsin.']);
  else if(report.missing.length){rows.push(['Eksik kadro',report.missing.map(s=>s.name).join(', ')]);actions.push({label:'Kadroyu tamamla',id:'missing',run:()=>TeamView.compare(report.missing[0].id)});}
  else{rows.push(['Karşılaştırma','Rakip '+labels[need.against]+': '+fmt(need.rival)+' · Bizim '+labels[need.key]+': '+fmt(need.own)],['Ölçüm','Sayılar, bu görevi yapan oyuncuların ortalamasıdır.']);
- if(need.own>=need.target)rows.push(['Öneri','Rakibe göre belirgin bir eksiğimiz görünmüyor. AP’yi sonraki maç için saklayabilirsin.']);
+ if(need.own>=need.target){if(report.outlier){const o=report.outlier;rows.push(['Öneri',name(o.player)+' '+o.overall+' OVR ile takımın gerisinde. Diğer oyuncuların ortalaması '+o.teamOverall+' OVR.',{id:o.player.id,name:name(o.player)}]);}else rows.push(['Öneri','Rakibe göre belirgin bir eksiğimiz görünmüyor. AP’yi sonraki maç için saklayabilirsin.']);}
  else{
  if(upgrade){const q=TeamRules.cardQuote(upgrade),missing=Math.max(0,q.cost-RoomSystem.balance()),reason={receive:'Rakibin servislerine karşı manşetimizi güçlendirir.',block:'Rakibin smaçlarına karşı bloğumuzu güçlendirir.',spike:'Rakibin bloğuna karşı hücumumuzu güçlendirir.',serve:'Servisimizi güçlendirip rakibin top karşılamasını zorlaştırır.'}[need.key];rows.push(['Öneri',name(upgrade)+(missing?' kartını yükseltmek için '+fmt(missing)+' AP daha biriktir. ':' kartını yükselt. ')+reason,{id:upgrade.id,name:name(upgrade)}],['Yükseltme',labels[need.key]+' '+upgrade[need.key]+' → '+(upgrade[need.key]+q.gains[need.key])],['Gereken AP',fmt(q.cost)]);}else rows.push(['Öneri',labels[need.key]+' için '+[...new Set(need.players.map(p=>TeamRules.roles[p.role].toLocaleLowerCase('tr-TR')))].join(' veya ')+' seçeneklerine bak.']);
  }
