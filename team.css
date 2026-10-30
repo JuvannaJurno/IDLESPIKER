@@ -176,3 +176,12 @@ html[data-theme=dark] :is(#lineupDialog,#transferLineupPrompt,#transferReplaceSc
 :is(#lineupDialog,#transferLineupPrompt,#transferReplaceScreen)>.lineup-actions>button{width:100%!important;max-width:none!important;justify-self:stretch;box-sizing:border-box}
 :is(#lineupDialog,#transferLineupPrompt,#transferReplaceScreen)>.close-dialog{background:#faf0d5!important;color:#af874c!important;border:1px solid #e4d8b8!important;border-radius:13px!important;box-shadow:0 2px 5px #725c3020!important}
 html[data-theme=dark] :is(#lineupDialog,#transferLineupPrompt,#transferReplaceScreen)>.close-dialog{background:#344f4d!important;color:#dbe7d7!important;border-color:#61776a!important}
+/* Comparison controls belong to a non-scrolling header, never scroll compensation. */
+:is(#lineupDialog,#transferLineupPrompt,#transferReplaceScreen).comparison-dialog-shell{padding:0;overflow:hidden;max-height:85dvh}
+:is(#lineupDialog,#transferLineupPrompt,#transferReplaceScreen).comparison-dialog-shell[open]{display:grid;grid-template-rows:auto minmax(0,1fr) auto}
+.comparison-dialog-header{position:relative;padding:20px 64px 6px 14px;min-height:68px}
+.comparison-dialog-header>.close-dialog{position:absolute!important;top:12px!important;right:12px!important;left:auto!important;bottom:auto!important;margin:0!important;translate:none!important;transform:none!important}
+.comparison-dialog-header h2{margin-right:0!important}
+.comparison-dialog-header .lineup-help{margin-bottom:6px}
+.comparison-dialog-scroll{min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:0 14px 12px;scrollbar-gutter:stable}
+:is(#lineupDialog,#transferLineupPrompt,#transferReplaceScreen).comparison-dialog-shell>.lineup-actions{position:static;margin:0;padding:10px 14px 14px;box-shadow:none}

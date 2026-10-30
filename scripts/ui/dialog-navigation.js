@@ -3,14 +3,21 @@
 const offsets=new WeakMap();
 const selector='.close-dialog,#closeCamp,#transferBack,.screen-back,.back-button,.dialog-back,button[id^="close"],button[id$="Back"],button[aria-label*="kapat" i],button[aria-label*="geri" i]';
 function transferRail(dialog){if(dialog.id!=='scoutDialog')return;const back=dialog.querySelector('#transferBack'),close=dialog.querySelector('.close-dialog');if(!back||!close)return;let rail=dialog.querySelector('.transfer-nav-rail');if(!rail){rail=document.createElement('div');rail.className='transfer-nav-rail';dialog.prepend(rail);}if(back.parentElement!==rail)rail.append(back);if(close.parentElement!==rail)rail.append(close);}
+function comparisonShell(dialog){
+ if(!['lineupDialog','transferLineupPrompt','transferReplaceScreen'].includes(dialog.id)||dialog.querySelector(':scope > .comparison-dialog-header'))return;
+ const header=document.createElement('header'),body=document.createElement('div');header.className='comparison-dialog-header';body.className='comparison-dialog-scroll';
+ for(const node of [...dialog.children]){if(node.matches('.close-dialog,.eyebrow,h2,.lineup-help'))header.append(node);else if(!node.matches('.lineup-actions'))body.append(node);}
+ dialog.prepend(header,body);dialog.classList.add('comparison-dialog-shell');dialog.scrollTop=0;
+}
 function pin(dialog){
  if(!(dialog instanceof HTMLDialogElement))return;
- transferRail(dialog);
+ comparisonShell(dialog);transferRail(dialog);
  for(const button of dialog.querySelectorAll(selector)){
   if(button.closest('#learningHint'))continue;
   if(button.textContent.trim().length>2&&!button.matches('.close-dialog,#transferBack,.screen-back,.back-button,.dialog-back'))continue;
   button.classList.add('dialog-nav-control');
   if(button.parentElement.classList.contains('transfer-nav-rail')){button.style.removeProperty('translate');offsets.delete(button);continue;}
+  if(button.closest('.comparison-dialog-header')){button.style.removeProperty('translate');button.style.removeProperty('z-index');offsets.delete(button);continue;}
   const previous=offsets.get(button)||0;
   if(!dialog.open||!button.getClientRects().length){button.style.removeProperty('translate');offsets.delete(button);continue;}
   const rect=button.getBoundingClientRect(),top=dialog.getBoundingClientRect().top+14;
