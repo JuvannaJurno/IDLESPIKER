@@ -1,0 +1,122 @@
+{
+  "generatedSettersWithTempo": 104,
+  "rows": [
+    {
+      "name": "hitter-only",
+      "pair": {
+        "setter": 2,
+        "hitter": 1,
+        "owner": 1,
+        "duo": false,
+        "hitterOwns": true,
+        "setterOwns": false
+      },
+      "pairs": [
+        {
+          "setter": 2,
+          "hitter": 1,
+          "owner": 1,
+          "duo": false,
+          "hitterOwns": true,
+          "setterOwns": false
+        }
+      ],
+      "colors": {
+        "setter": "white",
+        "hitter": "Legendary"
+      },
+      "flag": false,
+      "ledger": [
+        {
+          "actor": "0|tempo-pair-1",
+          "pending": true
+        }
+      ],
+      "soloWins": 1087,
+      "duoWins": 1324,
+      "unchanged": true
+    },
+    {
+      "name": "setter-only",
+      "pair": {
+        "setter": 2,
+        "hitter": 1,
+        "owner": 2,
+        "duo": false,
+        "hitterOwns": false,
+        "setterOwns": true
+      },
+      "pairs": [
+        {
+          "setter": 2,
+          "hitter": 1,
+          "owner": 2,
+          "duo": false,
+          "hitterOwns": false,
+          "setterOwns": true
+        }
+      ],
+      "colors": {
+        "setter": "Legendary",
+        "hitter": "white"
+      },
+      "flag": false,
+      "ledger": [
+        {
+          "actor": "0|tempo-pair-2",
+          "pending": true
+        }
+      ],
+      "soloWins": 1087,
+      "duoWins": 1324,
+      "unchanged": true
+    },
+    {
+      "name": "both",
+      "pair": {
+        "setter": 2,
+        "hitter": 1,
+        "owner": 1,
+        "duo": true,
+        "hitterOwns": true,
+        "setterOwns": true
+      },
+      "pairs": [
+        {
+          "setter": 2,
+          "hitter": 1,
+          "owner": 1,
+          "duo": true,
+          "hitterOwns": true,
+          "setterOwns": true
+        }
+      ],
+      "colors": {
+        "setter": "Legendary",
+        "hitter": "Legendary"
+      },
+      "flag": true,
+      "ledger": [
+        {
+          "actor": "0|tempo-pair-1",
+          "pending": true
+        },
+        {
+          "actor": "0|tempo-pair-2",
+          "pending": true
+        }
+      ],
+      "soloWins": 1087,
+      "duoWins": 1324,
+      "unchanged": true
+    },
+    {
+      "name": "neither",
+      "pairs": []
+    },
+    {
+      "name": "locked-setter",
+      "pairs": []
+    }
+  ]
+}
