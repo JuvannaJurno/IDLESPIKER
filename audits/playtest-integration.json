@@ -1,20 +1,20 @@
 {
-  "events": 133,
-  "codeLength": 10428,
-  "run": "50d9662d-8cd4-41e7-9694-22b621a239d9",
+  "events": 132,
+  "codeLength": 10385,
+  "run": "a8c5e842-d50f-4252-b206-f9edbfc3cf4f",
   "safety": {
     "samePlayers": true,
     "sameRoom": true,
     "randomCalls": 0
   },
-  "completedAt": 1793383656799,
+  "completedAt": 1793484368778,
   "types": [
     "oturum",
     "başlangıç",
     "eylem",
+    "blok",
     "oyuncu",
     "üretim",
-    "blok",
     "aşama",
     "catalog",
     "camps",

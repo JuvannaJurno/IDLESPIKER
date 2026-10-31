@@ -7,10 +7,10 @@ const promotion=GameUI.selection({id:'firstLeaguePromotion',title:'Ulusal Voleyb
 promotion.dialog.querySelector('footer span').textContent='Oyuncuların, kaynakların ve yatırımların korunur.';
 const button=document.createElement('button');button.type='button';button.className='team-action';button.id='firstLeaguePromotionEntry';button.hidden=true;$('prologueComplete').append(button);
 button.onclick=()=>showPromotion();$('enterFirstLeague').onclick=()=>start();
-function showPromotion(){if(LeagueRules.config.division!==3||!LeagueSeason.progress().prologueComplete||LeagueSeason.progress().rank>3)return false;promotion.open();return true;}
+function showPromotion(){if(LeagueRules.config.division!==3||!LeagueSeason.progress().prologueComplete)return false;if(window.BetaEnding)return BetaEnding.open();promotion.open();return true;}
 function refresh(){
  const p=LeagueSeason.progress();button.hidden=LeagueRules.config.division!==3||!p.prologueComplete;
- if(!button.hidden){button.textContent=p.rank<=3?'Ulusal Voleybol 1. Ligi’ne yüksel →':'1. Lig için sezonu ilk üçte tamamla';button.disabled=p.rank>3;}
+ if(!button.hidden){button.textContent='Beta testini tamamla →';button.disabled=false;}
  if(!active())return;
  document.body.classList.add('first-league');document.querySelector('#clubPanel .section-top .eyebrow').textContent='BİZİM KULÜP · AŞAMA 4';
  const select=$('stageTestSelect');if(select&&decoratedDivision!==LeagueRules.config.division){select.value='4';decoratedDivision=LeagueRules.config.division;}
@@ -30,6 +30,7 @@ function buildState(){
  return {room,league,first};
 }
 async function start(test=false){
+ if(!test&&LeagueRules.config.division===3&&LeagueSeason.progress().prologueComplete&&window.BetaEnding){BetaEnding.open();return false;}
  if(busy||active()&&!test||!test&&(LeagueRules.config.division!==3||!LeagueSeason.progress().prologueComplete||LeagueSeason.progress().rank>3))return false;
  busy=true;let ui=null,committing=false,skipMotion=false;const animations=[],motion={fast:()=>skipMotion,track:animations};const previous=LeagueRules.config.division;
  try{
