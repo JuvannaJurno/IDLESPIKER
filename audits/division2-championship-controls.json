@@ -1,0 +1,34 @@
+[
+  {
+    "style": "4-match-training-delay",
+    "runs": 160,
+    "firstRate": 0.71875,
+    "rankCounts": [
+      115,
+      37,
+      8,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "meanWins": 13.1625
+  },
+  {
+    "style": "no-further-training",
+    "runs": 160,
+    "firstRate": 0.06875,
+    "rankCounts": [
+      11,
+      62,
+      86,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "meanWins": 11.3875
+  }
+]

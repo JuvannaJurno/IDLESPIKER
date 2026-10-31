@@ -43,3 +43,23 @@ html body[data-league-division] #clubPanel>.league-match-group{margin-top:0}
 /* Decorative clipping must not turn the club/league card into a scroll container. */
 html #clubPanel,html body[data-league-division] .league-match-group,html .next-match.match-preview{overflow:clip}
 .league-match-group,.league-match-group *{touch-action:pan-y pinch-zoom;user-select:none;-webkit-user-select:none;-webkit-user-drag:none}
+
+/* The season's final three fixtures occupy the existing heading row. */
+#seasonRunIn[hidden],#nextMatchHeading[hidden]{display:none!important}
+.season-run-in{display:inline-flex;align-items:center;gap:9px;min-width:0;letter-spacing:.4px;white-space:nowrap}
+.season-run-in b{font-size:10px;font-weight:700}
+.season-run-in-marks{display:flex;gap:3px;flex:none}
+.season-run-in-marks i{display:block;width:11px;height:3px;border-radius:2px;border:1px solid currentColor;box-sizing:border-box;opacity:.7}
+.season-run-in-marks i[data-complete=true]{background:currentColor;opacity:1}
+html body[data-league-division] .league-match-group.season-final-match{border-color:#d5b56f;box-shadow:0 3px var(--league-shadow,#b0a5bc),0 0 0 1px #e5c98555}
+.next-match.match-preview[data-final-match=true]{border-color:#d5b56f}
+
+/* The match-day prompt uses the same final-fixture marker, in its eyebrow slot. */
+#arrivalSeasonRunIn[hidden],#matchArrivalEyebrow[hidden]{display:none!important}
+#matchArrival .season-run-in{padding:5px 10px;border:1px solid #d2b87570;border-radius:8px;background:#e9dfbc66;color:#87682f;justify-content:center;gap:10px}
+#matchArrival .season-run-in b{font-size:11px}
+html[data-theme=dark] #matchArrival .season-run-in{background:#e4c77e14;color:#efd18b;border-color:#bba16b77}
+html body #matchArrival[data-final-match=true]{border-color:#d5b56f!important}
+
+/* Keep the original league title, rank/points summary and fixture count intact. */
+#leagueQuickNext .league-quick-position{font-weight:700;color:inherit}

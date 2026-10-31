@@ -1,0 +1,73 @@
+{
+  "method": {
+    "routes": 9,
+    "screeningSeasons": 1440,
+    "nativeSeasons": 6,
+    "nativeMatches": 84,
+    "limitations": "Optimized affordable spending decisions, promotion assumed for economy traversal; offline/social timing approximated. These are controlled scenarios, not a measured probability for human players. Rotation screening does not reproduce native Legendary triggers."
+  },
+  "native": [
+    {
+      "profile": "active",
+      "seed": 1,
+      "rank": 1,
+      "wins": 14,
+      "losses": 0
+    },
+    {
+      "profile": "active",
+      "seed": 2,
+      "rank": 4,
+      "wins": 9,
+      "losses": 5
+    },
+    {
+      "profile": "idle",
+      "seed": 1,
+      "rank": 1,
+      "wins": 13,
+      "losses": 1
+    },
+    {
+      "profile": "idle",
+      "seed": 2,
+      "rank": 1,
+      "wins": 13,
+      "losses": 1
+    },
+    {
+      "profile": "offline",
+      "seed": 1,
+      "rank": 1,
+      "wins": 13,
+      "losses": 1
+    },
+    {
+      "profile": "offline",
+      "seed": 2,
+      "rank": 1,
+      "wins": 14,
+      "losses": 0
+    }
+  ],
+  "screening": [
+    {
+      "profile": "active",
+      "championshipRate": 0.90625,
+      "firstMatchOVR": 112.55555555555556,
+      "lastMatchOVR": 173.11111111111111
+    },
+    {
+      "profile": "idle",
+      "championshipRate": 0.90625,
+      "firstMatchOVR": 99.44444444444446,
+      "lastMatchOVR": 179.11111111111111
+    },
+    {
+      "profile": "offline",
+      "championshipRate": 0.7395833333333334,
+      "firstMatchOVR": 87.3888888888889,
+      "lastMatchOVR": 190.61111111111111
+    }
+  ]
+}
