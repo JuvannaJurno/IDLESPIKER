@@ -10,8 +10,11 @@ let viewportFrame=0;
 function fitViewport(){
  const root=document.documentElement,v=window.visualViewport,unzoomed=v&&Math.abs(v.scale-1)<.01;
  const width=unzoomed?Math.min(innerWidth,v.width):innerWidth,height=unzoomed?Math.min(innerHeight,v.height):innerHeight;
- const top=unzoomed?v.offsetTop:0,left=unzoomed?v.offsetLeft:0;
- const values={'--app-view-height':height,'--app-view-width':width,'--app-view-top':top,'--app-view-left':left,'--app-view-bottom':Math.max(0,innerHeight-height-top),'--app-view-right':Math.max(0,innerWidth-width-left)};
+ // Rubber-band offsets and toolbar animation are not keyboard occlusion.
+ const top=unzoomed?Math.max(0,Math.min(v.offsetTop,innerHeight-height)):0,left=unzoomed?Math.max(0,v.offsetLeft):0;
+ const editing=!!document.activeElement?.matches('input:not([type=button]):not([type=submit]):not([type=range]):not([type=checkbox]),textarea,[contenteditable=true]');
+ const bottom=editing?Math.max(0,innerHeight-height-top):0;
+ const values={'--app-view-height':height,'--app-view-width':width,'--app-view-top':top,'--app-view-left':left,'--app-view-bottom':bottom,'--app-view-right':Math.max(0,innerWidth-width-left)};
  // Read the complete layout before changing any CSS variables/classes.
  const nav=document.querySelector('.mobile-nav'),energy=document.querySelector('.energy-button'),group=document.querySelector('.league-match-group'),calendar=document.querySelector('.calendar-card'),camp=document.getElementById('campAlert');
  const navRect=nav?.getBoundingClientRect(),energyRect=energy?.getBoundingClientRect(),groupRect=group?.getBoundingClientRect(),calendarRect=calendar?.getBoundingClientRect(),campRect=camp?.getBoundingClientRect();
