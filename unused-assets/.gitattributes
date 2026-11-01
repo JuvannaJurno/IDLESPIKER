@@ -1,0 +1,3 @@
+# Preserve archived bytes so checksum verification and restoration work on every platform.
+files/** -text
+previous/** -text
