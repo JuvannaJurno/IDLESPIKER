@@ -1289,3 +1289,6 @@ Kamptaki oyuncunun kalan gününü oluşturan hatalı campDayscampDays çağrıs
 
 
 2 Kasım son kullanıcı düzeltmesi: takvim için yapılmış kulüp taş/krem zemini, 4px kulüp/lig köşeleri ve alt navigasyon köşesi/tabanı varsayılan görünümden kaldırıldı. Eski takvimle özgün yeşil kulüp zemini ve yuvarlak kulüp/lig kartları geri döndü. Butonların son basış tasarımları korunur. Önceki dok/takvim uyumu notu artık yalnız isteğe bağlı çerçeveli takvim denemesini tarif eder. Üstteki ortak logo tabelası ayrı yeni denemedir. Eski takvimde uzun gün rakamları hücre içinde boyutlanır; normal font korunur.
+
+
+2 Kasım üst menü geri alımı: kullanıcı ortak krem tabela denemesini reddetti. Üst menü özgün mavi zemin, serbest logo ve sağdaki krem kontrol kapsülüne döndü; tabela pseudo yüzeyi, logo iç boşluğu ve yeni logo filtresi kaldırıldı. Eski takvim varsayılanı, isteğe bağlı çerçeveli takvim ve paylaşım sesi korunur.
