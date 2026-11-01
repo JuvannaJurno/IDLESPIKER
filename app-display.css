@@ -83,3 +83,9 @@ html body #toast{box-sizing:border-box;width:min(440px,calc(var(--app-view-width
 
 /* Dock padding belongs inside the club frame. */
 html body .mobile-nav{box-sizing:border-box}
+
+/* Desktop fixed navigation follows the real game column, not a second viewport centre.
+   Classic scrollbar gutters are already included in the shell's measured position. */
+@media(min-width:481px){
+ html:not(.desktop-beta) body nav.mobile-nav{left:var(--app-shell-left,0px);right:auto;width:var(--app-shell-width,480px);max-width:100%;margin-inline:0;transform:none}
+}

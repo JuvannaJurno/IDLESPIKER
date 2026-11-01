@@ -17,6 +17,8 @@ function fitViewport(){
  const values={'--app-view-height':height,'--app-view-width':width,'--app-view-top':top,'--app-view-left':left,'--app-view-bottom':bottom,'--app-view-right':Math.max(0,innerWidth-width-left)};
  // Read the complete layout before changing any CSS variables/classes.
  const nav=document.querySelector('.mobile-nav'),energy=document.querySelector('.energy-button'),group=document.querySelector('.league-match-group'),calendar=document.querySelector('.calendar-card'),camp=document.getElementById('campAlert');
+ const shellRect=document.querySelector('.shell')?.getBoundingClientRect();
+ if(shellRect){values['--app-shell-left']=shellRect.left;values['--app-shell-width']=shellRect.width;}
  const navRect=nav?.getBoundingClientRect(),energyRect=energy?.getBoundingClientRect(),groupRect=group?.getBoundingClientRect(),calendarRect=calendar?.getBoundingClientRect(),campRect=camp?.getBoundingClientRect();
  const shown=r=>!!(r&&(r.width||r.height));
  values['--app-nav-height']=Math.ceil(navRect?.height||0);values['--app-energy-height']=Math.ceil(energyRect?.height||0);
@@ -59,7 +61,7 @@ document.addEventListener('fullscreenchange',update);document.addEventListener('
 standalone.addEventListener('change',update);fullscreen.addEventListener('change',update);
 document.addEventListener('DOMContentLoaded',()=>{
  const resize=new ResizeObserver(scheduleViewport);
- for(const selector of ['.mobile-nav','.energy-button','.topbar','.calendar-card','#clubPanel']){const el=document.querySelector(selector);if(el)resize.observe(el);}
+ for(const selector of ['.shell','.mobile-nav','.energy-button','.topbar','.calendar-card','#clubPanel']){const el=document.querySelector(selector);if(el)resize.observe(el);}
  new MutationObserver(scheduleViewport).observe(document.body,{attributes:true,attributeFilter:['class','data-league-division']});
  const campObserver=new MutationObserver(scheduleViewport);const camp=document.getElementById('campAlert');if(camp)campObserver.observe(camp,{attributes:true,attributeFilter:['hidden','class','style']});
  addEventListener('spiker-stage-changed',scheduleViewport);

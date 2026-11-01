@@ -1292,3 +1292,6 @@ Kamptaki oyuncunun kalan gününü oluşturan hatalı campDayscampDays çağrıs
 
 
 2 Kasım üst menü geri alımı: kullanıcı ortak krem tabela denemesini reddetti. Üst menü özgün mavi zemin, serbest logo ve sağdaki krem kontrol kapsülüne döndü; tabela pseudo yüzeyi, logo iç boşluğu ve yeni logo filtresi kaldırıldı. Eski takvim varsayılanı, isteğe bağlı çerçeveli takvim ve paylaşım sesi korunur.
+
+
+2 Kasım PC alt navigasyon hizası: klasik kaydırma çubuğu alanı visualViewport ölçüsünde çıkarılmışken sabit navigasyonun merkez hesabında tekrar çıkarılabiliyordu; 15px çubukta 7,5px sola kayma yeniden üretildi. PC genişliğinde alt navigasyon .shell gerçek sol/sağ sınırlarını ölçerek izler. Tasarım, renk, köşe, düğme ve mobil güvenli alan sistemi değişmez; masaüstü beta kendi yerleşimini korur. Ölçüm mevcut tek requestAnimationFrame döngüsüne eklenir, sürekli yeni döngü yoktur. test-desktop-nav-alignment klasik/overlay kaydırma çubuğu, 3/4 sekme, pencere boyutu, sayfa başı/sonu ve gerçek tam ekranı kapsar.
