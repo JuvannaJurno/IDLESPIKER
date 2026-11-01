@@ -3,19 +3,14 @@
 #bootScreen .boot-flight-stage{position:relative;width:200px;height:174px;flex:none;margin:0 0 17px;isolation:isolate}
 #bootScreen .boot-owl{position:absolute;left:49px;top:20px;width:102px;height:102px;animation:boot-owl-float 1.65s ease-in-out infinite;will-change:transform;isolation:isolate}
 #bootScreen .boot-owl-body{position:relative;z-index:2;display:block;width:100%;height:100%;object-fit:contain;image-rendering:auto}
-#bootScreen .boot-wing{position:absolute;z-index:1;width:61px;height:68px;top:28px;overflow:visible;will-change:transform}
-#bootScreen .boot-wing-left{left:-35px;transform-origin:91% 20%;animation:boot-wing-left .72s ease-in-out infinite}
-#bootScreen .boot-wing-right{right:-35px;transform-origin:9% 20%;animation:boot-wing-right .72s ease-in-out infinite}
 #bootScreen .boot-owl-shadow{position:absolute;bottom:12px;left:58px;width:84px;height:9px;border-radius:50%;background:#ad9d7430;animation:boot-owl-shadow 1.65s ease-in-out infinite;will-change:transform,opacity}
 #bootScreen .boot-brand{display:block;width:min(278px,80vw);max-width:100%;height:auto;object-fit:contain;image-rendering:auto;margin:0 0 16px}
 #bootScreen p{font-size:12px;line-height:1.5;font-weight:400;letter-spacing:.15px;margin:0;color:#82917c}
 #bootScreen .boot-loading-dots{display:flex;gap:6px;align-items:center;justify-content:center;margin-top:13px;height:8px}
 #bootScreen .boot-loading-dots i{display:block;width:4px;height:4px;border-radius:50%;background:#cba05c;animation:boot-dot 1.2s ease-in-out infinite}
 #bootScreen .boot-loading-dots i:nth-child(2){animation-delay:.16s}#bootScreen .boot-loading-dots i:nth-child(3){animation-delay:.32s}
-@keyframes boot-wing-left{0%,100%{transform:rotate(19deg) scaleY(.88)}48%{transform:rotate(-30deg) scaleY(1.05)}}
-@keyframes boot-wing-right{0%,100%{transform:rotate(-19deg) scaleY(.88)}48%{transform:rotate(30deg) scaleY(1.05)}}
 @keyframes boot-owl-float{0%,100%{transform:translateY(5px) rotate(-1deg)}50%{transform:translateY(-7px) rotate(1deg)}}
 @keyframes boot-owl-shadow{0%,100%{transform:scaleX(1);opacity:.85}50%{transform:scaleX(.74);opacity:.48}}
 @keyframes boot-dot{0%,80%,100%{opacity:.3;transform:translateY(0)}35%{opacity:1;transform:translateY(-2px)}}
 @media(max-height:520px){#bootScreen .boot-flight-stage{height:133px;margin-bottom:8px}#bootScreen .boot-owl{top:5px}#bootScreen .boot-owl-shadow{bottom:0}#bootScreen .boot-brand{width:min(240px,70vw);margin-bottom:10px}}
-@media(prefers-reduced-motion:reduce){#bootScreen{transition:none}#bootScreen :is(.boot-owl,.boot-wing,.boot-owl-shadow,.boot-loading-dots i){animation:none;will-change:auto}#bootScreen .boot-wing-left{transform:rotate(-15deg)}#bootScreen .boot-wing-right{transform:rotate(15deg)}}
+@media(prefers-reduced-motion:reduce){#bootScreen{transition:none}#bootScreen :is(.boot-owl,.boot-owl-shadow,.boot-loading-dots i){animation:none;will-change:auto}}

@@ -1261,3 +1261,7 @@ Kamptaki oyuncunun kalan gününü oluşturan hatalı campDayscampDays çağrıs
 2 Kasım takvim maç eşiği ve kenarlar:24alternatifin pazar gününe %75 (1875/2500) konumunda mercan kesikli Maç zamanı belirteci eklendi. Üretim takviminin aynı eşik çizgisi dili kullanılır. Aktif günün beyaz iç kenarları altına göre altına çevrildi; vektör çerçevenin dolu sürümü de seviye boyunca alttan yükselir, dolumda açık yan şerit bırakmaz.
 
 2 Kasım yükleme ekranı: yeni saydam logo ve oyunun round_owl_no_outline.png baykuşu kullanılır. Gövdeye uyumlu iki SVG kanat arkada menteşeden hareket eder; baykuş hafif süzülür ve alttaki gölge ona eşlik eder. Yeni bitmap/video/GIF üretilmedi. Eski seken top bu kullanıcı kararıyla kaldırıldı. CSS transform/opacity dışında kare başına JS yoktur; reduced-motion sabittir. Var olan1,5s minimum ve10s emniyet süresi korunur; hazır olunca160ms sönerek kalkar. loading-screen-preview.html aynı gerçek bileşenin bağımsız önizlemesidir.
+
+2 Kasım takvim atölyesi alt ray karşılaştırması: araçlara Alt çubuğu ekle / Alt çubuğu kaldır tuşu eklendi. Varsayılan kapalı; açılınca24kartın mevcut vektör alt rayı gün dolumuyla eşzamanlı görünür. Tercih yalnız tasarım sayfasındadır, oyun kaydına yazılmaz.
+
+2 Kasım baykuş kanat geri alımı: yükleme ekranındaki ek SVG kanatlar ve kanat animasyonları kaldırıldı. Orijinal round_owl_no_outline.png görünümü, hafif süzülme/gölge ve yeni saydam logo korunur.
