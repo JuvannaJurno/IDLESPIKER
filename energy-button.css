@@ -41,8 +41,8 @@ html:not(.desktop-beta) body #energyButton:not([data-match-ready=true]){
  transition:box-shadow 55ms ease-out;
 }
 html:not(.desktop-beta) body #energyButton:not([data-match-ready=true]):is(:active,.is-depressed){
- transform:translateY(3px);box-shadow:0 4px 0 #b58036,0 5px 7px #466a7320;
+ transform:translateY(6px);box-shadow:0 1px 0 #b58036,0 3px 5px #466a7320;
 }
-html[data-theme=dark]:not(.desktop-beta) body #energyButton:not([data-match-ready=true]){box-shadow:0 7px 0 #102b2b,0 10px 12px #081b2030!important}
-html[data-theme=dark]:not(.desktop-beta) body #energyButton:not([data-match-ready=true]):is(:active,.is-depressed){box-shadow:0 4px 0 #102b2b,0 5px 7px #081b2020!important}
+html[data-theme=dark]:not(.desktop-beta) body #energyButton:not([data-match-ready=true]){box-shadow:0 7px 0 #102b2b,0 10px 12px #081b2030}
+html[data-theme=dark]:not(.desktop-beta) body #energyButton:not([data-match-ready=true]):is(:active,.is-depressed){box-shadow:0 1px 0 #102b2b,0 3px 5px #081b2020}
 @media(prefers-reduced-motion:reduce){html:not(.desktop-beta) body #energyButton:not([data-match-ready=true]){transition:none}html:not(.desktop-beta) body #energyButton:not([data-match-ready=true]):is(:active,.is-depressed){transform:none}}

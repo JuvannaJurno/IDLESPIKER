@@ -29,3 +29,17 @@ html[data-theme=dark] body #calendarPanel .calendar-legend{color:#bdc8ac!importa
 @media(max-height:680px){html body #calendarPanel .calendar-day{height:62px}html body #calendarPanel .section-top{min-height:24px;margin-bottom:5px}html body #calendarPanel .calendar-legend{margin-top:6px}html body #calendarPanel .calendar-day strong{top:17px;font-size:clamp(10px,44cqw,17px)}}
 
 @media(max-height:680px){html.app-expanded body #calendarPanel{border-width:8px!important;border-bottom-width:10px!important;border-image-width:8px 8px 10px!important;padding-block:0}html.app-expanded body #calendarPanel .calendar-day{height:52px}html.app-expanded body #calendarPanel .section-top{min-height:20px;margin-bottom:4px}html.app-expanded body #calendarPanel .calendar-legend{margin-top:3px}html.app-expanded body #calendarPanel .calendar-day strong{top:13px;font-size:clamp(10px,44cqw,15px)}html.app-expanded body #calendarPanel .calendar-cell-count{position:absolute;bottom:1px;left:-5px;right:-5px;max-width:none;font-size:5.5px;white-space:nowrap}}
+
+/* Carry the calendar's warm base and small corners into the club section. */
+html body #clubPanel{background:#eae7cf!important;border-top-color:#fff8e3;border-bottom-color:#b3bba2;border-radius:4px 4px 0 0}
+html body[data-league-division] #clubPanel .league-match-group,
+html body[data-league-division] #clubPanel .next-match.match-preview{border-radius:4px}
+html[data-theme=dark] body #clubPanel{background:#344e43!important;border-top-color:#89947b!important;border-bottom-color:#243d35!important}
+
+/* Shared dock corners; keep overflow visible for the social music-note strip. */
+html body .mobile-nav{border-radius:4px 4px 0 0;background:#eae7cf;border-top-color:#fff8e3}
+html[data-theme=dark] body .mobile-nav{background:#344e43!important;border-top-color:#89947b!important}
+html body #calendar .calendar-manual-tap{position:absolute;inset:-6px -6px -8px;z-index:5;pointer-events:none;opacity:0;transform-origin:center}
+html body #calendar .calendar-manual-tap i{position:absolute;left:3px;right:3px;bottom:var(--tap-fill);height:2px;border-radius:2px;background:#fff1b4;box-shadow:0 0 4px #f5bf5680}
+html body #calendar .calendar-manual-tap :is(b,em){position:absolute;left:25%;bottom:var(--tap-fill);width:3px;height:3px;border-radius:50%;background:#ffd373;transform:translateY(-4px)}
+html body #calendar .calendar-manual-tap em{left:72%;width:2px;height:2px;transform:translateY(-2px)}

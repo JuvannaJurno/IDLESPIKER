@@ -29,21 +29,29 @@ function clubVisible(){return !document.hidden&&!document.querySelector(".dashbo
 let instructionPress=null;
 function pressInstruction(button){
  if(reduced.matches)return;
- // Restart from the current face position: rapid taps cannot queue or latch the press.
- const from=getComputedStyle(button).transform;
+ const current=getComputedStyle(button),from=current.transform,shadow=current.boxShadow,dark=document.documentElement.dataset.theme==='dark',base=dark?'#102b2b':'#b58036';
  instructionPress?.cancel();
  instructionPress=button.animate([
-  {transform:from==='none'?'translateY(0)':from},
-  {transform:'translateY(3px)',offset:.18},
-  {transform:'translateY(-.4px)',offset:.78},
-  {transform:'translateY(0)'}
- ],{duration:145,easing:'cubic-bezier(.2,.65,.35,1)'});
+  {transform:from==='none'?'translateY(0)':from,boxShadow:shadow},
+  {transform:'translateY(6px)',boxShadow:'0 1px 0 '+base+', 0 3px 5px #466a7320',offset:.18},
+  {transform:'translateY(6px)',boxShadow:'0 1px 0 '+base+', 0 3px 5px #466a7320',offset:.32},
+  {transform:'translateY(-.5px)',boxShadow:'0 7.5px 0 '+base+', 0 10px 12px #466a7326',offset:.82},
+  {transform:'translateY(0)',boxShadow:'0 7px 0 '+base+', 0 10px 12px #466a7326'}
+ ],{duration:180,easing:'cubic-bezier(.2,.65,.35,1)'});
  const motion=instructionPress;motion.finished.catch(()=>{}).finally(()=>{if(instructionPress===motion)instructionPress=null});
- const icon=button.querySelector('.bolt');if(icon){icon.getAnimations().forEach(a=>a.cancel());icon.animate([{transform:'scale(1)'},{transform:'scale(.92)',offset:.2},{transform:'scale(1)'}],{duration:135,easing:'ease-out'});}
+ const icon=button.querySelector('.bolt');if(icon){icon.getAnimations().forEach(a=>a.cancel());icon.animate([{transform:'scale(1)'},{transform:'scale(.84)',offset:.25},{transform:'scale(1)'}],{duration:160,easing:'ease-out'});}
 }
-let lastInstructionVisual=-Infinity;function instruction(completed,progress,source){if(!clubVisible())return;const manual=source!=='auto',now=performance.now(),button=$('energyButton');if(now-lastInstructionVisual<70&&!completed)return;lastInstructionVisual=now;button.style.setProperty('--day-fill',progress+'%');if(!manual&&now-lastAuto<700&&!completed)return;if(!manual){lastAuto=now;return;}
-if(manual){streak=now-lastTap<650?streak+1:1;lastTap=now;const badge=$('tapRhythm');badge.textContent=streak>=4?'GÜZEL TEMPO! · '+streak+' TALİMAT':'';clearTimeout(resetTimer);resetTimer=setTimeout(()=>{badge.textContent='';streak=0},900);pressInstruction(button);tone(completed?'day':'tap');window.GameHaptics.vibrate(8)}
-animate(document.querySelector('.calendar-day.today'),[{transform:'scale(1.09)'},{transform:'scale(1)'}],{duration:200});}
+function calendarInstructionFeedback(progress,completed){
+ const cell=document.querySelector('#calendar .calendar-day.today'),fill=cell?.querySelector('.calendar-fill');if(!cell||!fill)return;
+ const percent=completed?100:Math.max(0,Math.min(100,Number(progress)||0));fill.style.setProperty('--day-fill',percent+'%');
+ if(reduced.matches)return;
+ let tip=cell.querySelector('.calendar-manual-tap');if(!tip){tip=document.createElement('span');tip.className='calendar-manual-tap';tip.setAttribute('aria-hidden','true');tip.innerHTML='<i></i><b></b><em></em>';cell.append(tip);}
+ tip.style.setProperty('--tap-fill',percent+'%');tip.getAnimations().forEach(a=>a.cancel());
+ tip.animate([{opacity:0,transform:'translateY(0) scaleX(.8)'},{opacity:1,transform:'translateY(0) scaleX(1)',offset:.18},{opacity:.45,transform:'translateY(-3px) scaleX(1.04)',offset:.64},{opacity:0,transform:'translateY(-5px) scaleX(1.04)'}],{duration:250,easing:'ease-out'});
+}
+let lastInstructionVisual=-Infinity;function instruction(completed,progress,source){if(!clubVisible())return;const manual=source!=='auto',now=performance.now(),button=$('energyButton');if(!manual&&now-lastInstructionVisual<70&&!completed)return;lastInstructionVisual=now;button.style.setProperty('--day-fill',progress+'%');if(!manual&&now-lastAuto<700&&!completed)return;if(!manual){lastAuto=now;return;}
+if(manual){streak=now-lastTap<650?streak+1:1;lastTap=now;const badge=$('tapRhythm');badge.textContent=streak>=4?'GÜZEL TEMPO! · '+streak+' TALİMAT':'';clearTimeout(resetTimer);resetTimer=setTimeout(()=>{badge.textContent='';streak=0},900);pressInstruction(button);calendarInstructionFeedback(progress,completed);tone(completed?'day':'tap');window.GameHaptics.vibrate(8)}
+}
 let feedbackRects=new WeakMap();function feedbackRect(tier){let rect=feedbackRects.get(tier);if(!rect){rect=tier.getBoundingClientRect();feedbackRects.set(tier,rect);}return rect;}
 window.addEventListener('scroll',()=>{feedbackRects=new WeakMap()},{passive:true,capture:true});window.addEventListener('resize',()=>{feedbackRects=new WeakMap()},{passive:true});const feedbackResize=new ResizeObserver(entries=>{for(const e of entries)feedbackRects.delete(e.target)});document.querySelectorAll('.tier').forEach(t=>feedbackResize.observe(t));
 let pendingCash=null,cashTimer=0;function applyCashFeedback(gain,tier){if(!clubVisible())return;if(pendingCash)pendingCash.cash+=gain.cash||0;else pendingCash={cash:gain.cash||0,tier};if(!cashTimer)cashTimer=setTimeout(()=>{cashTimer=0;const p=pendingCash;pendingCash=null;if(!p||!clubVisible())return;const r=feedbackRect(p.tier);if(r.bottom<0||r.top>innerHeight)return;popup('+'+NumberUI.compact(p.cash)+' bütçe',r.left+r.width*.5,r.top-12,'day');},650);}

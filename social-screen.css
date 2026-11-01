@@ -280,3 +280,6 @@ html body.social-open #socialPanel #socialPublish .simple-button-fill{top:calc(7
 html body.social-open #socialPanel #socialPublish[data-state=working],
 html body.social-open #socialPanel #socialPublish:active:not(:disabled){--publish-press:4px}
 @media(prefers-reduced-motion:reduce){html body.social-open #socialPanel #socialPublish::after,html body.social-open #socialPanel #socialPublish .simple-button-copy,html body.social-open #socialPanel #socialPublish .simple-button-symbol,html body.social-open #socialPanel #socialPublish .simple-button-fill{transition:none}}
+
+/* Only the bottom foot is visible behind the sinking face, never a second top frame. */
+html body.social-open #socialPanel #socialPublish::before{clip-path:inset(calc(100% - 7px) 0 0)}
