@@ -427,7 +427,7 @@ drawPlayer=function(p){
   if(e&&p.toss>0){p.vectorPassAge=clock-e.contact;p.vectorPassDirection=e.skill.id==='back'?-1:1;}
   p.vectorGroundDive=diving;
   if(canShow()){drawTeamBuff(p);if(e?.skill.id==='team-heart')drawHeartWave(p,clock-e.start);const tempo=active.find(effect=>effect.skill.id==='tempo-minus'&&(effect.setter===p.index||effect.actor===p.index)&&clock>=effect.start&&clock<effect.until),light=tempo||e;if(tempo){const ownsTempo=p.index===tempo.actor?tempo.tempoHitterOwns:tempo.tempoSetterOwns,fade=.5+.5*limit((clock-tempo.start-Math.max(.25,tempo.until-tempo.start-.3))/.3);drawRarityGlow(ctx,p,'Legendary',fade,ownsTempo?null:'#ffffff');}else if(focus&&spotlightChoice(focus)===p.index)drawRarityGlow(ctx,p,'Legendary',.5);else if(light&&clock>=light.start&&clock<light.until){const duration=Math.min(1.35,Math.max(.25,light.until-light.start));drawRarityGlow(ctx,p,light.skill.rarity,(clock-light.start)/duration);}}
-  originalPlayer(p);const icon=reactionIcons.get(p.index);if(icon&&clock>=icon.start)window.MatchReactionArt?.draw(ctx,icon.kind,clock-icon.start,p.x+34,p.y,32,Math.PI/2);
+  originalPlayer(p);
  }finally{Object.assign(p,saved);}
 };
 function ring(x,y,t,color,r=23){if(t<=0||t>=1)return;ctx.save();ctx.globalAlpha=(1-t)*.58;ctx.lineWidth=1.6;ctx.strokeStyle=color;ctx.beginPath();ctx.ellipse(x,y,8+t*r,5+t*r*.7,0,0,TAU);ctx.stroke();ctx.restore();}
@@ -473,6 +473,10 @@ function paintEffects(){const kick=active.find(e=>e.skill.id==='kick-save'&&cloc
  }
 
 }
+function paintReactionIcons(){
+ // Final court overlay: no following player, guest or focus redraw can cover a bubble.
+ ctx.save();try{ctx.globalAlpha=1;ctx.filter='none';ctx.globalCompositeOperation='source-over';ctx.shadowBlur=0;for(const p of players){const icon=reactionIcons.get(p.index);if(icon&&clock>=icon.start)window.MatchReactionArt?.draw(ctx,icon.kind,clock-icon.start,p.x+34,p.y,32,Math.PI/2);}}finally{ctx.restore();}
+}
 function drawEffects(){
  if(!enabled||!leagueEnabled()||suppressed){originalDraw();return;}const flight=ball,saved={x:flight.x,y:flight.y,z:flight.z,visualScale:flight.visualScale,impactFlash:flight.impactFlash,skyBehindHead:flight.skyBehindHead};const e=active.find(e=>e.flight===flight)||(servePlan?.waiting===flight?servePlan.effect:null),u=flight.state==='flight'?limit(flight.t/flight.duration):0;
  try{
@@ -486,7 +490,7 @@ function drawEffects(){
   if(pendingDive?.skill.id==='pancake'&&pendingDive.incoming===flight&&flight.state==='flight'){const descent=limit((clock-pendingDive.diveStart)/.09);flight.z=flight.z*(1-descent)+2*descent;}
   if(lastBall!==flight){trace.length=0;lastBall=flight;}if(flight.state==='flight'&&Number.isFinite(flight.x)){const sample={x:flight.x,y:flight.y-(flight.z||0),at:clock},last=trace.at(-1);if(!last||Math.hypot(sample.x-last.x,sample.y-last.y)>1)trace.push(sample);while(trace.length>1&&(clock-trace[0].at>.13||trace.length>24))trace.shift();}else trace.length=0;
   if(flight.state==='flight'&&flight.touch===3&&!flight.miss&&!pendingAttack){const hitter=flight.target,hand=strikeContact(hitter),blend=limit((flight.t-(flight.duration-.07))/.07);flight.x+=(hand.x-flight.targetX)*blend;flight.y+=(hand.y-flight.targetY)*blend;flight.z+=(hand.z-18)*blend;}
-  if(lightningRoll?.flight===flight)flight.x=NaN;originalDraw();if(ready){paintEffects();drawLightningRoll();}
+  if(lightningRoll?.flight===flight)flight.x=NaN;originalDraw();if(ready){paintEffects();drawLightningRoll();paintReactionIcons();}
  }finally{Object.assign(flight,saved);}
 };
 draw=function(){
@@ -494,7 +498,7 @@ draw=function(){
  try{if(window.MatchMotion&&!paused)clock-=((1-alpha)/60);return window.MatchMotion?MatchMotion.render(alpha,drawEffects):drawEffects();}
  finally{clock=time;}
 };
-awardPoint=function(winner){legendaryLedger.settle(winner);const credit=canShow()&&ball.skillCredit?.team===winner?ball.skillCredit:null;const savedIcons=[...reactionIcons];const surprise=[...reactions].filter(([,r])=>r.reason==='lightning-score'&&r.until>clock);for(const e of active)completeNotice(e);resetEffects(true);for(const [index,r]of surprise)reactions.set(index,r);for(const [index,icon]of savedIcons)if(icon.until>clock)reactionIcons.set(index,icon);const result=originalAward(winner);pumpNotices(true,winner);if(credit){if(parent!==window)parent.postMessage({type:'spiker-audio',action:'legendary-point'},'*');else window.GameAudio?.legendaryPoint?.();}return result;};
+awardPoint=function(winner){legendaryLedger.settle(winner);const credit=canShow()&&ball.skillCredit?.team===winner?ball.skillCredit:null;const savedIcons=[...reactionIcons];const surprise=[...reactions].filter(([,r])=>r.reason==='lightning-score'&&r.until>clock);for(const e of active)completeNotice(e);resetEffects(true);for(const [index,r]of surprise)reactions.set(index,r);for(const [index,icon]of savedIcons)if(icon.until>clock)reactionIcons.set(index,icon);const result=originalAward(winner);pumpNotices(true,winner);const celebrationPoint=scores[0]+scores[1];if(canShow()&&celebrationPoint%3===0){const friends=players.filter(p=>p.team===winner&&!reactionIcons.has(p.index));const p=friends[celebrationPoint%Math.max(1,friends.length)];if(p)reactionIcons.set(p.index,{kind:credit?'star':'smile',start:clock,until:clock+1.5});}if(credit){if(parent!==window)parent.postMessage({type:'spiker-audio',action:'legendary-point'},'*');else window.GameAudio?.legendaryPoint?.();}return result;};
 reset=function(){legendaryLedger.reset();lastLegendaryServe.clear();signatureContacts.clear();heartCasterGlows.clear();teamBuffs.clear();lastHeartPoint.fill(-3);lightningRoll=null;resetEffects();clock=0;cooldown=0;legendaryUntil=serveLegendaryUntil=0;counterUntil.fill(0);legendaryUsed=false;focusEvents.length=0;lastSkill='';events.length=0;const result=originalReset();setupSignatures();return result;};
 window.addEventListener('message',e=>{if(e.source===parent&&e.data?.type==='spiker-match'&&e.data.action==='skip'){suppressed=true;resetEffects();}});
 window.addEventListener('blur',()=>{sound('skill-slow-stop');sound('heartbeat-stop');});document.addEventListener('visibilitychange',()=>{if(document.hidden)sound('skill-slow-stop');sound('heartbeat-stop');});
