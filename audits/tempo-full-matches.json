@@ -1,0 +1,66 @@
+[
+  {
+    "seed": 1,
+    "finished": true,
+    "used": 2,
+    "scored": 1,
+    "failed": 0,
+    "points": 5
+  },
+  {
+    "seed": 2,
+    "finished": true,
+    "used": 3,
+    "scored": 0,
+    "failed": 0,
+    "points": 6
+  },
+  {
+    "seed": 3,
+    "finished": true,
+    "used": 2,
+    "scored": 0,
+    "failed": 0,
+    "points": 8
+  },
+  {
+    "seed": 4,
+    "finished": true,
+    "used": 2,
+    "scored": 1,
+    "failed": 0,
+    "points": 12
+  },
+  {
+    "seed": 5,
+    "finished": true,
+    "used": 2,
+    "scored": 1,
+    "failed": 1,
+    "points": 7
+  },
+  {
+    "seed": 6,
+    "finished": true,
+    "used": 2,
+    "scored": 2,
+    "failed": 0,
+    "points": 8
+  },
+  {
+    "seed": 7,
+    "finished": true,
+    "used": 1,
+    "scored": 0,
+    "failed": 0,
+    "points": 12
+  },
+  {
+    "seed": 8,
+    "finished": true,
+    "used": 5,
+    "scored": 3,
+    "failed": 0,
+    "points": 12
+  }
+]

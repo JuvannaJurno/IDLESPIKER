@@ -1,0 +1,306 @@
+[
+  {
+    "name": "closed pack stays hidden after comparison and club navigation",
+    "ok": true,
+    "data": {
+      "open": false,
+      "display": "none",
+      "height": 0,
+      "bodyWidth": 390
+    }
+  },
+  {
+    "name": "media picker shares square standard icons",
+    "ok": true,
+    "data": {
+      "open": true,
+      "count": 3,
+      "overflow": false,
+      "icon": {
+        "width": 30,
+        "height": 30,
+        "flexShrink": "0"
+      },
+      "align": "flex-start"
+    }
+  },
+  {
+    "name": "media purchase closes picker and creates one block",
+    "ok": true,
+    "data": 1
+  },
+  {
+    "name": "last media purchase removes empty-slot button",
+    "ok": true,
+    "data": 0
+  },
+  {
+    "name": "income previous-stage drawer exists",
+    "ok": true,
+    "data": {
+      "title": "Gelir Merkezi",
+      "toggle": true,
+      "legacy": [
+        "bal_sponsor",
+        "bal_shop",
+        "bal_fans"
+      ]
+    }
+  },
+  {
+    "name": "income drawer opens",
+    "ok": true,
+    "data": "true"
+  },
+  {
+    "name": "income previous-stage cards expand to readable widths",
+    "ok": true,
+    "data": {
+      "hidden": false,
+      "inert": false,
+      "open": "true",
+      "width": 518,
+      "cards": [
+        {
+          "id": "bal_sponsor",
+          "width": 166,
+          "x": 192
+        },
+        {
+          "id": "bal_shop",
+          "width": 166,
+          "x": 368
+        },
+        {
+          "id": "bal_fans",
+          "width": 166,
+          "x": 544
+        }
+      ]
+    }
+  },
+  {
+    "name": "media choice layout light 320",
+    "ok": true,
+    "data": {
+      "overflow": false,
+      "icons": [
+        [
+          30,
+          30
+        ],
+        [
+          30,
+          30
+        ],
+        [
+          30,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "name": "navigation stress light 320",
+    "ok": true,
+    "data": {
+      "leaked": [],
+      "overflow": false,
+      "open": [],
+      "club": true
+    }
+  },
+  {
+    "name": "media choice layout light 390",
+    "ok": true,
+    "data": {
+      "overflow": false,
+      "icons": [
+        [
+          30,
+          30
+        ],
+        [
+          30,
+          30
+        ],
+        [
+          30,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "name": "navigation stress light 390",
+    "ok": true,
+    "data": {
+      "leaked": [],
+      "overflow": false,
+      "open": [],
+      "club": true
+    }
+  },
+  {
+    "name": "media choice layout light 480",
+    "ok": true,
+    "data": {
+      "overflow": false,
+      "icons": [
+        [
+          30,
+          30
+        ],
+        [
+          30,
+          30
+        ],
+        [
+          30,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "name": "navigation stress light 480",
+    "ok": true,
+    "data": {
+      "leaked": [],
+      "overflow": false,
+      "open": [],
+      "club": true
+    }
+  },
+  {
+    "name": "media choice layout dark 320",
+    "ok": true,
+    "data": {
+      "overflow": false,
+      "icons": [
+        [
+          30,
+          30
+        ],
+        [
+          30,
+          30
+        ],
+        [
+          30,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "name": "navigation stress dark 320",
+    "ok": true,
+    "data": {
+      "leaked": [],
+      "overflow": false,
+      "open": [],
+      "club": true
+    }
+  },
+  {
+    "name": "media choice layout dark 390",
+    "ok": true,
+    "data": {
+      "overflow": false,
+      "icons": [
+        [
+          30,
+          30
+        ],
+        [
+          30,
+          30
+        ],
+        [
+          30,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "name": "navigation stress dark 390",
+    "ok": true,
+    "data": {
+      "leaked": [],
+      "overflow": false,
+      "open": [],
+      "club": true
+    }
+  },
+  {
+    "name": "media choice layout dark 480",
+    "ok": true,
+    "data": {
+      "overflow": false,
+      "icons": [
+        [
+          30,
+          30
+        ],
+        [
+          30,
+          30
+        ],
+        [
+          30,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "name": "navigation stress dark 480",
+    "ok": true,
+    "data": {
+      "leaked": [],
+      "overflow": false,
+      "open": [],
+      "club": true
+    }
+  },
+  {
+    "name": "match arrival waits for guided tutorial",
+    "ok": true,
+    "data": {
+      "active": true,
+      "blocked": false,
+      "arrival": false
+    }
+  },
+  {
+    "name": "tutorial still blocks unrelated controls",
+    "ok": true,
+    "data": 0
+  },
+  {
+    "name": "tutorial remains dismissible",
+    "ok": true,
+    "data": true
+  },
+  {
+    "name": "match arrival also waits for simple non-guided hint",
+    "ok": true,
+    "data": {
+      "guided": false,
+      "shown": false,
+      "arrival": false
+    }
+  },
+  {
+    "name": "unexpected modal cannot deadlock behind old spotlight",
+    "ok": true,
+    "data": false
+  },
+  {
+    "name": "no runtime errors",
+    "ok": true,
+    "data": []
+  }
+]

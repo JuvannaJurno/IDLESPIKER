@@ -1,5 +1,9 @@
 # Idle Spiker — Görünüm ve davranış rehberi
 
+### 1 Kasım 2026 — Menü akışı regresyonları
+
+Kapalı Oyuncu Merkezi, kart açma/karşılaştırma durumunda olsa da sayfa akışında görünmez. Medya blok seçimi standart blok seçicisinin ikon, metin sarma ve hizalama kurallarını kullanır. 2. Lig Gelir Merkezi'nin BAL'dan kalan gelir kartları kendi Önceki aşama çekmecesindedir; yalnız mahalle beslenme kartları Performans Merkezi'ne taşınır. Maç bildirimi hem adımlı tutorialı hem basit görünür ipucunu bekler; beklenmedik üst modal eski spotlight tarafından tıklanamaz hale getirilmez. Eksi Tempo yalnız yetişilebilir yakın hücumda devreye girer; uzak hücumcu için normal pas/CD korunur. Kamp dönüşünde yeni normal yetenek adı da yıldız ekranında Kazanıldı olarak görünür; normal yeteneğe zorunlu Legendary açılışı eklenmez. Detaylı yeniden oluşturma, test ve görsel kanıtlar: [1 Kasım hata taraması](audits/debug-2026-11-01.md).
+
 Son inceleme ve tutarlılık düzeltmeleri: 24 Ekim 2026. Bu dosya, kullanıcının tekrar tekrar tarif etmek zorunda kalmaması için oluşturuldu.
 
 Güncel yıldız/yetenek dengesi: [SKILL-PROGRESSION-DRAFT.md](SKILL-PROGRESSION-DRAFT.md). 26 Ekim taslağındaki akademi mezuniyeti ve altı yuva kuralları, geçmiş kayıtların eski doğrudan elit mezuniyeti tarifinin yerini alır.

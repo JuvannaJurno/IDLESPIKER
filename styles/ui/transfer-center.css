@@ -219,3 +219,6 @@ html[data-theme=dark] dialog .dialog-nav-control:hover{background:#405d58!import
 #transferCompareContent>label{padding-left:54px}
 #transferCompareContent select{width:100%;margin-left:0;margin-bottom:16px}
 
+
+/* A closed pack must not participate in the page flow, even with is-opening/is-home styles. */
+#scoutDialog:not([open]){display:none!important}
