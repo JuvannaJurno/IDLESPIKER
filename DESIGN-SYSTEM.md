@@ -1265,3 +1265,15 @@ Kamptaki oyuncunun kalan gününü oluşturan hatalı campDayscampDays çağrıs
 2 Kasım takvim atölyesi alt ray karşılaştırması: araçlara Alt çubuğu ekle / Alt çubuğu kaldır tuşu eklendi. Varsayılan kapalı; açılınca24kartın mevcut vektör alt rayı gün dolumuyla eşzamanlı görünür. Tercih yalnız tasarım sayfasındadır, oyun kaydına yazılmaz.
 
 2 Kasım baykuş kanat geri alımı: yükleme ekranındaki ek SVG kanatlar ve kanat animasyonları kaldırıldı. Orijinal round_owl_no_outline.png görünümü, hafif süzülme/gölge ve yeni saydam logo korunur.
+
+2 Kasım üretim takvimi seçimi: kullanıcı01 Net seviye varyantını onayladı. calendar-net-level.css gerçek takvimde aynı orijinal vektör panel/gün/hafta yüzeylerini uygular. Üretim gün ve maç eşiği değerleri aynen kalır; dolum --day-fill üzerinden mevcut talimat sayısıyla doğrudan güncellenir. Dolan gün çerçevesi de altınlaşır; dört basamaklı günler ve koyu tema desteklenir. Alt ayrı ray varsayılan kapalı olduğu için üretime eklenmedi.
+
+2 Kasım takvim çerçevesi seçimi: üretim takviminde dolum01 Net seviye, yalnız dış panel çerçevesi06 Parlak sınır ailesindeki Grey/button_rectangle_flat.svg olarak birleşir. Gün/hafta hücreleri ve gerçek maç eşiği korunur.
+
+2 Kasım son yükleme ekranı seçimi: baykuş tamamen kaldırıldı. Ekranda yalnız saydam IdleSpiker logosu ve altında dairesel dönen8küçük boncuk var; ek açıklama yazısı yok. CSS transform ile1,15s döngü, reduced-motion sabit. Önceki baykuş/süzülme notları bu kararla geçersizdir.
+
+2 Kasım sosyal nota geri alımı: yalnız sosyal navigasyon baykuşunun notası eski Double Note Strip.png sprite animasyonuna döndü (32px kare,128×256atlas,3s döngü). Vektör nota/baloncuk overrideı kaldırıldı; maç/akademi vektör emote sistemi korunur.
+
+2 Kasım paylaşım doğal basışı: gerçek düğmenin tıklama alanı/alt sınırı sabit; orijinal vektör alt taban ::before, düz üst yüzey ::after olarak ayrıldı. Hazırlıkta üst yüzey4px içeri oturur, alt derinlik kapanır; yazı/ikon/dolum yüzeyle birlikte150ms yumuşak hareket eder. Düğme tümüyle aşağı taşınmaz; sıra/işleyiş/ses değişmez. Reduced-motion geçişsiz aynı basılı durumu gösterir.
+
+2 Kasım son paket doğrulaması: test-calendar-net-level gerçek talimat tıklaması/sayaç/maç eşiği ile01+06üretim birleşimini; test-club-responsive-dock6boyut ve gerçek tam ekranı; test-share-button-depth3genişlik/2tema sabit taban/doğal yüzey ve eski nota stripini; test-social-video-queue sıralı otomatik paylaşımı; test-loading-flight-calendar-markers yalnız logo/8boncuk, reduced-motion ve gerçek açılışı doğruladı. Görseller audits/calendar-net-level-card.png, share-natural-*.png ve loading-flying-owl.png içinde güncel hâliyle incelendi.
