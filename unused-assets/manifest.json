@@ -1,0 +1,2905 @@
+{
+  "version": 1,
+  "date": "2026-11-02",
+  "method": "Exact relative path, basename and URL-encoded references across game, labs, editors, manifests and build/test scripts; dynamic asset families retained.",
+  "protectedDynamicFamilies": [
+    "PNG/",
+    "PNG/Face/Eyebrows/",
+    "PNG/Face/Nose/",
+    "PNG/Hair/",
+    "PNG/Skin/",
+    "Spritesheet/",
+    "VFX/Ball/",
+    "VFX/Crowd Cheering Sounds/",
+    "assets/characters/equipment/hair/",
+    "assets/characters/equipment/poses/",
+    "assets/characters/hair-extensions/",
+    "assets/crest-symbols/",
+    "assets/environment/",
+    "assets/portrait-details/",
+    "character_assets/",
+    "character_assets/parts/",
+    "female_voice/",
+    "flags/",
+    "flags/Large (2×)/",
+    "flags/Vector/",
+    "team-assets/"
+  ],
+  "count": 471,
+  "bytes": 6203926,
+  "files": [
+    {
+      "path": "assets/ball-volley1-equipment.svg",
+      "bytes": 1331,
+      "archived": "unused-assets/files/assets/ball-volley1-equipment.svg",
+      "sha256": "462b276b675b74a17c299efed2853c6691c62612bc9efa1eaf2694d25e76fda2"
+    },
+    {
+      "path": "assets/ball-volley1-transparent.png",
+      "bytes": 1110041,
+      "archived": "unused-assets/files/assets/ball-volley1-transparent.png",
+      "sha256": "1a68a8d3408cb8d81324c83639345d884cdbc21872326e3b7091306e517179d9"
+    },
+    {
+      "path": "assets/ball-volley2-classic.png",
+      "bytes": 409,
+      "archived": "unused-assets/files/assets/ball-volley2-classic.png",
+      "sha256": "524998226e2d87b2af50a563db0480efbaf231fb4b1b4693e6bc2180b7d85675"
+    },
+    {
+      "path": "assets/ball-volley2-equipment.svg",
+      "bytes": 1322,
+      "archived": "unused-assets/files/assets/ball-volley2-equipment.svg",
+      "sha256": "3fbd0c9c281954dd7023845b170364fe75da4561f1e37ee8333ee5b308640a32"
+    },
+    {
+      "path": "assets/characters/equipment/arm-skin.svg",
+      "bytes": 682,
+      "archived": "unused-assets/files/assets/characters/equipment/arm-skin.svg",
+      "sha256": "54956c4f1988142af6f21dad9fb5a635273088e14e1d7b8e8327ec8c1bb78726"
+    },
+    {
+      "path": "assets/characters/equipment/leg-skin.svg",
+      "bytes": 543,
+      "archived": "unused-assets/files/assets/characters/equipment/leg-skin.svg",
+      "sha256": "e593644c96bb30c42445a26bb52bc2feb870f69e570ad442064bd1de213afd80"
+    },
+    {
+      "path": "assets/characters/equipment/leg.svg",
+      "bytes": 1963,
+      "archived": "unused-assets/files/assets/characters/equipment/leg.svg",
+      "sha256": "8928c904c37f048b4a4daf47a7a6a3b4d3f6433f09b6575bac2ab7eb916e185c"
+    },
+    {
+      "path": "assets/characters/equipment/long-hair-approved.svg",
+      "bytes": 21972,
+      "archived": "unused-assets/files/assets/characters/equipment/long-hair-approved.svg",
+      "sha256": "00301c5c95c6fb33c77b30ee69f4c5820bf66b911b127cdb19e1a20f66343202"
+    },
+    {
+      "path": "assets/characters/equipment/long-hair-running-limit.svg",
+      "bytes": 22032,
+      "archived": "unused-assets/files/assets/characters/equipment/long-hair-running-limit.svg",
+      "sha256": "6d5a03668723d35fa340e3d83a837b816dca54520a8465f4d0fe7faa257d21df"
+    },
+    {
+      "path": "assets/characters/equipment/shoe-overlay.svg",
+      "bytes": 652,
+      "archived": "unused-assets/files/assets/characters/equipment/shoe-overlay.svg",
+      "sha256": "90f67e780d4892541ba8da8fea90f63356e7e89fa88719dc80b52de8f0532d4d"
+    },
+    {
+      "path": "assets/characters/equipment/white-first.svg",
+      "bytes": 4003,
+      "archived": "unused-assets/files/assets/characters/equipment/white-first.svg",
+      "sha256": "36ddeceb7568df2b18b530481d5b04e9882eb4166ee03cc5c5768d057256977e"
+    },
+    {
+      "path": "assets/characters/experiments/current-match-hair.png",
+      "bytes": 704,
+      "archived": "unused-assets/files/assets/characters/experiments/current-match-hair.png",
+      "sha256": "8f0c1727dc528fd1c6bb87b588d884584cecf38dea4434059ceb1546ca53a5b9"
+    },
+    {
+      "path": "assets/characters/experiments/shoe-black-pixel-v3.png",
+      "bytes": 509380,
+      "archived": "unused-assets/files/assets/characters/experiments/shoe-black-pixel-v3.png",
+      "sha256": "23501c5cdfa1f916528eb9548e5fbc5cf694e24c34786195c0d80408d2b0b71a"
+    },
+    {
+      "path": "assets/characters/experiments/shoe-black-pixel-v4.png",
+      "bytes": 856067,
+      "archived": "unused-assets/files/assets/characters/experiments/shoe-black-pixel-v4.png",
+      "sha256": "9f1d7df66f2e872a0c1edd91d88701557d15e931799e0e82c2abd669507c492c"
+    },
+    {
+      "path": "assets/characters/experiments/shoe-black-v2.png",
+      "bytes": 561415,
+      "archived": "unused-assets/files/assets/characters/experiments/shoe-black-v2.png",
+      "sha256": "b0892e6684b2a6f5838982a5148c2e00c5d225050a294a8e8f1d90871290bf52"
+    },
+    {
+      "path": "assets/characters/experiments/shoe-blocky-v5.svg",
+      "bytes": 303,
+      "archived": "unused-assets/files/assets/characters/experiments/shoe-blocky-v5.svg",
+      "sha256": "9861d88f8834d44e25681b98ec2a91d226cd00c59b0f026789a1667333592d90"
+    },
+    {
+      "path": "assets/characters/experiments/shoe-v1.png",
+      "bytes": 284071,
+      "archived": "unused-assets/files/assets/characters/experiments/shoe-v1.png",
+      "sha256": "8805c3f5e632fd81b8531879840a02b995bdf8c451afd590dc437f8a8c4f06ff"
+    },
+    {
+      "path": "assets/court/net-post-bottom.png",
+      "bytes": 469,
+      "archived": "unused-assets/files/assets/court/net-post-bottom.png",
+      "sha256": "cce9ce70115ab01efac4e99f6d4b9f6f62d2fd43e8d0b361944a7b658bdbe464"
+    },
+    {
+      "path": "assets/court/net-post-top.png",
+      "bytes": 475,
+      "archived": "unused-assets/files/assets/court/net-post-top.png",
+      "sha256": "65eaf038080571245427c8a668eca1fcb54f6517617bfd995a85673c89246a59"
+    },
+    {
+      "path": "assets/emotes/anger.svg",
+      "bytes": 987,
+      "archived": "unused-assets/files/assets/emotes/anger.svg",
+      "sha256": "c3fac37738f4375058739222952ffa662fb654361ec591da0c92908eeca8a957"
+    },
+    {
+      "path": "assets/emotes/bubble-speech.svg",
+      "bytes": 600,
+      "archived": "unused-assets/files/assets/emotes/bubble-speech.svg",
+      "sha256": "ea29bc590db322aa82ed58991620faf635fbc6823c383fd37a9d829f5f1c82c7"
+    },
+    {
+      "path": "assets/emotes/bubble-thought.svg",
+      "bytes": 1531,
+      "archived": "unused-assets/files/assets/emotes/bubble-thought.svg",
+      "sha256": "2a88d9758ffd8340c6fcbb54d458f55c43c01dc46e1db1436e8bcd9fe61ac61e"
+    },
+    {
+      "path": "assets/emotes/dot.svg",
+      "bytes": 281,
+      "archived": "unused-assets/files/assets/emotes/dot.svg",
+      "sha256": "8b455d44e73815519a96e0af3aaca8cc68e3ba02d88349311255c3425e9d954b"
+    },
+    {
+      "path": "assets/emotes/dots2.svg",
+      "bytes": 460,
+      "archived": "unused-assets/files/assets/emotes/dots2.svg",
+      "sha256": "a1c9708a90e6b9125510b192c189538c4ac057adf844ae0059215b31f11f2cb3"
+    },
+    {
+      "path": "assets/emotes/dots3.svg",
+      "bytes": 621,
+      "archived": "unused-assets/files/assets/emotes/dots3.svg",
+      "sha256": "cdb5f47326e1b08cfb35c01728a3dce0d6c5a95a6361ff84803b8015a6055996"
+    },
+    {
+      "path": "assets/emotes/droplet.svg",
+      "bytes": 323,
+      "archived": "unused-assets/files/assets/emotes/droplet.svg",
+      "sha256": "6c4a59cbc987d1ec177019b8d6a8756cafcc23476f907a71d67dd0ee0622f045"
+    },
+    {
+      "path": "assets/emotes/drops.svg",
+      "bytes": 521,
+      "archived": "unused-assets/files/assets/emotes/drops.svg",
+      "sha256": "d5b8410e08ba91257f019d99171613800ff1b2108cd96e04448d8de0bf33adf4"
+    },
+    {
+      "path": "assets/emotes/exclamation.svg",
+      "bytes": 520,
+      "archived": "unused-assets/files/assets/emotes/exclamation.svg",
+      "sha256": "e7f9e974616e7e99c8d26de7f6f412baeeb67b43f6b3a7db8db57546a734d45a"
+    },
+    {
+      "path": "assets/emotes/lightbulb.svg",
+      "bytes": 895,
+      "archived": "unused-assets/files/assets/emotes/lightbulb.svg",
+      "sha256": "0ebad3bd944e53b0594b71c2dccf3a134e5852f6efc47fb4f2075e92f60aef3a"
+    },
+    {
+      "path": "assets/emotes/note-bubble.svg",
+      "bytes": 1299,
+      "archived": "unused-assets/files/assets/emotes/note-bubble.svg",
+      "sha256": "56b115b890d3dd5864bfd126913a6c50520796e0833da1c4cc08b6467af249fe"
+    },
+    {
+      "path": "assets/emotes/note.svg",
+      "bytes": 580,
+      "archived": "unused-assets/files/assets/emotes/note.svg",
+      "sha256": "3dd64afd1cbf8d43ab8a4013ec1982328e70dff6659f328c03441f20322b80d6"
+    },
+    {
+      "path": "assets/emotes/question.svg",
+      "bytes": 806,
+      "archived": "unused-assets/files/assets/emotes/question.svg",
+      "sha256": "dbf04c808ea00bf2379ceee0d76fd48ce32f772143ff06431b85813f4be64027"
+    },
+    {
+      "path": "assets/emotes/smile.svg",
+      "bytes": 836,
+      "archived": "unused-assets/files/assets/emotes/smile.svg",
+      "sha256": "f1aebcc843edcce76cf9c64c06b695109aa7bb6263f358ed334eb1aaf0975ef6"
+    },
+    {
+      "path": "assets/emotes/surprise.svg",
+      "bytes": 902,
+      "archived": "unused-assets/files/assets/emotes/surprise.svg",
+      "sha256": "1ab0fbc131d73658e58a6f8f2e05e7cd7ee6b7531df9966f77842159a711a615"
+    },
+    {
+      "path": "assets/server-portrait-desktop.png",
+      "bytes": 72766,
+      "archived": "unused-assets/files/assets/server-portrait-desktop.png",
+      "sha256": "98aa6fbbab93e198aa8617cab838dfe9c24b20c1d83b02bebcacf7755c1afde0"
+    },
+    {
+      "path": "assets/server-portrait-mobile.png",
+      "bytes": 55508,
+      "archived": "unused-assets/files/assets/server-portrait-mobile.png",
+      "sha256": "6d1f61efff2129bc85aa7f14ecb027489540b04ba310d34b0c58d9bccaa36c7a"
+    },
+    {
+      "path": "assets/stars/star-collectibles.png",
+      "bytes": 36260,
+      "archived": "unused-assets/files/assets/stars/star-collectibles.png",
+      "sha256": "a6ccddca19d4b45c0645251e810a3401d88846ec4f8428f9829fa70885e32027"
+    },
+    {
+      "path": "backgrounds/colored_castle.png",
+      "bytes": 23487,
+      "archived": "unused-assets/files/backgrounds/colored_castle.png",
+      "sha256": "a2cc57ae2443ac4079ba4649b233c746c3ec3cfd09b32becd816f7d31ae87e37"
+    },
+    {
+      "path": "backgrounds/colored_desert.png",
+      "bytes": 16550,
+      "archived": "unused-assets/files/backgrounds/colored_desert.png",
+      "sha256": "89cd659b68f8b306933805cf7c7c64bc240c5a5aa4f169bb38e9bcf07d95f556"
+    },
+    {
+      "path": "backgrounds/colored_forest.png",
+      "bytes": 17700,
+      "archived": "unused-assets/files/backgrounds/colored_forest.png",
+      "sha256": "d55859957d47321656836477ed60be9136918d5485e88b60e873b2ae1797d48c"
+    },
+    {
+      "path": "backgrounds/colored_talltrees.png",
+      "bytes": 15392,
+      "archived": "unused-assets/files/backgrounds/colored_talltrees.png",
+      "sha256": "ae5685373f1154f0985f195f79b553fc621f0edc7ded65b25a11f8fa8268e373"
+    },
+    {
+      "path": "background_elements/Backgrounds/backgroundColorFall.png",
+      "bytes": 20649,
+      "archived": "unused-assets/files/background_elements/Backgrounds/backgroundColorFall.png",
+      "sha256": "b4df338e1a37ed4056ccc19fa59a9c5de9d9bb03f9e97bebf35a6397986685a3"
+    },
+    {
+      "path": "background_elements/Backgrounds/backgroundColorForest.png",
+      "bytes": 21963,
+      "archived": "unused-assets/files/background_elements/Backgrounds/backgroundColorForest.png",
+      "sha256": "469a60c0a5dd5c9bdd15427ca73722aa45d6d810889c2eaba6da4628331dde8a"
+    },
+    {
+      "path": "background_elements/Backgrounds/backgroundColorGrass.png",
+      "bytes": 22809,
+      "archived": "unused-assets/files/background_elements/Backgrounds/backgroundColorGrass.png",
+      "sha256": "cef70dcca014a485e15f70214dae0f6159ef040a718dc2690886a7d8427becdf"
+    },
+    {
+      "path": "circle_c.png",
+      "bytes": 43281,
+      "archived": "unused-assets/files/circle_c.png",
+      "sha256": "189f0e34dc88758483266addaca8e581348c182651380a27ecb42f81bc1c74e6"
+    },
+    {
+      "path": "circle_star_icon_blue.svg",
+      "bytes": 11350,
+      "archived": "unused-assets/files/circle_star_icon_blue.svg",
+      "sha256": "23212fcd1c59957253ed63f2b8d31f78b1869af376e4faaa5183cb6d44ddc4be"
+    },
+    {
+      "path": "Clic06.mp3.flac",
+      "bytes": 22056,
+      "archived": "unused-assets/files/Clic06.mp3.flac",
+      "sha256": "6cdcfdd03cd2640142dad8305588fe9fd455b21aeff7e03c8ae1c177830d94e0"
+    },
+    {
+      "path": "cone_e_blur_noise.png",
+      "bytes": 24569,
+      "archived": "unused-assets/files/cone_e_blur_noise.png",
+      "sha256": "1fe04813125314af65a2c8c3471ce229fd896bbaba5955f7291691020bba549f"
+    },
+    {
+      "path": "Dot Dot Strip.png",
+      "bytes": 4527,
+      "archived": "unused-assets/files/Dot Dot Strip.png",
+      "sha256": "442e5e7806a229828a94d70c0caa1c9c174f741dbb8fb9f734a75f5ec42b351b"
+    },
+    {
+      "path": "draw.wav",
+      "bytes": 65536,
+      "archived": "unused-assets/files/draw.wav",
+      "sha256": "55e3d04cdaacde727ccc9bf177ff2ab3ab68eca1408c4d74479db75f72bc306c"
+    },
+    {
+      "path": "elements.svg",
+      "bytes": 133300,
+      "archived": "unused-assets/files/elements.svg",
+      "sha256": "e6c6ac4eae31458c5d903684de285e6f79327f8241a5610fd12218b7ac3e7c78"
+    },
+    {
+      "path": "emotes/emotes_vector.swf",
+      "bytes": 10388,
+      "archived": "unused-assets/files/emotes/emotes_vector.swf",
+      "sha256": "0d15fded5900b24c744ce772bda48d8cb7fa51fd7fd3f25c7fd043d38a117fc9"
+    },
+    {
+      "path": "emotes/vector_face.svg",
+      "bytes": 17612,
+      "archived": "unused-assets/files/emotes/vector_face.svg",
+      "sha256": "589788607f5cb5ee7de94b09821f105e9ae2ef74bfa5a758ab8e70216997354e"
+    },
+    {
+      "path": "emotes/vector_face.swf",
+      "bytes": 2567,
+      "archived": "unused-assets/files/emotes/vector_face.swf",
+      "sha256": "8ff02b956cae8652faa0ddf43847a5263dcbdb2d9a567c849a7bd94ca2467b85"
+    },
+    {
+      "path": "emotes/vector_hair.svg",
+      "bytes": 47700,
+      "archived": "unused-assets/files/emotes/vector_hair.svg",
+      "sha256": "4138f485fc3db40e2534afe4a16e8c6f79f87077aff45ad076ae9ae1bf3068ed"
+    },
+    {
+      "path": "emotes/vector_hair.swf",
+      "bytes": 5302,
+      "archived": "unused-assets/files/emotes/vector_hair.swf",
+      "sha256": "5153621f95348cb8e488fd9ee6f6588a6580e647daa58110e5e9aaf03e26852c"
+    },
+    {
+      "path": "emotes/vector_pants.svg",
+      "bytes": 34447,
+      "archived": "unused-assets/files/emotes/vector_pants.svg",
+      "sha256": "c687f64805fc968e5f10c24aef7f60de4e9dd52d7a079fc1d13c1314640a0a1d"
+    },
+    {
+      "path": "emotes/vector_pants.swf",
+      "bytes": 3009,
+      "archived": "unused-assets/files/emotes/vector_pants.swf",
+      "sha256": "46daa34cadfd1114159639268fb423a53a080dc9b6e8f3c4012252323876572a"
+    },
+    {
+      "path": "emotes/vector_shirts.svg",
+      "bytes": 67479,
+      "archived": "unused-assets/files/emotes/vector_shirts.svg",
+      "sha256": "4c6a03de52da3146a22b4177f8351cff151a8ae746ff30614a1779ff579a5368"
+    },
+    {
+      "path": "emotes/vector_shirts.swf",
+      "bytes": 5026,
+      "archived": "unused-assets/files/emotes/vector_shirts.swf",
+      "sha256": "2d22fe9abaa26e7dbab7adca0ec26aad80880ee7fcb5b205d70ce7141dc00db4"
+    },
+    {
+      "path": "emotes/vector_shoes.svg",
+      "bytes": 4521,
+      "archived": "unused-assets/files/emotes/vector_shoes.svg",
+      "sha256": "03bcabbd5814246f933d9f91a5042f9bbacb36e20b58c95b48b56bccc482a63b"
+    },
+    {
+      "path": "emotes/vector_shoes.swf",
+      "bytes": 1313,
+      "archived": "unused-assets/files/emotes/vector_shoes.swf",
+      "sha256": "7dcc4f3cb4abccd6564190a09e149f6de9f8a46cf25f7fa5428aebdd171cff3d"
+    },
+    {
+      "path": "emotes/vector_skin.svg",
+      "bytes": 12581,
+      "archived": "unused-assets/files/emotes/vector_skin.svg",
+      "sha256": "0179a0a144d3f9576bbcbf66f1eae3b9dc7a45b9393633e74850a13e5e77aa98"
+    },
+    {
+      "path": "emotes/vector_skin.swf",
+      "bytes": 2235,
+      "archived": "unused-assets/files/emotes/vector_skin.swf",
+      "sha256": "4a146a13f9f9480ed37d39d5f7f8686b8fac80d8ef6da67dafcdd9878ef7b94e"
+    },
+    {
+      "path": "Font/Kenney Future Narrow.ttf",
+      "bytes": 34180,
+      "archived": "unused-assets/files/Font/Kenney Future Narrow.ttf",
+      "sha256": "17e182587a3264dcf9e5b17c055715d5597187546ce81925c64e9184c26d597f"
+    },
+    {
+      "path": "Font/Kenney Future.ttf",
+      "bytes": 34160,
+      "archived": "unused-assets/files/Font/Kenney Future.ttf",
+      "sha256": "7a55b07f5968fac872648a7c5e959bd2b93e06f63153b585d56e4d5298ddff61"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Blue/characterBlue (10).png",
+      "bytes": 687,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Blue/characterBlue (10).png",
+      "sha256": "c969604007b9bcc333d0776c3f3a46b8d95c299e7820e3de53edc8f412b1882d"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Blue/characterBlue (12).png",
+      "bytes": 332,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Blue/characterBlue (12).png",
+      "sha256": "9525829a2861a87f49d754fa8fe63ee7a8370852a0ceedc1d6b5612716ad778b"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Blue/characterBlue (3).png",
+      "bytes": 712,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Blue/characterBlue (3).png",
+      "sha256": "1c84dafa087de9eb4cf4ac7ca7da43971cb6cb0788b5ddb4d34f6a8f4cc58db6"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Blue/characterBlue (4).png",
+      "bytes": 711,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Blue/characterBlue (4).png",
+      "sha256": "b5f15cedafe872de61e1c7d73c6a4caadf31caf8de2dba37bf5ff7646a5536b9"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Blue/characterBlue (5).png",
+      "bytes": 713,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Blue/characterBlue (5).png",
+      "sha256": "77f5e3f596b78575e941b5d89414000498307e7ffdcdd8f36fe8cc13bafda3b4"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Blue/characterBlue (6).png",
+      "bytes": 684,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Blue/characterBlue (6).png",
+      "sha256": "a2a4efdc75428498a619064bbc8b6892a702bf34b837e9eccc0ab8e56dab1e3c"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Blue/characterBlue (7).png",
+      "bytes": 687,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Blue/characterBlue (7).png",
+      "sha256": "222bf2302578d08fdd8570d342ee92a52db303411cf1bc9d2b20ea2933164e4b"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Blue/characterBlue (8).png",
+      "bytes": 686,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Blue/characterBlue (8).png",
+      "sha256": "00929d125d34bb2b2e9dbd87b9d534875dc49af01d347d0c7e3a0a4100ac7892"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Blue/characterBlue (9).png",
+      "bytes": 687,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Blue/characterBlue (9).png",
+      "sha256": "8e9baabdd05de476c426a9548af2de1980a56d6e62ed8f27604acf346a1911af"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Equipment/ball_generic1.png",
+      "bytes": 326,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Equipment/ball_generic1.png",
+      "sha256": "ec0a750d27ba0471129773ba07ecbee12eefca78decfcb6f9af1129781e98041"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Equipment/ball_generic2.png",
+      "bytes": 236,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Equipment/ball_generic2.png",
+      "sha256": "f846ea26b77298737ab6f094da5c1d6f64bc9ba9d9e646a41b516360f96dfacd"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Equipment/card_red.png",
+      "bytes": 203,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Equipment/card_red.png",
+      "sha256": "9e605ed37b1280b9b5040941e906e38cef06414104977ff63ec99c981c4ac67f"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Equipment/card_yellow.png",
+      "bytes": 219,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Equipment/card_yellow.png",
+      "sha256": "0a4fe5cb5b8a412247f5c7507c67ad01435039d8ef7e8297e43a3d59523ce805"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Equipment/flag_white.png",
+      "bytes": 577,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Equipment/flag_white.png",
+      "sha256": "8a51550aaf089ae86b30f5a03ee78e8610f5389d709d5b5a6c27174ca2fd38fc"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Green/characterGreen (1).png",
+      "bytes": 787,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Green/characterGreen (1).png",
+      "sha256": "66bb0d719d8f8e87cb6896f910a6559897662296c2d82efedc603af1fa4b27fd"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Green/characterGreen (10).png",
+      "bytes": 683,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Green/characterGreen (10).png",
+      "sha256": "b2651958d8098232f8b815f447a38b0d6312a7a6a28d77756fc73a18f10c9523"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Green/characterGreen (11).png",
+      "bytes": 331,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Green/characterGreen (11).png",
+      "sha256": "eb7f63e9cb29ebd933717dc9afffc1040f22fc12cdccf3922d1ecc29804ee156"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Green/characterGreen (12).png",
+      "bytes": 332,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Green/characterGreen (12).png",
+      "sha256": "6aa49d2d6e149b6ed08070f9188517f663d43a045ea77d0d55355c29021c844b"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Green/characterGreen (13).png",
+      "bytes": 706,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Green/characterGreen (13).png",
+      "sha256": "5a9a04cf50e51b16d027bafe620190560e816ef1da92ff8ac6081621564ce510"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Green/characterGreen (14).png",
+      "bytes": 703,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Green/characterGreen (14).png",
+      "sha256": "eaeecd2f20cd5d110f131d71307b3a07a545bd4ffed36ed54757b6f97e584823"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Green/characterGreen (2).png",
+      "bytes": 712,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Green/characterGreen (2).png",
+      "sha256": "d507257b7245a317e60922b20a5037d534e82060f71df72edd6f20fa428d125b"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Green/characterGreen (3).png",
+      "bytes": 712,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Green/characterGreen (3).png",
+      "sha256": "99f0bcc975f37936e693dd675fbda780ea0a45e7ba79f6a87b4c81cdc04eca76"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Green/characterGreen (4).png",
+      "bytes": 710,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Green/characterGreen (4).png",
+      "sha256": "1bbed4c5b94b43eda8c7fca07851dfb7027a0ca22dd1f9060076bdb6cc9b9259"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Green/characterGreen (5).png",
+      "bytes": 713,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Green/characterGreen (5).png",
+      "sha256": "15fc3619386af7366581b069b0accbb47bdb4e423bd42264328122057521286d"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Green/characterGreen (6).png",
+      "bytes": 687,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Green/characterGreen (6).png",
+      "sha256": "dcc15aa03f20b2c6081f280fcef1562ecde81d69e60481554ec4bec920650d9f"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Green/characterGreen (7).png",
+      "bytes": 684,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Green/characterGreen (7).png",
+      "sha256": "590e74646aedcee6ff6aaddcce1451eed952713b054464cd741655b95501dab4"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Green/characterGreen (8).png",
+      "bytes": 683,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Green/characterGreen (8).png",
+      "sha256": "005f9c637f6aa9149a165db7fabc9dce26bfcb884e06208a86ba7a644599592e"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Green/characterGreen (9).png",
+      "bytes": 683,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Green/characterGreen (9).png",
+      "sha256": "fd35b801ac0e321eef65347025128102d69ceeade200b81b5366b53425dd1eb8"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Red/characterRed (1).png",
+      "bytes": 713,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Red/characterRed (1).png",
+      "sha256": "20fb45714dc27d5b66e5d77d09a020dc84433d6f6755e19ea7dce5b35ec82c18"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Red/characterRed (10).png",
+      "bytes": 683,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Red/characterRed (10).png",
+      "sha256": "fc96bae7d820fe7fcca1d6faaa6392bf7856fb7b4388c885f2ba8a5d326e0024"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Red/characterRed (11).png",
+      "bytes": 331,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Red/characterRed (11).png",
+      "sha256": "159fc23140941ac848dd26466c0d53e5b4832d0da973ee7bbacd364a26be4265"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Red/characterRed (12).png",
+      "bytes": 332,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Red/characterRed (12).png",
+      "sha256": "6bed471dbc171b609fdb75670eaafe3933d1424d9aefd8260628b66df7f39a32"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Red/characterRed (13).png",
+      "bytes": 704,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Red/characterRed (13).png",
+      "sha256": "6a2440796b126ae7d7a976ff1f08920754b8093e4632d7d3e08c067adf317c21"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Red/characterRed (14).png",
+      "bytes": 703,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Red/characterRed (14).png",
+      "sha256": "c8eedcdf277f0cad62351b7b73cff3e1aa623d317f4548586d20a3db34bb444f"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Red/characterRed (2).png",
+      "bytes": 713,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Red/characterRed (2).png",
+      "sha256": "c64457146218d61a7bbf8e721f429c45149aa3321be5ede30a8777477f928d24"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Red/characterRed (3).png",
+      "bytes": 713,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Red/characterRed (3).png",
+      "sha256": "d250de8c06bfca7fe04db0ddafbe27353d5ae8b2b0b17f6a50955d99ed47b463"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Red/characterRed (4).png",
+      "bytes": 713,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Red/characterRed (4).png",
+      "sha256": "49e9910f97baa8fd6c74428ebd1d1a0712b5dd083b02c7e68b71c8bb0d3b9db4"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Red/characterRed (5).png",
+      "bytes": 714,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Red/characterRed (5).png",
+      "sha256": "18043c43a2679bcaeaa135e84fbc41a4c6b0eedd8d3859ca06aee5b98ebdc99e"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Red/characterRed (6).png",
+      "bytes": 683,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Red/characterRed (6).png",
+      "sha256": "9567a3486501ff8d20899178553a3edc7613a078498942dd0944ce7198d70c05"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Red/characterRed (7).png",
+      "bytes": 687,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Red/characterRed (7).png",
+      "sha256": "ab8e64400ec150f27d614ba90348d80fa25f1adbc2f287443681fe4d8db9133b"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Red/characterRed (8).png",
+      "bytes": 683,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Red/characterRed (8).png",
+      "sha256": "b047f41fe6c618a83160fb067966b00de65344aa6b667f234af8c2dd9e0a7d1e"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Red/characterRed (9).png",
+      "bytes": 684,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Red/characterRed (9).png",
+      "sha256": "f4df06c1085d5bb1bfe5228237532e3a57d1bb020eb41a082512ef81bba26a80"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Special/characterSpecial (1).png",
+      "bytes": 713,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Special/characterSpecial (1).png",
+      "sha256": "78359348c477b3dc3ff8f6961a8e63db7994d52ecdc214d05e7491604ff1656d"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Special/characterSpecial (10).png",
+      "bytes": 666,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Special/characterSpecial (10).png",
+      "sha256": "cd9c7142d3447282258b3d5024e387b2552f18995be3fddaf46418bf33e555a6"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Special/characterSpecial (11).png",
+      "bytes": 248,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Special/characterSpecial (11).png",
+      "sha256": "9e5f6f7bfc42bdee919c4215c71d112a9802be4a13d32c1ff2f0f0caa8c7befc"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Special/characterSpecial (12).png",
+      "bytes": 248,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Special/characterSpecial (12).png",
+      "sha256": "05d47e14f082bf8a719fcc69c88ace2b82978afafc6281ccf7e45969eb0e7da6"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Special/characterSpecial (2).png",
+      "bytes": 713,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Special/characterSpecial (2).png",
+      "sha256": "09b456c39b5a6ee7cc2ac6ba307ca6b0009815d4ed0c7a70ee918a95db7666e4"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Special/characterSpecial (3).png",
+      "bytes": 713,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Special/characterSpecial (3).png",
+      "sha256": "c8005d7bfc6742921368ad2fc5a7fd1ff15b56f2cb5dd018ada0115e99a5792b"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Special/characterSpecial (4).png",
+      "bytes": 765,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Special/characterSpecial (4).png",
+      "sha256": "7ae706ed8addfbf077ebbb55282ab1cdb7603c4425d752ac82c459034590df6b"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Special/characterSpecial (5).png",
+      "bytes": 766,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Special/characterSpecial (5).png",
+      "sha256": "29ef6015ebf2b5491d711914fab4e6bf742416b6c6b13f342f612ef9761bcddb"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Special/characterSpecial (6).png",
+      "bytes": 667,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Special/characterSpecial (6).png",
+      "sha256": "5d9104a75d80f45df9be74025ecfc49e1225aae53c7ec82a3ddfd1048bb2c6d6"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Special/characterSpecial (7).png",
+      "bytes": 666,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Special/characterSpecial (7).png",
+      "sha256": "5a431707e372389b160fcb8a05cf9661d3815f89f6d02d49141a3040da6739b6"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Special/characterSpecial (8).png",
+      "bytes": 667,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Special/characterSpecial (8).png",
+      "sha256": "f6ffe23a463e1aacb67b40a70ec6d83e6b50da5b3a04b6db29289eedd460abe7"
+    },
+    {
+      "path": "kenney_sports-pack/PNG/Special/characterSpecial (9).png",
+      "bytes": 658,
+      "archived": "unused-assets/files/kenney_sports-pack/PNG/Special/characterSpecial (9).png",
+      "sha256": "7a24fc4e705d7d1068cebca8c491bc0eb543298a22746ea3b9f20a9f18d0bb9c"
+    },
+    {
+      "path": "Lightbulb Strip.png",
+      "bytes": 6016,
+      "archived": "unused-assets/files/Lightbulb Strip.png",
+      "sha256": "fbc915f994ca033948eb6dfdbd9fad9a0d8539a939f8619d4f48fbaab2153615"
+    },
+    {
+      "path": "medals_vector.svg",
+      "bytes": 50220,
+      "archived": "unused-assets/files/medals_vector.svg",
+      "sha256": "10908cd4b2a6320efdeef431accb1613d3051e742361d3ca3f0c750a974d42ee"
+    },
+    {
+      "path": "menu-player.svg",
+      "bytes": 41249,
+      "archived": "unused-assets/files/menu-player.svg",
+      "sha256": "1df561dafbad797f011f505f54950a92908df5b9c28b9266fef78c2a1459c19f"
+    },
+    {
+      "path": "orange.mp3",
+      "bytes": 1231840,
+      "archived": "unused-assets/files/orange.mp3",
+      "sha256": "2857610946ab852c0e6048fc7e955297eb00714b2e6bac04264bf1fb9bdc53cb"
+    },
+    {
+      "path": "question_004.ogg",
+      "bytes": 9821,
+      "archived": "unused-assets/files/question_004.ogg",
+      "sha256": "585ecb58b529dc49b5c5ce5ba93427bf73b7052bae55e49c43ba8f169c93ac99"
+    },
+    {
+      "path": "square_owl_no_outlinel.png",
+      "bytes": 2871,
+      "archived": "unused-assets/files/square_owl_no_outlinel.png",
+      "sha256": "6f6404635d9337d88086bc32dc996fea5ed4dc9d1e075b5ff3688a6e174b7a11"
+    },
+    {
+      "path": "switch-a.ogg",
+      "bytes": 9433,
+      "archived": "unused-assets/files/switch-a.ogg",
+      "sha256": "1a4c90fed704b4f4b36d58f481117cfac5cdc25279a9af97d4765b71ff21ed48"
+    },
+    {
+      "path": "switch-b.ogg",
+      "bytes": 10138,
+      "archived": "unused-assets/files/switch-b.ogg",
+      "sha256": "f2ed0b3b5ad7662f0900d3ca5db81f314af6bf4583802874d308656ba31de1ad"
+    },
+    {
+      "path": "talimatver_button/button_rectangle_border.svg",
+      "bytes": 1100,
+      "archived": "unused-assets/files/talimatver_button/button_rectangle_border.svg",
+      "sha256": "234a16390cdc076e85a18541e442c2620138636b7be2d86df22a88338f1e1aaf"
+    },
+    {
+      "path": "talimatver_button/Sample.png",
+      "bytes": 30629,
+      "archived": "unused-assets/files/talimatver_button/Sample.png",
+      "sha256": "653c84028dd03c368ec35451689585756b6a1f2d9a5e37b4986eeca2637d4fb0"
+    },
+    {
+      "path": "Vector/Blue/arrow_basic_e.svg",
+      "bytes": 1355,
+      "archived": "unused-assets/files/Vector/Blue/arrow_basic_e.svg",
+      "sha256": "fc62428a2dda7499dde2cca5e5fe7aeb87538783ec8b390ac911b5c3312e0065"
+    },
+    {
+      "path": "Vector/Blue/arrow_basic_e_small.svg",
+      "bytes": 1029,
+      "archived": "unused-assets/files/Vector/Blue/arrow_basic_e_small.svg",
+      "sha256": "6e9d4df67f5108d2816553ecc807a2d0f4e1ac27e59bbee125ffc73ee8513d51"
+    },
+    {
+      "path": "Vector/Blue/arrow_basic_n.svg",
+      "bytes": 1458,
+      "archived": "unused-assets/files/Vector/Blue/arrow_basic_n.svg",
+      "sha256": "34a6304be81958bcb780781eefd87bdbc33e0a1a109d59ac5dd7dd66ea14f3b4"
+    },
+    {
+      "path": "Vector/Blue/arrow_basic_n_small.svg",
+      "bytes": 1084,
+      "archived": "unused-assets/files/Vector/Blue/arrow_basic_n_small.svg",
+      "sha256": "f0d02505b7a3ccbc7272bd1f030a72b66a0055c4d112b4f877540da43b6f7b7e"
+    },
+    {
+      "path": "Vector/Blue/arrow_basic_s.svg",
+      "bytes": 1432,
+      "archived": "unused-assets/files/Vector/Blue/arrow_basic_s.svg",
+      "sha256": "a5838e244b06f3b8c0c85c688eaa52e680329c4115f424b6cd1c5a410f084e94"
+    },
+    {
+      "path": "Vector/Blue/arrow_basic_s_small.svg",
+      "bytes": 1069,
+      "archived": "unused-assets/files/Vector/Blue/arrow_basic_s_small.svg",
+      "sha256": "16c7817a82eee183ee0895bbe46d684c58e8b98ab9c8c698f384c80ac257178c"
+    },
+    {
+      "path": "Vector/Blue/arrow_basic_w.svg",
+      "bytes": 1401,
+      "archived": "unused-assets/files/Vector/Blue/arrow_basic_w.svg",
+      "sha256": "75bbbcb40066659423be05216e3f5a74e22ba888957f2c5271112bb87d80e37a"
+    },
+    {
+      "path": "Vector/Blue/arrow_basic_w_small.svg",
+      "bytes": 1012,
+      "archived": "unused-assets/files/Vector/Blue/arrow_basic_w_small.svg",
+      "sha256": "4472020125cd8125021a0952849ed8071cee55cead4d4501859abcb567b05006"
+    },
+    {
+      "path": "Vector/Blue/arrow_decorative_e.svg",
+      "bytes": 2480,
+      "archived": "unused-assets/files/Vector/Blue/arrow_decorative_e.svg",
+      "sha256": "cbabbef2fbf2eed3fed7b8e770849e019e5ca2724dce8407dfa98f177f18f415"
+    },
+    {
+      "path": "Vector/Blue/arrow_decorative_e_small.svg",
+      "bytes": 1535,
+      "archived": "unused-assets/files/Vector/Blue/arrow_decorative_e_small.svg",
+      "sha256": "fec58ddce196d6668968f68d3c66dfcfb851d07a68561ea41cacbe5c4ce9f706"
+    },
+    {
+      "path": "Vector/Blue/arrow_decorative_n.svg",
+      "bytes": 2598,
+      "archived": "unused-assets/files/Vector/Blue/arrow_decorative_n.svg",
+      "sha256": "390dbad791fbac2ebf049fb07f1711763d37ff8749a4abf38f5a7facff6adce9"
+    },
+    {
+      "path": "Vector/Blue/arrow_decorative_n_small.svg",
+      "bytes": 1704,
+      "archived": "unused-assets/files/Vector/Blue/arrow_decorative_n_small.svg",
+      "sha256": "f57d415c94ea82439878346a3bd8b5aff5f7975320abbc599d33283ac7b2ead5"
+    },
+    {
+      "path": "Vector/Blue/arrow_decorative_s.svg",
+      "bytes": 2472,
+      "archived": "unused-assets/files/Vector/Blue/arrow_decorative_s.svg",
+      "sha256": "1421297b5188896c0b2f4d054a9db92e6be93d40eb34eab3ac81aabcfe04c94c"
+    },
+    {
+      "path": "Vector/Blue/arrow_decorative_s_small.svg",
+      "bytes": 1587,
+      "archived": "unused-assets/files/Vector/Blue/arrow_decorative_s_small.svg",
+      "sha256": "cca11ee9fdbbc5a9fef5fe1ad46a0864f781ce3f22681d6cc150bcb61cf09756"
+    },
+    {
+      "path": "Vector/Blue/arrow_decorative_w.svg",
+      "bytes": 2557,
+      "archived": "unused-assets/files/Vector/Blue/arrow_decorative_w.svg",
+      "sha256": "8efac5b4cbac1009d88fd2cce39ad22f089a3dd09213a74129c3c8c87bb6806f"
+    },
+    {
+      "path": "Vector/Blue/arrow_decorative_w_small.svg",
+      "bytes": 1604,
+      "archived": "unused-assets/files/Vector/Blue/arrow_decorative_w_small.svg",
+      "sha256": "8042b6519c56e8ad73a829b48c0563dc12ed755a743e36eb742779a0f7c18434"
+    },
+    {
+      "path": "Vector/Blue/button_rectangle_border.svg",
+      "bytes": 1100,
+      "archived": "unused-assets/files/Vector/Blue/button_rectangle_border.svg",
+      "sha256": "e606510d111de69c6df1b89cf8651dd4ab9370584b45258d734344605ab0408f"
+    },
+    {
+      "path": "Vector/Blue/button_round_border.svg",
+      "bytes": 2301,
+      "archived": "unused-assets/files/Vector/Blue/button_round_border.svg",
+      "sha256": "e903faca43ebe1b4c75c0d77768d6dc599a7c7c452330a1aafcb8c73c22891fd"
+    },
+    {
+      "path": "Vector/Blue/button_round_depth_border.svg",
+      "bytes": 3078,
+      "archived": "unused-assets/files/Vector/Blue/button_round_depth_border.svg",
+      "sha256": "86b8697117385523f0ba4a6563569cf8e0d256e2940fd34848086100319cf52b"
+    },
+    {
+      "path": "Vector/Blue/button_round_depth_flat.svg",
+      "bytes": 1772,
+      "archived": "unused-assets/files/Vector/Blue/button_round_depth_flat.svg",
+      "sha256": "647bf73bfe4465be8c701834e17147e8724a0747c5e4b0b355a586ec8e9cbc44"
+    },
+    {
+      "path": "Vector/Blue/button_round_depth_gloss.svg",
+      "bytes": 1417,
+      "archived": "unused-assets/files/Vector/Blue/button_round_depth_gloss.svg",
+      "sha256": "b1272d569a9507534a64898e6b1196f843e849ec86764bc0f7c25127f5f0562b"
+    },
+    {
+      "path": "Vector/Blue/button_round_depth_gradient.svg",
+      "bytes": 2060,
+      "archived": "unused-assets/files/Vector/Blue/button_round_depth_gradient.svg",
+      "sha256": "a1bcb553bdc9d08a0f19fecc7edad86e8f185d568c0acc717cb1557752d08eda"
+    },
+    {
+      "path": "Vector/Blue/button_round_depth_line.svg",
+      "bytes": 3035,
+      "archived": "unused-assets/files/Vector/Blue/button_round_depth_line.svg",
+      "sha256": "7513d296ba2c8f94a381e83c2d427c7c80f7253ae32fe3241da59c15c11fb3b9"
+    },
+    {
+      "path": "Vector/Blue/button_round_flat.svg",
+      "bytes": 1009,
+      "archived": "unused-assets/files/Vector/Blue/button_round_flat.svg",
+      "sha256": "4c735ecf62e6ec88f986e49ed06e88e0ca76c642c223c4a6dd38812b6a9eda66"
+    },
+    {
+      "path": "Vector/Blue/button_round_gloss.svg",
+      "bytes": 875,
+      "archived": "unused-assets/files/Vector/Blue/button_round_gloss.svg",
+      "sha256": "dae52e506490dec1a1eb720ad0d5661121f111626ea842cca1cfa55c722bdb37"
+    },
+    {
+      "path": "Vector/Blue/button_round_gradient.svg",
+      "bytes": 1474,
+      "archived": "unused-assets/files/Vector/Blue/button_round_gradient.svg",
+      "sha256": "b6cade7384e20bac4c3a17c5c8bce41d36f070d68989f7af21dc02429ea625b8"
+    },
+    {
+      "path": "Vector/Blue/button_round_line.svg",
+      "bytes": 1780,
+      "archived": "unused-assets/files/Vector/Blue/button_round_line.svg",
+      "sha256": "353fa951e74f4bfae9143b441286a0610cccfe3bd37e685ceca41edcabe4f07c"
+    },
+    {
+      "path": "Vector/Blue/button_square_depth_border.svg",
+      "bytes": 2211,
+      "archived": "unused-assets/files/Vector/Blue/button_square_depth_border.svg",
+      "sha256": "1484e18c04868331962fe26c4d823367863a9f95fbe1d254ebc039396665a073"
+    },
+    {
+      "path": "Vector/Blue/button_square_depth_gloss.svg",
+      "bytes": 837,
+      "archived": "unused-assets/files/Vector/Blue/button_square_depth_gloss.svg",
+      "sha256": "44ba6b70b76f6704f85d6d6205aa326974896c7e60a01675fc42f8af921442ec"
+    },
+    {
+      "path": "Vector/Blue/button_square_depth_gradient.svg",
+      "bytes": 1298,
+      "archived": "unused-assets/files/Vector/Blue/button_square_depth_gradient.svg",
+      "sha256": "e7eae796cb46caee01ea930a3d87c8b1414e026ac4dbf529645fd5e9068a2dfe"
+    },
+    {
+      "path": "Vector/Blue/button_square_depth_line.svg",
+      "bytes": 2166,
+      "archived": "unused-assets/files/Vector/Blue/button_square_depth_line.svg",
+      "sha256": "b1c46ae37a499de46a5cbbc1c94230f28ecac4f2284baee504145b1856587c46"
+    },
+    {
+      "path": "Vector/Blue/button_square_gradient.svg",
+      "bytes": 1987,
+      "archived": "unused-assets/files/Vector/Blue/button_square_gradient.svg",
+      "sha256": "f91b2c0cc6fb1752d7cf94b02ea03cefc5879b7d1a6ec1783f15edf95425ac77"
+    },
+    {
+      "path": "Vector/Blue/check_round_color.svg",
+      "bytes": 985,
+      "archived": "unused-assets/files/Vector/Blue/check_round_color.svg",
+      "sha256": "8e9813833b939d13c8d305470d7b0cc95fbc2ce8eaaacdf8610bc0533f989436"
+    },
+    {
+      "path": "Vector/Blue/check_round_grey.svg",
+      "bytes": 985,
+      "archived": "unused-assets/files/Vector/Blue/check_round_grey.svg",
+      "sha256": "4053bd73b4944d2d7eaac9d4ff66cd7f36df2d14e364677f34f6048108059242"
+    },
+    {
+      "path": "Vector/Blue/check_round_round_circle.svg",
+      "bytes": 1661,
+      "archived": "unused-assets/files/Vector/Blue/check_round_round_circle.svg",
+      "sha256": "e6961ce973b4d9296b92b9c038e5093907e8aba4f88db8110b75e01be208d6cc"
+    },
+    {
+      "path": "Vector/Blue/check_square_color.svg",
+      "bytes": 642,
+      "archived": "unused-assets/files/Vector/Blue/check_square_color.svg",
+      "sha256": "37cddda92d33c1c1857eb36fad47001ef0f6e8ced17a11d23118c491a70380f3"
+    },
+    {
+      "path": "Vector/Blue/check_square_color_checkmark.svg",
+      "bytes": 1610,
+      "archived": "unused-assets/files/Vector/Blue/check_square_color_checkmark.svg",
+      "sha256": "8a5f33999fe5551119c8abf9a6b74d416b63d68d3ab1507b1b3033b939f00d6f"
+    },
+    {
+      "path": "Vector/Blue/check_square_color_cross.svg",
+      "bytes": 1978,
+      "archived": "unused-assets/files/Vector/Blue/check_square_color_cross.svg",
+      "sha256": "9cbec56154bc97cbc33f86bcc4d88bfb6b1065d1979094c4b93cf3803922f4d8"
+    },
+    {
+      "path": "Vector/Blue/check_square_color_square.svg",
+      "bytes": 875,
+      "archived": "unused-assets/files/Vector/Blue/check_square_color_square.svg",
+      "sha256": "3f62116bc9b5cae28110ee534a54f21082d7f31fcb7a6f69f9854a88ab6896da"
+    },
+    {
+      "path": "Vector/Blue/check_square_grey.svg",
+      "bytes": 642,
+      "archived": "unused-assets/files/Vector/Blue/check_square_grey.svg",
+      "sha256": "e2ff9b904390ebf1c1692738d0b9eafa2c636662d52dbb7f6eb1cc1f766e62d9"
+    },
+    {
+      "path": "Vector/Blue/check_square_grey_checkmark.svg",
+      "bytes": 1610,
+      "archived": "unused-assets/files/Vector/Blue/check_square_grey_checkmark.svg",
+      "sha256": "aba6a67548edb583f501550c8346c78a515c41219cb7b0bdd96b0f44505f8df6"
+    },
+    {
+      "path": "Vector/Blue/check_square_grey_cross.svg",
+      "bytes": 1978,
+      "archived": "unused-assets/files/Vector/Blue/check_square_grey_cross.svg",
+      "sha256": "fb672df33fec8636bd57e72c37b06dca88bf4ce5234464eb06a7b873fbbb8fed"
+    },
+    {
+      "path": "Vector/Blue/check_square_grey_square.svg",
+      "bytes": 875,
+      "archived": "unused-assets/files/Vector/Blue/check_square_grey_square.svg",
+      "sha256": "299bffd78dcc0944a662cb32154b99b7fe64fefdb45f1d45efa01eb1872ea279"
+    },
+    {
+      "path": "Vector/Blue/icon_circle.svg",
+      "bytes": 740,
+      "archived": "unused-assets/files/Vector/Blue/icon_circle.svg",
+      "sha256": "29250027d84d6962df57038b476c9848aa1a7498819fbd604e916f76c5a92cdd"
+    },
+    {
+      "path": "Vector/Blue/icon_cross.svg",
+      "bytes": 1403,
+      "archived": "unused-assets/files/Vector/Blue/icon_cross.svg",
+      "sha256": "08cbeece658c877682faed0921266a2789dc02409418cfaf7e8eec0105165411"
+    },
+    {
+      "path": "Vector/Blue/icon_outline_checkmark.svg",
+      "bytes": 996,
+      "archived": "unused-assets/files/Vector/Blue/icon_outline_checkmark.svg",
+      "sha256": "eaa0b633b53f504c0de703d4dd3115220ecc6291450cb3bdafb27010af9b9efd"
+    },
+    {
+      "path": "Vector/Blue/icon_outline_cross.svg",
+      "bytes": 1403,
+      "archived": "unused-assets/files/Vector/Blue/icon_outline_cross.svg",
+      "sha256": "df0788966605f5fd4eb67de72c949084be1f16564517c8b024f9880cb9b1f3a1"
+    },
+    {
+      "path": "Vector/Blue/icon_outline_square.svg",
+      "bytes": 352,
+      "archived": "unused-assets/files/Vector/Blue/icon_outline_square.svg",
+      "sha256": "331ed673906ebc7ea190b95d43ccffe6687a6857df0bf0adf08d0e95a1bebae9"
+    },
+    {
+      "path": "Vector/Blue/icon_square.svg",
+      "bytes": 352,
+      "archived": "unused-assets/files/Vector/Blue/icon_square.svg",
+      "sha256": "12e28754290c1ba8be5d1699ddd507f172ae0888504659a3a0cd938a69183612"
+    },
+    {
+      "path": "Vector/Blue/slide_horizontal_color_section.svg",
+      "bytes": 924,
+      "archived": "unused-assets/files/Vector/Blue/slide_horizontal_color_section.svg",
+      "sha256": "ab2580cd16c1389ac5f5ab6d39de3dc26bf420df5b59244a627e51204432e8a1"
+    },
+    {
+      "path": "Vector/Blue/slide_horizontal_color_section_wide.svg",
+      "bytes": 918,
+      "archived": "unused-assets/files/Vector/Blue/slide_horizontal_color_section_wide.svg",
+      "sha256": "bff661f19cb946ab39f2e60331dd445641d67018552f9fcc2887314f16b1b1d8"
+    },
+    {
+      "path": "Vector/Blue/slide_horizontal_grey_section.svg",
+      "bytes": 924,
+      "archived": "unused-assets/files/Vector/Blue/slide_horizontal_grey_section.svg",
+      "sha256": "a2ed71ac6136e05e4dc52080fcf7b2e81c84dd6df80276739ab17cf00c6b4dd1"
+    },
+    {
+      "path": "Vector/Blue/slide_horizontal_grey_section_wide.svg",
+      "bytes": 918,
+      "archived": "unused-assets/files/Vector/Blue/slide_horizontal_grey_section_wide.svg",
+      "sha256": "67db3b47d6ca5b86cfdcbb5ae9d3346a0780bd9ecbb8290fbf6b50852bec10fb"
+    },
+    {
+      "path": "Vector/Blue/slide_vertical_color.svg",
+      "bytes": 1081,
+      "archived": "unused-assets/files/Vector/Blue/slide_vertical_color.svg",
+      "sha256": "213068807ae93df4091f27e0eda2e627b18e2dd08e33cdccf50d44155841c388"
+    },
+    {
+      "path": "Vector/Blue/slide_vertical_color_section.svg",
+      "bytes": 912,
+      "archived": "unused-assets/files/Vector/Blue/slide_vertical_color_section.svg",
+      "sha256": "1d991e8f697e21830e86ac3966b511fefc66bfd371a67983a7e7aaf8031a108d"
+    },
+    {
+      "path": "Vector/Blue/slide_vertical_color_section_wide.svg",
+      "bytes": 910,
+      "archived": "unused-assets/files/Vector/Blue/slide_vertical_color_section_wide.svg",
+      "sha256": "632e0466f1fb2d6b723fb6a8874139d7bb871c0a845591dc859a4f7ad624ad0b"
+    },
+    {
+      "path": "Vector/Blue/slide_vertical_grey.svg",
+      "bytes": 1081,
+      "archived": "unused-assets/files/Vector/Blue/slide_vertical_grey.svg",
+      "sha256": "3f6dae498aa8a1c3bf210840e258f938c46f934f64db389a0505e58d99d8cb46"
+    },
+    {
+      "path": "Vector/Blue/slide_vertical_grey_section.svg",
+      "bytes": 911,
+      "archived": "unused-assets/files/Vector/Blue/slide_vertical_grey_section.svg",
+      "sha256": "4e4f15b38b9e2631d68864bb3d1b12afa1f4432e665c2ee5530fa833d30d0caf"
+    },
+    {
+      "path": "Vector/Blue/slide_vertical_grey_section_wide.svg",
+      "bytes": 910,
+      "archived": "unused-assets/files/Vector/Blue/slide_vertical_grey_section_wide.svg",
+      "sha256": "47a5744eec4e643dd99a9ad0ef82862a208774fff13685d9d41e552e313a7e50"
+    },
+    {
+      "path": "Vector/Blue/star_outline.svg",
+      "bytes": 2717,
+      "archived": "unused-assets/files/Vector/Blue/star_outline.svg",
+      "sha256": "88f7acccb7b973d3ba502f93956aa60f59d50f665f195fb07af0d6b8d3f49afa"
+    },
+    {
+      "path": "Vector/Blue/star_outline_depth.svg",
+      "bytes": 1322,
+      "archived": "unused-assets/files/Vector/Blue/star_outline_depth.svg",
+      "sha256": "2872807a9e6beb8fb04a03dcaa8549ca0cc277dc5bebd2667b0bc1f4cb7cebdd"
+    },
+    {
+      "path": "Vector/Extra/button_round_depth_line.svg",
+      "bytes": 2314,
+      "archived": "unused-assets/files/Vector/Extra/button_round_depth_line.svg",
+      "sha256": "e809fc9bab23bc12c805f3a4d6244829f3ce876148326c77b82257f3a56e77ab"
+    },
+    {
+      "path": "Vector/Extra/button_round_line.svg",
+      "bytes": 1331,
+      "archived": "unused-assets/files/Vector/Extra/button_round_line.svg",
+      "sha256": "a2bb261b5387ea9aea689d6f2f961b215411af44a98f573f01a860eaecd018b7"
+    },
+    {
+      "path": "Vector/Extra/button_square_depth_line.svg",
+      "bytes": 1795,
+      "archived": "unused-assets/files/Vector/Extra/button_square_depth_line.svg",
+      "sha256": "496692cdcb443371e8de05a265f4c62cb67f53ffba5d175bcd42790a5061ca16"
+    },
+    {
+      "path": "Vector/Extra/divider_edges.svg",
+      "bytes": 273,
+      "archived": "unused-assets/files/Vector/Extra/divider_edges.svg",
+      "sha256": "fc90d2190bd01769446a8a783473f5f7de307fc9c4123f1d6c7b55cafb2025e2"
+    },
+    {
+      "path": "Vector/Extra/icon_arrow_down_dark.svg",
+      "bytes": 355,
+      "archived": "unused-assets/files/Vector/Extra/icon_arrow_down_dark.svg",
+      "sha256": "432f6b33066720d356781c7e5b1b2cf7f24cca3f618d67e0be68c6b7dfe3d39c"
+    },
+    {
+      "path": "Vector/Extra/icon_arrow_down_light.svg",
+      "bytes": 355,
+      "archived": "unused-assets/files/Vector/Extra/icon_arrow_down_light.svg",
+      "sha256": "8acceef77b0009dd16044a64debccaf685d10a26d16b37e0bb931f43f4e89a41"
+    },
+    {
+      "path": "Vector/Extra/icon_arrow_down_outline.svg",
+      "bytes": 837,
+      "archived": "unused-assets/files/Vector/Extra/icon_arrow_down_outline.svg",
+      "sha256": "508c380828a8ff26e9b2957568cee3ddf5a062573d259294f5fc991f779ea7a2"
+    },
+    {
+      "path": "Vector/Extra/icon_arrow_up_dark.svg",
+      "bytes": 376,
+      "archived": "unused-assets/files/Vector/Extra/icon_arrow_up_dark.svg",
+      "sha256": "9280549b0304908f777bb41cbbb841d302f6451f2dc36d14747bd90ca8f1c8db"
+    },
+    {
+      "path": "Vector/Extra/icon_arrow_up_light.svg",
+      "bytes": 376,
+      "archived": "unused-assets/files/Vector/Extra/icon_arrow_up_light.svg",
+      "sha256": "95ecf24f8ef8761080e9edf1da89b953a18e59c90dc8d9533d165d9415ae9929"
+    },
+    {
+      "path": "Vector/Extra/icon_arrow_up_outline.svg",
+      "bytes": 927,
+      "archived": "unused-assets/files/Vector/Extra/icon_arrow_up_outline.svg",
+      "sha256": "552173ddc5c782e74f0cc78f00c1ca1582c26a8c18c315a7d0a0672641e4c50f"
+    },
+    {
+      "path": "Vector/Extra/icon_play_dark.svg",
+      "bytes": 420,
+      "archived": "unused-assets/files/Vector/Extra/icon_play_dark.svg",
+      "sha256": "d12092da51a7bbee48e7e34f81515edba0258438936bc17b0b8d3fc0a391c8c9"
+    },
+    {
+      "path": "Vector/Extra/icon_play_light.svg",
+      "bytes": 420,
+      "archived": "unused-assets/files/Vector/Extra/icon_play_light.svg",
+      "sha256": "a22d50c1b783e79f1bd29dd4b1f98d41b1b24ccbcc3642b28e0c82ae5623b18d"
+    },
+    {
+      "path": "Vector/Extra/icon_play_outline.svg",
+      "bytes": 1003,
+      "archived": "unused-assets/files/Vector/Extra/icon_play_outline.svg",
+      "sha256": "30f878a6e586fd5318fe4e0ec8b73188bf9d5c67f2166595a7978d7d52c66312"
+    },
+    {
+      "path": "Vector/Extra/icon_repeat_dark.svg",
+      "bytes": 816,
+      "archived": "unused-assets/files/Vector/Extra/icon_repeat_dark.svg",
+      "sha256": "934905d993e09ef7cd5dedbe8b6353ead04cf6214325f1cbb82a8521fbd8858f"
+    },
+    {
+      "path": "Vector/Extra/icon_repeat_light.svg",
+      "bytes": 816,
+      "archived": "unused-assets/files/Vector/Extra/icon_repeat_light.svg",
+      "sha256": "7301bc9705160885eb9efeb32e4b9b32d9cca51c0c3251c3938a2c8de3c4814d"
+    },
+    {
+      "path": "Vector/Extra/icon_repeat_outline.svg",
+      "bytes": 2296,
+      "archived": "unused-assets/files/Vector/Extra/icon_repeat_outline.svg",
+      "sha256": "835d81812454d266b814d22c427ee53dc3f61b65944f6be1c67afa7885313bb5"
+    },
+    {
+      "path": "Vector/Extra/input_outline_square.svg",
+      "bytes": 763,
+      "archived": "unused-assets/files/Vector/Extra/input_outline_square.svg",
+      "sha256": "baf9f0124c7206481836b11cba80b3dffc35e92faf72fef0f3d2bb1df30c64a7"
+    },
+    {
+      "path": "Vector/Extra/input_square.svg",
+      "bytes": 786,
+      "archived": "unused-assets/files/Vector/Extra/input_square.svg",
+      "sha256": "ba27afcddc8685a2f7caeb388a3d5f1e0929741985974b7b24ebf71a61c972df"
+    },
+    {
+      "path": "Vector/Green/arrow_basic_e.svg",
+      "bytes": 1355,
+      "archived": "unused-assets/files/Vector/Green/arrow_basic_e.svg",
+      "sha256": "85560d3579a56a99d5cbe932bd9ab4d157e0c6c279cb8749d8fe75b598d3bd5e"
+    },
+    {
+      "path": "Vector/Green/arrow_basic_e_small.svg",
+      "bytes": 1029,
+      "archived": "unused-assets/files/Vector/Green/arrow_basic_e_small.svg",
+      "sha256": "505b8df6638bba5614b9e89fd12366a7d4e17ed7dbb6de2eefe32e27188674c9"
+    },
+    {
+      "path": "Vector/Green/arrow_basic_n.svg",
+      "bytes": 1458,
+      "archived": "unused-assets/files/Vector/Green/arrow_basic_n.svg",
+      "sha256": "d3a78bb6a4b95347be606019316807b1967badce22bbacdf37c7cd0271673844"
+    },
+    {
+      "path": "Vector/Green/arrow_basic_n_small.svg",
+      "bytes": 1084,
+      "archived": "unused-assets/files/Vector/Green/arrow_basic_n_small.svg",
+      "sha256": "74e5d9fd94846b9bf093fa7b0bc574e7227d1f737e02c61036fa23fbf5de1f00"
+    },
+    {
+      "path": "Vector/Green/arrow_basic_s.svg",
+      "bytes": 1432,
+      "archived": "unused-assets/files/Vector/Green/arrow_basic_s.svg",
+      "sha256": "83c1f3ee724b039ab8c723daadde12f235c8c15068bf6ffa742f45624f0fc644"
+    },
+    {
+      "path": "Vector/Green/arrow_basic_s_small.svg",
+      "bytes": 1069,
+      "archived": "unused-assets/files/Vector/Green/arrow_basic_s_small.svg",
+      "sha256": "f756eaf10ac377c541d7409bf2f17d46ef21efc4760c478be2bef163e71ffb80"
+    },
+    {
+      "path": "Vector/Green/arrow_basic_w.svg",
+      "bytes": 1401,
+      "archived": "unused-assets/files/Vector/Green/arrow_basic_w.svg",
+      "sha256": "d9782d0c2edf918a36b09a51b534a54311fa36abb7781fcc031982171fb61d6c"
+    },
+    {
+      "path": "Vector/Green/arrow_basic_w_small.svg",
+      "bytes": 1012,
+      "archived": "unused-assets/files/Vector/Green/arrow_basic_w_small.svg",
+      "sha256": "33af9ce97ef5d16f17008cfa1dbf3c799a7a65e4af3ad93295e3d714a6a659d3"
+    },
+    {
+      "path": "Vector/Green/arrow_decorative_e.svg",
+      "bytes": 2480,
+      "archived": "unused-assets/files/Vector/Green/arrow_decorative_e.svg",
+      "sha256": "054edfcc82932dc80707b521def17018182deb7c4e59ee4a851cb2d48d2cada9"
+    },
+    {
+      "path": "Vector/Green/arrow_decorative_e_small.svg",
+      "bytes": 1535,
+      "archived": "unused-assets/files/Vector/Green/arrow_decorative_e_small.svg",
+      "sha256": "eb50b21ee24bae1fcd6ffb894cd2033e51b2469ef0a3ab40b0683332e88d284a"
+    },
+    {
+      "path": "Vector/Green/arrow_decorative_n.svg",
+      "bytes": 2598,
+      "archived": "unused-assets/files/Vector/Green/arrow_decorative_n.svg",
+      "sha256": "ad4533f1233716ff4759146925eb93735ab7a9602faf038ed1091a92b1c39703"
+    },
+    {
+      "path": "Vector/Green/arrow_decorative_n_small.svg",
+      "bytes": 1704,
+      "archived": "unused-assets/files/Vector/Green/arrow_decorative_n_small.svg",
+      "sha256": "6b24da7bbcb32f47fbc8110ea29e9629211b9dc9210a7c13a769d8b0dd829844"
+    },
+    {
+      "path": "Vector/Green/arrow_decorative_s.svg",
+      "bytes": 2472,
+      "archived": "unused-assets/files/Vector/Green/arrow_decorative_s.svg",
+      "sha256": "3c4e740358c099b3765695820c99861ed5642fd8c15d35408933a135dd97f046"
+    },
+    {
+      "path": "Vector/Green/arrow_decorative_s_small.svg",
+      "bytes": 1587,
+      "archived": "unused-assets/files/Vector/Green/arrow_decorative_s_small.svg",
+      "sha256": "858370fe55f2b6631be3745ec46f58c345f48cdad7d2e60ab1ff870c129ce3f4"
+    },
+    {
+      "path": "Vector/Green/arrow_decorative_w.svg",
+      "bytes": 2557,
+      "archived": "unused-assets/files/Vector/Green/arrow_decorative_w.svg",
+      "sha256": "637bda2d32f25e7f3693082fd3bbacf6552f658abe2a9df8e12975b16c68ff55"
+    },
+    {
+      "path": "Vector/Green/arrow_decorative_w_small.svg",
+      "bytes": 1604,
+      "archived": "unused-assets/files/Vector/Green/arrow_decorative_w_small.svg",
+      "sha256": "0629e33ec0aa6b2003e2f5bbddae8b51dc4da65a7475d5a248d6d1179c477f68"
+    },
+    {
+      "path": "Vector/Green/button_rectangle_border.svg",
+      "bytes": 1100,
+      "archived": "unused-assets/files/Vector/Green/button_rectangle_border.svg",
+      "sha256": "a23cd671b022233bc65c3c76a78469f56ab37546b03ab07ed4752a0c1eec23cb"
+    },
+    {
+      "path": "Vector/Green/button_round_border.svg",
+      "bytes": 2301,
+      "archived": "unused-assets/files/Vector/Green/button_round_border.svg",
+      "sha256": "d4a5c66f6c1efe27a9cf47c76503c3bb198c34050871bf4347ef16f7e2380ff5"
+    },
+    {
+      "path": "Vector/Green/button_round_depth_border.svg",
+      "bytes": 3078,
+      "archived": "unused-assets/files/Vector/Green/button_round_depth_border.svg",
+      "sha256": "92a2e963935f13c4867dd87008e1a9482254330d4107988558c12c274a13ee3e"
+    },
+    {
+      "path": "Vector/Green/button_round_depth_flat.svg",
+      "bytes": 1772,
+      "archived": "unused-assets/files/Vector/Green/button_round_depth_flat.svg",
+      "sha256": "fcd22946f12b03ccb60e85d02a6d6f32ad295dac7952a5530d03d54a8ed30776"
+    },
+    {
+      "path": "Vector/Green/button_round_depth_gloss.svg",
+      "bytes": 1417,
+      "archived": "unused-assets/files/Vector/Green/button_round_depth_gloss.svg",
+      "sha256": "be7c4fc3a6710dc5c37f9eb066982a0ce829f1110dcc8e2731a9269eff3e698a"
+    },
+    {
+      "path": "Vector/Green/button_round_depth_gradient.svg",
+      "bytes": 2063,
+      "archived": "unused-assets/files/Vector/Green/button_round_depth_gradient.svg",
+      "sha256": "344b23066c6acee2be41f465329d7cd10604e21c99d40b5661eccbe957c6b8eb"
+    },
+    {
+      "path": "Vector/Green/button_round_depth_line.svg",
+      "bytes": 3035,
+      "archived": "unused-assets/files/Vector/Green/button_round_depth_line.svg",
+      "sha256": "ee93152c805307cb97dc49800906ae337b72e0ee049370072e61f1d78e341452"
+    },
+    {
+      "path": "Vector/Green/button_round_flat.svg",
+      "bytes": 1009,
+      "archived": "unused-assets/files/Vector/Green/button_round_flat.svg",
+      "sha256": "0ffaee69e02762df1b0a52ae237f011063fc59c2613940e096497bfb9012fba3"
+    },
+    {
+      "path": "Vector/Green/button_round_gloss.svg",
+      "bytes": 875,
+      "archived": "unused-assets/files/Vector/Green/button_round_gloss.svg",
+      "sha256": "93db9d71e11665f9c850ef49df0e880ff7b841b650961dfd26ec8a416c876f01"
+    },
+    {
+      "path": "Vector/Green/button_round_gradient.svg",
+      "bytes": 1476,
+      "archived": "unused-assets/files/Vector/Green/button_round_gradient.svg",
+      "sha256": "6c35f4b516d07b54c6ed6fe0d4c8402d2519830c29d717325c55771b3f74a9f6"
+    },
+    {
+      "path": "Vector/Green/button_round_line.svg",
+      "bytes": 1780,
+      "archived": "unused-assets/files/Vector/Green/button_round_line.svg",
+      "sha256": "92d94884a17a41761863f5b713921aa72f1f7455ba44a801e3d2543a1b1b2362"
+    },
+    {
+      "path": "Vector/Green/button_square_depth_border.svg",
+      "bytes": 2211,
+      "archived": "unused-assets/files/Vector/Green/button_square_depth_border.svg",
+      "sha256": "1ac9d0257b0d0a354d5cc5b292ab15ff4cf4f37210dc5e73ce02b15ac3e11b5d"
+    },
+    {
+      "path": "Vector/Green/button_square_depth_gloss.svg",
+      "bytes": 837,
+      "archived": "unused-assets/files/Vector/Green/button_square_depth_gloss.svg",
+      "sha256": "b4260e61d4cab49528f4c29b19e3e89ec5a7cbad2fd7d87fd92ae6c28fd30aeb"
+    },
+    {
+      "path": "Vector/Green/button_square_depth_gradient.svg",
+      "bytes": 1300,
+      "archived": "unused-assets/files/Vector/Green/button_square_depth_gradient.svg",
+      "sha256": "196b7ea951e2ef39c5597062b9d733a33fc1c3b4a89a7bebb11e3d1f50c426d7"
+    },
+    {
+      "path": "Vector/Green/button_square_depth_line.svg",
+      "bytes": 2166,
+      "archived": "unused-assets/files/Vector/Green/button_square_depth_line.svg",
+      "sha256": "7e65d4fa715de11119589353c6b982b979d6ce7d3d1f9677e198b18d08e8415d"
+    },
+    {
+      "path": "Vector/Green/button_square_gradient.svg",
+      "bytes": 1991,
+      "archived": "unused-assets/files/Vector/Green/button_square_gradient.svg",
+      "sha256": "d5a3fdbe32b164ee2dcfe92b082352411453f14c64bd7586e93b7d28bda954a8"
+    },
+    {
+      "path": "Vector/Green/check_round_color.svg",
+      "bytes": 985,
+      "archived": "unused-assets/files/Vector/Green/check_round_color.svg",
+      "sha256": "3b859d3df6dd7c6bb878c3cd698e21443cde50346c1b69f8c23110183de07980"
+    },
+    {
+      "path": "Vector/Green/check_round_grey.svg",
+      "bytes": 985,
+      "archived": "unused-assets/files/Vector/Green/check_round_grey.svg",
+      "sha256": "4053bd73b4944d2d7eaac9d4ff66cd7f36df2d14e364677f34f6048108059242"
+    },
+    {
+      "path": "Vector/Green/check_round_round_circle.svg",
+      "bytes": 1661,
+      "archived": "unused-assets/files/Vector/Green/check_round_round_circle.svg",
+      "sha256": "0061a22a225a25f070662fd77dba98eb554602b24a29805551747c98066bd7ba"
+    },
+    {
+      "path": "Vector/Green/check_square_color.svg",
+      "bytes": 642,
+      "archived": "unused-assets/files/Vector/Green/check_square_color.svg",
+      "sha256": "761708f1e987b717ca68f2077a7d8cbbf6403832fe870fa4481e7a566c78cc15"
+    },
+    {
+      "path": "Vector/Green/check_square_color_checkmark.svg",
+      "bytes": 1610,
+      "archived": "unused-assets/files/Vector/Green/check_square_color_checkmark.svg",
+      "sha256": "dbca0db920452b45bb74c97375617e1594614785651d4656dcc8ba2f4655b739"
+    },
+    {
+      "path": "Vector/Green/check_square_color_cross.svg",
+      "bytes": 1978,
+      "archived": "unused-assets/files/Vector/Green/check_square_color_cross.svg",
+      "sha256": "b717117a2d4874678bc8017c3e44378c2f911b066bb1e3faf474c40802a12b64"
+    },
+    {
+      "path": "Vector/Green/check_square_color_square.svg",
+      "bytes": 875,
+      "archived": "unused-assets/files/Vector/Green/check_square_color_square.svg",
+      "sha256": "0c44297ad94ad65cbb9f4a811fb8b679ac274b06bf60498bedffb33035faae90"
+    },
+    {
+      "path": "Vector/Green/check_square_grey.svg",
+      "bytes": 642,
+      "archived": "unused-assets/files/Vector/Green/check_square_grey.svg",
+      "sha256": "e2ff9b904390ebf1c1692738d0b9eafa2c636662d52dbb7f6eb1cc1f766e62d9"
+    },
+    {
+      "path": "Vector/Green/check_square_grey_checkmark.svg",
+      "bytes": 1610,
+      "archived": "unused-assets/files/Vector/Green/check_square_grey_checkmark.svg",
+      "sha256": "6eeb705e1b55bb2133bd1b65c1ef06bfc930c567242d3eac2f10af150b845b6e"
+    },
+    {
+      "path": "Vector/Green/check_square_grey_cross.svg",
+      "bytes": 1978,
+      "archived": "unused-assets/files/Vector/Green/check_square_grey_cross.svg",
+      "sha256": "9b12064150976aa5fc8c9b23bf06875b2530c402403feab9f6e6456a40e019ab"
+    },
+    {
+      "path": "Vector/Green/check_square_grey_square.svg",
+      "bytes": 875,
+      "archived": "unused-assets/files/Vector/Green/check_square_grey_square.svg",
+      "sha256": "a86c6424908d8b81d91d1a2ca50eedaac42e4f80008480a32138ae35fdb7ce15"
+    },
+    {
+      "path": "Vector/Green/icon_circle.svg",
+      "bytes": 740,
+      "archived": "unused-assets/files/Vector/Green/icon_circle.svg",
+      "sha256": "139c639d677bd39636116d9bd68f348d6a31de7a509c816102c9872ee3749a96"
+    },
+    {
+      "path": "Vector/Green/icon_cross.svg",
+      "bytes": 1403,
+      "archived": "unused-assets/files/Vector/Green/icon_cross.svg",
+      "sha256": "d73225251019146430d30cab46b82f8038c488981ec91cfbad3be9a8e93667ee"
+    },
+    {
+      "path": "Vector/Green/icon_outline_checkmark.svg",
+      "bytes": 996,
+      "archived": "unused-assets/files/Vector/Green/icon_outline_checkmark.svg",
+      "sha256": "32f1bba61de4e8828b790db711517485de4406d55ebe609c3797aba9bd03e958"
+    },
+    {
+      "path": "Vector/Green/icon_outline_cross.svg",
+      "bytes": 1403,
+      "archived": "unused-assets/files/Vector/Green/icon_outline_cross.svg",
+      "sha256": "465c5719e31f437df2440fef2283857dc79acc979687dd69b17ece93fd49fecb"
+    },
+    {
+      "path": "Vector/Green/icon_outline_square.svg",
+      "bytes": 352,
+      "archived": "unused-assets/files/Vector/Green/icon_outline_square.svg",
+      "sha256": "fe19d98cd9ef131d10874c4c1418b05cdb12ab4284769691b5b2dd5cd1590acb"
+    },
+    {
+      "path": "Vector/Green/icon_square.svg",
+      "bytes": 352,
+      "archived": "unused-assets/files/Vector/Green/icon_square.svg",
+      "sha256": "bf04d748d08fe774dd0bc3eee41407b6831755c3b675d72e363d18c4d8fc8014"
+    },
+    {
+      "path": "Vector/Green/slide_horizontal_color_section.svg",
+      "bytes": 924,
+      "archived": "unused-assets/files/Vector/Green/slide_horizontal_color_section.svg",
+      "sha256": "ec4f348c6b851e06916f9490dd4dc429eb7ed7d6e7f5e338161570268cb9b894"
+    },
+    {
+      "path": "Vector/Green/slide_horizontal_color_section_wide.svg",
+      "bytes": 918,
+      "archived": "unused-assets/files/Vector/Green/slide_horizontal_color_section_wide.svg",
+      "sha256": "aaf8ef24fa4ad92d0f12b4e486852c3380f4d5e8d7a71ca2e4a67d776538830a"
+    },
+    {
+      "path": "Vector/Green/slide_horizontal_grey_section.svg",
+      "bytes": 924,
+      "archived": "unused-assets/files/Vector/Green/slide_horizontal_grey_section.svg",
+      "sha256": "a2ed71ac6136e05e4dc52080fcf7b2e81c84dd6df80276739ab17cf00c6b4dd1"
+    },
+    {
+      "path": "Vector/Green/slide_horizontal_grey_section_wide.svg",
+      "bytes": 918,
+      "archived": "unused-assets/files/Vector/Green/slide_horizontal_grey_section_wide.svg",
+      "sha256": "67db3b47d6ca5b86cfdcbb5ae9d3346a0780bd9ecbb8290fbf6b50852bec10fb"
+    },
+    {
+      "path": "Vector/Green/slide_vertical_color.svg",
+      "bytes": 1081,
+      "archived": "unused-assets/files/Vector/Green/slide_vertical_color.svg",
+      "sha256": "9e4e2e09c38dcefcde4b3244bd33c8afebaed97f5ba81e54ffab8fcd2fa0076f"
+    },
+    {
+      "path": "Vector/Green/slide_vertical_color_section.svg",
+      "bytes": 911,
+      "archived": "unused-assets/files/Vector/Green/slide_vertical_color_section.svg",
+      "sha256": "1ea1c3dddc643a95bd07cb67ea9b604af0d3fd2081fb04a6750eb616852235bb"
+    },
+    {
+      "path": "Vector/Green/slide_vertical_color_section_wide.svg",
+      "bytes": 909,
+      "archived": "unused-assets/files/Vector/Green/slide_vertical_color_section_wide.svg",
+      "sha256": "cde433eabedcc899deb0071224b46f090f753bad4e4521611a1cb7d895df7d33"
+    },
+    {
+      "path": "Vector/Green/slide_vertical_grey.svg",
+      "bytes": 1081,
+      "archived": "unused-assets/files/Vector/Green/slide_vertical_grey.svg",
+      "sha256": "3f6dae498aa8a1c3bf210840e258f938c46f934f64db389a0505e58d99d8cb46"
+    },
+    {
+      "path": "Vector/Green/slide_vertical_grey_section.svg",
+      "bytes": 912,
+      "archived": "unused-assets/files/Vector/Green/slide_vertical_grey_section.svg",
+      "sha256": "a27935fc79ef6f46d69c136087963087ece1bc35bf44f826e1f080e8d6fa7d2f"
+    },
+    {
+      "path": "Vector/Green/slide_vertical_grey_section_wide.svg",
+      "bytes": 909,
+      "archived": "unused-assets/files/Vector/Green/slide_vertical_grey_section_wide.svg",
+      "sha256": "e4a1dca702a4d544211da8313ff600b009c9177f1622c6c81b54b70baaf09f0e"
+    },
+    {
+      "path": "Vector/Green/star_outline.svg",
+      "bytes": 2717,
+      "archived": "unused-assets/files/Vector/Green/star_outline.svg",
+      "sha256": "88f7acccb7b973d3ba502f93956aa60f59d50f665f195fb07af0d6b8d3f49afa"
+    },
+    {
+      "path": "Vector/Green/star_outline_depth.svg",
+      "bytes": 1322,
+      "archived": "unused-assets/files/Vector/Green/star_outline_depth.svg",
+      "sha256": "2872807a9e6beb8fb04a03dcaa8549ca0cc277dc5bebd2667b0bc1f4cb7cebdd"
+    },
+    {
+      "path": "Vector/Grey/arrow_basic_e.svg",
+      "bytes": 1355,
+      "archived": "unused-assets/files/Vector/Grey/arrow_basic_e.svg",
+      "sha256": "a89b37d8cef8f70c42ce52ef5cc328f019cf2b2143bf0e836be13c7eda956016"
+    },
+    {
+      "path": "Vector/Grey/arrow_basic_e_small.svg",
+      "bytes": 1029,
+      "archived": "unused-assets/files/Vector/Grey/arrow_basic_e_small.svg",
+      "sha256": "15a9e03e9cd4c1d2081401942f8b1c60f8f29317745ef2314f5378b7f399c7b3"
+    },
+    {
+      "path": "Vector/Grey/arrow_basic_n.svg",
+      "bytes": 1458,
+      "archived": "unused-assets/files/Vector/Grey/arrow_basic_n.svg",
+      "sha256": "461094ec7255695f1a75f346a0f83b69370aafdfad3d63de5196a3d0c3435bc3"
+    },
+    {
+      "path": "Vector/Grey/arrow_basic_n_small.svg",
+      "bytes": 1084,
+      "archived": "unused-assets/files/Vector/Grey/arrow_basic_n_small.svg",
+      "sha256": "1e2dc06588c45e360ce542f233b9dbaf3351a0153cbd6ab42d1f524a4a9cf9f7"
+    },
+    {
+      "path": "Vector/Grey/arrow_basic_s.svg",
+      "bytes": 1432,
+      "archived": "unused-assets/files/Vector/Grey/arrow_basic_s.svg",
+      "sha256": "00373520111403dae00c09b89395e677b8f3bd5dd6a651091cd4967c9784de7c"
+    },
+    {
+      "path": "Vector/Grey/arrow_basic_s_small.svg",
+      "bytes": 1069,
+      "archived": "unused-assets/files/Vector/Grey/arrow_basic_s_small.svg",
+      "sha256": "7b8e0c37a808f43a32e9d61185f14bb7206f3b0305df94a6fd10001563bd05bf"
+    },
+    {
+      "path": "Vector/Grey/arrow_basic_w.svg",
+      "bytes": 1401,
+      "archived": "unused-assets/files/Vector/Grey/arrow_basic_w.svg",
+      "sha256": "67277a46d498a93b90a30119e576f6bec6d641b8cbe5d1065c4df5707c48dcbe"
+    },
+    {
+      "path": "Vector/Grey/arrow_basic_w_small.svg",
+      "bytes": 1012,
+      "archived": "unused-assets/files/Vector/Grey/arrow_basic_w_small.svg",
+      "sha256": "41fb435042a00775885c51a26c1796d62de9119b9dd76a55b088aa8d9b167aad"
+    },
+    {
+      "path": "Vector/Grey/arrow_decorative_e.svg",
+      "bytes": 2480,
+      "archived": "unused-assets/files/Vector/Grey/arrow_decorative_e.svg",
+      "sha256": "ecca26f96892d8844564fd4d122a81d6a65b3c52a1e75e8cb0a90b546dd7f85b"
+    },
+    {
+      "path": "Vector/Grey/arrow_decorative_e_small.svg",
+      "bytes": 1535,
+      "archived": "unused-assets/files/Vector/Grey/arrow_decorative_e_small.svg",
+      "sha256": "dfe814a39ceb6180ada5a859c5ae08f0e848245e0a1f35aef8d861d8448a4903"
+    },
+    {
+      "path": "Vector/Grey/arrow_decorative_n.svg",
+      "bytes": 2598,
+      "archived": "unused-assets/files/Vector/Grey/arrow_decorative_n.svg",
+      "sha256": "0dd5c725668a53822297013984e8b525208bd9a628e835cdbeadca1a7942609d"
+    },
+    {
+      "path": "Vector/Grey/arrow_decorative_n_small.svg",
+      "bytes": 1704,
+      "archived": "unused-assets/files/Vector/Grey/arrow_decorative_n_small.svg",
+      "sha256": "c3c132d2bce1571ddb9b6660446cfabfe854a6acb214022487d368067b36dad4"
+    },
+    {
+      "path": "Vector/Grey/arrow_decorative_s.svg",
+      "bytes": 2472,
+      "archived": "unused-assets/files/Vector/Grey/arrow_decorative_s.svg",
+      "sha256": "0bf80652aaf6e485a41c292df7c2ec9119e8daa387966a35de573fa3cde593f0"
+    },
+    {
+      "path": "Vector/Grey/arrow_decorative_s_small.svg",
+      "bytes": 1587,
+      "archived": "unused-assets/files/Vector/Grey/arrow_decorative_s_small.svg",
+      "sha256": "b58df051cd06341811bda338d9de5033b569aea7d96e80f493177296a09bb1a8"
+    },
+    {
+      "path": "Vector/Grey/arrow_decorative_w.svg",
+      "bytes": 2557,
+      "archived": "unused-assets/files/Vector/Grey/arrow_decorative_w.svg",
+      "sha256": "05d580692d3b05d66070da7fa1da28ac20041f820a0831f5467078e32d9081da"
+    },
+    {
+      "path": "Vector/Grey/arrow_decorative_w_small.svg",
+      "bytes": 1604,
+      "archived": "unused-assets/files/Vector/Grey/arrow_decorative_w_small.svg",
+      "sha256": "689427fc95406fe2bffe1d237db45a805cebe76c7e55b28c20dd8ccc53960007"
+    },
+    {
+      "path": "Vector/Grey/button_rectangle_border.svg",
+      "bytes": 1010,
+      "archived": "unused-assets/files/Vector/Grey/button_rectangle_border.svg",
+      "sha256": "2e027b7631d7fb306381d49aaf7e068f0c38f0b4e58d94f7c17a6bb888b33734"
+    },
+    {
+      "path": "Vector/Grey/button_round_border.svg",
+      "bytes": 2211,
+      "archived": "unused-assets/files/Vector/Grey/button_round_border.svg",
+      "sha256": "05413cb684d02084879aee6adfe780b53af95a47afa6b8e6fc5f31f809a5f26e"
+    },
+    {
+      "path": "Vector/Grey/button_round_depth_border.svg",
+      "bytes": 2991,
+      "archived": "unused-assets/files/Vector/Grey/button_round_depth_border.svg",
+      "sha256": "4c8bed3114aca1dbe642e889f0b716a49cdbb32d2073aa5485c966a2496cdac7"
+    },
+    {
+      "path": "Vector/Grey/button_round_depth_flat.svg",
+      "bytes": 1772,
+      "archived": "unused-assets/files/Vector/Grey/button_round_depth_flat.svg",
+      "sha256": "af1cc483e60fb1f610e15c3faeb92c2b56492a80fdf9c326017d1d9a310793d5"
+    },
+    {
+      "path": "Vector/Grey/button_round_depth_gloss.svg",
+      "bytes": 1417,
+      "archived": "unused-assets/files/Vector/Grey/button_round_depth_gloss.svg",
+      "sha256": "54c0515732904c911a9cab1591d857b8e0fa07418005ad1df5909b026d4b8cd7"
+    },
+    {
+      "path": "Vector/Grey/button_round_depth_gradient.svg",
+      "bytes": 2063,
+      "archived": "unused-assets/files/Vector/Grey/button_round_depth_gradient.svg",
+      "sha256": "5f833e3923d3218c8038790bb59b3f758d1c206bd60d78a3859896f0b34cfcd5"
+    },
+    {
+      "path": "Vector/Grey/button_round_depth_line.svg",
+      "bytes": 2988,
+      "archived": "unused-assets/files/Vector/Grey/button_round_depth_line.svg",
+      "sha256": "44273ecf28d1562dd26ccf1698978ce6728d276da755408e1b229d2dfa43d7d7"
+    },
+    {
+      "path": "Vector/Grey/button_round_flat.svg",
+      "bytes": 1009,
+      "archived": "unused-assets/files/Vector/Grey/button_round_flat.svg",
+      "sha256": "e7c486fa67fa4fa3d750fbba3a0f4b08e480cc810172b614cd19212d958286da"
+    },
+    {
+      "path": "Vector/Grey/button_round_gloss.svg",
+      "bytes": 875,
+      "archived": "unused-assets/files/Vector/Grey/button_round_gloss.svg",
+      "sha256": "af835ed9b1cbc9e74e5c11f605736d8ef2ca3cbc66ff420555ec90b55b958a1b"
+    },
+    {
+      "path": "Vector/Grey/button_round_gradient.svg",
+      "bytes": 1476,
+      "archived": "unused-assets/files/Vector/Grey/button_round_gradient.svg",
+      "sha256": "4c9ad1a95967504ac8a78da94fd9d75662cec3e3dafabaa296a6345316491b64"
+    },
+    {
+      "path": "Vector/Grey/button_round_line.svg",
+      "bytes": 1745,
+      "archived": "unused-assets/files/Vector/Grey/button_round_line.svg",
+      "sha256": "a221346e554035d6e82f01dcde99cdded8c8514da45cfc127ff94158acf58b44"
+    },
+    {
+      "path": "Vector/Grey/button_square_depth_border.svg",
+      "bytes": 2121,
+      "archived": "unused-assets/files/Vector/Grey/button_square_depth_border.svg",
+      "sha256": "39778a2dcc22135a1a785d1c6df77aba46c720b1f90ebffc547569b0724d19b6"
+    },
+    {
+      "path": "Vector/Grey/button_square_depth_gloss.svg",
+      "bytes": 837,
+      "archived": "unused-assets/files/Vector/Grey/button_square_depth_gloss.svg",
+      "sha256": "20cafb0d726c3c202f55ea8e5cff8e3bfabfe0ce7b9623e97b8840af58082686"
+    },
+    {
+      "path": "Vector/Grey/button_square_depth_gradient.svg",
+      "bytes": 1302,
+      "archived": "unused-assets/files/Vector/Grey/button_square_depth_gradient.svg",
+      "sha256": "4e8972dc282d5f50bdac45cd4059f7a0750c7c0231f18bde9af9cb72dc8ad7c8"
+    },
+    {
+      "path": "Vector/Grey/button_square_depth_line.svg",
+      "bytes": 2121,
+      "archived": "unused-assets/files/Vector/Grey/button_square_depth_line.svg",
+      "sha256": "7310ef455b1d70e47b67f80bb3917c4f4e5511d42a77bc6b2a9b36ce0b758fd8"
+    },
+    {
+      "path": "Vector/Grey/button_square_gradient.svg",
+      "bytes": 1992,
+      "archived": "unused-assets/files/Vector/Grey/button_square_gradient.svg",
+      "sha256": "a71daa70d6c579d9027a30ffe5ba94f178d2163b85609274ee756354d6160903"
+    },
+    {
+      "path": "Vector/Grey/check_round_color.svg",
+      "bytes": 985,
+      "archived": "unused-assets/files/Vector/Grey/check_round_color.svg",
+      "sha256": "ecd7798cc8909d5f748d9fed109fe4ac684508690f340e57a9e1f2c52144397b"
+    },
+    {
+      "path": "Vector/Grey/check_round_grey.svg",
+      "bytes": 985,
+      "archived": "unused-assets/files/Vector/Grey/check_round_grey.svg",
+      "sha256": "4053bd73b4944d2d7eaac9d4ff66cd7f36df2d14e364677f34f6048108059242"
+    },
+    {
+      "path": "Vector/Grey/check_round_round_circle.svg",
+      "bytes": 1661,
+      "archived": "unused-assets/files/Vector/Grey/check_round_round_circle.svg",
+      "sha256": "06a3613d7bd700ddfc6365e50d09f3d3f34f8516db0eb0afeff00fc6964f17e4"
+    },
+    {
+      "path": "Vector/Grey/check_square_color.svg",
+      "bytes": 642,
+      "archived": "unused-assets/files/Vector/Grey/check_square_color.svg",
+      "sha256": "67ebca20cb08c54ec0ea0a1c529017c23eacb215f41a20bd5d18b1df75f52f35"
+    },
+    {
+      "path": "Vector/Grey/check_square_color_checkmark.svg",
+      "bytes": 1610,
+      "archived": "unused-assets/files/Vector/Grey/check_square_color_checkmark.svg",
+      "sha256": "53885fdb31a3632de4c14229675cccf57c7fa75e4ae0900751060f2959959b6a"
+    },
+    {
+      "path": "Vector/Grey/check_square_color_cross.svg",
+      "bytes": 1978,
+      "archived": "unused-assets/files/Vector/Grey/check_square_color_cross.svg",
+      "sha256": "f1dc5be3a2429f62dc376c6eca84770fc2c19313fb4ce02b4f59afecbb06b70f"
+    },
+    {
+      "path": "Vector/Grey/check_square_color_square.svg",
+      "bytes": 875,
+      "archived": "unused-assets/files/Vector/Grey/check_square_color_square.svg",
+      "sha256": "f5d20357a9fca2babc96c4cc3880906eebc95cf1f318d89def2069434bd7331a"
+    },
+    {
+      "path": "Vector/Grey/check_square_grey.svg",
+      "bytes": 642,
+      "archived": "unused-assets/files/Vector/Grey/check_square_grey.svg",
+      "sha256": "e2ff9b904390ebf1c1692738d0b9eafa2c636662d52dbb7f6eb1cc1f766e62d9"
+    },
+    {
+      "path": "Vector/Grey/check_square_grey_checkmark.svg",
+      "bytes": 1610,
+      "archived": "unused-assets/files/Vector/Grey/check_square_grey_checkmark.svg",
+      "sha256": "6890c1acf13875fa4b109f0aec886a829066d029eae9634c47341c0ded830b49"
+    },
+    {
+      "path": "Vector/Grey/check_square_grey_cross.svg",
+      "bytes": 1978,
+      "archived": "unused-assets/files/Vector/Grey/check_square_grey_cross.svg",
+      "sha256": "c5dc22ef9b084cc7a037a439f5b2d50c287a49c3d5ac394fef4a66d75e0585dc"
+    },
+    {
+      "path": "Vector/Grey/check_square_grey_square.svg",
+      "bytes": 875,
+      "archived": "unused-assets/files/Vector/Grey/check_square_grey_square.svg",
+      "sha256": "d00c72f285934f4277f0f2b544f6219f3168dc1f8db1c9faa89fce4a814deea1"
+    },
+    {
+      "path": "Vector/Grey/icon_circle.svg",
+      "bytes": 740,
+      "archived": "unused-assets/files/Vector/Grey/icon_circle.svg",
+      "sha256": "0f341323e4d7c0d4ac95d2fd512489e3d817456831673ef3903a851bffee137c"
+    },
+    {
+      "path": "Vector/Grey/icon_cross.svg",
+      "bytes": 1403,
+      "archived": "unused-assets/files/Vector/Grey/icon_cross.svg",
+      "sha256": "52dbc06653a03cbbb04c05ee33cc7323f4c22770e82ac7b8b056d711e58c0758"
+    },
+    {
+      "path": "Vector/Grey/icon_outline_checkmark.svg",
+      "bytes": 996,
+      "archived": "unused-assets/files/Vector/Grey/icon_outline_checkmark.svg",
+      "sha256": "386d499751294b70088408f873444e2a62d3fe3e71987ef30ed2cb02baa73804"
+    },
+    {
+      "path": "Vector/Grey/icon_outline_cross.svg",
+      "bytes": 1403,
+      "archived": "unused-assets/files/Vector/Grey/icon_outline_cross.svg",
+      "sha256": "9e40599838b3e1f56ea7ceeabf4bd14b6166140bc0a474496e2229e08243e924"
+    },
+    {
+      "path": "Vector/Grey/icon_outline_square.svg",
+      "bytes": 352,
+      "archived": "unused-assets/files/Vector/Grey/icon_outline_square.svg",
+      "sha256": "788a1dcf4a0a0b73d9747e77ebc22dd13a3b9796e4dc9493372a09565b595908"
+    },
+    {
+      "path": "Vector/Grey/icon_square.svg",
+      "bytes": 352,
+      "archived": "unused-assets/files/Vector/Grey/icon_square.svg",
+      "sha256": "375230fad0535d116acb43b1751905c087f01784d384afbad516cde69f7ea852"
+    },
+    {
+      "path": "Vector/Grey/slide_horizontal_color_section.svg",
+      "bytes": 924,
+      "archived": "unused-assets/files/Vector/Grey/slide_horizontal_color_section.svg",
+      "sha256": "6020057630088abd775f646f0f94741483d1d15442535ef18a35527beaaa056d"
+    },
+    {
+      "path": "Vector/Grey/slide_horizontal_color_section_wide.svg",
+      "bytes": 919,
+      "archived": "unused-assets/files/Vector/Grey/slide_horizontal_color_section_wide.svg",
+      "sha256": "e8fdc9c78255b46333cd2e2d1988edbf2ba92ed7067e10aff01d2736318cc735"
+    },
+    {
+      "path": "Vector/Grey/slide_horizontal_grey_section.svg",
+      "bytes": 924,
+      "archived": "unused-assets/files/Vector/Grey/slide_horizontal_grey_section.svg",
+      "sha256": "a2ed71ac6136e05e4dc52080fcf7b2e81c84dd6df80276739ab17cf00c6b4dd1"
+    },
+    {
+      "path": "Vector/Grey/slide_horizontal_grey_section_wide.svg",
+      "bytes": 918,
+      "archived": "unused-assets/files/Vector/Grey/slide_horizontal_grey_section_wide.svg",
+      "sha256": "67db3b47d6ca5b86cfdcbb5ae9d3346a0780bd9ecbb8290fbf6b50852bec10fb"
+    },
+    {
+      "path": "Vector/Grey/slide_vertical_color.svg",
+      "bytes": 1081,
+      "archived": "unused-assets/files/Vector/Grey/slide_vertical_color.svg",
+      "sha256": "2e18a941bc7658303ca9f181a70089668175850c579761c5e66f7efbef8bb40e"
+    },
+    {
+      "path": "Vector/Grey/slide_vertical_color_section.svg",
+      "bytes": 912,
+      "archived": "unused-assets/files/Vector/Grey/slide_vertical_color_section.svg",
+      "sha256": "650ca3e6fa5eb434b6c246ac53609e1483141568b45908737aaed780d87fafe9"
+    },
+    {
+      "path": "Vector/Grey/slide_vertical_color_section_wide.svg",
+      "bytes": 910,
+      "archived": "unused-assets/files/Vector/Grey/slide_vertical_color_section_wide.svg",
+      "sha256": "17419ebd98388e109719a05035a453476715948529e852476e2fc0b478452c30"
+    },
+    {
+      "path": "Vector/Grey/slide_vertical_grey.svg",
+      "bytes": 1081,
+      "archived": "unused-assets/files/Vector/Grey/slide_vertical_grey.svg",
+      "sha256": "3f6dae498aa8a1c3bf210840e258f938c46f934f64db389a0505e58d99d8cb46"
+    },
+    {
+      "path": "Vector/Grey/slide_vertical_grey_section.svg",
+      "bytes": 912,
+      "archived": "unused-assets/files/Vector/Grey/slide_vertical_grey_section.svg",
+      "sha256": "a27935fc79ef6f46d69c136087963087ece1bc35bf44f826e1f080e8d6fa7d2f"
+    },
+    {
+      "path": "Vector/Grey/slide_vertical_grey_section_wide.svg",
+      "bytes": 909,
+      "archived": "unused-assets/files/Vector/Grey/slide_vertical_grey_section_wide.svg",
+      "sha256": "e4a1dca702a4d544211da8313ff600b009c9177f1622c6c81b54b70baaf09f0e"
+    },
+    {
+      "path": "Vector/Grey/star_outline.svg",
+      "bytes": 2717,
+      "archived": "unused-assets/files/Vector/Grey/star_outline.svg",
+      "sha256": "88f7acccb7b973d3ba502f93956aa60f59d50f665f195fb07af0d6b8d3f49afa"
+    },
+    {
+      "path": "Vector/Grey/star_outline_depth.svg",
+      "bytes": 1322,
+      "archived": "unused-assets/files/Vector/Grey/star_outline_depth.svg",
+      "sha256": "2872807a9e6beb8fb04a03dcaa8549ca0cc277dc5bebd2667b0bc1f4cb7cebdd"
+    },
+    {
+      "path": "Vector/Red/arrow_basic_e.svg",
+      "bytes": 1355,
+      "archived": "unused-assets/files/Vector/Red/arrow_basic_e.svg",
+      "sha256": "f73d4ec16e865be49a1cc18ed01b630947c9db6963c4949e65ad28e5336788a6"
+    },
+    {
+      "path": "Vector/Red/arrow_basic_e_small.svg",
+      "bytes": 1029,
+      "archived": "unused-assets/files/Vector/Red/arrow_basic_e_small.svg",
+      "sha256": "22447e590660c5eb58a61c967f34e02bcdfd06182bdf8bba77db7e274b98d1a5"
+    },
+    {
+      "path": "Vector/Red/arrow_basic_n.svg",
+      "bytes": 1458,
+      "archived": "unused-assets/files/Vector/Red/arrow_basic_n.svg",
+      "sha256": "fb9913d613f2fd4b852014c41387f985a47691bc71d0beee86c9f19c39f09a2d"
+    },
+    {
+      "path": "Vector/Red/arrow_basic_n_small.svg",
+      "bytes": 1084,
+      "archived": "unused-assets/files/Vector/Red/arrow_basic_n_small.svg",
+      "sha256": "21d25ded41eea99945a437548c0aef9d3db5a595b0c92b7e792abae98e80441d"
+    },
+    {
+      "path": "Vector/Red/arrow_basic_s.svg",
+      "bytes": 1432,
+      "archived": "unused-assets/files/Vector/Red/arrow_basic_s.svg",
+      "sha256": "02a98dc9e5bbf6be1172c3dccf3cdaaf49b20271b1bfd69bd12dcaf0ae2c41f7"
+    },
+    {
+      "path": "Vector/Red/arrow_basic_s_small.svg",
+      "bytes": 1069,
+      "archived": "unused-assets/files/Vector/Red/arrow_basic_s_small.svg",
+      "sha256": "6232b26588760b9c704b29132cae61324d7ec2f456a39e470989c15d9adfbad6"
+    },
+    {
+      "path": "Vector/Red/arrow_basic_w.svg",
+      "bytes": 1401,
+      "archived": "unused-assets/files/Vector/Red/arrow_basic_w.svg",
+      "sha256": "45c143d64d9aa30f7535ce540bf53d14915200667ff475d504bc344e9cd688e2"
+    },
+    {
+      "path": "Vector/Red/arrow_basic_w_small.svg",
+      "bytes": 1012,
+      "archived": "unused-assets/files/Vector/Red/arrow_basic_w_small.svg",
+      "sha256": "d90863088634eb203085e32acee20ce0d6bbb44f97ad82c0a96d47f7b2855811"
+    },
+    {
+      "path": "Vector/Red/arrow_decorative_e.svg",
+      "bytes": 2480,
+      "archived": "unused-assets/files/Vector/Red/arrow_decorative_e.svg",
+      "sha256": "5ed8426c4dbf7b8c777857bf92f636dcbe5ece104f7ba89462edab82be951a52"
+    },
+    {
+      "path": "Vector/Red/arrow_decorative_e_small.svg",
+      "bytes": 1535,
+      "archived": "unused-assets/files/Vector/Red/arrow_decorative_e_small.svg",
+      "sha256": "04de7a3fec512085b20dc8381de81621e9f923a123d5f10f443b35a81bab49a7"
+    },
+    {
+      "path": "Vector/Red/arrow_decorative_n.svg",
+      "bytes": 2598,
+      "archived": "unused-assets/files/Vector/Red/arrow_decorative_n.svg",
+      "sha256": "b4880782ca2d42c3565e859aeda32c8bc99a1500b53686f06d26b72966930b40"
+    },
+    {
+      "path": "Vector/Red/arrow_decorative_n_small.svg",
+      "bytes": 1704,
+      "archived": "unused-assets/files/Vector/Red/arrow_decorative_n_small.svg",
+      "sha256": "807a661df3a277916f3fc6791060ec8ddc0f0b23f6314cf5ce583a7b2ea64389"
+    },
+    {
+      "path": "Vector/Red/arrow_decorative_s.svg",
+      "bytes": 2472,
+      "archived": "unused-assets/files/Vector/Red/arrow_decorative_s.svg",
+      "sha256": "91183dcea584aa4e6ddd7a23d0d12798daf30d6deb5aef1a5e19f1f3c7bd529a"
+    },
+    {
+      "path": "Vector/Red/arrow_decorative_s_small.svg",
+      "bytes": 1587,
+      "archived": "unused-assets/files/Vector/Red/arrow_decorative_s_small.svg",
+      "sha256": "31835d267ab149a20f9a690fc22d940c0037abc9b2c8013c646d62a66a16b6d7"
+    },
+    {
+      "path": "Vector/Red/arrow_decorative_w.svg",
+      "bytes": 2557,
+      "archived": "unused-assets/files/Vector/Red/arrow_decorative_w.svg",
+      "sha256": "2174c6dbd8590da5d2935421a36a40f0d8d4c200c16a5e02306d7b397c6e4b06"
+    },
+    {
+      "path": "Vector/Red/arrow_decorative_w_small.svg",
+      "bytes": 1604,
+      "archived": "unused-assets/files/Vector/Red/arrow_decorative_w_small.svg",
+      "sha256": "735d9bc6fd6d0f48b8bd5fef3fb171dbbbdd4df5d58ce8e3f40aa07ff044fb82"
+    },
+    {
+      "path": "Vector/Red/button_rectangle_border.svg",
+      "bytes": 1100,
+      "archived": "unused-assets/files/Vector/Red/button_rectangle_border.svg",
+      "sha256": "d07085f76f532fbd1413e9d6eba54600e17a69ca6d6240337301f22e03187a07"
+    },
+    {
+      "path": "Vector/Red/button_round_border.svg",
+      "bytes": 2301,
+      "archived": "unused-assets/files/Vector/Red/button_round_border.svg",
+      "sha256": "9f0a8359cbbad59437aaa05f17a65b5a992c220277f42767a6c07d58fd40b96d"
+    },
+    {
+      "path": "Vector/Red/button_round_depth_border.svg",
+      "bytes": 3078,
+      "archived": "unused-assets/files/Vector/Red/button_round_depth_border.svg",
+      "sha256": "1c2f2d5cc12f1f41f7e1ed8b78f5fee8ccf5b145aa52ee5bb92ad64502e5ec1e"
+    },
+    {
+      "path": "Vector/Red/button_round_depth_flat.svg",
+      "bytes": 1772,
+      "archived": "unused-assets/files/Vector/Red/button_round_depth_flat.svg",
+      "sha256": "8160485e7ebe1d90835bc1b50ad25f0671e9ab39500726cc4c0ab94091571675"
+    },
+    {
+      "path": "Vector/Red/button_round_depth_gloss.svg",
+      "bytes": 1417,
+      "archived": "unused-assets/files/Vector/Red/button_round_depth_gloss.svg",
+      "sha256": "06789fec1808735e6d4d3f80fc40b75e4c1f1edfc623dd4863c881e768fa939e"
+    },
+    {
+      "path": "Vector/Red/button_round_depth_gradient.svg",
+      "bytes": 2063,
+      "archived": "unused-assets/files/Vector/Red/button_round_depth_gradient.svg",
+      "sha256": "a14091354e25a55695c04b9f0ebe9eb1ca1f8fbaae8f2cf20fac632a822e5a70"
+    },
+    {
+      "path": "Vector/Red/button_round_depth_line.svg",
+      "bytes": 3035,
+      "archived": "unused-assets/files/Vector/Red/button_round_depth_line.svg",
+      "sha256": "2ae419c618925c2082448f836d6dcca1d3fd83c6c8ef18e31eb6e7d965937b1a"
+    },
+    {
+      "path": "Vector/Red/button_round_flat.svg",
+      "bytes": 1009,
+      "archived": "unused-assets/files/Vector/Red/button_round_flat.svg",
+      "sha256": "d375413b9c4e0da62246b822965aa45d2fe744aa470d30cd73b27009d6f7f886"
+    },
+    {
+      "path": "Vector/Red/button_round_gloss.svg",
+      "bytes": 875,
+      "archived": "unused-assets/files/Vector/Red/button_round_gloss.svg",
+      "sha256": "ccec6e0f3468d17610ed72cfa8d592cf40e99a5e0a3e37987a12e259f5672925"
+    },
+    {
+      "path": "Vector/Red/button_round_gradient.svg",
+      "bytes": 1476,
+      "archived": "unused-assets/files/Vector/Red/button_round_gradient.svg",
+      "sha256": "7d8ac5ed08a9190e36f343914d3597b081451db6fea4fc75b162c8e380e8df89"
+    },
+    {
+      "path": "Vector/Red/button_round_line.svg",
+      "bytes": 1780,
+      "archived": "unused-assets/files/Vector/Red/button_round_line.svg",
+      "sha256": "469684a8465bb2ec5b846645f5de63ccec6e5fc039cd3566cb9bc0f161dbcc5b"
+    },
+    {
+      "path": "Vector/Red/button_square_depth_border.svg",
+      "bytes": 2211,
+      "archived": "unused-assets/files/Vector/Red/button_square_depth_border.svg",
+      "sha256": "92d87cd3d6115d2ed3dae9d11675150d5e648d51f1fbb1c546dca47da2872f47"
+    },
+    {
+      "path": "Vector/Red/button_square_depth_gloss.svg",
+      "bytes": 837,
+      "archived": "unused-assets/files/Vector/Red/button_square_depth_gloss.svg",
+      "sha256": "230c9157831079448e14170ceefadbe9b7a75dd84191d95b5298ffd9c783c7f4"
+    },
+    {
+      "path": "Vector/Red/button_square_depth_gradient.svg",
+      "bytes": 1301,
+      "archived": "unused-assets/files/Vector/Red/button_square_depth_gradient.svg",
+      "sha256": "cc75b3b0650c3d1bd13be33d1e59afd712aa05e949300a65836ca8470e8e4c42"
+    },
+    {
+      "path": "Vector/Red/button_square_depth_line.svg",
+      "bytes": 2166,
+      "archived": "unused-assets/files/Vector/Red/button_square_depth_line.svg",
+      "sha256": "935692d2c1b2f5ca163cbdb5eff203b0f76cb12ba224f18f0786bb3beb3c0d9e"
+    },
+    {
+      "path": "Vector/Red/button_square_gradient.svg",
+      "bytes": 1991,
+      "archived": "unused-assets/files/Vector/Red/button_square_gradient.svg",
+      "sha256": "fabc28db6715eb0607466a4132ba353de28aa8b0d6c49a8d00fe4c1a96dabd16"
+    },
+    {
+      "path": "Vector/Red/check_round_color.svg",
+      "bytes": 985,
+      "archived": "unused-assets/files/Vector/Red/check_round_color.svg",
+      "sha256": "e5b9104213351da5b7091bbd61446c089b350f4ace358cf2f0a9d4363810f48b"
+    },
+    {
+      "path": "Vector/Red/check_round_grey.svg",
+      "bytes": 985,
+      "archived": "unused-assets/files/Vector/Red/check_round_grey.svg",
+      "sha256": "4053bd73b4944d2d7eaac9d4ff66cd7f36df2d14e364677f34f6048108059242"
+    },
+    {
+      "path": "Vector/Red/check_round_round_circle.svg",
+      "bytes": 1661,
+      "archived": "unused-assets/files/Vector/Red/check_round_round_circle.svg",
+      "sha256": "7c96a2d86685d17a51b712c986a839473c8836b0d403ed00d9fdc47b7e6d5689"
+    },
+    {
+      "path": "Vector/Red/check_square_color.svg",
+      "bytes": 642,
+      "archived": "unused-assets/files/Vector/Red/check_square_color.svg",
+      "sha256": "8e6417f29d0708c1baf5f0675d72b4aff3d897b47fbbd88376e09754fd1e3d86"
+    },
+    {
+      "path": "Vector/Red/check_square_color_checkmark.svg",
+      "bytes": 1610,
+      "archived": "unused-assets/files/Vector/Red/check_square_color_checkmark.svg",
+      "sha256": "07e77458e75bce40f7d3df3c98e086e50fa3ce54f11406d404f6542b06cb4e50"
+    },
+    {
+      "path": "Vector/Red/check_square_color_cross.svg",
+      "bytes": 1978,
+      "archived": "unused-assets/files/Vector/Red/check_square_color_cross.svg",
+      "sha256": "ecdd4acd100522f17abb025cb1f6ad9704e6d69f088a92e08d1c1767d3499ebc"
+    },
+    {
+      "path": "Vector/Red/check_square_color_square.svg",
+      "bytes": 875,
+      "archived": "unused-assets/files/Vector/Red/check_square_color_square.svg",
+      "sha256": "2b96b605b2dbf18f8b9a379a552b69dee59e399e4a65957bbd4e052e951b7037"
+    },
+    {
+      "path": "Vector/Red/check_square_grey.svg",
+      "bytes": 642,
+      "archived": "unused-assets/files/Vector/Red/check_square_grey.svg",
+      "sha256": "e2ff9b904390ebf1c1692738d0b9eafa2c636662d52dbb7f6eb1cc1f766e62d9"
+    },
+    {
+      "path": "Vector/Red/check_square_grey_checkmark.svg",
+      "bytes": 1610,
+      "archived": "unused-assets/files/Vector/Red/check_square_grey_checkmark.svg",
+      "sha256": "64bf4c391f5398ce30f4361f62e5909239f4c24730591bd715643fef923c296f"
+    },
+    {
+      "path": "Vector/Red/check_square_grey_cross.svg",
+      "bytes": 1978,
+      "archived": "unused-assets/files/Vector/Red/check_square_grey_cross.svg",
+      "sha256": "8fd0cf3f1bf16ae49c9baaeb6c3626ef85355d4ef6597677f746bdfb188a3514"
+    },
+    {
+      "path": "Vector/Red/check_square_grey_square.svg",
+      "bytes": 875,
+      "archived": "unused-assets/files/Vector/Red/check_square_grey_square.svg",
+      "sha256": "bd8070678b3a18507cc1cb591b753561b34a012a33cf9c9959fbcfc260b44a96"
+    },
+    {
+      "path": "Vector/Red/icon_circle.svg",
+      "bytes": 740,
+      "archived": "unused-assets/files/Vector/Red/icon_circle.svg",
+      "sha256": "191632968265a79afe98604d1d347f27f0f0919cc8dbe728f2db8f2ce66ae7a7"
+    },
+    {
+      "path": "Vector/Red/icon_cross.svg",
+      "bytes": 1403,
+      "archived": "unused-assets/files/Vector/Red/icon_cross.svg",
+      "sha256": "4f387c6b86e35779ab7e998415caa0628fad7f8959a8fae80f21870bb73d55bf"
+    },
+    {
+      "path": "Vector/Red/icon_outline_checkmark.svg",
+      "bytes": 996,
+      "archived": "unused-assets/files/Vector/Red/icon_outline_checkmark.svg",
+      "sha256": "cbabbc67c3bb9a5329b1787a3be592a69ffdff0c7f9e7c53e780751e56bb2a60"
+    },
+    {
+      "path": "Vector/Red/icon_outline_cross.svg",
+      "bytes": 1403,
+      "archived": "unused-assets/files/Vector/Red/icon_outline_cross.svg",
+      "sha256": "be600dcf28b82a8f9d0cbbe12e751d46bc9d5d27147bec573988fdb282484760"
+    },
+    {
+      "path": "Vector/Red/icon_outline_square.svg",
+      "bytes": 352,
+      "archived": "unused-assets/files/Vector/Red/icon_outline_square.svg",
+      "sha256": "aa043092ad50e51bc8cbb207714d05ac1858d9f31790c9fbb540fda647424ac5"
+    },
+    {
+      "path": "Vector/Red/icon_square.svg",
+      "bytes": 352,
+      "archived": "unused-assets/files/Vector/Red/icon_square.svg",
+      "sha256": "e15662fb181152d538312947370aa942c9c20bc50250e44bc8c0e1b9315ec524"
+    },
+    {
+      "path": "Vector/Red/slide_horizontal_color_section.svg",
+      "bytes": 924,
+      "archived": "unused-assets/files/Vector/Red/slide_horizontal_color_section.svg",
+      "sha256": "7672bea8c5a7c1d547b89ae760913c401ca27983a9fb5680379722f8663c7c89"
+    },
+    {
+      "path": "Vector/Red/slide_horizontal_color_section_wide.svg",
+      "bytes": 918,
+      "archived": "unused-assets/files/Vector/Red/slide_horizontal_color_section_wide.svg",
+      "sha256": "f90e7a73227954b8396d5c40a991897adbbb4553c5ed156f107542702876a434"
+    },
+    {
+      "path": "Vector/Red/slide_horizontal_grey_section.svg",
+      "bytes": 924,
+      "archived": "unused-assets/files/Vector/Red/slide_horizontal_grey_section.svg",
+      "sha256": "a2ed71ac6136e05e4dc52080fcf7b2e81c84dd6df80276739ab17cf00c6b4dd1"
+    },
+    {
+      "path": "Vector/Red/slide_horizontal_grey_section_wide.svg",
+      "bytes": 918,
+      "archived": "unused-assets/files/Vector/Red/slide_horizontal_grey_section_wide.svg",
+      "sha256": "67db3b47d6ca5b86cfdcbb5ae9d3346a0780bd9ecbb8290fbf6b50852bec10fb"
+    },
+    {
+      "path": "Vector/Red/slide_vertical_color.svg",
+      "bytes": 1081,
+      "archived": "unused-assets/files/Vector/Red/slide_vertical_color.svg",
+      "sha256": "0aa55f2beec64da6deccebd4106fbf7badb1bd5f6549fc61284f964b65fb2f5e"
+    },
+    {
+      "path": "Vector/Red/slide_vertical_color_section.svg",
+      "bytes": 911,
+      "archived": "unused-assets/files/Vector/Red/slide_vertical_color_section.svg",
+      "sha256": "4e7e7cc669b324975f7f0358ef0eb4dc66ac4b459558448ab93e838c929e60c3"
+    },
+    {
+      "path": "Vector/Red/slide_vertical_color_section_wide.svg",
+      "bytes": 909,
+      "archived": "unused-assets/files/Vector/Red/slide_vertical_color_section_wide.svg",
+      "sha256": "ba96210c9c61153dc39134be3053ddaba8fcc65b6d9b70bb8d596d2f4c20cd61"
+    },
+    {
+      "path": "Vector/Red/slide_vertical_grey.svg",
+      "bytes": 1081,
+      "archived": "unused-assets/files/Vector/Red/slide_vertical_grey.svg",
+      "sha256": "3f6dae498aa8a1c3bf210840e258f938c46f934f64db389a0505e58d99d8cb46"
+    },
+    {
+      "path": "Vector/Red/slide_vertical_grey_section.svg",
+      "bytes": 912,
+      "archived": "unused-assets/files/Vector/Red/slide_vertical_grey_section.svg",
+      "sha256": "a27935fc79ef6f46d69c136087963087ece1bc35bf44f826e1f080e8d6fa7d2f"
+    },
+    {
+      "path": "Vector/Red/slide_vertical_grey_section_wide.svg",
+      "bytes": 909,
+      "archived": "unused-assets/files/Vector/Red/slide_vertical_grey_section_wide.svg",
+      "sha256": "e4a1dca702a4d544211da8313ff600b009c9177f1622c6c81b54b70baaf09f0e"
+    },
+    {
+      "path": "Vector/Red/star_outline.svg",
+      "bytes": 2717,
+      "archived": "unused-assets/files/Vector/Red/star_outline.svg",
+      "sha256": "88f7acccb7b973d3ba502f93956aa60f59d50f665f195fb07af0d6b8d3f49afa"
+    },
+    {
+      "path": "Vector/Red/star_outline_depth.svg",
+      "bytes": 1322,
+      "archived": "unused-assets/files/Vector/Red/star_outline_depth.svg",
+      "sha256": "2872807a9e6beb8fb04a03dcaa8549ca0cc277dc5bebd2667b0bc1f4cb7cebdd"
+    },
+    {
+      "path": "Vector/Yellow/arrow_basic_e.svg",
+      "bytes": 1355,
+      "archived": "unused-assets/files/Vector/Yellow/arrow_basic_e.svg",
+      "sha256": "f4db64c2d19d4cf783ad7050ba39a2c70bea400b4dc4d27aa476ec327a70a392"
+    },
+    {
+      "path": "Vector/Yellow/arrow_basic_e_small.svg",
+      "bytes": 1029,
+      "archived": "unused-assets/files/Vector/Yellow/arrow_basic_e_small.svg",
+      "sha256": "bf7e98e0cfefe97fd2e061918e1723fa7edd3570068ebad016c6ba8f09f3ebf9"
+    },
+    {
+      "path": "Vector/Yellow/arrow_basic_n.svg",
+      "bytes": 1458,
+      "archived": "unused-assets/files/Vector/Yellow/arrow_basic_n.svg",
+      "sha256": "1802c91c7f628bd17111a89c5d1e936970637f5af10c42ee380588db8200a9ff"
+    },
+    {
+      "path": "Vector/Yellow/arrow_basic_n_small.svg",
+      "bytes": 1084,
+      "archived": "unused-assets/files/Vector/Yellow/arrow_basic_n_small.svg",
+      "sha256": "9328e7206d6e66910e7d6224596fb93c28af845defe3f666770fd8a371bea3ff"
+    },
+    {
+      "path": "Vector/Yellow/arrow_basic_s.svg",
+      "bytes": 1432,
+      "archived": "unused-assets/files/Vector/Yellow/arrow_basic_s.svg",
+      "sha256": "b90a25e983a9a5435ff3cd3f9acb219ac01b54dbbb61c33a671c3a0a3096767a"
+    },
+    {
+      "path": "Vector/Yellow/arrow_basic_s_small.svg",
+      "bytes": 1069,
+      "archived": "unused-assets/files/Vector/Yellow/arrow_basic_s_small.svg",
+      "sha256": "eae47970cf1769f30fb08b59f557d43a673174c3e9455eefdd475800e698a1d4"
+    },
+    {
+      "path": "Vector/Yellow/arrow_basic_w.svg",
+      "bytes": 1401,
+      "archived": "unused-assets/files/Vector/Yellow/arrow_basic_w.svg",
+      "sha256": "038e417d19359c52878a9ace5fc10d2041f078be173cf64e0557b022c46502ea"
+    },
+    {
+      "path": "Vector/Yellow/arrow_basic_w_small.svg",
+      "bytes": 1012,
+      "archived": "unused-assets/files/Vector/Yellow/arrow_basic_w_small.svg",
+      "sha256": "b332d482400a3e572b7afecb5a438356c0fde0b00e52ced31eaaef6f92362876"
+    },
+    {
+      "path": "Vector/Yellow/arrow_decorative_e.svg",
+      "bytes": 2480,
+      "archived": "unused-assets/files/Vector/Yellow/arrow_decorative_e.svg",
+      "sha256": "c6e4ac175c7adb26e4e03c9258c81cc307f7df9a3dfa41c5296e16dad0a04c43"
+    },
+    {
+      "path": "Vector/Yellow/arrow_decorative_e_small.svg",
+      "bytes": 1535,
+      "archived": "unused-assets/files/Vector/Yellow/arrow_decorative_e_small.svg",
+      "sha256": "9aa21969c5044629bc4c9223d75491c804b041582f9f7f5527594b43798e9526"
+    },
+    {
+      "path": "Vector/Yellow/arrow_decorative_n.svg",
+      "bytes": 2598,
+      "archived": "unused-assets/files/Vector/Yellow/arrow_decorative_n.svg",
+      "sha256": "ebd0caa3f76ceec17ff205cde3b40929ff287763f2afbab75b610435ef2c1f92"
+    },
+    {
+      "path": "Vector/Yellow/arrow_decorative_n_small.svg",
+      "bytes": 1704,
+      "archived": "unused-assets/files/Vector/Yellow/arrow_decorative_n_small.svg",
+      "sha256": "6fa6e698655c30120ca36595bf6c13d29c6de81b045891401138b1b4d9b615f1"
+    },
+    {
+      "path": "Vector/Yellow/arrow_decorative_s.svg",
+      "bytes": 2472,
+      "archived": "unused-assets/files/Vector/Yellow/arrow_decorative_s.svg",
+      "sha256": "a5b8d4a9002538198c17cd3e5ff6893a36c28257fd535e5f9754362e3075c94a"
+    },
+    {
+      "path": "Vector/Yellow/arrow_decorative_s_small.svg",
+      "bytes": 1587,
+      "archived": "unused-assets/files/Vector/Yellow/arrow_decorative_s_small.svg",
+      "sha256": "6ca43ab2771f152e693ff68be4f80cb033998814764ed4f20123a163413a2240"
+    },
+    {
+      "path": "Vector/Yellow/arrow_decorative_w.svg",
+      "bytes": 2557,
+      "archived": "unused-assets/files/Vector/Yellow/arrow_decorative_w.svg",
+      "sha256": "72d50f024162fa92ea06f1fffbc5ac98978ac5f1e4052bb5873cd9953148c71e"
+    },
+    {
+      "path": "Vector/Yellow/arrow_decorative_w_small.svg",
+      "bytes": 1604,
+      "archived": "unused-assets/files/Vector/Yellow/arrow_decorative_w_small.svg",
+      "sha256": "395f4361f6c8a85eaaf79c89a3eeaa456195bee79bec97f24436f831ccc0bd38"
+    },
+    {
+      "path": "Vector/Yellow/button_rectangle_border.svg",
+      "bytes": 1100,
+      "archived": "unused-assets/files/Vector/Yellow/button_rectangle_border.svg",
+      "sha256": "234a16390cdc076e85a18541e442c2620138636b7be2d86df22a88338f1e1aaf"
+    },
+    {
+      "path": "Vector/Yellow/button_round_border.svg",
+      "bytes": 2301,
+      "archived": "unused-assets/files/Vector/Yellow/button_round_border.svg",
+      "sha256": "931c85c84fa3f64b959d188195225fe6eae3c433fd312e5feea28e24848123dd"
+    },
+    {
+      "path": "Vector/Yellow/button_round_depth_border.svg",
+      "bytes": 3078,
+      "archived": "unused-assets/files/Vector/Yellow/button_round_depth_border.svg",
+      "sha256": "2be6be9c657076f38ca1252629fd21e089990a2298f75eb9a9fb9bed9156cfcd"
+    },
+    {
+      "path": "Vector/Yellow/button_round_depth_flat.svg",
+      "bytes": 1772,
+      "archived": "unused-assets/files/Vector/Yellow/button_round_depth_flat.svg",
+      "sha256": "fd51b4afa923c9f1353bf7f71d5a4af3358c4dc064af46b89d1eb108192f1d54"
+    },
+    {
+      "path": "Vector/Yellow/button_round_depth_gloss.svg",
+      "bytes": 1417,
+      "archived": "unused-assets/files/Vector/Yellow/button_round_depth_gloss.svg",
+      "sha256": "cd43cf4e0570139d8bb855b78f2548829437d936ae3536714edc9991797637f5"
+    },
+    {
+      "path": "Vector/Yellow/button_round_depth_gradient.svg",
+      "bytes": 2063,
+      "archived": "unused-assets/files/Vector/Yellow/button_round_depth_gradient.svg",
+      "sha256": "d1d9bf10acaba0facbc3a13ef58959231815f1bea0b1568da28c2099ae0b3333"
+    },
+    {
+      "path": "Vector/Yellow/button_round_depth_line.svg",
+      "bytes": 3033,
+      "archived": "unused-assets/files/Vector/Yellow/button_round_depth_line.svg",
+      "sha256": "994ac33d643514ba0894fb297ea563ab455e2af01d62d1cea999ab693d0d90b9"
+    },
+    {
+      "path": "Vector/Yellow/button_round_flat.svg",
+      "bytes": 1009,
+      "archived": "unused-assets/files/Vector/Yellow/button_round_flat.svg",
+      "sha256": "8e665229e26624b951cb41a7c4db851b9e088207100180be11866b4b42cfe24b"
+    },
+    {
+      "path": "Vector/Yellow/button_round_gloss.svg",
+      "bytes": 875,
+      "archived": "unused-assets/files/Vector/Yellow/button_round_gloss.svg",
+      "sha256": "19e7d275fff1adde13f58af2a925b5ce318c6f838c8771e76d42a1c0202bfb4d"
+    },
+    {
+      "path": "Vector/Yellow/button_round_gradient.svg",
+      "bytes": 1476,
+      "archived": "unused-assets/files/Vector/Yellow/button_round_gradient.svg",
+      "sha256": "cc839d69f504e16cd8da3c2fd1f5e15440e20270815807837d871a6243f379bc"
+    },
+    {
+      "path": "Vector/Yellow/button_round_line.svg",
+      "bytes": 1835,
+      "archived": "unused-assets/files/Vector/Yellow/button_round_line.svg",
+      "sha256": "fda0bd652e6de66ee1dda2f0c0c488216f1b8b0d88a6c2dbc522c71f94de0f8e"
+    },
+    {
+      "path": "Vector/Yellow/button_square_depth_border.svg",
+      "bytes": 2211,
+      "archived": "unused-assets/files/Vector/Yellow/button_square_depth_border.svg",
+      "sha256": "2ffa1fbc3b6cb8cdcaa2a70be29e970d37d89773caa8925743a1eb89c5a66572"
+    },
+    {
+      "path": "Vector/Yellow/button_square_depth_gloss.svg",
+      "bytes": 837,
+      "archived": "unused-assets/files/Vector/Yellow/button_square_depth_gloss.svg",
+      "sha256": "3bd4ac15c01a2ecce91d97c2c1c1ffe8a730a2dbc0cdd3dcf6bbf9332bf878ca"
+    },
+    {
+      "path": "Vector/Yellow/button_square_depth_gradient.svg",
+      "bytes": 1302,
+      "archived": "unused-assets/files/Vector/Yellow/button_square_depth_gradient.svg",
+      "sha256": "cade64bb9007cfa798227cf4bec3c77e7d386599595e5170cfe722c57df08f41"
+    },
+    {
+      "path": "Vector/Yellow/button_square_depth_line.svg",
+      "bytes": 2166,
+      "archived": "unused-assets/files/Vector/Yellow/button_square_depth_line.svg",
+      "sha256": "700aa3996070f42ab6dc891aef941cb0016151ef6febc8501064dc1673e66502"
+    },
+    {
+      "path": "Vector/Yellow/button_square_gradient.svg",
+      "bytes": 1990,
+      "archived": "unused-assets/files/Vector/Yellow/button_square_gradient.svg",
+      "sha256": "62d89b96a44d43ac8ca5d7e518136106f7961fd3b8172f4e1ada33ab21f684d3"
+    },
+    {
+      "path": "Vector/Yellow/check_round_color.svg",
+      "bytes": 985,
+      "archived": "unused-assets/files/Vector/Yellow/check_round_color.svg",
+      "sha256": "1d97514a2960f3b080439fe00f9e2bb315119f5b431ae291b909623df63c1ae9"
+    },
+    {
+      "path": "Vector/Yellow/check_round_grey.svg",
+      "bytes": 985,
+      "archived": "unused-assets/files/Vector/Yellow/check_round_grey.svg",
+      "sha256": "4053bd73b4944d2d7eaac9d4ff66cd7f36df2d14e364677f34f6048108059242"
+    },
+    {
+      "path": "Vector/Yellow/check_round_round_circle.svg",
+      "bytes": 1661,
+      "archived": "unused-assets/files/Vector/Yellow/check_round_round_circle.svg",
+      "sha256": "662d247a6aef30839461c3abe91d51ec74c9e4971ca29ccb703ecccf9502c390"
+    },
+    {
+      "path": "Vector/Yellow/check_square_color.svg",
+      "bytes": 642,
+      "archived": "unused-assets/files/Vector/Yellow/check_square_color.svg",
+      "sha256": "34668678752d83e21b43f1b710c325425d234530d2a7c6218cdaccf06e761074"
+    },
+    {
+      "path": "Vector/Yellow/check_square_color_checkmark.svg",
+      "bytes": 1610,
+      "archived": "unused-assets/files/Vector/Yellow/check_square_color_checkmark.svg",
+      "sha256": "5683908724c28648ed1a8f47bfd081a889ea7bbfcc3bbfdaf525d8fba0d38a09"
+    },
+    {
+      "path": "Vector/Yellow/check_square_color_cross.svg",
+      "bytes": 1978,
+      "archived": "unused-assets/files/Vector/Yellow/check_square_color_cross.svg",
+      "sha256": "2ec9d41bcc9495fe3143253c71b60b6db11b553572f104190305850555d49b7e"
+    },
+    {
+      "path": "Vector/Yellow/check_square_color_square.svg",
+      "bytes": 875,
+      "archived": "unused-assets/files/Vector/Yellow/check_square_color_square.svg",
+      "sha256": "475a8f056586a634f8af9d8bc9dd6f6f64f356dacc5e3814428d170fc43805b9"
+    },
+    {
+      "path": "Vector/Yellow/check_square_grey.svg",
+      "bytes": 642,
+      "archived": "unused-assets/files/Vector/Yellow/check_square_grey.svg",
+      "sha256": "e2ff9b904390ebf1c1692738d0b9eafa2c636662d52dbb7f6eb1cc1f766e62d9"
+    },
+    {
+      "path": "Vector/Yellow/check_square_grey_checkmark.svg",
+      "bytes": 1610,
+      "archived": "unused-assets/files/Vector/Yellow/check_square_grey_checkmark.svg",
+      "sha256": "f8ebbf1b003197b959f468ebae967cb3add1ef599130370e36ea87cc7f589d88"
+    },
+    {
+      "path": "Vector/Yellow/check_square_grey_cross.svg",
+      "bytes": 1978,
+      "archived": "unused-assets/files/Vector/Yellow/check_square_grey_cross.svg",
+      "sha256": "3a7f3dfbee72553c5fca6a0ba3838deea29f71f78070540face12be15e34f727"
+    },
+    {
+      "path": "Vector/Yellow/check_square_grey_square.svg",
+      "bytes": 875,
+      "archived": "unused-assets/files/Vector/Yellow/check_square_grey_square.svg",
+      "sha256": "3ebd120012077a64ff9b2f7cb9590e5bb0d2a9900656eb85b029f8cf1bd456c7"
+    },
+    {
+      "path": "Vector/Yellow/icon_circle.svg",
+      "bytes": 740,
+      "archived": "unused-assets/files/Vector/Yellow/icon_circle.svg",
+      "sha256": "3f118a53422c09e7b908aa4773cb6597a45e542f11680fc1046f62a4bbb1fce6"
+    },
+    {
+      "path": "Vector/Yellow/icon_cross.svg",
+      "bytes": 1403,
+      "archived": "unused-assets/files/Vector/Yellow/icon_cross.svg",
+      "sha256": "aecab946d8f3c8ce95cb05ad858eeb5e44ddf18355e31a3e4db13b9e9122e350"
+    },
+    {
+      "path": "Vector/Yellow/icon_outline_checkmark.svg",
+      "bytes": 996,
+      "archived": "unused-assets/files/Vector/Yellow/icon_outline_checkmark.svg",
+      "sha256": "8b58a46075f7f0db9a8a1145709594050d9049687a42a406f2fb9bf214e76846"
+    },
+    {
+      "path": "Vector/Yellow/icon_outline_cross.svg",
+      "bytes": 1403,
+      "archived": "unused-assets/files/Vector/Yellow/icon_outline_cross.svg",
+      "sha256": "f20692e4bfec35d2dedc6858fb433dd49cec1736282227f2c585a5279869f22e"
+    },
+    {
+      "path": "Vector/Yellow/icon_outline_square.svg",
+      "bytes": 352,
+      "archived": "unused-assets/files/Vector/Yellow/icon_outline_square.svg",
+      "sha256": "c95ae99200bdcb806cd824c12867bc05bbf5df74ad181fee89893845c37c010d"
+    },
+    {
+      "path": "Vector/Yellow/icon_square.svg",
+      "bytes": 352,
+      "archived": "unused-assets/files/Vector/Yellow/icon_square.svg",
+      "sha256": "7813397402f5b551e7843ff7488ddbabc702e93115da187126f1abd240e436f7"
+    },
+    {
+      "path": "Vector/Yellow/slide_horizontal_color_section.svg",
+      "bytes": 924,
+      "archived": "unused-assets/files/Vector/Yellow/slide_horizontal_color_section.svg",
+      "sha256": "3eedbc7ae5091f2404adacc8f41aedbe2347448833135c6baeffb39529be228c"
+    },
+    {
+      "path": "Vector/Yellow/slide_horizontal_color_section_wide.svg",
+      "bytes": 918,
+      "archived": "unused-assets/files/Vector/Yellow/slide_horizontal_color_section_wide.svg",
+      "sha256": "cef2f1aec34839275f8f6320bd769cdcf4f564cd9cd49124088859b5ab382835"
+    },
+    {
+      "path": "Vector/Yellow/slide_horizontal_grey_section.svg",
+      "bytes": 924,
+      "archived": "unused-assets/files/Vector/Yellow/slide_horizontal_grey_section.svg",
+      "sha256": "a2ed71ac6136e05e4dc52080fcf7b2e81c84dd6df80276739ab17cf00c6b4dd1"
+    },
+    {
+      "path": "Vector/Yellow/slide_horizontal_grey_section_wide.svg",
+      "bytes": 918,
+      "archived": "unused-assets/files/Vector/Yellow/slide_horizontal_grey_section_wide.svg",
+      "sha256": "67db3b47d6ca5b86cfdcbb5ae9d3346a0780bd9ecbb8290fbf6b50852bec10fb"
+    },
+    {
+      "path": "Vector/Yellow/slide_vertical_color.svg",
+      "bytes": 1081,
+      "archived": "unused-assets/files/Vector/Yellow/slide_vertical_color.svg",
+      "sha256": "6e1957dfd78ee4dd9419e4cfb9cdc58692c284fb59de6d0f06a3da437e72fca8"
+    },
+    {
+      "path": "Vector/Yellow/slide_vertical_color_section.svg",
+      "bytes": 911,
+      "archived": "unused-assets/files/Vector/Yellow/slide_vertical_color_section.svg",
+      "sha256": "9130e46edaac405fb1d7b6a6090368e10cc97230ce539623d801e158d137c864"
+    },
+    {
+      "path": "Vector/Yellow/slide_vertical_color_section_wide.svg",
+      "bytes": 909,
+      "archived": "unused-assets/files/Vector/Yellow/slide_vertical_color_section_wide.svg",
+      "sha256": "c94d71e09e7934d632c86f45f501a4911b4319e3af06a3f5bc411a0efcb3423a"
+    },
+    {
+      "path": "Vector/Yellow/slide_vertical_grey.svg",
+      "bytes": 1081,
+      "archived": "unused-assets/files/Vector/Yellow/slide_vertical_grey.svg",
+      "sha256": "3f6dae498aa8a1c3bf210840e258f938c46f934f64db389a0505e58d99d8cb46"
+    },
+    {
+      "path": "Vector/Yellow/slide_vertical_grey_section.svg",
+      "bytes": 912,
+      "archived": "unused-assets/files/Vector/Yellow/slide_vertical_grey_section.svg",
+      "sha256": "a27935fc79ef6f46d69c136087963087ece1bc35bf44f826e1f080e8d6fa7d2f"
+    },
+    {
+      "path": "Vector/Yellow/slide_vertical_grey_section_wide.svg",
+      "bytes": 909,
+      "archived": "unused-assets/files/Vector/Yellow/slide_vertical_grey_section_wide.svg",
+      "sha256": "e4a1dca702a4d544211da8313ff600b009c9177f1622c6c81b54b70baaf09f0e"
+    },
+    {
+      "path": "Vector/Yellow/star_outline.svg",
+      "bytes": 2717,
+      "archived": "unused-assets/files/Vector/Yellow/star_outline.svg",
+      "sha256": "88f7acccb7b973d3ba502f93956aa60f59d50f665f195fb07af0d6b8d3f49afa"
+    },
+    {
+      "path": "Vector/Yellow/star_outline_depth.svg",
+      "bytes": 1322,
+      "archived": "unused-assets/files/Vector/Yellow/star_outline_depth.svg",
+      "sha256": "2872807a9e6beb8fb04a03dcaa8549ca0cc277dc5bebd2667b0bc1f4cb7cebdd"
+    },
+    {
+      "path": "VFX/click 2.mp3",
+      "bytes": 6768,
+      "archived": "unused-assets/files/VFX/click 2.mp3",
+      "sha256": "8754b473f3253917469f3945413296ea83948fa249200ee44171bab6cf102c82"
+    },
+    {
+      "path": "VFX/click 3.mp3",
+      "bytes": 7080,
+      "archived": "unused-assets/files/VFX/click 3.mp3",
+      "sha256": "b5c2c0595ebdfc47ef65fee032ca65dc4c4141a5dac0d15c3c396e6393921c68"
+    },
+    {
+      "path": "VFX/click 4.mp3",
+      "bytes": 9168,
+      "archived": "unused-assets/files/VFX/click 4.mp3",
+      "sha256": "36aafb297c8ad1b1c3433a77306aaae8f664955a5a4c89f11a1f226092ee9d8e"
+    },
+    {
+      "path": "VFX/click 5.mp3",
+      "bytes": 14016,
+      "archived": "unused-assets/files/VFX/click 5.mp3",
+      "sha256": "bcdc8fdfa2aa28183693c5b9b890d0d9b46b658cd26998eec6ed504c742bc7e9"
+    },
+    {
+      "path": "White/characterWhite (1).png",
+      "bytes": 713,
+      "archived": "unused-assets/files/White/characterWhite (1).png",
+      "sha256": "2bebef24df1f3883b1f817777dc34b5f2fb4273715d3ec90a983399bbf0ddd88"
+    },
+    {
+      "path": "White/characterWhite (10).png",
+      "bytes": 686,
+      "archived": "unused-assets/files/White/characterWhite (10).png",
+      "sha256": "e98031d380c57450e5ffd45f62867e92198deb645d9f6b46bfac462d110cf46f"
+    },
+    {
+      "path": "White/characterWhite (11).png",
+      "bytes": 331,
+      "archived": "unused-assets/files/White/characterWhite (11).png",
+      "sha256": "c0ab0070ca55c9f7664f0acccf46870ffabc0f7d9338ceca776bbe668794e0b9"
+    },
+    {
+      "path": "White/characterWhite (12).png",
+      "bytes": 332,
+      "archived": "unused-assets/files/White/characterWhite (12).png",
+      "sha256": "8a7f3cbfffcf44f6f6c0b7010432c973abc729dea7f71de24d9a2e3170d83906"
+    },
+    {
+      "path": "White/characterWhite (13).png",
+      "bytes": 374,
+      "archived": "unused-assets/files/White/characterWhite (13).png",
+      "sha256": "c4f9a5ef785bd9884faa8b0ce37ecd32dfd2d66db3e04d4280338c4f304742cc"
+    },
+    {
+      "path": "White/characterWhite (14).png",
+      "bytes": 374,
+      "archived": "unused-assets/files/White/characterWhite (14).png",
+      "sha256": "27b936403cb1dcc865ee8444101ba0b277f17a25703c8d5ddda82965d3dbb71a"
+    },
+    {
+      "path": "White/characterWhite (2).png",
+      "bytes": 712,
+      "archived": "unused-assets/files/White/characterWhite (2).png",
+      "sha256": "d7fae68d8b30295d1b3f6eaee682c0f3f6ed67f754e5584632b677779dc39652"
+    },
+    {
+      "path": "White/characterWhite (3).png",
+      "bytes": 713,
+      "archived": "unused-assets/files/White/characterWhite (3).png",
+      "sha256": "7c2ee2ad992408275e5e20ecf460781f157bb207bc762de3a39681e3fbe8e551"
+    },
+    {
+      "path": "White/characterWhite (4).png",
+      "bytes": 710,
+      "archived": "unused-assets/files/White/characterWhite (4).png",
+      "sha256": "e19e69bbef51c859104341c4d6bf721a7cd121c65d10d5ae8a32f15dd1ede1f0"
+    },
+    {
+      "path": "White/characterWhite (5).png",
+      "bytes": 712,
+      "archived": "unused-assets/files/White/characterWhite (5).png",
+      "sha256": "d473269b0fe2b7da2a45b9e4707e0d401a63190073947c99e365f4678cfc427b"
+    },
+    {
+      "path": "White/characterWhite (6).png",
+      "bytes": 682,
+      "archived": "unused-assets/files/White/characterWhite (6).png",
+      "sha256": "59dd4c7a9cc33646070bf9d098618f1e184c162b6a8a85eef7afe7b52a497999"
+    },
+    {
+      "path": "White/characterWhite (7).png",
+      "bytes": 682,
+      "archived": "unused-assets/files/White/characterWhite (7).png",
+      "sha256": "a299f0bfd8799e60f94933f0484703185dd2c5c730234f6ea22d8e9b65cf1f11"
+    },
+    {
+      "path": "White/characterWhite (8).png",
+      "bytes": 687,
+      "archived": "unused-assets/files/White/characterWhite (8).png",
+      "sha256": "80c270c56b73bdb5bf46f24be5d87939523aa528a87323b1824c99657bdbd2b4"
+    },
+    {
+      "path": "White/characterWhite (9).png",
+      "bytes": 686,
+      "archived": "unused-assets/files/White/characterWhite (9).png",
+      "sha256": "e1c5cd88c779a7453e30d8b11cef5fadfbd206c6d60a1ad3543474dd6afcf81e"
+    }
+  ],
+  "previousArchive": [
+    {
+      "path": "no need/PNG/Hair/Black/blackMan8.png",
+      "bytes": 1897,
+      "archived": "unused-assets/previous/PNG/Hair/Black/blackMan8.png"
+    },
+    {
+      "path": "no need/PNG/Hair/Blonde/blondeMan8.png",
+      "bytes": 2006,
+      "archived": "unused-assets/previous/PNG/Hair/Blonde/blondeMan8.png"
+    },
+    {
+      "path": "no need/PNG/Hair/Brown 1/brown1Man8.png",
+      "bytes": 2029,
+      "archived": "unused-assets/previous/PNG/Hair/Brown 1/brown1Man8.png"
+    },
+    {
+      "path": "no need/PNG/Hair/Brown 2/brown2Man8.png",
+      "bytes": 2014,
+      "archived": "unused-assets/previous/PNG/Hair/Brown 2/brown2Man8.png"
+    },
+    {
+      "path": "no need/PNG/Hair/Grey/greyMan8.png",
+      "bytes": 1862,
+      "archived": "unused-assets/previous/PNG/Hair/Grey/greyMan8.png"
+    },
+    {
+      "path": "no need/PNG/Hair/Red/redMan8.png",
+      "bytes": 1996,
+      "archived": "unused-assets/previous/PNG/Hair/Red/redMan8.png"
+    },
+    {
+      "path": "no need/PNG/Hair/Tan/tanMan8.png",
+      "bytes": 2005,
+      "archived": "unused-assets/previous/PNG/Hair/Tan/tanMan8.png"
+    },
+    {
+      "path": "no need/README.md",
+      "bytes": 542,
+      "archived": "unused-assets/previous/README.md"
+    },
+    {
+      "path": "no need/tasınan-dosyalar.json",
+      "bytes": 248,
+      "archived": "unused-assets/previous/tasınan-dosyalar.json"
+    }
+  ]
+}

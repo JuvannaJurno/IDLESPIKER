@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-02",
+  "filesVerified": 471,
+  "checks": [
+    "SHA-256 unchanged for every moved file",
+    "Calendar in real game, counters, four widths and light/dark",
+    "Stage 1 and stage 3 roster-to-match, vector actors, ball, running simulation",
+    "10 vector emotes, bubble phases and canvas state",
+    "Font preview, PNG logo and responsive header",
+    "Card design lab: five concepts, ten portraits, four widths, both themes"
+  ]
+}
