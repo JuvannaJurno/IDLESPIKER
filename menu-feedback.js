@@ -1,7 +1,7 @@
 (function(){
 'use strict';
 const $=id=>document.getElementById(id),reduced=matchMedia('(prefers-reduced-motion: reduce)'),layer=$('rewardLayer');
-let audio=null,sound=true,lastSound=0,lastAuto=0,lastTap=0,streak=0,resetTimer,live=0;
+let sound=true,lastAuto=0,lastTap=0,streak=0,resetTimer,live=0;
 try{sound=localStorage.getItem('idle-spiker-sound')!=='off'}catch{}
 const vibrationToggle=$('vibrationToggle');let vibration=true;
 try{vibration=localStorage.getItem('idle-spiker-vibration')!=='off'}catch{}
@@ -12,7 +12,8 @@ const toggle=$('soundToggle');
 function soundLabel(){toggle.textContent=sound?'♪':'♪̸';toggle.setAttribute('aria-pressed',String(sound));toggle.setAttribute('aria-label',sound?'Tüm sesleri kapat':'Tüm sesleri aç')}
 $('settingsButton').onclick=()=>$('settingsDialog').showModal();$('closeSettings').onclick=()=>$('settingsDialog').close();$('settingsDialog').addEventListener('close',()=>$('settingsButton').focus());
 soundLabel();toggle.onclick=()=>{sound=!sound;window.GameAudio?.setEnabled(sound);soundLabel();try{localStorage.setItem('idle-spiker-sound',sound?'on':'off')}catch{}if(sound)tone('tap')};
-function tone(kind){if(!sound)return;if(kind==='critical'){window.GameAudio?.critical?.();return;}const now=performance.now();if(kind==='tap'&&now-lastSound<65)return;lastSound=now;try{const Audio=window.AudioContext||window.webkitAudioContext;if(!Audio)return;audio??=new Audio();if(audio.state==='suspended')audio.resume().catch(()=>{});const notes=kind==='day'?[523,659,784,1047]:kind==='critical'?[784,1175]:kind==='build'?[440,659,880]:[360+Math.min(streak,12)*18];notes.forEach((hz,i)=>{const osc=audio.createOscillator(),gain=audio.createGain(),t=audio.currentTime+i*.075;osc.type='sine';osc.frequency.setValueAtTime(hz,t);osc.frequency.exponentialRampToValueAtTime(hz*.75,t+.11);gain.gain.setValueAtTime(.0001,t);gain.gain.exponentialRampToValueAtTime(.055,t+.009);gain.gain.exponentialRampToValueAtTime(.0001,t+.16);osc.connect(gain);gain.connect(audio.destination);osc.start(t);osc.stop(t+.17);osc.onended=()=>{osc.disconnect();gain.disconnect()}})}catch{}}
+const instructionTone=InstructionSound.create({enabled:()=>sound});
+function tone(kind){instructionTone(kind,streak);}
 const feedbackAnimations=new WeakMap();function animate(el,frames,options){if(!el||reduced.matches||!el.animate)return;const previous=feedbackAnimations.get(el);if(previous)return;const motion=el.animate(frames,options);feedbackAnimations.set(el,motion);motion.finished.catch(()=>{}).finally(()=>{if(feedbackAnimations.get(el)===motion)feedbackAnimations.delete(el)});}
 function clipRewards(){
 const button=$('energyButton').getBoundingClientRect(),nav=document.querySelector('.mobile-nav')?.getBoundingClientRect(),shell=document.querySelector('.shell').getBoundingClientRect();
@@ -25,8 +26,23 @@ clipRewards();
 function popup(text,x,y,kind='normal'){if(kind==='level'){const existing=layer.querySelector('.reward-pop.level');if(existing){existing.textContent=text;return}}if(live>=12)return;const n=document.createElement('span');n.className='reward-pop '+kind;n.textContent=text;n.style.left=Math.max(75,Math.min(innerWidth-75,x))+'px';n.style.top=Math.max(45,y)+'px';layer.append(n);live++;setTimeout(()=>{n.remove();live--},950)}
 function burst(x,y,count=8){if(reduced.matches||live>35)return;for(let i=0;i<count;i++){const p=document.createElement('i'),angle=Math.PI*2*i/count;p.className='reward-spark';p.style.left=x+'px';p.style.top=y+'px';p.style.setProperty('--dx',Math.cos(angle)*(35+Math.random()*45)+'px');p.style.setProperty('--dy',Math.sin(angle)*50-35+'px');p.style.background=['#ffd46d','#fff8d9','#ed9270','#83c8b4'][i%4];layer.append(p);live++;setTimeout(()=>{p.remove();live--},650)}}
 function clubVisible(){return !document.hidden&&!document.querySelector(".dashboard")?.hidden&&!window.MatchGateway?.active()}
+let instructionPress=null;
+function pressInstruction(button){
+ if(reduced.matches)return;
+ // Restart from the current face position: rapid taps cannot queue or latch the press.
+ const from=getComputedStyle(button).transform;
+ instructionPress?.cancel();
+ instructionPress=button.animate([
+  {transform:from==='none'?'translateY(0)':from},
+  {transform:'translateY(3px)',offset:.18},
+  {transform:'translateY(-.4px)',offset:.78},
+  {transform:'translateY(0)'}
+ ],{duration:145,easing:'cubic-bezier(.2,.65,.35,1)'});
+ const motion=instructionPress;motion.finished.catch(()=>{}).finally(()=>{if(instructionPress===motion)instructionPress=null});
+ const icon=button.querySelector('.bolt');if(icon){icon.getAnimations().forEach(a=>a.cancel());icon.animate([{transform:'scale(1)'},{transform:'scale(.92)',offset:.2},{transform:'scale(1)'}],{duration:135,easing:'ease-out'});}
+}
 let lastInstructionVisual=-Infinity;function instruction(completed,progress,source){if(!clubVisible())return;const manual=source!=='auto',now=performance.now(),button=$('energyButton');if(now-lastInstructionVisual<70&&!completed)return;lastInstructionVisual=now;button.style.setProperty('--day-fill',progress+'%');if(!manual&&now-lastAuto<700&&!completed)return;if(!manual){lastAuto=now;return;}
-if(manual){streak=now-lastTap<650?streak+1:1;lastTap=now;const badge=$('tapRhythm');badge.textContent=streak>=4?'GÜZEL TEMPO! · '+streak+' TALİMAT':'';clearTimeout(resetTimer);resetTimer=setTimeout(()=>{badge.textContent='';streak=0},900);animate(button,[{transform:'translateY(5px) scale(.98)'},{transform:'translateY(-2px) scale(1.015)',offset:.55},{transform:'translateY(0) scale(1)'}],{duration:230,easing:'ease-out'});tone(completed?'day':'tap');window.GameHaptics.vibrate(8)}
+if(manual){streak=now-lastTap<650?streak+1:1;lastTap=now;const badge=$('tapRhythm');badge.textContent=streak>=4?'GÜZEL TEMPO! · '+streak+' TALİMAT':'';clearTimeout(resetTimer);resetTimer=setTimeout(()=>{badge.textContent='';streak=0},900);pressInstruction(button);tone(completed?'day':'tap');window.GameHaptics.vibrate(8)}
 animate(document.querySelector('.calendar-day.today'),[{transform:'scale(1.09)'},{transform:'scale(1)'}],{duration:200});}
 let feedbackRects=new WeakMap();function feedbackRect(tier){let rect=feedbackRects.get(tier);if(!rect){rect=tier.getBoundingClientRect();feedbackRects.set(tier,rect);}return rect;}
 window.addEventListener('scroll',()=>{feedbackRects=new WeakMap()},{passive:true,capture:true});window.addEventListener('resize',()=>{feedbackRects=new WeakMap()},{passive:true});const feedbackResize=new ResizeObserver(entries=>{for(const e of entries)feedbackRects.delete(e.target)});document.querySelectorAll('.tier').forEach(t=>feedbackResize.observe(t));

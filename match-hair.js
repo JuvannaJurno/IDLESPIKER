@@ -51,6 +51,11 @@ drawOrder=function(p){
 };
 function kickContact(p){if(window.MatchVectorCharacters?.kickContact)return MatchVectorCharacters.kickContact(p);const left=strikeSide(p)==='left',refs=MatchHairData.legs,foot=refs.find(e=>e.part.id===(left?'pack-foot-blue-13':'pack-foot-blue-13-pair')).part,roots=refs.filter(e=>e.part.uniformPart).map(e=>e.part),hip=roots.reduce((sum,q)=>sum+q.x+q.width*q.scale*q.pivotX,0)/roots.length,stretch=(left?-1:1)*1.25,x=(hip+(foot.x+(foot.flip?0:foot.width)*foot.scale-hip)*stretch-16)*1.35,y=(foot.y+foot.height*foot.scale*.5-43)*1.35;return {x:p.x+Math.cos(p.angle)*x-Math.sin(p.angle)*y,y:p.y+Math.sin(p.angle)*x+Math.cos(p.angle)*y,z:2};}
 function foresightPose(p,path,progress){const u=Math.max(0,Math.min(1,progress)),ease=u*u*(3-2*u),landing=Math.max(0,(ease-.67)/.33);return {...p,x:path.from.x+(path.to.x-path.from.x)*ease,y:path.from.y+(path.to.y-path.from.y)*ease,moving:u>0&&u<.9,phase:u*Math.PI*3,spike:0,toss:0,receive:0,approach:ease<=.67,vectorReadApproach:ease<=.67,block:ease>.67?1:0,jump:ease>.67?.5-.25*landing:0,blockFlash:0};}
+function foresightRecovery(p,path,age){
+ const t=Math.max(0,Math.min(1,age/.3)),u=t*t*(3-2*t),end=foresightPose(p,path,1),phase=Math.atan2(Math.sin((p.phase||0)-end.phase),Math.cos((p.phase||0)-end.phase));
+ // The physical player can already be covering the next ball. Join that moving position instead of snapping back after landing.
+ return {...end,x:end.x+(p.x-end.x)*u,y:end.y+(p.y-end.y)*u,jump:end.jump+(p.jump-end.jump)*u,block:Math.max(p.block||0,1-u),moving:p.moving&&u>.35,phase:end.phase+phase*u,approach:!!p.approach&&u>.8,vectorReadApproach:false};
+}
 function foresightFrames(p,path,progress){const actual=foresightPose(p,path,progress);return [1/4,1/2,3/4,1].filter(checkpoint=>checkpoint>progress+.015).map((checkpoint,index)=>({pose:foresightPose(p,path,checkpoint),alpha:Math.max(.22,.42-index*.08),checkpoint})).filter(frame=>Math.hypot(frame.pose.x-actual.x,frame.pose.y-actual.y)>4);}
-window.MatchHair={styleFor,parts:MatchHairData,cache,rigParts,kickContact,foresightPose,foresightFrames};
+window.MatchHair={styleFor,parts:MatchHairData,cache,rigParts,kickContact,foresightPose,foresightRecovery,foresightFrames};
 })();

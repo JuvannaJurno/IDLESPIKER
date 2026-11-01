@@ -1,0 +1,220 @@
+{
+  "rows": [
+    {
+      "division": 2,
+      "strength": "initial",
+      "seed": 1,
+      "finished": true,
+      "steps": 5611,
+      "points": 6,
+      "liberoChanges": 2,
+      "counts": {
+        "pancake": 1,
+        "sync-attack": 1,
+        "tempo-minus": 1,
+        "jump-float-legendary": 4
+      },
+      "maxSetGap": 134.64896976346148
+    },
+    {
+      "division": 2,
+      "strength": "initial",
+      "seed": 2,
+      "finished": true,
+      "steps": 5063,
+      "points": 5,
+      "liberoChanges": 2,
+      "counts": {
+        "sync-attack": 3,
+        "absolute-read": 3,
+        "ghost-tip": 1,
+        "pancake": 2
+      },
+      "maxSetGap": 147.51791022749103
+    },
+    {
+      "division": 2,
+      "strength": "initial",
+      "seed": 3,
+      "finished": true,
+      "steps": 5931,
+      "points": 6,
+      "liberoChanges": 2,
+      "counts": {
+        "sync-attack": 1,
+        "jump-float-legendary": 3,
+        "absolute-read": 1,
+        "pancake": 2,
+        "ghost-tip": 1
+      },
+      "maxSetGap": 157.14148099253867
+    },
+    {
+      "division": 2,
+      "strength": "developed",
+      "seed": 1,
+      "finished": true,
+      "steps": 8723,
+      "points": 8,
+      "liberoChanges": 2,
+      "counts": {
+        "tempo-minus": 5,
+        "sync-attack": 1,
+        "pancake": 4,
+        "jump-float-legendary": 2
+      },
+      "maxSetGap": 166.4598252841933
+    },
+    {
+      "division": 2,
+      "strength": "developed",
+      "seed": 2,
+      "finished": true,
+      "steps": 10773,
+      "points": 8,
+      "liberoChanges": 3,
+      "counts": {
+        "tempo-minus": 4,
+        "absolute-read": 2,
+        "sync-attack": 4,
+        "jump-float-legendary": 2,
+        "pancake": 2
+      },
+      "maxSetGap": 142.4884633406678
+    },
+    {
+      "division": 2,
+      "strength": "developed",
+      "seed": 3,
+      "finished": true,
+      "steps": 8515,
+      "points": 8,
+      "liberoChanges": 2,
+      "counts": {
+        "jump-float-legendary": 5,
+        "tempo-minus": 2,
+        "absolute-read": 3,
+        "pancake": 1,
+        "sync-attack": 1,
+        "ghost-tip": 1
+      },
+      "maxSetGap": 144.08465282648567
+    },
+    {
+      "division": 3,
+      "strength": "initial",
+      "seed": 1,
+      "finished": true,
+      "steps": 6557,
+      "points": 5,
+      "liberoChanges": 2,
+      "counts": {
+        "sky-ball-serve": 1,
+        "tempo-minus": 4,
+        "jump-legendary": 4,
+        "pancake": 2,
+        "perfect-second-touch": 2,
+        "absolute-read": 3,
+        "sync-attack": 1
+      },
+      "maxSetGap": 142.65233065452077
+    },
+    {
+      "division": 3,
+      "strength": "initial",
+      "seed": 2,
+      "finished": true,
+      "steps": 6448,
+      "points": 5,
+      "liberoChanges": 2,
+      "counts": {
+        "sky-ball-serve": 1,
+        "sync-attack": 3,
+        "tempo-minus": 2,
+        "absolute-read": 3,
+        "ghost-tip": 1,
+        "jump-float-legendary": 4,
+        "pancake": 1
+      },
+      "maxSetGap": 127.04120814779614
+    },
+    {
+      "division": 3,
+      "strength": "initial",
+      "seed": 3,
+      "finished": true,
+      "steps": 5808,
+      "points": 5,
+      "liberoChanges": 2,
+      "counts": {
+        "sky-ball-serve": 1,
+        "ghost-tip": 2,
+        "tempo-minus": 2,
+        "absolute-read": 4,
+        "jump-float-legendary": 4,
+        "sync-attack": 1,
+        "pancake": 1
+      },
+      "maxSetGap": 84.22370197146333
+    },
+    {
+      "division": 3,
+      "strength": "developed",
+      "seed": 1,
+      "finished": true,
+      "steps": 7112,
+      "points": 7,
+      "liberoChanges": 2,
+      "counts": {
+        "sky-ball-serve": 1,
+        "tempo-minus": 4,
+        "jump-legendary": 2,
+        "pancake": 1,
+        "absolute-read": 3,
+        "jump-float-legendary": 4,
+        "sync-attack": 1
+      },
+      "maxSetGap": 53.75887713047917
+    },
+    {
+      "division": 3,
+      "strength": "developed",
+      "seed": 2,
+      "finished": true,
+      "steps": 8165,
+      "points": 5,
+      "liberoChanges": 2,
+      "counts": {
+        "sky-ball-serve": 1,
+        "sync-attack": 4,
+        "jump-float-legendary": 4,
+        "tempo-minus": 2,
+        "absolute-read": 3,
+        "pancake": 3,
+        "ghost-tip": 1,
+        "perfect-second-touch": 1
+      },
+      "maxSetGap": 165.7796653896198
+    },
+    {
+      "division": 3,
+      "strength": "developed",
+      "seed": 3,
+      "finished": true,
+      "steps": 5397,
+      "points": 5,
+      "liberoChanges": 2,
+      "counts": {
+        "sky-ball-serve": 1,
+        "perfect-second-touch": 1,
+        "jump-float-legendary": 4,
+        "tempo-minus": 1,
+        "absolute-read": 3,
+        "sync-attack": 1,
+        "ghost-tip": 1
+      },
+      "maxSetGap": 131.736715538306
+    }
+  ],
+  "errors": []
+}

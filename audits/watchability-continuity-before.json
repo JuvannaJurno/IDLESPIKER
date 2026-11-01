@@ -1,0 +1,626 @@
+{
+  "frames": 6000,
+  "jumps": [
+    {
+      "frame": 2027,
+      "id": 7,
+      "distance": 39.775870900895505,
+      "physical": 39.66146954668665,
+      "slow": false,
+      "skill": null,
+      "from": {
+        "x": 534.29541015625,
+        "y": 274.8462873697281,
+        "px": 535,
+        "py": 284.94598851464673,
+        "angle": 4.180733241728337,
+        "pose": "normal",
+        "phase": 9.42477796076938,
+        "jump": 0.013649928901253106,
+        "spike": 0,
+        "moving": false
+      },
+      "to": {
+        "x": 537.0964965820312,
+        "y": 314.5234069824219,
+        "px": 537.8715813630641,
+        "py": 324.50336692978004,
+        "angle": 4.1768041772382585,
+        "pose": "normal",
+        "phase": 196.88347743695,
+        "jump": 0,
+        "spike": 0,
+        "moving": true
+      },
+      "kind": "attack",
+      "touch": 1
+    },
+    {
+      "frame": 1053,
+      "id": 9,
+      "distance": 36.459723704138604,
+      "physical": 19.85488065127934,
+      "slow": false,
+      "skill": null,
+      "from": {
+        "x": 533.2174682617188,
+        "y": 259.4356709420681,
+        "px": 535,
+        "py": 252.2333795286852,
+        "angle": 1.687684666162872,
+        "pose": "normal",
+        "phase": 9.42477796076938,
+        "jump": 0.005562397832983429,
+        "spike": 0,
+        "moving": false
+      },
+      "to": {
+        "x": 533.3621826171875,
+        "y": 222.97623443603516,
+        "px": 533.3926620661895,
+        "py": 232.44366628055852,
+        "angle": 1.6043513328295325,
+        "pose": "normal",
+        "phase": 112.26561513614753,
+        "jump": 0.14753198653198424,
+        "spike": 0,
+        "moving": true
+      },
+      "kind": "attack",
+      "touch": 1
+    },
+    {
+      "frame": 5005,
+      "id": 10,
+      "distance": 34.09091304613725,
+      "physical": 34.16693072459124,
+      "slow": false,
+      "skill": null,
+      "from": {
+        "x": 529.5283203125,
+        "y": 293.9196792244911,
+        "px": 535,
+        "py": 302.2536745981672,
+        "angle": 2.0318006239830533,
+        "pose": "normal",
+        "phase": 9.42477796076938,
+        "jump": 0.00886944745029794,
+        "spike": 0,
+        "moving": false
+      },
+      "to": {
+        "x": 519.2144165039062,
+        "y": 261.4263916015625,
+        "px": 525.029979113358,
+        "py": 269.57374438620167,
+        "angle": 1.9484672906496956,
+        "pose": "normal",
+        "phase": 535.2110542940438,
+        "jump": 6.831506260147051e-17,
+        "spike": 0,
+        "moving": true
+      },
+      "kind": "attack",
+      "touch": 1
+    },
+    {
+      "frame": 1537,
+      "id": 2,
+      "distance": 32.7503938116755,
+      "physical": 33.006095172066615,
+      "slow": true,
+      "skill": "pancake",
+      "from": {
+        "x": 466.1966552734375,
+        "y": 473.3843182325363,
+        "px": 465,
+        "py": 466.51936805123347,
+        "angle": 1.1947505197783324,
+        "pose": "normal",
+        "phase": 9.42477796076938,
+        "jump": 0.003265630269994546,
+        "spike": 0,
+        "moving": false
+      },
+      "to": {
+        "x": 467.593505859375,
+        "y": 440.6637268066406,
+        "px": 466.4258106646888,
+        "py": 433.5440836331124,
+        "angle": 1.1882301273098164,
+        "pose": "normal",
+        "phase": 132.60787712949187,
+        "jump": 0,
+        "spike": 0,
+        "moving": true
+      },
+      "kind": "attack",
+      "touch": 1
+    },
+    {
+      "frame": 872,
+      "id": 3,
+      "distance": 30.79619677552209,
+      "physical": 34.49464846556361,
+      "slow": true,
+      "skill": "sync-attack",
+      "from": {
+        "x": 461.94403076171875,
+        "y": 470.7989676594734,
+        "px": 465,
+        "py": 471.8761812660144,
+        "angle": -1.5733792307468593,
+        "pose": "normal",
+        "phase": 9.42477796076938,
+        "jump": 0.001709473515619564,
+        "spike": 0,
+        "moving": false
+      },
+      "to": {
+        "x": 442.3056945800781,
+        "y": 494.5211405754089,
+        "px": 444.22442849839973,
+        "py": 499.41263712991787,
+        "angle": -1.6001575883901131,
+        "pose": "normal",
+        "phase": 76.018662342956,
+        "jump": 0.05724579124579055,
+        "spike": 0,
+        "moving": true
+      },
+      "kind": "attack",
+      "touch": 1
+    },
+    {
+      "frame": 4236,
+      "id": 9,
+      "distance": 21.99672979500933,
+      "physical": 21.65136820184199,
+      "slow": false,
+      "skill": null,
+      "from": {
+        "x": 534.412841796875,
+        "y": 328.58364975452423,
+        "px": 535,
+        "py": 337.57986521543756,
+        "angle": -3.9048491559716996,
+        "pose": "normal",
+        "phase": 9.42477796076938,
+        "jump": 0.008199839657481306,
+        "spike": 0,
+        "moving": false
+      },
+      "to": {
+        "x": 534.0477294921875,
+        "y": 306.58995032310486,
+        "px": 534.5433349331594,
+        "py": 315.93331348015045,
+        "angle": -3.988182489305057,
+        "pose": "normal",
+        "phase": 436.3601358219466,
+        "jump": 0.030307932453516293,
+        "spike": 0,
+        "moving": true
+      },
+      "kind": "attack",
+      "touch": 1
+    },
+    {
+      "frame": 1031,
+      "id": 9,
+      "distance": 9.616346497580116,
+      "physical": 9.644038260949323,
+      "slow": true,
+      "skill": "absolute-read",
+      "from": {
+        "x": 536.1764526367188,
+        "y": 229.17312026023868,
+        "px": 536.1764652820905,
+        "py": 231.63332359038375,
+        "angle": 3.2979906695210643,
+        "pose": "normal",
+        "phase": 1.7494812912167506,
+        "jump": 0,
+        "spike": 0,
+        "moving": true
+      },
+      "to": {
+        "x": 535.6265869140625,
+        "y": 238.7737331390381,
+        "px": 535.6265920728099,
+        "py": 241.26167305601751,
+        "angle": 3.2582865180147267,
+        "pose": "normal",
+        "phase": 4.810653316734863,
+        "jump": 0,
+        "spike": 0,
+        "moving": true
+      },
+      "kind": "attack",
+      "touch": 1
+    }
+  ],
+  "work": {
+    "p50": 0.8999999985098839,
+    "p95": 3.399999998509884,
+    "max": 295.20000000298023
+  },
+  "metrics": {
+    "paletteReads": 75776,
+    "paletteBuilds": 0,
+    "imageBuilds": 0,
+    "rasterized": 0,
+    "planBuilds": 2346,
+    "planHits": 73430,
+    "batchBuilds": 41,
+    "batchDraws": 72722,
+    "batchBytes": 2000448,
+    "warmups": 0,
+    "warmupMs": 0
+  },
+  "moving": {
+    "normal": 22102,
+    "slow": 22764
+  },
+  "stale": {
+    "normal": 0,
+    "slow": 12
+  },
+  "slowFrames": [
+    {
+      "frame": 1583,
+      "cost": 295.20000000298023,
+      "skill": "pancake",
+      "builds": 127,
+      "plans": 523
+    },
+    {
+      "frame": 3412,
+      "cost": 26.80000000447035,
+      "skill": "sky-ball-serve",
+      "builds": 135,
+      "plans": 1586
+    },
+    {
+      "frame": 4169,
+      "cost": 133.5,
+      "skill": null,
+      "builds": 136,
+      "plans": 1658
+    },
+    {
+      "frame": 5049,
+      "cost": 221.80000000447035,
+      "skill": null,
+      "builds": 137,
+      "plans": 2067
+    }
+  ],
+  "events": [
+    {
+      "id": "jump-legendary",
+      "actor": 0,
+      "opportunity": 1,
+      "role": "middle",
+      "kind": "serve",
+      "at": 2.0166666666666644,
+      "team": 0,
+      "committedAt": 4.016666666666658
+    },
+    {
+      "id": "sync-attack",
+      "actor": 8,
+      "opportunity": 2,
+      "role": "setter",
+      "kind": "set",
+      "at": 5.583333333333319,
+      "team": 1,
+      "committedAt": 5.583333333333319
+    },
+    {
+      "id": "wipe",
+      "actor": 7,
+      "opportunity": null,
+      "role": "outside",
+      "kind": "attack",
+      "at": 7.033333333333314,
+      "team": 1
+    },
+    {
+      "id": "absolute-read",
+      "actor": 3,
+      "opportunity": 3,
+      "role": "middle",
+      "kind": "block",
+      "at": 7.333333333333313,
+      "team": 0,
+      "committedAt": 7.483333333333312
+    },
+    {
+      "id": "tempo-minus",
+      "actor": 1,
+      "opportunity": 4,
+      "role": "outside",
+      "kind": "set",
+      "at": 9.816666666666734,
+      "team": 0,
+      "committedAt": 10.333333333333426
+    },
+    {
+      "id": "absolute-read",
+      "actor": 9,
+      "opportunity": 5,
+      "role": "middle",
+      "kind": "block",
+      "at": 10.350000000000094,
+      "team": 1,
+      "committedAt": 10.416666666666764
+    },
+    {
+      "id": "perfect-second-touch",
+      "actor": 8,
+      "opportunity": 6,
+      "role": "setter",
+      "kind": "set",
+      "at": 11.283333333333474,
+      "team": 1,
+      "committedAt": 12.116666666666848
+    },
+    {
+      "id": "ghost-tip",
+      "actor": 7,
+      "opportunity": 7,
+      "role": "outside",
+      "kind": "attack",
+      "at": 13.483333333333583,
+      "team": 1,
+      "committedAt": 13.783333333333598
+    },
+    {
+      "id": "absolute-read",
+      "actor": 2,
+      "opportunity": 8,
+      "role": "setter",
+      "kind": "block",
+      "at": 13.800000000000265,
+      "team": 0,
+      "committedAt": 14.383333333333628
+    },
+    {
+      "id": "pancake",
+      "actor": 3,
+      "opportunity": 8,
+      "role": "middle",
+      "kind": "receive",
+      "at": 14.416666666666963,
+      "team": 0,
+      "committedAt": 15.150000000000333
+    },
+    {
+      "id": "fake-set",
+      "actor": 2,
+      "opportunity": null,
+      "role": "setter",
+      "kind": "set",
+      "at": 16.266666666667025,
+      "team": 0
+    },
+    {
+      "id": "ghost-tip",
+      "actor": 3,
+      "opportunity": 9,
+      "role": "middle",
+      "kind": "attack",
+      "at": 17.91666666666693,
+      "team": 0,
+      "committedAt": 18.216666666666914
+    },
+    {
+      "id": "absolute-read",
+      "actor": 7,
+      "opportunity": 10,
+      "role": "outside",
+      "kind": "block",
+      "at": 18.23333333333358,
+      "team": 1,
+      "committedAt": 18.833333333333545
+    },
+    {
+      "id": "tempo-minus",
+      "actor": 9,
+      "opportunity": 11,
+      "role": "middle",
+      "kind": "set",
+      "at": 20.966666666666757,
+      "team": 1,
+      "committedAt": 21.483333333333395
+    },
+    {
+      "id": "sync-attack",
+      "actor": 2,
+      "opportunity": 12,
+      "role": "setter",
+      "kind": "set",
+      "at": 23.233333333333295,
+      "team": 0,
+      "committedAt": 23.233333333333295
+    },
+    {
+      "id": "line",
+      "actor": 1,
+      "opportunity": null,
+      "role": "outside",
+      "kind": "attack",
+      "at": 24.99999999999986,
+      "team": 0
+    },
+    {
+      "id": "team-heart",
+      "actor": 2,
+      "role": "setter",
+      "kind": "support",
+      "at": 28.999999999999634,
+      "team": 0
+    },
+    {
+      "id": "team-heart",
+      "actor": 8,
+      "role": "setter",
+      "kind": "support",
+      "at": 28.999999999999634,
+      "team": 1
+    },
+    {
+      "id": "sky-ball-serve",
+      "actor": 7,
+      "opportunity": 13,
+      "role": "outside",
+      "kind": "serve",
+      "at": 32.99999999999941,
+      "team": 1,
+      "committedAt": 33.88333333333269
+    },
+    {
+      "id": "tempo-minus",
+      "actor": 3,
+      "opportunity": 14,
+      "role": "middle",
+      "kind": "set",
+      "at": 38.199999999999115,
+      "team": 0,
+      "committedAt": 38.71666666666575
+    },
+    {
+      "id": "fake-set",
+      "actor": 8,
+      "opportunity": null,
+      "role": "setter",
+      "kind": "set",
+      "at": 40.16666666666567,
+      "team": 1
+    },
+    {
+      "id": "ghost-tip",
+      "actor": 10,
+      "opportunity": 15,
+      "role": "middle",
+      "kind": "attack",
+      "at": 41.816666666665576,
+      "team": 1,
+      "committedAt": 42.11666666666556
+    },
+    {
+      "id": "fake-set",
+      "actor": 2,
+      "opportunity": null,
+      "role": "setter",
+      "kind": "set",
+      "at": 44.583333333332085,
+      "team": 0
+    },
+    {
+      "id": "cross",
+      "actor": 3,
+      "opportunity": null,
+      "role": "middle",
+      "kind": "attack",
+      "at": 46.533333333331974,
+      "team": 0
+    },
+    {
+      "id": "absolute-read",
+      "actor": 9,
+      "opportunity": 16,
+      "role": "middle",
+      "kind": "block",
+      "at": 46.54999999999864,
+      "team": 1,
+      "committedAt": 46.73333333333196
+    },
+    {
+      "id": "fake-set",
+      "actor": 8,
+      "opportunity": null,
+      "role": "setter",
+      "kind": "set",
+      "at": 48.749999999998515,
+      "team": 1
+    },
+    {
+      "id": "ghost-tip",
+      "actor": 9,
+      "opportunity": 17,
+      "role": "middle",
+      "kind": "attack",
+      "at": 50.39999999999842,
+      "team": 1,
+      "committedAt": 50.699999999998404
+    },
+    {
+      "id": "pancake",
+      "actor": 3,
+      "opportunity": 18,
+      "role": "middle",
+      "kind": "receive",
+      "at": 51.36666666666503,
+      "team": 0,
+      "committedAt": 52.04999999999833
+    },
+    {
+      "id": "fake-set",
+      "actor": 2,
+      "opportunity": null,
+      "role": "setter",
+      "kind": "set",
+      "at": 53.16666666666493,
+      "team": 0
+    },
+    {
+      "id": "cross",
+      "actor": 3,
+      "opportunity": null,
+      "role": "middle",
+      "kind": "attack",
+      "at": 55.11666666666482,
+      "team": 0
+    },
+    {
+      "id": "absolute-read",
+      "actor": 10,
+      "opportunity": 19,
+      "role": "middle",
+      "kind": "block",
+      "at": 55.133333333331485,
+      "team": 1,
+      "committedAt": 55.34999999999814
+    },
+    {
+      "id": "fake-set",
+      "actor": 8,
+      "opportunity": null,
+      "role": "setter",
+      "kind": "set",
+      "at": 57.33333333333136,
+      "team": 1
+    },
+    {
+      "id": "commit-block",
+      "actor": 3,
+      "opportunity": null,
+      "role": "middle",
+      "kind": "block",
+      "at": 59.299999999997915,
+      "team": 0
+    },
+    {
+      "id": "sky-ball-serve",
+      "actor": 1,
+      "opportunity": 20,
+      "role": "outside",
+      "kind": "serve",
+      "at": 67.26666666666414,
+      "team": 0,
+      "committedAt": 68.14999999999742
+    }
+  ]
+}

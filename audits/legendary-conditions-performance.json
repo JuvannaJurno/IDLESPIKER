@@ -1,0 +1,135 @@
+{
+  "method": "390x844 DPR2, Edge headless, CPU4x, native frames at 60 Hz; ABBA order, 60 warm draws then 720 display frames per run. Work time is not physical phone FPS.",
+  "rows": [
+    {
+      "mode": "before",
+      "frames": 720,
+      "work": {
+        "mean": 10.000694444506532,
+        "p50": 6.399999998509884,
+        "p95": 33.100000001490116,
+        "max": 182.69999999552965,
+        "over16ms": 81
+      },
+      "tick": {
+        "mean": 0.662447844161775,
+        "p50": 0.4000000059604645,
+        "p95": 1.8999999985098839,
+        "max": 21.399999998509884,
+        "over16ms": 2
+      },
+      "draw": {
+        "mean": 9.28930555568594,
+        "p50": 5.800000004470348,
+        "p95": 30.69999999552965,
+        "max": 182.10000000149012,
+        "over16ms": 72
+      },
+      "skills": [
+        "jump-float-legendary",
+        "fake-set",
+        "ghost-tip",
+        "absolute-read"
+      ],
+      "maxActive": 3
+    },
+    {
+      "mode": "after",
+      "frames": 720,
+      "work": {
+        "mean": 9.825972222257406,
+        "p50": 6.399999998509884,
+        "p95": 31.600000001490116,
+        "max": 192,
+        "over16ms": 79
+      },
+      "tick": {
+        "mean": 0.6438108486368195,
+        "p50": 0.5,
+        "p95": 1.7999999970197678,
+        "max": 21,
+        "over16ms": 1
+      },
+      "draw": {
+        "mean": 9.132222222060793,
+        "p50": 5.899999998509884,
+        "p95": 30.700000002980232,
+        "max": 191.20000000298023,
+        "over16ms": 71
+      },
+      "skills": [
+        "jump-float-legendary",
+        "fake-set",
+        "ghost-tip",
+        "absolute-read"
+      ],
+      "maxActive": 3
+    },
+    {
+      "mode": "after",
+      "frames": 720,
+      "work": {
+        "mean": 10.274444444384425,
+        "p50": 6.700000002980232,
+        "p95": 31.600000001490116,
+        "max": 217,
+        "over16ms": 92
+      },
+      "tick": {
+        "mean": 0.64492350479948,
+        "p50": 0.4000000059604645,
+        "p95": 1.7999999970197678,
+        "max": 28.69999999552965,
+        "over16ms": 1
+      },
+      "draw": {
+        "mean": 9.579444444500323,
+        "p50": 6.199999995529652,
+        "p95": 30.899999998509884,
+        "max": 216.40000000596046,
+        "over16ms": 78
+      },
+      "skills": [
+        "jump-float-legendary",
+        "fake-set",
+        "ghost-tip",
+        "absolute-read"
+      ],
+      "maxActive": 3
+    },
+    {
+      "mode": "before",
+      "frames": 720,
+      "work": {
+        "mean": 10.128750000024835,
+        "p50": 6.700000002980232,
+        "p95": 29.600000001490116,
+        "max": 199.40000000596046,
+        "over16ms": 92
+      },
+      "tick": {
+        "mean": 0.650069541058222,
+        "p50": 0.4000000059604645,
+        "p95": 2.100000001490116,
+        "max": 26.30000000447035,
+        "over16ms": 1
+      },
+      "draw": {
+        "mean": 9.420833333343682,
+        "p50": 6.200000002980232,
+        "p95": 26.600000001490116,
+        "max": 199,
+        "over16ms": 82
+      },
+      "skills": [
+        "jump-float-legendary",
+        "fake-set",
+        "ghost-tip",
+        "absolute-read"
+      ],
+      "maxActive": 3
+    }
+  ],
+  "meanTickRatio": 0.9818798348490363,
+  "meanWorkRatio": 0.9985579444097663
+}

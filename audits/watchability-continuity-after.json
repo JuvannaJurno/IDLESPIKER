@@ -1,0 +1,415 @@
+{
+  "frames": 6000,
+  "jumps": [
+    {
+      "frame": 1031,
+      "id": 9,
+      "distance": 9.616346497580116,
+      "physical": 9.644038260949323,
+      "slow": true,
+      "skill": "absolute-read",
+      "from": {
+        "x": 536.1764526367188,
+        "y": 229.17312026023868,
+        "px": 536.1764652820905,
+        "py": 231.63332359038375,
+        "angle": 3.2979906695210643,
+        "pose": "normal",
+        "phase": 1.7494812912167506,
+        "jump": 0,
+        "spike": 0,
+        "moving": true
+      },
+      "to": {
+        "x": 535.6265869140625,
+        "y": 238.7737331390381,
+        "px": 535.6265920728099,
+        "py": 241.26167305601751,
+        "angle": 3.2582865180147267,
+        "pose": "normal",
+        "phase": 4.810653316734863,
+        "jump": 0,
+        "spike": 0,
+        "moving": true
+      },
+      "kind": "attack",
+      "touch": 1
+    }
+  ],
+  "work": {
+    "p50": 0.8999999985098839,
+    "p95": 3.2999999970197678,
+    "max": 259.5
+  },
+  "metrics": {
+    "paletteReads": 75776,
+    "paletteBuilds": 0,
+    "imageBuilds": 0,
+    "rasterized": 0,
+    "planBuilds": 2346,
+    "planHits": 73430,
+    "batchBuilds": 41,
+    "batchDraws": 72722,
+    "batchBytes": 2000448,
+    "warmups": 0,
+    "warmupMs": 0
+  },
+  "moving": {
+    "normal": 22163,
+    "slow": 22850
+  },
+  "stale": {
+    "normal": 0,
+    "slow": 12
+  },
+  "slowFrames": [
+    {
+      "frame": 1545,
+      "cost": 259.5,
+      "skill": "pancake",
+      "builds": 127,
+      "plans": 523
+    },
+    {
+      "frame": 4100,
+      "cost": 151.30000000447035,
+      "skill": null,
+      "builds": 136,
+      "plans": 1658
+    },
+    {
+      "frame": 4987,
+      "cost": 208.69999999552965,
+      "skill": "absolute-read",
+      "builds": 137,
+      "plans": 2060
+    }
+  ],
+  "events": [
+    {
+      "id": "jump-legendary",
+      "actor": 0,
+      "opportunity": 1,
+      "role": "middle",
+      "kind": "serve",
+      "at": 2.0166666666666644,
+      "team": 0,
+      "committedAt": 4.016666666666658
+    },
+    {
+      "id": "sync-attack",
+      "actor": 8,
+      "opportunity": 2,
+      "role": "setter",
+      "kind": "set",
+      "at": 5.583333333333319,
+      "team": 1,
+      "committedAt": 5.583333333333319
+    },
+    {
+      "id": "wipe",
+      "actor": 7,
+      "opportunity": null,
+      "role": "outside",
+      "kind": "attack",
+      "at": 7.033333333333314,
+      "team": 1
+    },
+    {
+      "id": "absolute-read",
+      "actor": 3,
+      "opportunity": 3,
+      "role": "middle",
+      "kind": "block",
+      "at": 7.333333333333313,
+      "team": 0,
+      "committedAt": 7.483333333333312
+    },
+    {
+      "id": "tempo-minus",
+      "actor": 1,
+      "opportunity": 4,
+      "role": "outside",
+      "kind": "set",
+      "at": 9.816666666666734,
+      "team": 0,
+      "committedAt": 10.333333333333426
+    },
+    {
+      "id": "absolute-read",
+      "actor": 9,
+      "opportunity": 5,
+      "role": "middle",
+      "kind": "block",
+      "at": 10.350000000000094,
+      "team": 1,
+      "committedAt": 10.416666666666764
+    },
+    {
+      "id": "perfect-second-touch",
+      "actor": 8,
+      "opportunity": 6,
+      "role": "setter",
+      "kind": "set",
+      "at": 11.283333333333474,
+      "team": 1,
+      "committedAt": 12.116666666666848
+    },
+    {
+      "id": "ghost-tip",
+      "actor": 7,
+      "opportunity": 7,
+      "role": "outside",
+      "kind": "attack",
+      "at": 13.483333333333583,
+      "team": 1,
+      "committedAt": 13.783333333333598
+    },
+    {
+      "id": "absolute-read",
+      "actor": 2,
+      "opportunity": 8,
+      "role": "setter",
+      "kind": "block",
+      "at": 13.800000000000265,
+      "team": 0,
+      "committedAt": 14.383333333333628
+    },
+    {
+      "id": "pancake",
+      "actor": 3,
+      "opportunity": 8,
+      "role": "middle",
+      "kind": "receive",
+      "at": 14.416666666666963,
+      "team": 0,
+      "committedAt": 15.150000000000333
+    },
+    {
+      "id": "fake-set",
+      "actor": 2,
+      "opportunity": null,
+      "role": "setter",
+      "kind": "set",
+      "at": 16.266666666667025,
+      "team": 0
+    },
+    {
+      "id": "ghost-tip",
+      "actor": 3,
+      "opportunity": 9,
+      "role": "middle",
+      "kind": "attack",
+      "at": 17.91666666666693,
+      "team": 0,
+      "committedAt": 18.216666666666914
+    },
+    {
+      "id": "absolute-read",
+      "actor": 7,
+      "opportunity": 10,
+      "role": "outside",
+      "kind": "block",
+      "at": 18.23333333333358,
+      "team": 1,
+      "committedAt": 18.833333333333545
+    },
+    {
+      "id": "tempo-minus",
+      "actor": 9,
+      "opportunity": 11,
+      "role": "middle",
+      "kind": "set",
+      "at": 20.966666666666757,
+      "team": 1,
+      "committedAt": 21.483333333333395
+    },
+    {
+      "id": "sync-attack",
+      "actor": 2,
+      "opportunity": 12,
+      "role": "setter",
+      "kind": "set",
+      "at": 23.233333333333295,
+      "team": 0,
+      "committedAt": 23.233333333333295
+    },
+    {
+      "id": "line",
+      "actor": 1,
+      "opportunity": null,
+      "role": "outside",
+      "kind": "attack",
+      "at": 24.99999999999986,
+      "team": 0
+    },
+    {
+      "id": "team-heart",
+      "actor": 2,
+      "role": "setter",
+      "kind": "support",
+      "at": 28.999999999999634,
+      "team": 0
+    },
+    {
+      "id": "team-heart",
+      "actor": 8,
+      "role": "setter",
+      "kind": "support",
+      "at": 28.999999999999634,
+      "team": 1
+    },
+    {
+      "id": "sky-ball-serve",
+      "actor": 7,
+      "opportunity": 13,
+      "role": "outside",
+      "kind": "serve",
+      "at": 32.99999999999941,
+      "team": 1,
+      "committedAt": 33.88333333333269
+    },
+    {
+      "id": "tempo-minus",
+      "actor": 3,
+      "opportunity": 14,
+      "role": "middle",
+      "kind": "set",
+      "at": 38.199999999999115,
+      "team": 0,
+      "committedAt": 38.71666666666575
+    },
+    {
+      "id": "fake-set",
+      "actor": 8,
+      "opportunity": null,
+      "role": "setter",
+      "kind": "set",
+      "at": 40.16666666666567,
+      "team": 1
+    },
+    {
+      "id": "ghost-tip",
+      "actor": 10,
+      "opportunity": 15,
+      "role": "middle",
+      "kind": "attack",
+      "at": 41.816666666665576,
+      "team": 1,
+      "committedAt": 42.11666666666556
+    },
+    {
+      "id": "fake-set",
+      "actor": 2,
+      "opportunity": null,
+      "role": "setter",
+      "kind": "set",
+      "at": 44.583333333332085,
+      "team": 0
+    },
+    {
+      "id": "cross",
+      "actor": 3,
+      "opportunity": null,
+      "role": "middle",
+      "kind": "attack",
+      "at": 46.533333333331974,
+      "team": 0
+    },
+    {
+      "id": "absolute-read",
+      "actor": 9,
+      "opportunity": 16,
+      "role": "middle",
+      "kind": "block",
+      "at": 46.54999999999864,
+      "team": 1,
+      "committedAt": 46.73333333333196
+    },
+    {
+      "id": "fake-set",
+      "actor": 8,
+      "opportunity": null,
+      "role": "setter",
+      "kind": "set",
+      "at": 48.749999999998515,
+      "team": 1
+    },
+    {
+      "id": "ghost-tip",
+      "actor": 9,
+      "opportunity": 17,
+      "role": "middle",
+      "kind": "attack",
+      "at": 50.39999999999842,
+      "team": 1,
+      "committedAt": 50.699999999998404
+    },
+    {
+      "id": "pancake",
+      "actor": 3,
+      "opportunity": 18,
+      "role": "middle",
+      "kind": "receive",
+      "at": 51.36666666666503,
+      "team": 0,
+      "committedAt": 52.04999999999833
+    },
+    {
+      "id": "fake-set",
+      "actor": 2,
+      "opportunity": null,
+      "role": "setter",
+      "kind": "set",
+      "at": 53.16666666666493,
+      "team": 0
+    },
+    {
+      "id": "cross",
+      "actor": 3,
+      "opportunity": null,
+      "role": "middle",
+      "kind": "attack",
+      "at": 55.11666666666482,
+      "team": 0
+    },
+    {
+      "id": "absolute-read",
+      "actor": 10,
+      "opportunity": 19,
+      "role": "middle",
+      "kind": "block",
+      "at": 55.133333333331485,
+      "team": 1,
+      "committedAt": 55.34999999999814
+    },
+    {
+      "id": "fake-set",
+      "actor": 8,
+      "opportunity": null,
+      "role": "setter",
+      "kind": "set",
+      "at": 57.33333333333136,
+      "team": 1
+    },
+    {
+      "id": "commit-block",
+      "actor": 3,
+      "opportunity": null,
+      "role": "middle",
+      "kind": "block",
+      "at": 59.299999999997915,
+      "team": 0
+    },
+    {
+      "id": "sky-ball-serve",
+      "actor": 1,
+      "opportunity": 20,
+      "role": "outside",
+      "kind": "serve",
+      "at": 67.26666666666414,
+      "team": 0,
+      "committedAt": 68.14999999999742
+    }
+  ]
+}

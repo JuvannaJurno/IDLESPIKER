@@ -1,0 +1,841 @@
+[
+  {
+    "seed": 1,
+    "finished": true,
+    "events": [
+      {
+        "id": "ghost-tip",
+        "actor": 9,
+        "opportunity": 1,
+        "role": "outside",
+        "kind": "attack",
+        "at": 7.483333333333312,
+        "team": 1,
+        "committedAt": 7.783333333333311
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 1,
+        "opportunity": 2,
+        "role": "outside",
+        "kind": "set",
+        "at": 10.566666666666771,
+        "team": 0,
+        "committedAt": 11.083333333333464
+      },
+      {
+        "id": "ghost-tip",
+        "actor": 7,
+        "opportunity": 3,
+        "role": "outside",
+        "kind": "attack",
+        "at": 24.49999999999989,
+        "team": 1,
+        "committedAt": 24.799999999999873
+      },
+      {
+        "id": "ghost-tip",
+        "actor": 3,
+        "opportunity": 4,
+        "role": "outside",
+        "kind": "attack",
+        "at": 38.01666666666579,
+        "team": 0,
+        "committedAt": 38.316666666665775
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 10,
+        "opportunity": 5,
+        "role": "middle",
+        "kind": "set",
+        "at": 50.19999999999843,
+        "team": 1,
+        "committedAt": 50.71666666666507
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 4,
+        "opportunity": 6,
+        "role": "middle",
+        "kind": "set",
+        "at": 52.449999999998305,
+        "team": 0,
+        "committedAt": 52.96666666666494
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 9,
+        "opportunity": 7,
+        "role": "outside",
+        "kind": "set",
+        "at": 54.69999999999818,
+        "team": 1,
+        "committedAt": 55.216666666664814
+      },
+      {
+        "id": "ghost-tip",
+        "actor": 4,
+        "opportunity": 8,
+        "role": "middle",
+        "kind": "attack",
+        "at": 58.34999999999797,
+        "team": 0,
+        "committedAt": 58.64999999999795
+      },
+      {
+        "id": "cross",
+        "actor": 4,
+        "opportunity": null,
+        "role": "middle",
+        "kind": "attack",
+        "at": 67.2333333333308,
+        "team": 0
+      },
+      {
+        "id": "slide-attack",
+        "actor": 10,
+        "opportunity": null,
+        "role": "middle",
+        "kind": "set",
+        "at": 69.73333333333066,
+        "team": 1
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 3,
+        "opportunity": 9,
+        "role": "outside",
+        "kind": "set",
+        "at": 82.86666666666325,
+        "team": 0,
+        "committedAt": 83.38333333332989
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 9,
+        "opportunity": 10,
+        "role": "outside",
+        "kind": "set",
+        "at": 85.98333333332974,
+        "team": 1,
+        "committedAt": 86.49999999999638
+      },
+      {
+        "id": "slide-attack",
+        "actor": 3,
+        "opportunity": null,
+        "role": "outside",
+        "kind": "set",
+        "at": 88.66666666666292,
+        "team": 0
+      },
+      {
+        "id": "ghost-tip",
+        "actor": 10,
+        "opportunity": 11,
+        "role": "middle",
+        "kind": "attack",
+        "at": 93.83333333332929,
+        "team": 1,
+        "committedAt": 94.13333333332928
+      },
+      {
+        "id": "ghost-tip",
+        "actor": 3,
+        "opportunity": 12,
+        "role": "outside",
+        "kind": "attack",
+        "at": 98.14999999999571,
+        "team": 0,
+        "committedAt": 98.4499999999957
+      },
+      {
+        "id": "slide-attack",
+        "actor": 4,
+        "opportunity": null,
+        "role": "middle",
+        "kind": "set",
+        "at": 110.84999999999499,
+        "team": 0
+      },
+      {
+        "id": "ghost-tip",
+        "actor": 11,
+        "opportunity": 13,
+        "role": "middle",
+        "kind": "attack",
+        "at": 116.01666666666137,
+        "team": 1,
+        "committedAt": 116.31666666666135
+      },
+      {
+        "id": "slide-attack",
+        "actor": 3,
+        "opportunity": null,
+        "role": "outside",
+        "kind": "set",
+        "at": 128.13333333332744,
+        "team": 0
+      },
+      {
+        "id": "ghost-tip",
+        "actor": 10,
+        "opportunity": 14,
+        "role": "middle",
+        "kind": "attack",
+        "at": 133.26666666666486,
+        "team": 1,
+        "committedAt": 133.5666666666651
+      }
+    ],
+    "points": 7,
+    "cooldowns": [
+      {
+        "actor": "1|cd-9",
+        "id": "ghost-tip",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-1",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-7",
+        "id": "ghost-tip",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 1,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-10",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 3,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-4",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 3,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-2",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 3,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-4",
+        "id": "ghost-tip",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 3,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-3",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": false,
+        "remaining": 1,
+        "until": 0,
+        "usedAt": 4,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-9",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 4,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-8",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 4,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-3",
+        "id": "ghost-tip",
+        "team": 0,
+        "pending": false,
+        "remaining": 1,
+        "until": 0,
+        "usedAt": 4,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-11",
+        "id": "ghost-tip",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 5,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-10",
+        "id": "ghost-tip",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 6,
+        "seconds": 0
+      }
+    ]
+  },
+  {
+    "seed": 2,
+    "finished": true,
+    "events": [
+      {
+        "id": "slide-attack",
+        "actor": 9,
+        "opportunity": null,
+        "role": "outside",
+        "kind": "set",
+        "at": 6.11666666666665,
+        "team": 1
+      },
+      {
+        "id": "ghost-tip",
+        "actor": 1,
+        "opportunity": 1,
+        "role": "outside",
+        "kind": "attack",
+        "at": 20.633333333333443,
+        "team": 0,
+        "committedAt": 20.933333333333426
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 10,
+        "opportunity": 2,
+        "role": "middle",
+        "kind": "set",
+        "at": 32.83333333333275,
+        "team": 1,
+        "committedAt": 33.34999999999939
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 9,
+        "opportunity": 3,
+        "role": "outside",
+        "kind": "set",
+        "at": 44.433333333332094,
+        "team": 1,
+        "committedAt": 44.94999999999873
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 3,
+        "opportunity": 4,
+        "role": "outside",
+        "kind": "set",
+        "at": 57.86666666666466,
+        "team": 0,
+        "committedAt": 58.3833333333313
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 9,
+        "opportunity": 5,
+        "role": "outside",
+        "kind": "set",
+        "at": 69.63333333333067,
+        "team": 1,
+        "committedAt": 70.1499999999973
+      },
+      {
+        "id": "ghost-tip",
+        "actor": 4,
+        "opportunity": 6,
+        "role": "middle",
+        "kind": "attack",
+        "at": 83.6666666666632,
+        "team": 0,
+        "committedAt": 83.96666666666319
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 11,
+        "opportunity": 7,
+        "role": "middle",
+        "kind": "set",
+        "at": 95.79999999999585,
+        "team": 1,
+        "cancelled": true
+      }
+    ],
+    "points": 8,
+    "cooldowns": [
+      {
+        "actor": "0|cd-1",
+        "id": "ghost-tip",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 1,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-10",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 2,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-3",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 4,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-2",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 4,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-9",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 5,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-4",
+        "id": "ghost-tip",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 6,
+        "seconds": 0
+      }
+    ]
+  },
+  {
+    "seed": 3,
+    "finished": true,
+    "events": [
+      {
+        "id": "ghost-tip",
+        "actor": 7,
+        "opportunity": 1,
+        "role": "outside",
+        "kind": "attack",
+        "at": 7.483333333333312,
+        "team": 1,
+        "committedAt": 7.783333333333311
+      },
+      {
+        "id": "slide-attack",
+        "actor": 3,
+        "opportunity": null,
+        "role": "outside",
+        "kind": "set",
+        "at": 10.566666666666771,
+        "team": 0
+      },
+      {
+        "id": "ghost-tip",
+        "actor": 9,
+        "opportunity": 2,
+        "role": "outside",
+        "kind": "attack",
+        "at": 15.70000000000036,
+        "team": 1,
+        "committedAt": 16.000000000000373
+      },
+      {
+        "id": "slide-attack",
+        "actor": 3,
+        "opportunity": null,
+        "role": "outside",
+        "kind": "set",
+        "at": 18.783333333333548,
+        "team": 0
+      }
+    ],
+    "points": 5,
+    "cooldowns": [
+      {
+        "actor": "1|cd-7",
+        "id": "ghost-tip",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-9",
+        "id": "ghost-tip",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      }
+    ]
+  },
+  {
+    "seed": 4,
+    "finished": true,
+    "events": [
+      {
+        "id": "slide-attack",
+        "actor": 7,
+        "opportunity": null,
+        "role": "outside",
+        "kind": "set",
+        "at": 6.11666666666665,
+        "team": 1
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 3,
+        "opportunity": 1,
+        "role": "outside",
+        "kind": "set",
+        "at": 9.883333333333404,
+        "team": 0,
+        "committedAt": 10.400000000000096
+      },
+      {
+        "id": "ghost-tip",
+        "actor": 3,
+        "opportunity": 2,
+        "role": "outside",
+        "kind": "attack",
+        "at": 33.483333333332716,
+        "team": 0,
+        "committedAt": 33.7833333333327
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 10,
+        "opportunity": 3,
+        "role": "middle",
+        "kind": "set",
+        "at": 36.61666666666587,
+        "team": 1,
+        "committedAt": 37.13333333333251
+      },
+      {
+        "id": "slide-attack",
+        "actor": 1,
+        "opportunity": null,
+        "role": "outside",
+        "kind": "set",
+        "at": 38.86666666666574,
+        "team": 0
+      },
+      {
+        "id": "ghost-tip",
+        "actor": 10,
+        "opportunity": 4,
+        "role": "middle",
+        "kind": "attack",
+        "at": 43.999999999998785,
+        "team": 1,
+        "committedAt": 44.29999999999877
+      },
+      {
+        "id": "slide-attack",
+        "actor": 3,
+        "opportunity": null,
+        "role": "outside",
+        "kind": "set",
+        "at": 47.04999999999861,
+        "team": 0
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 3,
+        "opportunity": 5,
+        "role": "outside",
+        "kind": "set",
+        "at": 69.73333333333066,
+        "team": 0,
+        "committedAt": 70.2499999999973
+      },
+      {
+        "id": "ghost-tip",
+        "actor": 11,
+        "opportunity": 6,
+        "role": "middle",
+        "kind": "attack",
+        "at": 73.6499999999971,
+        "team": 1,
+        "committedAt": 73.94999999999709
+      },
+      {
+        "id": "slide-attack",
+        "actor": 3,
+        "opportunity": null,
+        "role": "outside",
+        "kind": "set",
+        "at": 76.69999999999693,
+        "team": 0
+      },
+      {
+        "id": "ghost-tip",
+        "actor": 11,
+        "opportunity": 7,
+        "role": "middle",
+        "kind": "attack",
+        "at": 100.93333333332889,
+        "team": 1,
+        "committedAt": 101.23333333332887
+      },
+      {
+        "id": "slide-attack",
+        "actor": 10,
+        "opportunity": null,
+        "role": "middle",
+        "kind": "set",
+        "at": 113.63333333332817,
+        "team": 1
+      },
+      {
+        "id": "ghost-tip",
+        "actor": 10,
+        "opportunity": 8,
+        "role": "middle",
+        "kind": "attack",
+        "at": 138.53333333333572,
+        "team": 1,
+        "committedAt": 138.83333333333596
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 5,
+        "opportunity": 9,
+        "role": "middle",
+        "kind": "set",
+        "at": 141.51666666667143,
+        "team": 0,
+        "committedAt": 142.0333333333385
+      },
+      {
+        "id": "cross",
+        "actor": 11,
+        "opportunity": null,
+        "role": "middle",
+        "kind": "attack",
+        "at": 145.5166666666746,
+        "team": 1
+      },
+      {
+        "id": "tempo-minus",
+        "actor": 3,
+        "opportunity": 10,
+        "role": "outside",
+        "kind": "set",
+        "at": 148.0166666666766,
+        "team": 0,
+        "committedAt": 148.53333333334368
+      },
+      {
+        "id": "cross",
+        "actor": 11,
+        "opportunity": null,
+        "role": "middle",
+        "kind": "attack",
+        "at": 152.23333333334662,
+        "team": 1
+      },
+      {
+        "id": "ghost-tip",
+        "actor": 5,
+        "opportunity": 11,
+        "role": "middle",
+        "kind": "attack",
+        "at": 155.9000000000162,
+        "team": 0,
+        "committedAt": 156.20000000001644
+      },
+      {
+        "id": "slide-attack",
+        "actor": 11,
+        "opportunity": null,
+        "role": "middle",
+        "kind": "set",
+        "at": 158.86666666668523,
+        "team": 1
+      },
+      {
+        "id": "ghost-tip",
+        "actor": 3,
+        "opportunity": 12,
+        "role": "outside",
+        "kind": "attack",
+        "at": 173.4166666666968,
+        "team": 0,
+        "committedAt": 173.71666666669705
+      },
+      {
+        "id": "slide-attack",
+        "actor": 4,
+        "opportunity": null,
+        "role": "middle",
+        "kind": "set",
+        "at": 195.08333333338072,
+        "team": 0
+      }
+    ],
+    "points": 14,
+    "cooldowns": [
+      {
+        "actor": "1|cd-10",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 2,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-8",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 2,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-11",
+        "id": "ghost-tip",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 6,
+        "seconds": 0
+      },
+      {
+        "actor": "1|cd-10",
+        "id": "ghost-tip",
+        "team": 1,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 9,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-5",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 9,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-2",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 9,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-3",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 9,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-5",
+        "id": "ghost-tip",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 9,
+        "seconds": 0
+      },
+      {
+        "actor": "0|cd-3",
+        "id": "ghost-tip",
+        "team": 0,
+        "pending": false,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 10,
+        "seconds": 0
+      }
+    ]
+  }
+]

@@ -1,0 +1,2737 @@
+[
+  {
+    "team": 0,
+    "distance": 36,
+    "seed": 0,
+    "triggered": true,
+    "steps": 31,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 9.738514980045789,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 0.8737586437980646,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 433.8133970869026,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "attack-error",
+        "winner": "defender",
+        "quality": 0.65,
+        "animation": "attack-error"
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 36,
+    "seed": 1,
+    "triggered": true,
+    "steps": 31,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 9.738514980045789,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 433.8133970869026,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "kill",
+        "winner": "actor",
+        "quality": 0.65,
+        "animation": "kill"
+      },
+      {
+        "type": "touch-error",
+        "team": 1,
+        "player": 10,
+        "reason": "kill",
+        "gap": 4.004660009772967
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 0,
+        "previousServer": 0
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 36,
+    "seed": 2,
+    "triggered": true,
+    "steps": 31,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 9.738514980045789,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 433.8133970869026,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "kill",
+        "winner": "actor",
+        "quality": 0.65,
+        "animation": "kill"
+      },
+      {
+        "type": "touch-error",
+        "team": 1,
+        "player": 10,
+        "reason": "kill",
+        "gap": 3.721587527822596
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 0,
+        "previousServer": 0
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 36,
+    "seed": 3,
+    "triggered": true,
+    "steps": 31,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 9.738514980045789,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 0.9515160260861741,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 433.8133970869026,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "kill",
+        "winner": "actor",
+        "quality": 0.65,
+        "animation": "kill"
+      },
+      {
+        "type": "touch-error",
+        "team": 1,
+        "player": 11,
+        "reason": "kill",
+        "gap": 0.4051469657137627
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 0,
+        "previousServer": 0
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 36,
+    "seed": 4,
+    "triggered": true,
+    "steps": 31,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 9.738514980045789,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 433.8133970869026,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "block-contact",
+        "team": 1,
+        "players": [
+          8
+        ],
+        "point": false
+      },
+      {
+        "type": "position-error",
+        "team": 1,
+        "player": 6,
+        "gap": 82.90389082614689,
+        "kind": "attack",
+        "touch": 1
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 0,
+        "previousServer": 0
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 36,
+    "seed": 5,
+    "triggered": true,
+    "steps": 31,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 9.738514980045789,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 433.8133970869026,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "attack-error",
+        "winner": "defender",
+        "quality": 0.65,
+        "animation": "attack-error"
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 36,
+    "seed": 6,
+    "triggered": true,
+    "steps": 31,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 9.738514980045789,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 433.8133970869026,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      },
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "dig",
+        "winner": null,
+        "quality": 0.4866663556373677,
+        "animation": "dig"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 1,
+        "player": 11
+      },
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 11,
+        "event": "pass",
+        "winner": null,
+        "quality": 0.4866663556373677,
+        "animation": "pass"
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 36,
+    "seed": 7,
+    "triggered": true,
+    "steps": 31,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 9.738514980045789,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 0.9093337373249234,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 433.8133970869026,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "kill",
+        "winner": "actor",
+        "quality": 0.65,
+        "animation": "kill"
+      },
+      {
+        "type": "touch-error",
+        "team": 1,
+        "player": 10,
+        "reason": "kill",
+        "gap": 2.5877474479616787
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 0,
+        "previousServer": 0
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 90,
+    "seed": 0,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.28949052353613336,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 0.8737586437980646,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 424.7108379722141,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "attack-error",
+        "winner": "defender",
+        "quality": 0.65,
+        "animation": "attack-error"
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 90,
+    "seed": 1,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.28949052353613336,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 424.7108379722141,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "kill",
+        "winner": "actor",
+        "quality": 0.65,
+        "animation": "kill"
+      },
+      {
+        "type": "touch-error",
+        "team": 1,
+        "player": 10,
+        "reason": "kill",
+        "gap": 0.5120211381889732
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 0,
+        "previousServer": 0
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 90,
+    "seed": 2,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.28949052353613336,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 424.7108379722141,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "kill",
+        "winner": "actor",
+        "quality": 0.65,
+        "animation": "kill"
+      },
+      {
+        "type": "touch-error",
+        "team": 1,
+        "player": 10,
+        "reason": "kill",
+        "gap": 1.105925952122944
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 0,
+        "previousServer": 0
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 90,
+    "seed": 3,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.28949052353613336,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 0.9515160260861741,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 424.7108379722141,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "kill",
+        "winner": "actor",
+        "quality": 0.65,
+        "animation": "kill"
+      },
+      {
+        "type": "touch-error",
+        "team": 1,
+        "player": 11,
+        "reason": "kill",
+        "gap": 0.8098640507877086
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 0,
+        "previousServer": 0
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 90,
+    "seed": 4,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.28949052353613336,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 424.7108379722141,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "block-touch",
+        "winner": null,
+        "quality": 0.6493159589637071,
+        "animation": "block-touch"
+      },
+      {
+        "type": "block-contact",
+        "team": 1,
+        "players": [
+          8
+        ],
+        "point": false
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 1,
+        "player": 6
+      },
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 6,
+        "event": "pass",
+        "winner": null,
+        "quality": 0.6493159589637071,
+        "animation": "pass"
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 90,
+    "seed": 5,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.28949052353613336,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 424.7108379722141,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "attack-error",
+        "winner": "defender",
+        "quality": 0.65,
+        "animation": "attack-error"
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 90,
+    "seed": 6,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.28949052353613336,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 424.7108379722141,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      },
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "dig",
+        "winner": null,
+        "quality": 0.4866663556373677,
+        "animation": "dig"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 1,
+        "player": 11
+      },
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 11,
+        "event": "pass",
+        "winner": null,
+        "quality": 0.4866663556373677,
+        "animation": "pass"
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 90,
+    "seed": 7,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.28949052353613336,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 0.9093337373249234,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 424.7108379722141,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "kill",
+        "winner": "actor",
+        "quality": 0.65,
+        "animation": "kill"
+      },
+      {
+        "type": "touch-error",
+        "team": 1,
+        "player": 10,
+        "reason": "kill",
+        "gap": 0.07069932531415077
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 0,
+        "previousServer": 0
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 150,
+    "seed": 0,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.968208611675814,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 0.8737586437980646,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 425.96820624923464,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "attack-error",
+        "winner": "defender",
+        "quality": 0.65,
+        "animation": "attack-error"
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 150,
+    "seed": 1,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.968208611675814,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 425.96820624923464,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "kill",
+        "winner": "actor",
+        "quality": 0.65,
+        "animation": "kill"
+      },
+      {
+        "type": "touch-error",
+        "team": 1,
+        "player": 10,
+        "reason": "kill",
+        "gap": 0.5121991949599168
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 0,
+        "previousServer": 0
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 150,
+    "seed": 2,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.968208611675814,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 425.96820624923464,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "kill",
+        "winner": "actor",
+        "quality": 0.65,
+        "animation": "kill"
+      },
+      {
+        "type": "touch-error",
+        "team": 1,
+        "player": 10,
+        "reason": "kill",
+        "gap": 1.1059541393464045
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 0,
+        "previousServer": 0
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 150,
+    "seed": 3,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.968208611675814,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 0.9515160260861741,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 425.96820624923464,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "kill",
+        "winner": "actor",
+        "quality": 0.65,
+        "animation": "kill"
+      },
+      {
+        "type": "touch-error",
+        "team": 1,
+        "player": 11,
+        "reason": "kill",
+        "gap": 0.8098640507877086
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 0,
+        "previousServer": 0
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 150,
+    "seed": 4,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.968208611675814,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 425.96820624923464,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "block-touch",
+        "winner": null,
+        "quality": 0.6493159589637071,
+        "animation": "block-touch"
+      },
+      {
+        "type": "block-contact",
+        "team": 1,
+        "players": [
+          8
+        ],
+        "point": false
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 1,
+        "player": 6
+      },
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 6,
+        "event": "pass",
+        "winner": null,
+        "quality": 0.6493159589637071,
+        "animation": "pass"
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 150,
+    "seed": 5,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.968208611675814,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 425.96820624923464,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "attack-error",
+        "winner": "defender",
+        "quality": 0.65,
+        "animation": "attack-error"
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 150,
+    "seed": 6,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.968208611675814,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 425.96820624923464,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      },
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "dig",
+        "winner": null,
+        "quality": 0.4866663556373677,
+        "animation": "dig"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 1,
+        "player": 11
+      },
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 11,
+        "event": "pass",
+        "winner": null,
+        "quality": 0.4866663556373677,
+        "animation": "pass"
+      }
+    ]
+  },
+  {
+    "team": 0,
+    "distance": 150,
+    "seed": 7,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.968208611675814,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 2,
+        "event": "set",
+        "winner": null,
+        "quality": 0.9093337373249234,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 3,
+        "player": 1
+      }
+    ],
+    "x": 425.96820624923464,
+    "targetX": 425,
+    "attackHistory": [
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 1,
+        "blockers": [
+          8
+        ],
+        "event": "kill",
+        "winner": "actor",
+        "quality": 0.65,
+        "animation": "kill"
+      },
+      {
+        "type": "touch-error",
+        "team": 1,
+        "player": 10,
+        "reason": "kill",
+        "gap": 0.07059357182894216
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 0,
+        "previousServer": 0
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 36,
+    "seed": 0,
+    "triggered": true,
+    "steps": 31,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 9.990578307157895,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 0.8737586437980646,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 566.4577531604149,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      },
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 7,
+        "blockers": [
+          2,
+          1
+        ],
+        "event": "attack-error",
+        "winner": "defender",
+        "quality": 0.65,
+        "animation": "attack-error"
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 0,
+        "previousServer": 0
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 36,
+    "seed": 1,
+    "triggered": true,
+    "steps": 31,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 9.990578307157895,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 566.4577531604149,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "touch-error",
+        "team": 0,
+        "player": 4,
+        "reason": "kill",
+        "gap": 1.2902145773114582
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 36,
+    "seed": 2,
+    "triggered": true,
+    "steps": 31,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 9.990578307157895,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 566.4577531604149,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "touch-error",
+        "team": 0,
+        "player": 4,
+        "reason": "kill",
+        "gap": 5.291830825157326
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 36,
+    "seed": 3,
+    "triggered": true,
+    "steps": 31,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 9.990578307157895,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 0.9515160260861741,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 566.4577531604149,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "touch-error",
+        "team": 0,
+        "player": 5,
+        "reason": "kill",
+        "gap": 4.994779179779019
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 36,
+    "seed": 4,
+    "triggered": true,
+    "steps": 31,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 9.990578307157895,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 566.4577531604149,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "position-error",
+        "team": 0,
+        "player": 0,
+        "gap": 116.25554717615995,
+        "kind": "attack",
+        "touch": 1
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 36,
+    "seed": 5,
+    "triggered": true,
+    "steps": 31,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 9.990578307157895,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 566.4577531604149,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      },
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 7,
+        "blockers": [
+          2,
+          1
+        ],
+        "event": "attack-error",
+        "winner": "defender",
+        "quality": 0.65,
+        "animation": "attack-error"
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 0,
+        "previousServer": 0
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 36,
+    "seed": 6,
+    "triggered": true,
+    "steps": 31,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 9.990578307157895,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 566.4577531604149,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "position-error",
+        "team": 0,
+        "player": 5,
+        "gap": 75.45761249170673,
+        "kind": "attack",
+        "touch": 1
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 36,
+    "seed": 7,
+    "triggered": true,
+    "steps": 31,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 9.990578307157895,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 0.9093337373249234,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 566.4577531604149,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "touch-error",
+        "team": 0,
+        "player": 4,
+        "reason": "kill",
+        "gap": 2.4924976146232374
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 90,
+    "seed": 0,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.29030378965668924,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 0.8737586437980646,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 574.7098096784582,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      },
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 7,
+        "blockers": [
+          1,
+          2
+        ],
+        "event": "attack-error",
+        "winner": "defender",
+        "quality": 0.65,
+        "animation": "attack-error"
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 0,
+        "previousServer": 0
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 90,
+    "seed": 1,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.29030378965668924,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 574.7098096784582,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "touch-error",
+        "team": 0,
+        "player": 4,
+        "reason": "kill",
+        "gap": 2.694317025352409
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 90,
+    "seed": 2,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.29030378965668924,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 574.7098096784582,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "touch-error",
+        "team": 0,
+        "player": 4,
+        "reason": "kill",
+        "gap": 0.9815991381277345
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 90,
+    "seed": 3,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.29030378965668924,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 0.9515160260861741,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 574.7098096784582,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "touch-error",
+        "team": 0,
+        "player": 5,
+        "reason": "kill",
+        "gap": 0.8392242919627569
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 90,
+    "seed": 4,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.29030378965668924,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 574.7098096784582,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "position-error",
+        "team": 0,
+        "player": 0,
+        "gap": 44.67137670908106,
+        "kind": "attack",
+        "touch": 1
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 90,
+    "seed": 5,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.29030378965668924,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 574.7098096784582,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      },
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 7,
+        "blockers": [
+          2,
+          1
+        ],
+        "event": "attack-error",
+        "winner": "defender",
+        "quality": 0.65,
+        "animation": "attack-error"
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 0,
+        "previousServer": 0
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 90,
+    "seed": 6,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.29030378965668924,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 574.7098096784582,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      },
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 7,
+        "blockers": [
+          2,
+          1
+        ],
+        "event": "dig",
+        "winner": null,
+        "quality": 0.4866663556373677,
+        "animation": "dig"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 1,
+        "player": 5
+      },
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 5,
+        "event": "pass",
+        "winner": null,
+        "quality": 0.4866663556373677,
+        "animation": "pass"
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 90,
+    "seed": 7,
+    "triggered": false,
+    "steps": 100,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.29030378965668924,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 0.9093337373249234,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 574.7098096784582,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "touch-error",
+        "team": 0,
+        "player": 4,
+        "reason": "kill",
+        "gap": 0.9270093752596444
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 150,
+    "seed": 0,
+    "triggered": false,
+    "steps": 103,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.5022116100114719,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 0.8737586437980646,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 575.5017544884356,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      },
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 7,
+        "blockers": [
+          1,
+          2
+        ],
+        "event": "attack-error",
+        "winner": "defender",
+        "quality": 0.65,
+        "animation": "attack-error"
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 0,
+        "previousServer": 0
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 150,
+    "seed": 1,
+    "triggered": false,
+    "steps": 103,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.5022116100114719,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 575.5017544884356,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "touch-error",
+        "team": 0,
+        "player": 4,
+        "reason": "kill",
+        "gap": 1.634485795176195
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 150,
+    "seed": 2,
+    "triggered": false,
+    "steps": 103,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.5022116100114719,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 575.5017544884356,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "touch-error",
+        "team": 0,
+        "player": 4,
+        "reason": "kill",
+        "gap": 0.8982585305373073
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 150,
+    "seed": 3,
+    "triggered": false,
+    "steps": 103,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.5022116100114719,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 0.9515160260861741,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 575.5017544884356,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "touch-error",
+        "team": 0,
+        "player": 5,
+        "reason": "kill",
+        "gap": 0.8797706624328234
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 150,
+    "seed": 4,
+    "triggered": false,
+    "steps": 103,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.5022116100114719,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 575.5017544884356,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "position-error",
+        "team": 0,
+        "player": 0,
+        "gap": 34.7951329603743,
+        "kind": "attack",
+        "touch": 1
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 150,
+    "seed": 5,
+    "triggered": false,
+    "steps": 103,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.5022116100114719,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 575.5017544884356,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      },
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 7,
+        "blockers": [
+          1,
+          2
+        ],
+        "event": "attack-error",
+        "winner": "defender",
+        "quality": 0.65,
+        "animation": "attack-error"
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 0,
+        "previousServer": 0
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 150,
+    "seed": 6,
+    "triggered": false,
+    "steps": 103,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.5022116100114719,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 1,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 575.5017544884356,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      },
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 7,
+        "blockers": [
+          2,
+          1
+        ],
+        "event": "dig",
+        "winner": null,
+        "quality": 0.4866663556373677,
+        "animation": "dig"
+      },
+      {
+        "type": "touch",
+        "team": 0,
+        "touch": 1,
+        "player": 5
+      },
+      {
+        "type": "resolution",
+        "team": 0,
+        "player": 5,
+        "event": "pass",
+        "winner": null,
+        "quality": 0.4866663556373677,
+        "animation": "pass"
+      }
+    ]
+  },
+  {
+    "team": 1,
+    "distance": 150,
+    "seed": 7,
+    "triggered": false,
+    "steps": 103,
+    "state": "flight",
+    "kind": "attack",
+    "same": false,
+    "gap": 0.5022116100114719,
+    "history": [
+      {
+        "type": "resolution",
+        "team": 1,
+        "player": 8,
+        "event": "set",
+        "winner": null,
+        "quality": 0.9093337373249234,
+        "animation": "set"
+      },
+      {
+        "type": "touch",
+        "team": 1,
+        "touch": 3,
+        "player": 7
+      }
+    ],
+    "x": 575.5017544884356,
+    "targetX": 575,
+    "attackHistory": [
+      {
+        "type": "touch-error",
+        "team": 0,
+        "player": 4,
+        "reason": "kill",
+        "gap": 0.6454565483678163
+      },
+      {
+        "type": "drop"
+      },
+      {
+        "type": "point",
+        "team": 1,
+        "previousServer": 0
+      },
+      {
+        "type": "rotation",
+        "team": 1
+      }
+    ]
+  }
+]

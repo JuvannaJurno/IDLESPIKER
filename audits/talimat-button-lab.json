@@ -1,0 +1,156 @@
+{
+  "cases": 30,
+  "rows": [
+    {
+      "width": 280,
+      "dark": false,
+      "mode": "normal"
+    },
+    {
+      "width": 280,
+      "dark": false,
+      "mode": "critical"
+    },
+    {
+      "width": 280,
+      "dark": false,
+      "mode": "match"
+    },
+    {
+      "width": 280,
+      "dark": true,
+      "mode": "normal"
+    },
+    {
+      "width": 280,
+      "dark": true,
+      "mode": "critical"
+    },
+    {
+      "width": 280,
+      "dark": true,
+      "mode": "match"
+    },
+    {
+      "width": 320,
+      "dark": false,
+      "mode": "normal"
+    },
+    {
+      "width": 320,
+      "dark": false,
+      "mode": "critical"
+    },
+    {
+      "width": 320,
+      "dark": false,
+      "mode": "match"
+    },
+    {
+      "width": 320,
+      "dark": true,
+      "mode": "normal"
+    },
+    {
+      "width": 320,
+      "dark": true,
+      "mode": "critical"
+    },
+    {
+      "width": 320,
+      "dark": true,
+      "mode": "match"
+    },
+    {
+      "width": 390,
+      "dark": false,
+      "mode": "normal"
+    },
+    {
+      "width": 390,
+      "dark": false,
+      "mode": "critical"
+    },
+    {
+      "width": 390,
+      "dark": false,
+      "mode": "match"
+    },
+    {
+      "width": 390,
+      "dark": true,
+      "mode": "normal"
+    },
+    {
+      "width": 390,
+      "dark": true,
+      "mode": "critical"
+    },
+    {
+      "width": 390,
+      "dark": true,
+      "mode": "match"
+    },
+    {
+      "width": 480,
+      "dark": false,
+      "mode": "normal"
+    },
+    {
+      "width": 480,
+      "dark": false,
+      "mode": "critical"
+    },
+    {
+      "width": 480,
+      "dark": false,
+      "mode": "match"
+    },
+    {
+      "width": 480,
+      "dark": true,
+      "mode": "normal"
+    },
+    {
+      "width": 480,
+      "dark": true,
+      "mode": "critical"
+    },
+    {
+      "width": 480,
+      "dark": true,
+      "mode": "match"
+    },
+    {
+      "width": 1280,
+      "dark": false,
+      "mode": "normal"
+    },
+    {
+      "width": 1280,
+      "dark": false,
+      "mode": "critical"
+    },
+    {
+      "width": 1280,
+      "dark": false,
+      "mode": "match"
+    },
+    {
+      "width": 1280,
+      "dark": true,
+      "mode": "normal"
+    },
+    {
+      "width": 1280,
+      "dark": true,
+      "mode": "critical"
+    },
+    {
+      "width": 1280,
+      "dark": true,
+      "mode": "match"
+    }
+  ],
+  "errors": []
+}

@@ -1,5 +1,13 @@
 # Idle Spiker — Görünüm ve davranış rehberi
 
+### 1 Kasım 2026 — Maç hareketlerinin sürekliliği
+
+Kusursuz Hücum Okuma'nın blok sonrası 0,3 saniyelik inişi, oyuncunun o sırada ilerleyen canlı konumuna yumuşakça bağlanır; oyuncu eski blok noktasında tutulup süre bitiminde geri sıçratılmaz. Temas noktası ve maç fiziği korunur. Legendary karartması mevcut yavaş çekimin 0,12 saniyelik girişine eşlik eder; Legendary ışığı geciktirilmez. Pancake karartma sınıfı her çizimde kapatılıp açılmaz. Kulübe/libero çizimine de oyuncu kimliği aktarılır; hakemin SVG parçaları maça başlamadan hazırlanır. Böylece kulübedeki görünüm/aksesuarlar korunur ve ilk çizimde eski sprite'a dönüş engellenir. Üretim görsel doğrulaması gerçek TeamView/MatchIntro kadrosu, güncel SVG çizicisi ve forma renkleriyle yapılır; bağımsız mac.html varsayılan kadrosu yalnız teknik teşhis içindir. Ayrıntılar: [Maç izlenebilirlik incelemesi](audits/watchability-2026-11-01.md).
+
+### 1 Kasım 2026 — Legendary koşulları ve temas CD'si
+
+Servis Legendary'leri servis sırası/CD ile seçilir; birden fazlası hazırsa son kullanılan dışındaki tercih edilir. Eksi Tempo'nun manşet sırasında ön hazırlığı hareket sarmalayıcıları arasında korunur; yetişilebilir hızlı pasta Kombine Hücum'dan önce gelir. Blok planındaki diğer uygun oyuncular da Kusursuz Hücum Okuma için değerlendirilir. Tek Elle Pas ulaşılabilir uzanma durumunda, Zor Toplara Pas mevcut uzun yol koşulunda çalışır; kolay pasa Legendary eklenmez. Hayalet Plase karşı blok planı gerektirir. Hazırlık skill'i rezerve eder; CD eylem/temasta başlar, iptal edilen hazırlık CD harcamaz. Eksi Tempo ikilisinin rezervasyonları birlikte yönetilir. Normal pas aldatması aynı pasta yalnız bir kez değerlendirilir. Takımın Kalbi'nin ortak iki ardışık kayıp CD'si ve mevcut görsel aileler korunur. Sayısal koşullar, önce/sonra kullanım ölçümleri ve test kapsamı: [Legendary koşulları incelemesi](audits/legendary-conditions-2026-11-01.md).
+
 ### 1 Kasım 2026 — Menü akışı regresyonları
 
 Kapalı Oyuncu Merkezi, kart açma/karşılaştırma durumunda olsa da sayfa akışında görünmez. Medya blok seçimi standart blok seçicisinin ikon, metin sarma ve hizalama kurallarını kullanır. 2. Lig Gelir Merkezi'nin BAL'dan kalan gelir kartları kendi Önceki aşama çekmecesindedir; yalnız mahalle beslenme kartları Performans Merkezi'ne taşınır. Maç bildirimi hem adımlı tutorialı hem basit görünür ipucunu bekler; beklenmedik üst modal eski spotlight tarafından tıklanamaz hale getirilmez. Eksi Tempo yalnız yetişilebilir yakın hücumda devreye girer; uzak hücumcu için normal pas/CD korunur. Kamp dönüşünde yeni normal yetenek adı da yıldız ekranında Kazanıldı olarak görünür; normal yeteneğe zorunlu Legendary açılışı eklenmez. Detaylı yeniden oluşturma, test ve görsel kanıtlar: [1 Kasım hata taraması](audits/debug-2026-11-01.md).
@@ -1209,3 +1217,20 @@ Topun uçuşuyla birlikte dönüşünde kullanılan native elapsed saati de yaln
 ### Kamp gönderiminden sonra boş yuvalar — 1 Kasım 2026
 
 Kamptaki oyuncunun kalan gününü oluşturan hatalı campDayscampDays çağrısı renderı yarıda kesiyordu; campDays olarak düzeltildi. Gönderilen oyuncular dolu yuvalarda görünür, yalnız kendi yuvaları kilitlidir; boş yuvalara yeni oyuncular seçilip ayrı gruplar halinde gönderilebilir. Kayıt/ücret/kamp süresi kuralları değişmedi. Kalan günler yuvalarda da aynı yuvarlama ile yazılır. Kontrol: test-camp-draft-preview.cjs; iki oyuncu gönderme, ardından üçüncü gönderim, yeniden yükleme ve dördüncü oyuncuyu seçme; 320/390 genişlik ve kaynak yetersizliği. Görsel: audits/camp-running-add-more.png. Eski test-camps.cjs eski duyuru gününü (17) bekliyor; test-camp-runtime.cjs tarayıcı IntersectionObserver taklidi eksik olduğu için bağımsız olarak çalışmıyor. Bu iki eski test kamp gönderimini doğrulamak için kullanılmadı.
+
+
+1 Kasım talimat düğmesi onayı: Talimat ver A · Derin kenar, Maça geç F · Çerçeveli yüzeyi kullanır (talimat-button-lab.html). Aynı onaylı SVGler dokuz parçalı border-image olarak köşeleri bozulmadan ölçeklenir; açık/koyu palet korunur. Basış 4px aşağı oturur, alt derinlik 14pxden 10pxe daralır; 110ms geri bildirim ve basılı tutma vardır. Eski ölçek animasyonu yoktur; ses instruction-sound.js üzerinden aynıdır. Reduced-motion hareketi kapatır. Yatay ekranda oyun döndürülmez: ortalanmış dikey kolon en çok480px ve ekran yüksekliğinin yaklaşık%72si; minimum280px, alt menü/eylem/maç aynı kolona uyar. Üretim tasarımı ayrı enerji-button.css içinde. 56 boyut/tema/durum, metin sınırları, asimetrik güvenli alanlar ve orijinal ses eşdeğerliği test edildi; gerçek320px ekranlar incelendi. Push yapılmadı.
+
+1 Kasım kullanıcı geri alımı: Talimat ver için A yüzeyi kaldırıldı; eski yuvarlak sarı düğme, koyu tema karşılığı ve responsive yerleşim geri geldi. Maça geç F · Çerçeveli ve yatay ekranda dikey kolon kararı korunur.
+
+1 Kasım paylaşım denemesi: sosyalPublish B · İnce çizgi SVG yüzeyine geçti; aynı hazırlık/dolum/sıra davranışı ve ses korunur. Pasif durum soluktur, aktif basış kenarı kısalır. Talimat ver eski yuvarlak görünümünde, 7px taban gölgesi basışta 3pxe iner ve yüzey4px aşağı oturur; ölçek büyütme yoktur.
+
+1 Kasım paylaşım dolumu: B yüzeyinin ilerleme dolgusu büyütüldü; içerik kutusundan her yönde3px genişleyerek iç çerçeveye yaklaşır. Dış kenar ve derinlik korunur; ilerleme hesabı değişmez.
+
+1 Kasım geri alımı: Maça geç için F yüzeyi de kaldırıldı. Talimat ver ve Maça geç eski yuvarlak eylem ailesini kullanır. Sosyal paylaşımın B yüzeyi ve dikey kolon korunur.
+
+1 Kasım paylaşım hazırlanıyor durumu: data-state=working boyunca yüzey basılı görünür (3px aşağı, alt kenar11px); hazır olunca normal yüzeye döner. Sıra ekleme yetkisi/disabled ve hazırlık süresi değişmez.
+
+1 Kasım seri talimat basışı: 110ms sınıf zamanlayıcısı kaldırıldı; seri tıklamada sürekli basılı kalıyordu. Her manuel talimat mevcut yüzey konumundan145mslik kısa basış/geri dönüş başlatır, önceki animasyonu iptal eder. 3px derinlik ve çok küçük0,4px geri yaylanma; ok yuvası135mslik hafif sıkışır, tüm düğme ölçeklenmez. Animasyonlar birikmez, otomatik talimat bunu oynatmaz, reduced-motion hareket etmez. Ses/üretim değişmez.
+
+1 Kasım derin paylaşım basışı: hazırlanırken B SVGsinin alttaki çıkıntılı derinlik yolu çıkarılmış60px yüksek varyantı kullanılır; yalnız ince dış çerçeve kalır. Yüzey4px aşağı oturur, hazır olduğunda orijinal64px yüzeye döner; dolum/kutu ölçüsü ve işleyiş korunur.

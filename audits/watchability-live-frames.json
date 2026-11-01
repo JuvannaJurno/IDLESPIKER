@@ -1,0 +1,59 @@
+{
+  "method": "Actual TeamView/MatchIntro roster, current SVG kits, substitutes/referee and live requestAnimationFrame, 18 seconds per case, 390x844 DPR2. CPU throttling is a stress proxy; not physical phone FPS.",
+  "rows": [
+    {
+      "cpuSlowdown": 1,
+      "duration": 18016,
+      "frames": 1061,
+      "effectiveFps": 58.89209591474245,
+      "intervals": {
+        "p50": 16.699999999999818,
+        "p95": 16.800000000000182,
+        "max": 183.40000000000055,
+        "over50ms": 3
+      },
+      "draw": {
+        "p50": 4.899999998509884,
+        "p95": 7.799999997019768,
+        "max": 34.899999998509884,
+        "over50ms": 0
+      },
+      "skills": [
+        "jump-float-legendary",
+        "cover",
+        "tempo-minus",
+        "absolute-read",
+        "pancake",
+        "fake-set"
+      ],
+      "errors": []
+    },
+    {
+      "cpuSlowdown": 4,
+      "duration": 18015.9,
+      "frames": 1024,
+      "effectiveFps": 56.83868138699704,
+      "intervals": {
+        "p50": 16.699999999999818,
+        "p95": 16.80000000000109,
+        "max": 100,
+        "over50ms": 5
+      },
+      "draw": {
+        "p50": 7.899999998509884,
+        "p95": 16.5,
+        "max": 70.39999999850988,
+        "over50ms": 1
+      },
+      "skills": [
+        "jump-float-legendary",
+        "cover",
+        "tempo-minus",
+        "absolute-read",
+        "pancake",
+        "fake-set"
+      ],
+      "errors": []
+    }
+  ]
+}

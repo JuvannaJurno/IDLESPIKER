@@ -1,0 +1,116 @@
+{
+  "before": {
+    "points": 203,
+    "seconds": 6638.566666666667,
+    "simulationSeconds": 5001.1166666669415,
+    "contacts": {
+      "jump-legendary": 29,
+      "ghost-tip": 194,
+      "jump-float-legendary": 32,
+      "absolute-read": 136,
+      "sync-attack": 88,
+      "sky-ball-serve": 22,
+      "one-hand-rescue": 20,
+      "perfect-second-touch": 23,
+      "tempo-minus": 9,
+      "pancake": 222,
+      "team-heart": 22
+    },
+    "prepared": {
+      "team-heart": 22,
+      "sky-ball-serve": 22,
+      "sync-attack": 88,
+      "tempo-minus": 9,
+      "absolute-read": 136,
+      "jump-legendary": 29,
+      "jump-float-legendary": 32,
+      "perfect-second-touch": 23,
+      "one-hand-rescue": 20,
+      "pancake": 279,
+      "ghost-tip": 194
+    },
+    "cancelled": 0,
+    "profiles": {
+      "balanced": {
+        "points": 42,
+        "contacts": 98,
+        "seconds": 863.6833333333333
+      },
+      "quick-attack": {
+        "points": 55,
+        "contacts": 73,
+        "seconds": 1012.0500000000001
+      },
+      "rescue": {
+        "points": 57,
+        "contacts": 240,
+        "seconds": 2313.2333333333336
+      },
+      "all-ready": {
+        "points": 49,
+        "contacts": 386,
+        "seconds": 2449.6
+      }
+    },
+    "total": 797,
+    "per10Points": 39.26108374384236,
+    "perMinute": 7.203362171553096
+  },
+  "after": {
+    "points": 204,
+    "seconds": 5340.583333333333,
+    "simulationSeconds": 4086.683333333899,
+    "contacts": {
+      "jump-legendary": 22,
+      "ghost-tip": 172,
+      "jump-float-legendary": 35,
+      "absolute-read": 145,
+      "sync-attack": 47,
+      "sky-ball-serve": 25,
+      "one-hand-rescue": 27,
+      "perfect-second-touch": 14,
+      "tempo-minus": 45,
+      "pancake": 160,
+      "team-heart": 20
+    },
+    "prepared": {
+      "team-heart": 20,
+      "sky-ball-serve": 25,
+      "sync-attack": 47,
+      "tempo-minus": 46,
+      "absolute-read": 145,
+      "jump-legendary": 22,
+      "jump-float-legendary": 35,
+      "perfect-second-touch": 14,
+      "one-hand-rescue": 27,
+      "pancake": 204,
+      "ghost-tip": 172
+    },
+    "cancelled": 45,
+    "profiles": {
+      "balanced": {
+        "points": 44,
+        "contacts": 106,
+        "seconds": 911.5
+      },
+      "quick-attack": {
+        "points": 63,
+        "contacts": 76,
+        "seconds": 1035.6333333333334
+      },
+      "rescue": {
+        "points": 51,
+        "contacts": 198,
+        "seconds": 1818.5
+      },
+      "all-ready": {
+        "points": 46,
+        "contacts": 332,
+        "seconds": 1574.95
+      }
+    },
+    "total": 712,
+    "per10Points": 34.90196078431373,
+    "perMinute": 7.999126187838407
+  }
+}

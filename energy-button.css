@@ -1,0 +1,48 @@
+/* Keep the existing action surface; let its three contents share the available width. */
+html:not(.desktop-beta) #energyButton{
+ --energy-icon-size:clamp(36px,11vw,46px);
+ container-type:inline-size;
+ display:grid;grid-template-columns:var(--energy-icon-size) minmax(0,1fr) minmax(0,31%);
+ gap:clamp(7px,2vw,12px);align-items:center;box-sizing:border-box;
+ left:calc(var(--app-view-left,0px) + var(--app-safe-left,8px) + 6px);
+ right:calc(var(--app-view-right,0px) + var(--app-safe-right,8px) + 6px);
+ width:min(452px,calc(var(--app-view-width,100vw) - var(--app-safe-left,8px) - var(--app-safe-right,8px) - 12px));
+ max-width:none;margin-inline:auto;
+ bottom:calc(var(--app-view-bottom,0px) + var(--app-nav-height,67px) + 12px);
+ min-height:84px;height:auto;padding:12px clamp(10px,3vw,18px);
+ overflow:hidden;touch-action:manipulation;user-select:none;-webkit-user-select:none;
+}
+html:not(.desktop-beta) #energyButton>.bolt{
+ width:var(--energy-icon-size);height:var(--energy-icon-size);min-width:0;
+ border-radius:clamp(11px,3.6vw,15px);line-height:1;align-self:center;
+}
+html:not(.desktop-beta) #energyButton>.bolt>.spiker-icon{width:clamp(24px,8cqw,30px);height:clamp(24px,8cqw,30px)}
+html:not(.desktop-beta) #energyButton>span:nth-child(2){min-width:0;max-width:100%}
+html:not(.desktop-beta) #energyButton strong{font-size:clamp(18px,7cqw,23px);line-height:1.15;letter-spacing:-.45px;overflow-wrap:normal}
+html:not(.desktop-beta) #energyButton .mobile-progress{font-size:clamp(9px,3cqw,10px);line-height:1.35;margin-top:4px;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+html:not(.desktop-beta) #energyButton .ap-feedback{min-width:0;width:auto;max-width:none;margin:0;font-size:clamp(11px,3.5cqw,13px);line-height:1.25;text-align:right;overflow-wrap:anywhere;text-wrap:balance;font-variant-numeric:tabular-nums}
+html:not(.desktop-beta) #energyButton[data-match-ready=true]{grid-template-columns:var(--energy-icon-size) minmax(0,1fr)}
+html:not(.desktop-beta) #energyButton .match-button-note{font-size:clamp(9px,3cqw,11px);line-height:1.35;margin-top:4px;overflow-wrap:anywhere}
+html:not(.desktop-beta) #energyButton:active{transform:translateY(3px)}
+@media(prefers-reduced-motion:reduce){html:not(.desktop-beta) #energyButton:active{transform:none}}
+
+/* Preserve a portrait-shaped game column on landscape displays; no forced rotation. */
+@media(orientation:landscape){
+ html:not(.desktop-beta){--portrait-game-width:min(480px, max(280px, 72dvh))}
+ html:not(.desktop-beta) body .shell,html:not(.desktop-beta) body .mobile-nav{width:var(--portrait-game-width);max-width:100%;margin-inline:auto}
+ html:not(.desktop-beta) body #energyButton{width:calc(var(--portrait-game-width) - 28px)}
+ html:not(.desktop-beta) body dialog:modal{max-width:calc(var(--portrait-game-width) - 16px)!important}
+ html:not(.desktop-beta) body dialog.game-match-dialog:modal{width:var(--portrait-game-width);max-width:var(--portrait-game-width)!important}
+}
+
+/* Original rounded instruction face, with a short mechanical press. */
+html:not(.desktop-beta) body #energyButton:not([data-match-ready=true]){
+ box-shadow:0 7px 0 #b58036,0 10px 12px #466a7326;
+ transition:box-shadow 55ms ease-out;
+}
+html:not(.desktop-beta) body #energyButton:not([data-match-ready=true]):is(:active,.is-depressed){
+ transform:translateY(3px);box-shadow:0 4px 0 #b58036,0 5px 7px #466a7320;
+}
+html[data-theme=dark]:not(.desktop-beta) body #energyButton:not([data-match-ready=true]){box-shadow:0 7px 0 #102b2b,0 10px 12px #081b2030!important}
+html[data-theme=dark]:not(.desktop-beta) body #energyButton:not([data-match-ready=true]):is(:active,.is-depressed){box-shadow:0 4px 0 #102b2b,0 5px 7px #081b2020!important}
+@media(prefers-reduced-motion:reduce){html:not(.desktop-beta) body #energyButton:not([data-match-ready=true]){transition:none}html:not(.desktop-beta) body #energyButton:not([data-match-ready=true]):is(:active,.is-depressed){transform:none}}

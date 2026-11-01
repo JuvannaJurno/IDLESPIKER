@@ -1,0 +1,74 @@
+[
+  {
+    "name": "easy-set",
+    "ids": []
+  },
+  {
+    "name": "long-set",
+    "ids": [
+      "perfect-second-touch"
+    ]
+  },
+  {
+    "name": "last-reach",
+    "ids": [
+      "one-hand-rescue"
+    ]
+  },
+  {
+    "name": "locked-last-reach",
+    "ids": []
+  },
+  {
+    "name": "secondary-reader",
+    "expected": 0,
+    "event": {
+      "id": "absolute-read",
+      "actor": 0,
+      "opportunity": 3,
+      "role": "outside",
+      "kind": "block",
+      "at": 0,
+      "team": 0
+    }
+  },
+  {
+    "name": "tip-no-block",
+    "ids": []
+  },
+  {
+    "name": "tip-block",
+    "ids": [
+      "ghost-tip"
+    ]
+  },
+  {
+    "name": "cancelled-minus",
+    "reserved": [
+      true,
+      true
+    ],
+    "cooldowns": [],
+    "event": {
+      "id": "tempo-minus",
+      "actor": 1,
+      "opportunity": 5,
+      "role": "outside",
+      "kind": "set",
+      "at": 0,
+      "team": 0,
+      "cancelled": true
+    }
+  },
+  {
+    "name": "serve-alternation",
+    "used": [
+      "jump-legendary",
+      "sky-ball-serve",
+      "jump-legendary",
+      "sky-ball-serve",
+      "jump-legendary",
+      "sky-ball-serve"
+    ]
+  }
+]
