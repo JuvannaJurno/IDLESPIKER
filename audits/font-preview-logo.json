@@ -1,0 +1,14 @@
+{
+  "initial": {
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "enabled": false,
+    "value": "off"
+  },
+  "alpha": {
+    "transparent": 95258,
+    "opaque": 178075,
+    "total": 276108,
+    "corner": 0
+  },
+  "errors": []
+}

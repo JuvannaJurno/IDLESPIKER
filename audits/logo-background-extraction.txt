@@ -1,0 +1,6 @@
+Final: assets/brand/idlespiker-cutout.png
+Source: new_logo.png, 1038x266, unchanged.
+User request: only make the area outside the brown outline transparent.
+Two built-in image_gen cutout attempts were visually rejected for altered / noisy edges and are NOT used.
+Final operation: edge-connected background selection of the original pixels; anti-aliased outer brown edge is unmatted against the source background. Interior pixels are unchanged; original dimensions are unchanged.
+Checks: audits/logo-exact-cutout.json

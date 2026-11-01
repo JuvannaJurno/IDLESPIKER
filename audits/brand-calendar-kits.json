@@ -1,0 +1,65 @@
+{
+  "calendarCases": [
+    {
+      "width": 280,
+      "first": 36
+    },
+    {
+      "width": 280,
+      "first": 1036
+    },
+    {
+      "width": 280,
+      "first": 9993
+    },
+    {
+      "width": 320,
+      "first": 36
+    },
+    {
+      "width": 320,
+      "first": 1036
+    },
+    {
+      "width": 320,
+      "first": 9993
+    },
+    {
+      "width": 390,
+      "first": 36
+    },
+    {
+      "width": 390,
+      "first": 1036
+    },
+    {
+      "width": 390,
+      "first": 9993
+    },
+    {
+      "width": 480,
+      "first": 36
+    },
+    {
+      "width": 480,
+      "first": 1036
+    },
+    {
+      "width": 480,
+      "first": 9993
+    },
+    {
+      "width": 1180,
+      "first": 36
+    },
+    {
+      "width": 1180,
+      "first": 1036
+    },
+    {
+      "width": 1180,
+      "first": 9993
+    }
+  ],
+  "errors": []
+}
