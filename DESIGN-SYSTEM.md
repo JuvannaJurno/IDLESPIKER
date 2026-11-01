@@ -1201,3 +1201,7 @@ Kontrol: test-team-heart-cooldown.cjs (iki takım, ortak sahiplik,256 galibiyet/
 ### Top dönüş akıcılığı — 1 Kasım 2026
 
 Topun uçuşuyla birlikte dönüşünde kullanılan native elapsed saati de yalnız çizim sırasında önceki ve mevcut fizik adımı arasında yumuşatılır. Çizimden sonra saat geri yüklenir; pas/smaç süreleri, yavaş çekim, temaslar, RNG ve maç sonuçları değişmez. Önceki sabit-adımlı dönüş özellikle yavaş çekimde kesik görünüyordu. Kontrol: test-match-motion.cjs (60/120 Hz, aynı simülasyon, ara kare dönüşleri, çizim hatasında saatin geri yüklenmesi), test-legendary-cooldown-matches.cjs (dört tam maç). Görsel: audits/ball-motion-smooth.png.
+
+### Kamp gönderiminden sonra boş yuvalar — 1 Kasım 2026
+
+Kamptaki oyuncunun kalan gününü oluşturan hatalı campDayscampDays çağrısı renderı yarıda kesiyordu; campDays olarak düzeltildi. Gönderilen oyuncular dolu yuvalarda görünür, yalnız kendi yuvaları kilitlidir; boş yuvalara yeni oyuncular seçilip ayrı gruplar halinde gönderilebilir. Kayıt/ücret/kamp süresi kuralları değişmedi. Kalan günler yuvalarda da aynı yuvarlama ile yazılır. Kontrol: test-camp-draft-preview.cjs; iki oyuncu gönderme, ardından üçüncü gönderim, yeniden yükleme ve dördüncü oyuncuyu seçme; 320/390 genişlik ve kaynak yetersizliği. Görsel: audits/camp-running-add-more.png. Eski test-camps.cjs eski duyuru gününü (17) bekliyor; test-camp-runtime.cjs tarayıcı IntersectionObserver taklidi eksik olduğu için bağımsız olarak çalışmıyor. Bu iki eski test kamp gönderimini doğrulamak için kullanılmadı.
