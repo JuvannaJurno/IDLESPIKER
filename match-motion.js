@@ -2,18 +2,23 @@
 'use strict';
 // Interpolate presentation only. Match contacts and RNG keep their fixed timestep.
 const fields=['x','y','angle','phase','jump','block','spike','toss','receive','hit'],timers=new Set(['jump','block','spike','toss','receive','hit']);
-const previous=[],saved=[];let previousBall=null,ballBefore=null,valid=false;
+const previous=[],saved=[];let previousBall=null,ballBefore=null,valid=false,previousElapsed=0;
 const state={alpha:1,interpolated:false,ballX:null,ballY:null};
 function copy(target,p){target.p=p;for(const field of fields)target[field]=p[field];return target;}
 function beforeStep(){
+ previousElapsed=elapsed;
  for(let i=0;i<players.length;i++)copy(previous[i]||(previous[i]={}),players[i]);previous.length=players.length;
  previousBall=ball;ballBefore={x:ball.x,y:ball.y,z:ball.z,t:ball.t,state:ball.state,kind:ball.kind,fromX:ball.from?.x,fromY:ball.from?.y};valid=true;
 }
 function render(alpha,paint){
  alpha=Math.max(0,Math.min(1,alpha));state.alpha=alpha;state.interpolated=valid&&!paused;
  if(!state.interpolated){state.ballX=ball.x;state.ballY=ball.y;return paint()}
+ const currentElapsed=elapsed;
  const currentBall=ball,restoreBall={x:ball.x,y:ball.y,z:ball.z,t:ball.t};
  try{
+  // Ball spin and other native time-driven visuals share the interpolated flight clock.
+  // Physics time is restored even if painting throws. Never blend across a match reset.
+  if(Number.isFinite(previousElapsed)&&elapsed>=previousElapsed&&elapsed-previousElapsed<.1)elapsed=previousElapsed+(elapsed-previousElapsed)*alpha;
   for(let i=0;i<players.length;i++){
    const p=players[i],old=previous[i];copy(saved[i]||(saved[i]={}),p);if(old?.p!==p)continue;
    // A new ball flight starts at this exact contact pose; blending the striker back detaches the hand from the ball.
@@ -29,6 +34,7 @@ function render(alpha,paint){
   }
   state.ballX=ball.x;state.ballY=ball.y;return paint();
  }finally{
+  elapsed=currentElapsed;
   for(let i=0;i<players.length;i++){const entry=saved[i];if(entry?.p===players[i])for(const field of fields)players[i][field]=entry[field];}
   Object.assign(currentBall,restoreBall);
  }

@@ -27,6 +27,16 @@ const server=http.createServer((req,res)=>{const file=path.join(__dirname,decode
   },{hz,smoothing}));
  }
  for(const hz of [60,120]){const baseline=results.find(r=>r.hz===hz&&!r.smoothing),smooth=results.find(r=>r.hz===hz&&r.smoothing);assert.equal(smooth.simulation,baseline.simulation,'rendering must not change match results or physics');assert(baseline.slowStale>5,'exercise slow motion');assert(smooth.slowStale<=baseline.slowStale*.15,'slow motion should have continuous display frames');if(hz===120)assert(smooth.stale<=baseline.stale*.15,'high refresh motion is smooth');}
+ const spin=await page.evaluate(()=>{
+  paused=false;const physicalTime=elapsed;MatchMotion.beforeStep();elapsed+=1/60;
+  const angles=[0,.25,.5,.75,1].map(alpha=>MatchMotion.render(alpha,()=>elapsed*3));
+  const restored=elapsed;let threw=false;try{MatchMotion.render(.5,()=>{throw Error('paint test')})}catch{threw=true}
+  const afterThrow=elapsed;paused=true;draw();return {physicalTime,angles,restored,afterThrow,threw};
+ });
+ assert(spin.threw);assert.equal(spin.restored,spin.afterThrow,'paint failure restores simulation time');
+ for(let i=1;i<spin.angles.length;i++)assert(Math.abs(spin.angles[i]-spin.angles[i-1]-.0125)<1e-8,'ball spin advances between physics steps');
+ assert(Math.abs(spin.restored-spin.physicalTime-1/60)<1e-8);
+ await page.locator('#court').screenshot({path:'audits/ball-motion-smooth.png'});
  const idle=await page.evaluate(()=>{paused=true;let count=0;const original=draw;draw=function(){count++;original()};MatchFrames.invalidate();for(let i=0;i<120;i++)loop(20000+i*1000/60);draw=original;return count});assert.equal(idle,1,'paused matches stop repainting');
  const caughtUp=await page.evaluate(()=>{reset();window.matchInfo={division:1};paused=false;last=1000;frameCarry=0;const before=elapsed;loop(1050);paused=true;return elapsed-before});assert(Math.abs(caughtUp-.05)<.00001,'50 ms frame stalls keep game time');
  assert.deepEqual(errors,[]);console.log('PASS continuous 60/120 Hz slow motion, identical simulations, paused rendering and frame catch-up.',results.map(({simulation,...r})=>r));
