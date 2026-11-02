@@ -1,0 +1,8 @@
+node_modules/
+.cache/
+coverage/
+artifacts/
+*.tmp
+Thumbs.db
+.DS_Store
+.project-local.json

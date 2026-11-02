@@ -28,4 +28,4 @@ Dosya adları küçük harfli ve aşağıdaki gibi olmalı:
 Yalnızca değiştirmek istediklerini ekle. Eksik veya okunamayan PNG yerine mevcut sembol gösterilir.
 Ekledikten sonra oyunu yenile. İnternette kullanmak için PNG dosyalarını da siteye yükle.
 
-Oyunu index.html dosyasından doğrudan açıyorsan yeni PNG ekledikten sonra `node version-assets.cjs` çalıştır. Bu adım görselleri yerel oynama için paketler; web sitesinde PNG dosyaları doğrudan yüklenir.
+Oyunu index.html dosyasından doğrudan açıyorsan yeni PNG ekledikten sonra `node tools/build/version-assets.cjs` çalıştır. Bu adım görselleri yerel oynama için paketler; web sitesinde PNG dosyaları doğrudan yüklenir.

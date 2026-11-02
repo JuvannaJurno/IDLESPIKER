@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-03",
+  "rootFilesBefore": 980,
+  "rootFilesAfter": 42,
+  "movedFiles": 2055,
+  "byteIdenticalMovedAssets": 1069,
+  "missingDestinations": [],
+  "modifiedBinaryAssets": [],
+  "preserved": [
+    "Local save keys and PNG/... character IDs",
+    "All HTML entry-point URLs",
+    "Existing user deletions and unrelated files"
+  ],
+  "archive": "Raw source packs and accidental nested copies; not a claim that build sources are disposable",
+  "knownLegacyTool": "patch.js was already syntactically invalid; retained as archive/legacy-code/patch.js.txt, excluded from executable code",
+  "validation": {
+    "scriptsAndTests": 738,
+    "htmlEntryPoints": 21,
+    "missingCssResources": 0,
+    "priorEconomySnapshots": 9,
+    "priorOpponentSnapshots": 441,
+    "appearanceSamples": 100,
+    "accessorySamples": 300,
+    "matchPoseStyleCombinations": 21,
+    "canonicalSvgParts": 420
+  }
+}

@@ -1,0 +1,7 @@
+@font-face{font-family:Comfortaa;src:url("../../assets/fonts/Comfortaa-Variable.ttf") format("truetype");font-weight:300 700;font-style:normal;font-display:swap}
+:root{--font-ui:"Trebuchet MS","Segoe UI",sans-serif}
+html.comfortaa-test{--font-ui:"Comfortaa","Trebuchet MS","Segoe UI",sans-serif}
+html body{font-family:var(--font-ui)!important}
+html.comfortaa-test body :is(button,input,select,textarea,#academyPreview,#clubJourney,.beta-page-title){font-family:var(--font-ui)!important}
+html body .topbar .wordmark{display:flex;align-items:center;flex:0 1 180px;width:180px;max-width:54%;min-width:0;line-height:0;font-size:0;letter-spacing:0;text-shadow:none;padding:0}
+html body .topbar .wordmark .brand-logo{display:block;width:100%;height:auto;max-height:48px;object-fit:contain;object-position:left center;image-rendering:auto;filter:none}

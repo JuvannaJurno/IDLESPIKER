@@ -1,0 +1,14 @@
+{
+  "name": "idle-spiker",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node tools/dev-server.cjs",
+    "assets": "node tools/build/version-assets.cjs",
+    "check": "node tools/maintenance/check-project.cjs",
+    "test:rules": "node tools/maintenance/check-project.cjs --rules",
+    "test:pages": "node tests/test-project-layout-browser.cjs",
+    "test:media": "node tests/test-media-block-placement.cjs",
+    "test:first-league": "node tests/test-first-league-club-browser.cjs"
+  }
+}

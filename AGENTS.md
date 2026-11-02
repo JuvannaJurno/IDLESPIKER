@@ -12,6 +12,6 @@ Arayüz, tema, tutorial, animasyon, aşama geçişi, portre, saha veya bileşen 
 
 ## Teknik referans
 
-Çalışma deposu bu klasördür. JS/CSS değişikliğinden sonra `node version-assets.cjs` ile sürümlü asset referanslarını güncelle. Dokümantasyon değişikliklerinde buna gerek yok.
+Çalışma deposu bu klasördür. JS/CSS değişikliğinden sonra `node tools/build/version-assets.cjs` ile sürümlü asset referanslarını güncelle. Dokümantasyon değişikliklerinde buna gerek yok.
 
 İlgili mevcut testleri seçerek doğrula. Görsel doğrulamayı yalnız testin PASS çıktısıyla eş tutma; gerçek ekran görüntüsünü de incele. Kullanıcının veya başka işin mevcut değişikliklerini geri alma.
