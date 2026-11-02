@@ -1,5 +1,11 @@
 # Idle Spiker — Görünüm ve davranış rehberi
 
+### 2 Kasım 2026 — Medya bloklarının açıldığı yer
+
+Medya ve İletişim, diğer departmanlar gibi seçilen bloğu açma kutusunun yerine yerleştirir; Yeni alan aç kutusu her zaman satın alınmış blokların sağında kalır ve üç blok da açılınca kaldırılır. Medyanın ayrı seviye kaydı kullanması farklı bir yerleşim davranışı gerektirmez. Açılma sırası en fazla üç kimliklik mediaBlockOrder kaydıyla korunur; yeniden çizim veya sayfa yenileme kartları başa taşımaz. Sıra kaydı olmayan eski dosyada mevcut açık bloklar katalog sırasıyla alınır; geçersiz/tekrarlı kimlikler elenir. Ücret, seviye, paylaşım ve tüp etkileri aynıdır. Standart seçici anatomisi, ikon ölçüleri ve yapım geri bildirimi kullanılır.
+
+Doğrulama: test-media-block-placement.cjs düzeltme öncesinde ilk satın almada açma kutusunun kartın solunda kalmasını yeniden üretti; düzeltme sonrasında 3. ve 4. aşamada farklı satın alma sırası, yeniden çizim, yenileme, üç ekran genişliği ve son kutunun kaldırılması geçti. test-block-description-browser.cjs seçici görünüm/ikon eşitliği, odak, fiyat kapısı ve satın almayı doğruladı. Eski test-media-opening-price.cjs ve test-media-flow-card.cjs profili hazırlamayan eski başlangıç senaryolarıyla takılıyor; bunlar yeni yerleşim testinin geçtiği şeklinde raporlanmaz.
+
 ### 2 Kasım 2026 — 1. Lig arayüz cilası
 
 Sezon planında önce çalışma seçimi / devam eden çalışma / hazır kazanım, ardından yedek kulübesi görünür. Küçük ekranda ilk eylemler uzun bir kadro özetinin arkasında kalmaz. Akademinin kapasite, süre ve ana özellik katkısı üç eşit sütundur; aynı başlangıç mesajı tekrar edilmez. Çalışma sürerken yüzde ve kalan talimat, tamamlanınca sıcak altın yüzey ve Ödülü al düğmesi kullanılır. Boş geçmiş ve boş giriş ilerleme çizgisi görünmez. Kapatma düğmesi ortak selection-header içinde, kayan içerikten ayrı kalır.
