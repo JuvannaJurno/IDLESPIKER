@@ -1,0 +1,346 @@
+[
+  {
+    "id": "fast_internet",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "assistant",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "steady",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "bal_coach",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "bal_shift",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "bal_plan",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "pro_coordinator",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "pro_camp",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "pro_travel",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "first_router",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "first_payload",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "first_flywheel",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "warmup",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "crit_smash",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "echo",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "bal_position",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "bal_video",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "bal_recovery",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "pro_coach",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "pro_repeat",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "pro_analysis",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "meal",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "energy_drink",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "sugar_boost",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "first_academy",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "bal_sponsor",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "bal_shop",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "bal_fans",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "pro_sponsor",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "pro_shop",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "pro_tickets",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "collect",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "coordinate",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "rhythm",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "bal_scout",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "bal_personal",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "bal_archive",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "pro_search",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "pro_negotiator",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "pro_scout",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "bal_search",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "bal_contacts",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  },
+  {
+    "id": "bal_talent",
+    "font": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "heading": "12px",
+    "copy": "10px",
+    "radius": "13px",
+    "minHeight": "260px"
+  }
+]

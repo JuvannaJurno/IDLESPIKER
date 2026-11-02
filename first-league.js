@@ -3,7 +3,7 @@
 if(window.AcademyPreview)return;
 const $=id=>document.getElementById(id);let busy=false,decoratedDivision=null;
 const active=()=>LeagueRules.config.division===4;
-const promotion=GameUI.selection({id:'firstLeaguePromotion',title:'Ulusal Voleybol 1. Ligi',eyebrow:'YENİ SEZON',content:'<p>1. Lig’de kulübünün altyapısını kur. Transferden gençleri akademiye al, gelişim yönlerini seç ve kendi oyuncularını yetiştir.</p><button id="enterFirstLeague" class="team-action" type="button">Kulübü 1. Lig’e taşı</button><p id="firstLeagueError" role="alert"></p>'});
+const promotion=GameUI.selection({id:'firstLeaguePromotion',title:'Ulusal Voleybol 1. Ligi',eyebrow:'YENİ SEZON',content:'<p>Gençlerini akademide yetiştir, Akış Atölyesi’nde hatlarını büyüt. Sezon boyunca beş pozisyonluk yedek kulübeni kur.</p><button id="enterFirstLeague" class="team-action" type="button">Kulübü 1. Lig’e taşı</button><p id="firstLeagueError" role="alert"></p>'});
 promotion.dialog.querySelector('footer span').textContent='Oyuncuların, kaynakların ve yatırımların korunur.';
 const button=document.createElement('button');button.type='button';button.className='team-action';button.id='firstLeaguePromotionEntry';button.hidden=true;$('prologueComplete').append(button);
 button.onclick=()=>showPromotion();$('enterFirstLeague').onclick=()=>start();
@@ -40,7 +40,7 @@ async function start(test=false){
   const entries={'idle-spiker-rooms-v2':JSON.stringify(room),'idle-spiker-league-v1':JSON.stringify(league),'idle-spiker-main-menu-v1':JSON.stringify({day:1,clicksToday:0}),'idle-spiker-match-results':JSON.stringify({version:3})};
   for(const d of document.querySelectorAll('dialog[open]'))d.close();GuidedTutorial.stop();document.querySelector('.mobile-nav a[href="#clubPanel"]').click();MenuUI.stopMotion();
   window.BalTransition.active=true;window.gameResetting=true;
-  ui=GameUI.stage({host:$('clubPanel'),kind:'division',title:'Kulübün 1. Lig’e hazırlanıyor',note:'Altyapı Akademisi bu sezon kurulabilir.',onSkip(){skipMotion=true;for(const a of animations)a.cancel();}});
+  ui=GameUI.stage({host:$('clubPanel'),kind:'division',title:'Kulübün 1. Lig’e hazırlanıyor',note:'Akademi, Akış Atölyesi ve yedek kulüben bu sezon gelişir.',onSkip(){skipMotion=true;for(const a of animations)a.cancel();}});
   await CardMotion.handoff(()=>{
    localStorage.setItem('idle-spiker-division-transition-v1',JSON.stringify({version:1,entries}));committing=true;
    for(const [key,value]of Object.entries(entries))localStorage.setItem(key,value);

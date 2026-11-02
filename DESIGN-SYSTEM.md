@@ -1,5 +1,11 @@
 # Idle Spiker — Görünüm ve davranış rehberi
 
+### 2 Kasım 2026 — 1. Lig Akış Atölyesi
+
+Yalnız aşama 4’te Yönetim katının yeni yüzü **Akış Atölyesi**: Dağıtım Ünitesi (yeni standart hat, 1/5→5/5), Talimat Paketleme (otomatik AP +%10→50) ve Akış Volanı (üretim sıklığı +%5→25). Her blok tek etkili/beş seviyelidir. Önceki yönetim blokları çekmecede ve etkileri aktiftir. Yeni hat mevcut kurulma animasyonuyla uzar; medya mavi kalır, yeni standart hat doğal yeşil bağlantı taşır. Paketleme normal otomatik boncuklara bir/iki/üç ince açık bant ekler; manuel boncuk daima üst katmanda, medya görünümü korunur. Yeni başlıklar aynı boya sığar; yan yana taşan büyük halka yok.
+
+Akademi bloklarına eklenen ayrı font, boyut ve kenar kuralları kaldırıldı. Yeni altı blok, eski bloklarla aynı kart şablonu, ana/ek etki etiketi, eylem ve SVG ikon sistemini kullanır. Bütün 1. Lig bloklarında 12px başlık, 10px açıklama, en az 260px yükseklik ve 13px köşe tek standarttan gelir; etkin/tamamlanmış durum renkleri korunur. Seçicideki emoji yerine aynı SVG ikon çıkar. Ayrıntı ve fiyatlar: [Akış Atölyesi](FIRST-LEAGUE-FLOW.md). Testler: test-first-league-flow-rules.cjs ve test-first-league-flow-browser.cjs; 1–3. aşama ayrımı ayrıca kontrol edilir.
+
 ### 2 Kasım 2026 — 1. Lig kimliği ve sırayla açılan kulübe
 
 1. Lig’in farkı akademide yetiştirmek ve sezon boyunca kadroyu derinleştirmektir. Yedek yerleri pasör / smaçör / pasör çaprazı / orta / libero sırasıyla lig girişinde ve 2 / 5 / 8 / 11 oynanan maçta açılır. Açılan yerler kalıcıdır; eski atanmış yedekler korunur. Yeni boş yer açılınca mevcut kadro karşılaştırma penceresi kimin seçileceğini sorar; maç, tutorial veya başka modal bölünmez. Sonra seçerim mümkündür, görülen soru yeniden otomatik açılmaz. İlk boş yedeğe as kadrodan oyuncu çekilerek as slot boş bırakılamaz.

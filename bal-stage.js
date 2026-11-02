@@ -30,6 +30,6 @@ try{await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(r
 
 api.start=start;skip.onclick=()=>start(true);
 if(window.balRecoveryFailed){api.active=true;copy.textContent='Geçiş kaydı tamamlanamadı. Kayıt alanını kontrol edip yeniden yükle.';skip.disabled=false;skip.textContent='Yeniden yükle';skip.onclick=()=>location.reload();$('settingsDialog').showModal();}
-function applyLabels(){document.body.classList.add('bal-stage');document.querySelector('#clubPanel .section-top .eyebrow').textContent='BİZİM KULÜP · AŞAMA 2';$('apFeedback').textContent='+'+RoomSystem.effects().clickAP.toLocaleString('tr-TR')+' AP';document.querySelector('.season-hero>.eyebrow').textContent='BÖLGESEL VOLEYBOL LİGİ · SEZON 01';document.querySelector('#leaguePanel .team-heading .eyebrow').textContent='BÖLGESEL VOLEYBOL LİGİ';$('blackboardTitle').textContent='Teknik Ekip';}
+function applyLabels(){document.body.classList.add('bal-stage');document.querySelector('#clubPanel .section-top .eyebrow').textContent='BİZİM KULÜP · AŞAMA 2';$('apFeedback').textContent='+'+(LeagueRules.config.division===4?NumberUI.compact(RoomSystem.effects().clickAP):RoomSystem.effects().clickAP.toLocaleString('tr-TR'))+' AP';document.querySelector('.season-hero>.eyebrow').textContent='BÖLGESEL VOLEYBOL LİGİ · SEZON 01';document.querySelector('#leaguePanel .team-heading .eyebrow').textContent='BÖLGESEL VOLEYBOL LİGİ';$('blackboardTitle').textContent='Teknik Ekip';}
 if(LeagueRules.config.bal)applyLabels();
 })();
