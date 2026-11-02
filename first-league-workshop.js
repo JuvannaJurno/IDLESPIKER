@@ -10,7 +10,7 @@ const rewardText=(p,kind=p?.kind)=>kind==='club'?'+'+fmt(p.cash)+' bütçe':kind
 function install(){
  if(entry?.isConnected)return;
  entry=document.createElement('button');entry.id='firstLeagueWorkshopEntry';entry.className='first-workshop-entry';entry.type='button';entry.hidden=true;entry.innerHTML='<span class="first-workshop-mark" aria-hidden="true">'+icon('tools')+'</span><span class="first-workshop-copy"><strong>Sezon planı</strong><small></small><span class="first-workshop-meter" aria-hidden="true"><i></i></span></span><span class="first-workshop-arrow" aria-hidden="true">›</span>';
- document.querySelector('#clubPanel .club-rates').after(entry);entry.onclick=open;
+ document.querySelector('#clubPanel .club-wallet').before(entry);entry.onclick=open;
  screen=GameUI.selection({id:'firstLeagueWorkshop',title:'Sezon planı',eyebrow:'1. LİG · KULÜP GELİŞİMİ',statusId:'firstWorkshopStatus',returnFocus:'firstLeagueWorkshopEntry',content:'<section id="firstCampus" class="first-campus"></section><section id="firstProject"></section><details class="first-project-history"><summary>Tamamlanan çalışmalar</summary><div id="firstProjectHistory"></div></details>'});
  screen.dialog.querySelector('footer>button').textContent='Kulübe dön';screen.dialog.querySelector('footer>span').textContent='';
  screen.dialog.addEventListener('close',()=>{detailSignature='';refresh();});

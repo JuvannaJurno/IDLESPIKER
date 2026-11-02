@@ -7,7 +7,7 @@
 - Ayarlar → Hileler → aşama seçimi ile 1. Lig'e geçilir. Bu mevcut test geçişi kaynak ve tamamlanmış önceki yatırımlar verdiğinden doğal başlangıç ekonomisini temsil etmez.
 - Normal oyuncunun 2. Lig sonundaki **beta bitişi korunur**. Önceki aşamalardan otomatik olarak yeni taslağa gönderilmez.
 - Akademinin tek girişi **Takım → Oyuncu Merkezi → Akademi** olarak kalır. Yeni alt navigasyon veya ikinci akademi kısayolu yok.
-- Kulüpte, kaynakların altındaki **Sezon planı** yalnız çalışma projelerini açar. Akademi salonunun yerini almaz.
+- Kulüpte, bütçe/AP kartlarının hemen üstündeki **Sezon planı** yalnız çalışma projelerini açar. Akademi salonunun yerini almaz.
 
 ## Oynanış döngüsü
 
