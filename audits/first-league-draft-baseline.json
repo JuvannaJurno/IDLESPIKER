@@ -1,0 +1,3238 @@
+[
+  {
+    "division": 1,
+    "fill": 0,
+    "normalized": {
+      "version": 5,
+      "recoveryRestoreVersion": 1,
+      "blockContributionVersion": 1,
+      "shiftUnlockVersion": 1,
+      "proBlockVersion": 1,
+      "economyVersion": 3,
+      "budgetScale": 1,
+      "stage": "prologue",
+      "balVersion": 0,
+      "balBlockVersion": 4,
+      "prologBlockVersion": 2,
+      "balStart": 0,
+      "balStartDay": 1,
+      "balReadyDay": {},
+      "openDepartments": [],
+      "scouting": {
+        "tutorialSeen": false,
+        "firstTransferUsed": false,
+        "usefulMisses": 0,
+        "specialMisses": 0,
+        "heldId": null,
+        "round": 0,
+        "startedDay": 1,
+        "catalog": [],
+        "recruits": []
+      },
+      "incomeProgress": 0,
+      "attendanceRewards": [],
+      "camp": {
+        "version": 3,
+        "announcedDay": null,
+        "opensDay": null,
+        "lastDay": 1,
+        "boosts": {},
+        "entries": []
+      },
+      "academy": {
+        "version": 1,
+        "sequence": 0,
+        "graduates": 0,
+        "entries": []
+      },
+      "budget": 5000000,
+      "ap": 10000000,
+      "matchRewards": [],
+      "instructions": 12345,
+      "floors": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "lastSeen": 100000,
+      "autoCarry": 0,
+      "laneCarry": [],
+      "steadyProgress": 0,
+      "trainingProgress": 0,
+      "dayProgress": 0,
+      "pendingGains": [],
+      "balLegendaryCount": null,
+      "socialJourney": {
+        "claimed": [],
+        "reached": {},
+        "transferUsed": false,
+        "campUsed": false
+      },
+      "proSponsorMatches": 0,
+      "proTraining": {
+        "count": 0,
+        "spent": 0
+      },
+      "socialReceipts": [],
+      "mediaDepartmentOpen": false,
+      "shiftTutorialPending": false
+    },
+    "effects": {
+      "clickAP": 23.75,
+      "autoAP": 23.75,
+      "baseAP": 23.75,
+      "critChance": 0,
+      "critMult": 1,
+      "instructionLanes": [
+        1,
+        0
+      ],
+      "doubleChance": 0,
+      "echoChance": 0,
+      "energyDrinkChance": 0,
+      "repeatAP": 0,
+      "autoRate": 0,
+      "baseAutoRate": 0,
+      "workflowRate": 1,
+      "offlineHours": 0,
+      "offlineEfficiency": 0.15,
+      "offlineBonus": 0,
+      "dayAP": 0,
+      "morningAP": 0,
+      "slots": 0,
+      "travel": 2400,
+      "transition": 250,
+      "rest": 400
+    },
+    "budget": 65,
+    "catalog": [
+      {
+        "id": "warmup",
+        "max": 5,
+        "cost": 10,
+        "describe": ""
+      },
+      {
+        "id": "crit_smash",
+        "max": 5,
+        "cost": 20,
+        "describe": ""
+      },
+      {
+        "id": "fast_internet",
+        "max": 5,
+        "cost": 20,
+        "describe": ""
+      },
+      {
+        "id": "echo",
+        "max": 5,
+        "cost": 20,
+        "describe": ""
+      },
+      {
+        "id": "assistant",
+        "max": 5,
+        "cost": 10,
+        "describe": ""
+      },
+      {
+        "id": "steady",
+        "max": 5,
+        "cost": 20,
+        "describe": "Önce Otomatik Asistan kur"
+      },
+      {
+        "id": "meal",
+        "max": 5,
+        "cost": 20,
+        "describe": ""
+      },
+      {
+        "id": "energy_drink",
+        "max": 5,
+        "cost": 20,
+        "describe": ""
+      },
+      {
+        "id": "sugar_boost",
+        "max": 5,
+        "cost": 20,
+        "describe": "Vardiya Verimi, Vardiya Planı kartından geliştirilir"
+      },
+      {
+        "id": "collect",
+        "max": 5,
+        "cost": 15,
+        "describe": ""
+      },
+      {
+        "id": "coordinate",
+        "max": 5,
+        "cost": 15,
+        "describe": ""
+      },
+      {
+        "id": "rhythm",
+        "max": 5,
+        "cost": 15,
+        "describe": ""
+      }
+    ],
+    "league": {
+      "name": "Mahalle Spor Kulübü – Yerel Altyapı",
+      "rounds": 5,
+      "lastDay": 24,
+      "matchDays": [
+        4,
+        9,
+        14,
+        19,
+        24
+      ],
+      "startingRank": 8,
+      "targetRank": 4,
+      "winPoints": 3,
+      "lossPoints": 0,
+      "replay": false,
+      "bal": false,
+      "division": 1,
+      "entryRating": 35,
+      "divisionEntryRating": 80,
+      "divisionCalendar": 0,
+      "dayInstructions": 100,
+      "matchTrigger": 50
+    }
+  },
+  {
+    "division": 1,
+    "fill": 1,
+    "normalized": {
+      "version": 5,
+      "recoveryRestoreVersion": 1,
+      "blockContributionVersion": 1,
+      "shiftUnlockVersion": 1,
+      "proBlockVersion": 1,
+      "economyVersion": 3,
+      "budgetScale": 1,
+      "stage": "prologue",
+      "balVersion": 0,
+      "balBlockVersion": 4,
+      "prologBlockVersion": 2,
+      "balStart": 0,
+      "balStartDay": 1,
+      "balReadyDay": {},
+      "openDepartments": [],
+      "scouting": {
+        "tutorialSeen": false,
+        "firstTransferUsed": false,
+        "usefulMisses": 0,
+        "specialMisses": 0,
+        "heldId": null,
+        "round": 0,
+        "startedDay": 1,
+        "catalog": [],
+        "recruits": []
+      },
+      "incomeProgress": 0,
+      "attendanceRewards": [],
+      "camp": {
+        "version": 3,
+        "announcedDay": null,
+        "opensDay": null,
+        "lastDay": 1,
+        "boosts": {},
+        "entries": []
+      },
+      "academy": {
+        "version": 1,
+        "sequence": 0,
+        "graduates": 0,
+        "entries": []
+      },
+      "budget": 5000000,
+      "ap": 10000000,
+      "matchRewards": [],
+      "instructions": 12345,
+      "floors": [
+        [
+          "warmup",
+          "crit_smash",
+          "echo"
+        ],
+        [
+          "fast_internet",
+          "assistant",
+          "steady"
+        ],
+        [
+          "meal",
+          "energy_drink",
+          "sugar_boost"
+        ],
+        [
+          "collect",
+          "coordinate",
+          "rhythm"
+        ],
+        []
+      ],
+      "lastSeen": 100000,
+      "autoCarry": 0,
+      "laneCarry": [],
+      "steadyProgress": 0,
+      "trainingProgress": 0,
+      "dayProgress": 0,
+      "pendingGains": [],
+      "balLegendaryCount": null,
+      "socialJourney": {
+        "claimed": [],
+        "reached": {},
+        "transferUsed": false,
+        "campUsed": false
+      },
+      "proSponsorMatches": 0,
+      "proTraining": {
+        "count": 0,
+        "spent": 0
+      },
+      "socialReceipts": [],
+      "mediaDepartmentOpen": false,
+      "shiftTutorialPending": false
+    },
+    "effects": {
+      "clickAP": 29.75,
+      "autoAP": 29.75,
+      "baseAP": 29.75,
+      "critChance": 0.15,
+      "critMult": 2,
+      "instructionLanes": [
+        1,
+        0.2
+      ],
+      "doubleChance": 0.2,
+      "echoChance": 0,
+      "energyDrinkChance": 0,
+      "repeatAP": 15,
+      "autoRate": 0.85,
+      "baseAutoRate": 0.85,
+      "workflowRate": 1,
+      "offlineHours": 0,
+      "offlineEfficiency": 0.15,
+      "offlineBonus": 0.1,
+      "dayAP": 120,
+      "morningAP": 3,
+      "slots": 0,
+      "travel": 2400,
+      "transition": 250,
+      "rest": 400
+    },
+    "budget": 65,
+    "catalog": [
+      {
+        "id": "warmup",
+        "max": 5,
+        "cost": 10,
+        "describe": ""
+      },
+      {
+        "id": "crit_smash",
+        "max": 5,
+        "cost": 12,
+        "describe": ""
+      },
+      {
+        "id": "fast_internet",
+        "max": 5,
+        "cost": 15,
+        "describe": ""
+      },
+      {
+        "id": "echo",
+        "max": 5,
+        "cost": 12,
+        "describe": ""
+      },
+      {
+        "id": "assistant",
+        "max": 5,
+        "cost": 8,
+        "describe": ""
+      },
+      {
+        "id": "steady",
+        "max": 5,
+        "cost": 12,
+        "describe": ""
+      },
+      {
+        "id": "meal",
+        "max": 5,
+        "cost": 12,
+        "describe": ""
+      },
+      {
+        "id": "energy_drink",
+        "max": 5,
+        "cost": 12,
+        "describe": ""
+      },
+      {
+        "id": "sugar_boost",
+        "max": 5,
+        "cost": 12,
+        "describe": "Vardiya Verimi, Vardiya Planı kartından geliştirilir"
+      },
+      {
+        "id": "collect",
+        "max": 5,
+        "cost": 10,
+        "describe": ""
+      },
+      {
+        "id": "coordinate",
+        "max": 5,
+        "cost": 10,
+        "describe": ""
+      },
+      {
+        "id": "rhythm",
+        "max": 5,
+        "cost": 10,
+        "describe": ""
+      }
+    ],
+    "league": {
+      "name": "Mahalle Spor Kulübü – Yerel Altyapı",
+      "rounds": 5,
+      "lastDay": 24,
+      "matchDays": [
+        4,
+        9,
+        14,
+        19,
+        24
+      ],
+      "startingRank": 8,
+      "targetRank": 4,
+      "winPoints": 3,
+      "lossPoints": 0,
+      "replay": false,
+      "bal": false,
+      "division": 1,
+      "entryRating": 35,
+      "divisionEntryRating": 80,
+      "divisionCalendar": 0,
+      "dayInstructions": 100,
+      "matchTrigger": 50
+    }
+  },
+  {
+    "division": 1,
+    "fill": 5,
+    "normalized": {
+      "version": 5,
+      "recoveryRestoreVersion": 1,
+      "blockContributionVersion": 1,
+      "shiftUnlockVersion": 1,
+      "proBlockVersion": 1,
+      "economyVersion": 3,
+      "budgetScale": 1,
+      "stage": "prologue",
+      "balVersion": 0,
+      "balBlockVersion": 4,
+      "prologBlockVersion": 2,
+      "balStart": 0,
+      "balStartDay": 1,
+      "balReadyDay": {},
+      "openDepartments": [],
+      "scouting": {
+        "tutorialSeen": false,
+        "firstTransferUsed": false,
+        "usefulMisses": 0,
+        "specialMisses": 0,
+        "heldId": null,
+        "round": 0,
+        "startedDay": 1,
+        "catalog": [],
+        "recruits": []
+      },
+      "incomeProgress": 0,
+      "attendanceRewards": [],
+      "camp": {
+        "version": 3,
+        "announcedDay": null,
+        "opensDay": null,
+        "lastDay": 1,
+        "boosts": {},
+        "entries": []
+      },
+      "academy": {
+        "version": 1,
+        "sequence": 0,
+        "graduates": 0,
+        "entries": []
+      },
+      "budget": 5000000,
+      "ap": 10000000,
+      "matchRewards": [],
+      "instructions": 12345,
+      "floors": [
+        [
+          "warmup",
+          "warmup",
+          "warmup",
+          "warmup",
+          "warmup",
+          "crit_smash",
+          "crit_smash",
+          "crit_smash",
+          "crit_smash",
+          "crit_smash",
+          "echo",
+          "echo",
+          "echo",
+          "echo",
+          "echo"
+        ],
+        [
+          "fast_internet",
+          "fast_internet",
+          "fast_internet",
+          "fast_internet",
+          "fast_internet",
+          "assistant",
+          "assistant",
+          "assistant",
+          "assistant",
+          "assistant",
+          "steady",
+          "steady",
+          "steady",
+          "steady",
+          "steady"
+        ],
+        [
+          "meal",
+          "meal",
+          "meal",
+          "meal",
+          "meal",
+          "energy_drink",
+          "energy_drink",
+          "energy_drink",
+          "energy_drink",
+          "energy_drink",
+          "sugar_boost",
+          "sugar_boost",
+          "sugar_boost",
+          "sugar_boost",
+          "sugar_boost"
+        ],
+        [
+          "collect",
+          "collect",
+          "collect",
+          "collect",
+          "collect",
+          "coordinate",
+          "coordinate",
+          "coordinate",
+          "coordinate",
+          "coordinate",
+          "rhythm",
+          "rhythm",
+          "rhythm",
+          "rhythm",
+          "rhythm"
+        ],
+        []
+      ],
+      "lastSeen": 100000,
+      "autoCarry": 0,
+      "laneCarry": [],
+      "steadyProgress": 0,
+      "trainingProgress": 0,
+      "dayProgress": 0,
+      "pendingGains": [],
+      "balLegendaryCount": null,
+      "socialJourney": {
+        "claimed": [],
+        "reached": {},
+        "transferUsed": false,
+        "campUsed": false
+      },
+      "proSponsorMatches": 0,
+      "proTraining": {
+        "count": 0,
+        "spent": 0
+      },
+      "socialReceipts": [],
+      "mediaDepartmentOpen": false,
+      "shiftTutorialPending": false
+    },
+    "effects": {
+      "clickAP": 43.75,
+      "autoAP": 43.75,
+      "baseAP": 43.75,
+      "critChance": 0.25,
+      "critMult": 2.5,
+      "instructionLanes": [
+        1,
+        1
+      ],
+      "doubleChance": 1,
+      "echoChance": 0,
+      "energyDrinkChance": 0,
+      "repeatAP": 65,
+      "autoRate": 3,
+      "baseAutoRate": 3,
+      "workflowRate": 1,
+      "offlineHours": 0,
+      "offlineEfficiency": 0.15,
+      "offlineBonus": 0.3,
+      "dayAP": 500,
+      "morningAP": 10,
+      "slots": 0,
+      "travel": 2400,
+      "transition": 250,
+      "rest": 400
+    },
+    "budget": 65,
+    "catalog": [
+      {
+        "id": "warmup",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "crit_smash",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "fast_internet",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "echo",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "assistant",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "steady",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "meal",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "energy_drink",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "sugar_boost",
+        "max": 5,
+        "cost": "max",
+        "describe": "Vardiya Verimi, Vardiya Planı kartından geliştirilir"
+      },
+      {
+        "id": "collect",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "coordinate",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "rhythm",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      }
+    ],
+    "league": {
+      "name": "Mahalle Spor Kulübü – Yerel Altyapı",
+      "rounds": 5,
+      "lastDay": 24,
+      "matchDays": [
+        4,
+        9,
+        14,
+        19,
+        24
+      ],
+      "startingRank": 8,
+      "targetRank": 4,
+      "winPoints": 3,
+      "lossPoints": 0,
+      "replay": false,
+      "bal": false,
+      "division": 1,
+      "entryRating": 35,
+      "divisionEntryRating": 80,
+      "divisionCalendar": 0,
+      "dayInstructions": 100,
+      "matchTrigger": 50
+    }
+  },
+  {
+    "division": 2,
+    "fill": 0,
+    "normalized": {
+      "version": 5,
+      "recoveryRestoreVersion": 1,
+      "blockContributionVersion": 1,
+      "shiftUnlockVersion": 1,
+      "proBlockVersion": 1,
+      "economyVersion": 3,
+      "budgetScale": 10,
+      "stage": "bal",
+      "balVersion": 1,
+      "balBlockVersion": 4,
+      "prologBlockVersion": 2,
+      "balStart": 0,
+      "balStartDay": 1,
+      "balReadyDay": {},
+      "openDepartments": [],
+      "scouting": {
+        "tutorialSeen": false,
+        "firstTransferUsed": false,
+        "usefulMisses": 0,
+        "specialMisses": 0,
+        "heldId": null,
+        "round": 0,
+        "startedDay": 1,
+        "catalog": [],
+        "recruits": []
+      },
+      "incomeProgress": 0,
+      "attendanceRewards": [],
+      "camp": {
+        "version": 3,
+        "announcedDay": null,
+        "opensDay": null,
+        "lastDay": 1,
+        "boosts": {},
+        "entries": []
+      },
+      "academy": {
+        "version": 1,
+        "sequence": 0,
+        "graduates": 0,
+        "entries": []
+      },
+      "budget": 5000000,
+      "ap": 10000000,
+      "matchRewards": [],
+      "instructions": 12345,
+      "floors": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "lastSeen": 100000,
+      "autoCarry": 0,
+      "laneCarry": [],
+      "steadyProgress": 0,
+      "trainingProgress": 0,
+      "dayProgress": 0,
+      "pendingGains": [],
+      "balLegendaryCount": null,
+      "socialJourney": {
+        "claimed": [],
+        "reached": {},
+        "transferUsed": false,
+        "campUsed": false
+      },
+      "proSponsorMatches": 0,
+      "proTraining": {
+        "count": 0,
+        "spent": 0
+      },
+      "socialReceipts": [],
+      "mediaDepartmentOpen": false,
+      "shiftTutorialPending": false
+    },
+    "effects": {
+      "clickAP": 59.375,
+      "autoAP": 59.375,
+      "baseAP": 59.375,
+      "critChance": 0,
+      "critMult": 1,
+      "instructionLanes": [
+        1
+      ],
+      "doubleChance": 0,
+      "echoChance": 0,
+      "energyDrinkChance": 0,
+      "repeatAP": 0,
+      "autoRate": 0,
+      "baseAutoRate": 0,
+      "workflowRate": 1,
+      "offlineHours": 0,
+      "offlineEfficiency": 0.15,
+      "offlineBonus": 0,
+      "dayAP": 0,
+      "morningAP": 0,
+      "slots": 0,
+      "travel": 2400,
+      "transition": 250,
+      "rest": 400,
+      "manualBonusAP": 0
+    },
+    "budget": 650,
+    "catalog": [
+      {
+        "id": "warmup",
+        "max": 5,
+        "cost": 100,
+        "describe": ""
+      },
+      {
+        "id": "crit_smash",
+        "max": 5,
+        "cost": 100,
+        "describe": ""
+      },
+      {
+        "id": "fast_internet",
+        "max": 5,
+        "cost": 100,
+        "describe": ""
+      },
+      {
+        "id": "echo",
+        "max": 5,
+        "cost": 100,
+        "describe": ""
+      },
+      {
+        "id": "assistant",
+        "max": 5,
+        "cost": 100,
+        "describe": ""
+      },
+      {
+        "id": "offline_time",
+        "max": 5,
+        "cost": 12000,
+        "describe": "Vardiya Planı ile açılır"
+      },
+      {
+        "id": "steady",
+        "max": 5,
+        "cost": 100,
+        "describe": "Önce Otomatik Asistan kur"
+      },
+      {
+        "id": "meal",
+        "max": 5,
+        "cost": 100,
+        "describe": ""
+      },
+      {
+        "id": "energy_drink",
+        "max": 5,
+        "cost": 100,
+        "describe": ""
+      },
+      {
+        "id": "sugar_boost",
+        "max": 5,
+        "cost": 100,
+        "describe": "Vardiya Verimi, Vardiya Planı kartından geliştirilir"
+      },
+      {
+        "id": "collect",
+        "max": 5,
+        "cost": 100,
+        "describe": ""
+      },
+      {
+        "id": "coordinate",
+        "max": 5,
+        "cost": 100,
+        "describe": ""
+      },
+      {
+        "id": "rhythm",
+        "max": 5,
+        "cost": 100,
+        "describe": ""
+      },
+      {
+        "id": "bal_coach",
+        "max": 10,
+        "cost": 450,
+        "describe": ""
+      },
+      {
+        "id": "bal_shift",
+        "max": 10,
+        "cost": 360,
+        "describe": ""
+      },
+      {
+        "id": "bal_plan",
+        "max": 5,
+        "cost": 310,
+        "describe": ""
+      },
+      {
+        "id": "bal_position",
+        "max": 10,
+        "cost": 260,
+        "describe": ""
+      },
+      {
+        "id": "bal_video",
+        "max": 10,
+        "cost": 540,
+        "describe": ""
+      },
+      {
+        "id": "bal_recovery",
+        "max": 5,
+        "cost": 310,
+        "describe": ""
+      },
+      {
+        "id": "bal_sponsor",
+        "max": 10,
+        "cost": 360,
+        "describe": "Önce Gelir Merkezi aç"
+      },
+      {
+        "id": "bal_shop",
+        "max": 10,
+        "cost": 420,
+        "describe": "Önce Gelir Merkezi aç"
+      },
+      {
+        "id": "bal_fans",
+        "max": 5,
+        "cost": 310,
+        "describe": "Önce Gelir Merkezi aç"
+      },
+      {
+        "id": "bal_scout",
+        "max": 10,
+        "cost": 300,
+        "describe": ""
+      },
+      {
+        "id": "bal_personal",
+        "max": 5,
+        "cost": 480,
+        "describe": ""
+      },
+      {
+        "id": "bal_archive",
+        "max": 5,
+        "cost": 430,
+        "describe": ""
+      },
+      {
+        "id": "bal_search",
+        "max": 5,
+        "cost": 360,
+        "describe": "Önce Oyuncu Keşfi aç"
+      },
+      {
+        "id": "bal_contacts",
+        "max": 10,
+        "cost": 630,
+        "describe": "Önce Oyuncu Keşfi aç"
+      },
+      {
+        "id": "bal_talent",
+        "max": 5,
+        "cost": 480,
+        "describe": "Önce Oyuncu Keşfi aç"
+      }
+    ],
+    "league": {
+      "name": "Bölgesel Voleybol Ligi",
+      "rounds": 14,
+      "lastDay": 104,
+      "matchDays": [
+        5,
+        10,
+        16,
+        24,
+        32,
+        40,
+        48,
+        56,
+        64,
+        72,
+        80,
+        88,
+        96,
+        104
+      ],
+      "startingRank": 8,
+      "targetRank": 4,
+      "winPoints": 3,
+      "lossPoints": 0,
+      "replay": false,
+      "bal": true,
+      "division": 2,
+      "entryRating": 35,
+      "divisionEntryRating": 80,
+      "divisionCalendar": 0,
+      "dayInstructions": 500,
+      "matchTrigger": 300
+    }
+  },
+  {
+    "division": 2,
+    "fill": 1,
+    "normalized": {
+      "version": 5,
+      "recoveryRestoreVersion": 1,
+      "blockContributionVersion": 1,
+      "shiftUnlockVersion": 1,
+      "proBlockVersion": 1,
+      "economyVersion": 3,
+      "budgetScale": 10,
+      "stage": "bal",
+      "balVersion": 1,
+      "balBlockVersion": 4,
+      "prologBlockVersion": 2,
+      "balStart": 0,
+      "balStartDay": 1,
+      "balReadyDay": {},
+      "openDepartments": [],
+      "scouting": {
+        "tutorialSeen": false,
+        "firstTransferUsed": false,
+        "usefulMisses": 0,
+        "specialMisses": 0,
+        "heldId": null,
+        "round": 0,
+        "startedDay": 1,
+        "catalog": [],
+        "recruits": []
+      },
+      "incomeProgress": 0,
+      "attendanceRewards": [],
+      "camp": {
+        "version": 3,
+        "announcedDay": null,
+        "opensDay": null,
+        "lastDay": 1,
+        "boosts": {},
+        "entries": []
+      },
+      "academy": {
+        "version": 1,
+        "sequence": 0,
+        "graduates": 0,
+        "entries": []
+      },
+      "budget": 5000000,
+      "ap": 10000000,
+      "matchRewards": [],
+      "instructions": 12345,
+      "floors": [
+        [
+          "warmup",
+          "crit_smash",
+          "echo",
+          "bal_position",
+          "bal_video",
+          "bal_recovery"
+        ],
+        [
+          "fast_internet",
+          "assistant",
+          "offline_time",
+          "steady",
+          "bal_coach",
+          "bal_shift",
+          "bal_plan"
+        ],
+        [
+          "meal",
+          "energy_drink",
+          "sugar_boost",
+          "bal_sponsor",
+          "bal_shop",
+          "bal_fans"
+        ],
+        [
+          "collect",
+          "coordinate",
+          "rhythm",
+          "bal_scout",
+          "bal_personal",
+          "bal_archive"
+        ],
+        [
+          "bal_search",
+          "bal_contacts",
+          "bal_talent"
+        ]
+      ],
+      "lastSeen": 100000,
+      "autoCarry": 0,
+      "laneCarry": [],
+      "steadyProgress": 0,
+      "trainingProgress": 0,
+      "dayProgress": 0,
+      "pendingGains": [],
+      "balLegendaryCount": null,
+      "socialJourney": {
+        "claimed": [],
+        "reached": {},
+        "transferUsed": false,
+        "campUsed": false
+      },
+      "proSponsorMatches": 0,
+      "proTraining": {
+        "count": 0,
+        "spent": 0
+      },
+      "socialReceipts": [],
+      "mediaDepartmentOpen": false,
+      "shiftTutorialPending": false
+    },
+    "effects": {
+      "clickAP": 86.375,
+      "autoAP": 86.375,
+      "baseAP": 86.375,
+      "critChance": 0.15,
+      "critMult": 2,
+      "instructionLanes": [
+        1,
+        0.2
+      ],
+      "doubleChance": 0.19999999999999996,
+      "echoChance": 0,
+      "energyDrinkChance": 0,
+      "repeatAP": 88.75,
+      "autoRate": 2.506,
+      "baseAutoRate": 2.506,
+      "workflowRate": 1,
+      "offlineHours": 0.16666666666666666,
+      "offlineEfficiency": 0.15,
+      "offlineBonus": 0.20500000000000002,
+      "dayAP": 150,
+      "morningAP": 3.75,
+      "slots": 0,
+      "travel": 2400,
+      "transition": 250,
+      "rest": 400,
+      "manualBonusAP": 0
+    },
+    "budget": 650,
+    "catalog": [
+      {
+        "id": "warmup",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "crit_smash",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "fast_internet",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "echo",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "assistant",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "offline_time",
+        "max": 5,
+        "cost": 18000,
+        "describe": "Vardiya Planı ile açılır"
+      },
+      {
+        "id": "steady",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "meal",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "energy_drink",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "sugar_boost",
+        "max": 5,
+        "cost": 60,
+        "describe": "Vardiya Verimi, Vardiya Planı kartından geliştirilir"
+      },
+      {
+        "id": "collect",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "coordinate",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "rhythm",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "bal_coach",
+        "max": 10,
+        "cost": 900,
+        "describe": ""
+      },
+      {
+        "id": "bal_shift",
+        "max": 10,
+        "cost": 810,
+        "describe": ""
+      },
+      {
+        "id": "bal_plan",
+        "max": 5,
+        "cost": 700,
+        "describe": ""
+      },
+      {
+        "id": "bal_position",
+        "max": 10,
+        "cost": 590,
+        "describe": ""
+      },
+      {
+        "id": "bal_video",
+        "max": 10,
+        "cost": 1500,
+        "describe": ""
+      },
+      {
+        "id": "bal_recovery",
+        "max": 5,
+        "cost": 700,
+        "describe": ""
+      },
+      {
+        "id": "bal_sponsor",
+        "max": 10,
+        "cost": 810,
+        "describe": "Önce Gelir Merkezi aç"
+      },
+      {
+        "id": "bal_shop",
+        "max": 10,
+        "cost": 950,
+        "describe": "Önce Gelir Merkezi aç"
+      },
+      {
+        "id": "bal_fans",
+        "max": 5,
+        "cost": 700,
+        "describe": "Önce Gelir Merkezi aç"
+      },
+      {
+        "id": "bal_scout",
+        "max": 10,
+        "cost": 680,
+        "describe": ""
+      },
+      {
+        "id": "bal_personal",
+        "max": 5,
+        "cost": 1080,
+        "describe": ""
+      },
+      {
+        "id": "bal_archive",
+        "max": 5,
+        "cost": 970,
+        "describe": ""
+      },
+      {
+        "id": "bal_search",
+        "max": 5,
+        "cost": 810,
+        "describe": "Önce Oyuncu Keşfi aç"
+      },
+      {
+        "id": "bal_contacts",
+        "max": 10,
+        "cost": 1750,
+        "describe": "Önce Oyuncu Keşfi aç"
+      },
+      {
+        "id": "bal_talent",
+        "max": 5,
+        "cost": 1080,
+        "describe": "Önce Oyuncu Keşfi aç"
+      }
+    ],
+    "league": {
+      "name": "Bölgesel Voleybol Ligi",
+      "rounds": 14,
+      "lastDay": 104,
+      "matchDays": [
+        5,
+        10,
+        16,
+        24,
+        32,
+        40,
+        48,
+        56,
+        64,
+        72,
+        80,
+        88,
+        96,
+        104
+      ],
+      "startingRank": 8,
+      "targetRank": 4,
+      "winPoints": 3,
+      "lossPoints": 0,
+      "replay": false,
+      "bal": true,
+      "division": 2,
+      "entryRating": 35,
+      "divisionEntryRating": 80,
+      "divisionCalendar": 0,
+      "dayInstructions": 500,
+      "matchTrigger": 300
+    }
+  },
+  {
+    "division": 2,
+    "fill": 5,
+    "normalized": {
+      "version": 5,
+      "recoveryRestoreVersion": 1,
+      "blockContributionVersion": 1,
+      "shiftUnlockVersion": 1,
+      "proBlockVersion": 1,
+      "economyVersion": 3,
+      "budgetScale": 10,
+      "stage": "bal",
+      "balVersion": 1,
+      "balBlockVersion": 4,
+      "prologBlockVersion": 2,
+      "balStart": 0,
+      "balStartDay": 1,
+      "balReadyDay": {},
+      "openDepartments": [],
+      "scouting": {
+        "tutorialSeen": false,
+        "firstTransferUsed": false,
+        "usefulMisses": 0,
+        "specialMisses": 0,
+        "heldId": null,
+        "round": 0,
+        "startedDay": 1,
+        "catalog": [],
+        "recruits": []
+      },
+      "incomeProgress": 0,
+      "attendanceRewards": [],
+      "camp": {
+        "version": 3,
+        "announcedDay": null,
+        "opensDay": null,
+        "lastDay": 1,
+        "boosts": {},
+        "entries": []
+      },
+      "academy": {
+        "version": 1,
+        "sequence": 0,
+        "graduates": 0,
+        "entries": []
+      },
+      "budget": 5000000,
+      "ap": 10000000,
+      "matchRewards": [],
+      "instructions": 12345,
+      "floors": [
+        [
+          "warmup",
+          "warmup",
+          "warmup",
+          "warmup",
+          "warmup",
+          "crit_smash",
+          "crit_smash",
+          "crit_smash",
+          "crit_smash",
+          "crit_smash",
+          "echo",
+          "echo",
+          "echo",
+          "echo",
+          "echo",
+          "bal_position",
+          "bal_position",
+          "bal_position",
+          "bal_position",
+          "bal_position",
+          "bal_video",
+          "bal_video",
+          "bal_video",
+          "bal_video",
+          "bal_video",
+          "bal_recovery",
+          "bal_recovery",
+          "bal_recovery",
+          "bal_recovery",
+          "bal_recovery"
+        ],
+        [
+          "fast_internet",
+          "fast_internet",
+          "fast_internet",
+          "fast_internet",
+          "fast_internet",
+          "assistant",
+          "assistant",
+          "assistant",
+          "assistant",
+          "assistant",
+          "offline_time",
+          "offline_time",
+          "offline_time",
+          "offline_time",
+          "offline_time",
+          "steady",
+          "steady",
+          "steady",
+          "steady",
+          "steady",
+          "bal_coach",
+          "bal_coach",
+          "bal_coach",
+          "bal_coach",
+          "bal_coach",
+          "bal_shift",
+          "bal_shift",
+          "bal_shift",
+          "bal_shift",
+          "bal_shift",
+          "bal_plan",
+          "bal_plan",
+          "bal_plan",
+          "bal_plan",
+          "bal_plan"
+        ],
+        [
+          "meal",
+          "meal",
+          "meal",
+          "meal",
+          "meal",
+          "energy_drink",
+          "energy_drink",
+          "energy_drink",
+          "energy_drink",
+          "energy_drink",
+          "sugar_boost",
+          "sugar_boost",
+          "sugar_boost",
+          "sugar_boost",
+          "sugar_boost",
+          "bal_sponsor",
+          "bal_sponsor",
+          "bal_sponsor",
+          "bal_sponsor",
+          "bal_sponsor",
+          "bal_shop",
+          "bal_shop",
+          "bal_shop",
+          "bal_shop",
+          "bal_shop",
+          "bal_fans",
+          "bal_fans",
+          "bal_fans",
+          "bal_fans",
+          "bal_fans"
+        ],
+        [
+          "collect",
+          "collect",
+          "collect",
+          "collect",
+          "collect",
+          "coordinate",
+          "coordinate",
+          "coordinate",
+          "coordinate",
+          "coordinate",
+          "rhythm",
+          "rhythm",
+          "rhythm",
+          "rhythm",
+          "rhythm",
+          "bal_scout",
+          "bal_scout",
+          "bal_scout",
+          "bal_scout",
+          "bal_scout",
+          "bal_personal",
+          "bal_personal",
+          "bal_personal",
+          "bal_personal",
+          "bal_personal",
+          "bal_archive",
+          "bal_archive",
+          "bal_archive",
+          "bal_archive",
+          "bal_archive"
+        ],
+        [
+          "bal_search",
+          "bal_search",
+          "bal_search",
+          "bal_search",
+          "bal_search",
+          "bal_contacts",
+          "bal_contacts",
+          "bal_contacts",
+          "bal_contacts",
+          "bal_contacts",
+          "bal_talent",
+          "bal_talent",
+          "bal_talent",
+          "bal_talent",
+          "bal_talent"
+        ]
+      ],
+      "lastSeen": 100000,
+      "autoCarry": 0,
+      "laneCarry": [],
+      "steadyProgress": 0,
+      "trainingProgress": 0,
+      "dayProgress": 0,
+      "pendingGains": [],
+      "balLegendaryCount": null,
+      "socialJourney": {
+        "claimed": [],
+        "reached": {},
+        "transferUsed": false,
+        "campUsed": false
+      },
+      "proSponsorMatches": 0,
+      "proTraining": {
+        "count": 0,
+        "spent": 0
+      },
+      "socialReceipts": [],
+      "mediaDepartmentOpen": false,
+      "shiftTutorialPending": false
+    },
+    "effects": {
+      "clickAP": 204.375,
+      "autoAP": 204.375,
+      "baseAP": 204.375,
+      "critChance": 0.25,
+      "critMult": 2.5,
+      "instructionLanes": [
+        1,
+        1
+      ],
+      "doubleChance": 1,
+      "echoChance": 0,
+      "energyDrinkChance": 0,
+      "repeatAP": 881.25,
+      "autoRate": 11.479999999999999,
+      "baseAutoRate": 11.479999999999999,
+      "workflowRate": 1,
+      "offlineHours": 0.5,
+      "offlineEfficiency": 0.15,
+      "offlineBonus": 0.875,
+      "dayAP": 625,
+      "morningAP": 12.5,
+      "slots": 0,
+      "travel": 2400,
+      "transition": 250,
+      "rest": 400,
+      "manualBonusAP": 0
+    },
+    "budget": 650,
+    "catalog": [
+      {
+        "id": "warmup",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "crit_smash",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "fast_internet",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "echo",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "assistant",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "offline_time",
+        "max": 5,
+        "cost": "max",
+        "describe": "Vardiya Planı ile açılır"
+      },
+      {
+        "id": "steady",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "meal",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "energy_drink",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "sugar_boost",
+        "max": 5,
+        "cost": "max",
+        "describe": "Vardiya Verimi, Vardiya Planı kartından geliştirilir"
+      },
+      {
+        "id": "collect",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "coordinate",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "rhythm",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "bal_coach",
+        "max": 10,
+        "cost": 28470,
+        "describe": ""
+      },
+      {
+        "id": "bal_shift",
+        "max": 10,
+        "cost": 21040,
+        "describe": ""
+      },
+      {
+        "id": "bal_plan",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "bal_position",
+        "max": 10,
+        "cost": 17360,
+        "describe": ""
+      },
+      {
+        "id": "bal_video",
+        "max": 10,
+        "cost": 92050,
+        "describe": ""
+      },
+      {
+        "id": "bal_recovery",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "bal_sponsor",
+        "max": 10,
+        "cost": 25800,
+        "describe": "Önce Gelir Merkezi aç"
+      },
+      {
+        "id": "bal_shop",
+        "max": 10,
+        "cost": 17150,
+        "describe": "Önce Gelir Merkezi aç"
+      },
+      {
+        "id": "bal_fans",
+        "max": 5,
+        "cost": "max",
+        "describe": "Önce Gelir Merkezi aç"
+      },
+      {
+        "id": "bal_scout",
+        "max": 10,
+        "cost": 19720,
+        "describe": ""
+      },
+      {
+        "id": "bal_personal",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "bal_archive",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "bal_search",
+        "max": 5,
+        "cost": "max",
+        "describe": "Önce Oyuncu Keşfi aç"
+      },
+      {
+        "id": "bal_contacts",
+        "max": 10,
+        "cost": 92050,
+        "describe": "Önce Oyuncu Keşfi aç"
+      },
+      {
+        "id": "bal_talent",
+        "max": 5,
+        "cost": "max",
+        "describe": "Önce Oyuncu Keşfi aç"
+      }
+    ],
+    "league": {
+      "name": "Bölgesel Voleybol Ligi",
+      "rounds": 14,
+      "lastDay": 104,
+      "matchDays": [
+        5,
+        10,
+        16,
+        24,
+        32,
+        40,
+        48,
+        56,
+        64,
+        72,
+        80,
+        88,
+        96,
+        104
+      ],
+      "startingRank": 8,
+      "targetRank": 4,
+      "winPoints": 3,
+      "lossPoints": 0,
+      "replay": false,
+      "bal": true,
+      "division": 2,
+      "entryRating": 35,
+      "divisionEntryRating": 80,
+      "divisionCalendar": 0,
+      "dayInstructions": 500,
+      "matchTrigger": 300
+    }
+  },
+  {
+    "division": 3,
+    "fill": 0,
+    "normalized": {
+      "version": 5,
+      "recoveryRestoreVersion": 1,
+      "blockContributionVersion": 1,
+      "shiftUnlockVersion": 1,
+      "proBlockVersion": 1,
+      "economyVersion": 3,
+      "budgetScale": 10,
+      "stage": "bal",
+      "balVersion": 1,
+      "balBlockVersion": 4,
+      "prologBlockVersion": 2,
+      "balStart": 0,
+      "balStartDay": 1,
+      "balReadyDay": {},
+      "openDepartments": [
+        2,
+        4
+      ],
+      "scouting": {
+        "tutorialSeen": false,
+        "firstTransferUsed": false,
+        "usefulMisses": 0,
+        "specialMisses": 0,
+        "heldId": null,
+        "round": 0,
+        "startedDay": 1,
+        "catalog": [],
+        "recruits": []
+      },
+      "incomeProgress": 0,
+      "attendanceRewards": [],
+      "camp": {
+        "version": 3,
+        "announcedDay": null,
+        "opensDay": null,
+        "lastDay": 1,
+        "boosts": {},
+        "entries": []
+      },
+      "academy": {
+        "version": 1,
+        "sequence": 0,
+        "graduates": 0,
+        "entries": []
+      },
+      "budget": 5000000,
+      "ap": 10000000,
+      "matchRewards": [],
+      "instructions": 12345,
+      "floors": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "lastSeen": 100000,
+      "autoCarry": 0,
+      "laneCarry": [],
+      "steadyProgress": 0,
+      "trainingProgress": 0,
+      "dayProgress": 0,
+      "pendingGains": [],
+      "balLegendaryCount": null,
+      "socialJourney": {
+        "claimed": [],
+        "reached": {},
+        "transferUsed": false,
+        "campUsed": false
+      },
+      "proSponsorMatches": 0,
+      "proTraining": {
+        "count": 0,
+        "spent": 0
+      },
+      "socialReceipts": [],
+      "mediaDepartmentOpen": false,
+      "division": 3,
+      "divisionCalendar": 2,
+      "shiftTutorialPending": false
+    },
+    "effects": {
+      "clickAP": 59.375,
+      "autoAP": 59.375,
+      "baseAP": 59.375,
+      "critChance": 0,
+      "critMult": 1,
+      "instructionLanes": [
+        1
+      ],
+      "doubleChance": 0,
+      "echoChance": 0,
+      "energyDrinkChance": 0,
+      "repeatAP": 0,
+      "autoRate": 0,
+      "baseAutoRate": 0,
+      "workflowRate": 1,
+      "offlineHours": 0,
+      "offlineEfficiency": 0.15,
+      "offlineBonus": 0,
+      "dayAP": 0,
+      "morningAP": 0,
+      "slots": 0,
+      "travel": 2400,
+      "transition": 250,
+      "rest": 400,
+      "manualBonusAP": 0
+    },
+    "budget": 3250,
+    "catalog": [
+      {
+        "id": "warmup",
+        "max": 5,
+        "cost": 100,
+        "describe": ""
+      },
+      {
+        "id": "crit_smash",
+        "max": 5,
+        "cost": 100,
+        "describe": ""
+      },
+      {
+        "id": "fast_internet",
+        "max": 5,
+        "cost": 100,
+        "describe": ""
+      },
+      {
+        "id": "echo",
+        "max": 5,
+        "cost": 100,
+        "describe": ""
+      },
+      {
+        "id": "assistant",
+        "max": 5,
+        "cost": 100,
+        "describe": ""
+      },
+      {
+        "id": "offline_time",
+        "max": 5,
+        "cost": 12000,
+        "describe": "Vardiya Planı ile açılır"
+      },
+      {
+        "id": "steady",
+        "max": 5,
+        "cost": 100,
+        "describe": "Önce Otomatik Asistan kur"
+      },
+      {
+        "id": "meal",
+        "max": 5,
+        "cost": 100,
+        "describe": ""
+      },
+      {
+        "id": "energy_drink",
+        "max": 5,
+        "cost": 100,
+        "describe": ""
+      },
+      {
+        "id": "sugar_boost",
+        "max": 5,
+        "cost": 100,
+        "describe": "Vardiya Verimi, Vardiya Planı kartından geliştirilir"
+      },
+      {
+        "id": "collect",
+        "max": 5,
+        "cost": 100,
+        "describe": ""
+      },
+      {
+        "id": "coordinate",
+        "max": 5,
+        "cost": 100,
+        "describe": ""
+      },
+      {
+        "id": "rhythm",
+        "max": 5,
+        "cost": 100,
+        "describe": ""
+      },
+      {
+        "id": "bal_coach",
+        "max": 10,
+        "cost": 500,
+        "describe": ""
+      },
+      {
+        "id": "bal_shift",
+        "max": 10,
+        "cost": 400,
+        "describe": ""
+      },
+      {
+        "id": "bal_plan",
+        "max": 5,
+        "cost": 350,
+        "describe": ""
+      },
+      {
+        "id": "bal_position",
+        "max": 10,
+        "cost": 290,
+        "describe": ""
+      },
+      {
+        "id": "bal_video",
+        "max": 10,
+        "cost": 400,
+        "describe": ""
+      },
+      {
+        "id": "bal_recovery",
+        "max": 5,
+        "cost": 350,
+        "describe": ""
+      },
+      {
+        "id": "bal_sponsor",
+        "max": 10,
+        "cost": 400,
+        "describe": ""
+      },
+      {
+        "id": "bal_shop",
+        "max": 10,
+        "cost": 470,
+        "describe": ""
+      },
+      {
+        "id": "bal_fans",
+        "max": 5,
+        "cost": 350,
+        "describe": ""
+      },
+      {
+        "id": "bal_scout",
+        "max": 10,
+        "cost": 330,
+        "describe": ""
+      },
+      {
+        "id": "bal_personal",
+        "max": 5,
+        "cost": 530,
+        "describe": ""
+      },
+      {
+        "id": "bal_archive",
+        "max": 5,
+        "cost": 480,
+        "describe": ""
+      },
+      {
+        "id": "bal_search",
+        "max": 5,
+        "cost": 400,
+        "describe": ""
+      },
+      {
+        "id": "bal_contacts",
+        "max": 10,
+        "cost": 470,
+        "describe": ""
+      },
+      {
+        "id": "bal_talent",
+        "max": 5,
+        "cost": 530,
+        "describe": ""
+      },
+      {
+        "id": "pro_coach",
+        "max": 10,
+        "cost": 30000,
+        "describe": ""
+      },
+      {
+        "id": "pro_repeat",
+        "max": 10,
+        "cost": 30000,
+        "describe": ""
+      },
+      {
+        "id": "pro_analysis",
+        "max": 10,
+        "cost": 30000,
+        "describe": ""
+      },
+      {
+        "id": "pro_coordinator",
+        "max": 10,
+        "cost": 30000,
+        "describe": ""
+      },
+      {
+        "id": "pro_camp",
+        "max": 10,
+        "cost": 30000,
+        "describe": ""
+      },
+      {
+        "id": "pro_travel",
+        "max": 10,
+        "cost": 30000,
+        "describe": "Önce Vardiya Planı kur"
+      },
+      {
+        "id": "pro_sponsor",
+        "max": 10,
+        "cost": 30000,
+        "describe": ""
+      },
+      {
+        "id": "pro_shop",
+        "max": 10,
+        "cost": 30000,
+        "describe": ""
+      },
+      {
+        "id": "pro_tickets",
+        "max": 10,
+        "cost": 30000,
+        "describe": ""
+      },
+      {
+        "id": "pro_search",
+        "max": 5,
+        "cost": 12000,
+        "describe": ""
+      },
+      {
+        "id": "pro_negotiator",
+        "max": 5,
+        "cost": 12000,
+        "describe": ""
+      },
+      {
+        "id": "pro_scout",
+        "max": 5,
+        "cost": 30000,
+        "describe": ""
+      }
+    ],
+    "league": {
+      "name": "Ulusal Voleybol 2. Ligi",
+      "rounds": 14,
+      "lastDay": 112,
+      "matchDays": [
+        21,
+        28,
+        35,
+        42,
+        49,
+        56,
+        63,
+        70,
+        77,
+        84,
+        91,
+        98,
+        105,
+        112
+      ],
+      "startingRank": 8,
+      "targetRank": 4,
+      "winPoints": 3,
+      "lossPoints": 0,
+      "replay": false,
+      "bal": true,
+      "division": 3,
+      "entryRating": 35,
+      "divisionEntryRating": 80,
+      "divisionCalendar": 2,
+      "dayInstructions": 2500,
+      "matchTrigger": 1500
+    }
+  },
+  {
+    "division": 3,
+    "fill": 1,
+    "normalized": {
+      "version": 5,
+      "recoveryRestoreVersion": 1,
+      "blockContributionVersion": 1,
+      "shiftUnlockVersion": 1,
+      "proBlockVersion": 1,
+      "economyVersion": 3,
+      "budgetScale": 10,
+      "stage": "bal",
+      "balVersion": 1,
+      "balBlockVersion": 4,
+      "prologBlockVersion": 2,
+      "balStart": 0,
+      "balStartDay": 1,
+      "balReadyDay": {},
+      "openDepartments": [
+        2,
+        4
+      ],
+      "scouting": {
+        "tutorialSeen": false,
+        "firstTransferUsed": false,
+        "usefulMisses": 0,
+        "specialMisses": 0,
+        "heldId": null,
+        "round": 0,
+        "startedDay": 1,
+        "catalog": [],
+        "recruits": []
+      },
+      "incomeProgress": 0,
+      "attendanceRewards": [],
+      "camp": {
+        "version": 3,
+        "announcedDay": null,
+        "opensDay": null,
+        "lastDay": 1,
+        "boosts": {},
+        "entries": []
+      },
+      "academy": {
+        "version": 1,
+        "sequence": 0,
+        "graduates": 0,
+        "entries": []
+      },
+      "budget": 5000000,
+      "ap": 10000000,
+      "matchRewards": [],
+      "instructions": 12345,
+      "floors": [
+        [
+          "warmup",
+          "crit_smash",
+          "echo",
+          "bal_position",
+          "bal_video",
+          "bal_recovery",
+          "pro_coach",
+          "pro_repeat",
+          "pro_analysis"
+        ],
+        [
+          "fast_internet",
+          "assistant",
+          "offline_time",
+          "steady",
+          "bal_coach",
+          "bal_shift",
+          "bal_plan",
+          "pro_coordinator",
+          "pro_camp",
+          "pro_travel"
+        ],
+        [
+          "meal",
+          "energy_drink",
+          "sugar_boost",
+          "bal_sponsor",
+          "bal_shop",
+          "bal_fans",
+          "pro_sponsor",
+          "pro_shop",
+          "pro_tickets"
+        ],
+        [
+          "collect",
+          "coordinate",
+          "rhythm",
+          "bal_scout",
+          "bal_personal",
+          "bal_archive",
+          "pro_search",
+          "pro_negotiator",
+          "pro_scout"
+        ],
+        [
+          "bal_search",
+          "bal_contacts",
+          "bal_talent"
+        ]
+      ],
+      "lastSeen": 100000,
+      "autoCarry": 0,
+      "laneCarry": [],
+      "steadyProgress": 0,
+      "trainingProgress": 0,
+      "dayProgress": 0,
+      "pendingGains": [],
+      "balLegendaryCount": null,
+      "socialJourney": {
+        "claimed": [],
+        "reached": {},
+        "transferUsed": false,
+        "campUsed": false
+      },
+      "proSponsorMatches": 0,
+      "proTraining": {
+        "count": 0,
+        "spent": 0
+      },
+      "socialReceipts": [],
+      "mediaDepartmentOpen": false,
+      "division": 3,
+      "divisionCalendar": 2,
+      "shiftTutorialPending": false
+    },
+    "effects": {
+      "clickAP": 386.375,
+      "autoAP": 386.375,
+      "baseAP": 386.375,
+      "critChance": 0.15,
+      "critMult": 2,
+      "instructionLanes": [
+        1,
+        0.2
+      ],
+      "doubleChance": 0.19999999999999996,
+      "echoChance": 0,
+      "energyDrinkChance": 0,
+      "repeatAP": 88.75,
+      "autoRate": 5.865999999999999,
+      "baseAutoRate": 5.865999999999999,
+      "workflowRate": 1,
+      "offlineHours": 0.5,
+      "offlineEfficiency": 0.15,
+      "offlineBonus": 0.20500000000000002,
+      "dayAP": 750,
+      "morningAP": 3.75,
+      "slots": 0,
+      "travel": 2400,
+      "transition": 250,
+      "rest": 400,
+      "manualBonusAP": 0
+    },
+    "budget": 4250,
+    "catalog": [
+      {
+        "id": "warmup",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "crit_smash",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "fast_internet",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "echo",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "assistant",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "offline_time",
+        "max": 5,
+        "cost": 18000,
+        "describe": "Vardiya Planı ile açılır"
+      },
+      {
+        "id": "steady",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "meal",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "energy_drink",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "sugar_boost",
+        "max": 5,
+        "cost": 60,
+        "describe": "Vardiya Verimi, Vardiya Planı kartından geliştirilir"
+      },
+      {
+        "id": "collect",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "coordinate",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "rhythm",
+        "max": 5,
+        "cost": 60,
+        "describe": ""
+      },
+      {
+        "id": "bal_coach",
+        "max": 10,
+        "cost": 1000,
+        "describe": ""
+      },
+      {
+        "id": "bal_shift",
+        "max": 10,
+        "cost": 900,
+        "describe": ""
+      },
+      {
+        "id": "bal_plan",
+        "max": 5,
+        "cost": 780,
+        "describe": ""
+      },
+      {
+        "id": "bal_position",
+        "max": 10,
+        "cost": 660,
+        "describe": ""
+      },
+      {
+        "id": "bal_video",
+        "max": 10,
+        "cost": 900,
+        "describe": ""
+      },
+      {
+        "id": "bal_recovery",
+        "max": 5,
+        "cost": 780,
+        "describe": ""
+      },
+      {
+        "id": "bal_sponsor",
+        "max": 10,
+        "cost": 900,
+        "describe": ""
+      },
+      {
+        "id": "bal_shop",
+        "max": 10,
+        "cost": 1050,
+        "describe": ""
+      },
+      {
+        "id": "bal_fans",
+        "max": 5,
+        "cost": 780,
+        "describe": ""
+      },
+      {
+        "id": "bal_scout",
+        "max": 10,
+        "cost": 750,
+        "describe": ""
+      },
+      {
+        "id": "bal_personal",
+        "max": 5,
+        "cost": 1200,
+        "describe": ""
+      },
+      {
+        "id": "bal_archive",
+        "max": 5,
+        "cost": 1080,
+        "describe": ""
+      },
+      {
+        "id": "bal_search",
+        "max": 5,
+        "cost": 900,
+        "describe": ""
+      },
+      {
+        "id": "bal_contacts",
+        "max": 10,
+        "cost": 1050,
+        "describe": ""
+      },
+      {
+        "id": "bal_talent",
+        "max": 5,
+        "cost": 1200,
+        "describe": ""
+      },
+      {
+        "id": "pro_coach",
+        "max": 10,
+        "cost": 50000,
+        "describe": ""
+      },
+      {
+        "id": "pro_repeat",
+        "max": 10,
+        "cost": 50000,
+        "describe": ""
+      },
+      {
+        "id": "pro_analysis",
+        "max": 10,
+        "cost": 50000,
+        "describe": ""
+      },
+      {
+        "id": "pro_coordinator",
+        "max": 10,
+        "cost": 50000,
+        "describe": ""
+      },
+      {
+        "id": "pro_camp",
+        "max": 10,
+        "cost": 50000,
+        "describe": ""
+      },
+      {
+        "id": "pro_travel",
+        "max": 10,
+        "cost": 50000,
+        "describe": ""
+      },
+      {
+        "id": "pro_sponsor",
+        "max": 10,
+        "cost": 50000,
+        "describe": ""
+      },
+      {
+        "id": "pro_shop",
+        "max": 10,
+        "cost": 50000,
+        "describe": ""
+      },
+      {
+        "id": "pro_tickets",
+        "max": 10,
+        "cost": 50000,
+        "describe": ""
+      },
+      {
+        "id": "pro_search",
+        "max": 5,
+        "cost": 40000,
+        "describe": ""
+      },
+      {
+        "id": "pro_negotiator",
+        "max": 5,
+        "cost": 50000,
+        "describe": ""
+      },
+      {
+        "id": "pro_scout",
+        "max": 5,
+        "cost": 50000,
+        "describe": ""
+      }
+    ],
+    "league": {
+      "name": "Ulusal Voleybol 2. Ligi",
+      "rounds": 14,
+      "lastDay": 112,
+      "matchDays": [
+        21,
+        28,
+        35,
+        42,
+        49,
+        56,
+        63,
+        70,
+        77,
+        84,
+        91,
+        98,
+        105,
+        112
+      ],
+      "startingRank": 8,
+      "targetRank": 4,
+      "winPoints": 3,
+      "lossPoints": 0,
+      "replay": false,
+      "bal": true,
+      "division": 3,
+      "entryRating": 35,
+      "divisionEntryRating": 80,
+      "divisionCalendar": 2,
+      "dayInstructions": 2500,
+      "matchTrigger": 1500
+    }
+  },
+  {
+    "division": 3,
+    "fill": 5,
+    "normalized": {
+      "version": 5,
+      "recoveryRestoreVersion": 1,
+      "blockContributionVersion": 1,
+      "shiftUnlockVersion": 1,
+      "proBlockVersion": 1,
+      "economyVersion": 3,
+      "budgetScale": 10,
+      "stage": "bal",
+      "balVersion": 1,
+      "balBlockVersion": 4,
+      "prologBlockVersion": 2,
+      "balStart": 0,
+      "balStartDay": 1,
+      "balReadyDay": {},
+      "openDepartments": [
+        2,
+        4
+      ],
+      "scouting": {
+        "tutorialSeen": false,
+        "firstTransferUsed": false,
+        "usefulMisses": 0,
+        "specialMisses": 0,
+        "heldId": null,
+        "round": 0,
+        "startedDay": 1,
+        "catalog": [],
+        "recruits": []
+      },
+      "incomeProgress": 0,
+      "attendanceRewards": [],
+      "camp": {
+        "version": 3,
+        "announcedDay": null,
+        "opensDay": null,
+        "lastDay": 1,
+        "boosts": {},
+        "entries": []
+      },
+      "academy": {
+        "version": 1,
+        "sequence": 0,
+        "graduates": 0,
+        "entries": []
+      },
+      "budget": 5000000,
+      "ap": 10000000,
+      "matchRewards": [],
+      "instructions": 12345,
+      "floors": [
+        [
+          "warmup",
+          "warmup",
+          "warmup",
+          "warmup",
+          "warmup",
+          "crit_smash",
+          "crit_smash",
+          "crit_smash",
+          "crit_smash",
+          "crit_smash",
+          "echo",
+          "echo",
+          "echo",
+          "echo",
+          "echo",
+          "bal_position",
+          "bal_position",
+          "bal_position",
+          "bal_position",
+          "bal_position",
+          "bal_video",
+          "bal_video",
+          "bal_video",
+          "bal_video",
+          "bal_video",
+          "bal_recovery",
+          "bal_recovery",
+          "bal_recovery",
+          "bal_recovery",
+          "bal_recovery",
+          "pro_coach",
+          "pro_coach",
+          "pro_coach",
+          "pro_coach",
+          "pro_coach",
+          "pro_repeat",
+          "pro_repeat",
+          "pro_repeat",
+          "pro_repeat",
+          "pro_repeat",
+          "pro_analysis",
+          "pro_analysis",
+          "pro_analysis",
+          "pro_analysis",
+          "pro_analysis"
+        ],
+        [
+          "fast_internet",
+          "fast_internet",
+          "fast_internet",
+          "fast_internet",
+          "fast_internet",
+          "assistant",
+          "assistant",
+          "assistant",
+          "assistant",
+          "assistant",
+          "offline_time",
+          "offline_time",
+          "offline_time",
+          "offline_time",
+          "offline_time",
+          "steady",
+          "steady",
+          "steady",
+          "steady",
+          "steady",
+          "bal_coach",
+          "bal_coach",
+          "bal_coach",
+          "bal_coach",
+          "bal_coach",
+          "bal_shift",
+          "bal_shift",
+          "bal_shift",
+          "bal_shift",
+          "bal_shift",
+          "bal_plan",
+          "bal_plan",
+          "bal_plan",
+          "bal_plan",
+          "bal_plan",
+          "pro_coordinator",
+          "pro_coordinator",
+          "pro_coordinator",
+          "pro_coordinator",
+          "pro_coordinator",
+          "pro_camp",
+          "pro_camp",
+          "pro_camp",
+          "pro_camp",
+          "pro_camp",
+          "pro_travel",
+          "pro_travel",
+          "pro_travel",
+          "pro_travel",
+          "pro_travel"
+        ],
+        [
+          "meal",
+          "meal",
+          "meal",
+          "meal",
+          "meal",
+          "energy_drink",
+          "energy_drink",
+          "energy_drink",
+          "energy_drink",
+          "energy_drink",
+          "sugar_boost",
+          "sugar_boost",
+          "sugar_boost",
+          "sugar_boost",
+          "sugar_boost",
+          "bal_sponsor",
+          "bal_sponsor",
+          "bal_sponsor",
+          "bal_sponsor",
+          "bal_sponsor",
+          "bal_shop",
+          "bal_shop",
+          "bal_shop",
+          "bal_shop",
+          "bal_shop",
+          "bal_fans",
+          "bal_fans",
+          "bal_fans",
+          "bal_fans",
+          "bal_fans",
+          "pro_sponsor",
+          "pro_sponsor",
+          "pro_sponsor",
+          "pro_sponsor",
+          "pro_sponsor",
+          "pro_shop",
+          "pro_shop",
+          "pro_shop",
+          "pro_shop",
+          "pro_shop",
+          "pro_tickets",
+          "pro_tickets",
+          "pro_tickets",
+          "pro_tickets",
+          "pro_tickets"
+        ],
+        [
+          "collect",
+          "collect",
+          "collect",
+          "collect",
+          "collect",
+          "coordinate",
+          "coordinate",
+          "coordinate",
+          "coordinate",
+          "coordinate",
+          "rhythm",
+          "rhythm",
+          "rhythm",
+          "rhythm",
+          "rhythm",
+          "bal_scout",
+          "bal_scout",
+          "bal_scout",
+          "bal_scout",
+          "bal_scout",
+          "bal_personal",
+          "bal_personal",
+          "bal_personal",
+          "bal_personal",
+          "bal_personal",
+          "bal_archive",
+          "bal_archive",
+          "bal_archive",
+          "bal_archive",
+          "bal_archive",
+          "pro_search",
+          "pro_search",
+          "pro_search",
+          "pro_search",
+          "pro_search",
+          "pro_negotiator",
+          "pro_negotiator",
+          "pro_negotiator",
+          "pro_negotiator",
+          "pro_negotiator",
+          "pro_scout",
+          "pro_scout",
+          "pro_scout",
+          "pro_scout",
+          "pro_scout"
+        ],
+        [
+          "bal_search",
+          "bal_search",
+          "bal_search",
+          "bal_search",
+          "bal_search",
+          "bal_contacts",
+          "bal_contacts",
+          "bal_contacts",
+          "bal_contacts",
+          "bal_contacts",
+          "bal_talent",
+          "bal_talent",
+          "bal_talent",
+          "bal_talent",
+          "bal_talent"
+        ]
+      ],
+      "lastSeen": 100000,
+      "autoCarry": 0,
+      "laneCarry": [],
+      "steadyProgress": 0,
+      "trainingProgress": 0,
+      "dayProgress": 0,
+      "pendingGains": [],
+      "balLegendaryCount": null,
+      "socialJourney": {
+        "claimed": [],
+        "reached": {},
+        "transferUsed": false,
+        "campUsed": false
+      },
+      "proSponsorMatches": 0,
+      "proTraining": {
+        "count": 0,
+        "spent": 0
+      },
+      "socialReceipts": [],
+      "mediaDepartmentOpen": false,
+      "division": 3,
+      "divisionCalendar": 2,
+      "shiftTutorialPending": false
+    },
+    "effects": {
+      "clickAP": 1704.375,
+      "autoAP": 1704.375,
+      "baseAP": 1704.375,
+      "critChance": 0.25,
+      "critMult": 2.5,
+      "instructionLanes": [
+        1,
+        1
+      ],
+      "doubleChance": 1,
+      "echoChance": 0,
+      "energyDrinkChance": 0,
+      "repeatAP": 881.25,
+      "autoRate": 28.279999999999998,
+      "baseAutoRate": 28.279999999999998,
+      "workflowRate": 1,
+      "offlineHours": 1.5,
+      "offlineEfficiency": 0.15,
+      "offlineBonus": 0.875,
+      "dayAP": 3125,
+      "morningAP": 12.5,
+      "slots": 0,
+      "travel": 2400,
+      "transition": 250,
+      "rest": 400,
+      "manualBonusAP": 0
+    },
+    "budget": 8250,
+    "catalog": [
+      {
+        "id": "warmup",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "crit_smash",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "fast_internet",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "echo",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "assistant",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "offline_time",
+        "max": 5,
+        "cost": "max",
+        "describe": "Vardiya Planı ile açılır"
+      },
+      {
+        "id": "steady",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "meal",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "energy_drink",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "sugar_boost",
+        "max": 5,
+        "cost": "max",
+        "describe": "Vardiya Verimi, Vardiya Planı kartından geliştirilir"
+      },
+      {
+        "id": "collect",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "coordinate",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "rhythm",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "bal_coach",
+        "max": 10,
+        "cost": 23100,
+        "describe": ""
+      },
+      {
+        "id": "bal_shift",
+        "max": 10,
+        "cost": 18200,
+        "describe": ""
+      },
+      {
+        "id": "bal_plan",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "bal_position",
+        "max": 10,
+        "cost": 13350,
+        "describe": ""
+      },
+      {
+        "id": "bal_video",
+        "max": 10,
+        "cost": 18200,
+        "describe": ""
+      },
+      {
+        "id": "bal_recovery",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "bal_sponsor",
+        "max": 10,
+        "cost": 18200,
+        "describe": ""
+      },
+      {
+        "id": "bal_shop",
+        "max": 10,
+        "cost": 21230,
+        "describe": ""
+      },
+      {
+        "id": "bal_fans",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "bal_scout",
+        "max": 10,
+        "cost": 15170,
+        "describe": ""
+      },
+      {
+        "id": "bal_personal",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "bal_archive",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "bal_search",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "bal_contacts",
+        "max": 10,
+        "cost": 21230,
+        "describe": ""
+      },
+      {
+        "id": "bal_talent",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "pro_coach",
+        "max": 10,
+        "cost": 720000,
+        "describe": ""
+      },
+      {
+        "id": "pro_repeat",
+        "max": 10,
+        "cost": 520000,
+        "describe": ""
+      },
+      {
+        "id": "pro_analysis",
+        "max": 10,
+        "cost": 320000,
+        "describe": ""
+      },
+      {
+        "id": "pro_coordinator",
+        "max": 10,
+        "cost": 800000,
+        "describe": ""
+      },
+      {
+        "id": "pro_camp",
+        "max": 10,
+        "cost": 360000,
+        "describe": ""
+      },
+      {
+        "id": "pro_travel",
+        "max": 10,
+        "cost": 240000,
+        "describe": ""
+      },
+      {
+        "id": "pro_sponsor",
+        "max": 10,
+        "cost": 600000,
+        "describe": ""
+      },
+      {
+        "id": "pro_shop",
+        "max": 10,
+        "cost": 1280000,
+        "describe": ""
+      },
+      {
+        "id": "pro_tickets",
+        "max": 10,
+        "cost": 560000,
+        "describe": ""
+      },
+      {
+        "id": "pro_search",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "pro_negotiator",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      },
+      {
+        "id": "pro_scout",
+        "max": 5,
+        "cost": "max",
+        "describe": ""
+      }
+    ],
+    "league": {
+      "name": "Ulusal Voleybol 2. Ligi",
+      "rounds": 14,
+      "lastDay": 112,
+      "matchDays": [
+        21,
+        28,
+        35,
+        42,
+        49,
+        56,
+        63,
+        70,
+        77,
+        84,
+        91,
+        98,
+        105,
+        112
+      ],
+      "startingRank": 8,
+      "targetRank": 4,
+      "winPoints": 3,
+      "lossPoints": 0,
+      "replay": false,
+      "bal": true,
+      "division": 3,
+      "entryRating": 35,
+      "divisionEntryRating": 80,
+      "divisionCalendar": 2,
+      "dayInstructions": 2500,
+      "matchTrigger": 1500
+    }
+  }
+]

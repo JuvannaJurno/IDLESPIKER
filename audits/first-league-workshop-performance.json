@@ -1,0 +1,49 @@
+{
+  "method": "Headless Edge, 180 parent animation frames while actual six-player academy is open; development machine only, not a mobile FPS guarantee.",
+  "scene": {
+    "athletes": "6",
+    "crowd": "4",
+    "coaches": "2",
+    "renderer": "native-match",
+    "animation": "native-tickScenario-drawPlayer",
+    "camera": "match-mobile-minus-90",
+    "time": "0.92",
+    "mode": "individual",
+    "drills": "spike",
+    "equipment": "training-net,ball-carts,bench,water,tactics-board,mats,weights,agility-ladder,cones,landing-targets,storage",
+    "scene": "gym",
+    "court": "classic",
+    "ballAsset": "atlas-1",
+    "cartBalls": "10",
+    "shadowLayer": "ground-before-characters",
+    "seated": "0",
+    "conversations": "0",
+    "simulation": "native-tick-launch",
+    "feedKind": "held",
+    "idleCoaches": "2",
+    "watching": "0",
+    "matchPlayers": "0",
+    "practiceScore": "",
+    "stationPhase": "ready",
+    "queueTurns": "0",
+    "returns": "0",
+    "serves": "0",
+    "floorBalls": "0",
+    "ballIds": "1",
+    "coachSetters": "1",
+    "courtFloor": "#dfb785",
+    "avatarCount": "8",
+    "unplannedContacts": "0"
+  },
+  "frames": {
+    "frames": 180,
+    "medianMs": 16.69999999999891,
+    "p95Ms": 16.80000000000109,
+    "over50ms": 0
+  },
+  "workshop": {
+    "ticks": 22,
+    "builds": 10,
+    "timer": false
+  }
+}

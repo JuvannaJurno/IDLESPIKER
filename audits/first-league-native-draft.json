@@ -1,0 +1,1710 @@
+{
+  "method": "12 native simulated matches, real MatchIntro rivals and current court/Legendary engine. Real earned player skill loadouts from the prior-stage economy audit, with artificially controlled stat routes; not a real full-economy first-league playthrough. computeMs measures stepping without drawing, not FPS.",
+  "samples": [
+    {
+      "growth": 0,
+      "round": 1,
+      "seed": 1,
+      "ownOVR": 120,
+      "ownLegendary": 9,
+      "rivalOVR": 122,
+      "score": [
+        4,
+        6
+      ],
+      "finished": true,
+      "skillEvents": [
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "tempo-third",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "dive",
+          "team": 0
+        },
+        {
+          "id": "line",
+          "team": 0
+        },
+        {
+          "id": "jump-legendary",
+          "team": 0
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "sky-serve",
+          "team": 0
+        },
+        {
+          "id": "tempo-third",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "pipe-attack",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        },
+        {
+          "id": "sky-serve",
+          "team": 0
+        },
+        {
+          "id": "tempo-third",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "pipe-attack",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "tempo-third",
+          "team": 0
+        },
+        {
+          "id": "ghost-tip",
+          "team": 0
+        },
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "absolute-read",
+          "team": 0
+        }
+      ],
+      "steps": 10763,
+      "computeMs": 801
+    },
+    {
+      "growth": 0,
+      "round": 1,
+      "seed": 2,
+      "ownOVR": 120,
+      "ownLegendary": 9,
+      "rivalOVR": 122,
+      "score": [
+        6,
+        4
+      ],
+      "finished": true,
+      "skillEvents": [
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "tempo-third",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "jump",
+          "team": 1
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "jump-legendary",
+          "team": 0
+        },
+        {
+          "id": "jump-legendary",
+          "team": 0
+        },
+        {
+          "id": "tempo-third",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "sky-serve",
+          "team": 1
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "perfect-second-touch",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "court-vision",
+          "team": 0
+        },
+        {
+          "id": "float",
+          "team": 0
+        },
+        {
+          "id": "tempo-third",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "pipe-attack",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        },
+        {
+          "id": "sky-serve",
+          "team": 0
+        },
+        {
+          "id": "ghost-tip",
+          "team": 0
+        },
+        {
+          "id": "pipe-attack",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        },
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        }
+      ],
+      "steps": 9833,
+      "computeMs": 660
+    },
+    {
+      "growth": 0,
+      "round": 7,
+      "seed": 1,
+      "ownOVR": 120,
+      "ownLegendary": 9,
+      "rivalOVR": 154,
+      "score": [
+        2,
+        5
+      ],
+      "finished": true,
+      "skillEvents": [
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "jump-float-legendary",
+          "team": 1
+        },
+        {
+          "id": "tempo-third",
+          "team": 0
+        },
+        {
+          "id": "absolute-read",
+          "team": 1
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "jump-legendary",
+          "team": 0
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "cross",
+          "team": 1
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "pipe-attack",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        },
+        {
+          "id": "sync-attack",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "float",
+          "team": 1
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "float",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "pipe-attack",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "line",
+          "team": 1
+        },
+        {
+          "id": "dive",
+          "team": 0
+        },
+        {
+          "id": "tempo-second",
+          "team": 0
+        },
+        {
+          "id": "dive",
+          "team": 1
+        },
+        {
+          "id": "sync-attack",
+          "team": 1
+        },
+        {
+          "id": "wipe",
+          "team": 1
+        },
+        {
+          "id": "pipe-attack",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        }
+      ],
+      "steps": 9053,
+      "computeMs": 645
+    },
+    {
+      "growth": 0,
+      "round": 7,
+      "seed": 2,
+      "ownOVR": 120,
+      "ownLegendary": 9,
+      "rivalOVR": 154,
+      "score": [
+        3,
+        5
+      ],
+      "finished": true,
+      "skillEvents": [
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "line",
+          "team": 1
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "absolute-read",
+          "team": 1
+        },
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "sync-attack",
+          "team": 1
+        },
+        {
+          "id": "line",
+          "team": 1
+        },
+        {
+          "id": "jump-float-legendary",
+          "team": 1
+        },
+        {
+          "id": "jump-float-legendary",
+          "team": 1
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "pancake",
+          "team": 1
+        },
+        {
+          "id": "jump-legendary",
+          "team": 0
+        },
+        {
+          "id": "dive",
+          "team": 1
+        },
+        {
+          "id": "sync-attack",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "tempo-third",
+          "team": 0
+        },
+        {
+          "id": "cross",
+          "team": 0
+        },
+        {
+          "id": "absolute-read",
+          "team": 1
+        },
+        {
+          "id": "jump-legendary",
+          "team": 0
+        },
+        {
+          "id": "tempo-third",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "pipe-attack",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        },
+        {
+          "id": "pancake",
+          "team": 1
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "pipe-attack",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        },
+        {
+          "id": "float",
+          "team": 1
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "tempo-third",
+          "team": 0
+        },
+        {
+          "id": "cross",
+          "team": 0
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        }
+      ],
+      "steps": 9462,
+      "computeMs": 636
+    },
+    {
+      "growth": 0,
+      "round": 14,
+      "seed": 1,
+      "ownOVR": 120,
+      "ownLegendary": 9,
+      "rivalOVR": 158,
+      "score": [
+        0,
+        5
+      ],
+      "finished": true,
+      "skillEvents": [
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "dive",
+          "team": 1
+        },
+        {
+          "id": "sync-attack",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "absolute-read",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "jump-float-legendary",
+          "team": 1
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "jump-float-legendary",
+          "team": 1
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "jump-float-legendary",
+          "team": 1
+        },
+        {
+          "id": "absolute-read",
+          "team": 1
+        },
+        {
+          "id": "sync-attack",
+          "team": 1
+        },
+        {
+          "id": "cross",
+          "team": 1
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "tempo-third",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        },
+        {
+          "id": "jump-float-legendary",
+          "team": 1
+        }
+      ],
+      "steps": 6216,
+      "computeMs": 439
+    },
+    {
+      "growth": 0,
+      "round": 14,
+      "seed": 2,
+      "ownOVR": 120,
+      "ownLegendary": 9,
+      "rivalOVR": 158,
+      "score": [
+        0,
+        5
+      ],
+      "finished": true,
+      "skillEvents": [
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "line",
+          "team": 1
+        },
+        {
+          "id": "jump-float-legendary",
+          "team": 1
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "jump-float-legendary",
+          "team": 1
+        },
+        {
+          "id": "tempo-third",
+          "team": 0
+        },
+        {
+          "id": "absolute-read",
+          "team": 1
+        },
+        {
+          "id": "jump-float-legendary",
+          "team": 1
+        },
+        {
+          "id": "jump-float-legendary",
+          "team": 1
+        }
+      ],
+      "steps": 4826,
+      "computeMs": 342
+    },
+    {
+      "growth": 36,
+      "round": 1,
+      "seed": 1,
+      "ownOVR": 120,
+      "ownLegendary": 9,
+      "rivalOVR": 122,
+      "score": [
+        5,
+        1
+      ],
+      "finished": true,
+      "skillEvents": [
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "tempo-minus",
+          "team": 1
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "tempo-third",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "tempo-third",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "jump",
+          "team": 1
+        },
+        {
+          "id": "dive",
+          "team": 0
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "back",
+          "team": 1
+        },
+        {
+          "id": "jump-legendary",
+          "team": 0
+        },
+        {
+          "id": "tempo-third",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "pipe-attack",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        },
+        {
+          "id": "jump-legendary",
+          "team": 0
+        },
+        {
+          "id": "perfect-second-touch",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "pipe-attack",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        }
+      ],
+      "steps": 6825,
+      "computeMs": 486
+    },
+    {
+      "growth": 36,
+      "round": 1,
+      "seed": 2,
+      "ownOVR": 120,
+      "ownLegendary": 9,
+      "rivalOVR": 122,
+      "score": [
+        6,
+        4
+      ],
+      "finished": true,
+      "skillEvents": [
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "tempo-minus",
+          "team": 1
+        },
+        {
+          "id": "jump",
+          "team": 1
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "tempo-third",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "jump-legendary",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "sky-serve",
+          "team": 1
+        },
+        {
+          "id": "court-vision",
+          "team": 0
+        },
+        {
+          "id": "back",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "pipe-attack",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        },
+        {
+          "id": "float",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "sky-serve",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "dive",
+          "team": 0
+        },
+        {
+          "id": "ghost-tip",
+          "team": 0
+        },
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "dive",
+          "team": 0
+        },
+        {
+          "id": "pipe-attack",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        }
+      ],
+      "steps": 10155,
+      "computeMs": 716
+    },
+    {
+      "growth": 36,
+      "round": 7,
+      "seed": 1,
+      "ownOVR": 137,
+      "ownLegendary": 9,
+      "rivalOVR": 154,
+      "score": [
+        0,
+        5
+      ],
+      "finished": true,
+      "skillEvents": [
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "sync-attack",
+          "team": 1
+        },
+        {
+          "id": "line",
+          "team": 1
+        },
+        {
+          "id": "jump-float-legendary",
+          "team": 1
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "cross",
+          "team": 1
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "jump-float-legendary",
+          "team": 1
+        },
+        {
+          "id": "jump-float-legendary",
+          "team": 1
+        },
+        {
+          "id": "tempo-third",
+          "team": 0
+        },
+        {
+          "id": "absolute-read",
+          "team": 1
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "sync-attack",
+          "team": 1
+        },
+        {
+          "id": "wipe",
+          "team": 1
+        },
+        {
+          "id": "jump-float-legendary",
+          "team": 1
+        },
+        {
+          "id": "absolute-read",
+          "team": 1
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "cross",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "dive",
+          "team": 1
+        },
+        {
+          "id": "sync-attack",
+          "team": 1
+        },
+        {
+          "id": "cross",
+          "team": 1
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        }
+      ],
+      "steps": 7765,
+      "computeMs": 516
+    },
+    {
+      "growth": 36,
+      "round": 7,
+      "seed": 2,
+      "ownOVR": 137,
+      "ownLegendary": 9,
+      "rivalOVR": 154,
+      "score": [
+        2,
+        5
+      ],
+      "finished": true,
+      "skillEvents": [
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "pancake",
+          "team": 1
+        },
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "dive",
+          "team": 1
+        },
+        {
+          "id": "sync-attack",
+          "team": 1
+        },
+        {
+          "id": "power-hit",
+          "team": 1
+        },
+        {
+          "id": "jump-float-legendary",
+          "team": 1
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "absolute-read",
+          "team": 1
+        },
+        {
+          "id": "sync-attack",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "tempo-third",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        },
+        {
+          "id": "tempo-third",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "jump-float-legendary",
+          "team": 1
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "absolute-read",
+          "team": 1
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "tempo-third",
+          "team": 0
+        },
+        {
+          "id": "dive",
+          "team": 1
+        },
+        {
+          "id": "sync-attack",
+          "team": 1
+        },
+        {
+          "id": "wipe",
+          "team": 1
+        },
+        {
+          "id": "jump-float-legendary",
+          "team": 1
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "tempo-second",
+          "team": 0
+        },
+        {
+          "id": "absolute-read",
+          "team": 1
+        },
+        {
+          "id": "sync-attack",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "jump-float-legendary",
+          "team": 1
+        },
+        {
+          "id": "line",
+          "team": 0
+        },
+        {
+          "id": "absolute-read",
+          "team": 1
+        },
+        {
+          "id": "sync-attack",
+          "team": 1
+        },
+        {
+          "id": "cross",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        },
+        {
+          "id": "pancake",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "tempo-third",
+          "team": 0
+        },
+        {
+          "id": "line",
+          "team": 0
+        },
+        {
+          "id": "jump-legendary",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        }
+      ],
+      "steps": 11420,
+      "computeMs": 685
+    },
+    {
+      "growth": 36,
+      "round": 14,
+      "seed": 1,
+      "ownOVR": 156,
+      "ownLegendary": 9,
+      "rivalOVR": 158,
+      "score": [
+        5,
+        0
+      ],
+      "finished": true,
+      "skillEvents": [
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "sync-attack",
+          "team": 1
+        },
+        {
+          "id": "line",
+          "team": 1
+        },
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "dive",
+          "team": 1
+        },
+        {
+          "id": "tempo-third",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "pancake",
+          "team": 1
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "absolute-read",
+          "team": 1
+        }
+      ],
+      "steps": 5907,
+      "computeMs": 397
+    },
+    {
+      "growth": 36,
+      "round": 14,
+      "seed": 2,
+      "ownOVR": 156,
+      "ownLegendary": 9,
+      "rivalOVR": 158,
+      "score": [
+        7,
+        5
+      ],
+      "finished": true,
+      "skillEvents": [
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "dive",
+          "team": 1
+        },
+        {
+          "id": "sync-attack",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "absolute-read",
+          "team": 1
+        },
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "line",
+          "team": 1
+        },
+        {
+          "id": "jump-float-legendary",
+          "team": 1
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "jump-legendary",
+          "team": 0
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "cross",
+          "team": 1
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "pipe-attack",
+          "team": 0
+        },
+        {
+          "id": "jump-legendary",
+          "team": 0
+        },
+        {
+          "id": "sync-attack",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "pipe-attack",
+          "team": 0
+        },
+        {
+          "id": "absolute-read",
+          "team": 1
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "tempo-second",
+          "team": 0
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "pipe-attack",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        },
+        {
+          "id": "pancake",
+          "team": 1
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "cross",
+          "team": 1
+        },
+        {
+          "id": "float",
+          "team": 1
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "float",
+          "team": 1
+        },
+        {
+          "id": "cover",
+          "team": 0
+        },
+        {
+          "id": "cross",
+          "team": 0
+        },
+        {
+          "id": "absolute-read",
+          "team": 1
+        },
+        {
+          "id": "pancake",
+          "team": 1
+        },
+        {
+          "id": "sync-attack",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "tempo-minus",
+          "team": 0
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "cross",
+          "team": 1
+        },
+        {
+          "id": "float",
+          "team": 1
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "pipe-attack",
+          "team": 0
+        },
+        {
+          "id": "absolute-read",
+          "team": 1
+        },
+        {
+          "id": "pancake",
+          "team": 1
+        },
+        {
+          "id": "sync-attack",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "sky-serve",
+          "team": 0
+        },
+        {
+          "id": "dive",
+          "team": 1
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "commit-block",
+          "team": 0
+        },
+        {
+          "id": "ghost-tip",
+          "team": 0
+        },
+        {
+          "id": "pancake",
+          "team": 1
+        },
+        {
+          "id": "float",
+          "team": 0
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "cross",
+          "team": 1
+        },
+        {
+          "id": "pancake",
+          "team": 0
+        },
+        {
+          "id": "pipe-attack",
+          "team": 0
+        },
+        {
+          "id": "commit-block",
+          "team": 1
+        },
+        {
+          "id": "sky-ball-serve",
+          "team": 0
+        },
+        {
+          "id": "fake-set",
+          "team": 1
+        },
+        {
+          "id": "absolute-read",
+          "team": 0
+        }
+      ],
+      "steps": 17041,
+      "computeMs": 1008
+    }
+  ],
+  "errors": []
+}

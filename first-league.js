@@ -17,7 +17,7 @@ function refresh(){
 }
 function buildState(){
  const room=RoomSystem.snapshot();RoomRules.settlePendingGains(room);const first=room.division!==4;
- room.division=4;room.divisionCalendar=2;room.instructions=0;room.dayProgress=0;room.trainingProgress=0;room.incomeProgress=0;room.lastSeen=Date.now();room.matchRewards=[];room.attendanceRewards=[];
+ room.division=4;room.divisionCalendar=2;window.FirstLeagueDraftRules?.rebase(room,0);room.instructions=0;room.dayProgress=0;room.trainingProgress=0;room.incomeProgress=0;room.lastSeen=Date.now();room.matchRewards=[];room.attendanceRewards=[];
  room.balStartDay=1;room.balStart=0;room.openDepartments=[2,4];delete room.offlineCalendar;delete room.offlineMatchId;delete room.matchOvertime;
  room.camp.lastDay=1;room.camp.announcedDay=null;room.camp.opensDay=null;room.camp.entries=room.camp.entries.map(e=>e.status==='running'?{...e,startDay:1,endDay:4}:e);
  room.scouting.startedDay=1;room.scouting.startedInstructions=0;

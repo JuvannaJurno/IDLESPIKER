@@ -18,18 +18,19 @@ const capacity=s=>unlocked(s)?2+Math.max(0,(s.floors.flat().filter(x=>x==='first
 function normalize(raw){
  const s=defaults();if(raw?.version!==1)return s;
  for(const k of ['sequence','graduates'])if(Number.isSafeInteger(raw[k])&&raw[k]>=0)s[k]=raw[k];
- const seen=new Set();s.entries=(Array.isArray(raw.entries)?raw.entries:[]).filter(e=>e&&/^academy-\d+$/.test(e.id)&&!seen.has(e.id)&&seen.add(e.id)&&e.player&&paths[e.player.role]&&typeof e.player.name==='string'&&/^team-assets\/woman-\d+\.svg$/.test(e.player.art)&&stats.every(k=>Number.isSafeInteger(e.player[k])&&e.player[k]>=0)&&Number.isFinite(e.start)&&Number.isFinite(e.end)&&e.end>e.start&&Number.isFinite(e.roll)&&e.roll>=0&&e.roll<1&&plans(e.player).some(p=>p.id===e.path)).slice(0,6).map(e=>({...copy(e),chance:Potential.rating(e.player).chance,skillChoice:e.skillChoice==='alternate'?'alternate':'recommended'}));
+ const seen=new Set();s.entries=(Array.isArray(raw.entries)?raw.entries:[]).filter(e=>e&&/^academy-\d+$/.test(e.id)&&!seen.has(e.id)&&seen.add(e.id)&&e.player&&paths[e.player.role]&&typeof e.player.name==='string'&&/^team-assets\/woman-\d+\.svg$/.test(e.player.art)&&stats.every(k=>Number.isSafeInteger(e.player[k])&&e.player[k]>=0)&&Number.isFinite(e.start)&&Number.isFinite(e.end)&&e.end>e.start&&Number.isFinite(e.roll)&&e.roll>=0&&e.roll<1&&plans(e.player).some(p=>p.id===e.path)).slice(0,6).map(e=>({...copy(e),...(Object.hasOwn(e,'trainingBonus')?{trainingBonus:Number.isInteger(e.trainingBonus)&&e.trainingBonus>=0&&e.trainingBonus<=10?e.trainingBonus:0}:{}),...(Object.hasOwn(e,'projectSupportMs')?{projectSupportMs:Math.max(0,Math.min(Math.floor((e.end-e.start)*.3),Math.floor(Number(e.projectSupportMs)||0)))}:{}),chance:Potential.rating(e.player).chance,skillChoice:e.skillChoice==='alternate'?'alternate':'recommended'}));
  s.sequence=Math.max(s.sequence,...s.entries.map(e=>Number(e.id.split('-')[1])),0);return s;
 }
 const progress=(e,now=Date.now())=>Math.max(0,Math.min(1,(now-e.start)/(e.end-e.start)));
 function phase(e,now=Date.now()){const p=progress(e,now);return p>=1?'ready':p>=.82?'legendary':p>=.6?'skill':p>=.25?'direction':'adaptation';}
 const eligible=p=>!!p?.academyProspect&&Number.isInteger(p.age)&&p.age>=16&&p.age<=18&&!p.specialCharacter&&!p.academyOrigin;
+function trainingTerms(room){const n=id=>(room.floors||[]).flat().filter(x=>x===id).length,first=!room.academy?.sequence;const reduction=room.division===4?Math.min(.25,n('first_campus')*.05):0,bonus=room.division===4?Math.min(10,n('first_mentor')*2):0;return {baseMs:first?20*60000:room.division===4?45*60000:2*3600000,durationMs:Math.round((first?20*60000:room.division===4?45*60000:2*3600000)*(1-reduction)),reduction,bonus};}
 function enroll(room,candidate,price,now=Date.now(),random=Math.random){
  if(!unlocked(room)||!candidate||candidate.hired||!eligible(candidate.player)||room.academy.entries.length>=capacity(room)||!Number.isSafeInteger(price)||price<0||room.budget<price||!Number.isFinite(now))return false;
- const s=room.academy,p=copy(candidate.player),id='academy-'+(++s.sequence),duration=s.sequence===1?20*60000:2*3600000;
+ const terms=trainingTerms(room),s=room.academy,p=copy(candidate.player),id='academy-'+(++s.sequence),duration=terms.durationMs;
  const roll=random();if(!Number.isFinite(roll)||roll<0||roll>=1){s.sequence--;return false;}
  p.art=p.art.startsWith('team-assets/')?p.art:'team-assets/woman-0.svg';
- s.entries.push({id,player:p,start:now,end:now+duration,path:plans(p)[0].id,skillChoice:'recommended',directionChosen:false,skillChosen:false,legendaryChosen:false,progressionVersion:3,chance:Potential.rating(p).chance,roll,paid:price});
+ s.entries.push({id,player:p,start:now,end:now+duration,path:plans(p)[0].id,skillChoice:'recommended',directionChosen:false,skillChosen:false,legendaryChosen:false,progressionVersion:3,trainingBonus:terms.bonus,durationReduction:terms.reduction,projectSupportMs:0,chance:Potential.rating(p).chance,roll,paid:price});
  const free=!room.scouting.firstTransferUsed&&!room.scouting.recruits.length;
  room.budget-=price;candidate.hired=true;candidate.academyId=id;room.scouting.firstTransferUsed=true;
  const Journey=root.SocialJourneyRules||(typeof require==='function'?require('./social-journey-rules.js'):null);if(!free&&Journey?.available(room,'transfer'))room.socialJourney.transferUsed=true;
@@ -49,7 +50,7 @@ function legendaryOptions(e){const S=root.PlayerSkills||(typeof require==='funct
 function outcome(e){const chance=Potential.rating(e.player).chance;return e.roll<chance?'gold':e.roll<chance+(1-chance)*.55?'silver':'black';}
 function result(e){
  const p=copy(e.player),path=plans(p).find(x=>x.id===e.path),choice=skills(e).find(x=>x.id===e.skillChoice),grade=outcome(e),talent=true;
- stats.forEach(k=>p[k]+=k===path.primary?12:k===path.secondary?5:2);if(grade==='gold')p[path.primary]+=6;
+ stats.forEach(k=>p[k]+=k===path.primary?12+Math.floor(Math.max(0,Math.min(10,Number(e.trainingBonus)||0))):k===path.secondary?5:2);if(grade==='gold')p[path.primary]+=6;
  p.baseStats=Object.fromEntries(stats.map(k=>[k,p[k]-(p.training?.[k]||0)]));
  const S=root.PlayerSkills||(typeof require==='function'?require('./player-skills.js'):null);S.ensure(p);
  p.matchSkills[3]=choice.skill;p.matchSkills[2]=choice.legendary;
@@ -64,6 +65,6 @@ function graduate(room,id,roster,validate,now=Date.now()){
  const draft=roster.map(p=>({...p,art:p.art.startsWith('team-assets/')?p.art:'team-assets/woman-0.svg'}));draft.push(p);if(!validate(draft))return false;
  room.scouting.recruits.push(p);room.academy.entries=room.academy.entries.filter(x=>x.id!==id);room.academy.graduates++;return p;
 }
-const api={outcome,legendaryOptions,defaults,normalize,plans,skills,unlocked,capacity,progress,phase,eligible,enroll,choose,result,graduate};
+const api={trainingTerms,outcome,legendaryOptions,defaults,normalize,plans,skills,unlocked,capacity,progress,phase,eligible,enroll,choose,result,graduate};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.AcademyCareerRules=api;
 })(globalThis);

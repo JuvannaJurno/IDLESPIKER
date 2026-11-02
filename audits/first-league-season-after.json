@@ -1,0 +1,517 @@
+{
+  "method": "Official rotation/contact stat model; 24 full seasons per training route. Does not reproduce native Legendary animations/CD. Entry strength frozen at 128; own starting OVR 120, with 0/18/36/54 season growth.",
+  "summary": [
+    {
+      "growth": 0,
+      "champion": 0,
+      "top3": 0,
+      "averageWins": 3.8333333333333335,
+      "seasons": [
+        {
+          "seed": 1,
+          "rank": 7,
+          "wins": 3
+        },
+        {
+          "seed": 2,
+          "rank": 6,
+          "wins": 5
+        },
+        {
+          "seed": 3,
+          "rank": 7,
+          "wins": 4
+        },
+        {
+          "seed": 4,
+          "rank": 6,
+          "wins": 4
+        },
+        {
+          "seed": 5,
+          "rank": 6,
+          "wins": 5
+        },
+        {
+          "seed": 6,
+          "rank": 7,
+          "wins": 3
+        },
+        {
+          "seed": 7,
+          "rank": 7,
+          "wins": 3
+        },
+        {
+          "seed": 8,
+          "rank": 5,
+          "wins": 5
+        },
+        {
+          "seed": 9,
+          "rank": 7,
+          "wins": 3
+        },
+        {
+          "seed": 10,
+          "rank": 7,
+          "wins": 3
+        },
+        {
+          "seed": 11,
+          "rank": 5,
+          "wins": 5
+        },
+        {
+          "seed": 12,
+          "rank": 4,
+          "wins": 8
+        },
+        {
+          "seed": 13,
+          "rank": 7,
+          "wins": 2
+        },
+        {
+          "seed": 14,
+          "rank": 8,
+          "wins": 3
+        },
+        {
+          "seed": 15,
+          "rank": 8,
+          "wins": 3
+        },
+        {
+          "seed": 16,
+          "rank": 6,
+          "wins": 4
+        },
+        {
+          "seed": 17,
+          "rank": 8,
+          "wins": 2
+        },
+        {
+          "seed": 18,
+          "rank": 4,
+          "wins": 5
+        },
+        {
+          "seed": 19,
+          "rank": 6,
+          "wins": 3
+        },
+        {
+          "seed": 20,
+          "rank": 8,
+          "wins": 2
+        },
+        {
+          "seed": 21,
+          "rank": 7,
+          "wins": 2
+        },
+        {
+          "seed": 22,
+          "rank": 5,
+          "wins": 5
+        },
+        {
+          "seed": 23,
+          "rank": 6,
+          "wins": 4
+        },
+        {
+          "seed": 24,
+          "rank": 4,
+          "wins": 6
+        }
+      ]
+    },
+    {
+      "growth": 18,
+      "champion": 0,
+      "top3": 0,
+      "averageWins": 6.458333333333333,
+      "seasons": [
+        {
+          "seed": 1,
+          "rank": 4,
+          "wins": 6
+        },
+        {
+          "seed": 2,
+          "rank": 5,
+          "wins": 7
+        },
+        {
+          "seed": 3,
+          "rank": 4,
+          "wins": 9
+        },
+        {
+          "seed": 4,
+          "rank": 5,
+          "wins": 7
+        },
+        {
+          "seed": 5,
+          "rank": 6,
+          "wins": 4
+        },
+        {
+          "seed": 6,
+          "rank": 5,
+          "wins": 5
+        },
+        {
+          "seed": 7,
+          "rank": 4,
+          "wins": 8
+        },
+        {
+          "seed": 8,
+          "rank": 6,
+          "wins": 5
+        },
+        {
+          "seed": 9,
+          "rank": 4,
+          "wins": 7
+        },
+        {
+          "seed": 10,
+          "rank": 4,
+          "wins": 8
+        },
+        {
+          "seed": 11,
+          "rank": 4,
+          "wins": 7
+        },
+        {
+          "seed": 12,
+          "rank": 5,
+          "wins": 6
+        },
+        {
+          "seed": 13,
+          "rank": 6,
+          "wins": 5
+        },
+        {
+          "seed": 14,
+          "rank": 4,
+          "wins": 8
+        },
+        {
+          "seed": 15,
+          "rank": 5,
+          "wins": 5
+        },
+        {
+          "seed": 16,
+          "rank": 5,
+          "wins": 6
+        },
+        {
+          "seed": 17,
+          "rank": 5,
+          "wins": 7
+        },
+        {
+          "seed": 18,
+          "rank": 4,
+          "wins": 9
+        },
+        {
+          "seed": 19,
+          "rank": 5,
+          "wins": 6
+        },
+        {
+          "seed": 20,
+          "rank": 7,
+          "wins": 3
+        },
+        {
+          "seed": 21,
+          "rank": 5,
+          "wins": 5
+        },
+        {
+          "seed": 22,
+          "rank": 4,
+          "wins": 7
+        },
+        {
+          "seed": 23,
+          "rank": 4,
+          "wins": 7
+        },
+        {
+          "seed": 24,
+          "rank": 4,
+          "wins": 8
+        }
+      ]
+    },
+    {
+      "growth": 36,
+      "champion": 0,
+      "top3": 16,
+      "averageWins": 9.5,
+      "seasons": [
+        {
+          "seed": 1,
+          "rank": 4,
+          "wins": 8
+        },
+        {
+          "seed": 2,
+          "rank": 3,
+          "wins": 10
+        },
+        {
+          "seed": 3,
+          "rank": 2,
+          "wins": 11
+        },
+        {
+          "seed": 4,
+          "rank": 2,
+          "wins": 11
+        },
+        {
+          "seed": 5,
+          "rank": 4,
+          "wins": 8
+        },
+        {
+          "seed": 6,
+          "rank": 4,
+          "wins": 8
+        },
+        {
+          "seed": 7,
+          "rank": 3,
+          "wins": 10
+        },
+        {
+          "seed": 8,
+          "rank": 2,
+          "wins": 12
+        },
+        {
+          "seed": 9,
+          "rank": 2,
+          "wins": 11
+        },
+        {
+          "seed": 10,
+          "rank": 4,
+          "wins": 9
+        },
+        {
+          "seed": 11,
+          "rank": 2,
+          "wins": 10
+        },
+        {
+          "seed": 12,
+          "rank": 3,
+          "wins": 9
+        },
+        {
+          "seed": 13,
+          "rank": 3,
+          "wins": 9
+        },
+        {
+          "seed": 14,
+          "rank": 3,
+          "wins": 10
+        },
+        {
+          "seed": 15,
+          "rank": 2,
+          "wins": 9
+        },
+        {
+          "seed": 16,
+          "rank": 2,
+          "wins": 12
+        },
+        {
+          "seed": 17,
+          "rank": 2,
+          "wins": 11
+        },
+        {
+          "seed": 18,
+          "rank": 3,
+          "wins": 10
+        },
+        {
+          "seed": 19,
+          "rank": 5,
+          "wins": 7
+        },
+        {
+          "seed": 20,
+          "rank": 4,
+          "wins": 8
+        },
+        {
+          "seed": 21,
+          "rank": 5,
+          "wins": 7
+        },
+        {
+          "seed": 22,
+          "rank": 3,
+          "wins": 9
+        },
+        {
+          "seed": 23,
+          "rank": 4,
+          "wins": 8
+        },
+        {
+          "seed": 24,
+          "rank": 2,
+          "wins": 11
+        }
+      ]
+    },
+    {
+      "growth": 54,
+      "champion": 5,
+      "top3": 22,
+      "averageWins": 11,
+      "seasons": [
+        {
+          "seed": 1,
+          "rank": 3,
+          "wins": 11
+        },
+        {
+          "seed": 2,
+          "rank": 3,
+          "wins": 10
+        },
+        {
+          "seed": 3,
+          "rank": 1,
+          "wins": 12
+        },
+        {
+          "seed": 4,
+          "rank": 1,
+          "wins": 14
+        },
+        {
+          "seed": 5,
+          "rank": 4,
+          "wins": 10
+        },
+        {
+          "seed": 6,
+          "rank": 3,
+          "wins": 10
+        },
+        {
+          "seed": 7,
+          "rank": 2,
+          "wins": 12
+        },
+        {
+          "seed": 8,
+          "rank": 2,
+          "wins": 12
+        },
+        {
+          "seed": 9,
+          "rank": 2,
+          "wins": 12
+        },
+        {
+          "seed": 10,
+          "rank": 3,
+          "wins": 10
+        },
+        {
+          "seed": 11,
+          "rank": 2,
+          "wins": 11
+        },
+        {
+          "seed": 12,
+          "rank": 2,
+          "wins": 11
+        },
+        {
+          "seed": 13,
+          "rank": 3,
+          "wins": 10
+        },
+        {
+          "seed": 14,
+          "rank": 2,
+          "wins": 10
+        },
+        {
+          "seed": 15,
+          "rank": 2,
+          "wins": 11
+        },
+        {
+          "seed": 16,
+          "rank": 1,
+          "wins": 12
+        },
+        {
+          "seed": 17,
+          "rank": 2,
+          "wins": 11
+        },
+        {
+          "seed": 18,
+          "rank": 2,
+          "wins": 11
+        },
+        {
+          "seed": 19,
+          "rank": 2,
+          "wins": 10
+        },
+        {
+          "seed": 20,
+          "rank": 4,
+          "wins": 7
+        },
+        {
+          "seed": 21,
+          "rank": 3,
+          "wins": 10
+        },
+        {
+          "seed": 22,
+          "rank": 1,
+          "wins": 13
+        },
+        {
+          "seed": 23,
+          "rank": 2,
+          "wins": 11
+        },
+        {
+          "seed": 24,
+          "rank": 1,
+          "wins": 13
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "type": "early",
+    "cycle": 0,
+    "seconds": 89.84725965858043,
+    "ap": 109200,
+    "cash": 9504,
+    "rank": 2,
+    "normalProduction": 1820000,
+    "apBonusRatio": 0.06
+  },
+  {
+    "type": "early",
+    "cycle": 1,
+    "seconds": 240.3414195867026,
+    "ap": 306716,
+    "cash": 26694,
+    "rank": 2,
+    "normalProduction": 4868500,
+    "apBonusRatio": 0.06300010270103729
+  },
+  {
+    "type": "early",
+    "cycle": 2,
+    "seconds": 240.3414195867026,
+    "ap": 306716,
+    "cash": 26694,
+    "rank": 3,
+    "normalProduction": 4868500,
+    "apBonusRatio": 0.06300010270103729
+  },
+  {
+    "type": "early",
+    "cycle": 3,
+    "seconds": 240.3414195867026,
+    "ap": 321321,
+    "cash": 27966,
+    "rank": 3,
+    "normalProduction": 4868500,
+    "apBonusRatio": 0.066
+  },
+  {
+    "type": "early",
+    "cycle": 4,
+    "seconds": 240.3414195867026,
+    "ap": 321321,
+    "cash": 27966,
+    "rank": 3,
+    "normalProduction": 4868500,
+    "apBonusRatio": 0.066
+  },
+  {
+    "type": "early",
+    "cycle": 5,
+    "seconds": 240.3414195867026,
+    "ap": 321321,
+    "cash": 27966,
+    "rank": 4,
+    "normalProduction": 4868500,
+    "apBonusRatio": 0.066
+  },
+  {
+    "type": "early",
+    "cycle": 6,
+    "seconds": 240.3414195867026,
+    "ap": 335927,
+    "cash": 29237,
+    "rank": 4,
+    "normalProduction": 4868500,
+    "apBonusRatio": 0.06900010270103728
+  },
+  {
+    "type": "early",
+    "cycle": 7,
+    "seconds": 240.3414195867026,
+    "ap": 335927,
+    "cash": 29237,
+    "rank": 4,
+    "normalProduction": 4868500,
+    "apBonusRatio": 0.06900010270103728
+  },
+  {
+    "type": "early",
+    "cycle": 8,
+    "seconds": 240.3414195867026,
+    "ap": 335927,
+    "cash": 29237,
+    "rank": 4,
+    "normalProduction": 4868500,
+    "apBonusRatio": 0.06900010270103728
+  },
+  {
+    "type": "early",
+    "cycle": 9,
+    "seconds": 240.3414195867026,
+    "ap": 335927,
+    "cash": 29237,
+    "rank": 5,
+    "normalProduction": 4868500,
+    "apBonusRatio": 0.06900010270103728
+  },
+  {
+    "type": "early",
+    "cycle": 10,
+    "seconds": 240.3414195867026,
+    "ap": 350532,
+    "cash": 30508,
+    "rank": 5,
+    "normalProduction": 4868500,
+    "apBonusRatio": 0.072
+  },
+  {
+    "type": "early",
+    "cycle": 11,
+    "seconds": 240.3414195867026,
+    "ap": 350532,
+    "cash": 30508,
+    "rank": 5,
+    "normalProduction": 4868500,
+    "apBonusRatio": 0.072
+  },
+  {
+    "type": "mid",
+    "cycle": 0,
+    "seconds": 90.16973125884019,
+    "ap": 1519290,
+    "cash": 36353,
+    "rank": 2,
+    "normalProduction": 25321500,
+    "apBonusRatio": 0.06
+  },
+  {
+    "type": "mid",
+    "cycle": 1,
+    "seconds": 239.8632720414899,
+    "ap": 4243586,
+    "cash": 101538,
+    "rank": 2,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.06300000742296814
+  },
+  {
+    "type": "mid",
+    "cycle": 2,
+    "seconds": 239.8632720414899,
+    "ap": 4243586,
+    "cash": 101538,
+    "rank": 3,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.06300000742296814
+  },
+  {
+    "type": "mid",
+    "cycle": 3,
+    "seconds": 239.8632720414899,
+    "ap": 4445661,
+    "cash": 106374,
+    "rank": 3,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.066
+  },
+  {
+    "type": "mid",
+    "cycle": 4,
+    "seconds": 239.8632720414899,
+    "ap": 4445661,
+    "cash": 106374,
+    "rank": 3,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.066
+  },
+  {
+    "type": "mid",
+    "cycle": 5,
+    "seconds": 239.8632720414899,
+    "ap": 4445661,
+    "cash": 106374,
+    "rank": 4,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.066
+  },
+  {
+    "type": "mid",
+    "cycle": 6,
+    "seconds": 239.8632720414899,
+    "ap": 4647737,
+    "cash": 111209,
+    "rank": 4,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.06900000742296815
+  },
+  {
+    "type": "mid",
+    "cycle": 7,
+    "seconds": 239.8632720414899,
+    "ap": 4647737,
+    "cash": 111209,
+    "rank": 4,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.06900000742296815
+  },
+  {
+    "type": "mid",
+    "cycle": 8,
+    "seconds": 239.8632720414899,
+    "ap": 4647737,
+    "cash": 111209,
+    "rank": 4,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.06900000742296815
+  },
+  {
+    "type": "mid",
+    "cycle": 9,
+    "seconds": 239.8632720414899,
+    "ap": 4647737,
+    "cash": 111209,
+    "rank": 5,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.06900000742296815
+  },
+  {
+    "type": "mid",
+    "cycle": 10,
+    "seconds": 239.8632720414899,
+    "ap": 4849812,
+    "cash": 116044,
+    "rank": 5,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.072
+  },
+  {
+    "type": "mid",
+    "cycle": 11,
+    "seconds": 239.8632720414899,
+    "ap": 4849812,
+    "cash": 116044,
+    "rank": 5,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.072
+  },
+  {
+    "type": "late",
+    "cycle": 0,
+    "seconds": 90.16973125884019,
+    "ap": 1519290,
+    "cash": 36353,
+    "rank": 2,
+    "normalProduction": 25321500,
+    "apBonusRatio": 0.06
+  },
+  {
+    "type": "late",
+    "cycle": 1,
+    "seconds": 239.8632720414899,
+    "ap": 4243586,
+    "cash": 101538,
+    "rank": 2,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.06300000742296814
+  },
+  {
+    "type": "late",
+    "cycle": 2,
+    "seconds": 239.8632720414899,
+    "ap": 4243586,
+    "cash": 101538,
+    "rank": 3,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.06300000742296814
+  },
+  {
+    "type": "late",
+    "cycle": 3,
+    "seconds": 239.8632720414899,
+    "ap": 4445661,
+    "cash": 106374,
+    "rank": 3,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.066
+  },
+  {
+    "type": "late",
+    "cycle": 4,
+    "seconds": 239.8632720414899,
+    "ap": 4445661,
+    "cash": 106374,
+    "rank": 3,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.066
+  },
+  {
+    "type": "late",
+    "cycle": 5,
+    "seconds": 239.8632720414899,
+    "ap": 4445661,
+    "cash": 106374,
+    "rank": 4,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.066
+  },
+  {
+    "type": "late",
+    "cycle": 6,
+    "seconds": 239.8632720414899,
+    "ap": 4647737,
+    "cash": 111209,
+    "rank": 4,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.06900000742296815
+  },
+  {
+    "type": "late",
+    "cycle": 7,
+    "seconds": 239.8632720414899,
+    "ap": 4647737,
+    "cash": 111209,
+    "rank": 4,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.06900000742296815
+  },
+  {
+    "type": "late",
+    "cycle": 8,
+    "seconds": 239.8632720414899,
+    "ap": 4647737,
+    "cash": 111209,
+    "rank": 4,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.06900000742296815
+  },
+  {
+    "type": "late",
+    "cycle": 9,
+    "seconds": 239.8632720414899,
+    "ap": 4647737,
+    "cash": 111209,
+    "rank": 5,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.06900000742296815
+  },
+  {
+    "type": "late",
+    "cycle": 10,
+    "seconds": 239.8632720414899,
+    "ap": 4849812,
+    "cash": 116044,
+    "rank": 5,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.072
+  },
+  {
+    "type": "late",
+    "cycle": 11,
+    "seconds": 239.8632720414899,
+    "ap": 4849812,
+    "cash": 116044,
+    "rank": 5,
+    "normalProduction": 67358500,
+    "apBonusRatio": 0.072
+  }
+]
