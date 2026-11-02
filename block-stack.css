@@ -1,9 +1,0 @@
-/* Upgrade-only card layers: paint, never layout a second card. */
-#workflow .room-lane{padding-top:20px}
-#workflow .upgrade-room{position:relative;overflow:visible;isolation:isolate}
-#workflow .block-stack-layers{position:absolute;inset:0;pointer-events:none;z-index:0;border-radius:inherit}
-#workflow .block-stack-layers>i{position:absolute;left:calc(3px + var(--stack-i)*3px);right:calc(3px + var(--stack-i)*3px);top:calc(-4px - var(--stack-i)*4px);height:12px;background:var(--stack-paper,#fff1bf);border:2px solid var(--stack-edge,#cfb779);border-bottom:0;border-radius:9px 9px 0 0;box-shadow:0 -1px 0 #fff9e599;transform-origin:center bottom}
-@media(prefers-reduced-motion:reduce){#workflow .block-stack-layers>i{box-shadow:none}}
-
-/* Media upgrades keep their own material when the blue wave switches on. */
-#workflow .tier.energized-blue .upgrade-room{--stack-paper:var(--media-card,#dce9f3)!important;--stack-edge:var(--media-line,#7e9fbb)!important}
