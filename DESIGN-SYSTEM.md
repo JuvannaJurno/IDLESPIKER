@@ -1,5 +1,13 @@
 # Idle Spiker — Görünüm ve davranış rehberi
 
+### 2 Kasım 2026 — 1. Lig arayüz cilası
+
+Sezon planında önce çalışma seçimi / devam eden çalışma / hazır kazanım, ardından yedek kulübesi görünür. Küçük ekranda ilk eylemler uzun bir kadro özetinin arkasında kalmaz. Akademinin kapasite, süre ve ana özellik katkısı üç eşit sütundur; aynı başlangıç mesajı tekrar edilmez. Çalışma sürerken yüzde ve kalan talimat, tamamlanınca sıcak altın yüzey ve Ödülü al düğmesi kullanılır. Boş geçmiş ve boş giriş ilerleme çizgisi görünmez. Kapatma düğmesi ortak selection-header içinde, kayan içerikten ayrı kalır.
+
+Yedek yerleri tek sırayı korur: açık yerde portre veya seçim artısı, kapalı yerde kesikli kenar ve açılacağı maç. Koyu temada açık renk kart üstünde soluk yazı yerine ortak koyu yüzey ve okunur yazı kullanılır. Oyuncu Merkezi önerisinde gerçek alternatifin portresi, adı ve OVR’si görünür; seçim mevcut onay penceresine gider. Sadece bu aşamanın düğmelerinde kısa basılma tepkisi vardır, azaltılmış hareket tercihi korunur. Yedek kontrolü gereksiz tam oyuncu kopyası yerine yalnız yedek atamalarını okur.
+
+Doğrulama: mevcut 280/320/390/1280, kısa/koyu ekran, akademi ve sıralı yedek kontrolleri; yüzde ilerlemesi, odak korunması, kaydırırken sabit kapatma ve ödülün tek kez alınması. Önceki aşamaların 9 ekonomi ve 441 rakip örneği ile 1. Lig’in mevcut fiyat/üretim/kayıt hesapları korunur. Görseller: audits/first-league-club-season.png, audits/first-league-club-dark.png, audits/first-league-polish-progress.png ve audits/first-league-polish-ready.png.
+
 ### 2 Kasım 2026 — 1. Lig kulüp kimliği (güncel)
 
 Onaylanan FIRST-LEAGUE-CLUB-DESIGN-PLAN.md uygulandı. Yalnız 4. aşamada departmanlar Altyapı Akademisi / Antrenör Ekibi / Kulüp Gelirleri / Sportif Direktörlük / Medya ve İletişim olarak sunulur. Yeni kartlar Altyapı Kontenjanı, Bireysel Program, Altyapı Antrenörü; İstasyon Antrenmanı, Teknik Geri Bildirim, Seans Planlaması adlarını kullanır. Teknik atölye/volan/paket adları ve tesisat çizimi kaldırılmıştır. Çizimler gençlerin salonu, koçun taktik tahtası ve kulüp mağazasıdır. Eski aşamaların isim, çizim, fiyat, etki ve kayıtları değiştirilmez; 1. Lig kayıtlı kart ID’leri ve matematiği de aynıdır.
