@@ -1,7 +1,7 @@
 /* Original calendar uses a simple bottom fill rather than the optional vector skin. */
 html:not(.framed-calendar-preview) body #calendarPanel .calendar-fill{height:var(--day-fill,0%)}
-html:not(.framed-calendar-preview):not([data-theme=dark]) body #calendarPanel .calendar-day.match:not(.today){background:#e7ecd8;color:#587b78}
-html:not(.framed-calendar-preview):not([data-theme=dark]) body #calendarPanel .calendar-day.match:not(.today) strong{color:#587b78}
+html:not(.framed-calendar-preview):not([data-theme=dark]) body #calendarPanel .calendar-day.match:not(.today){background:#f5b39c;color:#8b463a}
+html:not(.framed-calendar-preview):not([data-theme=dark]) body #calendarPanel .calendar-day.match:not(.today) strong{color:#8b463a}
 
 html:not(.framed-calendar-preview) body #calendarPanel .calendar-day{container-type:inline-size}
 html:not(.framed-calendar-preview) body #calendarPanel .calendar-day strong{font-size:clamp(9px,var(--day-numeral-fit,44cqw),19px);letter-spacing:-.6px}
@@ -11,3 +11,8 @@ html body #calendar .calendar-manual-tap{position:absolute;inset:-6px -6px -8px;
 html body #calendar .calendar-manual-tap i{position:absolute;left:3px;right:3px;bottom:var(--tap-fill);height:2px;border-radius:2px;background:#fff1b4;box-shadow:0 0 4px #f5bf5680}
 html body #calendar .calendar-manual-tap :is(b,em){position:absolute;left:25%;bottom:var(--tap-fill);width:3px;height:3px;border-radius:50%;background:#ffd373;transform:translateY(-4px)}
 html body #calendar .calendar-manual-tap em{left:72%;width:2px;height:2px;transform:translateY(-2px)}
+
+/* Legacy match cells retain the warm match-day colour rather than a neutral/old dark tile. */
+html:not(.framed-calendar-preview):not([data-theme=dark]) body #calendarPanel .calendar-day.match small{color:#8b463a}
+html:not(.framed-calendar-preview):not([data-theme=dark]) body #calendarPanel .calendar-day.today.match{background:#f7cfaf;border-color:#d59442;color:#6f552c}
+html:not(.framed-calendar-preview) body #calendarPanel .calendar-manual-tap{display:none}

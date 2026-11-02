@@ -26,7 +26,7 @@ clipRewards();
 function popup(text,x,y,kind='normal'){if(kind==='level'){const existing=layer.querySelector('.reward-pop.level');if(existing){existing.textContent=text;return}}if(live>=12)return;const n=document.createElement('span');n.className='reward-pop '+kind;n.textContent=text;n.style.left=Math.max(75,Math.min(innerWidth-75,x))+'px';n.style.top=Math.max(45,y)+'px';layer.append(n);live++;setTimeout(()=>{n.remove();live--},950)}
 function burst(x,y,count=8){if(reduced.matches||live>35)return;for(let i=0;i<count;i++){const p=document.createElement('i'),angle=Math.PI*2*i/count;p.className='reward-spark';p.style.left=x+'px';p.style.top=y+'px';p.style.setProperty('--dx',Math.cos(angle)*(35+Math.random()*45)+'px');p.style.setProperty('--dy',Math.sin(angle)*50-35+'px');p.style.background=['#ffd46d','#fff8d9','#ed9270','#83c8b4'][i%4];layer.append(p);live++;setTimeout(()=>{p.remove();live--},650)}}
 function clubVisible(){return !document.hidden&&!document.querySelector(".dashboard")?.hidden&&!window.MatchGateway?.active()}
-let instructionPress=null;
+let instructionPress=null;const calendarTapAnimations=new WeakMap();
 function pressInstruction(button){
  if(reduced.matches)return;
  const current=getComputedStyle(button),from=current.transform,shadow=current.boxShadow,dark=document.documentElement.dataset.theme==='dark',base=dark?'#102b2b':'#b58036';
@@ -45,6 +45,10 @@ function calendarInstructionFeedback(progress,completed){
  const cell=document.querySelector('#calendar .calendar-day.today'),fill=cell?.querySelector('.calendar-fill');if(!cell||!fill)return;
  const percent=completed?100:Math.max(0,Math.min(100,Number(progress)||0));fill.style.setProperty('--day-fill',percent+'%');
  if(reduced.matches)return;
+ if(!document.documentElement.classList.contains('framed-calendar-preview')){
+  cell.querySelector('.calendar-manual-tap')?.remove();calendarTapAnimations.get(fill)?.cancel();
+  const motion=fill.animate([{filter:'brightness(1)'},{filter:'brightness(1.18)',offset:.25},{filter:'brightness(1)'}],{duration:180,easing:'ease-out'});calendarTapAnimations.set(fill,motion);motion.finished.catch(()=>{}).finally(()=>{if(calendarTapAnimations.get(fill)===motion)calendarTapAnimations.delete(fill)});return;
+ }
  let tip=cell.querySelector('.calendar-manual-tap');if(!tip){tip=document.createElement('span');tip.className='calendar-manual-tap';tip.setAttribute('aria-hidden','true');tip.innerHTML='<i></i><b></b><em></em>';cell.append(tip);}
  tip.style.setProperty('--tap-fill',percent+'%');tip.getAnimations().forEach(a=>a.cancel());
  tip.animate([{opacity:0,transform:'translateY(0) scaleX(.8)'},{opacity:1,transform:'translateY(0) scaleX(1)',offset:.18},{opacity:.45,transform:'translateY(-3px) scaleX(1.04)',offset:.64},{opacity:0,transform:'translateY(-5px) scaleX(1.04)'}],{duration:250,easing:'ease-out'});

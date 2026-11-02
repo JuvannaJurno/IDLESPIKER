@@ -1298,3 +1298,6 @@ Kamptaki oyuncunun kalan gününü oluşturan hatalı campDayscampDays çağrıs
 
 
 2 Kasım blok katı geri alımı: kullanıcı kart stack denemesini reddetti. Kalıcı üst katlar, kat geliş animasyonu ve ek şerit boşluğu kaldırıldı. Blokların önceki tek kart görünümü, kırpma düzeni ve eski yükseltme geri bildirimi geri getirildi.
+
+
+2 Kasım eski takvim renk/manuel geri bildirim düzeltmesi: gelecekteki maç gününe yanlış atanmış nötr yeşil kaldırıldı; açık temada maç hücresi #f5b39c, bugünün maç hücresi #f7cfaf ve mevcut sıcak altın dolum. Koyu temanın maç ayrımı korunur. Eski takvim manuel talimatı artık dolum dışında yükselen çizgi/nokta üretmez; sadece mevcut dolum 180ms kısa parlaklık tepkisi verir. Hücre/sayı konumu değişmez, otomatik talimat ve reduced-motion hareket üretmez. Hilelerden açılan vektör takvim kendi eski uç efektini korur. Test: test-legacy-calendar-feedback (2 tema/2 genişlik), test-manual-calendar-feedback (opsiyon açık), test-club-responsive-dock.
