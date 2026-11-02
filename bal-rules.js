@@ -1,6 +1,7 @@
 (function(root){
 'use strict';
 const Clock=root.SeasonClock||(typeof require==='function'?require('./season-clock.js'):null);
+const Club=root.FirstLeagueClubTheme||(typeof require==='function'?require('./first-league-club-theme.js'):null);
 const display=v=>Number(v.toFixed(2)).toLocaleString('tr-TR');
 const departments=['Performans Merkezi','Kulüp Yönetimi','Gelir Merkezi','Teknik Ekip','Oyuncu Keşfi'];
 const definitions=[
@@ -72,12 +73,12 @@ const professionalBonuses=[
 ];
 for(const [id,floor,name,icon,step,describe] of professional){const bonus=professionalBonuses.find(b=>b[0]===id),r={id,floor,name,icon,values:Array.from({length:5},(_,i)=>step*(i+1)*(id==='pro_coach'||id==='pro_coordinator'?2:1)),compressed:!!bonus,describe,price:300,bal:true,division:3};if(bonus){successors.push(bonus);r.bonus=bonus;r.values.push(...Array(5).fill(r.values[4]));}catalog.push(r);}
 
-catalog.push({id:'first_academy',floor:0,name:'Altyapı Akademisi',icon:'♟',values:[2,3,4,5,6],describe:v=>v+' genç için eğitim alanı. Transferden genç al, yönünü ve yeteneğini seç.',price:300,bal:true,division:4});
-catalog.push({id:'first_campus',floor:0,name:'Antrenman Düzeni',icon:'◷',values:[.05,.10,.15,.20,.25],describe:v=>'Yeni akademi eğitimleri %'+Math.round(v*100)+' daha kısa sürer.',price:300,bal:true,division:4});
-catalog.push({id:'first_mentor',floor:0,name:'Yetiştirici Antrenör',icon:'♟',values:[2,4,6,8,10],describe:v=>'Yeni başlayan gençler, mezuniyette seçtikleri ana özelliğe +'+v+' ek gelişim kazanır.',price:300,bal:true,division:4});
-catalog.push({id:'first_router',floor:1,name:'Dağıtım Ünitesi',icon:'↗',values:[.2,.4,.6,.8,1],describe:v=>'Yeni bir standart hat açar. Bu hat '+Math.round(v*5)+'/5 kapasiteyle çalışır.',price:300,bal:true,division:4});
-catalog.push({id:'first_payload',floor:1,name:'Talimat Paketleme',icon:'▣',values:[.1,.2,.3,.4,.5],describe:v=>'Otomatik talimat başına kazanılan AP %'+Math.round(v*100)+' artar. Boncuklar yüklü paketlere dönüşür.',price:300,bal:true,division:4});
-catalog.push({id:'first_flywheel',floor:1,name:'Akış Volanı',icon:'↻',values:[.05,.10,.15,.20,.25],describe:v=>'Otomatik talimat üretimi %'+Math.round(v*100)+' hızlanır. Tüm standart hatlara daha sık talimat gider.',price:300,bal:true,division:4});
+catalog.push({id:'first_academy',floor:0,name:'Altyapı Kontenjanı',icon:'♟',values:[2,3,4,5,6],describe:v=>v+' genç için eğitim alanı. Transferden genç al, yönünü ve yeteneğini seç.',price:300,bal:true,division:4});
+catalog.push({id:'first_campus',floor:0,name:'Bireysel Program',icon:'◷',values:[.05,.10,.15,.20,.25],describe:v=>'Yeni akademi eğitimleri %'+Math.round(v*100)+' daha kısa sürer.',price:300,bal:true,division:4});
+catalog.push({id:'first_mentor',floor:0,name:'Altyapı Antrenörü',icon:'♟',values:[2,4,6,8,10],describe:v=>'Yeni başlayan gençler, mezuniyette seçtikleri ana özelliğe +'+v+' ek gelişim kazanır.',price:300,bal:true,division:4});
+catalog.push({id:'first_router',floor:1,name:'İstasyon Antrenmanı',icon:'↗',values:[.2,.4,.6,.8,1],describe:v=>'Yeni bir standart hat açar. Bu hat '+Math.round(v*5)+'/5 kapasiteyle çalışır.',price:300,bal:true,division:4});
+catalog.push({id:'first_payload',floor:1,name:'Teknik Geri Bildirim',icon:'▣',values:[.1,.2,.3,.4,.5],describe:v=>'Otomatik talimat başına kazanılan AP %'+Math.round(v*100)+' artar. Teknik düzeltmeler her çalışmayı daha verimli kılar.',price:300,bal:true,division:4});
+catalog.push({id:'first_flywheel',floor:1,name:'Seans Planlaması',icon:'↻',values:[.05,.10,.15,.20,.25],describe:v=>'Otomatik talimat üretimi %'+Math.round(v*100)+' hızlanır. Tüm standart hatlara daha sık talimat gider.',price:300,bal:true,division:4});
 const firstLeaguePrices={first_router:[12000,24000,48000,96000,180000],first_payload:[14000,28000,56000,110000,210000],first_flywheel:[16000,32000,64000,125000,240000],first_academy:[6000,12000,24000,48000,96000],first_campus:[8000,18000,36000,70000,120000],first_mentor:[10000,22000,45000,85000,150000]};
 function maxLevel(s,r){if(r.id==='pro_scout'&&(s.division||2)<6)return Math.max(5,level(s,r.id));return r.division?r.values.length:!r.bal?r.values.length:Math.max(longBal.has(r.id)?10:5,level(s,r.id));}
 
@@ -145,5 +146,5 @@ function migrateLevels(s,raw){
  for(const r of catalog.filter(r=>r.bonus)){const old=(raw?.floors?.[r.floor]||[]),n=old.filter(id=>id===r.id).length,extra=old.filter(id=>id===r.bonus[1]).length;const base=raw?.balBlockVersion===2&&extendedIds.has(r.id)?map[Math.min(10,n)]:Math.min(5,n),target=extra?5+Math.min(5,extra):base;s.floors[r.floor]=s.floors[r.floor].filter(id=>id!==r.id);s.floors[r.floor].push(...Array(target).fill(r.id));}
  s.balBlockVersion=4;
 }
-const api={previewLevel,describePrimary,describeBonus,maxLevel,bonusLevel,describeBlock,migrateLevels,departmentPrices,departmentOpen,openDepartment,departments,catalog,gates,remainingDays,upgraded,enter,requirement,price,effects,value,cash};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.BalRules=api;
+const api={clubDepartment:f=>Club?.departments[f],previewLevel,describePrimary,describeBonus,maxLevel,bonusLevel,describeBlock,migrateLevels,departmentPrices,departmentOpen,openDepartment,departments,catalog,gates,remainingDays,upgraded,enter,requirement,price,effects,value,cash};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.BalRules=api;
 })(globalThis);

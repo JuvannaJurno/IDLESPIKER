@@ -1,6 +1,14 @@
 # Idle Spiker — Görünüm ve davranış rehberi
 
-### 2 Kasım 2026 — 1. Lig Akış Atölyesi
+### 2 Kasım 2026 — 1. Lig kulüp kimliği (güncel)
+
+Onaylanan FIRST-LEAGUE-CLUB-DESIGN-PLAN.md uygulandı. Yalnız 4. aşamada departmanlar Altyapı Akademisi / Antrenör Ekibi / Kulüp Gelirleri / Sportif Direktörlük / Medya ve İletişim olarak sunulur. Yeni kartlar Altyapı Kontenjanı, Bireysel Program, Altyapı Antrenörü; İstasyon Antrenmanı, Teknik Geri Bildirim, Seans Planlaması adlarını kullanır. Teknik atölye/volan/paket adları ve tesisat çizimi kaldırılmıştır. Çizimler gençlerin salonu, koçun taktik tahtası ve kulüp mağazasıdır. Eski aşamaların isim, çizim, fiyat, etki ve kayıtları değiştirilmez; 1. Lig kayıtlı kart ID’leri ve matematiği de aynıdır.
+
+Sezon planı bütçe üstünde kalır: Takım Antrenmanı / Sponsor Etkinliği / Bireysel Çalışma. Romen rütbe yerine takım simgesi ve tamamlanan çalışmalar görünür. Oyuncu Merkezi açık yedek yerinde önce mevcut alternatifini önerir; onay vermeden atama yapmaz. Alternatif yoksa mevcut katalog akışına gider, kapalı kartları atlamaz. İhtiyaç yönlendirmesi yalnız 1. Lig’de ve ilgili menü açıkken çalışır. Medya içerikleri mevcut akademi kaydı, mezun oyuncu veya atanmış yedekten gerçek olay üretir; ilave ödül veya yeni para birimi yoktur.
+
+Kontrol: test-first-league-club-theme.cjs (üç yatırım düzeyinde aynı kayıt/ekonomi/fiyat), test-first-league-club-browser.cjs (beş departman/altı kart, gerçek yedek seçimi, faaliyetler, küçük/koyu ekran, 3. aşamaya dönüş), mevcut hat/akademi/yedek testleri ve önceki aşamaların 9 ekonomi + 441 rakip örneği. Aşağıdaki teknik atölye isimleri tarihsel kayıt olup bu güncel kararın yerine kullanılamaz.
+
+### 2 Kasım 2026 — 1. Lig Akış Atölyesi (eski taslak)
 
 Yalnız aşama 4’te Yönetim katının yeni yüzü **Akış Atölyesi**: Dağıtım Ünitesi (yeni standart hat, 1/5→5/5), Talimat Paketleme (otomatik AP +%10→50) ve Akış Volanı (üretim sıklığı +%5→25). Her blok tek etkili/beş seviyelidir. Önceki yönetim blokları çekmecede ve etkileri aktiftir. Yeni hat mevcut kurulma animasyonuyla uzar; medya mavi kalır, yeni standart hat doğal yeşil bağlantı taşır. Paketleme normal otomatik boncuklara bir/iki/üç ince açık bant ekler; manuel boncuk daima üst katmanda, medya görünümü korunur. Yeni başlıklar aynı boya sığar; yan yana taşan büyük halka yok.
 

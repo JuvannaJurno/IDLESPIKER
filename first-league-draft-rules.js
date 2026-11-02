@@ -1,7 +1,7 @@
 (function(root){
 'use strict';
 const active=s=>s?.stage==='bal'&&s.division===4;
-const kinds=Object.freeze({squad:{name:'Kadro çalışması',icon:'team'},club:{name:'Tesis desteği',icon:'tools'},academy:{name:'Özel antrenman',icon:'person'}});
+const kinds=Object.freeze({squad:{name:'Takım Antrenmanı',icon:'team'},club:{name:'Sponsor Etkinliği',icon:'flag'},academy:{name:'Bireysel Çalışma',icon:'person'}});
 const int=(n,min=0,max=Number.MAX_SAFE_INTEGER)=>Number.isSafeInteger(n)&&n>=min&&n<=max;
 const validId=id=>typeof id==='string'&&/^first-project-[1-9]\d*$/.test(id)&&int(Number(id.slice(14)),1);
 const defaults=()=>({version:1,sequence:0,completed:0,project:null,history:[]});
