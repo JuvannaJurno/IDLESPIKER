@@ -7,7 +7,7 @@
     "renderer": "native-match",
     "animation": "native-tickScenario-drawPlayer",
     "camera": "match-mobile-minus-90",
-    "time": "0.92",
+    "time": "0.87",
     "mode": "individual",
     "drills": "spike",
     "equipment": "training-net,ball-carts,bench,water,tactics-board,mats,weights,agility-ladder,cones,landing-targets,storage",
@@ -42,7 +42,7 @@
     "over50ms": 0
   },
   "workshop": {
-    "ticks": 22,
+    "ticks": 23,
     "builds": 10,
     "timer": false
   }
