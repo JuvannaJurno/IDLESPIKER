@@ -1,5 +1,11 @@
 # Idle Spiker — Görünüm ve davranış rehberi
 
+### 4 Kasım 2026 — Eksi Tempo yavaş çekimi
+
+Eksi Tempo seçilip pas hazırlanırken mevcut Legendary yavaş çekimi ve karartması başlar. Aynı odak smaç temasında çıkan topa bağlanır; diğer Legendary'lerle aynı yumuşak hız dönüşünü kullanır. Duraklatılmış bir hazırlık devam ettirildiğinde odak başlatılabilir; iptal edilen hazırlıkta odak ve rezerve CD temizlenir. Hem pasör hem hücumcu karartmanın üzerinde çizilir; yeteneğe sahip olanın sarı Legendary ışığı, diğerinin beyaz ışığı korunur.
+
+Sorunun kaynağı 02767ea içindeki CD düzenlemesiydi: Eksi Tempo prepared durumuna taşınınca trigger'ın otomatik startFocus çağrısından çıkmış, hazırlık yoluna karşılık gelen çağrı eklenmemişti. Düzeltme öncesinde üç sahiplik durumunda da sıfır yavaş çekim karesi ölçüldü. tests/test-tempo-slow-motion.cjs artık gerçek TeamView/MatchIntro kadrosuyla iki takım, üç sahiplik ve üç maç hızında 18 senaryoyu; gerçek zaman yavaşlamasını, vuruşa aktarımı, iki oyuncunun görünmesini, CD rezervasyonunu ve normale dönüşü kontrol eder. Duraklatma/iptal ve yeteneksiz normal oyun da kapsanır. Mevcut ikili yetenek ve koşul testleri ile sekiz tamamlanan maç geçti. Kanıt: audits/tempo-slow-motion.json ve audits/tempo-slow-motion.png.
+
 ### 3 Kasım 2026 — Dosya yapısı
 
 Görünüm ve oyun mekaniği değiştirilmeden kaynaklar düzenlendi. JavaScript dosyaları scripts/game/, stiller styles/game/, kontroller tests/, üretim araçları tools/build/ altındadır. Tasarım laboratuvarlarının HTML adresleri korunur. Karakterlerin kayıtlı PNG/... kimlikleri sabittir; fiziksel eski PNG kaynaklarının yeni yeri assets/sources/legacy-png/ olup üretim araçları source-files.cjs ile erişir. Arşivdeki ham paketler yeni bir görsel varyant veya üretim onayı değildir. Güncel komutlar README.md ve AGENTS.md içindedir. Detay ve doğrulama: docs/maintenance/ORGANIZATION-2026-11-03.md.

@@ -1,0 +1,897 @@
+[
+  {
+    "team": 0,
+    "owner": "hitter",
+    "speed": 1,
+    "triggered": true,
+    "immediate": true,
+    "setDuration": 0.5,
+    "setFrames": 77,
+    "slowSetFrames": 77,
+    "reserved": true,
+    "cooldownActors": 1,
+    "highlighted": {
+      "actors": [
+        1,
+        2
+      ],
+      "fallbacks": 0
+    },
+    "expectedActors": [
+      2,
+      1
+    ],
+    "attackLaunched": true,
+    "contactSlow": true,
+    "phase": "outbound",
+    "ledger": [
+      {
+        "actor": "0|player-1",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      }
+    ],
+    "committed": true,
+    "outboundFrames": 31,
+    "finished": true,
+    "reasons": [
+      "halfway"
+    ]
+  },
+  {
+    "team": 0,
+    "owner": "hitter",
+    "speed": 1.5,
+    "triggered": true,
+    "immediate": true,
+    "setDuration": 0.5,
+    "setFrames": 50,
+    "slowSetFrames": 50,
+    "reserved": true,
+    "cooldownActors": 1,
+    "highlighted": {
+      "actors": [
+        1,
+        2
+      ],
+      "fallbacks": 0
+    },
+    "expectedActors": [
+      2,
+      1
+    ],
+    "attackLaunched": true,
+    "contactSlow": true,
+    "phase": "outbound",
+    "ledger": [
+      {
+        "actor": "0|player-1",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      }
+    ],
+    "committed": true,
+    "outboundFrames": 71,
+    "finished": true,
+    "reasons": [
+      "halfway"
+    ]
+  },
+  {
+    "team": 0,
+    "owner": "hitter",
+    "speed": 2,
+    "triggered": true,
+    "immediate": true,
+    "setDuration": 0.5,
+    "setFrames": 36,
+    "slowSetFrames": 36,
+    "reserved": true,
+    "cooldownActors": 1,
+    "highlighted": {
+      "actors": [
+        1,
+        2
+      ],
+      "fallbacks": 0
+    },
+    "expectedActors": [
+      2,
+      1
+    ],
+    "attackLaunched": true,
+    "contactSlow": true,
+    "phase": "outbound",
+    "ledger": [
+      {
+        "actor": "0|player-1",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      }
+    ],
+    "committed": true,
+    "outboundFrames": 54,
+    "finished": true,
+    "reasons": [
+      "halfway"
+    ]
+  },
+  {
+    "team": 0,
+    "owner": "setter",
+    "speed": 1,
+    "triggered": true,
+    "immediate": true,
+    "setDuration": 0.5,
+    "setFrames": 77,
+    "slowSetFrames": 77,
+    "reserved": true,
+    "cooldownActors": 1,
+    "highlighted": {
+      "actors": [
+        1,
+        2
+      ],
+      "fallbacks": 0
+    },
+    "expectedActors": [
+      2,
+      1
+    ],
+    "attackLaunched": true,
+    "contactSlow": true,
+    "phase": "outbound",
+    "ledger": [
+      {
+        "actor": "0|player-0",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      }
+    ],
+    "committed": true,
+    "outboundFrames": 107,
+    "finished": true,
+    "reasons": [
+      "halfway"
+    ]
+  },
+  {
+    "team": 0,
+    "owner": "setter",
+    "speed": 1.5,
+    "triggered": true,
+    "immediate": true,
+    "setDuration": 0.5,
+    "setFrames": 50,
+    "slowSetFrames": 50,
+    "reserved": true,
+    "cooldownActors": 1,
+    "highlighted": {
+      "actors": [
+        1,
+        2
+      ],
+      "fallbacks": 0
+    },
+    "expectedActors": [
+      2,
+      1
+    ],
+    "attackLaunched": true,
+    "contactSlow": true,
+    "phase": "outbound",
+    "ledger": [
+      {
+        "actor": "0|player-0",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      }
+    ],
+    "committed": true,
+    "outboundFrames": 21,
+    "finished": true,
+    "reasons": [
+      "halfway"
+    ]
+  },
+  {
+    "team": 0,
+    "owner": "setter",
+    "speed": 2,
+    "triggered": true,
+    "immediate": true,
+    "setDuration": 0.5,
+    "setFrames": 36,
+    "slowSetFrames": 36,
+    "reserved": true,
+    "cooldownActors": 1,
+    "highlighted": {
+      "actors": [
+        1,
+        2
+      ],
+      "fallbacks": 0
+    },
+    "expectedActors": [
+      2,
+      1
+    ],
+    "attackLaunched": true,
+    "contactSlow": true,
+    "phase": "outbound",
+    "ledger": [
+      {
+        "actor": "0|player-0",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      }
+    ],
+    "committed": true,
+    "outboundFrames": 54,
+    "finished": true,
+    "reasons": [
+      "halfway"
+    ]
+  },
+  {
+    "team": 0,
+    "owner": "both",
+    "speed": 1,
+    "triggered": true,
+    "immediate": true,
+    "setDuration": 0.5,
+    "setFrames": 77,
+    "slowSetFrames": 77,
+    "reserved": true,
+    "cooldownActors": 2,
+    "highlighted": {
+      "actors": [
+        1,
+        2
+      ],
+      "fallbacks": 0
+    },
+    "expectedActors": [
+      2,
+      1
+    ],
+    "attackLaunched": true,
+    "contactSlow": true,
+    "phase": "outbound",
+    "ledger": [
+      {
+        "actor": "0|player-1",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      },
+      {
+        "actor": "0|player-0",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      }
+    ],
+    "committed": true,
+    "outboundFrames": 31,
+    "finished": true,
+    "reasons": [
+      "halfway"
+    ]
+  },
+  {
+    "team": 0,
+    "owner": "both",
+    "speed": 1.5,
+    "triggered": true,
+    "immediate": true,
+    "setDuration": 0.5,
+    "setFrames": 50,
+    "slowSetFrames": 50,
+    "reserved": true,
+    "cooldownActors": 2,
+    "highlighted": {
+      "actors": [
+        1,
+        2
+      ],
+      "fallbacks": 0
+    },
+    "expectedActors": [
+      2,
+      1
+    ],
+    "attackLaunched": true,
+    "contactSlow": true,
+    "phase": "outbound",
+    "ledger": [
+      {
+        "actor": "0|player-1",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      },
+      {
+        "actor": "0|player-0",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      }
+    ],
+    "committed": true,
+    "outboundFrames": 71,
+    "finished": true,
+    "reasons": [
+      "halfway"
+    ]
+  },
+  {
+    "team": 0,
+    "owner": "both",
+    "speed": 2,
+    "triggered": true,
+    "immediate": true,
+    "setDuration": 0.5,
+    "setFrames": 36,
+    "slowSetFrames": 36,
+    "reserved": true,
+    "cooldownActors": 2,
+    "highlighted": {
+      "actors": [
+        1,
+        2
+      ],
+      "fallbacks": 0
+    },
+    "expectedActors": [
+      2,
+      1
+    ],
+    "attackLaunched": true,
+    "contactSlow": true,
+    "phase": "outbound",
+    "ledger": [
+      {
+        "actor": "0|player-1",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      },
+      {
+        "actor": "0|player-0",
+        "id": "tempo-minus",
+        "team": 0,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      }
+    ],
+    "committed": true,
+    "outboundFrames": 16,
+    "finished": true,
+    "reasons": [
+      "halfway"
+    ]
+  },
+  {
+    "team": 1,
+    "owner": "hitter",
+    "speed": 1,
+    "triggered": true,
+    "immediate": true,
+    "setDuration": 0.5,
+    "setFrames": 77,
+    "slowSetFrames": 77,
+    "reserved": true,
+    "cooldownActors": 1,
+    "highlighted": {
+      "actors": [
+        7,
+        8
+      ],
+      "fallbacks": 0
+    },
+    "expectedActors": [
+      8,
+      7
+    ],
+    "attackLaunched": true,
+    "contactSlow": true,
+    "phase": "outbound",
+    "ledger": [
+      {
+        "actor": "1|opponent-6-1",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      }
+    ],
+    "committed": true,
+    "outboundFrames": 58,
+    "finished": true,
+    "reasons": [
+      "halfway"
+    ]
+  },
+  {
+    "team": 1,
+    "owner": "hitter",
+    "speed": 1.5,
+    "triggered": true,
+    "immediate": true,
+    "setDuration": 0.5,
+    "setFrames": 50,
+    "slowSetFrames": 50,
+    "reserved": true,
+    "cooldownActors": 1,
+    "highlighted": {
+      "actors": [
+        7,
+        8
+      ],
+      "fallbacks": 0
+    },
+    "expectedActors": [
+      8,
+      7
+    ],
+    "attackLaunched": true,
+    "contactSlow": true,
+    "phase": "outbound",
+    "ledger": [
+      {
+        "actor": "1|opponent-6-1",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      }
+    ],
+    "committed": true,
+    "outboundFrames": 81,
+    "finished": true,
+    "reasons": [
+      "halfway"
+    ]
+  },
+  {
+    "team": 1,
+    "owner": "hitter",
+    "speed": 2,
+    "triggered": true,
+    "immediate": true,
+    "setDuration": 0.5,
+    "setFrames": 36,
+    "slowSetFrames": 36,
+    "reserved": true,
+    "cooldownActors": 1,
+    "highlighted": {
+      "actors": [
+        7,
+        8
+      ],
+      "fallbacks": 0
+    },
+    "expectedActors": [
+      8,
+      7
+    ],
+    "attackLaunched": true,
+    "contactSlow": true,
+    "phase": "outbound",
+    "ledger": [
+      {
+        "actor": "1|opponent-6-1",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      }
+    ],
+    "committed": true,
+    "outboundFrames": 29,
+    "finished": true,
+    "reasons": [
+      "halfway"
+    ]
+  },
+  {
+    "team": 1,
+    "owner": "setter",
+    "speed": 1,
+    "triggered": true,
+    "immediate": true,
+    "setDuration": 0.5,
+    "setFrames": 77,
+    "slowSetFrames": 77,
+    "reserved": true,
+    "cooldownActors": 1,
+    "highlighted": {
+      "actors": [
+        7,
+        8
+      ],
+      "fallbacks": 0
+    },
+    "expectedActors": [
+      8,
+      7
+    ],
+    "attackLaunched": true,
+    "contactSlow": true,
+    "phase": "outbound",
+    "ledger": [
+      {
+        "actor": "1|opponent-6-2",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      }
+    ],
+    "committed": true,
+    "outboundFrames": 122,
+    "finished": true,
+    "reasons": [
+      "halfway"
+    ]
+  },
+  {
+    "team": 1,
+    "owner": "setter",
+    "speed": 1.5,
+    "triggered": true,
+    "immediate": true,
+    "setDuration": 0.5,
+    "setFrames": 50,
+    "slowSetFrames": 50,
+    "reserved": true,
+    "cooldownActors": 1,
+    "highlighted": {
+      "actors": [
+        7,
+        8
+      ],
+      "fallbacks": 0
+    },
+    "expectedActors": [
+      8,
+      7
+    ],
+    "attackLaunched": true,
+    "contactSlow": true,
+    "phase": "outbound",
+    "ledger": [
+      {
+        "actor": "1|opponent-6-2",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      }
+    ],
+    "committed": true,
+    "outboundFrames": 39,
+    "finished": true,
+    "reasons": [
+      "halfway"
+    ]
+  },
+  {
+    "team": 1,
+    "owner": "setter",
+    "speed": 2,
+    "triggered": true,
+    "immediate": true,
+    "setDuration": 0.5,
+    "setFrames": 36,
+    "slowSetFrames": 36,
+    "reserved": true,
+    "cooldownActors": 1,
+    "highlighted": {
+      "actors": [
+        7,
+        8
+      ],
+      "fallbacks": 0
+    },
+    "expectedActors": [
+      8,
+      7
+    ],
+    "attackLaunched": true,
+    "contactSlow": true,
+    "phase": "outbound",
+    "ledger": [
+      {
+        "actor": "1|opponent-6-2",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      }
+    ],
+    "committed": true,
+    "outboundFrames": 29,
+    "finished": true,
+    "reasons": [
+      "halfway"
+    ]
+  },
+  {
+    "team": 1,
+    "owner": "both",
+    "speed": 1,
+    "triggered": true,
+    "immediate": true,
+    "setDuration": 0.5,
+    "setFrames": 77,
+    "slowSetFrames": 77,
+    "reserved": true,
+    "cooldownActors": 2,
+    "highlighted": {
+      "actors": [
+        7,
+        8
+      ],
+      "fallbacks": 0
+    },
+    "expectedActors": [
+      8,
+      7
+    ],
+    "attackLaunched": true,
+    "contactSlow": true,
+    "phase": "outbound",
+    "ledger": [
+      {
+        "actor": "1|opponent-6-1",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      },
+      {
+        "actor": "1|opponent-6-2",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      }
+    ],
+    "committed": true,
+    "outboundFrames": 58,
+    "finished": true,
+    "reasons": [
+      "halfway"
+    ]
+  },
+  {
+    "team": 1,
+    "owner": "both",
+    "speed": 1.5,
+    "triggered": true,
+    "immediate": true,
+    "setDuration": 0.5,
+    "setFrames": 50,
+    "slowSetFrames": 50,
+    "reserved": true,
+    "cooldownActors": 2,
+    "highlighted": {
+      "actors": [
+        7,
+        8
+      ],
+      "fallbacks": 0
+    },
+    "expectedActors": [
+      8,
+      7
+    ],
+    "attackLaunched": true,
+    "contactSlow": true,
+    "phase": "outbound",
+    "ledger": [
+      {
+        "actor": "1|opponent-6-1",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      },
+      {
+        "actor": "1|opponent-6-2",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      }
+    ],
+    "committed": true,
+    "outboundFrames": 39,
+    "finished": true,
+    "reasons": [
+      "halfway"
+    ]
+  },
+  {
+    "team": 1,
+    "owner": "both",
+    "speed": 2,
+    "triggered": true,
+    "immediate": true,
+    "setDuration": 0.5,
+    "setFrames": 36,
+    "slowSetFrames": 36,
+    "reserved": true,
+    "cooldownActors": 2,
+    "highlighted": {
+      "actors": [
+        7,
+        8
+      ],
+      "fallbacks": 0
+    },
+    "expectedActors": [
+      8,
+      7
+    ],
+    "attackLaunched": true,
+    "contactSlow": true,
+    "phase": "outbound",
+    "ledger": [
+      {
+        "actor": "1|opponent-6-1",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      },
+      {
+        "actor": "1|opponent-6-2",
+        "id": "tempo-minus",
+        "team": 1,
+        "pending": true,
+        "remaining": 0,
+        "until": 0,
+        "usedAt": 0,
+        "seconds": 0
+      }
+    ],
+    "committed": true,
+    "outboundFrames": 29,
+    "finished": true,
+    "reasons": [
+      "halfway"
+    ]
+  },
+  {
+    "name": "resume-prepared",
+    "team": 0,
+    "slow": true,
+    "skill": "tempo-minus"
+  },
+  {
+    "name": "pause-resume",
+    "team": 0,
+    "stationary": true,
+    "slow": true,
+    "advanced": true
+  },
+  {
+    "name": "cancelled",
+    "team": 0,
+    "slow": false,
+    "cooldowns": 0
+  },
+  {
+    "name": "resume-prepared",
+    "team": 1,
+    "slow": true,
+    "skill": "tempo-minus"
+  },
+  {
+    "name": "pause-resume",
+    "team": 1,
+    "stationary": true,
+    "slow": true,
+    "advanced": true
+  },
+  {
+    "name": "cancelled",
+    "team": 1,
+    "slow": false,
+    "cooldowns": 0
+  },
+  {
+    "name": "no-tempo",
+    "slow": false,
+    "triggered": false
+  }
+]
