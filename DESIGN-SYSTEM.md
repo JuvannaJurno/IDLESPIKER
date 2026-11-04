@@ -1,5 +1,11 @@
 # Idle Spiker — Görünüm ve davranış rehberi
 
+### 4 Kasım 2026 — Hileler: Karşılıklı saha deneyi
+
+Yalnız Hileler içindeki Gizli salon girişinden açılan, ayrı iframe'de çalışan bir 6'ya 6 mini oyun vardır. Üretimin maç/kadro/lig/ekonomi tasarımına uygulanmaz. Kullanıcının son kararıyla ekran bölünmez: iki kişi tek ortak sahaya, topa ve skora bakar. Bir kontrol paneli altta, diğer panel üsttedir; yalnız üst kontroller karşı uçtan oynayana döner. Tek kişilikte üst kontroller kalkar. Altı ayrı analog ve tek aktif analog düzenleri menüde seçilir; Kenney Mobile Controls Style B'nin açık yuvarlak SVG'leri, sıcak krem/adaçayı/altın mevcut menü ailesine uyarlanır. Güncel native SVG oyuncu çizicisi ve normal pozları paylaşılır; yeni rastgele karakter çizimi veya eski PNG fallback'i yoktur. Saha seçimi/Legendary/ana oyun ödülü eklenmez.
+
+Duraklatma ortak saha başlığının sağındadır; ortadan sahayı ayıran şerit yoktur. Saha alanı servis çizgisi arkasındaki oyuncu ve topu kırpmayacak pay bırakır. Küçük/yatay ekranlarda kontroller görünür kalır; dikey telefon amaçlanan kullanım şeklidir. İki takım aynı sahadan kendi oyuncusunu seçebilir ve boş karşı alana hedef koyabilir. Kapalı mini oyun ön yükleme veya kare döngüsü başlatmaz; çıkış iframe'i kaldırır. Kayıt yalnız idle-spiker-secret-volley-v1 anahtarına aittir. Detaylar, kontroller ve sınırlar: docs/SECRET-VOLLEY-EXPERIMENT.md. Doğrulama: tests/test-secret-volley-rules.cjs ve tests/test-secret-volley-browser.cjs; 48 tamamlanan otomatik maç, 24 ekran/düzen kombinasyonu, tek saha, gerçek çoklu dokunma, iki takımın seçimi/hedefi, pause/resume, native varlıklar, ayrı kayıt ve Hileler yaşam döngüsü.
+
 ### 4 Kasım 2026 — Eksi Tempo yavaş çekimi
 
 Eksi Tempo seçilip pas hazırlanırken mevcut Legendary yavaş çekimi ve karartması başlar. Aynı odak smaç temasında çıkan topa bağlanır; diğer Legendary'lerle aynı yumuşak hız dönüşünü kullanır. Duraklatılmış bir hazırlık devam ettirildiğinde odak başlatılabilir; iptal edilen hazırlıkta odak ve rezerve CD temizlenir. Hem pasör hem hücumcu karartmanın üzerinde çizilir; yeteneğe sahip olanın sarı Legendary ışığı, diğerinin beyaz ışığı korunur.
