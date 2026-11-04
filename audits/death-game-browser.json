@@ -1,0 +1,365 @@
+{
+  "layouts": [
+    {
+      "viewport": {
+        "width": 280,
+        "height": 568
+      },
+      "overflow": false,
+      "geometry": {
+        "x": 11,
+        "y": 13.5,
+        "s": 21.5,
+        "w": 280,
+        "h": 371
+      },
+      "controls": [
+        {
+          "id": "stick",
+          "x": 12,
+          "y": 468,
+          "w": 92,
+          "h": 92,
+          "right": 104,
+          "bottom": 560
+        },
+        {
+          "id": "jump",
+          "x": 184,
+          "y": 472,
+          "w": 84,
+          "h": 84,
+          "right": 268,
+          "bottom": 556
+        },
+        {
+          "id": "pause",
+          "x": 235,
+          "y": 8,
+          "w": 36,
+          "h": 36,
+          "right": 271,
+          "bottom": 44
+        }
+      ],
+      "canvases": 1
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "overflow": false,
+      "geometry": {
+        "x": 26.875,
+        "y": 8,
+        "s": 22.1875,
+        "w": 320,
+        "h": 371
+      },
+      "controls": [
+        {
+          "id": "stick",
+          "x": 12,
+          "y": 468,
+          "w": 92,
+          "h": 92,
+          "right": 104,
+          "bottom": 560
+        },
+        {
+          "id": "jump",
+          "x": 224,
+          "y": 472,
+          "w": 84,
+          "h": 84,
+          "right": 308,
+          "bottom": 556
+        },
+        {
+          "id": "pause",
+          "x": 275,
+          "y": 8,
+          "w": 36,
+          "h": 36,
+          "right": 311,
+          "bottom": 44
+        }
+      ],
+      "canvases": 1
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "geometry": {
+        "x": 11,
+        "y": 61.16666666666666,
+        "s": 30.666666666666668,
+        "w": 390,
+        "h": 613
+      },
+      "controls": [
+        {
+          "id": "stick",
+          "x": 14,
+          "y": 729,
+          "w": 102,
+          "h": 102,
+          "right": 116,
+          "bottom": 831
+        },
+        {
+          "id": "jump",
+          "x": 284,
+          "y": 734,
+          "w": 92,
+          "h": 92,
+          "right": 376,
+          "bottom": 826
+        },
+        {
+          "id": "pause",
+          "x": 340,
+          "y": 13,
+          "w": 36,
+          "h": 36,
+          "right": 376,
+          "bottom": 49
+        }
+      ],
+      "canvases": 1
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "overflow": false,
+      "geometry": {
+        "x": 11,
+        "y": 78.5,
+        "s": 34,
+        "w": 430,
+        "h": 701
+      },
+      "controls": [
+        {
+          "id": "stick",
+          "x": 14,
+          "y": 817,
+          "w": 102,
+          "h": 102,
+          "right": 116,
+          "bottom": 919
+        },
+        {
+          "id": "jump",
+          "x": 324,
+          "y": 822,
+          "w": 92,
+          "h": 92,
+          "right": 416,
+          "bottom": 914
+        },
+        {
+          "id": "pause",
+          "x": 380,
+          "y": 13,
+          "w": 36,
+          "h": 36,
+          "right": 416,
+          "bottom": 49
+        }
+      ],
+      "canvases": 1
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "overflow": false,
+      "geometry": {
+        "x": 21.75,
+        "y": 8,
+        "s": 44.375,
+        "w": 576,
+        "h": 726
+      },
+      "controls": [
+        {
+          "id": "stick",
+          "x": 366,
+          "y": 813,
+          "w": 80,
+          "h": 80,
+          "right": 446,
+          "bottom": 893
+        },
+        {
+          "id": "jump",
+          "x": 838,
+          "y": 815,
+          "w": 76,
+          "h": 76,
+          "right": 914,
+          "bottom": 891
+        },
+        {
+          "id": "pause",
+          "x": 878,
+          "y": 4,
+          "w": 36,
+          "h": 36,
+          "right": 914,
+          "bottom": 40
+        }
+      ],
+      "canvases": 1
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "overflow": false,
+      "geometry": {
+        "x": 63.5,
+        "y": 8,
+        "s": 12.75,
+        "w": 280,
+        "h": 220
+      },
+      "controls": [
+        {
+          "id": "stick",
+          "x": 294,
+          "y": 304,
+          "w": 80,
+          "h": 80,
+          "right": 374,
+          "bottom": 384
+        },
+        {
+          "id": "jump",
+          "x": 474,
+          "y": 306,
+          "w": 76,
+          "h": 76,
+          "right": 550,
+          "bottom": 382
+        },
+        {
+          "id": "pause",
+          "x": 512,
+          "y": 4,
+          "w": 36,
+          "h": 36,
+          "right": 548,
+          "bottom": 40
+        }
+      ],
+      "canvases": 1
+    }
+  ],
+  "touch": {
+    "start": {
+      "id": 0,
+      "x": 9.9,
+      "y": 8,
+      "vx": 0,
+      "vy": 0,
+      "alive": true,
+      "finished": false,
+      "coins": 0,
+      "collected": 0,
+      "jump": 0,
+      "cooldown": 0,
+      "deathAt": -1,
+      "thought": 0.387351159285754,
+      "skill": 0.7127641559764742,
+      "target": null,
+      "outBeforeRound": false
+    },
+    "moved": {
+      "id": 0,
+      "x": 10.744982698961948,
+      "y": 7.374086889657823,
+      "vx": 4.0904844290658104,
+      "vy": -3.0299884659746112,
+      "alive": true,
+      "finished": false,
+      "coins": 0,
+      "collected": 0,
+      "jump": 0.536666666666667,
+      "cooldown": 1.5666666666666669,
+      "deathAt": -1,
+      "thought": 0.387351159285754,
+      "skill": 0.7127641559764742,
+      "target": null,
+      "outBeforeRound": false
+    },
+    "stopped": {
+      "id": 0,
+      "x": 10.949506920415239,
+      "y": 7.2225874663590925,
+      "vx": 0,
+      "vy": 0,
+      "alive": true,
+      "finished": false,
+      "coins": 0,
+      "collected": 0,
+      "jump": 0.3866666666666667,
+      "cooldown": 1.4166666666666674,
+      "deathAt": -1,
+      "thought": 0.387351159285754,
+      "skill": 0.7127641559764742,
+      "target": null,
+      "outBeforeRound": false
+    }
+  },
+  "run": [
+    {
+      "phase": "cleared",
+      "game": "tide",
+      "cleared": 1
+    },
+    {
+      "phase": "cleared",
+      "game": "clock",
+      "cleared": 2
+    },
+    {
+      "phase": "cleared",
+      "game": "tiles",
+      "cleared": 3
+    },
+    {
+      "phase": "cleared",
+      "game": "silence",
+      "cleared": 4
+    },
+    {
+      "phase": "victory",
+      "game": "vault",
+      "cleared": 5
+    }
+  ],
+  "writes": [],
+  "errors": [],
+  "missing": [],
+  "requests": [
+    "http://127.0.0.1:54408/scripts/experiments/death-game-launcher.js?v=419162a0712b",
+    "http://127.0.0.1:54408/scripts/experiments/death-game-launcher.js?v=419162a0712b",
+    "http://127.0.0.1:54408/death-game.html?v=mw2o2a5j",
+    "http://127.0.0.1:54408/styles/experiments/death-game.css?v=5439284c0c62",
+    "http://127.0.0.1:54408/assets/death-game/controls/pad.svg",
+    "http://127.0.0.1:54408/assets/death-game/controls/nub.svg",
+    "http://127.0.0.1:54408/assets/death-game/controls/action.svg",
+    "http://127.0.0.1:54408/scripts/experiments/death-game-model.js?v=cf599b14465d",
+    "http://127.0.0.1:54408/scripts/experiments/death-game.js?v=fb6411b7a0cc"
+  ]
+}

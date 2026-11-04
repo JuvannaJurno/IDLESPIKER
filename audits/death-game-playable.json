@@ -1,0 +1,96 @@
+{
+  "rounds": [
+    {
+      "game": "tide",
+      "phase": "cleared",
+      "time": 22.008333333332725,
+      "cause": "",
+      "cleared": 1,
+      "jumps": 8,
+      "moves": 0,
+      "realSeconds": 22.002
+    },
+    {
+      "game": "clock",
+      "phase": "cleared",
+      "time": 21.008333333332782,
+      "cause": "",
+      "cleared": 2,
+      "jumps": 5,
+      "moves": 0,
+      "realSeconds": 21.052
+    },
+    {
+      "game": "tiles",
+      "phase": "cleared",
+      "time": 22.008333333332725,
+      "cause": "",
+      "cleared": 3,
+      "jumps": 0,
+      "moves": 12,
+      "realSeconds": 22.042
+    },
+    {
+      "game": "silence",
+      "phase": "cleared",
+      "time": 5.9166666666667505,
+      "cause": "",
+      "cleared": 4,
+      "jumps": 0,
+      "moves": 3,
+      "realSeconds": 5.765
+    },
+    {
+      "game": "vault",
+      "phase": "victory",
+      "time": 4.675000000000022,
+      "cause": "",
+      "cleared": 5,
+      "jumps": 2,
+      "moves": 14,
+      "realSeconds": 4.718
+    }
+  ],
+  "result": {
+    "phase": "victory",
+    "cleared": 5,
+    "metrics": {
+      "frames": 4551,
+      "maxDraw": 23.80000001192093,
+      "steps": 4539
+    },
+    "history": [
+      {
+        "game": "tide",
+        "success": true,
+        "time": 22.008333333332725
+      },
+      {
+        "game": "clock",
+        "success": true,
+        "time": 21.008333333332782
+      },
+      {
+        "game": "tiles",
+        "success": true,
+        "time": 22.008333333332725
+      },
+      {
+        "game": "silence",
+        "success": true,
+        "time": 5.9166666666667505
+      },
+      {
+        "game": "vault",
+        "success": true,
+        "time": 4.675000000000022
+      }
+    ],
+    "record": {
+      "attempts": 1,
+      "best": 5,
+      "wins": 1
+    }
+  },
+  "errors": []
+}

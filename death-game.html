@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#243f49"><title>Son Işık · Death Game</title><link rel="stylesheet" href="styles/experiments/death-game.css?v=5439284c0c62"></head>
+<body>
+<main id="deathGame">
+ <header class="hud"><div><small>SON IŞIK</small><strong id="stageLabel">DEATH GAME</strong></div><div class="hud-stats"><span id="survivors">10 kişi</span><strong id="timer">—</strong></div><button id="pause" class="square" aria-label="Duraklat" hidden>Ⅱ</button></header>
+ <div id="rule" class="rule"><span id="ruleIcon" aria-hidden="true">◇</span><strong id="ruleText">Beş kapı. Tek can.</strong><span id="ruleTime"></span></div>
+ <section id="arena" aria-label="Oyun alanı"><canvas id="scene"></canvas><span id="stageToast" aria-live="polite"></span></section>
+ <footer id="controls"><div id="stick" role="group" aria-label="Hareket analogu"><img class="pad" src="assets/death-game/controls/pad.svg" alt=""><img id="nub" src="assets/death-game/controls/nub.svg" alt=""></div><div class="control-help"><strong id="controlStatus">Sen · 07</strong><span>Hareket et · Hayatta kal</span></div><button id="jump" aria-label="Sıçra"><img src="assets/death-game/controls/action.svg" alt=""><svg viewBox="0 0 100 100" aria-hidden="true"><circle id="jumpRing" cx="50" cy="50" r="43"/></svg><span>Sıçra</span></button></footer>
+ <section id="menu" class="sheet">
+  <header><span class="eyebrow">YARIŞMACI 07</span><button id="exit" class="square" aria-label="Ana oyuna dön">×</button></header>
+  <div class="sheet-scroll"><div class="poster" aria-hidden="true"><i class="beam b1"></i><i class="beam b2"></i><div class="door"><span>07</span></div><div class="poster-player"></div><span class="poster-caption">ÇIKIŞ VAR. GARANTİ YOK.</span></div>
+   <span class="eyebrow">DEATH GAME</span><h1>Son Işık</h1><p class="lead">Kurallar değişir.<br>İkinci can verilmez.</p>
+   <p class="menu-copy">Tek bir yarışmacıyı yönet. Rastgele sıradaki beş odadan sağ çık. Diğer yarışmacılar da seninle aynı tehlikelerin içinde.</p>
+   <div class="instructions"><span><b>↔</b> Analogla yürü</span><span><b>↑</b> Tuşla sıçra</span></div><p class="keyboard">Bilgisayarda: WASD / yön tuşları · Boşluk ile sıçra</p><p id="best" class="best"></p>
+  </div><footer><button id="play" class="primary">Kapıyı aç <span>→</span></button><small>Ana oyun ilerlemenden bağımsız.</small></footer>
+ </section>
+ <dialog id="overlay"><header><span id="overlayEyebrow" class="eyebrow">SIRADAKİ KAPI</span><button id="closeOverlay" class="square" aria-label="Kapat">×</button></header><div class="dialog-scroll"><span id="roundMark" class="round-mark">01</span><h2 id="overlayTitle"></h2><p id="overlayCopy" class="lead"></p><p id="overlayDetail"></p><div id="results"></div></div><footer><button id="continue" class="primary">İçeri gir <span>→</span></button><button id="toMenu" class="secondary">Ana menü</button></footer></dialog>
+</main>
+<script src="scripts/experiments/death-game-model.js?v=cf599b14465d"></script><script src="scripts/experiments/death-game.js?v=fb6411b7a0cc"></script>
+</body></html>
