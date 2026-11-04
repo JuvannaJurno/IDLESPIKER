@@ -84,7 +84,7 @@ for(const mode of ['bot','local'])for(let seed=1;seed<=8;seed++){
    if(s.phase!=='rally'||b.flightTeam!==team)continue;
    // Two perfect interceptors can sustain a rally indefinitely. Periodic hesitation
    // exercises missed human inputs; the ball itself must still decide the point.
-   if(mode==='local'&&(s.time+seed+team*3)%13>11.2){for(const q of s.players.filter(q=>q.team===team))m.move(team,q.id,0,0);continue;}
+   if((s.time+seed+team*3)%13>11.2){for(const q of s.players.filter(q=>q.team===team))m.move(team,q.id,0,0);continue;}
    const goal=s.pending?.target||m.predict(),own=s.players.filter(p=>p.team===team&&p.id!==s.lastPlayer);
    own.sort((a,b)=>Math.hypot(a.x-goal.x,a.y-goal.y)-Math.hypot(b.x-goal.x,b.y-goal.y));
    const p=s.receiver!==null?s.players[s.receiver]:own[0];m.select(team,p.id,.5);
