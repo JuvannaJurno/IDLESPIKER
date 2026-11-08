@@ -1,15 +1,5 @@
 # Idle Spiker — Görünüm ve davranış rehberi
 
-### 5 Kasım 2026 — Hileler: Son Işık / Death Game
-
-Kullanıcının kararıyla gizli voleybol deneyi kaldırıldı. Yerine bağımsız death-game.html içinde tek yarışmacının analog ve sıçrama tuşuyla yönetildiği Son Işık gelir. Voleybol sahası, top, takım kontrolleri, eski runtime ve eski testler kaldırılır. Giriş yalnız Ayarlar → Hileler → Gizli oyun · Son Işık içindedir. Ana oyunun mekanikleri, portreleri ve kayıtları değiştirilmez.
-
-Beş farklı oda her denemede bir kez, karışık sırayla gelir: Sessiz Koridor (yeşilde ilerle, sarıda hazırlan, kırmızıda dur), Son Renk (güvenli renge yetiş), Saat Kulesi (dönen kolu atla), Açgözlü Kasa (5 kişisel jetonla kapıdan çık, mürekkep ve baskı kollarından kaç), Son Dalga (halkaları atla). Tek can vardır; başarısızlık sebebi açıkça gösterilir. Kural, güvenli simge, süre ve sıçrama beklemesi görünürdür. Renk tek başına bilgi taşımaz; şekiller ve yazılar eşlik eder. Oda brifingi oyuncu İçeri gir diyene kadar başlamaz.
-
-Yeni deneyin karanlık tesisinde krem/adaçayı/altın menü ailesi, basılan derinlikli tuşlar ve sabit başlık/kapatma kullanılır. Kayan içerik kapatma düğmesini taşımaz. Dikey alan, büyük analog, güvenli ekran kenarları ve masaüstü klavye desteği korunur. Çizilen maskeli yarışmacılar bu bağımsız deneye özeldir; ana oyunun portreleri için yeni karar değildir. Kenney Style B kontrol SVG’leri assets/death-game/controls içinde CC0 lisansıyla korunur.
-
-Tek 120 Hz fizik hesabı ve tek canvas vardır. Botların hareket, erişim, sıçrama ve tehlike kuralları oyuncuyla aynıdır. Kayıt yalnız idle-spiker-death-game-v1 anahtarına en iyi kapı/deneme/başarılı kaçış sayısı yazar. Ana ses tercihleri salt okunur. Duraklatma ve odak kaybında süre durur, bütün girişler bırakılır. Çıkış iframe’i kaldırır; kapalıyken hiçbir hesap veya ses çalışmaz. Ayrıntılar docs/DEATH-GAME.md içindedir.
-
 ### 4 Kasım 2026 — Eksi Tempo yavaş çekimi
 
 Eksi Tempo seçilip pas hazırlanırken mevcut Legendary yavaş çekimi ve karartması başlar. Aynı odak smaç temasında çıkan topa bağlanır; diğer Legendary'lerle aynı yumuşak hız dönüşünü kullanır. Duraklatılmış bir hazırlık devam ettirildiğinde odak başlatılabilir; iptal edilen hazırlıkta odak ve rezerve CD temizlenir. Hem pasör hem hücumcu karartmanın üzerinde çizilir; yeteneğe sahip olanın sarı Legendary ışığı, diğerinin beyaz ışığı korunur.
