@@ -411,3 +411,5 @@ html[data-theme=dark] #campReturnDialog .return-skill-reveal p{color:#c8bbd1!imp
 
 
 .camp-legendary-milestone{position:absolute;bottom:-3px;width:6px;height:6px;transform:translateX(-50%) rotate(45deg);border:1px solid #fff7df;border-radius:2px;background:#c58b3f;box-shadow:0 1px 2px #49352655;pointer-events:none}
+
+.calendar-skip-match{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:12px;padding:10px 12px;min-height:39px;border:1px solid #d7c994;border-radius:11px;background:#f5e6b5;color:#796337;font:inherit;font-size:11px;box-shadow:0 3px #c7b479;cursor:pointer}.calendar-skip-match small{font-size:8px;padding:2px 5px;border:1px solid #bca46d;border-radius:5px;opacity:.8}.calendar-skip-play{font-size:17px;line-height:1}.calendar-skip-match:active{transform:translateY(2px);box-shadow:0 1px #c7b479}.calendar-skip-match:disabled{opacity:.5;cursor:default}.calendar-skip-match[hidden]{display:none}

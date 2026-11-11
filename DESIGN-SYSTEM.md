@@ -1367,3 +1367,7 @@ Blok kartında önce kısa ve basit işlev açıklaması, hemen altında küçü
 ### 11 Kasım 2026 — Lig başlığı ve blok katları
 
 Lig Merkezi başlığı ve üzerindeki küçük aşama yazısı gizlenir. İstatistik düğmesi sezon kartının alt satırında, sıradaki maç bilgisinin yanında bulunur. İstatistik diyaloğu aynı düğmeyle açılır ve kapanınca odak düğmeye döner. Blok seviyelerinde ilk seviyeden sonraki her artış arkaya hafif sağa eğimli bir kart katı ekler. Ön yüz düz kalır. En fazla dokuz kat çizilir, katlar tıklamayı ve erişilebilirlik ağacını etkilemez. Medya kartları da seviyelerine göre aynı katları kullanır.
+
+### 11 Kasım 2026 — Takvimden reklamla maça geçiş
+
+Takvim açıklama satırının altında Sıradaki maça geç düğmesi ve küçük Reklam işareti görünür. Şimdilik reklam sağlayıcısı yoktur, düğme doğrudan maç hazırlığını açar. Atlanan talimatlar normal otomatik üretim hesabıyla hesaplanır. Günlük bütçe, talimat sayaçları ve takvim birlikte ilerler. Mevcut geçiş günlüğü iki kaydı birlikte korur. Bekleyen maç varsa gün atlanmaz, o maçın hazırlığı açılır. Sezon bitince düğme gizlenir.
