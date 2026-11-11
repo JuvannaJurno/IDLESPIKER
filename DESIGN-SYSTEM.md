@@ -1359,3 +1359,7 @@ Kamptaki oyuncunun kalan gününü oluşturan hatalı campDayscampDays çağrıs
 
 
 2 Kasım eski takvim renk/manuel geri bildirim düzeltmesi: gelecekteki maç gününe yanlış atanmış nötr yeşil kaldırıldı; açık temada maç hücresi #f5b39c, bugünün maç hücresi #f7cfaf ve mevcut sıcak altın dolum. Koyu temanın maç ayrımı korunur. Eski takvim manuel talimatı artık dolum dışında yükselen çizgi/nokta üretmez; sadece mevcut dolum 180ms kısa parlaklık tepkisi verir. Hücre/sayı konumu değişmez, otomatik talimat ve reduced-motion hareket üretmez. Hilelerden açılan vektör takvim kendi eski uç efektini korur. Test: test-legacy-calendar-feedback (2 tema/2 genişlik), test-manual-calendar-feedback (opsiyon açık), test-club-responsive-dock.
+
+### 11 Kasım 2026 — Blok açıklamalarının okuma sırası
+
+Blok kartında önce kısa ve basit işlev açıklaması, hemen altında küçük boyutta güncel sayısal etki gösterilir. Açıklama kartın mevcut fontuyla 11px, normal kalınlık ve 1,5 satır aralığı kullanır. Sayısal etki 9px olur. Ana ve ek özellik aynı anatomiyi paylaşır. Ek özellik kilitliyken açılma seviyesi görünür. Medya kartları da aynı düzeni kullanır. Değerler mevcut açıklama hesaplarından alınır. Mobil kartlar metni kesmeden içerik kadar uzar. Onaylanan deneme block-description-lab.html içindeki son yazı düzenidir.
