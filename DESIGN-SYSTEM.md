@@ -1362,4 +1362,4 @@ Kamptaki oyuncunun kalan gününü oluşturan hatalı campDayscampDays çağrıs
 
 ### 11 Kasım 2026 — Blok açıklamalarının okuma sırası
 
-Blok kartında önce kısa ve basit işlev açıklaması, hemen altında küçük boyutta güncel sayısal etki gösterilir. Açıklama kartın mevcut fontuyla 11px, normal kalınlık ve 1,5 satır aralığı kullanır. Sayısal etki 9px olur. Ana ve ek özellik aynı anatomiyi paylaşır. Ek özellik kilitliyken açılma seviyesi görünür. Medya kartları da aynı düzeni kullanır. Değerler mevcut açıklama hesaplarından alınır. Mobil kartlar metni kesmeden içerik kadar uzar. Onaylanan deneme block-description-lab.html içindeki son yazı düzenidir.
+Blok kartında önce kısa ve basit işlev açıklaması, hemen altında küçük boyutta güncel sayısal etki gösterilir. Açıklama kartın eski metin ölçüsünde 9px, normal kalınlık ve 13px satır aralığı kullanır. Sayısal etki 9px olur. Ana ve ek özellik aynı anatomiyi paylaşır. Ek özellik kilitliyken açılma seviyesi görünür. Medya kartları da aynı düzeni kullanır. Değerler mevcut açıklama hesaplarından alınır. Mobil kartlar metni kesmeden içerik kadar uzar. Onaylanan deneme block-description-lab.html içindeki son yazı düzenidir.

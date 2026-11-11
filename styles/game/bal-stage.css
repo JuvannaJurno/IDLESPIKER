@@ -405,7 +405,7 @@ html[data-theme=dark] #campDialog #campEnroll:disabled[data-funding]{background:
 #campReturnDialog .return-player-card[data-card-tier="3"] .return-star-track{background:#eee5f4;border-color:#9476ab}
 
 /* Plain-language effect first, then the exact current amount. */
-.upgrade-room.has-main-effect .block-main-copy,.upgrade-room.has-main-effect .block-bonus-title{font-family:inherit;font-size:11px;font-weight:400;line-height:1.5;letter-spacing:normal;color:var(--ink,#456d70)}
+.upgrade-room.has-main-effect .block-main-copy,.upgrade-room.has-main-effect .block-bonus-title{font-family:inherit;font-size:9px;font-weight:400;line-height:13px;letter-spacing:normal;color:#637b60}
 .upgrade-room .block-effect-value{display:block;font-family:inherit;font-size:9px;font-weight:400;line-height:1.45;color:#9a7a41;margin-top:4px;overflow-wrap:anywhere}
 .upgrade-room.has-main-effect>small.block-main-effect{gap:5px;flex-shrink:0;min-height:85px;height:auto;overflow:visible}
 .upgrade-room.has-main-effect .block-bonus-panel{min-height:86px;height:auto;gap:5px;overflow:visible}
