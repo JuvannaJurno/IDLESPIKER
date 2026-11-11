@@ -2,7 +2,7 @@
 'use strict';
 const Clock=root.SeasonClock||(typeof require==='function'?require('./season-clock.js'):null);
 const Club=root.FirstLeagueClubTheme||(typeof require==='function'?require('./first-league-club-theme.js'):null);
-const display=v=>Number(v.toFixed(2)).toLocaleString('tr-TR');
+const display=v=>root.NumberUI?.exact(Number(v.toFixed(2)))??Number(v.toFixed(2)).toLocaleString('tr-TR');
 const departments=['Performans Merkezi','Kulüp Yönetimi','Gelir Merkezi','Teknik Ekip','Oyuncu Keşfi'];
 const definitions=[
  ['bal_coach',1,'Yardımcı Antrenör','♟',[.6,1.2,2,3,4],v=>'Saniyede +'+display(v)+' otomatik talimat.',220],

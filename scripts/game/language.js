@@ -9,21 +9,36 @@ for(const [source,target]of [...exact]){
  for(const [from,to]of [[source.toLocaleLowerCase('tr'),target.toLowerCase()],[source.toLocaleUpperCase('tr'),target.toUpperCase()]])if(!exact.has(from))exact.set(from,to);
 }
 const escape=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-const exactOnly=new Set(['Güneş','Yıldız','Zirve','File','Ad','Per','Son'].flatMap(s=>[s,s.toLocaleUpperCase('tr'),s.toLocaleLowerCase('tr')]));
+const exactOnly=new Set(['Güneş','Yıldız','Zirve','File','Ad','Per','Son','İlk','Günün','Top'].flatMap(s=>[s,s.toLocaleUpperCase('tr'),s.toLocaleLowerCase('tr')]));
 const phrases=[...exact.keys()].filter(key=>!exactOnly.has(key)).sort((a,b)=>b.length-a.length);
 const pattern=new RegExp('(?<![\\p{L}\\p{N}])(?:'+phrases.map(escape).join('|')+')(?![\\p{L}\\p{N}])','gu');
-const templates=(window.SpikerEnglishTemplates||[]).map(([source,target])=>[new RegExp(escape(source).replace(/\\\{([ns])\\\}/g,(_,type)=>type==='n'?'([\\d.,]+(?:[kmb])?)':'(.+?)'),'gu'),target]);
+const templates=[...(window.SpikerEnglishTemplates||[])].sort((a,b)=>b[0].length-a[0].length).map(([source,target])=>[new RegExp(escape(source).replace(/\\\{([ns])\\\}/g,(_,type)=>type==='n'?'([\\d.,]+(?:[kmb])?)':'(.+?)'),'gu'),target]);
+const wholeTemplates=templates.map(([pattern,target])=>[new RegExp('^(?:'+pattern.source+')$','u'),target]);
 const skip='script,style,textarea,input,[contenteditable],canvas,svg,[data-no-translate],.card-name,.lineup-preview-player strong,#playerName,#firstName,#lastName,.league-player-name';
+let nameKey='',namePattern=null;
+function protectNames(value){
+ const names=[...(window.LeagueRules?.teams||[]),...(window.TeamRules?.players||[]).map(p=>p.name+' '+p.surname)].filter(Boolean),key=names.join('|');
+ if(key!==nameKey){nameKey=key;namePattern=names.length?new RegExp(names.sort((a,b)=>b.length-a.length).map(escape).join('|'),'gu'):null;}
+ const saved=[];
+ return {value:namePattern?value.replace(namePattern,name=>{saved.push(name);return '\uE010'+(saved.length-1)+'\uE011'}):value,restore:output=>output.replace(/\uE010(\d+)\uE011/g,(_,i)=>saved[Number(i)])};
+}
+function slot(value){
+ if(window.TeamRules?.players?.some(p=>value===p.name||value===p.surname||value===p.name+' '+p.surname)||window.LeagueRules?.teams?.includes(value))return value;
+ return exact.get(value)||value;
+}
 function text(value){
  if(language==='tr'||!value||!value.trim())return value;
  if(cache.has(value))return cache.get(value);
+ if(window.LeagueRules?.teams?.includes(value.trim()))return value;
  const trimmed=value.trim();let translated=exact.get(trimmed);
- if(translated!==undefined)translated=value.replace(trimmed,translated);
+ if(translated===undefined){for(const [expression,target]of wholeTemplates){const match=trimmed.match(expression);if(match){let index=1;translated=target.replace(/\{[ns]\}/g,()=>slot(match[index++]));break;}}}
+ if(translated!==undefined)translated=value.replace(trimmed,()=>translated);
  else {
-  translated=value;const resolved=[];
-  for(const [expression,target]of templates)translated=translated.replace(expression,(...args)=>{let index=1;resolved.push(target.replace(/\{[ns]\}/g,()=>args[index++]));return '\uE000'+(resolved.length-1)+'\uE001'});
+  const protectedNames=protectNames(value);translated=protectedNames.value;const resolved=[];
+  for(const [expression,target]of templates)translated=translated.replace(expression,(...args)=>{let index=1;resolved.push(target.replace(/\{[ns]\}/g,()=>slot(args[index++])));return '\uE000'+(resolved.length-1)+'\uE001'});
   translated=translated.replace(pattern,match=>exact.get(match));
   translated=translated.replace(/\uE000(\d+)\uE001/g,(_,index)=>resolved[Number(index)]);
+  translated=protectedNames.restore(translated);
  }
  translated=translated.replace(/\/sn\b/g,'/sec').replace(/\/talimat\b/g,'/instruction');
  translated=translated.replace(/Level (\d+)’(?:da|de) açılır/g,'Unlocks at level $1').replace(/(\d+)\. (?:day|GÜN)/g,'Day $1').replace(/(\d+) (?:day|game day) sonra/g,'In $1 days').replace(/(\d+)\. maç/g,'Match $1').replace(/(\d+)\. sıra/g,'Rank $1');
@@ -44,9 +59,9 @@ function translateNode(node){
  sources.set(node,{original,output});
 }
 function translateAttributes(el){
- if(el.closest(skip))return;
+ if(el.closest('[data-no-translate],[contenteditable],script,style,canvas,svg'))return;
  let map=attributes.get(el);if(!map){map={};attributes.set(el,map)}
- for(const name of ['title','placeholder','aria-label']){
+ for(const name of ['title','placeholder','aria-label','aria-valuetext','alt']){
   if(!el.hasAttribute(name))continue;
   const value=el.getAttribute(name),last=map[name],original=last&&value===last.output?last.original:value,output=text(original);
   if(value!==output)el.setAttribute(name,output);map[name]={original,output};
@@ -55,14 +70,14 @@ function translateAttributes(el){
 function walk(root){
  if(root.nodeType===3){translateNode(root);return}
  if(root.nodeType!==1&&root.nodeType!==9)return;
- if(root.nodeType===1){if(root.matches(skip))return;translateAttributes(root)}
+ if(root.nodeType===1){translateAttributes(root);if(root.matches(skip))return;}
  const walker=document.createTreeWalker(root,NodeFilter.SHOW_ELEMENT|NodeFilter.SHOW_TEXT);
  let node;while(node=walker.nextNode()){
   if(node.nodeType===3)translateNode(node);else translateAttributes(node);
  }
 }
 let observer;
-function observe(){observer?.observe(document.documentElement,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['title','placeholder','aria-label']})}
+function observe(){observer?.observe(document.documentElement,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['title','placeholder','aria-label','aria-valuetext','alt']})}
 function refresh(){observer?.disconnect();document.documentElement.lang=language;walk(document);document.title=text(originalTitle);document.querySelectorAll('[data-language-control]').forEach(el=>el.value=language);observe()}
 function choose(value,persist=true){
  if(!supported.includes(value))return;
@@ -72,6 +87,7 @@ function choose(value,persist=true){
  const frame=document.getElementById('gameMatchFrame');if(frame?.contentWindow)frame.contentWindow.postMessage({type:'spiker-language',language},'*');
 }
 window.GameLanguage={get current(){return language},ready,text,set:choose,refresh};
+window.addEventListener('spiker-stage-changed',()=>{cache.clear();refresh();});
 window.addEventListener('storage',event=>{if(event.key===key&&supported.includes(event.newValue))choose(event.newValue,false)});
 window.addEventListener('message',event=>{if(window.parent!==window&&event.source===parent&&event.data?.type==='spiker-language')choose(event.data.language,false)});
 function init(){

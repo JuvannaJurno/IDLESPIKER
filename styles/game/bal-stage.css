@@ -408,7 +408,7 @@ html[data-theme=dark] #campDialog #campEnroll:disabled[data-funding]{background:
 .upgrade-room.has-main-effect .block-main-copy,.upgrade-room.has-main-effect .block-bonus-title{font-family:inherit;font-size:9px;font-weight:400;line-height:13px;letter-spacing:normal;color:#637b60}
 .upgrade-room .block-effect-value{display:block;font-family:inherit;font-size:9px;font-weight:400;line-height:1.45;color:#9a7a41;margin-top:4px;overflow-wrap:anywhere}
 .upgrade-room.has-main-effect>small.block-main-effect{gap:5px;flex-shrink:0;min-height:85px;height:auto;overflow:visible}
-.upgrade-room.has-main-effect .block-bonus-panel{min-height:86px;height:auto;gap:5px;overflow:visible}
+.upgrade-room.has-main-effect .block-bonus-panel{min-height:86px;height:auto;gap:5px;overflow:visible;flex-shrink:0}
 .upgrade-room.has-main-effect{min-height:260px;height:auto}
 .upgrade-room.has-main-effect:not(.block-basic){min-height:310px}
 .upgrade-room.has-main-effect .room-active{flex-shrink:0}

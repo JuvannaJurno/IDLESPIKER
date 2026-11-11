@@ -1,6 +1,6 @@
 (function(){'use strict';
 window.SocialJourney={mount(bridge){
- const R=SocialJourneyRules,$=id=>document.getElementById(id),panel=$('socialPanel'),fmt=n=>Math.round(n).toLocaleString('tr-TR');let signature='',opened=false,returnY=0;
+ const R=SocialJourneyRules,$=id=>document.getElementById(id),panel=$('socialPanel'),fmt=n=>Math.round(n).toLocaleString(window.GameLanguage?.current==='en'?'en-US':'tr-TR');let signature='',opened=false,returnY=0;
  const entry=document.createElement('button');entry.id='socialJourneyEntry';entry.className='journey-entry';entry.type='button';entry.setAttribute('aria-label','Topluluk Yolculuğu ödüllerini aç');panel.querySelector('.social-app-header').after(entry);
  const screen=document.createElement('section');screen.id='socialJourneyScreen';screen.hidden=true;screen.setAttribute('aria-labelledby','journeyTitle');screen.innerHTML='<header class="journey-header"><button type="button" class="journey-back" aria-label="Sosyal medyaya dön">‹</button><div><small>IDLEGRAM</small><h1 id="journeyTitle">Topluluk Yolculuğu</h1></div></header><div class="journey-road-heading"><span>TOPLULUK HEDEFLERİN</span><small id="journeyClaimCount"></small></div><ol id="journeyRoad" class="journey-road"></ol><p class="journey-endnote">Sahadaki emeğimiz, tribündeki sesiniz.</p><p id="journeyStatus" role="status" aria-live="polite"></p>';panel.after(screen);
  function snapshot(){const social=bridge.get();return {followers:SocialStudioRules.followers(social),unit:Math.round(SocialStudioRules.income(social)*.8),room:RoomSystem.journeyView()};}

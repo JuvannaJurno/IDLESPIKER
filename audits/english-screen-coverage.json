@@ -1,0 +1,105 @@
+{
+  "coverage": {
+    "count": 556,
+    "missing": []
+  },
+  "phrases": [
+    "Critical AP chance: 5% → 15%. Critical instructions earn 3× AP.",
+    "Every 5 paid card upgrades earn 1200 budget.",
+    "The third line runs at 3/5 of the main line’s capacity.",
+    "Melis Arıgöl sets for Fang Song.",
+    "Upgrade Coaching Staff's Scout block to unlock this report.",
+    "Deniz needs 830 more AP for a card upgrade. Improves our receiving against their serves."
+  ],
+  "findings": [
+    {
+      "label": "stage-1-club",
+      "remaining": []
+    },
+    {
+      "label": "stage-1-teamTab",
+      "remaining": []
+    },
+    {
+      "label": "stage-1-calendarTab",
+      "remaining": []
+    },
+    {
+      "label": "stage-2-club",
+      "remaining": []
+    },
+    {
+      "label": "stage-2-teamTab",
+      "remaining": []
+    },
+    {
+      "label": "stage-2-calendarTab",
+      "remaining": []
+    },
+    {
+      "label": "stage-3-club",
+      "remaining": []
+    },
+    {
+      "label": "stage-3-teamTab",
+      "remaining": []
+    },
+    {
+      "label": "stage-3-calendarTab",
+      "remaining": []
+    },
+    {
+      "label": "stage-3-socialTab",
+      "remaining": []
+    },
+    {
+      "label": "stage-4-club",
+      "remaining": []
+    },
+    {
+      "label": "stage-4-teamTab",
+      "remaining": []
+    },
+    {
+      "label": "stage-4-calendarTab",
+      "remaining": []
+    },
+    {
+      "label": "stage-4-socialTab",
+      "remaining": []
+    },
+    {
+      "label": "camp",
+      "remaining": []
+    },
+    {
+      "label": "transfer-home",
+      "remaining": []
+    },
+    {
+      "label": "transfer-card",
+      "remaining": []
+    },
+    {
+      "label": "transfer-catalog",
+      "remaining": []
+    },
+    {
+      "label": "transfer-comparison",
+      "remaining": []
+    },
+    {
+      "label": "profile",
+      "remaining": []
+    },
+    {
+      "label": "settings",
+      "remaining": []
+    },
+    {
+      "label": "cheats",
+      "remaining": []
+    }
+  ],
+  "errors": []
+}
