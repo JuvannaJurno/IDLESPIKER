@@ -1,5 +1,10 @@
 # Idle Spiker — Görünüm ve davranış rehberi
 
+### 11 Kasım 2026 — Servis katmanı ve kurtarış sınırı
+
+Float hazırlığında sol kol ve kol forması gövdenin arkasındadır. Poz önbelleği servis hazırlığını ayrı tutar. Pancake yalnız 90–910 / 90–530 saha sınırları içindeki inişleri kurtarabilir ve servis/hücum hatasını geri çeviremez. Eksi Tempo hücum uçuşu 0,24 sn hedef süreyle, fiziksel yetişme alt sınırı korunarak gider. Yere iniş 0,55 sn olur. Legendary yavaş çekimi korunur.
+
+
 ### 4 Kasım 2026 — Eksi Tempo yavaş çekimi
 
 Eksi Tempo seçilip pas hazırlanırken mevcut Legendary yavaş çekimi ve karartması başlar. Aynı odak smaç temasında çıkan topa bağlanır; diğer Legendary'lerle aynı yumuşak hız dönüşünü kullanır. Duraklatılmış bir hazırlık devam ettirildiğinde odak başlatılabilir; iptal edilen hazırlıkta odak ve rezerve CD temizlenir. Hem pasör hem hücumcu karartmanın üzerinde çizilir; yeteneğe sahip olanın sarı Legendary ışığı, diğerinin beyaz ışığı korunur.
