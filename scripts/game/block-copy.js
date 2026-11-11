@@ -66,5 +66,18 @@
   const old = container.querySelector('.block-bonus-copy');
   if (old) old.hidden = true;
  }
- window.BlockCopy = { apply };
+ function stack(card, level) {
+  let sheets = card.querySelector(':scope > .block-stack-sheets');
+  if (!sheets) { sheets = document.createElement('span'); sheets.className = 'block-stack-sheets'; sheets.setAttribute('aria-hidden', 'true'); card.prepend(sheets); }
+  if (sheets.dataset.level === String(level)) return;
+  sheets.dataset.level = String(level);
+  sheets.replaceChildren();
+  for (let depth = Math.min(9, Math.max(0, level - 1)); depth > 0; depth--) {
+   const sheet = document.createElement('i');
+   sheet.style.setProperty('--sheet-depth', depth);
+   sheets.append(sheet);
+  }
+  card.classList.toggle('has-block-stack', level > 1);
+ }
+ window.BlockCopy = { apply, stack };
 })();

@@ -1363,3 +1363,7 @@ Kamptaki oyuncunun kalan gününü oluşturan hatalı campDayscampDays çağrıs
 ### 11 Kasım 2026 — Blok açıklamalarının okuma sırası
 
 Blok kartında önce kısa ve basit işlev açıklaması, hemen altında küçük boyutta güncel sayısal etki gösterilir. Açıklama kartın eski metin ölçüsünde 9px, normal kalınlık ve 13px satır aralığı kullanır. Sayısal etki 9px olur. Ana ve ek özellik aynı anatomiyi paylaşır. Ek özellik kilitliyken açılma seviyesi görünür. Medya kartları da aynı düzeni kullanır. Değerler mevcut açıklama hesaplarından alınır. Mobil kartlar metni kesmeden içerik kadar uzar. Onaylanan deneme block-description-lab.html içindeki son yazı düzenidir.
+
+### 11 Kasım 2026 — Lig başlığı ve blok katları
+
+Lig Merkezi başlığı ve üzerindeki küçük aşama yazısı gizlenir. İstatistik düğmesi sezon kartının alt satırında, sıradaki maç bilgisinin yanında bulunur. İstatistik diyaloğu aynı düğmeyle açılır ve kapanınca odak düğmeye döner. Blok seviyelerinde ilk seviyeden sonraki her artış arkaya hafif sağa eğimli bir kart katı ekler. Ön yüz düz kalır. En fazla dokuz kat çizilir, katlar tıklamayı ve erişilebilirlik ağacını etkilemez. Medya kartları da seviyelerine göre aynı katları kullanır.

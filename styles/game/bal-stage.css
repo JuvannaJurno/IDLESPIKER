@@ -413,3 +413,10 @@ html[data-theme=dark] #campDialog #campEnroll:disabled[data-funding]{background:
 .upgrade-room.has-main-effect:not(.block-basic){min-height:310px}
 .upgrade-room.has-main-effect .room-active{flex-shrink:0}
 [data-theme="dark"] .upgrade-room .block-effect-value{color:#dbc18a}
+
+/* Level sheets lean gently right; the face stays flat and readable. */
+.upgrade-room.has-block-stack{position:relative;isolation:isolate;overflow:visible!important}
+.block-stack-sheets{position:absolute;inset:0;pointer-events:none;z-index:-2;border-radius:inherit}
+.block-stack-sheets i{position:absolute;inset:0;display:block;border:2px solid #d5b76c;border-radius:inherit;background:#f9e8af;transform-origin:50% 95%;transform:translate(calc(var(--sheet-depth)*1.15px),calc(var(--sheet-depth)*-.45px)) rotate(calc(var(--sheet-depth)*.45deg));box-shadow:0 2px #b7aa7a40}
+.upgrade-room.has-block-stack::after{content:"";position:absolute;inset:0;z-index:-1;background:inherit;border-radius:inherit;pointer-events:none}
+[data-theme="dark"] .block-stack-sheets i{background:#334b4e;border-color:#6a8581}
