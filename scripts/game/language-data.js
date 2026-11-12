@@ -5218,3 +5218,66 @@ window.SpikerEnglish.push(
  ['Renklerin','Your colors'],['BÖLGESEL AMATÖR LİG','REGIONAL AMATEUR LEAGUE'],['Bölgesel Amatör Lig','Regional Amateur League'],
  ['Sonra devam et','Continue later'],['Kaydet ve lige geç','Save and enter the league'],['Kurt','Wolf'],['Bizim Kulüp','Our Club']
 );
+
+// Live match captions and short-lived instruction feedback are complete messages.
+window.SpikerEnglish.push(
+ ['GÜZEL TEMPO!','NICE RHYTHM!'],['SERVİS ATIYOR','SERVING'],['BLOK YAPIYOR','BLOCKING'],
+ ['SMAÇ VURUYOR','SPIKING'],['KARŞILIYOR','RECEIVING'],['PAS VERİYOR','SETTING'],['TOPU OYNUYOR','PLAYING THE BALL'],
+ ['SAYI!','POINT!'],['Sayı!','Point!'],['SMAÇ SAYISI','SPIKE POINT'],['SERVİS SAYISI','ACE'],['BLOK SAYISI','BLOCK POINT'],
+ ['RAKİP HATASI','OPPONENT ERROR'],['TAKIM HATASI','TEAM ERROR'],
+ ['SAYI! · SMAÇ SAYISI','POINT! · SPIKE POINT'],['SAYI! · SERVİS SAYISI','POINT! · ACE'],['SAYI! · BLOK SAYISI','POINT! · BLOCK POINT'],
+ ['SAYI! · RAKİP HATASI','POINT! · OPPONENT ERROR'],['SAYI! · TAKIM HATASI','POINT! · TEAM ERROR'],
+ ['Takımlar hazır. Servis geliyor.','Teams are ready. Here comes the serve.'],['Servis hazırlanıyor','Preparing to serve'],
+ ['Karakterler hazırlanıyor…','Preparing players…'],['Karakterler hazırlanıyor.','Preparing players.'],
+ ['Yeni maç hazırlanıyor.','Preparing a new match.'],['Maçın kalan kısmı oynanıyor…','Playing the rest of the match…'],
+ ['Maç ödülleri','Match rewards'],['Günlük bütçe artışı','Daily budget increase'],['Taraftar geliri','Supporter income'],
+ ['Kazandık!','We won!'],['Bu kez rakip kazandı','Our opponents won this time'],['MAÇ SONU','FULL TIME'],
+ ['GÜN TAMAMLANDI!','DAY COMPLETE!'],['DÜZENLİ ÇALIŞMA!','STEADY WORK!'],['TEKRAR ANTRENMANI!','REPEAT TRAINING!'],
+ ['Servis at · Space','Serve · Space'],['filede.','into the net.'],['Servis hatası — top filede.','Service fault — into the net.'],
+ ['Servis hatası — top dışarıda.','Service fault — ball out.'],['Kadro yüklenemedi. Sayfayı yenileyip tekrar dene.','Could not load the squad. Reload and try again.']
+);
+window.SpikerEnglishTemplates.push(
+ ['GÜZEL TEMPO! · {n} TALİMAT','NICE RHYTHM! · {n} INSTRUCTIONS'],
+ ['GÜN TAMAMLANDI! · +{n} BÜTÇE','DAY COMPLETE! · +{n} BUDGET'],
+ ['{s} HAZIR!','{s} READY!'],['{n}. SET','SET {n}'],['{n}. MAÇ','MATCH {n}'],
+ ['{n} sayı','{n} points'],['Hız · {n}×','Speed · {n}×'],
+ ['{s} manşetle karşılıyor.','{s} receives with a forearm pass.'],['{s} smaç vuruyor!','{s} spikes!'],
+ ['{s} doğrudan servis sayısı aldı!','{s} scores an ace!'],['{s} smaçla sayı aldı!','{s} scores with a spike!'],
+ ['{s} blokla sayı aldı!','{s} scores with a block!'],['{s} servis hatası yaptı.','{s} commits a service error.'],
+ ['{s} hücumda topu dışarı gönderdi.','{s} hits the attack out.'],['{s} pas hatası yaptı.','{s} makes a setting error.'],
+ ['{s} topu kontrol edemedi.','{s} cannot control the ball.'],['{s} topa yetişemedi.','{s} cannot reach the ball.'],
+ ['{s} servise geçiyor.','{s} moves to serve.'],['{s} sayı!','Point for {s}!'],['{s} maçı kazandı!','{s} wins the match!'],
+ ['{s} seti kazandı! Yeni set hazırlanıyor.','{s} wins the set! Preparing the next set.'],
+ ['{s} bloğun arkasına plase bırakıyor.','{s} tips the ball behind the block.'],
+ ['{s} bloktan sektiriyor, top bizde kalıyor!','{s} recovers the rebound and keeps possession!'],
+ ['{s} doğrudan servis sayısı aldı! {s} sayı! {s} servise geçiyor.','{s} scores an ace! Point for {s}! {s} serves next.'],
+ ['{s} smaçla sayı aldı! {s} sayı! {s} servise geçiyor.','{s} scores with a spike! Point for {s}! {s} serves next.'],
+ ['{s} blokla sayı aldı! {s} sayı! {s} servise geçiyor.','{s} scores with a block! Point for {s}! {s} serves next.'],
+ ['{s} servis hatası yaptı. {s} sayı! {s} servise geçiyor.','{s} commits a service error. Point for {s}! {s} serves next.'],
+ ['{s} hücumda topu dışarı gönderdi. {s} sayı! {s} servise geçiyor.','{s} hits the attack out. Point for {s}! {s} serves next.'],
+ ['{s} pas hatası yaptı. {s} sayı! {s} servise geçiyor.','{s} makes a setting error. Point for {s}! {s} serves next.'],
+ ['{s} topu kontrol edemedi. {s} sayı! {s} servise geçiyor.','{s} cannot control the ball. Point for {s}! {s} serves next.'],
+ ['{s} topa yetişemedi. {s} sayı! {s} servise geçiyor.','{s} cannot reach the ball. Point for {s}! {s} serves next.'],
+ ['{s} ve {s} blokla sayı aldı! {s} sayı! {s} servise geçiyor.','{s} and {s} score with a block! Point for {s}! {s} serves next.'],
+ ['{s} ve {s} blokla sayı aldı!','{s} and {s} score with a block!']
+);
+// Canonical skill names: translating individual words leaves hybrids such as Eksi Tempo Attack.
+window.SpikerEnglish.push(
+ ['Erken Blok','Early Block'],['Çapraz Smaç','Cross-court Spike'],['Üçüncü Tempo Hücum','Third-tempo Attack'],
+ ['Tek Ayak Hücumu','Slide Attack'],['Güçlü Vuruş','Power Hit'],['Bloktan Sektirme','Block Rebound'],
+ ['Okuma Bloğu','Read Block'],['Yüzen Servis','Float Serve'],['Paralel Smaç','Line Spike'],['Geri Pas','Back Set'],
+ ['Dublaj','Attack Coverage'],['İkinci Tempo Hücum','Second-tempo Attack'],['Blok Aut','Tooling the Block'],
+ ['Aktif Blok','Penetration Block'],['İkili Blok','Double Block'],['Üçlü Blok','Triple Block'],['Smaç Servis','Jump Serve'],
+ ['Plonjon','Dive'],['Pas Aldatması','Set Feint'],['Kombine Hücum','Combination Attack'],['Birinci Tempo Hücum','First-tempo Attack'],
+ ['Eksi Tempo Hücum','Minus Tempo'],['Eksi Tempo','Minus Tempo'],['Kusursuz Hücum Okuma','Perfect Attack Read'],
+ ['Yıldırım Smaç Servis','Lightning Jump Serve'],['Jump Float','Jump Float'],['Zor Toplara Pas','Difficult Ball Set'],
+ ['Tek Elle Pas','One-handed Set'],['Pancake','Pancake'],['Hayalet Plase','Ghost Tip'],['Saha Okuma','Court Reading'],
+ ['Alttan Servis','Underhand Serve'],['Pasör Aldatmacası','Setter Deception'],['Kort Görüşü','Court Vision'],
+ ['Takımın Kalbi','Heart of the Team'],['Pipe Attack','Pipe Attack'],['Pasör Plasesi','Setter Dump'],
+ ['Ayakla Kurtarış','Foot Save'],['Sky Ball Servisi','Sky Ball Serve']
+);
+window.SpikerEnglishTemplates.push(
+ ['{s} ve {s} ve {s} blokla sayı aldı!','{s}, {s} and {s} score with a block!'],
+ ['{s} ve {s} ve {s} blokla sayı aldı! {s} sayı! {s} servise geçiyor.','{s}, {s} and {s} score with a block! Point for {s}! {s} serves next.']
+);
+window.SpikerEnglish.push(['1 sayı','1 point']);

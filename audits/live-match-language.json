@@ -1,0 +1,457 @@
+{
+  "samples": [
+    {
+      "state": "wait",
+      "kind": null,
+      "touch": null,
+      "label": "SERVING"
+    },
+    {
+      "state": "flight",
+      "kind": "serve",
+      "touch": 1,
+      "label": "SERVING"
+    },
+    {
+      "state": "flight",
+      "kind": "block",
+      "touch": 1,
+      "label": "BLOCKING"
+    },
+    {
+      "state": "flight",
+      "kind": "attack",
+      "touch": 1,
+      "label": "SPIKING"
+    },
+    {
+      "state": "flight",
+      "kind": "pass",
+      "touch": 2,
+      "label": "RECEIVING"
+    },
+    {
+      "state": "flight",
+      "kind": "pass",
+      "touch": 3,
+      "label": "SETTING"
+    },
+    {
+      "state": "flight",
+      "kind": "pass",
+      "touch": 1,
+      "label": "PLAYING THE BALL"
+    },
+    {
+      "event": "kill",
+      "label": "",
+      "detail": ""
+    },
+    {
+      "event": "ace",
+      "label": "",
+      "detail": ""
+    },
+    {
+      "event": "serve-error",
+      "label": "",
+      "detail": ""
+    },
+    {
+      "event": "attack-error",
+      "label": "",
+      "detail": ""
+    },
+    {
+      "event": "receive-error",
+      "label": "",
+      "detail": ""
+    },
+    {
+      "finished": false,
+      "label": "SERVING",
+      "event": "Pınar Yüce is serving."
+    },
+    {
+      "finished": false,
+      "label": "SETTING",
+      "event": "Beste Erden sets for Serra Güneş."
+    },
+    {
+      "finished": false,
+      "label": "BLOCKING",
+      "event": "Pınar Yüce receives with a forearm pass."
+    },
+    {
+      "finished": false,
+      "label": "SETTING",
+      "event": "Su Taşçı sets for Elmas Akyüz."
+    },
+    {
+      "finished": false,
+      "label": "SETTING",
+      "event": "Beste Erden sets for Piraye Okay."
+    },
+    {
+      "finished": false,
+      "label": "SPIKING",
+      "event": "Pınar Yüce receives with a forearm pass."
+    },
+    {
+      "finished": false,
+      "label": "SPIKING",
+      "event": "Elmas Akyüz spikes!"
+    },
+    {
+      "finished": false,
+      "label": "SETTING",
+      "event": "Beste Erden sets for Piraye Okay."
+    },
+    {
+      "finished": false,
+      "label": "SPIKING",
+      "event": "Melek Kılıçarslan receives with a forearm pass."
+    },
+    {
+      "finished": false,
+      "label": "BLOCKING",
+      "event": "Elmas Akyüz spikes!"
+    },
+    {
+      "finished": false,
+      "label": "POINT! · SPIKE POINT",
+      "event": "Elmas Akyüz scores with a spike! Point for Güneş Spor! Pınar Yüce serves next."
+    },
+    {
+      "finished": false,
+      "label": "SERVING",
+      "event": "Elmas Akyüz scores with a spike! Point for Güneş Spor! Pınar Yüce serves next."
+    },
+    {
+      "finished": false,
+      "label": "SERVING",
+      "event": "Pınar Yüce is serving."
+    },
+    {
+      "finished": false,
+      "label": "SETTING",
+      "event": "Beste Erden sets for Piraye Okay."
+    },
+    {
+      "finished": false,
+      "label": "SPIKING",
+      "event": "Piraye Mutlu and Su Taşçı score with a block!"
+    },
+    {
+      "finished": false,
+      "label": "POINT! · BLOCK POINT",
+      "event": "Piraye Mutlu and Su Taşçı score with a block! Point for Güneş Spor! Pınar Yüce serves next."
+    },
+    {
+      "finished": false,
+      "label": "SERVING",
+      "event": "Piraye Mutlu and Su Taşçı score with a block! Point for Güneş Spor! Pınar Yüce serves next."
+    },
+    {
+      "finished": false,
+      "label": "SERVING",
+      "event": "Pınar Yüce scores an ace!"
+    },
+    {
+      "finished": false,
+      "label": "POINT! · ACE",
+      "event": "Pınar Yüce scores an ace! Point for Güneş Spor! Pınar Yüce serves next."
+    },
+    {
+      "finished": false,
+      "label": "SERVING",
+      "event": "Pınar Yüce scores an ace! Point for Güneş Spor! Pınar Yüce serves next."
+    },
+    {
+      "finished": false,
+      "label": "RECEIVING",
+      "event": "Fikriye Altan receives with a forearm pass."
+    },
+    {
+      "finished": false,
+      "label": "SPIKING",
+      "event": "Piraye Okay spikes!"
+    },
+    {
+      "finished": false,
+      "label": "SETTING",
+      "event": "Su Taşçı sets for Elmas Akyüz."
+    },
+    {
+      "finished": false,
+      "label": "SPIKING",
+      "event": "Serra Güneş scores with a block!"
+    },
+    {
+      "finished": false,
+      "label": "POINT! · BLOCK POINT",
+      "event": "Serra Güneş scores with a block! Point for Mavi Spor! Piraye Okay serves next."
+    },
+    {
+      "finished": false,
+      "label": "SERVING",
+      "event": "Serra Güneş scores with a block! Point for Mavi Spor! Piraye Okay serves next."
+    },
+    {
+      "finished": false,
+      "label": "RECEIVING",
+      "event": "Sevil Kayhan receives with a forearm pass."
+    },
+    {
+      "finished": false,
+      "label": "SPIKING",
+      "event": "Elmas Akyüz spikes!"
+    },
+    {
+      "finished": false,
+      "label": "POINT! · TEAM ERROR",
+      "event": "Elmas Akyüz hits the attack out. Point for Mavi Spor! Piraye Okay serves next."
+    },
+    {
+      "finished": false,
+      "label": "POINT! · TEAM ERROR",
+      "event": "Elmas Akyüz hits the attack out. Point for Mavi Spor! Piraye Okay serves next."
+    },
+    {
+      "finished": false,
+      "label": "SERVING",
+      "event": "Piraye Okay is serving."
+    },
+    {
+      "finished": false,
+      "label": "SETTING",
+      "event": "Su Taşçı sets for Elmas Akyüz."
+    },
+    {
+      "finished": false,
+      "label": "BLOCKING",
+      "event": "Serra Güneş and Beste Erden score with a block!"
+    },
+    {
+      "finished": false,
+      "label": "POINT! · BLOCK POINT",
+      "event": "Serra Güneş and Beste Erden score with a block! Point for Mavi Spor! Piraye Okay serves next."
+    },
+    {
+      "finished": false,
+      "label": "SERVING",
+      "event": "Serra Güneş and Beste Erden score with a block! Point for Mavi Spor! Piraye Okay serves next."
+    },
+    {
+      "finished": false,
+      "label": "RECEIVING",
+      "event": "Melek Kılıçarslan receives with a forearm pass."
+    },
+    {
+      "finished": false,
+      "label": "SPIKING",
+      "event": "Piraye Mutlu spikes!"
+    },
+    {
+      "finished": false,
+      "label": "POINT! · TEAM ERROR",
+      "event": "Piraye Mutlu hits the attack out. Point for Mavi Spor! Piraye Okay serves next."
+    },
+    {
+      "finished": false,
+      "label": "POINT! · TEAM ERROR",
+      "event": "Piraye Mutlu hits the attack out. Point for Mavi Spor! Piraye Okay serves next."
+    },
+    {
+      "finished": false,
+      "label": "SERVING",
+      "event": "Piraye Okay is serving."
+    },
+    {
+      "finished": true,
+      "label": "MATCH COMPLETED",
+      "event": "Mavi Spor wins the match!"
+    }
+  ],
+  "skillNames": [
+    {
+      "id": "commit-block",
+      "name": "Early Block"
+    },
+    {
+      "id": "cross",
+      "name": "Cross-court Spike"
+    },
+    {
+      "id": "tempo-third",
+      "name": "Third-tempo Attack"
+    },
+    {
+      "id": "slide-attack",
+      "name": "Slide Attack"
+    },
+    {
+      "id": "power-hit",
+      "name": "Power Hit"
+    },
+    {
+      "id": "rebound",
+      "name": "Block Rebound"
+    },
+    {
+      "id": "read",
+      "name": "Read Block"
+    },
+    {
+      "id": "float",
+      "name": "Float Serve"
+    },
+    {
+      "id": "line",
+      "name": "Line Spike"
+    },
+    {
+      "id": "back",
+      "name": "Back Set"
+    },
+    {
+      "id": "cover",
+      "name": "Attack Coverage"
+    },
+    {
+      "id": "tempo-second",
+      "name": "Second-tempo Attack"
+    },
+    {
+      "id": "wipe",
+      "name": "Tooling the Block"
+    },
+    {
+      "id": "roof",
+      "name": "Penetration Block"
+    },
+    {
+      "id": "close",
+      "name": "Double Block"
+    },
+    {
+      "id": "triple-block",
+      "name": "Triple Block"
+    },
+    {
+      "id": "jump",
+      "name": "Jump Serve"
+    },
+    {
+      "id": "dive",
+      "name": "Dive"
+    },
+    {
+      "id": "deceive",
+      "name": "Set Feint"
+    },
+    {
+      "id": "sync-attack",
+      "name": "Combination Attack"
+    },
+    {
+      "id": "tempo-first",
+      "name": "First-tempo Attack"
+    },
+    {
+      "id": "tempo-minus",
+      "name": "Minus Tempo"
+    },
+    {
+      "id": "absolute-read",
+      "name": "Perfect Attack Read"
+    },
+    {
+      "id": "jump-legendary",
+      "name": "Lightning Jump Serve"
+    },
+    {
+      "id": "jump-float-legendary",
+      "name": "Jump Float"
+    },
+    {
+      "id": "perfect-second-touch",
+      "name": "Difficult Ball Set"
+    },
+    {
+      "id": "one-hand-rescue",
+      "name": "One-handed Set"
+    },
+    {
+      "id": "pancake",
+      "name": "Pancake"
+    },
+    {
+      "id": "ghost-tip",
+      "name": "Ghost Tip"
+    },
+    {
+      "id": "court-read",
+      "name": "Court Reading"
+    },
+    {
+      "id": "sky-serve",
+      "name": "Underhand Serve"
+    },
+    {
+      "id": "fake-set",
+      "name": "Setter Deception"
+    },
+    {
+      "id": "court-vision",
+      "name": "Court Vision"
+    },
+    {
+      "id": "team-heart",
+      "name": "Heart of the Team"
+    },
+    {
+      "id": "pipe-attack",
+      "name": "Pipe Attack"
+    },
+    {
+      "id": "setter-dump",
+      "name": "Setter Dump"
+    },
+    {
+      "id": "kick-save",
+      "name": "Foot Save"
+    },
+    {
+      "id": "sky-ball-serve",
+      "name": "Sky Ball Serve"
+    }
+  ],
+  "commentary": [
+    [
+      "Müge Gün servis atıyor.",
+      "Müge Gün is serving."
+    ],
+    [
+      "Müge Gün manşetle karşılıyor.",
+      "Müge Gün receives with a forearm pass."
+    ],
+    [
+      "Müge Gün, Fang Song için pası kaldırıyor.",
+      "Müge Gün sets for Fang Song."
+    ],
+    [
+      "Müge Gün smaç vuruyor!",
+      "Müge Gün spikes!"
+    ],
+    [
+      "Müge Gün doğrudan servis sayısı aldı! Güneş Spor sayı! Fang Song servise geçiyor.",
+      "Müge Gün scores an ace! Point for Güneş Spor! Fang Song serves next."
+    ],
+    [
+      "Müge Gün servis hatası yaptı. Mavi Spor sayı! Fang Song servise geçiyor.",
+      "Müge Gün commits a service error. Point for Mavi Spor! Fang Song serves next."
+    ]
+  ],
+  "errors": []
+}

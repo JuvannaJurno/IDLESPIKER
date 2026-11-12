@@ -14,10 +14,10 @@ const phrases=[...exact.keys()].filter(key=>!exactOnly.has(key)).sort((a,b)=>b.l
 const pattern=new RegExp('(?<![\\p{L}\\p{N}])(?:'+phrases.map(escape).join('|')+')(?![\\p{L}\\p{N}])','gu');
 const templates=[...(window.SpikerEnglishTemplates||[])].sort((a,b)=>b[0].length-a[0].length).map(([source,target])=>[new RegExp(escape(source).replace(/\\\{([ns])\\\}/g,(_,type)=>type==='n'?'([\\d.,]+(?:[kmb])?)':'(.+?)'),'gu'),target]);
 const wholeTemplates=templates.map(([pattern,target])=>[new RegExp('^(?:'+pattern.source+')$','u'),target]);
-const skip='script,style,textarea,input,[contenteditable],canvas,svg,[data-no-translate],.card-name,.lineup-preview-player strong,.lineup-legendary-owner strong,.scout-versus strong,.club-guide-player-name,#packProgress,#profileName,#academyConversationName,#playerName,#firstName,#lastName,.league-player-name';
+const skip='script,style,textarea,input,[contenteditable],canvas,svg,[data-no-translate],.card-name,.lineup-preview-player strong,.lineup-legendary-owner strong,.scout-versus strong,.club-guide-player-name,.server-name,.match-skill-item small,.result-scorers strong,#packProgress,#profileName,#academyConversationName,#playerName,#firstName,#lastName,.league-player-name';
 let nameKey='',namePattern=null;
 function protectNames(value){
- const names=[window.PlayerProfile?.name,...(window.LeagueRules?.teams||[]),...(window.TeamRules?.players||[]).map(p=>p.name+' '+p.surname)].filter(n=>n&&!defaultClub(n)),key=names.join('|');
+ const names=[window.PlayerProfile?.name,...(window.LeagueRules?.teams||[]),...(window.matchInfo?.names||[]),...(window.TeamRules?.players||[]).map(p=>p.name+' '+p.surname)].filter(n=>n&&!defaultClub(n)),key=names.join('|');
  if(key!==nameKey){nameKey=key;namePattern=names.length?new RegExp(names.sort((a,b)=>b.length-a.length).map(escape).join('|'),'gu'):null;}
  const saved=[];
  return {value:namePattern?value.replace(namePattern,name=>{saved.push(name);return '\uE010'+(saved.length-1)+'\uE011'}):value,restore:output=>output.replace(/\uE010(\d+)\uE011/g,(_,i)=>saved[Number(i)])};
@@ -25,7 +25,7 @@ function protectNames(value){
 function slot(value){
  if(defaultClub(value))return 'Our Club';
  if(value===window.PlayerProfile?.name)return value;
- if(window.TeamRules?.players?.some(p=>value===p.name||value===p.surname||value===p.name+' '+p.surname)||window.LeagueRules?.teams?.includes(value))return value;
+ if(window.TeamRules?.players?.some(p=>value===p.name||value===p.surname||value===p.name+' '+p.surname)||window.LeagueRules?.teams?.includes(value)||window.matchInfo?.names?.includes(value))return value;
  return exact.get(value)||value;
 }
 function text(value){
@@ -52,7 +52,7 @@ function nameNode(node){
  // Display names stay identical in both languages, including surnames such as Gün.
  const value=node.data.trim();
  if(window.TeamRules?.players?.some(p=>value===p.name||value===p.surname||value===p.name+' '+p.surname))return true;
- if(window.LeagueRules?.teams?.includes(value)&&!defaultClub(value))return true;
+ if((window.LeagueRules?.teams?.includes(value)||window.matchInfo?.names?.includes(value))&&!defaultClub(value))return true;
  return false;
 }
 function translateNode(node){
