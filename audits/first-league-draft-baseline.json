@@ -1009,7 +1009,7 @@
       "divisionEntryRating": 80,
       "divisionCalendar": 0,
       "dayInstructions": 500,
-      "matchTrigger": 300
+      "matchTrigger": 250
     }
   },
   {
@@ -1355,7 +1355,7 @@
       "divisionEntryRating": 80,
       "divisionCalendar": 0,
       "dayInstructions": 500,
-      "matchTrigger": 300
+      "matchTrigger": 250
     }
   },
   {
@@ -1813,7 +1813,7 @@
       "divisionEntryRating": 80,
       "divisionCalendar": 0,
       "dayInstructions": 500,
-      "matchTrigger": 300
+      "matchTrigger": 250
     }
   },
   {
@@ -2202,7 +2202,7 @@
       "divisionEntryRating": 80,
       "divisionCalendar": 2,
       "dayInstructions": 2500,
-      "matchTrigger": 1500
+      "matchTrigger": 1250
     }
   },
   {
@@ -2637,7 +2637,7 @@
       "divisionEntryRating": 80,
       "divisionCalendar": 2,
       "dayInstructions": 2500,
-      "matchTrigger": 1500
+      "matchTrigger": 1250
     }
   },
   {
@@ -3232,7 +3232,7 @@
       "divisionEntryRating": 80,
       "divisionCalendar": 2,
       "dayInstructions": 2500,
-      "matchTrigger": 1500
+      "matchTrigger": 1250
     }
   }
 ]

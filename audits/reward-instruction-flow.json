@@ -1,0 +1,39 @@
+{
+  "instant": {
+    "before": {
+      "day": 1,
+      "clicksToday": 0
+    },
+    "after": {
+      "day": 1,
+      "clicksToday": 0
+    },
+    "reward": {
+      "version": 1,
+      "until": 1794508394739,
+      "fixture": "rescue1-0-7"
+    }
+  },
+  "result": {
+    "menu": {
+      "day": 4,
+      "clicksToday": 50
+    },
+    "room": {
+      "instructions": 350,
+      "ap": 3979.7500000000186,
+      "budget": 80,
+      "pendingGains": 120
+    },
+    "reward": {
+      "version": 1,
+      "until": 1794508394739,
+      "fixture": null
+    },
+    "active": false,
+    "markers": [
+      "50%"
+    ]
+  },
+  "errors": []
+}

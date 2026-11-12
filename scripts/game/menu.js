@@ -11,42 +11,43 @@ let frame=0,toastTimer=0,completionTimer=0,calendarKey=null,activeCalendar=null;
 const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
 let persistTimer=0;function schedulePersist(){if(!persistTimer)persistTimer=setTimeout(()=>{persistTimer=0;persist()},150);}window.addEventListener('pagehide',()=>{clearTimeout(persistTimer);persistTimer=0;persist();});document.addEventListener('visibilitychange',()=>{if(document.hidden){clearTimeout(persistTimer);persistTimer=0;persist();}});
 function persist(){if(window.gameResetting)return;try{localStorage.setItem(STORE,JSON.stringify(state));storageAvailable=true}catch{storageAvailable=false}$('saveStatus').textContent=storageAvailable?'İlerleme kaydedildi.':'Kayıt izni yok. İlerlemen yalnızca bu oturumda saklanır.'}
+// The reward runs normal instruction transactions; it never jumps the menu/room saves.
+const REWARD_STORE='idle-spiker-calendar-reward-v1',REWARD_COOLDOWN=5*60*1000;
+let rewardState={until:0,fixture:null};
+try{const saved=JSON.parse(localStorage.getItem(REWARD_STORE));if(saved?.version===1){rewardState.until=Number.isFinite(saved.until)?Math.max(0,saved.until):0;rewardState.fixture=typeof saved.fixture==='string'?saved.fixture:null;}}catch{}
+function saveRewardState(){try{localStorage.setItem(REWARD_STORE,JSON.stringify({version:1,...rewardState}))}catch{}}
+function finishRewardFlow(){if(!rewardState.fixture)return;rewardState.fixture=null;saveRewardState();renderRewardButton();}
 function skipTrainingToMatch(){
  const fixture=window.LeagueSeason?.progress?.().next;
- if(!fixture||window.RoomSystem?.productionPaused?.()||window.MatchGateway?.active())return false;
- if(window.LeagueSeason.dueFixture(state)){window.MatchGateway.prepare(state);return true;}
- const target={day:fixture.day,clicksToday:LeagueRules.config.matchTrigger||50};
- const count=(target.day-state.day)*MenuState.dayLimit()+target.clicksToday-state.clicksToday;
- if(count<0||count>100000)return false;
- const room=RoomSystem.snapshot();RoomRules.settlePendingGains(room);
- let cursor={...state};
- for(let i=0;i<count;i++){
-  const step=MenuState.advance(cursor);cursor=step.state;
-  const gain=RoomRules.income(room,step.completed,Math.random,'auto');
-  RoomRules.applyGain(room,gain);room.budget+=gain.cash||0;
- }
- room.lastSeen=Date.now();
- const entries={'idle-spiker-rooms-v2':JSON.stringify(room),'idle-spiker-main-menu-v1':JSON.stringify(cursor)};
- let journal=false;
- try{localStorage.setItem('idle-spiker-division-transition-v1',JSON.stringify({version:1,entries}));journal=true;for(const [key,value]of Object.entries(entries))localStorage.setItem(key,value);localStorage.removeItem('idle-spiker-division-transition-v1');}
- catch{if(journal)location.reload();return false;}
- RoomSystem.loadStage(room);state=cursor;persist();render();window.MatchGateway?.prepare(state);return true;
+ if(!fixture||rewardState.fixture||Date.now()<rewardState.until||window.RoomSystem?.productionPaused?.()||window.MatchGateway?.active()||window.LeagueSeason?.dueFixture(state))return false;
+ rewardState={until:Date.now()+REWARD_COOLDOWN,fixture:fixture.id};saveRewardState();renderRewardButton();return true;
 }
-const calendarSkip=document.createElement('button');calendarSkip.id='calendarSkipMatch';calendarSkip.type='button';calendarSkip.className='calendar-skip-match';calendarSkip.innerHTML='<span class="calendar-skip-play" aria-hidden="true">▷</span><span>Sıradaki maça geç</span><small>Reklam</small>';calendarSkip.onclick=showRewardAd;document.querySelector('#calendarPanel .calendar-legend').after(calendarSkip);
+function renderRewardButton(){
+ const next=window.LeagueSeason?.progress?.().next,remaining=Math.max(0,Math.ceil((rewardState.until-Date.now())/1000)),boosting=!!rewardState.fixture;
+ calendarSkip.hidden=!next;
+ calendarSkip.disabled=boosting||remaining>0||rewardAd.open||!!window.RoomSystem?.productionPaused?.()||!!window.MatchGateway?.active()||!!window.LeagueSeason?.dueFixture(state);
+ calendarSkip.dataset.boosting=String(boosting);
+ const label=boosting?'Talimatlar hızlanıyor · 100×':remaining?'Tekrar kullan · '+Math.floor(remaining/60)+':'+String(remaining%60).padStart(2,'0'):'Sıradaki maça hızlan';
+ const small=boosting?'Akış':remaining?'Bekleme':'Reklam';
+ if(calendarSkip.children[1].textContent!==label)calendarSkip.children[1].textContent=label;
+ if(calendarSkip.lastElementChild.textContent!==small)calendarSkip.lastElementChild.textContent=small;
+}
+
+const calendarSkip=document.createElement('button');calendarSkip.id='calendarSkipMatch';calendarSkip.type='button';calendarSkip.className='calendar-skip-match';calendarSkip.innerHTML='<span class="calendar-skip-play" aria-hidden="true">▷</span><span>Sıradaki maça hızlan</span><small>Reklam</small>';calendarSkip.onclick=showRewardAd;document.querySelector('#calendarPanel .calendar-legend').after(calendarSkip);
 const rewardAd=document.createElement('dialog');rewardAd.id='calendarRewardAd';rewardAd.setAttribute('aria-labelledby','calendarRewardTitle');rewardAd.innerHTML='<header><small>DENEME REKLAMI</small><button type="button" class="reward-close" aria-label="Reklamı kapat">×</button></header><div class="reward-ad-scene"><span aria-hidden="true">▷</span><h2 id="calendarRewardTitle">Takımın seni bekliyor.</h2><p>Sıradaki karşılaşmaya hazırlan.</p></div><footer><span class="reward-countdown" role="status"></span><button type="button" class="reward-claim" disabled>Ödülü al</button></footer>';
 document.body.append(rewardAd);
 let rewardTimer=0,rewardFixture=null;
 const rewardClaim=rewardAd.querySelector('.reward-claim');
 function showRewardAd(){
  const next=window.LeagueSeason?.progress?.().next;
- if(rewardAd.open||!next||window.MatchGateway?.active()||window.RoomSystem?.productionPaused?.())return;
+ if(rewardAd.open||!next||rewardState.fixture||Date.now()<rewardState.until||window.LeagueSeason?.dueFixture(state)||window.MatchGateway?.active()||window.RoomSystem?.productionPaused?.())return;
  rewardFixture=next.id;rewardClaim.disabled=true;rewardClaim.textContent='Ödülü al';
  let remaining=5,last=performance.now(),shown=0;
  const update=()=>{const now=performance.now();if(!document.hidden)remaining=Math.max(0,remaining-Math.min(.3,(now-last)/1000));last=now;const seconds=Math.ceil(remaining);if(seconds!==shown){shown=seconds;rewardAd.querySelector('.reward-countdown').textContent=seconds?seconds+' sn sonra ödül hazır':'Ödülün hazır';}if(!seconds){clearInterval(rewardTimer);rewardTimer=0;rewardClaim.disabled=false;}};
  rewardAd.querySelector('.reward-countdown').textContent='5 sn sonra ödül hazır';rewardAd.showModal();calendarSkip.disabled=true;rewardTimer=setInterval(update,200);
 }
 rewardAd.querySelector('.reward-close').onclick=()=>rewardAd.close();
-rewardAd.addEventListener('close',()=>{clearInterval(rewardTimer);rewardTimer=0;calendarSkip.disabled=false;});
+rewardAd.addEventListener('close',()=>{clearInterval(rewardTimer);rewardTimer=0;renderRewardButton();});
 rewardClaim.onclick=()=>{if(rewardClaim.disabled)return;rewardClaim.disabled=true;const eligible=window.LeagueSeason?.progress?.().next?.id===rewardFixture;rewardAd.close();if(eligible)skipTrainingToMatch();};
 
 function render(){window.LeagueSeason?.refresh?.(state);window.CampSystem?.advance(state.day);window.Scouting?.refresh();window.LeagueCalendar?.refresh(state);const limit=MenuState.dayLimit(),trigger=LeagueRules.config.matchTrigger||50;const day=state.day,clicks=state.clicksToday,week=MenuState.week(day),start=(week-1)*7+1;
@@ -56,7 +57,7 @@ function render(){window.LeagueSeason?.refresh?.(state);window.CampSystem?.advan
  $('calendar').replaceChildren(...Array.from({length:7},(_,i)=>{const n=start+i,cell=document.createElement('div');cell.className='calendar-day'+(n<day?' past':'')+(n===day?' today':'')+(MenuState.isMatchDay(n)?' match':'');cell.setAttribute('aria-label',n+'. gün, '+MenuState.dayName(n)+(n===day?', bugün':'')+(MenuState.isMatchDay(n)?', maç günü':''));if(n===day)cell.setAttribute('aria-current','date');const name=document.createElement('small');name.textContent=['PZT','SAL','ÇAR','PER','CUM','CMT','PAZ'][i];const number=document.createElement('strong');number.textContent=String(n).padStart(2,'0');const fill=document.createElement('span');fill.className='calendar-fill';fill.style.setProperty('--day-fill',(n<day?100:n===day?clicks/limit*100:0)+'%');cell.append(fill,name,number);if(MenuState.isMatchDay(n)){const threshold=document.createElement('span');threshold.className='calendar-match-threshold';threshold.style.bottom=(trigger/limit*100)+'%';threshold.title=trigger+'. talimatta maç';threshold.setAttribute('aria-hidden','true');cell.append(threshold);}if(n===day){cell.setAttribute('role','progressbar');cell.setAttribute('aria-valuemin','0');cell.setAttribute('aria-valuemax',limit);cell.setAttribute('aria-valuenow',clicks);cell.setAttribute('aria-valuetext',clicks+' / '+limit+' talimat');const amount=document.createElement('span');amount.className='calendar-cell-count';amount.textContent=clicks+'/'+limit;cell.append(amount);activeCalendar={cell,fill,amount}}return cell}));
  }
  if(activeCalendar){activeCalendar.fill.style.setProperty('--day-fill',clicks/limit*100+'%');activeCalendar.cell.setAttribute('aria-valuenow',clicks);activeCalendar.cell.setAttribute('aria-valuetext',clicks+' / '+limit+' talimat');activeCalendar.amount.textContent=clicks+'/'+limit}
- const next=window.LeagueSeason?.progress?.().next;calendarSkip.hidden=!next;calendarSkip.disabled=rewardAd.open||!!window.RoomSystem?.productionPaused?.();
+ const next=window.LeagueSeason?.progress?.().next;renderRewardButton();
  const matchReady=!!window.LeagueSeason?.dueFixture(state),button=$('energyButton');button.dataset.matchReady=String(matchReady);button.querySelector('strong').textContent=matchReady?'Maça geç':'Talimat ver';button.querySelector('.bolt').textContent=matchReady?'▷':'➜';button.setAttribute('aria-label',matchReady?'Maça geç · Bekleyen maç için takımını hazırla':'Talimat ver');
  $('matchCountdown').textContent=window.LeagueSeason?(next?(next.day<day||next.day===day&&clicks>=trigger?'Maç hazır':next.day===day?(trigger-clicks)+' talimat sonra':(next.day-day)+' gün sonra'):'Sezon tamamlandı'):MenuState.isMatchDay(day)?(state.clicksToday<50?'Bugün · '+(50-state.clicksToday)+' talimat sonra':'Bugün · Maç zamanı'):(7-day%7)+' gün sonra';
  window.NextMatchCard?.render(next,{day,clicksToday:clicks});
@@ -90,7 +91,7 @@ let overtimeLaneCredits=[];
 window.addEventListener('spiker-overtime-flow',event=>{const cycles=Math.max(1,Math.floor(event.detail?.cycles||1)),weights=RoomSystem.effects().instructionLanes||[1],total=weights.reduce((n,w)=>n+w,0),units=weights.map(()=>0),sample=Math.min(120,cycles);if(!total)return;for(let n=0;n<sample;n++){let selected=0;for(let i=0;i<weights.length;i++){overtimeLaneCredits[i]=(overtimeLaneCredits[i]||0)+weights[i];if(overtimeLaneCredits[i]>overtimeLaneCredits[selected])selected=i;}overtimeLaneCredits[selected]-=total;units[selected]++;}units.forEach((count,lane)=>{if(!count)return;const node=addPulse('auto',null,false,true,lane);if(node)node.title='Mesai · '+Math.round(count*cycles/sample)+' talimat';});});
 let renderFrame=0;function scheduleRender(){if(!renderFrame)renderFrame=setTimeout(()=>{renderFrame=0;render()},100)}
 function showToast(message){clearTimeout(toastTimer);$('toast').textContent=message;$('toast').classList.add('show');toastTimer=setTimeout(()=>$('toast').classList.remove('show'),2800)}
-function dayComplete(result){const card=document.querySelector('.calendar-card');card.classList.remove('day-complete');void card.offsetWidth;card.classList.add('day-complete');clearTimeout(completionTimer);completionTimer=setTimeout(()=>card.classList.remove('day-complete'),850);showToast(result.completedDay===1?'İlk gün tamamlandı · +'+RoomSystem.dailyBudget()+' bütçe! Bloklarını geliştirebilirsin.':result.completedDay+'. gün tamamlandı. Yeni gün, yeni enerji!');if(result.matchDay){$('matchMessage').textContent=state.day+'. gün: Maç '+(LeagueRules.config.matchTrigger||50)+'. talimatta başlayacak.';if(!$('matchDialog').open)$('matchDialog').showModal()}}
+function dayComplete(result){const card=document.querySelector('.calendar-card');card.classList.remove('day-complete');void card.offsetWidth;card.classList.add('day-complete');clearTimeout(completionTimer);completionTimer=setTimeout(()=>card.classList.remove('day-complete'),850);showToast(result.completedDay===1?'İlk gün tamamlandı · +'+RoomSystem.dailyBudget()+' bütçe! Bloklarını geliştirebilirsin.':result.completedDay+'. gün tamamlandı. Yeni gün, yeni enerji!');if(result.matchDay&&!rewardState.fixture){$('matchMessage').textContent=state.day+'. gün: Maç '+(LeagueRules.config.matchTrigger||50)+'. talimatta başlayacak.';if(!$('matchDialog').open)$('matchDialog').showModal()}}
 function giveInstruction(source='manual'){if(window.LeagueSeason?.dueFixture(state)){if(source==='manual')window.MatchGateway?.check(state,true);return;}if(window.RoomSystem?.productionPaused?.()||window.MatchGateway?.active())return;const lanes=RoomSystem.nextInstructionLanes();const units=lanes.length,gains=[];let completed=false;
 for(let i=0;i<units;i++){if(window.LeagueSeason?.dueFixture(state))break;const result=MenuState.advance(state);state=result.state;gains.push(RoomSystem.onClick(result.completed,source));completed=completed||result.completed;if(result.completed)dayComplete(result);}
 if(!gains.length)return;const gain=gains.length===1?gains[0]:{bundle:gains,ap:gains.reduce((n,g)=>n+g.ap,0),cash:gains.reduce((n,g)=>n+(g.cash||0),0),critical:gains.some(g=>g.critical),strength:2};if(source==='auto')schedulePersist();else persist();scheduleRender();if(gains.length>1)gains.forEach((part,i)=>addPulse(source,part,completed,false,lanes[i]));else addPulse(source,gain,completed);window.MenuFeedback?.instruction(completed,state.clicksToday/MenuState.dayLimit()*100,source);window.MatchGateway?.check(state)}
@@ -117,3 +118,19 @@ if (btn) {
         }
     });
 }
+
+// Five normal automatic dispatches per 50ms, matching the existing 100× test cadence.
+// No catch-up after a hidden tab: both rewards and visible packets progress together.
+setInterval(()=>{
+ if(window.gameResetting){rewardState={until:0,fixture:null};return;}
+ if(!rewardState.fixture||document.hidden)return;
+ const next=window.LeagueSeason?.progress?.().next;
+ if(!next||next.id!==rewardState.fixture||window.LeagueSeason?.dueFixture(state)){finishRewardFlow();return;}
+ if(window.RoomSystem?.productionPaused?.()||window.MatchGateway?.active()||document.querySelector('dialog[open]')||document.getElementById('learningHint')?.hidden===false)return;
+ for(let i=0;i<5;i++){
+  if(window.LeagueSeason?.dueFixture(state)){finishRewardFlow();break;}
+  giveInstruction('auto');
+ }
+ if(window.LeagueSeason?.dueFixture(state))finishRewardFlow();
+},50);
+setInterval(renderRewardButton,1000);

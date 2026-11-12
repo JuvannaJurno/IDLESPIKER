@@ -435,3 +435,5 @@ html[data-theme=dark] #campReturnDialog .return-skill-reveal p{color:#c8bbd1!imp
  #matchIntro .intro-cards{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr))}
  #matchIntro .intro-card:not(.libero-card)>img{object-fit:contain;object-position:50% 100%}
 }
+
+.calendar-skip-match[data-boosting="true"]{opacity:1;color:#496e62;border-color:#9eb79b;background:#e8efda}

@@ -5290,3 +5290,6 @@ window.SpikerEnglish.push(
  ['Sen tıklamadan da bayağı hızlı talimat üretir.','Produces instructions seriously fast, even without your clicks.'],
  ['Sen tıklamadan da fena hızlı talimat üretir.','Produces instructions ridiculously fast, even without your clicks.']
 );
+
+window.SpikerEnglish.push(['Sıradaki maça hızlan','Speed up to the next match'],['Talimatlar hızlanıyor · 100×','Instructions speeding up · 100×'],['Tekrar kullan','Use again'],['Bekleme','Cooldown']);
+window.SpikerEnglishTemplates.push(['Tekrar kullan · {n}:{n}','Use again · {n}:{n}']);
