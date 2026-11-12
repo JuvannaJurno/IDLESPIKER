@@ -430,10 +430,7 @@ html[data-theme=dark] #campReturnDialog .return-skill-reveal p{color:#c8bbd1!imp
 #matchIntro footer #introSkip[hidden]{display:none}
 #matchIntro footer.intro-final{grid-template-columns:1fr}
 @media(max-height:620px){#matchIntro footer #introNext,#matchIntro footer #introSkip{min-height:32px}}
-/* Tall phones use three rows so portraits gain width instead of cropping heads. */
-@media(min-height:640px) and (max-aspect-ratio:3/5) and (max-width:520px){
- #matchIntro .intro-cards{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr))}
- #matchIntro .intro-card:not(.libero-card)>img{object-fit:contain;object-position:50% 100%}
-}
+/* Keep the original six-player presentation: three columns, two rows on phones too. */
+#matchIntro .intro-cards{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr))}
 
 .calendar-skip-match[data-boosting="true"]{opacity:1;color:#496e62;border-color:#9eb79b;background:#e8efda}

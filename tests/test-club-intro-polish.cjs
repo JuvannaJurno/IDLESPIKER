@@ -18,7 +18,7 @@ const root=path.resolve(__dirname,'..');
   await p.evaluate(()=>{MatchIntro.cancel();const fixture=LeagueSeason.progress().next,squad=TeamView.snapshot();squad.opponents=MatchIntro.opponents(fixture);const dialog=document.getElementById('gameMatchDialog');if(!dialog.open)dialog.showModal();MatchIntro.show(squad,fixture,()=>window.introFinished=(window.introFinished||0)+1);});
   await p.waitForFunction(()=>[...document.querySelectorAll('#matchIntro img')].every(i=>i.complete&&i.naturalWidth));
   const m=await p.locator('#matchIntro').evaluate(e=>{const box=n=>{const r=n.getBoundingClientRect();return {top:r.top,bottom:r.bottom,height:r.height}};return {height:e.clientHeight,scroll:e.scrollHeight,team:box(e.querySelector('.intro-team')),cards:box(e.querySelector('.intro-cards')),footer:box(e.querySelector('footer')),bottom:e.getBoundingClientRect().bottom};});
-  metrics.push({width,height,...m});assert(m.scroll<=m.height+1,'Intro must not scroll: '+JSON.stringify(m));
+  assert.equal(await p.locator('#matchIntro .intro-cards').evaluate(e=>getComputedStyle(e).gridTemplateColumns.split(' ').length),3,'Keep the original three columns at every size');metrics.push({width,height,...m});assert(m.scroll<=m.height+1,'Intro must not scroll: '+JSON.stringify(m));
   assert(m.cards.top-m.team.bottom<=15,'Empty space before cards');assert(m.footer.top-m.cards.bottom<=20,'Empty space before actions');
   assert(m.footer.bottom<=m.bottom+1,'Actions clipped');
   assert((await p.locator('#matchIntro .intro-versus').innerText()).includes('Our Club'));

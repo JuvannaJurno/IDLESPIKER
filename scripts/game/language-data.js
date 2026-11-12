@@ -5293,3 +5293,24 @@ window.SpikerEnglish.push(
 
 window.SpikerEnglish.push(['Sıradaki maça hızlan','Speed up to the next match'],['Talimatlar hızlanıyor · 100×','Instructions speeding up · 100×'],['Tekrar kullan','Use again'],['Bekleme','Cooldown']);
 window.SpikerEnglishTemplates.push(['Tekrar kullan · {n}:{n}','Use again · {n}:{n}']);
+
+// Whole labels must precede word substitutions, including ASCII-only Turkish UI.
+window.SpikerEnglish.push(
+ ['İlk Legendary','First Legendary'],['İlk izimiz','Our first mark'],['İlk fark','First impact'],['İlk adaylar','First candidates'],
+ ['İlk kadroya al','Add to starting lineup'],['İlk kadro','Starting lineup'],['İlk kadrondan','Compared with your starters'],
+ ['6 oyuncu seç.','Select six players.']
+);
+
+window.SpikerEnglish.push(['Sosyal medyaya dön','Back to social media']);
+
+window.SpikerEnglish.push(['1 saat','1 hour'],['1 dakika','1 minute']);
+window.SpikerEnglishTemplates.push(['{n} saat {n} dakika','{n} hr {n} min'],['{n} dakika','{n} minutes'],['{n} saat','{n} hours']);
+
+window.SpikerEnglish.push(['ÇIKAN OYUNCU','OUTGOING PLAYER'],['GİREN OYUNCU','INCOMING PLAYER']);
+
+window.SpikerEnglish.push(['KULÜBÜNÜN TOPU',"YOUR CLUB'S BALL"],['KULÜBÜNÜN SAHASI',"YOUR CLUB'S COURT"]);
+
+window.SpikerEnglish.push(
+ ['Türkiye','Türkiye'],['İtalya','Italy'],['Brezilya','Brazil'],['ABD','USA'],['Japonya','Japan'],['Çin','China'],['Polonya','Poland'],['Sırbistan','Serbia'],
+ ['Dominik Cumhuriyeti','Dominican Republic'],['Hollanda','Netherlands'],['Almanya','Germany'],['Kanada','Canada'],['Tayland','Thailand'],['Fransa','France'],['Belçika','Belgium'],['Çekya','Czechia']
+);

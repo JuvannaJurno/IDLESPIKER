@@ -21,7 +21,7 @@ const root=path.resolve(__dirname,'..');
   for(const person of [...s.players,...s.opponents])person.servePortrait=TeamAppearance.playerPortrait(person);
   s.matchInfo={names:['Güneş Spor','Mavi Spor'],badges:[ClubJourney.matchBadge(0),ClubJourney.matchBadge(f.home===0?f.away:f.home)],league:LeagueRules.config.name,division:1,stage:'prologue',round:1,colors:[{primary:'#527d70',accent:'#f6d58b'},{primary:'#698faa',accent:'#ead7a3'}]};return s;
  });
- const m=await context.newPage();m.on('pageerror',e=>errors.push(e.message));await m.goto(pathToFileURL(path.join(root,'mac.html')).href);
+ const m=await context.newPage();m.on('pageerror',e=>{errors.push(e.message);console.error(e.stack);});await m.goto(pathToFileURL(path.join(root,'mac.html')).href);
  await m.waitForFunction(()=>ready&&window.MatchServer);
  await m.evaluate(squad=>{window.testSquadReady=false;window.addEventListener('message',e=>{if(e.data?.type==='spiker-match'&&e.data.action==='squad-ready')window.testSquadReady=true;});window.dispatchEvent(new MessageEvent('message',{source:parent,data:{type:'spiker-match',action:'squad',squad,deferStart:true}}));},squad);
  await m.waitForFunction(()=>window.testSquadReady&&players.every(p=>p.roster?.servePortrait));

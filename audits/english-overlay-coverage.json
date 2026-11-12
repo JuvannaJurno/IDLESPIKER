@@ -1,0 +1,221 @@
+{
+  "findings": [
+    {
+      "label": "achievements-1",
+      "remaining": []
+    },
+    {
+      "label": "intro-own-1",
+      "remaining": []
+    },
+    {
+      "label": "intro-rival-1",
+      "remaining": []
+    },
+    {
+      "label": "achievements-2",
+      "remaining": []
+    },
+    {
+      "label": "intro-own-2",
+      "remaining": []
+    },
+    {
+      "label": "intro-rival-2",
+      "remaining": []
+    },
+    {
+      "label": "achievements-3",
+      "remaining": []
+    },
+    {
+      "label": "intro-own-3",
+      "remaining": []
+    },
+    {
+      "label": "intro-rival-3",
+      "remaining": []
+    },
+    {
+      "label": "social-feed",
+      "remaining": []
+    },
+    {
+      "label": "community-journey",
+      "remaining": []
+    },
+    {
+      "label": "scout-home",
+      "remaining": []
+    },
+    {
+      "label": "scout-card",
+      "remaining": []
+    },
+    {
+      "label": "scout-catalog",
+      "remaining": []
+    },
+    {
+      "label": "transfer-lineup",
+      "remaining": []
+    },
+    {
+      "label": "profile",
+      "remaining": []
+    },
+    {
+      "label": "chooseProfileMusic",
+      "remaining": []
+    },
+    {
+      "label": "chooseProfileBall",
+      "remaining": []
+    },
+    {
+      "label": "chooseProfileCourt",
+      "remaining": []
+    },
+    {
+      "label": "profile-editor",
+      "remaining": []
+    },
+    {
+      "label": "profile-buttons",
+      "selectors": [
+        {
+          "id": "closeProfile",
+          "text": ""
+        },
+        {
+          "id": "confirmProfileCountry",
+          "text": "Create your character →"
+        },
+        {
+          "id": "changeProfileCountry",
+          "text": "‹ Back to country selection"
+        },
+        {
+          "id": "profileRandom",
+          "text": "↻ Another look"
+        },
+        {
+          "id": "saveProfile",
+          "text": "Save changes"
+        },
+        {
+          "id": "editProfile",
+          "text": "Edit character"
+        },
+        {
+          "id": "",
+          "text": "Ⅰ◀"
+        },
+        {
+          "id": "profileRadioPlay",
+          "text": "Ⅱ"
+        },
+        {
+          "id": "",
+          "text": "▶Ⅰ"
+        },
+        {
+          "id": "chooseProfileMusic",
+          "text": "Choose point musicNo music›"
+        },
+        {
+          "id": "chooseProfileBall",
+          "text": "Choose ballYellow–navy›"
+        },
+        {
+          "id": "chooseProfileCourt",
+          "text": "Choose courtLeague court · With crest›"
+        },
+        {
+          "id": "",
+          "text": "ACHIEVEMENT UNLOCKEDOur first community"
+        }
+      ],
+      "remaining": []
+    },
+    {
+      "label": "achievements-4",
+      "remaining": []
+    },
+    {
+      "label": "intro-own-4",
+      "remaining": []
+    },
+    {
+      "label": "intro-rival-4",
+      "remaining": []
+    }
+  ],
+  "countries": [
+    {
+      "source": "Türkiye",
+      "english": "Türkiye"
+    },
+    {
+      "source": "İtalya",
+      "english": "Italy"
+    },
+    {
+      "source": "Brezilya",
+      "english": "Brazil"
+    },
+    {
+      "source": "ABD",
+      "english": "USA"
+    },
+    {
+      "source": "Japonya",
+      "english": "Japan"
+    },
+    {
+      "source": "Çin",
+      "english": "China"
+    },
+    {
+      "source": "Polonya",
+      "english": "Poland"
+    },
+    {
+      "source": "Sırbistan",
+      "english": "Serbia"
+    },
+    {
+      "source": "Dominik Cumhuriyeti",
+      "english": "Dominican Republic"
+    },
+    {
+      "source": "Hollanda",
+      "english": "Netherlands"
+    },
+    {
+      "source": "Almanya",
+      "english": "Germany"
+    },
+    {
+      "source": "Kanada",
+      "english": "Canada"
+    },
+    {
+      "source": "Tayland",
+      "english": "Thailand"
+    },
+    {
+      "source": "Fransa",
+      "english": "France"
+    },
+    {
+      "source": "Belçika",
+      "english": "Belgium"
+    },
+    {
+      "source": "Çekya",
+      "english": "Czechia"
+    }
+  ],
+  "errors": []
+}
