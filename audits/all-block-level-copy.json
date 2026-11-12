@@ -1,0 +1,2347 @@
+{
+  "ids": 77,
+  "variants": 390,
+  "rows": [
+    {
+      "id": "warmup",
+      "level": 1,
+      "tr": "Her talimat ek AP getirir.",
+      "en": "Each instruction earns extra AP."
+    },
+    {
+      "id": "warmup",
+      "level": 2,
+      "tr": "Her talimat daha fazla AP getirir.",
+      "en": "Each instruction earns more AP."
+    },
+    {
+      "id": "warmup",
+      "level": 3,
+      "tr": "Her talimat çok daha fazla AP getirir.",
+      "en": "Each instruction earns much more AP."
+    },
+    {
+      "id": "warmup",
+      "level": 4,
+      "tr": "Her talimat bayağı fazla AP getirir.",
+      "en": "Each instruction earns a lot more AP."
+    },
+    {
+      "id": "warmup",
+      "level": 5,
+      "tr": "Her talimat fena fazla AP getirir.",
+      "en": "Each instruction earns seriously more AP."
+    },
+    {
+      "id": "crit_smash",
+      "level": 1,
+      "tr": "Kritik AP kazanma şansını biraz artırır.",
+      "en": "Increases the chance of critical AP a little."
+    },
+    {
+      "id": "crit_smash",
+      "level": 2,
+      "tr": "Kritik AP kazanma şansını daha çok artırır.",
+      "en": "Increases the chance of critical AP more."
+    },
+    {
+      "id": "crit_smash",
+      "level": 3,
+      "tr": "Kritik AP kazanma şansını çok daha fazla artırır.",
+      "en": "Increases the chance of critical AP much more."
+    },
+    {
+      "id": "crit_smash",
+      "level": 4,
+      "tr": "Kritik AP kazanma şansını bayağı artırır.",
+      "en": "Increases the chance of critical AP considerably."
+    },
+    {
+      "id": "crit_smash",
+      "level": 5,
+      "tr": "Kritik AP kazanma şansını fena artırır.",
+      "en": "Increases the chance of critical AP seriously."
+    },
+    {
+      "id": "fast_internet",
+      "level": 1,
+      "tr": "İkinci hattı açar, düşük hızda çalıştırır.",
+      "en": "Opens the second lane and runs it at low speed."
+    },
+    {
+      "id": "fast_internet",
+      "level": 2,
+      "tr": "İkinci hattı açar, daha hızlı çalıştırır.",
+      "en": "Opens the second lane and runs it faster."
+    },
+    {
+      "id": "fast_internet",
+      "level": 3,
+      "tr": "İkinci hattı açar, çok daha hızlı çalıştırır.",
+      "en": "Opens the second lane and runs it much faster."
+    },
+    {
+      "id": "fast_internet",
+      "level": 4,
+      "tr": "İkinci hattı açar, bayağı hızlı çalıştırır.",
+      "en": "Opens the second lane and runs it considerably faster."
+    },
+    {
+      "id": "fast_internet",
+      "level": 5,
+      "tr": "İkinci hattı açar, tam hızda çalıştırır.",
+      "en": "Opens the second lane and runs it at full speed."
+    },
+    {
+      "id": "echo",
+      "level": 1,
+      "tr": "Her beş talimatta biraz ek AP kazan.",
+      "en": "Every five instructions earn a little extra AP."
+    },
+    {
+      "id": "echo",
+      "level": 2,
+      "tr": "Her beş talimatta daha fazla ek AP kazan.",
+      "en": "Every five instructions earn more extra AP."
+    },
+    {
+      "id": "echo",
+      "level": 3,
+      "tr": "Her beş talimatta çok daha fazla ek AP kazan.",
+      "en": "Every five instructions earn much more extra AP."
+    },
+    {
+      "id": "echo",
+      "level": 4,
+      "tr": "Her beş talimatta bayağı fazla ek AP kazan.",
+      "en": "Every five instructions earn a lot more extra AP."
+    },
+    {
+      "id": "echo",
+      "level": 5,
+      "tr": "Her beş talimatta fena fazla ek AP kazan.",
+      "en": "Every five instructions earn seriously more extra AP."
+    },
+    {
+      "id": "assistant",
+      "level": 1,
+      "tr": "Sen tıklamadan da talimat üretir.",
+      "en": "Produces instructions even without your clicks."
+    },
+    {
+      "id": "assistant",
+      "level": 2,
+      "tr": "Sen tıklamadan da hızlı talimat üretir.",
+      "en": "Produces instructions quickly, even without your clicks."
+    },
+    {
+      "id": "assistant",
+      "level": 3,
+      "tr": "Sen tıklamadan da çok hızlı talimat üretir.",
+      "en": "Produces instructions very quickly, even without your clicks."
+    },
+    {
+      "id": "assistant",
+      "level": 4,
+      "tr": "Sen tıklamadan da bayağı hızlı talimat üretir.",
+      "en": "Produces instructions seriously fast, even without your clicks."
+    },
+    {
+      "id": "assistant",
+      "level": 5,
+      "tr": "Sen tıklamadan da fena hızlı talimat üretir.",
+      "en": "Produces instructions ridiculously fast, even without your clicks."
+    },
+    {
+      "id": "offline_time",
+      "level": 1,
+      "tr": "Vardiya, sen yokken de bir süre çalışır.",
+      "en": "Your shift runs for a while while you are away."
+    },
+    {
+      "id": "offline_time",
+      "level": 2,
+      "tr": "Vardiya, sen yokken de daha uzun çalışır.",
+      "en": "Your shift runs for longer while you are away."
+    },
+    {
+      "id": "offline_time",
+      "level": 3,
+      "tr": "Vardiya, sen yokken de çok daha uzun çalışır.",
+      "en": "Your shift runs for much longer while you are away."
+    },
+    {
+      "id": "offline_time",
+      "level": 4,
+      "tr": "Vardiya, sen yokken de bayağı uzun çalışır.",
+      "en": "Your shift runs for considerably longer while you are away."
+    },
+    {
+      "id": "offline_time",
+      "level": 5,
+      "tr": "Vardiya, sen yokken de epey uzun çalışır.",
+      "en": "Your shift runs for a good deal longer while you are away."
+    },
+    {
+      "id": "steady",
+      "level": 1,
+      "tr": "Her on otomatik talimatta biraz ek AP kazan.",
+      "en": "Every ten automatic instructions earn a little extra AP."
+    },
+    {
+      "id": "steady",
+      "level": 2,
+      "tr": "Her on otomatik talimatta daha fazla ek AP kazan.",
+      "en": "Every ten automatic instructions earn more extra AP."
+    },
+    {
+      "id": "steady",
+      "level": 3,
+      "tr": "Her on otomatik talimatta çok daha fazla ek AP kazan.",
+      "en": "Every ten automatic instructions earn much more extra AP."
+    },
+    {
+      "id": "steady",
+      "level": 4,
+      "tr": "Her on otomatik talimatta bayağı fazla ek AP kazan.",
+      "en": "Every ten automatic instructions earn a lot more extra AP."
+    },
+    {
+      "id": "steady",
+      "level": 5,
+      "tr": "Her on otomatik talimatta fena fazla ek AP kazan.",
+      "en": "Every ten automatic instructions earn seriously more extra AP."
+    },
+    {
+      "id": "meal",
+      "level": 1,
+      "tr": "Gün sonunda biraz ek AP kazan.",
+      "en": "Earn a little extra AP at the end of the day."
+    },
+    {
+      "id": "meal",
+      "level": 2,
+      "tr": "Gün sonunda daha fazla ek AP kazan.",
+      "en": "Earn more extra AP at the end of the day."
+    },
+    {
+      "id": "meal",
+      "level": 3,
+      "tr": "Gün sonunda çok daha fazla ek AP kazan.",
+      "en": "Earn much more extra AP at the end of the day."
+    },
+    {
+      "id": "meal",
+      "level": 4,
+      "tr": "Gün sonunda bayağı fazla ek AP kazan.",
+      "en": "Earn a lot more extra AP at the end of the day."
+    },
+    {
+      "id": "meal",
+      "level": 5,
+      "tr": "Gün sonunda fena fazla ek AP kazan.",
+      "en": "Earn seriously more extra AP at the end of the day."
+    },
+    {
+      "id": "energy_drink",
+      "level": 1,
+      "tr": "Günün ilk talimatları ek AP getirir.",
+      "en": "The first instructions of the day earn extra AP."
+    },
+    {
+      "id": "energy_drink",
+      "level": 2,
+      "tr": "Günün ilk talimatları daha fazla AP getirir.",
+      "en": "The first instructions of the day earn more AP."
+    },
+    {
+      "id": "energy_drink",
+      "level": 3,
+      "tr": "Günün ilk talimatları çok daha fazla AP getirir.",
+      "en": "The first instructions of the day earn much more AP."
+    },
+    {
+      "id": "energy_drink",
+      "level": 4,
+      "tr": "Günün ilk talimatları bayağı fazla AP getirir.",
+      "en": "The first instructions of the day earn a lot more AP."
+    },
+    {
+      "id": "energy_drink",
+      "level": 5,
+      "tr": "Günün ilk talimatları fena fazla AP getirir.",
+      "en": "The first instructions of the day earn seriously more AP."
+    },
+    {
+      "id": "sugar_boost",
+      "level": 1,
+      "tr": "Sen yokken biraz ek AP kazan.",
+      "en": "Earn a little extra AP while you are away."
+    },
+    {
+      "id": "sugar_boost",
+      "level": 2,
+      "tr": "Sen yokken daha fazla ek AP kazan.",
+      "en": "Earn more extra AP while you are away."
+    },
+    {
+      "id": "sugar_boost",
+      "level": 3,
+      "tr": "Sen yokken çok daha fazla ek AP kazan.",
+      "en": "Earn much more extra AP while you are away."
+    },
+    {
+      "id": "sugar_boost",
+      "level": 4,
+      "tr": "Sen yokken bayağı fazla ek AP kazan.",
+      "en": "Earn a lot more extra AP while you are away."
+    },
+    {
+      "id": "sugar_boost",
+      "level": 5,
+      "tr": "Sen yokken fena fazla ek AP kazan.",
+      "en": "Earn seriously more extra AP while you are away."
+    },
+    {
+      "id": "collect",
+      "level": 1,
+      "tr": "Rakip raporunu biraz erkene alır.",
+      "en": "Brings the rival report forward a little."
+    },
+    {
+      "id": "collect",
+      "level": 2,
+      "tr": "Rakip raporunu daha çok erkene alır.",
+      "en": "Brings the rival report forward more."
+    },
+    {
+      "id": "collect",
+      "level": 3,
+      "tr": "Rakip raporunu çok daha fazla erkene alır.",
+      "en": "Brings the rival report forward much more."
+    },
+    {
+      "id": "collect",
+      "level": 4,
+      "tr": "Rakip raporunu bayağı erkene alır.",
+      "en": "Brings the rival report forward considerably."
+    },
+    {
+      "id": "collect",
+      "level": 5,
+      "tr": "Rakip raporunu fena erkene alır.",
+      "en": "Brings the rival report forward seriously."
+    },
+    {
+      "id": "coordinate",
+      "level": 1,
+      "tr": "Ücretsiz yükseltme şansını biraz artırır.",
+      "en": "Increases the chance of a free upgrade a little."
+    },
+    {
+      "id": "coordinate",
+      "level": 2,
+      "tr": "Ücretsiz yükseltme şansını daha çok artırır.",
+      "en": "Increases the chance of a free upgrade more."
+    },
+    {
+      "id": "coordinate",
+      "level": 3,
+      "tr": "Ücretsiz yükseltme şansını çok daha fazla artırır.",
+      "en": "Increases the chance of a free upgrade much more."
+    },
+    {
+      "id": "coordinate",
+      "level": 4,
+      "tr": "Ücretsiz yükseltme şansını bayağı artırır.",
+      "en": "Increases the chance of a free upgrade considerably."
+    },
+    {
+      "id": "coordinate",
+      "level": 5,
+      "tr": "Ücretsiz yükseltme şansını fena artırır.",
+      "en": "Increases the chance of a free upgrade seriously."
+    },
+    {
+      "id": "rhythm",
+      "level": 1,
+      "tr": "Dayanıklılık yükseltmelerine küçük bir AP indirimi sağlar.",
+      "en": "Gives a small AP discount on stamina upgrades."
+    },
+    {
+      "id": "rhythm",
+      "level": 2,
+      "tr": "Dayanıklılık yükseltmelerine daha büyük bir AP indirimi sağlar.",
+      "en": "Gives a larger AP discount on stamina upgrades."
+    },
+    {
+      "id": "rhythm",
+      "level": 3,
+      "tr": "Dayanıklılık yükseltmelerine çok daha büyük bir AP indirimi sağlar.",
+      "en": "Gives a much larger AP discount on stamina upgrades."
+    },
+    {
+      "id": "rhythm",
+      "level": 4,
+      "tr": "Dayanıklılık yükseltmelerine bayağı büyük bir AP indirimi sağlar.",
+      "en": "Gives a considerably larger AP discount on stamina upgrades."
+    },
+    {
+      "id": "rhythm",
+      "level": 5,
+      "tr": "Dayanıklılık yükseltmelerine fena büyük bir AP indirimi sağlar.",
+      "en": "Gives a seriously larger AP discount on stamina upgrades."
+    },
+    {
+      "id": "bal_coach",
+      "level": 1,
+      "tr": "Sen tıklamadan da talimat üretir.",
+      "en": "Produces instructions even without your clicks."
+    },
+    {
+      "id": "bal_coach",
+      "level": 2,
+      "tr": "Sen tıklamadan da hızlı talimat üretir.",
+      "en": "Produces instructions quickly, even without your clicks."
+    },
+    {
+      "id": "bal_coach",
+      "level": 3,
+      "tr": "Sen tıklamadan da çok hızlı talimat üretir.",
+      "en": "Produces instructions very quickly, even without your clicks."
+    },
+    {
+      "id": "bal_coach",
+      "level": 4,
+      "tr": "Sen tıklamadan da bayağı hızlı talimat üretir.",
+      "en": "Produces instructions seriously fast, even without your clicks."
+    },
+    {
+      "id": "bal_coach",
+      "level": 5,
+      "tr": "Sen tıklamadan da fena hızlı talimat üretir.",
+      "en": "Produces instructions ridiculously fast, even without your clicks."
+    },
+    {
+      "id": "bal_double",
+      "level": 1,
+      "tr": "Üçüncü hattı açar, düşük hızda çalıştırır.",
+      "en": "Opens the third lane and runs it at low speed."
+    },
+    {
+      "id": "bal_double",
+      "level": 2,
+      "tr": "Üçüncü hattı açar, daha hızlı çalıştırır.",
+      "en": "Opens the third lane and runs it faster."
+    },
+    {
+      "id": "bal_double",
+      "level": 3,
+      "tr": "Üçüncü hattı açar, çok daha hızlı çalıştırır.",
+      "en": "Opens the third lane and runs it much faster."
+    },
+    {
+      "id": "bal_double",
+      "level": 4,
+      "tr": "Üçüncü hattı açar, bayağı hızlı çalıştırır.",
+      "en": "Opens the third lane and runs it considerably faster."
+    },
+    {
+      "id": "bal_double",
+      "level": 5,
+      "tr": "Üçüncü hattı açar, tam hızda çalıştırır.",
+      "en": "Opens the third lane and runs it at full speed."
+    },
+    {
+      "id": "bal_shift",
+      "level": 1,
+      "tr": "Vardiya, sen yokken de bir süre çalışır.",
+      "en": "Your shift runs for a while while you are away."
+    },
+    {
+      "id": "bal_shift",
+      "level": 2,
+      "tr": "Vardiya, sen yokken de daha uzun çalışır.",
+      "en": "Your shift runs for longer while you are away."
+    },
+    {
+      "id": "bal_shift",
+      "level": 3,
+      "tr": "Vardiya, sen yokken de çok daha uzun çalışır.",
+      "en": "Your shift runs for much longer while you are away."
+    },
+    {
+      "id": "bal_shift",
+      "level": 4,
+      "tr": "Vardiya, sen yokken de bayağı uzun çalışır.",
+      "en": "Your shift runs for considerably longer while you are away."
+    },
+    {
+      "id": "bal_shift",
+      "level": 5,
+      "tr": "Vardiya, sen yokken de epey uzun çalışır.",
+      "en": "Your shift runs for a good deal longer while you are away."
+    },
+    {
+      "id": "bal_efficiency",
+      "level": 1,
+      "tr": "Sen yokken biraz ek AP kazan.",
+      "en": "Earn a little extra AP while you are away."
+    },
+    {
+      "id": "bal_efficiency",
+      "level": 2,
+      "tr": "Sen yokken daha fazla ek AP kazan.",
+      "en": "Earn more extra AP while you are away."
+    },
+    {
+      "id": "bal_efficiency",
+      "level": 3,
+      "tr": "Sen yokken çok daha fazla ek AP kazan.",
+      "en": "Earn much more extra AP while you are away."
+    },
+    {
+      "id": "bal_efficiency",
+      "level": 4,
+      "tr": "Sen yokken bayağı fazla ek AP kazan.",
+      "en": "Earn a lot more extra AP while you are away."
+    },
+    {
+      "id": "bal_efficiency",
+      "level": 5,
+      "tr": "Sen yokken fena fazla ek AP kazan.",
+      "en": "Earn seriously more extra AP while you are away."
+    },
+    {
+      "id": "bal_plan",
+      "level": 1,
+      "tr": "Her on otomatik talimatta biraz ek AP kazan.",
+      "en": "Every ten automatic instructions earn a little extra AP."
+    },
+    {
+      "id": "bal_plan",
+      "level": 2,
+      "tr": "Her on otomatik talimatta daha fazla ek AP kazan.",
+      "en": "Every ten automatic instructions earn more extra AP."
+    },
+    {
+      "id": "bal_plan",
+      "level": 3,
+      "tr": "Her on otomatik talimatta çok daha fazla ek AP kazan.",
+      "en": "Every ten automatic instructions earn much more extra AP."
+    },
+    {
+      "id": "bal_plan",
+      "level": 4,
+      "tr": "Her on otomatik talimatta bayağı fazla ek AP kazan.",
+      "en": "Every ten automatic instructions earn a lot more extra AP."
+    },
+    {
+      "id": "bal_plan",
+      "level": 5,
+      "tr": "Her on otomatik talimatta fena fazla ek AP kazan.",
+      "en": "Every ten automatic instructions earn seriously more extra AP."
+    },
+    {
+      "id": "bal_hands",
+      "level": 1,
+      "tr": "Elle verdiğin talimatlar ek AP getirir.",
+      "en": "Manual instructions earn extra AP."
+    },
+    {
+      "id": "bal_hands",
+      "level": 2,
+      "tr": "Elle verdiğin talimatlar daha fazla AP getirir.",
+      "en": "Manual instructions earn more AP."
+    },
+    {
+      "id": "bal_hands",
+      "level": 3,
+      "tr": "Elle verdiğin talimatlar çok daha fazla AP getirir.",
+      "en": "Manual instructions earn much more AP."
+    },
+    {
+      "id": "bal_hands",
+      "level": 4,
+      "tr": "Elle verdiğin talimatlar bayağı fazla AP getirir.",
+      "en": "Manual instructions earn a lot more AP."
+    },
+    {
+      "id": "bal_hands",
+      "level": 5,
+      "tr": "Elle verdiğin talimatlar fena fazla AP getirir.",
+      "en": "Manual instructions earn seriously more AP."
+    },
+    {
+      "id": "bal_position",
+      "level": 1,
+      "tr": "Her talimat ek AP getirir.",
+      "en": "Each instruction earns extra AP."
+    },
+    {
+      "id": "bal_position",
+      "level": 2,
+      "tr": "Her talimat daha fazla AP getirir.",
+      "en": "Each instruction earns more AP."
+    },
+    {
+      "id": "bal_position",
+      "level": 3,
+      "tr": "Her talimat çok daha fazla AP getirir.",
+      "en": "Each instruction earns much more AP."
+    },
+    {
+      "id": "bal_position",
+      "level": 4,
+      "tr": "Her talimat bayağı fazla AP getirir.",
+      "en": "Each instruction earns a lot more AP."
+    },
+    {
+      "id": "bal_position",
+      "level": 5,
+      "tr": "Her talimat fena fazla AP getirir.",
+      "en": "Each instruction earns seriously more AP."
+    },
+    {
+      "id": "bal_warmstart",
+      "level": 1,
+      "tr": "Günün ilk talimatları ek AP getirir.",
+      "en": "The first instructions of the day earn extra AP."
+    },
+    {
+      "id": "bal_warmstart",
+      "level": 2,
+      "tr": "Günün ilk talimatları daha fazla AP getirir.",
+      "en": "The first instructions of the day earn more AP."
+    },
+    {
+      "id": "bal_warmstart",
+      "level": 3,
+      "tr": "Günün ilk talimatları çok daha fazla AP getirir.",
+      "en": "The first instructions of the day earn much more AP."
+    },
+    {
+      "id": "bal_warmstart",
+      "level": 4,
+      "tr": "Günün ilk talimatları bayağı fazla AP getirir.",
+      "en": "The first instructions of the day earn a lot more AP."
+    },
+    {
+      "id": "bal_warmstart",
+      "level": 5,
+      "tr": "Günün ilk talimatları fena fazla AP getirir.",
+      "en": "The first instructions of the day earn seriously more AP."
+    },
+    {
+      "id": "bal_video",
+      "level": 1,
+      "tr": "Her beş talimatta biraz ek AP kazan.",
+      "en": "Every five instructions earn a little extra AP."
+    },
+    {
+      "id": "bal_video",
+      "level": 2,
+      "tr": "Her beş talimatta daha fazla ek AP kazan.",
+      "en": "Every five instructions earn more extra AP."
+    },
+    {
+      "id": "bal_video",
+      "level": 3,
+      "tr": "Her beş talimatta çok daha fazla ek AP kazan.",
+      "en": "Every five instructions earn much more extra AP."
+    },
+    {
+      "id": "bal_video",
+      "level": 4,
+      "tr": "Her beş talimatta bayağı fazla ek AP kazan.",
+      "en": "Every five instructions earn a lot more extra AP."
+    },
+    {
+      "id": "bal_video",
+      "level": 5,
+      "tr": "Her beş talimatta fena fazla ek AP kazan.",
+      "en": "Every five instructions earn seriously more extra AP."
+    },
+    {
+      "id": "bal_precision",
+      "level": 1,
+      "tr": "Kritik AP kazanma şansını biraz artırır.",
+      "en": "Increases the chance of critical AP a little."
+    },
+    {
+      "id": "bal_precision",
+      "level": 2,
+      "tr": "Kritik AP kazanma şansını daha çok artırır.",
+      "en": "Increases the chance of critical AP more."
+    },
+    {
+      "id": "bal_precision",
+      "level": 3,
+      "tr": "Kritik AP kazanma şansını çok daha fazla artırır.",
+      "en": "Increases the chance of critical AP much more."
+    },
+    {
+      "id": "bal_precision",
+      "level": 4,
+      "tr": "Kritik AP kazanma şansını bayağı artırır.",
+      "en": "Increases the chance of critical AP considerably."
+    },
+    {
+      "id": "bal_precision",
+      "level": 5,
+      "tr": "Kritik AP kazanma şansını fena artırır.",
+      "en": "Increases the chance of critical AP seriously."
+    },
+    {
+      "id": "bal_recovery",
+      "level": 1,
+      "tr": "Sen yokken biraz ek AP kazan.",
+      "en": "Earn a little extra AP while you are away."
+    },
+    {
+      "id": "bal_recovery",
+      "level": 2,
+      "tr": "Sen yokken daha fazla ek AP kazan.",
+      "en": "Earn more extra AP while you are away."
+    },
+    {
+      "id": "bal_recovery",
+      "level": 3,
+      "tr": "Sen yokken çok daha fazla ek AP kazan.",
+      "en": "Earn much more extra AP while you are away."
+    },
+    {
+      "id": "bal_recovery",
+      "level": 4,
+      "tr": "Sen yokken bayağı fazla ek AP kazan.",
+      "en": "Earn a lot more extra AP while you are away."
+    },
+    {
+      "id": "bal_recovery",
+      "level": 5,
+      "tr": "Sen yokken fena fazla ek AP kazan.",
+      "en": "Earn seriously more extra AP while you are away."
+    },
+    {
+      "id": "bal_evening",
+      "level": 1,
+      "tr": "Gün sonunda biraz ek AP kazan.",
+      "en": "Earn a little extra AP at the end of the day."
+    },
+    {
+      "id": "bal_evening",
+      "level": 2,
+      "tr": "Gün sonunda daha fazla ek AP kazan.",
+      "en": "Earn more extra AP at the end of the day."
+    },
+    {
+      "id": "bal_evening",
+      "level": 3,
+      "tr": "Gün sonunda çok daha fazla ek AP kazan.",
+      "en": "Earn much more extra AP at the end of the day."
+    },
+    {
+      "id": "bal_evening",
+      "level": 4,
+      "tr": "Gün sonunda bayağı fazla ek AP kazan.",
+      "en": "Earn a lot more extra AP at the end of the day."
+    },
+    {
+      "id": "bal_evening",
+      "level": 5,
+      "tr": "Gün sonunda fena fazla ek AP kazan.",
+      "en": "Earn seriously more extra AP at the end of the day."
+    },
+    {
+      "id": "bal_sponsor",
+      "level": 1,
+      "tr": "Her on talimatta biraz ek bütçe kazan.",
+      "en": "Every ten instructions earn a little extra budget."
+    },
+    {
+      "id": "bal_sponsor",
+      "level": 2,
+      "tr": "Her on talimatta daha fazla ek bütçe kazan.",
+      "en": "Every ten instructions earn more extra budget."
+    },
+    {
+      "id": "bal_sponsor",
+      "level": 3,
+      "tr": "Her on talimatta çok daha fazla ek bütçe kazan.",
+      "en": "Every ten instructions earn much more extra budget."
+    },
+    {
+      "id": "bal_sponsor",
+      "level": 4,
+      "tr": "Her on talimatta bayağı fazla ek bütçe kazan.",
+      "en": "Every ten instructions earn a lot more extra budget."
+    },
+    {
+      "id": "bal_sponsor",
+      "level": 5,
+      "tr": "Her on talimatta fena fazla ek bütçe kazan.",
+      "en": "Every ten instructions earn seriously more extra budget."
+    },
+    {
+      "id": "bal_matchsponsor",
+      "level": 1,
+      "tr": "Her maçtan biraz ek bütçe kazan.",
+      "en": "Earn a little extra budget from every match."
+    },
+    {
+      "id": "bal_matchsponsor",
+      "level": 2,
+      "tr": "Her maçtan daha fazla ek bütçe kazan.",
+      "en": "Earn more extra budget from every match."
+    },
+    {
+      "id": "bal_matchsponsor",
+      "level": 3,
+      "tr": "Her maçtan çok daha fazla ek bütçe kazan.",
+      "en": "Earn much more extra budget from every match."
+    },
+    {
+      "id": "bal_matchsponsor",
+      "level": 4,
+      "tr": "Her maçtan bayağı fazla ek bütçe kazan.",
+      "en": "Earn a lot more extra budget from every match."
+    },
+    {
+      "id": "bal_matchsponsor",
+      "level": 5,
+      "tr": "Her maçtan fena fazla ek bütçe kazan.",
+      "en": "Earn seriously more extra budget from every match."
+    },
+    {
+      "id": "bal_shop",
+      "level": 1,
+      "tr": "Kulübün bütçe gelirini biraz artırır.",
+      "en": "Increases the club budget income a little."
+    },
+    {
+      "id": "bal_shop",
+      "level": 2,
+      "tr": "Kulübün bütçe gelirini daha çok artırır.",
+      "en": "Increases the club budget income more."
+    },
+    {
+      "id": "bal_shop",
+      "level": 3,
+      "tr": "Kulübün bütçe gelirini çok daha fazla artırır.",
+      "en": "Increases the club budget income much more."
+    },
+    {
+      "id": "bal_shop",
+      "level": 4,
+      "tr": "Kulübün bütçe gelirini bayağı artırır.",
+      "en": "Increases the club budget income considerably."
+    },
+    {
+      "id": "bal_shop",
+      "level": 5,
+      "tr": "Kulübün bütçe gelirini fena artırır.",
+      "en": "Increases the club budget income seriously."
+    },
+    {
+      "id": "bal_members",
+      "level": 1,
+      "tr": "Her gün biraz ek bütçe kazan.",
+      "en": "Earn a little extra budget every day."
+    },
+    {
+      "id": "bal_members",
+      "level": 2,
+      "tr": "Her gün daha fazla ek bütçe kazan.",
+      "en": "Earn more extra budget every day."
+    },
+    {
+      "id": "bal_members",
+      "level": 3,
+      "tr": "Her gün çok daha fazla ek bütçe kazan.",
+      "en": "Earn much more extra budget every day."
+    },
+    {
+      "id": "bal_members",
+      "level": 4,
+      "tr": "Her gün bayağı fazla ek bütçe kazan.",
+      "en": "Earn a lot more extra budget every day."
+    },
+    {
+      "id": "bal_members",
+      "level": 5,
+      "tr": "Her gün fena fazla ek bütçe kazan.",
+      "en": "Earn seriously more extra budget every day."
+    },
+    {
+      "id": "bal_fans",
+      "level": 1,
+      "tr": "Her maçtan biraz ek bütçe kazan.",
+      "en": "Earn a little extra budget from every match."
+    },
+    {
+      "id": "bal_fans",
+      "level": 2,
+      "tr": "Her maçtan daha fazla ek bütçe kazan.",
+      "en": "Earn more extra budget from every match."
+    },
+    {
+      "id": "bal_fans",
+      "level": 3,
+      "tr": "Her maçtan çok daha fazla ek bütçe kazan.",
+      "en": "Earn much more extra budget from every match."
+    },
+    {
+      "id": "bal_fans",
+      "level": 4,
+      "tr": "Her maçtan bayağı fazla ek bütçe kazan.",
+      "en": "Earn a lot more extra budget from every match."
+    },
+    {
+      "id": "bal_fans",
+      "level": 5,
+      "tr": "Her maçtan fena fazla ek bütçe kazan.",
+      "en": "Earn seriously more extra budget from every match."
+    },
+    {
+      "id": "bal_orders",
+      "level": 1,
+      "tr": "Her on talimatta biraz ek bütçe kazan.",
+      "en": "Every ten instructions earn a little extra budget."
+    },
+    {
+      "id": "bal_orders",
+      "level": 2,
+      "tr": "Her on talimatta daha fazla ek bütçe kazan.",
+      "en": "Every ten instructions earn more extra budget."
+    },
+    {
+      "id": "bal_orders",
+      "level": 3,
+      "tr": "Her on talimatta çok daha fazla ek bütçe kazan.",
+      "en": "Every ten instructions earn much more extra budget."
+    },
+    {
+      "id": "bal_orders",
+      "level": 4,
+      "tr": "Her on talimatta bayağı fazla ek bütçe kazan.",
+      "en": "Every ten instructions earn a lot more extra budget."
+    },
+    {
+      "id": "bal_orders",
+      "level": 5,
+      "tr": "Her on talimatta fena fazla ek bütçe kazan.",
+      "en": "Every ten instructions earn seriously more extra budget."
+    },
+    {
+      "id": "bal_scout",
+      "level": 1,
+      "tr": "Rakip raporunu biraz erkene alır.",
+      "en": "Brings the rival report forward a little."
+    },
+    {
+      "id": "bal_scout",
+      "level": 2,
+      "tr": "Rakip raporunu daha çok erkene alır.",
+      "en": "Brings the rival report forward more."
+    },
+    {
+      "id": "bal_scout",
+      "level": 3,
+      "tr": "Rakip raporunu çok daha fazla erkene alır.",
+      "en": "Brings the rival report forward much more."
+    },
+    {
+      "id": "bal_scout",
+      "level": 4,
+      "tr": "Rakip raporunu bayağı erkene alır.",
+      "en": "Brings the rival report forward considerably."
+    },
+    {
+      "id": "bal_scout",
+      "level": 5,
+      "tr": "Rakip raporunu fena erkene alır.",
+      "en": "Brings the rival report forward seriously."
+    },
+    {
+      "id": "bal_review",
+      "level": 1,
+      "tr": "Galibiyetlerden biraz ek AP kazan.",
+      "en": "Earn a little extra AP from wins."
+    },
+    {
+      "id": "bal_review",
+      "level": 2,
+      "tr": "Galibiyetlerden daha fazla ek AP kazan.",
+      "en": "Earn more extra AP from wins."
+    },
+    {
+      "id": "bal_review",
+      "level": 3,
+      "tr": "Galibiyetlerden çok daha fazla ek AP kazan.",
+      "en": "Earn much more extra AP from wins."
+    },
+    {
+      "id": "bal_review",
+      "level": 4,
+      "tr": "Galibiyetlerden bayağı fazla ek AP kazan.",
+      "en": "Earn a lot more extra AP from wins."
+    },
+    {
+      "id": "bal_review",
+      "level": 5,
+      "tr": "Galibiyetlerden fena fazla ek AP kazan.",
+      "en": "Earn seriously more extra AP from wins."
+    },
+    {
+      "id": "bal_personal",
+      "level": 1,
+      "tr": "Ücretsiz yükseltme şansını biraz artırır.",
+      "en": "Increases the chance of a free upgrade a little."
+    },
+    {
+      "id": "bal_personal",
+      "level": 2,
+      "tr": "Ücretsiz yükseltme şansını daha çok artırır.",
+      "en": "Increases the chance of a free upgrade more."
+    },
+    {
+      "id": "bal_personal",
+      "level": 3,
+      "tr": "Ücretsiz yükseltme şansını çok daha fazla artırır.",
+      "en": "Increases the chance of a free upgrade much more."
+    },
+    {
+      "id": "bal_personal",
+      "level": 4,
+      "tr": "Ücretsiz yükseltme şansını bayağı artırır.",
+      "en": "Increases the chance of a free upgrade considerably."
+    },
+    {
+      "id": "bal_personal",
+      "level": 5,
+      "tr": "Ücretsiz yükseltme şansını fena artırır.",
+      "en": "Increases the chance of a free upgrade seriously."
+    },
+    {
+      "id": "bal_mentor",
+      "level": 1,
+      "tr": "Kart yükseltmelerine küçük bir AP indirimi sağlar.",
+      "en": "Gives a small AP discount on card upgrades."
+    },
+    {
+      "id": "bal_mentor",
+      "level": 2,
+      "tr": "Kart yükseltmelerine daha büyük bir AP indirimi sağlar.",
+      "en": "Gives a larger AP discount on card upgrades."
+    },
+    {
+      "id": "bal_mentor",
+      "level": 3,
+      "tr": "Kart yükseltmelerine çok daha büyük bir AP indirimi sağlar.",
+      "en": "Gives a much larger AP discount on card upgrades."
+    },
+    {
+      "id": "bal_mentor",
+      "level": 4,
+      "tr": "Kart yükseltmelerine bayağı büyük bir AP indirimi sağlar.",
+      "en": "Gives a considerably larger AP discount on card upgrades."
+    },
+    {
+      "id": "bal_mentor",
+      "level": 5,
+      "tr": "Kart yükseltmelerine fena büyük bir AP indirimi sağlar.",
+      "en": "Gives a seriously larger AP discount on card upgrades."
+    },
+    {
+      "id": "bal_archive",
+      "level": 1,
+      "tr": "Kart yükseltmelerine küçük bir AP indirimi sağlar.",
+      "en": "Gives a small AP discount on card upgrades."
+    },
+    {
+      "id": "bal_archive",
+      "level": 2,
+      "tr": "Kart yükseltmelerine daha büyük bir AP indirimi sağlar.",
+      "en": "Gives a larger AP discount on card upgrades."
+    },
+    {
+      "id": "bal_archive",
+      "level": 3,
+      "tr": "Kart yükseltmelerine çok daha büyük bir AP indirimi sağlar.",
+      "en": "Gives a much larger AP discount on card upgrades."
+    },
+    {
+      "id": "bal_archive",
+      "level": 4,
+      "tr": "Kart yükseltmelerine bayağı büyük bir AP indirimi sağlar.",
+      "en": "Gives a considerably larger AP discount on card upgrades."
+    },
+    {
+      "id": "bal_archive",
+      "level": 5,
+      "tr": "Kart yükseltmelerine fena büyük bir AP indirimi sağlar.",
+      "en": "Gives a seriously larger AP discount on card upgrades."
+    },
+    {
+      "id": "bal_remote",
+      "level": 1,
+      "tr": "Sen yokken biraz ek AP kazan.",
+      "en": "Earn a little extra AP while you are away."
+    },
+    {
+      "id": "bal_remote",
+      "level": 2,
+      "tr": "Sen yokken daha fazla ek AP kazan.",
+      "en": "Earn more extra AP while you are away."
+    },
+    {
+      "id": "bal_remote",
+      "level": 3,
+      "tr": "Sen yokken çok daha fazla ek AP kazan.",
+      "en": "Earn much more extra AP while you are away."
+    },
+    {
+      "id": "bal_remote",
+      "level": 4,
+      "tr": "Sen yokken bayağı fazla ek AP kazan.",
+      "en": "Earn a lot more extra AP while you are away."
+    },
+    {
+      "id": "bal_remote",
+      "level": 5,
+      "tr": "Sen yokken fena fazla ek AP kazan.",
+      "en": "Earn seriously more extra AP while you are away."
+    },
+    {
+      "id": "bal_search",
+      "level": 1,
+      "tr": "Yeni kataloglar hızlı gelir.",
+      "en": "New catalogs arrive quickly."
+    },
+    {
+      "id": "bal_search",
+      "level": 2,
+      "tr": "Yeni kataloglar daha hızlı gelir.",
+      "en": "New catalogs arrive more quickly."
+    },
+    {
+      "id": "bal_search",
+      "level": 3,
+      "tr": "Yeni kataloglar çok hızlı gelir.",
+      "en": "New catalogs arrive very quickly."
+    },
+    {
+      "id": "bal_search",
+      "level": 4,
+      "tr": "Yeni kataloglar bayağı hızlı gelir.",
+      "en": "New catalogs arrive seriously fast."
+    },
+    {
+      "id": "bal_search",
+      "level": 5,
+      "tr": "Yeni kataloglar fena hızlı gelir.",
+      "en": "New catalogs arrive ridiculously fast."
+    },
+    {
+      "id": "bal_negotiator",
+      "level": 1,
+      "tr": "Transfer bedellerine küçük bir indirim sağlar.",
+      "en": "Gives a small discount on transfer fees."
+    },
+    {
+      "id": "bal_negotiator",
+      "level": 2,
+      "tr": "Transfer bedellerine daha büyük bir indirim sağlar.",
+      "en": "Gives a larger discount on transfer fees."
+    },
+    {
+      "id": "bal_negotiator",
+      "level": 3,
+      "tr": "Transfer bedellerine çok daha büyük bir indirim sağlar.",
+      "en": "Gives a much larger discount on transfer fees."
+    },
+    {
+      "id": "bal_negotiator",
+      "level": 4,
+      "tr": "Transfer bedellerine bayağı büyük bir indirim sağlar.",
+      "en": "Gives a considerably larger discount on transfer fees."
+    },
+    {
+      "id": "bal_negotiator",
+      "level": 5,
+      "tr": "Transfer bedellerine fena büyük bir indirim sağlar.",
+      "en": "Gives a seriously larger discount on transfer fees."
+    },
+    {
+      "id": "bal_contacts",
+      "level": 1,
+      "tr": "Katalogda ek aday görürsün.",
+      "en": "See extra candidates in each catalog."
+    },
+    {
+      "id": "bal_contacts",
+      "level": 2,
+      "tr": "Katalogda daha fazla aday görürsün.",
+      "en": "See more candidates in each catalog."
+    },
+    {
+      "id": "bal_contacts",
+      "level": 3,
+      "tr": "Katalogda çok daha fazla aday görürsün.",
+      "en": "See much more candidates in each catalog."
+    },
+    {
+      "id": "bal_contacts",
+      "level": 4,
+      "tr": "Katalogda bayağı fazla aday görürsün.",
+      "en": "See a lot more candidates in each catalog."
+    },
+    {
+      "id": "bal_contacts",
+      "level": 5,
+      "tr": "Katalogda fena fazla aday görürsün.",
+      "en": "See seriously more candidates in each catalog."
+    },
+    {
+      "id": "bal_network",
+      "level": 1,
+      "tr": "Güçlü aday bulma şansını biraz artırır.",
+      "en": "Increases the chance of a strong candidate a little."
+    },
+    {
+      "id": "bal_network",
+      "level": 2,
+      "tr": "Güçlü aday bulma şansını daha çok artırır.",
+      "en": "Increases the chance of a strong candidate more."
+    },
+    {
+      "id": "bal_network",
+      "level": 3,
+      "tr": "Güçlü aday bulma şansını çok daha fazla artırır.",
+      "en": "Increases the chance of a strong candidate much more."
+    },
+    {
+      "id": "bal_network",
+      "level": 4,
+      "tr": "Güçlü aday bulma şansını bayağı artırır.",
+      "en": "Increases the chance of a strong candidate considerably."
+    },
+    {
+      "id": "bal_network",
+      "level": 5,
+      "tr": "Güçlü aday bulma şansını fena artırır.",
+      "en": "Increases the chance of a strong candidate seriously."
+    },
+    {
+      "id": "bal_talent",
+      "level": 1,
+      "tr": "Güçlü aday bulma şansını biraz artırır.",
+      "en": "Increases the chance of a strong candidate a little."
+    },
+    {
+      "id": "bal_talent",
+      "level": 2,
+      "tr": "Güçlü aday bulma şansını daha çok artırır.",
+      "en": "Increases the chance of a strong candidate more."
+    },
+    {
+      "id": "bal_talent",
+      "level": 3,
+      "tr": "Güçlü aday bulma şansını çok daha fazla artırır.",
+      "en": "Increases the chance of a strong candidate much more."
+    },
+    {
+      "id": "bal_talent",
+      "level": 4,
+      "tr": "Güçlü aday bulma şansını bayağı artırır.",
+      "en": "Increases the chance of a strong candidate considerably."
+    },
+    {
+      "id": "bal_talent",
+      "level": 5,
+      "tr": "Güçlü aday bulma şansını fena artırır.",
+      "en": "Increases the chance of a strong candidate seriously."
+    },
+    {
+      "id": "bal_academy",
+      "level": 1,
+      "tr": "Yeni adaylar gelişmiş seviyede gelir.",
+      "en": "New candidates arrive developed."
+    },
+    {
+      "id": "bal_academy",
+      "level": 2,
+      "tr": "Yeni adaylar daha gelişmiş seviyede gelir.",
+      "en": "New candidates arrive more developed."
+    },
+    {
+      "id": "bal_academy",
+      "level": 3,
+      "tr": "Yeni adaylar çok daha gelişmiş seviyede gelir.",
+      "en": "New candidates arrive much more developed."
+    },
+    {
+      "id": "bal_academy",
+      "level": 4,
+      "tr": "Yeni adaylar bayağı gelişmiş seviyede gelir.",
+      "en": "New candidates arrive considerably more developed."
+    },
+    {
+      "id": "bal_academy",
+      "level": 5,
+      "tr": "Yeni adaylar epey gelişmiş seviyede gelir.",
+      "en": "New candidates arrive a great deal more developed."
+    },
+    {
+      "id": "pro_coach",
+      "level": 1,
+      "tr": "Her talimat ek AP getirir.",
+      "en": "Each instruction earns extra AP."
+    },
+    {
+      "id": "pro_coach",
+      "level": 2,
+      "tr": "Her talimat daha fazla AP getirir.",
+      "en": "Each instruction earns more AP."
+    },
+    {
+      "id": "pro_coach",
+      "level": 3,
+      "tr": "Her talimat çok daha fazla AP getirir.",
+      "en": "Each instruction earns much more AP."
+    },
+    {
+      "id": "pro_coach",
+      "level": 4,
+      "tr": "Her talimat bayağı fazla AP getirir.",
+      "en": "Each instruction earns a lot more AP."
+    },
+    {
+      "id": "pro_coach",
+      "level": 5,
+      "tr": "Her talimat fena fazla AP getirir.",
+      "en": "Each instruction earns seriously more AP."
+    },
+    {
+      "id": "pro_focus",
+      "level": 1,
+      "tr": "Kritik AP kazanma şansını biraz artırır.",
+      "en": "Increases the chance of critical AP a little."
+    },
+    {
+      "id": "pro_focus",
+      "level": 2,
+      "tr": "Kritik AP kazanma şansını daha çok artırır.",
+      "en": "Increases the chance of critical AP more."
+    },
+    {
+      "id": "pro_focus",
+      "level": 3,
+      "tr": "Kritik AP kazanma şansını çok daha fazla artırır.",
+      "en": "Increases the chance of critical AP much more."
+    },
+    {
+      "id": "pro_focus",
+      "level": 4,
+      "tr": "Kritik AP kazanma şansını bayağı artırır.",
+      "en": "Increases the chance of critical AP considerably."
+    },
+    {
+      "id": "pro_focus",
+      "level": 5,
+      "tr": "Kritik AP kazanma şansını fena artırır.",
+      "en": "Increases the chance of critical AP seriously."
+    },
+    {
+      "id": "pro_repeat",
+      "level": 1,
+      "tr": "Her beş ücretli yükseltmede biraz AP geri gelir.",
+      "en": "Every five paid upgrades refund a little AP."
+    },
+    {
+      "id": "pro_repeat",
+      "level": 2,
+      "tr": "Her beş ücretli yükseltmede daha fazla AP geri gelir.",
+      "en": "Every five paid upgrades refund more AP."
+    },
+    {
+      "id": "pro_repeat",
+      "level": 3,
+      "tr": "Her beş ücretli yükseltmede çok daha fazla AP geri gelir.",
+      "en": "Every five paid upgrades refund much more AP."
+    },
+    {
+      "id": "pro_repeat",
+      "level": 4,
+      "tr": "Her beş ücretli yükseltmede bayağı fazla AP geri gelir.",
+      "en": "Every five paid upgrades refund a lot more AP."
+    },
+    {
+      "id": "pro_repeat",
+      "level": 5,
+      "tr": "Her beş ücretli yükseltmede fena fazla AP geri gelir.",
+      "en": "Every five paid upgrades refund seriously more AP."
+    },
+    {
+      "id": "pro_refund",
+      "level": 1,
+      "tr": "Her beş ücretli kart yükseltmesi ek bütçe getirir.",
+      "en": "Every five paid card upgrades earn extra budget."
+    },
+    {
+      "id": "pro_refund",
+      "level": 2,
+      "tr": "Her beş ücretli kart yükseltmesi daha fazla bütçe getirir.",
+      "en": "Every five paid card upgrades earn more budget."
+    },
+    {
+      "id": "pro_refund",
+      "level": 3,
+      "tr": "Her beş ücretli kart yükseltmesi çok daha fazla bütçe getirir.",
+      "en": "Every five paid card upgrades earn much more budget."
+    },
+    {
+      "id": "pro_refund",
+      "level": 4,
+      "tr": "Her beş ücretli kart yükseltmesi bayağı fazla bütçe getirir.",
+      "en": "Every five paid card upgrades earn a lot more budget."
+    },
+    {
+      "id": "pro_refund",
+      "level": 5,
+      "tr": "Her beş ücretli kart yükseltmesi fena fazla bütçe getirir.",
+      "en": "Every five paid card upgrades earn seriously more budget."
+    },
+    {
+      "id": "pro_analysis",
+      "level": 1,
+      "tr": "Yeni transferin ilk yükseltmelerine küçük bir AP indirimi sağlar.",
+      "en": "Gives a small AP discount on a new transfer’s first upgrades."
+    },
+    {
+      "id": "pro_analysis",
+      "level": 2,
+      "tr": "Yeni transferin ilk yükseltmelerine daha büyük bir AP indirimi sağlar.",
+      "en": "Gives a larger AP discount on a new transfer’s first upgrades."
+    },
+    {
+      "id": "pro_analysis",
+      "level": 3,
+      "tr": "Yeni transferin ilk yükseltmelerine çok daha büyük bir AP indirimi sağlar.",
+      "en": "Gives a much larger AP discount on a new transfer’s first upgrades."
+    },
+    {
+      "id": "pro_analysis",
+      "level": 4,
+      "tr": "Yeni transferin ilk yükseltmelerine bayağı büyük bir AP indirimi sağlar.",
+      "en": "Gives a considerably larger AP discount on a new transfer’s first upgrades."
+    },
+    {
+      "id": "pro_analysis",
+      "level": 5,
+      "tr": "Yeni transferin ilk yükseltmelerine fena büyük bir AP indirimi sağlar.",
+      "en": "Gives a seriously larger AP discount on a new transfer’s first upgrades."
+    },
+    {
+      "id": "pro_adapt",
+      "level": 1,
+      "tr": "Transfer bedellerine küçük bir indirim sağlar.",
+      "en": "Gives a small discount on transfer fees."
+    },
+    {
+      "id": "pro_adapt",
+      "level": 2,
+      "tr": "Transfer bedellerine daha büyük bir indirim sağlar.",
+      "en": "Gives a larger discount on transfer fees."
+    },
+    {
+      "id": "pro_adapt",
+      "level": 3,
+      "tr": "Transfer bedellerine çok daha büyük bir indirim sağlar.",
+      "en": "Gives a much larger discount on transfer fees."
+    },
+    {
+      "id": "pro_adapt",
+      "level": 4,
+      "tr": "Transfer bedellerine bayağı büyük bir indirim sağlar.",
+      "en": "Gives a considerably larger discount on transfer fees."
+    },
+    {
+      "id": "pro_adapt",
+      "level": 5,
+      "tr": "Transfer bedellerine fena büyük bir indirim sağlar.",
+      "en": "Gives a seriously larger discount on transfer fees."
+    },
+    {
+      "id": "pro_coordinator",
+      "level": 1,
+      "tr": "Sen tıklamadan da talimat üretir.",
+      "en": "Produces instructions even without your clicks."
+    },
+    {
+      "id": "pro_coordinator",
+      "level": 2,
+      "tr": "Sen tıklamadan da hızlı talimat üretir.",
+      "en": "Produces instructions quickly, even without your clicks."
+    },
+    {
+      "id": "pro_coordinator",
+      "level": 3,
+      "tr": "Sen tıklamadan da çok hızlı talimat üretir.",
+      "en": "Produces instructions very quickly, even without your clicks."
+    },
+    {
+      "id": "pro_coordinator",
+      "level": 4,
+      "tr": "Sen tıklamadan da bayağı hızlı talimat üretir.",
+      "en": "Produces instructions seriously fast, even without your clicks."
+    },
+    {
+      "id": "pro_coordinator",
+      "level": 5,
+      "tr": "Sen tıklamadan da fena hızlı talimat üretir.",
+      "en": "Produces instructions ridiculously fast, even without your clicks."
+    },
+    {
+      "id": "pro_tempo",
+      "level": 1,
+      "tr": "Ek hatlar açar, düşük hızda çalıştırır.",
+      "en": "Opens extra lanes and runs them at low speed."
+    },
+    {
+      "id": "pro_tempo",
+      "level": 2,
+      "tr": "Ek hatlar açar, daha hızlı çalıştırır.",
+      "en": "Opens extra lanes and runs them faster."
+    },
+    {
+      "id": "pro_tempo",
+      "level": 3,
+      "tr": "Ek hatlar açar, çok daha hızlı çalıştırır.",
+      "en": "Opens extra lanes and runs them much faster."
+    },
+    {
+      "id": "pro_tempo",
+      "level": 4,
+      "tr": "Ek hatlar açar, bayağı hızlı çalıştırır.",
+      "en": "Opens extra lanes and runs them considerably faster."
+    },
+    {
+      "id": "pro_tempo",
+      "level": 5,
+      "tr": "Ek hatlar açar, tam hızda çalıştırır.",
+      "en": "Opens extra lanes and runs them at full speed."
+    },
+    {
+      "id": "pro_camp",
+      "level": 1,
+      "tr": "Kamp süresini biraz kısaltır.",
+      "en": "Shortens camp duration a little."
+    },
+    {
+      "id": "pro_camp",
+      "level": 2,
+      "tr": "Kamp süresini daha çok kısaltır.",
+      "en": "Shortens camp duration more."
+    },
+    {
+      "id": "pro_camp",
+      "level": 3,
+      "tr": "Kamp süresini çok daha fazla kısaltır.",
+      "en": "Shortens camp duration much more."
+    },
+    {
+      "id": "pro_camp",
+      "level": 4,
+      "tr": "Kamp süresini bayağı kısaltır.",
+      "en": "Shortens camp duration considerably."
+    },
+    {
+      "id": "pro_camp",
+      "level": 5,
+      "tr": "Kamp süresini fena kısaltır.",
+      "en": "Shortens camp duration seriously."
+    },
+    {
+      "id": "pro_campcash",
+      "level": 1,
+      "tr": "Kamp bütçe maliyetine küçük bir indirim sağlar.",
+      "en": "Gives a small discount on camp budget costs."
+    },
+    {
+      "id": "pro_campcash",
+      "level": 2,
+      "tr": "Kamp bütçe maliyetine daha büyük bir indirim sağlar.",
+      "en": "Gives a larger discount on camp budget costs."
+    },
+    {
+      "id": "pro_campcash",
+      "level": 3,
+      "tr": "Kamp bütçe maliyetine çok daha büyük bir indirim sağlar.",
+      "en": "Gives a much larger discount on camp budget costs."
+    },
+    {
+      "id": "pro_campcash",
+      "level": 4,
+      "tr": "Kamp bütçe maliyetine bayağı büyük bir indirim sağlar.",
+      "en": "Gives a considerably larger discount on camp budget costs."
+    },
+    {
+      "id": "pro_campcash",
+      "level": 5,
+      "tr": "Kamp bütçe maliyetine fena büyük bir indirim sağlar.",
+      "en": "Gives a seriously larger discount on camp budget costs."
+    },
+    {
+      "id": "pro_travel",
+      "level": 1,
+      "tr": "Vardiya maç sırasında da bir süre çalışır.",
+      "en": "The shift also runs for a while during matches."
+    },
+    {
+      "id": "pro_travel",
+      "level": 2,
+      "tr": "Vardiya maç sırasında da daha uzun çalışır.",
+      "en": "The shift also runs for longer during matches."
+    },
+    {
+      "id": "pro_travel",
+      "level": 3,
+      "tr": "Vardiya maç sırasında da çok daha uzun çalışır.",
+      "en": "The shift also runs for much longer during matches."
+    },
+    {
+      "id": "pro_travel",
+      "level": 4,
+      "tr": "Vardiya maç sırasında da bayağı uzun çalışır.",
+      "en": "The shift also runs for considerably longer during matches."
+    },
+    {
+      "id": "pro_travel",
+      "level": 5,
+      "tr": "Vardiya maç sırasında da epey uzun çalışır.",
+      "en": "The shift also runs for a good deal longer during matches."
+    },
+    {
+      "id": "pro_campap",
+      "level": 1,
+      "tr": "Mesaide biraz ek AP kazan.",
+      "en": "Earn a little extra AP during overtime."
+    },
+    {
+      "id": "pro_campap",
+      "level": 2,
+      "tr": "Mesaide daha fazla ek AP kazan.",
+      "en": "Earn more extra AP during overtime."
+    },
+    {
+      "id": "pro_campap",
+      "level": 3,
+      "tr": "Mesaide çok daha fazla ek AP kazan.",
+      "en": "Earn much more extra AP during overtime."
+    },
+    {
+      "id": "pro_campap",
+      "level": 4,
+      "tr": "Mesaide bayağı fazla ek AP kazan.",
+      "en": "Earn a lot more extra AP during overtime."
+    },
+    {
+      "id": "pro_campap",
+      "level": 5,
+      "tr": "Mesaide fena fazla ek AP kazan.",
+      "en": "Earn seriously more extra AP during overtime."
+    },
+    {
+      "id": "pro_sponsor",
+      "level": 1,
+      "tr": "Her üç tamamlanan maçta biraz ek bütçe kazan.",
+      "en": "Every three completed matches earn a little extra budget."
+    },
+    {
+      "id": "pro_sponsor",
+      "level": 2,
+      "tr": "Her üç tamamlanan maçta daha fazla ek bütçe kazan.",
+      "en": "Every three completed matches earn more extra budget."
+    },
+    {
+      "id": "pro_sponsor",
+      "level": 3,
+      "tr": "Her üç tamamlanan maçta çok daha fazla ek bütçe kazan.",
+      "en": "Every three completed matches earn much more extra budget."
+    },
+    {
+      "id": "pro_sponsor",
+      "level": 4,
+      "tr": "Her üç tamamlanan maçta bayağı fazla ek bütçe kazan.",
+      "en": "Every three completed matches earn a lot more extra budget."
+    },
+    {
+      "id": "pro_sponsor",
+      "level": 5,
+      "tr": "Her üç tamamlanan maçta fena fazla ek bütçe kazan.",
+      "en": "Every three completed matches earn seriously more extra budget."
+    },
+    {
+      "id": "pro_contract",
+      "level": 1,
+      "tr": "Galibiyetlerden biraz ek AP kazan.",
+      "en": "Earn a little extra AP from wins."
+    },
+    {
+      "id": "pro_contract",
+      "level": 2,
+      "tr": "Galibiyetlerden daha fazla ek AP kazan.",
+      "en": "Earn more extra AP from wins."
+    },
+    {
+      "id": "pro_contract",
+      "level": 3,
+      "tr": "Galibiyetlerden çok daha fazla ek AP kazan.",
+      "en": "Earn much more extra AP from wins."
+    },
+    {
+      "id": "pro_contract",
+      "level": 4,
+      "tr": "Galibiyetlerden bayağı fazla ek AP kazan.",
+      "en": "Earn a lot more extra AP from wins."
+    },
+    {
+      "id": "pro_contract",
+      "level": 5,
+      "tr": "Galibiyetlerden fena fazla ek AP kazan.",
+      "en": "Earn seriously more extra AP from wins."
+    },
+    {
+      "id": "pro_shop",
+      "level": 1,
+      "tr": "Takipçi başına her gün ek bütçe kazan.",
+      "en": "Earn extra budget per follower each day."
+    },
+    {
+      "id": "pro_shop",
+      "level": 2,
+      "tr": "Takipçi başına her gün daha fazla bütçe kazan.",
+      "en": "Earn more budget per follower each day."
+    },
+    {
+      "id": "pro_shop",
+      "level": 3,
+      "tr": "Takipçi başına her gün çok daha fazla bütçe kazan.",
+      "en": "Earn much more budget per follower each day."
+    },
+    {
+      "id": "pro_shop",
+      "level": 4,
+      "tr": "Takipçi başına her gün bayağı fazla bütçe kazan.",
+      "en": "Earn a lot more budget per follower each day."
+    },
+    {
+      "id": "pro_shop",
+      "level": 5,
+      "tr": "Takipçi başına her gün fena fazla bütçe kazan.",
+      "en": "Earn seriously more budget per follower each day."
+    },
+    {
+      "id": "pro_merch",
+      "level": 1,
+      "tr": "Sponsor paylaşımları ek bütçe getirir.",
+      "en": "Sponsored posts earn extra budget."
+    },
+    {
+      "id": "pro_merch",
+      "level": 2,
+      "tr": "Sponsor paylaşımları daha fazla bütçe getirir.",
+      "en": "Sponsored posts earn more budget."
+    },
+    {
+      "id": "pro_merch",
+      "level": 3,
+      "tr": "Sponsor paylaşımları çok daha fazla bütçe getirir.",
+      "en": "Sponsored posts earn much more budget."
+    },
+    {
+      "id": "pro_merch",
+      "level": 4,
+      "tr": "Sponsor paylaşımları bayağı fazla bütçe getirir.",
+      "en": "Sponsored posts earn a lot more budget."
+    },
+    {
+      "id": "pro_merch",
+      "level": 5,
+      "tr": "Sponsor paylaşımları fena fazla bütçe getirir.",
+      "en": "Sponsored posts earn seriously more budget."
+    },
+    {
+      "id": "pro_tickets",
+      "level": 1,
+      "tr": "Her ücretli kart yükseltmesi ek bütçe getirir.",
+      "en": "Each paid card upgrade earns extra budget."
+    },
+    {
+      "id": "pro_tickets",
+      "level": 2,
+      "tr": "Her ücretli kart yükseltmesi daha fazla bütçe getirir.",
+      "en": "Each paid card upgrade earns more budget."
+    },
+    {
+      "id": "pro_tickets",
+      "level": 3,
+      "tr": "Her ücretli kart yükseltmesi çok daha fazla bütçe getirir.",
+      "en": "Each paid card upgrade earns much more budget."
+    },
+    {
+      "id": "pro_tickets",
+      "level": 4,
+      "tr": "Her ücretli kart yükseltmesi bayağı fazla bütçe getirir.",
+      "en": "Each paid card upgrade earns a lot more budget."
+    },
+    {
+      "id": "pro_tickets",
+      "level": 5,
+      "tr": "Her ücretli kart yükseltmesi fena fazla bütçe getirir.",
+      "en": "Each paid card upgrade earns seriously more budget."
+    },
+    {
+      "id": "pro_trainingcash",
+      "level": 1,
+      "tr": "Gün sonunda biraz ek AP kazan.",
+      "en": "Earn a little extra AP at the end of the day."
+    },
+    {
+      "id": "pro_trainingcash",
+      "level": 2,
+      "tr": "Gün sonunda daha fazla ek AP kazan.",
+      "en": "Earn more extra AP at the end of the day."
+    },
+    {
+      "id": "pro_trainingcash",
+      "level": 3,
+      "tr": "Gün sonunda çok daha fazla ek AP kazan.",
+      "en": "Earn much more extra AP at the end of the day."
+    },
+    {
+      "id": "pro_trainingcash",
+      "level": 4,
+      "tr": "Gün sonunda bayağı fazla ek AP kazan.",
+      "en": "Earn a lot more extra AP at the end of the day."
+    },
+    {
+      "id": "pro_trainingcash",
+      "level": 5,
+      "tr": "Gün sonunda fena fazla ek AP kazan.",
+      "en": "Earn seriously more extra AP at the end of the day."
+    },
+    {
+      "id": "pro_search",
+      "level": 1,
+      "tr": "En zayıf role ek aday önceliği verir.",
+      "en": "Gives extra candidate priority to the weakest role."
+    },
+    {
+      "id": "pro_search",
+      "level": 2,
+      "tr": "En zayıf role daha fazla aday önceliği verir.",
+      "en": "Gives more candidate priority to the weakest role."
+    },
+    {
+      "id": "pro_search",
+      "level": 3,
+      "tr": "En zayıf role çok daha fazla aday önceliği verir.",
+      "en": "Gives much more candidate priority to the weakest role."
+    },
+    {
+      "id": "pro_search",
+      "level": 4,
+      "tr": "En zayıf role bayağı fazla aday önceliği verir.",
+      "en": "Gives a lot more candidate priority to the weakest role."
+    },
+    {
+      "id": "pro_search",
+      "level": 5,
+      "tr": "En zayıf role fena fazla aday önceliği verir.",
+      "en": "Gives seriously more candidate priority to the weakest role."
+    },
+    {
+      "id": "pro_negotiator",
+      "level": 1,
+      "tr": "Transfer bedellerine küçük bir indirim sağlar.",
+      "en": "Gives a small discount on transfer fees."
+    },
+    {
+      "id": "pro_negotiator",
+      "level": 2,
+      "tr": "Transfer bedellerine daha büyük bir indirim sağlar.",
+      "en": "Gives a larger discount on transfer fees."
+    },
+    {
+      "id": "pro_negotiator",
+      "level": 3,
+      "tr": "Transfer bedellerine çok daha büyük bir indirim sağlar.",
+      "en": "Gives a much larger discount on transfer fees."
+    },
+    {
+      "id": "pro_negotiator",
+      "level": 4,
+      "tr": "Transfer bedellerine bayağı büyük bir indirim sağlar.",
+      "en": "Gives a considerably larger discount on transfer fees."
+    },
+    {
+      "id": "pro_negotiator",
+      "level": 5,
+      "tr": "Transfer bedellerine fena büyük bir indirim sağlar.",
+      "en": "Gives a seriously larger discount on transfer fees."
+    },
+    {
+      "id": "pro_scout",
+      "level": 1,
+      "tr": "Güçlü aday bulma şansını biraz artırır.",
+      "en": "Increases the chance of a strong candidate a little."
+    },
+    {
+      "id": "pro_scout",
+      "level": 2,
+      "tr": "Güçlü aday bulma şansını daha çok artırır.",
+      "en": "Increases the chance of a strong candidate more."
+    },
+    {
+      "id": "pro_scout",
+      "level": 3,
+      "tr": "Güçlü aday bulma şansını çok daha fazla artırır.",
+      "en": "Increases the chance of a strong candidate much more."
+    },
+    {
+      "id": "pro_scout",
+      "level": 4,
+      "tr": "Güçlü aday bulma şansını bayağı artırır.",
+      "en": "Increases the chance of a strong candidate considerably."
+    },
+    {
+      "id": "pro_scout",
+      "level": 5,
+      "tr": "Güçlü aday bulma şansını fena artırır.",
+      "en": "Increases the chance of a strong candidate seriously."
+    },
+    {
+      "id": "pro_elite",
+      "level": 1,
+      "tr": "Milletler Kupası’nda elit aday şansını biraz artırır.",
+      "en": "Increases elite candidate chances in the Nations Cup a little."
+    },
+    {
+      "id": "pro_elite",
+      "level": 2,
+      "tr": "Milletler Kupası’nda elit aday şansını daha çok artırır.",
+      "en": "Increases elite candidate chances in the Nations Cup more."
+    },
+    {
+      "id": "pro_elite",
+      "level": 3,
+      "tr": "Milletler Kupası’nda elit aday şansını çok daha fazla artırır.",
+      "en": "Increases elite candidate chances in the Nations Cup much more."
+    },
+    {
+      "id": "pro_elite",
+      "level": 4,
+      "tr": "Milletler Kupası’nda elit aday şansını bayağı artırır.",
+      "en": "Increases elite candidate chances in the Nations Cup considerably."
+    },
+    {
+      "id": "pro_elite",
+      "level": 5,
+      "tr": "Milletler Kupası’nda elit aday şansını fena artırır.",
+      "en": "Increases elite candidate chances in the Nations Cup seriously."
+    },
+    {
+      "id": "first_academy",
+      "level": 1,
+      "tr": "Akademide ek genç yetiştir.",
+      "en": "Train extra academy youngsters."
+    },
+    {
+      "id": "first_academy",
+      "level": 2,
+      "tr": "Akademide daha fazla genç yetiştir.",
+      "en": "Train more academy youngsters."
+    },
+    {
+      "id": "first_academy",
+      "level": 3,
+      "tr": "Akademide çok daha fazla genç yetiştir.",
+      "en": "Train much more academy youngsters."
+    },
+    {
+      "id": "first_academy",
+      "level": 4,
+      "tr": "Akademide bayağı fazla genç yetiştir.",
+      "en": "Train a lot more academy youngsters."
+    },
+    {
+      "id": "first_academy",
+      "level": 5,
+      "tr": "Akademide fena fazla genç yetiştir.",
+      "en": "Train seriously more academy youngsters."
+    },
+    {
+      "id": "first_campus",
+      "level": 1,
+      "tr": "Akademi eğitim süresini biraz kısaltır.",
+      "en": "Shortens academy training duration a little."
+    },
+    {
+      "id": "first_campus",
+      "level": 2,
+      "tr": "Akademi eğitim süresini daha çok kısaltır.",
+      "en": "Shortens academy training duration more."
+    },
+    {
+      "id": "first_campus",
+      "level": 3,
+      "tr": "Akademi eğitim süresini çok daha fazla kısaltır.",
+      "en": "Shortens academy training duration much more."
+    },
+    {
+      "id": "first_campus",
+      "level": 4,
+      "tr": "Akademi eğitim süresini bayağı kısaltır.",
+      "en": "Shortens academy training duration considerably."
+    },
+    {
+      "id": "first_campus",
+      "level": 5,
+      "tr": "Akademi eğitim süresini fena kısaltır.",
+      "en": "Shortens academy training duration seriously."
+    },
+    {
+      "id": "first_mentor",
+      "level": 1,
+      "tr": "Mezuniyette seçilen özellik biraz gelişir.",
+      "en": "The chosen stat develops a little at graduation."
+    },
+    {
+      "id": "first_mentor",
+      "level": 2,
+      "tr": "Mezuniyette seçilen özellik daha çok gelişir.",
+      "en": "The chosen stat develops more at graduation."
+    },
+    {
+      "id": "first_mentor",
+      "level": 3,
+      "tr": "Mezuniyette seçilen özellik çok daha fazla gelişir.",
+      "en": "The chosen stat develops much more at graduation."
+    },
+    {
+      "id": "first_mentor",
+      "level": 4,
+      "tr": "Mezuniyette seçilen özellik bayağı gelişir.",
+      "en": "The chosen stat develops considerably at graduation."
+    },
+    {
+      "id": "first_mentor",
+      "level": 5,
+      "tr": "Mezuniyette seçilen özellik fena gelişir.",
+      "en": "The chosen stat develops seriously at graduation."
+    },
+    {
+      "id": "first_router",
+      "level": 1,
+      "tr": "Yeni bir hat açar, düşük hızda çalıştırır.",
+      "en": "Opens a new lane and runs it at low speed."
+    },
+    {
+      "id": "first_router",
+      "level": 2,
+      "tr": "Yeni bir hat açar, daha hızlı çalıştırır.",
+      "en": "Opens a new lane and runs it faster."
+    },
+    {
+      "id": "first_router",
+      "level": 3,
+      "tr": "Yeni bir hat açar, çok daha hızlı çalıştırır.",
+      "en": "Opens a new lane and runs it much faster."
+    },
+    {
+      "id": "first_router",
+      "level": 4,
+      "tr": "Yeni bir hat açar, bayağı hızlı çalıştırır.",
+      "en": "Opens a new lane and runs it considerably faster."
+    },
+    {
+      "id": "first_router",
+      "level": 5,
+      "tr": "Yeni bir hat açar, tam hızda çalıştırır.",
+      "en": "Opens a new lane and runs it at full speed."
+    },
+    {
+      "id": "first_payload",
+      "level": 1,
+      "tr": "Otomatik talimatlar ek AP getirir.",
+      "en": "Automatic instructions earn extra AP."
+    },
+    {
+      "id": "first_payload",
+      "level": 2,
+      "tr": "Otomatik talimatlar daha fazla AP getirir.",
+      "en": "Automatic instructions earn more AP."
+    },
+    {
+      "id": "first_payload",
+      "level": 3,
+      "tr": "Otomatik talimatlar çok daha fazla AP getirir.",
+      "en": "Automatic instructions earn much more AP."
+    },
+    {
+      "id": "first_payload",
+      "level": 4,
+      "tr": "Otomatik talimatlar bayağı fazla AP getirir.",
+      "en": "Automatic instructions earn a lot more AP."
+    },
+    {
+      "id": "first_payload",
+      "level": 5,
+      "tr": "Otomatik talimatlar fena fazla AP getirir.",
+      "en": "Automatic instructions earn seriously more AP."
+    },
+    {
+      "id": "first_flywheel",
+      "level": 1,
+      "tr": "Otomatik talimat üretimini biraz hızlandırır.",
+      "en": "Speeds up automatic instruction production a little."
+    },
+    {
+      "id": "first_flywheel",
+      "level": 2,
+      "tr": "Otomatik talimat üretimini daha çok hızlandırır.",
+      "en": "Speeds up automatic instruction production more."
+    },
+    {
+      "id": "first_flywheel",
+      "level": 3,
+      "tr": "Otomatik talimat üretimini çok daha fazla hızlandırır.",
+      "en": "Speeds up automatic instruction production much more."
+    },
+    {
+      "id": "first_flywheel",
+      "level": 4,
+      "tr": "Otomatik talimat üretimini bayağı hızlandırır.",
+      "en": "Speeds up automatic instruction production considerably."
+    },
+    {
+      "id": "first_flywheel",
+      "level": 5,
+      "tr": "Otomatik talimat üretimini fena hızlandırır.",
+      "en": "Speeds up automatic instruction production seriously."
+    },
+    {
+      "id": "media-0",
+      "level": 1,
+      "tr": "Paylaşımlar hızlı hazırlanır.",
+      "en": "Posts are prepared quickly."
+    },
+    {
+      "id": "media-0",
+      "level": 2,
+      "tr": "Paylaşımlar daha hızlı hazırlanır.",
+      "en": "Posts are prepared more quickly."
+    },
+    {
+      "id": "media-0",
+      "level": 3,
+      "tr": "Paylaşımlar çok hızlı hazırlanır.",
+      "en": "Posts are prepared very quickly."
+    },
+    {
+      "id": "media-0",
+      "level": 4,
+      "tr": "Paylaşımlar bayağı hızlı hazırlanır.",
+      "en": "Posts are prepared seriously fast."
+    },
+    {
+      "id": "media-0",
+      "level": 5,
+      "tr": "Paylaşımlar fena hızlı hazırlanır.",
+      "en": "Posts are prepared ridiculously fast."
+    },
+    {
+      "id": "media-1",
+      "level": 1,
+      "tr": "Her paylaşım ek takipçi getirir.",
+      "en": "Each post earns extra followers."
+    },
+    {
+      "id": "media-1",
+      "level": 2,
+      "tr": "Her paylaşım biraz daha fazla takipçi getirir.",
+      "en": "Each post earns a few more followers."
+    },
+    {
+      "id": "media-1",
+      "level": 3,
+      "tr": "Her paylaşım daha fazla takipçi getirir.",
+      "en": "Each post earns more followers."
+    },
+    {
+      "id": "media-1",
+      "level": 4,
+      "tr": "Her paylaşım çok daha fazla takipçi getirir.",
+      "en": "Each post earns much more followers."
+    },
+    {
+      "id": "media-1",
+      "level": 5,
+      "tr": "Her paylaşım bayağı fazla takipçi getirir.",
+      "en": "Each post earns a lot more followers."
+    },
+    {
+      "id": "media-1",
+      "level": 6,
+      "tr": "Her paylaşım epey fazla takipçi getirir.",
+      "en": "Each post earns plenty more followers."
+    },
+    {
+      "id": "media-1",
+      "level": 7,
+      "tr": "Her paylaşım iyice fazla takipçi getirir.",
+      "en": "Each post earns even more followers."
+    },
+    {
+      "id": "media-1",
+      "level": 8,
+      "tr": "Her paylaşım fena fazla takipçi getirir.",
+      "en": "Each post earns seriously more followers."
+    },
+    {
+      "id": "media-1",
+      "level": 9,
+      "tr": "Her paylaşım çok fena fazla takipçi getirir.",
+      "en": "Each post earns way more followers."
+    },
+    {
+      "id": "media-1",
+      "level": 10,
+      "tr": "Her paylaşım acayip fazla takipçi getirir.",
+      "en": "Each post earns ridiculously more followers."
+    },
+    {
+      "id": "media-2",
+      "level": 1,
+      "tr": "Takipçi başına sponsor bütçesini biraz artırır.",
+      "en": "Increases sponsor budget per follower a little."
+    },
+    {
+      "id": "media-2",
+      "level": 2,
+      "tr": "Takipçi başına sponsor bütçesini daha çok artırır.",
+      "en": "Increases sponsor budget per follower more."
+    },
+    {
+      "id": "media-2",
+      "level": 3,
+      "tr": "Takipçi başına sponsor bütçesini çok daha fazla artırır.",
+      "en": "Increases sponsor budget per follower much more."
+    },
+    {
+      "id": "media-2",
+      "level": 4,
+      "tr": "Takipçi başına sponsor bütçesini bayağı artırır.",
+      "en": "Increases sponsor budget per follower considerably."
+    },
+    {
+      "id": "media-2",
+      "level": 5,
+      "tr": "Takipçi başına sponsor bütçesini fena artırır.",
+      "en": "Increases sponsor budget per follower seriously."
+    },
+    {
+      "id": "media-3",
+      "level": 1,
+      "tr": "Paylaşımlar küçük bir talimat dalgası gönderir.",
+      "en": "Posts send a small wave of instructions."
+    },
+    {
+      "id": "media-3",
+      "level": 2,
+      "tr": "Paylaşımlar daha büyük bir talimat dalgası gönderir.",
+      "en": "Posts send a larger wave of instructions."
+    },
+    {
+      "id": "media-3",
+      "level": 3,
+      "tr": "Paylaşımlar çok daha büyük bir talimat dalgası gönderir.",
+      "en": "Posts send a much larger wave of instructions."
+    },
+    {
+      "id": "media-3",
+      "level": 4,
+      "tr": "Paylaşımlar bayağı büyük bir talimat dalgası gönderir.",
+      "en": "Posts send a considerably larger wave of instructions."
+    },
+    {
+      "id": "media-3",
+      "level": 5,
+      "tr": "Paylaşımlar fena büyük bir talimat dalgası gönderir.",
+      "en": "Posts send a seriously larger wave of instructions."
+    },
+    {
+      "id": "media-wave",
+      "level": 1,
+      "tr": "Paylaşımlar küçük bir talimat dalgası gönderir.",
+      "en": "Posts send a small wave of instructions."
+    },
+    {
+      "id": "media-wave",
+      "level": 2,
+      "tr": "Paylaşımlar daha büyük bir talimat dalgası gönderir.",
+      "en": "Posts send a larger wave of instructions."
+    },
+    {
+      "id": "media-wave",
+      "level": 3,
+      "tr": "Paylaşımlar çok daha büyük bir talimat dalgası gönderir.",
+      "en": "Posts send a much larger wave of instructions."
+    },
+    {
+      "id": "media-wave",
+      "level": 4,
+      "tr": "Paylaşımlar bayağı büyük bir talimat dalgası gönderir.",
+      "en": "Posts send a considerably larger wave of instructions."
+    },
+    {
+      "id": "media-wave",
+      "level": 5,
+      "tr": "Paylaşımlar fena büyük bir talimat dalgası gönderir.",
+      "en": "Posts send a seriously larger wave of instructions."
+    },
+    {
+      "id": "media-queue",
+      "level": 1,
+      "tr": "Sırada ek video bekleyebilir.",
+      "en": "The queue can hold extra videos."
+    },
+    {
+      "id": "media-queue",
+      "level": 2,
+      "tr": "Sırada daha fazla video bekleyebilir.",
+      "en": "The queue can hold more videos."
+    },
+    {
+      "id": "media-queue",
+      "level": 3,
+      "tr": "Sırada çok daha fazla video bekleyebilir.",
+      "en": "The queue can hold much more videos."
+    },
+    {
+      "id": "media-queue",
+      "level": 4,
+      "tr": "Sırada bayağı fazla video bekleyebilir.",
+      "en": "The queue can hold a lot more videos."
+    },
+    {
+      "id": "media-queue",
+      "level": 5,
+      "tr": "Sırada fena fazla video bekleyebilir.",
+      "en": "The queue can hold seriously more videos."
+    }
+  ],
+  "errors": []
+}
