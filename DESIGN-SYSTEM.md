@@ -1384,7 +1384,7 @@ Doğrulama: tests/test-language.cjs ilk dil seçimi, kaydedilen tercih, ayarlard
 
 ### 12 Kasım 2026 — Tanıtım yerleşimi ve kulüp kimliği
 
-Takım tanıtımı kaydırmasızdır ve eski üç sütun / iki sıra altılı düzenini bütün ekranlarda korur. Uzun telefonlarda iki sütuna geçme denemesi kullanıcı tarafından reddedildi ve kaldırıldı. Kartın tier çerçevesi, portreleri, rol/OVR/numara yerleri korunur. Başlık ile kartlar arasında gereksiz boşluk bırakılmaz. Bizim takımda tanıtımı geç ana eylemin yanında küçük ikincil düğmedir; rakipte aynı işi yapan geç düğmesi tekrarlanmaz. Libero ve alt eylemler görünen alana sığar.
+Takım tanıtımı kaydırmasızdır ve eski üç sütun / iki sıra altılı düzenini bütün ekranlarda korur. Uzun telefonlarda iki sütuna geçme denemesi kullanıcı tarafından reddedildi ve kaldırıldı. Kartın tier çerçevesi, portreleri, rol/OVR/numara yerleri korunur. Başlık ile kartlar arasında gereksiz boşluk bırakılmaz. Bizim takımda tanıtımı geç ana eylemin altında tam genişlikte ikincil düğmedir; rakipte aynı işi yapan geç düğmesi tekrarlanmaz. Libero ve alt eylemler görünen alana sığar.
 
 Kulüp oluşturmadaki ad ve kısaltma çeviri dışı kullanıcı içeriğidir. Spor/Akademi/Birlik kelimeleri cümle içinde otomatik çevrilmez. Oyun tarafından konan Bizim Kulüp yer tutucusu, özel bir kulüp kaydı yokken Our Club olur; oyuncunun koyduğu ad korunur. Profil, tanıtım, transfer karşılaştırması ve yetenek sahibinin adı gibi diğer isim alanları da korunur. Kulüp kurma ekranındaki eksik başlık/eylem çevirileri eklenmiştir.
 
@@ -1427,3 +1427,7 @@ Yeni gerçek pencere taramasında daha önce açılmamış durumlar bulundu: tra
 Doğrulama: tests/test-english-overlays.cjs dört aşamada başarımlar ve tanıtımın iki tarafını; sosyal akış/topluluk yolculuğu; transfer giriş/kart/katalog/kadroya alma; profil, müzik, top, saha ve karakter düzenleme pencerelerini tarar. Yeni profilde ülke seçimi ayrıca açılır. audits/english-overlay-coverage.json gerçek metin sonuçlarını verir. Önceki genel İngilizce testi ve gerçek maç dili testi ayrıca çalıştırılır. Bu tarama önceden kapsanmayan pencereleri ekler; yalnız kaynak metin taramasını bütün oyun doğrulaması saymaz.
 
 Bu çalışmadaki genel dil kontrolü (556 katalog/yetenek metni, 22 ekran), genişletilmiş pencere taraması ve yeni profilde 16 ülke seçimi geçti. Gerçek maç dil testinin ilk koşusunda bir defa Cannot read properties of undefined (reading roster) olayı yakalandı; sonraki aynı test geçti. Bu aralıklı maç/test olayı çözülmüş sayılmaz; test artık hata yığınını da yazar. Maç fiziği veya skill mekanikleri bu görünüm/dil işi için değiştirilmedi.
+
+### 12 Kasım 2026 — Vardiya bağlacı ve alt alta tanıtım eylemleri
+
+Vardiya kartındaki süre ifadesi Vardiya, sen yokken **daha uzun** çalışır şeklindedir; kalın ifadeden önce de bağlacı kullanılmaz. Takım tanıtımında Rakibi tanı / Sahaya çık ve Tanıtımı geç eylemleri tek sütunda alt alta yerleşir. Üç sütunlu altılı, kaydırmasız yapı ve mevcut düğme stilleri korunur.

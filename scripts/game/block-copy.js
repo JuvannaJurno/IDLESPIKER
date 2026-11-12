@@ -37,7 +37,7 @@
  phrase('steady bal_plan','Her on otomatik talimatta {q} ek AP kazan.','Every ten automatic instructions earn {q} extra AP.',amount,amountEn);
  phrase('meal bal_evening pro_trainingcash','Gün sonunda {q} ek AP kazan.','Earn {q} extra AP at the end of the day.',amount,amountEn);
  phrase('energy_drink bal_warmstart','Günün ilk talimatları {q} AP getirir.','The first instructions of the day earn {q} AP.',more,moreEn);
- phrase('offline_time bal_shift','Vardiya, sen yokken de {q} çalışır.','Your shift runs {q} while you are away.',duration,durationEn);
+ phrase('offline_time bal_shift','Vardiya, sen yokken {q} çalışır.','Your shift runs {q} while you are away.',duration,durationEn);
  phrase('sugar_boost bal_recovery bal_efficiency bal_remote','Sen yokken {q} ek AP kazan.','Earn {q} extra AP while you are away.',amount,amountEn);
  phrase('collect bal_scout','Rakip raporunu {q} erkene alır.','Brings the rival report forward {q}.',strength,strengthEn);
  phrase('coordinate bal_personal','Ücretsiz yükseltme şansını {q} artırır.','Increases the chance of a free upgrade {q}.',strength,strengthEn);
