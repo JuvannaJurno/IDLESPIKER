@@ -9,27 +9,30 @@ for(const [source,target]of [...exact]){
  for(const [from,to]of [[source.toLocaleLowerCase('tr'),target.toLowerCase()],[source.toLocaleUpperCase('tr'),target.toUpperCase()]])if(!exact.has(from))exact.set(from,to);
 }
 const escape=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-const exactOnly=new Set(['Güneş','Yıldız','Zirve','File','Ad','Per','Son','İlk','Günün','Top'].flatMap(s=>[s,s.toLocaleUpperCase('tr'),s.toLocaleLowerCase('tr')]));
+const exactOnly=new Set(['Güneş','Yıldız','Zirve','File','Ad','Per','Son','İlk','Günün','Top','Spor','Akademi','Birlik'].flatMap(s=>[s,s.toLocaleUpperCase('tr'),s.toLocaleLowerCase('tr')]));
 const phrases=[...exact.keys()].filter(key=>!exactOnly.has(key)).sort((a,b)=>b.length-a.length);
 const pattern=new RegExp('(?<![\\p{L}\\p{N}])(?:'+phrases.map(escape).join('|')+')(?![\\p{L}\\p{N}])','gu');
 const templates=[...(window.SpikerEnglishTemplates||[])].sort((a,b)=>b[0].length-a[0].length).map(([source,target])=>[new RegExp(escape(source).replace(/\\\{([ns])\\\}/g,(_,type)=>type==='n'?'([\\d.,]+(?:[kmb])?)':'(.+?)'),'gu'),target]);
 const wholeTemplates=templates.map(([pattern,target])=>[new RegExp('^(?:'+pattern.source+')$','u'),target]);
-const skip='script,style,textarea,input,[contenteditable],canvas,svg,[data-no-translate],.card-name,.lineup-preview-player strong,#playerName,#firstName,#lastName,.league-player-name';
+const skip='script,style,textarea,input,[contenteditable],canvas,svg,[data-no-translate],.card-name,.lineup-preview-player strong,.lineup-legendary-owner strong,.scout-versus strong,.club-guide-player-name,#packProgress,#profileName,#academyConversationName,#playerName,#firstName,#lastName,.league-player-name';
 let nameKey='',namePattern=null;
 function protectNames(value){
- const names=[...(window.LeagueRules?.teams||[]),...(window.TeamRules?.players||[]).map(p=>p.name+' '+p.surname)].filter(Boolean),key=names.join('|');
+ const names=[window.PlayerProfile?.name,...(window.LeagueRules?.teams||[]),...(window.TeamRules?.players||[]).map(p=>p.name+' '+p.surname)].filter(n=>n&&!defaultClub(n)),key=names.join('|');
  if(key!==nameKey){nameKey=key;namePattern=names.length?new RegExp(names.sort((a,b)=>b.length-a.length).map(escape).join('|'),'gu'):null;}
  const saved=[];
  return {value:namePattern?value.replace(namePattern,name=>{saved.push(name);return '\uE010'+(saved.length-1)+'\uE011'}):value,restore:output=>output.replace(/\uE010(\d+)\uE011/g,(_,i)=>saved[Number(i)])};
 }
 function slot(value){
+ if(defaultClub(value))return 'Our Club';
+ if(value===window.PlayerProfile?.name)return value;
  if(window.TeamRules?.players?.some(p=>value===p.name||value===p.surname||value===p.name+' '+p.surname)||window.LeagueRules?.teams?.includes(value))return value;
  return exact.get(value)||value;
 }
 function text(value){
  if(language==='tr'||!value||!value.trim())return value;
- if(cache.has(value))return cache.get(value);
+ if(defaultClub(value.trim()))return value.replace(value.trim(),'Our Club');
  if(window.LeagueRules?.teams?.includes(value.trim()))return value;
+ if(cache.has(value))return cache.get(value);
  const trimmed=value.trim();let translated=exact.get(trimmed);
  if(translated===undefined){for(const [expression,target]of wholeTemplates){const match=trimmed.match(expression);if(match){let index=1;translated=target.replace(/\{[ns]\}/g,()=>slot(match[index++]));break;}}}
  if(translated!==undefined)translated=value.replace(trimmed,()=>translated);
@@ -49,7 +52,7 @@ function nameNode(node){
  // Display names stay identical in both languages, including surnames such as Gün.
  const value=node.data.trim();
  if(window.TeamRules?.players?.some(p=>value===p.name||value===p.surname||value===p.name+' '+p.surname))return true;
- if(window.LeagueRules?.teams?.includes(value))return true;
+ if(window.LeagueRules?.teams?.includes(value)&&!defaultClub(value))return true;
  return false;
 }
 function translateNode(node){
@@ -86,7 +89,9 @@ function choose(value,persist=true){
  window.dispatchEvent(new CustomEvent('spiker-language-changed',{detail:{language}}));
  const frame=document.getElementById('gameMatchFrame');if(frame?.contentWindow)frame.contentWindow.postMessage({type:'spiker-language',language},'*');
 }
-window.GameLanguage={get current(){return language},ready,text,set:choose,refresh};
+function defaultClub(value){return value==='Bizim Kulüp'&&!window.ClubJourney?.profile?.();}
+function clubName(value){return language==='en'&&defaultClub(value)?'Our Club':value;}
+window.GameLanguage={get current(){return language},ready,text,set:choose,refresh,clubName};
 window.addEventListener('spiker-stage-changed',()=>{cache.clear();refresh();});
 window.addEventListener('storage',event=>{if(event.key===key&&supported.includes(event.newValue))choose(event.newValue,false)});
 window.addEventListener('message',event=>{if(window.parent!==window&&event.source===parent&&event.data?.type==='spiker-language')choose(event.data.language,false)});

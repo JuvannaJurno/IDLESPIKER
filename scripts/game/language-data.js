@@ -5207,3 +5207,14 @@ window.SpikerEnglish.push(
  ['Kedi','Cat'],['Geyik','Deer'],['Kartal','Eagle'],['Örgü','Braid'],['Mavi','Blue'],['Spor','Sports'],['Genel','Overall'],['Oyuncu','Player'],
  ['Tutoriallar','Tutorials'],['Dengeli','Balanced'],['Adaptasyon','Adaptation'],['Herkes','Everyone'],['Efsaneler','Legends'],['Forma','Jersey'],['Oynat','Play']
 );
+window.SpikerEnglish.push(
+ ['Armada kısa adı göster','Show abbreviation on crest'],
+ ['Tam kontrast','Bold pattern'],['Kısa ad','Abbreviation'],['Armanın üzerinde görünür','Appears on the crest'],
+ ['Ana renk HEX kodu','Primary color HEX code'],['Vurgu rengi HEX kodu','Accent color HEX code'],
+ ['En az 2 harfli bir kulüp adı ve kısa ad yaz.','Enter a club name with at least 2 letters and an abbreviation.'],
+ ['KISA AD','ABBREVIATION'],['KULÜBÜNÜ OLUŞTUR','CREATE YOUR CLUB']
+);
+window.SpikerEnglish.push(
+ ['Renklerin','Your colors'],['BÖLGESEL AMATÖR LİG','REGIONAL AMATEUR LEAGUE'],['Bölgesel Amatör Lig','Regional Amateur League'],
+ ['Sonra devam et','Continue later'],['Kaydet ve lige geç','Save and enter the league'],['Kurt','Wolf'],['Bizim Kulüp','Our Club']
+);

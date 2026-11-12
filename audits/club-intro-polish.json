@@ -1,0 +1,133 @@
+{
+  "metrics": [
+    {
+      "width": 320,
+      "height": 568,
+      "scroll": 568,
+      "team": {
+        "top": 99,
+        "bottom": 142.390625,
+        "height": 43.390625
+      },
+      "cards": {
+        "top": 145.390625,
+        "bottom": 513,
+        "height": 367.609375
+      },
+      "footer": {
+        "top": 516,
+        "bottom": 561,
+        "height": 45
+      },
+      "bottom": 568
+    },
+    {
+      "width": 360,
+      "height": 720,
+      "scroll": 720,
+      "team": {
+        "top": 122.390625,
+        "bottom": 170.78125,
+        "height": 48.390625
+      },
+      "cards": {
+        "top": 176.78125,
+        "bottom": 649,
+        "height": 472.21875
+      },
+      "footer": {
+        "top": 655,
+        "bottom": 708,
+        "height": 53
+      },
+      "bottom": 720
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scroll": 844,
+      "team": {
+        "top": 126.875,
+        "bottom": 175.265625,
+        "height": 48.390625
+      },
+      "cards": {
+        "top": 181.265625,
+        "bottom": 773,
+        "height": 591.734375
+      },
+      "footer": {
+        "top": 779,
+        "bottom": 832,
+        "height": 53
+      },
+      "bottom": 844
+    },
+    {
+      "width": 412,
+      "height": 915,
+      "scroll": 915,
+      "team": {
+        "top": 128.296875,
+        "bottom": 176.6875,
+        "height": 48.390625
+      },
+      "cards": {
+        "top": 182.6875,
+        "bottom": 844,
+        "height": 661.3125
+      },
+      "footer": {
+        "top": 850,
+        "bottom": 903,
+        "height": 53
+      },
+      "bottom": 915
+    },
+    {
+      "width": 480,
+      "height": 1000,
+      "scroll": 1000,
+      "team": {
+        "top": 130,
+        "bottom": 178.390625,
+        "height": 48.390625
+      },
+      "cards": {
+        "top": 184.390625,
+        "bottom": 929,
+        "height": 744.609375
+      },
+      "footer": {
+        "top": 935,
+        "bottom": 988,
+        "height": 53
+      },
+      "bottom": 1000
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "scroll": 720,
+      "team": {
+        "top": 122.390625,
+        "bottom": 170.78125,
+        "height": 48.390625
+      },
+      "cards": {
+        "top": 176.78125,
+        "bottom": 649,
+        "height": 472.21875
+      },
+      "footer": {
+        "top": 655,
+        "bottom": 708,
+        "height": 53
+      },
+      "bottom": 720
+    }
+  ],
+  "colorCases": 10,
+  "legacyName": "Mavi Spor",
+  "errors": []
+}

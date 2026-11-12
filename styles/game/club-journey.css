@@ -57,3 +57,8 @@ html[data-theme=dark] #clubJourney[data-view=journeyChoices] .journey-choice.pri
 #clubPatternModes{display:flex;gap:8px;margin-top:10px}#clubPatternModes button{flex:1;width:auto;min-height:40px;font-size:11px}#clubPatternModes button svg{display:none}
 #clubPatternModes>button{box-sizing:border-box;display:block;padding:10px 8px;border:1px solid #bdcbb3;border-radius:9px;background:#f9f2dc;color:#55786f;text-shadow:none;box-shadow:0 2px 0 #b6c7af;font-weight:600;font-size:11px;line-height:1.3}
 #clubPatternModes>button[aria-pressed=true]{border-color:#608775;background:#e0e9d5;color:#355c4b;box-shadow:inset 0 0 0 1px #608775}
+
+#clubCreator #clubNamePreview{color:var(--ui-ink,#42665f)}
+#clubCreator .crest-short-toggle{display:flex;align-items:center;gap:10px;min-height:44px;font-weight:400}
+#clubCreator .crest-short-toggle input{width:20px;height:20px;margin:0;accent-color:#557e71;flex:none}
+#clubCreator #clubShortPreview[hidden]{display:none}

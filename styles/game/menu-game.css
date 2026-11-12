@@ -418,3 +418,20 @@ html[data-theme=dark] #campReturnDialog .return-skill-reveal p{color:#c8bbd1!imp
 #calendarRewardAd{width:min(350px,calc(100% - 28px));padding:16px;border:3px solid #fff9e6;border-radius:20px;background:#fff5dc;color:#456d70;box-shadow:0 5px #8ba49a;max-height:calc(100dvh - 40px);overflow:auto}#calendarRewardAd::backdrop{background:#193940b8}#calendarRewardAd header{display:flex;justify-content:space-between;align-items:center}#calendarRewardAd header small{font-size:9px;letter-spacing:1px;color:#929b7e}.reward-close{width:32px;height:32px;border:1px solid #e1d3a9;border-radius:10px;background:#f8ebc4;color:#ac843e;font-size:21px}.reward-ad-scene{margin:14px 0 18px;padding:35px 16px;text-align:center;border-radius:13px;background:#dfe9d1}.reward-ad-scene>span{display:inline-grid;place-items:center;width:55px;height:55px;background:#ffe09b;border-radius:16px;font-size:30px;color:#a37936}.reward-ad-scene h2{font-size:20px;margin:20px 0 10px}.reward-ad-scene p{font-size:12px;margin:0}.reward-countdown{display:block;text-align:center;font-size:11px;color:#7f8c76;margin-bottom:12px}.reward-claim{width:100%;padding:11px;border:2px solid #fff9e6;border-radius:11px;background:#ffce68;color:#85612b;font:inherit;font-size:13px;box-shadow:0 3px #c49c54}.reward-claim:disabled{background:#e4e8d1;color:#a1a58e;box-shadow:none}
 
 #calendarRewardAd footer{display:block}.reward-countdown{width:100%}
+
+/* Fill the intro between its heading and actions, without nested scrolling. */
+#matchIntro .intro-cards{max-height:none;margin:0 auto}
+#matchIntro:has(.intro-libero:empty){grid-template-rows:auto auto auto minmax(0,1fr) auto}
+#matchIntro .intro-libero:empty{display:none}
+#matchIntro footer{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center}
+#matchIntro footer .intro-progress{grid-column:1/-1;margin:2px 0 0}
+#matchIntro footer #introNext{margin:0;min-height:40px}
+#matchIntro footer #introSkip{min-height:40px;margin:0;padding:7px 12px;border:1px solid #b6cbbd;border-radius:11px;background:#edf1dd;color:#58786b;font-size:10px;box-shadow:0 2px 0 #a8bda9}
+#matchIntro footer #introSkip[hidden]{display:none}
+#matchIntro footer.intro-final{grid-template-columns:1fr}
+@media(max-height:620px){#matchIntro footer #introNext,#matchIntro footer #introSkip{min-height:32px}}
+/* Tall phones use three rows so portraits gain width instead of cropping heads. */
+@media(min-height:640px) and (max-aspect-ratio:3/5) and (max-width:520px){
+ #matchIntro .intro-cards{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr))}
+ #matchIntro .intro-card:not(.libero-card)>img{object-fit:contain;object-position:50% 100%}
+}
