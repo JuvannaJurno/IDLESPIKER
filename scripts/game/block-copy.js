@@ -53,11 +53,43 @@
  group('media-2', 'Sponsorlar takipçilerine göre bütçe verir.');
  group('media-3 media-wave', 'Paylaşımlar toplu talimat gönderir.');
  group('media-queue', 'Bir video hazırlanırken diğerlerini sıraya al.');
- function apply(container, id, detail) {
+ const automaticIds = new Set(['assistant', 'bal_coach', 'pro_coordinator']);
+ const automaticCopy = [
+  ['Sen tıklamadan da talimat üretir.', 'tıklamadan', 'without your clicks'],
+  ['Sen tıklamadan da hızlı talimat üretir.', 'hızlı', 'quickly'],
+  ['Sen tıklamadan da çok hızlı talimat üretir.', 'çok hızlı', 'very quickly'],
+  ['Sen tıklamadan da bayağı hızlı talimat üretir.', 'bayağı hızlı', 'seriously fast'],
+  ['Sen tıklamadan da fena hızlı talimat üretir.', 'fena hızlı', 'ridiculously fast']
+ ];
+ function renderAutomatic(copy) {
+  const [source, tr, en] = automaticCopy[Number(copy.dataset.automaticCopy) || 0];
+  const text = window.GameLanguage?.text(source) || source;
+  const emphasis = text === source ? tr : en;
+  const index = text.indexOf(emphasis);
+  copy.replaceChildren();
+  if (index < 0) { copy.textContent = text; return; }
+  const strong = document.createElement('strong');
+  strong.className = 'block-copy-emphasis';
+  strong.textContent = emphasis;
+  copy.append(document.createTextNode(text.slice(0, index)), strong, document.createTextNode(text.slice(index + emphasis.length)));
+ }
+ window.addEventListener('spiker-language-changed', () => {
+  document.querySelectorAll('[data-automatic-copy]').forEach(renderAutomatic);
+ });
+ function apply(container, id, detail, level = 1) {
   if (!container || !summaries[id]) return;
   const copy = container.querySelector('.block-main-copy, .block-bonus-title');
   if (!copy) return;
-  copy.textContent = summaries[id];
+  if (automaticIds.has(id)) {
+   // Levels 6–10 improve the separate bonus; the primary rate stops at level 5.
+   copy.dataset.automaticCopy = String(Math.min(5, Math.max(1, Math.floor(Number(level) || 1))) - 1);
+   copy.setAttribute('data-no-translate', '');
+   renderAutomatic(copy);
+  } else {
+   delete copy.dataset.automaticCopy;
+   copy.removeAttribute('data-no-translate');
+   copy.textContent = summaries[id];
+  }
   let value = container.querySelector('.block-effect-value');
   if (!value) { value = document.createElement('span'); value.className = 'block-effect-value'; copy.after(value); }
   value.textContent = detail.replace(/([\d.,]+) talimat\/sn\. otomatik\./, '$1 talimat / sn').replace(/Her talimata ([+\d.,]+) AP\./, '$1 AP / talimat').replace(/Üçüncü hat ana hattın (\d\/5) kapasitesinde düzenli çalışır\./, 'Ana hattın $1 hızı').replace(/Saniyede ([+\d.,]+) otomatik talimat\./, '$1 talimat / sn')

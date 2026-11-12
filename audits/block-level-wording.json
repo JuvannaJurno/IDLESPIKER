@@ -1,0 +1,80 @@
+{
+  "cards": [
+    {
+      "id": "assistant",
+      "level": 1,
+      "text": "Sen tıklamadan da talimat üretir."
+    },
+    {
+      "id": "assistant",
+      "level": 2,
+      "text": "Sen tıklamadan da hızlı talimat üretir."
+    },
+    {
+      "id": "assistant",
+      "level": 3,
+      "text": "Sen tıklamadan da çok hızlı talimat üretir."
+    },
+    {
+      "id": "assistant",
+      "level": 4,
+      "text": "Sen tıklamadan da bayağı hızlı talimat üretir."
+    },
+    {
+      "id": "assistant",
+      "level": 5,
+      "text": "Sen tıklamadan da fena hızlı talimat üretir."
+    },
+    {
+      "id": "bal_coach",
+      "level": 1,
+      "text": "Sen tıklamadan da talimat üretir."
+    },
+    {
+      "id": "bal_coach",
+      "level": 2,
+      "text": "Sen tıklamadan da hızlı talimat üretir."
+    },
+    {
+      "id": "bal_coach",
+      "level": 3,
+      "text": "Sen tıklamadan da çok hızlı talimat üretir."
+    },
+    {
+      "id": "bal_coach",
+      "level": 4,
+      "text": "Sen tıklamadan da bayağı hızlı talimat üretir."
+    },
+    {
+      "id": "bal_coach",
+      "level": 5,
+      "text": "Sen tıklamadan da fena hızlı talimat üretir."
+    },
+    {
+      "id": "pro_coordinator",
+      "level": 1,
+      "text": "Sen tıklamadan da talimat üretir."
+    },
+    {
+      "id": "pro_coordinator",
+      "level": 2,
+      "text": "Sen tıklamadan da hızlı talimat üretir."
+    },
+    {
+      "id": "pro_coordinator",
+      "level": 3,
+      "text": "Sen tıklamadan da çok hızlı talimat üretir."
+    },
+    {
+      "id": "pro_coordinator",
+      "level": 4,
+      "text": "Sen tıklamadan da bayağı hızlı talimat üretir."
+    },
+    {
+      "id": "pro_coordinator",
+      "level": 5,
+      "text": "Sen tıklamadan da fena hızlı talimat üretir."
+    }
+  ],
+  "errors": []
+}

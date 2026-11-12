@@ -5281,3 +5281,12 @@ window.SpikerEnglishTemplates.push(
  ['{s} ve {s} ve {s} blokla sayı aldı! {s} sayı! {s} servise geçiyor.','{s}, {s} and {s} score with a block! Point for {s}! {s} serves next.']
 );
 window.SpikerEnglish.push(['1 sayı','1 point']);
+
+// Automatic instruction blocks: primary wording progresses only through five levels.
+window.SpikerEnglish.push(
+ ['Sen tıklamadan da talimat üretir.','Produces instructions even without your clicks.'],
+ ['Sen tıklamadan da hızlı talimat üretir.','Produces instructions quickly, even without your clicks.'],
+ ['Sen tıklamadan da çok hızlı talimat üretir.','Produces instructions very quickly, even without your clicks.'],
+ ['Sen tıklamadan da bayağı hızlı talimat üretir.','Produces instructions seriously fast, even without your clicks.'],
+ ['Sen tıklamadan da fena hızlı talimat üretir.','Produces instructions ridiculously fast, even without your clicks.']
+);

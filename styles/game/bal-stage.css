@@ -418,3 +418,6 @@ html[data-theme=dark] #campDialog #campEnroll:disabled[data-funding]{background:
 .upgrade-room[data-stack-tier="1"]{box-shadow:2px 2px 0 #d4be81,0 4px 0 #9bae91}
 .upgrade-room[data-stack-tier="2"]{box-shadow:2px 2px 0 #f3df9e,4px 4px 0 #d4be81,0 5px 0 #9bae91}
 [data-theme="dark"] .upgrade-room[data-stack-tier="1"],[data-theme="dark"] .upgrade-room[data-stack-tier="2"]{box-shadow:2px 2px 0 #65827b,0 4px 0 #243d40}
+
+/* Level wording keeps the approved copy size; only the changing phrase is bold. */
+.upgrade-room.has-main-effect .block-copy-emphasis{font:inherit;font-weight:700;color:inherit}
